@@ -1,0 +1,1193 @@
+/* Covers the framework, including the header and footer. */
+/* Mobiles and default.  One column.*/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* HTML5 fixes for backwards compatibility */
+
+header, nav, menu, #main, footer, section, aside, article {
+    display: block;
+}
+
+body {
+    font-family: Calibri;
+    line-height: 1.5;
+    font-size: 100%;
+    font-weight: 300;
+    /*background:#004e66;*/
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc00cc; /* hot pink? */
+}
+
+
+
+/* Rammeverk */
+/* Header */
+
+header.rammeverk {
+    z-index: 100;
+}
+
+
+#hovedtittel {
+    height: 24px;
+    margin: .75rem .75rem 0;
+}
+
+#hovedtittel a {
+    display: block;
+    padding: 24px 0 0;
+    height: 0;
+    background: transparent url("/images/logo-small.png") no-repeat 0 0;
+    overflow: hidden;
+    width: 156px;
+}
+
+
+/* Hovedmeny */
+/* Hamburger collapsing menu */
+
+#hovedmeny {
+    text-transform: uppercase;
+    padding: .5rem  .75rem;
+
+}
+
+#hovedmeny h2 {
+    margin: 0;
+    height: 0;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#hovedmeny h2:before {
+    display: block;
+	content: "\f0c9";
+	font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+
+
+#hovedmeny ul {
+    list-style-type: none;
+    margin: .75em 0 0;
+    padding: 0;
+}
+
+#hovedmeny .menypunkt {
+    cursor: pointer;
+    font-size: .85rem;
+    margin-top: .7rem;
+}
+
+#funksjoner, #bloggfeed {
+    display: none;
+}
+
+#main {
+    background-color: #ffffff;
+    color: #000;
+    overflow: hidden;
+}
+
+
+
+/* Page layouts: personregister, artikkel, veiviser */
+
+article {
+    padding-bottom: .75rem;
+}
+
+#breadcrumbs, #sidetittel{
+    padding: 0 .75rem;
+    margin: .75rem 0;
+}
+
+#breadcrumbs, article footer {
+    font-size: .85rem;
+}
+
+#sidetittel {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#ingress {
+    font-size: 1.3em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+#ingress p:first-child {
+    margin-top: 0;
+}
+
+
+#innholdsfortegnelse {
+    display: none;
+}
+
+#hovedbilde {
+    width: 100%;
+    display:block;
+}
+
+section {
+    padding: 0 .75rem;
+    margin: .75rem 0;
+}
+
+section h2, aside h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0 0 .75rem;
+    padding: 0;
+}
+
+section p, aside p {
+    margin: .75rem 0;
+}
+
+#sidebar {
+    display: none; /* Hide related info in sidebar on narrow -- eventually fix so just mobile */
+}
+
+/* artikkel + veiviser footer */
+
+article footer {
+    overflow: hidden;
+}
+
+#kilde, #publisert {
+    font-weight: 300;
+    font-style: italic;
+    padding: .75rem;
+    display: inline-block;
+}
+
+article footer .stoettemeny {
+    float: right;
+    padding: 0 .75rem;
+}
+
+article .stoettemeny, article .stoettemeny ul {
+    margin: 0;
+    padding: 0;
+}
+
+article .stoettemeny li {
+    display: inline-block;
+    padding: .75rem;
+}
+
+#publisert {
+    color: #666;
+}
+
+article footer .stoettemeny li {
+    height: 0;
+    width: 2em;
+    line-height: 1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+article footer .stoettemeny li a:before {
+	font-family: FontAwesome;
+    display: inline-block;
+    color: #666
+}
+
+article footer .stoettemeny li.del a:before {
+	content: "\f064";
+}
+
+article footer .stoettemeny li.skrivut a:before {
+	content: "\f02f";
+}
+
+article footer .stoettemeny li.language a:before {
+	content: "\f0ac";
+}
+
+
+
+
+
+
+/* Framework footer */
+
+footer.rammeverk section {
+    padding: .75rem;
+}
+
+footer.rammeverk section#bloggfeed {
+    padding: .75rem 0 0 ;
+}
+
+#bloggfeed .container {
+    padding: .75rem;
+    background-color: #464D54;
+}
+
+#bloggfeed h2 {
+    margin: 0 0 1.5rem;
+}
+
+#bloggfeed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: .85rem;
+}
+
+#bloggfeed li {
+    border: 0px solid #999;
+    border-top-width: 1px;
+    padding: .75rem 0;
+    padding-right: 5rem;
+}
+
+#bloggfeed li:first-child {
+    border: 0;
+}
+
+#bloggfeed .post-dato {
+    float: right;
+    padding-left: .75rem;
+   margin-right: -5rem;
+
+}
+
+#facebook:before, #twitter:before {
+	content: "\f09a";
+	font-family: FontAwesome;
+    color: #999;
+    padding-right: .25em;
+}
+
+#twitter:before {
+	content: "\f099";
+}
+
+
+footer.rammeverk section#socialmedia {
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Relatert info */
+
+.relatert-info {
+    padding-bottom: .75rem;
+}
+
+.relatert-info h2 {
+    font-weight: 400;
+    padding: 0;
+    margin: .75rem;
+}
+
+#tema {
+    border: 0;
+    background: white;
+    margin: .75rem 0;
+    z-index: 100;
+}
+
+#tema h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1;
+    padding: .75rem 0
+}
+
+#tema .container {
+    padding: .75rem;
+}
+
+#tema .container a  {
+    color: purple;
+}
+
+#tema .container h3 {
+    color: white;
+}
+
+.relatert {
+    border: 0px solid #afb1b2;
+    border-top-width: 1px;
+    margin: 3rem 0 .75rem;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.relatert h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 1;
+    padding: 1.5rem 0 .75rem;
+    text-align: center;
+    position: relative;
+    color: purple
+}
+
+.relatert h3:before {
+    font-size: 1.5rem;
+    padding: .75rem 0;
+    color: #aaa;
+    display: block;
+	font-family: FontAwesome;
+    background: #eee;
+    width: 1.5em;
+    position: absolute;
+    top: .75rem;
+    height: 1.5rem;
+    left: 50%;
+    margin-left: -.75rem;
+    margin-top: -2.25rem;
+}
+
+.hjelpetelefon h3:before {
+	content: "\f095";
+}
+
+.faq h3:before {
+	content: "\f128";
+}
+
+.fastlege h3:before {
+	content: "\f0f0";
+}
+
+.intern-lenke h3:before {
+	content: "\f0eb";
+}
+
+.feedback.skjema h3:before {
+	content: "\f128";
+}
+
+.brosjyre h3:before {
+	content: "\f15b";
+}
+
+.relatert p {
+    margin-top: 0;
+}
+
+.relatert a:hover {
+    text-decoration: none;
+}
+
+
+/* Veiviser-inngang */
+
+.veiviser-inngang {
+    color: white;
+    line-height: 3rem;
+    overflow: hidden;
+    padding: 0;
+}
+
+.veiviser-inngang .container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.veiviser-inngang h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .75rem;
+    background: purple;
+    overflow: hidden;
+    margin: 0;
+}
+
+.veiviser-inngang span {
+    font-weight: 500;
+}
+
+.veiviser-inngang span.ikon {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.veiviser-inngang span.ikon:after {
+    float: right;
+	font-family: FontAwesome;
+	content: "\f054";
+    margin-left: .75rem;
+}
+
+.veiviser-inngang .js-expanded span.ikon:after {
+	content: "\f078";
+}
+
+.veiviser-velg {
+    background: white;
+    color: black;
+    padding: .75rem;
+}
+
+.veiviser-velg ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.veiviser-velg li {
+    margin: .75rem 0;
+    list-style-type: none;
+    position: relative;
+    line-height: 1.5rem;
+}
+
+.veiviser-velg input[type="radio"] {
+    display: none;
+}
+
+.veiviser-velg label:before {
+    content: "";
+    display: block;
+    float: left;
+    width:  16px;
+    height: 16px;
+    border: 1px solid purple;
+    border-radius: 8px;
+    position: absolute;
+    top: .25rem;
+    left: 0;
+}
+
+.veiviser-velg input[type=radio]:checked + label:before {
+    background-image: none;
+    background-color:purple;
+    box-shadow: inset 0 0 0 4px white;
+    }
+
+.veiviser-velg label {
+    display: block;
+    padding-left: 1.5rem;
+}
+
+.veiviser-neste {
+    font-size: 2rem;
+    background: purple;
+    padding: .75rem 1.5rem;
+    color: white;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.veiviser-neste:hover, .veiviser-neste:hover:after  {
+    color: white;
+    text-decoration: none;
+}
+
+.veiviser-neste:after  {
+    float: right;
+	font-family: FontAwesome;
+	content: "\f178";
+    font-weight: 100;
+    margin-left: .75rem;
+}
+
+
+
+
+
+
+/* veiviser */
+
+.veiviser article {
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.veiviser #innholdsfortegnelse {
+    float: left;
+    padding-top: 0;
+}
+
+.veiviser #sidetittel {
+    margin-bottom: 1.5rem
+}
+
+.veiviser #sidetittel span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    line-height: 1.2em;
+}
+
+.veiviser section {
+    float: right;
+}
+
+
+
+
+/* Personregister */
+
+table {
+    line-height: 1.2em;
+}
+
+caption, thead {
+    display: none;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+    display: block;
+}
+
+th {
+    padding-top: .75rem;
+}
+
+
+
+
+
+
+
+
+/* Classes for toggling content */
+
+.pseudo-link {
+    cursor: pointer;
+}
+
+article .has-hidden-content h2,
+article .has-visible-content h2 {
+    padding-right: 1.5em;
+}
+
+article .has-hidden-content h2:before,
+article .has-visible-content h2:before {
+	font-family: FontAwesome;
+	content: "\f068"; /* Minus-sign */
+    float: right;
+    margin-right: -1.5em;
+}
+
+article .has-hidden-content h2:before {
+	content: "\f067"; /* Plus-sign */
+}
+
+
+
+
+/**********************************************************************/
+/* Landscape-oriented mobiles and portrait-oriented tablets. Two columns. */
+@media only screen and (min-width: 39em) {
+
+#funksjoner, article footer, #bloggfeed, #sidebar {
+    display: block;
+}
+
+
+
+
+
+
+/* Rammeverksheader */
+
+#funksjoner {
+    display: block;
+    font-size: .9rem;
+    height: 3rem;
+    background: #17191c;
+}
+
+#funksjoner, #funksjoner a {
+    color: #b7b9bc;
+}
+
+header .stoettemeny, #funksjoner ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .stoettemeny {
+    float: left;
+}
+
+#innlogging {
+    float: right;
+}
+
+#funksjoner li {
+    list-style-type: none;
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 .75rem;
+}
+
+#innloggingslenke li {
+    margin-right: 0
+}
+
+#innlogging a {
+    position: relative;
+    color: #d374c6;
+    text-decoration: none;
+}
+
+#innlogging a:before,
+#innlogging a:after {
+	font-family: FontAwesome;
+    padding: .25em;
+}
+
+#innlogging a:before {
+    color: #72767a;
+}
+
+.innlogget #innlogging a,
+.innlogget #innlogging a:before  {
+    color: #d374c6
+}
+
+#innloggingslenke a:before { content: "\f09c"; }
+#profillenke a:before { content: "\f023"; }
+#profillenke a:after { content: "\f078"; }
+#notifikasjoner a:before { content: "\f069"; }
+
+#funksjoner li#notifikasjoner,
+#funksjoner li#profillenke,
+.innlogget #funksjoner li#innloggingslenke {
+    display: none;
+}
+
+.innlogget #funksjoner li#notifikasjoner,
+.innlogget #funksjoner li#profillenke {
+    display: inline;
+}
+
+header .stoettemeny #tekststoerrelse:hover {
+    text-decoration: underline;
+    cursor: help;
+}
+
+header .stoettemeny #tekststoerrelse .veiledning {
+	display: none;
+}
+
+header .stoettemeny #tekststoerrelse:hover .veiledning {
+	display: block;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    right: 1rem;
+    background: black;
+    color: white;
+    border: 20px solid white;
+    font-size: 3em;
+    z-index: 999;
+    padding: 1em;
+}
+
+#hovedtittel {
+    height: 33px;
+}
+
+#hovedtittel a {
+    display: block;
+    padding: 33px 0 0;
+    background-image: url("../images/logo.png");
+    width: 214px;
+}
+
+
+/* Mega-menu for landscape-oriented mobiles and portrait-oriented tablets. */
+
+header.rammeverk {
+    position: relative;
+}
+
+header.rammeverk .container{
+    overflow: visible;
+}
+
+#hovedmeny {
+    padding: 0;
+}
+
+#hovedmeny a {
+    color: black;
+}
+
+#hovedmeny .menypunkt {
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin: 1.5rem 0 .75rem;
+}
+
+#hovedmeny .hovedmenypunkt {
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+#hovedmeny .hovedmenypunkt:last-child {
+    float: right;
+}
+
+#hovedmeny .hovedmenypunkt.active:after {
+	content: "\f0d8";
+	font-family: FontAwesome;
+    font-size: 1.5rem;
+    height: .5em;
+    line-height: .5em;
+    width: .5em;
+    bottom: -2px;
+    margin-left: -.25em;
+    position: absolute;
+}
+
+#hovedmeny .hovedmenypunkt.active:after,
+#hovedmeny .hovedmenypunkt:hover {
+    color: #ddd;
+}
+
+#hovedmeny li span {
+    height: 3rem;
+    padding: 0 .75rem;
+    border: 0px solid #666;
+    border-left-width: 1px
+}
+
+#hovedmeny li:first-child span, #hovedmeny li:last-child span {
+    border-left-width: 0
+}
+
+#hovedmeny li:last-child span:before {
+	content: "\f002";
+	font-family: FontAwesome;
+    padding-right: .5em;
+}
+
+#hovedmeny h2, #hovedmeny h2:before {
+    display: none;
+}
+
+#hovedmeny ul {
+    overflow: visible;
+    padding:0;
+    margin: 0;
+}
+
+#hovedmeny li {
+    display: inline-block;
+    overflow: visible;
+}
+
+
+
+
+/* page layouts */
+
+.uten-bilde #sideheader {
+    overflow: hidden;
+}
+
+
+article, section {
+    width: 37.5rem;
+}
+
+.minhelse section {
+    width: auto;
+}
+
+article {
+    margin: 0 auto;
+}
+
+.container {
+    width: 37.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+#sidetittel {
+    line-height: 1.2;
+}
+
+#innholdsfortegnelse,
+#ingress {
+    width: 18rem;
+}
+
+#ingress {
+    float: left;
+}
+
+.uten-innholdsfortegnelse #ingress {
+    width: auto;
+    float: none;
+}
+
+#hovedbilde {
+    margin: .75rem 0;
+    width: 37.5rem;
+    max-width: 37.5rem;
+}
+
+#innholdsfortegnelse {
+    display: block;
+    float: right;
+    padding: .75rem .75rem 3rem;
+    position: relative;
+}
+
+#innholdsfortegnelse .container {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+    border-width: 0 0 .75rem .75rem;
+    background: transparent;
+    border-left-color: #333;
+    float: none;
+    width: 18rem;
+}
+
+#innholdsfortegnelse h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+    padding: .75rem .75rem .75rem 0;
+    width: auto;
+    float: none;
+    background: #333;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#innholdsfortegnelse ul, #innholdsfortegnelse ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#innholdsfortegnelse li {
+    padding: .75rem .75rem 0 1rem;
+    position: relative;
+}
+
+.artikkel #innholdsfortegnelse li:before {
+	font-family: FontAwesome;
+	content: "\f054";
+    display: block;
+    float: left;
+    margin: .25rem 0 0 -1rem;
+    color: purple;
+    font-weight: 100;
+    font-size: .85rem;
+}
+
+#hovedbilde, .veiviser-inngang {
+    width: 36rem;
+    margin: .75rem;
+}
+
+
+/* Veiviser-inngang */
+
+.veiviser-inngang .container {
+    width: 36rem;
+}
+
+.veiviser-inngang h3 {
+    margin: 0;
+}
+
+
+.veiviser-velg li {
+    width: 17rem;
+    float: left;
+}
+
+.veiviser-velg li:nth-child(even) {
+    float: right;
+}
+
+/* Veiviser */
+
+.veiviser #innholdsfortegnelse ol {
+    counter-reset:li;
+}
+
+.veiviser ol li {
+    margin-left: 2rem;
+}
+
+.veiviser ol li:before {
+    content:counter(li);
+    counter-increment:li;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left: -2rem;
+}
+
+.veiviser #innholdsfortegnelse li.active {
+    font-weight: 500;
+    color: white;
+}
+
+.veiviser #innholdsfortegnelse li.active:before {
+    background: purple;
+
+}
+
+
+/* Personregister */
+
+th, td {
+    padding-left: 1.5rem;
+    display: table-cell;
+    padding-top: .75rem;
+}
+
+th {
+    width: 7.5rem;
+}
+
+th:first-child {
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+/* Relatert info, both in the text and under the article */
+
+.relatert-info {
+    overflow: hidden;
+}
+
+section .relatert-info {
+    float: right;
+    margin: 0 0 .75rem 0;
+}
+
+.relatert-info .relatert {
+    width: 18rem;
+    float: left;
+    margin: 3rem 0 .75rem;
+    padding: 0 .75rem;
+}
+
+.relatert-info .relatert h3 {
+    margin-top: 0;
+}
+
+.relatert-info .relatert:nth-child(even) {
+    float: right;
+}
+
+#tema {
+    margin: .75rem 0;
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+/* Framework footer */
+
+footer.rammeverk .container {
+    padding: .75rem 0;
+    position: relative;
+}
+
+/* Blog feed*/
+
+#bloggfeed .container {
+    width: auto;
+}
+
+footer.rammeverk section#bloggfeed {
+    border: 0 solid #464D54;
+    border-width: .75rem 0 0 .75rem;
+    border-left-color: transparent;
+    width: 18.75rem;
+    position: absolute;
+    top: 2.25rem;
+    right: 0;
+    padding: 0;
+}
+
+
+
+
+
+}/******************************************************************** */
+/* Narrow desktops and landscape-oriented tablets.  Three columns. */
+@media only screen and (min-width: 58.5em) {
+
+#main, article {
+    overflow: hidden;
+}
+
+article, .container {
+   width: 57rem;
+}
+
+article .container, article footer {
+    width: 37.5rem;
+    float: left;
+}
+
+#hovedtittel, #hovedmeny, #hovedmeny .hovedmenypunkt {
+    height: 6rem;
+    line-height: 6rem;
+}
+
+#hovedtittel {
+    float: left;
+    margin: 0 4.5rem 0 .75rem;
+    vertical-align: middle;
+}
+
+#hovedtittel a {
+    background-position: center center;
+    padding-top: 6rem;
+}
+
+#hovedmeny .hovedmenypunkt.active {
+	border: 0px solid pink;
+    border-top-width: 1px;
+}
+
+
+footer.rammeverk .container {
+    padding-right: 19.5rem;
+    overflow: visible;
+}
+
+footer.rammeverk section {
+    width: 18rem;
+    float: left;
+}
+
+footer.rammeverk section:first-child {
+    margin-right: 1.5rem;
+}
+
+footer.rammeverk section#bloggfeed {
+    top: -4.5rem;
+}
+
+
+
+/* Relatert info, both in the text and in the sidebar */
+
+.relatert-info h2, li.relatert-info {
+    display: none
+}
+
+.relatert-info {
+    width: 18.75rem;
+    float: right;
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+    clear: right;
+}
+
+.relatert-info .relatert,
+.relatert-info .relatert:nth-child(even) {
+    float: none;
+}
+
+.relatert-info .relatert {
+    float: none;
+    width: auto;
+    margin-left: .75rem;
+}
+
+#tema {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+    border-width: .75rem 0 0 .75rem;
+    background: transparent;
+    border-top-color: white;
+}
+
+#tema .container {
+    width: auto;
+    float: none;
+    background: white;
+}
+
+#tema h3 {
+    padding-top: 0;
+}
+
+
+}/*********************************************************************/
+/* Typical desktops. Four columns. */ @media only screen and (min-width: 78em) {
+
+/* Rammeverk */
+
+article, .container {
+    width: 76.5rem
+}
+
+article .container {
+    width: 57rem;
+}
+
+#ingress {
+    float: none;
+    width: auto;
+}
+
+.uten-bilde #sideheader {
+    overflow: visible;
+}
+
+}/*********************************************************************/
+
+
+

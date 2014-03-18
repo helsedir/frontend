@@ -1,0 +1,96 @@
+.minimertTekst
+{
+    min-height: 70px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.utvidbarMeny{
+    width:330px;
+    min-height: 70px;
+    border:1px solid #eeeeee;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.abbonnementodul{
+    width:250px;
+    min-height: 70px;
+    border:1px solid gray;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    clear: both;
+    overflow: auto;
+}
+
+h1{
+    font-size: 2em;
+    font-family: "Soho Gothic Pro Medium";
+}
+
+#ingress{
+    font-size: 1.125em;
+    font-family: "Soho Gothic Pro Medium";
+
+
+}
+
+h2{
+    font-family: "Soho Gothic Pro Medium";
+}
+
+h3{
+    font-size: 1.125em;
+    font-family: "Soho Gothic Pro Medium";
+}
+
+a{
+text-decoration: underline;
+    font-family: "Soho Gothic Pro Medium";
+    color: #004e66;
+
+}
+
+a:visited{
+    color: #df9922
+;
+}
+
+.alignLeft{
+    float:left;
+}
+
+.alignRight{
+    float: right;
+}
+
+.kontaktModul{
+    font-family: "soho gothic pro medium";
+    /*float: right;*/
+    margin: 4px 0;
+    padding: 5px;
+}
+
+#breadcrumbs a{
+    text-decoration: none;
+    color: #004e66;
+}
+
+
+#sidelogo{
+
+    background-color: #ffffff;
+    background-image: url('../img/HDIR-LOGO-HORISONTAL-NEW.png');
+    background-repeat: no-repeat;
+    min-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
