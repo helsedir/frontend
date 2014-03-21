@@ -77,6 +77,7 @@ a:visited{
     /*float: right;*/
     margin: 4px 0;
     padding: 5px;
+    display: inline-block;
 }
 
 #breadcrumbs a{
@@ -93,4 +94,45 @@ a:visited{
     min-height: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.fargeboks1{
+    width: 6.250em;
+    height: 0.625em;
+    background:#004e66;
+    display: inline-block;
+  float: left;
+}
+.fargeboks2{
+    width: 6.250em;
+    height: 0.625em;
+    background:#6cb4b5;
+    display: inline-block;
+float: left;
+}
+.fargeboks3{
+    width: 6.250em;
+    height: 0.625em;
+    background:#0093a7;
+    display: inline-block;
+    float: left;
+}
+
+.nedlastingsLinker {
+    list-style-type: none;
+    padding: 12px;
+}
+
+.nedlastingsLinker li {
+    margin-bottom: 15px;
+}
+
+.nedlastingsLinker img {
+    padding-left: 0.5em;
+    vertical-align: bottom;
+    height: 1.4em;
+}
+
+.nedlastingsLinker p {
+    margin: 0;
 }

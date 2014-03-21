@@ -1,178 +1,216 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Foundation 4</title>
-    <link href="css/master.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/tabs.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Foundation 4</title>
+        <link href="css/master.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/tabs.css" rel="stylesheet">
 
 
-    <script type="text/javascript">
-        (function () {
-            var path = '//easy.myfonts.net/v2/js?sid=212833(font-family=Soho+Gothic+Pro+Light)&sid=212835(font-family=Soho+Gothic+Pro+Regular)&sid=212837(font-family=Soho+Gothic+Pro+Medium)&sid=212839(font-family=Soho+Gothic+Pro+Bold)&key=luwqtZRINA',
+        <script type="text/javascript">
+            (function() {
+                var path = '//easy.myfonts.net/v2/js?sid=212833(font-family=Soho+Gothic+Pro+Light)&sid=212835(font-family=Soho+Gothic+Pro+Regular)&sid=212837(font-family=Soho+Gothic+Pro+Medium)&sid=212839(font-family=Soho+Gothic+Pro+Bold)&key=luwqtZRINA',
                     protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
                     trial = document.createElement('script');
-            trial.type = 'text/javascript';
-            trial.async = true;
-            trial.src = protocol + path;
-            var head = document.getElementsByTagName("head")[0];
-            head.appendChild(trial);
-        })();
-    </script>
+                trial.type = 'text/javascript';
+                trial.async = true;
+                trial.src = protocol + path;
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(trial);
+            })();
+        </script>
 
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/changeLayoutOnHeaderContents.js"></script>
-    <script src="js/clickableBox.js"></script>
-    <script src="js/expand.js"></script>
-    <script src="js/feedback.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/toggle.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/changeLayoutOnHeaderContents.js"></script>
+        <script src="js/clickableBox.js"></script>
+        <script src="js/expand.js"></script>
+        <script src="js/feedback.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/toggle.js"></script>
 
-</head>
-<body class="artikkel js-toggler-cue">
+    </head>
+    <body class="artikkel">
+        <span id="breakpoint" class="js-toggler-cue">text</span>
+        <div id="main">
+            <article>
+                <div class="container">
+                    <header id="sideheader">
+                        <nav id="breadcrumbs">
+                            <a href="#">Forside</a>
+                            >
+                            <a href="#">Lover og regler</a>
+                        </nav>
+                        <h1 id="sidetittel">Helsepersonelloven</h1>
 
-<div id="main">
-    <article class="uten-bilde">
-        <div class="container">
-            <header id="sideheader">
-                <nav id="breadcrumbs">
-                    <a href="#">Forside</a>
-                    >
-                    <a href="#">Lover og regler</a>
-                </nav>
-                <h1 id="sidetittel">Helsepersonelloven</h1>
-
-                <div id="ingress">
-                    <p>
-                        Loven regulerer yrkesutøvelsen til helsepersonell.
-                    </p>
-                </div>
-                <h2 id="undertittel">Fortolkning av loven</h2>
-            </header>
-            <section id="section1">
-                <h3>
-                    Rundskriv og veiledere
-                </h3>
-                <ul>
-                    <li>
-                        <a href="#">Helsepersonelloven med kommentarer. Rundksriv</a>
-                    </li>
-                    <li>
-                        <a href="#">Helsetjenestens og politiets ansvar for psykisk syke. Rundskriv</a>
-                    </li>
-                    <li>
-                        <a href="#">Helsepersonells taushetsplikt. Vern av pasientens integritet i helsepersonells
-                            samtaler med pasienten. Rundskriv</a>
-                    </li>
-                    <li>
-                        <a href="#">Helsepersonells plikt og rett til å gi opplysninger til barneverntjenesten, politiet
-                            og sosialtjenesten i saker som dreier seg om mishandling av barn i hjemmet. Veileder</a>
-                    </li>
-                </ul>
-            </section>
-            <section id="section2">
-                <h3>
-                    Kapittel 1 <br/>Helsepersonell og helsehjelp
-                </h3>
-
-                <div class="tabs">
-                    <a data-toggle="tab1">Spørsmål og svar</a>
-                    <a data-toggle="tab2">Brev og uttalelser</a>
-                </div>
-                <div class="tabContent">
-                    <div id="tab1">
-                        <div class="minimertTekst">
-                            <h3 class="js-toggler">Hvem gjelder loven for?</h3>
-
-                            <p style="display: block">
-                                ​Loven omfatter helsepersonell og virksomheter som yter helsehjelp.
-
-                                Loven gjelder all yrkesutøvelse der man opptrer i kraft av å være helsepersonell, uavhengig av hvilken profesjon man tilhører, type helsehjelp man yter, hvilken del av helse- og omsorgstjenesten man arbeider i, om det er i offentlig eller privat regi eller om arbeidet er fast eller leilighetsvis.
-
-                                Loven gjelder som utgangspunkt også andre enn autorisert helsepersonell så framt de yter helsehjelp i helse- og omsorgstjenesten og apotek.
-
-                                Som hovedregel vil norsk helsepersonell som oppholder seg i og yter helsetjenester til pasienter som oppholder seg i utlandet, ikke være omfattet av helsepersonelloven.
-
-                                Se mer i loven § 2 og merknadene til denne i rundskriv IS-2012.
-
+                        <div id="ingress">
+                            <p>
+                                Loven regulerer yrkesutøvelsen til helsepersonell.
                             </p>
                         </div>
-                        <div class="minimertTekst">
-                            <h3 class="js-toggler">Hvem er helsepersonell?</h3>
+                    </header>
+                    <h2 id="undertittel">Fortolkning av loven</h2>
+                    <section id="section1">
+                        <h3>
+                            Rundskriv og veiledere
+                        </h3>
+                        <ul class="nedlastingsLinker">
+                            <li>
+                                <a href="#">Helsepersonelloven med kommentarer. Rundksriv</a>
+                                <p>
+                                    Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">Helsetjenestens og politiets ansvar for psykisk syke. Rundskriv</a>
+                                                                <p>
+                                    Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">Helsepersonells taushetsplikt. Vern av pasientens integritet i helsepersonells
+                                    samtaler med pasienten. Rundskriv</a>
+                                                                <p>
+                                    Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">Helsepersonells plikt og rett til å gi opplysninger til barneverntjenesten, politiet
+                                    og sosialtjenesten i saker som dreier seg om mishandling av barn i hjemmet. Veileder</a>
+                                                                <p>
+                                    Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                                            
 
-                            <p style="display: block">
-                                Helsepersonell er for det første personell som har autorisasjon eller lisens etter reglene i helsepersonelloven §§ 48-49. Videre regnes også andre som arbeider i helse- og omsorgstjenesten og apotek enn de som har autorisasjon og lisens, som helsepersonell dersom de yter helsehjelp.
-
-                                Elever og studenter regnes som helsepersonell når de utfører helsehjelp i forbindelse med helsefaglig opplæring, for eksempel i praksisperioder.
-
-                                Se mer i loven § 3 og merknadene til denne i rundskriv IS-2012.
-                            </p>
+                    <section id="section2">
+                            
+                        <div class="contentWrapper js-toggler">
+                            <h3 >
+                                Kapittel 1 <br/>Helsepersonell og helsehjelp
+                            </h3>
                         </div>
-                        <div class="minimertTekst">
 
-                            <h3 class="js-toggler">Hva er helsehjelp?</h3>
+                        <h4>Hvem gjelder loven for?</h4>
 
-                            <p style="display: block">
-                                ​Med helsehjelp menes enhver handling som har forebyggende, diagnostisk, behandlende, helsebevarende, rehabiliterende eller pleie og omsorgsformål og som utføres av helsepersonell. Nærmere om hva de enkelte begrepene innebærer fremgår i merknadene til helsepersonelloven § 3 i rundskriv IS-2012.
-                            </p>
+                        <p style="display: block">
+                            Loven omfatter helsepersonell og virksomheter som yter helsehjelp.
+                        </p>
+
+                        <p style="display: block">
+                            Loven gjelder all yrkesutøvelse der man opptrer i kraft av å være helsepersonell, uavhengig av hvilken profesjon
+                            man tilhører, type helsehjelp man yter, hvilken del av helse- og omsorgstjenesten man arbeider i, om det er i
+                            offentlig eller privat regi eller om arbeidet er fast eller leilighetsvis.
+                        </p>
+
+                        <p style="display: block">
+                            Loven gjelder som utgangspunkt også andre enn autorisert helsepersonell så framt de yter helsehjelp i helse- og
+                            omsorgstjenesten og apotek.
+                        </p>
+
+                        <p style="display: block">
+                            Som hovedregel vil norsk helsepersonell som oppholder seg i og yter helsetjenester til pasienter som oppholder
+                            seg i utlandet, ikke være omfattet av helsepersonelloven.
+                        </p>
+
+                        <p style="display: block">
+                            Se mer i loven § 2 og merknadene til denne i rundskriv IS-2012.
+                        </p>
+
+
+
+                        <h4>Hvem er helsepersonell?</h4>
+
+                        <p style="display: block">
+                            Helsepersonell er for det første personell som har autorisasjon eller lisens etter reglene i helsepersonelloven
+                            §§ 48-49. Videre regnes også andre som arbeider i helse- og omsorgstjenesten og apotek enn de som har
+                            autorisasjon og lisens, som helsepersonell dersom de yter helsehjelp.
+                        </p>
+
+                        <p style="display: block">
+                            Elever og studenter regnes som helsepersonell når de utfører helsehjelp i forbindelse med helsefaglig opplæring,
+                            for eksempel i praksisperioder.
+                        </p>
+
+                        <p style="display: block">
+                            Se mer i loven § 3 og merknadene til denne i rundskriv IS-2012.
+                        </p>
+
+
+
+
+                        <h4>Hva er helsehjelp?</h4>
+
+                        <p style="display: block">
+                            Med helsehjelp menes enhver handling som har forebyggende, diagnostisk, behandlende, helsebevarende,
+                            rehabiliterende eller pleie og omsorgsformål og som utføres av helsepersonell. Nærmere om hva de enkelte
+                            begrepene innebærer fremgår i merknadene til helsepersonelloven § 3 i rundskriv IS-2012.
+                        </p>
+                             
+                    </section>
+                                                
+                    <section>
+                        <div class="contentWrapper js-toggler">
+                        <h3>
+                            Kapittel 25 <br/>Taushetsplikt
+                        </h3>
+                            </div>
+
+
+                        <h4 >Har helsepersonell taushetsplikt seg i mellom?</h4>
+
+                        <p style="display: block">
+                            Helsepersonell har som utgangspunkt taushetsplikt om alt de får vite om en pasients helse
+                            eller personlige forhold. Taushetsplikten gjelder også helsepersonell imellom.
+                            Unntak gjelder når samarbeidende personell må ha opplysninger for å kunne gi nødvendig og
+                            forsvarlig helsehjelp.
+                            Se helsepersonelloven § 25 og merknadene til denne i rundskriv IS-2012.
+                        </p>
+
+                        <h4>Når har helsepersonell opplysningsplikt til barneverntjenesten</h4>
+
+                        <p style="display: block">
+                            Helsepersonell har opplysningsplikt når de har mistanke om at et barn blir mishandlet, utsettes for
+                            andre former for alvorlig omsorgssvikt eller dersom barnet har vist vedvarende og alvorlige
+                            atferdsvansker.
+                        </p>
+                        <p style="display: block">
+
+                            Opplysningsplikten inntrer også der det er mistanke om at et barn utsettes for alvorlige overgrep
+                            fra andre enn sine nærmeste omsorgspersoner, og der man mistenker at barn kan bli utsatt for
+                            kjønnslemlestelse.
+                        </p>
+                        <p style="display: block">
+
+                            Det kreves ikke at helsepersonellet har sikker viten om mishandling eller omsorgssvikt, men det må
+                            foreligge en begrunnet mistanke. Helsepersonellet bør så langt det er mulig og hensiktsmessig
+                            informere foreldre og barn før opplysninger gis til barnevernet.
+                        </p>
+                        <p style="display: block">
+
+                            Ytterligere informasjon om helsepersonells informasjonsplikt til barnevernet finnes i rundskriv
+                            IS-17/2006 om helsepersonells plikt og rett til å gi opplysninger til barneverntjenesten, politiet
+                            og sosialtjenesten ved mistanke om; mishandling av barn i hjemmet, andre former for alvorlig
+                            omsorgssvikt, misbruk av rusmidler under graviditet.
+                        </p>
+                        <p style="display: block">
+
+                            Se loven § 33 og merknadene til denne i rundskriv IS-2012.
+                        </p>
+
+                    </section>
+                    <section id="section4">
+                        <!--<div class="tabContent">-->
+
+                        <h3 class="utvidbarMeny js-expander">Om helsepersonelloven</h3>
+
+                        <div class="utvidbarMeny js-expand">
+                            Tekst
                         </div>
-                    </div>
-                    <div id="tab2">
-                    </div>
-                </div>
-            </section>
-            <section id="section3">
-                <h3>
-                    Kapittel 25 <br/>Taushetsplikt
-                </h3>
-
-                <div class="tabs">
-                    <a>Spørsmål og svar</a>
-                    <a>Brev og uttalelser</a>
-                </div>
-                <div class="tabContent">
-                    <div id="tab3">
-                        <div class="minimertTekst">
-                            <h3 class="js-toggler">Har helsepersonell taushetsplikt seg i mellom?</h3>
-                            <p style="display: block">
-                                ​Helsepersonell har som utgangspunkt taushetsplikt om alt de får vite om en pasients helse
-                                eller personlige forhold. Taushetsplikten gjelder også helsepersonell imellom.
-                                Unntak gjelder når samarbeidende personell må ha opplysninger for å kunne gi nødvendig og
-                                forsvarlig helsehjelp.
-                                Se helsepersonelloven § 25 og merknadene til denne i rundskriv IS-2012.
-                            </p>
-                        </div>
-                        <div class="minimertTekst">
-
-                            <h3 class="js-toggler">Når har helsepersonell opplysningsplikt til barneverntjenesten</h3>
-
-                            <p style="display: block">
-                                ​Helsepersonell har opplysningsplikt når de har mistanke om at et barn blir mishandlet, utsettes for andre former for alvorlig omsorgssvikt eller dersom barnet har vist vedvarende og alvorlige atferdsvansker.
-
-                                Opplysningsplikten inntrer også der det er mistanke om at et barn utsettes for alvorlige overgrep fra andre enn sine nærmeste omsorgspersoner, og der man mistenker at barn kan bli utsatt for kjønnslemlestelse.
-
-                                Det kreves ikke at helsepersonellet har sikker viten om mishandling eller omsorgssvikt, men det må foreligge en begrunnet mistanke. Helsepersonellet bør så langt det er mulig og hensiktsmessig informere foreldre og barn før opplysninger gis til barnevernet.
-
-                                Ytterligere informasjon om helsepersonells informasjonsplikt til barnevernet finnes i rundskriv IS-17/2006 om helsepersonells plikt og rett til å gi opplysninger til barneverntjenesten, politiet og sosialtjenesten ved mistanke om; mishandling av barn i hjemmet, andre former for alvorlig omsorgssvikt, misbruk av rusmidler under graviditet.
-
-                                Se loven § 33 og merknadene til denne i rundskriv IS-2012.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab4">
-                </div>
-            </section>
-            <section id="section4">
-                <div class="tabContent">
-
-                <h3 class="utvidbarMeny js-expander" style="cursor: pointer;">Om helsepersonelloven</h3>
-                <div class="utvidbarMeny js-expand" style="display: none;">
-                Tekst
-                </div>
                         <ul>
                             <li>
                                 <a href="#">Helsepersonelloven (Lovdata)</a>
@@ -181,50 +219,63 @@
                                 <a href="#">Forskrifter (Lovdata)</a>
                             </li>
                         </ul>
-                </div>
-            </section>
-            <section id="section5">
-                <div class="tabContent">
-                    <div class="abbonnementodul">
+                        <!--</div>-->
+                    </section>
+                    <section id="section5">
+                        <!--<div class="tabContent">-->
+                        <div class="abbonnementodul">
 
-                    <p>Få oppdateringer fra denne siden</p>
+                            <p>Få oppdateringer fra denne siden</p>
 
-                        <span class="alignLeft">
-                        <img src="img/mail.png" alt="email" width="20px" height="auto">
-                        <a href="#">E-post</a>
-                        </span>
+                            <span class="alignLeft">
+                                <img src="img/mail.png" alt="email" width="20px" height="auto">
+                                <a href="#">E-post</a>
+                            </span>
 
-                        <span class="alignRight">
+                            <span class="alignRight">
 
-                        <img src="img/rss.png" alt="rss" width="15px" height="auto">
-                        <a href="#">RSS-strøm</a>
-                        </span>
+                                <img src="img/rss.png" alt="rss" width="15px" height="auto">
+                                <a href="#">RSS-strøm</a>
+                            </span>
 
 
+                        </div>
+                        <!--</div>-->
+                    </section>
+                    <div class="kontaktModul">
+                        <h3>Ansvarlig for denne siden</h3>
+
+                        <div class="fargeboks1"></div>
+                        <div class="fargeboks2"></div>
+                        <div class="fargeboks3"></div>
+                        <!--<br/>-->
+                        <!--<table class="kontaktModulStyling" cellspacing="0">-->
+                        <!--<tr>-->
+                        <!--<td style="background-color: #004e66"></td>-->
+                        <!--<td style="background-color: #6cb4b5"></td>-->
+                        <!--<td style="background-color: #0093a7"></td>-->
+                        <!--</tr>-->
+                        <!--</table>-->
+                        <img src="img/person_placeholder.png">
+
+                        <p>
+                            Julia Olsen<br/>
+                            Rådgiver<br/>
+                            Norsk pasientregister<br/>
+                            <br/>
+                            Telefon: 974 57 585<br/>
+                            Epost: jol@helsedir.no
+                        </p>
                     </div>
                 </div>
-            </section>
-                <div class="kontaktModul">
-                    <h3>Ansvarlig for denne siden</h3>
-                    <img src="img/person_placeholder.png">
-                <p>
-                    Julia Olsen<br/>
-                    Rådgiver<br/>
-                    Norsk pasientregister<br/>
-                    <br/>
-                    Telefon: 974 57 585<br/>
-                    Epost: jol@helsedir.no
-                </p>
-                </div>
+            </article>
         </div>
-    </article>
-</div>
 
-<script src="js/tabs.js"></script>
-<!--<script>-->
-<!--$(function () {-->
-<!--$(".tabs a").html5jTabs();-->
-<!--});-->
-<!--</script>-->
-</body>
+        <script src="js/tabs.js"></script>
+        <!--<script>-->
+        <!--$(function () {-->
+        <!--$(".tabs a").html5jTabs();-->
+        <!--});-->
+        <!--</script>-->
+    </body>
 </html>

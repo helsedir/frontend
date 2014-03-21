@@ -604,12 +604,42 @@ article .has-hidden-content h2:before {
 	content: "\f067"; /* Plus-sign */
 }
 
+/**********************************************************************/
+/* Custom code */
+article .contentWrapper{
+      min-height: 70px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article .has-hidden-content h3,
+article .has-visible-content h3 {
+    padding-right: 1.5em;
+}
+
+article .has-hidden-content h3:before,
+article .has-visible-content h3:before {
+	font-family: FontAwesome;
+	content: "\f106"; 
+    float: right;
+    margin-right: -0.7em;
+    font-size: 2em;
+
+}
+
+article .has-hidden-content h3:before {
+    content: "\f107";
+    font-size: 2em;
+}
+
 
 
 
 /**********************************************************************/
 /* Landscape-oriented mobiles and portrait-oriented tablets. Two columns. */
-@media only screen and (min-width: 39em) {
+@media only screen and (min-width: 37.500em) {
 
 #funksjoner, article footer, #bloggfeed, #sidebar {
     display: block;
@@ -1056,6 +1086,17 @@ footer.rammeverk section#bloggfeed {
     right: 0;
     padding: 0;
 }
+
+/**********************************************************************/
+/* Custom code */
+#breakpoint {
+    display: none;
+}
+
+    article .contentWrapper {
+        background: white;
+        padding: 0;
+    }
 
 
 
