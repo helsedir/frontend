@@ -17,15 +17,15 @@ body {
     line-height: 1.5;
     font-size: 100%;
     font-weight: 300;
-    /*background:#004e66;*/
-    color: #ffffff;
+    background:#004e66;
+    color: black;
     margin: 0 auto;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: purple;
+    color: #004e66;
 }
 
 a:hover {
@@ -40,12 +40,17 @@ a:hover {
 
 header.rammeverk {
     z-index: 100;
+    background: white;
+    margin-top: 1em;
+padding-right: 1em;
+padding-bottom: 2em;
 }
 
 
 #hovedtittel {
     height: 24px;
     margin: .75rem .75rem 0;
+    display: inline;
 }
 
 #hovedtittel a {
@@ -64,7 +69,10 @@ header.rammeverk {
 #hovedmeny {
     text-transform: uppercase;
     padding: .5rem  .75rem;
-
+    display: inline;
+    margin-left: 2em;
+    font-family:"soho gothic pro medium";
+    color: white;
 }
 
 #hovedmeny h2 {
@@ -115,7 +123,7 @@ article {
     padding-bottom: .75rem;
 }
 
-#breadcrumbs, #sidetittel{
+#breadcrumbs, #sidetittel, #ingress, #undertittel{
     padding: 0 .75rem;
     margin: .75rem 0;
 }
@@ -606,7 +614,7 @@ article .has-hidden-content h2:before {
 
 /**********************************************************************/
 /* Custom code */
-article .contentWrapper{
+article .innholdswrapper{
       min-height: 70px;
     background: whitesmoke;
     margin-bottom: 10px;
@@ -634,6 +642,17 @@ article .has-hidden-content h3:before {
     font-size: 2em;
 }
 
+#breakpoint {
+    color: white;
+}
+
+#hovedmeny span {
+        float: right;
+}
+
+header.rammeverk p {
+    
+}
 
 
 
@@ -881,9 +900,7 @@ article {
     width: 18rem;
 }
 
-#ingress {
-    float: left;
-}
+
 
 .uten-innholdsfortegnelse #ingress {
     width: auto;
@@ -1093,9 +1110,13 @@ footer.rammeverk section#bloggfeed {
     display: none;
 }
 
-    article .contentWrapper {
+    article .innholdswrapper {
         background: white;
         padding: 0;
+    }
+
+    #hovedmeny span {
+        display: none;
     }
 
 

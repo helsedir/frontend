@@ -19,7 +19,7 @@
 
 }
 
-.abbonnementodul{
+.abonnement{
     width:250px;
     min-height: 70px;
     border:1px solid gray;
@@ -76,13 +76,8 @@ a:visited{
     font-family: "soho gothic pro medium";
     /*float: right;*/
     margin: 4px 0;
-    padding: 5px;
+    padding-left: 2rem;
     display: inline-block;
-}
-
-#breadcrumbs a{
-    text-decoration: none;
-    color: #004e66;
 }
 
 
@@ -128,11 +123,7 @@ float: left;
 }
 
 .nedlastingsLinker img {
-    padding-left: 0.5em;
     vertical-align: bottom;
-    height: 1.4em;
+    height: 1.3em;
 }
 
-.nedlastingsLinker p {
-    margin: 0;
-}
