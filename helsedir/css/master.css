@@ -17,15 +17,15 @@ body {
     line-height: 1.5;
     font-size: 100%;
     font-weight: 300;
-    /*background:#004e66;*/
-    color: #ffffff;
+    background:#004e66;
+    color: black;
     margin: 0 auto;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: purple;
+    color: #004e66;
 }
 
 a:hover {
@@ -40,12 +40,17 @@ a:hover {
 
 header.rammeverk {
     z-index: 100;
+    background: white;
+    margin-top: 1em;
+padding-right: 1em;
+padding-bottom: 2em;
 }
 
 
 #hovedtittel {
     height: 24px;
     margin: .75rem .75rem 0;
+    display: inline;
 }
 
 #hovedtittel a {
@@ -64,7 +69,10 @@ header.rammeverk {
 #hovedmeny {
     text-transform: uppercase;
     padding: .5rem  .75rem;
-
+    display: inline;
+    margin-left: 2em;
+    font-family:"soho gothic pro medium";
+    color: white;
 }
 
 #hovedmeny h2 {
@@ -115,7 +123,7 @@ article {
     padding-bottom: .75rem;
 }
 
-#breadcrumbs, #sidetittel{
+#breadcrumbs, #sidetittel, #ingress, #undertittel{
     padding: 0 .75rem;
     margin: .75rem 0;
 }
@@ -604,12 +612,53 @@ article .has-hidden-content h2:before {
 	content: "\f067"; /* Plus-sign */
 }
 
+/**********************************************************************/
+/* Custom code */
+article .innholdswrapper{
+      min-height: 70px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article .has-hidden-content h3,
+article .has-visible-content h3 {
+    padding-right: 1.5em;
+}
+
+article .has-hidden-content h3:before,
+article .has-visible-content h3:before {
+	font-family: FontAwesome;
+	content: "\f106"; 
+    float: right;
+    margin-right: -0.7em;
+    font-size: 2em;
+
+}
+
+article .has-hidden-content h3:before {
+    content: "\f107";
+    font-size: 2em;
+}
+
+#breakpoint {
+    color: white;
+}
+
+#hovedmeny span {
+        float: right;
+}
+
+header.rammeverk p {
+    
+}
 
 
 
 /**********************************************************************/
 /* Landscape-oriented mobiles and portrait-oriented tablets. Two columns. */
-@media only screen and (min-width: 39em) {
+@media only screen and (min-width: 37.500em) {
 
 #funksjoner, article footer, #bloggfeed, #sidebar {
     display: block;
@@ -851,9 +900,7 @@ article {
     width: 18rem;
 }
 
-#ingress {
-    float: left;
-}
+
 
 .uten-innholdsfortegnelse #ingress {
     width: auto;
@@ -1056,6 +1103,21 @@ footer.rammeverk section#bloggfeed {
     right: 0;
     padding: 0;
 }
+
+/**********************************************************************/
+/* Custom code */
+#breakpoint {
+    display: none;
+}
+
+    article .innholdswrapper {
+        background: white;
+        padding: 0;
+    }
+
+    #hovedmeny span {
+        display: none;
+    }
 
 
 

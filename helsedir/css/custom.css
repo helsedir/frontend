@@ -19,7 +19,7 @@
 
 }
 
-.abbonnementodul{
+.abonnement{
     width:250px;
     min-height: 70px;
     border:1px solid gray;
@@ -76,12 +76,8 @@ a:visited{
     font-family: "soho gothic pro medium";
     /*float: right;*/
     margin: 4px 0;
-    padding: 5px;
-}
-
-#breadcrumbs a{
-    text-decoration: none;
-    color: #004e66;
+    padding-left: 2rem;
+    display: inline-block;
 }
 
 
@@ -94,3 +90,40 @@ a:visited{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.fargeboks1{
+    width: 6.250em;
+    height: 0.625em;
+    background:#004e66;
+    display: inline-block;
+  float: left;
+}
+.fargeboks2{
+    width: 6.250em;
+    height: 0.625em;
+    background:#6cb4b5;
+    display: inline-block;
+float: left;
+}
+.fargeboks3{
+    width: 6.250em;
+    height: 0.625em;
+    background:#0093a7;
+    display: inline-block;
+    float: left;
+}
+
+.nedlastingsLinker {
+    list-style-type: none;
+    padding: 12px;
+}
+
+.nedlastingsLinker li {
+    margin-bottom: 15px;
+}
+
+.nedlastingsLinker img {
+    vertical-align: bottom;
+    height: 1.3em;
+}
+
