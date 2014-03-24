@@ -1,0 +1,61 @@
+/* Spesifikt for retningslinjer */
+
+body {
+	color: #111111;
+}
+
+section header.section_heading h1 {
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+section.recommendation header h1 {
+	font-size: 1.5em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+.accordion {
+	position: relative;
+}
+
+.accordion:before {
+    content: "\f138"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 20px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.accordion.open:before {
+    content: "\f13a";
+}
+
+
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 624px) {
+  section.recommendation {
+		border: 1px solid #DDDDDD;
+		background-color: #efefef;
+		margin-bottom: 8px;
+		padding: 10px;
+		box-shadow:0 1px 2px #aaa;
+		-moz-border-radius: 1px;
+	  -webkit-border-radius: 1px;
+	  border-radius: 1px;
+	}
+	
+	section.recommendation header h1 {
+		margin-left: 1em;
+	}
+}
