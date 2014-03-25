@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,20 +9,7 @@
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/tabs.css" rel="stylesheet">
         <link href="css/customLESS.css" rel="stylesheet">
-
-
-        <script type="text/javascript">
-            (function() {
-                var path = '//easy.myfonts.net/v2/js?sid=212833(font-family=Soho+Gothic+Pro+Light)&sid=212835(font-family=Soho+Gothic+Pro+Regular)&sid=212837(font-family=Soho+Gothic+Pro+Medium)&sid=212839(font-family=Soho+Gothic+Pro+Bold)&key=luwqtZRINA',
-                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-                    trial = document.createElement('script');
-                trial.type = 'text/javascript';
-                trial.async = true;
-                trial.src = protocol + path;
-                var head = document.getElementsByTagName("head")[0];
-                head.appendChild(trial);
-            })();
-        </script>
+        
 
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/changeLayoutOnHeaderContents.js"></script>
@@ -31,21 +18,70 @@
         <script src="js/feedback.js"></script>
         <script src="js/login.js"></script>
         <script src="js/toggle.js"></script>
+        <script src ="js/sohoFont.js"></script>
 
     </head>
     <body class="artikkel">
         <header class="rammeverk">
-            <div class="container">
+            <div class="container clearfix">
                 <h1 id="hovedtittel">
                     <img id="logo" src="img/HDIR-LOGO-HORISONTAL-NEW.png" alt="Helsedirektoratet logo"/>
                 </h1>
                 <nav id="hovedmeny">
-                    <span class="js-toggler js-toggler-cue" id="mobilmeny">
-                        Meny<a href="#"><img src="img/ikon-meny_åpne.png" alt="Menyknapp" id="menyknapp"/></a>
-                    <a href="#"><img src="img/ikon_søk.png" alt="Søkeknapp"/></a>
-                </span>
-                        </nav>
-                
+                    <div class="js-toggler-cue" id="mobilmeny">
+<!--                        <ul class="dropdownmeny no-js">-->
+                            <!--                            <li>-->
+                            <!--                                <img src="img/ikon_søk.png" alt="Søkeknapp" />-->
+                            <!--                            </li>-->
+<!--                            <li>-->
+                        Meny<img src="img/ikon-meny_aapne.png" alt="Menyknapp" id="menyknapp" class="menyknapp" onclick="changeImage()"/>
+                        <img src="img/ikon_søk.png" alt="Søkeknapp"><!--                                <ul>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!--                                        <span class="menypunkt">Lenke 1</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!--                                        <span class="menypunkt">Lenke 2</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!---->
+<!--                                        <span class="menypunkt">Lenke 3</span>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+                    </div>
+                </nav>
+                <div class="dropdownmeny">
+                    <ul class="dropdownmenyliste no-js">
+                        <!--                            <li>-->
+                        <!--                                 />-->
+                        <!--                            </li>-->
+                        
+                                <li class="hovedmenypunkt">
+                                    <span class="menypunkt"><a href="#">Tema</a></span>
+                                </li>
+                                <li class="hovedmenypunkt">
+                                    <span class="menypunkt"><a href="#">Publikasjoner</a></span>
+                                </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Skjema</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Tilskudd</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Tall og analyse</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Lover og regler</a></span>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </header>
         <div id="main">
@@ -120,19 +156,19 @@
                         offentlig eller privat regi eller om arbeidet er fast eller leilighetsvis.
                     </p>
 
-                    <p style="display: block">
+                    <p class="fonttest" style="display: block">
                         Loven gjelder som utgangspunkt også andre enn autorisert helsepersonell så framt de yter helsehjelp i helse- og
                         omsorgstjenesten og apotek.
                     </p>
 
-                    <p style="display: block">
+                    <p class="fonttest" style="display: block">
                         Som hovedregel vil norsk helsepersonell som oppholder seg i og yter helsetjenester til pasienter som oppholder
                         seg i utlandet, ikke være omfattet av helsepersonelloven.
                     </p>
 
-                    <p style="display: block">
+                    <p class ="fonttest" style="display: block">
                         Se mer i loven § 2 og merknadene til denne i rundskriv IS-2012.
-                    </p>
+                    </pclass>
 
 
 
@@ -271,7 +307,7 @@
                     <!--</table>-->
                     <img src="img/stripe_liten_kald.png"/>
                     <br/>
-                    <img src="img/person_placeholder.png">
+                    <img src="img/ansatt_bilde.png">
 
                     <p>
                         Julia Olsen<br/>
@@ -296,6 +332,7 @@
         </footer>
 
         <script src="js/tabs.js"></script>
+        <script src="js/dropdown.js"></script>
         <!--<script>-->
         <!--$(function () {-->
         <!--$(".tabs a").html5jTabs();-->

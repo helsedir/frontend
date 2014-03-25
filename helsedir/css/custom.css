@@ -54,7 +54,6 @@ h3{
 
 a{
 text-decoration: underline;
-    font-family: "Soho Gothic Pro Medium";
     color: #004e66;
 
 }
@@ -127,3 +126,6 @@ float: left;
     height: 1.3em;
 }
 
+.menyknapp {
+    cursor: pointer;
+}

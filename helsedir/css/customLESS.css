@@ -1,4 +1,4 @@
-footer.rammeverk {
+﻿footer.rammeverk {
   font-family: "soho gothic pro medium";
   height: 100%;
   color: white;
@@ -18,7 +18,6 @@ footer.rammeverk a {
 }
 .nedlastingsLinker p {
   margin: 0;
-  font-family: "soho gothic pro medium";
 }
 #mobilmeny {
   background: #004e66;
@@ -26,3 +25,38 @@ footer.rammeverk a {
 #menyknapp {
   vertical-align: top;
 }
+.fonttest {
+  font-family: Calibri;
+  font-size: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.dropdownmenyliste {
+  margin: 0;
+  /*height: 1.9em;*/
+  display: inline;
+  list-style-type: none;
+}
+.dropdownmenyliste li ul li {
+  background: white;
+  color: black;
+}
+.dropdownmenyliste a {
+  text-decoration: none;
+}
+.dropdownmeny {
+  margin-left: 1em;
+}
+.dropdownmeny ul li {
+  border-top: 1px solid #df9922;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  border-bottom: 1px solid #df9922;
+}
+/*# sourceMappingURL=customLESS.css.map */

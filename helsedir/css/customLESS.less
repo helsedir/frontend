@@ -1,5 +1,6 @@
 ﻿@font: "soho gothic pro medium";
-@color: #004e66;
+@color1: #004e66;
+@color2: #df9922;
 
 
 footer.rammeverk{
@@ -26,7 +27,6 @@ footer.rammeverk{
 
 .nedlastingsLinker p {
     margin: 0;
-    font-family: @font;
 }
 
 #mobilmeny{
@@ -35,4 +35,45 @@ footer.rammeverk{
 
 #menyknapp{
     vertical-align: top;
+}
+
+.fonttest{
+    font-family: Calibri;
+    font-size: 100%;
+}
+
+.clearfix:before,
+.clearfix:after{
+        content: " ";
+        display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+.dropdownmenyliste {
+    margin: 0;
+    /*height: 1.9em;*/
+    display: inline;
+    list-style-type: none;
+
+    
+    li ul li{
+        background: white;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.dropdownmeny {
+    margin-left: 1em;
+
+    ul li {
+        border-top: 1px solid @color2;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        border-bottom: 1px solid @color2;
+    }
 }

@@ -13,7 +13,7 @@ header, nav, menu, #main, footer, section, aside, article {
 }
 
 body {
-    font-family: Calibri;
+    font-family: Segoe UI;
     line-height: 1.5;
     font-size: 100%;
     font-weight: 300;
@@ -43,13 +43,12 @@ header.rammeverk {
     background: white;
     margin-top: 1em;
 padding-right: 1em;
-padding-bottom: 2em;
 }
 
 
 #hovedtittel {
     height: 24px;
-    margin: .75rem .75rem 0;
+    margin-left: .75rem;
     display: inline;
 }
 
@@ -70,7 +69,7 @@ padding-bottom: 2em;
     text-transform: uppercase;
     padding: .5rem  .75rem;
     display: inline;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
     font-family:"soho gothic pro medium";
     color: white;
 }
@@ -95,7 +94,6 @@ padding-bottom: 2em;
 
 #hovedmeny ul {
     list-style-type: none;
-    margin: .75em 0 0;
     padding: 0;
 }
 
@@ -646,7 +644,7 @@ article .has-hidden-content h3:before {
     color: white;
 }
 
-#hovedmeny span {
+#hovedmeny div {
         float: right;
 }
 
@@ -1115,10 +1113,13 @@ footer.rammeverk section#bloggfeed {
         padding: 0;
     }
 
-    #hovedmeny span {
+    #hovedmeny div {
         display: none;
     }
 
+    .dropdownmeny {
+        display: none;
+    }
 
 
 

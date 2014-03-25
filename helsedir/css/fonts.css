@@ -1412,3 +1412,8 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+
+/*************************************************************************************************
+    Segoe UI */
+
+@font-face{ font-family: Segoe UI; src:url(../fonts/segoeui.ttf)}
