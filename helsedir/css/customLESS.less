@@ -1,28 +1,50 @@
-﻿@font: "soho gothic pro medium";
-@color1: #004e66;
-@color2: #df9922;
+﻿@fontRoboto: 'Roboto', sans-serif;
+@fontSoho: "soho gothic pro medium";
+@colorMorkBlaa: #004e66;
+@colorOrange: #df9922;
+@colorMediumBlaa: #0093a7;
+@colorLysBlaa: #6cb4b5;
+@colorGraa: #aeaba8;
+@colorLysGraa: #B2BABC;
+@colorRoed: #c63629;
+@colorGul: #f4d01e;
 
+h1,h2,h3,h4{
+    font-family: @fontSoho
+}
+
+h1{
+font-size: 1.750em;
+}
+
+h2{
+    font-size: 1.333em;
+}
+
+h3{
+    font-size: 1em;
+}
 
 footer.rammeverk{
-    font-family: @font;
+    font-family: @fontRoboto;
     height: 100%;
     color: white;
-    background: @color;
+    background: @colorMorkBlaa;
         
     p{
-        padding-left: 1.3em;
-        margin: 0.5em;
+        padding-left: 1.3rem;
+        margin: 0.5rem;
     }
     img{
-        padding-left: 1.8em;
+        padding-left: 1.8rem;
         vertical-align:middle;
-        padding-right: 0.4em;
+        padding-right: 0.4rem;
     }
 
-    a{
-            text-decoration: none;
-
-    }
+    a, a:visited {
+        text-decoration: none;
+        color: white !important;
+            }
 }
 
 .nedlastingsLinker p {
@@ -51,14 +73,28 @@ footer.rammeverk{
     clear:both;
 }
 
-.dropdownmenyliste {
+
+
+.dropdownmeny {
+    margin-left: 1rem;
+
+    ul li {
+        border-top: 1px solid @colorOrange;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        border-bottom: 1px solid @colorOrange;
+    }
+    .dropdownmenyliste {
     margin: 0;
     /*height: 1.9em;*/
     display: inline;
     list-style-type: none;
 
+    ul{
+
+    }
     
-    li ul li{
+    ul li{
         background: white;
         color: black;
     }
@@ -66,14 +102,442 @@ footer.rammeverk{
         text-decoration: none;
     }
 }
+}
 
-.dropdownmeny {
-    margin-left: 1em;
+.topplinje{
+    background: @colorMorkBlaa;
+    height: 3rem;
+}
 
-    ul li {
-        border-top: 1px solid @color2;
-        padding-bottom: 0.2em;
-        padding-top: 0.2em;
-        border-bottom: 1px solid @color2;
+#soekefelt{
+    float: right;
+    margin-top: 2rem;
+}
+
+#soekeknapp{
+    float: right;
+    margin-top: 2rem;
+    height: auto;
+    width: 1.4rem;
+}
+
+#hovedmeny {
+
+    ul {
+        height: 3rem;
+        display: block;
+
+        li {
+            background: @colorMorkBlaa;
+            float: left;
+            text-align: center;
+            padding-right: 1rem;
+            a {
+                display: block;
+                line-height: 1em;
+                height: 1.5rem;
+                width: 10em;
+                text-decoration: none;
+            }
+
+            :hover{
+                                background:@colorOrange;
+
+            }
+        }
     }
+
+    a {
+        color: white;
+    }
+
+    .hovedmenypunkt{
+        height: 1.6rem;
+    }
+
+    .menypunkt{
+        margin: 0.5rem;
+    }
+
+    
+}
+.dropdownmeny{
+        width: 40%;
+    }
+
+.kontaktModul{
+    color :  @colorMorkBlaa;
+    /*float: right;*/
+    margin: 0;
+    padding-left: 2rem;
+    display: inline-block;
+    width: 43%;
+    h3{
+        margin: 0;
+    }
+    p{
+        line-height: 1.5rem;
+        margin: 0;
+    }
+}
+
+.utvidbarOverskrift{
+    width:330px;
+    min-height: 70px;
+    border:1px solid #eeeeee;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 0;
+
+}
+
+.faktaboks {
+    position: relative;
+    width: 20rem;
+    min-height: 70px;
+    background: @colorLysGraa;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .toppstrek {
+        position: absolute;
+        top: -6px;
+        left: 2.5rem;
+    }
+
+    .bunnstrek {
+        position: absolute;
+        top: 100%;
+        left: 2.5rem;
+    }
+
+    ul{
+                list-style-type: square;
+                > li {
+                    color: @colorMorkBlaa;
+
+                    >span{
+                        color:black;
+                    }
+                }
+    }
+
+    h4{
+        padding-left: 1.2rem;
+    }
+}
+
+.informasjonsboks {
+    float: right;
+    position: relative;
+    width: 25rem;
+    min-height: 70px;
+    color: Black;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .toppstrek {
+        position: absolute;
+        top: 1.74rem;
+        left: 4.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+
+        h4 {
+            padding-left: 1.2rem;
+            border-left: 1px solid @colorRoed;
+            border-bottom: 1px solid @colorRoed;
+            border-right: 1px solid @colorRoed;
+            border-top: 0;
+        }
+    }
+
+    ul {
+        list-style-type: square;
+
+
+
+        li > span {
+            color: @colorMorkBlaa;
+        }
+    }
+
+    #retningslinjer > li {
+        color: @colorRoed;
+    }
+
+    #tilskudd > li{
+        color:@colorGul;
+    }
+    #lover > li{
+        color:@colorOrange;
+    }
+
+    h4 {
+        padding-left: 1.2rem;
+        border-left: 1px solid @colorRoed;
+        border-top: 1px solid @colorRoed;
+        border-right: 1px solid @colorRoed;
+    }
+}
+
+/**Slett senere*/
+#infoboks{
+    float:none;
+}
+
+.kollapslenker {
+
+    h4 {
+        width: 33%;
+        border: 1px solid #eeeeee;
+        background: @colorMorkBlaa;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        font-family: @fontRoboto;
+    }
+}
+
+.kollapslenker-graa {
+
+    h4 {
+        width: 33%;
+        border: 1px solid #eeeeee;
+        background: @colorLysGraa;
+        color: @colorMorkBlaa;
+        margin-bottom: 10px;
+        margin-top: 10px;
+                padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        font-family: @fontRoboto;
+
+        .fa-chevron-down {
+            color: black;
+        }
+    }
+}
+
+.fa-chevron-right{
+    font-size: 1.5em;
+    color: @colorOrange;
+    float:right;
+    padding-top: 0.3rem;
+}
+.fa-chevron-down{
+         padding-top: 0.3rem;
+
+    font-size: 1.5em;
+    float:right;
+}
+
+ #tabs{
+     float: right;
+
+     #tabheading-1{
+         border-top: 7px solid @colorMorkBlaa;
+         border-bottom: 7px solid white;
+         border-right: 2px solid @colorMediumBlaa;
+     }
+     #tabheading-2{
+         border-bottom: 7px solid @colorLysBlaa;
+         border-top: 7px solid white;
+     }
+
+     a{
+         color: @colorMorkBlaa;
+     }
+ }
+
+  #statistikk{
+      width: 90rem;
+
+     #tabheading-1{
+         border-top: 7px solid @colorMorkBlaa;
+         border-bottom: 7px solid white;
+         border-right: 2px solid @colorMediumBlaa;
+     }
+     #tabheading-2{
+         border-bottom: 7px solid @colorLysBlaa;
+         border-top: 7px solid white;
+     }
+
+     a{
+         color: @colorMorkBlaa;
+     }
+
+     .fa-chevron-down{
+        color: @colorOrange;
+}
+ }
+
+ .kollapslenker-tabs {
+
+    h4 {
+        border: 1px solid #eeeeee;
+        background: @colorGraa;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+                padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        font-family: @fontRoboto;
+        
+        .fa-chevron-down{
+            color: @colorMorkBlaa;
+
+        }
+    }
+}
+
+ .minimertTekst
+{
+    min-height: 70px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+
+
+.abonnement{
+    width:250px;
+    min-height: 70px;
+    border:1px solid gray;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    clear: both;
+    overflow: auto;
+}
+
+
+
+a{
+text-decoration: underline;
+    color: #004e66;
+    font-size: 1em;
+    line-height: 35px;
+
+}
+
+a:visited{
+    color: #df9922
+;
+}
+
+.alignLeft{
+    float:left;
+}
+
+.alignRight{
+    float: right;
+}
+
+
+
+
+#sidelogo{
+
+    background-color: #ffffff;
+    background-image: url('../img/HDIR-LOGO-HORISONTAL-NEW.png');
+    background-repeat: no-repeat;
+    min-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fargeboks1{
+    width: 6.250rem;
+    height: 0.625rem;
+    background:#004e66;
+    display: inline-block;
+  float: left;
+}
+.fargeboks2{
+    width: 6.250rem;
+    height: 0.625rem;
+    background:#6cb4b5;
+    display: inline-block;
+float: left;
+}
+.fargeboks3{
+    width: 6.250rem;
+    height: 0.625rem;
+    background:#0093a7;
+    display: inline-block;
+    float: left;
+}
+
+.nedlastingsLinker {
+    list-style-type: none;
+    padding: 12px;
+}
+
+.nedlastingsLinker li {
+    margin-bottom: 15px;
+}
+
+.nedlastingsLinker img {
+    vertical-align: text-bottom;
+    height: 1.3rem;
+}
+
+.menyknapp {
+    cursor: pointer;
+}
+
+article .innholdswrapper{
+      min-height: 70px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article .has-hidden-content h3,
+article .has-visible-content h3 {
+    padding-right: 1.5rem;
+}
+
+article .has-hidden-content h3:before,
+article .has-visible-content h3:before {
+	font-family: FontAwesome;
+	content: "\f106"; 
+    float: right;
+    margin-right: -0.7rem;
+    font-size: 2rem;
+
+}
+
+article .has-hidden-content h3:before {
+    content: "\f107";
+    font-size: 2rem;
+}
+
+#breakpoint {
+    color: white;
+}
+
+#hovedmeny div {
+        float: right;
+}
+
+header.rammeverk p {
+    
+}
+
+#elementer{
+    display: inline;
 }

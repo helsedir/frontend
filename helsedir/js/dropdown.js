@@ -38,3 +38,10 @@ function changeImage() {
         document.getElementById('menyknapp').src = '../img/ikon-meny_aapne.png';
     }
 }
+
+function diffImage(img) {
+    if (img.src.match("../img/ikon-meny_aapne.png"))
+        img.src = "../img/ikon-meny_lukke.png";
+    else
+        img.src = "../img/ikon-meny_aapne.png";
+}
