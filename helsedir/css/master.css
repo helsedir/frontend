@@ -17,12 +17,11 @@ header, nav, menu, #main, footer, section, aside, article {
 }
 
 body {
-font-family: 'Roboto', sans-serif;
+font-family: 'Calibri';
     font-size: 18px;
     font-size: 1.125rem;
     /*font-weight: 300;*/
-    background:#004e66;
-    color: black;
+    color: #222;
     margin: 0 auto;
     padding: 0;
     line-height: 35px;
@@ -46,7 +45,6 @@ a:hover {
 header.rammeverk {
     z-index: 100;
     background: white;
-    margin-top: 1rem;
 padding-right: 1rem;
 }
 
@@ -114,7 +112,7 @@ padding-right: 1rem;
 
 #main {
     background-color: #ffffff;
-    color: #000;
+    color: #222;
     overflow: hidden;
 }
 

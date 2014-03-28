@@ -14,7 +14,6 @@ h3 {
   font-size: 1em;
 }
 footer.rammeverk {
-  font-family: 'Roboto', sans-serif;
   height: 100%;
   color: white;
   background: #004e66;
@@ -78,7 +77,7 @@ footer.rammeverk a:visited {
 }
 .topplinje {
   background: #004e66;
-  height: 3rem;
+  min-height: 3rem;
 }
 #soekefelt {
   float: right;
@@ -237,7 +236,6 @@ footer.rammeverk a:visited {
   margin-top: 10px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  font-family: 'Roboto', sans-serif;
 }
 .kollapslenker-graa h4 {
   width: 33%;
@@ -248,7 +246,6 @@ footer.rammeverk a:visited {
   margin-top: 10px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  font-family: 'Roboto', sans-serif;
 }
 .kollapslenker-graa h4 .fa-chevron-down {
   color: black;
@@ -305,7 +302,6 @@ footer.rammeverk a:visited {
   margin-top: 10px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  font-family: 'Roboto', sans-serif;
 }
 .kollapslenker-tabs h4 .fa-chevron-down {
   color: #004e66;
@@ -418,5 +414,131 @@ article .has-hidden-content h3:before {
 }
 #elementer {
   display: inline;
+}
+.hhs .topplinje {
+  color: white;
+}
+.hhs ul {
+  float: left;
+  list-style-type: none;
+}
+.hhs h1,
+.hhs h2 {
+  font-family: "soho gothic pro light";
+}
+.hhs h2 {
+  font-size: 2em;
+}
+.hhs #hovedtittel {
+  font-size: 3em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  font-weight: normal;
+  height: auto;
+  line-height: 1.2em;
+  margin: 0;
+}
+.hhs .ingress {
+  max-width: 500px;
+  margin-bottom: 3em;
+  line-height: 1.5em;
+}
+.hhs .illustrasjonOverskrift {
+  font-family: "soho gothic pro light";
+  color: #94928F;
+  text-transform: uppercase;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  margin-bottom: 1em;
+}
+.hhs .sirkel {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+.hhs .illustrasjonsWrapper {
+  float: left;
+  margin-right: 1em;
+}
+.hhs #logo {
+  width: 30%;
+}
+.hhs #bodyFont p {
+  font-size: 1em;
+  line-height: 30px;
+}
+.hhs #h1Font h1 {
+  font-family: "soho gothic pro medium";
+}
+.hhs #h2Font h2 {
+  font-family: "soho gothic pro medium";
+  font-size: 1.333em;
+}
+.hhs .boks {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 5em;
+}
+.hhs .illustrasjon p {
+  max-width: 500px;
+}
+.hhs .illustrasjon table {
+  margin-bottom: 1em;
+}
+.hhs .illustrasjon table tr:nth-child(odd) td,
+.hhs .illustrasjon table tr:nth-child(odd) th {
+  background-color: #ebeaea;
+}
+.hhs .illustrasjon table tr:nth-child(even) td,
+.hhs .illustrasjon table tr:nth-child(even) th {
+  background-color: white;
+}
+.hhs .illustrasjon table th,
+.hhs .illustrasjon table td {
+  width: 20em;
+  padding: 0.5em;
+}
+.hhs .illustrasjon table .tableHeader {
+  font-family: "soho gothic pro medium";
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.hhs .ikoner img {
+  width: 1.875rem;
+  vertical-align: bottom;
+  margin-right: 0.2em;
+}
+.hhs .c2aKnapp {
+  background-color: #df9922;
+  width: 14.375rem;
+  height: 2.3rem;
+  line-height: 2.2rem;
+}
+.hhs .c2aKnapp h3 {
+  padding: 0 0.5rem 0.2rem 1rem;
+  font-family: 'Calibri';
+  font-weight: bold;
+}
+.hhs .c2aKnapp img {
+  float: right;
+  width: 1.875rem;
+  padding-top: 0.2rem;
+}
+.hhs .toppmeny ul {
+  margin: 1rem 2rem 1rem 0;
+  padding: 1rem 2rem 1rem 0;
+}
+.hhs .toppmeny ul h2 {
+  margin-bottom: 0.7rem;
+}
+.hhs .toppmeny ul a,
+.hhs .toppmeny ul a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.hhs #toppmenyKnapp {
+  vertical-align: text-top;
 }
 /*# sourceMappingURL=customLESS.css.map */
