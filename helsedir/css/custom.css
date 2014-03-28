@@ -8,16 +8,7 @@
 
 }
 
-.utvidbarMeny{
-    width:330px;
-    min-height: 70px;
-    border:1px solid #eeeeee;
-    background: #ffffff;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
 
-}
 
 .abonnement{
     width:250px;
@@ -31,31 +22,13 @@
     overflow: auto;
 }
 
-h1{
-    font-size: 2em;
-    font-family: "Soho Gothic Pro Medium";
-}
 
-#ingress{
-    font-size: 1.125em;
-    font-family: "Soho Gothic Pro Medium";
-
-
-}
-
-h2{
-    font-family: "Soho Gothic Pro Medium";
-}
-
-h3{
-    font-size: 1.125em;
-    font-family: "Soho Gothic Pro Medium";
-}
 
 a{
 text-decoration: underline;
-    font-family: "Soho Gothic Pro Medium";
     color: #004e66;
+    font-size: 1em;
+    line-height: 35px;
 
 }
 
@@ -72,13 +45,7 @@ a:visited{
     float: right;
 }
 
-.kontaktModul{
-    font-family: "soho gothic pro medium";
-    /*float: right;*/
-    margin: 4px 0;
-    padding-left: 2rem;
-    display: inline-block;
-}
+
 
 
 #sidelogo{
@@ -92,22 +59,22 @@ a:visited{
 }
 
 .fargeboks1{
-    width: 6.250em;
-    height: 0.625em;
+    width: 6.250rem;
+    height: 0.625rem;
     background:#004e66;
     display: inline-block;
   float: left;
 }
 .fargeboks2{
-    width: 6.250em;
-    height: 0.625em;
+    width: 6.250rem;
+    height: 0.625rem;
     background:#6cb4b5;
     display: inline-block;
 float: left;
 }
 .fargeboks3{
-    width: 6.250em;
-    height: 0.625em;
+    width: 6.250rem;
+    height: 0.625rem;
     background:#0093a7;
     display: inline-block;
     float: left;
@@ -124,6 +91,9 @@ float: left;
 
 .nedlastingsLinker img {
     vertical-align: bottom;
-    height: 1.3em;
+    height: 1.3rem;
 }
 
+.menyknapp {
+    cursor: pointer;
+}

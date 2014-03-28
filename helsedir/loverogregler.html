@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,23 +6,9 @@
         <title>Foundation 4</title>
         <link href="css/master.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
         <link href="css/tabs.css" rel="stylesheet">
         <link href="css/customLESS.css" rel="stylesheet">
-
-
-        <script type="text/javascript">
-            (function() {
-                var path = '//easy.myfonts.net/v2/js?sid=212833(font-family=Soho+Gothic+Pro+Light)&sid=212835(font-family=Soho+Gothic+Pro+Regular)&sid=212837(font-family=Soho+Gothic+Pro+Medium)&sid=212839(font-family=Soho+Gothic+Pro+Bold)&key=luwqtZRINA',
-                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-                    trial = document.createElement('script');
-                trial.type = 'text/javascript';
-                trial.async = true;
-                trial.src = protocol + path;
-                var head = document.getElementsByTagName("head")[0];
-                head.appendChild(trial);
-            })();
-        </script>
+        
 
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/changeLayoutOnHeaderContents.js"></script>
@@ -31,21 +17,71 @@
         <script src="js/feedback.js"></script>
         <script src="js/login.js"></script>
         <script src="js/toggle.js"></script>
+        <script src ="js/sohoFont.js"></script>
+        <script src ="js/calibriFont.js"></script>
 
     </head>
     <body class="artikkel">
         <header class="rammeverk">
-            <div class="container">
+            <div class="container clearfix">
                 <h1 id="hovedtittel">
                     <img id="logo" src="img/HDIR-LOGO-HORISONTAL-NEW.png" alt="Helsedirektoratet logo"/>
                 </h1>
                 <nav id="hovedmeny">
-                    <span class="js-toggler js-toggler-cue" id="mobilmeny">
-                        Meny<a href="#"><img src="img/ikon-meny_åpne.png" alt="Menyknapp" id="menyknapp"/></a>
-                    <a href="#"><img src="img/ikon_søk.png" alt="Søkeknapp"/></a>
-                </span>
-                        </nav>
-                
+                    <div class="js-toggler-cue" id="mobilmeny">
+<!--                        <ul class="dropdownmeny no-js">-->
+                            <!--                            <li>-->
+                            <!--                                <img src="img/ikon_søk.png" alt="Søkeknapp" />-->
+                            <!--                            </li>-->
+<!--                            <li>-->
+                        Meny<img src="img/ikon-meny_aapne.png" alt="Menyknapp" id="menyknapp" class="menyknapp" onclick=diffImage(this) />
+                        <img src="img/ikon_søk.png" alt="Søkeknapp"><!--                                <ul>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!--                                        <span class="menypunkt">Lenke 1</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!--                                        <span class="menypunkt">Lenke 2</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="hovedmenypunkt">-->
+<!---->
+<!--                                        <span class="menypunkt">Lenke 3</span>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+                    </div>
+                </nav>
+                <div class="dropdownmeny">
+                    <ul class="dropdownmenyliste no-js">
+                        <!--                            <li>-->
+                        <!--                                 />-->
+                        <!--                            </li>-->
+                        
+                                <li class="hovedmenypunkt">
+                                    <span class="menypunkt"><a href="#">Tema</a></span>
+                                </li>
+                                <li class="hovedmenypunkt">
+                                    <span class="menypunkt"><a href="#">Publikasjoner</a></span>
+                                </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Skjema</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Tilskudd</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Tall og analyse</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+
+                            <span class="menypunkt"><a href="#">Lover og regler</a></span>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </header>
         <div id="main">
@@ -73,27 +109,27 @@
                         <li>
                             <a href="#">Helsepersonelloven med kommentarer. Rundksriv</a>
                             <p>
-                                Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                Last ned(pdf, 2MB)<img class="nedlastingslinkBilde" src="img/last_ned.png" alt="nedlastingsknapp" />
                             </p>
                         </li>
                         <li>
                             <a href="#">Helsetjenestens og politiets ansvar for psykisk syke. Rundskriv</a>
                             <p>
-                                Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                Last ned(pdf, 2MB)<img class="nedlastingslinkBilde" src="img/last_ned.png" alt="nedlastingsknapp" />
                             </p>
                         </li>
                         <li>
                             <a href="#">Helsepersonells taushetsplikt. Vern av pasientens integritet i helsepersonells
                                 samtaler med pasienten. Rundskriv</a>
                             <p>
-                                Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                Last ned(pdf, 2MB)<img class="nedlastingslinkBilde" src="img/last_ned.png" alt="nedlastingsknapp" />
                             </p>
                         </li>
                         <li>
                             <a href="#">Helsepersonells plikt og rett til å gi opplysninger til barneverntjenesten, politiet
                                 og sosialtjenesten i saker som dreier seg om mishandling av barn i hjemmet. Veileder</a>
                             <p>
-                                Last ned(pdf, 2MB)<img src="img/last_ned.png" alt="nedlastingsknapp"/>
+                                Last ned(pdf, 2MB)<img class="nedlastingslinkBilde" src="img/last_ned.png" alt="nedlastingsknapp" />
                             </p>
                         </li>
                     </ul>
@@ -120,7 +156,7 @@
                         offentlig eller privat regi eller om arbeidet er fast eller leilighetsvis.
                     </p>
 
-                    <p style="display: block">
+                    <p  style="display: block">
                         Loven gjelder som utgangspunkt også andre enn autorisert helsepersonell så framt de yter helsehjelp i helse- og
                         omsorgstjenesten og apotek.
                     </p>
@@ -219,9 +255,9 @@
                 <section id="section4">
                     <!--<div class="tabContent">-->
 
-                    <h3 class="utvidbarMeny js-expander">Om helsepersonelloven</h3>
+                    <h3 class="utvidbarOverskrift js-expander">Om helsepersonelloven</h3>
 
-                    <div class="utvidbarMeny js-expand">
+                    <div class="utvidbarOverskrift js-expand">
                         Tekst
                     </div>
                     <ul>
@@ -255,12 +291,12 @@
                 <!--                        </div>-->
                 <!--</div>-->
                 <!--                    </section>-->
-                <div class="kontaktModul">
+                <div class="kontaktModul" >
                     <h3>Ansvarlig for denne siden</h3>
 
-                    <!--                        <div class="fargeboks1"></div>-->
-                    <!--                        <div class="fargeboks2"></div>-->
-                    <!--                        <div class="fargeboks3"></div>-->
+<!--                                            <div class="fargeboks1"></div>-->
+<!--                                            <div class="fargeboks2"></div>-->
+<!--                                            <div class="fargeboks3"></div>-->
                     <!--<br/>-->
                     <!--<table class="kontaktModulStyling" cellspacing="0">-->
                     <!--<tr>-->
@@ -271,7 +307,7 @@
                     <!--</table>-->
                     <img src="img/stripe_liten_kald.png"/>
                     <br/>
-                    <img src="img/person_placeholder.png">
+                    <img src="img/ansatt_bilde.png">
 
                     <p>
                         Julia Olsen<br/>
@@ -296,6 +332,7 @@
         </footer>
 
         <script src="js/tabs.js"></script>
+        <script src="js/dropdown.js"></script>
         <!--<script>-->
         <!--$(function () {-->
         <!--$(".tabs a").html5jTabs();-->

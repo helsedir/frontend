@@ -6,6 +6,10 @@
     -moz-box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+}
+
 /* HTML5 fixes for backwards compatibility */
 
 header, nav, menu, #main, footer, section, aside, article {
@@ -13,14 +17,14 @@ header, nav, menu, #main, footer, section, aside, article {
 }
 
 body {
-    font-family: Calibri;
-    line-height: 1.5;
-    font-size: 100%;
-    font-weight: 300;
-    background:#004e66;
-    color: black;
+font-family: 'Calibri';
+    font-size: 18px;
+    font-size: 1.125rem;
+    /*font-weight: 300;*/
+    color: #222;
     margin: 0 auto;
     padding: 0;
+    line-height: 35px;
 }
 
 a {
@@ -41,15 +45,13 @@ a:hover {
 header.rammeverk {
     z-index: 100;
     background: white;
-    margin-top: 1em;
-padding-right: 1em;
-padding-bottom: 2em;
+padding-right: 1rem;
 }
 
 
 #hovedtittel {
     height: 24px;
-    margin: .75rem .75rem 0;
+    margin-left: .75rem;
     display: inline;
 }
 
@@ -70,7 +72,7 @@ padding-bottom: 2em;
     text-transform: uppercase;
     padding: .5rem  .75rem;
     display: inline;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
     font-family:"soho gothic pro medium";
     color: white;
 }
@@ -95,7 +97,6 @@ padding-bottom: 2em;
 
 #hovedmeny ul {
     list-style-type: none;
-    margin: .75em 0 0;
     padding: 0;
 }
 
@@ -111,7 +112,7 @@ padding-bottom: 2em;
 
 #main {
     background-color: #ffffff;
-    color: #000;
+    color: #222;
     overflow: hidden;
 }
 
@@ -129,7 +130,7 @@ article {
 }
 
 #breadcrumbs, article footer {
-    font-size: .85rem;
+    font-size: 0.792rem;
 }
 
 #sidetittel {
@@ -140,8 +141,8 @@ article {
 }
 
 #ingress {
-    font-size: 1.3em;
-    line-height: 1.4;
+    font-size: 1em;
+    line-height: 40px;
     font-weight: 400;
 }
 
@@ -213,9 +214,9 @@ article .stoettemeny li {
 
 article footer .stoettemeny li {
     height: 0;
-    width: 2em;
-    line-height: 1em;
-    padding-bottom: 1em;
+    width: 2rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
     overflow: hidden;
     display: inline-block;
     cursor: pointer;
@@ -292,7 +293,7 @@ footer.rammeverk section#bloggfeed {
 	content: "\f09a";
 	font-family: FontAwesome;
     color: #999;
-    padding-right: .25em;
+    padding-right: .25rem;
 }
 
 #twitter:before {
@@ -372,7 +373,7 @@ footer.rammeverk section#socialmedia {
     display: block;
 	font-family: FontAwesome;
     background: #eee;
-    width: 1.5em;
+    width: 1.5rem;
     position: absolute;
     top: .75rem;
     height: 1.5rem;
@@ -552,7 +553,7 @@ footer.rammeverk section#socialmedia {
     font-size: 1.5rem;
     font-weight: 500;
     display: block;
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 .veiviser section {
@@ -565,7 +566,7 @@ footer.rammeverk section#socialmedia {
 /* Personregister */
 
 table {
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 caption, thead {
@@ -597,7 +598,7 @@ th {
 
 article .has-hidden-content h2,
 article .has-visible-content h2 {
-    padding-right: 1.5em;
+    padding-right: 1.5rem;
 }
 
 article .has-hidden-content h2:before,
@@ -605,60 +606,19 @@ article .has-visible-content h2:before {
 	font-family: FontAwesome;
 	content: "\f068"; /* Minus-sign */
     float: right;
-    margin-right: -1.5em;
+    margin-right: -1.5rem;
 }
 
 article .has-hidden-content h2:before {
 	content: "\f067"; /* Plus-sign */
 }
 
-/**********************************************************************/
-/* Custom code */
-article .innholdswrapper{
-      min-height: 70px;
-    background: whitesmoke;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-article .has-hidden-content h3,
-article .has-visible-content h3 {
-    padding-right: 1.5em;
-}
-
-article .has-hidden-content h3:before,
-article .has-visible-content h3:before {
-	font-family: FontAwesome;
-	content: "\f106"; 
-    float: right;
-    margin-right: -0.7em;
-    font-size: 2em;
-
-}
-
-article .has-hidden-content h3:before {
-    content: "\f107";
-    font-size: 2em;
-}
-
-#breakpoint {
-    color: white;
-}
-
-#hovedmeny span {
-        float: right;
-}
-
-header.rammeverk p {
-    
-}
 
 
 
 /**********************************************************************/
 /* Landscape-oriented mobiles and portrait-oriented tablets. Two columns. */
-@media only screen and (min-width: 37.500em) {
+@media only screen and (min-width: 37.500rem) {
 
 #funksjoner, article footer, #bloggfeed, #sidebar {
     display: block;
@@ -716,7 +676,7 @@ header .stoettemeny {
 #innlogging a:before,
 #innlogging a:after {
 	font-family: FontAwesome;
-    padding: .25em;
+    padding: .25rem;
 }
 
 #innlogging a:before {
@@ -762,9 +722,9 @@ header .stoettemeny #tekststoerrelse:hover .veiledning {
     background: black;
     color: white;
     border: 20px solid white;
-    font-size: 3em;
+    font-size: 3rem;
     z-index: 999;
-    padding: 1em;
+    padding: 1rem;
 }
 
 #hovedtittel {
@@ -783,6 +743,7 @@ header .stoettemeny #tekststoerrelse:hover .veiledning {
 
 header.rammeverk {
     position: relative;
+    padding: 0;
 }
 
 header.rammeverk .container{
@@ -800,7 +761,7 @@ header.rammeverk .container{
 #hovedmeny .menypunkt {
     cursor: pointer;
     font-size: 0.85rem;
-    margin: 1.5rem 0 .75rem;
+   /*margin: 1.5rem 0 .75rem;*/
 }
 
 #hovedmeny .hovedmenypunkt {
@@ -809,19 +770,19 @@ header.rammeverk .container{
     line-height: 3rem;
 }
 
-#hovedmeny .hovedmenypunkt:last-child {
+/*#hovedmeny .hovedmenypunkt:last-child {
     float: right;
-}
+}*/
 
 #hovedmeny .hovedmenypunkt.active:after {
 	content: "\f0d8";
 	font-family: FontAwesome;
     font-size: 1.5rem;
-    height: .5em;
-    line-height: .5em;
-    width: .5em;
+    height: .5rem;
+    line-height: .5rem;
+    width: .5rem;
     bottom: -2px;
-    margin-left: -.25em;
+    margin-left: -.25rem;
     position: absolute;
 }
 
@@ -833,7 +794,7 @@ header.rammeverk .container{
 #hovedmeny li span {
     height: 3rem;
     padding: 0 .75rem;
-    border: 0px solid #666;
+    /*border: 0px solid #666;*/
     border-left-width: 1px
 }
 
@@ -841,11 +802,11 @@ header.rammeverk .container{
     border-left-width: 0
 }
 
-#hovedmeny li:last-child span:before {
+/*#hovedmeny li:last-child span:before {
 	content: "\f002";
 	font-family: FontAwesome;
     padding-right: .5em;
-}
+}*/
 
 #hovedmeny h2, #hovedmeny h2:before {
     display: none;
@@ -1115,17 +1076,20 @@ footer.rammeverk section#bloggfeed {
         padding: 0;
     }
 
-    #hovedmeny span {
+    #hovedmeny div {
         display: none;
     }
 
+    /*.dropdownmeny {
+        display: none;
+    }*/
 
 
 
 
 }/******************************************************************** */
 /* Narrow desktops and landscape-oriented tablets.  Three columns. */
-@media only screen and (min-width: 58.5em) {
+@media only screen and (min-width: 58.5rem) {
 
 #main, article {
     overflow: hidden;
@@ -1228,7 +1192,7 @@ footer.rammeverk section#bloggfeed {
 
 
 }/*********************************************************************/
-/* Typical desktops. Four columns. */ @media only screen and (min-width: 78em) {
+/* Typical desktops. Four columns. */ @media only screen and (min-width: 78rem) {
 
 /* Rammeverk */
 
