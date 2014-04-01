@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Foundation 4</title>
         <link href="css/master.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/tabs.css" rel="stylesheet">
         <link href="css/customLESS.css" rel="stylesheet">
-        
+
+        <link href="css/bootstrap.css" rel="stylesheet" />
 
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/changeLayoutOnHeaderContents.js"></script>
@@ -27,42 +28,36 @@
                 <h1 id="hovedtittel">
                     <img id="logo" src="img/HDIR-LOGO-HORISONTAL-NEW.png" alt="Helsedirektoratet logo"/>
                 </h1>
+                <div class="js-toggler-cue" id="mobilmeny">
+                    <!--                        <ul class="dropdownmeny no-js">-->
+                    <!--                            <li>-->
+                    <!--                                <img src="img/ikon_søk.png" alt="Søkeknapp" />-->
+                    <!--                            </li>-->
+                    <!--                            <li>-->
+                    Meny<img src="img/meny.svg" alt="Menyknapp" id="menyknapp" class="menyknapp" onclick=diffImage(this) />
+                    <img src="img/ikon_søk.png" alt="Søkeknapp"><!--                                <ul>-->
+                    <!--                                    <li class="hovedmenypunkt">-->
+                    <!--                                        <span class="menypunkt">Lenke 1</span>-->
+                    <!--                                    </li>-->
+                    <!--                                    <li class="hovedmenypunkt">-->
+                    <!--                                        <span class="menypunkt">Lenke 2</span>-->
+                    <!--                                    </li>-->
+                    <!--                                    <li class="hovedmenypunkt">-->
+                    <!---->
+                    <!--                                        <span class="menypunkt">Lenke 3</span>-->
+                    <!--                                    </li>-->
+                    <!--                                </ul>-->
+                    <!--                            </li>-->
+                    <!--                        </ul>-->
+                </div>
                 <nav id="hovedmeny">
-                    <div class="js-toggler-cue" id="mobilmeny">
-<!--                        <ul class="dropdownmeny no-js">-->
-                            <!--                            <li>-->
-                            <!--                                <img src="img/ikon_søk.png" alt="Søkeknapp" />-->
-                            <!--                            </li>-->
-<!--                            <li>-->
-                        Meny<img src="img/ikon-meny_aapne.png" alt="Menyknapp" id="menyknapp" class="menyknapp" onclick=diffImage(this) />
-                        <img src="img/ikon_søk.png" alt="Søkeknapp"><!--                                <ul>-->
-<!--                                    <li class="hovedmenypunkt">-->
-<!--                                        <span class="menypunkt">Lenke 1</span>-->
-<!--                                    </li>-->
-<!--                                    <li class="hovedmenypunkt">-->
-<!--                                        <span class="menypunkt">Lenke 2</span>-->
-<!--                                    </li>-->
-<!--                                    <li class="hovedmenypunkt">-->
-<!---->
-<!--                                        <span class="menypunkt">Lenke 3</span>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-                    </div>
-                </nav>
-                <div class="dropdownmeny">
                     <ul class="dropdownmenyliste no-js">
-                        <!--                            <li>-->
-                        <!--                                 />-->
-                        <!--                            </li>-->
-                        
-                                <li class="hovedmenypunkt">
-                                    <span class="menypunkt"><a href="#">Tema</a></span>
-                                </li>
-                                <li class="hovedmenypunkt">
-                                    <span class="menypunkt"><a href="#">Publikasjoner</a></span>
-                                </li>
+                        <li class="hovedmenypunkt">
+                            <span class="menypunkt"><a href="#">Tema</a></span>
+                        </li>
+                        <li class="hovedmenypunkt">
+                            <span class="menypunkt"><a href="#">Publikasjoner</a></span>
+                        </li>
                         <li class="hovedmenypunkt">
 
                             <span class="menypunkt"><a href="#">Skjema</a></span>
@@ -81,7 +76,8 @@
                         </li>
 
                     </ul>
-                </div>
+                </nav>
+         
             </div>
         </header>
         <div id="main">

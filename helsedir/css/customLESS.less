@@ -1,6 +1,7 @@
 ﻿@fontRoboto: 'Roboto', sans-serif;
 @fontCalibri: 'Calibri';
 @fontSoho: "soho gothic pro medium";
+@fontSohoLight: "soho gothic pro light";
 @colorMorkBlaa: #004e66;
 @colorOrange: #df9922;
 @colorMediumBlaa: #0093a7;
@@ -10,21 +11,56 @@
 @colorRoed: #c63629;
 @colorGul: #f4d01e;
 
-h1,h2,h3,h4{
-    font-family: @fontSoho
+html {
+    font-size: 100%;
+}
+
+body {
+font-family: 'Calibri';
+    font-size: 20px;
+    /*font-weight: 300;*/
+    color: #222;
+    margin-bottom: 2.300em;
+    padding: 0;
+    line-height: 1.750em;
 }
 
 h1{
-font-size: 1.750em;
+font-size: 2.800em;
+font-family: @fontSohoLight;
+font-weight: normal;
+}
+
+.ingress{
+    font-size: 1.579em;
+    font-family: @fontCalibri;
 }
 
 h2{
-    font-size: 1.333em;
+    font-size: 1.200em;
+    font-family: @fontSohoLight;
+    font-weight: normal;
 }
 
 h3{
     font-size: 1em;
+    margin-bottom: 2.875rem;
 }
+
+a {
+    text-decoration: none;
+    color: #004e66;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc00cc; /* hot pink? */
+}
+
+header{
+    background: @colorMorkBlaa;
+}
+
 
 footer.rammeverk{
     height: 100%;
@@ -52,11 +88,12 @@ footer.rammeverk{
 }
 
 #mobilmeny{
-    background:#004e66
+    background:#004e66;
+    float: right;
 }
 
 #menyknapp{
-    vertical-align: top;
+    width: 2rem;
 }
 
 .fonttest{
@@ -114,11 +151,8 @@ footer.rammeverk{
     margin-top: 2rem;
 }
 
-#soekeknapp{
-    float: right;
-    margin-top: 2rem;
-    height: auto;
-    width: 1.4rem;
+#sokeknapp{
+    width: 2rem;
 }
 
 #hovedmeny {
@@ -171,10 +205,7 @@ footer.rammeverk{
     margin: 0;
     padding-left: 2rem;
     display: inline-block;
-    width: 43%;
-    h3{
-        margin: 0;
-    }
+    
     p{
         line-height: 1.5rem;
         margin: 0;
@@ -479,7 +510,6 @@ float: left;
 
 .nedlastingsLinker {
     list-style-type: none;
-    padding: 12px;
 }
 
 .nedlastingsLinker li {
@@ -610,9 +640,7 @@ header.rammeverk p {
         line-height: 30px;
     }
 
-    #h1Font h1 {
-        font-family: @fontSoho;
-    }
+  
 
     #h2Font h2 {
         font-family: @fontSoho;
@@ -710,4 +738,56 @@ header.rammeverk p {
     {
         vertical-align: text-top;
     }
+}
+
+.stripes {
+    width: 75%;
+    position: absolute;
+    height: 6px;
+    left: 12.5%;
+    top: -6px;
+
+    .left, .middle, .right {
+        width: 33%;
+        float: left;
+        height: 100%;
+        
+    }
+
+    &.cold {
+
+        .left {
+            background: @colorMorkBlaa;
+        }
+
+        .middle {
+            background: @colorMediumBlaa;
+        }
+
+        .right {
+            background: @colorLysBlaa;
+        }
+    }
+
+    &.warm {
+        .left {
+            background: @colorGul;
+        }
+
+        .middle {
+            background: @colorOrange;
+        }
+
+        .right {
+            background: @colorRoed;
+        }
+    }
+
+    &.left{
+        left: 0;
+    }
+}
+
+.stripes-outer{
+    position: relative;
 }

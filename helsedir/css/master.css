@@ -18,13 +18,12 @@ header, nav, menu, #main, footer, section, aside, article {
 
 body {
 font-family: 'Calibri';
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 20px;
     /*font-weight: 300;*/
     color: #222;
-    margin: 0 auto;
+    margin-bottom: 2.300em;
     padding: 0;
-    line-height: 35px;
+    line-height: 1.750em;
 }
 
 a {
@@ -618,7 +617,7 @@ article .has-hidden-content h2:before {
 
 /**********************************************************************/
 /* Landscape-oriented mobiles and portrait-oriented tablets. Two columns. */
-@media only screen and (min-width: 37.500rem) {
+@media only screen and (min-width: 600px) {
 
 #funksjoner, article footer, #bloggfeed, #sidebar {
     display: block;
@@ -1089,7 +1088,7 @@ footer.rammeverk section#bloggfeed {
 
 }/******************************************************************** */
 /* Narrow desktops and landscape-oriented tablets.  Three columns. */
-@media only screen and (min-width: 58.5rem) {
+@media only screen and (min-width: 900px) {
 
 #main, article {
     overflow: hidden;
@@ -1192,7 +1191,7 @@ footer.rammeverk section#bloggfeed {
 
 
 }/*********************************************************************/
-/* Typical desktops. Four columns. */ @media only screen and (min-width: 78rem) {
+/* Typical desktops. Four columns. */ @media only screen and (min-width: 1200px) {
 
 /* Rammeverk */
 

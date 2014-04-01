@@ -1,17 +1,44 @@
-﻿h1,
-h2,
-h3,
-h4 {
-  font-family: "soho gothic pro medium";
+﻿html {
+  font-size: 100%;
+}
+body {
+  font-family: 'Calibri';
+  font-size: 20px;
+  /*font-weight: 300;*/
+  color: #222;
+  margin-bottom: 2.300em;
+  padding: 0;
+  line-height: 1.750em;
 }
 h1 {
-  font-size: 1.750em;
+  font-size: 2.800em;
+  font-family: "soho gothic pro light";
+  font-weight: normal;
+}
+.ingress {
+  font-size: 1.579em;
+  font-family: 'Calibri';
 }
 h2 {
-  font-size: 1.333em;
+  font-size: 1.200em;
+  font-family: "soho gothic pro light";
+  font-weight: normal;
 }
 h3 {
   font-size: 1em;
+  margin-bottom: 2.875rem;
+}
+a {
+  text-decoration: none;
+  color: #004e66;
+}
+a:hover {
+  text-decoration: underline;
+  color: #cc00cc;
+  /* hot pink? */
+}
+header {
+  background: #004e66;
 }
 footer.rammeverk {
   height: 100%;
@@ -37,9 +64,10 @@ footer.rammeverk a:visited {
 }
 #mobilmeny {
   background: #004e66;
+  float: right;
 }
 #menyknapp {
-  vertical-align: top;
+  width: 2rem;
 }
 .fonttest {
   font-family: Calibri;
@@ -83,11 +111,8 @@ footer.rammeverk a:visited {
   float: right;
   margin-top: 2rem;
 }
-#soekeknapp {
-  float: right;
-  margin-top: 2rem;
-  height: auto;
-  width: 1.4rem;
+#sokeknapp {
+  width: 2rem;
 }
 #hovedmeny ul {
   height: 3rem;
@@ -127,10 +152,6 @@ footer.rammeverk a:visited {
   margin: 0;
   padding-left: 2rem;
   display: inline-block;
-  width: 43%;
-}
-.kontaktModul h3 {
-  margin: 0;
 }
 .kontaktModul p {
   line-height: 1.5rem;
@@ -371,7 +392,6 @@ a:visited {
 }
 .nedlastingsLinker {
   list-style-type: none;
-  padding: 12px;
 }
 .nedlastingsLinker li {
   margin-bottom: 15px;
@@ -467,9 +487,6 @@ article .has-hidden-content h3:before {
   font-size: 1em;
   line-height: 30px;
 }
-.hhs #h1Font h1 {
-  font-family: "soho gothic pro medium";
-}
 .hhs #h2Font h2 {
   font-family: "soho gothic pro medium";
   font-size: 1.333em;
@@ -540,5 +557,43 @@ article .has-hidden-content h3:before {
 }
 .hhs #toppmenyKnapp {
   vertical-align: text-top;
+}
+.stripes {
+  width: 75%;
+  position: absolute;
+  height: 6px;
+  left: 12.5%;
+  top: -6px;
+}
+.stripes .left,
+.stripes .middle,
+.stripes .right {
+  width: 33%;
+  float: left;
+  height: 100%;
+}
+.stripes.cold .left {
+  background: #004e66;
+}
+.stripes.cold .middle {
+  background: #0093a7;
+}
+.stripes.cold .right {
+  background: #6cb4b5;
+}
+.stripes.warm .left {
+  background: #f4d01e;
+}
+.stripes.warm .middle {
+  background: #df9922;
+}
+.stripes.warm .right {
+  background: #c63629;
+}
+.stripes.left {
+  left: 0;
+}
+.stripes-outer {
+  position: relative;
 }
 /*# sourceMappingURL=customLESS.css.map */
