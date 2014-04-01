@@ -276,10 +276,12 @@
                         <a name="hhs-c2aknapp"></a>
                         <h3 class="illustrasjonOverskrift">C2A-knapp</h3>
                         <div class="illustrasjon">
-                            <div class="c2aKnapp">
-                                <h3>Se alle retningslinjer<img src="img/pil2-svart.svg" /></h3>
+                            <div class="c2aknapp-wrapper">
+                                <button class="c2aKnapp" type="submit"><h3>Se alle retningslinjer<img src="img/pil2-svart.svg" /></h3> <div class="skygge">
+    <div class="center"></div>
+</div></button>
+                                
                             </div>
-                            <div class="skygge"></div>
                         </div>
                         
                         <a name="hhs-fillenke"></a>
@@ -323,8 +325,51 @@
                         
                         <a name="hhs-faktaboks"></a>
                         <h3 class="illustrasjonOverskrift">Faktaboks</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
+                        <div class="illustrasjon">
+                            <div class="faktaboks js-expander">
+                                <div class="stripes-outer">
+                                    <div class="stripes cold">
+                                        <div class="left"></div>
+                                        <div class="middle"></div>
+                                        <div class="right"></div>
+                                    </div>
+                                </div>
+                                <h3>Om helsepersonelloven</h3>
+                                <div class="js-expand">
+                                    <h4>Loven omhandler:</h4>
+                                    <ul>
+                                        <li>
+                                            <span>faglig forsvarlig yrkesutøvelse</span>
+                                        </li>
+                                        <li>
+                                            <span>taushetsplikt</span>
+                                        </li>
+                                        <li>
+                                            <span>opplysningsplikt og meldeplikt til nød</span>
+                                        </li>
+                                        <li>
+                                            <span>etater, barnevern, registre mv.</span>
+                                        </li>
+                                        <li>
+                                            <span>dokumentasjonsplikt (journalføring)</span>
+                                        </li>
+                                        <li>
+                                            <span>rekvirering av legemidler</span>
+                                        </li>
+                                        <li>
+                                            <span>markedsføring</span>
+                                        </li>
+                                        <li>
+                                            <span>utstedelse av attester og erklæringer</span>
+                                        </li>
+                                        <li>
+                                            <span>autorisasjon og spesialitsgodkjenning</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
                         
                         <a name="hhs-footer"></a>
                         <h3 class="illustrasjonOverskrift">Footer</h3>
@@ -344,7 +389,25 @@
                         <a name="hhs-arkfane"></a>
                         <h3 class="illustrasjonOverskrift">Arkfane</h3>
                         <p></p>
-                        <div class="illustrasjon"></div>
+                        <div class="illustrasjon">
+                            <div id="tabs">
+                                <ul>
+                                    <li id="tabheading-1"><a href="#tabs-1">Spørsmål og svar</a></li>
+                                    <li id="tabheading-2"><a href="#tabs-2">Brev og uttalelser</a></li>
+                                </ul>
+                                <div id="tabs-1" class="kollapslenker-tabs">
+                                    <h4>Hvem gjelder loven for?<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Hvem er helsepersonell?<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Hva er helsehjelp?<i class="fa fa-chevron-down"></i></h4>
+                                </div>
+                                <div id="tabs-2" class="kollapslenker-tabs">
+                                    <h4>Brev<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Uttalelser<i class="fa fa-chevron-down"></i></h4>
+
+                                </div>
+
+                            </div>
+                        </div>
                         
                         <a name="hhs-statistikkteaser"></a>
                         <h3 class="illustrasjonOverskrift">Statistikkteaser</h3>

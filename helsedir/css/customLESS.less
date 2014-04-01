@@ -57,8 +57,13 @@ a:hover {
     color: #cc00cc; /* hot pink? */
 }
 
-header{
+header {
     background: @colorMorkBlaa;
+
+    a, a:hover, a:visited {
+        color: black;
+        text-decoration: none;
+    }
 }
 
 
@@ -226,23 +231,18 @@ footer.rammeverk{
 
 .faktaboks {
     position: relative;
-    width: 20rem;
     min-height: 70px;
     background: @colorLysGraa;
     color: black;
     margin-bottom: 10px;
     padding: 10px;
 
-    .toppstrek {
-        position: absolute;
-        top: -6px;
-        left: 2.5rem;
+    .stripes-outer {
+        top: -9px;
     }
 
-    .bunnstrek {
-        position: absolute;
+    .stripes-under {
         top: 100%;
-        left: 2.5rem;
     }
 
     ul{
@@ -254,6 +254,10 @@ footer.rammeverk{
                         color:black;
                     }
                 }
+    }
+    h3{
+        text-align: center;
+        height:50%;
     }
 
     h4{
@@ -369,7 +373,6 @@ footer.rammeverk{
 }
 
  #tabs{
-     float: right;
 
      #tabheading-1{
          border-top: 7px solid @colorMorkBlaa;
@@ -577,10 +580,7 @@ header.rammeverk p {
         color: white;
     }
 
-    ul {
-        float: left;
-        list-style-type: none;
-    }
+   
 
     h1, h2 {
         font-family: @fontLight;
@@ -588,6 +588,8 @@ header.rammeverk p {
 
     h2 {
         font-size: 2em;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     #hovedtittel {
@@ -645,6 +647,7 @@ header.rammeverk p {
     #h2Font h2 {
         font-family: @fontSoho;
         font-size: 1.333em;
+        margin: 0;
     }
 
 
@@ -700,10 +703,12 @@ header.rammeverk p {
         width: 14.375rem;
         height: 2.3rem;
         line-height: 2.2rem;
+        padding: 0;
+        border: none;
         h3 {
-            padding: 0 0.5rem 0.2rem 1rem;
             font-family: @fontCalibri;
             font-weight: bold;
+            margin: 0;
         }
 
 
@@ -719,6 +724,9 @@ header.rammeverk p {
 
     .toppmeny{
         ul{
+                    list-style-type: none;
+
+            float: left;
             margin: 1rem 2rem 1rem 0;
             padding: 1rem 2rem 1rem 0;
 
@@ -738,6 +746,21 @@ header.rammeverk p {
     {
         vertical-align: text-top;
     }
+
+     .faktaboks{
+         width: 20rem;
+
+         ul{
+             padding-left: 2rem;
+                             float: none;
+
+         }
+     }
+
+     #tabs{
+         width: 35%;
+     }
+
 }
 
 .stripes {
@@ -788,6 +811,21 @@ header.rammeverk p {
     }
 }
 
-.stripes-outer{
+.skygge{
+     width: 75%;
+    position: absolute;
+    height: 5px;
+    left: 12.5%;
+    top: 100%;
+
+    .center{
+        float:left;
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+}
+
+.stripes-outer, .stripes-under, .skygge{
     position: relative;
 }
