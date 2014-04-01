@@ -65,8 +65,9 @@ footer.rammeverk a:visited {
   text-decoration: none;
   color: white !important;
 }
-.nedlastingsLinker p {
+.nedlastingsLinker {
   margin: 0;
+  padding: 0;
 }
 #mobilmeny {
   background: #004e66;
@@ -156,7 +157,6 @@ footer.rammeverk a:visited {
   color: #004e66;
   /*float: right;*/
   margin: 0;
-  padding-left: 2rem;
   display: inline-block;
 }
 .kontaktModul p {
