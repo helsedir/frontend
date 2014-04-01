@@ -47,6 +47,16 @@ h3{
     margin-bottom: 2.875rem;
 }
 
+h4{
+    font-family: @fontSohoLight;
+    font-size: 26px;
+}
+
+#logo{
+    background: white;
+padding: 1rem 1rem 1.7rem 1rem;
+}
+
 a {
     text-decoration: none;
     color: #004e66;
@@ -91,6 +101,10 @@ footer.rammeverk{
 .nedlastingsLinker {
     margin: 0;
     padding: 0;
+}
+
+.menylinje > p, .menylinje > p > a{
+    color: white;
 }
 
 #mobilmeny{
@@ -149,7 +163,6 @@ footer.rammeverk{
 
 .topplinje{
     background: @colorMorkBlaa;
-    min-height: 3rem;
 }
 
 #soekefelt{
@@ -267,23 +280,16 @@ footer.rammeverk{
 }
 
 .informasjonsboks {
-    float: right;
     position: relative;
-    width: 25rem;
     min-height: 70px;
     color: Black;
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 30px 30px 0 30px;
 
-    .toppstrek {
-        position: absolute;
-        top: 1.74rem;
-        left: 4.5rem;
-    }
 
     a {
-        text-decoration: none;
+        text-decoration: underline;
         cursor: pointer;
+        color: @colorMorkBlaa;
 
         h4 {
             padding-left: 1.2rem;
@@ -294,13 +300,18 @@ footer.rammeverk{
         }
     }
 
+    .seAlle-link {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
     ul {
-        list-style-type: square;
+        list-style-type: disc;
+        padding-left: 1.4rem;
 
-
-
-        li > span {
-            color: @colorMorkBlaa;
+        li {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
     }
 
@@ -308,18 +319,43 @@ footer.rammeverk{
         color: @colorRoed;
     }
 
-    #tilskudd > li{
-        color:@colorGul;
-    }
-    #lover > li{
-        color:@colorOrange;
+    #tilskudd > li {
+        color: @colorGul;
     }
 
+
+
+    &.lover {
+        border: 1px solid @colorRoed;
+
+        .lover-liste > li {
+            color: @colorRoed;
+        }
+    }
+
+    &.retningslinjer {
+        border: 1px solid @colorOrange;
+
+
+        .retningslinjer-liste > li {
+            color: @colorOrange;
+        }
+
+        ul {
+        }
+    }
+
+    .stripes {
+        left: 0;
+            width: 100%;      
+            top: -36px;
+
+    }
+
+    
+
     h4 {
-        padding-left: 1.2rem;
-        border-left: 1px solid @colorRoed;
-        border-top: 1px solid @colorRoed;
-        border-right: 1px solid @colorRoed;
+        margin-bottom: 2rem;
     }
 }
 
@@ -581,7 +617,7 @@ header.rammeverk p {
         color: white;
     }
 
-   
+
 
     h1, h2 {
         font-family: @fontLight;
@@ -610,14 +646,12 @@ header.rammeverk p {
     }
 
     .illustrasjonOverskrift {
-
-            font-family: @fontLight;
-            color: #94928F;
-            text-transform: uppercase;
-            border-top: 1px solid #ddd;
-            margin-top: 2rem;
-            margin-bottom: 1em;
-        
+        font-family: @fontLight;
+        color: #94928F;
+        text-transform: uppercase;
+        border-top: 1px solid #ddd;
+        margin-top: 2rem;
+        margin-bottom: 1em;
     }
 
 
@@ -643,7 +677,7 @@ header.rammeverk p {
         line-height: 30px;
     }
 
-  
+
 
     #h2Font h2 {
         font-family: @fontSoho;
@@ -661,7 +695,6 @@ header.rammeverk p {
     .illustrasjon {
 
         p {
-            max-width: 500px;
         }
 
         table {
@@ -693,7 +726,7 @@ header.rammeverk p {
         }
     }
 
-    .ikoner img{
+    .ikoner img {
         width: 1.875rem;
         vertical-align: bottom;
         margin-right: 0.2em;
@@ -706,6 +739,7 @@ header.rammeverk p {
         line-height: 2.2rem;
         padding: 0;
         border: none;
+
         h3 {
             font-family: @fontCalibri;
             font-weight: bold;
@@ -721,47 +755,50 @@ header.rammeverk p {
         }
     }
 
- 
 
-    .toppmeny{
-        ul{
-                    list-style-type: none;
 
+    .toppmeny {
+        ul {
+            list-style-type: none;
             float: left;
             margin: 1rem 2rem 1rem 0;
             padding: 1rem 2rem 1rem 0;
 
-            h2{
+            h2 {
                 margin-bottom: 0.7rem;
             }
 
-            a, a:visited{
+            a, a:visited {
                 text-decoration: none;
                 color: #fff;
-
             }
         }
     }
 
-    #toppmenyKnapp
-    {
+    #toppmenyKnapp {
         vertical-align: text-top;
     }
 
-     .faktaboks{
-         width: 20rem;
+    .faktaboks {
+        width: 20rem;
 
-         ul{
-             padding-left: 2rem;
-                             float: none;
+        ul {
+            padding-left: 2rem;
+            float: none;
+        }
+    }
 
-         }
-     }
+    #tabs {
+        width: 35%;
+    }
 
-     #tabs{
-         width: 35%;
-     }
+    .informasjonsboks {
+        width: 30rem;
+    }
 
+    .transportsideknapp {
+    width: 600px;
+    }
 }
 
 .stripes {
@@ -795,7 +832,7 @@ header.rammeverk p {
 
     &.warm {
         .left {
-            background: @colorGul;
+            background: @colorRoed;
         }
 
         .middle {
@@ -803,9 +840,11 @@ header.rammeverk p {
         }
 
         .right {
-            background: @colorRoed;
+            background: @colorGul;
         }
     }
+
+     
 
     &.left{
         left: 0;
@@ -819,15 +858,58 @@ header.rammeverk p {
     left: 12.5%;
     top: 100%;
 
-    .center{
+    
+    > div{
         float:left;
         width: 100%;
         height: 100%;
+    }
+
+    .sort{
+
         background: black;
     }
+
+
+    .orange{
+        background: @colorOrange;
+    }
+
+    .roed{
+        background: @colorRoed;
+
+    }
+
+    .blaa{
+        background: @colorMediumBlaa;
+
+    }
+
+    &.bottom{
+        left: 0;
+        width: 100%;
+        top:5px;
+    }
+
+   
 }
 
 .stripes-outer, .stripes-under, .skygge{
     position: relative;
 }
 
+.transportsideknapp {
+    border: 1px solid @colorMediumBlaa;
+    padding: 1rem 1rem 1rem 0.5rem;
+
+    a, a:hover, a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .skygge {
+            height:3px;
+            top: 19px;
+        
+    }
+}
