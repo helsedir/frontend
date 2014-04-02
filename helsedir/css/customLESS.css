@@ -34,7 +34,7 @@ h4 {
 }
 #logo {
   background: white;
-  padding: 1rem 1rem 1.7rem 1rem;
+  padding: 1rem 1rem 1.6rem 1rem;
 }
 a {
   text-decoration: none;
@@ -77,8 +77,8 @@ footer.rammeverk a:visited {
   margin: 0;
   padding: 0;
 }
-.menylinje > p,
-.menylinje > p > a {
+.menylinje p span a,
+.menylinje > p > span {
   color: white;
 }
 #mobilmeny {
@@ -461,6 +461,10 @@ article .has-hidden-content h3:before {
 .hhs .topplinje {
   color: white;
 }
+.hhs .toppmeny ul a,
+.hhs .toppmeny ul a:visited {
+  color: #fff;
+}
 .hhs h1,
 .hhs h2 {
   font-family: "soho gothic pro light";
@@ -564,20 +568,6 @@ article .has-hidden-content h3:before {
   width: 1.875rem;
   padding-top: 0.2rem;
 }
-.hhs .toppmeny ul {
-  list-style-type: none;
-  float: left;
-  margin: 1rem 2rem 1rem 0;
-  padding: 1rem 2rem 1rem 0;
-}
-.hhs .toppmeny ul h2 {
-  margin-bottom: 0.7rem;
-}
-.hhs .toppmeny ul a,
-.hhs .toppmeny ul a:visited {
-  text-decoration: none;
-  color: #fff;
-}
 .hhs #toppmenyKnapp {
   vertical-align: text-top;
 }
@@ -679,5 +669,33 @@ article .has-hidden-content h3:before {
 .transportsideknapp .skygge {
   height: 3px;
   top: 19px;
+}
+.toppmeny ul {
+  list-style-type: none;
+  float: left;
+  margin: 1rem 2rem 1rem 0;
+  padding: 0 2rem 1rem 0;
+}
+.toppmeny ul h2 {
+  margin-bottom: 0.7rem;
+}
+.toppmeny ul a,
+.toppmeny ul a:visited {
+  text-decoration: none;
+  color: #004e66;
+}
+.pilIkon {
+  width: 1.875rem;
+  vertical-align: bottom;
+  margin-right: 0.2em;
+}
+.topplinjeWrapper {
+  overflow: auto;
+  background: #004e66;
+}
+.dropdownWrapper {
+  overflow: auto;
+  background: white;
+  color: #004e66;
 }
 /*# sourceMappingURL=customLESS.css.map */

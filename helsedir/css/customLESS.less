@@ -54,7 +54,7 @@ h4{
 
 #logo{
     background: white;
-padding: 1rem 1rem 1.7rem 1rem;
+padding: 1rem 1rem 1.6rem 1rem;
 }
 
 a {
@@ -103,7 +103,7 @@ footer.rammeverk{
     padding: 0;
 }
 
-.menylinje > p, .menylinje > p > a{
+.menylinje p span a, .menylinje > p > span{
     color: white;
 }
 
@@ -617,7 +617,11 @@ header.rammeverk p {
         color: white;
     }
 
-
+    .toppmeny ul {
+        a, a:visited {
+            color: #fff;
+        }
+    }
 
     h1, h2 {
         font-family: @fontLight;
@@ -757,23 +761,7 @@ header.rammeverk p {
 
 
 
-    .toppmeny {
-        ul {
-            list-style-type: none;
-            float: left;
-            margin: 1rem 2rem 1rem 0;
-            padding: 1rem 2rem 1rem 0;
 
-            h2 {
-                margin-bottom: 0.7rem;
-            }
-
-            a, a:visited {
-                text-decoration: none;
-                color: #fff;
-            }
-        }
-    }
 
     #toppmenyKnapp {
         vertical-align: text-top;
@@ -797,7 +785,7 @@ header.rammeverk p {
     }
 
     .transportsideknapp {
-    width: 600px;
+        width: 600px;
     }
 }
 
@@ -912,4 +900,42 @@ header.rammeverk p {
             top: 19px;
         
     }
+}
+
+.toppmeny {
+
+
+    ul {
+        list-style-type: none;
+        float: left;
+        margin: 1rem 2rem 1rem 0;
+        padding: 0 2rem 1rem 0;
+
+        h2 {
+            margin-bottom: 0.7rem;
+        }
+
+        a, a:visited {
+            text-decoration: none;
+            color: @colorMorkBlaa;
+        }
+    }
+}
+
+.pilIkon{
+    width: 1.875rem;
+        vertical-align: bottom;
+        margin-right: 0.2em;
+}
+
+.topplinjeWrapper{
+    overflow:auto;
+    background: @colorMorkBlaa;
+}
+
+.dropdownWrapper{
+    overflow: auto;
+    background: white;
+    color: @colorMorkBlaa;
+
 }
