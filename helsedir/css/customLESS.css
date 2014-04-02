@@ -28,6 +28,14 @@ h3 {
   font-size: 1em;
   margin-bottom: 2.875rem;
 }
+h4 {
+  font-family: "soho gothic pro light";
+  font-size: 26px;
+}
+#logo {
+  background: white;
+  padding: 1rem 1rem 1.7rem 1rem;
+}
 a {
   text-decoration: none;
   color: #004e66;
@@ -68,6 +76,10 @@ footer.rammeverk a:visited {
 .nedlastingsLinker {
   margin: 0;
   padding: 0;
+}
+.menylinje > p,
+.menylinje > p > a {
+  color: white;
 }
 #mobilmeny {
   background: #004e66;
@@ -112,7 +124,6 @@ footer.rammeverk a:visited {
 }
 .topplinje {
   background: #004e66;
-  min-height: 3rem;
 }
 #soekefelt {
   float: right;
@@ -204,22 +215,15 @@ footer.rammeverk a:visited {
   padding-left: 1.2rem;
 }
 .informasjonsboks {
-  float: right;
   position: relative;
-  width: 25rem;
   min-height: 70px;
   color: Black;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-.informasjonsboks .toppstrek {
-  position: absolute;
-  top: 1.74rem;
-  left: 4.5rem;
+  padding: 30px 30px 0 30px;
 }
 .informasjonsboks a {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
+  color: #004e66;
 }
 .informasjonsboks a h4 {
   padding-left: 1.2rem;
@@ -228,11 +232,17 @@ footer.rammeverk a:visited {
   border-right: 1px solid #c63629;
   border-top: 0;
 }
-.informasjonsboks ul {
-  list-style-type: square;
+.informasjonsboks .seAlle-link {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
-.informasjonsboks ul li > span {
-  color: #004e66;
+.informasjonsboks ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+}
+.informasjonsboks ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .informasjonsboks #retningslinjer > li {
   color: #c63629;
@@ -240,14 +250,25 @@ footer.rammeverk a:visited {
 .informasjonsboks #tilskudd > li {
   color: #f4d01e;
 }
-.informasjonsboks #lover > li {
+.informasjonsboks.lover {
+  border: 1px solid #c63629;
+}
+.informasjonsboks.lover .lover-liste > li {
+  color: #c63629;
+}
+.informasjonsboks.retningslinjer {
+  border: 1px solid #df9922;
+}
+.informasjonsboks.retningslinjer .retningslinjer-liste > li {
   color: #df9922;
 }
+.informasjonsboks .stripes {
+  left: 0;
+  width: 100%;
+  top: -36px;
+}
 .informasjonsboks h4 {
-  padding-left: 1.2rem;
-  border-left: 1px solid #c63629;
-  border-top: 1px solid #c63629;
-  border-right: 1px solid #c63629;
+  margin-bottom: 2rem;
 }
 /**Slett senere*/
 #infoboks {
@@ -497,9 +518,6 @@ article .has-hidden-content h3:before {
   padding: 1em;
   margin-bottom: 5em;
 }
-.hhs .illustrasjon p {
-  max-width: 500px;
-}
 .hhs .illustrasjon table {
   margin-bottom: 1em;
 }
@@ -573,6 +591,12 @@ article .has-hidden-content h3:before {
 .hhs #tabs {
   width: 35%;
 }
+.hhs .informasjonsboks {
+  width: 30rem;
+}
+.hhs .transportsideknapp {
+  width: 600px;
+}
 .stripes {
   width: 75%;
   position: absolute;
@@ -597,13 +621,13 @@ article .has-hidden-content h3:before {
   background: #6cb4b5;
 }
 .stripes.warm .left {
-  background: #f4d01e;
+  background: #c63629;
 }
 .stripes.warm .middle {
   background: #df9922;
 }
 .stripes.warm .right {
-  background: #c63629;
+  background: #f4d01e;
 }
 .stripes.left {
   left: 0;
@@ -615,15 +639,45 @@ article .has-hidden-content h3:before {
   left: 12.5%;
   top: 100%;
 }
-.skygge .center {
+.skygge > div {
   float: left;
   width: 100%;
   height: 100%;
+}
+.skygge .sort {
   background: black;
+}
+.skygge .orange {
+  background: #df9922;
+}
+.skygge .roed {
+  background: #c63629;
+}
+.skygge .blaa {
+  background: #0093a7;
+}
+.skygge.bottom {
+  left: 0;
+  width: 100%;
+  top: 5px;
 }
 .stripes-outer,
 .stripes-under,
 .skygge {
   position: relative;
+}
+.transportsideknapp {
+  border: 1px solid #0093a7;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+.transportsideknapp a,
+.transportsideknapp a:hover,
+.transportsideknapp a:visited {
+  color: black;
+  text-decoration: none;
+}
+.transportsideknapp .skygge {
+  height: 3px;
+  top: 19px;
 }
 /*# sourceMappingURL=customLESS.css.map */
