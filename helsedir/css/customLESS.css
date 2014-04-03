@@ -492,6 +492,7 @@ article .has-hidden-content h3:before {
 }
 .hhs .topplinje {
   color: white;
+  background: #004e66;
 }
 .hhs .toppmeny ul a,
 .hhs .toppmeny ul a:visited {
@@ -733,5 +734,21 @@ article .has-hidden-content h3:before {
   float: right;
   width: 1.875rem;
   padding-top: 0.2rem;
+}
+.liten-informasjonsboks {
+  border: 1px solid #222;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0 10px 0;
+}
+.liten-informasjonsboks .blaasOpp {
+  font-size: 3em;
+}
+.liten-informasjonsboks .forminsk {
+  font-size: 0.8em;
+}
+.liten-informasjonsboks p,
+.liten-informasjonsboks span,
+.liten-informasjonsboks a {
+  float: left;
 }
 /*# sourceMappingURL=customLESS.css.map */
