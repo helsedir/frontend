@@ -65,8 +65,8 @@ h4 {
 }
 #logo {
   background: white;
-  padding: 1rem 1rem 1.7rem 1rem;
-  max-height: 106px;
+  padding: 3px 4px 2px 2px;
+  max-height: 37px;
 }
 a {
   text-decoration: none;
@@ -108,6 +108,10 @@ footer.rammeverk a:visited {
 .nedlastingsLinker {
   margin: 0;
   padding: 0;
+}
+.menylinje p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .menylinje p span a,
 .menylinje > p > span {
@@ -691,19 +695,26 @@ article .has-hidden-content h3:before {
   height: 3px;
   top: 19px;
 }
-.toppmeny ul {
+.toppmeny ul,
+.bunnmeny ul {
   list-style-type: none;
   float: left;
   margin: 1rem 2rem 1rem 0;
   padding: 0 2rem 1rem 0;
 }
-.toppmeny ul h2 {
+.toppmeny ul h2,
+.bunnmeny ul h2 {
   margin-bottom: 0.7rem;
 }
-.toppmeny ul a,
-.toppmeny ul a:visited {
+.toppmeny a,
+.toppmeny a:visited {
   text-decoration: none;
   color: #004e66;
+}
+.bunnmeny a,
+.bunnmeny a:visited {
+  text-decoration: none;
+  color: white;
 }
 .pilIkon {
   width: 1.875rem;
@@ -713,11 +724,16 @@ article .has-hidden-content h3:before {
 .topplinjeWrapper {
   overflow: auto;
   background: #004e66;
+  border-bottom: 5px solid #6cb4b5;
 }
 .dropdownWrapper {
   overflow: auto;
   background: white;
   color: #004e66;
+}
+.footerWrapper {
+  overflow: auto;
+  background: #004e66;
 }
 .c2aKnapp {
   background-color: #df9922;

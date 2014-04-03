@@ -95,8 +95,8 @@ h4{
 
 #logo{
     background: white;
-padding: 1rem 1rem 1.7rem 1rem;
-max-height: 106px;
+padding: 3px 4px 2px 2px;
+max-height: 37px;
 }
 
 a {
@@ -145,9 +145,17 @@ footer.rammeverk{
     padding: 0;
 }
 
-.menylinje p span a, .menylinje > p > span{
-    color: white;
-}
+
+
+.menylinje p{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+
+ .menylinje p span a, .menylinje > p > span {
+        color: white;
+    }
+
 
 #mobilmeny{
     background:#004e66;
@@ -933,7 +941,8 @@ header.rammeverk p {
     }
 }
 
-.toppmeny {
+
+.toppmeny, .bunnmeny {
 
 
     ul {
@@ -945,12 +954,22 @@ header.rammeverk p {
         h2 {
             margin-bottom: 0.7rem;
         }
+    }
+}
 
-        a, a:visited {
+.toppmeny{
+      a, a:visited {
             text-decoration: none;
             color: @colorMorkBlaa;
         }
-    }
+
+}
+
+.bunnmeny{
+    a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
 }
 
 .pilIkon{
@@ -962,6 +981,7 @@ header.rammeverk p {
 .topplinjeWrapper{
     overflow:auto;
     background: @colorMorkBlaa;
+    border-bottom: 5px solid @colorLysBlaa;
 }
 
 .dropdownWrapper{
@@ -969,6 +989,11 @@ header.rammeverk p {
     background: white;
     color: @colorMorkBlaa;
 
+}
+
+.footerWrapper{
+     overflow:auto;
+    background: @colorMorkBlaa;
 }
 
 .c2aKnapp {
