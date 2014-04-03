@@ -2,6 +2,9 @@ $(document).ready(function () {
 
     "use strict";
 
+    var mq = window.matchMedia("(max-width: 600px)");
+    console.log(mq);
+
     var togglers = $(".js-toggler"),
         toggledContent = togglers.nextAll(),
         toggledContentParent = togglers.parent();
@@ -9,7 +12,7 @@ $(document).ready(function () {
 
     function hideContentOnNarrow() {
 
-        var narrow = $(".js-toggler-cue").is(":visible");
+        var narrow = mq.matches;
 
         console.log(narrow);
 
@@ -30,7 +33,7 @@ $(document).ready(function () {
     function enableToggleForNarrow() {
         togglers.on('click', function () {
 
-            var narrow = $(".js-toggler-cue").is(":visible");
+            var narrow = mq.matches;
 
             if (narrow) {
 

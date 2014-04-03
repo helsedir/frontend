@@ -24,6 +24,37 @@ h2 {
   font-family: "soho gothic pro light";
   font-weight: normal;
 }
+.has-hidden-content {
+  padding: 0 0 0 10px;
+  margin-bottom: 8px;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+.has-hidden-content h2 {
+  font-size: 1.100em;
+  cursor: pointer;
+}
+.has-hidden-content h2:after {
+  font-family: "FontAwesome";
+  content: "\f054";
+  float: right;
+  padding-right: 10px;
+}
+.has-visible-content {
+  border: 1px solid #222;
+  padding: 0 0 0 10px;
+  margin-bottom: 8px;
+}
+.has-visible-content h2 {
+  font-size: 1.100em;
+  cursor: pointer;
+}
+.has-visible-content h2:after {
+  font-family: "FontAwesome";
+  content: "\f078";
+  float: right;
+  padding-right: 10px;
+}
 h3 {
   font-size: 1em;
   margin-bottom: 2.875rem;
@@ -34,7 +65,8 @@ h4 {
 }
 #logo {
   background: white;
-  padding: 1rem 1rem 1.6rem 1rem;
+  padding: 1rem 1rem 1.7rem 1rem;
+  max-height: 106px;
 }
 a {
   text-decoration: none;
@@ -122,9 +154,6 @@ footer.rammeverk a:visited {
 .dropdownmeny .dropdownmenyliste a {
   text-decoration: none;
 }
-.topplinje {
-  background: #004e66;
-}
 #soekefelt {
   float: right;
   margin-top: 2rem;
@@ -173,6 +202,9 @@ footer.rammeverk a:visited {
 .kontaktModul p {
   line-height: 1.5rem;
   margin: 0;
+}
+.kontaktModul h3 {
+  margin-bottom: 1rem;
 }
 .utvidbarOverskrift {
   width: 330px;
@@ -551,22 +583,8 @@ article .has-hidden-content h3:before {
   margin-right: 0.2em;
 }
 .hhs .c2aKnapp {
-  background-color: #df9922;
   width: 14.375rem;
   height: 2.3rem;
-  line-height: 2.2rem;
-  padding: 0;
-  border: none;
-}
-.hhs .c2aKnapp h3 {
-  font-family: 'Calibri';
-  font-weight: bold;
-  margin: 0;
-}
-.hhs .c2aKnapp img {
-  float: right;
-  width: 1.875rem;
-  padding-top: 0.2rem;
 }
 .hhs #toppmenyKnapp {
   vertical-align: text-top;
@@ -586,6 +604,9 @@ article .has-hidden-content h3:before {
 }
 .hhs .transportsideknapp {
   width: 600px;
+}
+.hhs .skygge {
+  position: relative;
 }
 .stripes {
   width: 75%;
@@ -652,8 +673,7 @@ article .has-hidden-content h3:before {
   top: 5px;
 }
 .stripes-outer,
-.stripes-under,
-.skygge {
+.stripes-under {
   position: relative;
 }
 .transportsideknapp {
@@ -697,5 +717,21 @@ article .has-hidden-content h3:before {
   overflow: auto;
   background: white;
   color: #004e66;
+}
+.c2aKnapp {
+  background-color: #df9922;
+  line-height: 2.2rem;
+  padding: 0;
+  border: none;
+}
+.c2aKnapp h3 {
+  font-family: 'Calibri';
+  font-weight: bold;
+  margin: 0;
+}
+.c2aKnapp img {
+  float: right;
+  width: 1.875rem;
+  padding-top: 0.2rem;
 }
 /*# sourceMappingURL=customLESS.css.map */

@@ -40,6 +40,47 @@ h2{
     font-size: 1.200em;
     font-family: @fontSohoLight;
     font-weight: normal;
+
+   
+}
+
+ .has-hidden-content{
+        padding: 0 0 0 10px;
+        margin-bottom: 8px;
+        border: 1px solid #222;
+        cursor: pointer;
+        
+    h2{
+        font-size: 1.100em;
+            cursor: pointer;
+
+    }
+
+        h2:after{
+            font-family: "FontAwesome";
+            content: "\f054";
+            float: right;
+            padding-right: 10px;
+        }
+    }
+
+.has-visible-content {
+    border: 1px solid #222;
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+    h2{
+        font-size: 1.100em;
+            cursor: pointer;
+
+    }
+
+    h2:after {
+            font-family: "FontAwesome";
+            content: "\f078";
+            float: right;
+            padding-right: 10px;
+        }
+    
 }
 
 h3{
@@ -54,7 +95,8 @@ h4{
 
 #logo{
     background: white;
-padding: 1rem 1rem 1.6rem 1rem;
+padding: 1rem 1rem 1.7rem 1rem;
+max-height: 106px;
 }
 
 a {
@@ -161,9 +203,7 @@ footer.rammeverk{
 }
 }
 
-.topplinje{
-    background: @colorMorkBlaa;
-}
+
 
 #soekefelt{
     float: right;
@@ -228,6 +268,10 @@ footer.rammeverk{
     p{
         line-height: 1.5rem;
         margin: 0;
+    }
+
+    h3{
+        margin-bottom: 1rem;
     }
 }
 
@@ -737,26 +781,8 @@ header.rammeverk p {
     }
 
     .c2aKnapp {
-        background-color: @colorOrange;
         width: 14.375rem;
         height: 2.3rem;
-        line-height: 2.2rem;
-        padding: 0;
-        border: none;
-
-        h3 {
-            font-family: @fontCalibri;
-            font-weight: bold;
-            margin: 0;
-        }
-
-
-
-        img {
-            float: right;
-            width: 1.875rem;
-            padding-top: 0.2rem;
-        }
     }
 
 
@@ -787,6 +813,10 @@ header.rammeverk p {
     .transportsideknapp {
         width: 600px;
     }
+
+    .skygge{
+    position: relative;
+}
 }
 
 .stripes {
@@ -882,7 +912,7 @@ header.rammeverk p {
    
 }
 
-.stripes-outer, .stripes-under, .skygge{
+.stripes-outer, .stripes-under{
     position: relative;
 }
 
@@ -939,3 +969,25 @@ header.rammeverk p {
     color: @colorMorkBlaa;
 
 }
+
+.c2aKnapp {
+        background-color: @colorOrange;
+        line-height: 2.2rem;
+        padding: 0;
+        border: none;
+
+        h3 {
+            font-family: @fontCalibri;
+            font-weight: bold;
+            margin: 0;
+        }
+
+
+
+        img {
+            float: right;
+            width: 1.875rem;
+            padding-top: 0.2rem;
+        }
+    }
+

@@ -8,7 +8,7 @@
     <link href="css/tabs.css" rel="stylesheet">
     <link href="css/customLESS.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" />
-
+    <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
 
 
 </head>
@@ -50,50 +50,53 @@
                 </header>
             </div>
         </div>
-        <div class="dropdownWrapper">
+        <div class="dropdownWrapper js-expand">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-12 col-md-12">
-                        <div class="js-expand toppmeny">
-                            <ul id="nivaa1">
-                                <h2>Overskrift</h2>
-                                <li><a href="#hhs-logo">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-farger">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-typo">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-ikoner">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                            </ul>
-                            <ul id="nivaa2">
-                                <h2>Overskrift</h2>
-                                <li><a href="#hhs-lenkeoppramsing">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-punktliste">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-notis">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-faktaboks">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-footer">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                            </ul>
-                            <ul id="nivaa3">
-                                <h2>Overskrift</h2>
-                                <li><a href="#hhs-grid">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                            </ul>
-                            <ul id="nivaa4">
-                                <h2>Overskrift</h2>
-                                <li><a href="#hhs-grid">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                            </ul>
-                            <ul id="nivaa5">
-                                <h2>Overskrift</h2>
-                                <li><a href="#hhs-grid">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                                <li><a href="#hhs-forside">Lenke<img class="pilIkon" src="img/pil.svg" /></a></li>
-                            </ul>
+                    <div id="tabs">
+                        <ul>
+                            <li id="tabheading-1"><a href="#tabs-1">Kategorier</a></li>
+                            <li id="tabheading-2"><a href="#tabs-2">A-Å</a></li>
+                        </ul>
+                        <div id="tabs-1" class="kollapslenker-tabs">
+                            <div class="col-sm-3 col-md-4">
+                                <div class=" toppmeny">
+                                    <ul id="nivaa1">
+                                        <li><a href="#">Nasjonale strategier og planer<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Folkehelse og forebygging<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Rapporter, brosjyrer og publikasjoner<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Helseøkonomi<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Medisinske retninglinjer<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="toppmeny">
+                                    <ul id="nivaa2">
+                                        <li><a href="#">Statistikk og analyse<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Legemidler og medisisnk utstyr<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Beredskap<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Lover og rettigheter<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Høringer<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="toppmeny">
+                                    <ul id="nivaa3">
+                                        <li><a href="#">Kurs og konferanser<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Godkjenning og turnus<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">Diagnoser og tilstander<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                        <li><a href="#">eHelse<img class="pilIkon" src="img/pil.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        <div id="tabs-2" class="kollapslenker-tabs"></div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
         <div class="container">
         <article class="row">
             <div class="col-md-7 col-lg-7">
@@ -329,9 +332,7 @@
                 </div>
             </div>
             </article>
-            <footer>
             
-            </footer>
         </div>
 
 
@@ -342,5 +343,7 @@
         <script src="js/sohoFont.js"></script>
         <script src="js/calibriFont.js"></script>
     <script src="js/expand.js"></script>
+        <script src="js/tabsJQueryUI.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.js"></script>
     </body>
 </html>
