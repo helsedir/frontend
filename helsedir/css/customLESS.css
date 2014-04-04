@@ -68,6 +68,27 @@ h4 {
   padding: 3px 4px 2px 2px;
   max-height: 37px;
 }
+.broedsmulesti {
+  list-style-type: none;
+  padding: 0;
+}
+.broedsmulesti li {
+  display: block;
+  padding-right: 0.3rem;
+  float: left;
+}
+.broedsmulesti li:after {
+  content: ' >';
+}
+.broedsmulesti li:last-child:after {
+  content: '';
+}
+.broedsmulesti a {
+  text-decoration: none;
+}
+.broedsmulesti a:visited {
+  color: #004e66;
+}
 a {
   text-decoration: none;
   color: #004e66;
@@ -732,7 +753,6 @@ article .has-hidden-content h3:before {
   color: #004e66;
 }
 .footerWrapper {
-  overflow: auto;
   background: #004e66;
 }
 .c2aKnapp {

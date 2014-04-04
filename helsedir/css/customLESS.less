@@ -99,6 +99,35 @@ padding: 3px 4px 2px 2px;
 max-height: 37px;
 }
 
+.broedsmulesti {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        display: block;
+        padding-right: 0.3rem;
+        float: left;
+    }
+
+    li:after{
+        content: ' >';
+    }
+
+    li:last-child:after{
+        content:'';
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: @colorMorkBlaa;
+    }
+
+    
+}
+
 a {
     text-decoration: none;
     color: #004e66;
@@ -992,7 +1021,6 @@ header.rammeverk p {
 }
 
 .footerWrapper{
-     overflow:auto;
     background: @colorMorkBlaa;
 }
 
