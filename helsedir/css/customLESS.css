@@ -65,7 +65,7 @@ h4 {
 }
 #logo {
   background: white;
-  padding: 3px 4px 2px 2px;
+  padding: 6px 16px 2px 12px;
   min-height: 44px;
 }
 .broedsmulesti {
@@ -84,13 +84,9 @@ h4 {
   content: '';
 }
 .broedsmulesti a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .broedsmulesti a:visited {
-  color: #004e66;
-}
-a {
-  text-decoration: none;
   color: #004e66;
 }
 a:hover {
@@ -130,6 +126,13 @@ footer.rammeverk a:visited {
   margin: 0;
   padding: 0;
 }
+.menylinje a {
+  padding: 5px 0 9px 4px;
+}
+.menylinje a.js-expanded {
+  background: white;
+  color: #004e66;
+}
 .menylinje p {
   margin-top: 0;
   margin-bottom: 0;
@@ -141,9 +144,6 @@ footer.rammeverk a:visited {
 #mobilmeny {
   background: #004e66;
   float: right;
-}
-#menyknapp {
-  width: 2rem;
 }
 .fonttest {
   font-family: Calibri;
@@ -218,19 +218,6 @@ footer.rammeverk a:visited {
 .dropdownmeny {
   width: 40%;
 }
-.kontaktModul {
-  color: #004e66;
-  /*float: right;*/
-  margin: 0;
-  display: inline-block;
-}
-.kontaktModul p {
-  line-height: 1.5rem;
-  margin: 0;
-}
-.kontaktModul h3 {
-  margin-bottom: 1rem;
-}
 .utvidbarOverskrift {
   width: 330px;
   min-height: 70px;
@@ -241,96 +228,11 @@ footer.rammeverk a:visited {
   padding: 10px;
   padding-top: 0;
 }
-.faktaboks {
-  position: relative;
-  min-height: 70px;
-  background: #b2babc;
-  color: black;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-.faktaboks .stripes-outer {
-  top: -9px;
-}
-.faktaboks .stripes-under {
-  top: 100%;
-}
-.faktaboks ul {
-  list-style-type: square;
-}
-.faktaboks ul > li {
-  color: #004e66;
-}
-.faktaboks ul > li > span {
-  color: black;
-}
-.faktaboks h3 {
-  text-align: center;
-  height: 50%;
-}
-.faktaboks h4 {
-  padding-left: 1.2rem;
-}
-.informasjonsboks {
-  position: relative;
-  min-height: 70px;
-  color: Black;
-  padding: 30px 30px 0 30px;
-}
-.informasjonsboks a {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #004e66;
-}
-.informasjonsboks a h4 {
-  padding-left: 1.2rem;
-  border-left: 1px solid #c63629;
-  border-bottom: 1px solid #c63629;
-  border-right: 1px solid #c63629;
-  border-top: 0;
-}
-.informasjonsboks .seAlle-link {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-.informasjonsboks ul {
-  list-style-type: disc;
-  padding-left: 1.4rem;
-}
-.informasjonsboks ul li {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.informasjonsboks #retningslinjer > li {
-  color: #c63629;
-}
-.informasjonsboks #tilskudd > li {
-  color: #f4d01e;
-}
-.informasjonsboks.lover {
-  border: 1px solid #c63629;
-}
-.informasjonsboks.lover .lover-liste > li {
-  color: #c63629;
-}
-.informasjonsboks.retningslinjer {
-  border: 1px solid #df9922;
-}
-.informasjonsboks.retningslinjer .retningslinjer-liste > li {
-  color: #df9922;
-}
-.informasjonsboks .stripes {
-  left: 0;
-  width: 100%;
-  top: -36px;
-}
-.informasjonsboks h4 {
-  margin-bottom: 2rem;
-}
 /**Slett senere*/
 #infoboks {
   float: none;
 }
+/**************/
 .kollapslenker h4 {
   width: 33%;
   border: 1px solid #eeeeee;
@@ -414,17 +316,6 @@ footer.rammeverk a:visited {
   margin-top: 10px;
   padding: 10px;
 }
-.abonnement {
-  width: 250px;
-  min-height: 70px;
-  border: 1px solid gray;
-  background: #ffffff;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 10px;
-  clear: both;
-  overflow: auto;
-}
 a {
   text-decoration: underline;
   color: #004e66;
@@ -441,35 +332,6 @@ a:visited {
 .alignRight {
   float: right;
 }
-#sidelogo {
-  background-color: #ffffff;
-  background-image: url('../img/HDIR-LOGO-HORISONTAL-NEW.png');
-  background-repeat: no-repeat;
-  min-height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.fargeboks1 {
-  width: 6.250rem;
-  height: 0.625rem;
-  background: #004e66;
-  display: inline-block;
-  float: left;
-}
-.fargeboks2 {
-  width: 6.250rem;
-  height: 0.625rem;
-  background: #6cb4b5;
-  display: inline-block;
-  float: left;
-}
-.fargeboks3 {
-  width: 6.250rem;
-  height: 0.625rem;
-  background: #0093a7;
-  display: inline-block;
-  float: left;
-}
 .nedlastingsLinker {
   list-style-type: none;
 }
@@ -479,9 +341,6 @@ a:visited {
 .nedlastingsLinker img {
   vertical-align: text-bottom;
   height: 1.3rem;
-}
-.menyknapp {
-  cursor: pointer;
 }
 article .innholdswrapper {
   min-height: 70px;
@@ -583,25 +442,6 @@ article .has-hidden-content h3:before {
 .stripes-under {
   position: relative;
 }
-.transportsideknapp {
-  border: 1px solid #0093a7;
-  padding: 1rem 1rem 1rem 0.5rem;
-  margin-top: 1.2rem;
-}
-.transportsideknapp a,
-.transportsideknapp a:hover,
-.transportsideknapp a:visited {
-  color: black;
-  text-decoration: none;
-}
-.transportsideknapp .skygge {
-  height: 3px;
-  top: 19px;
-}
-.transportsideknapp h4,
-.transportsideknapp p {
-  margin: 0;
-}
 .toppmeny ul,
 .bunnmeny ul {
   list-style-type: none;
@@ -636,22 +476,98 @@ article .has-hidden-content h3:before {
 .footerWrapper {
   background: #004e66;
   margin-top: 2rem;
+  border-top: 5px solid #0093a7;
 }
-.c2aKnapp {
-  background-color: #df9922;
-  line-height: 2.2rem;
-  padding: 0;
-  border: none;
+.headerGronn {
+  position: absolute;
+  background: #0093a7;
+  width: 100%;
+  height: 44px;
 }
-.c2aKnapp h3 {
-  font-family: 'Calibri';
-  font-weight: bold;
+.headerBlaa {
+  position: absolute;
+  background: #004e66;
+  width: 100%;
+  height: 39px;
+}
+/**********************************************************************
+    Moduler
+***********************************************************************/
+.abonneringsmodul {
+  color: white;
+  padding-bottom: 20px;
+}
+.abonneringsmodul p {
   margin: 0;
 }
-.c2aKnapp img {
-  float: right;
-  width: 1.875rem;
-  padding-top: 0.2rem;
+.abonneringsmodul .fa {
+  color: #0093a7;
+}
+.abonneringsmodul a {
+  padding-right: 15px;
+}
+.abonneringsmodul :visited {
+  color: white;
+  text-decoration: none;
+}
+.abonneringsmodul :hover {
+  text-decoration: none;
+}
+.informasjonsboks {
+  position: relative;
+  min-height: 70px;
+  color: Black;
+  padding: 30px 30px 0 30px;
+}
+.informasjonsboks a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #004e66;
+}
+.informasjonsboks a h4 {
+  padding-left: 1.2rem;
+  border-left: 1px solid #c63629;
+  border-bottom: 1px solid #c63629;
+  border-right: 1px solid #c63629;
+  border-top: 0;
+}
+.informasjonsboks .seAlle-link {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.informasjonsboks ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+}
+.informasjonsboks ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.informasjonsboks #retningslinjer > li {
+  color: #c63629;
+}
+.informasjonsboks #tilskudd > li {
+  color: #f4d01e;
+}
+.informasjonsboks.lover {
+  border: 1px solid #c63629;
+}
+.informasjonsboks.lover .lover-liste > li {
+  color: #c63629;
+}
+.informasjonsboks.retningslinjer {
+  border: 1px solid #df9922;
+}
+.informasjonsboks.retningslinjer .retningslinjer-liste > li {
+  color: #df9922;
+}
+.informasjonsboks .stripes {
+  left: 0;
+  width: 100%;
+  top: -36px;
+}
+.informasjonsboks h4 {
+  margin-bottom: 2rem;
 }
 .liten-informasjonsboks {
   border: 1px solid #222;
@@ -669,16 +585,82 @@ article .has-hidden-content h3:before {
 .liten-informasjonsboks a {
   float: left;
 }
-.headerGronn {
-  position: absolute;
-  background: #6cb4b5;
-  width: 100%;
-  height: 44px;
+.c2aKnapp {
+  background-color: #df9922;
+  line-height: 2.2rem;
+  padding: 0;
+  border: none;
 }
-.headerBlaa {
-  position: absolute;
-  background: #004e66;
-  width: 100%;
-  height: 39px;
+.c2aKnapp h3 {
+  font-family: 'Calibri';
+  font-weight: bold;
+  margin: 0;
+}
+.c2aKnapp img {
+  float: right;
+  width: 1.875rem;
+  padding-top: 0.2rem;
+}
+.transportsideknapp {
+  border: 1px solid #0093a7;
+  padding: 1rem 1rem 1rem 0.5rem;
+  margin-top: 1.2rem;
+}
+.transportsideknapp a,
+.transportsideknapp a:hover,
+.transportsideknapp a:visited {
+  color: black;
+  text-decoration: none;
+}
+.transportsideknapp .skygge {
+  height: 3px;
+  top: 19px;
+}
+.transportsideknapp h4,
+.transportsideknapp p {
+  margin: 0;
+}
+.kontaktModul {
+  color: #004e66;
+  /*float: right;*/
+  margin: 0;
+  display: inline-block;
+}
+.kontaktModul p {
+  line-height: 1.5rem;
+  margin: 0;
+}
+.kontaktModul h3 {
+  margin-bottom: 1rem;
+}
+.faktaboks {
+  position: relative;
+  min-height: 70px;
+  background: #b2babc;
+  color: black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.faktaboks .stripes-outer {
+  top: -9px;
+}
+.faktaboks .stripes-under {
+  top: 100%;
+}
+.faktaboks ul {
+  list-style-type: square;
+}
+.faktaboks ul > li {
+  color: #004e66;
+}
+.faktaboks ul > li > span {
+  color: black;
+}
+.faktaboks h3 {
+  text-align: center;
+  height: 50%;
+}
+.faktaboks h4 {
+  padding-left: 1.2rem;
 }
 /*# sourceMappingURL=customLESS.css.map */
