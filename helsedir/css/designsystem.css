@@ -2,9 +2,27 @@
   color: white;
   background: #004e66;
 }
-.hhs .toppmeny ul a,
-.hhs .toppmeny ul a:visited {
-  color: #fff;
+.hhs .headerBlaa {
+  height: 40px;
+}
+.hhs .toppmeny {
+  background: #004e66;
+  color: white;
+}
+.hhs .toppmeny a,
+.hhs .toppmeny a:visited {
+  text-decoration: none;
+  color: white;
+}
+.hhs .toppmeny ul {
+  list-style-type: none;
+  float: left;
+  margin: 1rem 2rem 1rem 0;
+  padding: 0 2rem 1rem 0;
+}
+.hhs .toppmeny ul h2 {
+  margin-bottom: 0.7rem;
+  margin-top: 0;
 }
 .hhs h1,
 .hhs h2 {
@@ -86,6 +104,9 @@
   margin-top: 2em;
   margin-bottom: 1em;
 }
+.hhs .illustrasjon table tr {
+  text-align: center;
+}
 .hhs .ikoner img {
   width: 1.875rem;
   vertical-align: bottom;
@@ -121,5 +142,9 @@
 .hhs video {
   width: 560px;
   height: 315px;
+}
+.hhs .farger {
+  text-align: center;
+  text-align: -webkit-center;
 }
 /*# sourceMappingURL=designsystem.css.map */

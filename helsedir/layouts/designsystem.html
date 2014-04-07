@@ -3,600 +3,583 @@
     <head>
         <title>Digitalt designsystem for Helsedirektoratet</title>
         <link href="../css/reset.css" rel="stylesheet" />
-        <link href="../css/master.css" rel="stylesheet" />
+        <link href="../css/bootstrap.css" rel="stylesheet" />
         <link href="../css/customLESS.css" rel="stylesheet" />
         <link href="../css/fonts.css" rel="stylesheet" />
         <link href="../css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
         <link href="../css/designsystem.css" rel="stylesheet" />
     </head>
-    <body class="hhs artikkel">
-        <header class="rammeverk">
-            <div class="topplinje">
-
-                <div class="container clearfix">
-                    <span class="js-expander" id="toppmenyKnapp"><i class="fa fa-bars"></i> Meny</span>
-
-                    <div class="js-expand toppmeny">
-                        <ul id="nivaa1">
-                            <h2>Basisstiler</h2>
-                            <li><a href="#hhs-logo">Logo</a></li>
-                            <li><a href="#hhs-farger">Farger</a></li>
-                            <li><a href="#hhs-typo">Typo</a></li>
-                            <li><a href="#hhs-ikoner">Ikoner</a></li>
-                            <li><a href="#hhs-c2aknapp">C2A-knapp</a></li>
-                            <li><a href="#hhs-fillenke">Fillenke</a></li>
-                            <li><a href="#hhs-lenke">Lenke</a></li>
-                            <li><a href="#hhs-designelement">Designelement</a></li>
-                            <li><a href="#hhs-broedsmulesti">Brødsmulesti</a></li>
-                        </ul>
-                        <ul id="nivaa2">
-                            <h2>Komposisjoner</h2>
-                            <li><a href="#hhs-lenkeoppramsing">Lenkeoppramsing</a></li>
-                            <li><a href="#hhs-punktliste">Punktliste</a></li>
-                            <li><a href="#hhs-notis">Notis</a></li>
-                            <li><a href="#hhs-faktaboks">Faktaboks</a></li>
-                            <li><a href="#hhs-footer">Footer</a></li>
-                            <li><a href="#hhs-header">Header</a></li>
-                            <li><a href="#hhs-meny">Meny</a></li>
-                            <li><a href="#hhs-arkfane">Arkfane</a></li>
-                            <li><a href="#hhs-statistikkteaser">Statistikkteaser</a></li>
-                            <li><a href="#hhs-tabell">Tabell</a></li>
-                            <li><a href="#hhs-abonnement">Abonnement</a></li>
-                            <li><a href="#hhs-retningslinjer">Retningslinjer</a></li>
-                            <li><a href="#hhs-lover">Lover</a></li>
-                            <li><a href="#hhs-transportsideknapp">Transportsideknapp</a></li>
-                            <li><a href="#hhs-youtubeavspiller">YouTube-avspiller</a></li>
-                            <li><a href="#hhs-lokalvideoavspiller">Videoavspiller for lokal media</a></li>
-                            <li><a href="#hhs-kontaktmodul">Kontaktmodul</a></li>
-                        </ul>
-                        <ul id="nivaa3">
-                            <h2>Grid</h2>
-                            <li><a href="#hhs-grid">Grid (4-col)</a></li>
-                            <li><a href="#hhs-forside">Forside</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="container clearfix">
-                <!--                <nav id="hovedmeny">-->
-                <!--                    <ul>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Tema</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Publikasjoner</a>-->
-                <!--</li>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Skjema</a>-->
-                <!--</li>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Tilskudd</a>-->
-                <!--</li>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Tall og analyse</a>-->
-                <!--</li>-->
-                <!--                        <li class="hovedmenypunkt">-->
-                <!--                            <a href="#" class="menypunkt">Lover og regler</a>-->
-                <!--</li>-->
-                <!---->
-                <!--                    </ul>-->
-                <!--                </nav>-->
+<body class="hhs">
+  
+        <div class="headerBlaa"></div>
+    <div class="container">
+        <header class="row">
+            <div class="col-md-12 topplinje">
+                <span class="js-expander" id="toppmenyKnapp"><i class="fa fa-bars"></i> Meny</span>        
             </div>
         </header>
-        <div id="main" class="hhs">
-            <article>
-                <div class="clearfix">
-                    <h1 id="hovedtittel">
-                        Digitalt designsystem for Helsedirektoratet
-                    </h1>
-                    <div class="ingress">
-                        <p>
-                            Helsedirektoratet skal på helsedirektoratet.no tilby faktabasert kunnskap til helsetjenesten og forvaltningen for å kunne ta riktige valg, når de trenger det og hvor de trenger det.
-                        </p>
-                    </div>
-                    <h2>Basisstiler</h2>
-                    <div class="element">
-                        <a name="hhs-logo"></a>
-                        <h3 class="illustrasjonOverskrift">Logo</h3>
-                        <div class="illustrasjon">
-                            <img id="logo" src="../img/logo.svg" alt="logo Helsedirektoratet" />
-                        </div>
-
-                        <a name="hhs-farger"></a>
-                        <h3 class="illustrasjonOverskrift">Farger</h3>
-                        <div class="illustrasjon clearfix">
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #004e66"></div><label>#004e66</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #0093a7"></div><label>#0093a7</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #6cb4b5"></div><label>#6cb4b5</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #df9922"></div><label>#df9922</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #c63629"></div><label>#c63629</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #f4d01e"></div><label>#f4d01e</label></div>
-                            <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #aeaba8"></div><label>#aeaba8</label></div>
-
-                        </div>
-
-                        <a name="hhs-typo"></a>
-                        <h3 class="illustrasjonOverskrift">Typo</h3>
-                        <div class="illustrasjon">
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">Body: Soho Gothic Pro Medium</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td>1em (18px)</td>
-                                    <td>1.667em (30px)</td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td>1em (18px)</td>
-                                    <td>1.667em (30px)</td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="bodyFont">
-                                <p>Systemet er en samordning og systematisering av arbeidet med å vurdere nye metoder. Målet er at alle nye metoder skal være funnet trygge og effektive før de tas i bruk. </p>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">H1: Soho Gothic Pro Light</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td>3.111em (56px)</td>
-                                    <td>1.667em (30px)</td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h1Font">
-                                <h1>Kommunens bruk av somatiske sykehus</h1>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">H2: Soho Gothic Pro Medium</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td>1.333em (24px)</td>
-                                    <td>1.667em (30px)</td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h2Font">
-                                <h2>Om helsepersonelloven</h2>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">H3: Soho Gothic Pro Medium</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td>1em (18px)</td>
-                                    <td>1.667em (30px)</td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h3Font">
-                                <h3>Loven omhandler</h3>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">Ingress</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h2Font">
-                                <h1></h1>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">Lenker</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h2Font">
-                                <h1></h1>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <th class="tableHeader">Small</th>
-                                    <th>Font size</th>
-                                    <th>Line height</th>
-                                </tr>
-                                <tr>
-                                    <th>Desktop</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>Mobil</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <div class="boks" id="h2Font">
-                                <h1></h1>
-                            </div>
-
-
-                        </div>
-
-                        <a name="hhs-ikoner"></a>
-                        <h3 class="illustrasjonOverskrift">Ikoner</h3>
-                        <div class="illustrasjon ikoner clearfix">
-                            <div class="illustrasjonsWrapper"><img id="menyIkon" src="../img/meny.svg" /><label>Meny</label></div>
-                            <div class="illustrasjonsWrapper"><img id="sokIkon" src="../img/sok.svg" /><label>Søk</label></div>
-                            <div class="illustrasjonsWrapper"><img class="pilIkon" src="../img/pil.svg" /><label>Pil</label></div>
-                            <div class="illustrasjonsWrapper"><img id="dobbelpilIkon" src="../img/pil2.svg" /><label>Dobbel pil</label></div>
-                        </div>
-
-                        <a name="hhs-c2aknapp"></a>
-                        <h3 class="illustrasjonOverskrift">C2A-knapp</h3>
-                        <div class="illustrasjon">
-                            <div class="c2aknapp-wrapper">
-                                <button class="c2aKnapp" type="submit">
-                                    <h3>Se alle retningslinjer <img src="../img/pil2-svart.svg" /></h3> <div class="skygge">
-                                        <div class="sort"></div>
-                                    </div>
-                                </button>
-
-                            </div>
-                        </div>
-
-                        <a name="hhs-fillenke"></a>
-                        <h3 class="illustrasjonOverskrift">Fillenke</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-lenke"></a>
-                        <h3 class="illustrasjonOverskrift">Lenke</h3>
-                        <div class="illustrasjon">
-                            <a href="#" style="color: #004e66">Lenke</a>
-                            <br />
-                            <a href="#" style="color: #df9922">Besøkt lenke</a>
-                        </div>
-
-                        <a name="hhs-designelement"></a>
-                        <h3 class="illustrasjonOverskrift">Designelement</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-broedsmulesti"></a>
-                        <h3 class="illustrasjonOverskrift">Brødsmulesti</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <ol class="broedsmulesti clearfix">
-                                <li><a href="#">Forside</a></li>
-                                <li><a href="#">Folkehelse og forebygging</a></li>
-                                <li><a href="#">Alkohol i næringslivet</a></li>
-                            </ol>
-                        </div>
-
-                    </div>
-
-
-
-                    <h2>Komposisjoner</h2>
-                    <div class="element">
-                        <a name="hhs-lenkeoppramsing"></a>
-                        <h3 class="illustrasjonOverskrift">Lenkeoppramsing</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-punktliste"></a>
-                        <h3 class="illustrasjonOverskrift">Punktliste</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-notis"></a>
-                        <h3 class="illustrasjonOverskrift">Notis</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-faktaboks"></a>
-                        <h3 class="illustrasjonOverskrift">Faktaboks</h3>
-                        <div class="illustrasjon">
-                            <div class="faktaboks js-expander">
-                                <div class="stripes-outer">
-                                    <div class="stripes cold">
-                                        <div class="left"></div>
-                                        <div class="middle"></div>
-                                        <div class="right"></div>
-                                    </div>
-                                </div>
-                                <h3>Om helsepersonelloven</h3>
-                                <div class="js-expand">
-                                    <h4>Loven omhandler:</h4>
-                                    <ul>
-                                        <li>
-                                            <span>faglig forsvarlig yrkesutøvelse</span>
-                                        </li>
-                                        <li>
-                                            <span>taushetsplikt</span>
-                                        </li>
-                                        <li>
-                                            <span>opplysningsplikt og meldeplikt til nød</span>
-                                        </li>
-                                        <li>
-                                            <span>etater, barnevern, registre mv.</span>
-                                        </li>
-                                        <li>
-                                            <span>dokumentasjonsplikt (journalføring)</span>
-                                        </li>
-                                        <li>
-                                            <span>rekvirering av legemidler</span>
-                                        </li>
-                                        <li>
-                                            <span>markedsføring</span>
-                                        </li>
-                                        <li>
-                                            <span>utstedelse av attester og erklæringer</span>
-                                        </li>
-                                        <li>
-                                            <span>autorisasjon og spesialitsgodkjenning</span>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <a name="hhs-footer"></a>
-                        <h3 class="illustrasjonOverskrift">Footer</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-header"></a>
-                        <h3 class="illustrasjonOverskrift">Header</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-meny"></a>
-                        <h3 class="illustrasjonOverskrift">Meny</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-arkfane"></a>
-                        <h3 class="illustrasjonOverskrift">Arkfane</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div id="tabs">
-                                <ul>
-                                    <li id="tabheading-1"><a href="#tabs-1">Spørsmål og svar</a></li>
-                                    <li id="tabheading-2"><a href="#tabs-2">Brev og uttalelser</a></li>
-                                </ul>
-                                <div id="tabs-1" class="kollapslenker-tabs">
-                                    <h4>Hvem gjelder loven for?<i class="fa fa-chevron-down"></i></h4>
-                                    <h4>Hvem er helsepersonell?<i class="fa fa-chevron-down"></i></h4>
-                                    <h4>Hva er helsehjelp?<i class="fa fa-chevron-down"></i></h4>
-                                </div>
-                                <div id="tabs-2" class="kollapslenker-tabs">
-                                    <h4>Brev<i class="fa fa-chevron-down"></i></h4>
-                                    <h4>Uttalelser<i class="fa fa-chevron-down"></i></h4>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <a name="hhs-statistikkteaser"></a>
-                        <h3 class="illustrasjonOverskrift">Statistikkteaser</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-tabell"></a>
-                        <h3 class="illustrasjonOverskrift">Tabell</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-abonnement"></a>
-                        <h3 class="illustrasjonOverskrift">Abonnement</h3>
-                        <p></p>
-                        <div class="illustrasjon"></div>
-
-                        <a name="hhs-retningslinjer"></a>
-                        <h3 class="illustrasjonOverskrift">Retningslinjer</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div class="illustrasjon">
-                                <div class="informasjonsboks retningslinjer" id="infoboks">
-
-                                    <div class="stripes-outer">
-                                        <div class="stripes warm">
-                                            <div class="left"></div>
-                                            <div class="middle"></div>
-                                            <div class="right"></div>
-                                        </div>
-
-                                        <h4>Nasjonale faglige retningslinjer</h4>
-                                    </div>
-                                    <ul class="retningslinjer-liste">
-                                        <li><a>Svangerskapsomsorgen</a></li>
-                                        <li><a>Forebygging og behandling av osteoporose og osteoporotiske brudd</a></li>
-                                        <li><a>Røykeavvenning i primærhelsetjenesten</a></li>
-                                        <li><a>Gravide i legemiddelassistert rehabilitering (LAR) og oppfølging av familiene</a></li>
-                                    </ul>
-                                    <div class="seAlle-link"><a>Se alle nasjonale faglige retningslinjer</a></div>
-                                    <div class="skygge bottom">
-                                        <div class="orange"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a name="hhs-lover"></a>
-                        <h3 class="illustrasjonOverskrift">Lover</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div class="informasjonsboks lover" id="infoboks">
-
-                                <div class="stripes-outer">
-                                    <div class="stripes top warm">
-                                        <div class="left"></div>
-                                        <div class="middle"></div>
-                                        <div class="right"></div>
-                                    </div>
-
-                                    <h4>Lover</h4>
-                                </div>
-                                <ul class="lover-liste">
-                                    <li><a>Helsepersonelloven</a></li>
-                                    <li><a>Folkehelseloven</a></li>
-                                    <li><a>Folketrygdloven</a></li>
-                                    <li><a>Helseregisterloven</a></li>
-                                </ul>
-                                <div class="seAlle-link"><a class="seAlle-link">Se alle lover</a></div>
-                                <div class="skygge bottom">
-                                    <div class="roed"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a name="hhs-transportsideknapp"></a>
-                        <h3 class="illustrasjonOverskrift">Transportsideknapp</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-
-                            <div class="transportsideknapp">
-                                <a href="#">
-                                    <h4>Salgsbevilling</h4>
-                                    <p>
-                                        Regler og søknad for butikker som vil selge alkohol<i class="fa fa-chevron-right"></i>
-                                    </p>
-                                </a>
-                                <div class="skygge bottom">
-                                    <div class="blaa"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                        <a name="hhs-kontaktmodul"></a>
-                        <h3 class="illustrasjonOverskrift">Kontaktmodul</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div class="kontaktModul">
-                                <h3>Ansvarlig for denne siden</h3>
-                                <div class="stripes-outer">
-                                    <div class="stripes cold left">
-                                        <div class="left"></div>
-                                        <div class="middle"></div>
-                                        <div class="right"></div>
-                                    </div>
-                                    <img src="../img/ansatt_bilde.png">
-                                </div>
-
-                                <p>
-                                    Martin Martinsen<br />
-                                    Rådgiver<br />
-                                    Telefon: 974 57 585<br />
-                                    martinmartinsen@helsedir.no
-                                </p>
-                            </div>
-                        </div>
-
-                        
-
-
-                        <a name="hhs-youtubeavspiller"></a>
-                        <h3 class="illustrasjonOverskrift">YouTube-avspiller</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div class="video-container">
-                                <iframe src="http://www.youtube.com/embed/t37uL7f6jyQ" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                        
-                        <a name="hhs-lokalvideoavspiller"></a>
-                        <h3 class="illustrasjonOverskrift">Videoavspiller for lokal media</h3>
-                        <p></p>
-                        <div class="illustrasjon">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="../video/movie.ogg" type="video/ogg">
-                                    <source src="../video/movie.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                </div>
-                            </div>
-
-                    </div>
-
-                    <h2>Grid</h2>
-                    <div class="element">
-                        <a name="hhs-grid"></a>
-                        <h3 class="illustrasjonOverskrift">Grid</h3>
-                        <p></p>
-                        <div></div>
-                        <a name="hhs-forside"></a>
-                        <h3 class="illustrasjonOverskrift">Forside</h3>
-                        <p></p>
-                        <div></div>
-                    </div>
+    </div>
+    <div class="js-expand toppmeny">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3">
+                    <ul id="nivaa1">
+                        <h2>Basisstiler</h2>
+                        <li><a href="#hhs-logo">Logo</a></li>
+                        <li><a href="#hhs-farger">Farger</a></li>
+                        <li><a href="#hhs-typo">Typo</a></li>
+                        <li><a href="#hhs-ikoner">Ikoner</a></li>
+                        <li><a href="#hhs-c2aknapp">C2A-knapp</a></li>
+                        <li><a href="#hhs-fillenke">Fillenke</a></li>
+                        <li><a href="#hhs-lenke">Lenke</a></li>
+                        <li><a href="#hhs-designelement">Designelement</a></li>
+                        <li><a href="#hhs-broedsmulesti">Brødsmulesti</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-3">
+                    <ul id="nivaa2">
+                        <h2>Komposisjoner</h2>
+                        <li><a href="#hhs-lenkeoppramsing">Lenkeoppramsing</a></li>
+                        <li><a href="#hhs-punktliste">Punktliste</a></li>
+                        <li><a href="#hhs-notis">Notis</a></li>
+                        <li><a href="#hhs-faktaboks">Faktaboks</a></li>
+                        <li><a href="#hhs-footer">Footer</a></li>
+                        <li><a href="#hhs-header">Header</a></li>
+                        <li><a href="#hhs-meny">Meny</a></li>
+                        <li><a href="#hhs-arkfane">Arkfane</a></li>
+                        <li><a href="#hhs-statistikkteaser">Statistikkteaser</a></li>
+                        <li><a href="#hhs-tabell">Tabell</a></li>
+                        <li><a href="#hhs-abonnement">Abonnement</a></li>
+                        <li><a href="#hhs-retningslinjer">Retningslinjer</a></li>
+                        <li><a href="#hhs-lover">Lover</a></li>
+                        <li><a href="#hhs-transportsideknapp">Transportsideknapp</a></li>
+                        <li><a href="#hhs-youtubeavspiller">YouTube-avspiller</a></li>
+                        <li><a href="#hhs-lokalvideoavspiller">Videoavspiller for lokal media</a></li>
+                        <li><a href="#hhs-kontaktmodul">Kontaktmodul</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-3">
+                    <ul id="nivaa3">
+                        <h2>Grid</h2>
+                        <li><a href="#hhs-grid">Grid (4-col)</a></li>
+                        <li><a href="#hhs-forside">Forside</a></li>
+                    </ul>
                 </div>
 
-            </article>
+            </div>
         </div>
-     
+    </div>
 
-        <script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/dropdown.js"></script>
-        <script src="../js/toggle.js"></script>
-        <script src="../js/sohoFont.js"></script>
-        <script src="../js/calibriFont.js"></script>
-        <script src="../js/jquery-ui-1.10.4.custom.js"></script>
-        <script src="../js/tabs.js"></script>
-        <script src="../js/tabsJQueryUI.js"></script>
-        <script src="../js/expand.js"></script>
-    </body>
+    <div class="container hhs">
+        <article class="row">
+            <div class="col-lg-12">
+                <h1 id="hovedtittel">
+                    Digitalt designsystem for Helsedirektoratet
+                </h1>
+                <div class="ingress">
+                    <p>
+                        Helsedirektoratet skal på helsedirektoratet.no tilby faktabasert kunnskap til helsetjenesten og forvaltningen for å kunne ta riktige valg, når de trenger det og hvor de trenger det.
+                    </p>
+                </div>
+                <h2>Basisstiler</h2>
+                <div>
+                    <a name="hhs-logo"></a>
+                    <h3 class="illustrasjonOverskrift">Logo</h3>
+                    <div class="illustrasjon">
+                        <img id="logo" src="../img/logo.svg" alt="logo Helsedirektoratet" />
+                    </div>
+
+                    <a name="hhs-farger"></a>
+                    <h3 class="illustrasjonOverskrift">Farger</h3>
+                    <div class="illustrasjon clearfix farger">
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #004e66"></div><label>#004e66</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #0093a7"></div><label>#0093a7</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #6cb4b5"></div><label>#6cb4b5</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #df9922"></div><label>#df9922</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #c63629"></div><label>#c63629</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #f4d01e"></div><label>#f4d01e</label></div>
+                        <div class="illustrasjonsWrapper"><div class="sirkel" style="background-color: #aeaba8"></div><label>#aeaba8</label></div>
+
+                    </div>
+
+                    <a name="hhs-typo"></a>
+                    <h3 class="illustrasjonOverskrift">Typo</h3>
+                    <div class="illustrasjon">
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">Body: Soho Gothic Pro Medium</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td>1em (20px)</td>
+                                <td>1.667em (30px)</td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td>1em (20px)</td>
+                                <td>1.667em (30px)</td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="bodyFont">
+                            <p>Systemet er en samordning og systematisering av arbeidet med å vurdere nye metoder. Målet er at alle nye metoder skal være funnet trygge og effektive før de tas i bruk. </p>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">H1: Soho Gothic Pro Light</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td>3.111em (56px)</td>
+                                <td>1.667em (30px)</td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h1Font">
+                            <h1>Kommunens bruk av somatiske sykehus</h1>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">H2: Soho Gothic Pro Medium</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td>1.333em (27px)</td>
+                                <td>1.667em (30px)</td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h2Font">
+                            <h2>Om helsepersonelloven</h2>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">H3: Soho Gothic Pro Medium</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td>1em (18px)</td>
+                                <td>1.667em (30px)</td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h3Font">
+                            <h3>Loven omhandler</h3>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">Ingress</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h2Font">
+                            <h1></h1>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">Lenker</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h2Font">
+                            <h1></h1>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="tableHeader">Small</th>
+                                <th>Font size</th>
+                                <th>Line height</th>
+                            </tr>
+                            <tr>
+                                <th>Desktop</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Mobil</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="boks" id="h2Font">
+                            <h1></h1>
+                        </div>
+
+
+                    </div>
+
+                    <a name="hhs-ikoner"></a>
+                    <h3 class="illustrasjonOverskrift">Ikoner</h3>
+                    <div class="illustrasjon ikoner clearfix">
+                        <div class="illustrasjonsWrapper"><img id="menyIkon" src="../img/meny.svg" /><label>Meny</label></div>
+                        <div class="illustrasjonsWrapper"><img id="sokIkon" src="../img/sok.svg" /><label>Søk</label></div>
+                        <div class="illustrasjonsWrapper"><img class="pilIkon" src="../img/pil.svg" /><label>Pil</label></div>
+                        <div class="illustrasjonsWrapper"><img id="dobbelpilIkon" src="../img/pil2.svg" /><label>Dobbel pil</label></div>
+                    </div>
+
+                    <a name="hhs-c2aknapp"></a>
+                    <h3 class="illustrasjonOverskrift">C2A-knapp</h3>
+                    <div class="illustrasjon">
+                        <div class="c2aknapp-wrapper">
+                            <button class="c2aKnapp" type="submit">
+                                <h3>Se alle retningslinjer <img src="../img/pil2-svart.svg" /></h3> <div class="skygge">
+                                    <div class="sort"></div>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <a name="hhs-fillenke"></a>
+                    <h3 class="illustrasjonOverskrift">Fillenke</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-lenke"></a>
+                    <h3 class="illustrasjonOverskrift">Lenke</h3>
+                    <div class="illustrasjon">
+                        <a href="#" style="color: #004e66">Lenke</a>
+                        <br />
+                        <a href="#" style="color: #df9922">Besøkt lenke</a>
+                    </div>
+
+                    <a name="hhs-designelement"></a>
+                    <h3 class="illustrasjonOverskrift">Designelement</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-broedsmulesti"></a>
+                    <h3 class="illustrasjonOverskrift">Brødsmulesti</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <ol class="broedsmulesti clearfix">
+                            <li><a href="#">Forside</a></li>
+                            <li><a href="#">Folkehelse og forebygging</a></li>
+                            <li><a href="#">Alkohol i næringslivet</a></li>
+                        </ol>
+                    </div>
+
+                </div>
+
+
+
+                <h2>Komposisjoner</h2>
+                <div >
+                    <a name="hhs-lenkeoppramsing"></a>
+                    <h3 class="illustrasjonOverskrift">Lenkeoppramsing</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-punktliste"></a>
+                    <h3 class="illustrasjonOverskrift">Punktliste</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-notis"></a>
+                    <h3 class="illustrasjonOverskrift">Notis</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-faktaboks"></a>
+                    <h3 class="illustrasjonOverskrift">Faktaboks</h3>
+                    <div class="illustrasjon">
+                        <div class="faktaboks js-expander">
+                            <div class="stripes-outer">
+                                <div class="stripes cold">
+                                    <div class="left"></div>
+                                    <div class="middle"></div>
+                                    <div class="right"></div>
+                                </div>
+                            </div>
+                            <h3>Om helsepersonelloven</h3>
+                            <div class="js-expand">
+                                <h4>Loven omhandler:</h4>
+                                <ul>
+                                    <li>
+                                        <span>faglig forsvarlig yrkesutøvelse</span>
+                                    </li>
+                                    <li>
+                                        <span>taushetsplikt</span>
+                                    </li>
+                                    <li>
+                                        <span>opplysningsplikt og meldeplikt til nød</span>
+                                    </li>
+                                    <li>
+                                        <span>etater, barnevern, registre mv.</span>
+                                    </li>
+                                    <li>
+                                        <span>dokumentasjonsplikt (journalføring)</span>
+                                    </li>
+                                    <li>
+                                        <span>rekvirering av legemidler</span>
+                                    </li>
+                                    <li>
+                                        <span>markedsføring</span>
+                                    </li>
+                                    <li>
+                                        <span>utstedelse av attester og erklæringer</span>
+                                    </li>
+                                    <li>
+                                        <span>autorisasjon og spesialitsgodkjenning</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a name="hhs-footer"></a>
+                    <h3 class="illustrasjonOverskrift">Footer</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-header"></a>
+                    <h3 class="illustrasjonOverskrift">Header</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-meny"></a>
+                    <h3 class="illustrasjonOverskrift">Meny</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-arkfane"></a>
+                    <h3 class="illustrasjonOverskrift">Arkfane</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <div id="tabs">
+                            <ul>
+                                <li id="tabheading-1"><a href="#tabs-1">Spørsmål og svar</a></li>
+                                <li id="tabheading-2"><a href="#tabs-2">Brev og uttalelser</a></li>
+                            </ul>
+                            <div id="tabs-1" class="kollapslenker-tabs">
+                                <h4>Hvem gjelder loven for?<i class="fa fa-chevron-down"></i></h4>
+                                <h4>Hvem er helsepersonell?<i class="fa fa-chevron-down"></i></h4>
+                                <h4>Hva er helsehjelp?<i class="fa fa-chevron-down"></i></h4>
+                            </div>
+                            <div id="tabs-2" class="kollapslenker-tabs">
+                                <h4>Brev<i class="fa fa-chevron-down"></i></h4>
+                                <h4>Uttalelser<i class="fa fa-chevron-down"></i></h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a name="hhs-statistikkteaser"></a>
+                    <h3 class="illustrasjonOverskrift">Statistikkteaser</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-tabell"></a>
+                    <h3 class="illustrasjonOverskrift">Tabell</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-abonnement"></a>
+                    <h3 class="illustrasjonOverskrift">Abonnement</h3>
+                    <p></p>
+                    <div class="illustrasjon"></div>
+
+                    <a name="hhs-retningslinjer"></a>
+                    <h3 class="illustrasjonOverskrift">Retningslinjer</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <div class="illustrasjon">
+                            <div class="informasjonsboks retningslinjer" id="infoboks">
+
+                                <div class="stripes-outer">
+                                    <div class="stripes warm">
+                                        <div class="left"></div>
+                                        <div class="middle"></div>
+                                        <div class="right"></div>
+                                    </div>
+
+                                    <h4>Nasjonale faglige retningslinjer</h4>
+                                </div>
+                                <ul class="retningslinjer-liste">
+                                    <li><a>Svangerskapsomsorgen</a></li>
+                                    <li><a>Forebygging og behandling av osteoporose og osteoporotiske brudd</a></li>
+                                    <li><a>Røykeavvenning i primærhelsetjenesten</a></li>
+                                    <li><a>Gravide i legemiddelassistert rehabilitering (LAR) og oppfølging av familiene</a></li>
+                                </ul>
+                                <div class="seAlle-link"><a>Se alle nasjonale faglige retningslinjer</a></div>
+                                <div class="skygge bottom">
+                                    <div class="orange"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a name="hhs-lover"></a>
+                    <h3 class="illustrasjonOverskrift">Lover</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <div class="informasjonsboks lover" id="infoboks">
+
+                            <div class="stripes-outer">
+                                <div class="stripes top warm">
+                                    <div class="left"></div>
+                                    <div class="middle"></div>
+                                    <div class="right"></div>
+                                </div>
+
+                                <h4>Lover</h4>
+                            </div>
+                            <ul class="lover-liste">
+                                <li><a>Helsepersonelloven</a></li>
+                                <li><a>Folkehelseloven</a></li>
+                                <li><a>Folketrygdloven</a></li>
+                                <li><a>Helseregisterloven</a></li>
+                            </ul>
+                            <div class="seAlle-link"><a class="seAlle-link">Se alle lover</a></div>
+                            <div class="skygge bottom">
+                                <div class="roed"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a name="hhs-transportsideknapp"></a>
+                    <h3 class="illustrasjonOverskrift">Transportsideknapp</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+
+                        <div class="transportsideknapp">
+                            <a href="#">
+                                <h4>Salgsbevilling</h4>
+                                <p>
+                                    Regler og søknad for butikker som vil selge alkohol<i class="fa fa-chevron-right"></i>
+                                </p>
+                            </a>
+                            <div class="skygge bottom">
+                                <div class="blaa"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a name="hhs-kontaktmodul"></a>
+                    <h3 class="illustrasjonOverskrift">Kontaktmodul</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <div class="kontaktModul">
+                            <h3>Ansvarlig for denne siden</h3>
+                            <div class="stripes-outer">
+                                <div class="stripes cold left">
+                                    <div class="left"></div>
+                                    <div class="middle"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <img src="../img/ansatt_bilde.png">
+                            </div>
+
+                            <p>
+                                Martin Martinsen<br />
+                                Rådgiver<br />
+                                Telefon: 974 57 585<br />
+                                martinmartinsen@helsedir.no
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <a name="hhs-youtubeavspiller"></a>
+                    <h3 class="illustrasjonOverskrift">YouTube-avspiller</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                        <div class="video-container">
+                            <iframe src="http://www.youtube.com/embed/t37uL7f6jyQ" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <a name="hhs-lokalvideoavspiller"></a>
+                    <h3 class="illustrasjonOverskrift">Videoavspiller for lokal media</h3>
+                    <p></p>
+                    <div class="illustrasjon">
+                            <video controls>
+                                <source src="../video/movie.ogg" type="video/ogg">
+                                <source src="../video/movie.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                    </div>
+
+                </div>
+
+                <h2>Grid</h2>
+                <div>
+                    <a name="hhs-grid"></a>
+                    <h3 class="illustrasjonOverskrift">Grid</h3>
+                    <p></p>
+                    <div></div>
+                    <a name="hhs-forside"></a>
+                    <h3 class="illustrasjonOverskrift">Forside</h3>
+                    <p></p>
+                    <div></div>
+                </div>
+            </div>
+
+        </article>
+    </div>
+
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="../js/sohoFont.js"></script>
+    <script src="../js/calibriFont.js"></script>
+    <script src="../js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/tabsJQueryUI.js"></script>
+    <script src="../js/expand.js"></script>
+</body>
 </html>
