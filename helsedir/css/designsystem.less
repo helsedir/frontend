@@ -20,11 +20,31 @@
         background: @colorMorkBlaa;
     }
 
-    .toppmeny ul {
-        a, a:visited {
-            color: #fff;
+    .headerBlaa{
+        height:40px;
+    }
+
+.toppmeny{
+    background: @colorMorkBlaa;
+                color: white;
+
+      a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+       ul {
+        list-style-type: none;
+        float: left;
+        margin: 1rem 2rem 1rem 0;
+        padding: 0 2rem 1rem 0;
+
+        h2 {
+            margin-bottom: 0.7rem;
+            margin-top: 0;
         }
     }
+
+}
 
     h1, h2 {
         font-family: @fontLight;
@@ -130,6 +150,10 @@
                 margin-top: 2em;
                 margin-bottom: 1em;
             }
+
+            tr{
+                text-align: center;
+            }
         }
     }
 
@@ -180,5 +204,10 @@
     iframe, video{
         width: 560px; 
         height: 315px;
+    }
+
+    .farger{
+        text-align: center;
+        text-align: -webkit-center;
     }
 }
