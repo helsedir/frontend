@@ -21,7 +21,6 @@ font-family: 'Calibri';
     font-size: 20px;
     /*font-weight: 300;*/
     color: #222;
-    margin-bottom: 2.300em;
     padding: 0;
     line-height: 1.750em;
 }
@@ -39,7 +38,7 @@ line-height: 1.667em;
 }
 
 h2{
-    font-size: 1.200em;
+    font-size: 36px;
     font-family: @fontSohoLight;
     font-weight: normal;
 
@@ -59,7 +58,7 @@ h2{
 
         h2:after{
             font-family: "FontAwesome";
-            content: "\f054";
+            content: "\f078";
             float: right;
             padding-right: 10px;
         }
@@ -76,7 +75,7 @@ h2{
 
     h2:after {
             font-family: "FontAwesome";
-            content: "\f078";
+            content: "\f077";
             float: right;
             padding-right: 10px;
         }
@@ -84,19 +83,27 @@ h2{
 }
 
 h3{
-    font-size: 1em;
-    margin-bottom: 2.875rem;
+    font-size: 22px;
+    font-family: @fontSohoLight;
+    font-weight: normal;
 }
 
 h4{
     font-family: @fontSohoLight;
-    font-size: 26px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: normal;
 }
 
 #logo{
     background: white;
 padding: 6px 16px 2px 12px;
 min-height: 44px;
+max-height: 44px;
 }
 
 .broedsmulesti {
@@ -440,15 +447,15 @@ footer.rammeverk{
 
 a{
 text-decoration: underline;
-    color: #004e66;
+    color: @colorMediumBlaa;
     font-size: 1em;
     line-height: 35px;
 
 }
 
 a:visited{
-    color: #df9922
-;
+    color: @colorMediumBlaa;
+    text-decoration: underline;
 }
 
 .alignLeft{
@@ -483,7 +490,7 @@ article .innholdswrapper{
     padding: 10px;
 }
 
-article .has-hidden-content h3,
+/*article .has-hidden-content h3,
 article .has-visible-content h3 {
     padding-right: 1.5rem;
 }
@@ -502,7 +509,7 @@ article .has-hidden-content h3:before {
     content: "\f107";
     font-size: 2rem;
 }
-
+    */
 #breakpoint {
     color: white;
 }
@@ -696,28 +703,30 @@ header.rammeverk p {
 ***********************************************************************/
 
 .abonneringsmodul {
-    color: white;
     padding-bottom: 20px;
 
-    h4 {
-        margin: 0 0 5px 0;
-    }
+   
 
     .fa {
         color: @colorMediumBlaa;
     }
 
     a {
-        padding-right: 15px;
+        margin-left: 10px;
     }
 
     :visited {
-        color: white;
         text-decoration: none;
+        color: #222;
     }
 
     :hover {
         text-decoration: none;
+    }
+
+    div{
+        float: left;
+        margin-right: 10px;
     }
 }
 
@@ -805,7 +814,7 @@ header.rammeverk p {
 .liten-informasjonsboks{
     border: 1px solid #222;
     padding: 10px 0 10px 10px;
-    margin: 10px 0 10px 0;
+    margin: 30px 0 10px 0;
 
     .blaasOpp{
         font-size: 3em;
@@ -931,5 +940,38 @@ header.rammeverk p {
 
     a:visited{
         color: white;
+    }
+}
+
+video{
+    width: 100%
+}
+
+.retningslinjemodul{
+    border: 1px solid @colorLysGraa;
+    margin-bottom: 20px;
+
+    .innerDiv{
+        border-left: 8px solid @colorRoed;
+        margin: 10px;
+
+       p, a, h4{
+            margin: 0 0 0 10px;
+         }
+
+    }
+}
+
+.veilederModul{
+     border: 1px solid @colorLysGraa;
+
+    .innerDiv{
+        border-left: 8px solid @colorOrange;
+        margin: 10px;
+
+       p, a, h4{
+            margin: 0 0 0 10px;
+         }
+
     }
 }

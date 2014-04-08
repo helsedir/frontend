@@ -10,7 +10,7 @@ $(document).ready(function () {
     expandedContent.hide();
     expandedText.text('Start');
 
-    expander.on('click', function () {
+    expander.on('click', function() {
 
         expandedContent.toggle();
 
@@ -21,6 +21,6 @@ $(document).ready(function () {
             expandedText.text('Start');
             expander.removeClass("js-expanded");
         }
-    })
+    });
 
 });

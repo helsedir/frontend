@@ -3,7 +3,6 @@ $(document).ready(function () {
     "use strict";
 
     var mq = window.matchMedia("(max-width: 600px)");
-    console.log(mq);
 
     var togglers = $(".js-toggler"),
         toggledContent = togglers.nextAll(),

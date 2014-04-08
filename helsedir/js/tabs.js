@@ -1,4 +1,4 @@
-;(function($){
+(function($){
     $.fn.html5jTabs = function(options){
         return this.each(function(index, value){
             var obj = $(this),
