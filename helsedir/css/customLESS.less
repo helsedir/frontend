@@ -11,13 +11,12 @@
 @colorRoed: #c63629;
 @colorGul: #f4d01e;
 
-
 html {
     font-size: 100%;
 }
 
 body {
-font-family: 'Calibri';
+    font-family: 'Calibri';
     font-size: 20px;
     /*font-weight: 300;*/
     color: #222;
@@ -25,85 +24,134 @@ font-family: 'Calibri';
     line-height: 1.750em;
 }
 
-h1{
-font-size: 2.800em;
-font-family: @fontSohoLight;
-font-weight: normal;
-line-height: 1.667em;
+h1 {
+    font-size: 2.800em;
+    font-family: @fontSohoLight;
+    font-weight: normal;
+    line-height: 1.667em;
 }
 
-.ingress{
+.ingress {
     font-size: 1.579em;
     font-family: @fontCalibri;
+    margin-bottom: 20px;
 }
 
-h2{
+h2 {
     font-size: 36px;
     font-family: @fontSohoLight;
     font-weight: normal;
-
-   
 }
 
- .has-hidden-content{
-        padding: 0 0 0 10px;
-        margin-bottom: 8px;
-        border: 1px solid #222;
-        cursor: pointer;
-        
-    h2{
-            cursor: pointer;
+.has-hidden-content {
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+    border: 1px solid #222;
+    cursor: pointer;
 
+    h2 {
+        cursor: pointer;
     }
 
-        h2:after{
+        h2:after {
             font-family: "FontAwesome";
             content: "\f078";
             float: right;
             padding-right: 10px;
         }
-    }
+}
 
 .has-visible-content {
     border: 1px solid #222;
     padding: 0 0 0 10px;
     margin-bottom: 8px;
-    h2{
-            cursor: pointer;
 
+    h2 {
+        cursor: pointer;
     }
 
-    h2:after {
+        h2:after {
             font-family: "FontAwesome";
             content: "\f077";
             float: right;
             padding-right: 10px;
         }
+}
+
+.organisasjonskart, .divisjon {
+    
+
+    &.has-visible-content {
+        border: none;
+        margin-bottom: 8px;
+        padding: 0;
+
+        h2, h3 {
+            cursor: pointer;
+            border: 1px solid #222;
+            background: @colorLysGraa;
+            margin: 20px 0 0 0;
+        }
+
+            h2:after, h3:after {
+                font-family: "FontAwesome";
+                content: "\f077";
+                float: right;
+                padding-right: 10px;
+            }
+
+            .kontaktModul {
+        border: 1px solid #222;
+
+    }
+    }
+
+    &.has-hidden-content {
+        border: none;
+        margin-bottom: 8px;
+                padding: 0;
+
+
+        h2, h3 {
+            margin: 20px 0 8px 0;
+            border: 1px solid #222;
+            cursor: pointer;
+            background: white;
+        }
+
+            h2:after, h3:after {
+                font-family: "FontAwesome";
+                content: "\f078";
+                float: right;
+                padding-right: 10px;
+            }
+    }
+
     
 }
 
-h3{
+h3 {
     font-size: 22px;
     font-family: @fontSohoLight;
     font-weight: normal;
 }
 
-h4{
+h4 {
     font-family: @fontSohoLight;
     font-size: 20px;
     font-weight: normal;
 }
 
-h5{
+h5 {
     font-size: 20px;
     font-weight: normal;
 }
 
-#logo{
+#logo {
     background: white;
-padding: 6px 16px 2px 12px;
-min-height: 44px;
-max-height: 44px;
+    padding: 6px 16px 2px 12px;
+    min-height: 44px;
+    max-height: 44px;
 }
 
 .broedsmulesti {
@@ -116,25 +164,22 @@ max-height: 44px;
         float: left;
     }
 
-    li:after{
-        content: ' >';
-    }
+        li:after {
+            content: ' >';
+        }
 
-    li:last-child:after{
-        content:'';
-    }
+        li:last-child:after {
+            content: '';
+        }
 
-    a{
+    a {
         text-decoration: underline;
     }
-       
-    a:visited{
-        color: @colorMorkBlaa;
-    }
 
-    
+        a:visited {
+            color: @colorMorkBlaa;
+        }
 }
-
 
 a:hover {
     text-decoration: underline;
@@ -150,26 +195,26 @@ header {
     }
 }
 
-
-footer.rammeverk{
+footer.rammeverk {
     height: 100%;
     color: white;
     background: @colorMorkBlaa;
-        
-    p{
+
+    p {
         padding-left: 1.3rem;
         margin: 0.5rem;
     }
-    img{
+
+    img {
         padding-left: 1.8rem;
-        vertical-align:middle;
+        vertical-align: middle;
         padding-right: 0.4rem;
     }
 
     a, a:visited {
         text-decoration: none;
         color: white !important;
-            }
+    }
 }
 
 .nedlastingsLinker {
@@ -177,51 +222,45 @@ footer.rammeverk{
     padding: 0;
 }
 
-
-
 .menylinje {
-
-    a{
-        padding:5px 0 9px 4px;
-    }
- 
-    a.js-expanded{
-        background: white;
-    color: @colorMorkBlaa;
+    a {
+        padding: 5px 0 9px 4px;
     }
 
-       p {
+        a.js-expanded {
+            background: white;
+            color: @colorMorkBlaa;
+        }
+
+    p {
         margin-top: 0;
         margin-bottom: 0;
     }
 }
- .menylinje p span a, .menylinje > p > span {
+
+    .menylinje p span a, .menylinje > p > span {
         color: white;
     }
 
-
-
-#mobilmeny{
-    background:#004e66;
+#mobilmeny {
+    background: #004e66;
     float: right;
 }
 
-
-.fonttest{
+.fonttest {
     font-family: Calibri;
     font-size: 100%;
 }
 
 .clearfix:before,
-.clearfix:after{
-        content: " ";
-        display: table;
-}
-.clearfix:after{
-    clear:both;
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-
+.clearfix:after {
+    clear: both;
+}
 
 .dropdownmeny {
     margin-left: 1rem;
@@ -232,39 +271,37 @@ footer.rammeverk{
         padding-top: 0.2rem;
         border-bottom: 1px solid @colorOrange;
     }
+
     .dropdownmenyliste {
-    margin: 0;
-    /*height: 1.9em;*/
-    display: inline;
-    list-style-type: none;
+        margin: 0;
+        /*height: 1.9em;*/
+        display: inline;
+        list-style-type: none;
 
-    ul{
+        ul {
+        }
 
-    }
-    
-    ul li{
-        background: white;
-        color: black;
-    }
-    a{
-        text-decoration: none;
+            ul li {
+                background: white;
+                color: black;
+            }
+
+        a {
+            text-decoration: none;
+        }
     }
 }
-}
 
-
-
-#soekefelt{
+#soekefelt {
     float: right;
     margin-top: 2rem;
 }
 
-#sokeknapp{
+#sokeknapp {
     width: 2rem;
 }
 
 #hovedmeny {
-
     ul {
         height: 3rem;
         display: block;
@@ -274,6 +311,7 @@ footer.rammeverk{
             float: left;
             text-align: center;
             padding-right: 1rem;
+
             a {
                 display: block;
                 line-height: 1em;
@@ -282,9 +320,8 @@ footer.rammeverk{
                 text-decoration: none;
             }
 
-            :hover{
-                                background:@colorOrange;
-
+            :hover {
+                background: @colorOrange;
             }
         }
     }
@@ -293,45 +330,37 @@ footer.rammeverk{
         color: white;
     }
 
-    .hovedmenypunkt{
+    .hovedmenypunkt {
         height: 1.6rem;
     }
 
-    .menypunkt{
+    .menypunkt {
         margin: 0.5rem;
     }
-
-    
 }
-.dropdownmeny{
-        width: 40%;
-    }
 
+.dropdownmeny {
+    width: 40%;
+}
 
-
-.utvidbarOverskrift{
-    width:330px;
+.utvidbarOverskrift {
+    width: 330px;
     min-height: 70px;
-    border:1px solid #eeeeee;
+    border: 1px solid #eeeeee;
     background: #ffffff;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
     padding-top: 0;
-
 }
 
-
-
-
 /**Slett senere*/
-#infoboks{
-    float:none;
+#infoboks {
+    float: none;
 }
 /**************/
 
 .kollapslenker {
-
     h4 {
         width: 33%;
         border: 1px solid #eeeeee;
@@ -345,7 +374,6 @@ footer.rammeverk{
 }
 
 .kollapslenker-graa {
-
     h4 {
         width: 33%;
         border: 1px solid #eeeeee;
@@ -353,7 +381,7 @@ footer.rammeverk{
         color: @colorMorkBlaa;
         margin-bottom: 10px;
         margin-top: 10px;
-                padding-left: 0.7rem;
+        padding-left: 0.7rem;
         padding-right: 0.7rem;
 
         .fa-chevron-down {
@@ -362,128 +390,118 @@ footer.rammeverk{
     }
 }
 
-.fa-chevron-right{
+.fa-chevron-right {
     font-size: 1.5em;
     color: @colorOrange;
-    float:right;
+    float: right;
     padding-top: 0.3rem;
 }
-.fa-chevron-down{
-         padding-top: 0.3rem;
 
+.fa-chevron-down {
+    padding-top: 0.3rem;
     font-size: 1.5em;
-    float:right;
+    float: right;
 }
 
- #tabs{
+#tabs {
+    #tabheading-1 {
+        border-top: 7px solid @colorMorkBlaa;
+        border-bottom: 7px solid white;
+        border-right: 2px solid @colorMediumBlaa;
+    }
 
-     #tabheading-1{
-         border-top: 7px solid @colorMorkBlaa;
-         border-bottom: 7px solid white;
-         border-right: 2px solid @colorMediumBlaa;
-     }
-     #tabheading-2{
-         border-bottom: 7px solid @colorLysBlaa;
-         border-top: 7px solid white;
-     }
+    #tabheading-2 {
+        border-bottom: 7px solid @colorLysBlaa;
+        border-top: 7px solid white;
+    }
 
-     a{
-         color: @colorMorkBlaa;
-     }
- }
+    a {
+        color: @colorMorkBlaa;
+    }
+}
 
-  #statistikk{
-      width: 90rem;
+#statistikk {
+    width: 90rem;
 
-     #tabheading-1{
-         border-top: 7px solid @colorMorkBlaa;
-         border-bottom: 7px solid white;
-         border-right: 2px solid @colorMediumBlaa;
-     }
-     #tabheading-2{
-         border-bottom: 7px solid @colorLysBlaa;
-         border-top: 7px solid white;
-     }
+    #tabheading-1 {
+        border-top: 7px solid @colorMorkBlaa;
+        border-bottom: 7px solid white;
+        border-right: 2px solid @colorMediumBlaa;
+    }
 
-     a{
-         color: @colorMorkBlaa;
-     }
+    #tabheading-2 {
+        border-bottom: 7px solid @colorLysBlaa;
+        border-top: 7px solid white;
+    }
 
-     .fa-chevron-down{
+    a {
+        color: @colorMorkBlaa;
+    }
+
+    .fa-chevron-down {
         color: @colorOrange;
+    }
 }
- }
 
- .kollapslenker-tabs {
-
+.kollapslenker-tabs {
     h4 {
         border: 1px solid #eeeeee;
         background: @colorGraa;
         color: white;
         margin-bottom: 10px;
         margin-top: 10px;
-                padding-left: 0.7rem;
+        padding-left: 0.7rem;
         padding-right: 0.7rem;
-        
-        .fa-chevron-down{
-            color: @colorMorkBlaa;
 
+        .fa-chevron-down {
+            color: @colorMorkBlaa;
         }
     }
 }
 
- .minimertTekst
-{
+.minimertTekst {
     min-height: 70px;
     background: whitesmoke;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
-
 }
 
-
-
-
-a{
-text-decoration: underline;
+a {
+    text-decoration: underline;
     color: @colorMediumBlaa;
     font-size: 1em;
     line-height: 35px;
-
 }
 
-a:visited{
-    color: @colorMediumBlaa;
-    text-decoration: underline;
+    a:visited {
+        color: @colorMediumBlaa;
+        text-decoration: underline;
+    }
+
+.alignLeft {
+    float: left;
 }
 
-.alignLeft{
-    float:left;
-}
-
-.alignRight{
+.alignRight {
     float: right;
 }
-
-
 
 .nedlastingsLinker {
     list-style-type: none;
 }
 
-.nedlastingsLinker li {
-    margin-bottom: 15px;
-}
+    .nedlastingsLinker li {
+        margin-bottom: 15px;
+    }
 
-.nedlastingsLinker img {
-    vertical-align: text-bottom;
-    height: 1.3rem;
-}
+    .nedlastingsLinker img {
+        vertical-align: text-bottom;
+        height: 1.3rem;
+    }
 
-
-article .innholdswrapper{
-      min-height: 70px;
+article .innholdswrapper {
+    min-height: 70px;
     background: whitesmoke;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -498,11 +516,10 @@ article .has-visible-content h3 {
 article .has-hidden-content h3:before,
 article .has-visible-content h3:before {
 	font-family: FontAwesome;
-	content: "\f106"; 
+	content: "\f106";
     float: right;
     margin-right: -0.7rem;
     font-size: 2rem;
-
 }
 
 article .has-hidden-content h3:before {
@@ -515,18 +532,15 @@ article .has-hidden-content h3:before {
 }
 
 #hovedmeny div {
-        float: right;
+    float: right;
 }
 
 header.rammeverk p {
-    
 }
 
-#elementer{
+#elementer {
     display: inline;
 }
-
-
 
 .stripes {
     width: 75%;
@@ -539,11 +553,9 @@ header.rammeverk p {
         width: 33%;
         float: left;
         height: 100%;
-        
     }
 
     &.cold {
-
         .left {
             background: @colorMorkBlaa;
         }
@@ -571,66 +583,52 @@ header.rammeverk p {
         }
     }
 
-     
-
-    &.left{
+    &.left {
         left: 0;
     }
 }
 
-.skygge{
-     width: 75%;
+.skygge {
+    width: 75%;
     position: absolute;
     height: 5px;
     left: 12.5%;
     top: 100%;
 
-    
-    > div{
-        float:left;
+    > div {
+        float: left;
         width: 100%;
         height: 100%;
     }
 
-    .sort{
-
+    .sort {
         background: black;
     }
 
-
-    .orange{
+    .orange {
         background: @colorOrange;
     }
 
-    .roed{
+    .roed {
         background: @colorRoed;
-
     }
 
-    .blaa{
+    .blaa {
         background: @colorMediumBlaa;
-
     }
 
-    &.bottom{
+    &.bottom {
         left: 0;
         width: 100%;
-        top:5px;
+        top: 5px;
     }
-
-   
 }
 
-.stripes-outer, .stripes-under{
+.stripes-outer, .stripes-under {
     position: relative;
 }
 
-
-
-
 .toppmeny, .bunnmeny {
-
-
     ul {
         list-style-type: none;
         float: left;
@@ -643,60 +641,70 @@ header.rammeverk p {
     }
 }
 
-.toppmeny{
-      a, a:visited {
-            text-decoration: none;
-            color: @colorMorkBlaa;
-        }
-
-}
-
-.bunnmeny{
+.toppmeny {
     a, a:visited {
-            text-decoration: none;
-            color: white;
-        }
+        text-decoration: none;
+        color: @colorMorkBlaa;
+    }
 }
 
-.pilIkon{
+.bunnmeny {
+    a, a:visited {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.pilIkon {
     width: 1.875rem;
-        vertical-align: bottom;
-        margin-right: 0.2em;
+    vertical-align: bottom;
+    margin-right: 0.2em;
 }
 
-
-
-.dropdownWrapper{
+.dropdownWrapper {
     overflow: auto;
     background: white;
     color: @colorMorkBlaa;
-
 }
 
-.footerWrapper{
+.footerWrapper {
     background: @colorMorkBlaa;
     margin-top: 2rem;
     border-top: 5px solid @colorMediumBlaa;
 }
 
-
-
-
-.headerGronn{
+.headerGronn {
     position: absolute;
     background: @colorMediumBlaa;
     width: 100%;
     height: 44px;
 }
 
-.headerBlaa{
+.headerBlaa {
     position: absolute;
     background: @colorMorkBlaa;
     width: 100%;
-    height:39px;
+    height: 39px;
 }
 
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
 
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+
+    .tab-folder > :last-child, .tab-folder > .tab-content:target {
+        display: block;
+    }
 
 /**********************************************************************
     Moduler
@@ -704,8 +712,6 @@ header.rammeverk p {
 
 .abonneringsmodul {
     padding-bottom: 20px;
-
-   
 
     .fa {
         color: @colorMediumBlaa;
@@ -724,7 +730,7 @@ header.rammeverk p {
         text-decoration: none;
     }
 
-    div{
+    div {
         float: left;
         margin-right: 10px;
     }
@@ -735,7 +741,6 @@ header.rammeverk p {
     min-height: 70px;
     color: Black;
     padding: 30px 30px 0 30px;
-
 
     a {
         text-decoration: underline;
@@ -774,8 +779,6 @@ header.rammeverk p {
         color: @colorGul;
     }
 
-
-
     &.lover {
         border: 1px solid @colorRoed;
 
@@ -787,7 +790,6 @@ header.rammeverk p {
     &.retningslinjer {
         border: 1px solid @colorOrange;
 
-
         .retningslinjer-liste > li {
             color: @colorOrange;
         }
@@ -798,58 +800,51 @@ header.rammeverk p {
 
     .stripes {
         left: 0;
-            width: 100%;      
-            top: -36px;
-
+        width: 100%;
+        top: -36px;
     }
-
-    
 
     h4 {
         margin-bottom: 2rem;
     }
 }
 
-
-.liten-informasjonsboks{
+.liten-informasjonsboks {
     border: 1px solid #222;
     padding: 10px 0 10px 10px;
     margin: 30px 0 10px 0;
 
-    .blaasOpp{
+    .blaasOpp {
         font-size: 3em;
     }
 
-    .forminsk{
+    .forminsk {
         font-size: 0.8em;
     }
 
-    p, span, a{
+    p, span, a {
         float: left;
     }
-
 }
 
 .c2aKnapp {
-        background-color: @colorOrange;
-        line-height: 2.2rem;
-        padding: 0;
-        border: none;
+    background-color: @colorOrange;
+    line-height: 2.2rem;
+    padding: 0;
+    border: none;
 
-        h3 {
-            font-family: @fontCalibri;
-            font-weight: bold;
-            margin: 0;
-        }
-
-
-
-        img {
-            float: right;
-            width: 1.875rem;
-            padding-top: 0.2rem;
-        }
+    h3 {
+        font-family: @fontCalibri;
+        font-weight: bold;
+        margin: 0;
     }
+
+    img {
+        float: right;
+        width: 1.875rem;
+        padding-top: 0.2rem;
+    }
+}
 
 .transportsideknapp {
     border: 1px solid @colorMediumBlaa;
@@ -862,31 +857,28 @@ header.rammeverk p {
     }
 
     .skygge {
-            height:3px;
-            top: 19px;
-                position: relative;
-
-        
+        height: 3px;
+        top: 19px;
+        position: relative;
     }
 
-    h4, p{
+    h4, p {
         margin: 0;
     }
 }
 
-.kontaktModul{
-    color :  @colorMorkBlaa;
+.kontaktModul {
+    color: @colorMorkBlaa;
     /*float: right;*/
     margin: 0;
     //padding-left: 2rem;
-    display: inline-block;
-    
-    p{
+
+    p {
         line-height: 1.5rem;
-        margin: 0;
+        margin: 5px;
     }
 
-    h3{
+    h3 {
         margin-bottom: 1rem;
     }
 }
@@ -907,71 +899,71 @@ header.rammeverk p {
         top: 100%;
     }
 
-    ul{
-                list-style-type: square;
-                > li {
-                    color: @colorMorkBlaa;
+    ul {
+        list-style-type: square;
 
-                    >span{
-                        color:black;
-                    }
-                }
+        > li {
+            color: @colorMorkBlaa;
+
+            >span {
+                color: black;
+            }
+        }
     }
-    h3{
+
+    h3 {
         text-align: center;
-        height:50%;
+        height: 50%;
     }
 
-    h4{
+    h4 {
         padding-left: 1.2rem;
     }
 }
 
-.sosialeMedier{
+.sosialeMedier {
     color: white;
 
-    h4{
-        margin:0 0 5px 0;
+    h4 {
+        margin: 0 0 5px 0;
     }
 
-    a{
+    a {
         margin-left: 10px;
     }
 
-    a:visited{
-        color: white;
-    }
+        a:visited {
+            color: white;
+        }
 }
 
-video{
-    width: 100%
+video {
+    width: 100%;
 }
 
-.retningslinjemodul{
+.retningslinjemodul {
     border: 1px solid @colorLysGraa;
     margin-bottom: 20px;
 
-    .innerDiv{
+    .innerDiv {
         border-left: 8px solid @colorRoed;
         margin: 10px;
 
-       p, a, h4{
+        p, a, h4 {
             margin: 0 0 0 10px;
-         }
-
+        }
     }
 }
 
-.veilederModul{
-     border: 1px solid @colorLysGraa;
+.veilederModul {
+    border: 1px solid @colorLysGraa;
 
-    .innerDiv{
+    .innerDiv {
         border-left: 8px solid @colorOrange;
         margin: 10px;
 
-       p, a, h4{
+        p, a, h4 {
             margin: 0 0 0 10px;
-         }
-
+        }
     }
 }

@@ -7,19 +7,20 @@ $(document).ready(function () {
         expandedText = $(".js-expander-innhold");
 
     expander.css("cursor", "pointer");
-    expandedContent.hide();
+    expandedContent.addClass("visuallyhidden");
     expandedText.text('Start');
 
-    expander.on('click', function() {
+    expander.on('click', function () {
 
-        expandedContent.toggle();
 
-        if (expandedContent.is(":visible")) {
+        if (expandedContent.hasClass("visuallyhidden")) {
+            expandedContent.removeClass("visuallyhidden");
             expandedText.text('Velg');
             expander.addClass("js-expanded");
         } else {
             expandedText.text('Start');
             expander.removeClass("js-expanded");
+            expandedContent.addClass("visuallyhidden");
         }
     });
 

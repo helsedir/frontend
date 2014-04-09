@@ -17,12 +17,12 @@ $(document).ready(function () {
 
 
         if (narrow) {
-            toggledContent.hide();
+            toggledContent.addClass("visuallyhidden");
             togglers.addClass("pseudo-link");
             toggledContentParent.addClass("has-hidden-content");
 
         } else {
-            toggledContent.show();
+            toggledContent.removeClass("visuallyhidden");
             togglers.removeClass("pseudo-link");
             toggledContentParent.removeClass("has-visible-content").removeClass("has-hidden-content");
         }
@@ -39,9 +39,9 @@ $(document).ready(function () {
                 var clickedElement = $(this),
                     clickedElementParent = clickedElement.parent();
 
-                clickedElement.nextAll().toggle();
+                clickedElement.nextAll().toggleClass("visuallyhidden");
 
-                if (clickedElement.nextAll().is(":visible")) {
+                if (!clickedElement.nextAll().hasClass("visuallyhidden")) {
                     clickedElementParent.addClass("has-visible-content");
                     clickedElementParent.removeClass("has-hidden-content");
                 } else {
