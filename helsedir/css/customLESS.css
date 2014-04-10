@@ -2,138 +2,148 @@
   font-size: 100%;
 }
 body {
-  font-family: 'Calibri';
-  font-size: 20px;
-  /*font-weight: 300;*/
-  color: #222;
   padding: 0;
+  color: #222;
+  /*font-weight: 300;*/
+  font-size: 20px;
+  font-family: 'Calibri';
   line-height: 1.750em;
 }
 h1 {
+  font-weight: normal;
   font-size: 2.800em;
   font-family: "soho gothic pro light";
-  font-weight: normal;
   line-height: 1.667em;
 }
 .ingress {
+  margin-bottom: 20px;
   font-size: 1.579em;
   font-family: 'Calibri';
-  margin-bottom: 20px;
 }
 h2 {
+  font-weight: normal;
   font-size: 36px;
   font-family: "soho gothic pro light";
-  font-weight: normal;
 }
-.has-hidden-content {
-  padding: 0 0 0 10px;
-  margin-bottom: 8px;
-  border: 1px solid #222;
-  cursor: pointer;
+/*.has-hidden-content {
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+    border: 1px solid #222;
+    cursor: pointer;
+
+    h2 {
+        cursor: pointer;
+    }
+
+        h2:after {
+            font-family: "FontAwesome";
+            content: "\f078";
+            float: right;
+            padding-right: 10px;
+        }
 }
-.has-hidden-content h2 {
-  cursor: pointer;
-}
-.has-hidden-content h2:after {
-  font-family: "FontAwesome";
-  content: "\f078";
-  float: right;
-  padding-right: 10px;
-}
+
 .has-visible-content {
-  border: 1px solid #222;
-  padding: 0 0 0 10px;
-  margin-bottom: 8px;
+    border: 1px solid #222;
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+
+    h2 {
+        cursor: pointer;
+    }
+
+        h2:after {
+            font-family: "FontAwesome";
+            content: "\f077";
+            float: right;
+            padding-right: 10px;
+        }
 }
-.has-visible-content h2 {
-  cursor: pointer;
-}
-.has-visible-content h2:after {
-  font-family: "FontAwesome";
-  content: "\f077";
-  float: right;
-  padding-right: 10px;
-}
+    */
 .organisasjonskart.has-visible-content,
 .divisjon.has-visible-content {
-  border: none;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   padding: 0;
+  border: 1px solid #222;
+}
+.organisasjonskart.has-visible-content > div,
+.divisjon.has-visible-content > div,
+.organisasjonskart.has-visible-content > h3,
+.divisjon.has-visible-content > h3 {
+  padding: 0 10px 5px 10px;
+}
+.organisasjonskart.has-visible-content > ul,
+.divisjon.has-visible-content > ul {
+  padding-left: 30px;
 }
 .organisasjonskart.has-visible-content h2,
-.divisjon.has-visible-content h2,
-.organisasjonskart.has-visible-content h3,
-.divisjon.has-visible-content h3 {
-  cursor: pointer;
+.divisjon.has-visible-content h2 {
+  margin: 0;
+  padding: 10px;
   border: 1px solid #222;
   background: #b2babc;
-  margin: 20px 0 0 0;
+  cursor: pointer;
 }
-.organisasjonskart.has-visible-content h2:after,
-.divisjon.has-visible-content h2:after,
-.organisasjonskart.has-visible-content h3:after,
-.divisjon.has-visible-content h3:after {
-  font-family: "FontAwesome";
-  content: "\f077";
-  float: right;
+.organisasjonskart.has-visible-content h2:before,
+.divisjon.has-visible-content h2:before {
+  float: left;
   padding-right: 10px;
-}
-.organisasjonskart.has-visible-content .kontaktModul,
-.divisjon.has-visible-content .kontaktModul {
-  border: 1px solid #222;
+  content: "\f077";
+  font-family: "FontAwesome";
 }
 .organisasjonskart.has-hidden-content,
 .divisjon.has-hidden-content {
-  border: none;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   padding: 0;
+  border: none;
 }
 .organisasjonskart.has-hidden-content h2,
 .divisjon.has-hidden-content h2,
 .organisasjonskart.has-hidden-content h3,
 .divisjon.has-hidden-content h3 {
-  margin: 20px 0 8px 0;
+  margin: 0;
+  padding: 10px;
   border: 1px solid #222;
-  cursor: pointer;
   background: white;
+  cursor: pointer;
 }
-.organisasjonskart.has-hidden-content h2:after,
-.divisjon.has-hidden-content h2:after,
-.organisasjonskart.has-hidden-content h3:after,
-.divisjon.has-hidden-content h3:after {
-  font-family: "FontAwesome";
-  content: "\f078";
-  float: right;
+.organisasjonskart.has-hidden-content h2:before,
+.divisjon.has-hidden-content h2:before,
+.organisasjonskart.has-hidden-content h3:before,
+.divisjon.has-hidden-content h3:before {
+  float: left;
   padding-right: 10px;
+  content: "\f078";
+  font-family: "FontAwesome";
 }
 h3 {
+  font-weight: normal;
   font-size: 22px;
   font-family: "soho gothic pro light";
-  font-weight: normal;
 }
 h4 {
-  font-family: "soho gothic pro light";
-  font-size: 20px;
   font-weight: normal;
+  font-size: 20px;
+  font-family: "soho gothic pro light";
 }
 h5 {
-  font-size: 20px;
   font-weight: normal;
+  font-size: 18px;
 }
 #logo {
-  background: white;
   padding: 6px 16px 2px 12px;
   min-height: 44px;
   max-height: 44px;
+  background: white;
 }
 .broedsmulesti {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 .broedsmulesti li {
   display: block;
-  padding-right: 0.3rem;
   float: left;
+  padding-right: 0.3rem;
 }
 .broedsmulesti li:after {
   content: ' >';
@@ -148,9 +158,9 @@ h5 {
   color: #004e66;
 }
 a:hover {
-  text-decoration: underline;
-  color: #cc00cc;
   /* hot pink? */
+  color: #cc00cc;
+  text-decoration: underline;
 }
 header {
   background: #004e66;
@@ -163,22 +173,22 @@ header a:visited {
 }
 footer.rammeverk {
   height: 100%;
-  color: white;
   background: #004e66;
+  color: white;
 }
 footer.rammeverk p {
-  padding-left: 1.3rem;
   margin: 0.5rem;
+  padding-left: 1.3rem;
 }
 footer.rammeverk img {
+  padding-right: 0.4rem;
   padding-left: 1.8rem;
   vertical-align: middle;
-  padding-right: 0.4rem;
 }
 footer.rammeverk a,
 footer.rammeverk a:visited {
-  text-decoration: none;
   color: white !important;
+  text-decoration: none;
 }
 .nedlastingsLinker {
   margin: 0;
@@ -200,17 +210,17 @@ footer.rammeverk a:visited {
   color: white;
 }
 #mobilmeny {
-  background: #004e66;
   float: right;
+  background: #004e66;
 }
 .fonttest {
-  font-family: Calibri;
   font-size: 100%;
+  font-family: Calibri;
 }
 .clearfix:before,
 .clearfix:after {
-  content: " ";
   display: table;
+  content: " ";
 }
 .clearfix:after {
   clear: both;
@@ -219,15 +229,15 @@ footer.rammeverk a:visited {
   margin-left: 1rem;
 }
 .dropdownmeny ul li {
-  border-top: 1px solid #df9922;
-  padding-bottom: 0.2rem;
   padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-top: 1px solid #df9922;
   border-bottom: 1px solid #df9922;
 }
 .dropdownmeny .dropdownmenyliste {
+  display: inline;
   margin: 0;
   /*height: 1.9em;*/
-  display: inline;
   list-style-type: none;
 }
 .dropdownmeny .dropdownmenyliste ul li {
@@ -245,21 +255,21 @@ footer.rammeverk a:visited {
   width: 2rem;
 }
 #hovedmeny ul {
-  height: 3rem;
   display: block;
+  height: 3rem;
 }
 #hovedmeny ul li {
-  background: #004e66;
   float: left;
-  text-align: center;
   padding-right: 1rem;
+  background: #004e66;
+  text-align: center;
 }
 #hovedmeny ul li a {
   display: block;
-  line-height: 1em;
-  height: 1.5rem;
   width: 10em;
+  height: 1.5rem;
   text-decoration: none;
+  line-height: 1em;
 }
 #hovedmeny ul li :hover {
   background: #df9922;
@@ -277,14 +287,14 @@ footer.rammeverk a:visited {
   width: 40%;
 }
 .utvidbarOverskrift {
-  width: 330px;
-  min-height: 70px;
-  border: 1px solid #eeeeee;
-  background: #ffffff;
-  margin-bottom: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   padding-top: 0;
+  min-height: 70px;
+  width: 330px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
 }
 /**Slett senere*/
 #infoboks {
@@ -292,47 +302,71 @@ footer.rammeverk a:visited {
 }
 /**************/
 .kollapslenker h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
   width: 33%;
   border: 1px solid #eeeeee;
   background: #004e66;
   color: white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
 }
 .kollapslenker-graa h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
   width: 33%;
   border: 1px solid #eeeeee;
   background: #b2babc;
   color: #004e66;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
 }
 .kollapslenker-graa h4 .fa-chevron-down {
   color: black;
 }
 .fa-chevron-right {
-  font-size: 1.5em;
-  color: #df9922;
   float: right;
   padding-top: 0.3rem;
+  color: #df9922;
+  font-size: 1.5em;
 }
 .fa-chevron-down {
+  float: right;
   padding-top: 0.3rem;
   font-size: 1.5em;
-  float: right;
+}
+#tabs {
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  min-height: 0;
+  margin: 0;
+  padding: .2em .2em 0;
+}
+#tabs ul {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+#tabs ul li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 #tabs #tabheading-1 {
   border-top: 7px solid #004e66;
-  border-bottom: 7px solid white;
   border-right: 2px solid #0093a7;
+  border-bottom: 7px solid white;
 }
 #tabs #tabheading-2 {
-  border-bottom: 7px solid #6cb4b5;
   border-top: 7px solid white;
+  border-bottom: 7px solid #6cb4b5;
 }
 #tabs a {
   color: #004e66;
@@ -342,12 +376,12 @@ footer.rammeverk a:visited {
 }
 #statistikk #tabheading-1 {
   border-top: 7px solid #004e66;
-  border-bottom: 7px solid white;
   border-right: 2px solid #0093a7;
+  border-bottom: 7px solid white;
 }
 #statistikk #tabheading-2 {
-  border-bottom: 7px solid #6cb4b5;
   border-top: 7px solid white;
+  border-bottom: 7px solid #6cb4b5;
 }
 #statistikk a {
   color: #004e66;
@@ -356,27 +390,27 @@ footer.rammeverk a:visited {
   color: #df9922;
 }
 .kollapslenker-tabs h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
   border: 1px solid #eeeeee;
   background: #aeaba8;
   color: white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
 }
 .kollapslenker-tabs h4 .fa-chevron-down {
   color: #004e66;
 }
 .minimertTekst {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
   min-height: 70px;
   background: whitesmoke;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 10px;
 }
 a {
-  text-decoration: underline;
   color: #0093a7;
+  text-decoration: underline;
   font-size: 1em;
   line-height: 35px;
 }
@@ -397,15 +431,15 @@ a:visited {
   margin-bottom: 15px;
 }
 .nedlastingsLinker img {
-  vertical-align: text-bottom;
   height: 1.3rem;
+  vertical-align: text-bottom;
 }
 article .innholdswrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
   min-height: 70px;
   background: whitesmoke;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 10px;
 }
 /*article .has-hidden-content h3,
 article .has-visible-content h3 {
@@ -436,17 +470,17 @@ article .has-hidden-content h3:before {
   display: inline;
 }
 .stripes {
-  width: 75%;
   position: absolute;
-  height: 6px;
-  left: 12.5%;
   top: -6px;
+  left: 12.5%;
+  width: 75%;
+  height: 6px;
 }
 .stripes .left,
 .stripes .middle,
 .stripes .right {
-  width: 33%;
   float: left;
+  width: 33%;
   height: 100%;
 }
 .stripes.cold .left {
@@ -471,11 +505,11 @@ article .has-hidden-content h3:before {
   left: 0;
 }
 .skygge {
-  width: 75%;
   position: absolute;
-  height: 5px;
-  left: 12.5%;
   top: 100%;
+  left: 12.5%;
+  width: 75%;
+  height: 5px;
 }
 .skygge > div {
   float: left;
@@ -495,9 +529,9 @@ article .has-hidden-content h3:before {
   background: #0093a7;
 }
 .skygge.bottom {
+  top: 5px;
   left: 0;
   width: 100%;
-  top: 5px;
 }
 .stripes-outer,
 .stripes-under {
@@ -505,10 +539,10 @@ article .has-hidden-content h3:before {
 }
 .toppmeny ul,
 .bunnmeny ul {
-  list-style-type: none;
   float: left;
   margin: 1rem 2rem 1rem 0;
   padding: 0 2rem 1rem 0;
+  list-style-type: none;
 }
 .toppmeny ul h2,
 .bunnmeny ul h2 {
@@ -516,18 +550,18 @@ article .has-hidden-content h3:before {
 }
 .toppmeny a,
 .toppmeny a:visited {
-  text-decoration: none;
   color: #004e66;
+  text-decoration: none;
 }
 .bunnmeny a,
 .bunnmeny a:visited {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .pilIkon {
+  margin-right: 0.2em;
   width: 1.875rem;
   vertical-align: bottom;
-  margin-right: 0.2em;
 }
 .dropdownWrapper {
   overflow: auto;
@@ -535,30 +569,30 @@ article .has-hidden-content h3:before {
   color: #004e66;
 }
 .footerWrapper {
-  background: #004e66;
   margin-top: 2rem;
   border-top: 5px solid #0093a7;
+  background: #004e66;
 }
 .headerGronn {
   position: absolute;
-  background: #0093a7;
   width: 100%;
   height: 44px;
+  background: #0093a7;
 }
 .headerBlaa {
   position: absolute;
-  background: #004e66;
   width: 100%;
   height: 39px;
+  background: #004e66;
 }
 .visuallyhidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
   margin: -1px;
   padding: 0;
+  width: 1px;
+  height: 1px;
   border: 0;
 }
 .tab-folder > .tab-content:target ~ .tab-content:last-child,
@@ -582,8 +616,8 @@ article .has-hidden-content h3:before {
   margin-left: 10px;
 }
 .abonneringsmodul :visited {
-  text-decoration: none;
   color: #222;
+  text-decoration: none;
 }
 .abonneringsmodul :hover {
   text-decoration: none;
@@ -594,29 +628,29 @@ article .has-hidden-content h3:before {
 }
 .informasjonsboks {
   position: relative;
+  padding: 30px 30px 0 30px;
   min-height: 70px;
   color: Black;
-  padding: 30px 30px 0 30px;
 }
 .informasjonsboks a {
+  color: #004e66;
   text-decoration: underline;
   cursor: pointer;
-  color: #004e66;
 }
 .informasjonsboks a h4 {
   padding-left: 1.2rem;
-  border-left: 1px solid #c63629;
-  border-bottom: 1px solid #c63629;
-  border-right: 1px solid #c63629;
   border-top: 0;
+  border-right: 1px solid #c63629;
+  border-bottom: 1px solid #c63629;
+  border-left: 1px solid #c63629;
 }
 .informasjonsboks .seAlle-link {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 .informasjonsboks ul {
-  list-style-type: disc;
   padding-left: 1.4rem;
+  list-style-type: disc;
 }
 .informasjonsboks ul li {
   padding-top: 0.5rem;
@@ -641,17 +675,17 @@ article .has-hidden-content h3:before {
   color: #df9922;
 }
 .informasjonsboks .stripes {
+  top: -36px;
   left: 0;
   width: 100%;
-  top: -36px;
 }
 .informasjonsboks h4 {
   margin-bottom: 2rem;
 }
 .liten-informasjonsboks {
-  border: 1px solid #222;
-  padding: 10px 0 10px 10px;
   margin: 30px 0 10px 0;
+  padding: 10px 0 10px 10px;
+  border: 1px solid #222;
 }
 .liten-informasjonsboks .blaasOpp {
   font-size: 3em;
@@ -665,25 +699,25 @@ article .has-hidden-content h3:before {
   float: left;
 }
 .c2aKnapp {
-  background-color: #df9922;
-  line-height: 2.2rem;
   padding: 0;
   border: none;
+  background-color: #df9922;
+  line-height: 2.2rem;
 }
 .c2aKnapp h3 {
-  font-family: 'Calibri';
-  font-weight: bold;
   margin: 0;
+  font-weight: bold;
+  font-family: 'Calibri';
 }
 .c2aKnapp img {
   float: right;
-  width: 1.875rem;
   padding-top: 0.2rem;
+  width: 1.875rem;
 }
 .transportsideknapp {
-  border: 1px solid #0093a7;
-  padding: 1rem 1rem 1rem 0.5rem;
   margin-top: 1.2rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+  border: 1px solid #0093a7;
 }
 .transportsideknapp a,
 .transportsideknapp a:hover,
@@ -692,33 +726,28 @@ article .has-hidden-content h3:before {
   text-decoration: none;
 }
 .transportsideknapp .skygge {
-  height: 3px;
-  top: 19px;
   position: relative;
+  top: 19px;
+  height: 3px;
 }
 .transportsideknapp h4,
 .transportsideknapp p {
   margin: 0;
 }
 .kontaktModul {
-  color: #004e66;
   /*float: right;*/
   margin: 0;
-}
-.kontaktModul p {
-  line-height: 1.5rem;
-  margin: 5px;
 }
 .kontaktModul h3 {
   margin-bottom: 1rem;
 }
 .faktaboks {
   position: relative;
+  margin-bottom: 10px;
+  padding: 10px;
   min-height: 70px;
   background: #b2babc;
   color: black;
-  margin-bottom: 10px;
-  padding: 10px;
 }
 .faktaboks .stripes-outer {
   top: -9px;
@@ -727,6 +756,7 @@ article .has-hidden-content h3:before {
   top: 100%;
 }
 .faktaboks ul {
+  padding: 25px 25px 35px 25px;
   list-style-type: square;
 }
 .faktaboks ul > li {
@@ -735,12 +765,16 @@ article .has-hidden-content h3:before {
 .faktaboks ul > li > span {
   color: black;
 }
+.faktaboks p {
+  padding: 0 25px 35px 25px;
+}
 .faktaboks h3 {
-  text-align: center;
-  height: 50%;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 .faktaboks h4 {
-  padding-left: 1.2rem;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 .sosialeMedier {
   color: white;
@@ -758,12 +792,12 @@ video {
   width: 100%;
 }
 .retningslinjemodul {
-  border: 1px solid #b2babc;
   margin-bottom: 20px;
+  border: 1px solid #b2babc;
 }
 .retningslinjemodul .innerDiv {
-  border-left: 8px solid #c63629;
   margin: 10px;
+  border-left: 8px solid #c63629;
 }
 .retningslinjemodul .innerDiv p,
 .retningslinjemodul .innerDiv a,
@@ -774,8 +808,8 @@ video {
   border: 1px solid #b2babc;
 }
 .veilederModul .innerDiv {
-  border-left: 8px solid #df9922;
   margin: 10px;
+  border-left: 8px solid #df9922;
 }
 .veilederModul .innerDiv p,
 .veilederModul .innerDiv a,
