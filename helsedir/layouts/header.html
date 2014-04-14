@@ -9,7 +9,7 @@
                     <img id="logo" src="../img/logo.svg" />
                 </div>
                 <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-4 menylinje">
-                    <p class="pull-right">
+                    <nav class="pull-right">
                         <span>
                             <a href="#" class="js-expander">
                                 Meny
@@ -30,7 +30,7 @@
                             |
                             <a href="#">English</a>
                         </span>
-                    </p>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -38,48 +38,52 @@
 </div>
 <div class="dropdownWrapper js-expand">
     <div class="container">
-        <div id="tabs">
-            <ul>
-                <li id="tabheading-1"><a href="#tabs-1">Kategorier</a></li>
-                <li id="tabheading-2"><a href="#tabs-2">A-Å</a></li>
+        <nav class="tabs">
+            <ul class="tab-links">
+                <li class="active"><a href="#tab1" class="klikkbart">Kategorier</a></li>
+                <li><a href="#tab2" class="klikkbart">A-Å</a></li>
             </ul>
-            <div id="tabs-1" class="kollapslenker-tabs">
-                <div class="row">
-                    <div class="col-sm-3 col-md-4">
-                        <div class=" toppmeny">
-                            <ul id="nivaa1">
-                                <li><a href="#">Nasjonale strategier og planer<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Folkehelse og forebygging<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Rapporter, brosjyrer og publikasjoner<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Helseøkonomi<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Medisinske retninglinjer<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                            </ul>
+            <div class="tab-content">
+                <div id="tab1" class="tab active">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4">
+                            <div class=" toppmeny">
+                                <ul id="nivaa1">
+                                    <li><a href="#" class="klikkbart">Nasjonale strategier og planer<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Folkehelse og forebygging<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Rapporter, brosjyrer og publikasjoner<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Helseøkonomi<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Medisinske retninglinjer<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-md-4">
-                        <div class="toppmeny">
-                            <ul id="nivaa2">
-                                <li><a href="#">Statistikk og analyse<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Legemidler og medisinsk utstyr<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Beredskap<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Lover og rettigheter<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Høringer<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                            </ul>
+                        <div class="col-sm-3 col-md-4">
+                            <div class="toppmeny">
+                                <ul id="nivaa2">
+                                    <li><a href="#" class="klikkbart">Statistikk og analyse<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Legemidler og medisinsk utstyr<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Beredskap<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Lover og rettigheter<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Høringer<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-md-4">
-                        <div class="toppmeny">
-                            <ul id="nivaa3">
-                                <li><a href="#">Kurs og konferanser<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Godkjenning og turnus<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">Diagnoser og tilstander<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                                <li><a href="#">eHelse<img class="pilIkon" src="../img/pil.svg" /></a></li>
-                            </ul>
+                        <div class="col-sm-3 col-md-4">
+                            <div class="toppmeny">
+                                <ul id="nivaa3">
+                                    <li><a href="#" class="klikkbart">Kurs og konferanser<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Godkjenning og turnus<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">Diagnoser og tilstander<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                    <li><a href="#" class="klikkbart">eHelse<img class="pilIkon" src="../img/pil.svg" /></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id="tab2" class="tab">
+                    <p>lol</p>
+                </div>
             </div>
-            <div id="tabs-2" class="kollapslenker-tabs"></div>
-        </div>
+        </nav>
     </div>
 </div>

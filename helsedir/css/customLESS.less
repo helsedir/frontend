@@ -11,134 +11,187 @@
 @colorRoed: #c63629;
 @colorGul: #f4d01e;
 
-
 html {
     font-size: 100%;
 }
 
 body {
-font-family: 'Calibri';
-    font-size: 20px;
-    /*font-weight: 300;*/
-    color: #222;
     padding: 0;
+    color: #222; /*font-weight: 300;*/
+    font-size: 20px;
+    font-family: 'Calibri';
     line-height: 1.750em;
 }
 
-h1{
-font-size: 2.800em;
-font-family: @fontSohoLight;
-font-weight: normal;
-line-height: 1.667em;
+h1 {
+    font-weight: normal;
+    font-size: 2.800em;
+    font-family: @fontSohoLight;
+    line-height: 1.667em;
 }
 
-.ingress{
+.ingress {
+    margin-bottom: 20px;
     font-size: 1.579em;
     font-family: @fontCalibri;
 }
 
-h2{
+h2 {
+    font-weight: normal;
     font-size: 36px;
     font-family: @fontSohoLight;
-    font-weight: normal;
-
-   
 }
 
- .has-hidden-content{
-        padding: 0 0 0 10px;
-        margin-bottom: 8px;
-        border: 1px solid #222;
-        cursor: pointer;
-        
-    h2{
-            cursor: pointer;
+h3 {
+    font-weight: normal;
+    font-size: 22px;
+    font-family: @fontSohoLight;
+}
 
+h4 {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: @fontSohoLight;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.klikkbart {
+    &:focus {
+        background: @colorMorkBlaa;
+        color: white !important;
+        outline: 0;
+    }
+}
+
+/*.has-hidden-content {
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+    border: 1px solid #222;
+    cursor: pointer;
+
+    h2 {
+        cursor: pointer;
     }
 
-        h2:after{
+        h2:after {
             font-family: "FontAwesome";
             content: "\f078";
             float: right;
             padding-right: 10px;
         }
-    }
+}
 
 .has-visible-content {
     border: 1px solid #222;
     padding: 0 0 0 10px;
     margin-bottom: 8px;
-    h2{
-            cursor: pointer;
 
+    h2 {
+        cursor: pointer;
     }
 
-    h2:after {
+        h2:after {
             font-family: "FontAwesome";
             content: "\f077";
             float: right;
             padding-right: 10px;
         }
-    
+}
+    */
+
+.organisasjonskart, .divisjon {
+    &.has-visible-content {
+        margin-bottom: 25px;
+        padding: 0;
+        border: 1px solid #222;
+
+        > div, > h3 {
+            padding: 0 10px 5px 10px;
+        }
+
+        > ul {
+            padding-left: 30px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 10px;
+            border: 1px solid #222;
+            background: @colorLysGraa;
+            cursor: pointer;
+        }
+
+            h2:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f077";
+                font-family: "FontAwesome";
+            }
+    }
+
+    &.has-hidden-content {
+        margin-bottom: 25px;
+        padding: 0;
+        border: none;
+
+        h2, h3 {
+            margin: 0;
+            padding: 10px;
+            border: 1px solid #222;
+            background: white;
+            cursor: pointer;
+        }
+
+            h2:before, h3:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f078";
+                font-family: "FontAwesome";
+            }
+    }
 }
 
-h3{
-    font-size: 22px;
-    font-family: @fontSohoLight;
-    font-weight: normal;
-}
-
-h4{
-    font-family: @fontSohoLight;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-h5{
-    font-size: 20px;
-    font-weight: normal;
-}
-
-#logo{
+#logo {
+    padding: 6px 16px 2px 12px;
+    min-height: 44px;
+    max-height: 44px;
     background: white;
-padding: 6px 16px 2px 12px;
-min-height: 44px;
-max-height: 44px;
 }
 
 .broedsmulesti {
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 
     li {
         display: block;
-        padding-right: 0.3rem;
         float: left;
+        padding-right: 0.3rem;
     }
 
-    li:after{
-        content: ' >';
-    }
+        li:after {
+            content: ' >';
+        }
 
-    li:last-child:after{
-        content:'';
-    }
+        li:last-child:after {
+            content: '';
+        }
 
-    a{
+    a {
         text-decoration: underline;
     }
-       
-    a:visited{
-        color: @colorMorkBlaa;
-    }
 
-    
+        a:visited {
+            color: @colorMorkBlaa;
+        }
 }
 
-
-a:hover {
+a:hover { /* hot pink? */
+    color: #cc00cc;
     text-decoration: underline;
-    color: #cc00cc; /* hot pink? */
 }
 
 header {
@@ -150,26 +203,26 @@ header {
     }
 }
 
-
-footer.rammeverk{
+footer.rammeverk {
     height: 100%;
-    color: white;
     background: @colorMorkBlaa;
-        
-    p{
-        padding-left: 1.3rem;
+    color: white;
+
+    p {
         margin: 0.5rem;
+        padding-left: 1.3rem;
     }
-    img{
-        padding-left: 1.8rem;
-        vertical-align:middle;
+
+    img {
         padding-right: 0.4rem;
+        padding-left: 1.8rem;
+        vertical-align: middle;
     }
 
     a, a:visited {
-        text-decoration: none;
         color: white !important;
-            }
+        text-decoration: none;
+    }
 }
 
 .nedlastingsLinker {
@@ -177,114 +230,105 @@ footer.rammeverk{
     padding: 0;
 }
 
-
-
 .menylinje {
-
-    a{
-        padding:5px 0 9px 4px;
-    }
- 
-    a.js-expanded{
-        background: white;
-    color: @colorMorkBlaa;
+    a {
+        padding: 5px 0 9px 4px;
     }
 
-       p {
+        a.js-expanded {
+            background: white;
+            color: @colorMorkBlaa;
+        }
+
+    nav {
         margin-top: 0;
         margin-bottom: 0;
     }
 }
- .menylinje p span a, .menylinje > p > span {
+
+    .menylinje nav span a, .menylinje > nav > span {
         color: white;
     }
 
-
-
-#mobilmeny{
-    background:#004e66;
+#mobilmeny {
     float: right;
+    background: #004e66;
 }
 
-
-.fonttest{
-    font-family: Calibri;
+.fonttest {
     font-size: 100%;
+    font-family: Calibri;
 }
 
 .clearfix:before,
-.clearfix:after{
-        content: " ";
-        display: table;
-}
-.clearfix:after{
-    clear:both;
+.clearfix:after {
+    display: table;
+    content: " ";
 }
 
-
+.clearfix:after {
+    clear: both;
+}
 
 .dropdownmeny {
     margin-left: 1rem;
 
     ul li {
-        border-top: 1px solid @colorOrange;
-        padding-bottom: 0.2rem;
         padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        border-top: 1px solid @colorOrange;
         border-bottom: 1px solid @colorOrange;
     }
+
     .dropdownmenyliste {
-    margin: 0;
-    /*height: 1.9em;*/
-    display: inline;
-    list-style-type: none;
+        display: inline;
+        margin: 0; /*height: 1.9em;*/
+        list-style-type: none;
 
-    ul{
+        ul {
+        }
 
-    }
-    
-    ul li{
-        background: white;
-        color: black;
-    }
-    a{
-        text-decoration: none;
+            ul li {
+                background: white;
+                color: black;
+            }
+
+        a {
+            text-decoration: none;
+        }
     }
 }
-}
 
-
-
-#soekefelt{
+#soekefelt {
     float: right;
     margin-top: 2rem;
 }
 
-#sokeknapp{
+#sokeknapp {
     width: 2rem;
 }
 
 #hovedmeny {
-
     ul {
-        height: 3rem;
         display: block;
+        height: 3rem;
 
         li {
-            background: @colorMorkBlaa;
             float: left;
-            text-align: center;
             padding-right: 1rem;
+            background: @colorMorkBlaa;
+            text-align: center;
+
             a {
                 display: block;
-                line-height: 1em;
-                height: 1.5rem;
                 width: 10em;
+                height: 1.5rem;
                 text-decoration: none;
+                line-height: 1em;
             }
 
-            :hover{
-                                background:@colorOrange;
-
+            :hover {
+                background: @colorOrange;
             }
         }
     }
@@ -293,68 +337,59 @@ footer.rammeverk{
         color: white;
     }
 
-    .hovedmenypunkt{
+    .hovedmenypunkt {
         height: 1.6rem;
     }
 
-    .menypunkt{
+    .menypunkt {
         margin: 0.5rem;
     }
-
-    
 }
-.dropdownmeny{
-        width: 40%;
-    }
 
+.dropdownmeny {
+    width: 40%;
+}
 
-
-.utvidbarOverskrift{
-    width:330px;
-    min-height: 70px;
-    border:1px solid #eeeeee;
-    background: #ffffff;
-    margin-bottom: 10px;
+.utvidbarOverskrift {
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     padding-top: 0;
-
+    min-height: 70px;
+    width: 330px;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
 }
 
-
-
-
 /**Slett senere*/
-#infoboks{
-    float:none;
+#infoboks {
+    float: none;
 }
 /**************/
 
 .kollapslenker {
-
     h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
         width: 33%;
         border: 1px solid #eeeeee;
         background: @colorMorkBlaa;
         color: white;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        padding-left: 0.7rem;
-        padding-right: 0.7rem;
     }
 }
 
 .kollapslenker-graa {
-
     h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
         width: 33%;
         border: 1px solid #eeeeee;
         background: @colorLysGraa;
         color: @colorMorkBlaa;
-        margin-bottom: 10px;
-        margin-top: 10px;
-                padding-left: 0.7rem;
-        padding-right: 0.7rem;
 
         .fa-chevron-down {
             color: black;
@@ -362,132 +397,159 @@ footer.rammeverk{
     }
 }
 
-.fa-chevron-right{
-    font-size: 1.5em;
-    color: @colorOrange;
-    float:right;
+.fa-chevron-right {
+    float: right;
     padding-top: 0.3rem;
-}
-.fa-chevron-down{
-         padding-top: 0.3rem;
-
+    color: @colorOrange;
     font-size: 1.5em;
-    float:right;
 }
 
- #tabs{
-
-     #tabheading-1{
-         border-top: 7px solid @colorMorkBlaa;
-         border-bottom: 7px solid white;
-         border-right: 2px solid @colorMediumBlaa;
-     }
-     #tabheading-2{
-         border-bottom: 7px solid @colorLysBlaa;
-         border-top: 7px solid white;
-     }
-
-     a{
-         color: @colorMorkBlaa;
-     }
- }
-
-  #statistikk{
-      width: 90rem;
-
-     #tabheading-1{
-         border-top: 7px solid @colorMorkBlaa;
-         border-bottom: 7px solid white;
-         border-right: 2px solid @colorMediumBlaa;
-     }
-     #tabheading-2{
-         border-bottom: 7px solid @colorLysBlaa;
-         border-top: 7px solid white;
-     }
-
-     a{
-         color: @colorMorkBlaa;
-     }
-
-     .fa-chevron-down{
-        color: @colorOrange;
+.fa-chevron-down {
+    float: right;
+    padding-top: 0.3rem;
+    font-size: 1.5em;
 }
- }
 
- .kollapslenker-tabs {
+/*----- Tabs -----*/
+.tabs {
+    width: 100%;
+    display: inline-block;
+}
 
-    h4 {
-        border: 1px solid #eeeeee;
-        background: @colorGraa;
-        color: white;
-        margin-bottom: 10px;
-        margin-top: 10px;
-                padding-left: 0.7rem;
-        padding-right: 0.7rem;
-        
-        .fa-chevron-down{
-            color: @colorMorkBlaa;
+/*----- Tab Links -----*/
+/* Clearfix */
 
+.tab-links {
+    margin: 0;
+
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    li {
+        margin: 0 5px;
+        float: left;
+        list-style: none;
+
+        &.active a, &.active a:hover {
+            background: #B2BABC;
+            color: #4c4c4c;
+        }
+    }
+
+    a {
+        padding: 9px 15px;
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #4c4c4c;
+        transition: all linear 0.15s;
+        background: white;
+
+        :hover {
+            background: #a7cce5;
+            text-decoration: none;
         }
     }
 }
 
- .minimertTekst
-{
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+    background: #B2BABC;
+
+    li {
+        list-style-type: none;
+
+        a, a:visited, a:hover {
+            color: @colorMorkBlaa;
+        }
+    }
+}
+
+#statistikk {
+    width: 90rem;
+
+    #tabheading-1 {
+        border-top: 7px solid @colorMorkBlaa;
+        border-right: 2px solid @colorMediumBlaa;
+        border-bottom: 7px solid white;
+    }
+
+    #tabheading-2 {
+        border-top: 7px solid white;
+        border-bottom: 7px solid @colorLysBlaa;
+    }
+
+    a {
+        color: @colorMorkBlaa;
+    }
+
+    .fa-chevron-down {
+        color: @colorOrange;
+    }
+}
+
+.kollapslenker-tabs {
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+        border: 1px solid #eeeeee;
+        background: @colorGraa;
+        color: white;
+
+        .fa-chevron-down {
+            color: @colorMorkBlaa;
+        }
+    }
+}
+
+.minimertTekst {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     min-height: 70px;
     background: whitesmoke;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-
 }
 
-
-
-
-a{
-text-decoration: underline;
-    color: @colorMediumBlaa;
-    font-size: 1em;
-    line-height: 35px;
-
-}
-
-a:visited{
+a {
     color: @colorMediumBlaa;
     text-decoration: underline;
+    font-size: 1em;
+    line-height: 35px;
 }
 
-.alignLeft{
-    float:left;
-}
-
-.alignRight{
-    float: right;
-}
-
-
+    a:visited {
+        color: @colorMediumBlaa;
+        text-decoration: underline;
+    }
 
 .nedlastingsLinker {
     list-style-type: none;
 }
 
-.nedlastingsLinker li {
-    margin-bottom: 15px;
-}
+    .nedlastingsLinker li {
+        margin-bottom: 15px;
+    }
 
-.nedlastingsLinker img {
-    vertical-align: text-bottom;
-    height: 1.3rem;
-}
+    .nedlastingsLinker img {
+        height: 1.3rem;
+        vertical-align: text-bottom;
+    }
 
-
-article .innholdswrapper{
-      min-height: 70px;
-    background: whitesmoke;
-    margin-bottom: 10px;
+article .innholdswrapper {
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
+    min-height: 70px;
+    background: whitesmoke;
 }
 
 /*article .has-hidden-content h3,
@@ -498,11 +560,10 @@ article .has-visible-content h3 {
 article .has-hidden-content h3:before,
 article .has-visible-content h3:before {
 	font-family: FontAwesome;
-	content: "\f106"; 
+	content: "\f106";
     float: right;
     margin-right: -0.7rem;
     font-size: 2rem;
-
 }
 
 article .has-hidden-content h3:before {
@@ -515,35 +576,30 @@ article .has-hidden-content h3:before {
 }
 
 #hovedmeny div {
-        float: right;
+    float: right;
 }
 
 header.rammeverk p {
-    
 }
 
-#elementer{
+#elementer {
     display: inline;
 }
 
-
-
 .stripes {
-    width: 75%;
     position: absolute;
-    height: 6px;
-    left: 12.5%;
     top: -6px;
+    left: 12.5%;
+    width: 75%;
+    height: 6px;
 
     .left, .middle, .right {
-        width: 33%;
         float: left;
+        width: 33%;
         height: 100%;
-        
     }
 
     &.cold {
-
         .left {
             background: @colorMorkBlaa;
         }
@@ -571,71 +627,57 @@ header.rammeverk p {
         }
     }
 
-     
-
-    &.left{
+    &.left {
         left: 0;
     }
 }
 
-.skygge{
-     width: 75%;
+.skygge {
     position: absolute;
-    height: 5px;
-    left: 12.5%;
     top: 100%;
+    left: 12.5%;
+    width: 75%;
+    height: 5px;
 
-    
-    > div{
-        float:left;
+    > div {
+        float: left;
         width: 100%;
         height: 100%;
     }
 
-    .sort{
-
+    .sort {
         background: black;
     }
 
-
-    .orange{
+    .orange {
         background: @colorOrange;
     }
 
-    .roed{
+    .roed {
         background: @colorRoed;
-
     }
 
-    .blaa{
+    .blaa {
         background: @colorMediumBlaa;
-
     }
 
-    &.bottom{
+    &.bottom {
+        top: 5px;
         left: 0;
         width: 100%;
-        top:5px;
     }
-
-   
 }
 
-.stripes-outer, .stripes-under{
+.stripes-outer, .stripes-under {
     position: relative;
 }
 
-
-
-
-.toppmeny, .bunnmeny {
-
-
+.bunnmeny {
     ul {
-        list-style-type: none;
         float: left;
         margin: 1rem 2rem 1rem 0;
         padding: 0 2rem 1rem 0;
+        list-style-type: none;
 
         h2 {
             margin-bottom: 0.7rem;
@@ -643,60 +685,63 @@ header.rammeverk p {
     }
 }
 
-.toppmeny{
-      a, a:visited {
-            text-decoration: none;
-            color: @colorMorkBlaa;
-        }
-
-}
-
-.bunnmeny{
+.bunnmeny {
     a, a:visited {
-            text-decoration: none;
-            color: white;
-        }
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.pilIkon{
+.pilIkon {
+    margin-right: 0.2em;
     width: 1.875rem;
-        vertical-align: bottom;
-        margin-right: 0.2em;
+    vertical-align: bottom;
 }
 
-
-
-.dropdownWrapper{
+.dropdownWrapper {
     overflow: auto;
     background: white;
     color: @colorMorkBlaa;
-
 }
 
-.footerWrapper{
-    background: @colorMorkBlaa;
+.footerWrapper {
     margin-top: 2rem;
     border-top: 5px solid @colorMediumBlaa;
+    background: @colorMorkBlaa;
 }
 
-
-
-
-.headerGronn{
+.headerGronn {
     position: absolute;
-    background: @colorMediumBlaa;
     width: 100%;
     height: 44px;
+    background: @colorMediumBlaa;
 }
 
-.headerBlaa{
+.headerBlaa {
     position: absolute;
-    background: @colorMorkBlaa;
     width: 100%;
-    height:39px;
+    height: 39px;
+    background: @colorMorkBlaa;
 }
 
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
 
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+
+    .tab-folder > :last-child, .tab-folder > .tab-content:target {
+        display: block;
+    }
 
 /**********************************************************************
     Moduler
@@ -704,8 +749,6 @@ header.rammeverk p {
 
 .abonneringsmodul {
     padding-bottom: 20px;
-
-   
 
     .fa {
         color: @colorMediumBlaa;
@@ -716,15 +759,15 @@ header.rammeverk p {
     }
 
     :visited {
-        text-decoration: none;
         color: #222;
+        text-decoration: none;
     }
 
     :hover {
         text-decoration: none;
     }
 
-    div{
+    div {
         float: left;
         margin-right: 10px;
     }
@@ -732,22 +775,21 @@ header.rammeverk p {
 
 .informasjonsboks {
     position: relative;
+    padding: 30px 30px 0 30px;
     min-height: 70px;
     color: Black;
-    padding: 30px 30px 0 30px;
-
 
     a {
+        color: @colorMorkBlaa;
         text-decoration: underline;
         cursor: pointer;
-        color: @colorMorkBlaa;
 
         h4 {
             padding-left: 1.2rem;
-            border-left: 1px solid @colorRoed;
-            border-bottom: 1px solid @colorRoed;
-            border-right: 1px solid @colorRoed;
             border-top: 0;
+            border-right: 1px solid @colorRoed;
+            border-bottom: 1px solid @colorRoed;
+            border-left: 1px solid @colorRoed;
         }
     }
 
@@ -757,8 +799,8 @@ header.rammeverk p {
     }
 
     ul {
-        list-style-type: disc;
         padding-left: 1.4rem;
+        list-style-type: disc;
 
         li {
             padding-top: 0.5rem;
@@ -774,8 +816,6 @@ header.rammeverk p {
         color: @colorGul;
     }
 
-
-
     &.lover {
         border: 1px solid @colorRoed;
 
@@ -787,7 +827,6 @@ header.rammeverk p {
     &.retningslinjer {
         border: 1px solid @colorOrange;
 
-
         .retningslinjer-liste > li {
             color: @colorOrange;
         }
@@ -797,64 +836,57 @@ header.rammeverk p {
     }
 
     .stripes {
+        top: -36px;
         left: 0;
-            width: 100%;      
-            top: -36px;
-
+        width: 100%;
     }
-
-    
 
     h4 {
         margin-bottom: 2rem;
     }
 }
 
-
-.liten-informasjonsboks{
-    border: 1px solid #222;
-    padding: 10px 0 10px 10px;
+.liten-informasjonsboks {
     margin: 30px 0 10px 0;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #222;
 
-    .blaasOpp{
+    .blaasOpp {
         font-size: 3em;
     }
 
-    .forminsk{
+    .forminsk {
         font-size: 0.8em;
     }
 
-    p, span, a{
+    p, span, a {
         float: left;
     }
-
 }
 
 .c2aKnapp {
-        background-color: @colorOrange;
-        line-height: 2.2rem;
-        padding: 0;
-        border: none;
+    padding: 0;
+    border: none;
+    background-color: @colorOrange;
+    line-height: 2.2rem;
 
-        h3 {
-            font-family: @fontCalibri;
-            font-weight: bold;
-            margin: 0;
-        }
-
-
-
-        img {
-            float: right;
-            width: 1.875rem;
-            padding-top: 0.2rem;
-        }
+    h3 {
+        margin: 0;
+        font-weight: bold;
+        font-family: @fontCalibri;
     }
 
+    img {
+        float: right;
+        padding-top: 0.2rem;
+        width: 1.875rem;
+    }
+}
+
 .transportsideknapp {
-    border: 1px solid @colorMediumBlaa;
-    padding: 1rem 1rem 1rem 0.5rem;
     margin-top: 1.2rem;
+    padding: 1rem 1rem 1rem 0.5rem;
+    border: 1px solid @colorMediumBlaa;
 
     a, a:hover, a:visited {
         color: black;
@@ -862,42 +894,30 @@ header.rammeverk p {
     }
 
     .skygge {
-            height:3px;
-            top: 19px;
-                position: relative;
-
-        
+        position: relative;
+        top: 19px;
+        height: 3px;
     }
 
-    h4, p{
+    h4, p {
         margin: 0;
     }
 }
 
-.kontaktModul{
-    color :  @colorMorkBlaa;
-    /*float: right;*/
-    margin: 0;
-    //padding-left: 2rem;
-    display: inline-block;
-    
-    p{
-        line-height: 1.5rem;
-        margin: 0;
-    }
-
-    h3{
+.kontaktModul { /*float: right;*/
+    margin: 0; //padding-left: 2rem;color: @colorMorkBlaa; p {margin: 5px;line-height: 1.5rem;}
+    h3 {
         margin-bottom: 1rem;
     }
 }
 
 .faktaboks {
     position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
     min-height: 70px;
     background: @colorLysGraa;
     color: black;
-    margin-bottom: 10px;
-    padding: 10px;
 
     .stripes-outer {
         top: -9px;
@@ -907,71 +927,77 @@ header.rammeverk p {
         top: 100%;
     }
 
-    ul{
-                list-style-type: square;
-                > li {
-                    color: @colorMorkBlaa;
+    ul {
+        padding: 25px 25px 35px 25px;
+        list-style-type: square;
 
-                    >span{
-                        color:black;
-                    }
-                }
-    }
-    h3{
-        text-align: center;
-        height:50%;
+        > li {
+            color: @colorMorkBlaa;
+
+            >span {
+                color: black;
+            }
+        }
     }
 
-    h4{
-        padding-left: 1.2rem;
+    p {
+        padding: 0 25px 35px 25px;
+    }
+
+    h3 {
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+    h4 {
+        padding-top: 25px;
+        padding-left: 25px;
     }
 }
 
-.sosialeMedier{
+.sosialeMedier {
     color: white;
 
-    h4{
-        margin:0 0 5px 0;
+    h4 {
+        margin: 0 0 5px 0;
     }
 
-    a{
+    a {
         margin-left: 10px;
     }
 
-    a:visited{
-        color: white;
-    }
+        a:visited {
+            color: white;
+        }
 }
 
-video{
-    width: 100%
+video {
+    width: 100%;
 }
 
-.retningslinjemodul{
-    border: 1px solid @colorLysGraa;
+.retningslinjemodul {
     margin-bottom: 20px;
+    border: 1px solid @colorLysGraa;
 
-    .innerDiv{
-        border-left: 8px solid @colorRoed;
+    .innerDiv {
         margin: 10px;
+        border-left: 8px solid @colorRoed;
 
-       p, a, h4{
+        p, a, h4 {
             margin: 0 0 0 10px;
-         }
-
+        }
     }
 }
 
-.veilederModul{
-     border: 1px solid @colorLysGraa;
+.veilederModul {
+    border: 1px solid @colorLysGraa;
 
-    .innerDiv{
-        border-left: 8px solid @colorOrange;
+    .innerDiv {
         margin: 10px;
+        border-left: 8px solid @colorOrange;
 
-       p, a, h4{
+        p, a, h4 {
             margin: 0 0 0 10px;
-         }
-
+        }
     }
 }
