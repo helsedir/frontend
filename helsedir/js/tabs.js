@@ -1,28 +1,16 @@
-(function($){
-    $.fn.html5jTabs = function(options){
-        return this.each(function(index, value){
-            var obj = $(this),
-                objFirst = obj.eq(index),
-                objNotFirst = obj.not(objFirst);
+﻿$(document).ready(function () {
+    $('.tab').addClass('visuallyhidden');
+    $('.tab.active').removeClass('visuallyhidden');
 
-            $("#" +  objNotFirst.attr("data-toggle")).hide();
-            $(this).eq(index).addClass("active");
+    $('.tabs .tab-links a').on('click', function (e) {
+        var currentAttrValue = $(this).attr('href');
+        console.log(currentAttrValue);
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).addClass('active').removeClass('visuallyhidden').siblings().removeClass('active').addClass('visuallyhidden');
 
-            obj.click(function(evt){
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
 
-                toggler = "#" + obj.attr("data-toggle");
-                togglerRest = $(toggler).parent().find("div");
-
-                togglerRest.hide().removeClass("active");
-                $(toggler).show().addClass("active");
-
-                //toggle Active Class on tab buttons
-                $(this).parent("div").find("a").removeClass("active");
-                $(this).addClass("active");
-
-                return false; //Stop event Bubbling and PreventDefault
-            });
-        });
-    };
-}(jQuery));
-
+        e.preventDefault();
+    });
+});
