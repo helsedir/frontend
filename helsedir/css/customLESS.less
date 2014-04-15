@@ -60,7 +60,7 @@ h5 {
 }
 
 a {
-    color: @colorMediumBlaa;
+    color: #222;
     text-decoration: underline;
     font-size: 1em;
     line-height: 35px;
@@ -69,10 +69,8 @@ a {
         color: @colorMediumBlaa;
         text-decoration: underline;
     }
-}
 
-.klikkbar {
-    &:focus {
+    &:focus, &:hover, h4:hover, h4:focus, p:hover {
         background: @colorMorkBlaa;
         color: white !important;
         outline: 0;
@@ -80,10 +78,12 @@ a {
 }
 
 header, footer {
-    .klikkbar:focus {
-        background: white;
-        color: @colorMorkBlaa !important;
-        outline: 0;
+    a {
+        &:focus, &:hover {
+            background: white;
+            color: @colorMorkBlaa !important;
+            outline: 0;
+        }
     }
 }
 
@@ -329,7 +329,7 @@ a:hover { /* hot pink? */
         list-style: none;
 
         &.active a, &.active a:hover {
-            background: #B2BABC;
+            background: lightgrey;
             color: #4c4c4c;
         }
     }
@@ -344,9 +344,10 @@ a:hover { /* hot pink? */
         transition: all linear 0.15s;
         background: white;
 
-        :hover {
+        &:hover, &:focus {
             background: #a7cce5;
             text-decoration: none;
+            color: black !important;
         }
     }
 }
@@ -356,7 +357,7 @@ a:hover { /* hot pink? */
     padding: 15px;
     border-radius: 3px;
     box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
-    background: #B2BABC;
+    background: lightgrey;
 
     li {
         list-style-type: none;
@@ -365,6 +366,49 @@ a:hover { /* hot pink? */
             color: @colorMorkBlaa;
         }
     }
+}
+
+.tabs-statistikk {
+    .tab-content {
+        padding: 15px 0 0 0;
+    }
+
+    #statistikktab1 {
+        p {
+            text-align: center;
+            color: @colorMorkBlaa;
+
+            .nokkeltall {
+                font-size: 300%;
+            }
+        }
+
+        h4 {
+            padding: 0 15px 0 15px;
+            background: @colorMorkBlaa;
+            color: white;
+
+            i {
+                color: @colorOrange;
+            }
+        }
+    }
+}
+
+.dropdown-statistikk {
+    select {
+        width: 40%;
+    }
+
+    button {
+        background: @colorOrange;
+        border: 0;
+    }
+}
+
+#chart_div {
+    width: 100%;
+    height: 600px;
 }
 
 #statistikk {
@@ -683,14 +727,15 @@ article .innholdswrapper {
 }
 
 .transportsideknapp {
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     margin-top: 1.2rem;
     padding: 1rem 1rem 1rem 0.5rem;
     border: 1px solid @colorMediumBlaa;
-
-    a, a:hover, a:visited {
-        color: black;
-        text-decoration: none;
-    }
 
     .skygge {
         position: relative;
@@ -698,7 +743,9 @@ article .innholdswrapper {
         height: 3px;
     }
 
-    h4, p {
+    h4 {
+        height: 100%;
+        width: 100%;
         margin: 0;
     }
 }
@@ -798,5 +845,18 @@ video {
         p, a, h4 {
             margin: 0 0 0 10px;
         }
+    }
+}
+
+.sidetekst {
+    margin: 10px;
+    border-left: 8px solid @colorRoed;
+
+    p, a, h4 {
+        margin: 0 0 0 10px;
+    }
+
+    .nokkeltall {
+        font-size: 200%;
     }
 }

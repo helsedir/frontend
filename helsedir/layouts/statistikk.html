@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kommunens bruk av somatiske sykehus</title>
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/customLESS.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <nav class="col-md-6">
+                <ol class="broedsmulesti">
+                    <li><a href="#">Forside</a></li>
+                    <li class="active"><a href="#">Statistikk</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <section class="col-md-12 col-lg-12">
+                <h1>Kommunens bruk av somatiske sykehus</h1>
+                <div class="row">
+
+                    <article class="col-md-8 col-lg-8">
+                        <div class="dropdown-statistikk">
+                            <select>
+                                <option value="" disabled selected>Velg kommune</option>
+                                <option value="oslo">Oslo</option>
+                                <option value="trondheim">Trondheim</option>
+                                <option value="tromso">Tromsø</option>
+                                <option value="bergen">Bergen</option>
+                            </select>
+                            <select>
+                                <option value="" disabled selected>Velg periode</option>
+                                <option value="januar">Januar</option>
+                                <option value="februar">Februar</option>
+                                <option value="mars">Mars</option>
+                                <option value="april">April</option>
+                            </select>
+                            <button>Søk <i class="fa fa-search"></i></button>
+                        </div>
+
+                        <div class="tabs-statistikk">
+                            <h2>Trondheim kommune 1.tertial 2013</h2>
+                            <div class="tabs">
+                                <ul class="tab-links">
+                                    <li class="active"><a href="#statistikktab1">Oversikt</a></li>
+                                    <li><a href="#statistikktab2">Diagrammer</a></li>
+                                    <li><a href="#statistikktab3">Tabeller</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="statistikktab1">
+                                        <p>
+                                            Antall pasienter<br />
+                                            <span class="nokkeltall">90 983 </span><br />
+                                            Totalt<br />
+                                            <span class="nokkeltall">
+                                                -4,7%
+                                            </span><br />
+                                            Endring fra samme periode i fjor
+                                        </p>
+                                        <h4> Om statistikken<i class="fa fa-chevron-down"></i></h4>
+                                    </div>
+                                    <div id="statistikktab2"></div>
+                                    <div id="statistikktab3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="chart_div"></div>
+
+                        <p>
+                            Aktivitetsstatistikk, som gir oversikt over hvilke rapporteringspliktige aktiviteter som utøves i helsevesenet. Aktivitetsdata samles inn og sammenstilles av Norsk Pasientregister (NPR), som er underlagt divisjon for helseøkonomi og finansiering i Helsedirektoratet.
+                        </p>
+                    </article>
+                    <aside class="col-xs-7 col-sm-7 col-md-5 col-lg-3 col-lg-offset-1">
+                        <div class="sidetekst">
+                            <p>
+                                Tallene publiseres hvert tertial. Neste publiseres<br />
+                                <span class="nokkeltall">1.april 2014</span>
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+                <div class="row">
+                    <article class="col-md-7 col-lg-7"></article>
+
+                    <aside class="col-xs-7 col-sm-7 col-md-5 col-lg-4 col-lg-offset-1"></aside>
+                </div>
+                <div class="row">
+                    <article class="col-md-7 col-lg-8"></article>
+                    <aside class="col-xs-7 col-sm-7 col-md-5 col-lg-3 col-lg-offset-1">
+                        <div class="kontaktmodul">
+                            <h3>Ansvarlig for denne siden</h3>
+                            <div class="stripes-outer">
+                                <div class="stripes cold left">
+                                    <div class="left"></div>
+                                    <div class="middle"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <img src="../img/ansatt_bilde.png">
+                            </div>
+
+                            <p>
+                                Martin Martinsen<br />
+                                Rådgiver<br />
+                                Telefon: 974 57 585<br />
+                                martinmartinsen@helsedir.no
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/headerFooter.js"></script>
+    <script src="../js/sohoFont.js"></script>
+    <script src="../js/calibriFont.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="../js/chart.js"></script>
+</body>
+</html>
