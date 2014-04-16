@@ -6,16 +6,17 @@
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/customLESS.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet" />
-    <link href="../css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
     <link href="../css/designsystem.css" rel="stylesheet" />
 </head>
 <body class="hhs">
 
-    <div class="headerBlaa"></div>
+    <div class="headergronn">
+        <div class="headerblaa"></div>
+    </div>
     <div class="container">
         <header class="row">
             <div class="col-md-12 topplinje">
-                <span class="js-expander" id="toppmenyKnapp"><i class="fa fa-bars"></i> Meny</span>
+                <span class="js-expander" id="toppmenyknapp"><i class="fa fa-bars"></i> Meny</span>
             </div>
         </header>
     </div>
@@ -55,7 +56,7 @@
                         <li><a href="#hhs-transportsideknapp">Transportsideknapp</a></li>
                         <li><a href="#hhs-youtubeavspiller">YouTube-avspiller</a></li>
                         <li><a href="#hhs-lokalvideoavspiller">Videoavspiller for lokal media</a></li>
-                        <li><a href="#hhs-kontaktmodul">Kontaktmodul</a></li>
+                        <li><a href="#hhs-kontaktmodul">kontaktmodul</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-3">
@@ -264,8 +265,8 @@
                     <a name="hhs-c2aknapp"></a>
                     <h3 class="illustrasjonOverskrift">C2A-knapp</h3>
                     <div class="illustrasjon">
-                        <div class="c2aknapp-wrapper">
-                            <button class="c2aKnapp" type="submit">
+                        <div class="c2aknapp-wrapper klikkbart">
+                            <button class="c2aknapp" type="submit">
                                 <h3>Se alle retningslinjer <img src="../img/pil2-svart.svg" /></h3> <div class="skygge">
                                     <div class="sort"></div>
                                 </div>
@@ -281,9 +282,9 @@
                     <a name="hhs-lenke"></a>
                     <h3 class="illustrasjonOverskrift">Lenke</h3>
                     <div class="illustrasjon">
-                        <a href="#" style="color: #004e66">Lenke</a>
+                        <a class="klikkbar" href="#" style="color: #004e66">Lenke</a>
                         <br />
-                        <a href="#" style="color: #df9922">Besøkt lenke</a>
+                        <a class="klikkbar" href="#" style="color: #df9922">Besøkt lenke</a>
                     </div>
 
                     <a name="hhs-designelement"></a>
@@ -296,9 +297,9 @@
                     <p></p>
                     <div class="illustrasjon">
                         <ol class="broedsmulesti clearfix">
-                            <li><a href="#">Forside</a></li>
-                            <li><a href="#">Folkehelse og forebygging</a></li>
-                            <li><a href="#">Alkohol i næringslivet</a></li>
+                            <li><a href="#" class="klikkbar">Forside</a></li>
+                            <li><a href="#" class="klikkbar">Folkehelse og forebygging</a></li>
+                            <li><a href="#" class="klikkbar">Alkohol i næringslivet</a></li>
                         </ol>
                     </div>
                 </div>
@@ -386,19 +387,21 @@
                     <h3 class="illustrasjonOverskrift">Arkfane</h3>
                     <p></p>
                     <div class="illustrasjon">
-                        <div id="tabs">
-                            <ul>
-                                <li id="tabheading-1"><a href="#tabs-1">Spørsmål og svar</a></li>
-                                <li id="tabheading-2"><a href="#tabs-2">Brev og uttalelser</a></li>
+                        <div class="tabs">
+                            <ul class="tab-links">
+                                <li id="tabheading-1" class="active"><a href="#tab1">Spørsmål og svar</a></li>
+                                <li id="tabheading-2"><a href="#tab2">Brev og uttalelser</a></li>
                             </ul>
-                            <div id="tabs-1" class="kollapslenker-tabs">
-                                <h4>Hvem gjelder loven for?<i class="fa fa-chevron-down"></i></h4>
-                                <h4>Hvem er helsepersonell?<i class="fa fa-chevron-down"></i></h4>
-                                <h4>Hva er helsehjelp?<i class="fa fa-chevron-down"></i></h4>
-                            </div>
-                            <div id="tabs-2" class="kollapslenker-tabs">
-                                <h4>Brev<i class="fa fa-chevron-down"></i></h4>
-                                <h4>Uttalelser<i class="fa fa-chevron-down"></i></h4>
+                            <div class="tab-content">
+                                <div id="tab1" class="tab active">
+                                    <h4>Hvem gjelder loven for?<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Hvem er helsepersonell?<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Hva er helsehjelp?<i class="fa fa-chevron-down"></i></h4>
+                                </div>
+                                <div id="tab2" class="tab">
+                                    <h4>Brev<i class="fa fa-chevron-down"></i></h4>
+                                    <h4>Uttalelser<i class="fa fa-chevron-down"></i></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -495,10 +498,10 @@
                     </div>
 
                     <a name="hhs-kontaktmodul"></a>
-                    <h3 class="illustrasjonOverskrift">Kontaktmodul</h3>
+                    <h3 class="illustrasjonOverskrift">kontaktmodul</h3>
                     <p></p>
                     <div class="illustrasjon">
-                        <div class="kontaktModul">
+                        <div class="kontaktmodul">
                             <h3>Ansvarlig for denne siden</h3>
                             <div class="stripes-outer">
                                 <div class="stripes cold left">
@@ -560,9 +563,7 @@
     <script src="../js/toggle.js"></script>
     <script src="../js/sohoFont.js"></script>
     <script src="../js/calibriFont.js"></script>
-    <script src="../js/jquery-ui-1.10.4.custom.js"></script>
-    <script src="../js/tabs.js"></script>
-    <script src="../js/tabsJQueryUI.js"></script>
     <script src="../js/expand.js"></script>
+    <script src="../js/tabs.js"></script>
 </body>
 </html>

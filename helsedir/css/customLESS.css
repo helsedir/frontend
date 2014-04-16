@@ -3,11 +3,10 @@
 }
 body {
   padding: 0;
-  color: #222;
-  /*font-weight: 300;*/
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 1.750em;
+  color: #222;
 }
 h1 {
   font-weight: normal;
@@ -39,10 +38,60 @@ h5 {
   font-weight: normal;
   font-size: 18px;
 }
-.klikkbart:focus {
+a {
+  color: #222;
+  text-decoration: underline;
+  font-size: 1em;
+  line-height: 35px;
+}
+a:visited {
+  color: #0093a7;
+  text-decoration: underline;
+}
+a:focus,
+a:hover,
+a h4:hover,
+a h4:focus,
+a p:hover {
   background: #004e66;
   color: white !important;
   outline: 0;
+}
+header a:focus,
+footer a:focus,
+header a:hover,
+footer a:hover {
+  background: white;
+  color: #004e66 !important;
+  outline: 0;
+}
+header {
+  background: #004e66;
+}
+header a,
+header a:hover,
+header a:visited {
+  color: black;
+  text-decoration: none;
+}
+footer.rammeverk {
+  height: 100%;
+  background: #004e66;
+  color: white;
+}
+footer.rammeverk p {
+  margin: 0.5rem;
+  padding-left: 1.3rem;
+}
+footer.rammeverk img {
+  padding-right: 0.4rem;
+  padding-left: 1.8rem;
+  vertical-align: middle;
+}
+footer.rammeverk a,
+footer.rammeverk a:visited {
+  color: white !important;
+  text-decoration: none;
 }
 /*.has-hidden-content {
     padding: 0 0 0 10px;
@@ -167,38 +216,6 @@ a:hover {
   color: #cc00cc;
   text-decoration: underline;
 }
-header {
-  background: #004e66;
-}
-header a,
-header a:hover,
-header a:visited {
-  color: black;
-  text-decoration: none;
-}
-footer.rammeverk {
-  height: 100%;
-  background: #004e66;
-  color: white;
-}
-footer.rammeverk p {
-  margin: 0.5rem;
-  padding-left: 1.3rem;
-}
-footer.rammeverk img {
-  padding-right: 0.4rem;
-  padding-left: 1.8rem;
-  vertical-align: middle;
-}
-footer.rammeverk a,
-footer.rammeverk a:visited {
-  color: white !important;
-  text-decoration: none;
-}
-.nedlastingsLinker {
-  margin: 0;
-  padding: 0;
-}
 .menylinje a {
   padding: 5px 0 9px 4px;
 }
@@ -214,14 +231,6 @@ footer.rammeverk a:visited {
 .menylinje > nav > span {
   color: white;
 }
-#mobilmeny {
-  float: right;
-  background: #004e66;
-}
-.fonttest {
-  font-size: 100%;
-  font-family: Calibri;
-}
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -230,68 +239,7 @@ footer.rammeverk a:visited {
 .clearfix:after {
   clear: both;
 }
-.dropdownmeny {
-  margin-left: 1rem;
-}
-.dropdownmeny ul li {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border-top: 1px solid #df9922;
-  border-bottom: 1px solid #df9922;
-}
-.dropdownmeny .dropdownmenyliste {
-  display: inline;
-  margin: 0;
-  /*height: 1.9em;*/
-  list-style-type: none;
-}
-.dropdownmeny .dropdownmenyliste ul li {
-  background: white;
-  color: black;
-}
-.dropdownmeny .dropdownmenyliste a {
-  text-decoration: none;
-}
-#soekefelt {
-  float: right;
-  margin-top: 2rem;
-}
-#sokeknapp {
-  width: 2rem;
-}
-#hovedmeny ul {
-  display: block;
-  height: 3rem;
-}
-#hovedmeny ul li {
-  float: left;
-  padding-right: 1rem;
-  background: #004e66;
-  text-align: center;
-}
-#hovedmeny ul li a {
-  display: block;
-  width: 10em;
-  height: 1.5rem;
-  text-decoration: none;
-  line-height: 1em;
-}
-#hovedmeny ul li :hover {
-  background: #df9922;
-}
-#hovedmeny a {
-  color: white;
-}
-#hovedmeny .hovedmenypunkt {
-  height: 1.6rem;
-}
-#hovedmeny .menypunkt {
-  margin: 0.5rem;
-}
-.dropdownmeny {
-  width: 40%;
-}
-.utvidbarOverskrift {
+.utvidbaroverskrift {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -306,29 +254,6 @@ footer.rammeverk a:visited {
   float: none;
 }
 /**************/
-.kollapslenker h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  width: 33%;
-  border: 1px solid #eeeeee;
-  background: #004e66;
-  color: white;
-}
-.kollapslenker-graa h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  width: 33%;
-  border: 1px solid #eeeeee;
-  background: #b2babc;
-  color: #004e66;
-}
-.kollapslenker-graa h4 .fa-chevron-down {
-  color: black;
-}
 .fa-chevron-right {
   float: right;
   padding-top: 0.3rem;
@@ -362,7 +287,7 @@ footer.rammeverk a:visited {
 }
 .tab-links li.active a,
 .tab-links li.active a:hover {
-  background: #B2BABC;
+  background: lightgrey;
   color: #4c4c4c;
 }
 .tab-links a {
@@ -375,16 +300,18 @@ footer.rammeverk a:visited {
   transition: all linear 0.15s;
   background: white;
 }
-.tab-links a :hover {
+.tab-links a:hover,
+.tab-links a:focus {
   background: #a7cce5;
   text-decoration: none;
+  color: black !important;
 }
 /*----- Content of Tabs -----*/
 .tab-content {
   padding: 15px;
   border-radius: 3px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-  background: #B2BABC;
+  background: lightgrey;
 }
 .tab-content li {
   list-style-type: none;
@@ -393,6 +320,35 @@ footer.rammeverk a:visited {
 .tab-content li a:visited,
 .tab-content li a:hover {
   color: #004e66;
+}
+.tabs-statistikk .tab-content {
+  padding: 15px 0 0 0;
+}
+.tabs-statistikk #statistikktab1 p {
+  text-align: center;
+  color: #004e66;
+}
+.tabs-statistikk #statistikktab1 p .nokkeltall {
+  font-size: 300%;
+}
+.tabs-statistikk #statistikktab1 h4 {
+  padding: 0 15px 0 15px;
+  background: #004e66;
+  color: white;
+}
+.tabs-statistikk #statistikktab1 h4 i {
+  color: #df9922;
+}
+.dropdown-statistikk select {
+  width: 40%;
+}
+.dropdown-statistikk button {
+  background: #df9922;
+  border: 0;
+}
+#chart_div {
+  width: 100%;
+  height: 600px;
 }
 #statistikk {
   width: 90rem;
@@ -412,42 +368,15 @@ footer.rammeverk a:visited {
 #statistikk .fa-chevron-down {
   color: #df9922;
 }
-.kollapslenker-tabs h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  border: 1px solid #eeeeee;
-  background: #aeaba8;
-  color: white;
-}
-.kollapslenker-tabs h4 .fa-chevron-down {
-  color: #004e66;
-}
-.minimertTekst {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  min-height: 70px;
-  background: whitesmoke;
-}
-a {
-  color: #0093a7;
-  text-decoration: underline;
-  font-size: 1em;
-  line-height: 35px;
-}
-a:visited {
-  color: #0093a7;
-  text-decoration: underline;
-}
-.nedlastingsLinker {
+.nedlastingslinker {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.nedlastingsLinker li {
+.nedlastingslinker li {
   margin-bottom: 15px;
 }
-.nedlastingsLinker img {
+.nedlastingslinker img {
   height: 1.3rem;
   vertical-align: text-bottom;
 }
@@ -457,34 +386,6 @@ article .innholdswrapper {
   padding: 10px;
   min-height: 70px;
   background: whitesmoke;
-}
-/*article .has-hidden-content h3,
-article .has-visible-content h3 {
-    padding-right: 1.5rem;
-}
-
-article .has-hidden-content h3:before,
-article .has-visible-content h3:before {
-	font-family: FontAwesome;
-	content: "\f106";
-    float: right;
-    margin-right: -0.7rem;
-    font-size: 2rem;
-}
-
-article .has-hidden-content h3:before {
-    content: "\f107";
-    font-size: 2rem;
-}
-    */
-#breakpoint {
-  color: white;
-}
-#hovedmeny div {
-  float: right;
-}
-#elementer {
-  display: inline;
 }
 .stripes {
   position: absolute;
@@ -554,42 +455,28 @@ article .has-hidden-content h3:before {
 .stripes-under {
   position: relative;
 }
-.bunnmeny ul {
-  float: left;
-  margin: 1rem 2rem 1rem 0;
-  padding: 0 2rem 1rem 0;
-  list-style-type: none;
-}
-.bunnmeny ul h2 {
-  margin-bottom: 0.7rem;
-}
-.bunnmeny a,
-.bunnmeny a:visited {
-  color: white;
-  text-decoration: none;
-}
 .pilIkon {
   margin-right: 0.2em;
   width: 1.875rem;
   vertical-align: bottom;
 }
-.dropdownWrapper {
+.dropdownwrapper {
   overflow: auto;
   background: white;
   color: #004e66;
 }
-.footerWrapper {
+.footerwrapper {
   margin-top: 2rem;
   border-top: 5px solid #0093a7;
   background: #004e66;
 }
-.headerGronn {
+.headergronn {
   position: absolute;
   width: 100%;
   height: 44px;
   background: #0093a7;
 }
-.headerBlaa {
+.headerblaa {
   position: absolute;
   width: 100%;
   height: 39px;
@@ -604,14 +491,6 @@ article .has-hidden-content h3:before {
   width: 1px;
   height: 1px;
   border: 0;
-}
-.tab-folder > .tab-content:target ~ .tab-content:last-child,
-.tab-folder > .tab-content {
-  display: none;
-}
-.tab-folder > :last-child,
-.tab-folder > .tab-content:target {
-  display: block;
 }
 /**********************************************************************
     Moduler
@@ -692,34 +571,34 @@ article .has-hidden-content h3:before {
 .informasjonsboks h4 {
   margin-bottom: 2rem;
 }
-.liten-informasjonsboks {
+.liteninformasjonsboks {
   margin: 30px 0 10px 0;
   padding: 10px 0 10px 10px;
   border: 1px solid #222;
 }
-.liten-informasjonsboks .blaasOpp {
+.liteninformasjonsboks .blaasOpp {
   font-size: 3em;
 }
-.liten-informasjonsboks .forminsk {
+.liteninformasjonsboks .forminsk {
   font-size: 0.8em;
 }
-.liten-informasjonsboks p,
-.liten-informasjonsboks span,
-.liten-informasjonsboks a {
+.liteninformasjonsboks p,
+.liteninformasjonsboks span,
+.liteninformasjonsboks a {
   float: left;
 }
-.c2aKnapp {
+.c2aknapp {
   padding: 0;
   border: none;
   background-color: #df9922;
   line-height: 2.2rem;
 }
-.c2aKnapp h3 {
+.c2aknapp h3 {
   margin: 0;
   font-weight: bold;
   font-family: 'Calibri';
 }
-.c2aKnapp img {
+.c2aknapp img {
   float: right;
   padding-top: 0.2rem;
   width: 1.875rem;
@@ -729,26 +608,26 @@ article .has-hidden-content h3:before {
   padding: 1rem 1rem 1rem 0.5rem;
   border: 1px solid #0093a7;
 }
-.transportsideknapp a,
-.transportsideknapp a:hover,
-.transportsideknapp a:visited {
-  color: black;
-  text-decoration: none;
+.transportsideknapp a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .transportsideknapp .skygge {
   position: relative;
   top: 19px;
   height: 3px;
 }
-.transportsideknapp h4,
-.transportsideknapp p {
+.transportsideknapp h4 {
+  height: 100%;
+  width: 100%;
   margin: 0;
 }
-.kontaktModul {
+.kontaktmodul {
   /*float: right;*/
   margin: 0;
 }
-.kontaktModul h3 {
+.kontaktmodul h3 {
   margin-bottom: 1rem;
 }
 .faktaboks {
@@ -786,16 +665,16 @@ article .has-hidden-content h3:before {
   padding-top: 25px;
   padding-left: 25px;
 }
-.sosialeMedier {
+.sosialemedier {
   color: white;
 }
-.sosialeMedier h4 {
+.sosialemedier h4 {
   margin: 0 0 5px 0;
 }
-.sosialeMedier a {
+.sosialemedier a {
   margin-left: 10px;
 }
-.sosialeMedier a:visited {
+.sosialemedier a:visited {
   color: white;
 }
 video {
@@ -814,16 +693,28 @@ video {
 .retningslinjemodul .innerDiv h4 {
   margin: 0 0 0 10px;
 }
-.veilederModul {
+.veiledermodul {
   border: 1px solid #b2babc;
 }
-.veilederModul .innerDiv {
+.veiledermodul .innerDiv {
   margin: 10px;
   border-left: 8px solid #df9922;
 }
-.veilederModul .innerDiv p,
-.veilederModul .innerDiv a,
-.veilederModul .innerDiv h4 {
+.veiledermodul .innerDiv p,
+.veiledermodul .innerDiv a,
+.veiledermodul .innerDiv h4 {
   margin: 0 0 0 10px;
+}
+.sidetekst {
+  margin: 10px;
+  border-left: 8px solid #c63629;
+}
+.sidetekst p,
+.sidetekst a,
+.sidetekst h4 {
+  margin: 0 0 0 10px;
+}
+.sidetekst .nokkeltall {
+  font-size: 200%;
 }
 /*# sourceMappingURL=customLESS.css.map */
