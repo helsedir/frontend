@@ -132,7 +132,6 @@ footer.rammeverk a:visited {
 .divisjon.has-visible-content {
   margin-bottom: 25px;
   padding: 0;
-  border: 1px solid #222;
 }
 .organisasjonskart.has-visible-content > div,
 .divisjon.has-visible-content > div,
@@ -171,7 +170,6 @@ footer.rammeverk a:visited {
 .divisjon.has-hidden-content h3 {
   margin: 0;
   padding: 10px;
-  border: 1px solid #222;
   background: white;
   cursor: pointer;
 }
@@ -492,6 +490,15 @@ section .innholdswrapper {
   height: 1px;
   border: 0;
 }
+.soekefelt input {
+  margin-right: 10px;
+  padding: 10px;
+  width: 80%;
+}
+.soekefelt button {
+  border: 0;
+  padding: 10px;
+}
 /**********************************************************************
     Moduler
 ***********************************************************************/
@@ -716,5 +723,10 @@ video {
 }
 .sidetekst .nokkeltall {
   font-size: 200%;
+}
+.test {
+  float: right;
+  margin-left: -300px;
+  clear: both;
 }
 /*# sourceMappingURL=customLESS.css.map */
