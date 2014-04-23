@@ -724,9 +724,29 @@ video {
 .sidetekst .nokkeltall {
   font-size: 200%;
 }
-.test {
-  float: right;
-  margin-left: -300px;
-  clear: both;
+.spennendeTall {
+  border: 1px solid #222;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.spennendeTall p {
+  text-align: center;
+  padding: 30px;
+}
+.testSection {
+  position: relative;
+}
+.testAside {
+  margin-right: 0;
+  position: relative;
+  width: 386px;
+}
+@media (min-width: 1200px) {
+  .testAside {
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-right: -54%;
+  }
 }
 /*# sourceMappingURL=customLESS.css.map */
