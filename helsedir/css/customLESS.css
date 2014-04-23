@@ -1,5 +1,6 @@
 ﻿html {
   font-size: 100%;
+  background: #004e66;
 }
 body {
   padding: 0;
@@ -7,6 +8,7 @@ body {
   font-family: 'Calibri';
   line-height: 1.750em;
   color: #222;
+  background: white;
 }
 h1 {
   font-weight: normal;
