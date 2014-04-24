@@ -305,6 +305,12 @@ a:hover { /* hot pink? */
     font-size: 1.5em;
 }
 
+.fa-calendar-o {
+    float: left;
+    padding-right: 25px;
+    font-size: 600%;
+}
+
 /*----- Tabs -----*/
 .tabs {
     width: 100%;
@@ -895,11 +901,49 @@ video {
     width: 386px;
 }
 
+.kontaktmodul.testAside {
+    top: 0;
+}
+
 @media (min-width: 1200px) {
     .testAside {
         top: 0;
         right: 0;
         position: absolute;
         margin-right: -54%;
+    }
+
+    .kontaktmodul.testAside {
+        top: 150px;
+    }
+}
+
+.omoss {
+    border: 1px solid @colorLysGraa;
+
+    .omossboks {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    i {
+        font-size: 200%;
+        padding: 10px;
+    }
+
+    h3 {
+        margin: 10px 0 0 0;
+    }
+
+    .abonner {
+        display: inline;
+        margin-right: 30px;
+    }
+}
+
+.forside {
+    article {
+        margin: 20px 0 20px 0;
+        border-bottom: 1px solid @colorLysGraa;
     }
 }

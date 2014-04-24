@@ -265,6 +265,11 @@ a:hover {
   padding-top: 0.3rem;
   font-size: 1.5em;
 }
+.fa-calendar-o {
+  float: left;
+  padding-right: 25px;
+  font-size: 600%;
+}
 /*----- Tabs -----*/
 .tabs {
   width: 100%;
@@ -743,6 +748,9 @@ video {
   position: relative;
   width: 386px;
 }
+.kontaktmodul.testAside {
+  top: 0;
+}
 @media (min-width: 1200px) {
   .testAside {
     top: 0;
@@ -750,5 +758,30 @@ video {
     position: absolute;
     margin-right: -54%;
   }
+  .kontaktmodul.testAside {
+    top: 150px;
+  }
+}
+.omoss {
+  border: 1px solid #b2babc;
+}
+.omoss .omossboks {
+  list-style-type: none;
+  padding-left: 0;
+}
+.omoss i {
+  font-size: 200%;
+  padding: 10px;
+}
+.omoss h3 {
+  margin: 10px 0 0 0;
+}
+.omoss .abonner {
+  display: inline;
+  margin-right: 30px;
+}
+.forside article {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #b2babc;
 }
 /*# sourceMappingURL=customLESS.css.map */
