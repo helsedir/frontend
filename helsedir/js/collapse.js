@@ -14,5 +14,12 @@
 });
 
 $(function () {
-    $(".collapse").parent().addClass("has-hidden-content");
+    $(".collapse").each(function () {
+        $collapseElement = $(this);
+        $contentToHide = $collapseElement.next();
+        $parentTag = $collapseElement.parent();
+
+        $contentToHide.addClass('visuallyhidden');
+        $parentTag.addClass('has-hidden-content');
+    });
 });

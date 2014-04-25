@@ -62,7 +62,7 @@ h5 {
 }
 
 a {
-    color: #222;
+    color: @colorMediumBlaa;
     text-decoration: underline;
     font-size: 1em;
     line-height: 35px;
@@ -72,10 +72,20 @@ a {
         text-decoration: underline;
     }
 
-    &:focus, &:hover, h4:hover, h4:focus, p:hover {
-        background: @colorMorkBlaa;
-        color: white !important;
-        outline: 0;
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0 0 50px 0;
+    }
+
+    &:focus, &:hover {
+        h2, h4, p {
+            background: @colorMorkBlaa;
+            color: white !important;
+            outline: 0;
+        }
     }
 }
 
@@ -444,6 +454,10 @@ a:hover { /* hot pink? */
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    a {
+        color: @colorMediumBlaa;
+    }
 
     li {
         margin-bottom: 15px;
@@ -918,8 +932,22 @@ video {
     }
 }
 
+@media (min-width: 600px) {
+    .transportsideknapp {
+        border: none;
+
+        .fa-chevron-right {
+            display: none;
+        }
+
+        .skygge .blaa {
+            background: white;
+        }
+    }
+}
+
 .omoss {
-    border: 1px solid @colorLysGraa;
+    color: white;
 
     .omossboks {
         list-style-type: none;
@@ -939,11 +967,20 @@ video {
         display: inline;
         margin-right: 30px;
     }
+
+    a {
+        color: white;
+    }
 }
 
 .forside {
     article {
         margin: 20px 0 20px 0;
         border-bottom: 1px solid @colorLysGraa;
+        padding-bottom: 20px;
     }
+}
+
+.alfabetisk {
+    font-size: 16px;
 }
