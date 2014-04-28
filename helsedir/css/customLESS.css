@@ -56,20 +56,20 @@ a h2 {
 a p {
   margin: 0 0 50px 0;
 }
+a:focus {
+  background: #004e66;
+  color: white !important;
+  outline: 0;
+}
 a:focus h2,
-a:hover h2,
 a:focus h4,
-a:hover h4,
-a:focus p,
-a:hover p {
+a:focus p {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
 header a:focus,
-footer a:focus,
-header a:hover,
-footer a:hover {
+footer a:focus {
   background: white;
   color: #004e66 !important;
   outline: 0;
@@ -78,7 +78,6 @@ header {
   background: #004e66;
 }
 header a,
-header a:hover,
 header a:visited {
   color: black;
   text-decoration: none;
@@ -218,11 +217,6 @@ footer.rammeverk a:visited {
 .broedsmulesti a:visited {
   color: #004e66;
 }
-a:hover {
-  /* hot pink? */
-  color: #cc00cc;
-  text-decoration: underline;
-}
 .menylinje a {
   padding: 5px 0 9px 4px;
 }
@@ -234,7 +228,10 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
-.menylinje nav span a,
+.menylinje input {
+  border: 1px solid #004e66;
+}
+.menylinje nav a,
 .menylinje > nav > span {
   color: white;
 }
@@ -647,12 +644,15 @@ section .innholdswrapper {
   width: 100%;
   margin: 0;
 }
-.kontaktmodul {
+.personmodul {
   /*float: right;*/
-  margin: 0;
+  margin: 25px 0 25px 0;
 }
-.kontaktmodul h3 {
+.personmodul h3 {
   margin-bottom: 1rem;
+}
+.personmodul p {
+  margin: 0;
 }
 .faktaboks {
   position: relative;
@@ -707,10 +707,11 @@ video {
 .retningslinjemodul {
   margin-bottom: 20px;
   border: 1px solid #b2babc;
+  padding-left: 10px;
 }
 .retningslinjemodul .innerDiv {
   margin: 10px;
-  border-left: 8px solid #c63629;
+  /*border-left: 8px solid @colorRoed;*/
 }
 .retningslinjemodul .innerDiv p,
 .retningslinjemodul .innerDiv a,
@@ -719,10 +720,11 @@ video {
 }
 .veiledermodul {
   border: 1px solid #b2babc;
+  padding-left: 10px;
 }
 .veiledermodul .innerDiv {
   margin: 10px;
-  border-left: 8px solid #df9922;
+  /*border-left: 8px solid @colorOrange;*/
 }
 .veiledermodul .innerDiv p,
 .veiledermodul .innerDiv a,
@@ -750,26 +752,27 @@ video {
   text-align: center;
   padding: 30px;
 }
-.testSection {
+.avsnitt {
   position: relative;
 }
-.testAside {
+.aside {
   margin-right: 0;
   position: relative;
   width: 386px;
 }
-.kontaktmodul.testAside {
-  top: 0;
-}
 @media (min-width: 1200px) {
-  .testAside {
+  .aside {
     top: 0;
     right: 0;
     position: absolute;
     margin-right: -54%;
   }
-  .kontaktmodul.testAside {
-    top: 150px;
+  .personmodul.kontakt {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin-right: -54%;
+    width: 386px;
   }
 }
 @media (min-width: 600px) {
@@ -782,6 +785,9 @@ video {
   .transportsideknapp .skygge .blaa {
     background: white;
   }
+}
+@media (max-width: 600px) {
+  /**********fikse kollaps på h2***********/
 }
 .omoss {
   color: white;
@@ -811,5 +817,16 @@ video {
 }
 .alfabetisk {
   font-size: 16px;
+}
+.headline {
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.headline h2 {
+  margin: 0;
+  padding: 0;
+}
+.direktoerfoto {
+  max-height: 259px;
 }
 /*# sourceMappingURL=customLESS.css.map */
