@@ -10,9 +10,17 @@ article p {
 }
 
 .recommendation {
-	border: 1px solid #df9922;
+	border: 1px solid #333;
 	padding: 15px 15px 15px 15px;
 	margin: 10px 0px 10px 0px;
+}
+
+.recommendation_extras {
+	margin-top: 10px;
+}
+
+.recommendation_tabs {
+	line-height: 1.4em;
 }
 
 .recommendation_tabs .resp-tabs-container {
