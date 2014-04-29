@@ -66,10 +66,10 @@ jQuery(document).ready(function() {
     closed: 'accordion', // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
    });
    
-   
+   /**
    
    jQuery('#local-nav').affix({
    	offset: { top: $('#local-nav').offset().top }
-	});
+	});**/
    
 });
