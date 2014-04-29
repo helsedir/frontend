@@ -782,7 +782,15 @@ video {
   }
 }
 @media (max-width: 600px) {
-  /**********fikse kollaps på h2***********/
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
 }
 .omoss {
   color: white;
