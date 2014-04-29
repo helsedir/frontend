@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     "use strict";
 
     var expander = $(".js-expander"),
@@ -11,17 +10,14 @@ $(document).ready(function () {
     expandedText.text('Start');
 
     expander.on('click', function () {
-
-
         if (expandedContent.hasClass("visuallyhidden")) {
-            expandedContent.removeClass("visuallyhidden");
+            expandedContent.toggleClass("visuallyhidden");
             expandedText.text('Velg');
             expander.addClass("js-expanded");
         } else {
             expandedText.text('Start');
             expander.removeClass("js-expanded");
-            expandedContent.addClass("visuallyhidden");
+            expandedContent.toggleClass("visuallyhidden");
         }
     });
-
 });
