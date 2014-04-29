@@ -69,7 +69,7 @@ jQuery(document).ready(function() {
    
    
    jQuery('#local-nav').affix({
-    offset: { top: $('#local-nav').offset().top }
-		});
+   	offset: { top: $('#local-nav').offset().top }
+	});
    
 });

@@ -1,18 +1,22 @@
 /* Spesifikt for retningslinjer */
 
-article header {
+article header, section header {
 	background: none;
 }
 
-article p {
+article p, section p {
 	display: block;
 	margin-bottom: 10px;
 }
 
 .recommendation {
-	border: 1px solid #333;
-	padding: 15px 15px 15px 15px;
+	border: 1px solid #efefef;
+	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
+}
+
+.recommendation header {
+	cursor: pointer;
 }
 
 .recommendation_extras {
@@ -33,18 +37,46 @@ section header.section_heading h1 {
 	margin-bottom: 0.1em;
 }
 
+.shortcuts {
+	margin-top: 50px;
+}
+
 article nav h1 {
 	font-size: 1.333em;
 }
 
-article section header h1 {
+article section header h1, section header h1, .subsections {
 	font-size: 1.333em;
 }
+
+.subsections {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	line-height: 1.8em;
+}
+
+.subsectionLink:after {
+	  content: "\f054"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #999;
+    font-size: 24px;
+    padding-left: 4px;
+}
+
+p.grading {
+	display: none;
+}
+
 
 section.recommendation header h1 {
 	font-size: 1em;
 	margin-top: 0.2em;
 	margin-bottom: 0.1em;
+	margin-left: 1.5em
 }
 
 #local-nav.affix {
@@ -52,28 +84,33 @@ section.recommendation header h1 {
     top: 0px;
 }
 
+.form-inline .form-group input {
+    width:100%;
+}
+
+
 
 .accordion {
 	position: relative;
 }
 
-/*.accordion:before {
-    content: "\f138"; 
+.accordion:before {
+    content: "\f078"; 
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #000;
-    font-size: 20px;
+    color: #999;
+    font-size: 24px;
     padding-right: 0.5em;
     position: absolute;
-    top: 2px;
+    top: -4px;
     left: 0;
-}*/
+}
 
-/*.accordion.open:before {
-    content: "\f13a";
-}*/
+.accordion.open:before {
+    content: "\f077";
+}
 
 
 .hidden {
