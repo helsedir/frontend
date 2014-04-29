@@ -68,6 +68,10 @@ a:focus p {
   color: white !important;
   outline: 0;
 }
+.defaultSmall {
+  font-size: 18px;
+  line-height: 20px;
+}
 header a:focus,
 footer a:focus {
   background: white;
