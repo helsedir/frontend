@@ -2,6 +2,7 @@
 
 article header, section header {
 	background: none;
+	margin-bottom: 0px;
 }
 
 article p, section p {
