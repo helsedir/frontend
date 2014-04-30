@@ -87,6 +87,9 @@ header a:visited {
   color: black;
   text-decoration: none;
 }
+footer .tab-links {
+  padding-left: 20px;
+}
 footer .tab-links li.active {
   border: none;
   background: white;
@@ -297,7 +300,7 @@ footer.rammeverk a:visited {
   content: '';
 }
 .tab-links li {
-  margin: 0 5px;
+  margin: 0;
   float: left;
   list-style: none;
 }
