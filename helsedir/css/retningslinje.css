@@ -11,9 +11,13 @@ article p, section p {
 }
 
 .recommendation {
-	border: 1px solid #efefef;
+	border: 1px solid #999;
 	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
+	box-shadow: 0 0.5px 1px #aaa;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 0.5px;
+	border-radius: 0.5px;
 }
 
 .recommendation header {
