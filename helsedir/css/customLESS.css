@@ -80,7 +80,6 @@ footer a:focus {
 }
 header {
   background: #004e66;
-  margin-bottom: 60px;
 }
 header a,
 header a:visited {
@@ -131,7 +130,8 @@ footer.rammeverk a:visited {
 .has-hidden-content {
   cursor: pointer;
 }
-.has-hidden-content h2:before {
+.has-hidden-content h2:before,
+.has-hidden-content .collapse:before {
   float: left;
   padding-right: 10px;
   content: "\f078";
@@ -140,7 +140,8 @@ footer.rammeverk a:visited {
 .has-visible-content {
   cursor: pointer;
 }
-.has-visible-content h2:before {
+.has-visible-content h2:before,
+.has-visible-content .collapse:before {
   float: left;
   padding-right: 10px;
   content: "\f077";
@@ -795,6 +796,9 @@ video {
   }
 }
 @media (max-width: 600px) {
+  .aside {
+    width: auto;
+  }
   h1 {
     font-size: 36px;
   }
@@ -887,5 +891,27 @@ video {
 }
 .mediumfont {
   font-size: 2em;
+}
+.topbar {
+  margin-bottom: 60px;
+}
+.statisticcompare {
+  background: #ddd;
+  border-radius: 5px;
+  padding: 5px 0 10px 10px;
+}
+.statisticcompare select {
+  display: block;
+  margin-bottom: 20px;
+}
+.statisticcompare input {
+  display: inline-block;
+  margin-right: 5px;
+}
+.statisticcompare button {
+  background: white;
+}
+.radiobuttons label {
+  display: block;
 }
 /*# sourceMappingURL=customLESS.css.map */

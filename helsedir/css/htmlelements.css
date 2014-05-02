@@ -1,4 +1,10 @@
-﻿.statistics table {
+﻿.statistics h3 {
+  margin: 50px 0 0 0;
+}
+.statistics h3 img {
+  margin-right: 10px;
+}
+.statistics table {
   margin: 0 auto;
   border: none;
   border-collapse: collapse;
