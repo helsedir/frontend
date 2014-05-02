@@ -1,0 +1,35 @@
+﻿.statistics table {
+  margin: 0 auto;
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.statistics table caption {
+  display: none;
+}
+.statistics table span {
+  font-family: 'FontAwesome';
+  float: left;
+}
+.statistics table th,
+.statistics table td {
+  border: none;
+  text-align: left;
+  word-break: keep-all;
+  padding: 5px 10px;
+}
+.statistics table thead th {
+  border-bottom: solid 1px #666666;
+}
+.statistics table thead th:first-child {
+  border-right: solid 1px #666666;
+}
+.statistics table tbody td {
+  width: 33%;
+  word-break: normal;
+}
+.statistics table tbody td:first-of-type {
+  border-right: solid 1px #666666;
+}
+/*# sourceMappingURL=htmlelements.css.map */

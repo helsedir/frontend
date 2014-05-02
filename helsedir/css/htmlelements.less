@@ -1,0 +1,52 @@
+﻿@border: solid 1px #666;
+
+body {
+}
+
+.statistics {
+
+    table {
+        margin: 0 auto;
+        border: none;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        line-height: 24px;
+
+        caption {
+            display: none;
+        }
+
+        span {
+            font-family: 'FontAwesome';
+            float: left;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            word-break: keep-all;
+            padding: 5px 10px;
+        }
+
+        thead {
+            th {
+                border-bottom: @border;
+            }
+
+            th:first-child {
+                border-right: @border;
+            }
+        }
+
+        tbody {
+            td {
+                width: 33%;
+                word-break: normal;
+            }
+
+            td:first-of-type {
+                border-right: @border;
+            }
+        }
+    }
+}
