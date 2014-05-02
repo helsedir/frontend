@@ -14,41 +14,46 @@
     <div class="container">
         <ol class="broedsmulesti clearfix">
             <li><a href="forside.html">Forside</a></li>
-            <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
-            <li class="active"><a href="transportside_ernaering.html">Ernæring</a></li>
+            <li><a href="transportside_statistikk.html">Statistikk</a></li>
+            <li><a href="statistikk_somatiskesykehus.html">Statistikk somatiske sykehus</a></li>
         </ol>
         <div class="row">
             <article class="col-md-12 col-lg-8">
 
                 <h1>Kommunenes bruk av somatiske sykehus</h1>
-                <section>
-                    <p>Velg kommune/helseforetak</p>
-                    <select>
-                        <option>Velg..</option>
-                        <option>Trondheim</option>
-                        <option>Oslo</option>
-                    </select>
+                <section class="statisticcompare">
+                    <span class="collapse">
+                        Velg kommune og periode
+                    </span>
                     <div>
-                        <label>
-                            <input type="checkbox" />
-                            Sammenligne med annen kommune/helseforetak
-                        </label>
+                        <p>Velg komune og helseforetak</p>
+                        <select>
+                            <option value="trondheim">Trondheim</option>
+                            <option value="oslo">Oslo</option>
+                            <option value="bergen">Bergen</option>
+                            <option value="tromsø">Tromsø</option>
+                        </select>
+                        <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+
+                        <p>Velg periode</p>
+                        <select>
+                            <option>1.tertial 2013</option>
+                            <option>2.tertial 2013</option>
+                            <option>3.tertial 2013</option>
+                            <option>1.tertial 2014</option>
+                        </select>
+
+                        <button class="btn btn-lg">Vis</button>
                     </div>
-                    <p>Velg periode</p>
-                    <select>
-                        <option>Velg..</option>
-                        <option>1. tertial</option>
-                        <option>2. tertial</option>
-                    </select>
                 </section>
 
                 <section class="avsnitt">
                     <h2>Trondheim kommune 1.tertial 2013</h2>
                     <div>
-                        <ul class="cleanlist">
-                            <li><input type="radio" checked />Aktivitetsdata(antall)</li>
-                            <li><input type="radio" />Kostnad(kroner)</li>
-                        </ul>
+                        <span class="radiobuttons">
+                            <label><input type="radio" name="statistikkdata" value="aktivitetsdata" checked />Aktivitetsdata(antall)</label>
+                            <label><input type="radio" name="statistikkdata" value="kostnad" />Kostnad(kroner)</label>
+                        </span>
 
                         <div class="tabs-statistikk">
                             <div class="tabs">
@@ -114,5 +119,6 @@
     <script src="../js/mobileCollapse.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script src="../js/charts_comparison.js"></script>
+    <script src="../js/collapse.js"></script>
 </body>
 </html>
