@@ -87,6 +87,9 @@ header a:visited {
   color: black;
   text-decoration: none;
 }
+#footer {
+  margin-top: 100px;
+}
 footer .tab-links {
   padding-left: 20px;
 }
@@ -861,5 +864,28 @@ video {
 }
 .menyknapp {
   vertical-align: middle;
+}
+.cleanlist {
+  list-style-type: none;
+}
+.borderbox {
+  margin-bottom: 20px;
+  border: 1px solid #b2babc;
+  padding-left: 10px;
+}
+.borderbox .innerDiv {
+  margin: 10px;
+  /*border-left: 8px solid @colorRoed;*/
+}
+.borderbox .innerDiv p,
+.borderbox .innerDiv a,
+.borderbox .innerDiv h4 {
+  margin: 0 0 0 10px;
+}
+.bigfont {
+  font-size: 3em;
+}
+.mediumfont {
+  font-size: 2em;
 }
 /*# sourceMappingURL=customLESS.css.map */
