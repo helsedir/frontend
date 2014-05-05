@@ -40,9 +40,9 @@ body {
                 border-bottom: @border;
             }
 
-                th:first-child {
-                    border-right: @border;
-                }
+            th:first-child {
+                border-right: @border;
+            }
         }
 
         tbody {
@@ -51,9 +51,77 @@ body {
                 word-break: normal;
             }
 
-                td:first-of-type {
-                    border-right: @border;
-                }
+            td:first-of-type {
+                border-right: @border;
+            }
         }
     }
 }
+
+ .iveCharts {
+        margin: 0 auto 20px auto;
+        width: 100%;
+        height: 300px;
+
+        .columnOuter {
+            height: 100%;
+            float: left;
+            top: 0;
+            text-align: center;
+            position: relative;
+            border-left: solid 1px #aaaaaa;
+
+            &:first-of-type{
+            border-left: none;
+        }
+
+            &:after{
+            clear:both;
+        }
+        }
+
+        .columnHolder{
+            float:left;
+            width: 50%;
+            height: 90%;
+            top: 0;
+            position: relative;
+            &:after{
+            clear:both;
+        }
+        }
+
+        .number {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            &.small{
+                font-size: 16px;
+            }
+        }
+
+        .column {
+            
+            bottom: 10%;
+            position: absolute;
+            &:hover{
+                border: solid 1px #333;
+                opacity: 0.7;
+                /*cursor: pointer;*/
+            }
+        }
+
+        .title {
+            position: absolute;
+            top: 90%;
+            width: 100%;
+            text-align: center;
+
+            &.small{
+                font-size: 16px;
+            }
+        }
+
+    }

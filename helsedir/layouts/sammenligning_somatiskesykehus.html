@@ -7,6 +7,7 @@
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/customLESS.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/htmlelements.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,17 +22,22 @@
             <article class="col-md-12 col-lg-8">
 
                 <h1>Kommunenes bruk av somatiske sykehus</h1>
-                <section class="statisticcompare row">
-                    <div class="col-md-5">
-                        <p>Velg kommune og helseforetak</p>
+
+                <section class="statisticcompare">
+                    <span class="collapse">
+                        Velg kommune og periode
+                    </span>
+                    <div>
+                        <p>Velg komune og helseforetak</p>
                         <select>
+
                             <option value="trondheim">Trondheim</option>
                             <option value="oslo">Oslo</option>
                             <option value="bergen">Bergen</option>
                             <option value="tromsø">Tromsø</option>
                         </select>
-                    </div>
-                    <div class="col-md-3">
+                        <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+
                         <p>Velg periode</p>
                         <select>
                             <option>1.tertial 2013</option>
@@ -39,6 +45,8 @@
                             <option>3.tertial 2013</option>
                             <option>1.tertial 2014</option>
                         </select>
+
+                        <button class="btn btn-lg">Vis</button>
                     </div>
                     <div class="col-md-1">
                         <form action="sammenligning_somatiskesykehus.html">
@@ -67,7 +75,9 @@
                                 <div class="tab-content">
                                     <div id="statistikktab1">
                                         <h2>Antall pasienter totalt</h2>
-                                        <div id="chart_div"></div>
+                                        <div id="chart_div" class="iveCharts"></div>
+                                        <h2>Antall pasienter totalt</h2>
+                                        <div id="chart_div2" class="iveCharts"></div>
                                     </div>
                                     <div id="statistikktab2"></div>
                                 </div>
@@ -121,7 +131,22 @@
     <script src="../js/toggle.js"></script>
     <script src="../js/mobileCollapse.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="../js/charts_comparison.js"></script>
-    <script src="../js/collapse.js"></script>
+    <!--<script src="../js/charts_comparison.js"></script>-->
+    <script src="../js/iveCharts.js"></script>
+
+    <script>
+        $('#chart_div').singleColumns({
+            colors: ['#004e66', '#df9922', '#0093a7', '#6cb4b5', '#aeaba8'],
+            columns: [{ 'title': 'Oslo', 'number': 25000 }, { 'title': 'Trondheim', 'number': 75000 }, { 'title': 'Bergen', 'number': 100000 }, { 'title': 'Bodø', 'number': 75000 }, { 'title': 'Ålesund', 'number': 50000 }],
+            //columns: [{ 'city': 'Oslo', 'number': 33 }, { 'city': 'Trondheim', 'number': 60 }],
+            animate: true
+        });
+
+        $('#chart_div2').multiColumns({
+            colors: ['#6cb4b5', '#aeaba8', '#0093a7'],
+            columns: [{ 'title': 'Ålesund', 'data': [{ 'title': '2014', 'number': 355 }, { 'title': '2013', 'number': 199 }, { 'title': '2012', 'number': 331 }] }, { 'title': 'Oslo', 'data': [{ 'title': '2014', 'number': 235 }, { 'title': '2013', 'number': 435 }, { 'title': '2012', 'number': 33 }] }, { 'title': 'Trondheim', 'data': [{ 'title': '2014', number: 432 }, { title: '2013', number: 533 }, { 'title': '2012', 'number': 33 }] }],
+            animate: true
+        });
+    </script>
 </body>
 </html>
