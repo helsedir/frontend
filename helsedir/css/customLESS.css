@@ -784,6 +784,11 @@ video {
     width: 386px;
   }
 }
+@media (min-width: 900px) {
+  .statisticcompare button {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 600px) {
   .transportsideknapp {
     border: none;
@@ -807,6 +812,10 @@ video {
   }
   h3 {
     font-size: 22px;
+  }
+  .statisticcompare {
+    background: #ddd;
+    border-radius: 5px;
   }
 }
 .omoss {
@@ -874,6 +883,7 @@ video {
 }
 .borderbox {
   margin-bottom: 20px;
+  margin-top: 10px;
   border: 1px solid #b2babc;
   padding-left: 10px;
 }
@@ -895,23 +905,55 @@ video {
 .topbar {
   margin-bottom: 60px;
 }
+/*.statisticcompare {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 5px 0 10px 10px;
+
+    select {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    input {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    button {
+        background: white;
+    }
+}
+    */
+.radiobuttons label {
+  display: block;
+}
 .statisticcompare {
-  background: #ddd;
-  border-radius: 5px;
   padding: 5px 0 10px 10px;
+}
+.statisticcompare p {
+  margin: 0;
 }
 .statisticcompare select {
   display: block;
   margin-bottom: 20px;
+  width: 100%;
 }
-.statisticcompare input {
+.statisticcompare label {
   display: inline-block;
+}
+.statisticcompare label input {
   margin-right: 5px;
 }
 .statisticcompare button {
   background: white;
+  border: 1px solid #b2babc;
 }
-.radiobuttons label {
+.statisticcompare a {
   display: block;
+}
+.statisticcompare label,
+.statisticcompare a {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=customLESS.css.map */

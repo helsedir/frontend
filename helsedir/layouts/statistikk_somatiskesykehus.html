@@ -22,20 +22,17 @@
 
                 <h1>Kommunenes bruk av somatiske sykehus</h1>
 
-                <section class="statisticcompare">
-                    <span class="collapse">
-                        Velg kommune og periode
-                    </span>
-                    <div>
-                        <p>Velg komune og helseforetak</p>
+                <section class="statisticcompare row">
+                    <div class="col-md-5">
+                        <p>Velg kommune og helseforetak</p>
                         <select>
                             <option value="trondheim">Trondheim</option>
                             <option value="oslo">Oslo</option>
                             <option value="bergen">Bergen</option>
                             <option value="tromsø">Tromsø</option>
                         </select>
-                        <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
-
+                    </div>
+                    <div class="col-md-3">
                         <p>Velg periode</p>
                         <select>
                             <option>1.tertial 2013</option>
@@ -43,9 +40,15 @@
                             <option>3.tertial 2013</option>
                             <option>1.tertial 2014</option>
                         </select>
-
-                        <a href="sammenligning_somatiskesykehus.html"><button class="btn btn-lg">Vis</button></a>
                     </div>
+                    <div class="col-md-1">
+                        <form action="sammenligning_somatiskesykehus.html">
+                            <button class="btn">Vis</button>
+                        </form>
+                    </div>
+                    <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+
+                    <a href="#">Rapportgenerator</a>
                 </section>
 
                 <section class="avsnitt">
