@@ -7,6 +7,7 @@
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/customLESS.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/htmlelements.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,22 +15,46 @@
     <div class="container">
         <ol class="broedsmulesti clearfix">
             <li><a href="forside.html">Forside</a></li>
-            <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
-            <li class="active"><a href="transportside_ernaering.html">Ernæring</a></li>
+            <li><a href="transportside_statistikk.html">Statistikk</a></li>
         </ol>
         <div class="row">
             <article class="col-md-12 col-lg-8">
 
                 <h1>Kommunenes bruk av somatiske sykehus</h1>
 
+                <section class="statisticcompare">
+                    <span class="collapse">
+                        Velg kommune og periode
+                    </span>
+                    <div>
+                        <p>Velg komune og helseforetak</p>
+                        <select>
+                            <option value="trondheim">Trondheim</option>
+                            <option value="oslo">Oslo</option>
+                            <option value="bergen">Bergen</option>
+                            <option value="tromsø">Tromsø</option>
+                        </select>
+                        <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+
+                        <p>Velg periode</p>
+                        <select>
+                            <option>1.tertial 2013</option>
+                            <option>2.tertial 2013</option>
+                            <option>3.tertial 2013</option>
+                            <option>1.tertial 2014</option>
+                        </select>
+
+                        <a href="sammenligning_somatiskesykehus.html"><button class="btn btn-lg">Vis</button></a>
+                    </div>
+                </section>
+
                 <section class="avsnitt">
                     <h2>Trondheim kommune 1.tertial 2013</h2>
                     <div>
-                        <ul class="cleanlist">
-                            <li><input type="radio" checked />Aktivitetsdata(antall)</li>
-                            <li><input type="radio" />Kostnad(kroner)</li>
-                        </ul>
-
+                        <span class="radiobuttons">
+                            <label><input type="radio" name="statistikkdata" value="aktivitetsdata" checked />Aktivitetsdata(antall)</label>
+                            <label><input type="radio" name="statistikkdata" value="kostnad" />Kostnad(kroner)</label>
+                        </span>
                         <div class="tabs-statistikk">
                             <div class="tabs">
                                 <ul class="tab-links">
@@ -57,15 +82,74 @@
                         </aside>
                     </div>
                 </section>
-                <section class="avsnitt">
+                <section class="avsnitt statistics">
                     <h2>Flere indikatorer</h2>
                     <div>
                         <h3>DRG-poeng</h3>
-                        <h3>Innleggelser</h3>
-                        <h3>Akuttinnleggelser</h3>
-                        <h3>Konsultasjoner i poliklinikk</h3>
+                        <table>
+                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Antall</th>
+                                    <th colspan="2">Endring samme periode som i fjor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Totalt</td>
+                                    <td>15 713</td>
+                                    <td>3,6 %</td>
+                                    <td><span class="fa fa-arrow-up"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Per 1000 innbyggere</td>
+                                    <td>86</td>
+                                    <td>2,3 %</td>
+                                    <td><span class="fa fa-arrow-up"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3><img src="../img/statistikk_icon1.png" /> Innleggelser</h3>
+                        <table>
+                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Antall</th>
+                                    <th colspan="2">Endring samme periode som i fjor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Totalt</td>
+                                    <td>15 333</td>
+                                    <td>5,6 %</td>
+                                    <td><span class="fa fa-arrow-up"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Per 1000 innbyggere</td>
+                                    <td>84</td>
+                                    <td>4,2 %</td>
+                                    <td><span class="fa fa-arrow-up"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Dager som utskrivingsklar = 0</td>
+                                    <td>38</td>
+                                    <td>-15,6 %</td>
+                                    <td><span class="fa fa-arrow-down"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Dager som utskrivingsklar > 0</td>
+                                    <td>309</td>
+                                    <td>6,2 %</td>
+                                    <td><span class="fa fa-arrow-down"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3><img src="../img/statistikk_icon2.png" />Akuttinnleggelser</h3>
+                        <h3> <img src="../img/statistikk_icon3.png" />Konsultasjoner i poliklinikk</h3>
                         <h3>Om statistikken</h3>
-                        <h3>Utvikling over tid</h3>
 
                         <aside class="aside">
                             <div class="borderbox">
@@ -94,5 +178,6 @@
     <script src="../js/calibriFont.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/mobileCollapse.js"></script>
+    <script src="../js/collapse.js"></script>
 </body>
 </html>

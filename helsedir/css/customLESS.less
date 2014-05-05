@@ -100,7 +100,7 @@ a {
 
 header, footer {
     a {
-        &:focus, {
+        &:focus {
             background: white;
             color: @colorMorkBlaa !important;
             outline: 0;
@@ -110,7 +110,6 @@ header, footer {
 
 header {
     background: @colorMorkBlaa;
-    margin-bottom: 60px;
 
     a, a:visited {
         color: black;
@@ -176,7 +175,7 @@ footer {
 .has-hidden-content {
     cursor: pointer;
 
-    h2:before {
+    h2:before, .collapse:before {
         float: left;
         padding-right: 10px;
         content: "\f078";
@@ -187,7 +186,7 @@ footer {
 .has-visible-content {
     cursor: pointer;
 
-    h2:before {
+    h2:before, .collapse:before {
         float: left;
         padding-right: 10px;
         content: "\f077";
@@ -970,6 +969,10 @@ video {
 }
 
 @media (max-width: 600px) {
+    .aside {
+        width: auto;
+    }
+
     h1 {
         font-size: 36px;
     }
@@ -1085,4 +1088,32 @@ video {
 
 .mediumfont {
     font-size: 2em;
+}
+
+.topbar {
+    margin-bottom: 60px;
+}
+
+.statisticcompare {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 5px 0 10px 10px;
+
+    select {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    input {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    button {
+        background: white;
+    }
+}
+
+.radiobuttons label {
+    display: block;
 }
