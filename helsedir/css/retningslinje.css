@@ -10,10 +10,31 @@ article p, section p {
 	margin-bottom: 10px;
 }
 
+.guidelineInfo {
+	padding: 0.5em;
+}
+.guidelineInfo dt {
+	float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.guidelineInfo dt:after {
+	content: ":";
+}
+
+.guidelineInfo dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
 .recommendation {
 	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
-	background-color: #efefef;
+	background-color: #f9f9f9;
 	box-shadow: 0 0.5px 1px #aaa;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 0.5px;
@@ -29,7 +50,7 @@ article p, section p {
 	width: 4em;
 	position: absolute;
 	top: -24px;
-	right: 0px;
+	left: -8px;
 }
 
 .recommendationType span {
@@ -40,7 +61,16 @@ article p, section p {
 	vertical-align: middle;
 }
 
+.recommendation_text{
+	margin-top: 0.5em;
+}
+
 .recommendation_extras {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.recommendation_kunnskapsgrunnlag {
 	margin-top: 10px;
 }
 
@@ -96,9 +126,10 @@ p.grading {
 
 section.recommendation header h1 {
 	font-size: 1em;
-	margin-top: 0.8em;
+	margin-top: 1em;
 	margin-bottom: 0.1em;
-	margin-right: 1em;
+	margin-right: 1.5em;
+	padding-top: 2px;
 }
 
 #local-nav.affix {
@@ -128,6 +159,7 @@ section.recommendation header h1 {
     position: absolute;
     top: 0px;
     right: 0;
+    
 }
 
 .accordion.open:after {
@@ -165,4 +197,61 @@ section.recommendation header h1 {
 	/*section.recommendation header h1 {
 		margin-left: 1em;
 	}*/
+}
+
+/* Autocomplete */
+.tt-query,
+.tt-hint {
+    width: 396px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-dropdown-menu {
+    width: 422px;
+    margin-top: 25px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor {
+    color: #fff;
+    background-color: #004e66;
+    cursor: pointer;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
 }

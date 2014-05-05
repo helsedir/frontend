@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medisinske retningslinjer</title>
-    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
-    <link href="../css/fonts.css" rel="stylesheet" />
-    <link href="../css/customLESS.css" rel="stylesheet" />
-    <link href="../css/easy-responsive-tabs.css" rel="stylesheet" />
-    <link href="../css/retningslinje.css" rel="stylesheet" />
+    <title>Nasjonale faglige retningslinjer</title>
+		    <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/customLESS.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/retningslinje.css" rel="stylesheet" /> 
   </head>
   <body>
     <div id="header"></div>
@@ -24,15 +24,17 @@
 			<div class="row">
 				<article class="col-md-12 col-lg-12">
 					<header>
-						<h1>Medisinske retningslinjer</h1>
+						<h1>Nasjonale faglige retningslinjer</h1>
 					</header>
 					<p class="col-md-7 col-lg-7">
 						De nasjonale faglige retningslinjene inneholder systematisk utviklede faglige anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper.
 					</p>
 					<form class="form-inline" role="form">
-						<div class="col-md-7 col-lg-7 form-group">
+						<div class="col-sm-7 col-md-7 col-lg-7 form-group">
 							<label class="sr-only" for="">Søk i retningslinjene</label>
-							<input type="text" class="form-control input-lg" placeholder="Søk i retningslinjene...">
+							<div id="search_input">
+								<input type="text" class="form-control input-lg typeahead" placeholder="Søk i retningslinjene...">
+							</div>
 						</div>
 					</form>
 					<div class="row">
@@ -71,16 +73,14 @@
 	
 </div>
 
-
-    <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/affix.js"></script>
-    <script src="../js/modernizr-latest.js"></script>
-    <script src="../js/headerFooter.js"></script>
-    <script src="../js/sohoFont.js"></script>
-    <script src="../js/calibriFont.js"></script>
-    <script src="../js/toggle.js"></script>
-    <script src="../js/easyResponsiveTabs.js"></script>
-    <script src="../js/easyResponsiveTabs2.js"></script>
-    <script src="../js/retningslinje.js"></script>
+		    <script src="http://helsedir.azurewebsites.net/js/jquery-1.11.0.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/modernizr-latest.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/sohoFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/calibriFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/headerFooterRetningslinje.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs2.js"></script>
+    <script src="http://helsedir.azurewebsites.netjs/typeahead.jquery.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/retningslinje.js"></script> 
 	</body>
 </html>
