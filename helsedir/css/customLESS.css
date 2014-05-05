@@ -956,4 +956,7 @@ video {
 .statisticcompare a {
   padding-left: 15px;
 }
+#compare_hiddenfields {
+  display: none;
+}
 /*# sourceMappingURL=customLESS.css.map */
