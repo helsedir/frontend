@@ -6,4 +6,6 @@
         });
     });
 
+    $(".statisticcompare_select").prop("selectedIndex", -1);
 });
+

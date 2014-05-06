@@ -21,55 +21,65 @@
             <article class="col-md-12 col-lg-8">
 
                 <h1>Kommunenes bruk av somatiske sykehus</h1>
+                <div class="avsnitt">
 
-                <section class="statisticcompare row">
-                    <div class="col-md-5">
-                        <p>Velg kommune og helseforetak</p>
-                        <select>
-                            <option value="trondheim">Trondheim</option>
-                            <option value="oslo">Oslo</option>
-                            <option value="bergen">Bergen</option>
-                            <option value="tromsø">Tromsø</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <p>Velg periode</p>
-                        <select>
-                            <option>1.tertial 2013</option>
-                            <option>2.tertial 2013</option>
-                            <option>3.tertial 2013</option>
-                            <option>1.tertial 2014</option>
-                        </select>
-                    </div>
-                    <div class="col-md-1">
-                        <form action="statistikk_sammenligning_somatiskesykehus.html">
-                            <button class="btn">Vis</button>
-                        </form>
-                    </div>
-                    <label> <input type="checkbox" id="compare_checkbox" />Sammenlign med annen kommune/helsefortak</label>
+                    <section class="statisticcompare row">
+                        <div class="col-md-5">
+                            <p>Velg kommune og helseforetak</p>
+                            <select class="statisticcompare_select">
+                                <option value="trondheim">Trondheim</option>
+                                <option value="oslo">Oslo</option>
+                                <option value="bergen">Bergen</option>
+                                <option value="tromsø">Tromsø</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Velg periode</p>
+                            <select class="statisticcompare_select">
+                                <option>1.tertial 2013</option>
+                                <option>2.tertial 2013</option>
+                                <option>3.tertial 2013</option>
+                                <option>1.tertial 2014</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <form action="statistikk_sammenligning_somatiskesykehus.html">
+                                <button class="btn">Vis</button>
+                            </form>
+                        </div>
+                        <label> <input type="checkbox" id="compare_checkbox" />Sammenlign med annen kommune/helsefortak</label>
 
-                </section>
-                <section id="compare_hiddenfields" class="statisticcompare row">
-                    <div class="col-md-5">
-                        <p>Velg kommune og helseforetak</p>
-                        <select>
-                            <option value="trondheim">Trondheim</option>
-                            <option value="oslo">Oslo</option>
-                            <option value="bergen">Bergen</option>
-                            <option value="tromsø">Tromsø</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <p>Velg periode</p>
-                        <select>
-                            <option>1.tertial 2013</option>
-                            <option>2.tertial 2013</option>
-                            <option>3.tertial 2013</option>
-                            <option>1.tertial 2014</option>
-                        </select>
-                    </div>
-                </section>
-                <a href="#">Rapportgenerator</a>
+                    </section>
+                    <section id="compare_hiddenfields" class="statisticcompare row">
+                        <div class="col-md-5">
+                            <p>Velg kommune og helseforetak</p>
+                            <select class="statisticcompare_select">
+                                <option value="trondheim">Trondheim</option>
+                                <option value="oslo">Oslo</option>
+                                <option value="bergen">Bergen</option>
+                                <option value="tromsø">Tromsø</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Velg periode</p>
+                            <select class="statisticcompare_select">
+                                <option>1.tertial 2013</option>
+                                <option>2.tertial 2013</option>
+                                <option>3.tertial 2013</option>
+                                <option>1.tertial 2014</option>
+                            </select>
+                        </div>
+                    </section>
+                    <a href="#">Rapportgenerator</a>
+                    <aside class="aside">
+                        <div class="borderbox">
+                            <p>Tallene publiseres hvert tertial</p>
+                            <p>Neste publisering</p>
+                            <p>1.april 2014</p>
+                        </div>
+
+                    </aside>
+                </div>
 
 
                 <section class="avsnitt">
@@ -244,11 +254,7 @@
                         </div>
 
                         <aside class="aside">
-                            <div class="borderbox">
-                                <p>Tallene publiseres hvert tertial</p>
-                                <p>Neste publisering</p>
-                                <p>1.april 2014</p>
-                            </div>
+                            
                             <div class="borderbox">
                                 <p>Hva betyr disse tallene?</p>
                                 <p>Rapporten Samhandlingsstatistikk2013 vil hjelpe deg å forstå og bruke tall riktig</p>
