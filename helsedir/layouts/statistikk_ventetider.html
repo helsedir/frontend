@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ventetider mars</title>
+    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/customLESS.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/htmlelements.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <ol class="broedsmulesti clearfix">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
+            <li><a href="transportside_finnstatistikk.html">Finn statistikk</a></li>
+        </ol>
+        <div class="row">
+            <article class="col-md-12 col-lg-8">
+
+                <h1>Ventelistestatistikk for spesialhelsetjenesten, mars 2014</h1>
+
+                <section class="statisticcompare row">
+                    <div class="col-md-5">
+                        <p>Velg kommune og helseforetak</p>
+                        <select>
+                            <option value="trondheim">Trondheim</option>
+                            <option value="oslo">Oslo</option>
+                            <option value="bergen">Bergen</option>
+                            <option value="tromsø">Tromsø</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Velg periode</p>
+                        <select>
+                            <option>1.tertial 2013</option>
+                            <option>2.tertial 2013</option>
+                            <option>3.tertial 2013</option>
+                            <option>1.tertial 2014</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <form action="statistikk_sammenligning_somatiskesykehus.html">
+                            <button class="btn">Vis</button>
+                        </form>
+                    </div>
+                    <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+
+                    <a href="#">Rapportgenerator</a>
+                </section>
+
+                <section class="avsnitt">
+                    <h2>Grafisk framstilling median ventetid</h2>
+
+                    <div class="tabs-statistikk ">
+                        <div class="tabs">
+                            <ul class="tab-links">
+                                <li class="active"><a href="#statistikktab1">Oversikt</a></li>
+                                <li><a href="#statistikktab2">Tabell</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="statistikktab1">
+                                    <div id="chart_div"></div>
+                                </div>
+                                <div id="statistikktab2">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Måned</th>
+                                            <th>Somatikk</th>
+                                            <th>VOP</th>
+                                            <th>BUP</th>
+                                            <th>RUS</th>
+                                        </tr>
+                                        <tr>
+                                            <td>mar</td>
+                                            <td>44</td>
+                                            <td>36</td>
+                                            <td>45</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>apr</td>
+                                            <td>52</td>
+                                            <td>41</td>
+                                            <td>52</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mai</td>
+                                            <td>50</td>
+                                            <td>39</td>
+                                            <td>55</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jun</td>
+                                            <td>48</td>
+                                            <td>40</td>
+                                            <td>50</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jul</td>
+                                            <td>39</td>
+                                            <td>33</td>
+                                            <td>47</td>
+                                            <td>42</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>aug</td>
+                                            <td>61</td>
+                                            <td>55</td>
+                                            <td>68</td>
+                                            <td>36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sep</td>
+                                            <td>65</td>
+                                            <td>39</td>
+                                            <td>64</td>
+                                            <td>38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>okt</td>
+                                            <td>49</td>
+                                            <td>35</td>
+                                            <td>35</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nov</td>
+                                            <td>49</td>
+                                            <td>35</td>
+                                            <td>36</td>
+                                            <td>36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>des</td>
+                                            <td>44</td>
+                                            <td>35</td>
+                                            <td>39</td>
+                                            <td>37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jan</td>
+                                            <td>56</td>
+                                            <td>48</td>
+                                            <td>50</td>
+                                            <td>48</td>
+                                        </tr>
+                                        <tr>
+                                            <td>feb</td>
+                                            <td>52</td>
+                                            <td>34</td>
+                                            <td>48</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mar</td>
+                                            <td>47</td>
+                                            <td>38</td>
+                                            <td>42</td>
+                                            <td>38</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--                <section class="avsnitt statistics">-->
+                <!--                    <h2>Flere indikatorer</h2>-->
+                <!--                    <div>-->
+                <!--                        <h3>DRG-poeng</h3>-->
+                <!--                        <table>-->
+                <!--                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>-->
+                <!--                            <thead>-->
+                <!--                                <tr>-->
+                <!--                                    <th></th>-->
+                <!--                                    <th>Antall</th>-->
+                <!--                                    <th colspan="2">Endring samme periode som i fjor</th>-->
+                <!--                                </tr>-->
+                <!--                            </thead>-->
+                <!--                            <tbody>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Totalt</td>-->
+                <!--                                    <td>15 713</td>-->
+                <!--                                    <td>3,6 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
+                <!--                                </tr>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Per 1000 innbyggere</td>-->
+                <!--                                    <td>86</td>-->
+                <!--                                    <td>2,3 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
+                <!--                                </tr>-->
+                <!--                            </tbody>-->
+                <!--                        </table>-->
+                <!--                        <h3><img src="../img/statistikk_icon1.png" /> Innleggelser</h3>-->
+                <!--                        <table>-->
+                <!--                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>-->
+                <!--                            <thead>-->
+                <!--                                <tr>-->
+                <!--                                    <th></th>-->
+                <!--                                    <th>Antall</th>-->
+                <!--                                    <th colspan="2">Endring samme periode som i fjor</th>-->
+                <!--                                </tr>-->
+                <!--                            </thead>-->
+                <!--                            <tbody>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Totalt</td>-->
+                <!--                                    <td>15 333</td>-->
+                <!--                                    <td>5,6 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
+                <!--                                </tr>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Per 1000 innbyggere</td>-->
+                <!--                                    <td>84</td>-->
+                <!--                                    <td>4,2 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
+                <!--                                </tr>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Dager som utskrivingsklar = 0</td>-->
+                <!--                                    <td>38</td>-->
+                <!--                                    <td>-15,6 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-down"></span></td>-->
+                <!--                                </tr>-->
+                <!--                                <tr>-->
+                <!--                                    <td>Dager som utskrivingsklar > 0</td>-->
+                <!--                                    <td>309</td>-->
+                <!--                                    <td>6,2 %</td>-->
+                <!--                                    <td><span class="fa fa-arrow-down"></span></td>-->
+                <!--                                </tr>-->
+                <!--                            </tbody>-->
+                <!--                        </table>-->
+                <!--                        <h3><img src="../img/statistikk_icon2.png" />Akuttinnleggelser</h3>-->
+                <!--                        <h3> <img src="../img/statistikk_icon3.png" />Konsultasjoner i poliklinikk</h3>-->
+                <!--                        <h3>Om statistikken</h3>-->
+                <!---->
+                <!--                        <aside class="aside">-->
+                <!--                            <div class="borderbox">-->
+                <!--                                <p>Tallene publiseres hvert tertial</p>-->
+                <!--                                <p>Neste publisering</p>-->
+                <!--                                <p>1.april 2014</p>-->
+                <!--                            </div>-->
+                <!--                            <div class="borderbox">-->
+                <!--                                <p>Hva betyr disse tallene?</p>-->
+                <!--                                <p>Rapporten Samhandlingsstatistikk2013 vil hjelpe deg å forstå og bruke tall riktig</p>-->
+                <!--                                <a href="#">Last ned rapporten Samhandlingsstatistikk 2013</a>-->
+                <!--                            </div>-->
+                <!--                        </aside>-->
+                <!--                    </div>-->
+                <!--                </section>-->
+            </article>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/headerFooter.js"></script>
+    <script src="../js/sohoFont.js"></script>
+    <script src="../js/calibriFont.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="../js/mobileCollapse.js"></script>
+    <script src="../js/collapse.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/statistics.js"></script>
+</body>
+</html>

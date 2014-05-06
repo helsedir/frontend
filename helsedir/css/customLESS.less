@@ -954,6 +954,12 @@ video {
     }
 }
 
+@media (min-width: 900px) {
+    .statisticcompare button {
+        margin-top: 30px;
+    }
+}
+
 @media (min-width: 600px) {
     .transportsideknapp {
         border: none;
@@ -983,6 +989,11 @@ video {
 
     h3 {
         font-size: 22px;
+    }
+
+    .statisticcompare {
+        background: #ddd;
+        border-radius: 5px;
     }
 }
 
@@ -1070,6 +1081,7 @@ video {
 
 .borderbox {
     margin-bottom: 20px;
+    margin-top: 10px;
     border: 1px solid @colorLysGraa;
     padding-left: 10px;
 
@@ -1094,7 +1106,7 @@ video {
     margin-bottom: 60px;
 }
 
-.statisticcompare {
+/*.statisticcompare {
     background: #ddd;
     border-radius: 5px;
     padding: 5px 0 10px 10px;
@@ -1113,7 +1125,46 @@ video {
         background: white;
     }
 }
-
+    */
 .radiobuttons label {
     display: block;
+}
+
+.statisticcompare {
+    padding: 5px 0 10px 10px;
+
+    p {
+        margin: 0;
+    }
+
+    select {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    label {
+        display: inline-block;
+
+        input {
+            margin-right: 5px;
+        }
+    }
+
+    button {
+        background: white;
+        border: 1px solid @colorLysGraa;
+    }
+
+    a {
+        display: block;
+    }
+
+    label, a {
+        padding-left: 15px;
+    }
+}
+
+#compare_hiddenfields{
+    display:none;
 }
