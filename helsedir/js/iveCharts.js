@@ -47,7 +47,7 @@
 
             /* Cloning the column number */
             var number = numberTemplate.clone();
-            number.text((opts.columns[i].number));
+            number.text((thousandsSeparator(opts.columns[i].number)));
             itemOuter.append(number);
             
             /* Cloning the column item */
@@ -145,7 +145,7 @@
 
                 /* Cloning the column number */
                 var number = numberTemplate.clone();
-                number.text((current.number));
+                number.text((thousandsSeparator(current.number)));
                 number.addClass('small');
                 columnInner.append(number);
 
@@ -194,5 +194,10 @@
         columns: [],
         animate: true
     };
+
+    var thousandsSeparator = function(value) {
+        return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
+    };
+
 }(jQuery));
 
