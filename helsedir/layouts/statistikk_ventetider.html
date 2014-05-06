@@ -61,12 +61,13 @@
                             <ul class="tab-links">
                                 <li class="active"><a href="#statistikktab1">Oversikt</a></li>
                                 <li><a href="#statistikktab2">Tabell</a></li>
+                                <li><a href="#statistikktab3">Om statistikken</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div id="statistikktab1">
+                                <div id="statistikktab1" class="tab active">
                                     <div id="chart_div"></div>
                                 </div>
-                                <div id="statistikktab2">
+                                <div id="statistikktab2" class="tab">
                                     <table class="table">
                                         <tr>
                                             <th>Måned</th>
@@ -169,9 +170,19 @@
                                         </tr>
                                     </table>
                                 </div>
+                                <div id="statistikktab3" class="tab">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <aside class="aside">
+                        <div class="borderbox">
+                            <a href="http://www.helsedirektoratet.no/publikasjoner/kvalitet-i-ventelistedata/Sider/default.aspx">
+                                <h3> Kvalitet i ventelistedata. Rapport  (2014)</h3>
+                            </a>
+                            <p>Utfordringer og foreslått tiltak for å forbedre kvaliteten i ventelistestatistikken</p>
+                        </div>
+                    </aside>
                 </section>
                 <!--                <section class="avsnitt statistics">-->
                 <!--                    <h2>Flere indikatorer</h2>-->
@@ -273,5 +284,6 @@
     <script src="https://www.google.com/jsapi"></script>
     <script src="../js/chart.js"></script>
     <script src="../js/statistics.js"></script>
+<!--    <script src="../js/tabs.js"></script>-->
 </body>
 </html>
