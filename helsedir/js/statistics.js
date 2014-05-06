@@ -6,6 +6,6 @@
         });
     });
 
-    $(".statisticcompare_select").prop("selectedIndex", -1);
+    $("#compare_hiddenfields select").prop("selectedIndex", -1);
 });
 

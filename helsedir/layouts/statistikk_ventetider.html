@@ -22,12 +22,13 @@
         <div class="row">
             <article class="col-md-12 col-lg-8">
 
-                <h1>Ventelistestatistikk for spesialhelsetjenesten, mars 2014</h1>
+                <h1>Ventelistestatistikk for spesialhelsetjenesten</h1>
 
                 <section class="statisticcompare row">
                     <div class="col-md-5">
                         <p>Velg kommune og helseforetak</p>
                         <select class="statisticcompare_select">
+                            <option value="norge">Hele Norge</option>
                             <option value="trondheim">Trondheim</option>
                             <option value="oslo">Oslo</option>
                             <option value="bergen">Bergen</option>
@@ -37,10 +38,19 @@
                     <div class="col-md-3">
                         <p>Velg periode</p>
                         <select class="statisticcompare_select">
-                            <option>1.tertial 2013</option>
-                            <option>2.tertial 2013</option>
-                            <option>3.tertial 2013</option>
-                            <option>1.tertial 2014</option>
+                            <option selected="selected">Alle perioder</option>
+                            <option>Januar 2014</option>
+                            <option>Februar 2014</option>
+                            <option >Mars 2014</option>
+                            <option>April 2014</option>
+                            <option>Mai 2014</option>
+                            <option>Juni 2014</option>
+                            <option>Juli 2014</option>
+                            <option>August 2014</option>
+                            <option>September 2014</option>
+                            <option>Oktober 2014</option>
+                            <option>November 2014</option>
+                            <option>Desember 2014</option>
                         </select>
                     </div>
                     <div class="col-md-1">
@@ -48,13 +58,45 @@
                             <button class="btn">Vis</button>
                         </form>
                     </div>
-                    <label> <input type="checkbox" />Sammenlign med annen kommune/helsefortak</label>
+                    <label> <input type="checkbox" id="compare_checkbox" />Sammenlign med annen kommune/helsefortak</label>
 
-                    <a href="#">Rapportgenerator</a>
                 </section>
+                <section class="statisticcompare row" id="compare_hiddenfields">
+                    <div class="col-md-5">
+                        <p>Velg kommune og helseforetak</p>
+                        <select class="statisticcompare_select">
+                            <option value="norge">Hele Norge</option>
+                            <option value="trondheim">Trondheim</option>
+                            <option value="oslo">Oslo</option>
+                            <option value="bergen">Bergen</option>
+                            <option value="tromsø">Tromsø</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Velg periode</p>
+                        <select class="statisticcompare_select">
+                            <option selected="selected">Alle perioder</option>
+                            <option>Januar 2014</option>
+                            <option>Februar 2014</option>
+                            <option>Mars 2014</option>
+                            <option>April 2014</option>
+                            <option>Mai 2014</option>
+                            <option>Juni 2014</option>
+                            <option>Juli 2014</option>
+                            <option>August 2014</option>
+                            <option>September 2014</option>
+                            <option>Oktober 2014</option>
+                            <option>November 2014</option>
+                            <option>Desember 2014</option>
+                        </select>
+                    </div>
+
+                </section>
+                <a href="#">Rapportgenerator</a>
+
 
                 <section class="avsnitt">
-                    <h2>Grafisk framstilling median ventetid</h2>
+                    <h2>Hele Norge</h2>
 
                     <div class="tabs-statistikk ">
                         <div class="tabs">
