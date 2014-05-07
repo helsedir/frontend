@@ -1,5 +1,13 @@
 /* Spesifikt for retningslinjer */
 
+body{
+	background-color: #f3f3f3;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
 article header, section header {
 	background: none;
 	margin-bottom: 0px;
@@ -31,10 +39,64 @@ article p, section p {
 	font-weight: bold;
 }
 
+
+.keyInfo {
+	padding: 0.5em;
+}
+.keyInfo dt {
+	float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.keyInfo dt:after {
+	content: ":";
+}
+
+.keyInfo dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
+/* PICO samkjør med guidelineInfo */
+.pico {
+	padding: 0.5em;
+	margin-bottom: 0px;
+}
+
+.pico:not(:first-child) {
+    margin-top: 30px;
+}
+
+.pico dt {
+	float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.pico dt:after {
+	content: ":";
+}
+
+.pico dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	font-weight: normal;
+}
+
+.evidensprofil {
+	margin-top:10px;
+}
+
 .recommendation {
 	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
-	background-color: #f9f9f9;
+	background-color: #ffffff;
 	box-shadow: 0 0.5px 1px #aaa;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 0.5px;
@@ -83,6 +145,14 @@ article p, section p {
 	line-height: 1.4em;
 }
 
+.grading {
+	border: 1px solid #b57e1f;
+	background-color: #df9922;
+	color: #fff;
+	width: 100%;
+	padding-left: 5px;
+	font-size: 0.8em;
+}
 
 section header.section_heading h1 {
 	margin-top: 1em;
@@ -90,7 +160,7 @@ section header.section_heading h1 {
 }
 
 .shortcuts {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 article nav h1 {
@@ -108,15 +178,19 @@ article section header h1, section header h1, .subsections {
 	line-height: 1.8em;
 }
 
+.subsections a {
+	text-decoration: none;
+}
+
 .subsectionLink:after {
-	  content: "\f054"; 
+	  content: "\f178"; 
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
     color: #999;
-    font-size: 16px;
-    padding-left: 4px;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
 p.grading {
@@ -166,6 +240,49 @@ section.recommendation header h1 {
     content: "\f077";
 }
 
+/* Actions/buttons */
+
+.show_kunnskapsgrunnlag:before {
+    content: "\f078"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #666;
+    font-size: 14px;
+    padding-right: 0.3em;
+}
+
+.show_kunnskapsgrunnlag.open:before {
+    content: "\f077";
+}
+
+.show_evidensprofil{
+	margin-left: 120px;
+}
+
+.show_evidensprofil:before {
+	 content: "\f078"; 
+	 font-family: FontAwesome;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: inherit;
+   color: #666;
+   font-size: 14px;
+   padding-right: 0.3em;
+}
+
+.show_evidensprofil.open:before {
+	content: "\f077";
+}
+
+
+
+/* icons */
+.fa-search {
+	border: none;
+}
+
 
 /* Helpers */
 .hidden {
@@ -188,9 +305,6 @@ section.recommendation header h1 {
 	  -webkit-border-radius: 1px;
 	  border-radius: 1px;
 	}*/
-	
-	#local-nav.affix {
-    position: static;
     
 }
 	
@@ -226,7 +340,7 @@ section.recommendation header h1 {
 
 .tt-dropdown-menu {
     width: 422px;
-    margin-top: 25px;
+    margin-top: 5px;
     padding: 8px 0;
     background-color: #fff;
     border: 1px solid #ccc;

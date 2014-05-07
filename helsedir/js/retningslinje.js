@@ -68,6 +68,28 @@ jQuery(document).ready(function() {
 		//}
   });
   
+  jQuery('.show_evidensprofil').on('click', function() {
+    var width = jQuery(window).width();
+		//if (width < 625) {
+			var element = jQuery(this);
+      if (element.hasClass('open')) {
+        element.siblings('.evidensprofil').addClass('hidden');
+        element.removeClass('open');
+        element.addClass('closed');
+        jQuery(this).text('Vis evidensprofilen');
+      }
+      else {
+        element.siblings('.evidensprofil').removeClass('hidden');
+        element.removeClass('closed');
+        element.addClass('open');
+        jQuery(this).text('Skjul evidensprofilen');
+      }
+		//}
+  });
+
+  
+	
+  
   
   jQuery(".recommendation_tabs").easyResponsiveTabs({
   	type: 'default', //Types: default, vertical, accordion           
@@ -112,7 +134,7 @@ jQuery(document).ready(function() {
 			 };
 		};
 		
-	var keywords = ['sepsis', 'spedbarnsernæring', 'antibiotika', 'amming', 'amme', 'blodforgiftning', 'diabetes'];		
+	var keywords = ['sepsis', 'spedbarnsernæring', 'antibiotika', 'amming', 'amme', 'blodforgiftning', 'diabetes', 'sykdommer fra Syden', 'Hypp på en IPA'];		
 		
 	$('#search_input .typeahead').typeahead({
   hint: false,

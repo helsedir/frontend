@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prioritering</title>
-    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
-    <link href="../css/fonts.css" rel="stylesheet" />
-    <link href="../css/customLESS.css" rel="stylesheet" />
-    <link href="../css/easy-responsive-tabs.css" rel="stylesheet" />
-    <link href="../css/retningslinje.css" rel="stylesheet" />
+    <title>Prioriteringsveiledere</title>
+		    <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/customLESS.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/retningslinje.css" rel="stylesheet" />
   </head>
   <body>
     <div id="header"></div>
 <div class="container">  
-		<div class="container">
 		  <div class="row">
 	<div class="col-md-8">
   	<ol class="broedsmulesti">
     	<li><a href="http://helsedir.azurewebsites.net/">Forside</a></li>
-      <li><a href="http://helsedir.azurewebsites.net/retningslinje_landingsside.html">Retningslinjer og veiledere</a></li>
-      <li class="active"><a href="#">Prioriteringsveileder for psykisk helsevern</a></li>
+      <li><a href="../../">Medisinske retningslinjer</a></li>
+      <li><a href="../">Nasjonal faglig retningslinje for spedbarnsernæring</a></li>
      </ol>
    </div>
 </div>
+<div class="row">
 
-		  <div class="row">
-	  		<article class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-	<header>
-		<h1 id="sidetittel">Prioriteringsveileder - Psykisk helsevern for voksne</h1>
-	</header>
-	<section class="">  
-		<section id="section1">
+	  		<section id="section1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	<header class="section_heading">
   	<h1>Prioriteringsveiledere</h1>
 	</header>
@@ -535,19 +552,6 @@
 </div>
 </section>
 </section>
-	</section> 
-		<div class="col-md-5 col-lg-3 col-lg-offset-1 navigation-box">
-		<nav id="local-nav" class="affix-top">
-  		<h1>Innhold</h1>
-			<ul class="nav">
-  			<li><a href="#section1">Prioriteringsveiledere</a></li>
-				<li><a href="#section2">Generelt</a></li>
-				</ul>
-		</nav>
-	</div>
-</article>
-		  </div>
-		</div>
 			</div>
 </div>
 <div id="footer">
@@ -556,15 +560,14 @@
 </div>
 
 
-    <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/affix.js"></script>
-    <script src="../js/modernizr-latest.js"></script>
-    <script src="../js/headerFooter.js"></script>
-    <script src="../js/sohoFont.js"></script>
-    <script src="../js/calibriFont.js"></script>
-    <script src="../js/toggle.js"></script>
-    <script src="../js/easyResponsiveTabs.js"></script>
-    <script src="../js/easyResponsiveTabs2.js"></script>
-    <script src="../js/retningslinje.js"></script>
+		    <script src="http://helsedir.azurewebsites.net/js/jquery-1.11.0.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/modernizr-latest.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/sohoFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/calibriFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/headerFooterRetningslinje.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs2.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/typeahead.jquery.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/retningslinje.js"></script>
 	</body>
 </html>
