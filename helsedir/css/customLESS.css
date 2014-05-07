@@ -83,7 +83,7 @@ header {
 }
 header a,
 header a:visited {
-  color: black;
+  color: #004e66;
   text-decoration: none;
 }
 #footer {
@@ -785,7 +785,7 @@ video {
   }
 }
 @media (min-width: 900px) {
-  .statisticcompare button {
+  .statistics_compare button {
     margin-top: 30px;
   }
 }
@@ -813,7 +813,7 @@ video {
   h3 {
     font-size: 22px;
   }
-  .statisticcompare {
+  .statistics_compare {
     background: #ddd;
     border-radius: 5px;
   }
@@ -905,7 +905,7 @@ video {
 .topbar {
   margin-bottom: 60px;
 }
-/*.statisticcompare {
+/*.statistics_compare {
     background: #ddd;
     border-radius: 5px;
     padding: 5px 0 10px 10px;
@@ -928,32 +928,32 @@ video {
 .radiobuttons label {
   display: block;
 }
-.statisticcompare {
+.statistics_compare {
   padding: 5px 0 10px 10px;
 }
-.statisticcompare p {
+.statistics_compare p {
   margin: 0;
 }
-.statisticcompare select {
+.statistics_compare select {
   display: block;
   margin-bottom: 20px;
   width: 100%;
 }
-.statisticcompare label {
+.statistics_compare label {
   display: inline-block;
 }
-.statisticcompare label input {
+.statistics_compare label input {
   margin-right: 5px;
 }
-.statisticcompare button {
+.statistics_compare button {
   background: white;
   border: 1px solid #b2babc;
 }
-.statisticcompare a {
+.statistics_compare a {
   display: block;
 }
-.statisticcompare label,
-.statisticcompare a {
+.statistics_compare label,
+.statistics_compare a {
   padding-left: 15px;
 }
 #compare_hiddenfields {
@@ -971,5 +971,50 @@ video {
 }
 .statistics_about p {
   margin: 0;
+}
+.publication_sortcontrols {
+  width: 81%;
+}
+.publication_sortcontrols p {
+  display: inline;
+}
+.publication_sortcontrols a {
+  float: right;
+  margin-left: 15px;
+  color: black;
+}
+.publication {
+  margin-top: 30px;
+}
+.publication a {
+  display: block;
+  text-decoration: underline;
+}
+.publication p {
+  display: inline-block;
+  margin-right: 25px;
+}
+.publication button {
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+.search_input {
+  width: 75%;
+  margin-bottom: 20px;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
 }
 /*# sourceMappingURL=customLESS.css.map */

@@ -112,7 +112,7 @@ header {
     background: @colorMorkBlaa;
 
     a, a:visited {
-        color: black;
+        color: @colorMorkBlaa;
         text-decoration: none;
     }
 }
@@ -955,7 +955,7 @@ video {
 }
 
 @media (min-width: 900px) {
-    .statisticcompare button {
+    .statistics_compare button {
         margin-top: 30px;
     }
 }
@@ -991,7 +991,7 @@ video {
         font-size: 22px;
     }
 
-    .statisticcompare {
+    .statistics_compare {
         background: #ddd;
         border-radius: 5px;
     }
@@ -1106,7 +1106,7 @@ video {
     margin-bottom: 60px;
 }
 
-/*.statisticcompare {
+/*.statistics_compare {
     background: #ddd;
     border-radius: 5px;
     padding: 5px 0 10px 10px;
@@ -1130,7 +1130,7 @@ video {
     display: block;
 }
 
-.statisticcompare {
+.statistics_compare {
     padding: 5px 0 10px 10px;
 
     p {
@@ -1185,4 +1185,58 @@ video {
         margin: 50px 0 10px 0;
     }
     p{margin:0;}
+}
+
+.publication_sortcontrols{
+    width: 81%;
+    p{
+        display: inline;
+    }
+
+    a{
+        float: right;
+            margin-left: 15px;
+            color: black;
+
+    }
+}
+
+.publication{
+
+    margin-top: 30px;
+
+    a{
+        display: block;
+        text-decoration: underline;
+    }
+    p{
+        display: inline-block;
+            margin-right: 25px;
+    }
+    button{
+        display: block;
+                margin-right: 25px;
+
+        float: left;
+    }
+}
+
+.search_input{
+    width: 75%;
+    margin-bottom: 20px;
+   
+}
+
+//Center text in input fields
+ ::-webkit-input-placeholder {
+   text-align:center;
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+:-ms-input-placeholder {  
+   text-align:center; 
 }

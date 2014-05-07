@@ -1,0 +1,119 @@
+﻿html {
+  background: white;
+}
+header {
+  height: 40px;
+  margin: 25px 0 35px 0;
+  background: white;
+}
+header .links {
+  color: #004e66;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.menubutton {
+  background: #004e66;
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 40px;
+}
+.menubutton a {
+  vertical-align: middle;
+  padding: 7px 30px 7px 30px;
+  color: white;
+  font-weight: normal;
+}
+.menubutton a:hover,
+.menubutton a:visited {
+  text-decoration: none;
+  color: white;
+}
+.menubutton a i {
+  margin-left: 10px;
+}
+.search {
+  height: 39px;
+  max-width: 220px;
+  padding: 0 35px 0 5px;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background: url('../img/search_icon.png') right center no-repeat;
+  background-size: auto 100%;
+}
+.mainentrance {
+  background: url('../img/forside_bakgrunn2.svg') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding: 20px 0 50px 0;
+}
+#logo {
+  padding: 0;
+  min-height: 40px;
+  max-height: 40px;
+}
+.entrancebutton {
+  width: 250px;
+  height: 230px;
+  border-radius: 4px;
+  background: #004e66;
+  margin: 30px 30px 0 0;
+  float: left;
+  position: relative;
+}
+.entrancebutton a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: white;
+}
+.entrancebutton a .innerDiv {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.entrancebutton a .innerDiv p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.entrancebutton a .innerDiv h2 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.entrancebutton a:visited,
+.entrancebutton a:hover {
+  color: white;
+  text-decoration: none;
+}
+.entrancebutton a:hover {
+  background: magenta;
+}
+.entrancebutton.tilskudd {
+  background: #aeaba8;
+}
+@media (max-width: 1199px) {
+  header .links {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .entrancebutton {
+    margin: 50px 25px 30px 0;
+  }
+}
+@media (max-width: 600px) {
+  .entrancebutton {
+    margin: 10px 0 10px 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=frontpage.css.map */

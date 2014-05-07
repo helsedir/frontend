@@ -11,13 +11,13 @@ $(document).ready(function () {
 
     expander.on('click', function () {
         if (expandedContent.hasClass("visuallyhidden")) {
-            expandedContent.toggleClass("visuallyhidden");
             expandedText.text('Velg');
             expander.addClass("js-expanded");
+            expandedContent.removeClass("visuallyhidden");
         } else {
             expandedText.text('Start');
             expander.removeClass("js-expanded");
-            expandedContent.toggleClass("visuallyhidden");
+            expandedContent.addClass("visuallyhidden");
         }
     });
 });
