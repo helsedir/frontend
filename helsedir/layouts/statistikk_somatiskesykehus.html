@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Somatiske sykehus</title>
+    <link href="../css/reset.css" rel="stylesheet">
+
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/customLESS.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
@@ -48,7 +50,6 @@
                             </form>
                         </div>
                         <label> <input type="checkbox" id="compare_checkbox" />Sammenlign med annen kommune/helsefortak</label>
-
                     </section>
                     <section id="compare_hiddenfields" class="statistics_compare row">
                         <div class="col-md-5">
@@ -77,10 +78,8 @@
                             <p>Neste publisering</p>
                             <p>1.april 2014</p>
                         </div>
-
                     </aside>
                 </div>
-
 
                 <section class="avsnitt">
                     <h2>Trondheim kommune 1.tertial 2013</h2>
@@ -118,26 +117,25 @@
                                                 <div class="borderbox">
                                                     <p>Hvordan beregnes DRG-poeng? <i class="fa fa-chevron-down"></i></p>
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6 statistics">
+                                                <h2>Innleggelser</h2>
+                                                <div id="chart_div4" class="iveCharts">
                                                 </div>
-                                                <div class="col-md-6 statistics">
-                                                    <h2>Innleggelser</h2>
-                                                    <div id="chart_div4" class="iveCharts">
-                                                    </div>
-                                                    <p>Endring -4,7%</p>
-                                                    <div class="borderbox">
-                                                        <p>Hvordan beregnes innleggelser? <i class="fa fa-chevron-down"></i></p>
-                                                    </div>
+                                                <p>Endring -4,7%</p>
+                                                <div class="borderbox">
+                                                    <p>Hvordan beregnes innleggelser? <i class="fa fa-chevron-down"></i></p>
                                                 </div>
+                                            </div>
                                             <div class="col-md-6 statistics">
                                                 <h2>Akuttinnleggelser</h2>
-                                                <br/><!--midlertidig-->
+                                                <br /><!--midlertidig-->
                                                 <div id="chart_div3" class="iveCharts">
                                                 </div>
                                                 <p>Endring -4,7%</p>
                                                 <div class="borderbox">
                                                     <p>Hvordan beregnes pasienter på somatiske sykehus? <i class="fa fa-chevron-down"></i></p>
                                                 </div>
-                                               
                                             </div>
                                             <div class="col-md-6 statistics">
                                                 <h2>Konsultasjoner i poliklinikk</h2>
@@ -219,8 +217,6 @@
                                                 <h3>Akuttinnleggelser</h3>
                                                 <h3>Konsultasjoner i poliklinikk</h3>
                                                 <h3>Om statistikken</h3>
-
-                                                
                                             </div>
                                         </section>
                                     </div>
@@ -233,20 +229,19 @@
                                         <p>Sammenlign egen kommune med andre kommuner og bydeler i Oslo</p>
                                         <p>Sammenlign data for regioner og hele landet</p>
                                         <p>Sammenlign gruppe av kommuner med sammenlignbart innbyggertall</p>
-                                        
+
                                         <h4>Datakilde</h4>
                                         <p>Datagrunnlaget for alle indikatorer er hentet fra Norsk Pasientregister (NPR)</p>
-                                        
+
                                         <h4>For hver kommune er data inndelt i</h4>
                                         <p>Aldersgrupper</p>
                                         <p>Pasientgrupper</p>
                                         <p>Hvem som har henvist pasienten</p>
                                         <p>Hvor pasienten var før sykehusoppholdet?</p>
                                         <p>Hvor pasienten utskrives til etter sykehusoppholdet</p>
-                                        
 
                                         <h4>Hovedgrupper av indikatorer som er tilgjengelige</h4>
-                                        
+
                                         <h4>Datakvalitet</h4>
                                     </div>
                                 </div>
@@ -254,7 +249,7 @@
                         </div>
 
                         <aside class="aside">
-                            
+
                             <div class="borderbox">
                                 <p>Hva betyr disse tallene?</p>
                                 <p>Rapporten Samhandlingsstatistikk2013 vil hjelpe deg å forstå og bruke tall riktig</p>
@@ -263,7 +258,6 @@
                         </aside>
                     </div>
                 </section>
-                
             </article>
         </div>
     </div>
@@ -280,7 +274,7 @@
     <script src="../js/collapse.js"></script>
     <script src="../js/statistics.js"></script>
     <script src="../js/iveCharts.js"></script>
-    
+
     <script>
         $('#chart_div').singleColumns({
             colors: ['#004e66', '#df9922'],
@@ -312,8 +306,6 @@
             //columns: [{ 'city': 'Oslo', 'number': 33 }, { 'city': 'Trondheim', 'number': 60 }],
             animate: true
         });
-
-       
     </script>
 </body>
 </html>
