@@ -84,6 +84,7 @@ header .links {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 25px;
 }
 .entrancebutton a .innerDiv h2 {
   margin-bottom: 5px;
@@ -92,12 +93,11 @@ header .links {
 .entrancebutton a:visited,
 .entrancebutton a:hover {
   color: white;
-  text-decoration: none;
 }
-.entrancebutton a:hover {
-  background: magenta;
+.entrancebutton a:hover h2 {
+  text-decoration: underline;
 }
-.entrancebutton.tilskudd {
+.entrancebutton.grey {
   background: #aeaba8;
 }
 @media (max-width: 1199px) {
