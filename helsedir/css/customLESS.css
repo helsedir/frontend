@@ -15,10 +15,11 @@ h1 {
   font-size: 2.800em;
   font-family: "soho gothic pro light";
   line-height: 1em;
-  margin: 0 0 16px 0;
+  margin: 0 0 25px 0;
+  color: #004e66;
 }
 .ingress {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 1.579em;
   font-family: 'Calibri';
 }
@@ -48,6 +49,13 @@ ol.broedsmulesti {
 p,
 ul {
   margin-bottom: 24px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 23px;
+}
+ul li {
+  margin-left: 40px;
 }
 a {
   color: #0093a7;
@@ -299,6 +307,8 @@ footer.rammeverk a:visited {
 }
 /*----- Tabs -----*/
 .tabs {
+  position: inherit;
+  height: 100%;
   width: 100%;
   display: inline-block;
 }
@@ -528,12 +538,14 @@ section .innholdswrapper {
   width: 1px;
   height: 1px;
   border: 0;
+  transition: 0.5s all;
 }
 .search {
   display: inline;
 }
 .search input {
   margin-right: 10px;
+  margin-bottom: 20px;
   border-radius: 3px;
   height: 39px;
   border: 1px solid #004e66;
@@ -653,7 +665,6 @@ section .innholdswrapper {
   width: 1.875rem;
 }
 .transportsideknapp {
-  margin-top: 1.2rem;
   padding: 1rem 1rem 1rem 0.5rem;
   border: 1px solid #0093a7;
 }
@@ -670,6 +681,9 @@ section .innholdswrapper {
 .transportsideknapp h4 {
   height: 100%;
   width: 100%;
+  margin: 0;
+}
+.transportsideknapp p {
   margin: 0;
 }
 .personmodul {
@@ -1138,6 +1152,9 @@ header .mainsearch {
 .entrancebutton.grey {
   background: #aeaba8;
 }
+.frontpagewrapper .grey {
+  background: #aeaba8;
+}
 footer .tab-links {
   padding-left: 20px;
   margin-top: -37px;
@@ -1185,21 +1202,26 @@ footer .tabs {
   border-top: 1px solid black;
   padding-top: 80px;
 }
-.footerlinkswrapper h3,
+.footerlinkswrapper h4,
 .footerlinkswrapper p,
 .footerlinkswrapper a,
 .footerlinkswrapper a:visited,
 .footerlinkswrapper a:hover {
   color: white;
 }
-.footerlinkswrapper h3 {
-  margin-bottom: 30px;
+.footerlinkswrapper h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .footerlinkswrapper p {
   margin: 0;
+  font-size: 18px;
+  line-height: 1em;
 }
 .footerlinkswrapper a {
   text-decoration: underline;
+  font-size: 18px;
+  line-height: 1em;
 }
 .footerlinkswrapper .socialmedia {
   border-radius: 3px;
@@ -1217,6 +1239,7 @@ footer .tabs {
   padding: 10px 20px 10px 20px;
   color: white;
   float: left;
+  line-height: 35px;
 }
 .footerlinkswrapper .socialmedia a:last-of-type {
   border-top-right-radius: 3px;
@@ -1225,9 +1248,26 @@ footer .tabs {
 .about {
   list-style-type: none;
   padding: 0;
+  margin-top: 10px;
 }
 .about a {
   cursor: pointer;
+}
+.about li {
+  margin: 0;
+  line-height: 1em;
+}
+.calltoaction {
+  border: 2px solid #004e66;
+  color: #004e66;
+  padding: 10px;
+  background: white;
+}
+.calltoaction :before {
+  float: left;
+  padding-right: 10px;
+  content: "\f054";
+  font-family: "FontAwesome";
 }
 @media (max-width: 1199px) {
   header .links {
