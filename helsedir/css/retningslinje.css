@@ -1,9 +1,5 @@
 /* Spesifikt for retningslinjer */
 
-body{
-	background-color: #f3f3f3;
-}
-
 .btn {
 	border-radius: 0px;
 }
@@ -11,6 +7,7 @@ body{
 article header, section header {
 	background: none;
 	margin-bottom: 0px;
+	height: auto;
 }
 
 article p, section p {
