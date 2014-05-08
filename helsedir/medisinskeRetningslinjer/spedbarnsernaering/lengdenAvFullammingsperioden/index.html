@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
@@ -24,7 +47,7 @@
 </div>
 <div class="row">
 
-	  		<section id="section1" class="col-md-7 col-lg-7">
+	  		<section id="section1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	<header class="section_heading">
   	<h1>Lengden av fullammingsperioden og tidspunkt for introduksjon av fast føde</h1>
 	</header>
@@ -47,7 +70,10 @@ Det anbefales morsmelkerstatning ved behov for annen melk enn morsmelk.
 </p>
 <p>
 Veiledning til den enkelte mor må ta utgangspunkt i hennes situasjon og barnets behov.
-</p>	
+</p>
+<div class="grading">
+	<span>Sterk anbefaling</span>
+</div>
 </div>
 <div class="recommendation_extras hidden">
 <button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
@@ -55,37 +81,30 @@ Veiledning til den enkelte mor må ta utgangspunkt i hennes situasjon og barnets
 <div class="recommendation_tabs">          
 	<ul class="resp-tabs-list">
   	<li>Nøkkelinfo</li>
-    <li>Effektestimater</li>
+    <li>Vitenskapelige spørsmål og effektestimater</li>
     <li>Rasjonale</li>
     <li>Praktisk info</li>
     <li>Referanser</li>
   </ul> 
 
 	<div class="resp-tabs-container">                                                        
-		<div>Nøkkelinfo tekst...</div>
 		<div>
-			<div class="table-responsive">
-	<table class="table table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>Populasjon</th>
-				<th>Intervensjon</th>
-				<th>Komparator</th>
-				<th>Utfall</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Friske spedbarn i Norge og deres mødre</td>
-				<td>Fullamming til 6 måneder</td>
-				<td>Fullamming 4 måneder og fortsatt amming til 6 måneder med tillegg av annen kost</td>
-				<td>Dødelighet, kognitiv funksjon, infeksjoner, vekst, overvekt/fedme, allergi/atopisk sykdom, cøliaki, spiseutvikling/smaksaksept
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-<div class="pico_details_tabs">          
+			Fordeler og ulemper
+		</div>
+		<div>
+			<dl class="pico">
+	<dt>Populasjon</dt>
+	<dd>Friske spedbarn i Norge og deres mødre</dd>
+	<dt>Intervensjon</dt>
+	<dd>Fullamming til 6 måneder</dd>
+	<dt>Komparator</dt>
+	<dd>Fullamming 4 måneder og fortsatt amming til 6 måneder med tillegg av annen kost</dd>
+	<dt>Utfall</dt>
+	<dd>Dødelighet, kognitiv funksjon, infeksjoner, vekst, overvekt/fedme, allergi/atopisk sykdom, cøliaki, spiseutvikling/smaksaksept</dd>
+</dl>
+<button type="button" class="show_evidensprofil btn btn-default">Vis evidensprofil</button>
+<div class="evidensprofil hidden">
+	<div class="pico_details_tabs">          
 	<ul class="resp-tabs-list2">
   	<li>Evidensprofil</li>
     <li>Sammendrag</li>
@@ -102,7 +121,20 @@ Veiledning til den enkelte mor må ta utgangspunkt i hennes situasjon og barnets
 		</div>
 	</div>
 </div>  
-	
+
+</div>
+<dl class="pico">
+	<dt>Populasjon</dt>
+	<dd>Friske spedbarn i Norge og deres mødre</dd>
+	<dt>Intervensjon</dt>
+	<dd>Fullamming til 8 måneder</dd>
+	<dt>Komparator</dt>
+	<dd>Fullamming 6 måneder og fortsatt amming til 8 måneder med tillegg av annen kost</dd>
+	<dt>Utfall</dt>
+	<dd>Dødelighet, kognitiv funksjon, infeksjoner, vekst, overvekt/fedme, allergi/atopisk sykdom, cøliaki, spiseutvikling/smaksaksept
+	</dd>
+</dl>
+<button type="button" class="show_evidensprofil btn btn-default">Vis evidensprofil</button>	
 		</div>
 		<div>
 		Ut fra det kunnskapsgrunnlaget som finnes per i dag og som har vært vurdert, fant vi at fullamming til 6 måneder gir en noe lavere risiko for mage- og tarminfeksjoner enn fullamming til 4 mnd. Forøvrig var det ingen forskjeller i helseutfall for barnet mellom fullamming til 6 md og amming til 6 md med tillegg av fast føde mellom 4 og 6 md. Kvinnen (og ev. partner) bør få veiledning og beslutningstøtte etter behov; ut fra barnets behov, særlige hensyn, samt mors verdier, preferanser og livssituasjon.

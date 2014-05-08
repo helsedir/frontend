@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
@@ -36,19 +59,21 @@
 			<dd>05.05.2014</dd>
 			<dt>Eier</dt>
 			<dd>Helsedirektoratet</dd>
+			<dt>Tema</dt>
+			<dd>Tema..</dd>
+			<dt>Kategori</dt>
+			<dd>Kategori..</dd>
 		</dl>
 	</div>
 	<div class="row">
-		<form class="form-inline" role="form">
-			<div class="col-sm-12 col-md-12 col-lg-12 form-group">
-				<label class="sr-only" for="">Søk i retningslinjen</label>
-				<div id="search_input">
-					<input type="text" class="form-control input-lg typeahead" placeholder="Søk i retningslinjen...">
-				</div>
+		<form class="form-search form-horizontal" role="form">
+			<label class="sr-only" for="">Søk i retningslinjene</label>
+			<div id="search_input" class="input-append">
+				<input type="text" class="form-control input-lg typeahead" placeholder="Søk i retningslinjen...">
 			</div>
 		</form>
 	</div>
-	<h2>Innhold</h2>
+	<h2>Innhold i retningslinjen</h2>
 	<ul class="subsections">
 		<li><span class="subsectionLink"><a class="" href="lengdenAvFullammingsperioden/">Lengden av fullammingsperioden og tidspunkt for introduksjon av fast føde</a></span></li>
 	</ul>
