@@ -661,18 +661,28 @@ section .innholdswrapper {
   width: 1.875rem;
 }
 .transportsideknapp {
-  padding: 1rem 1rem 1rem 0.5rem;
-  border: 1px solid #0093a7;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
 }
 .transportsideknapp a {
   display: block;
   width: 100%;
   height: 100%;
+  color: black;
+}
+.transportsideknapp a h2 {
+  color: #0093a7;
+}
+.transportsideknapp a:visited,
+.transportsideknapp a:hover {
+  color: black;
+}
+.transportsideknapp a:visited h2,
+.transportsideknapp a:hover h2 {
+  color: #0093a7;
 }
 .transportsideknapp .skygge {
-  position: relative;
-  top: 19px;
-  height: 3px;
+  display: none;
 }
 .transportsideknapp h4 {
   height: 100%;
@@ -681,6 +691,9 @@ section .innholdswrapper {
 }
 .transportsideknapp p {
   margin: 0;
+}
+.transportsideknapp .fa-chevron-right {
+  display: none;
 }
 .personmodul {
   /*float: right;*/
@@ -824,9 +837,6 @@ video {
   }
   .transportsideknapp .fa-chevron-right {
     display: none;
-  }
-  .transportsideknapp .skygge .blaa {
-    background: white;
   }
 }
 @media (max-width: 600px) {
@@ -1211,12 +1221,12 @@ footer .tabs {
 .footerlinkswrapper p {
   margin: 0;
   font-size: 18px;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 .footerlinkswrapper a {
   text-decoration: underline;
   font-size: 18px;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 .footerlinkswrapper .socialmedia {
   border-radius: 3px;
@@ -1250,7 +1260,7 @@ footer .tabs {
 }
 .about li {
   margin: 0;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 .calltoaction {
   border: 2px solid #004e66;
@@ -1335,6 +1345,9 @@ footer .tabs {
   .socialmedia a:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+  }
+  .transportsideknapp {
+    background: #f2f2f2;
   }
 }
 .report table {
