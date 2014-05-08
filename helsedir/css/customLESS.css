@@ -1260,4 +1260,24 @@ footer .tabs {
     border-bottom-left-radius: 3px;
   }
 }
+.report table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.report table td {
+  padding: 0 10px;
+}
+.report table td:first-child {
+  width: 25%;
+}
+@media only screen and (max-width: 900px) {
+  .report table {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  iframe {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=customLESS.css.map */
