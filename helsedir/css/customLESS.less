@@ -137,10 +137,6 @@ header {
     }
 }
 
-#footer {
-    margin-top: 100px;
-}
-
 footer {
     .tab-links {
         padding-left: 20px;
@@ -367,7 +363,7 @@ footer {
 .fa-calendar-o {
     float: left;
     padding-right: 25px;
-    font-size: 600%;
+    font-size: 300%;
 }
 /*----- Tabs -----*/
 .tabs {
@@ -626,7 +622,6 @@ section .innholdswrapper {
 }
 
 .footerwrapper {
-    margin-top: 2rem;
     border-top: 5px solid @colorMediumBlaa;
     background: @colorMorkBlaa;
 }
@@ -1353,7 +1348,7 @@ header {
     -moz-background-size: auto,cover;
     -o-background-size: auto,cover;
     background-size: auto,cover;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 20px 0 50px 0;
 }
 
@@ -1414,8 +1409,8 @@ header {
 }
 
 .frontpagewrapper {
-    .grey {
-        background: @colorDarkGray;
+    &.grey {
+        background: #DEDDDB;
     }
 }
 
@@ -1462,7 +1457,6 @@ footer {
 }
 
 .footerwrapper {
-    margin-top: 2rem;
     background: @colorLightGray;
     border: none;
     padding-top: 100px;
@@ -1476,7 +1470,7 @@ footer {
 .footerlinkswrapper {
     background: #838078;
     border-top: 1px solid black;
-    padding-top: 80px;
+    padding-top: 40px;
 
     h4, p, a, a:visited, a:hover {
         color: white;
@@ -1544,14 +1538,65 @@ footer {
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
-    padding: 10px;
+    padding: 5px 15px 5px 15px;
     background: white;
 
-    :before {
+    &:before {
         float: left;
         padding-right: 10px;
         content: "\f054";
         font-family: "FontAwesome";
+    }
+}
+
+.frontpage {
+    /*.row {
+        border-top: 3px solid #004e66;
+        margin-top: -10px;
+        padding-top: 40px;
+    }
+        */
+    padding-bottom: 50px;
+
+    h2 {
+        margin: 50px 0 20px 0;
+        width: 100%;
+        border-bottom: 3px solid @colorDarkBlue;
+        padding-bottom: 7px;
+    }
+
+    a {
+        color: @colorDarkBlue;
+    }
+
+    .newsitem {
+        margin-bottom: 20px;
+
+        p {
+            color: black;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: @colorLightBlue;
+    }
+
+    .conferenceitem {
+        margin-bottom: 20px;
+
+        a, p {
+            padding: 0;
+            line-height: 1em;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    .statistics_image {
+        margin-bottom: 20px;
     }
 }
 
