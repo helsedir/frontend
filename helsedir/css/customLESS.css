@@ -309,12 +309,8 @@ footer.rammeverk a:visited {
   width: 100%;
   display: inline-block;
 }
-/*----- Tab Links -----*/
-/* Clearfix */
 .tab-links {
   margin: 0;
-  margin-top: -53px;
-  background-color: transparent;
 }
 .tab-links:after {
   display: block;
@@ -322,23 +318,17 @@ footer.rammeverk a:visited {
   content: '';
 }
 .tab-links li {
-  margin: 0 10px 0 0;
+  margin: 0;
   float: left;
   list-style: none;
-}
-.tab-links li a {
-  background-color: #004e66;
-  border-radius: 0;
-  color: #ffffff;
 }
 .tab-links li.active a,
 .tab-links li.active a:hover {
   color: #4c4c4c;
-  background-color: #ffffff;
 }
 .tab-links li.active {
-  /*border: 2px solid #EBEEEF;
-            border-bottom: 0;*/
+  border: 2px solid #EBEEEF;
+  border-bottom: 0;
 }
 .tab-links a {
   padding: 9px 15px;
@@ -359,7 +349,7 @@ footer.rammeverk a:visited {
 /*----- Content of Tabs -----*/
 .tab-content {
   padding: 15px;
-  /*border-top: 2px solid #EBEEEF;*/
+  border-top: 2px solid #EBEEEF;
   border-radius: 3px;
 }
 .tab-content li {
@@ -923,6 +913,9 @@ video {
   padding-right: 0 !important;
   padding-bottom: 50px;
   transition: all 0.5s;
+  /*----- Tab Links -----*/
+  /* Clearfix */
+  /*----- Content of Tabs -----*/
 }
 .toppmeny .inner {
   background: #ffffff;
@@ -947,6 +940,82 @@ video {
   .toppmeny .inner .tab-content ul li:last-of-type {
     border-bottom: 0;
   }
+}
+.toppmeny .tab-links {
+  margin: 0;
+  margin-top: -53px;
+  background-color: transparent;
+}
+.toppmeny .tab-links:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.toppmeny .tab-links li {
+  margin: 0 10px 0 0;
+  float: left;
+  list-style: none;
+}
+.toppmeny .tab-links li a {
+  background-color: #004e66;
+  border-radius: 0;
+  color: #ffffff;
+}
+.toppmeny .tab-links li.active a,
+.toppmeny .tab-links li.active a:hover {
+  color: #4c4c4c;
+  background-color: #ffffff;
+}
+.toppmeny .tab-links li.active {
+  /*border: 2px solid #EBEEEF;
+            border-bottom: 0;*/
+}
+.toppmeny .tab-links a {
+  padding: 9px 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+  transition: all linear 0.15s;
+  background: white;
+}
+.toppmeny .tab-links a:hover,
+.toppmeny .tab-links a:focus {
+  background: #a7cce5;
+  text-decoration: none;
+  color: black !important;
+}
+.toppmeny .tab-content {
+  padding: 15px;
+  /*border-top: 2px solid #EBEEEF;*/
+  border-radius: 3px;
+}
+.toppmeny .tab-content li {
+  list-style-type: none;
+}
+.toppmeny .tab-content li a,
+.toppmeny .tab-content li a:visited,
+.toppmeny .tab-content li a:hover {
+  color: #004e66;
+}
+.toppmeny .tabs-statistikk .tab-content {
+  padding: 15px 0 0 0;
+}
+.toppmeny .tabs-statistikk #statistikktab1 p {
+  text-align: center;
+  color: #004e66;
+}
+.toppmeny .tabs-statistikk #statistikktab1 p .nokkeltall {
+  font-size: 300%;
+}
+.toppmeny .tabs-statistikk #statistikktab1 h4 {
+  padding: 0 15px 0 15px;
+  background: #004e66;
+  color: white;
+}
+.toppmeny .tabs-statistikk #statistikktab1 h4 i {
+  color: #df9922;
 }
 @media only screen and (max-width: 600px) {
   .xs-no-padding {

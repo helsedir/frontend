@@ -373,12 +373,9 @@ footer.rammeverk {
     width: 100%;
     display: inline-block;
 }
-/*----- Tab Links -----*/
-/* Clearfix */
+
 .tab-links {
     margin: 0;
-    margin-top: -53px;
-    background-color: transparent;
 
     &:after {
         display: block;
@@ -387,24 +384,17 @@ footer.rammeverk {
     }
 
     li {
-        margin: 0 10px 0 0;
+        margin: 0;
         float: left;
         list-style: none;
 
-        a {
-            background-color: @colorDarkBlue;
-            border-radius: 0;
-            color: #ffffff;
-        }
-
         &.active a, &.active a:hover {
             color: #4c4c4c;
-            background-color: #ffffff;
         }
 
         &.active {
-            /*border: 2px solid #EBEEEF;
-            border-bottom: 0;*/
+            border: 2px solid #EBEEEF;
+            border-bottom: 0;
         }
     }
 
@@ -428,7 +418,7 @@ footer.rammeverk {
 /*----- Content of Tabs -----*/
 .tab-content {
     padding: 15px;
-    /*border-top: 2px solid #EBEEEF;*/
+    border-top: 2px solid #EBEEEF;
     border-radius: 3px;
 
     li {
@@ -466,6 +456,8 @@ footer.rammeverk {
         }
     }
 }
+
+
 
 .dropdown-statistikk {
     select {
@@ -1153,6 +1145,102 @@ video {
             }
         }
     }
+
+    
+/*----- Tab Links -----*/
+/* Clearfix */
+
+.tab-links {
+    margin: 0;
+    margin-top: -53px;
+    background-color: transparent;
+
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    li {
+        margin: 0 10px 0 0;
+        float: left;
+        list-style: none;
+
+        a {
+            background-color: @colorDarkBlue;
+            border-radius: 0;
+            color: #ffffff;
+        }
+
+        &.active a, &.active a:hover {
+            color: #4c4c4c;
+            background-color: #ffffff;
+        }
+
+        &.active {
+            /*border: 2px solid #EBEEEF;
+            border-bottom: 0;*/
+        }
+    }
+
+    a {
+        padding: 9px 15px;
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #4c4c4c;
+        transition: all linear 0.15s;
+        background: white;
+
+        &:hover, &:focus {
+            background: #a7cce5;
+            text-decoration: none;
+            color: black !important;
+        }
+    }
+}
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 15px;
+    /*border-top: 2px solid #EBEEEF;*/
+    border-radius: 3px;
+
+    li {
+        list-style-type: none;
+
+        a, a:visited, a:hover {
+            color: @colorMorkBlaa;
+        }
+    }
+}
+
+.tabs-statistikk {
+    .tab-content {
+        padding: 15px 0 0 0;
+    }
+
+    #statistikktab1 {
+        p {
+            text-align: center;
+            color: @colorMorkBlaa;
+
+            .nokkeltall {
+                font-size: 300%;
+            }
+        }
+
+        h4 {
+            padding: 0 15px 0 15px;
+            background: @colorMorkBlaa;
+            color: white;
+
+            i {
+                color: @colorOrange;
+            }
+        }
+    }
+}
 }
 
 @media only screen and (max-width: 600px) {
