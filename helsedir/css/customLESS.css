@@ -313,6 +313,8 @@ footer.rammeverk a:visited {
 /* Clearfix */
 .tab-links {
   margin: 0;
+  margin-top: -53px;
+  background-color: transparent;
 }
 .tab-links:after {
   display: block;
@@ -320,17 +322,23 @@ footer.rammeverk a:visited {
   content: '';
 }
 .tab-links li {
-  margin: 0;
+  margin: 0 10px 0 0;
   float: left;
   list-style: none;
+}
+.tab-links li a {
+  background-color: #004e66;
+  border-radius: 0;
+  color: #ffffff;
 }
 .tab-links li.active a,
 .tab-links li.active a:hover {
   color: #4c4c4c;
+  background-color: #ffffff;
 }
 .tab-links li.active {
-  border: 2px solid #EBEEEF;
-  border-bottom: 0;
+  /*border: 2px solid #EBEEEF;
+            border-bottom: 0;*/
 }
 .tab-links a {
   padding: 9px 15px;
@@ -351,7 +359,7 @@ footer.rammeverk a:visited {
 /*----- Content of Tabs -----*/
 .tab-content {
   padding: 15px;
-  border-top: 2px solid #EBEEEF;
+  /*border-top: 2px solid #EBEEEF;*/
   border-radius: 3px;
 }
 .tab-content li {
@@ -907,8 +915,44 @@ video {
   margin: 0;
 }
 .toppmeny {
-  border-bottom: 1px solid #b2babc;
+  /*border-bottom: 1px solid @colorLysGraa;*/
   margin-bottom: 30px;
+  background: #dbdcdd;
+  padding-top: 30px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 50px;
+  transition: all 0.5s;
+}
+.toppmeny .inner {
+  background: #ffffff;
+  padding: 0;
+  margin-top: 55px;
+}
+.toppmeny .inner .tab-content ul {
+  padding: 24px 10px;
+}
+@media only screen and (max-width: 600px) {
+  .toppmeny .inner .tab-content ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+.toppmeny .inner .tab-content ul li {
+  margin-left: 0;
+  padding: 15px 0;
+  border-bottom: solid 1px #b2babc;
+}
+@media only screen and (min-width: 900px) {
+  .toppmeny .inner .tab-content ul li:last-of-type {
+    border-bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .xs-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 .fa-search {
   border: 2px solid white;
@@ -1072,36 +1116,103 @@ header .links {
 }
 header .mainsearch {
   height: 39px;
-  max-width: 220px;
+  /*max-width: 220px;*/
+  width: 100%;
   padding: 0 35px 0 5px;
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
   background: url('../img/search_icon.png') right center no-repeat;
   background-size: auto 100%;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 900px) {
+  header {
+    margin: 10px 0 10px 0;
+  }
 }
 .menubutton {
-  background: #004e66;
   width: 150px;
-  height: 40px;
-  border-radius: 3px;
+  min-height: 40px;
   text-align: center;
   display: inline-block;
   margin-right: 40px;
 }
 .menubutton a {
+  border-radius: 3px;
+  background-color: #004e66;
   vertical-align: middle;
   padding: 7px 30px 7px 30px;
-  color: white;
+  color: #ffffff;
   font-weight: normal;
+  transition: all 0.5s;
 }
-.menubutton a:hover,
 .menubutton a:visited {
+  background-color: #004e66;
+  color: #ffffff;
+}
+.menubutton a:focus {
   text-decoration: none;
-  color: white;
+  background-color: #dbdcdd;
+  color: #004e66;
+  border: solid 1px #004e66;
+}
+.menubutton a:hover {
+  text-decoration: none;
+  background-color: #dbdcdd;
+  color: #004e66;
+}
+.menubutton a.js-expanded {
+  padding-bottom: 42px;
+  border-radius: 3px 3px 0 0;
+  background-color: #dbdcdd;
+  color: #004e66;
 }
 .menubutton a i {
+  /*font-size: 28px;*/
   margin-left: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .menubutton {
+    width: auto;
+    margin-right: 5px;
+  }
+  .menubutton a {
+    padding: 7px 7px 7px 7px;
+  }
+  .menubutton a:hover {
+    text-decoration: none;
+  }
+  .menubutton a.js-expanded {
+    padding-bottom: 18px;
+  }
+  .menubutton a span {
+    display: none;
+  }
+  .menubutton a i {
+    margin-left: 0;
+  }
+}
+.mobile-search {
+  display: none;
+}
+-hidden-mobile {
+  display: block;
+}
+@media only screen and (max-width: 900px) {
+  .hidden-mobile {
+    display: none;
+    background-color: #dbdcdd;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .mobile-search {
+    display: inline;
+  }
+  .mobile-search .fa {
+    font-size: 28px;
+    border: none;
+  }
 }
 .mainentrance {
   background: #95bbbc url('../img/forside_bakgrunn2.svg') no-repeat center;
@@ -1160,6 +1271,9 @@ header .mainsearch {
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
+}
+footer .map {
+  height: 500px;
 }
 footer .tab-links {
   padding-left: 20px;
