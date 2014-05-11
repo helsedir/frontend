@@ -134,7 +134,7 @@ jQuery(document).ready(function() {
 			 };
 		};
 		
-	var keywords = ['sepsis', 'spedbarnsernæring', 'antibiotika', 'amming', 'amme', 'blodforgiftning', 'diabetes', 'sykdommer fra Syden', 'Hypp på en IPA'];		
+	var keywords = ['sepsis', 'spedbarnsernæring', 'antibiotika', 'amming', 'amme', 'blodforgiftning', 'diabetes'];		
 		
 	$('#search_input .typeahead').typeahead({
   hint: false,

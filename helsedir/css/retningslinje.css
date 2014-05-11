@@ -1,18 +1,41 @@
 /* Spesifikt for retningslinjer */
 
+/* Fix for Bootstrap */
 .btn {
 	border-radius: 0px;
+	border: 1px solid #004e66;
 }
 
 article header, section header {
 	background: none;
 	margin-bottom: 0px;
-	height: auto;
+	height: auto; /* fix for customLess */
 }
 
 article p, section p {
 	display: block;
 	margin-bottom: 10px;
+}
+
+article h1, section h1 {
+  line-height: 1.3em;
+}
+
+.search_retningslinjer:after{
+	content: "\f002"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #004e66;;
+    font-size: 26px;
+    position: absolute;
+    top:5px;
+    right: 30px;  
+}
+
+.form-search {
+	margin-bottom: 100px;
 }
 
 .guidelineInfo {
@@ -34,6 +57,36 @@ article p, section p {
 	margin: 0 0 0 110px;
 	padding: 0 0 0.5em 0;
 	font-weight: bold;
+}
+
+.subsections {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	line-height: 1.8em;
+	margin-top: 20px;
+}
+
+/* Fix for customLess */
+
+
+.subsections li {
+	margin-left: 0px;
+}
+
+.subsections a {
+	text-decoration: none;
+}
+
+.subsectionLink:after {
+	  content: "\f178"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #004e66;;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
 
@@ -93,7 +146,7 @@ article p, section p {
 .recommendation {
 	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
-	background-color: #ffffff;
+	background-color: #f3f3f3;
 	box-shadow: 0 0.5px 1px #aaa;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 0.5px;
@@ -102,22 +155,26 @@ article p, section p {
 
 .recommendation header {
 	cursor: pointer;
+	margin: 0px;
 }
 
 
 .recommendationType {
-	width: 4em;
 	position: absolute;
-	top: -24px;
-	left: -8px;
+	top: -28px;
+	left: 0px;
 }
 
 .recommendationType span {
 	font-size: 0.6em;
 	color: #004e66;
-	display: block;
-	text-align: center;
-	vertical-align: middle;
+}
+
+.recommendationGrading {
+	position: absolute;
+	top: -35px;
+	right: -12px;
+	font-size: 0.8em;
 }
 
 .recommendation_text{
@@ -143,9 +200,9 @@ article p, section p {
 }
 
 .grading {
-	border: 1px solid #b57e1f;
-	background-color: #df9922;
-	color: #fff;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	margin-top: 30px;
 	width: 100%;
 	padding-left: 5px;
 	font-size: 0.8em;
@@ -160,35 +217,11 @@ section header.section_heading h1 {
 	margin-top: 20px;
 }
 
-article nav h1 {
-	font-size: 1.333em;
-}
-
 article section header h1, section header h1, .subsections {
 	font-size: 1.333em;
 }
 
-.subsections {
-	list-style: none;
-	margin-left: 0px;
-	padding-left: 0px;
-	line-height: 1.8em;
-}
 
-.subsections a {
-	text-decoration: none;
-}
-
-.subsectionLink:after {
-	  content: "\f178"; 
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #999;
-    font-size: 18px;
-    padding-left: 10px;
-}
 
 p.grading {
 	display: none;
@@ -200,7 +233,7 @@ section.recommendation header h1 {
 	margin-top: 1em;
 	margin-bottom: 0.1em;
 	margin-right: 1.5em;
-	padding-top: 2px;
+	padding-top: 8px;
 }
 
 #local-nav.affix {
@@ -224,7 +257,7 @@ section.recommendation header h1 {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #004e66;
+    color: #004e66;;
     font-size: 20px;
     padding-right: 0.3em;
     position: absolute;
@@ -245,7 +278,7 @@ section.recommendation header h1 {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #666;
+    color: #004e66;;
     font-size: 14px;
     padding-right: 0.3em;
 }
@@ -264,7 +297,7 @@ section.recommendation header h1 {
    font-style: normal;
    font-weight: normal;
    text-decoration: inherit;
-   color: #666;
+   color: #004e66;;
    font-size: 14px;
    padding-right: 0.3em;
 }
@@ -291,17 +324,42 @@ section.recommendation header h1 {
 }
 
 
-@media screen and (max-width: 880px) {
-  /*section.recommendation {
-		border: 1px solid #DDDDDD;
-		background-color: #efefef;
-		margin-bottom: 8px;
-		padding: 10px;
-		box-shadow:0 1px 2px #aaa;
-		-moz-border-radius: 1px;
-	  -webkit-border-radius: 1px;
-	  border-radius: 1px;
-	}*/
+@media screen and (max-width: 600px) {
+	/* PICO samkjør med guidelineInfo */
+	.pico {
+		margin-bottom: 0px;
+		padding: 0em;
+	}
+
+	.pico:not(:first-child) {
+    margin-top: 30px;
+	}
+
+	.pico dt {
+		float: none;
+		clear: none;
+		width: 0px;
+		text-align: right;
+		font-weight: bold;
+		}
+
+	.pico dt:after {
+		content: ":";
+	}
+
+	.pico dd {
+		margin: 0 0 0 0;
+		padding: 0 0 0.5em 0;
+		font-weight: normal;
+	}
+	
+	.show_evidensprofil{
+		margin-left: 0em;
+	}
+	
+	.subsections li {
+		border-bottom: 1px solid #ccc;
+	}
     
 }
 	
