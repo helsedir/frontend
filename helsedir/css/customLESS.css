@@ -967,6 +967,7 @@ video {
   background-color: #ffffff;
 }
 .toppmeny .tab-links li.active {
+  border: none !important;
   /*border: 2px solid #EBEEEF;
             border-bottom: 0;*/
 }
@@ -988,7 +989,7 @@ video {
 }
 .toppmeny .tab-content {
   padding: 15px;
-  /*border-top: 2px solid #EBEEEF;*/
+  border-top: none !important;
   border-radius: 3px;
 }
 .toppmeny .tab-content li {
