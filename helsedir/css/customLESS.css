@@ -354,10 +354,18 @@ footer.rammeverk a:visited {
 }
 .tab-content li {
   list-style-type: none;
+  margin-left: 0;
+  padding: 15px 0;
+  border-bottom: solid 1px #b2babc;
 }
-.tab-content li a,
-.tab-content li a:visited,
-.tab-content li a:hover {
+@media only screen and (min-width: 900px) {
+  .tab-content li:last-of-type {
+    border-bottom: 0;
+  }
+}
+.tab-content a,
+.tab-content a:visited,
+.tab-content a:hover {
   color: #004e66;
 }
 .tabs-statistikk .tab-content {
@@ -923,7 +931,7 @@ video {
   margin-top: 55px;
 }
 .toppmeny .inner .tab-content ul {
-  padding: 24px 10px;
+  padding: 0 10px 0 10px;
 }
 @media only screen and (max-width: 600px) {
   .toppmeny .inner .tab-content ul {
