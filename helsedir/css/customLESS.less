@@ -148,9 +148,9 @@ footer {
                 background: white;
             }
 
-            &.active a {
-                background: white;
-            }
+                &.active a {
+                    background: white;
+                }
         }
 
         a {
@@ -167,27 +167,27 @@ footer {
     }
 }
 
-footer.rammeverk {
-    height: 100%;
-    background: @colorMorkBlaa;
-    color: white;
+    footer.rammeverk {
+        height: 100%;
+        background: @colorMorkBlaa;
+        color: white;
 
-    p {
-        margin: 0.5rem;
-        padding-left: 1.3rem;
-    }
+        p {
+            margin: 0.5rem;
+            padding-left: 1.3rem;
+        }
 
-    img {
-        padding-right: 0.4rem;
-        padding-left: 1.8rem;
-        vertical-align: middle;
-    }
+        img {
+            padding-right: 0.4rem;
+            padding-left: 1.8rem;
+            vertical-align: middle;
+        }
 
-    a, a:visited {
-        color: white !important;
-        text-decoration: none;
+        a, a:visited {
+            color: white !important;
+            text-decoration: none;
+        }
     }
-}
 
 .has-hidden-content {
     cursor: pointer;
@@ -232,12 +232,12 @@ footer.rammeverk {
             cursor: pointer;
         }
 
-        h2:before {
-            float: left;
-            padding-right: 10px;
-            content: "\f077";
-            font-family: "FontAwesome";
-        }
+            h2:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f077";
+                font-family: "FontAwesome";
+            }
     }
 
     &.has-hidden-content {
@@ -252,12 +252,12 @@ footer.rammeverk {
             cursor: pointer;
         }
 
-        h2:before, h3:before {
-            float: left;
-            padding-right: 10px;
-            content: "\f078";
-            font-family: "FontAwesome";
-        }
+            h2:before, h3:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f078";
+                font-family: "FontAwesome";
+            }
     }
 }
 
@@ -278,21 +278,21 @@ footer.rammeverk {
         padding-right: 0.3rem;
     }
 
-    li:after {
-        content: ' >';
-    }
+        li:after {
+            content: ' >';
+        }
 
-    li:last-child:after {
-        content: '';
-    }
+        li:last-child:after {
+            content: '';
+        }
 
     a {
         text-decoration: underline;
     }
 
-    a:visited {
-        color: @colorMorkBlaa;
-    }
+        a:visited {
+            color: @colorMorkBlaa;
+        }
 }
 
 .menylinje {
@@ -304,10 +304,10 @@ footer.rammeverk {
         }
     }
 
-    a.js-expanded {
-        background: white;
-        color: @colorMorkBlaa;
-    }
+        a.js-expanded {
+            background: white;
+            color: @colorMorkBlaa;
+        }
 
     nav {
         margin-top: 0;
@@ -319,9 +319,9 @@ footer.rammeverk {
     }
 }
 
-.menylinje nav a, .menylinje > nav > span {
-    color: white;
-}
+    .menylinje nav a, .menylinje > nav > span {
+        color: white;
+    }
 
 .clearfix:before,
 .clearfix:after {
@@ -423,19 +423,20 @@ footer.rammeverk {
 
     li {
         list-style-type: none;
-                    margin-left: 0;
-                    padding: 15px 0;
-                    border-bottom: solid 1px @colorLysGraa;
+        margin-left: 0;
+        padding: 15px 0;
+        border-bottom: solid 1px @colorLysGraa;
 
-                    @media only screen and (min-width:900px) {
-                        &:last-of-type {
-                            border-bottom: 0;
-                        }
-                    }
-                }
-    a, a:visited, a:hover {
-            color: @colorMorkBlaa;
+        @media only screen and (min-width:900px) {
+            &:last-of-type {
+                border-bottom: 0;
+            }
         }
+    }
+
+    a, a:visited, a:hover {
+        color: @colorMorkBlaa;
+    }
 }
 
 .tabs-statistikk {
@@ -464,8 +465,6 @@ footer.rammeverk {
         }
     }
 }
-
-
 
 .dropdown-statistikk {
     select {
@@ -666,6 +665,7 @@ section .innholdswrapper {
     display: inline;
 
     input {
+        margin-top: 10px;
         margin-right: 10px;
         margin-bottom: 20px;
         border-radius: 3px;
@@ -829,13 +829,13 @@ section .innholdswrapper {
         }
     }
 
-    a:visited, a:hover {
-        h2 {
-            color: @colorMediumBlaa;
-        }
+        a:visited, a:hover {
+            h2 {
+                color: @colorMediumBlaa;
+            }
 
-        color: black;
-    }
+            color: black;
+        }
 
     padding: 10px 10px 10px 10px;
     margin-bottom: 10px;
@@ -925,9 +925,9 @@ section .innholdswrapper {
         margin-left: 10px;
     }
 
-    a:visited {
-        color: white;
-    }
+        a:visited {
+            color: white;
+        }
 }
 
 video {
@@ -1135,8 +1135,7 @@ video {
                 padding: 0 10px 0 10px;
 
                 @media only screen and (max-width:600px) {
-                    padding: 0;
-                    margin: 0;
+                    padding: 0; margin: 0;
                 }
 
                 li {
@@ -1215,7 +1214,6 @@ video {
         li {
             list-style-type: none;
 
-
             a, a:visited, a:hover {
                 color: @colorMorkBlaa;
             }
@@ -1256,8 +1254,6 @@ video {
         padding-right: 0 !important;
     }
 }
-
-
 
 .fa-search {
     border: 2px solid white;
@@ -1530,16 +1526,12 @@ header {
     }
 
     @media only screen and (max-width:900px) {
-        width: auto;
-        margin-right: 5px;
-
-        a {
+        width: auto; margin-right: 5px; a {
             padding: 7px 7px 7px 7px;
 
             &:hover {
                 text-decoration: none;
             }
-
 
             &.js-expanded {
                 padding-bottom: 18px;
@@ -1556,7 +1548,6 @@ header {
     }
 }
 
-
 .mobile-search {
     display: none;
 }
@@ -1566,7 +1557,6 @@ header {
 }
 
 @media only screen and (max-width: 900px) {
-
     .hidden-mobile {
         display: none;
         background-color: @colorLysLysGraa;
@@ -1657,7 +1647,6 @@ header {
 }
 
 footer {
-
     .map {
         height: 500px;
     }
@@ -1674,10 +1663,10 @@ footer {
                 background: white;
             }
 
-            &.active a {
-                background: white;
-                color: @colorDarkBlue;
-            }
+                &.active a {
+                    background: white;
+                    color: @colorDarkBlue;
+                }
         }
 
         a {
@@ -1760,10 +1749,10 @@ footer {
             line-height: 35px;
         }
 
-        a:last-of-type {
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-        }
+            a:last-of-type {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
     }
 }
 

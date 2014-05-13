@@ -546,6 +546,7 @@ section .innholdswrapper {
   display: inline;
 }
 .search input {
+  margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
   border-radius: 3px;
