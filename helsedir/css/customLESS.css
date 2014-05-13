@@ -1221,7 +1221,7 @@ header .mainsearch {
   border-radius: 3px;
   background-color: #004e66;
   vertical-align: middle;
-  padding: 7px 30px 7px 30px;
+  padding: 7px 10px 7px 10px;
   color: #ffffff;
   font-weight: normal;
   transition: all 0.5s;
@@ -1541,6 +1541,12 @@ footer .tabs {
   }
   .transportsideknapp {
     background: #f2f2f2;
+  }
+  .broedsmulesti li {
+    display: none;
+  }
+  .broedsmulesti li:last-child {
+    display: block;
   }
 }
 .report table {
