@@ -106,50 +106,70 @@ jQuery(document).ready(function() {
     fit: true,   // 100% fits in a container
     closed: 'accordion', // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
    });
-   
-   
-   
-   // Twitter typeahead
-   var substringMatcher = function(strs) {
-		 return function findMatches(q, cb) {
-			 var matches, substringRegex;
  
-			 // an array that will be populated with substring matches
-			 matches = [];
+	/** Twitter typeahead **/
+	var antibiotika = new Bloodhound({
+  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../data/antibiotika.json'
+	});
  
-			 // regex used to determine if a string contains the substring `q`
-			 substrRegex = new RegExp(q, 'i');
- 
-			 // iterate through the pool of strings and for any string that
-			 // contains the substring `q`, add it to the `matches` array
-			 $.each(strs, function(i, str) {
-				 if (substrRegex.test(str)) {
-					 // the typeahead jQuery plugin expects suggestions to a
-					 // JavaScript object, refer to typeahead docs for more info
-					 matches.push({ value: str });
-				 }
-			 });
- 
-			 cb(matches);
-			 };
-		};
-		
-	var keywords = ['sepsis', 'spedbarnsernæring', 'antibiotika', 'amming', 'amme', 'blodforgiftning', 'diabetes'];		
-		
-	$('#search_input .typeahead').typeahead({
-  hint: false,
-  highlight: true,
-  minLength: 1
-	},
-	{
-  	name: 'keywords',
-		displayKey: 'value',
-		source: substringMatcher(keywords)
+	var diabetes = new Bloodhound({
+  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../data/diabetes.json'
 	});
 	
-	$('#search_input').bind('typeahead:selected', function(obj, datum, name) {      
+	var spedbarn = new Bloodhound({
+  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../data/spedbarn.json'
+	});
+ 
+	antibiotika.initialize();
+	diabetes.initialize();
+	spedbarn.initialize();
+ 
+	$('#search_input_retningslinjer .typeahead').typeahead({
+		hint: false,
+  	highlight: true
+	},
+	{
+  name: 'antibiotika',
+  displayKey: 'keyword',
+  source: antibiotika.ttAdapter(),
+  templates: {
+    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for antibiotika</h3>'
+  }
+	},
+	{
+  name: 'diabetes',
+  displayKey: 'keyword',
+  source: diabetes.ttAdapter(),
+  templates: {
+    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for diabetes</h3>'
+  }
+  },
+  {
+	name: 'spedbarn',
+  displayKey: 'keyword',
+  source: spedbarn.ttAdapter(),
+  templates: {
+    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for spedbarnsernæring</h3>'
+  }
+	});
+	
+	
+	$('#search_input_retningslinjer').bind('typeahead:selected', function(obj, datum, name) {      
         window.location.href = 'soeketreff.html';
 	});
+	
+	$(document).on('typeahead:opened', function(event, datum) {
+  	var width = $(event.target).width();
+		$('.tt-dropdown-menu').width(width);
+	});
+	
+	window.localStorage.clear();
 	
    
 });
