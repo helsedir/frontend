@@ -33,6 +33,8 @@ h3 {
   font-weight: normal;
   font-size: 22px;
   font-family: "soho gothic pro light";
+  margin: 0;
+  line-height: 35px;
 }
 h4 {
   font-weight: normal;
@@ -565,7 +567,9 @@ section .innholdswrapper {
     Moduler
 ***********************************************************************/
 .abonneringsmodul {
-  padding-bottom: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  border: 1px solid black;
 }
 .abonneringsmodul .fa {
   color: #0093a7;
@@ -1641,6 +1645,9 @@ iframe {
 .tilskudd_sortcontrols form {
   display: inline;
 }
+.tilskudd_sortcontrols form label {
+  margin: 0 10px 0 5px;
+}
 .tilskudd_links {
   border: 1px solid black;
   padding: 10px;
@@ -1655,6 +1662,9 @@ iframe {
 .tilskudd_navigateright p,
 .tilskudd_navigateleft p {
   margin: 0;
+}
+#tilskuddsaar {
+  display: none;
 }
 @media braille {
   .toppmeny {
