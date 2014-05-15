@@ -3,6 +3,10 @@ body {
 	background-color: #f7f6f6;
 }
 
+#header {
+	background-color: #fff;
+}
+
 /* Fix for Bootstrap */
 .btn {
 	border-radius: 0px;
