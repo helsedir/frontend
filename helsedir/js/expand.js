@@ -2,25 +2,21 @@ $(document).ready(function () {
     "use strict";
 
     var expander = $(".js-expander"),
-        expandedContent = $(".js-expand"),
-        expandedText = $(".js-expander-innhold");
+        expandedContent = $(".js-expand");
 
     expander.css("cursor", "pointer");
-    expandedContent.addClass("visuallyhidden");
-    expandedText.text('Start');
+    expandedContent.hide();
 
     expander.on('click', function () {
         $('.hidden-mobile').hide();
         $('.js-expanded').not(this).removeClass('js-expanded');
 
-        if (expandedContent.hasClass("visuallyhidden")) {
-            expandedText.text('Velg');
-            expander.addClass("js-expanded");
-            expandedContent.removeClass("visuallyhidden");
-        } else {
-            expandedText.text('Start');
+        if (expandedContent.is(":visible")) {
             expander.removeClass("js-expanded");
-            expandedContent.addClass("visuallyhidden");
+            expandedContent.slideUp(500);
+        } else {
+            expander.addClass("js-expanded");
+            expandedContent.slideDown(500);
         }
     });
 

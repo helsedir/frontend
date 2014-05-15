@@ -921,7 +921,6 @@ video {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 50px;
-  transition: all 0.5s;
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/
@@ -1193,7 +1192,12 @@ header .links {
   font-weight: bold;
   margin-left: 20px;
 }
-header .mainsearch {
+@media only screen and (max-width: 900px) {
+  header {
+    margin: 10px 0 10px 0;
+  }
+}
+.mainsearch {
   height: 39px;
   /*max-width: 220px;*/
   width: 100%;
@@ -1205,10 +1209,22 @@ header .mainsearch {
   background-size: auto 100%;
   background-color: #ffffff;
 }
-@media only screen and (max-width: 900px) {
-  header {
-    margin: 10px 0 10px 0;
-  }
+.menubar {
+  margin-top: 50px;
+}
+.menubar .menyknapp {
+  cursor: pointer;
+  padding: 20px;
+  background: #dbdcdd;
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  transition: all 0.5s;
+  width: 250px;
+}
+.menubar .menyknapp.js-expanded {
+  background-color: #dbdcdd;
+  color: black;
 }
 .menubutton {
   width: 150px;
@@ -1299,8 +1315,7 @@ header .mainsearch {
   -moz-background-size: auto,cover;
   -o-background-size: auto,cover;
   background-size: auto,cover;
-  margin-bottom: 20px;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 0 0;
 }
 #logo {
   padding: 0;
@@ -1345,8 +1360,40 @@ header .mainsearch {
 .entrancebutton a:hover h2 {
   text-decoration: underline;
 }
-.entrancebutton.grey {
-  background: #aeaba8;
+.entrancebutton.menuandsearch {
+  background: none;
+}
+.entrancebutton.menuandsearch .menubutton {
+  position: relative;
+  top: 56%;
+  width: 100%;
+  margin-right: auto;
+}
+.entrancebutton.menuandsearch .menubutton input {
+  margin-bottom: 10px;
+  height: 39px;
+  width: 100%;
+  padding: 0 35px 0 5px;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background: url('../img/search_icon.png') right center no-repeat;
+  background-size: auto 100%;
+  background-color: #ffffff;
+}
+.entrancebutton.menuandsearch .menubutton span.menyknapp {
+  border-radius: 3px;
+  background-color: #004e66;
+  vertical-align: middle;
+  padding: 7px 10px 7px 10px;
+  color: #ffffff;
+  font-weight: normal;
+  transition: all 0.5s;
+}
+.entrancebutton.menuandsearch .menubutton span.js-expanded {
+  padding-bottom: 74px;
+  background-color: #dbdcdd;
+  color: black;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
@@ -1571,5 +1618,15 @@ footer .tabs {
 }
 iframe {
   margin-bottom: 23px;
+}
+.external-link:after {
+  padding-left: 10px;
+  content: "\f08e";
+  font-family: "FontAwesome";
+}
+@media braille {
+  .toppmeny {
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=customLESS.css.map */

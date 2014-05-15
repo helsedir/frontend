@@ -1123,7 +1123,6 @@ video {
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 50px;
-    transition: all 0.5s;
 
     .inner {
         background: #ffffff;
@@ -1460,21 +1459,42 @@ header {
         margin-left: 20px;
     }
 
-    .mainsearch {
-        height: 39px;
-        /*max-width: 220px;*/
-        width: 100%;
-        padding: 0 35px 0 5px;
-        border-radius: 3px;
-        border: 1px solid @colorDarkBlue;
-        vertical-align: middle;
-        background: url('../img/search_icon.png') right center no-repeat;
-        background-size: auto 100%;
-        background-color: #ffffff;
-    }
-
     @media only screen and (max-width: 900px) {
         margin: 10px 0 10px 0;
+    }
+}
+
+.mainsearch {
+    height: 39px;
+    /*max-width: 220px;*/
+    width: 100%;
+    padding: 0 35px 0 5px;
+    border-radius: 3px;
+    border: 1px solid @colorDarkBlue;
+    vertical-align: middle;
+    background: url('../img/search_icon.png') right center no-repeat;
+    background-size: auto 100%;
+    background-color: #ffffff;
+}
+
+.menubar {
+    margin-top: 50px;
+
+    .menyknapp {
+        cursor: pointer;
+        padding: 20px;
+        background: #dbdcdd;
+        ;
+        color: black;
+        margin-top: 20px;
+        text-align: center;
+        transition: all 0.5s;
+        width: 250px;
+
+        &.js-expanded {
+            background-color: #dbdcdd;
+            color: black;
+        }
     }
 }
 
@@ -1580,8 +1600,7 @@ header {
     -moz-background-size: auto,cover;
     -o-background-size: auto,cover;
     background-size: auto,cover;
-    margin-bottom: 20px;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 0 0;
 }
 
 #logo {
@@ -1635,8 +1654,44 @@ header {
         }
     }
 
-    &.grey {
-        background: @colorDarkGray;
+    &.menuandsearch {
+        background: none;
+
+        .menubutton {
+            position: relative;
+            top: 56%;
+            width: 100%;
+            margin-right: auto;
+
+            input {
+                margin-bottom: 10px;
+                height: 39px;
+                width: 100%;
+                padding: 0 35px 0 5px;
+                border-radius: 3px;
+                border: 1px solid @colorDarkBlue;
+                vertical-align: middle;
+                background: url('../img/search_icon.png') right center no-repeat;
+                background-size: auto 100%;
+                background-color: #ffffff;
+            }
+
+            span.menyknapp {
+                border-radius: 3px;
+                background-color: @colorDarkBlue;
+                vertical-align: middle;
+                padding: 7px 10px 7px 10px;
+                color: #ffffff;
+                font-weight: normal;
+                transition: all 0.5s;
+            }
+
+            span.js-expanded {
+                padding-bottom: 74px;
+                background-color: #dbdcdd;
+                color: black;
+            }
+        }
     }
 }
 
@@ -1921,4 +1976,18 @@ footer {
 
 iframe {
     margin-bottom: 23px;
+}
+
+.external-link {
+    &:after {
+        padding-left: 10px;
+        content: "\f08e";
+        font-family: "FontAwesome";
+    }
+}
+
+@media braille {
+    .toppmeny {
+        display: block !important;
+    }
 }
