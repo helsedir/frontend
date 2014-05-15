@@ -11,12 +11,13 @@
                 $parentTag.addClass('has-hidden-content');
             }
         });
-    } else {
+    }
+    else {
         $("h2").each(function () {
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if ($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) {
+            if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('collapse')) {
                 $contentToHide.removeClass('visuallyhidden');
                 $parentTag.removeClass('has-hidden-content');
             }
