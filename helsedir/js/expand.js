@@ -17,6 +17,9 @@ $(document).ready(function () {
         } else {
             expander.addClass("js-expanded");
             expandedContent.slideDown(500);
+            $('html, body').animate({
+                scrollTop: expander.offset().top
+            }, 500);
         }
     });
 

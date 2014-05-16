@@ -1225,14 +1225,17 @@ header .links {
   padding: 20px;
   background: #dbdcdd;
   color: black;
-  margin-top: 20px;
   text-align: center;
   transition: all 0.5s;
   width: 250px;
+  position: relative;
+  top: 67%;
+  border-radius: 3px;
 }
 .menubar .menyknapp.js-expanded {
   background-color: #dbdcdd;
   color: black;
+  padding-bottom: 65px;
 }
 .menubutton {
   width: 150px;
@@ -1323,7 +1326,7 @@ header .links {
   -moz-background-size: auto,cover;
   -o-background-size: auto,cover;
   background-size: auto,cover;
-  padding: 20px 0 0 0;
+  padding: 20px 0 40px 0;
 }
 #logo {
   padding: 0;
@@ -1338,6 +1341,9 @@ header .links {
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
+}
+.entrancebutton.menu {
+  background: none;
 }
 .entrancebutton a {
   height: 100%;

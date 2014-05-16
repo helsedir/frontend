@@ -1493,16 +1493,18 @@ header {
         cursor: pointer;
         padding: 20px;
         background: #dbdcdd;
-        ;
         color: black;
-        margin-top: 20px;
         text-align: center;
         transition: all 0.5s;
         width: 250px;
+        position: relative;
+        top: 67%;
+        border-radius: 3px;
 
         &.js-expanded {
             background-color: #dbdcdd;
             color: black;
+            padding-bottom: 65px;
         }
     }
 }
@@ -1609,7 +1611,7 @@ header {
     -moz-background-size: auto,cover;
     -o-background-size: auto,cover;
     background-size: auto,cover;
-    padding: 20px 0 0 0;
+    padding: 20px 0 40px 0;
 }
 
 #logo {
@@ -1626,6 +1628,10 @@ header {
     margin: 30px 30px 0 0;
     float: left;
     position: relative;
+
+    &.menu {
+        background: none;
+    }
 
     a {
         height: 100%;
