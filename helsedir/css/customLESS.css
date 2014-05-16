@@ -1687,6 +1687,19 @@ iframe {
 .tilskudd_information p {
   margin-bottom: 10px;
 }
+.statistics_module {
+  background: url(../img/pulse2.svg) no-repeat left;
+  padding-left: 54px;
+  max-width: 390px;
+  background-size: contain;
+}
+.statistics_module .keyfigures {
+  font-size: 3em;
+}
+.statistics_module .keyfigures,
+.statistics_module h4 {
+  color: red;
+}
 @media braille {
   .toppmeny {
     display: block !important;

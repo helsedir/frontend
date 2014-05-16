@@ -540,6 +540,26 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
+
+                    <a name="hhs-statistikkmodul1"></a>
+                    <h3 class="illustrasjonOverskrift">Statistikkmodul 1</h3>
+                    <div class="statistics_module">
+                        <h4>Festrelatert vold</h4>
+                        <h5>Statistikk 2012</h5>
+                        <p class="keyfigures">40%</p>
+                        <p>var festrelaterte voldtekter, av det totale antall anmeldte voldtekter i 2012.</p>
+                        <p class="keyfigures">90%</p>
+                        <p>var påvirket av alkohol, av alle siktet eller dømt for festrelatert vold.</p>
+                        <a href="#">Les mer om sammenhengen mellom alkohol og vold</a>
+                    </div>
+                    <a name="hhs-statistikkmodul2"></a>
+                    <h3 class="illustrasjonOverskrift">Statistikkmodul 2</h3>
+                    <div class="statistics_module">
+                        <h4>Mengde(%) tilsatt sukker i norsk kosthold</h4>
+                        <div id="chart_div"></div>
+
+                        <a href="#">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                    </div>
                 </div>
 
                 <h2>Grid</h2>
@@ -565,5 +585,30 @@
     <script src="../js/calibriFont.js"></script>
     <script src="../js/expand.js"></script>
     <script src="../js/tabs.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['år', 'kg/person/år', 'energiprosent'],
+              ['1970', 44, 14],
+              ['1980', 45, 18],
+              ['1990', 51, 15],
+              ['2000', 28, 18],
+              ['2010', 25, 11]
+            ]);
+
+            var options = {
+                title: 'Utvikling i median ventetid i antall dager, pr sektor 2013 og 2014',
+                vAxis: { minValue: 0, maxValue: 50 },
+                //                chartArea: { left: "5%", width: "60%" }
+                legend: 'bottom'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
 </body>
 </html>
