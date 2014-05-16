@@ -19,7 +19,7 @@ $(document).ready(function () {
             expandedContent.slideDown(500);
             $('html, body').animate({
                 scrollTop: expander.offset().top
-            }, 500);
+            }, 700);
         }
     });
 
