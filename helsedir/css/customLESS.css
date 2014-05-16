@@ -237,7 +237,7 @@ footer.rammeverk a:visited {
   padding-right: 0.3rem;
 }
 .broedsmulesti li:after {
-  content: ' >';
+  content: ' <';
 }
 .broedsmulesti li:last-child:after {
   content: '';
@@ -1602,6 +1602,9 @@ footer .tabs {
   }
   .broedsmulesti li:last-child {
     display: block;
+  }
+  .broedsmulesti li:last-child:before {
+    content: '< ';
   }
 }
 .report table {
