@@ -43,8 +43,6 @@ jQuery(document).ready(function() {
         element.siblings('.recommendation_text, .recommendation_extras').removeClass('hidden');
         element.removeClass('closed');
         element.addClass('open');
-        var offset = $(this).offset().top;
-        jQuery('html, body').animate({ scrollTop: offset }, 400); // Scroll to the correct section
       }
 		//}
   });
@@ -111,19 +109,22 @@ jQuery(document).ready(function() {
 	var antibiotika = new Bloodhound({
   	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		prefetch: '../data/antibiotika.json'
+		local: [{"keyword":"antibiotika"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
+		//prefetch: '../data/antibiotika.json'
 	});
  
 	var diabetes = new Bloodhound({
   	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		prefetch: '../data/diabetes.json'
+		local: [{"keyword":"diabetes"}, {"keyword":"antibiotika"}, {"keyword":"type I"},{"keyword":"type II"},{"keyword":"intravenøst"},{"keyword":"insulin"}]
+		//prefetch: '../data/diabetes.json'
 	});
 	
 	var spedbarn = new Bloodhound({
   	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		prefetch: '../data/spedbarn.json'
+		local: [{"keyword":"amming"},{"keyword":"ernæring"},{"keyword":"melk"}]
+		//prefetch: '../data/spedbarn.json'
 	});
  
 	antibiotika.initialize();
