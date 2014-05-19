@@ -25,7 +25,7 @@ body {
     font-family: 'Calibri';
     line-height: 1.750em;
     color: #222;
-    background: #f6f7f7;
+    background: #f7f6f6;
 }
 
 h1 {
@@ -727,27 +727,13 @@ section .innholdswrapper {
     transition: 0.5s all;
 }
 
-.search {
-    display: inline;
-
-    input {
-        margin-top: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        border-radius: 3px;
-        height: 39px;
-        border: 1px solid #004e66;
-        width: 80%;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-    }
-
-    button {
-        border: 0;
-        height: 43px;
-    }
+.search input {
+    margin-top: 30px;
+    background: url('../img/search_icon.png') right center no-repeat;
+    background-color: white;
+    background-size: auto 100%;
 }
+
 /**********************************************************************
     Moduler
 ***********************************************************************/
@@ -1504,6 +1490,7 @@ video {
 @colorYellow: #f4d01e;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
+@colorGreen: #a1bf37;
 
 html {
     background: white;
@@ -2022,7 +2009,7 @@ footer {
         }
     }
 
-    #statistikktab2 {
+    .statistics_table {
         table, tbody {
             display: block;
             width: 100%;
@@ -2198,5 +2185,63 @@ iframe {
 
     .has-hidden-content div {
         display: block !important;
+    }
+}
+
+.header3 {
+    font-size: 28px;
+    font-family: @fontSohoRegular;
+    margin: 55px 0 0 0;
+    line-height: 34px;
+}
+
+.module_publication {
+    margin: 100px 0 0 30px;
+    padding: 0 40px 0 30px;
+    background: url(../img/groenn_EKG.png) no-repeat left, white;
+    background-size: contain;
+
+    .header3 {
+        font-size: 28px;
+        font-family: @fontSohoRegular;
+        line-height: 34px;
+        margin: 0;
+    }
+
+    .date {
+        font-family: @fontSohoLight;
+        font-size: 36px;
+        color: @colorGreen;
+        padding: 35px 0 50px 0;
+    }
+
+    .smallHeader {
+        font-family: @fontCalibri;
+        color: @colorDarkBlue;
+        font-size: 18px;
+        padding: 30px 0 20px 0;
+        text-transform: uppercase;
+    }
+}
+
+.module_report {
+    margin: 0 0 0 30px;
+    padding: 0 40px 0 30px;
+    background: url(../img/groenn_EKG.png) no-repeat left, white;
+    background-size: contain;
+
+    .header3 {
+        font-size: 28px;
+        font-family: @fontSohoRegular;
+        line-height: 34px;
+        margin: 0;
+    }
+
+    .smallHeader {
+        font-family: @fontCalibri;
+        color: @colorDarkBlue;
+        font-size: 18px;
+        padding: 30px 0 20px 0;
+        text-transform: uppercase;
     }
 }

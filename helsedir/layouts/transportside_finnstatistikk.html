@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transportside finn statistikk</title>
     <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/bootstrap-full.min.css" rel="stylesheet">
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/customLESS.css" rel="stylesheet">
@@ -30,10 +31,12 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 clearfix">
 
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="">Finn statistikk på emne</label>
-                        <input type="text" class="form-control input-lg" placeholder="Finn statistikk på emne" value="Finn statistikk på emne">
+                <form class="form-search form-horizontal" role="form">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label class="sr-only" for="">Søk i retningslinjene</label>
+                        <div id="search_input_retningslinjer" class="search">
+                            <input type="text" class="form-control input-lg typeahead" placeholder="Søk i statistikk">
+                        </div>
                     </div>
                 </form>
 
@@ -41,80 +44,130 @@
                     <a href="statistikk_ventetider.html">
                         <h2>Ventetider og pasientrettigheter</h2>
                     </a>
-                    <p><i class="fa fa-chevron-right"></i></p>
+                    <p>Ventetider og pasientrettigheter<i class="fa fa-chevron-right"></i></p>
 
                     <div class="skygge bottom">
                         <div class="blaa"></div>
                     </div>
                 </div>
 
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Aktivitetsdata fra spesialisthelsetjenesten</h2>
+                    </a>
+                    <p>
+                        Aktivitetsdata for avtalespesialister, somatikk og psykisk helsevern;
+                        aktivitetsdata for somatikk; personskader og ulykker
+                        <i class="fa fa-chevron-right"></i>
+                    </p>
+
+                    <div class="skygge bottom">
+                        <div class="blaa"></div>
+                    </div>
+                </div>
+
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Legemidler</h2>
+                    </a>
+                    <p>
+                        Antall legemiddelgjennomganger som utføres i henholdsvis hjemmetjenesten
+                        og på sykehjem
+                        <i class="fa fa-chevron-right"></i>
+                    </p>
+                </div>
+
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Styringsdata for kommuner (samhandlingsreformen)</h2>
+                    </a>
+                    <p>
+                        Kommunenes bruk av somatiske sykehus, fastleger og legevakt, fysioterapeuter;  kommunal medfinansiering (KFM)
+                    </p>
+                </div>
+
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Kommunehelsetjenesten</h2>
+                    </a>
+                    <p>
+                        KOSTRA – «endelige tall»;  diagnoser i IPLOS-registeret; nasjonale kvalitetsindikatorer;
+                        kommunalt øyeblikkelig hjelp døgnopphold
+                    </p>
+                </div>
+
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Forgiftning</h2>
+                    </a>
+                    <p>
+                        Akutte forgiftninger ved norske sykehus;  forgiftningsdødsfall i Norge
+                    </p>
+                </div>
+
+                <div class="transportsideknapp clearfix">
+                    <a href="#">
+                        <h2>Demens</h2>
+                    </a>
+                    <p>
+                        Nasjonal kartlegging av tjenestetilbud til personer med demens.
+                    </p>
+                </div>
+
                 <!--                <div class="transportsideknapp clearfix">-->
-                <!--                    <a href="#">-->
-                <!--                        <h2>Rapporter</h2>-->
+                <!--                    <a href="statistikk_somatiskesykehus.html">-->
+                <!--                        <h2>Somatiske sykehus</h2>-->
                 <!--                    </a>-->
-                <!--                    <p> Analyser av samhandlingsstatistikk, nøkkeltall og annen statistikk, årsrapporter, prognoser og evalueringer<i class="fa fa-chevron-right"></i></p>-->
+                <!--                    <p> <i class="fa fa-chevron-right"></i></p>-->
                 <!---->
                 <!--                    <div class="skygge bottom">-->
                 <!--                        <div class="blaa"></div>-->
                 <!--                    </div>-->
                 <!--                </div>-->
-
-                <h2>Aktivitetsdata</h2>
-
-                <div class="transportsideknapp clearfix">
-                    <a href="statistikk_somatiskesykehus.html">
-                        <h2>Somatiske sykehus</h2>
-                    </a>
-                    <p> <i class="fa fa-chevron-right"></i></p>
-
-                    <div class="skygge bottom">
-                        <div class="blaa"></div>
-                    </div>
-                </div>
-
-                <div class="transportsideknapp clearfix">
-                    <a href="#">
-                        <h2>Psykisk helsevern og TSB</h2>
-                    </a>
-                    <p> <i class="fa fa-chevron-right"></i></p>
-
-                    <div class="skygge bottom">
-                        <div class="blaa"></div>
-                    </div>
-                </div>
-
-                <div class="transportsideknapp clearfix">
-                    <a href="#">
-                        <h2>Personskader og ulykker</h2>
-                    </a>
-                    <p> <i class="fa fa-chevron-right"></i></p>
-
-                    <div class="skygge bottom">
-                        <div class="blaa"></div>
-                    </div>
-                </div>
-
-                <div class="transportsideknapp clearfix">
-                    <a href="#">
-                        <h2>Aktivitetsdata fra avtalespesialister innen somatikk og psykisk helsevern</h2>
-                    </a>
-                    <p> <i class="fa fa-chevron-right"></i></p>
-
-                    <div class="skygge bottom">
-                        <div class="blaa"></div>
-                    </div>
-                </div>
-
-                <div class="transportsideknapp clearfix">
-                    <a href="#">
-                        <h2>Styringsdata for kommuner (sykehusenes bruk av spesialisthelsetjenesten)</h2>
-                    </a>
-                    <p> <i class="fa fa-chevron-right"></i></p>
-
-                    <div class="skygge bottom">
-                        <div class="blaa"></div>
-                    </div>
-                </div>
+                <!---->
+                <!--                <div class="transportsideknapp clearfix">-->
+                <!--                    <a href="#">-->
+                <!--                        <h2>Psykisk helsevern og TSB</h2>-->
+                <!--                    </a>-->
+                <!--                    <p> <i class="fa fa-chevron-right"></i></p>-->
+                <!---->
+                <!--                    <div class="skygge bottom">-->
+                <!--                        <div class="blaa"></div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!---->
+                <!--                <div class="transportsideknapp clearfix">-->
+                <!--                    <a href="#">-->
+                <!--                        <h2>Personskader og ulykker</h2>-->
+                <!--                    </a>-->
+                <!--                    <p> <i class="fa fa-chevron-right"></i></p>-->
+                <!---->
+                <!--                    <div class="skygge bottom">-->
+                <!--                        <div class="blaa"></div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!---->
+                <!--                <div class="transportsideknapp clearfix">-->
+                <!--                    <a href="#">-->
+                <!--                        <h2>Aktivitetsdata fra avtalespesialister innen somatikk og psykisk helsevern</h2>-->
+                <!--                    </a>-->
+                <!--                    <p> <i class="fa fa-chevron-right"></i></p>-->
+                <!---->
+                <!--                    <div class="skygge bottom">-->
+                <!--                        <div class="blaa"></div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!---->
+                <!--                <div class="transportsideknapp clearfix">-->
+                <!--                    <a href="#">-->
+                <!--                        <h2>Styringsdata for kommuner (sykehusenes bruk av spesialisthelsetjenesten)</h2>-->
+                <!--                    </a>-->
+                <!--                    <p> <i class="fa fa-chevron-right"></i></p>-->
+                <!---->
+                <!--                    <div class="skygge bottom">-->
+                <!--                        <div class="blaa"></div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
                 <aside class="aside borderbox">
                     <h3>Helsestatistikk levert av andre</h3>
@@ -127,6 +180,12 @@
                         </li>
                         <li>
                             <a href="#">Årsverk i helsetjenesten ved Statistisk sentralbyrå (SSB)</a>
+                        </li>
+                        <li>
+                            <a href="http://www.oecd.org/els/health-systems/health-at-a-glance.htm">OECD - Health at a Glance</a>
+                        </li>
+                        <li>
+                            <a href="http://www.who.int/gho/publications/world_health_statistics/2013/en">WHO - World Health Statistics</a>
                         </li>
                     </ul>
                 </aside>

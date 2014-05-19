@@ -8,7 +8,7 @@ body {
   font-family: 'Calibri';
   line-height: 1.750em;
   color: #222;
-  background: #f6f7f7;
+  background: #f7f6f6;
 }
 h1 {
   font-weight: normal;
@@ -599,24 +599,11 @@ section .innholdswrapper {
   border: 0;
   transition: 0.5s all;
 }
-.search {
-  display: inline;
-}
 .search input {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  height: 39px;
-  border: 1px solid #004e66;
-  width: 80%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-.search button {
-  border: 0;
-  height: 43px;
+  margin-top: 30px;
+  background: url('../img/search_icon.png') right center no-repeat;
+  background-color: white;
+  background-size: auto 100%;
 }
 /**********************************************************************
     Moduler
@@ -1652,40 +1639,40 @@ footer .tabs .tab-content li a {
   .breadcrumbs li:last-child:before {
     content: '< ';
   }
-  #statistikktab2 table,
-  #statistikktab2 tbody {
+  .statistics_table table,
+  .statistics_table tbody {
     display: block;
     width: 100%;
   }
-  #statistikktab2 table thead {
+  .statistics_table table thead {
     display: none;
   }
-  #statistikktab2 table tr,
-  #statistikktab2 table th,
-  #statistikktab2 table td {
+  .statistics_table table tr,
+  .statistics_table table th,
+  .statistics_table table td {
     display: block;
     padding: 0;
     text-align: left;
     white-space: normal;
     border: 0;
   }
-  #statistikktab2 table tr {
+  .statistics_table table tr {
     border-bottom: 1px solid #eee;
     padding-bottom: 11px;
     margin-bottom: 11px;
   }
-  #statistikktab2 table th[data-title]:before,
-  #statistikktab2 table td[data-title]:before {
+  .statistics_table table th[data-title]:before,
+  .statistics_table table td[data-title]:before {
     content: attr(data-title) ":\00A0";
     font-weight: bold;
   }
-  #statistikktab2 table td:first-child {
+  .statistics_table table td:first-child {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 6px;
     color: #333;
   }
-  #statistikktab2 table td:first-child:before {
+  .statistics_table table td:first-child:before {
     content: '';
   }
 }
@@ -1788,5 +1775,55 @@ iframe {
   .has-hidden-content div {
     display: block !important;
   }
+}
+.header3 {
+  font-size: 28px;
+  font-family: "soho gothic pro regular";
+  margin: 55px 0 0 0;
+  line-height: 34px;
+}
+.module_publication {
+  margin: 100px 0 0 30px;
+  padding: 0 40px 0 30px;
+  background: url(../img/groenn_EKG.png) no-repeat left, #ffffff;
+  background-size: contain;
+}
+.module_publication .header3 {
+  font-size: 28px;
+  font-family: "soho gothic pro regular";
+  line-height: 34px;
+  margin: 0;
+}
+.module_publication .date {
+  font-family: "soho gothic pro light";
+  font-size: 36px;
+  color: #a1bf37;
+  padding: 35px 0 50px 0;
+}
+.module_publication .smallHeader {
+  font-family: 'Calibri';
+  color: #004e66;
+  font-size: 18px;
+  padding: 30px 0 20px 0;
+  text-transform: uppercase;
+}
+.module_report {
+  margin: 0 0 0 30px;
+  padding: 0 40px 0 30px;
+  background: url(../img/groenn_EKG.png) no-repeat left, #ffffff;
+  background-size: contain;
+}
+.module_report .header3 {
+  font-size: 28px;
+  font-family: "soho gothic pro regular";
+  line-height: 34px;
+  margin: 0;
+}
+.module_report .smallHeader {
+  font-family: 'Calibri';
+  color: #004e66;
+  font-size: 18px;
+  padding: 30px 0 20px 0;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=customLESS.css.map */
