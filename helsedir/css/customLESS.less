@@ -23,7 +23,7 @@ body {
     font-family: 'Calibri';
     line-height: 1.750em;
     color: #222;
-    background: white;
+    background: #f6f7f7;
 }
 
 h1 {
@@ -127,6 +127,8 @@ a {
 }
 
 header, footer {
+    background: white;
+
     a {
         &:focus {
             background: white;
@@ -134,6 +136,10 @@ header, footer {
             outline: 0;
         }
     }
+}
+
+#header, #footer {
+    background: white;
 }
 
 header {
@@ -168,8 +174,20 @@ footer {
     .tab-content {
         background: white;
 
-        li a {
-            color: @colorMorkBlaa;
+        .alfabetisk {
+            ul {
+                li:first-of-type {
+                    border-bottom: solid 1px @colorLysGraa;
+                }
+
+                li {
+                    border: none;
+
+                    a {
+                        color: @colorMorkBlaa;
+                    }
+                }
+            }
         }
     }
 }
@@ -1149,7 +1167,6 @@ video {
                 li {
                     margin-left: 0;
                     padding: 15px 0;
-                    border-bottom: solid 1px @colorLysGraa;
 
                     @media only screen and (min-width:900px) {
                         &:last-of-type {
@@ -1964,6 +1981,49 @@ footer {
             }
         }
     }
+
+    #statistikktab2 {
+        table, tbody {
+            display: block;
+            width: 100%;
+        }
+
+        table {
+            thead {
+                display: none;
+            }
+
+            tr, th, td {
+                display: block;
+                padding: 0;
+                text-align: left;
+                white-space: normal;
+                border: 0;
+            }
+
+            tr {
+                border-bottom: 1px solid #eee;
+                padding-bottom: 11px;
+                margin-bottom: 11px;
+            }
+
+            th[data-title]:before, td[data-title]:before {
+                content: attr(data-title) ":\00A0";
+                font-weight: bold;
+            }
+
+            td:first-child {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 6px;
+                color: #333;
+            }
+
+                td:first-child:before {
+                    content: '';
+                }
+        }
+    }
 }
 
 .report {
@@ -2085,6 +2145,10 @@ iframe {
     .keyfigures, h4 {
         color: red;
     }
+}
+
+#statistikktab1, #statistikktab2, #statistikktab3 {
+    margin-top: 20px;
 }
 
 @media braille {

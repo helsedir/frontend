@@ -26,76 +26,8 @@
 
                 <h1>Ventelistestatistikk for spesialhelsetjenesten</h1>
 
-                <section class="statistics_compare row">
-                    <div class="col-md-5">
-                        <p>Velg kommune og helseforetak</p>
-                        <select class="statistics_compare_select">
-                            <option value="norge">Hele Norge</option>
-                            <option value="trondheim">Trondheim</option>
-                            <option value="oslo">Oslo</option>
-                            <option value="bergen">Bergen</option>
-                            <option value="tromsø">Tromsø</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <p>Velg periode</p>
-                        <select class="statistics_compare_select">
-                            <option selected="selected">Alle perioder</option>
-                            <option>Januar 2014</option>
-                            <option>Februar 2014</option>
-                            <option>Mars 2014</option>
-                            <option>April 2014</option>
-                            <option>Mai 2014</option>
-                            <option>Juni 2014</option>
-                            <option>Juli 2014</option>
-                            <option>August 2014</option>
-                            <option>September 2014</option>
-                            <option>Oktober 2014</option>
-                            <option>November 2014</option>
-                            <option>Desember 2014</option>
-                        </select>
-                    </div>
-                    <div class="col-md-1">
-                        <form action="statistikk_sammenligning_somatiskesykehus.html">
-                            <button class="btn">Vis</button>
-                        </form>
-                    </div>
-                    <label> <input type="checkbox" id="compare_checkbox" value="Sammenlign med annen kommune/helsefortak" />Sammenlign med annen kommune/helsefortak</label>
-                </section>
-                <section class="statistics_compare row" id="compare_hiddenfields">
-                    <div class="col-md-5">
-                        <p>Velg kommune og helseforetak</p>
-                        <select class="statistics_compare_select">
-                            <option value="norge">Hele Norge</option>
-                            <option value="trondheim">Trondheim</option>
-                            <option value="oslo">Oslo</option>
-                            <option value="bergen">Bergen</option>
-                            <option value="tromsø">Tromsø</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <p>Velg periode</p>
-                        <select class="statistics_compare_select">
-                            <option selected="selected">Alle perioder</option>
-                            <option>Januar 2014</option>
-                            <option>Februar 2014</option>
-                            <option>Mars 2014</option>
-                            <option>April 2014</option>
-                            <option>Mai 2014</option>
-                            <option>Juni 2014</option>
-                            <option>Juli 2014</option>
-                            <option>August 2014</option>
-                            <option>September 2014</option>
-                            <option>Oktober 2014</option>
-                            <option>November 2014</option>
-                            <option>Desember 2014</option>
-                        </select>
-                    </div>
-                </section>
-                <a href="#">Se avansert statistikk</a>
-
                 <section class="avsnitt">
-                    <h2>Hele Norge</h2>
+                    <h2>Norge 2014</h2>
 
                     <div class="tabs-statistikk ">
                         <div class="tabs">
@@ -105,109 +37,110 @@
                                 <li><a href="#statistikktab3">Om statistikken</a></li>
                             </ul>
                             <div class="tab-content">
+                                <h3>Utvikling i median ventetid i antall dager, siste 6 måneder 2014</h3>
                                 <div id="statistikktab1" class="tab active">
                                     <div id="chart_div"></div>
                                 </div>
                                 <div id="statistikktab2" class="tab">
                                     <table class="table">
-                                        <tr>
-                                            <th>Måned</th>
-                                            <th>Somatikk</th>
-                                            <th>VOP</th>
-                                            <th>BUP</th>
-                                            <th>RUS</th>
-                                        </tr>
-                                        <tr>
-                                            <td>mar</td>
-                                            <td>44</td>
-                                            <td>36</td>
-                                            <td>45</td>
-                                            <td>35</td>
-                                        </tr>
-                                        <tr>
-                                            <td>apr</td>
-                                            <td>52</td>
-                                            <td>41</td>
-                                            <td>52</td>
-                                            <td>42</td>
-                                        </tr>
-                                        <tr>
-                                            <td>mai</td>
-                                            <td>50</td>
-                                            <td>39</td>
-                                            <td>55</td>
-                                            <td>42</td>
-                                        </tr>
-                                        <tr>
-                                            <td>jun</td>
-                                            <td>48</td>
-                                            <td>40</td>
-                                            <td>50</td>
-                                            <td>42</td>
-                                        </tr>
-                                        <tr>
-                                            <td>jul</td>
-                                            <td>39</td>
-                                            <td>33</td>
-                                            <td>47</td>
-                                            <td>42</td>
-                                        </tr>
+                                        <!--                                        <thead>-->
+                                        <!--                                            <tr>-->
+                                        <!--                                                <th>Måned</th>-->
+                                        <!--                                                <th>Somatikk</th>-->
+                                        <!--                                                <th>VOP</th>-->
+                                        <!--                                                <th>BUP</th>-->
+                                        <!--                                                <th>RUS</th>-->
+                                        <!--                                            </tr>-->
+                                        <!--                                        </thead>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">okt</td>-->
+                                        <!--                                            <td data-title="Somatikk">49</td>-->
+                                        <!--                                            <td data-title="VOP">35</td>-->
+                                        <!--                                            <td data-title="BUP">35</td>-->
+                                        <!--                                            <td data-title="RUS">35</td>-->
+                                        <!--                                        </tr>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">nov</td>-->
+                                        <!--                                            <td data-title="Somatikk">49</td>-->
+                                        <!--                                            <td data-title="VOP">35</td>-->
+                                        <!--                                            <td data-title="BUP">36</td>-->
+                                        <!--                                            <td data-title="RUS">36</td>-->
+                                        <!--                                        </tr>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">des</td>-->
+                                        <!--                                            <td data-title="Somatikk">44</td>-->
+                                        <!--                                            <td data-title="VOP">35</td>-->
+                                        <!--                                            <td data-title="BUP">39</td>-->
+                                        <!--                                            <td data-title="RUS">37</td>-->
+                                        <!--                                        </tr>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">jan</td>-->
+                                        <!--                                            <td data-title="Somatikk">56</td>-->
+                                        <!--                                            <td data-title="VOP">48</td>-->
+                                        <!--                                            <td data-title="BUP">50</td>-->
+                                        <!--                                            <td data-title="RUS">48</td>-->
+                                        <!--                                        </tr>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">feb</td>-->
+                                        <!--                                            <td data-title="Somatikk">52</td>-->
+                                        <!--                                            <td data-title="VOP">34</td>-->
+                                        <!--                                            <td data-title="BUP">48</td>-->
+                                        <!--                                            <td data-title="RUS">34</td>-->
+                                        <!--                                        </tr>-->
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td data-title="Måned">mar</td>-->
+                                        <!--                                            <td data-title="Somatikk">47</td>-->
+                                        <!--                                            <td data-title="VOP">38</td>-->
+                                        <!--                                            <td data-title="BUP">42</td>-->
+                                        <!--                                            <td data-title="RUS">38</td>-->
+                                        <!--                                        </tr>-->
 
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Oktober 2013</th>
+                                                <th>November 2013</th>
+                                                <th>Desember 2013</th>
+                                                <th>Januar 2014</th>
+                                                <th>Februar 2014</th>
+                                                <th>Mars 2014</th>
+                                            </tr>
+                                        </thead>
                                         <tr>
-                                            <td>aug</td>
-                                            <td>61</td>
-                                            <td>55</td>
-                                            <td>68</td>
-                                            <td>36</td>
+                                            <td data-title="Somatikk">Somatikk</td>
+                                            <td data-title="Oktober 2013">49</td>
+                                            <td data-title="November 2013">49</td>
+                                            <td data-title="Desember 2013">44</td>
+                                            <td data-title="Januar 2014">56</td>
+                                            <td data-title="Februar 2014">52</td>
+                                            <td data-title="Mars 2014">52</td>
                                         </tr>
                                         <tr>
-                                            <td>sep</td>
-                                            <td>65</td>
-                                            <td>39</td>
-                                            <td>64</td>
-                                            <td>38</td>
+                                            <td data-title="VOP">VOP</td>
+                                            <td data-title="Oktober 2013">35</td>
+                                            <td data-title="November 2013">36</td>
+                                            <td data-title="Desember 2013">39</td>
+                                            <td data-title="Januar 2014">50</td>
+                                            <td data-title="Februar 2014">48</td>
+                                            <td data-title="Mars 2014">42</td>
                                         </tr>
                                         <tr>
-                                            <td>okt</td>
-                                            <td>49</td>
-                                            <td>35</td>
-                                            <td>35</td>
-                                            <td>35</td>
+                                            <td data-title="BUP">BUP</td>
+                                            <td data-title="Oktober 2013">35</td>
+                                            <td data-title="November 2013">36</td>
+                                            <td data-title="Desember 2013">39</td>
+                                            <td data-title="Januar 2014">50</td>
+                                            <td data-title="Februar 2014">48</td>
+                                            <td data-title="Mars 2014">42</td>
                                         </tr>
                                         <tr>
-                                            <td>nov</td>
-                                            <td>49</td>
-                                            <td>35</td>
-                                            <td>36</td>
-                                            <td>36</td>
-                                        </tr>
-                                        <tr>
-                                            <td>des</td>
-                                            <td>44</td>
-                                            <td>35</td>
-                                            <td>39</td>
-                                            <td>37</td>
-                                        </tr>
-                                        <tr>
-                                            <td>jan</td>
-                                            <td>56</td>
-                                            <td>48</td>
-                                            <td>50</td>
-                                            <td>48</td>
-                                        </tr>
-                                        <tr>
-                                            <td>feb</td>
-                                            <td>52</td>
-                                            <td>34</td>
-                                            <td>48</td>
-                                            <td>34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>mar</td>
-                                            <td>47</td>
-                                            <td>38</td>
-                                            <td>42</td>
-                                            <td>38</td>
+                                            <td data-title="RUS">RUS</td>
+                                            <td data-title="Oktober 2013">35</td>
+                                            <td data-title="November 2013">36</td>
+                                            <td data-title="Desember 2013">37</td>
+                                            <td data-title="Januar 2014">48</td>
+                                            <td data-title="Februar 2014">34</td>
+                                            <td data-title="Mars 2014">38</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -215,6 +148,13 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="">
+                        <h3>Lag egne tabeller og rapporter</h3>
+                        <ul>
+                            <li>Finn tall for din kommune</li>
+                            <li>Bryt ned</li>
+                        </ul>
                     </div>
                     <aside class="aside">
                         <div class="borderbox">

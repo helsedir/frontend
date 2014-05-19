@@ -603,12 +603,17 @@
                 title: 'Utvikling i median ventetid i antall dager, pr sektor 2013 og 2014',
                 vAxis: { minValue: 0, maxValue: 50 },
                 //                chartArea: { left: "5%", width: "60%" }
+                'chartArea': { 'width': '90%', 'height': '80%' },
                 legend: 'bottom'
             };
 
             var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
+
+        $(window).resize(function () {
+            drawChart();
+        });
     </script>
 </body>
 </html>

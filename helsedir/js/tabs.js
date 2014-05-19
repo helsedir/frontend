@@ -6,7 +6,7 @@
         var currentAttrValue = $(this).attr('href');
         console.log(currentAttrValue);
         // Show/Hide Tabs
-        $('.tabs ' + currentAttrValue).addClass('active').removeClass('visuallyhidden').siblings().removeClass('active').addClass('visuallyhidden');
+        $('.tabs ' + currentAttrValue).addClass('active').removeClass('visuallyhidden').siblings('div').removeClass('active').addClass('visuallyhidden');
 
         // Change/remove current tab to active
         $(this).parent('li').addClass('active').siblings().removeClass('active');
