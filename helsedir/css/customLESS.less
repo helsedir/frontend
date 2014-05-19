@@ -1,7 +1,9 @@
 ﻿@fontRoboto: 'Roboto', sans-serif;
 @fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri bold';
 @fontSoho: "soho gothic pro medium";
 @fontSohoLight: "soho gothic pro light";
+@fontSohoRegular: "soho gothic pro regular";
 @colorMorkBlaa: #004e66;
 @colorOrange: #df9922;
 @colorMediumBlaa: #0093a7;
@@ -28,33 +30,34 @@ body {
 
 h1 {
     font-weight: normal;
-    font-size: 2.800em;
+    font-size: 48px;
     font-family: @fontSohoLight;
-    line-height: 1em;
-    margin: 0 0 25px 0;
+    line-height: 60px;
+    margin: 90px 0 0 0;
     color: @colorDarkBlue;
+    border-bottom: 2px solid @colorDarkBlue;
+    padding-bottom: 25px;
 }
 
 .ingress {
-    margin-bottom: 25px;
-    font-size: 1.579em;
+    margin: 40px 0 0 0;
+    font-size: 26px;
+    line-height: 30px;
     font-family: @fontCalibri;
 }
 
 h2 {
-    font-weight: normal;
     font-size: 36px;
+    line-height: 42px;
     font-family: @fontSohoLight;
-    margin-bottom: 16px;
-    margin-top: 37px;
+    margin: 70px 0 0 0;
 }
 
 h3 {
-    font-weight: normal;
-    font-size: 22px;
-    font-family: @fontSohoLight;
-    margin: 0;
-    line-height: 35px;
+    font-size: 28px;
+    font-family: @fontSohoRegular;
+    margin: 55px 0 0 0;
+    line-height: 34px;
 }
 
 h4 {
@@ -68,11 +71,11 @@ h5 {
     font-size: 18px;
 }
 
-ol.broedsmulesti {
-    margin-bottom: 25px;
+p {
+    margin: 16px 0 0 0;
 }
 
-p, ul {
+ul {
     margin-bottom: 24px;
 }
 
@@ -94,10 +97,6 @@ a {
     &:visited {
         color: @colorMediumBlaa;
         text-decoration: underline;
-    }
-
-    h2 {
-        margin: 0;
     }
 
     p {
@@ -293,9 +292,10 @@ footer {
     background: white;
 }
 
-.broedsmulesti {
+.breadcrumbs {
     padding: 0;
     list-style-type: none;
+    margin: 25px 0 0 0;
 
     li {
         display: block;
@@ -313,6 +313,8 @@ footer {
 
     a {
         text-decoration: underline;
+        font-family: @fontCalibri;
+        font-size: 18px;
     }
 
         a:visited {
@@ -428,7 +430,6 @@ footer {
         display: inline-block;
         border-radius: 3px 3px 0px 0px;
         font-size: 16px;
-        font-weight: 600;
         color: #4c4c4c;
         transition: all linear 0.15s;
         background: white;
@@ -464,30 +465,47 @@ footer {
     }
 }
 
-.tabs-statistikk {
-    .tab-content {
-        padding: 15px 0 0 0;
+.tabs-statistics {
+    .tab-links {
+        padding-left: 20px;
+
+        li {
+            margin-right: 10px;
+            width: 170px;
+            text-align: center;
+
+            &.active {
+                border: none;
+                background: white;
+            }
+
+                &.active a {
+                    background: white;
+                    color: @colorDarkBlue;
+                }
+
+            a {
+                width: 100%;
+                background: @colorDarkGray;
+                color: white;
+                padding: 0 30px 0 20px;
+                border-radius: 0;
+            }
+        }
     }
 
-    #statistikktab1 {
-        p {
-            text-align: center;
-            color: @colorMorkBlaa;
+    .tab-content {
+        background: white;
+        border: none;
+        border-radius: 0;
 
-            .nokkeltall {
-                font-size: 300%;
-            }
+        li a {
+            color: @colorDarkBlue;
         }
+    }
 
-        h4 {
-            padding: 0 15px 0 15px;
-            background: @colorMorkBlaa;
-            color: white;
-
-            i {
-                color: @colorOrange;
-            }
-        }
+    .tabs {
+        margin-bottom: 50px;
     }
 }
 
@@ -1146,7 +1164,7 @@ video {
     /*border-bottom: 1px solid @colorLysGraa;*/
     margin-bottom: 30px;
     background: @colorLysLysGraa;
-    padding-top: 30px;
+    padding-top: 85px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 50px;
@@ -1155,27 +1173,6 @@ video {
         background: #ffffff;
         padding: 0;
         margin-top: 55px;
-
-        .tab-content {
-            ul {
-                padding: 0 10px 0 10px;
-
-                @media only screen and (max-width:600px) {
-                    padding: 0; margin: 0;
-                }
-
-                li {
-                    margin-left: 0;
-                    padding: 15px 0;
-
-                    @media only screen and (min-width:900px) {
-                        &:last-of-type {
-                            border-bottom: 0;
-                        }
-                    }
-                }
-            }
-        }
     }
     /*----- Tab Links -----*/
     /* Clearfix */
@@ -1191,14 +1188,19 @@ video {
         }
 
         li {
-            margin: 0 10px 0 0;
+            margin: 0 15px 0 0;
             float: left;
             list-style: none;
+            width: 190px;
+            height: 40px;
+            text-align: center;
 
             a {
                 background-color: @colorDarkBlue;
                 border-radius: 0;
                 color: #ffffff;
+                font-family: @fontCalibri;
+                width: 100%;
             }
 
             &.active a, &.active a:hover {
@@ -1208,8 +1210,15 @@ video {
 
             &.active {
                 border: none !important;
+                font-family: @fontCalibriBold;
+                font-size: 20px;
                 /*border: 2px solid #EBEEEF;
             border-bottom: 0;*/
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
             }
         }
 
@@ -1232,12 +1241,16 @@ video {
     }
     /*----- Content of Tabs -----*/
     .tab-content {
-        padding: 15px;
         border-top: none !important;
         border-radius: 3px;
+        margin: 55px 0 85px 0;
 
         li {
             list-style-type: none;
+            border-bottom: 0,5px solid #a7a9ab;
+            font-family: @fontCalibri;
+            font-size: 20px;
+            font-weight: 45px;
 
             a, a:visited, a:hover {
                 color: @colorMorkBlaa;
@@ -1245,7 +1258,7 @@ video {
         }
     }
 
-    .tabs-statistikk {
+    .tabs-statistics {
         .tab-content {
             padding: 15px 0 0 0;
         }
@@ -1660,7 +1673,6 @@ header {
             position: relative;
             margin-left: 12px;
             margin-bottom: 15px;
-            top: 50%;
 
             p {
                 margin: 0;
@@ -1820,7 +1832,7 @@ footer {
         border-radius: 3px;
         margin: 20px 0 20px 0;
 
-        h3 {
+        span {
             background: white;
             color: black;
             border-radius: 3px;
@@ -1861,8 +1873,13 @@ footer {
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
-    padding: 5px 15px 5px 15px;
+    padding: 10px 20px 10px 15px;
     background: white;
+    margin: 30px 0 30px 0;
+    font-family: @fontCalibri;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 240px;
 
     &:before {
         float: left;
@@ -1968,7 +1985,7 @@ footer {
         background: @colorLightGray;
     }
 
-    .broedsmulesti {
+    .breadcrumbs {
         li {
             display: none;
 

@@ -12,30 +12,31 @@ body {
 }
 h1 {
   font-weight: normal;
-  font-size: 2.800em;
+  font-size: 48px;
   font-family: "soho gothic pro light";
-  line-height: 1em;
-  margin: 0 0 25px 0;
+  line-height: 60px;
+  margin: 90px 0 0 0;
   color: #004e66;
+  border-bottom: 2px solid #004e66;
+  padding-bottom: 25px;
 }
 .ingress {
-  margin-bottom: 25px;
-  font-size: 1.579em;
+  margin: 40px 0 0 0;
+  font-size: 26px;
+  line-height: 30px;
   font-family: 'Calibri';
 }
 h2 {
-  font-weight: normal;
   font-size: 36px;
+  line-height: 42px;
   font-family: "soho gothic pro light";
-  margin-bottom: 16px;
-  margin-top: 37px;
+  margin: 70px 0 0 0;
 }
 h3 {
-  font-weight: normal;
-  font-size: 22px;
-  font-family: "soho gothic pro light";
-  margin: 0;
-  line-height: 35px;
+  font-size: 28px;
+  font-family: "soho gothic pro regular";
+  margin: 55px 0 0 0;
+  line-height: 34px;
 }
 h4 {
   font-weight: normal;
@@ -46,10 +47,9 @@ h5 {
   font-weight: normal;
   font-size: 18px;
 }
-ol.broedsmulesti {
-  margin-bottom: 25px;
+p {
+  margin: 16px 0 0 0;
 }
-p,
 ul {
   margin-bottom: 24px;
 }
@@ -69,9 +69,6 @@ a {
 a:visited {
   color: #0093a7;
   text-decoration: underline;
-}
-a h2 {
-  margin: 0;
 }
 a p {
   margin: 0 0 50px 0;
@@ -241,25 +238,28 @@ footer.rammeverk a:visited {
   max-height: 44px;
   background: white;
 }
-.broedsmulesti {
+.breadcrumbs {
   padding: 0;
   list-style-type: none;
+  margin: 25px 0 0 0;
 }
-.broedsmulesti li {
+.breadcrumbs li {
   display: block;
   float: left;
   padding-right: 0.3rem;
 }
-.broedsmulesti li:after {
+.breadcrumbs li:after {
   content: ' <';
 }
-.broedsmulesti li:last-child:after {
+.breadcrumbs li:last-child:after {
   content: '';
 }
-.broedsmulesti a {
+.breadcrumbs a {
   text-decoration: underline;
+  font-family: 'Calibri';
+  font-size: 18px;
 }
-.broedsmulesti a:visited {
+.breadcrumbs a:visited {
   color: #004e66;
 }
 .menylinje a {
@@ -355,7 +355,6 @@ footer.rammeverk a:visited {
   display: inline-block;
   border-radius: 3px 3px 0px 0px;
   font-size: 16px;
-  font-weight: 600;
   color: #4c4c4c;
   transition: all linear 0.15s;
   background: white;
@@ -388,23 +387,39 @@ footer.rammeverk a:visited {
 .tab-content a:hover {
   color: #004e66;
 }
-.tabs-statistikk .tab-content {
-  padding: 15px 0 0 0;
+.tabs-statistics .tab-links {
+  padding-left: 20px;
 }
-.tabs-statistikk #statistikktab1 p {
+.tabs-statistics .tab-links li {
+  margin-right: 10px;
+  width: 170px;
   text-align: center;
+}
+.tabs-statistics .tab-links li.active {
+  border: none;
+  background: white;
+}
+.tabs-statistics .tab-links li.active a {
+  background: white;
   color: #004e66;
 }
-.tabs-statistikk #statistikktab1 p .nokkeltall {
-  font-size: 300%;
-}
-.tabs-statistikk #statistikktab1 h4 {
-  padding: 0 15px 0 15px;
-  background: #004e66;
+.tabs-statistics .tab-links li a {
+  width: 100%;
+  background: #aeaba8;
   color: white;
+  padding: 0 30px 0 20px;
+  border-radius: 0;
 }
-.tabs-statistikk #statistikktab1 h4 i {
-  color: #df9922;
+.tabs-statistics .tab-content {
+  background: white;
+  border: none;
+  border-radius: 0;
+}
+.tabs-statistics .tab-content li a {
+  color: #004e66;
+}
+.tabs-statistics .tabs {
+  margin-bottom: 50px;
 }
 .dropdown-statistikk select {
   width: 40%;
@@ -939,7 +954,7 @@ video {
   /*border-bottom: 1px solid @colorLysGraa;*/
   margin-bottom: 30px;
   background: #dbdcdd;
-  padding-top: 30px;
+  padding-top: 85px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 50px;
@@ -952,24 +967,6 @@ video {
   padding: 0;
   margin-top: 55px;
 }
-.toppmeny .inner .tab-content ul {
-  padding: 0 10px 0 10px;
-}
-@media only screen and (max-width: 600px) {
-  .toppmeny .inner .tab-content ul {
-    padding: 0;
-    margin: 0;
-  }
-}
-.toppmeny .inner .tab-content ul li {
-  margin-left: 0;
-  padding: 15px 0;
-}
-@media only screen and (min-width: 900px) {
-  .toppmeny .inner .tab-content ul li:last-of-type {
-    border-bottom: 0;
-  }
-}
 .toppmeny .tab-links {
   margin: 0;
   margin-top: -53px;
@@ -981,14 +978,19 @@ video {
   content: '';
 }
 .toppmeny .tab-links li {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
   float: left;
   list-style: none;
+  width: 190px;
+  height: 40px;
+  text-align: center;
 }
 .toppmeny .tab-links li a {
   background-color: #004e66;
   border-radius: 0;
   color: #ffffff;
+  font-family: 'Calibri';
+  width: 100%;
 }
 .toppmeny .tab-links li.active a,
 .toppmeny .tab-links li.active a:hover {
@@ -997,8 +999,14 @@ video {
 }
 .toppmeny .tab-links li.active {
   border: none !important;
+  font-family: 'Calibri bold';
+  font-size: 20px;
   /*border: 2px solid #EBEEEF;
             border-bottom: 0;*/
+}
+.toppmeny .tab-links li input {
+  width: 100%;
+  height: 100%;
 }
 .toppmeny .tab-links a {
   padding: 9px 15px;
@@ -1017,34 +1025,38 @@ video {
   color: black !important;
 }
 .toppmeny .tab-content {
-  padding: 15px;
   border-top: none !important;
   border-radius: 3px;
+  margin: 55px 0 85px 0;
 }
 .toppmeny .tab-content li {
   list-style-type: none;
+  border-bottom: 0,5px solid #a7a9ab;
+  font-family: 'Calibri';
+  font-size: 20px;
+  font-weight: 45px;
 }
 .toppmeny .tab-content li a,
 .toppmeny .tab-content li a:visited,
 .toppmeny .tab-content li a:hover {
   color: #004e66;
 }
-.toppmeny .tabs-statistikk .tab-content {
+.toppmeny .tabs-statistics .tab-content {
   padding: 15px 0 0 0;
 }
-.toppmeny .tabs-statistikk #statistikktab1 p {
+.toppmeny .tabs-statistics #statistikktab1 p {
   text-align: center;
   color: #004e66;
 }
-.toppmeny .tabs-statistikk #statistikktab1 p .nokkeltall {
+.toppmeny .tabs-statistics #statistikktab1 p .nokkeltall {
   font-size: 300%;
 }
-.toppmeny .tabs-statistikk #statistikktab1 h4 {
+.toppmeny .tabs-statistics #statistikktab1 h4 {
   padding: 0 15px 0 15px;
   background: #004e66;
   color: white;
 }
-.toppmeny .tabs-statistikk #statistikktab1 h4 i {
+.toppmeny .tabs-statistics #statistikktab1 h4 i {
   color: #df9922;
 }
 @media only screen and (max-width: 600px) {
@@ -1368,7 +1380,6 @@ header .links {
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
-  top: 41%;
 }
 .entrancebutton a .innerDiv p {
   margin: 0;
@@ -1499,7 +1510,7 @@ footer .tabs {
   border-radius: 3px;
   margin: 20px 0 20px 0;
 }
-.footerlinkswrapper .socialmedia h3 {
+.footerlinkswrapper .socialmedia span {
   background: white;
   color: black;
   border-radius: 3px;
@@ -1532,8 +1543,13 @@ footer .tabs {
 .calltoaction {
   border: 2px solid #004e66;
   color: #004e66;
-  padding: 5px 15px 5px 15px;
+  padding: 10px 20px 10px 15px;
   background: white;
+  margin: 30px 0 30px 0;
+  font-family: 'Calibri';
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 240px;
 }
 .calltoaction:before {
   float: left;
@@ -1616,13 +1632,13 @@ footer .tabs {
   .transportsideknapp {
     background: #f2f2f2;
   }
-  .broedsmulesti li {
+  .breadcrumbs li {
     display: none;
   }
-  .broedsmulesti li:last-child {
+  .breadcrumbs li:last-child {
     display: block;
   }
-  .broedsmulesti li:last-child:before {
+  .breadcrumbs li:last-child:before {
     content: '< ';
   }
   #statistikktab2 table,
