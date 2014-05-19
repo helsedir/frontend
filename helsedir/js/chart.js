@@ -12,7 +12,7 @@ function drawChart() {
     ]);
 
     var options = {
-        vAxis: { minValue: 0, maxValue: 60, title: "Antall dager" },
+        vAxis: { minValue: 0, maxValue: 60, title: "Antall dager", ticks: [0, 10, 20, 30, 40, 50, 60] },
         'chartArea': { 'width': '75%', 'height': '80%', 'left': '5%' }
     };
 

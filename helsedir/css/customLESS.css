@@ -43,6 +43,11 @@ h4 {
   font-size: 20px;
   font-family: "soho gothic pro light";
 }
+h4.accordion {
+  margin: 55px 0 0 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #004e66;
+}
 h5 {
   font-weight: normal;
   font-size: 18px;
@@ -164,7 +169,7 @@ footer.rammeverk a:visited {
 .has-hidden-content h2:before,
 .has-hidden-content .accordion:before {
   float: left;
-  padding-right: 10px;
+  padding: 0 15px 0 15px;
   content: "\f078";
   font-family: "FontAwesome";
 }
@@ -174,7 +179,7 @@ footer.rammeverk a:visited {
 .has-visible-content h2:before,
 .has-visible-content .accordion:before {
   float: left;
-  padding-right: 10px;
+  padding: 0 15px 0 15px;
   content: "\f077";
   font-family: "FontAwesome";
 }
@@ -328,63 +333,71 @@ footer.rammeverk a:visited {
   height: 100%;
   width: 100%;
   display: inline-block;
+  /*----- Content of Tabs -----*/
 }
-.tab-links {
+.tabs .tab-links {
   margin: 0;
+  padding-left: 20px;
 }
-.tab-links:after {
+.tabs .tab-links:after {
   display: block;
   clear: both;
   content: '';
 }
-.tab-links li {
+.tabs .tab-links li {
   margin: 0;
   float: left;
   list-style: none;
-}
-.tab-links li.active a,
-.tab-links li.active a:hover {
-  color: #4c4c4c;
-}
-.tab-links li.active {
-  border: 2px solid #EBEEEF;
-  border-bottom: 0;
-}
-.tab-links a {
-  padding: 9px 15px;
-  display: inline-block;
-  border-radius: 3px 3px 0px 0px;
-  font-size: 16px;
-  color: #4c4c4c;
+  background: #aeaba8;
+  margin-right: 10px;
+  width: 170px;
+  text-align: center;
   transition: all linear 0.15s;
+}
+.tabs .tab-links li.active {
+  border: none;
   background: white;
 }
-.tab-links a:hover,
-.tab-links a:focus {
+.tabs .tab-links li.active a {
+  color: black;
+}
+.tabs .tab-links li:hover,
+.tabs .tab-links li:focus {
   background: #a7cce5;
-  text-decoration: none;
   color: black !important;
 }
-/*----- Content of Tabs -----*/
-.tab-content {
+.tabs .tab-links a {
+  display: inline-block;
+  font-size: 16px;
+  transition: all linear 0.15s;
+  width: 100%;
+  padding: 0 30px 0 20px;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+}
+.tabs .tab-links a:hover,
+.tabs .tab-links a:focus {
+  color: black !important;
+}
+.tabs .tab-content {
   padding: 15px;
-  border-top: 2px solid #EBEEEF;
   border-radius: 3px;
 }
-.tab-content li {
+.tabs .tab-content li {
   list-style-type: none;
   margin-left: 0;
   padding: 15px 0;
   border-bottom: solid 1px #b2babc;
 }
 @media only screen and (min-width: 900px) {
-  .tab-content li:last-of-type {
+  .tabs .tab-content li:last-of-type {
     border-bottom: 0;
   }
 }
-.tab-content a,
-.tab-content a:visited,
-.tab-content a:hover {
+.tabs .tab-content a,
+.tabs .tab-content a:visited,
+.tabs .tab-content a:hover {
   color: #004e66;
 }
 .tabs-statistics {
@@ -412,6 +425,12 @@ footer.rammeverk a:visited {
   color: white;
   padding: 0 30px 0 20px;
   border-radius: 0;
+}
+.tabs-statistics .tab-links li a:hover,
+.tabs-statistics .tab-links li a:focus {
+  background: #a7cce5;
+  text-decoration: none;
+  color: black !important;
 }
 .tabs-statistics .tab-content {
   background: white;
@@ -1430,37 +1449,38 @@ header .links {
 footer .map {
   height: 500px;
 }
-footer .tab-links {
+footer .tabs {
+  margin-bottom: 50px;
+}
+footer .tabs .tab-links {
   padding-left: 20px;
   margin-top: -37px;
 }
-footer .tab-links li {
+footer .tabs .tab-links li {
   margin-right: 10px;
+  background: #004e66;
 }
-footer .tab-links li.active {
+footer .tabs .tab-links li.active {
   border: none;
   background: white;
 }
-footer .tab-links li.active a {
+footer .tabs .tab-links li.active a {
   background: white;
   color: #004e66;
 }
-footer .tab-links a {
+footer .tabs .tab-links a {
   background: #004e66;
   color: white;
   padding: 0 30px 0 20px;
   border-radius: 0;
 }
-footer .tab-content {
+footer .tabs .tab-content {
   background: white;
   border: none;
   border-radius: 0;
 }
-footer .tab-content li a {
+footer .tabs .tab-content li a {
   color: #004e66;
-}
-footer .tabs {
-  margin-bottom: 50px;
 }
 .footerwrapper {
   background: #f2f2f2;
