@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
+    <title>Prioriteringsveileder - Fordøyelsessykdommer</title>
 		    <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/easy-responsive-tabs.css" rel="stylesheet" />
@@ -18,17 +41,17 @@
 	<div class="col-md-8">
   	<ol class="breadcrumbs">
     	<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
-      <li><a href="../">Nasjonale faglige retningslinjer</a></li>
+      <li class="active"><a href="../">Nasjonale faglige retningslinjer</a></li>
      </ol>
    </div>
 </div>
 
 	  		<article class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	<header>
-		<h1 id="sidetittel">Nasjonal faglig retningslinje for bruk av antibiotika i spesialishelsetjenesten</h1>
+		<h1 id="sidetittel">Prioriteringsveileder - Fordøyelsessykdommer</h1>
 	</header>
 	<section class="">
-	<form class="form-search form-horizontal clearfix" role="form">
+		<form class="form-search form-horizontal clearfix" role="form">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<label class="sr-only" for="">Søk i retningslinjene</label>
 			<div id="search_input" class="search_retningslinjer">
@@ -52,26 +75,12 @@
 	</dl>
 	<h2>Innhold i retningslinjen</h2>
 		<ul class="subsections">
-			<li><span class="subsectionLink"><a class="" href="#">Akutt</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="allment/">Allment</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Barn</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Forgiftninger</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Gynekologi og obsterikk</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Hjerte/kar</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Hud</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Infeksjoner</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Luftveier</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Mage/tarm</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Muskel/skjelett</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Nervesystemet</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Psykiatri</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Rusmidler</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Sykehjemsmedisin</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Urinveier</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Øre/nese/hals</a></span></li>
-			<li><span class="subsectionLink"><a class="" href="#">Øye</a></span></li>
+			<li><span class="subsectionLink"><a class="" href="prioriteringsveiledere/">Prioriteringsveiledere</a></span></li>
+			<li><span class="subsectionLink"><a class="" href="generelt/">Generelt</a></span></li>
 		</ul>
-	</section>
+	
+		</section>
+		
 </article>
 			</div>
 </div>

@@ -172,5 +172,8 @@ jQuery(document).ready(function() {
 	
 	window.localStorage.clear();
 	
+	
+	$(function () { $("[data-toggle='popover']").tooltip(); });
+	
    
 });

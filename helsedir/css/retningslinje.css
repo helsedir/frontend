@@ -3,10 +3,6 @@ body {
 	background-color: #f7f6f6;
 }
 
-#header {
-	background-color: #fff;
-}
-
 /* Fix for Bootstrap */
 .btn {
 	border-radius: 0px;
@@ -47,18 +43,21 @@ article h1, section h1 {
 }
 
 .form-search {
-	margin-bottom: 100px;
+	margin-top: 40px;
 }
 
 .search_retningslinjetittel {
 	font-size: 0.8em;
 	margin-left: 10px;
+	margin-top: 0px;
 }
 
 .twitter-typeahead { width: 100%; } 
 
 .guidelineInfo {
 	padding: 0.5em;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .guidelineInfo dt {
 	float: left;
@@ -193,8 +192,34 @@ article h1, section h1 {
 	font-size: 0.8em;
 }
 
+.recommendationGrading span {
+	padding-right: 20px;
+}
+
+.recommendationGrading.weak span {
+	background-color: #FFDC00;
+}
+
+.recommendationGrading.strong span {
+	background-color: green;
+}
+
+.recommendationGrading:after{
+	content: "\f05a"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+    top:1px;
+    right: 5px;  
+}
+
 .recommendation_text{
 	margin-top: 0.5em;
+	margin-bottom: 0.8em;
 }
 
 .recommendation_extras {
@@ -225,8 +250,12 @@ article h1, section h1 {
 }
 
 section header.section_heading h1 {
-	margin-top: 1em;
-	margin-bottom: 0.1em;
+	padding-bottom: 0px;
+	border-bottom: none;
+	font-size: 36px;
+	line-height: 42px;
+	font-family: "soho gothic pro light";
+	margin: 70px 0 0 0;
 }
 
 .shortcuts {
@@ -250,6 +279,9 @@ section.recommendation header h1 {
 	margin-bottom: 0.1em;
 	margin-right: 1.5em;
 	padding-top: 8px;
+	padding-bottom: 0px;
+	border-bottom: none;
+	
 }
 
 #local-nav.affix {
@@ -339,6 +371,10 @@ section.recommendation header h1 {
 	text-transform: uppercase;
 }
 
+h2.resp-accordion{
+	line-height: 1em;
+}
+
 
 @media screen and (max-width: 600px) {
 	/* PICO samkjør med guidelineInfo */
@@ -376,6 +412,8 @@ section.recommendation header h1 {
 	.subsections li {
 		border-bottom: 1px solid #ccc;
 	}
+	
+	
     
 }
 	

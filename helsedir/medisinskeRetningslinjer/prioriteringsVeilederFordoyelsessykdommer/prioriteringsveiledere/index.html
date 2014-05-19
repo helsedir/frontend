@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prioriteringsveiledere</title>
+		    <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/customLESS.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/retningslinje.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div id="header"></div>
+<div class="container">  
+		  <div class="row">
+	<div class="col-md-8">
+  	<ol class="breadcrumbs">
+    	<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
+      <li><a href="../../">Nasjonale faglige retningslinjer</a></li>
+      <li><a href="../">Nasjonal faglig retningslinje for spedbarnsernæring</a></li>
+     </ol>
+   </div>
+</div>
+<div class="row">
+
+	  		<section id="section1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	<header class="section_heading">
+  	<h1>Prioriteringsveiledere</h1>
+	</header>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Synlig GI-blødning med jernmangelanemi, alder > 40 år</h1>
+  <p>2 uker</p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>
+						Utredning av GI traktus mhp blødningsfokus, spesielt mht. malign sykdom, evt. andre blødningsårsaker
+					</li>
+					<li>
+						Endoskopier, evt. rtg., CT/MR modaliteter, scintigrai m.v.
+					</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>risikoen øker ved alder >45 år og særlig ved alder >55 år</li>
+					<li>arvelig disposisjon for colorectal neoplasi, herunder familiære typer av polyppsykdom</li>
+					<li>blødning over tid og observasjon av mørkt blod</li>
+					<li>allmennsymptomer, nedsatt matlyst og tretthet</li>
+					<li>vekttap</li>
+					<li>komorbiditet pga alvorlig sykdom i vitale organer, særlig kombinert med høy alder, vil gi økt komplikasjonsrisiko i forbindelse med diagnostikk og behandling</li>
+					<li>tidlig påvisning av eventuelt tarmkreft har betydning i forhold til overlevelse og palliasjon</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Synlig GI-blødning med jernmangelanemi, alder < 40 år og klinisk lav risiko for malignitet</h1>
+  <p>4 uker</p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>
+						Utredning av GI traktus mhp blødningsfokus, spesielt mht. malign sykdom, evt. andre blødningsårsaker
+					</li>
+					<li>
+						Endoskopier, evt. rtg., CT/MR modaliteter, scintigrai m.v.
+					</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>risikoen øker ved alder >45 år og særlig ved alder >55 år</li>
+					<li>arvelig disposisjon for colorectal neoplasi, herunder familiære typer av polyppsykdom</li>
+					<li>blødning over tid og observasjon av mørkt blod</li>
+					<li>allmennsymptomer, nedsatt matlyst og tretthet</li>
+					<li>vekttap</li>
+					<li>komorbiditet pga alvorlig sykdom i vitale organer, særlig kombinert med høy alder, vil gi økt komplikasjonsrisiko i forbindelse med diagnostikk og behandling</li>
+					<li>tidlig påvisning av eventuelt tarmkreft har betydning i forhold til overlevelse og palliasjon</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Friskt blod på toalettpapiret uten anemi eller jernmangel</h1>
+  <p>Ikke rett til prioritert helsehjelp</p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+			  <ul>
+			  	<li>Utredning</li>
+			  </ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis ikke å være alvorlig</dd>
+			<dd>Helsehjelpen anses sannsynligvis å være nyttig</dd>
+			<dd>Helsehjelpen anses under tvil å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>tumorsuspekt funn ved anorectalus hos primærlege</li>
+					<li>arvelig disposisjon for colorectal neoplasi, herunder familiære typer av polyppsykdom</li>
+					<li>nedsatt allmenntilstand</li>
+					<li>smerter, følelse av innkomplett tømming ved defekasjon</li>
+					<li>nyoppstått forstoppelse</li>
+					<li>strålebehandling av bekkenet</li>
+					<li>tidligere lignende episoder</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+</section>
+			</div>
+</div>
+<div id="footer">
+	
+	
+</div>
+
+
+		    <script src="http://helsedir.azurewebsites.net/js/jquery-1.11.0.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/modernizr-latest.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/sohoFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/calibriFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/headerFooterRetningslinje.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs2.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/typeahead.jquery.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/retningslinje.js"></script>
+	</body>
+</html>
