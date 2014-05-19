@@ -33,10 +33,10 @@ h1 {
     font-size: 48px;
     font-family: @fontSohoLight;
     line-height: 60px;
-    margin: 90px 0 0 0;
+    margin: 82px 0 0 0;
     color: @colorDarkBlue;
     border-bottom: 2px solid @colorDarkBlue;
-    padding-bottom: 25px;
+    padding-bottom: 21px;
 }
 
 .ingress {
@@ -216,7 +216,7 @@ footer {
 .has-hidden-content {
     cursor: pointer;
 
-    h2:before, .collapse:before {
+    h2:before, .accordion:before {
         float: left;
         padding-right: 10px;
         content: "\f078";
@@ -227,7 +227,7 @@ footer {
 .has-visible-content {
     cursor: pointer;
 
-    h2:before, .collapse:before {
+    h2:before, .accordion:before {
         float: left;
         padding-right: 10px;
         content: "\f077";
@@ -466,6 +466,8 @@ footer {
 }
 
 .tabs-statistics {
+    margin-top: 50px;
+
     .tab-links {
         padding-left: 20px;
 
@@ -1262,8 +1264,7 @@ video {
         .tab-content {
             padding: 15px 0 0 0;
         }
-
-        #statistikktab1 {
+        /*#statistikktab1 {
             p {
                 text-align: center;
                 color: @colorMorkBlaa;
@@ -1282,7 +1283,7 @@ video {
                     color: @colorOrange;
                 }
             }
-        }
+        }*/
     }
 }
 
@@ -2170,6 +2171,10 @@ iframe {
 
 @media braille {
     .toppmeny {
+        display: block !important;
+    }
+
+    .has-hidden-content div {
         display: block !important;
     }
 }

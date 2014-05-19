@@ -15,10 +15,10 @@ h1 {
   font-size: 48px;
   font-family: "soho gothic pro light";
   line-height: 60px;
-  margin: 90px 0 0 0;
+  margin: 82px 0 0 0;
   color: #004e66;
   border-bottom: 2px solid #004e66;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
 }
 .ingress {
   margin: 40px 0 0 0;
@@ -162,7 +162,7 @@ footer.rammeverk a:visited {
   cursor: pointer;
 }
 .has-hidden-content h2:before,
-.has-hidden-content .collapse:before {
+.has-hidden-content .accordion:before {
   float: left;
   padding-right: 10px;
   content: "\f078";
@@ -172,7 +172,7 @@ footer.rammeverk a:visited {
   cursor: pointer;
 }
 .has-visible-content h2:before,
-.has-visible-content .collapse:before {
+.has-visible-content .accordion:before {
   float: left;
   padding-right: 10px;
   content: "\f077";
@@ -386,6 +386,9 @@ footer.rammeverk a:visited {
 .tab-content a:visited,
 .tab-content a:hover {
   color: #004e66;
+}
+.tabs-statistics {
+  margin-top: 50px;
 }
 .tabs-statistics .tab-links {
   padding-left: 20px;
@@ -1041,23 +1044,11 @@ video {
 .toppmeny .tab-content li a:hover {
   color: #004e66;
 }
+.toppmeny .tabs-statistics {
+  /*# sourceMappingURL=customLESS.css.map */
+}
 .toppmeny .tabs-statistics .tab-content {
   padding: 15px 0 0 0;
-}
-.toppmeny .tabs-statistics #statistikktab1 p {
-  text-align: center;
-  color: #004e66;
-}
-.toppmeny .tabs-statistics #statistikktab1 p .nokkeltall {
-  font-size: 300%;
-}
-.toppmeny .tabs-statistics #statistikktab1 h4 {
-  padding: 0 15px 0 15px;
-  background: #004e66;
-  color: white;
-}
-.toppmeny .tabs-statistics #statistikktab1 h4 i {
-  color: #df9922;
 }
 @media only screen and (max-width: 600px) {
   .xs-no-padding {
@@ -1772,6 +1763,9 @@ iframe {
 }
 @media braille {
   .toppmeny {
+    display: block !important;
+  }
+  .has-hidden-content div {
     display: block !important;
   }
 }

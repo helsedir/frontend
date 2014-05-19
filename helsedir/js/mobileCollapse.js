@@ -17,7 +17,7 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('collapse')) {
+            if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion')) {
                 $contentToHide.removeClass('visuallyhidden');
                 $parentTag.removeClass('has-hidden-content');
             }

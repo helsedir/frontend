@@ -24,124 +24,81 @@
         <div class="row">
             <article class="col-md-12 col-lg-8">
 
-                <h1>Ventelistestatistikk for spesialhelsetjenesten</h1>
+                <h1>Ventetider</h1>
 
                 <section class="avsnitt">
-                    <h2>Norge 2014</h2>
+                    <h2>Norge oktober 2013 - mars 2014</h2>
 
                     <div class="tabs-statistics tabs">
                         <ul class="tab-links">
                             <li class="active"><a href="#statistikktab1">Oversikt</a></li>
-                            <li><a href="#statistikktab2">Tabell</a></li>
+                            <li><a href="#statistikktab2">Tabeller</a></li>
                             <li><a href="#statistikktab3">Om statistikken</a></li>
                         </ul>
                         <div class="tab-content">
                             <h3>Utvikling i median ventetid i antall dager, siste 6 måneder 2014</h3>
                             <div id="statistikktab1" class="tab active">
                                 <div id="chart_div"></div>
+                                <section class="statistics_description">
+                                    <h4 class="accordion">Hva betyr statistikken</h4>
+                                    <div></div>
+                                </section>
+                                <section class="statistics_description">
+                                    <h4 class="accordion">Se statistikken i en tabell</h4>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Oktober 2013</th>
+                                                    <th>November 2013</th>
+                                                    <th>Desember 2013</th>
+                                                    <th>Januar 2014</th>
+                                                    <th>Februar 2014</th>
+                                                    <th>Mars 2014</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td data-title="Somatikk">Somatikk</td>
+                                                <td data-title="Oktober 2013">49</td>
+                                                <td data-title="November 2013">49</td>
+                                                <td data-title="Desember 2013">44</td>
+                                                <td data-title="Januar 2014">56</td>
+                                                <td data-title="Februar 2014">52</td>
+                                                <td data-title="Mars 2014">52</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="VOP">VOP</td>
+                                                <td data-title="Oktober 2013">35</td>
+                                                <td data-title="November 2013">36</td>
+                                                <td data-title="Desember 2013">39</td>
+                                                <td data-title="Januar 2014">50</td>
+                                                <td data-title="Februar 2014">48</td>
+                                                <td data-title="Mars 2014">42</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="BUP">BUP</td>
+                                                <td data-title="Oktober 2013">35</td>
+                                                <td data-title="November 2013">36</td>
+                                                <td data-title="Desember 2013">39</td>
+                                                <td data-title="Januar 2014">50</td>
+                                                <td data-title="Februar 2014">48</td>
+                                                <td data-title="Mars 2014">42</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="RUS">RUS</td>
+                                                <td data-title="Oktober 2013">35</td>
+                                                <td data-title="November 2013">36</td>
+                                                <td data-title="Desember 2013">37</td>
+                                                <td data-title="Januar 2014">48</td>
+                                                <td data-title="Februar 2014">34</td>
+                                                <td data-title="Mars 2014">38</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </section>
                             </div>
                             <div id="statistikktab2" class="tab">
-                                <table class="table">
-                                    <!--                                        <thead>-->
-                                    <!--                                            <tr>-->
-                                    <!--                                                <th>Måned</th>-->
-                                    <!--                                                <th>Somatikk</th>-->
-                                    <!--                                                <th>VOP</th>-->
-                                    <!--                                                <th>BUP</th>-->
-                                    <!--                                                <th>RUS</th>-->
-                                    <!--                                            </tr>-->
-                                    <!--                                        </thead>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">okt</td>-->
-                                    <!--                                            <td data-title="Somatikk">49</td>-->
-                                    <!--                                            <td data-title="VOP">35</td>-->
-                                    <!--                                            <td data-title="BUP">35</td>-->
-                                    <!--                                            <td data-title="RUS">35</td>-->
-                                    <!--                                        </tr>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">nov</td>-->
-                                    <!--                                            <td data-title="Somatikk">49</td>-->
-                                    <!--                                            <td data-title="VOP">35</td>-->
-                                    <!--                                            <td data-title="BUP">36</td>-->
-                                    <!--                                            <td data-title="RUS">36</td>-->
-                                    <!--                                        </tr>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">des</td>-->
-                                    <!--                                            <td data-title="Somatikk">44</td>-->
-                                    <!--                                            <td data-title="VOP">35</td>-->
-                                    <!--                                            <td data-title="BUP">39</td>-->
-                                    <!--                                            <td data-title="RUS">37</td>-->
-                                    <!--                                        </tr>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">jan</td>-->
-                                    <!--                                            <td data-title="Somatikk">56</td>-->
-                                    <!--                                            <td data-title="VOP">48</td>-->
-                                    <!--                                            <td data-title="BUP">50</td>-->
-                                    <!--                                            <td data-title="RUS">48</td>-->
-                                    <!--                                        </tr>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">feb</td>-->
-                                    <!--                                            <td data-title="Somatikk">52</td>-->
-                                    <!--                                            <td data-title="VOP">34</td>-->
-                                    <!--                                            <td data-title="BUP">48</td>-->
-                                    <!--                                            <td data-title="RUS">34</td>-->
-                                    <!--                                        </tr>-->
-                                    <!--                                        <tr>-->
-                                    <!--                                            <td data-title="Måned">mar</td>-->
-                                    <!--                                            <td data-title="Somatikk">47</td>-->
-                                    <!--                                            <td data-title="VOP">38</td>-->
-                                    <!--                                            <td data-title="BUP">42</td>-->
-                                    <!--                                            <td data-title="RUS">38</td>-->
-                                    <!--                                        </tr>-->
-
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Oktober 2013</th>
-                                            <th>November 2013</th>
-                                            <th>Desember 2013</th>
-                                            <th>Januar 2014</th>
-                                            <th>Februar 2014</th>
-                                            <th>Mars 2014</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td data-title="Somatikk">Somatikk</td>
-                                        <td data-title="Oktober 2013">49</td>
-                                        <td data-title="November 2013">49</td>
-                                        <td data-title="Desember 2013">44</td>
-                                        <td data-title="Januar 2014">56</td>
-                                        <td data-title="Februar 2014">52</td>
-                                        <td data-title="Mars 2014">52</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="VOP">VOP</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">39</td>
-                                        <td data-title="Januar 2014">50</td>
-                                        <td data-title="Februar 2014">48</td>
-                                        <td data-title="Mars 2014">42</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="BUP">BUP</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">39</td>
-                                        <td data-title="Januar 2014">50</td>
-                                        <td data-title="Februar 2014">48</td>
-                                        <td data-title="Mars 2014">42</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="RUS">RUS</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">37</td>
-                                        <td data-title="Januar 2014">48</td>
-                                        <td data-title="Februar 2014">34</td>
-                                        <td data-title="Mars 2014">38</td>
-                                    </tr>
-                                </table>
                             </div>
                             <div id="statistikktab3" class="tab">
                             </div>
@@ -163,89 +120,6 @@
                         </div>
                     </aside>
                 </section>
-                <!--                <section class="avsnitt statistics">-->
-                <!--                    <h2>Flere indikatorer</h2>-->
-                <!--                    <div>-->
-                <!--                        <h3>DRG-poeng</h3>-->
-                <!--                        <table>-->
-                <!--                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>-->
-                <!--                            <thead>-->
-                <!--                                <tr>-->
-                <!--                                    <th></th>-->
-                <!--                                    <th>Antall</th>-->
-                <!--                                    <th colspan="2">Endring samme periode som i fjor</th>-->
-                <!--                                </tr>-->
-                <!--                            </thead>-->
-                <!--                            <tbody>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Totalt</td>-->
-                <!--                                    <td>15 713</td>-->
-                <!--                                    <td>3,6 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
-                <!--                                </tr>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Per 1000 innbyggere</td>-->
-                <!--                                    <td>86</td>-->
-                <!--                                    <td>2,3 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
-                <!--                                </tr>-->
-                <!--                            </tbody>-->
-                <!--                        </table>-->
-                <!--                        <h3><img src="../img/statistikk_icon1.png" /> Innleggelser</h3>-->
-                <!--                        <table>-->
-                <!--                            <caption>Alle tabeller må ha en Caption tag som beskriver kort hva som er i tabellen.</caption>-->
-                <!--                            <thead>-->
-                <!--                                <tr>-->
-                <!--                                    <th></th>-->
-                <!--                                    <th>Antall</th>-->
-                <!--                                    <th colspan="2">Endring samme periode som i fjor</th>-->
-                <!--                                </tr>-->
-                <!--                            </thead>-->
-                <!--                            <tbody>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Totalt</td>-->
-                <!--                                    <td>15 333</td>-->
-                <!--                                    <td>5,6 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
-                <!--                                </tr>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Per 1000 innbyggere</td>-->
-                <!--                                    <td>84</td>-->
-                <!--                                    <td>4,2 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-up"></span></td>-->
-                <!--                                </tr>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Dager som utskrivingsklar = 0</td>-->
-                <!--                                    <td>38</td>-->
-                <!--                                    <td>-15,6 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-down"></span></td>-->
-                <!--                                </tr>-->
-                <!--                                <tr>-->
-                <!--                                    <td>Dager som utskrivingsklar > 0</td>-->
-                <!--                                    <td>309</td>-->
-                <!--                                    <td>6,2 %</td>-->
-                <!--                                    <td><span class="fa fa-arrow-down"></span></td>-->
-                <!--                                </tr>-->
-                <!--                            </tbody>-->
-                <!--                        </table>-->
-                <!--                        <h3><img src="../img/statistikk_icon2.png" />Akuttinnleggelser</h3>-->
-                <!--                        <h3> <img src="../img/statistikk_icon3.png" />Konsultasjoner i poliklinikk</h3>-->
-                <!--                        <h3>Om statistikken</h3>-->
-                <!---->
-                <!--                        <aside class="aside">-->
-                <!--                            <div class="borderbox">-->
-                <!--                                <p>Tallene publiseres hvert tertial</p>-->
-                <!--                                <p>Neste publisering</p>-->
-                <!--                                <p>1.april 2014</p>-->
-                <!--                            </div>-->
-                <!--                            <div class="borderbox">-->
-                <!--                                <p>Hva betyr disse tallene?</p>-->
-                <!--                                <p>Rapporten Samhandlingsstatistikk2013 vil hjelpe deg å forstå og bruke tall riktig</p>-->
-                <!--                                <a href="#">Last ned rapporten Samhandlingsstatistikk 2013</a>-->
-                <!--                            </div>-->
-                <!--                        </aside>-->
-                <!--                    </div>-->
-                <!--                </section>-->
             </article>
         </div>
     </div>

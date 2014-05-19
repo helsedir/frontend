@@ -3,17 +3,16 @@ google.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
       ['Måned', 'Somatikk', 'VOP', 'BUP', 'RUS'],
-     ['okt', 49, 35, 35, 35],
+      ['okt', 49, 35, 35, 35],
       ['nov', 49, 35, 36, 36],
       ['des', 44, 35, 39, 37],
       ['jan', 56, 48, 50, 48],
       ['feb', 52, 34, 48, 34],
       ['mar', 47, 38, 42, 38]
-
     ]);
 
     var options = {
-        vAxis: { minValue: 0, maxValue: 80, title: "Antall dager" },
+        vAxis: { minValue: 0, maxValue: 60, title: "Antall dager" },
         'chartArea': { 'width': '75%', 'height': '80%', 'left': '5%' }
     };
 

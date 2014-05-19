@@ -1,5 +1,5 @@
 ﻿$(function () {
-    $(".collapse").each(function () {
+    $(".accordion").each(function () {
         $sectionheader = $(this);
         $sectioncontent = $sectionheader.next();
         $headerparent = $sectionheader.parent();
@@ -8,7 +8,7 @@
     });
 });
 
-$(".collapse").click(function () {
+$(".accordion").click(function () {
     $sectionheader = $(this);
     $sectioncontent = $sectionheader.next();
     $headerparent = $sectionheader.parent();
