@@ -865,12 +865,15 @@ video {
   width: 386px;
   margin-top: 70px;
 }
+.aside h2 {
+  margin: 0;
+}
 @media only screen and (min-width: 1200px) {
   .aside {
     top: 0;
     right: 0;
     position: absolute;
-    margin-right: -54%;
+    margin-right: -50%;
   }
   .personmodul.kontakt {
     bottom: 0;
