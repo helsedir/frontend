@@ -1343,8 +1343,7 @@ header .links {
   }
 }
 .mainentrance {
-  background: url('../img/forside_bakgrunn2.png');
-  background: url('../img/forside_bakgrunn2.svg'), none;
+  background: url('../img/forside_bakgrunn%20abstrahert.svg');
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: auto,cover;
