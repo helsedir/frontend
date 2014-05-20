@@ -8,7 +8,6 @@ $(document).ready(function () {
     expandedContent.hide();
 
     expander.on('click', function () {
-        $('.hidden-mobile').hide();
         $('.js-expanded').not(this).removeClass('js-expanded');
 
         if (expandedContent.is(":visible")) {
