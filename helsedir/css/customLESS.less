@@ -1525,29 +1525,6 @@ header {
     background-color: #ffffff;
 }
 
-.menubar {
-    margin-top: 50px;
-
-    .menyknapp {
-        cursor: pointer;
-        padding: 20px;
-        background: #dbdcdd;
-        color: black;
-        text-align: center;
-        transition: all 0.5s;
-        width: 250px;
-        position: relative;
-        top: 67%;
-        border-radius: 3px;
-
-        &.js-expanded {
-            background-color: #dbdcdd;
-            color: black;
-            padding-bottom: 65px;
-        }
-    }
-}
-
 .menubutton {
     width: 150px;
     min-height: 40px;
@@ -1670,11 +1647,27 @@ header {
     float: left;
     position: relative;
 
-    &.menu {
-        background: none;
+    .menu {
+        cursor: pointer;
+        background: #dbdcdd;
+        transition: all 0.5s;
+        border-radius: 3px;
+
+        .innerDiv {
+            color: black;
+            margin-top: 40%;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        &.js-expanded {
+            background-color: #dbdcdd;
+            color: black;
+            padding-bottom: 65px;
+        }
     }
 
-    a {
+    a, .menu {
         height: 100%;
         width: 100%;
         display: inline-block;
@@ -1705,46 +1698,6 @@ header {
         &:hover {
             h2 {
                 text-decoration: underline;
-            }
-        }
-    }
-
-    &.menuandsearch {
-        background: none;
-
-        .menubutton {
-            position: relative;
-            top: 56%;
-            width: 100%;
-            margin-right: auto;
-
-            input {
-                margin-bottom: 10px;
-                height: 39px;
-                width: 100%;
-                padding: 0 35px 0 5px;
-                border-radius: 3px;
-                border: 1px solid @colorDarkBlue;
-                vertical-align: middle;
-                background: url('../img/search_icon.png') right center no-repeat;
-                background-size: auto 100%;
-                background-color: #ffffff;
-            }
-
-            span.menyknapp {
-                border-radius: 3px;
-                background-color: @colorDarkBlue;
-                vertical-align: middle;
-                padding: 7px 10px 7px 10px;
-                color: #ffffff;
-                font-weight: normal;
-                transition: all 0.5s;
-            }
-
-            span.js-expanded {
-                padding-bottom: 74px;
-                background-color: #dbdcdd;
-                color: black;
             }
         }
     }

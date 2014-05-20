@@ -1240,26 +1240,6 @@ header .links {
   background-size: auto 100%;
   background-color: #ffffff;
 }
-.menubar {
-  margin-top: 50px;
-}
-.menubar .menyknapp {
-  cursor: pointer;
-  padding: 20px;
-  background: #dbdcdd;
-  color: black;
-  text-align: center;
-  transition: all 0.5s;
-  width: 250px;
-  position: relative;
-  top: 67%;
-  border-radius: 3px;
-}
-.menubar .menyknapp.js-expanded {
-  background-color: #dbdcdd;
-  color: black;
-  padding-bottom: 65px;
-}
 .menubutton {
   width: 150px;
   min-height: 40px;
@@ -1367,71 +1347,57 @@ header .links {
   float: left;
   position: relative;
 }
-.entrancebutton.menu {
-  background: none;
+.entrancebutton .menu {
+  cursor: pointer;
+  background: #dbdcdd;
+  transition: all 0.5s;
+  border-radius: 3px;
 }
-.entrancebutton a {
+.entrancebutton .menu .innerDiv {
+  color: black;
+  margin-top: 40%;
+  text-align: center;
+  margin-right: 10px;
+}
+.entrancebutton .menu.js-expanded {
+  background-color: #dbdcdd;
+  color: black;
+  padding-bottom: 65px;
+}
+.entrancebutton a,
+.entrancebutton .menu {
   height: 100%;
   width: 100%;
   display: inline-block;
   color: white;
 }
-.entrancebutton a .innerDiv {
+.entrancebutton a .innerDiv,
+.entrancebutton .menu .innerDiv {
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.entrancebutton a .innerDiv p {
+.entrancebutton a .innerDiv p,
+.entrancebutton .menu .innerDiv p {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 25px;
 }
-.entrancebutton a .innerDiv h2 {
+.entrancebutton a .innerDiv h2,
+.entrancebutton .menu .innerDiv h2 {
   margin-bottom: 5px;
   font-size: 30px;
 }
 .entrancebutton a:visited,
-.entrancebutton a:hover {
+.entrancebutton .menu:visited,
+.entrancebutton a:hover,
+.entrancebutton .menu:hover {
   color: white;
 }
-.entrancebutton a:hover h2 {
+.entrancebutton a:hover h2,
+.entrancebutton .menu:hover h2 {
   text-decoration: underline;
-}
-.entrancebutton.menuandsearch {
-  background: none;
-}
-.entrancebutton.menuandsearch .menubutton {
-  position: relative;
-  top: 56%;
-  width: 100%;
-  margin-right: auto;
-}
-.entrancebutton.menuandsearch .menubutton input {
-  margin-bottom: 10px;
-  height: 39px;
-  width: 100%;
-  padding: 0 35px 0 5px;
-  border-radius: 3px;
-  border: 1px solid #004e66;
-  vertical-align: middle;
-  background: url('../img/search_icon.png') right center no-repeat;
-  background-size: auto 100%;
-  background-color: #ffffff;
-}
-.entrancebutton.menuandsearch .menubutton span.menyknapp {
-  border-radius: 3px;
-  background-color: #004e66;
-  vertical-align: middle;
-  padding: 7px 10px 7px 10px;
-  color: #ffffff;
-  font-weight: normal;
-  transition: all 0.5s;
-}
-.entrancebutton.menuandsearch .menubutton span.js-expanded {
-  padding-bottom: 74px;
-  background-color: #dbdcdd;
-  color: black;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
