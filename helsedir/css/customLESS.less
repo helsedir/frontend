@@ -1049,7 +1049,7 @@ video {
     width: 386px;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
         right: 0;
@@ -1066,13 +1066,13 @@ video {
     }
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
     .statistics_compare button {
         margin-top: 30px;
     }
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .transportsideknapp {
         border: none;
 
@@ -1082,7 +1082,7 @@ video {
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .aside {
         width: auto;
     }
@@ -1622,7 +1622,7 @@ header {
     display: none;
 }
 
--hidden-mobile {
+.hidden-mobile {
     display: block;
 }
 
@@ -1645,7 +1645,9 @@ header {
 }
 
 .mainentrance {
-    background: #95BBBC url('../img/forside_bakgrunn2.svg') no-repeat center;
+    background: #95BBBC url('../img/forside_bakgrunn2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     -webkit-background-size: auto,cover;
     -moz-background-size: auto,cover;
     -o-background-size: auto,cover;
@@ -1675,7 +1677,7 @@ header {
     a {
         height: 100%;
         width: 100%;
-        display: block;
+        display: inline-block;
         color: white;
 
         .innerDiv {
@@ -1950,13 +1952,13 @@ footer {
     }
 }
 
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     header .links {
         margin-left: 15px;
     }
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
     .entrancebutton {
         margin: 50px 25px 30px 0;
     }
@@ -1969,7 +1971,7 @@ footer {
     }
 }
 
-@media(max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .entrancebutton {
         margin: 7.5px 0 7.5px 0;
         width: 100%;
@@ -2184,6 +2186,10 @@ iframe {
     }
 
     .has-hidden-content div {
+        display: block !important;
+    }
+
+    .hidden-mobile {
         display: block !important;
     }
 }
