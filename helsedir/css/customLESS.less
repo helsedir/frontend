@@ -5,7 +5,6 @@
 @fontSohoLight: "soho gothic pro light";
 @fontSohoRegular: "soho gothic pro regular";
 @colorMorkBlaa: #004e66;
-@colorOrange: #df9922;
 @colorMediumBlaa: #0093a7;
 @colorLysBlaa: #6cb4b5;
 @colorGraa: #aeaba8;
@@ -2195,6 +2194,13 @@ iframe {
     }
 }
 
+.header2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: @fontSohoLight;
+    margin: 70px 0 0 0;
+}
+
 .header3 {
     font-size: 28px;
     font-family: @fontSohoRegular;
@@ -2308,6 +2314,14 @@ iframe {
     padding-bottom: 50px;
     border: 5px solid @colorOrange;
 
+    .header2 {
+        color: @colorOrange;
+    }
+
+    .header2, .header3 {
+        margin-top: 30px;
+    }
+
     .fa-exclamation {
         color: @colorOrange;
         font-size: 2em;
@@ -2315,5 +2329,6 @@ iframe {
 
     .calltoaction {
         border-color: @colorOrange;
+        color: black;
     }
 }

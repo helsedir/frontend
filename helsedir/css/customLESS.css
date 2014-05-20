@@ -1782,6 +1782,12 @@ iframe {
     display: block !important;
   }
 }
+.header2 {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "soho gothic pro light";
+  margin: 70px 0 0 0;
+}
 .header3 {
   font-size: 28px;
   font-family: "soho gothic pro regular";
@@ -1877,11 +1883,19 @@ iframe {
   padding-bottom: 50px;
   border: 5px solid #df9922;
 }
+.crisis .header2 {
+  color: #df9922;
+}
+.crisis .header2,
+.crisis .header3 {
+  margin-top: 30px;
+}
 .crisis .fa-exclamation {
   color: #df9922;
   font-size: 2em;
 }
 .crisis .calltoaction {
   border-color: #df9922;
+  color: black;
 }
 /*# sourceMappingURL=customLESS.css.map */
