@@ -2,8 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
@@ -28,11 +27,11 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile  col-md-offset-1 col-lg-offset-4" id="mainsearch">
+                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile  col-md-offset-1 col-lg-offset-3" id="mainsearch">
                     <input class="mainsearch" type="text" value="Søk i alt innhold" />
                 </div>
-                <div class="hidden-xs hidden-sm col-md-3 col-lg-2">
-                    <a class="links hidden-sm hidden-xs pull-right" href="#">EN</a>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                    <a class="links hidden-sm hidden-xs pull-right" href="#">ENGLISH</a>
                     <a class="links hidden-sm hidden-xs pull-right" href="transportside_omoss.html">OM OSS</a>
                 </div>
             </header>
@@ -85,6 +84,14 @@
         <div class="container">
             <article class="row forside">
                 <section class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                    <div class="entrancebutton ">
+                        <a href="transportside_folkehelse.html">
+                            <div class="innerDiv">
+                                <h2>Folkehelse og forebygging</h2><p>Kosthold, fysisk aktivitet, psykisk helse, tobakk ...</p>
+                            </div>
+                        </a>
+                    </div>
+
                     <div class="entrancebutton">
                         <a href="../medisinskeRetningslinjer/">
                             <div class="innerDiv">
@@ -114,15 +121,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="entrancebutton ">
-                        <a href="transportside_folkehelse.html">
-                            <div class="innerDiv">
-                                <h2>Folkehelse og forebygging</h2><p>Kosthold, fysisk aktivitet, psykisk helse, tobakk ...</p>
-                            </div>
-                        </a>
-                    </div>
+
                     <!--
-                                     <div class="entrancebutton menuandsearch">-->
+                        <div class="entrancebutton menuandsearch">-->
                     <!---->
                     <!--                        <div class="menubutton">-->
                     <!---->
@@ -384,7 +385,7 @@
 
         <article class="row">
             <section class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <h2>Aktuelt</h2>
+                <h2>Nyheter</h2>
                 <div class="news"><p>08.05.2014</p> <a href="#">Nye nasjonale kvalitetsindikatorer</a></div>
                 <div class="news">
                     <p>07.05.2014</p> <a href="#">Har du fått #dine30 i dag?</a>
@@ -413,9 +414,9 @@
 
             <article class="row">
                 <section class="col-md-12">
-                    <h2>Samhandlingsreformen: Kostnader 2013</h2>
-                    <img src="../img/statistikk_eksempel.png" class="img-responsive statistics_image" />
-                    <a href="#">Les mer om samhandlingsreformen</a>
+                    <h2>Utvikling i median ventetid i antall dager, siste 12 måneder</h2>
+                    <div id="chart_div"></div>
+                    <a href="statistikk_ventetider.html">Les mer om ventetider</a>
                 </section>
             </article>
         </div>
@@ -440,7 +441,7 @@
                                                 <li><a href="#">Nasjonale strategier og planer</a></li>
                                                 <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
                                                 <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
-                                                <li><a href="#">Tilskudd</a></li>
+                                                <li><a href="tilskudd.html">Tilskudd</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
@@ -590,7 +591,7 @@
                                                 <li>T</li>
                                                 <li><a href="#">Tannhelse            </a></li>
                                                 <li><a href="#">Taushetsplikt        </a></li>
-                                                <li><a href="#">Tilskudd             </a></li>
+                                                <li><a href="tilskudd.html">Tilskudd             </a></li>
                                                 <li><a href="#">Tobakk, røyk og snus </a></li>
                                                 <li><a href="#">Turnus </a></li>
                                             </ul>
@@ -655,5 +656,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="../js/google.maps.js"></script>
     <script src="../js/respond.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="../js/chart.js"></script>
 </body>
 </html>

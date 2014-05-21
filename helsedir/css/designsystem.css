@@ -1,4 +1,7 @@
-﻿.hhs .topplinje {
+﻿.hhs header {
+  margin: 0;
+}
+.hhs .topplinje {
   color: white;
   background: #004e66;
 }
