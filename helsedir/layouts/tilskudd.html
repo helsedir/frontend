@@ -26,7 +26,7 @@
             <div class="col-md-12 col-lg-8">
                 <h1>Tilskudd</h1>
 
-                <aside class="aside ">
+                <aside class="aside">
                     <div class="abonneringsmodul clearfix">
                         <h4>Få oppdateringer på denne siden</h4>
                         <div><i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a></div>
@@ -38,7 +38,7 @@
         <article class="row">
 
             <section class="col-md-12 col-lg-8 avsnitt">
-                <p>4 tilskudd innen Helse- og omsorgstjenester, Omsorgstjenester</p>
+                <p>40 gjeldende tilskudd</p>
                 <div class="tilskudd_sortcontrols">
                     <form action="">
                         <input type="radio" id="gjeldende_tilskudd" name="tilskuddsort" value="gjeldende_tilskudd" checked="" onclick="checkTilskudd()" /><label>Gjeldende tilskudd</label>
@@ -64,14 +64,7 @@
                         <p>Frist: 01.11.2014</p>
                     </div>
                 </div>
-                <div class="tilskudd_navigateleft pull-left">
-                    <p>Forrige side</p>
-                    <p>1 av 5</p>
-                </div>
-                <div class="tilskudd_navigateright pull-right">
-                    <p>Neste side</p>
-                    <p>3 av 5</p>
-                </div>
+                <div class="showmorenews"><a href="#">Vis flere tilskudd</a></div>
                 <aside class="aside">
                     <div>
                         <h2>Avgrens visning</h2>
@@ -79,6 +72,7 @@
                             <div class="form-group">
                                 <label for="tema">Tema</label>
                                 <select id="tema" class="form-control">
+                                    <option class="tema_select_all">Alle tema</option>
                                     <optgroup label="Folkehelse">
                                         <option>   Alle i Folkehelse (15)</option>
                                         <option>Folkehelsearbeid (9)</option>
@@ -109,6 +103,7 @@
                             <div class="form-group">
                                 <label for="soeker">Hvem kan søke</label>
                                 <select id="soeker" class="form-control">
+                                    <option>Alle</option>
                                     <option>Fylkeskommuner (16)</option>
                                     <option>Kommuner</option>
                                     <option>Organisasjoner (33)</option>

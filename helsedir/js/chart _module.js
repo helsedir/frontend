@@ -20,7 +20,7 @@ function drawChart() {
 
     var options = {
         vAxis: { minValue: 20, maxValue: 70, title: "Antall dager", ticks: [20, 30, 40, 50, 60, 70] },
-        'chartArea': { 'width': '75%', 'height': '80%', 'left': '10%' }
+        'chartArea': { 'width': '66%', 'height': '80%', 'left': '10%', 'right': '10%' }
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('chart_div'));

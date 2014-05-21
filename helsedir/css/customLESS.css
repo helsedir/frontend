@@ -16,6 +16,9 @@ body {
   -o-background-size: 40%;
   background-repeat: no-repeat;
 }
+.no-background {
+  background: #f7f6f6;
+}
 h1 {
   font-weight: normal;
   font-size: 48px;
@@ -618,6 +621,7 @@ section .innholdswrapper {
   margin-top: 40px;
   padding: 10px;
   border: 1px solid black;
+  background: white;
 }
 .abonneringsmodul .fa {
   color: #0093a7;
@@ -1705,6 +1709,7 @@ iframe {
 .tilskudd_links {
   border: 1px solid black;
   padding: 10px;
+  background: white;
 }
 .tilskudd_links ul li {
   margin-left: 0;
@@ -1729,7 +1734,7 @@ iframe {
   margin-bottom: 10px;
 }
 .statistics_module {
-  background: url(../img/pulse2.svg) no-repeat left;
+  background: white;
   padding-left: 54px;
   max-width: 390px;
   background-size: contain;
@@ -1740,6 +1745,9 @@ iframe {
 .statistics_module .keyfigures,
 .statistics_module h4 {
   color: red;
+}
+.statistics_module #chart_div {
+  margin-bottom: 20px;
 }
 #statistikktab1,
 #statistikktab2,
@@ -1874,5 +1882,8 @@ iframe {
 .crisis .calltoaction {
   border-color: #df9922;
   color: black;
+}
+.tema_select_all {
+  font-weight: bold;
 }
 /*# sourceMappingURL=customLESS.css.map */

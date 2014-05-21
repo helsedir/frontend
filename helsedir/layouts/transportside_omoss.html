@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transportside organsisasjon</title>
     <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/bootstrap-full.min.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/customLESS.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
@@ -29,9 +30,13 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 clearfix">
 
                 <h2 style="margin-top: 20px;">Finn kontaktperson</h2>
-                <form class="search">
-                    <input type="search" placeholder="Søk etter navn, kompetanse, tema eller avdeling" value="Søk etter navn, kompetanse, tema eller avdeling"><button class=" btn">Søk</button>
+                <form class="form-search form-horizontal" role="form">
+                    <label class="sr-only" for=""> Søk etter navn, kompetanse, tema eller avdeling</label>
+                    <div class="search">
+                        <input type="text" class="form-control input-lg typeahead" placeholder="Søk etter navn, kompetanse, tema eller avdeling">
+                    </div>
                 </form>
+
                 <div class="transportsideknapp clearfix">
                     <a href="kontaktoss.html">
                         <h2>Kontakt oss</h2>
