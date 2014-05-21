@@ -1091,6 +1091,7 @@ video {
   margin-top: 10px;
   border: 1px solid #b2babc;
   padding-left: 10px;
+  background: white;
 }
 .borderbox .innerDiv {
   margin: 10px;
@@ -1849,7 +1850,7 @@ iframe {
 }
 .showmorenews {
   background: #dbdcdd;
-  border: 1px solid black;
+  border-radius: 5px;
   width: 250px;
   text-align: center;
   margin: 50px auto;
@@ -1859,6 +1860,7 @@ iframe {
   width: 100%;
   height: 100%;
   padding: 10px;
+  color: black;
 }
 .showmorenews a:hover {
   text-decoration: none;
