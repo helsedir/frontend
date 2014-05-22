@@ -16,16 +16,119 @@
     <div id="header"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <ol class="breadcrumbs clearfix">
                     <li><a href="forside.html">Forside</a></li>
                 </ol>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-8">
-                <h1>Tilskudd</h1>
 
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1>Tilskudd</h1>
+                        <p>Søk etter rapporter på tilskudd</p>
+                        <ul>
+                            <li><a href="#">Gå til Altinn for å søke eller rapportere</a></li>
+                            <li><a href="#" class="external-link">Kontakt Altinn brukerservice</a></li>
+                            <li><a href="#" class="external-link">Hvordan er søknadsprosessen?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-md-12 col-lg-12 avsnitt">
+
+                        <aside class="aside">
+                            <div>
+                                <h2>Avgrens visning</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="tema">Tema</label>
+                                        <select id="tema" class="form-control">
+                                            <option class="tema_select_all">Alle tema</option>
+                                            <optgroup label="Folkehelse">
+                                                <option>   Alle i Folkehelse (15)</option>
+                                                <option>Folkehelsearbeid (9)</option>
+                                                <option>Seksuell helse (4)</option>
+                                                <option>Miljørettet helsevern (1)</option>
+                                            </optgroup>
+                                            <optgroup label="Helse og omsorgstjenester">
+                                                <option>Alle i Helse- og omsorgstjenester (37)</option>
+                                                <option>Omsorgstjenester (18)</option>
+                                                <option>Tannhelse (8)</option>
+                                                <option>Helsestasjon og skoletjenesten (1)</option>
+                                                <option>Sjeldne tilstander (1)</option>
+                                            </optgroup>
+                                            <optgroup label="Helsepersonell">
+                                                <option>Alle i Helsepersonell (6)</option>
+                                            </optgroup>
+                                            <optgroup label="Psykisk helse og rus">
+                                                <option>Alle i psykisk helse og rus (28)</option>
+                                                <option>Psykisk helsevern (6)</option>
+                                                <option>Behandling av rusmiddelproblemer i TSB (2)</option>
+                                                <option>Psykisk helsearbeid i kommunen (15)</option>
+                                                <option>Vold og traumer (1)</option>
+                                                <option>Rusmiddelarbeid i kommunen (10)</option>
+                                                <option>Brukere og pårørende (3)</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="soeker">Hvem kan søke</label>
+                                        <select id="soeker" class="form-control">
+                                            <option>Alle</option>
+                                            <option>Fylkeskommuner (16)</option>
+                                            <option>Kommuner</option>
+                                            <option>Organisasjoner (33)</option>
+                                            <option>Private bedrifter (10)</option>
+                                            <option>Privatpersoner (1)</option>
+                                            <option>Statlige mottakere (20)</option>
+                                            <option>Statlige/kommunale/fylkeskommunale bedrifter (23)</option>
+                                            <option>Stiftelser (25)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" id="tilskuddsaar">
+                                        <label for="tilskuddsaar">
+                                            Tilskuddsår
+                                        </label>
+                                        <select class="form-control">
+                                            <option>2013 (10)</option>
+                                            <option>2012 (1)</option>
+                                            <option>2011 (1)</option>
+                                            <option>2010 (1)</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </aside>
+                        <p>40 gjeldende tilskudd</p>
+                        <div class="tilskudd_sortcontrols">
+                            <form action="">
+                                <input type="radio" id="gjeldende_tilskudd" name="tilskuddsort" value="gjeldende_tilskudd" checked="" onclick="checkTilskudd()" /><label>Gjeldende tilskudd</label>
+                                <input type="radio" id="utgaatte_tilskudd" name="tilskuddsort" value="utgaatte_tilskudd" onclick="checkTilskudd()" /><label>Utgåtte tilskudd</label>
+                            </form>
+                        </div>
+
+                        <div>
+                            <div class="tilskudd">
+                                <a href="tilskudd_et_tilskudd.html"><h2>Etablering av nye dagaktivitetstilbud til hjemmeboende personer med demens</h2></a>
+                                <p>Frist: 15.08.2014</p>
+                            </div>
+                            <div class="tilskudd">
+                                <a href="#"><h2>Frivillig arbeid</h2></a>
+                                <p>Frist: 25.09.2014</p>
+                            </div>
+                            <div class="tilskudd">
+                                <a href="#"><h2>Menn i helse - nasjonalt prosjekt</h2></a>
+                                <p>Frist: 01.10.2014</p>
+                            </div>
+                            <div class="tilskudd">
+                                <a href="#"><h2>Velferdsteknologi i kommunene</h2></a>
+                                <p>Frist: 01.11.2014</p>
+                            </div>
+                        </div>
+                        <div class="toggleshowmorenews">
+                            <div class="showmorenews"><a href="#" onclick="return false;">Vis flere tilskudd</a></div>
+                        </div>
+                    </article>
+                </div>
                 <aside class="aside">
                     <div class="abonneringsmodul clearfix">
                         <h4>Få oppdateringer på denne siden</h4>
@@ -35,109 +138,6 @@
                 </aside>
             </div>
         </div>
-        <article class="row">
-
-            <section class="col-md-12 col-lg-8 avsnitt">
-                <p>40 gjeldende tilskudd</p>
-                <div class="tilskudd_sortcontrols">
-                    <form action="">
-                        <input type="radio" id="gjeldende_tilskudd" name="tilskuddsort" value="gjeldende_tilskudd" checked="" onclick="checkTilskudd()" /><label>Gjeldende tilskudd</label>
-                        <input type="radio" id="utgaatte_tilskudd" name="tilskuddsort" value="utgaatte_tilskudd" onclick="checkTilskudd()" /><label>Utgåtte tilskudd</label>
-                    </form>
-                </div>
-
-                <div>
-                    <div class="tilskudd">
-                        <a href="#">Etablering av nye dagaktivitetstilbud til hjemmeboende personer med demens</a>
-                        <p>Frist: 15.08.2014</p>
-                    </div>
-                    <div class="tilskudd">
-                        <a href="#">Frivillig arbeid</a>
-                        <p>Frist: 25.09.2014</p>
-                    </div>
-                    <div class="tilskudd">
-                        <a href="#">Menn i helse - nasjonalt prosjekt</a>
-                        <p>Frist: 01.10.2014</p>
-                    </div>
-                    <div class="tilskudd">
-                        <a href="#">Velferdsteknologi i kommunene</a>
-                        <p>Frist: 01.11.2014</p>
-                    </div>
-                </div>
-                <div class="showmorenews"><a href="#">Vis flere tilskudd</a></div>
-                <aside class="aside">
-                    <div>
-                        <h2>Avgrens visning</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="tema">Tema</label>
-                                <select id="tema" class="form-control">
-                                    <option class="tema_select_all">Alle tema</option>
-                                    <optgroup label="Folkehelse">
-                                        <option>   Alle i Folkehelse (15)</option>
-                                        <option>Folkehelsearbeid (9)</option>
-                                        <option>Seksuell helse (4)</option>
-                                        <option>Miljørettet helsevern (1)</option>
-                                    </optgroup>
-                                    <optgroup label="Helse og omsorgstjenester">
-                                        <option>Alle i Helse- og omsorgstjenester (37)</option>
-                                        <option>Omsorgstjenester (18)</option>
-                                        <option>Tannhelse (8)</option>
-                                        <option>Helsestasjon og skoletjenesten (1)</option>
-                                        <option>Sjeldne tilstander (1)</option>
-                                    </optgroup>
-                                    <optgroup label="Helsepersonell">
-                                        <option>Alle i Helsepersonell (6)</option>
-                                    </optgroup>
-                                    <optgroup label="Psykisk helse og rus">
-                                        <option>Alle i psykisk helse og rus (28)</option>
-                                        <option>Psykisk helsevern (6)</option>
-                                        <option>Behandling av rusmiddelproblemer i TSB (2)</option>
-                                        <option>Psykisk helsearbeid i kommunen (15)</option>
-                                        <option>Vold og traumer (1)</option>
-                                        <option>Rusmiddelarbeid i kommunen (10)</option>
-                                        <option>Brukere og pårørende (3)</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="soeker">Hvem kan søke</label>
-                                <select id="soeker" class="form-control">
-                                    <option>Alle</option>
-                                    <option>Fylkeskommuner (16)</option>
-                                    <option>Kommuner</option>
-                                    <option>Organisasjoner (33)</option>
-                                    <option>Private bedrifter (10)</option>
-                                    <option>Privatpersoner (1)</option>
-                                    <option>Statlige mottakere (20)</option>
-                                    <option>Statlige/kommunale/fylkeskommunale bedrifter (23)</option>
-                                    <option>Stiftelser (25)</option>
-                                </select>
-                            </div>
-                            <div class="form-group" id="tilskuddsaar">
-                                <label for="tilskuddsaar">
-                                    Tilskuddsår
-                                </label>
-                                <select class="form-control">
-                                    <option>2013 (10)</option>
-                                    <option>2012 (1)</option>
-                                    <option>2011 (1)</option>
-                                    <option>2010 (1)</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="tilskudd_links">
-                        <h4>Søk eller rapporter på tilskudd</h4>
-                        <ul>
-                            <li><a href="#">Gå til Altinn for å søke eller rapportere</a></li>
-                            <li><a href="#" class="external-link">Kontakt Altinn brukerservice</a></li>
-                            <li><a href="#" class="external-link">Hvordan er søknadsprosessen?</a></li>
-                        </ul>
-                    </div>
-                </aside>
-            </section>
-        </article>
     </div>
 
     <div id="footer"></div>

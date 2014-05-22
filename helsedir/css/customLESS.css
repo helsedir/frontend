@@ -808,6 +808,9 @@ section .innholdswrapper {
 .personmodul p {
   margin: 0;
 }
+.personmodul img {
+  width: 200px;
+}
 .faktaboks {
   position: relative;
   margin-bottom: 10px;
@@ -1570,6 +1573,7 @@ footer .tabs .tab-content li a {
   font-size: 20px;
   line-height: 24px;
   max-width: 240px;
+  display: block;
 }
 .calltoaction:before {
   float: left;
@@ -1890,11 +1894,15 @@ iframe {
   font-size: 16px;
 }
 .showmorenews {
-  background: #dbdcdd;
-  border-radius: 5px;
   width: 250px;
   text-align: center;
   margin: 50px auto;
+  border: 2px solid #004e66;
+  color: #004e66;
+  background: white;
+  font-family: 'Calibri';
+  font-size: 20px;
+  line-height: 24px;
 }
 .showmorenews a {
   display: inline-block;

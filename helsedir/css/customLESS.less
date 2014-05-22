@@ -976,6 +976,10 @@ section .innholdswrapper {
     p {
         margin: 0;
     }
+
+    img {
+        width: 200px;
+    }
 }
 
 .faktaboks {
@@ -1904,6 +1908,7 @@ footer {
     font-size: 20px;
     line-height: 24px;
     max-width: 240px;
+    display: block;
 
     &:before {
         float: left;
@@ -2313,11 +2318,15 @@ iframe {
 }
 
 .showmorenews {
-    background: #dbdcdd;
-    border-radius: 5px;
     width: 250px;
     text-align: center;
     margin: 50px auto;
+    border: 2px solid @colorDarkBlue;
+    color: @colorDarkBlue;
+    background: white;
+    font-family: @fontCalibri;
+    font-size: 20px;
+    line-height: 24px;
 
     a {
         display: inline-block;
