@@ -31,6 +31,7 @@ body {
     -moz-background-size: 40% auto;
     -o-background-size: 40% auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .no-background {
@@ -2327,6 +2328,14 @@ iframe {
 
         &:hover {
             text-decoration: none;
+        }
+    }
+
+    &.selected {
+        background: @colorDarkBlue;
+
+        a, a:visited {
+            color: white;
         }
     }
 }

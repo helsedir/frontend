@@ -47,4 +47,8 @@ $(document).ready(function () {
 
     $(window).resize(hideContentOnNarrow);
     $(window).on("orientationchange", hideContentOnNarrow);
+
+    $('.showmorenews').on('click', function () {
+        $(this).toggleClass('selected').siblings().toggleClass('visuallyhidden');
+    });
 });

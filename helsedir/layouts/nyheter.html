@@ -37,81 +37,100 @@
             <div class="col-md-12 col-lg-8 avsnitt">
                 <span>49 nyheter</span>
                 <div>
+                    <aside class="aside">
+
+                        <h2>Avgrens visning</h2>
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="tema">Tema</label>
+                                    <select id="tema" class="form-control">
+                                        <option>Alle tema</option>
+                                        <option>
+                                            Finansiering og helseøkonomi (3)
+                                        </option>
+                                        <option>
+                                            Folkehelse (307)
+                                        </option>
+                                        <option>
+                                            Giftinformasjon (4)
+                                        </option>
+                                        <option>
+                                            Global helse (10)
+                                        </option>
+                                        <option>
+                                            Helse- og omsorgstjenester (197)
+                                        </option>
+                                        <option>
+                                            Helsepersonell (20)
+                                        </option>
+                                        <option>
+                                            IT og helse (24)
+                                        </option>
+                                        <option>
+                                            Kvalitet og planlegging (250)
+                                        </option>
+                                        <option>
+                                            Psykisk helse og rus (117)
+                                        </option>
+                                        <option>
+                                            Samhandlingsreformen (3)
+                                        </option>
+                                        <option>
+                                            Statistikk og analyse (75)
+                                        </option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
                     <section class="newsitem">
-                        <a href="#"><h3>Utprøving av kjernejournal startet</h3></a>
+                        <a href="#"><h2>Utprøving av kjernejournal startet</h2></a>
                         <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
                         <p class="newitem_date">15.05.2014</p>
                     </section>
                     <section class="newsitem">
-                        <a href="nyheter_ennyhet.html"><h3>Nye kreftlegemidler vurdert</h3></a>
+                        <a href="nyheter_ennyhet.html"><h2>Nye kreftlegemidler vurdert</h2></a>
                         <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
                         <p class="newitem_date">25.04.2014</p>
                     </section>
                     <section class="newsitem">
-                        <a href="nyheter_ventetider.html"><h3> Ventetiden uendret for rettighetspasienter</h3></a>
+                        <a href="nyheter_ventetider.html"><h2> Ventetiden uendret for rettighetspasienter</h2></a>
                         <p>
-                            ​​I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
+                            I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
                         </p>
                         <p class="newitem_date">03.03.2014</p>
                     </section>
-                    <div class="showmorenews"><a href="#">Flere nyheter</a></div>
-                    <div class="showmorenews"><a href="#">Tidligere i 2014</a></div>
-                    <div class="showmorenews"><a href="#">2013</a></div>
-                    <div class="showmorenews"><a href="#">2012</a></div>
-                    <div class="showmorenews"><a href="#">2011</a></div>
-                </div>
-                <aside class="aside">
-
-                    <h2>Avgrens visning</h2>
-                    <div>
-                        <form>
-                            <div class="form-group">
-                                <label for="tema">Tema</label>
-                                <select id="tema" class="form-control">
-                                    <option>Alle tema</option>
-                                    <option>
-                                        Finansiering og helseøkonomi (3)
-                                    </option>
-                                    <option>
-                                        Folkehelse (307)
-                                    </option>
-                                    <option>
-                                        Giftinformasjon (4)
-                                    </option>
-                                    <option>
-                                        Global helse (10)
-                                    </option>
-                                    <option>
-                                        Helse- og omsorgstjenester (197)
-                                    </option>
-                                    <option>
-                                        Helsepersonell (20)
-                                    </option>
-                                    <option>
-                                        IT og helse (24)
-                                    </option>
-                                    <option>
-                                        Kvalitet og planlegging (250)
-                                    </option>
-                                    <option>
-                                        Psykisk helse og rus (117)
-                                    </option>
-                                    <option>
-                                        Samhandlingsreformen (3)
-                                    </option>
-                                    <option>
-                                        Statistikk og analyse (75)
-                                    </option>
-                                </select>
-                            </div>
-                        </form>
-                        <div class="borderbox">
-                            <p>Finner du ikke nyheter du lette etter?</p>
-                            <p>Vi flytter nyheter som er eldre enn 6 måneder til arkiv.</p>
-                            <a href="#">Gå til nyhetsarkivet</a>
-                        </div>
+                    <div class="toggleshowmorenews">
+                        <div class="showmorenews"><a href="#" onclick=" return false;">Tidligere i 2014</a></div>
+                        <section class="newsitem visuallyhidden">
+                            <a href="#"><h2>Utprøving av kjernejournal startet</h2></a>
+                            <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
+                            <p class="newitem_date">15.05.2014</p>
+                        </section>
+                        <section class="newsitem visuallyhidden">
+                            <a href="nyheter_ennyhet.html"><h2>Nye kreftlegemidler vurdert</h2></a>
+                            <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
+                            <p class="newitem_date">25.04.2014</p>
+                        </section>
+                        <section class="newsitem visuallyhidden">
+                            <a href="nyheter_ventetider.html"><h2> Ventetiden uendret for rettighetspasienter</h2></a>
+                            <p>
+                                I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
+                            </p>
+                            <p class="newitem_date">03.03.2014</p>
+                        </section>
                     </div>
-                </aside>
+                    <div class="toggleshowmorenews">
+                        <div class="showmorenews"><a href="#" onclick=" return false;">2013</a></div>
+                    </div>
+                    <div class="toggleshowmorenews">
+                        <div class="showmorenews"><a href="#" onclick=" return false;">2012</a></div>
+                    </div>
+                    <div class="toggleshowmorenews">
+                        <div class="showmorenews"><a href="#" onclick=" return false;">2011</a></div>
+                    </div>
+                </div>
             </div>
         </section>
     </article>
