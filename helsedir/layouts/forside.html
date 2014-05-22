@@ -15,10 +15,15 @@
 
 <body class="no-background">
     <div id="header">
+        <div class="shortcuts">
+            <ul>
+                <li><a href="#content" tabindex="1" accesskey="i">Innhold</a></li>
+            </ul>
+        </div>
         <div class="container">
             <header class="row ">
                 <div class="col-xs-8 col-sm-8 col-md-4 col-lg-3">
-                    <a href="forside.html"><img id="logo" src="http://helsedir.azurewebsites.net/img/logo.svg" alt="" /></a>
+                    <a href="forside.html"><img id="logo" src="http://helsedir.azurewebsites.net/img/logo.svg" alt="Helsedirektoratet logo" /></a>
                 </div>
 
                 <div class="col-xs-2 visible-xs xs-no-padding col-sm-2 visible-sm">
@@ -28,7 +33,10 @@
                 </div>
 
                 <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile  col-md-offset-1 col-lg-offset-3" id="mainsearch">
-                    <input class="mainsearch" type="text" value="Søk i alt innhold" />
+                    <form>
+                        <label for="mainsearch" class="hide">Søk</label>
+                        <input id="mainsearch" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
+                    </form>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
                     <a class="links hidden-sm hidden-xs pull-right" href="#">ENGLISH</a>
@@ -80,11 +88,13 @@
                     </div>
 
                     <div class="entrancebutton ">
-                        <div class="js-expander menu">
-                            <p class="innerDiv">
-                                Alt innhold A til Å <i class="fa fa-bars"></i>
-                            </p>
-                        </div>
+                        <a href="#" class="js-expander">
+                            <div class=" menu">
+                                <p class="innerDiv">
+                                    Alt innhold A til Å <i class="fa fa-bars"></i>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </section>
             </article>
@@ -104,6 +114,8 @@
         <div class="inner container-fluid">
             <div class="container">
                 <nav class="tabs">
+                    <a id="content" tabindex="-1"></a>
+
                     <ul class="tab-links">
                         <li class="active"><a href="#tab1">Kategorier</a></li>
                         <li><a href="#tab2">Innhold A-Å</a></li>
@@ -289,12 +301,10 @@
     <div class="container frontpage">
         <h2>Ny rapport om kosthold, ernæring og fysisk aktivitet</h2>
         <article class="row">
-            <section class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <img class="img-responsive" src="../img/publisering_eksempel.png" alt="Rapport: Anbefalinger om kosthold, ernæring og fysisk aktivitet" />
-            </section>
+
             <section class="col-md-6 col-lg-6">
-                <p>2014/02/01</p>
-                <h3>Ny rapport lansert 1.februar 2014. Den avløser "Norske anbefalinger for ernæring og fysisk aktivitet" fra 2005.</h3>
+
+                <p class="ingress">Ny rapport lansert 1.februar 2014. Den avløser "Norske anbefalinger for ernæring og fysisk aktivitet" fra 2005.</p>
                 <ul>
                     <li>Redusere stillesitting for alle aldersgrupper</li>
                     <li>Barn bør ha 60 minutter med moderat aktivitet om dagen</li>
@@ -303,6 +313,9 @@
                 <form action="artikkel_kostholdsraad.html">
                     <button class="calltoaction">Les mer om kosthold og trening</button>
                 </form>
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="img-responsive" src="../img/publisering_eksempel.png" alt="Rapport: Anbefalinger om kosthold, ernæring og fysisk aktivitet" />
             </section>
         </article>
     </div>
@@ -321,7 +334,7 @@
                 <a href="nyheter.html">Se alle nyheter</a>
             </section>
             <section class=" col-md-6 col-lg-6">
-                <h2>Kurs og konferanser</h2>
+                <a href="kursogkonferanser.html"><h2>Kurs og konferanser</h2></a>
                 <div class="conferenceitem">
                     <i class="fa fa-calendar-o"></i>
                     <a href="#">Helsekonferanse</a><p>7-8.mai 2014</p> <p>Oslo</p>
@@ -330,7 +343,7 @@
                     <i class="fa fa-calendar-o"></i>
                     <a href="#">Nordisk folkehelsekonferanse</a> <p>1.juni 2014</p> <p>Trondheim</p>
                 </div>
-                <a href="#">Se alle kurs og konferanser</a>
+                <a href="kursogkonferanser.html">Se alle kurs og konferanser</a>
             </section>
         </article>
     </div>

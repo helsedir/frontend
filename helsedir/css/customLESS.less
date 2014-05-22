@@ -22,14 +22,14 @@ body {
     padding: 0;
     font-size: 20px;
     font-family: 'Calibri';
-    line-height: 1.750em;
+    line-height: 27px;
     color: #222;
     background: #f7f6f6 url('../img/bakgrunn_menneske.svg');
     background-position: 100% 20%;
-    background-size: 40%;
-    -webkit-background-size: 40%;
-    -moz-background-size: 40%;
-    -o-background-size: 40%;
+    background-size: 40% auto;
+    -webkit-background-size: 40% auto;
+    -moz-background-size: 40% auto;
+    -o-background-size: 40% auto;
     background-repeat: no-repeat;
 }
 
@@ -42,41 +42,48 @@ h1 {
     font-size: 48px;
     font-family: @fontSohoLight;
     line-height: 60px;
-    margin: 82px 0 0 0;
+    margin: 80px 0 0 0;
     color: @colorDarkBlue;
-    border-bottom: 2px solid @colorDarkBlue;
-    padding-bottom: 21px;
 }
 
 .ingress {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
     font-size: 26px;
     line-height: 30px;
     font-family: @fontCalibri;
+    border-bottom: 2px solid @colorDarkBlue;
+    padding-bottom: 20px;
 }
 
 h2 {
     font-size: 36px;
     line-height: 42px;
     font-family: @fontSohoLight;
-    margin: 70px 0 0 0;
+    margin: 55px 0 0 0;
+
+    &.accordion {
+        border-bottom: 1px solid @colorDarkBlue;
+        padding-bottom: 20px;
+    }
 }
 
 h3 {
     font-size: 28px;
     font-family: @fontSohoRegular;
     margin: 55px 0 0 0;
-    line-height: 34px;
+    line-height: 36px;
 }
 
 h4 {
     font-weight: normal;
-    font-size: 20px;
-    font-family: @fontSohoLight;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 55px;
+    font-family: @fontSohoRegular;
 
     &.accordion {
         margin: 55px 0 0 0;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         border-bottom: 1px solid #004e66;
     }
 }
@@ -87,7 +94,10 @@ h5 {
 }
 
 p {
-    margin: 16px 0 0 0;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-family: 'Calibri';
+    line-height: 27px;
 }
 
 ul {
@@ -100,6 +110,36 @@ ul {
 
     li {
         margin-left: 40px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.shortcuts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    ul {
+        overflow: hidden;
+        height: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: -2013px;
+        display: block;
+        border-radius: 5px;
+
+        &:focus {
+            top: 10px;
+        }
     }
 }
 
@@ -118,7 +158,7 @@ a {
         margin: 0 0 50px 0;
     }
 
-    &:focus {
+    &:focus, &:visited:focus {
         h2, h4, p {
             background: @colorMorkBlaa;
             color: white !important;
@@ -749,8 +789,11 @@ section .innholdswrapper {
 .abonneringsmodul {
     margin-top: 40px;
     padding: 10px;
-    border: 1px solid black;
     background: white;
+
+    h4 {
+        margin: 0;
+    }
 
     .fa {
         color: @colorMediumBlaa;
@@ -1638,13 +1681,12 @@ header {
 }
 
 .mainentrance {
-    background: url('../img/forside_bakgrunn%20abstrahert.svg');
-    background-position: center;
+    background: url('../img/forside_bakgrunn_abstrahert.png');
     background-repeat: no-repeat;
-    -webkit-background-size: auto,cover;
-    -moz-background-size: auto,cover;
-    -o-background-size: auto,cover;
-    background-size: auto,cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 20px 0 40px 0;
 }
 
@@ -1817,7 +1859,7 @@ footer {
             background: white;
             color: black;
             border-radius: 3px;
-            padding: 10px 40px 10px 30px;
+            padding: 14px 40px 14px 30px;
             float: left;
         }
 
@@ -1900,7 +1942,6 @@ footer {
 
     p {
         margin: 0;
-        color: @colorLightBlue;
     }
 
     .conferenceitem {
@@ -1918,6 +1959,10 @@ footer {
 
     .statistics_image {
         margin-bottom: 20px;
+    }
+
+    .ingress {
+        border: none;
     }
 }
 
@@ -2312,4 +2357,20 @@ iframe {
 
 .tema_select_all {
     font-weight: bold;
+}
+
+/**Kurs og konferanse*/
+
+.conference_details {
+    margin-top: 20px;
+
+    p, span {
+        display: table-cell;
+    }
+
+    .conference_date, .conference_location, .conference_audience {
+        span {
+            width: 100px;
+        }
+    }
 }

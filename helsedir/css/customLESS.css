@@ -6,14 +6,14 @@ body {
   padding: 0;
   font-size: 20px;
   font-family: 'Calibri';
-  line-height: 1.750em;
+  line-height: 27px;
   color: #222;
   background: #f7f6f6 url('../img/bakgrunn_menneske.svg');
   background-position: 100% 20%;
-  background-size: 40%;
-  -webkit-background-size: 40%;
-  -moz-background-size: 40%;
-  -o-background-size: 40%;
+  background-size: 40% auto;
+  -webkit-background-size: 40% auto;
+  -moz-background-size: 40% auto;
+  -o-background-size: 40% auto;
   background-repeat: no-repeat;
 }
 .no-background {
@@ -24,37 +24,43 @@ h1 {
   font-size: 48px;
   font-family: "soho gothic pro light";
   line-height: 60px;
-  margin: 82px 0 0 0;
+  margin: 80px 0 0 0;
   color: #004e66;
-  border-bottom: 2px solid #004e66;
-  padding-bottom: 21px;
 }
 .ingress {
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   font-size: 26px;
   line-height: 30px;
   font-family: 'Calibri';
+  border-bottom: 2px solid #004e66;
+  padding-bottom: 20px;
 }
 h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: "soho gothic pro light";
-  margin: 70px 0 0 0;
+  margin: 55px 0 0 0;
+}
+h2.accordion {
+  border-bottom: 1px solid #004e66;
+  padding-bottom: 20px;
 }
 h3 {
   font-size: 28px;
   font-family: "soho gothic pro regular";
   margin: 55px 0 0 0;
-  line-height: 34px;
+  line-height: 36px;
 }
 h4 {
   font-weight: normal;
-  font-size: 20px;
-  font-family: "soho gothic pro light";
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 55px;
+  font-family: "soho gothic pro regular";
 }
 h4.accordion {
   margin: 55px 0 0 0;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #004e66;
 }
 h5 {
@@ -62,7 +68,10 @@ h5 {
   font-size: 18px;
 }
 p {
-  margin: 16px 0 0 0;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  font-family: 'Calibri';
+  line-height: 27px;
 }
 ul {
   margin-bottom: 24px;
@@ -73,6 +82,30 @@ ul {
 }
 ul li {
   margin-left: 40px;
+}
+.hide {
+  display: none;
+}
+.shortcuts {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.shortcuts ul {
+  overflow: hidden;
+  height: 0;
+}
+.shortcuts ul li {
+  list-style: none;
+}
+.shortcuts a {
+  position: absolute;
+  top: -2013px;
+  display: block;
+  border-radius: 5px;
+}
+.shortcuts a:focus {
+  top: 10px;
 }
 a {
   color: #0093a7;
@@ -87,14 +120,18 @@ a:visited {
 a p {
   margin: 0 0 50px 0;
 }
-a:focus {
+a:focus,
+a:visited:focus {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
 a:focus h2,
+a:visited:focus h2,
 a:focus h4,
-a:focus p {
+a:visited:focus h4,
+a:focus p,
+a:visited:focus p {
   background: #004e66;
   color: white !important;
   outline: 0;
@@ -620,8 +657,10 @@ section .innholdswrapper {
 .abonneringsmodul {
   margin-top: 40px;
   padding: 10px;
-  border: 1px solid black;
   background: white;
+}
+.abonneringsmodul h4 {
+  margin: 0;
 }
 .abonneringsmodul .fa {
   color: #0093a7;
@@ -1338,13 +1377,12 @@ header .links {
   }
 }
 .mainentrance {
-  background: url('../img/forside_bakgrunn%20abstrahert.svg');
-  background-position: center;
+  background: url('../img/forside_bakgrunn_abstrahert.png');
   background-repeat: no-repeat;
-  -webkit-background-size: auto,cover;
-  -moz-background-size: auto,cover;
-  -o-background-size: auto,cover;
-  background-size: auto,cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 20px 0 40px 0;
 }
 #logo {
@@ -1495,7 +1533,7 @@ footer .tabs .tab-content li a {
   background: white;
   color: black;
   border-radius: 3px;
-  padding: 10px 40px 10px 30px;
+  padding: 14px 40px 14px 30px;
   float: left;
 }
 .footerlinkswrapper .socialmedia a {
@@ -1564,7 +1602,6 @@ footer .tabs .tab-content li a {
 }
 .frontpage p {
   margin: 0;
-  color: #6cb4b5;
 }
 .frontpage .conferenceitem {
   margin-bottom: 20px;
@@ -1579,6 +1616,9 @@ footer .tabs .tab-content li a {
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
+}
+.frontpage .ingress {
+  border: none;
 }
 @media only screen and (max-width: 1199px) {
   header .links {
@@ -1887,5 +1927,18 @@ iframe {
 }
 .tema_select_all {
   font-weight: bold;
+}
+/**Kurs og konferanse*/
+.conference_details {
+  margin-top: 20px;
+}
+.conference_details p,
+.conference_details span {
+  display: table-cell;
+}
+.conference_details .conference_date span,
+.conference_details .conference_location span,
+.conference_details .conference_audience span {
+  width: 100px;
 }
 /*# sourceMappingURL=customLESS.css.map */
