@@ -55,13 +55,13 @@ jQuery(document).ready(function() {
         element.siblings('.recommendation_kunnskapsgrunnlag').addClass('hidden');
         element.removeClass('open');
         element.addClass('closed');
-        jQuery(this).text('Vis kunnskapsgrunnlaget');
+        jQuery(this).text(jQuery(this).text().split("Skjul").join("Vis"));      
       }
       else {
         element.siblings('.recommendation_kunnskapsgrunnlag').removeClass('hidden');
         element.removeClass('closed');
         element.addClass('open');
-        jQuery(this).text('Skjul kunnskapsgrunnlaget');
+        jQuery(this).text(jQuery(this).text().split("Vis").join("Skjul"));  
       }
 		//}
   });
