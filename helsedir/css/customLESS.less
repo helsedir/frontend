@@ -788,29 +788,36 @@ section .innholdswrapper {
     Moduler
 ***********************************************************************/
 .abonneringsmodul {
-    margin-top: 40px;
-    padding: 10px;
-    background: white;
+    margin: 40px 0 0 30px;
+    padding-bottom: 5px;
+    max-width: 390px;
+    border-bottom: 2px solid @colorDarkBlue;
 
-    h4 {
+    p {
+        font-size: 18px;
         margin: 0;
+        color: @colorDarkBlue;
+        text-transform: uppercase;
     }
 
     .fa {
-        color: @colorMediumBlaa;
+        color: @colorDarkBlue;
     }
 
     a {
-        margin-left: 10px;
-    }
-
-    :visited {
-        color: #222;
+        font-size: 18px;
+        margin: 0 20px 0 10px;
         text-decoration: none;
-    }
+        color: @colorDarkBlue;
 
-    :hover {
-        text-decoration: none;
+        &:visited {
+            color: @colorDarkBlue;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     div {
@@ -1112,6 +1119,12 @@ video {
     }
 }
 
+@media only screen and (max-width: 1199px) {
+    .abonneringsmodul {
+        margin: 40px 0 30px 30px;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
@@ -1240,6 +1253,7 @@ video {
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 50px;
+    display: none;
 
     .inner {
         background: #ffffff;
@@ -2108,9 +2122,24 @@ iframe {
 
 .external-link {
     &:after {
-        padding-left: 10px;
+        padding-left: 5px;
         content: "\f08e";
         font-family: "FontAwesome";
+    }
+}
+
+.internal-link {
+    text-decoration: none;
+
+    h2, h3, h4, p {
+        display: inline;
+    }
+
+    &:after {
+        padding-left: 5px;
+        content: "\f054";
+        font-family: "FontAwesome";
+        font-size: inherit;
     }
 }
 

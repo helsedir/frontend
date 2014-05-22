@@ -149,4 +149,16 @@
   text-align: center;
   text-align: -webkit-center;
 }
+.hhs .textexamples {
+  margin-top: 20px;
+  display: table;
+}
+.hhs .textexamples p,
+.hhs .textexamples span,
+.hhs .textexamples a {
+  display: table-cell;
+}
+.hhs .textexamples span {
+  width: 250px;
+}
 /*# sourceMappingURL=designsystem.css.map */

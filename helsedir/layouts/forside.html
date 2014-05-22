@@ -17,7 +17,7 @@
     <div id="header">
         <div class="shortcuts">
             <ul>
-                <li><a href="#content" tabindex="1" accesskey="i">Innhold</a></li>
+                <li><a href="#content" tabindex="1" accesskey="i" id="contentshortcut">Innhold</a></li>
             </ul>
         </div>
         <div class="container">
@@ -117,8 +117,8 @@
                     <a id="content" tabindex="-1"></a>
 
                     <ul class="tab-links">
-                        <li class="active"><a href="#tab1">Kategorier</a></li>
-                        <li><a href="#tab2">Innhold A-Å</a></li>
+                        <li class="active"><a id="content_categories_link" href="#tab1">Kategorier</a></li>
+                        <li><a id="content_fullist_link" href="#tab2">Innhold A-Å</a></li>
                         <li>
                             <input class="mainsearch" type="text" placeholder="Søk i alt innhold" value="Søk i alt innhold" />
                         </li>
@@ -128,6 +128,8 @@
 
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
+                                    <a id="content_categories" tabindex="-1"></a>
+
                                     <ul>
                                         <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer</a></li>
                                         <li><a href="#">Nasjonale strategier og planer</a></li>
@@ -162,7 +164,7 @@
                         <div id="tab2" class="tab">
                             <div class="row alfabetisk">
                                 <div class="col-sm-2 col-md-3 col-lg-3">
-
+                                    <a id="content_fullist" tabindex="-1"></a>
                                     <ul>
                                         <li>A</li>
                                         <li><a href="#">AD/HD</a></li>

@@ -10,7 +10,14 @@
 
         // Change/remove current tab to active
         $(this).parent('li').addClass('active').siblings().removeClass('active');
-
         e.preventDefault();
+    });
+
+    $('#content_categories_link').on('click', function () {
+        document.getElementById('content_categories').focus();
+    });
+
+    $('#content_fullist_link').on('click', function () {
+        document.getElementById('content_fullist').focus();
     });
 });

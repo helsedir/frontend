@@ -656,24 +656,31 @@ section .innholdswrapper {
     Moduler
 ***********************************************************************/
 .abonneringsmodul {
-  margin-top: 40px;
-  padding: 10px;
-  background: white;
+  margin: 40px 0 0 30px;
+  padding-bottom: 5px;
+  max-width: 390px;
+  border-bottom: 2px solid #004e66;
 }
-.abonneringsmodul h4 {
+.abonneringsmodul p {
+  font-size: 18px;
   margin: 0;
+  color: #004e66;
+  text-transform: uppercase;
 }
 .abonneringsmodul .fa {
-  color: #0093a7;
+  color: #004e66;
 }
 .abonneringsmodul a {
-  margin-left: 10px;
+  font-size: 18px;
+  margin: 0 20px 0 10px;
+  text-decoration: none;
+  color: #004e66;
 }
-.abonneringsmodul :visited {
-  color: #222;
+.abonneringsmodul a:visited {
+  color: #004e66;
   text-decoration: none;
 }
-.abonneringsmodul :hover {
+.abonneringsmodul a:hover {
   text-decoration: none;
 }
 .abonneringsmodul div {
@@ -921,6 +928,11 @@ video {
 .aside h2 {
   margin: 0;
 }
+@media only screen and (max-width: 1199px) {
+  .abonneringsmodul {
+    margin: 40px 0 30px 30px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .aside {
     top: 0;
@@ -1024,6 +1036,7 @@ video {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 50px;
+  display: none;
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/
@@ -1728,9 +1741,24 @@ iframe {
   margin-bottom: 23px;
 }
 .external-link:after {
-  padding-left: 10px;
+  padding-left: 5px;
   content: "\f08e";
   font-family: "FontAwesome";
+}
+.internal-link {
+  text-decoration: none;
+}
+.internal-link h2,
+.internal-link h3,
+.internal-link h4,
+.internal-link p {
+  display: inline;
+}
+.internal-link:after {
+  padding-left: 5px;
+  content: "\f054";
+  font-family: "FontAwesome";
+  font-size: inherit;
 }
 .tilskudd {
   padding: 25px 0 10px 0;
