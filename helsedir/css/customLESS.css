@@ -85,7 +85,9 @@ ul li {
   margin-left: 40px;
 }
 .hide {
-  display: none;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 .shortcuts {
   position: absolute;
@@ -656,7 +658,7 @@ section .innholdswrapper {
     Moduler
 ***********************************************************************/
 .abonneringsmodul {
-  margin: 40px 0 0 30px;
+  margin: 40px 0 0 0;
   padding-bottom: 5px;
   max-width: 390px;
   border-bottom: 2px solid #004e66;
@@ -807,7 +809,11 @@ section .innholdswrapper {
 }
 .personmodul {
   /*float: right;*/
-  margin: 25px 0 25px 0;
+  margin: 25px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: auto;
 }
 .personmodul h3 {
   margin-bottom: 1rem;
@@ -938,7 +944,10 @@ video {
     top: 0;
     right: 0;
     position: absolute;
-    margin-right: -50%;
+    margin-right: -55%;
+  }
+  .aside.personmodul {
+    top: auto;
   }
   .personmodul.kontakt {
     bottom: 0;
@@ -1036,7 +1045,6 @@ video {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 50px;
-  display: none;
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/
@@ -1139,8 +1147,10 @@ video {
 .menyknapp {
   vertical-align: middle;
 }
-.cleanlist {
+.cleanlist,
+.linklist {
   list-style-type: none;
+  margin-left: 0;
 }
 .borderbox {
   margin-bottom: 20px;
@@ -1829,9 +1839,6 @@ iframe {
   margin-top: 20px;
 }
 @media braille {
-  .toppmeny {
-    display: block !important;
-  }
   .has-hidden-content div {
     display: block !important;
   }

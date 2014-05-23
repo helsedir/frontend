@@ -6,8 +6,8 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (!$contentToHide.hasClass('visuallyhidden') && !$parentTag.hasClass('has-visible-content')) {
-                $contentToHide.addClass('visuallyhidden');
+            if (!$contentToHide.hasClass('hide') && !$parentTag.hasClass('has-visible-content')) {
+                $sectioncontent.addClass('hide');
                 $parentTag.addClass('has-hidden-content');
             }
         });
@@ -17,8 +17,8 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion')) {
-                $contentToHide.removeClass('visuallyhidden');
+            if (($contentToHide.hasClass('hide') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion')) {
+                $contentToHide.removeClass('hide');
                 $parentTag.removeClass('has-hidden-content');
             }
             else if ($parentTag.hasClass('has-visible-content')) {
@@ -35,14 +35,25 @@ $("h2").click(function () {
         $header = $(this);
         $content = $header.next();
         $parent = $header.parent();
-
-        $content.toggleClass('visuallyhidden');
-        if ($parent.hasClass("has-hidden-content")) {
-            $parent.addClass("has-visible-content");
-            $parent.removeClass("has-hidden-content");
-        } else {
-            $parent.removeClass("has-visible-content");
-            $parent.addClass("has-hidden-content");
+        if (!$header.hasClass('accordion')) {
+            if ($parent.hasClass("has-hidden-content")) {
+                $parent.addClass("has-visible-content");
+                $parent.removeClass("has-hidden-content");
+                $content.slideUp(0, function () {
+                    $content.removeClass('hide')
+                        .slideDown(500);
+                });
+                $('html, body').animate({
+                    scrollTop: $content.offset().top
+                }, 700);
+            } else {
+                $parent.removeClass("has-visible-content");
+                $parent.addClass("has-hidden-content");
+                $content.slideUp('fast', function () {
+                    $content.addClass('hide')
+                        .slideDown(0);
+                });
+            }
         }
     }
 });

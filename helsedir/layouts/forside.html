@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
     <div id="header">
         <div class="shortcuts">
             <ul>
-                <li><a href="#content" tabindex="1" accesskey="i" id="contentshortcut">Innhold</a></li>
+                <li><a href="#menu" tabindex="1" accesskey="i" id="menushortcut">Meny</a></li>
             </ul>
         </div>
         <div class="container">
@@ -34,8 +34,8 @@
 
                 <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile  col-md-offset-1 col-lg-offset-3" id="mainsearch">
                     <form>
-                        <label for="mainsearch" class="hide">Søk</label>
-                        <input id="mainsearch" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
+                        <label for="mainsearchinput" class="hide">Søk</label>
+                        <input id="mainsearchinput" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
                     </form>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
@@ -89,7 +89,7 @@
 
                     <div class="entrancebutton ">
                         <a href="#" class="js-expander" onclick="return false;">
-                            <div class=" menu">
+                            <div class="menu">
                                 <p class="innerDiv">
                                     Alt innhold A til Å <i class="fa fa-bars"></i>
                                 </p>
@@ -110,11 +110,11 @@
         </div>
     </div>
 
-    <div class="toppmeny container-fluid js-expand">
+    <div class="toppmeny container-fluid js-expand hide">
         <div class="inner container-fluid">
             <div class="container">
                 <nav class="tabs">
-                    <a id="content" tabindex="-1"></a>
+                    <a id="menu" tabindex="-1"></a>
 
                     <ul class="tab-links">
                         <li class="active"><a id="content_categories_link" href="#tab1">Kategorier</a></li>
@@ -143,7 +143,7 @@
                                         <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
                                         <li><a href="#">Beredskap</a></li>
                                         <li><a href="transportside_loverogregler.html">Lover og rettigheter</a></li>
-                                        <li><a href="#">Høringer</a></li>
+                                        <li><a href="hoeringer.html">Høringer</a></li>
                                         <li><a href="#">Kurs og konferanser</a></li>
                                     </ul>
                                 </div>
@@ -389,7 +389,7 @@
                                                 <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
                                                 <li><a href="#">Beredskap</a></li>
                                                 <li><a href="transportside_loverogregler.html">Lover og rettigheter</a></li>
-                                                <li><a href="#">Høringer</a></li>
+                                                <li><a href="hoeringer.html">Høringer</a></li>
                                                 <li><a href="#">Kurs og konferanser</a></li>
                                             </ul>
                                         </div>

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tilskudd</title>
+    <title>Høringer</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
 
     <link href="../css/customLESS.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/hoeringer.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,13 +24,7 @@
 
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <h1>Tilskudd</h1>
-                        <p>Søk etter rapporter på tilskudd</p>
-                        <ul>
-                            <li><a href="#">Gå til Altinn for å søke eller rapportere</a></li>
-                            <li><a href="#" class="external-link">Kontakt Altinn brukerservice</a></li>
-                            <li><a href="#" class="external-link">Hvordan er søknadsprosessen?</a></li>
-                        </ul>
+                        <h1>Høringer</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -70,62 +65,26 @@
                                             </optgroup>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="soeker">Hvem kan søke</label>
-                                        <select id="soeker" class="form-control">
-                                            <option>Alle</option>
-                                            <option>Fylkeskommuner (16)</option>
-                                            <option>Kommuner</option>
-                                            <option>Organisasjoner (33)</option>
-                                            <option>Private bedrifter (10)</option>
-                                            <option>Privatpersoner (1)</option>
-                                            <option>Statlige mottakere (20)</option>
-                                            <option>Statlige/kommunale/fylkeskommunale bedrifter (23)</option>
-                                            <option>Stiftelser (25)</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group" id="tilskuddsaar">
-                                        <label for="tilskuddsaar">
-                                            Tilskuddsår
-                                        </label>
-                                        <select class="form-control">
-                                            <option>2013 (10)</option>
-                                            <option>2012 (1)</option>
-                                            <option>2011 (1)</option>
-                                            <option>2010 (1)</option>
-                                        </select>
-                                    </div>
                                 </form>
                             </div>
                         </aside>
-                        <p>40 gjeldende tilskudd</p>
-                        <div class="tilskudd_sortcontrols">
-                            <form action="">
-                                <input type="radio" id="gjeldende_tilskudd" name="tilskuddsort" value="gjeldende_tilskudd" checked="" onclick="checkTilskudd()" /><label>Gjeldende tilskudd</label>
-                                <input type="radio" id="utgaatte_tilskudd" name="tilskuddsort" value="utgaatte_tilskudd" onclick="checkTilskudd()" /><label>Utgåtte tilskudd</label>
-                            </form>
+                        <div class="hoeringer">
+                            <a href="#">Veileder for Nødnett i helsetjenesten</a>
+                            <p class="hoeringer_status">Ute på høring</p>
+                            <p class="hoeringer_deadline">Høringsfrist: 02.06.2014</p>
                         </div>
-
-                        <div>
-                            <div class="tilskudd">
-                                <a href="tilskudd_et_tilskudd.html"><h2>Etablering av nye dagaktivitetstilbud til hjemmeboende personer med demens</h2></a>
-                                <p>Frist: 15.08.2014</p>
-                            </div>
-                            <div class="tilskudd">
-                                <a href="#"><h2>Frivillig arbeid</h2></a>
-                                <p>Frist: 25.09.2014</p>
-                            </div>
-                            <div class="tilskudd">
-                                <a href="#"><h2>Menn i helse - nasjonalt prosjekt</h2></a>
-                                <p>Frist: 01.10.2014</p>
-                            </div>
-                            <div class="tilskudd">
-                                <a href="#"><h2>Velferdsteknologi i kommunene</h2></a>
-                                <p>Frist: 01.11.2014</p>
-                            </div>
+                        <div class="hoeringer">
+                            <a href="#">Kvinnehelse - 10 år etter kvinnestrategien</a>
+                            <p class="hoeringer_status">Ute på høring</p>
+                            <p class="hoeringer_deadline">Høringsfrist: 27.06.2014</p>
+                        </div>
+                        <div class="hoeringer">
+                            <a href="hoeringer_underbehandling.html">Utkast til revidering av veileder til forskrift om miljørettet helsevern i barnehager og skoler</a>
+                            <p class="hoeringer_status">Under behandling</p>
+                            <p class="hoeringer_deadline">Behandlingsfrist: 01.06.2014</p>
                         </div>
                         <div class="toggleshowmorenews">
-                            <div class="showmorenews"><a href="#" onclick="return false;">Vis flere tilskudd</a></div>
+                            <div class="showmorenews"><a href="#" onclick="return false;">Vis flere høringer</a></div>
                         </div>
                     </article>
                 </div>

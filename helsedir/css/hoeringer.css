@@ -1,0 +1,13 @@
+﻿.hoeringer {
+  padding-bottom: 15px;
+  margin-top: 30px;
+  border-bottom: 1px solid gray;
+}
+.hoeringer p {
+  display: inline;
+  margin-right: 30px;
+}
+.hoeringer a {
+  display: block;
+}
+/*# sourceMappingURL=hoeringer.css.map */

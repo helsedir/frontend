@@ -2,23 +2,42 @@ $(document).ready(function () {
     "use strict";
 
     var expander = $(".js-expander"),
-        expandedContent = $(".js-expand");
+        expandedContent = $(".js-expand"),
+         visible = false;
 
     expander.css("cursor", "pointer");
 
-    expander.on('click', function () {
-        $('.js-expanded').not(this).removeClass('js-expanded');
+    /* expander.on('click', function () {
+         $('.js-expanded').not(this).removeClass('js-expanded');
 
-        if (expandedContent.is(":visible")) {
-            expander.removeClass("js-expanded");
-            expandedContent.slideUp(500);
+         if (expandedContent.is(":visible")) {
+             expander.removeClass("js-expanded");
+             expandedContent.slideUp(500);
+         } else {
+             expander.addClass("js-expanded");
+             expandedContent.slideDown(500);
+             $('html, body').animate({
+                 scrollTop: expandedContent.offset().top
+             }, 700);
+         }
+     });
+ */
+    expander.click(function () {
+        if (visible) {
+            expandedContent.slideUp('fast', function () {
+                expandedContent.addClass('hide')
+                    .slideDown(0);
+            });
         } else {
-            expander.addClass("js-expanded");
-            expandedContent.slideDown(500);
+            expandedContent.slideUp(0, function () {
+                expandedContent.removeClass('hide')
+                    .slideDown(500);
+            });
             $('html, body').animate({
                 scrollTop: expandedContent.offset().top
             }, 700);
         }
+        visible = !visible;
     });
 
     $('#mobilesearch').on('click', function () {
@@ -32,16 +51,18 @@ $(document).ready(function () {
         }
     });
 
-    $('#contentshortcut').on('click', function () {
-        if (expandedContent.is(":visible")) {
-            expander.removeClass("js-expanded");
-            expandedContent.slideUp(500);
+    $('#menushortcut').on('click', function () {
+        if (visible) {
+            expandedContent.slideUp('fast', function () {
+                expandedContent.addClass('hide')
+                    .slideDown(500);
+            });
         } else {
-            expander.addClass("js-expanded");
-            expandedContent.slideDown(500);
-            $('html, body').animate({
-                scrollTop: expandedContent.offset().top
-            }, 700);
+            expandedContent.slideUp(0, function () {
+                expandedContent.removeClass('hide')
+                    .slideDown(500);
+            });
         }
+        visible = !visible;
     });
 });
