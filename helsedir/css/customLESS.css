@@ -40,7 +40,7 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: "soho gothic pro light";
-  margin: 55px 0 0 0;
+  margin: 35px 0 0 0;
 }
 h2.accordion {
   border-bottom: 1px solid #004e66;
@@ -74,15 +74,17 @@ p {
   font-family: 'Calibri';
   line-height: 27px;
 }
-ul {
-  margin-bottom: 24px;
+ul.list {
+  list-style: none;
+  margin: 0 0 24px 0;
 }
-ul {
-  list-style-type: disc;
-  padding-left: 23px;
+ul.list li {
+  padding-bottom: 15px;
 }
-ul li {
-  margin-left: 40px;
+ul.list li:before {
+  content: "•";
+  color: #004e66;
+  margin-right: 20px;
 }
 .hide {
   position: absolute !important;
@@ -111,7 +113,7 @@ ul li {
   top: 10px;
 }
 a {
-  color: #0093a7;
+  color: #004e66;
   text-decoration: underline;
   font-size: 1em;
   line-height: 35px;
@@ -295,7 +297,12 @@ footer.rammeverk a:visited {
   padding-right: 0.3rem;
 }
 .breadcrumbs li:after {
-  content: ' <';
+  font-family: "FontAwesome";
+  content: '\f104';
+  color: #004e66;
+  font-size: 25px;
+  margin: 0 5px 0 5px;
+  vertical-align: middle;
 }
 .breadcrumbs li:last-child:after {
   content: '';
@@ -380,6 +387,7 @@ footer.rammeverk a:visited {
 .tabs .tab-links {
   margin: 0;
   padding-left: 20px;
+  list-style: none;
 }
 .tabs .tab-links:after {
   display: block;
@@ -394,6 +402,9 @@ footer.rammeverk a:visited {
   width: 170px;
   text-align: center;
   transition: all linear 0.15s;
+}
+.tabs .tab-links li:before {
+  content: "";
 }
 .tabs .tab-links li.active {
   border: none;
@@ -435,6 +446,9 @@ footer.rammeverk a:visited {
   .tabs .tab-content li:last-of-type {
     border-bottom: 0;
   }
+}
+.tabs .tab-content li:before {
+  content: "";
 }
 .tabs .tab-content a,
 .tabs .tab-content a:visited,
@@ -1608,20 +1622,16 @@ footer .tabs .tab-content li a {
 .calltoaction {
   border: 2px solid #004e66;
   color: #004e66;
-  padding: 10px 20px 10px 15px;
-  background: white;
+  padding: 10px 20px 10px 35px;
   margin: 30px 0 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
   max-width: 240px;
   display: block;
-}
-.calltoaction:before {
-  float: left;
-  padding-right: 10px;
-  content: "\f054";
-  font-family: "FontAwesome";
+  background: #ffffff url('../img/ikon_pilmothoyre.svg') no-repeat;
+  background-position: 5% 50%;
+  background-size: 10px;
 }
 .frontpage {
   /*.row {
@@ -1785,13 +1795,19 @@ footer .tabs .tab-content li a {
 iframe {
   margin-bottom: 23px;
 }
-.external-link:after {
+.external-link {
   padding-left: 5px;
-  content: "\f08e";
-  font-family: "FontAwesome";
+  background: url('../img/ikon_eksternlenke.svg') right no-repeat;
+  background-size: 16px 16px;
+  padding-right: 22px;
 }
 .internal-link {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #004e66;
+}
+.internal-link:visited {
+  color: #0093a7;
+  text-decoration: underline;
 }
 .internal-link h2,
 .internal-link h3,
@@ -1799,11 +1815,12 @@ iframe {
 .internal-link p {
   display: inline;
 }
-.internal-link:after {
+.internal-link.aftertext:after {
   padding-left: 5px;
-  content: "\f054";
+  content: "\f105";
   font-family: "FontAwesome";
   font-size: inherit;
+  text-decoration: none;
 }
 .tilskudd {
   padding: 25px 0 10px 0;
@@ -1932,8 +1949,9 @@ iframe {
 }
 .module_related {
   border: 1px solid #dbdcdd;
-  padding: 10px;
-  background: white;
+  padding: 10px 10px 10px 30px;
+  background: #ffffff url('../img/pulse2.svg') 1% 20% no-repeat;
+  margin-bottom: 20px;
 }
 .module_related h3 {
   margin: 0;

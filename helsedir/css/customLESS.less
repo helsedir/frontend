@@ -60,7 +60,7 @@ h2 {
     font-size: 36px;
     line-height: 42px;
     font-family: @fontSohoLight;
-    margin: 55px 0 0 0;
+    margin: 35px 0 0 0;
 
     &.accordion {
         border-bottom: 1px solid @colorDarkBlue;
@@ -102,15 +102,19 @@ p {
 }
 
 ul {
-    margin-bottom: 24px;
-}
+    &.list {
+        list-style: none;
+        margin: 0 0 24px 0;
 
-ul {
-    list-style-type: disc;
-    padding-left: 23px;
+        li {
+            padding-bottom: 15px;
+        }
 
-    li {
-        margin-left: 40px;
+            li:before {
+                content: "•";
+                color: @colorDarkBlue;
+                margin-right: 20px;
+            }
     }
 }
 
@@ -147,7 +151,7 @@ ul {
 }
 
 a {
-    color: @colorMediumBlaa;
+    color: @colorDarkBlue;
     text-decoration: underline;
     font-size: 1em;
     line-height: 35px;
@@ -347,7 +351,12 @@ footer {
     }
 
         li:after {
-            content: ' <';
+            font-family: "FontAwesome";
+            content: '\f104';
+            color: @colorDarkBlue;
+            font-size: 25px;
+            margin: 0 5px 0 5px;
+            vertical-align: middle;
         }
 
         li:last-child:after {
@@ -447,6 +456,7 @@ footer {
     .tab-links {
         margin: 0;
         padding-left: 20px;
+        list-style: none;
 
         &:after {
             display: block;
@@ -462,6 +472,10 @@ footer {
             width: 170px;
             text-align: center;
             transition: all linear 0.15s;
+
+            &:before {
+                content: "";
+            }
 
             &.active {
                 border: none;
@@ -508,6 +522,10 @@ footer {
                 &:last-of-type {
                     border-bottom: 0;
                 }
+            }
+
+            &:before {
+                content: "";
             }
         }
 
@@ -786,7 +804,6 @@ section .innholdswrapper {
     background-color: white;
     background-size: auto 100%;
 }
-
 /**********************************************************************
     Moduler
 ***********************************************************************/
@@ -1405,7 +1422,6 @@ video {
 .topbar {
     margin-bottom: 60px;
 }
-
 /*.statistics_compare {
     background: #ddd;
     border-radius: 5px;
@@ -1528,7 +1544,6 @@ video {
     width: 75%;
     margin-bottom: 20px;
 }
-
 //Center text in input fields
 ::-webkit-input-placeholder {
     text-align: center;
@@ -1545,7 +1560,6 @@ video {
 :-ms-input-placeholder {
     text-align: center;
 }
-
 /*******************************Ny forside******************************************/
 @colorDarkBlue: #004e66;
 @colorMediumBlue: #0093a7;
@@ -1954,21 +1968,16 @@ footer {
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
-    padding: 10px 20px 10px 15px;
-    background: white;
+    padding: 10px 20px 10px 35px;
     margin: 30px 0 30px 0;
     font-family: @fontCalibri;
     font-size: 20px;
     line-height: 24px;
     max-width: 240px;
     display: block;
-
-    &:before {
-        float: left;
-        padding-right: 10px;
-        content: "\f054";
-        font-family: "FontAwesome";
-    }
+    background: white url('../img/ikon_pilmothoyre.svg') no-repeat;
+    background-position: 5% 50%;
+    background-size: 10px;
 }
 
 .frontpage {
@@ -2176,25 +2185,31 @@ iframe {
 }
 
 .external-link {
-    &:after {
-        padding-left: 5px;
-        content: "\f08e";
-        font-family: "FontAwesome";
-    }
+    padding-left: 5px;
+    background: url('../img/ikon_eksternlenke.svg') right no-repeat;
+    background-size: 16px 16px;
+    padding-right: 22px;
 }
 
 .internal-link {
-    text-decoration: none;
+    text-decoration: underline;
+    color: @colorDarkBlue;
+
+    &:visited {
+        color: @colorMediumBlue;
+        text-decoration: underline;
+    }
 
     h2, h3, h4, p {
         display: inline;
     }
 
-    &:after {
+    &.aftertext:after {
         padding-left: 5px;
-        content: "\f054";
+        content: "\f105";
         font-family: "FontAwesome";
         font-size: inherit;
+        text-decoration: none;
     }
 }
 
@@ -2359,8 +2374,9 @@ iframe {
 
 .module_related {
     border: 1px solid #dbdcdd;
-    padding: 10px;
-    background: white;
+    padding: 10px 10px 10px 30px;
+    background: white url('../img/pulse2.svg') 1% 20% no-repeat;
+    margin-bottom: 20px;
 
     h3 {
         margin: 0;
@@ -2456,9 +2472,7 @@ iframe {
 .tema_select_all {
     font-weight: bold;
 }
-
 /**Kurs og konferanse*/
-
 .conference_details {
     margin-top: 20px;
 
