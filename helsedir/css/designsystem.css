@@ -27,15 +27,6 @@
   margin-bottom: 0.7rem;
   margin-top: 0;
 }
-.hhs h1,
-.hhs h2 {
-  font-family: "soho gothic pro light";
-}
-.hhs h2 {
-  font-size: 2em;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
 .hhs #hovedtittel {
   font-size: 3em;
   padding-top: 2em;
@@ -44,11 +35,6 @@
   height: auto;
   line-height: 1.2em;
   margin: 0;
-}
-.hhs .ingress {
-  max-width: 500px;
-  margin-bottom: 3em;
-  line-height: 1.5em;
 }
 .hhs .illustrasjonOverskrift {
   font-family: "soho gothic pro light";
