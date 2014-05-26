@@ -290,7 +290,8 @@ footer.rammeverk a:visited {
   padding: 6px 16px 2px 12px;
   min-height: 44px;
   max-height: 44px;
-  background: white;
+  background: #ffffff url('../img/logo.svg') no-repeat;
+  display: block;
 }
 .breadcrumbs {
   padding: 0;
