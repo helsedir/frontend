@@ -148,6 +148,8 @@
 .hhs .farger {
   text-align: center;
   text-align: -webkit-center;
+  background: white;
+  padding: 10px;
 }
 .hhs .textexamples {
   margin-top: 20px;

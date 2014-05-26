@@ -3,9 +3,6 @@
   padding-bottom: 20px;
   width: 100%;
 }
-.transportside .transportsideknapp h2 {
-  margin: 35px 0 0 0;
-}
 .transportside .transportsideknapp a {
   display: block;
   width: 100%;
@@ -14,13 +11,20 @@
 }
 .transportside .transportsideknapp a h2 {
   color: #0093a7;
+  margin: 35px 0 0 0;
 }
-.transportside .transportsideknapp a:visited,
-.transportside .transportsideknapp a:hover {
+.transportside .transportsideknapp a:visited {
   color: black;
 }
-.transportside .transportsideknapp a:visited h2,
+.transportside .transportsideknapp a:visited h2 {
+  color: #0093a7;
+}
+.transportside .transportsideknapp a:hover {
+  text-decoration: none;
+  color: black;
+}
 .transportside .transportsideknapp a:hover h2 {
+  text-decoration: underline;
   color: #0093a7;
 }
 .transportside .transportsideknapp .skygge {

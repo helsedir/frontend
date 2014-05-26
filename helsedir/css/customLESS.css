@@ -184,15 +184,6 @@ footer .tab-links a {
 footer .tab-content {
   background: white;
 }
-footer .tab-content .alfabetisk ul li:first-of-type {
-  border-bottom: solid 1px #b2babc;
-}
-footer .tab-content .alfabetisk ul li {
-  border: none;
-}
-footer .tab-content .alfabetisk ul li a {
-  color: #004e66;
-}
 footer.rammeverk {
   height: 100%;
   background: #004e66;
@@ -399,7 +390,6 @@ footer.rammeverk a:visited {
   margin: 0;
   float: left;
   list-style: none;
-  background: #aeaba8;
   margin-right: 10px;
   width: 170px;
   text-align: center;
@@ -449,6 +439,15 @@ footer.rammeverk a:visited {
 .tabs .tab-content a,
 .tabs .tab-content a:visited,
 .tabs .tab-content a:hover {
+  color: #004e66;
+}
+.tabs .tab-content .alfabetisk ul li:first-of-type {
+  border-bottom: solid 1px #b2babc;
+}
+.tabs .tab-content .alfabetisk ul li {
+  border: none;
+}
+.tabs .tab-content .alfabetisk ul li a {
   color: #004e66;
 }
 .tabs-statistics {
@@ -1522,6 +1521,12 @@ footer .tabs .tab-links a {
   color: white;
   padding: 0 30px 0 20px;
   border-radius: 0;
+}
+footer .tabs .tab-links a:hover,
+footer .tabs .tab-links a:focus {
+  background: #a7cce5;
+  text-decoration: none;
+  color: black !important;
 }
 footer .tabs .tab-content {
   background: white;

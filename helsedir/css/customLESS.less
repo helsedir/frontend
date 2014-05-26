@@ -230,22 +230,6 @@ footer {
 
     .tab-content {
         background: white;
-
-        .alfabetisk {
-            ul {
-                li:first-of-type {
-                    border-bottom: solid 1px @colorLysGraa;
-                }
-
-                li {
-                    border: none;
-
-                    a {
-                        color: @colorMorkBlaa;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -474,7 +458,6 @@ footer {
             margin: 0;
             float: left;
             list-style: none;
-            background: @colorDarkGray;
             margin-right: 10px;
             width: 170px;
             text-align: center;
@@ -530,6 +513,22 @@ footer {
 
         a, a:visited, a:hover {
             color: @colorMorkBlaa;
+        }
+
+        .alfabetisk {
+            ul {
+                li:first-of-type {
+                    border-bottom: solid 1px @colorLysGraa;
+                }
+
+                li {
+                    border: none;
+
+                    a {
+                        color: @colorMorkBlaa;
+                    }
+                }
+            }
         }
     }
 }
@@ -1852,6 +1851,12 @@ footer {
                 color: white;
                 padding: 0 30px 0 20px;
                 border-radius: 0;
+
+                &:hover, &:focus {
+                    background: #a7cce5;
+                    text-decoration: none;
+                    color: black !important;
+                }
             }
         }
 

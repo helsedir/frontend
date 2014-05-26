@@ -18,6 +18,8 @@
     });
 
     $('#content_fullist_link').on('click', function () {
+        var x = window.scrollX, y = window.scrollY;
         document.getElementById('content_fullist').focus();
+        window.scrollTo(x, y);
     });
 });
