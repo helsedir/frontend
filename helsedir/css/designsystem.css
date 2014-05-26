@@ -56,15 +56,6 @@
 .hhs #logo {
   width: 30%;
 }
-.hhs #bodyFont p {
-  font-size: 1em;
-  line-height: 30px;
-}
-.hhs #h2Font h2 {
-  font-family: "soho gothic pro medium";
-  font-size: 1.333em;
-  margin: 0;
-}
 .hhs .boks {
   border: 1px solid #ddd;
   padding: 1em;
