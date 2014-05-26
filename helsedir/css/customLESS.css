@@ -403,9 +403,6 @@ footer.rammeverk a:visited {
   text-align: center;
   transition: all linear 0.15s;
 }
-.tabs .tab-links li:before {
-  content: "";
-}
 .tabs .tab-links li.active {
   border: none;
   background: white;
