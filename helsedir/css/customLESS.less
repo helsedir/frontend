@@ -43,7 +43,7 @@ h1 {
     font-size: 48px;
     font-family: @fontSohoLight;
     line-height: 60px;
-    margin: 80px 0 0 0;
+    margin: 50px 0 0 0;
     color: @colorDarkBlue;
 }
 
@@ -353,7 +353,7 @@ footer {
 .breadcrumbs {
     padding: 0;
     list-style-type: none;
-    margin: 25px 0 0 0;
+    margin: 10px 0 0 0;
 
     li {
         display: block;
@@ -373,6 +373,7 @@ footer {
         text-decoration: underline;
         font-family: @fontCalibri;
         font-size: 18px;
+        line-height: 22px;
     }
 
         a:visited {
@@ -781,7 +782,7 @@ section .innholdswrapper {
 
 .search input {
     margin-top: 30px;
-    background: url('../img/search_icon.png') right center no-repeat;
+    background: url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
     background-color: white;
     background-size: auto 100%;
 }
@@ -931,48 +932,6 @@ section .innholdswrapper {
         float: right;
         padding-top: 0.2rem;
         width: 1.875rem;
-    }
-}
-
-.transportsideknapp {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: black;
-
-        h2 {
-            color: @colorMediumBlaa;
-        }
-    }
-
-        a:visited, a:hover {
-            h2 {
-                color: @colorMediumBlaa;
-            }
-
-            color: black;
-        }
-
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 10px;
-
-    .skygge {
-        display: none;
-    }
-
-    h4 {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .fa-chevron-right {
-        display: none;
     }
 }
 
@@ -1176,6 +1135,8 @@ video {
 
     h1 {
         font-size: 36px;
+        line-height: 42px;
+        margin-top: 40px;
     }
 
     h2 {
@@ -1189,6 +1150,22 @@ video {
     .statistics_compare {
         background: #ddd;
         border-radius: 5px;
+    }
+
+    .breadcrumbs {
+        margin: 0;
+    }
+
+    .tabs {
+        .tab-content {
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
     }
 }
 
@@ -1260,7 +1237,7 @@ video {
     /*border-bottom: 1px solid @colorLysGraa;*/
     margin-bottom: 30px;
     background: @colorLysLysGraa;
-    padding-top: 85px;
+    padding-top: 20px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 50px;
@@ -1274,7 +1251,7 @@ video {
     /* Clearfix */
     .tab-links {
         margin: 0;
-        margin-top: -53px;
+        margin-top: -35px;
         background-color: transparent;
 
         &:after {
@@ -1288,7 +1265,6 @@ video {
             float: left;
             list-style: none;
             width: 190px;
-            height: 40px;
             text-align: center;
 
             a {
@@ -1319,7 +1295,7 @@ video {
         }
 
         a {
-            padding: 9px 15px;
+            padding: 0 15px;
             display: inline-block;
             border-radius: 3px 3px 0px 0px;
             font-size: 16px;
@@ -1593,7 +1569,7 @@ header {
     .links {
         color: @colorDarkBlue;
         font-weight: bold;
-        margin-left: 20px;
+        margin-right: 15px;
     }
 
     @media only screen and (max-width: 900px) {
@@ -1609,9 +1585,11 @@ header {
     border-radius: 3px;
     border: 1px solid @colorDarkBlue;
     vertical-align: middle;
-    background: url('../img/search_icon.png') right center no-repeat;
-    background-size: auto 100%;
+    background: url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: auto 80%;
     background-color: #ffffff;
+    background-position: 97%;
+    cursor: pointer;
 }
 
 .menubutton {
@@ -1619,16 +1597,30 @@ header {
     min-height: 40px;
     text-align: center;
     display: inline-block;
-    margin-right: 40px;
+    padding-top: 2px;
+
+    &:focus {
+        text-decoration: none;
+        background-color: @colorLysLysGraa;
+        color: @colorDarkBlue;
+        border: solid 1px @colorDarkBlue;
+        border-radius: 3px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: @colorLysLysGraa;
+        color: @colorDarkBlue;
+        border-radius: 3px;
+    }
 
     a {
         border-radius: 3px;
         background-color: @colorDarkBlue;
         vertical-align: middle;
-        padding: 7px 10px 7px 10px;
+        padding: 7px 12px 7px 12px;
         color: #ffffff;
         font-weight: normal;
-        transition: all 0.5s;
 
         &:visited {
             background-color: @colorDarkBlue;
@@ -1645,11 +1637,12 @@ header {
         &:hover {
             text-decoration: none;
             background-color: @colorLysLysGraa;
+            border-radius: 3px;
             color: @colorDarkBlue;
         }
 
         &.js-expanded {
-            padding-bottom: 42px;
+            padding-bottom: 43px;
             border-radius: 3px 3px 0 0;
             background-color: @colorLysLysGraa;
             color: @colorDarkBlue;
@@ -1658,28 +1651,6 @@ header {
         i {
             /*font-size: 28px;*/
             margin-left: 10px;
-        }
-    }
-
-    @media only screen and (max-width:900px) {
-        width: auto; margin-right: 5px; a {
-            padding: 7px 7px 7px 7px;
-
-            &:hover {
-                text-decoration: none;
-            }
-
-            &.js-expanded {
-                padding-bottom: 18px;
-            }
-
-            span {
-                display: none;
-            }
-
-            i {
-                margin-left: 0;
-            }
         }
     }
 }
@@ -1697,15 +1668,66 @@ header {
         display: none;
         background-color: @colorLysLysGraa;
         padding: 20px;
-        margin-top: 10px;
     }
 
-    .mobile-search {
-        display: inline;
+    .menubutton {
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+        float: left;
 
-        .fa {
-            font-size: 28px;
-            border: none;
+        &.mobile-menu {
+            padding: 7px 11px 8px 11px;
+            display: inline-block;
+            border-radius: 3px;
+            background: @colorDarkBlue url('../img/ikon_meny_hvit.svg') no-repeat;
+            background-size: 20px;
+            background-position: center;
+
+            &:hover {
+                background: @colorLysLysGraa url('../img/ikon_meny_blaa.svg') no-repeat;
+                background-size: 20px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: @colorLysLysGraa url('../img/ikon_meny_blaa.svg') no-repeat;
+                background-size: 20px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+
+        &.mobile-search {
+            display: inline-block;
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            background-size: 30px;
+            background-position: center;
+            border-radius: 3px;
+
+            &:focus {
+                text-decoration: none;
+                background-color: @colorLysLysGraa;
+                color: @colorDarkBlue;
+                border: solid 1px @colorDarkBlue;
+            }
+
+            &:hover {
+                background: @colorLysLysGraa url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background-size: 30px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: @colorLysLysGraa url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background-size: 29px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
         }
     }
 }
@@ -1743,7 +1765,6 @@ header {
 
         .innerDiv {
             color: black;
-            margin-top: 40%;
             text-align: center;
             margin-right: 10px;
         }
@@ -1765,28 +1786,29 @@ header {
             position: relative;
             margin-left: 12px;
             margin-bottom: 15px;
-
-            p {
-                margin: 0;
-                padding: 0;
-                font-size: 16px;
-                line-height: 25px;
-            }
-
-            h2 {
-                margin-bottom: 5px;
-                font-size: 30px;
-            }
         }
 
-        &:visited, &:hover {
+        h3 {
+            margin: 55px 0 5px 0;
+            padding: 0;
+            font-size: 28px;
+            font-family: @fontSohoLight;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+    }
+
+    &:visited, &:hover {
+        color: white;
+    }
+
+    &:hover {
+        h2, p {
+            text-decoration: underline;
             color: white;
-        }
-
-        &:hover {
-            h2 {
-                text-decoration: underline;
-            }
         }
     }
 }
@@ -1999,7 +2021,7 @@ footer {
 
 @media only screen and (max-width: 1199px) {
     header .links {
-        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
@@ -2039,7 +2061,11 @@ footer {
     }
 
     .transportsideknapp {
-        background: @colorLightGray;
+        background: white;
+
+        h2 {
+            margin: 0;
+        }
     }
 
     .breadcrumbs {
@@ -2096,6 +2122,18 @@ footer {
                 td:first-child:before {
                     content: '';
                 }
+        }
+    }
+
+    .toppmeny, .tabs, .tabs-statistics .tabs {
+        .tab-links {
+            li {
+                width: 115px;
+
+                a, a.active {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

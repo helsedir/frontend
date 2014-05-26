@@ -1,4 +1,4 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
     "use strict";
 
     var expander = $(".js-expander"),
@@ -27,14 +27,15 @@ $(document).ready(function () {
             expandedContent.slideUp('fast', function () {
                 expandedContent.addClass('hide')
                     .slideDown(0);
-                expander.removeClass('js-expanded');
             });
         } else {
             expandedContent.slideUp(0, function () {
                 expandedContent.removeClass('hide')
                     .slideDown(500);
-                expander.addClass('js-expanded');
             });
+            $('html, body').animate({
+                scrollTop: expandedContent.offset().top
+            }, 700);
         }
         visible = !visible;
     });

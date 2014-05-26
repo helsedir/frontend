@@ -1,0 +1,80 @@
+﻿@colorDarkBlue: #004e66;
+@colorDarkBlue: #004e66;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorGreen: #a1bf37;
+
+.transportside {
+    .border {
+        border-bottom: 2px solid @colorDarkBlue;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .transportsideknapp {
+        h2 {
+            margin: 35px 0 0 0;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: black;
+
+            h2 {
+                color: @colorMediumBlue;
+            }
+        }
+
+            a:visited, a:hover {
+                h2 {
+                    color: @colorMediumBlue;
+                }
+
+                color: black;
+            }
+
+        .skygge {
+            display: none;
+        }
+
+        h4 {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .fa-chevron-right {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .transportside {
+        .border {
+            margin-bottom: 15px;
+        }
+
+        .transportsideknapp {
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 1px;
+
+            h2 {
+                line-height: 35px;
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+}

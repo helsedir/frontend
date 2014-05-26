@@ -6,8 +6,8 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (!$contentToHide.hasClass('hide') && !$parentTag.hasClass('has-visible-content')) {
-                $sectioncontent.addClass('hide');
+            if (!$contentToHide.hasClass('hide') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
+                $contentToHide.addClass('hide');
                 $parentTag.addClass('has-hidden-content');
             }
         });
@@ -17,7 +17,7 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (($contentToHide.hasClass('hide') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion')) {
+            if (($contentToHide.hasClass('hide') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion') && !$parentTag.is('a')) {
                 $contentToHide.removeClass('hide');
                 $parentTag.removeClass('has-hidden-content');
             }

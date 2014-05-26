@@ -25,7 +25,7 @@ h1 {
   font-size: 48px;
   font-family: "soho gothic pro light";
   line-height: 60px;
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
   color: #004e66;
 }
 .ingress {
@@ -295,7 +295,7 @@ footer.rammeverk a:visited {
 .breadcrumbs {
   padding: 0;
   list-style-type: none;
-  margin: 25px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .breadcrumbs li {
   display: block;
@@ -312,6 +312,7 @@ footer.rammeverk a:visited {
   text-decoration: underline;
   font-family: 'Calibri';
   font-size: 18px;
+  line-height: 22px;
 }
 .breadcrumbs a:visited {
   color: #004e66;
@@ -650,7 +651,7 @@ section .innholdswrapper {
 }
 .search input {
   margin-top: 30px;
-  background: url('../img/search_icon.png') right center no-repeat;
+  background: url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
   background-color: white;
   background-size: auto 100%;
 }
@@ -771,41 +772,6 @@ section .innholdswrapper {
   float: right;
   padding-top: 0.2rem;
   width: 1.875rem;
-}
-.transportsideknapp {
-  padding: 10px 10px 10px 10px;
-  margin-bottom: 10px;
-}
-.transportsideknapp a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: black;
-}
-.transportsideknapp a h2 {
-  color: #0093a7;
-}
-.transportsideknapp a:visited,
-.transportsideknapp a:hover {
-  color: black;
-}
-.transportsideknapp a:visited h2,
-.transportsideknapp a:hover h2 {
-  color: #0093a7;
-}
-.transportsideknapp .skygge {
-  display: none;
-}
-.transportsideknapp h4 {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-.transportsideknapp p {
-  margin: 0;
-}
-.transportsideknapp .fa-chevron-right {
-  display: none;
 }
 .personmodul {
   /*float: right;*/
@@ -976,6 +942,8 @@ video {
   }
   h1 {
     font-size: 36px;
+    line-height: 42px;
+    margin-top: 40px;
   }
   h2 {
     font-size: 28px;
@@ -986,6 +954,15 @@ video {
   .statistics_compare {
     background: #ddd;
     border-radius: 5px;
+  }
+  .breadcrumbs {
+    margin: 0;
+  }
+  .tabs .tab-content ul {
+    margin-bottom: 0;
+  }
+  .tabs .tab-content ul li {
+    padding: 5px 0;
   }
 }
 .omoss {
@@ -1041,7 +1018,7 @@ video {
   /*border-bottom: 1px solid @colorLysGraa;*/
   margin-bottom: 30px;
   background: #dbdcdd;
-  padding-top: 85px;
+  padding-top: 20px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 50px;
@@ -1056,7 +1033,7 @@ video {
 }
 .toppmeny .tab-links {
   margin: 0;
-  margin-top: -53px;
+  margin-top: -35px;
   background-color: transparent;
 }
 .toppmeny .tab-links:after {
@@ -1069,7 +1046,6 @@ video {
   float: left;
   list-style: none;
   width: 190px;
-  height: 40px;
   text-align: center;
 }
 .toppmeny .tab-links li a {
@@ -1096,7 +1072,7 @@ video {
   height: 100%;
 }
 .toppmeny .tab-links a {
-  padding: 9px 15px;
+  padding: 0 15px;
   display: inline-block;
   border-radius: 3px 3px 0px 0px;
   font-size: 16px;
@@ -1301,7 +1277,7 @@ header {
 header .links {
   color: #004e66;
   font-weight: bold;
-  margin-left: 20px;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 900px) {
   header {
@@ -1316,25 +1292,39 @@ header .links {
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
-  background: url('../img/search_icon.png') right center no-repeat;
-  background-size: auto 100%;
+  background: url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+  background-size: auto 80%;
   background-color: #ffffff;
+  background-position: 97%;
+  cursor: pointer;
 }
 .menubutton {
   width: 150px;
   min-height: 40px;
   text-align: center;
   display: inline-block;
-  margin-right: 40px;
+  padding-top: 2px;
+}
+.menubutton:focus {
+  text-decoration: none;
+  background-color: #dbdcdd;
+  color: #004e66;
+  border: solid 1px #004e66;
+  border-radius: 3px;
+}
+.menubutton:hover {
+  text-decoration: none;
+  background-color: #dbdcdd;
+  color: #004e66;
+  border-radius: 3px;
 }
 .menubutton a {
   border-radius: 3px;
   background-color: #004e66;
   vertical-align: middle;
-  padding: 7px 10px 7px 10px;
+  padding: 7px 12px 7px 12px;
   color: #ffffff;
   font-weight: normal;
-  transition: all 0.5s;
 }
 .menubutton a:visited {
   background-color: #004e66;
@@ -1349,10 +1339,11 @@ header .links {
 .menubutton a:hover {
   text-decoration: none;
   background-color: #dbdcdd;
+  border-radius: 3px;
   color: #004e66;
 }
 .menubutton a.js-expanded {
-  padding-bottom: 42px;
+  padding-bottom: 43px;
   border-radius: 3px 3px 0 0;
   background-color: #dbdcdd;
   color: #004e66;
@@ -1360,27 +1351,6 @@ header .links {
 .menubutton a i {
   /*font-size: 28px;*/
   margin-left: 10px;
-}
-@media only screen and (max-width: 900px) {
-  .menubutton {
-    width: auto;
-    margin-right: 5px;
-  }
-  .menubutton a {
-    padding: 7px 7px 7px 7px;
-  }
-  .menubutton a:hover {
-    text-decoration: none;
-  }
-  .menubutton a.js-expanded {
-    padding-bottom: 18px;
-  }
-  .menubutton a span {
-    display: none;
-  }
-  .menubutton a i {
-    margin-left: 0;
-  }
 }
 .mobile-search {
   display: none;
@@ -1393,14 +1363,59 @@ header .links {
     display: none;
     background-color: #dbdcdd;
     padding: 20px;
-    margin-top: 10px;
   }
-  .mobile-search {
-    display: inline;
+  .menubutton {
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
   }
-  .mobile-search .fa {
-    font-size: 28px;
-    border: none;
+  .menubutton.mobile-menu {
+    padding: 7px 11px 8px 11px;
+    display: inline-block;
+    border-radius: 3px;
+    background: #004e66 url('../img/ikon_meny_hvit.svg') no-repeat;
+    background-size: 20px;
+    background-position: center;
+  }
+  .menubutton.mobile-menu:hover {
+    background: #dbdcdd url('../img/ikon_meny_blaa.svg') no-repeat;
+    background-size: 20px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-menu.js-expanded {
+    padding-bottom: 43px;
+    background: #dbdcdd url('../img/ikon_meny_blaa.svg') no-repeat;
+    background-size: 20px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
+  }
+  .menubutton.mobile-search {
+    display: inline-block;
+    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search:focus {
+    text-decoration: none;
+    background-color: #dbdcdd;
+    color: #004e66;
+    border: solid 1px #004e66;
+  }
+  .menubutton.mobile-search:hover {
+    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search.js-expanded {
+    padding-bottom: 43px;
+    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: 29px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
   }
 }
 .mainentrance {
@@ -1434,7 +1449,6 @@ header .links {
 }
 .entrancebutton .menu .innerDiv {
   color: black;
-  margin-top: 40%;
   text-align: center;
   margin-right: 10px;
 }
@@ -1456,27 +1470,26 @@ header .links {
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.entrancebutton a .innerDiv p,
-.entrancebutton .menu .innerDiv p {
-  margin: 0;
+.entrancebutton a h3,
+.entrancebutton .menu h3 {
+  margin: 55px 0 5px 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 28px;
+  font-family: "soho gothic pro light";
 }
-.entrancebutton a .innerDiv h2,
-.entrancebutton .menu .innerDiv h2 {
+.entrancebutton a h2,
+.entrancebutton .menu h2 {
   margin-bottom: 5px;
-  font-size: 30px;
+  font-size: 28px;
 }
-.entrancebutton a:visited,
-.entrancebutton .menu:visited,
-.entrancebutton a:hover,
-.entrancebutton .menu:hover {
+.entrancebutton:visited,
+.entrancebutton:hover {
   color: white;
 }
-.entrancebutton a:hover h2,
-.entrancebutton .menu:hover h2 {
+.entrancebutton:hover h2,
+.entrancebutton:hover p {
   text-decoration: underline;
+  color: white;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
@@ -1650,7 +1663,7 @@ footer .tabs .tab-content li a {
 }
 @media only screen and (max-width: 1199px) {
   header .links {
-    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
@@ -1679,7 +1692,10 @@ footer .tabs .tab-content li a {
     border-bottom-left-radius: 3px;
   }
   .transportsideknapp {
-    background: #f2f2f2;
+    background: white;
+  }
+  .transportsideknapp h2 {
+    margin: 0;
   }
   .breadcrumbs li {
     display: none;
@@ -1725,6 +1741,19 @@ footer .tabs .tab-content li a {
   }
   .statistics_table table td:first-child:before {
     content: '';
+  }
+  .toppmeny .tab-links li,
+  .tabs .tab-links li,
+  .tabs-statistics .tabs .tab-links li {
+    width: 115px;
+  }
+  .toppmeny .tab-links li a,
+  .tabs .tab-links li a,
+  .tabs-statistics .tabs .tab-links li a,
+  .toppmeny .tab-links li a.active,
+  .tabs .tab-links li a.active,
+  .tabs-statistics .tabs .tab-links li a.active {
+    font-size: 12px;
   }
 }
 .report table {
