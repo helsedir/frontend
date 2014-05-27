@@ -144,6 +144,13 @@ a:visited:focus p {
 .headerlink {
   text-decoration: none;
 }
+.headerlink h2:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+}
 .headerlink:hover {
   text-decoration: underline;
 }
