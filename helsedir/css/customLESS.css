@@ -688,11 +688,28 @@ section .innholdswrapper {
   border: 0;
   transition: 0.5s all;
 }
-.search input {
+.search {
   margin-top: 30px;
-  background: url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
-  background-color: white;
-  background-size: auto 100%;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
+  border: 1px solid #004e66;
+  padding: 5px 10px;
+  height: 40px;
+  background-size: auto 80%;
+  background-position: 97%;
+  cursor: pointer;
+}
+.search_withbutton .search {
+  display: inline;
+  background: white;
+}
+.search_withbutton .calltoaction {
+  display: inline;
+  padding: 6px 20px 6px 40px;
+  margin-left: 10px;
+  background-position: 10% 50%;
+}
+.search_withbutton .calltoaction:hover {
+  background-position: 10% 50%;
 }
 /**********************************************************************
     Moduler
@@ -2189,6 +2206,9 @@ input[type="checkbox"]:checked + label span {
   background: url(../img/navigasjon/checkbox_valgt.png) top no-repeat;
   background-size: 19px;
 }
+fieldset {
+  border: none !important;
+}
 .form label {
   display: block;
   margin-bottom: 10px;
@@ -2222,11 +2242,12 @@ input[type="checkbox"]:checked + label span {
   margin-bottom: 5px;
 }
 .dropdown select {
+  min-width: 250px;
   border: 1px solid #004e66;
   border-right: none;
   font-family: 'Calibri';
   font-size: 20px;
-  padding: 5px 0 4px 20px;
+  padding: 5px 0 4px 10px;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
@@ -2239,5 +2260,18 @@ input[type="checkbox"]:checked + label span {
   /* Removes default arrow from firefox*/
   text-overflow: "";
   /*Removes default arrow from firefox*/
+}
+.refinesearch {
+  padding-left: 30px;
+}
+.refinesearch h2 {
+  border-bottom: 2px solid #004e66;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  font-family: "soho gothic pro regular";
+  font-size: 28px;
+}
+.refinesearch select {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=customLESS.css.map */

@@ -836,11 +836,33 @@ section .innholdswrapper {
     transition: 0.5s all;
 }
 
-.search input {
+.search {
     margin-top: 30px;
-    background: url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
-    background-color: white;
-    background-size: auto 100%;
+    background: white url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
+    border: 1px solid @colorDarkBlue;
+    padding: 5px 10px;
+    height: 40px;
+    background-size: auto 80%;
+    background-position: 97%;
+    cursor: pointer;
+}
+
+.search_withbutton {
+    .search {
+        display: inline;
+        background: white;
+    }
+
+    .calltoaction {
+        display: inline;
+        padding: 6px 20px 6px 40px;
+        margin-left: 10px;
+        background-position: 10% 50%;
+
+        &:hover {
+            background-position: 10% 50%;
+        }
+    }
 }
 /**********************************************************************
     Moduler
@@ -2648,6 +2670,10 @@ input[type="checkbox"] {
         background-size: 19px;
     }
 
+fieldset {
+    border: none !important;
+}
+
 .form {
     label {
         display: block;
@@ -2691,16 +2717,33 @@ input[type="checkbox"] {
     }
 
     select {
+        min-width: 250px;
         border: 1px solid @colorDarkBlue;
         border-right: none;
         font-family: @fontCalibri;
         font-size: 20px;
-        padding: 5px 0 4px 20px;
+        padding: 5px 0 4px 10px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
         background: white url('../img/nedtrekksmeny_knapp_hvit.png') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
         text-indent: 0.01px; /* Removes default arrow from firefox*/
         text-overflow: ""; /*Removes default arrow from firefox*/
+    }
+}
+
+.refinesearch {
+    padding-left: 30px;
+
+    h2 {
+        border-bottom: 2px solid @colorDarkBlue;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+        font-family: @fontSohoRegular;
+        font-size: 28px;
+    }
+
+    select {
+        margin-bottom: 20px;
     }
 }
