@@ -421,17 +421,18 @@ footer.rammeverk a:visited {
 }
 .tabs .tab-links li.active {
   border: none;
-  background: white;
 }
 .tabs .tab-links li.active a {
-  color: black;
+  color: #004e66;
+  font-family: 'Calibri bold';
+  background: white;
 }
-.tabs .tab-links li:hover,
-.tabs .tab-links li:focus {
-  background: #a7cce5;
-  color: black !important;
+.tabs .tab-links li.active a:hover,
+.tabs .tab-links li.active a:focus {
+  background: white;
+  color: #004e66;
 }
-.tabs .tab-links a {
+.tabs .tab-links li a {
   display: inline-block;
   font-size: 16px;
   transition: all linear 0.15s;
@@ -440,10 +441,13 @@ footer.rammeverk a:visited {
   border-radius: 0;
   color: white;
   text-decoration: none;
+  font-family: 'Calibri';
+  background: #838078;
 }
-.tabs .tab-links a:hover,
-.tabs .tab-links a:focus {
-  color: black !important;
+.tabs .tab-links li a:hover,
+.tabs .tab-links li a:focus {
+  color: white;
+  background: #666460;
 }
 .tabs .tab-content {
   padding: 15px;
@@ -452,7 +456,7 @@ footer.rammeverk a:visited {
 .tabs .tab-content li {
   list-style-type: none;
   margin-left: 0;
-  padding: 15px 0;
+  padding: 5px 0 5px 10px;
   border-bottom: solid 1px #bababa;
 }
 @media only screen and (min-width: 900px) {
@@ -468,6 +472,9 @@ footer.rammeverk a:visited {
 .tabs .tab-content a:hover {
   color: #004e66;
   text-decoration: none;
+}
+.tabs .tab-content .alfabetisk {
+  font-size: 18px;
 }
 .tabs .tab-content .alfabetisk ul li:first-of-type {
   border-bottom: solid 1px #bababa;
@@ -653,6 +660,10 @@ section .innholdswrapper {
 .footerwrapper {
   border-top: 5px solid #0093a7;
   background: #004e66;
+  background: #d1d0c4;
+  border: none;
+  padding-top: 50px;
+  width: 100%;
 }
 .headergronn {
   position: absolute;
@@ -1019,9 +1030,6 @@ video {
   border-bottom: 1px solid #bababa;
   padding-bottom: 20px;
 }
-.alfabetisk {
-  font-size: 16px;
-}
 .headline {
   margin-bottom: 20px;
   line-height: 40px;
@@ -1045,11 +1053,8 @@ video {
 .toppmeny {
   /*border-bottom: 1px solid @colorLysGraa;*/
   margin-bottom: 30px;
-  background: #dbdcdd;
-  padding-top: 20px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-bottom: 50px;
+  background: #d1d0c4;
+  padding: 0 0 50px 0 !important;
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/
@@ -1057,7 +1062,7 @@ video {
 .toppmeny .inner {
   background: #ffffff;
   padding: 0;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 .toppmeny .tab-links {
   margin: 0;
@@ -1082,6 +1087,12 @@ video {
   color: #ffffff;
   font-family: 'Calibri';
   width: 100%;
+}
+.toppmeny .tab-links li a:hover,
+.toppmeny .tab-links li a:focus {
+  background: #023c49;
+  text-decoration: none;
+  color: white;
 }
 .toppmeny .tab-links li.active a,
 .toppmeny .tab-links li.active a:hover {
@@ -1111,22 +1122,20 @@ video {
 }
 .toppmeny .tab-links a:hover,
 .toppmeny .tab-links a:focus {
-  background: #a7cce5;
+  background: #023c49;
   text-decoration: none;
-  color: black !important;
+  color: white;
 }
 .toppmeny .tab-content {
   border-top: none !important;
   border-radius: 3px;
-  margin: 55px 0 85px 0;
+  margin: 10px 0 10px 0;
 }
 .toppmeny .tab-content li {
   list-style-type: none;
   border-bottom: 0,5px solid #a7a9ab;
   font-family: 'Calibri';
-  font-size: 20px;
   font-weight: 45px;
-  padding-left: 10px;
   transition: all 0.3s;
 }
 .toppmeny .tab-content li a,
@@ -1160,6 +1169,21 @@ video {
 .linklist {
   list-style-type: none;
   margin-left: 0;
+}
+.linklist {
+  text-decoration: underline;
+  margin: 0 0 15px 0;
+}
+.bulletlist {
+  list-style-position: outside;
+}
+.bulletlist li {
+  margin: 0 0 15px 10px;
+}
+.bulletlist li:before {
+  content: "•";
+  color: #004e66;
+  margin-right: 20px;
 }
 .borderbox {
   margin-bottom: 20px;
@@ -1337,19 +1361,6 @@ header .links {
   display: inline-block;
   padding-top: 2px;
 }
-.menubutton:focus {
-  text-decoration: none;
-  background-color: #dbdcdd;
-  color: #004e66;
-  border: solid 1px #004e66;
-  border-radius: 3px;
-}
-.menubutton:hover {
-  text-decoration: none;
-  background-color: #dbdcdd;
-  color: #004e66;
-  border-radius: 3px;
-}
 .menubutton a {
   border-radius: 3px;
   background-color: #004e66;
@@ -1357,6 +1368,7 @@ header .links {
   padding: 7px 12px 7px 12px;
   color: #ffffff;
   font-weight: normal;
+  transition: all 0.5s;
 }
 .menubutton a:visited {
   background-color: #004e66;
@@ -1364,20 +1376,20 @@ header .links {
 }
 .menubutton a:focus {
   text-decoration: none;
-  background-color: #dbdcdd;
+  background-color: #d1d0c4;
   color: #004e66;
   border: solid 1px #004e66;
 }
 .menubutton a:hover {
   text-decoration: none;
-  background-color: #dbdcdd;
+  background-color: #d1d0c4;
   border-radius: 3px;
   color: #004e66;
 }
 .menubutton a.js-expanded {
   padding-bottom: 43px;
   border-radius: 3px 3px 0 0;
-  background-color: #dbdcdd;
+  background-color: #d1d0c4;
   color: #004e66;
 }
 .menubutton a i {
@@ -1489,12 +1501,16 @@ header .links {
   color: black;
   padding-bottom: 65px;
 }
+.entrancebutton .menu:hover {
+  background: #666460;
+}
 .entrancebutton a,
 .entrancebutton .menu {
   height: 100%;
   width: 100%;
   display: inline-block;
   color: white;
+  text-decoration: none;
 }
 .entrancebutton a .innerDiv,
 .entrancebutton .menu .innerDiv {
@@ -1529,9 +1545,16 @@ header .links {
 .entrancebutton:hover {
   color: white;
 }
+.entrancebutton:hover {
+  background: #02343f;
+}
+.entrancebutton:hover a,
 .entrancebutton:hover h2,
-.entrancebutton:hover p {
-  text-decoration: underline;
+.entrancebutton:hover p,
+.entrancebutton:hover a:focus,
+.entrancebutton:hover h2:focus,
+.entrancebutton:hover p:focus {
+  text-decoration: none;
   color: white;
 }
 .frontpagewrapper.grey {
@@ -1545,7 +1568,7 @@ footer .tabs {
 }
 footer .tabs .tab-links {
   padding-left: 20px;
-  margin-top: -34px;
+  margin-top: -35px;
 }
 footer .tabs .tab-links li {
   margin-right: 10px;
@@ -1567,18 +1590,18 @@ footer .tabs .tab-links a {
 }
 footer .tabs .tab-links a:hover,
 footer .tabs .tab-links a:focus {
-  background: #a7cce5;
+  background: #023c49;
   text-decoration: none;
-  color: black !important;
+  color: white;
 }
 footer .tabs .tab-content {
   background: white;
   border: none;
   border-radius: 0;
+  margin: 10px 0;
 }
 footer .tabs .tab-content li {
   transition: all 0.3s;
-  padding-left: 10px;
 }
 footer .tabs .tab-content li a {
   color: #004e66;
@@ -1586,19 +1609,14 @@ footer .tabs .tab-content li a {
 footer .tabs .tab-content li:hover {
   background: #d1d0c4;
 }
-.footerwrapper {
-  background: #f2f2f2;
-  border: none;
-  padding-top: 100px;
-  width: 100%;
-}
 .menuwrapper {
   background: white;
 }
 .footerlinkswrapper {
-  background: #838078;
+  background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+  background-position: right;
   border-top: 1px solid black;
-  padding-top: 40px;
+  padding-bottom: 10px;
 }
 .footerlinkswrapper h4,
 .footerlinkswrapper p,
@@ -1666,6 +1684,12 @@ footer .tabs .tab-content li:hover {
   max-width: 240px;
   display: block;
   background: #ffffff url('../img/ikon_pilmothoyre.svg') no-repeat;
+  background-position: 5% 50%;
+  background-size: 10px;
+}
+.calltoaction:hover {
+  color: white;
+  background: #004e66 url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
   background-position: 5% 50%;
   background-size: 10px;
 }
@@ -1980,22 +2004,46 @@ iframe {
   padding: 30px 0 20px 0;
   text-transform: uppercase;
 }
-.module_facts {
+.module_facts_rightcolumn {
   padding: 10px 15px 20px 15px;
   margin-top: 30px;
   background: #dbdcdd;
   max-width: 750px;
+  display: inline-block;
 }
-.module_facts .module_facts_ingress {
+.module_facts_rightcolumn .module_facts_ingress {
   font-weight: bold;
 }
-.module_facts h3 {
+.module_facts_rightcolumn h3 {
   margin: 0;
 }
-.module_facts ul li:before {
+.module_facts_rightcolumn ul li:before {
   content: "•";
   color: #004e66;
   margin-right: 20px;
+}
+.module_facts_maincolumn {
+  max-width: 330px;
+  display: inline-block;
+  margin: 100px 0 0 30px;
+  padding: 30px 30px 45px 30px;
+  background: white;
+  word-break: break-all;
+}
+.module_facts_maincolumn .module_description {
+  font-family: 'Calibri';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #004e66;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.module_facts_maincolumn .module_header {
+  font-family: "soho gothic pro regular";
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 25px;
+  color: #222;
 }
 .module_related {
   border: 1px solid #dbdcdd;
@@ -2100,5 +2148,96 @@ iframe {
   border-bottom: 2px solid #004e66;
   padding-bottom: 20px;
   width: 100%;
+}
+input[type="radio"] {
+  float: left;
+  width: 0px;
+  opacity: 0;
+  height: 0px;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -5px 10px 0 0;
+  vertical-align: middle;
+  background: url('../img/navigasjon/radioknapp_inaktiv.png') top left no-repeat;
+  cursor: pointer;
+  background-size: 19px;
+}
+input[type="radio"]:checked + label span {
+  background: url(../img/navigasjon/radioknapp_valgt.png) top no-repeat;
+  background-size: 19px;
+}
+input[type="checkbox"] {
+  float: left;
+  width: 0px;
+  opacity: 0;
+  height: 0px;
+}
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -5px 10px 0 0;
+  vertical-align: middle;
+  background: url('../img/navigasjon/checkbox_inaktiv.png') top left no-repeat;
+  cursor: pointer;
+  background-size: 19px;
+}
+input[type="checkbox"]:checked + label span {
+  background: url(../img/navigasjon/checkbox_valgt.png) top no-repeat;
+  background-size: 19px;
+}
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form input {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+.form .form_field_standard {
+  border: 1px solid #004e66;
+}
+.form .form_field_zip {
+  border: 1px solid #004e66;
+  width: 4em;
+}
+.cancelbutton {
+  background: #004e66;
+  color: white;
+  font-family: 'Calibri';
+  font-size: 20px;
+  padding: 7px;
+  text-align: center;
+  width: 150px;
+  border: none;
+}
+.cancelbutton:hover {
+  background: #02343f;
+}
+.dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+.dropdown select {
+  border: 1px solid #004e66;
+  border-right: none;
+  font-family: 'Calibri';
+  font-size: 20px;
+  padding: 5px 0 4px 20px;
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  background: #ffffff url('../img/nedtrekksmeny_knapp_hvit.png') no-repeat;
+  /*Adds background-image*/
+  background-position: 100%;
+  /*Position of the background-image*/
+  text-indent: 0.01px;
+  /* Removes default arrow from firefox*/
+  text-overflow: "";
+  /*Removes default arrow from firefox*/
 }
 /*# sourceMappingURL=customLESS.css.map */

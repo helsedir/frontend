@@ -53,9 +53,6 @@
   float: left;
   margin-right: 1em;
 }
-.hhs #logo {
-  width: 30%;
-}
 .hhs .boks {
   border: 1px solid #ddd;
   padding: 1em;
@@ -139,5 +136,8 @@
 }
 .hhs .textexamples span {
   width: 250px;
+}
+.hhs .arkfaner {
+  background: #f2f2f2;
 }
 /*# sourceMappingURL=designsystem.css.map */

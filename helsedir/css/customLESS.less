@@ -14,6 +14,7 @@
 @colorGul: #f4d01e;
 
 @colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
 @colorMediumBlue: #0093a7;
 @colorLightBlue: #6cb4b5;
 @colorOrange: #df9922;
@@ -505,31 +506,35 @@ footer {
 
             &.active {
                 border: none;
-                background: white;
 
                 a {
-                    color: black;
+                    color: @colorDarkBlue;
+                    font-family: @fontCalibriBold;
+                    background: white;
+
+                    &:hover, &:focus {
+                        background: white;
+                        color: @colorDarkBlue;
+                    }
                 }
             }
 
-            &:hover, &:focus {
-                background: #a7cce5;
-                color: black !important;
-            }
-        }
+            a {
+                display: inline-block;
+                font-size: 16px;
+                transition: all linear 0.15s;
+                width: 100%;
+                padding: 0 30px 0 20px;
+                border-radius: 0;
+                color: white;
+                text-decoration: none;
+                font-family: @fontCalibri;
+                background: #838078;
 
-        a {
-            display: inline-block;
-            font-size: 16px;
-            transition: all linear 0.15s;
-            width: 100%;
-            padding: 0 30px 0 20px;
-            border-radius: 0;
-            color: white;
-            text-decoration: none;
-
-            &:hover, &:focus {
-                color: black !important;
+                &:hover, &:focus {
+                    color: white;
+                    background: #666460;
+                }
             }
         }
     }
@@ -541,7 +546,7 @@ footer {
         li {
             list-style-type: none;
             margin-left: 0;
-            padding: 15px 0;
+            padding: 5px 0 5px 10px;
             border-bottom: solid 1px @colorLysGraa;
 
             @media only screen and (min-width:900px) {
@@ -561,6 +566,8 @@ footer {
         }
 
         .alfabetisk {
+            font-size: 18px;
+
             ul {
                 li:first-of-type {
                     border-bottom: solid 1px @colorLysGraa;
@@ -797,6 +804,10 @@ section .innholdswrapper {
 .footerwrapper {
     border-top: 5px solid @colorMediumBlaa;
     background: @colorMorkBlaa;
+    background: #d1d0c4;
+    border: none;
+    padding-top: 50px;
+    width: 100%;
 }
 
 .headergronn {
@@ -1248,10 +1259,6 @@ video {
     }
 }
 
-.alfabetisk {
-    font-size: 16px;
-}
-
 .headline {
     margin-bottom: 20px;
     line-height: 40px;
@@ -1280,16 +1287,13 @@ video {
 .toppmeny {
     /*border-bottom: 1px solid @colorLysGraa;*/
     margin-bottom: 30px;
-    background: @colorLysLysGraa;
-    padding-top: 20px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-bottom: 50px;
+    background: #d1d0c4;
+    padding: 0 0 50px 0 !important;
 
     .inner {
         background: #ffffff;
         padding: 0;
-        margin-top: 55px;
+        margin-top: 60px;
     }
     /*----- Tab Links -----*/
     /* Clearfix */
@@ -1317,6 +1321,12 @@ video {
                 color: #ffffff;
                 font-family: @fontCalibri;
                 width: 100%;
+
+                &:hover, &:focus {
+                    background: @colorBlue023c49;
+                    text-decoration: none;
+                    color: white;
+                }
             }
 
             &.active a, &.active a:hover {
@@ -1349,9 +1359,9 @@ video {
             background: white;
 
             &:hover, &:focus {
-                background: #a7cce5;
+                background: @colorBlue023c49;
                 text-decoration: none;
-                color: black !important;
+                color: white;
             }
         }
     }
@@ -1359,15 +1369,13 @@ video {
     .tab-content {
         border-top: none !important;
         border-radius: 3px;
-        margin: 55px 0 85px 0;
+        margin: 10px 0 10px 0;
 
         li {
             list-style-type: none;
             border-bottom: 0,5px solid #a7a9ab;
             font-family: @fontCalibri;
-            font-size: 20px;
             font-weight: 45px;
-            padding-left: 10px;
             transition: all 0.3s;
 
             a, a:visited, a:hover {
@@ -1426,6 +1434,25 @@ video {
 .cleanlist, .linklist {
     list-style-type: none;
     margin-left: 0;
+}
+
+.linklist {
+    text-decoration: underline;
+    margin: 0 0 15px 0;
+}
+
+.bulletlist {
+    list-style-position: outside;
+
+    li {
+        margin: 0 0 15px 10px;
+
+        &:before {
+            content: "•";
+            color: @colorDarkBlue;
+            margin-right: 20px;
+        }
+    }
 }
 
 .borderbox {
@@ -1636,21 +1663,6 @@ header {
     display: inline-block;
     padding-top: 2px;
 
-    &:focus {
-        text-decoration: none;
-        background-color: @colorLysLysGraa;
-        color: @colorDarkBlue;
-        border: solid 1px @colorDarkBlue;
-        border-radius: 3px;
-    }
-
-    &:hover {
-        text-decoration: none;
-        background-color: @colorLysLysGraa;
-        color: @colorDarkBlue;
-        border-radius: 3px;
-    }
-
     a {
         border-radius: 3px;
         background-color: @colorDarkBlue;
@@ -1658,6 +1670,7 @@ header {
         padding: 7px 12px 7px 12px;
         color: #ffffff;
         font-weight: normal;
+        transition: all 0.5s;
 
         &:visited {
             background-color: @colorDarkBlue;
@@ -1666,14 +1679,14 @@ header {
 
         &:focus {
             text-decoration: none;
-            background-color: @colorLysLysGraa;
+            background-color: #d1d0c4;
             color: @colorDarkBlue;
             border: solid 1px @colorDarkBlue;
         }
 
         &:hover {
             text-decoration: none;
-            background-color: @colorLysLysGraa;
+            background-color: #d1d0c4;
             border-radius: 3px;
             color: @colorDarkBlue;
         }
@@ -1681,7 +1694,7 @@ header {
         &.js-expanded {
             padding-bottom: 43px;
             border-radius: 3px 3px 0 0;
-            background-color: @colorLysLysGraa;
+            background-color: #d1d0c4;
             color: @colorDarkBlue;
         }
 
@@ -1811,6 +1824,10 @@ header {
             color: black;
             padding-bottom: 65px;
         }
+
+        &:hover {
+            background: #666460;
+        }
     }
 
     a, .menu {
@@ -1818,6 +1835,7 @@ header {
         width: 100%;
         display: inline-block;
         color: white;
+        text-decoration: none;
 
         .innerDiv {
             position: relative;
@@ -1854,8 +1872,10 @@ header {
     }
 
     &:hover {
-        h2, p {
-            text-decoration: underline;
+        background: #02343f;
+
+        a, h2, p, a:focus, h2:focus, p:focus {
+            text-decoration: none;
             color: white;
         }
     }
@@ -1877,7 +1897,7 @@ footer {
 
         .tab-links {
             padding-left: 20px;
-            margin-top: -34px;
+            margin-top: -35px;
 
             li {
                 margin-right: 10px;
@@ -1901,9 +1921,9 @@ footer {
                 border-radius: 0;
 
                 &:hover, &:focus {
-                    background: #a7cce5;
+                    background: @colorBlue023c49;
                     text-decoration: none;
-                    color: black !important;
+                    color: white;
                 }
             }
         }
@@ -1912,10 +1932,10 @@ footer {
             background: white;
             border: none;
             border-radius: 0;
+            margin: 10px 0;
 
             li {
                 transition: all 0.3s;
-                padding-left: 10px;
 
                 a {
                     color: @colorDarkBlue;
@@ -1929,21 +1949,15 @@ footer {
     }
 }
 
-.footerwrapper {
-    background: @colorLightGray;
-    border: none;
-    padding-top: 100px;
-    width: 100%;
-}
-
 .menuwrapper {
     background: white;
 }
 
 .footerlinkswrapper {
-    background: #838078;
+    background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+    background-position: right;
     border-top: 1px solid black;
-    padding-top: 40px;
+    padding-bottom: 10px;
 
     h4, p, a, a:visited, a:hover {
         color: white;
@@ -2021,6 +2035,13 @@ footer {
     background: white url('../img/ikon_pilmothoyre.svg') no-repeat;
     background-position: 5% 50%;
     background-size: 10px;
+
+    &:hover {
+        color: white;
+        background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
+        background-position: 5% 50%;
+        background-size: 10px;
+    }
 }
 
 .frontpage {
@@ -2409,11 +2430,12 @@ iframe {
     }
 }
 
-.module_facts {
+.module_facts_rightcolumn {
     padding: 10px 15px 20px 15px;
     margin-top: 30px;
     background: #dbdcdd;
     max-width: 750px;
+    display: inline-block;
 
     .module_facts_ingress {
         font-weight: bold;
@@ -2429,6 +2451,32 @@ iframe {
             color: @colorDarkBlue;
             margin-right: 20px;
         }
+    }
+}
+
+.module_facts_maincolumn {
+    max-width: 330px;
+    display: inline-block;
+    margin: 100px 0 0 30px;
+    padding: 30px 30px 45px 30px;
+    background: white;
+    word-break: break-all;
+
+    .module_description {
+        font-family: @fontCalibri;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: @colorDarkBlue;
+        text-decoration: none;
+        margin-bottom: 25px;
+    }
+
+    .module_header {
+        font-family: @fontSohoRegular;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 25px;
+        color: #222;
     }
 }
 
@@ -2552,4 +2600,107 @@ iframe {
     border-bottom: 2px solid @colorDarkBlue;
     padding-bottom: 20px;
     width: 100%;
+}
+
+input[type="radio"] {
+    float: left;
+    width: 0px;
+    opacity: 0;
+    height: 0px;
+}
+
+    input[type="radio"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -5px 10px 0 0;
+        vertical-align: middle;
+        background: url('../img/navigasjon/radioknapp_inaktiv.png') top left no-repeat;
+        cursor: pointer;
+        background-size: 19px;
+    }
+
+    input[type="radio"]:checked + label span {
+        background: url(../img/navigasjon/radioknapp_valgt.png)top no-repeat;
+        background-size: 19px;
+    }
+
+input[type="checkbox"] {
+    float: left;
+    width: 0px;
+    opacity: 0;
+    height: 0px;
+}
+
+    input[type="checkbox"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -5px 10px 0 0;
+        vertical-align: middle;
+        background: url('../img/navigasjon/checkbox_inaktiv.png') top left no-repeat;
+        cursor: pointer;
+        background-size: 19px;
+    }
+
+    input[type="checkbox"]:checked + label span {
+        background: url(../img/navigasjon/checkbox_valgt.png)top no-repeat;
+        background-size: 19px;
+    }
+
+.form {
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        padding: 5px 10px;
+    }
+
+    .form_field_standard {
+        border: 1px solid @colorDarkBlue;
+    }
+
+    .form_field_zip {
+        border: 1px solid @colorDarkBlue;
+        width: 4em;
+    }
+}
+
+.cancelbutton {
+    background: @colorDarkBlue;
+    color: white;
+    font-family: @fontCalibri;
+    font-size: 20px;
+    padding: 7px;
+    text-align: center;
+    width: 150px;
+    border: none;
+
+    &:hover {
+        background: #02343f;
+    }
+}
+
+.dropdown {
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    select {
+        border: 1px solid @colorDarkBlue;
+        border-right: none;
+        font-family: @fontCalibri;
+        font-size: 20px;
+        padding: 5px 0 4px 20px;
+        -webkit-appearance: none; /*Removes default chrome and safari style*/
+        -moz-appearance: none; /* Removes Default Firefox style*/
+        background: white url('../img/nedtrekksmeny_knapp_hvit.png') no-repeat; /*Adds background-image*/
+        background-position: 100%; /*Position of the background-image*/
+        text-indent: 0.01px; /* Removes default arrow from firefox*/
+        text-overflow: ""; /*Removes default arrow from firefox*/
+    }
 }
