@@ -1,9 +1,4 @@
-﻿.transportside .border {
-  border-bottom: 2px solid #004e66;
-  padding-bottom: 20px;
-  width: 100%;
-}
-.transportside .transportsideknapp a {
+﻿.transportside .transportsideknapp a {
   display: block;
   width: 100%;
   height: 100%;

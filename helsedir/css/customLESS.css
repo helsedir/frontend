@@ -141,6 +141,15 @@ a:visited:focus p {
   color: white !important;
   outline: 0;
 }
+.headerlink {
+  text-decoration: none;
+}
+.headerlink:hover {
+  text-decoration: underline;
+}
+.headerlink:visited {
+  text-decoration: none;
+}
 .defaultSmall {
   font-size: 18px;
   line-height: 20px;
@@ -245,7 +254,7 @@ footer.rammeverk a:visited {
   margin: 0;
   padding: 10px;
   border: 1px solid #222;
-  background: #b2babc;
+  background: #bababa;
   cursor: pointer;
 }
 .organisasjonskart.has-visible-content h2:before,
@@ -437,7 +446,7 @@ footer.rammeverk a:visited {
   list-style-type: none;
   margin-left: 0;
   padding: 15px 0;
-  border-bottom: solid 1px #b2babc;
+  border-bottom: solid 1px #bababa;
 }
 @media only screen and (min-width: 900px) {
   .tabs .tab-content li:last-of-type {
@@ -451,9 +460,10 @@ footer.rammeverk a:visited {
 .tabs .tab-content a:visited,
 .tabs .tab-content a:hover {
   color: #004e66;
+  text-decoration: none;
 }
 .tabs .tab-content .alfabetisk ul li:first-of-type {
-  border-bottom: solid 1px #b2babc;
+  border-bottom: solid 1px #bababa;
 }
 .tabs .tab-content .alfabetisk ul li {
   border: none;
@@ -806,7 +816,7 @@ section .innholdswrapper {
   margin-bottom: 10px;
   padding: 10px;
   min-height: 70px;
-  background: #b2babc;
+  background: #bababa;
   color: black;
 }
 .faktaboks .stripes-outer {
@@ -853,7 +863,7 @@ video {
 }
 .retningslinjemodul {
   margin-bottom: 20px;
-  border: 1px solid #b2babc;
+  border: 1px solid #bababa;
   padding-left: 10px;
 }
 .retningslinjemodul .innerDiv {
@@ -866,7 +876,7 @@ video {
   margin: 0 0 0 10px;
 }
 .veiledermodul {
-  border: 1px solid #b2babc;
+  border: 1px solid #bababa;
   padding-left: 10px;
 }
 .veiledermodul .innerDiv {
@@ -999,7 +1009,7 @@ video {
 }
 .forside article {
   margin: 20px 0 20px 0;
-  border-bottom: 1px solid #b2babc;
+  border-bottom: 1px solid #bababa;
   padding-bottom: 20px;
 }
 .alfabetisk {
@@ -1109,11 +1119,16 @@ video {
   font-family: 'Calibri';
   font-size: 20px;
   font-weight: 45px;
+  padding-left: 10px;
+  transition: all 0.3s;
 }
 .toppmeny .tab-content li a,
 .toppmeny .tab-content li a:visited,
 .toppmeny .tab-content li a:hover {
   color: #004e66;
+}
+.toppmeny .tab-content li:hover {
+  background: #d1d0c4;
 }
 .toppmeny .tabs-statistics {
   /*# sourceMappingURL=customLESS.css.map */
@@ -1142,7 +1157,7 @@ video {
 .borderbox {
   margin-bottom: 20px;
   margin-top: 10px;
-  border: 1px solid #b2babc;
+  border: 1px solid #bababa;
   padding-left: 10px;
   background: white;
 }
@@ -1206,7 +1221,7 @@ video {
 }
 .statistics_compare button {
   background: white;
-  border: 1px solid #b2babc;
+  border: 1px solid #bababa;
 }
 .statistics_compare a {
   display: block;
@@ -1287,7 +1302,6 @@ header {
 }
 header .links {
   color: #004e66;
-  font-weight: bold;
   margin-right: 15px;
 }
 @media only screen and (max-width: 900px) {
@@ -1430,7 +1444,7 @@ header .links {
   }
 }
 .mainentrance {
-  background: url('../img/forside_bakgrunn_abstrahert.png');
+  background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1454,12 +1468,12 @@ header .links {
 }
 .entrancebutton .menu {
   cursor: pointer;
-  background: #dbdcdd;
+  background: #838078;
   transition: all 0.5s;
   border-radius: 3px;
 }
 .entrancebutton .menu .innerDiv {
-  color: black;
+  color: white;
   text-align: center;
   margin-right: 10px;
 }
@@ -1483,15 +1497,26 @@ header .links {
 }
 .entrancebutton a h3,
 .entrancebutton .menu h3 {
-  margin: 55px 0 5px 0;
+  margin: 80px 0 0 0;
   padding: 0;
   font-size: 28px;
   font-family: "soho gothic pro light";
+}
+.entrancebutton a h3 .fa-bars,
+.entrancebutton .menu h3 .fa-bars {
+  margin-top: 20px;
 }
 .entrancebutton a h2,
 .entrancebutton .menu h2 {
   margin-bottom: 5px;
   font-size: 28px;
+  line-height: 35px;
+  margin: 80px 0 0 0;
+  padding-bottom: 5px;
+}
+.entrancebutton a p,
+.entrancebutton .menu p {
+  line-height: 23px;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
@@ -1513,7 +1538,7 @@ footer .tabs {
 }
 footer .tabs .tab-links {
   padding-left: 20px;
-  margin-top: -37px;
+  margin-top: -34px;
 }
 footer .tabs .tab-links li {
   margin-right: 10px;
@@ -1544,8 +1569,15 @@ footer .tabs .tab-content {
   border: none;
   border-radius: 0;
 }
+footer .tabs .tab-content li {
+  transition: all 0.3s;
+  padding-left: 10px;
+}
 footer .tabs .tab-content li a {
   color: #004e66;
+}
+footer .tabs .tab-content li:hover {
+  background: #d1d0c4;
 }
 .footerwrapper {
   background: #f2f2f2;
@@ -1797,14 +1829,19 @@ iframe {
   background: url('../img/ikon_eksternlenke.svg') right no-repeat;
   background-size: 16px 16px;
   padding-right: 22px;
+  text-decoration: none;
+}
+.external-link.inline,
+.external-link .inline:visited {
+  text-decoration: underline;
 }
 .internal-link {
-  text-decoration: underline;
+  text-decoration: none;
   color: #004e66;
 }
 .internal-link:visited {
   color: #0093a7;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .internal-link h2,
 .internal-link h3,
@@ -1818,6 +1855,10 @@ iframe {
   font-family: "FontAwesome";
   font-size: inherit;
   text-decoration: none;
+}
+.internal-link.inline,
+.internal-link .inline:visited {
+  text-decoration: underline;
 }
 .tilskudd {
   padding: 25px 0 10px 0;
@@ -1944,6 +1985,11 @@ iframe {
 .module_facts h3 {
   margin: 0;
 }
+.module_facts ul li:before {
+  content: "•";
+  color: #004e66;
+  margin-right: 20px;
+}
 .module_related {
   border: 1px solid #dbdcdd;
   padding: 10px 10px 10px 30px;
@@ -2041,5 +2087,11 @@ iframe {
 .conference_details .conference_location span,
 .conference_details .conference_audience span {
   width: 100px;
+}
+/**Felles*/
+.border {
+  border-bottom: 2px solid #004e66;
+  padding-bottom: 20px;
+  width: 100%;
 }
 /*# sourceMappingURL=customLESS.css.map */

@@ -8,10 +8,20 @@
 @colorMediumBlaa: #0093a7;
 @colorLysBlaa: #6cb4b5;
 @colorGraa: #aeaba8;
-@colorLysGraa: #B2BABC;
+@colorLysGraa: #bababa;
 @colorLysLysGraa: #dbdcdd;
 @colorRoed: #c63629;
 @colorGul: #f4d01e;
+
+@colorDarkBlue: #004e66;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorGreen: #a1bf37;
 
 html {
     font-size: 100%;
@@ -175,6 +185,18 @@ a {
         background: @colorMorkBlaa;
         color: white !important;
         outline: 0;
+    }
+}
+
+.headerlink {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        text-decoration: none;
     }
 }
 
@@ -527,6 +549,7 @@ footer {
 
         a, a:visited, a:hover {
             color: @colorMorkBlaa;
+            text-decoration: none;
         }
 
         .alfabetisk {
@@ -1336,9 +1359,15 @@ video {
             font-family: @fontCalibri;
             font-size: 20px;
             font-weight: 45px;
+            padding-left: 10px;
+            transition: all 0.3s;
 
             a, a:visited, a:hover {
                 color: @colorMorkBlaa;
+            }
+
+            &:hover {
+                background: #d1d0c4;
             }
         }
     }
@@ -1557,15 +1586,6 @@ video {
     text-align: center;
 }
 /*******************************Ny forside******************************************/
-@colorDarkBlue: #004e66;
-@colorMediumBlue: #0093a7;
-@colorLightBlue: #6cb4b5;
-@colorOrange: #df9922;
-@colorRed: #c63629;
-@colorYellow: #f4d01e;
-@colorDarkGray: #aeaba8;
-@colorLightGray: #f2f2f2;
-@colorGreen: #a1bf37;
 
 html {
     background: white;
@@ -1578,7 +1598,6 @@ header {
 
     .links {
         color: @colorDarkBlue;
-        font-weight: bold;
         margin-right: 15px;
     }
 
@@ -1743,7 +1762,7 @@ header {
 }
 
 .mainentrance {
-    background: url('../img/forside_bakgrunn_abstrahert.png');
+    background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1769,12 +1788,12 @@ header {
 
     .menu {
         cursor: pointer;
-        background: #dbdcdd;
+        background: #838078;
         transition: all 0.5s;
         border-radius: 3px;
 
         .innerDiv {
-            color: black;
+            color: white;
             text-align: center;
             margin-right: 10px;
         }
@@ -1799,15 +1818,26 @@ header {
         }
 
         h3 {
-            margin: 55px 0 5px 0;
+            margin: 80px 0 0 0;
             padding: 0;
             font-size: 28px;
             font-family: @fontSohoLight;
+
+            .fa-bars {
+                margin-top: 20px;
+            }
         }
 
         h2 {
             margin-bottom: 5px;
             font-size: 28px;
+            line-height: 35px;
+            margin: 80px 0 0 0;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 23px;
         }
     }
 
@@ -1839,7 +1869,7 @@ footer {
 
         .tab-links {
             padding-left: 20px;
-            margin-top: -37px;
+            margin-top: -34px;
 
             li {
                 margin-right: 10px;
@@ -1875,8 +1905,17 @@ footer {
             border: none;
             border-radius: 0;
 
-            li a {
-                color: @colorDarkBlue;
+            li {
+                transition: all 0.3s;
+                padding-left: 10px;
+
+                a {
+                    color: @colorDarkBlue;
+                }
+
+                &:hover {
+                    background: #d1d0c4;
+                }
             }
         }
     }
@@ -2185,15 +2224,20 @@ iframe {
     background: url('../img/ikon_eksternlenke.svg') right no-repeat;
     background-size: 16px 16px;
     padding-right: 22px;
+    text-decoration: none;
+
+    &.inline, .inline:visited {
+        text-decoration: underline;
+    }
 }
 
 .internal-link {
-    text-decoration: underline;
+    text-decoration: none;
     color: @colorDarkBlue;
 
     &:visited {
         color: @colorMediumBlue;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     h2, h3, h4, p {
@@ -2206,6 +2250,10 @@ iframe {
         font-family: "FontAwesome";
         font-size: inherit;
         text-decoration: none;
+    }
+
+    &.inline, .inline:visited {
+        text-decoration: underline;
     }
 }
 
@@ -2366,6 +2414,14 @@ iframe {
     h3 {
         margin: 0;
     }
+
+    ul {
+        li:before {
+            content: "•";
+            color: @colorDarkBlue;
+            margin-right: 20px;
+        }
+    }
 }
 
 .module_related {
@@ -2481,4 +2537,11 @@ iframe {
             width: 100px;
         }
     }
+}
+
+/**Felles*/
+.border {
+    border-bottom: 2px solid @colorDarkBlue;
+    padding-bottom: 20px;
+    width: 100%;
 }
