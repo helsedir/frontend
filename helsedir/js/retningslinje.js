@@ -175,10 +175,16 @@ jQuery(document).ready(function() {
 	
 	$('[data-toggle="popover_grading"]').popover({
     html: true,
-    content: '<div class="popoverText"><h4>Svak</h4><p>Fordelene ved å følge anbefalingen vil sannsynligvis være større enn eventuelle ulemper. Ulike valg kan være riktig for ulike pasienter, og helse- og omsorgspersonell må hjelpe til med å vurdere hva som er riktig i den enkelte situasjon.</p><h4>Sterk</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være klart større enn eventuelle ulemper. Pasienter og helse- og omsorgspersonell vil, i de fleste situasjoner, mene det er riktig å følge anbefalingen.</p></div>',
+    content: '<div class="popoverText"><h4>Svak</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være større enn eventuelle ulemper. Ulike valg kan være riktig for ulike pasienter, og helse- og omsorgspersonell må hjelpe til med å vurdere hva som er riktig i den enkelte situasjon.</p><h4>Sterk</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være klart større enn eventuelle ulemper. Pasienter og helse- og omsorgspersonell vil, i de fleste situasjoner, mene det er riktig å følge anbefalingen.</p></div>',
     trigger: 'hover',
         'placement': 'left'
-});
+	});
+	
+	$('[data-toggle="popover_medicament"]').popover({
+    html: true,
+    trigger: 'hover',
+        'placement': 'top'
+	});
 	
    
 });
