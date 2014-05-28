@@ -7,31 +7,16 @@ $(document).ready(function () {
 
     expander.css("cursor", "pointer");
 
-    /* expander.on('click', function () {
-         $('.js-expanded').not(this).removeClass('js-expanded');
-
-         if (expandedContent.is(":visible")) {
-             expander.removeClass("js-expanded");
-             expandedContent.slideUp(500);
-         } else {
-             expander.addClass("js-expanded");
-             expandedContent.slideDown(500);
-             $('html, body').animate({
-                 scrollTop: expandedContent.offset().top
-             }, 700);
-         }
-     });
- */
     expander.click(function () {
         if (visible) {
             expandedContent.slideUp('fast', function () {
-                expandedContent.addClass('hide')
+                expandedContent.addClass('visuallyhidden')
                     .slideDown(0);
                 expander.removeClass('js-expanded');
             });
         } else {
             expandedContent.slideUp(0, function () {
-                expandedContent.removeClass('hide')
+                expandedContent.removeClass('visuallyhidden')
                     .slideDown(500);
                 expander.addClass('js-expanded');
             });
@@ -53,12 +38,12 @@ $(document).ready(function () {
     $('#menushortcut').on('click', function () {
         if (visible) {
             expandedContent.slideUp('fast', function () {
-                expandedContent.addClass('hide')
+                expandedContent.addClass('visuallyhidden')
                     .slideDown(500);
             });
         } else {
             expandedContent.slideUp(0, function () {
-                expandedContent.removeClass('hide')
+                expandedContent.removeClass('visuallyhidden')
                     .slideDown(500);
             });
         }

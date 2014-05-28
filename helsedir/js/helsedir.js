@@ -1,55 +1,36 @@
 ﻿$(function () {
     $(".accordion").each(function () {
-        $sectionheader = $(this);
-        $sectioncontent = $sectionheader.next();
-        $headerparent = $sectionheader.parent();
-        $sectioncontent.addClass('hide');
-        $headerparent.addClass('has-hidden-content');
+        var collapseElement = $(this);
+        var contentToHide = collapseElement.next();
+        var parentTag = collapseElement.parent();
+        contentToHide.addClass('visuallyhidden');
+        parentTag.addClass('has-hidden-content');
     });
-});
 
-/*
-$(".accordion").click(function () {
-    $sectionheader = $(this);
-    $sectioncontent = $sectionheader.next();
-    $headerparent = $sectionheader.parent();
-    $sectioncontent.toggleClass('visuallyhidden');
-    if ($headerparent.hasClass("has-hidden-content")) {
-        $headerparent.addClass("has-visible-content");
-        $headerparent.removeClass("has-hidden-content");
-        $sectioncontent.slideDown(300);
-        $('html, body').animate({
-            scrollTop: $sectionheader.offset().top
-        }, 500);
-    } else {
-        $headerparent.removeClass("has-visible-content");
-        $headerparent.addClass("has-hidden-content");
-        $sectioncontent.slideUp(500);
-    }
-});*/
+    $(".accordion").click(function () {
+        var collapseElement = $(this);
+        var contentToHide = collapseElement.next();
+        var parentTag = collapseElement.parent();
 
-$(".accordion").click(function () {
-    $sectionheader = $(this);
-    $sectioncontent = $sectionheader.next();
-    $headerparent = $sectionheader.parent();
-    if ($headerparent.hasClass("has-hidden-content")) {
-        $headerparent.addClass("has-visible-content");
-        $headerparent.removeClass("has-hidden-content");
-        $sectioncontent.slideUp(0, function () {
-            $sectioncontent.removeClass('hide')
-                .slideDown(500);
-        });
-        $('html, body').animate({
-            scrollTop: $sectioncontent.offset().top
-        }, 700);
-    } else {
-        $headerparent.removeClass("has-visible-content");
-        $headerparent.addClass("has-hidden-content");
-        $sectioncontent.slideUp('fast', function () {
-            $sectioncontent.addClass('hide')
-                .slideDown(0);
-        });
-    }
+        if (!contentToHide.hasClass("visuallyhidden")) {
+            contentToHide.slideUp('fast', function () {
+                contentToHide.addClass('visuallyhidden')
+                    .slideDown(0);
+            });
+            parentTag.removeClass("has-visible-content");
+            parentTag.addClass("has-hidden-content");
+        } else {
+            contentToHide.slideUp(0, function () {
+                contentToHide.removeClass('visuallyhidden')
+                    .slideDown(500);
+            });
+            parentTag.addClass("has-visible-content");
+            parentTag.removeClass("has-hidden-content");
+            $('html, body').animate({
+                scrollTop: collapseElement.offset().top
+            }, 700);
+        }
+    });
 });
 
 function checkTilskudd() {

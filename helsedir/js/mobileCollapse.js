@@ -6,8 +6,8 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (!$contentToHide.hasClass('hide') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
-                $contentToHide.addClass('hide');
+            if (!$contentToHide.hasClass('visuallyhidden') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
+                $contentToHide.addClass('visuallyhidden');
                 $parentTag.addClass('has-hidden-content');
             }
         });
@@ -17,8 +17,8 @@
             $collapseElement = $(this);
             $contentToHide = $collapseElement.next();
             $parentTag = $collapseElement.parent();
-            if (($contentToHide.hasClass('hide') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion') && !$parentTag.is('a')) {
-                $contentToHide.removeClass('hide');
+            if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion') && !$parentTag.is('a')) {
+                $contentToHide.removeClass('visuallyhidden');
                 $parentTag.removeClass('has-hidden-content');
             }
             else if ($parentTag.hasClass('has-visible-content')) {
@@ -40,7 +40,7 @@ $("h2").click(function () {
                 $parent.addClass("has-visible-content");
                 $parent.removeClass("has-hidden-content");
                 $content.slideUp(0, function () {
-                    $content.removeClass('hide')
+                    $content.removeClass('visuallyhidden')
                         .slideDown(500);
                 });
                 $('html, body').animate({
@@ -50,7 +50,7 @@ $("h2").click(function () {
                 $parent.removeClass("has-visible-content");
                 $parent.addClass("has-hidden-content");
                 $content.slideUp('fast', function () {
-                    $content.addClass('hide')
+                    $content.addClass('visuallyhidden')
                         .slideDown(0);
                 });
             }

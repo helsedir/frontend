@@ -83,11 +83,6 @@ ul.list li:before {
   color: #004e66;
   margin-right: 20px;
 }
-.hide {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
 a {
   color: #004e66;
   text-decoration: underline;
@@ -287,15 +282,9 @@ a:visited:focus p {
   height: 400px;
 }
 .visuallyhidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  transition: 0.5s all;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 .search {
   margin-top: 30px;
@@ -612,7 +601,7 @@ iframe {
   padding: 10px 15px 20px 15px;
   margin-top: 30px;
   background: #dbdcdd;
-  max-width: 750px;
+  max-width: 330px;
   display: inline-block;
 }
 .module_facts_rightcolumn .module_facts_ingress {
@@ -627,12 +616,11 @@ iframe {
   margin-right: 20px;
 }
 .module_facts_maincolumn {
-  max-width: 330px;
+  max-width: 750px;
   display: inline-block;
   margin: 100px 0 0 30px;
   padding: 30px 30px 45px 30px;
   background: white;
-  word-break: break-all;
 }
 .module_facts_maincolumn .module_description {
   font-family: 'Calibri';
@@ -765,12 +753,16 @@ input[type="radio"] + label span {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/radioknapp_inaktiv.png') top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   background-size: 19px;
 }
+input[type="radio"] + label span:hover {
+  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
+  background-size: 19px;
+}
 input[type="radio"]:checked + label span {
-  background: url(../img/navigasjon/radioknapp_valgt.png) top no-repeat;
+  background: url(../img/navigasjon/radioknapp_valgt.svg) top no-repeat;
   background-size: 19px;
 }
 input[type="checkbox"] {
@@ -785,12 +777,16 @@ input[type="checkbox"] + label span {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/checkbox_inaktiv.png') top left no-repeat;
+  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   background-size: 19px;
 }
+input[type="checkbox"] + label span:hover {
+  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
+  background-size: 19px;
+}
 input[type="checkbox"]:checked + label span {
-  background: url(../img/navigasjon/checkbox_valgt.png) top no-repeat;
+  background: url(../img/navigasjon/checkbox_valgt.svg) top no-repeat;
   background-size: 19px;
 }
 fieldset {
@@ -839,7 +835,7 @@ fieldset {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/nedtrekksmeny_knapp_hvit.png') no-repeat;
+  background: #ffffff url('../img/knapp_nedtrekksmeny.svg') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
