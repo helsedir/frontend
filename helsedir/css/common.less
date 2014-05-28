@@ -4,14 +4,6 @@
 @fontSoho: "soho gothic pro medium";
 @fontSohoLight: "soho gothic pro light";
 @fontSohoRegular: "soho gothic pro regular";
-@colorMorkBlaa: #004e66;
-@colorMediumBlaa: #0093a7;
-@colorLysBlaa: #6cb4b5;
-@colorGraa: #aeaba8;
-@colorLysGraa: #bababa;
-@colorLysLysGraa: #dbdcdd;
-@colorRoed: #c63629;
-@colorGul: #f4d01e;
 
 @colorDarkBlue: #004e66;
 @colorBlue023c49: #023c49;
@@ -22,11 +14,13 @@
 @colorYellow: #f4d01e;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
 html {
     font-size: 100%;
-    background: @colorMorkBlaa;
+    background: @colorDarkBlue;
 }
 
 body {
@@ -43,10 +37,6 @@ body {
     -o-background-size: 40% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-.no-background {
-    background: #f7f6f6;
 }
 
 h1 {
@@ -135,32 +125,6 @@ ul {
     left: -9999px !important;
 }
 
-.shortcuts {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    ul {
-        overflow: hidden;
-        height: 0;
-
-        li {
-            list-style: none;
-        }
-    }
-
-    a {
-        position: absolute;
-        top: -2013px;
-        display: block;
-        border-radius: 5px;
-
-        &:focus {
-            top: 10px;
-        }
-    }
-}
-
 a {
     color: @colorDarkBlue;
     text-decoration: underline;
@@ -168,7 +132,7 @@ a {
     line-height: 35px;
 
     &:visited {
-        color: @colorMediumBlaa;
+        color: @colorMediumBlue;
         text-decoration: underline;
     }
 
@@ -178,196 +142,15 @@ a {
 
     &:focus, &:visited:focus {
         h2, h4, p {
-            background: @colorMorkBlaa;
+            background: @colorDarkBlue;
             color: white !important;
             outline: 0;
         }
 
-        background: @colorMorkBlaa;
+        background: @colorDarkBlue;
         color: white !important;
         outline: 0;
     }
-}
-
-.headerlink {
-    text-decoration: none;
-
-    h2:after {
-        padding-left: 10px;
-        content: "\f105";
-        font-family: "FontAwesome";
-        font-size: inherit;
-        text-decoration: none;
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:visited {
-        text-decoration: none;
-    }
-}
-
-.defaultSmall {
-    font-size: 18px;
-    line-height: 20px;
-}
-
-#footer {
-    margin-top: 95px;
-}
-
-header, footer {
-    background: white;
-
-    a {
-        &:focus {
-            background: white;
-            color: @colorMorkBlaa !important;
-            outline: 0;
-        }
-    }
-}
-
-#header, #footer {
-    background: white;
-}
-
-header {
-    background: @colorMorkBlaa;
-
-    a, a:visited {
-        color: @colorMorkBlaa;
-        text-decoration: none;
-    }
-}
-
-footer {
-    .tab-links {
-        padding-left: 20px;
-
-        li {
-            &.active {
-                border: none;
-                background: white;
-            }
-
-                &.active a {
-                    background: white;
-                }
-        }
-
-        a {
-            background: #EBEEEF;
-        }
-    }
-
-    .tab-content {
-        background: white;
-    }
-}
-
-    footer.rammeverk {
-        height: 100%;
-        background: @colorMorkBlaa;
-        color: white;
-
-        p {
-            margin: 0.5rem;
-            padding-left: 1.3rem;
-        }
-
-        img {
-            padding-right: 0.4rem;
-            padding-left: 1.8rem;
-            vertical-align: middle;
-        }
-
-        a, a:visited {
-            color: white !important;
-            text-decoration: none;
-        }
-    }
-
-.has-hidden-content {
-    cursor: pointer;
-
-    h2:before, .accordion:before {
-        float: left;
-        padding: 0 15px 0 15px;
-        content: "\f078";
-        font-family: "FontAwesome";
-    }
-}
-
-.has-visible-content {
-    cursor: pointer;
-
-    h2:before, .accordion:before {
-        float: left;
-        padding: 0 15px 0 15px;
-        content: "\f077";
-        font-family: "FontAwesome";
-    }
-}
-
-.organisasjonskart, .divisjon {
-    &.has-visible-content {
-        margin-bottom: 25px;
-        padding: 0;
-
-        > div, > h3 {
-            padding: 0 10px 5px 10px;
-        }
-
-        > ul {
-            padding-left: 30px;
-        }
-
-        h2 {
-            margin: 0;
-            padding: 10px;
-            border: 1px solid #222;
-            background: @colorLysGraa;
-            cursor: pointer;
-        }
-
-            h2:before {
-                float: left;
-                padding-right: 10px;
-                content: "\f077";
-                font-family: "FontAwesome";
-            }
-    }
-
-    &.has-hidden-content {
-        margin-bottom: 25px;
-        padding: 0;
-        border: none;
-
-        h2, h3 {
-            margin: 0;
-            padding: 10px;
-            background: white;
-            cursor: pointer;
-        }
-
-            h2:before, h3:before {
-                float: left;
-                padding-right: 10px;
-                content: "\f078";
-                font-family: "FontAwesome";
-            }
-    }
-}
-
-#logo {
-    padding: 6px 16px 2px 12px;
-    min-height: 44px;
-    max-height: 44px;
-    background: white url('../img/logo.svg') no-repeat;
-    display: block;
 }
 
 .breadcrumbs {
@@ -402,37 +185,31 @@ footer {
     }
 
         a:visited {
-            color: @colorMorkBlaa;
+            color: @colorDarkBlue;
         }
 }
 
-.menylinje {
-    a {
-        padding: 7px 0 12px 4px;
+.has-hidden-content {
+    cursor: pointer;
 
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-        a.js-expanded {
-            background: white;
-            color: @colorMorkBlaa;
-        }
-
-    nav {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    input {
-        border: 1px solid @colorMorkBlaa;
+    h2:before, .accordion:before {
+        float: left;
+        padding: 0 15px 0 15px;
+        content: "\f078";
+        font-family: "FontAwesome";
     }
 }
 
-    .menylinje nav a, .menylinje > nav > span {
-        color: white;
+.has-visible-content {
+    cursor: pointer;
+
+    h2:before, .accordion:before {
+        float: left;
+        padding: 0 15px 0 15px;
+        content: "\f077";
+        font-family: "FontAwesome";
     }
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -454,17 +231,6 @@ footer {
     border: 1px solid #eeeeee;
     background: #ffffff;
 }
-/**Slett senere*/
-#infoboks {
-    float: none;
-}
-/**************/
-.fa-chevron-right {
-    float: right;
-    padding-top: 0.3rem;
-    color: @colorOrange;
-    font-size: 1.5em;
-}
 
 .fa-chevron-down {
     float: right;
@@ -472,12 +238,6 @@ footer {
     font-size: 1.5em;
 }
 
-.fa-calendar-o {
-    float: left;
-    padding-right: 25px;
-    font-size: 300%;
-}
-/*----- Tabs -----*/
 .tabs {
     position: inherit;
     height: 100%;
@@ -547,7 +307,7 @@ footer {
             list-style-type: none;
             margin-left: 0;
             padding: 5px 0 5px 10px;
-            border-bottom: solid 1px @colorLysGraa;
+            border-bottom: solid 1px @colorMediumGray;
 
             @media only screen and (min-width:900px) {
                 &:last-of-type {
@@ -561,7 +321,7 @@ footer {
         }
 
         a, a:visited, a:hover {
-            color: @colorMorkBlaa;
+            color: @colorDarkBlue;
             text-decoration: none;
         }
 
@@ -570,14 +330,14 @@ footer {
 
             ul {
                 li:first-of-type {
-                    border-bottom: solid 1px @colorLysGraa;
+                    border-bottom: solid 1px @colorMediumGray;
                 }
 
                 li {
                     border: none;
 
                     a {
-                        color: @colorMorkBlaa;
+                        color: @colorDarkBlue;
                     }
                 }
             }
@@ -585,243 +345,9 @@ footer {
     }
 }
 
-.tabs-statistics {
-    margin-top: 50px;
-
-    .tab-links {
-        padding-left: 20px;
-
-        li {
-            margin-right: 10px;
-            width: 170px;
-            text-align: center;
-
-            &.active {
-                border: none;
-                background: white;
-            }
-
-                &.active a {
-                    background: white;
-                    color: @colorDarkBlue;
-                }
-
-            a {
-                width: 100%;
-                background: @colorDarkGray;
-                color: white;
-                padding: 0 30px 0 20px;
-                border-radius: 0;
-
-                &:hover, &:focus {
-                    background: #a7cce5;
-                    text-decoration: none;
-                    color: black !important;
-                }
-            }
-        }
-    }
-
-    .tab-content {
-        background: white;
-        border: none;
-        border-radius: 0;
-
-        li a {
-            color: @colorDarkBlue;
-        }
-    }
-
-    .tabs {
-        margin-bottom: 50px;
-    }
-}
-
-.dropdown-statistikk {
-    select {
-        width: 40%;
-    }
-
-    button {
-        background: @colorOrange;
-        border: 0;
-    }
-}
-
 #chart_div {
     width: 100%;
     height: 400px;
-}
-
-#statistikk {
-    width: 90rem;
-
-    #tabheading-1 {
-        border-top: 7px solid @colorMorkBlaa;
-        border-right: 2px solid @colorMediumBlaa;
-        border-bottom: 7px solid white;
-    }
-
-    #tabheading-2 {
-        border-top: 7px solid white;
-        border-bottom: 7px solid @colorLysBlaa;
-    }
-
-    a {
-        color: @colorMorkBlaa;
-    }
-
-    .fa-chevron-down {
-        color: @colorOrange;
-    }
-}
-
-.nedlastingslinker {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    a {
-        color: @colorMediumBlaa;
-    }
-
-    li {
-        margin-bottom: 15px;
-    }
-
-    img {
-        height: 1.3rem;
-        vertical-align: text-bottom;
-    }
-}
-
-section .innholdswrapper {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    min-height: 70px;
-    background: whitesmoke;
-}
-
-.stripes {
-    position: absolute;
-    top: -6px;
-    left: 12.5%;
-    width: 75%;
-    height: 6px;
-
-    .left, .middle, .right {
-        float: left;
-        width: 33%;
-        height: 100%;
-    }
-
-    &.cold {
-        .left {
-            background: @colorMorkBlaa;
-        }
-
-        .middle {
-            background: @colorMediumBlaa;
-        }
-
-        .right {
-            background: @colorLysBlaa;
-        }
-    }
-
-    &.warm {
-        .left {
-            background: @colorRoed;
-        }
-
-        .middle {
-            background: @colorOrange;
-        }
-
-        .right {
-            background: @colorGul;
-        }
-    }
-
-    &.left {
-        left: 0;
-    }
-}
-
-.skygge {
-    position: absolute;
-    top: 100%;
-    left: 12.5%;
-    width: 75%;
-    height: 5px;
-
-    > div {
-        float: left;
-        width: 100%;
-        height: 100%;
-    }
-
-    .sort {
-        background: black;
-    }
-
-    .orange {
-        background: @colorOrange;
-    }
-
-    .roed {
-        background: @colorRoed;
-    }
-
-    .blaa {
-        background: @colorMediumBlaa;
-    }
-
-    &.bottom {
-        top: 5px;
-        left: 0;
-        width: 100%;
-    }
-}
-
-.stripes-outer, .stripes-under {
-    position: relative;
-}
-
-.pilIkon {
-    margin-right: 0.2em;
-    width: 1.875rem;
-    vertical-align: bottom;
-}
-
-.dropdownwrapper {
-    overflow: auto;
-    background: white;
-    color: @colorMorkBlaa;
-}
-
-.footerwrapper {
-    border-top: 5px solid @colorMediumBlaa;
-    background: @colorMorkBlaa;
-    background: #d1d0c4;
-    border: none;
-    padding-top: 50px;
-    width: 100%;
-}
-
-.headergronn {
-    position: absolute;
-    width: 100%;
-    height: 44px;
-    background: @colorMediumBlaa;
-}
-
-.headerblaa {
-    position: absolute;
-    width: 100%;
-    height: 44px;
-    background: @colorMorkBlaa;
 }
 
 .visuallyhidden {
@@ -867,7 +393,7 @@ section .innholdswrapper {
 /**********************************************************************
     Moduler
 ***********************************************************************/
-.abonneringsmodul {
+.module_subscribe {
     margin: 40px 0 0 0;
     padding-bottom: 5px;
     max-width: 390px;
@@ -906,114 +432,14 @@ section .innholdswrapper {
     }
 }
 
-.informasjonsboks {
-    position: relative;
-    padding: 30px 30px 0 30px;
-    min-height: 70px;
-    color: Black;
-
-    a {
-        color: @colorMorkBlaa;
-        text-decoration: underline;
-        cursor: pointer;
-
-        h4 {
-            padding-left: 1.2rem;
-            border-top: 0;
-            border-right: 1px solid @colorRoed;
-            border-bottom: 1px solid @colorRoed;
-            border-left: 1px solid @colorRoed;
-        }
-    }
-
-    .seAlle-link {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    ul {
-        padding-left: 1.4rem;
-        list-style-type: disc;
-
-        li {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
-    }
-
-    #retningslinjer > li {
-        color: @colorRoed;
-    }
-
-    #tilskudd > li {
-        color: @colorGul;
-    }
-
-    &.lover {
-        border: 1px solid @colorRoed;
-
-        .lover-liste > li {
-            color: @colorRoed;
-        }
-    }
-
-    &.retningslinjer {
-        border: 1px solid @colorOrange;
-
-        .retningslinjer-liste > li {
-            color: @colorOrange;
-        }
-
-        ul {
-        }
-    }
-
-    .stripes {
-        top: -36px;
-        left: 0;
-        width: 100%;
-    }
-
-    h4 {
-        margin-bottom: 2rem;
-    }
-}
-
-.liteninformasjonsboks {
+.module_information_small {
     margin: 30px 0 10px 0;
     padding: 10px 0 10px 10px;
     border: 1px solid #222;
-
-    .blaasOpp {
-        font-size: 3em;
-    }
-
-    .forminsk {
-        font-size: 0.8em;
-    }
 }
 
-.c2aknapp {
-    padding: 0;
-    border: none;
-    background-color: @colorOrange;
-    line-height: 2.2rem;
-
-    h3 {
-        margin: 0;
-        font-weight: bold;
-        font-family: @fontCalibri;
-    }
-
-    img {
-        float: right;
-        padding-top: 0.2rem;
-        width: 1.875rem;
-    }
-}
-
-.personmodul { /*float: right;*/
-    margin: 25px 0 0 0; //padding-left: 2rem;color: @colorMorkBlaa; p {margin: 5px;line-height: 1.5rem;}
+.module_person {
+    margin: 25px 0 0 0;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1032,78 +458,18 @@ section .innholdswrapper {
     }
 }
 
-.faktaboks {
-    position: relative;
-    margin-bottom: 10px;
-    padding: 10px;
-    min-height: 70px;
-    background: @colorLysGraa;
-    color: black;
-
-    .stripes-outer {
-        top: -9px;
-    }
-
-    .stripes-under {
-        top: 100%;
-    }
-
-    ul {
-        padding: 25px 25px 35px 25px;
-        list-style-type: square;
-
-        > li {
-            color: @colorMorkBlaa;
-
-            > span {
-                color: black;
-            }
-        }
-    }
-
-    p {
-        padding: 0 25px 35px 25px;
-    }
-
-    h3 {
-        padding-top: 25px;
-        padding-left: 25px;
-    }
-
-    h4 {
-        padding-top: 25px;
-        padding-left: 25px;
-    }
-}
-
-.sosialemedier {
-    color: white;
-
-    h4 {
-        margin: 0 0 5px 0;
-    }
-
-    a {
-        margin-left: 10px;
-    }
-
-        a:visited {
-            color: white;
-        }
-}
-
 video {
     width: 100%;
 }
 
 .retningslinjemodul {
     margin-bottom: 20px;
-    border: 1px solid @colorLysGraa;
+    border: 1px solid @colorMediumGray;
     padding-left: 10px;
 
     .innerDiv {
         margin: 10px;
-        /*border-left: 8px solid @colorRoed;*/
+        /*border-left: 8px solid @colorRed;*/
         p, a, h4 {
             margin: 0 0 0 10px;
         }
@@ -1111,7 +477,7 @@ video {
 }
 
 .veiledermodul {
-    border: 1px solid @colorLysGraa;
+    border: 1px solid @colorMediumGray;
     padding-left: 10px;
 
     .innerDiv {
@@ -1125,7 +491,7 @@ video {
 
 .sidetekst {
     margin: 10px;
-    border-left: 8px solid @colorRoed;
+    border-left: 8px solid @colorRed;
 
     p, a, h4 {
         margin: 0 0 0 10px;
@@ -1163,7 +529,7 @@ video {
 }
 
 @media only screen and (max-width: 1199px) {
-    .abonneringsmodul {
+    .module_subscribe {
         margin: 40px 0 30px 30px;
     }
 }
@@ -1175,12 +541,12 @@ video {
         position: absolute;
         margin-right: -55%;
 
-        &.personmodul {
+        &.module_person {
             top: auto;
         }
     }
 
-    .personmodul.kontakt {
+    .module_person.kontakt {
         bottom: 0;
         right: 0;
         position: absolute;
@@ -1273,14 +639,6 @@ video {
     }
 }
 
-.forside {
-    article {
-        margin: 20px 0 20px 0;
-        border-bottom: 1px solid @colorLysGraa;
-        padding-bottom: 20px;
-    }
-}
-
 .headline {
     margin-bottom: 20px;
     line-height: 40px;
@@ -1307,7 +665,7 @@ video {
 }
 
 .toppmeny {
-    /*border-bottom: 1px solid @colorLysGraa;*/
+    /*border-bottom: 1px solid @colorMediumGray;*/
     margin-bottom: 30px;
     background: #d1d0c4;
     padding: 0 0 50px 0 !important;
@@ -1401,7 +759,7 @@ video {
             transition: all 0.3s;
 
             a, a:visited, a:hover {
-                color: @colorMorkBlaa;
+                color: @colorDarkBlue;
             }
 
             &:hover {
@@ -1417,7 +775,7 @@ video {
         /*#statistikktab1 {
             p {
                 text-align: center;
-                color: @colorMorkBlaa;
+                color: @colorDarkBlue;
 
                 .nokkeltall {
                     font-size: 300%;
@@ -1426,7 +784,7 @@ video {
 
             h4 {
                 padding: 0 15px 0 15px;
-                background: @colorMorkBlaa;
+                background: @colorDarkBlue;
                 color: white;
 
                 i {
@@ -1447,10 +805,6 @@ video {
 .fa-search {
     border: 2px solid white;
     padding: 5px;
-}
-
-.menyknapp {
-    vertical-align: middle;
 }
 
 .cleanlist, .linklist {
@@ -1480,13 +834,13 @@ video {
 .borderbox {
     margin-bottom: 20px;
     margin-top: 10px;
-    border: 1px solid @colorLysGraa;
+    border: 1px solid @colorMediumGray;
     padding-left: 10px;
     background: white;
 
     .innerDiv {
         margin: 10px;
-        /*border-left: 8px solid @colorRoed;*/
+        /*border-left: 8px solid @colorRed;*/
         p, a, h4 {
             margin: 0 0 0 10px;
         }
@@ -1551,7 +905,7 @@ video {
 
     button {
         background: white;
-        border: 1px solid @colorLysGraa;
+        border: 1px solid @colorMediumGray;
     }
 
     a {
@@ -1646,162 +1000,6 @@ video {
 
 html {
     background: white;
-}
-
-header {
-    height: 40px;
-    margin: 25px 0 35px 0;
-    background: white;
-
-    .links {
-        color: @colorDarkBlue;
-        margin-right: 15px;
-    }
-
-    @media only screen and (max-width: 900px) {
-        margin: 10px 0 10px 0;
-    }
-}
-
-.mainsearch {
-    height: 39px;
-    /*max-width: 220px;*/
-    width: 100%;
-    padding: 0 35px 0 5px;
-    border-radius: 3px;
-    border: 1px solid @colorDarkBlue;
-    vertical-align: middle;
-    background: url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-    background-size: auto 80%;
-    background-color: #ffffff;
-    background-position: 97%;
-    cursor: pointer;
-}
-
-.menubutton {
-    width: 150px;
-    min-height: 40px;
-    text-align: center;
-    display: inline-block;
-    padding-top: 2px;
-
-    a {
-        border-radius: 3px;
-        background-color: @colorDarkBlue;
-        vertical-align: middle;
-        padding: 7px 12px 7px 12px;
-        color: #ffffff;
-        font-weight: normal;
-        transition: all 0.5s;
-
-        &:visited {
-            background-color: @colorDarkBlue;
-            color: #ffffff;
-        }
-
-        &:focus {
-            text-decoration: none;
-            background-color: #d1d0c4;
-            color: @colorDarkBlue;
-            border: solid 1px @colorDarkBlue;
-        }
-
-        &:hover {
-            text-decoration: none;
-            background-color: #d1d0c4;
-            border-radius: 3px;
-            color: @colorDarkBlue;
-        }
-
-        &.js-expanded {
-            padding-bottom: 43px;
-            border-radius: 3px 3px 0 0;
-            background-color: #d1d0c4;
-            color: @colorDarkBlue;
-        }
-
-        i {
-            /*font-size: 28px;*/
-            margin-left: 10px;
-        }
-    }
-}
-
-.mobile-search {
-    display: none;
-}
-
-.hidden-mobile {
-    display: block;
-}
-
-@media only screen and (max-width: 900px) {
-    .hidden-mobile {
-        display: none;
-        background-color: @colorLysLysGraa;
-        padding: 20px;
-    }
-
-    .menubutton {
-        width: 40px;
-        margin-right: 5px;
-        cursor: pointer;
-        float: left;
-
-        &.mobile-menu {
-            padding: 7px 11px 8px 11px;
-            display: inline-block;
-            border-radius: 3px;
-            background: @colorDarkBlue url('../img/ikon_meny_hvit.svg') no-repeat;
-            background-size: 20px;
-            background-position: center;
-
-            &:hover {
-                background: @colorLysLysGraa url('../img/ikon_meny_blaa.svg') no-repeat;
-                background-size: 20px;
-                background-position: center;
-                border-radius: 3px;
-            }
-
-            &.js-expanded {
-                padding-bottom: 43px;
-                background: @colorLysLysGraa url('../img/ikon_meny_blaa.svg') no-repeat;
-                background-size: 20px;
-                background-position: 50% 35%;
-                border-radius: 3px 3px 0 0;
-            }
-        }
-
-        &.mobile-search {
-            display: inline-block;
-            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-            background-size: 30px;
-            background-position: center;
-            border-radius: 3px;
-
-            &:focus {
-                text-decoration: none;
-                background-color: @colorLysLysGraa;
-                color: @colorDarkBlue;
-                border: solid 1px @colorDarkBlue;
-            }
-
-            &:hover {
-                background: @colorLysLysGraa url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-                background-size: 30px;
-                background-position: center;
-                border-radius: 3px;
-            }
-
-            &.js-expanded {
-                padding-bottom: 43px;
-                background: @colorLysLysGraa url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-                background-size: 29px;
-                background-position: 50% 35%;
-                border-radius: 3px 3px 0 0;
-            }
-        }
-    }
 }
 
 .mainentrance {
@@ -1971,79 +1169,6 @@ footer {
     }
 }
 
-.menuwrapper {
-    background: white;
-}
-
-.footerlinkswrapper {
-    background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
-    background-position: right;
-    border-top: 1px solid black;
-    padding-bottom: 10px;
-
-    h4, p, a, a:visited, a:hover {
-        color: white;
-    }
-
-    h4 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-
-    a {
-        text-decoration: underline;
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-
-    .socialmedia {
-        border-radius: 3px;
-        margin: 20px 0 20px 0;
-
-        span {
-            background: white;
-            color: black;
-            border-radius: 3px;
-            padding: 14px 40px 14px 30px;
-            float: left;
-        }
-
-        a {
-            background: @colorLightBlue;
-            padding: 10px 20px 10px 20px;
-            color: white;
-            float: left;
-            line-height: 35px;
-        }
-
-            a:last-of-type {
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
-            }
-    }
-}
-
-.about {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-
-    a {
-        cursor: pointer;
-    }
-
-    li {
-        margin: 0;
-        line-height: 1.5em;
-    }
-}
-
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
@@ -2117,12 +1242,6 @@ footer {
 
     .ingress {
         border: none;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    header .links {
-        margin-right: 15px;
     }
 }
 
@@ -2745,5 +1864,44 @@ fieldset {
 
     select {
         margin-bottom: 20px;
+    }
+}
+
+.error {
+    display: inline-block;
+    margin: 100px 0 0 30px;
+    padding: 30px 30px 45px 30px;
+    word-break: break-all;
+    border: 2px solid #de2811;
+    background: white;
+    position: relative;
+
+    .module_description {
+        font-family: @fontCalibri;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: @colorDarkBlue;
+        text-decoration: none;
+        margin-bottom: 25px;
+    }
+
+    .module_header {
+        font-family: @fontSohoRegular;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 25px;
+        color: #222;
+    }
+
+    .error_message {
+        margin-left: 30px;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -21px;
+        height: 50%;
     }
 }

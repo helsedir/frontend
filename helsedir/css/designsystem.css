@@ -1,12 +1,12 @@
-﻿.hhs header {
-  margin: 0;
-}
-.hhs .topplinje {
+﻿.hhs .topplinje {
   color: white;
   background: #004e66;
 }
-.hhs .headerBlaa {
-  height: 40px;
+.hhs .headerblaa {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  background: #004e66;
 }
 .hhs .toppmeny {
   background: #004e66;
@@ -139,5 +139,21 @@
 }
 .hhs .arkfaner {
   background: #f2f2f2;
+}
+.hhs .headerlink {
+  text-decoration: none;
+}
+.hhs .headerlink h2:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+}
+.hhs .headerlink:hover {
+  text-decoration: underline;
+}
+.hhs .headerlink:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=designsystem.css.map */

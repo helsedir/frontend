@@ -1,0 +1,391 @@
+﻿@fontRoboto: 'Roboto', sans-serif;
+@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "soho gothic pro light";
+@fontSohoRegular: "soho gothic pro regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.footerwrapper {
+    border-top: 5px solid @colorMediumBlue;
+    background: @colorDarkBlue;
+    background: #d1d0c4;
+    border: none;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.menuwrapper {
+    background: white;
+}
+
+.shortcuts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    ul {
+        overflow: hidden;
+        height: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: -2013px;
+        display: block;
+        border-radius: 5px;
+
+        &:focus {
+            top: 10px;
+        }
+    }
+}
+
+.forside {
+    article {
+        margin: 20px 0 20px 0;
+        border-bottom: 1px solid @colorLightGray2;
+        padding-bottom: 20px;
+    }
+}
+
+.footerlinkswrapper {
+    background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+    background-position: right;
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+
+    h4, p, a, a:visited, a:hover {
+        color: white;
+    }
+
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    a {
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .socialmedia {
+        border-radius: 3px;
+        margin: 20px 0 20px 0;
+
+        a {
+            background: @colorLightBlue;
+            padding: 10px 20px 10px 20px;
+            float: left;
+            line-height: 35px;
+
+            img {
+                height: 22px;
+            }
+
+            &:hover {
+                background: @colorDarkBlue;
+            }
+        }
+
+            a:last-of-type {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            a:first-of-type {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+    }
+}
+
+.mobile-search {
+    display: none;
+}
+
+.hidden-mobile {
+    display: block;
+}
+
+.about {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+
+    a {
+        cursor: pointer;
+    }
+
+    li {
+        margin: 0;
+        line-height: 1.5em;
+    }
+}
+
+#header, #footer {
+    background: white;
+}
+
+#logo {
+    padding: 6px 16px 2px 12px;
+    min-height: 44px;
+    max-height: 44px;
+    background: white url('../img/logo.svg') no-repeat;
+    display: block;
+}
+
+.menubutton {
+    width: 150px;
+    min-height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 2px;
+
+    a {
+        border-radius: 3px;
+        background-color: @colorDarkBlue;
+        vertical-align: middle;
+        padding: 7px 12px 7px 12px;
+        color: #ffffff;
+        font-weight: normal;
+        transition: all 0.5s;
+
+        &:visited {
+            background-color: @colorDarkBlue;
+            color: #ffffff;
+        }
+
+        &:focus {
+            text-decoration: none;
+            background-color: #d1d0c4;
+            color: @colorDarkBlue;
+            border: solid 1px @colorDarkBlue;
+        }
+
+        &:hover {
+            text-decoration: none;
+            background-color: #d1d0c4;
+            border-radius: 3px;
+            color: @colorDarkBlue;
+        }
+
+        &.js-expanded {
+            padding-bottom: 43px;
+            border-radius: 3px 3px 0 0;
+            background-color: #d1d0c4;
+            color: @colorDarkBlue;
+        }
+
+        i {
+            /*font-size: 28px;*/
+            margin-left: 10px;
+        }
+    }
+}
+
+.menyknapp {
+    vertical-align: middle;
+}
+
+.mainsearch {
+    height: 39px;
+    /*max-width: 220px;*/
+    width: 100%;
+    padding: 0 35px 0 5px;
+    border-radius: 3px;
+    border: 1px solid @colorDarkBlue;
+    vertical-align: middle;
+    background: url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: auto 80%;
+    background-color: #ffffff;
+    background-position: 97%;
+    cursor: pointer;
+}
+
+header {
+    height: 40px;
+    margin: 25px 0 35px 0;
+    background: white;
+
+    .links {
+        color: @colorDarkBlue;
+        margin-right: 15px;
+    }
+
+    a, a:visited {
+        color: @colorDarkBlue;
+        text-decoration: none;
+    }
+}
+
+header, footer {
+    background: white;
+
+    a {
+        &:focus {
+            background: white;
+            color: @colorDarkBlue !important;
+            outline: 0;
+        }
+    }
+}
+
+footer {
+    .tab-links {
+        padding-left: 20px;
+
+        li {
+            &.active {
+                border: none;
+                background: white;
+            }
+
+                &.active a {
+                    background: white;
+                }
+        }
+
+        a {
+            background: #EBEEEF;
+        }
+    }
+
+    .tab-content {
+        background: white;
+    }
+}
+
+    footer.rammeverk {
+        height: 100%;
+        background: @colorDarkBlue;
+        color: white;
+
+        p {
+            margin: 0.5rem;
+            padding-left: 1.3rem;
+        }
+
+        img {
+            padding-right: 0.4rem;
+            padding-left: 1.8rem;
+            vertical-align: middle;
+        }
+
+        a, a:visited {
+            color: white !important;
+            text-decoration: none;
+        }
+    }
+
+#footer {
+    margin-top: 95px;
+}
+
+@media only screen and (max-width: 900px) {
+    .menubutton {
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+        float: left;
+
+        &.mobile-menu {
+            padding: 7px 11px 8px 11px;
+            display: inline-block;
+            border-radius: 3px;
+            background: @colorDarkBlue url('../img/ikon_meny_hvit.svg') no-repeat;
+            background-size: 20px;
+            background-position: center;
+
+            &:hover {
+                background: @colorLightGray2 url('../img/ikon_meny_blaa.svg') no-repeat;
+                background-size: 20px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: @colorLightGray2 url('../img/ikon_meny_blaa.svg') no-repeat;
+                background-size: 20px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+
+        &.mobile-search {
+            display: inline-block;
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            background-size: 30px;
+            background-position: center;
+            border-radius: 3px;
+
+            &:focus {
+                text-decoration: none;
+                background-color: @colorLightGray2;
+                color: @colorDarkBlue;
+                border: solid 1px @colorDarkBlue;
+            }
+
+            &:hover {
+                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background-size: 30px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background-size: 29px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+    }
+
+    .hidden-mobile {
+        display: none;
+        background-color: @colorLightGray2;
+        padding: 20px;
+    }
+
+    header {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    header .links {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .footerlinkswrapper .socialmedia a img {
+        height: 16px;
+    }
+}

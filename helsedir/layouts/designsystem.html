@@ -4,9 +4,14 @@
     <title>Digitalt designsystem for Helsedirektoratet</title>
     <link href="../css/reset.css" rel="stylesheet" />
     <link href="../css/bootstrap.css" rel="stylesheet" />
-    <link href="../css/customLESS.css" rel="stylesheet" />
+    <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/designsystem.css" rel="stylesheet" />
+    <link href="../css/article.css" rel="stylesheet" />
+    <link href="../css/frontpage.css" rel="stylesheet" />
+    <link href="../css/statistics.css" rel="stylesheet" />
+    <link href="../css/transportside.css" rel="stylesheet" />
 </head>
 <body class="hhs">
 
@@ -56,7 +61,7 @@
                         <li><a href="#hhs-transportsideknapp">Transportsideknapp</a></li>
                         <li><a href="#hhs-youtubeavspiller">YouTube-avspiller</a></li>
                         <li><a href="#hhs-lokalvideoavspiller">Videoavspiller for lokal media</a></li>
-                        <li><a href="#hhs-personmodul">personmodul</a></li>
+                        <li><a href="#hhs-module_person">module_person</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-3">
@@ -490,36 +495,39 @@
                             <div class="footerlinkswrapper">
                                 <div class="container">
                                     <div class="row">
-                                        <section class="col-sm-7 col-md-6 col-md-offset-1">
+                                        <section class="col-sm-12 col-md-4 ">
                                             <h4>Kontakt oss</h4>
                                             <p>Telefon: +47 810 20 050</p>
                                             <p>E-post: postmottak@helsedir.no</p>
                                             <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
                                             <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
-
+                                            <ul class="about">
+                                                <li><a href="kontaktoss.html">Kontakt oss</a></li>
+                                                <li><a href="#">Presse</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="col-sm-12 col-md-4">
+                                            <h4>Om Helsedirektoratet</h4>
+                                            <p>Helsedirektoratet gjennomfører helsepolitikken, forvalter helselover og er faglig rådgiver innen helse.</p>
+                                            <ul class="about">
+                                                <li><a href="#">Ledige stillinger</a></li>
+                                                <li><a href="artikkel_organisasjonskart.html">Organisasjonskart</a></li>
+                                                <li><a href="#">Aktuelt</a></li>
+                                                <li><a href="#">Kurs og konferanser</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="col-sm-12 col-md-4 ">
                                             <h4>Abonner</h4>
                                             <a href="#"><p class="abonner">Nyheter på e-post</p></a>
                                             <a href="#"><p class="abonner">Nyheter på RSS</p></a>
 
                                             <div class="socialmedia clearfix">
-                                                <span class="hidden-sm hidden-xs">Følg oss på</span>
-                                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                                <h4>Følg oss på</h4>
+                                                <a href="#"><img src="../img/sosiale_ikon_twitter.svg" alt="Twitter" /></a>
+                                                <a href="#"><img src="../img/sosiale_ikon_facebook.svg" alt="Facebook" /></a>
+                                                <a href="#"><img src="../img/sosiale_ikon_youtube.svg" alt="YouTube" /></a>
+                                                <a href="#"><img src="../img/sosiale_ikon_linkedin.svg" alt="Linkedin" /></a>
                                             </div>
-                                        </section>
-                                        <section class="col-sm-5 col-md-3 ">
-                                            <h4>Om Helsedirektoratet</h4>
-                                            <p>Helsedirektoratet gjennomfører helsepolitikken, forvalter helselover og er faglig rådgiver innen helse.</p>
-                                            <ul class="about">
-                                                <li><a href="kontaktoss.html">Kontakt oss</a></li>
-                                                <li><a href="#">Aktuelt</a></li>
-                                                <li><a href="#">Kurs og konferanser</a></li>
-                                                <li><a href="#">Presse</a></li>
-                                                <li><a href="#">Ledige stillinger</a></li>
-                                                <li><a href="artikkel_organisasjonskart.html">Organisasjonskart</a></li>
-                                            </ul>
                                         </section>
                                     </div>
                                 </div>
@@ -983,6 +991,16 @@
                         </div>
                     </div>
 
+                    <a name="hhs-feilmelding"></a>
+                    <h3 class="illustrasjonOverskrift">Feilmelding</h3>
+                    <div class="illustrasjon clearfix">
+                        <div class="error">
+                            <div class="module_description">Feilmelding</div>
+                            <p class="error_message">Vi beklager men siden er ikke tilgjengelig akkurat nå.</p>
+                            <img src="../img/modules/EKG_roed_stor.png" alt="" />
+                        </div>
+                    </div>
+
                     <a name="hhs-faktaboks_maincolumn"></a>
                     <h3 class="illustrasjonOverskrift">Faktaboks hovedkolonne</h3>
                     <div class="illustrasjon">
@@ -1050,10 +1068,10 @@
                         </div>
                     </div>
 
-                    <a name="hhs-abonneringsmodul"></a>
-                    <h3 class="illustrasjonOverskrift">Abonneringsmodul</h3>
+                    <a name="hhs-module_subscribe"></a>
+                    <h3 class="illustrasjonOverskrift">module_subscribe</h3>
                     <div class="illustrasjon">
-                        <div class="abonneringsmodul clearfix">
+                        <div class="module_subscribe clearfix">
                             <p>Abonnér på denne siden</p>
                             <i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a>
                             <i class="fa fa-rss fa-lg"></i><a href="#">RSS-strøm</a>
@@ -1096,7 +1114,7 @@
                             <a href="#">
                                 <h4>Salgsbevilling</h4>
                                 <p>
-                                    Regler og søknad for butikker som vil selge alkohol<i class="fa fa-chevron-right"></i>
+                                    Regler og søknad for butikker som vil selge alkohol
                                 </p>
                             </a>
                             <div class="skygge bottom">
@@ -1105,11 +1123,11 @@
                         </div>
                     </div>
 
-                    <a name="hhs-personmodul"></a>
-                    <h3 class="illustrasjonOverskrift">personmodul</h3>
+                    <a name="hhs-module_person"></a>
+                    <h3 class="illustrasjonOverskrift">module_person</h3>
                     <p></p>
                     <div class="illustrasjon">
-                        <div class="personmodul">
+                        <div class="module_person">
                             <h3>Ansvarlig for denne siden</h3>
                             <div class="stripes-outer">
                                 <div class="stripes cold left">
