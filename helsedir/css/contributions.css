@@ -1,0 +1,32 @@
+﻿.tilskudd {
+  padding: 25px 0 10px 0;
+  border-bottom: 1px solid black;
+}
+.tilskudd a {
+  text-decoration: underline;
+}
+.tilskudd p {
+  margin: 0;
+}
+.tilskudd_sortcontrols {
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
+.tilskudd_sortcontrols form {
+  display: inline;
+}
+.tilskudd_sortcontrols form label {
+  margin: 0 10px 0 5px;
+}
+#tilskuddsaar {
+  display: none;
+}
+.tilskudd_information .tilskudd_info_attributes {
+  width: 35%;
+  float: left;
+  margin-right: 10px;
+}
+.tilskudd_information p {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=contributions.css.map */

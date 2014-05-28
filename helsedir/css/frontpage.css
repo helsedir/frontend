@@ -6,4 +6,135 @@
   padding-right: 25px;
   font-size: 300%;
 }
+.mainentrance {
+  background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 20px 0 40px 0;
+}
+.entrancebutton {
+  width: 250px;
+  height: 230px;
+  border-radius: 4px;
+  background: #004e66;
+  margin: 30px 30px 0 0;
+  float: left;
+  position: relative;
+}
+.entrancebutton .menu {
+  cursor: pointer;
+  background: #838078;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.entrancebutton .menu .innerDiv {
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+}
+.entrancebutton .menu.js-expanded {
+  background-color: #dbdcdd;
+  color: black;
+  padding-bottom: 65px;
+}
+.entrancebutton .menu:hover {
+  background: #666460;
+}
+.entrancebutton a,
+.entrancebutton .menu {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.entrancebutton a .innerDiv,
+.entrancebutton .menu .innerDiv {
+  position: relative;
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.entrancebutton a h3,
+.entrancebutton .menu h3 {
+  margin: 80px 0 0 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: "soho gothic pro light";
+}
+.entrancebutton a h3 .fa-bars,
+.entrancebutton .menu h3 .fa-bars {
+  margin-top: 20px;
+}
+.entrancebutton a h2,
+.entrancebutton .menu h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  line-height: 35px;
+  margin: 80px 0 0 0;
+  padding-bottom: 5px;
+}
+.entrancebutton a p,
+.entrancebutton .menu p {
+  line-height: 23px;
+}
+.entrancebutton:visited,
+.entrancebutton:hover {
+  color: white;
+}
+.entrancebutton:hover {
+  background: #02343f;
+}
+.entrancebutton:hover a,
+.entrancebutton:hover h2,
+.entrancebutton:hover p,
+.entrancebutton:hover a:focus,
+.entrancebutton:hover h2:focus,
+.entrancebutton:hover p:focus {
+  text-decoration: none;
+  color: white;
+}
+.frontpagewrapper.grey {
+  background: #DEDDDB;
+}
+.frontpage {
+  padding-bottom: 50px;
+}
+.frontpage h2 {
+  margin: 50px 0 20px 0;
+  width: 100%;
+  border-bottom: 3px solid #004e66;
+  padding-bottom: 7px;
+}
+.frontpage a {
+  color: #004e66;
+}
+.frontpage .news {
+  margin-bottom: 20px;
+}
+.frontpage .news p {
+  color: black;
+}
+.frontpage p {
+  margin: 0;
+}
+.frontpage .conferenceitem {
+  margin-bottom: 20px;
+}
+.frontpage .conferenceitem a,
+.frontpage .conferenceitem p {
+  padding: 0;
+  line-height: 1em;
+}
+.frontpage .conferenceitem p {
+  color: black;
+}
+.frontpage .statistics_image {
+  margin-bottom: 20px;
+}
+.frontpage .ingress {
+  border: none;
+}
 /*# sourceMappingURL=frontpage.css.map */

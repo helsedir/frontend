@@ -27,3 +27,150 @@
     padding-right: 25px;
     font-size: 300%;
 }
+
+.mainentrance {
+    background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 0 40px 0;
+}
+
+.entrancebutton {
+    width: 250px;
+    height: 230px;
+    border-radius: 4px;
+    background: @colorDarkBlue;
+    margin: 30px 30px 0 0;
+    float: left;
+    position: relative;
+
+    .menu {
+        cursor: pointer;
+        background: #838078;
+        transition: all 0.5s;
+        border-radius: 3px;
+
+        .innerDiv {
+            color: white;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        &.js-expanded {
+            background-color: #dbdcdd;
+            color: black;
+            padding-bottom: 65px;
+        }
+
+        &:hover {
+            background: #666460;
+        }
+    }
+
+    a, .menu {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+
+        .innerDiv {
+            position: relative;
+            margin-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 80px 0 0 0;
+            padding: 0;
+            font-size: 28px;
+            font-family: @fontSohoLight;
+
+            .fa-bars {
+                margin-top: 20px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 28px;
+            line-height: 35px;
+            margin: 80px 0 0 0;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 23px;
+        }
+    }
+
+    &:visited, &:hover {
+        color: white;
+    }
+
+    &:hover {
+        background: #02343f;
+
+        a, h2, p, a:focus, h2:focus, p:focus {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.frontpagewrapper {
+    &.grey {
+        background: #DEDDDB;
+    }
+}
+
+.frontpage {
+    padding-bottom: 50px;
+
+    h2 {
+        margin: 50px 0 20px 0;
+        width: 100%;
+        border-bottom: 3px solid @colorDarkBlue;
+        padding-bottom: 7px;
+    }
+
+    a {
+        color: @colorDarkBlue;
+    }
+
+    .news {
+        margin-bottom: 20px;
+
+        p {
+            color: black;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .conferenceitem {
+        margin-bottom: 20px;
+
+        a, p {
+            padding: 0;
+            line-height: 1em;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    .statistics_image {
+        margin-bottom: 20px;
+    }
+
+    .ingress {
+        border: none;
+    }
+}

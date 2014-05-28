@@ -48,4 +48,56 @@
   background: #df9922;
   border: 0;
 }
+.radiobuttons label {
+  display: block;
+}
+.statistics_compare {
+  padding: 5px 0 10px 10px;
+}
+.statistics_compare p {
+  margin: 0;
+}
+.statistics_compare select {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.statistics_compare label {
+  display: inline-block;
+}
+.statistics_compare label input {
+  margin-right: 5px;
+}
+.statistics_compare button {
+  background: white;
+  border: 1px solid #bababa;
+}
+.statistics_compare a {
+  display: block;
+}
+.statistics_compare label,
+.statistics_compare a {
+  padding-left: 15px;
+}
+#compare_hiddenfields {
+  display: none;
+}
+.statistics h2 {
+  text-align: center;
+}
+.statistics .fa-chevron-down {
+  float: none;
+  padding: 0;
+}
+.statistics_about h4 {
+  margin: 50px 0 10px 0;
+}
+.statistics_about p {
+  margin: 0;
+}
+#statistikktab1,
+#statistikktab2,
+#statistikktab3 {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=statistics.css.map */

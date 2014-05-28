@@ -1,0 +1,28 @@
+﻿.publication_sortcontrols {
+  width: 81%;
+}
+.publication_sortcontrols p {
+  display: inline;
+}
+.publication_sortcontrols a {
+  float: right;
+  margin-left: 15px;
+  color: black;
+}
+.publication {
+  margin-top: 30px;
+}
+.publication a {
+  display: block;
+  text-decoration: underline;
+}
+.publication p {
+  display: inline-block;
+  margin-right: 25px;
+}
+.publication button {
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+/*# sourceMappingURL=publication.css.map */

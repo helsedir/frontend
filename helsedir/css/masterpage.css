@@ -35,58 +35,6 @@
   border-bottom: 1px solid #dbdcdd;
   padding-bottom: 20px;
 }
-.footerlinkswrapper {
-  background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
-  background-position: right;
-  border-top: 1px solid black;
-  padding: 20px 0 50px 0;
-}
-.footerlinkswrapper h4,
-.footerlinkswrapper p,
-.footerlinkswrapper a,
-.footerlinkswrapper a:visited,
-.footerlinkswrapper a:hover {
-  color: white;
-}
-.footerlinkswrapper h4 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.footerlinkswrapper p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.5em;
-}
-.footerlinkswrapper a {
-  text-decoration: underline;
-  font-size: 18px;
-  line-height: 1.5em;
-}
-.footerlinkswrapper .socialmedia {
-  border-radius: 3px;
-  margin: 20px 0 20px 0;
-}
-.footerlinkswrapper .socialmedia a {
-  background: #6cb4b5;
-  padding: 10px 20px 10px 20px;
-  float: left;
-  line-height: 35px;
-  margin-top: 10px;
-}
-.footerlinkswrapper .socialmedia a img {
-  height: 22px;
-}
-.footerlinkswrapper .socialmedia a:hover {
-  background: #004e66;
-}
-.footerlinkswrapper .socialmedia a:last-of-type {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-.footerlinkswrapper .socialmedia a:first-of-type {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
 .mobile-search {
   display: none;
 }
@@ -199,6 +147,101 @@ footer a:focus {
   color: #004e66 !important;
   outline: 0;
 }
+/**********Header**********/
+.toppmeny {
+  margin-bottom: 30px;
+  background: #d1d0c4;
+  padding: 0 0 50px 0 !important;
+}
+.toppmeny .inner {
+  background: #ffffff;
+  padding: 0;
+  margin-top: 60px;
+}
+.toppmeny .tab-links {
+  margin: 0;
+  margin-top: -35px;
+  background-color: transparent;
+}
+.toppmeny .tab-links:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.toppmeny .tab-links li {
+  margin: 0 15px 0 0;
+  float: left;
+  list-style: none;
+  width: 190px;
+  text-align: center;
+}
+.toppmeny .tab-links li a {
+  background-color: #004e66;
+  border-radius: 0;
+  color: #ffffff;
+  font-family: 'Calibri';
+  width: 100%;
+}
+.toppmeny .tab-links li a:hover,
+.toppmeny .tab-links li a:focus {
+  background: #023c49;
+  text-decoration: none;
+  color: white;
+}
+.toppmeny .tab-links li.active a,
+.toppmeny .tab-links li.active a:hover {
+  color: #4c4c4c;
+  background-color: #ffffff;
+}
+.toppmeny .tab-links li.active {
+  border: none !important;
+  font-family: 'Calibri bold';
+  font-size: 20px;
+}
+.toppmeny .tab-links li input {
+  width: 100%;
+  height: 100%;
+}
+.toppmeny .tab-links a {
+  padding: 0 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+  transition: all linear 0.15s;
+  background: white;
+}
+.toppmeny .tab-links a:hover,
+.toppmeny .tab-links a:focus {
+  background: #023c49;
+  text-decoration: none;
+  color: white;
+}
+.toppmeny .tab-content {
+  border-top: none !important;
+  border-radius: 3px;
+  margin: 10px 0 10px 0;
+}
+.toppmeny .tab-content li {
+  list-style-type: none;
+  border-bottom: 0,5px solid #a7a9ab;
+  font-family: 'Calibri';
+  font-weight: 45px;
+  transition: all 0.3s;
+}
+.toppmeny .tab-content li a,
+.toppmeny .tab-content li a:visited,
+.toppmeny .tab-content li a:hover {
+  color: #004e66;
+}
+.toppmeny .tab-content li:hover {
+  background: #d1d0c4;
+}
+.toppmeny .tabs-statistics .tab-content {
+  padding: 15px 0 0 0;
+}
+/**********Footer**********/
 footer .tab-links {
   padding-left: 20px;
 }
@@ -214,6 +257,55 @@ footer .tab-links a {
 }
 footer .tab-content {
   background: white;
+}
+footer .map {
+  height: 500px;
+}
+footer .tabs {
+  margin-bottom: 50px;
+}
+footer .tabs .tab-links {
+  padding-left: 20px;
+  margin-top: -35px;
+}
+footer .tabs .tab-links li {
+  margin-right: 10px;
+  background: #004e66;
+}
+footer .tabs .tab-links li.active {
+  border: none;
+  background: white;
+}
+footer .tabs .tab-links li.active a {
+  background: white;
+  color: #004e66;
+}
+footer .tabs .tab-links a {
+  background: #004e66;
+  color: white;
+  padding: 0 30px 0 20px;
+  border-radius: 0;
+}
+footer .tabs .tab-links a:hover,
+footer .tabs .tab-links a:focus {
+  background: #023c49;
+  text-decoration: none;
+  color: white;
+}
+footer .tabs .tab-content {
+  background: white;
+  border: none;
+  border-radius: 0;
+  margin: 10px 0;
+}
+footer .tabs .tab-content li {
+  transition: all 0.3s;
+}
+footer .tabs .tab-content li a {
+  color: #004e66;
+}
+footer .tabs .tab-content li:hover {
+  background: #d1d0c4;
 }
 footer.rammeverk {
   height: 100%;
@@ -236,6 +328,69 @@ footer.rammeverk a:visited {
 }
 #footer {
   margin-top: 95px;
+}
+.footerlinkswrapper {
+  background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+  background-position: right;
+  border-top: 1px solid black;
+  padding: 20px 0 50px 0;
+}
+.footerlinkswrapper h4,
+.footerlinkswrapper p,
+.footerlinkswrapper a,
+.footerlinkswrapper a:visited,
+.footerlinkswrapper a:hover {
+  color: white;
+}
+.footerlinkswrapper h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footerlinkswrapper p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.footerlinkswrapper a {
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.footerlinkswrapper .socialmedia {
+  border-radius: 3px;
+  margin: 20px 0 20px 0;
+}
+.footerlinkswrapper .socialmedia a {
+  background: #6cb4b5;
+  padding: 10px 20px 15px 20px;
+  float: left;
+  line-height: 35px;
+  margin-top: 10px;
+}
+.footerlinkswrapper .socialmedia a img {
+  height: 22px;
+}
+.footerlinkswrapper .socialmedia a:hover {
+  background: #004e66;
+}
+.footerlinkswrapper .socialmedia a:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.footerlinkswrapper .socialmedia a:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/**********Media**********/
+@media only screen and (max-width: 1199px) {
+  header .links {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .footerlinkswrapper .socialmedia a img {
+    height: 16px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .menubutton {
@@ -298,16 +453,6 @@ footer.rammeverk a:visited {
   }
   header {
     margin: 10px 0 10px 0;
-  }
-}
-@media only screen and (max-width: 1199px) {
-  header .links {
-    margin-right: 15px;
-  }
-}
-@media only screen and (max-width: 599px) {
-  .footerlinkswrapper .socialmedia a img {
-    height: 16px;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */
