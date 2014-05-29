@@ -21,6 +21,11 @@ function drawChart() {
     var options = {
         vAxis: { minValue: 20, maxValue: 70, title: "Antall dager", ticks: [20, 30, 40, 50, 60, 70] },
         'chartArea': { 'width': '75%', 'height': '80%', 'left': '10%' },
+
+        legend: {
+            position: 'bottom',
+            alignment: 'start'
+        },
         colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
         series: {
             0: { lineDashStyle: [14, 7] },

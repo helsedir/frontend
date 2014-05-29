@@ -339,9 +339,10 @@ a {
     }
 }
 
-#chart_div {
-    width: 100%;
-    height: 400px;
+.chart_div {
+    height: 450px;
+    margin: 20px 57px;
+    background: white;
 }
 
 .visuallyhidden {
@@ -428,40 +429,54 @@ a {
 
 .module_person {
     margin: 25px 0 0 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: auto;
+    width: 270px;
+    display: table;
 
     h3 {
         margin-bottom: 1rem;
     }
 
-    p {
+    span {
+        padding: 0;
+    }
+
+    .role, .phone, .e-mail {
         margin: 0;
+        font-size: 18px;
+    }
+
+    .person_information {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .name {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0 0 30px 0;
     }
 
     img {
-        width: 200px;
+        width: 130px;
+        margin-right: 30px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .module_description {
+        font-family: @fontCalibri;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: @colorDarkBlue;
+        text-decoration: none;
+        margin-bottom: 25px;
+        border-bottom: 2px solid @colorDarkBlue;
+        display: table-caption;
     }
 }
 
 video {
     width: 100%;
-}
-
-.module_guidelines {
-    margin-bottom: 20px;
-    border: 1px solid @colorMediumGray;
-    padding-left: 10px;
-
-    .innerDiv {
-        margin: 10px;
-        /*border-left: 8px solid @colorRed;*/
-        p, a, h4 {
-            margin: 0 0 0 10px;
-        }
-    }
 }
 
 .module_guide {
@@ -500,6 +515,13 @@ video {
 
     h2 {
         margin: 0;
+    }
+
+    &.module_person {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: auto;
     }
 }
 
@@ -615,13 +637,18 @@ iframe {
 
 .external-link {
     padding-left: 5px;
-    background: url('../img/ikon_eksternlenke.svg') right no-repeat;
+    background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
     background-size: 16px 16px;
     padding-right: 22px;
     text-decoration: none;
 
     &.inline, .inline:visited {
         text-decoration: underline;
+    }
+
+    &:visited {
+        background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+        background-size: 16px 16px;
     }
 }
 
@@ -639,7 +666,7 @@ iframe {
     }
 
     &.aftertext:after {
-        padding-left: 5px;
+        padding-left: 10px;
         content: "\f105";
         font-family: "FontAwesome";
         font-size: inherit;
@@ -684,65 +711,12 @@ iframe {
     line-height: 34px;
 }
 
-.module_publication {
-    margin: 100px 0 0 30px;
-    padding: 0 40px 0 30px;
-    background: url(../img/groenn_EKG.png) no-repeat left, white;
-    background-size: contain;
-
-    .header3 {
-        font-size: 28px;
-        font-family: @fontSohoRegular;
-        line-height: 34px;
-        margin: 0;
-    }
-
-    .date {
-        font-family: @fontSohoLight;
-        font-size: 36px;
-        color: @colorGreen;
-        padding: 35px 0 50px 0;
-    }
-
-    .smallHeader {
-        font-family: @fontCalibri;
-        color: @colorDarkBlue;
-        font-size: 18px;
-        padding: 30px 0 20px 0;
-        text-transform: uppercase;
-    }
-}
-
-.module_facts_rightcolumn {
-    padding: 10px 15px 20px 15px;
-    margin-top: 30px;
-    background: #dbdcdd;
-    max-width: 330px;
-    display: inline-block;
-
-    .module_facts_ingress {
-        font-weight: bold;
-    }
-
-    h3 {
-        margin: 0;
-    }
-
-    ul {
-        li:before {
-            content: "•";
-            color: @colorDarkBlue;
-            margin-right: 20px;
-        }
-    }
-}
-
-.module_facts_maincolumn {
-    max-width: 750px;
+.module {
     display: inline-block;
     margin: 100px 0 0 30px;
     padding: 30px 30px 45px 30px;
     background: white;
+    position: relative;
 
     .module_description {
         font-family: @fontCalibri;
@@ -760,16 +734,89 @@ iframe {
         margin-bottom: 25px;
         color: #222;
     }
-}
 
-.module_related {
-    border: 1px solid #dbdcdd;
-    padding: 10px 10px 10px 30px;
-    background: white url('../img/pulse2.svg') 1% 20% no-repeat;
-    margin-bottom: 20px;
+    .module_theme {
+        font-family: @fontCalibri;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline;
+        margin-right: 10px;
+    }
 
-    h3 {
-        margin: 0;
+    .module_ingress {
+        display: inline;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -19px;
+        height: 100px;
+    }
+
+    &.module_related {
+        border-left: 2px solid @colorGreen;
+
+        .bulletlist {
+            margin-top: 10px;
+
+            li:before {
+                color: @colorGreen;
+            }
+        }
+    }
+
+    &.module_publication {
+        border-left: 2px solid @colorOrange;
+    }
+
+    &.module_guidelines {
+        border-left: 2px solid @colorRed;
+    }
+
+    &.module_facts {
+        border-left: 2px solid @colorMediumBlue;
+
+        .bulletlist {
+            margin-top: 10px;
+
+            li:before {
+                color: @colorMediumBlue;
+            }
+        }
+    }
+
+    &.module_statistics_text, &.module_statistics_graph {
+        border-left: 2px solid @colorLightBlue;
+
+        h5 {
+            color: @colorDarkBlue;
+        }
+
+        .keyfigures {
+            font-size: 36px;
+            color: @colorRed;
+            margin: 30px 0 5px 0;
+        }
+
+        .subject {
+            margin-bottom: 20px;
+        }
+
+        a {
+            margin-top: 30px;
+            line-height: 27px;
+            display: block;
+        }
+    }
+
+    &.module_statistics_text {
+        max-width: 270px;
+    }
+
+    &.module_statistics_graph {
     }
 }
 
@@ -876,7 +923,6 @@ iframe {
         }
     }
 }
-
 /**Felles*/
 .border {
     border-bottom: 2px solid @colorDarkBlue;
@@ -1101,6 +1147,75 @@ fieldset {
         padding: 10px;
         text-align: center;
         font-size: 18px;
+    }
+}
+
+.iveCharts {
+    margin: 0 auto 20px auto;
+    width: 100%;
+    height: 300px;
+
+    .columnOuter {
+        height: 100%;
+        float: left;
+        top: 0;
+        text-align: center;
+        position: relative;
+        border-left: solid 1px #aaaaaa;
+
+        &:first-of-type {
+            border-left: none;
+        }
+
+        &:after {
+            clear: both;
+        }
+    }
+
+    .columnHolder {
+        float: left;
+        width: 50%;
+        height: 90%;
+        top: 0;
+        position: relative;
+
+        &:after {
+            clear: both;
+        }
+    }
+
+    .number {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+
+        &.small {
+            font-size: 16px;
+        }
+    }
+
+    .column {
+        bottom: 10%;
+        position: absolute;
+
+        &:hover {
+            border: solid 1px #333;
+            opacity: 0.7;
+            /*cursor: pointer;*/
+        }
+    }
+
+    .title {
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        text-align: center;
+
+        &.small {
+            font-size: 16px;
+        }
     }
 }
 
