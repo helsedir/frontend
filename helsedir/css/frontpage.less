@@ -46,17 +46,15 @@
     margin: 30px 30px 0 0;
     float: left;
     position: relative;
+    transition: all 0.5s;
 
-    .menu {
-        cursor: pointer;
+    &.menu {
         background: #838078;
-        transition: all 0.5s;
-        border-radius: 3px;
 
-        .innerDiv {
-            color: white;
+        h3 {
             text-align: center;
-            margin-right: 10px;
+            position: relative;
+            margin: 80px 10px 15px 12px;
         }
 
         &.js-expanded {
@@ -70,7 +68,7 @@
         }
     }
 
-    a, .menu {
+    a {
         height: 100%;
         width: 100%;
         display: inline-block;
@@ -172,5 +170,36 @@
 
     .ingress {
         border: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .entrancebutton {
+        width: 100%;
+        height: 100%;
+        margin: 7.5px 0 7.5px 0;
+
+        a {
+            h2, p {
+                margin: 0;
+            }
+        }
+
+        &.menu {
+            h3 {
+                margin: 15px 0 15px 12px;
+                text-align: left;
+
+                .fa-bars {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .entrancebutton {
+        margin: 30px 25px 0 0;
     }
 }

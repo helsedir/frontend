@@ -23,61 +23,53 @@
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
-}
-.entrancebutton .menu {
-  cursor: pointer;
-  background: #838078;
   transition: all 0.5s;
-  border-radius: 3px;
 }
-.entrancebutton .menu .innerDiv {
-  color: white;
+.entrancebutton.menu {
+  background: #838078;
+}
+.entrancebutton.menu h3 {
   text-align: center;
-  margin-right: 10px;
+  position: relative;
+  margin: 80px 10px 15px 12px;
 }
-.entrancebutton .menu.js-expanded {
+.entrancebutton.menu.js-expanded {
   background-color: #dbdcdd;
   color: black;
   padding-bottom: 65px;
 }
-.entrancebutton .menu:hover {
+.entrancebutton.menu:hover {
   background: #666460;
 }
-.entrancebutton a,
-.entrancebutton .menu {
+.entrancebutton a {
   height: 100%;
   width: 100%;
   display: inline-block;
   color: white;
   text-decoration: none;
 }
-.entrancebutton a .innerDiv,
-.entrancebutton .menu .innerDiv {
+.entrancebutton a .innerDiv {
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.entrancebutton a h3,
-.entrancebutton .menu h3 {
+.entrancebutton a h3 {
   margin: 80px 0 0 0;
   padding: 0;
   font-size: 28px;
   font-family: "soho gothic pro light";
 }
-.entrancebutton a h3 .fa-bars,
-.entrancebutton .menu h3 .fa-bars {
+.entrancebutton a h3 .fa-bars {
   margin-top: 20px;
 }
-.entrancebutton a h2,
-.entrancebutton .menu h2 {
+.entrancebutton a h2 {
   margin-bottom: 5px;
   font-size: 28px;
   line-height: 35px;
   margin: 80px 0 0 0;
   padding-bottom: 5px;
 }
-.entrancebutton a p,
-.entrancebutton .menu p {
+.entrancebutton a p {
   line-height: 23px;
 }
 .entrancebutton:visited,
@@ -136,5 +128,28 @@
 }
 .frontpage .ingress {
   border: none;
+}
+@media only screen and (max-width: 599px) {
+  .entrancebutton {
+    width: 100%;
+    height: 100%;
+    margin: 7.5px 0 7.5px 0;
+  }
+  .entrancebutton a h2,
+  .entrancebutton a p {
+    margin: 0;
+  }
+  .entrancebutton.menu h3 {
+    margin: 15px 0 15px 12px;
+    text-align: left;
+  }
+  .entrancebutton.menu h3 .fa-bars {
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .entrancebutton {
+    margin: 30px 25px 0 0;
+  }
 }
 /*# sourceMappingURL=frontpage.css.map */
