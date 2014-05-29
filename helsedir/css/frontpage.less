@@ -123,6 +123,10 @@
     &.grey {
         background: #DEDDDB;
     }
+
+    &.white {
+        background: white;
+    }
 }
 
 .frontpage {
@@ -132,7 +136,7 @@
         margin: 50px 0 20px 0;
         width: 100%;
         border-bottom: 3px solid @colorDarkBlue;
-        padding-bottom: 7px;
+        padding-bottom: 15px;
     }
 
     a {
@@ -143,7 +147,12 @@
         margin-bottom: 20px;
 
         p {
-            color: black;
+            color: #222;
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 26px;
         }
     }
 
@@ -154,13 +163,31 @@
     .conferenceitem {
         margin-bottom: 20px;
 
-        a, p {
+        p {
             padding: 0;
             line-height: 1em;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: black;
         }
 
-        p {
-            color: black;
+        a {
+            font-size: 26px;
+            padding-left: 0;
+        }
+
+        .conference_date {
+            font-size: 36px;
+            color: @colorRed;
+            width: 30%;
+            display: block;
+            font-family: @fontSohoLight;
+            margin-right: 10px;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        .conference_info {
         }
     }
 
@@ -170,6 +197,25 @@
 
     .ingress {
         border: none;
+        margin-top: 23px;
+    }
+
+    .importantnews {
+        .bulletlist {
+            margin-bottom: 35px;
+        }
+    }
+
+    .importantphoto {
+        margin-top: 28px;
+    }
+
+    &.newsandconference {
+        background: white;
+    }
+
+    #chart_div {
+        margin-top: 40px;
     }
 }
 

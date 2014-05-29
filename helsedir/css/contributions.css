@@ -1,22 +1,11 @@
-﻿.tilskudd {
-  padding: 25px 0 10px 0;
-  border-bottom: 1px solid black;
-}
-.tilskudd a {
-  text-decoration: underline;
+﻿.tilskudd a {
+  text-decoration: none;
 }
 .tilskudd p {
   margin: 0;
 }
-.tilskudd_sortcontrols {
-  border-bottom: 1px solid black;
-  margin-top: 20px;
-}
-.tilskudd_sortcontrols form {
-  display: inline;
-}
-.tilskudd_sortcontrols form label {
-  margin: 0 10px 0 5px;
+.tilskudd_sortcontrols .checkbox {
+  display: inline-block;
 }
 #tilskuddsaar {
   display: none;
@@ -28,5 +17,26 @@
 }
 .tilskudd_information p {
   margin-bottom: 10px;
+}
+.numberofcontributions {
+  text-transform: uppercase;
+  color: #004e66;
+  font-size: 18px;
+  margin-top: 17px;
+}
+.border {
+  padding-bottom: 57px;
+}
+.aside {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1199px) {
+  .refinesearch {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .border {
+    display: none;
+  }
 }
 /*# sourceMappingURL=contributions.css.map */

@@ -91,6 +91,9 @@
 .frontpagewrapper.grey {
   background: #DEDDDB;
 }
+.frontpagewrapper.white {
+  background: white;
+}
 .frontpage {
   padding-bottom: 50px;
 }
@@ -98,7 +101,7 @@
   margin: 50px 0 20px 0;
   width: 100%;
   border-bottom: 3px solid #004e66;
-  padding-bottom: 7px;
+  padding-bottom: 15px;
 }
 .frontpage a {
   color: #004e66;
@@ -107,7 +110,11 @@
   margin-bottom: 20px;
 }
 .frontpage .news p {
-  color: black;
+  color: #222;
+  font-size: 18px;
+}
+.frontpage .news a {
+  font-size: 26px;
 }
 .frontpage p {
   margin: 0;
@@ -115,19 +122,45 @@
 .frontpage .conferenceitem {
   margin-bottom: 20px;
 }
-.frontpage .conferenceitem a,
 .frontpage .conferenceitem p {
   padding: 0;
   line-height: 1em;
-}
-.frontpage .conferenceitem p {
+  font-size: 18px;
+  margin-bottom: 10px;
   color: black;
+}
+.frontpage .conferenceitem a {
+  font-size: 26px;
+  padding-left: 0;
+}
+.frontpage .conferenceitem .conference_date {
+  font-size: 36px;
+  color: #c63629;
+  width: 30%;
+  display: block;
+  font-family: "soho gothic pro light";
+  margin-right: 10px;
+  line-height: 42px;
+  text-align: center;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
 }
 .frontpage .ingress {
   border: none;
+  margin-top: 23px;
+}
+.frontpage .importantnews .bulletlist {
+  margin-bottom: 35px;
+}
+.frontpage .importantphoto {
+  margin-top: 28px;
+}
+.frontpage.newsandconference {
+  background: white;
+}
+.frontpage #chart_div {
+  margin-top: 40px;
 }
 @media only screen and (max-width: 599px) {
   .entrancebutton {
