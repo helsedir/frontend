@@ -385,8 +385,7 @@ a {
 .module_subscribe {
     margin: 40px 0 0 0;
     padding-bottom: 5px;
-    max-width: 390px;
-    border-bottom: 2px solid @colorDarkBlue;
+    max-width: 270px;
 
     p {
         font-size: 18px;
@@ -395,13 +394,14 @@ a {
         text-transform: uppercase;
     }
 
-    .fa {
-        color: @colorDarkBlue;
+    .header {
+        border-bottom: 2px solid @colorDarkBlue;
+        margin-bottom: 10px;
     }
 
     a {
         font-size: 18px;
-        margin: 0 20px 0 10px;
+        margin: 0 20px 0 0;
         text-decoration: none;
         color: @colorDarkBlue;
 
@@ -418,6 +418,35 @@ a {
     div {
         float: left;
         margin-right: 10px;
+    }
+
+    .e-mail, .rss {
+        img {
+            margin-right: 10px;
+            width: 27px;
+            height: 20px;
+        }
+
+        p {
+            display: inline;
+            vertical-align: bottom;
+        }
+    }
+
+    .email {
+        img {
+            margin-right: 10px;
+            width: 27px;
+            height: 20px;
+        }
+    }
+
+    .rss {
+        img {
+            margin-right: 5px;
+            width: 27px;
+            height: 20px;
+        }
     }
 }
 

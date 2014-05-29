@@ -316,8 +316,7 @@ a:visited:focus p {
 .module_subscribe {
   margin: 40px 0 0 0;
   padding-bottom: 5px;
-  max-width: 390px;
-  border-bottom: 2px solid #004e66;
+  max-width: 270px;
 }
 .module_subscribe p {
   font-size: 18px;
@@ -325,12 +324,13 @@ a:visited:focus p {
   color: #004e66;
   text-transform: uppercase;
 }
-.module_subscribe .fa {
-  color: #004e66;
+.module_subscribe .header {
+  border-bottom: 2px solid #004e66;
+  margin-bottom: 10px;
 }
 .module_subscribe a {
   font-size: 18px;
-  margin: 0 20px 0 10px;
+  margin: 0 20px 0 0;
   text-decoration: none;
   color: #004e66;
 }
@@ -344,6 +344,27 @@ a:visited:focus p {
 .module_subscribe div {
   float: left;
   margin-right: 10px;
+}
+.module_subscribe .e-mail img,
+.module_subscribe .rss img {
+  margin-right: 10px;
+  width: 27px;
+  height: 20px;
+}
+.module_subscribe .e-mail p,
+.module_subscribe .rss p {
+  display: inline;
+  vertical-align: bottom;
+}
+.module_subscribe .email img {
+  margin-right: 10px;
+  width: 27px;
+  height: 20px;
+}
+.module_subscribe .rss img {
+  margin-right: 5px;
+  width: 27px;
+  height: 20px;
 }
 .module_information_small {
   margin: 30px 0 10px 0;
