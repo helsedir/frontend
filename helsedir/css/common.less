@@ -1018,12 +1018,10 @@ fieldset {
     }
 }
 
-.error {
+.message_module {
     display: inline-block;
     margin: 100px 0 0 30px;
     padding: 30px 30px 45px 30px;
-    word-break: break-all;
-    border: 2px solid #DF301D;
     background: white;
     position: relative;
 
@@ -1044,16 +1042,65 @@ fieldset {
         color: #222;
     }
 
-    .error_message {
+    .message {
         margin-left: 30px;
     }
 
-    img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-left: -19px;
-        height: 100px;
+    &.error, &.warning {
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: -19px;
+            height: 100px;
+        }
+    }
+
+    &.error {
+        border: 2px solid #DF301D;
+    }
+
+    &.warning {
+        border: 2px solid @colorYellow;
+    }
+
+    &.bubble {
+        border: 2px solid @colorMediumBlue;
+
+        img {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            margin-bottom: -18px;
+            width: 100px;
+        }
+    }
+}
+
+.table_general {
+    border: 1px solid #d1d0cf;
+    width: 90%;
+    margin: 20px auto;
+
+    th {
+        background: #d1d0cf;
+        text-align: center;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    tr {
+        background: #f7f6f6;
+
+        &.odd {
+            background: white;
+        }
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -1186,9 +1233,11 @@ fieldset {
     }
 
     .transportsideknapp {
+        margin: 10px 15px 10px 15px;
+        padding: 5px 0 20px 15px;
         background: white;
 
-        h2 {
+        h2, p {
             margin: 0;
         }
     }
@@ -1259,6 +1308,63 @@ fieldset {
                     font-size: 12px;
                 }
             }
+        }
+    }
+
+    .table_general {
+        display: block;
+        width: 100%;
+
+        tbody {
+            display: block;
+            width: 100%;
+        }
+
+        thead {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr, th, td {
+            display: block;
+        }
+
+        tr {
+            padding-bottom: 11px;
+        }
+
+        td {
+            border: none;
+            position: relative;
+            padding: 0;
+            padding-left: 50%;
+
+            &:before {
+                position: absolute;
+                left: 15px;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+        }
+
+            th[data-title]:before, td[data-title]:before {
+                content: attr(data-title);
+            }
+
+            td:first-child {
+                background: #d1d0cf;
+                font-weight: bold;
+                padding: 5px 0 5px 15px;
+                text-align: left;
+            }
+    }
+
+    .message_module {
+        padding: 15px 15px 25px 15px;
+
+        .module_description {
+            margin-left: 10px;
         }
     }
 }

@@ -31,6 +31,8 @@
             }, 700);
         }
     });
+
+    $('table.table_general tr:nth-child(2n+1)').addClass('odd');
 });
 
 function checkTilskudd() {

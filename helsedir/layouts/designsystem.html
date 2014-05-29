@@ -994,11 +994,85 @@
                     <a name="hhs-feilmelding"></a>
                     <h3 class="illustrasjonOverskrift">Feilmelding</h3>
                     <div class="illustrasjon clearfix">
-                        <div class="error">
+                        <div class="message_module error">
                             <div class="module_description">Feilmelding</div>
-                            <p class="error_message">Vi beklager men siden er ikke tilgjengelig akkurat nå.</p>
+                            <p class="message">Vi beklager men siden er ikke tilgjengelig akkurat nå.</p>
                             <img src="../img/modules/EKG-sisteforsoek.png" alt="" />
                         </div>
+                    </div>
+
+                    <a name="hhs-advarsel"></a>
+                    <h3 class="illustrasjonOverskrift">Advarsel</h3>
+                    <div class="illustrasjon clearfix">
+                        <div class="message_module warning">
+                            <div class="module_description">Advarsel</div>
+                            <p class="message">Vi beklager men siden er ikke tilgjengelig akkurat nå.</p>
+                            <img src="../img/modules/EKG-gul.png" alt="" />
+                        </div>
+                    </div>
+
+                    <a name="hhs-snakkeboble"></a>
+                    <h3 class="illustrasjonOverskrift">Snakkeboble</h3>
+                    <div class="illustrasjon clearfix">
+                        <div class="message_module bubble">
+                            <div class="module_description">Snakkeboble</div>
+                            <p class="message">Vi beklager men siden er ikke tilgjengelig akkurat nå.</p>
+                            <img src="../img/modules/snakkebob-mellomblaa.png" alt="" />
+                        </div>
+                    </div>
+
+                    <a name="hhs-tabell"></a>
+                    <h3 class="illustrasjonOverskrift">Tabell</h3>
+                    <div class="illustrasjon clearfix">
+                        <table class="table_general">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Oktober 2013</th>
+                                    <th>November 2013</th>
+                                    <th>Desember 2013</th>
+                                    <th>Januar 2014</th>
+                                    <th>Februar 2014</th>
+                                    <th>Mars 2014</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td data-title="">Somatikk</td>
+                                <td data-title="Oktober 2013">49</td>
+                                <td data-title="November 2013">49</td>
+                                <td data-title="Desember 2013">44</td>
+                                <td data-title="Januar 2014">56</td>
+                                <td data-title="Februar 2014">52</td>
+                                <td data-title="Mars 2014">52</td>
+                            </tr>
+                            <tr>
+                                <td data-title="">VOP</td>
+                                <td data-title="Oktober 2013">35</td>
+                                <td data-title="November 2013">36</td>
+                                <td data-title="Desember 2013">39</td>
+                                <td data-title="Januar 2014">50</td>
+                                <td data-title="Februar 2014">48</td>
+                                <td data-title="Mars 2014">42</td>
+                            </tr>
+                            <tr>
+                                <td data-title="">BUP</td>
+                                <td data-title="Oktober 2013">35</td>
+                                <td data-title="November 2013">36</td>
+                                <td data-title="Desember 2013">39</td>
+                                <td data-title="Januar 2014">50</td>
+                                <td data-title="Februar 2014">48</td>
+                                <td data-title="Mars 2014">42</td>
+                            </tr>
+                            <tr>
+                                <td data-title="">RUS</td>
+                                <td data-title="Oktober 2013">35</td>
+                                <td data-title="November 2013">36</td>
+                                <td data-title="Desember 2013">37</td>
+                                <td data-title="Januar 2014">48</td>
+                                <td data-title="Februar 2014">34</td>
+                                <td data-title="Mars 2014">38</td>
+                            </tr>
+                        </table>
                     </div>
 
                     <a name="hhs-faktaboks_maincolumn"></a>
@@ -1211,6 +1285,7 @@
     <script src="../js/expand.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="https://www.google.com/jsapi"></script>
+    <script src="../js/helsedir.js"></script>
     <script type="text/javascript">
         google.load("visualization", "1", { packages: ["corechart"] });
         google.setOnLoadCallback(drawChart);

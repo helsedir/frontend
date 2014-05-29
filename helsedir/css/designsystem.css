@@ -58,32 +58,6 @@
   padding: 1em;
   margin-bottom: 5em;
 }
-.hhs .illustrasjon table {
-  margin-bottom: 1em;
-}
-.hhs .illustrasjon table tr:nth-child(odd) td,
-.hhs .illustrasjon table tr:nth-child(odd) th {
-  background-color: #ebeaea;
-}
-.hhs .illustrasjon table tr:nth-child(even) td,
-.hhs .illustrasjon table tr:nth-child(even) th {
-  background-color: white;
-}
-.hhs .illustrasjon table th,
-.hhs .illustrasjon table td {
-  width: 20em;
-  padding: 0.5em;
-}
-.hhs .illustrasjon table .tableHeader {
-  font-family: "soho gothic pro medium";
-  color: #555;
-  text-transform: uppercase;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-.hhs .illustrasjon table tr {
-  text-align: center;
-}
 .hhs .ikoner img {
   width: 1.875rem;
   vertical-align: bottom;
