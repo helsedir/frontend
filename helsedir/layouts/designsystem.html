@@ -1304,7 +1304,13 @@
                 vAxis: { minValue: 0, maxValue: 50 },
                 //                chartArea: { left: "5%", width: "60%" }
                 'chartArea': { 'width': '90%', 'height': '80%' },
-                legend: 'bottom'
+                legend: 'bottom',
+                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+                series: {
+                    0: { lineDashStyle: [14, 7] },
+                    1: { lineDashStyle: [5, 5] },
+                    4: { lineDashStyle: [7, 14] }
+                }, lineWidth: 3
             };
 
             var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
