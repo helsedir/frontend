@@ -97,7 +97,7 @@
   color: #004e66;
 }
 .menubutton a.js-expanded {
-  padding-bottom: 43px;
+  padding-bottom: 44px;
   border-radius: 3px 3px 0 0;
   background-color: #d1d0c4;
   color: #004e66;
@@ -152,159 +152,193 @@ footer a:focus {
   margin-bottom: 30px;
   background: #d1d0c4;
   padding: 0 0 50px 0 !important;
+  /*.tab-links {
+        margin: 0;
+        margin-top: -35px;
+        background-color: transparent;
+
+        &:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        li {
+            margin: 0 15px 0 0;
+            float: left;
+            list-style: none;
+            text-align: center;
+
+            a {
+                background-color: @colorDarkBlue;
+                border-radius: 0;
+                color: #ffffff;
+                font-family: @fontCalibri;
+                width: 100%;
+                padding-bottom: 6px;
+
+                &:hover, &:focus {
+                    background: @colorBlue023c49;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            &.active a, &.active a:hover {
+                color: #4c4c4c;
+                background-color: #ffffff;
+            }
+
+            &.active {
+                border: none !important;
+                font-family: @fontCalibriBold;
+                font-size: 20px;
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        a {
+            padding: 0 15px;
+            display: inline-block;
+            border-radius: 3px 3px 0px 0px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #4c4c4c;
+            transition: all linear 0.15s;
+            background: white;
+
+            &:hover, &:focus {
+                background: @colorBlue023c49;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .tab-content {
+        border-top: none !important;
+        border-radius: 3px;
+        margin: 10px 0 10px 0;
+
+        li {
+            list-style-type: none;
+            border-bottom: 0,5px solid #a7a9ab;
+            font-family: @fontCalibri;
+            font-weight: 45px;
+            transition: all 0.3s;
+
+            a, a:visited, a:hover {
+                color: @colorDarkBlue;
+            }
+
+            &:hover {
+                background: #d1d0c4;
+            }
+        }
+    }
+
+    .tabs-statistics {
+        .tab-content {
+            padding: 15px 0 0 0;
+        }
+    }*/
 }
 .toppmeny .inner {
   background: #ffffff;
   padding: 0;
   margin-top: 60px;
 }
+/**********Footer**********/
+footer .tab-links,
 .toppmeny .tab-links {
-  margin: 0;
-  margin-top: -35px;
-  background-color: transparent;
+  padding-left: 20px;
 }
-.toppmeny .tab-links:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-.toppmeny .tab-links li {
-  margin: 0 15px 0 0;
-  float: left;
-  list-style: none;
-  text-align: center;
-}
-.toppmeny .tab-links li a {
-  background-color: #004e66;
-  border-radius: 0;
-  color: #ffffff;
-  font-family: 'Calibri';
-  width: 100%;
-  padding-bottom: 6px;
-}
-.toppmeny .tab-links li a:hover,
-.toppmeny .tab-links li a:focus {
-  background: #023c49;
-  text-decoration: none;
-  color: white;
-}
-.toppmeny .tab-links li.active a,
-.toppmeny .tab-links li.active a:hover {
-  color: #4c4c4c;
-  background-color: #ffffff;
-}
+footer .tab-links li.active,
 .toppmeny .tab-links li.active {
-  border: none !important;
-  font-family: 'Calibri bold';
-  font-size: 20px;
+  border: none;
+  background: white;
 }
+footer .tab-links li.active a,
+.toppmeny .tab-links li.active a {
+  background: white;
+}
+footer .tab-links li input,
 .toppmeny .tab-links li input {
   width: 100%;
   height: 100%;
 }
+footer .tab-links a,
 .toppmeny .tab-links a {
-  padding: 0 15px;
-  display: inline-block;
-  border-radius: 3px 3px 0px 0px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #4c4c4c;
-  transition: all linear 0.15s;
-  background: white;
-}
-.toppmeny .tab-links a:hover,
-.toppmeny .tab-links a:focus {
-  background: #023c49;
-  text-decoration: none;
-  color: white;
-}
-.toppmeny .tab-content {
-  border-top: none !important;
-  border-radius: 3px;
-  margin: 10px 0 10px 0;
-}
-.toppmeny .tab-content li {
-  list-style-type: none;
-  border-bottom: 0,5px solid #a7a9ab;
-  font-family: 'Calibri';
-  font-weight: 45px;
-  transition: all 0.3s;
-}
-.toppmeny .tab-content li a,
-.toppmeny .tab-content li a:visited,
-.toppmeny .tab-content li a:hover {
-  color: #004e66;
-}
-.toppmeny .tab-content li:hover {
-  background: #d1d0c4;
-}
-.toppmeny .tabs-statistics .tab-content {
-  padding: 15px 0 0 0;
-}
-/**********Footer**********/
-footer .tab-links {
-  padding-left: 20px;
-}
-footer .tab-links li.active {
-  border: none;
-  background: white;
-}
-footer .tab-links li.active a {
-  background: white;
-}
-footer .tab-links a {
   background: #EBEEEF;
 }
-footer .tab-content {
+footer .tab-content,
+.toppmeny .tab-content {
   background: white;
 }
-footer .map {
+footer .map,
+.toppmeny .map {
   height: 500px;
 }
-footer .tabs {
+footer .tabs,
+.toppmeny .tabs {
   margin-bottom: 50px;
 }
-footer .tabs .tab-links {
+footer .tabs .tab-links,
+.toppmeny .tabs .tab-links {
   padding-left: 20px;
   margin-top: -35px;
 }
-footer .tabs .tab-links li {
+footer .tabs .tab-links li,
+.toppmeny .tabs .tab-links li {
   margin-right: 10px;
   background: #004e66;
 }
-footer .tabs .tab-links li.active {
+footer .tabs .tab-links li.active,
+.toppmeny .tabs .tab-links li.active {
   border: none;
   background: white;
 }
-footer .tabs .tab-links li.active a {
+footer .tabs .tab-links li.active a,
+.toppmeny .tabs .tab-links li.active a {
   background: white;
   color: #004e66;
 }
-footer .tabs .tab-links a {
+footer .tabs .tab-links a,
+.toppmeny .tabs .tab-links a {
   background: #004e66;
   color: white;
   padding: 0 30px 0 20px;
   border-radius: 0;
 }
 footer .tabs .tab-links a:hover,
-footer .tabs .tab-links a:focus {
+.toppmeny .tabs .tab-links a:hover,
+footer .tabs .tab-links a:focus,
+.toppmeny .tabs .tab-links a:focus {
   background: #023c49;
   text-decoration: none;
   color: white;
 }
-footer .tabs .tab-content {
+footer .tabs .tab-content,
+.toppmeny .tabs .tab-content {
   background: white;
   border: none;
   border-radius: 0;
   margin: 10px 0;
 }
-footer .tabs .tab-content li {
+footer .tabs .tab-content li,
+.toppmeny .tabs .tab-content li {
   transition: all 0.3s;
 }
-footer .tabs .tab-content li a {
+footer .tabs .tab-content li a,
+.toppmeny .tabs .tab-content li a {
   color: #004e66;
 }
-footer .tabs .tab-content li:hover {
+footer .tabs .tab-content li:hover,
+.toppmeny .tabs .tab-content li:hover {
   background: #d1d0c4;
 }
 footer.rammeverk {

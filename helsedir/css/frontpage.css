@@ -68,6 +68,7 @@
   line-height: 35px;
   margin: 80px 0 0 0;
   padding-bottom: 5px;
+  color: white;
 }
 .entrancebutton a p {
   line-height: 23px;
@@ -122,6 +123,11 @@
 .frontpage .conferenceitem {
   margin-bottom: 20px;
 }
+.frontpage .conferenceitem table td:first-of-type {
+  width: 160px;
+  vertical-align: middle;
+  text-align: center;
+}
 .frontpage .conferenceitem p {
   padding: 0;
   line-height: 1em;
@@ -136,12 +142,10 @@
 .frontpage .conferenceitem .conference_date {
   font-size: 36px;
   color: #c63629;
-  width: 30%;
   display: block;
   font-family: "soho gothic pro light";
   margin-right: 10px;
   line-height: 42px;
-  text-align: center;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
@@ -162,6 +166,9 @@
 .frontpage #chart_div {
   margin-top: 40px;
 }
+.toppmeny .tabs .tab-links li.menu_search {
+  background: none;
+}
 @media only screen and (max-width: 599px) {
   .entrancebutton {
     width: 100%;
@@ -171,6 +178,7 @@
   .entrancebutton a h2,
   .entrancebutton a p {
     margin: 0;
+    color: white;
   }
   .entrancebutton.menu h3 {
     margin: 15px 0 15px 12px;
@@ -183,6 +191,11 @@
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .entrancebutton {
     margin: 30px 25px 0 0;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .hidden_links {
+    display: none;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */
