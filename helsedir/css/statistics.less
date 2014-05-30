@@ -18,58 +18,6 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.tabs-statistics {
-    margin-top: 50px;
-
-    .tab-links {
-        padding-left: 20px;
-
-        li {
-            margin-right: 10px;
-            width: 170px;
-            text-align: center;
-
-            &.active {
-                border: none;
-                background: white;
-            }
-
-                &.active a {
-                    background: white;
-                    color: @colorDarkBlue;
-                }
-
-            a {
-                width: 100%;
-                background: @colorDarkGray;
-                color: white;
-                padding: 0 30px 0 20px;
-                border-radius: 0;
-
-                &:hover, &:focus {
-                    background: #a7cce5;
-                    text-decoration: none;
-                    color: black !important;
-                }
-            }
-        }
-    }
-
-    .tab-content {
-        background: white;
-        border: none;
-        border-radius: 0;
-
-        li a {
-            color: @colorDarkBlue;
-        }
-    }
-
-    .tabs {
-        margin-bottom: 50px;
-    }
-}
-
 .dropdown-statistikk {
     select {
         width: 40%;
@@ -147,4 +95,35 @@
 
 #statistikktab1, #statistikktab2, #statistikktab3 {
     margin-top: 20px;
+}
+
+.statistics_chart {
+    margin: 30px 0;
+
+    #chart_div {
+        height: 400px;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.statistics_table {
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+
+.table_general {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.statistics_description {
+    margin: 40px 0;
+}
+
+.statistics_reports {
+    h2 {
+        margin-bottom: 30px;
+    }
 }

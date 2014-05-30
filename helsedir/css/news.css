@@ -1,0 +1,41 @@
+﻿.newsitem {
+  margin: 50px 0 70px 0;
+}
+.newsitem .newitem_date {
+  font-size: 16px;
+}
+.newsitem .internal-link.aftertext,
+.newsitem p {
+  margin: 0;
+}
+.border {
+  padding-bottom: 16px;
+  margin-bottom: 25px;
+}
+.newsarchive {
+  padding-left: 30px;
+  margin-top: 50px;
+}
+.newsarchive h2,
+.newsarchive h5 {
+  border-bottom: 2px solid #004e66;
+  margin-bottom: 17px;
+  padding-bottom: 15px;
+  font-family: "soho gothic pro regular";
+  font-size: 28px;
+  line-height: 42px;
+}
+.filterlist li {
+  margin-bottom: 20px;
+}
+.filterlist li a {
+  color: #004e66;
+  font-size: 20px;
+}
+.filterlist .selectedfilter a,
+.filterlist .selectedfilter a:visited {
+  font-weight: bold;
+  border-left: 3px solid #004e66;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=news.css.map */

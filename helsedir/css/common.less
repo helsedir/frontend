@@ -61,10 +61,15 @@ h2 {
     line-height: 42px;
     font-family: @fontSohoLight;
     margin: 35px 0 0 0;
+    color: @colorDarkBlue;
 
     &.accordion {
         border-bottom: 1px solid @colorDarkBlue;
         padding-bottom: 20px;
+    }
+
+    &.internal-link {
+        color: @colorMediumBlue;
     }
 }
 
@@ -743,17 +748,16 @@ iframe {
     max-width: 390px;
     background-size: contain;
 
-    .keyfigures {
-        font-size: 3em;
-    }
-
-    .keyfigures, h4 {
-        color: red;
-    }
-
     #chart_div {
         margin-bottom: 20px;
     }
+}
+
+p.keyfigures, h4.keyfigures {
+    font-size: 36px;
+    color: #c63629;
+    line-height: 42px;
+    font-family: @fontSohoLight;
 }
 
 .header2 {
@@ -909,18 +913,10 @@ iframe {
     }
 }
 
-.newsitem {
-    .newitem_date {
-        font-size: 16px;
-    }
-
-    border-bottom: 1px solid black;
-}
-
 .showmorenews {
     width: 250px;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px 0;
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
     background: white;
@@ -1122,12 +1118,13 @@ fieldset {
 .refinesearch {
     padding-left: 30px;
 
-    h2 {
+    h2, h5 {
         border-bottom: 2px solid @colorDarkBlue;
         margin-bottom: 17px;
         padding-bottom: 15px;
         font-family: @fontSohoRegular;
         font-size: 28px;
+        line-height: 42px;
     }
 
     select {
@@ -1183,6 +1180,7 @@ fieldset {
 
     &.bubble {
         border: 2px solid @colorMediumBlue;
+        margin-bottom: 70px;
 
         img {
             position: absolute;
@@ -1323,6 +1321,26 @@ fieldset {
     .module_subscribe {
         margin: 0;
         padding: 0;
+    }
+
+    .message_module {
+        margin: 0;
+    }
+
+    .module {
+        margin: 0;
+    }
+
+    .refinesearch {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .bubble {
     }
 }
 
@@ -1465,8 +1483,6 @@ fieldset {
 
             tr, th, td {
                 display: block;
-                padding: 0;
-                text-align: left;
                 white-space: normal;
                 border: 0;
             }

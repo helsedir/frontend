@@ -37,10 +37,14 @@ h2 {
   line-height: 42px;
   font-family: "soho gothic pro light";
   margin: 35px 0 0 0;
+  color: #004e66;
 }
 h2.accordion {
   border-bottom: 1px solid #004e66;
   padding-bottom: 20px;
+}
+h2.internal-link {
+  color: #0093a7;
 }
 h3 {
   font-size: 28px;
@@ -623,15 +627,15 @@ iframe {
   max-width: 390px;
   background-size: contain;
 }
-.statistics_module .keyfigures {
-  font-size: 3em;
-}
-.statistics_module .keyfigures,
-.statistics_module h4 {
-  color: red;
-}
 .statistics_module #chart_div {
   margin-bottom: 20px;
+}
+p.keyfigures,
+h4.keyfigures {
+  font-size: 36px;
+  color: #c63629;
+  line-height: 42px;
+  font-family: "soho gothic pro light";
 }
 .header2 {
   font-size: 36px;
@@ -761,16 +765,10 @@ iframe {
   padding: 30px 0 20px 0;
   text-transform: uppercase;
 }
-.newsitem {
-  border-bottom: 1px solid black;
-}
-.newsitem .newitem_date {
-  font-size: 16px;
-}
 .showmorenews {
   width: 250px;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px 0;
   border: 2px solid #004e66;
   color: #004e66;
   background: white;
@@ -946,12 +944,14 @@ fieldset {
 .refinesearch {
   padding-left: 30px;
 }
-.refinesearch h2 {
+.refinesearch h2,
+.refinesearch h5 {
   border-bottom: 2px solid #004e66;
   margin-bottom: 17px;
   padding-bottom: 15px;
   font-family: "soho gothic pro regular";
   font-size: 28px;
+  line-height: 42px;
 }
 .refinesearch select {
   margin-bottom: 20px;
@@ -997,6 +997,7 @@ fieldset {
 }
 .message_module.bubble {
   border: 2px solid #0093a7;
+  margin-bottom: 70px;
 }
 .message_module.bubble img {
   position: absolute;
@@ -1114,6 +1115,19 @@ fieldset {
     margin: 0;
     padding: 0;
   }
+  .message_module {
+    margin: 0;
+  }
+  .module {
+    margin: 0;
+  }
+  .refinesearch {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .border {
+    display: none;
+  }
 }
 @media only screen and (min-width: 900px) {
   .statistics_compare button {
@@ -1221,8 +1235,6 @@ fieldset {
   .statistics_table table th,
   .statistics_table table td {
     display: block;
-    padding: 0;
-    text-align: left;
     white-space: normal;
     border: 0;
   }

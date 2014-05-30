@@ -6,16 +6,16 @@
     <title>Nyheter</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
-    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
 
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="header"></div>
-    <article class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumbs clearfix">
@@ -25,23 +25,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 col-lg-8 sectionwithaside">
-                <h1>Nyheter</h1>
-                <aside class="module_subscribe aside clearfix">
-                    <p>Abonnér på denne siden</p>
-                    <i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a>
-                    <i class="fa fa-rss fa-lg"></i><a href="#">RSS-strøm</a>
-                </aside>
-            </div>
-        </div>
-        <div class="row">
             <article class="col-md-12 col-lg-8 sectionwithaside">
+                <h1>Nyheter</h1>
+                <div class="border"></div>
 
                 <aside class="aside">
-
-                    <h2>Avgrens visning</h2>
-                    <div>
-                        <form>
+                    <div class="refinesearch">
+                        <h5>Avgrens visning</h5>
+                        <form class="dropdown">
                             <div class="form-group">
                                 <label for="tema">Tema</label>
                                 <select id="tema" class="form-control">
@@ -83,42 +74,108 @@
                             </div>
                         </form>
                     </div>
+
+                    <div class="newsarchive">
+                        <h5>Nyhetsarkiv</h5>
+                        <ul class="filterlist">
+                            <li><a href="#">Nyeste</a></li>
+                            <li class="selectedfilter"><a href="#">Tidligere i 2014</a></li>
+                            <li><a href="#">2013</a></li>
+                            <li><a href="#">2012</a></li>
+                        </ul>
+                    </div>
                 </aside>
                 <section class="newsitem">
-                    <a href="#"><h2>Utprøving av kjernejournal startet</h2></a>
-                    <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
                     <p class="newitem_date">15.05.2014</p>
+
+                    <a href="#"><h2 class="internal-link aftertext">Utprøving av kjernejournal startet</h2></a>
+                    <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
                 </section>
                 <section class="newsitem">
-                    <a href="nyheter_ennyhet.html"><h2>Nye kreftlegemidler vurdert</h2></a>
-                    <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
                     <p class="newitem_date">25.04.2014</p>
+
+                    <a href="nyheter_ennyhet.html"><h2 class="internal-link aftertext">Nye kreftlegemidler vurdert</h2></a>
+                    <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
                 </section>
                 <section class="newsitem">
-                    <a href="nyheter_ventetider.html"><h2> Ventetiden uendret for rettighetspasienter</h2></a>
+                    <p class="newitem_date">03.03.2014</p>
+
+                    <a href="nyheter_ventetider.html"><h2 class="internal-link aftertext"> Ventetiden uendret for rettighetspasienter</h2></a>
                     <p>
                         I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
                     </p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">15.05.2014</p>
+
+                    <a href="#"><h2 class="internal-link aftertext">Utprøving av kjernejournal startet</h2></a>
+                    <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">25.04.2014</p>
+
+                    <a href="nyheter_ennyhet.html"><h2 class="internal-link aftertext">Nye kreftlegemidler vurdert</h2></a>
+                    <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
+                </section>
+                <section class="newsitem">
                     <p class="newitem_date">03.03.2014</p>
+
+                    <a href="nyheter_ventetider.html"><h2 class="internal-link aftertext"> Ventetiden uendret for rettighetspasienter</h2></a>
+                    <p>
+                        I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
+                    </p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">15.05.2014</p>
+
+                    <a href="#"><h2 class="internal-link aftertext">Utprøving av kjernejournal startet</h2></a>
+                    <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">25.04.2014</p>
+
+                    <a href="nyheter_ennyhet.html"><h2 class="internal-link aftertext">Nye kreftlegemidler vurdert</h2></a>
+                    <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">03.03.2014</p>
+
+                    <a href="nyheter_ventetider.html"><h2 class="internal-link aftertext"> Ventetiden uendret for rettighetspasienter</h2></a>
+                    <p>
+                        I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
+                    </p>
+                </section>
+                <section class="newsitem">
+                    <p class="newitem_date">03.03.2014</p>
+
+                    <a href="nyheter_ventetider.html"><h2 class="internal-link aftertext"> Ventetiden uendret for rettighetspasienter</h2></a>
+                    <p>
+                        I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
+                    </p>
                 </section>
                 <div class="toggleshowmorenews">
-                    <div class="showmorenews"><a href="#" onclick=" return false;">Tidligere i 2014</a></div>
+                    <div class="showmorenews">
+                        <a href="#" onclick=" return false;">Tidligere i 2014</a>
+                    </div>
                     <section class="newsitem visuallyhidden">
-                        <a href="#"><h2>Utprøving av kjernejournal startet</h2></a>
-                        <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
                         <p class="newitem_date">15.05.2014</p>
+
+                        <a href="#"><h2 class="internal-link aftertext">Utprøving av kjernejournal startet</h2></a>
+                        <p>Trondheim og Stavanger er de første som prøver ut kjernejournal. Kjernejournalen er en ny elektronisk løsning som samler viktige helseopplysninger i én kilder.</p>
                     </section>
                     <section class="newsitem visuallyhidden">
-                        <a href="nyheter_ennyhet.html"><h2>Nye kreftlegemidler vurdert</h2></a>
-                        <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
                         <p class="newitem_date">25.04.2014</p>
+
+                        <a href="nyheter_ennyhet.html"><h2 class="internal-link aftertext">Nye kreftlegemidler vurdert</h2></a>
+                        <p>Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.</p>
                     </section>
                     <section class="newsitem visuallyhidden">
-                        <a href="nyheter_ventetider.html"><h2> Ventetiden uendret for rettighetspasienter</h2></a>
+                        <p class="newitem_date">03.03.2014</p>
+
+                        <a href="nyheter_ventetider.html"><h2 class="internal-link aftertext"> Ventetiden uendret for rettighetspasienter</h2></a>
                         <p>
                             I gjennomsnitt ventet rettighetspasienter 60 dager før de fikk igangsatt helsehjelp. Ventetiden er uendret fra i fjor viser nye tall fra Norsk pasientregister.
                         </p>
-                        <p class="newitem_date">03.03.2014</p>
                     </section>
                 </div>
                 <div class="toggleshowmorenews">
@@ -130,9 +187,16 @@
                 <div class="toggleshowmorenews">
                     <div class="showmorenews"><a href="#" onclick=" return false;">2011</a></div>
                 </div>
+                <aside class="aside bottom">
+                    <div class="module_subscribe clearfix">
+                        <p class="header">Abonnér på denne siden</p>
+                        <a href="#" class="e-mail"><img src="../img/ikon_epost.svg" alt="" /><p>E-post</p></a>
+                        <a href="#" class="rss"><img src="../img/ikon_rss.svg" alt="" /><p>RSS-strøm</p></a>
+                    </div>
+                </aside>
             </article>
         </div>
-    </article>
+    </div>
 
     <div id="footer"></div>
 

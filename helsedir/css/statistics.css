@@ -1,47 +1,4 @@
-﻿.tabs-statistics {
-  margin-top: 50px;
-}
-.tabs-statistics .tab-links {
-  padding-left: 20px;
-}
-.tabs-statistics .tab-links li {
-  margin-right: 10px;
-  width: 170px;
-  text-align: center;
-}
-.tabs-statistics .tab-links li.active {
-  border: none;
-  background: white;
-}
-.tabs-statistics .tab-links li.active a {
-  background: white;
-  color: #004e66;
-}
-.tabs-statistics .tab-links li a {
-  width: 100%;
-  background: #aeaba8;
-  color: white;
-  padding: 0 30px 0 20px;
-  border-radius: 0;
-}
-.tabs-statistics .tab-links li a:hover,
-.tabs-statistics .tab-links li a:focus {
-  background: #a7cce5;
-  text-decoration: none;
-  color: black !important;
-}
-.tabs-statistics .tab-content {
-  background: white;
-  border: none;
-  border-radius: 0;
-}
-.tabs-statistics .tab-content li a {
-  color: #004e66;
-}
-.tabs-statistics .tabs {
-  margin-bottom: 50px;
-}
-.dropdown-statistikk select {
+﻿.dropdown-statistikk select {
   width: 40%;
 }
 .dropdown-statistikk button {
@@ -99,5 +56,28 @@
 #statistikktab2,
 #statistikktab3 {
   margin-top: 20px;
+}
+.statistics_chart {
+  margin: 30px 0;
+}
+.statistics_chart #chart_div {
+  height: 400px;
+  width: 100%;
+  display: inline-block;
+}
+.statistics_table {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
+}
+.table_general {
+  width: 100%;
+  margin-bottom: 0;
+}
+.statistics_description {
+  margin: 40px 0;
+}
+.statistics_reports h2 {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=statistics.css.map */

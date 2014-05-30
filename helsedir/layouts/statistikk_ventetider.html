@@ -6,14 +6,12 @@
     <title>Ventetider mars</title>
     <link href="../css/reset.css" rel="stylesheet">
 
-    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/masterpage.css" rel="stylesheet" />
     <link href="../css/htmlelements.css" rel="stylesheet" />
     <link href="../css/statistics.css" rel="stylesheet" />
-    <link href="../css/publication.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -28,170 +26,140 @@
             <article class="col-md-12 col-lg-8">
 
                 <h1>Ventetider</h1>
-
+                <div class="border"></div>
                 <section class="sectionwithaside">
                     <h2>Norge oktober 2013 - mars 2014</h2>
-
-                    <div class="tabs-statistics tabs">
-                        <ul class="tab-links">
-                            <li class="active"><a href="#statistikktab1">Oversikt</a></li>
-                            <li><a href="#statistikktab2">Tabeller</a></li>
-                            <li><a href="#statistikktab3">Om statistikken</a></li>
-                        </ul>
-                        <div class="tab-content">
-                            <div id="statistikktab1" class="tab active">
-                                <h3>Utvikling i median ventetid i antall dager, siste 12 måneder</h3>
-
-                                <div id="chart_div"></div>
-                                <section class="statistics_description">
-                                    <h4 class="accordion">Hvordan beregnes median ventetid</h4>
-                                    <div></div>
-                                </section>
-                                <section class="">
-                                    <h4 class="accordion">Se oversikten av utviklingen i en tabell</h4>
-                                    <div>
-                                        <table class="table_general">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Oktober 2013</th>
-                                                    <th>November 2013</th>
-                                                    <th>Desember 2013</th>
-                                                    <th>Januar 2014</th>
-                                                    <th>Februar 2014</th>
-                                                    <th>Mars 2014</th>
-                                                </tr>
-                                            </thead>
-                                            <tr>
-                                                <td data-title="">Somatikk</td>
-                                                <td data-title="Oktober 2013">49</td>
-                                                <td data-title="November 2013">49</td>
-                                                <td data-title="Desember 2013">44</td>
-                                                <td data-title="Januar 2014">56</td>
-                                                <td data-title="Februar 2014">52</td>
-                                                <td data-title="Mars 2014">52</td>
-                                            </tr>
-                                            <tr>
-                                                <td data-title="">VOP</td>
-                                                <td data-title="Oktober 2013">35</td>
-                                                <td data-title="November 2013">36</td>
-                                                <td data-title="Desember 2013">39</td>
-                                                <td data-title="Januar 2014">50</td>
-                                                <td data-title="Februar 2014">48</td>
-                                                <td data-title="Mars 2014">42</td>
-                                            </tr>
-                                            <tr>
-                                                <td data-title="">BUP</td>
-                                                <td data-title="Oktober 2013">35</td>
-                                                <td data-title="November 2013">36</td>
-                                                <td data-title="Desember 2013">39</td>
-                                                <td data-title="Januar 2014">50</td>
-                                                <td data-title="Februar 2014">48</td>
-                                                <td data-title="Mars 2014">42</td>
-                                            </tr>
-                                            <tr>
-                                                <td data-title="">RUS</td>
-                                                <td data-title="Oktober 2013">35</td>
-                                                <td data-title="November 2013">36</td>
-                                                <td data-title="Desember 2013">37</td>
-                                                <td data-title="Januar 2014">48</td>
-                                                <td data-title="Februar 2014">34</td>
-                                                <td data-title="Mars 2014">38</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </section>
-                            </div>
-                            <div id="statistikktab2" class="tab">
-                                <h3>Ventetid til igangsatt helsehjelp  </h3>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Oktober 2013</th>
-                                            <th>November 2013</th>
-                                            <th>Desember 2013</th>
-                                            <th>Januar 2014</th>
-                                            <th>Februar 2014</th>
-                                            <th>Mars 2014</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td data-title="Somatikk">Somatikk</td>
+                    <div>
+                        <h3>Utvikling i median ventetid i antall dager, siste 12 måneder</h3>
+                        <div class="statistics_chart">
+                            <div id="chart_div"></div>
+                            <a class="pull-right" href="#">Last ned høyoppløselig versjon</a>
+                        </div>
+                        <div class="statistics_table ">
+                            <table class="table_general">
+                                <thead>
+                                    <tr class="odd">
+                                        <th></th>
+                                        <th>Oktober 2013</th>
+                                        <th>November 2013</th>
+                                        <th>Desember 2013</th>
+                                        <th>Januar 2014</th>
+                                        <th>Februar 2014</th>
+                                        <th>Mars 2014</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td data-title="">Somatikk</td>
+                                        <td data-title="Oktober 2013">49</td>
+                                        <td data-title="November 2013">49</td>
+                                        <td data-title="Desember 2013">44</td>
+                                        <td data-title="Januar 2014">56</td>
+                                        <td data-title="Februar 2014">52</td>
+                                        <td data-title="Mars 2014">52</td>
                                     </tr>
                                     <tr>
-                                        <td data-title="VOP">VOP</td>
+                                        <td data-title="">VOP</td>
+                                        <td data-title="Oktober 2013">35</td>
+                                        <td data-title="November 2013">36</td>
+                                        <td data-title="Desember 2013">39</td>
+                                        <td data-title="Januar 2014">50</td>
+                                        <td data-title="Februar 2014">48</td>
+                                        <td data-title="Mars 2014">42</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td data-title="">BUP</td>
+                                        <td data-title="Oktober 2013">35</td>
+                                        <td data-title="November 2013">36</td>
+                                        <td data-title="Desember 2013">39</td>
+                                        <td data-title="Januar 2014">50</td>
+                                        <td data-title="Februar 2014">48</td>
+                                        <td data-title="Mars 2014">42</td>
                                     </tr>
                                     <tr>
-                                        <td data-title="BUP">BUP</td>
+                                        <td data-title="">RUS</td>
+                                        <td data-title="Oktober 2013">35</td>
+                                        <td data-title="November 2013">36</td>
+                                        <td data-title="Desember 2013">37</td>
+                                        <td data-title="Januar 2014">48</td>
+                                        <td data-title="Februar 2014">34</td>
+                                        <td data-title="Mars 2014">38</td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="RUS">RUS</td>
-                                    </tr>
-                                </table>
-                                <h3>Tildeling av rett til helsehjelp  </h3>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Oktober 2013</th>
-                                            <th>November 2013</th>
-                                            <th>Desember 2013</th>
-                                            <th>Januar 2014</th>
-                                            <th>Februar 2014</th>
-                                            <th>Mars 2014</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td data-title="Somatikk">Somatikk</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="VOP">VOP</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="BUP">BUP</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="RUS">RUS</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div id="statistikktab3" class="tab">
-                                <h3>Generelt om statistikken</h3>
-                                <h3>Definisjoner</h3>
-                                <h3> Feilkilder</h3>
-                            </div>
+                                </tbody>
+                            </table>
+                            <a class="pull-right " href="#">Last ned høyoppløselig versjon</a>
                         </div>
                     </div>
-
-                    <aside class="aside">
-                        <div class="module_publication">
-                            <p class="smallHeader">Månedlige tall</p>
-                            <div class="header3">Neste publisering av tall</div>
-                            <p class="date">1.april 2014</p>
-                        </div>
-                    </aside>
                 </section>
-                <section class="sectionwithaside">
+                <section class="statistics_description">
+                    <h3 class="accordion">Se statistikk i tabeller</h3>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Oktober 2013</th>
+                                    <th>November 2013</th>
+                                    <th>Desember 2013</th>
+                                    <th>Januar 2014</th>
+                                    <th>Februar 2014</th>
+                                    <th>Mars 2014</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="Somatikk">Somatikk</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="VOP">VOP</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="BUP">BUP</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="RUS">RUS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="statistics_description">
+                    <h3 class="accordion">Om statistikken</h3>
+                    <div>
+                        <h4>Generelt om statistikken</h4>
+                        <h4>Definisjoner</h4>
+                        <h4> Feilkilder</h4>
+                    </div>
+                </section>
+
+                <aside class="aside">
+                    <div class="message_module bubble">
+                        <div class="module_description">Nye tall hvert tertial</div>
+                        <p class="module_header">Neste publisering av tall</p>
+                        <p class="keyfigures">1.april 2014</p>
+                        <img src="../img/modules/snakkebob-mellomblaa.png" alt="">
+                    </div>
+
+                    <div class=" module module_publication">
+                        <div class="module_description ">Rapport</div>
+                        <h5 class="module_header"><a href="#" class="internal-link aftertext">Kvalitet i ventelistedata (2014)</a></h5>
+                        <p class="module_theme">Statistikk</p><p class="module_ingress">Utfordringer og foreslått tiltak for å forbedre kvaliteten i ventelistestatistikken</p>
+                        <img src="../img/modules/EKG-orange.png" alt="">
+                    </div>
+                </aside>
+                <section class="statistics_reports sectionwithaside">
                     <h2>Rapportgenerator</h2>
-                    <ul>
-                        <li>Finn tall for din kommune</li>
+                    <div>
+                        <ul class="bulletlist">
+                            <li>Finn tall for din kommune</li>
 
-                        <li>Se på ventetiden for ulike diagnoser</li>
-                    </ul>
-                    <form>
-                        <button class="calltoaction">Lag tabeller og figurer</button>
-                    </form>
-                    <aside class="aside">
-                        <div class="module_report">
-                            <p class="smallHeader">rapport</p>
-                            <a href="publikasjoner_artikkel_kvalitet_i_ventelistedata.html">
-
-                                <div class="header3"> Kvalitet i ventelistedata (2014)</div>
-                            </a>
-                            <p>Utfordringer og foreslått tiltak for å forbedre kvaliteten i ventelistestatistikken</p>
-                        </div>
-                    </aside>
+                            <li>Se på ventetiden for ulike diagnoser</li>
+                            <li>Last ned alle data</li>
+                        </ul>
+                        <form>
+                            <button class="calltoaction">Lag tabeller og figurer</button>
+                        </form>
+                    </div>
                 </section>
             </article>
         </div>
@@ -208,8 +176,52 @@
     <script src="../js/mobileCollapse.js"></script>
     <script src="../js/helsedir.js"></script>
     <script src="https://www.google.com/jsapi"></script>
-    <script src="../js/chart.js"></script>
     <script src="../js/statistics.js"></script>
     <!--    <script src="../js/tabs.js"></script>-->
+
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Måned', 'Somatikk', 'Voksenpsykiatrisk Poliklinikk (VOP) ', 'Barne- og ungsomspsykiatrisk Poliklinikk (BUP)', 'RUS', 'IPA'],
+              ['mar 13', 44, 36, 45, 35, 22],
+              ['apr 13', 52, 41, 52, 42, 24],
+              ['mai 13', 50, 39, 55, 42, 26],
+              ['jun 13', 48, 40, 50, 42, 28],
+              ['jul 13', 39, 33, 47, 42, 30],
+              ['aug 13', 61, 55, 68, 36, 32],
+              ['sep 13', 65, 39, 64, 38, 34],
+              ['okt 13', 49, 35, 35, 35, 32],
+              ['nov 13', 49, 35, 36, 36, 30],
+              ['des 13', 44, 35, 39, 37, 28],
+              ['jan 14', 56, 48, 50, 48, 26],
+              ['feb 14', 52, 34, 48, 34, 24],
+              ['mar 14', 47, 38, 42, 38, 22]
+            ]);
+
+            var options = {
+                vAxis: { minValue: 20, maxValue: 70, title: "Antall dager", ticks: [20, 30, 40, 50, 60, 70] },
+                'chartArea': { 'width': '75%', 'height': '80%', 'left': '10%' },
+
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+                series: {
+                    0: { lineDashStyle: [14, 7] },
+                    1: { lineDashStyle: [5, 5] },
+                    4: { lineDashStyle: [7, 14] }
+                }, lineWidth: 3
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+        $(window).resize(function () {
+            drawChart();
+        });
+    </script>
 </body>
 </html>
