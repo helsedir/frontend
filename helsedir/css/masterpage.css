@@ -180,6 +180,7 @@ footer a:focus {
   color: #ffffff;
   font-family: 'Calibri';
   width: 100%;
+  padding-bottom: 6px;
 }
 .toppmeny .tab-links li a:hover,
 .toppmeny .tab-links li a:focus {

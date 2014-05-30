@@ -121,17 +121,17 @@ ul {
 a {
     color: @colorDarkBlue;
     text-decoration: underline;
-    font-size: 1em;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 27px;
 
     &:visited {
         color: @colorMediumBlue;
         text-decoration: underline;
     }
+}
 
-    p {
-        margin: 0 0 50px 0;
-    }
+p {
+    margin: 0 0 50px 0;
 
     &:focus, &:visited:focus {
         h2, h4, p {
@@ -268,6 +268,7 @@ a {
             width: 170px;
             text-align: center;
             transition: all linear 0.15s;
+            padding-bottom: 6px;
 
             &.active {
                 border: none;
@@ -411,7 +412,7 @@ a {
 
     a {
         font-size: 18px;
-        margin: 0 20px 0 0;
+        margin: 0 13px 0 0;
         text-decoration: none;
         color: @colorDarkBlue;
 
@@ -550,7 +551,7 @@ video {
 .aside, .aside.bottom {
     margin-right: 0;
     position: relative;
-    width: 270px;
+    width: 300px;
     margin-top: 70px;
 
     h2 {
@@ -571,11 +572,23 @@ video {
 .linklist {
     list-style-type: none;
     text-decoration: underline;
-    margin: 0 0 15px 0;
+    margin: 10px 0 15px 0;
 
-    li a.external-link {
-        margin: 0;
+    a:visited {
+        text-decoration: none;
     }
+
+    li a, li a.internal-link.aftertext {
+        margin-bottom: 5px;
+    }
+
+        li a.external-link {
+            margin: 0;
+        }
+
+        li a.internal-link.aftertext {
+            text-decoration: none;
+        }
 }
 
 .bulletlist {
@@ -630,7 +643,6 @@ video {
     text-align: center;
 }
 /*******************************Ny forside******************************************/
-
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
@@ -902,7 +914,7 @@ iframe {
 .showmorenews {
     width: 250px;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px 0;
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
     background: white;
@@ -976,6 +988,10 @@ iframe {
     border-bottom: 2px solid @colorDarkBlue;
     padding-bottom: 20px;
     width: 100%;
+}
+
+.checkbox {
+    margin-right: 20px;
 }
 
 input[type="radio"] {
@@ -1084,16 +1100,16 @@ fieldset {
         min-width: 270px;
         max-width: 270px;
         border: 1px solid @colorDarkBlue;
-        border-right: none;
         font-family: @fontCalibri;
         font-size: 20px;
-        padding: 5px 0 4px 10px;
+        padding: 5px 38px 4px 10px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
         background: white url('../img/knapp_nedtrekksmeny.svg') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
         text-indent: 0.01px; /* Removes default arrow from firefox*/
         text-overflow: ""; /*Removes default arrow from firefox*/
+        color: #222;
     }
 }
 
@@ -1301,10 +1317,6 @@ fieldset {
     .module_subscribe {
         margin: 0;
         padding: 0;
-    }
-
-    .showmorenews {
-        margin: 50px 0;
     }
 }
 

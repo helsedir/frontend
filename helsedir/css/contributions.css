@@ -1,8 +1,18 @@
-﻿.tilskudd a {
+﻿.tilskudd {
+  margin-bottom: 10px;
+}
+.tilskudd a {
   text-decoration: none;
 }
 .tilskudd p {
   margin: 0;
+}
+.tilskudd h2.internal-link.aftertext {
+  margin-bottom: 0;
+}
+.tilskudd_sortcontrols {
+  margin-top: 35px;
+  height: 25px;
 }
 .tilskudd_sortcontrols .checkbox {
   display: inline-block;
@@ -22,7 +32,7 @@
   text-transform: uppercase;
   color: #004e66;
   font-size: 18px;
-  margin-top: 17px;
+  margin-bottom: 30px;
 }
 .border {
   padding-bottom: 57px;

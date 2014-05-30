@@ -85,28 +85,28 @@ ul.list li:before {
 a {
   color: #004e66;
   text-decoration: underline;
-  font-size: 1em;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 27px;
 }
 a:visited {
   color: #0093a7;
   text-decoration: underline;
 }
-a p {
+p {
   margin: 0 0 50px 0;
 }
-a:focus,
-a:visited:focus {
+p:focus,
+p:visited:focus {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
-a:focus h2,
-a:visited:focus h2,
-a:focus h4,
-a:visited:focus h4,
-a:focus p,
-a:visited:focus p {
+p:focus h2,
+p:visited:focus h2,
+p:focus h4,
+p:visited:focus h4,
+p:focus p,
+p:visited:focus p {
   background: #004e66;
   color: white !important;
   outline: 0;
@@ -219,6 +219,7 @@ a:visited:focus p {
   width: 170px;
   text-align: center;
   transition: all linear 0.15s;
+  padding-bottom: 6px;
 }
 .tabs .tab-links li.active {
   border: none;
@@ -338,7 +339,7 @@ a:visited:focus p {
 }
 .module_subscribe a {
   font-size: 18px;
-  margin: 0 20px 0 0;
+  margin: 0 13px 0 0;
   text-decoration: none;
   color: #004e66;
 }
@@ -454,7 +455,7 @@ video {
 .aside.bottom {
   margin-right: 0;
   position: relative;
-  width: 270px;
+  width: 300px;
   margin-top: 70px;
 }
 .aside h2,
@@ -475,10 +476,20 @@ video {
 .linklist {
   list-style-type: none;
   text-decoration: underline;
-  margin: 0 0 15px 0;
+  margin: 10px 0 15px 0;
+}
+.linklist a:visited {
+  text-decoration: none;
+}
+.linklist li a,
+.linklist li a.internal-link.aftertext {
+  margin-bottom: 5px;
 }
 .linklist li a.external-link {
   margin: 0;
+}
+.linklist li a.internal-link.aftertext {
+  text-decoration: none;
 }
 .bulletlist {
   list-style-position: outside;
@@ -756,7 +767,7 @@ iframe {
 .showmorenews {
   width: 250px;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px 0;
   border: 2px solid #004e66;
   color: #004e66;
   background: white;
@@ -821,6 +832,9 @@ iframe {
   border-bottom: 2px solid #004e66;
   padding-bottom: 20px;
   width: 100%;
+}
+.checkbox {
+  margin-right: 20px;
 }
 input[type="radio"] {
   float: left;
@@ -909,10 +923,9 @@ fieldset {
   min-width: 270px;
   max-width: 270px;
   border: 1px solid #004e66;
-  border-right: none;
   font-family: 'Calibri';
   font-size: 20px;
-  padding: 5px 0 4px 10px;
+  padding: 5px 38px 4px 10px;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
@@ -925,6 +938,7 @@ fieldset {
   /* Removes default arrow from firefox*/
   text-overflow: "";
   /*Removes default arrow from firefox*/
+  color: #222;
 }
 .refinesearch {
   padding-left: 30px;
@@ -1096,9 +1110,6 @@ fieldset {
   .module_subscribe {
     margin: 0;
     padding: 0;
-  }
-  .showmorenews {
-    margin: 50px 0;
   }
 }
 @media only screen and (min-width: 900px) {

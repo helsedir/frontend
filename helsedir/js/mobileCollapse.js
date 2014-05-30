@@ -43,9 +43,6 @@ $("h2").click(function () {
                     $content.removeClass('visuallyhidden')
                         .slideDown(500);
                 });
-                $('html, body').animate({
-                    scrollTop: $content.offset().top
-                }, 700);
             } else {
                 $parent.removeClass("has-visible-content");
                 $parent.addClass("has-hidden-content");
