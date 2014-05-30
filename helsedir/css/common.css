@@ -153,9 +153,11 @@ a:visited:focus p {
 .has-hidden-content h2:before,
 .has-hidden-content .accordion:before {
   float: left;
-  padding: 0 15px 0 15px;
-  content: "\f078";
+  padding: 0 10px 0 0;
+  content: "\f107";
   font-family: "FontAwesome";
+  font-size: 50px;
+  color: #004e66;
 }
 .has-visible-content {
   cursor: pointer;
@@ -163,9 +165,11 @@ a:visited:focus p {
 .has-visible-content h2:before,
 .has-visible-content .accordion:before {
   float: left;
-  padding: 0 15px 0 15px;
-  content: "\f077";
+  padding: 0 10px 0 0;
+  content: "\f106";
   font-family: "FontAwesome";
+  font-size: 50px;
+  color: #004e66;
 }
 .clearfix:before,
 .clearfix:after {
@@ -1184,7 +1188,12 @@ fieldset {
     display: block;
   }
   .breadcrumbs li:last-child:before {
-    content: '< ';
+    font-family: "FontAwesome";
+    content: '\f104';
+    color: #004e66;
+    font-size: 25px;
+    margin: 0 5px 0 5px;
+    vertical-align: middle;
   }
   .statistics_table table,
   .statistics_table tbody {

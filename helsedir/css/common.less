@@ -195,9 +195,11 @@ a {
 
     h2:before, .accordion:before {
         float: left;
-        padding: 0 15px 0 15px;
-        content: "\f078";
+        padding: 0 10px 0 0;
+        content: "\f107";
         font-family: "FontAwesome";
+        font-size: 50px;
+        color: @colorDarkBlue;
     }
 }
 
@@ -206,9 +208,11 @@ a {
 
     h2:before, .accordion:before {
         float: left;
-        padding: 0 15px 0 15px;
-        content: "\f077";
+        padding: 0 10px 0 0;
+        content: "\f106";
         font-family: "FontAwesome";
+        font-size: 50px;
+        color: @colorDarkBlue;
     }
 }
 
@@ -1419,7 +1423,12 @@ fieldset {
                 display: block;
 
                 &:before {
-                    content: '< ';
+                    font-family: "FontAwesome";
+                    content: '\f104';
+                    color: #004e66;
+                    font-size: 25px;
+                    margin: 0 5px 0 5px;
+                    vertical-align: middle;
                 }
             }
         }
