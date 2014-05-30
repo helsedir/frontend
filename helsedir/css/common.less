@@ -71,7 +71,7 @@ h2 {
 h3 {
     font-size: 28px;
     font-family: @fontSohoRegular;
-    margin: 55px 0 0 0;
+    margin: 35px 0 0 0;
     line-height: 36px;
 }
 
@@ -285,7 +285,6 @@ a {
                 font-size: 16px;
                 transition: all linear 0.15s;
                 width: 100%;
-                padding: 0 30px 0 20px;
                 border-radius: 0;
                 color: white;
                 text-decoration: none;
@@ -553,6 +552,11 @@ video {
     h2 {
         margin: 0;
     }
+
+    p, a {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 .cleanlist {
@@ -564,13 +568,18 @@ video {
     list-style-type: none;
     text-decoration: underline;
     margin: 0 0 15px 0;
+
+    li a.external-link {
+        margin: 0;
+    }
 }
 
 .bulletlist {
     list-style-position: outside;
+    margin-top: 10px;
 
     li {
-        margin: 0 0 15px 10px;
+        margin: 0 0 10px 10px;
 
         &:before {
             content: "•";
@@ -622,7 +631,7 @@ video {
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
     padding: 10px 20px 10px 35px;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 30px 0;
     font-family: @fontCalibri;
     font-size: 20px;
     line-height: 24px;
@@ -670,6 +679,8 @@ iframe {
     background-size: 16px 16px;
     padding-right: 22px;
     text-decoration: none;
+    margin: 15px 0;
+    display: inline-block;
 
     &.inline, .inline:visited {
         text-decoration: underline;
@@ -684,6 +695,7 @@ iframe {
 .internal-link {
     text-decoration: none;
     color: @colorDarkBlue;
+    display: inline-block;
 
     &:visited {
         color: @colorMediumBlue;
@@ -694,13 +706,17 @@ iframe {
         display: inline;
     }
 
-    &.aftertext:after {
-        padding-left: 10px;
-        content: "\f105";
-        font-family: "FontAwesome";
-        font-size: inherit;
-        text-decoration: none;
+    &.aftertext {
+        margin: 15px 0;
     }
+
+        &.aftertext:after {
+            padding-left: 10px;
+            content: "\f105";
+            font-family: "FontAwesome";
+            font-size: inherit;
+            text-decoration: none;
+        }
 
     &.inline, .inline:visited {
         text-decoration: underline;
@@ -743,7 +759,7 @@ iframe {
 .module {
     display: inline-block;
     margin: 100px 0 0 30px;
-    padding: 30px 30px 45px 30px;
+    padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
 
@@ -760,7 +776,7 @@ iframe {
         font-family: @fontSohoRegular;
         font-size: 28px;
         line-height: 36px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         color: #222;
     }
 
@@ -831,7 +847,7 @@ iframe {
         }
 
         .subject {
-            margin-bottom: 20px;
+            margin: 5px 0 20px 0;
         }
 
         a {
@@ -1455,7 +1471,7 @@ fieldset {
     .toppmeny, .tabs, .tabs-statistics .tabs {
         .tab-links {
             li {
-                width: 115px;
+                width: 114px;
 
                 a, a.active {
                     font-size: 12px;

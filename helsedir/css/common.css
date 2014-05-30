@@ -45,7 +45,7 @@ h2.accordion {
 h3 {
   font-size: 28px;
   font-family: "soho gothic pro regular";
-  margin: 55px 0 0 0;
+  margin: 35px 0 0 0;
   line-height: 36px;
 }
 h4 {
@@ -234,7 +234,6 @@ a:visited:focus p {
   font-size: 16px;
   transition: all linear 0.15s;
   width: 100%;
-  padding: 0 30px 0 20px;
   border-radius: 0;
   color: white;
   text-decoration: none;
@@ -458,6 +457,13 @@ video {
 .aside.bottom h2 {
   margin: 0;
 }
+.aside p,
+.aside.bottom p,
+.aside a,
+.aside.bottom a {
+  font-size: 18px;
+  line-height: 22px;
+}
 .cleanlist {
   list-style-type: none;
   margin-left: 0;
@@ -467,11 +473,15 @@ video {
   text-decoration: underline;
   margin: 0 0 15px 0;
 }
+.linklist li a.external-link {
+  margin: 0;
+}
 .bulletlist {
   list-style-position: outside;
+  margin-top: 10px;
 }
 .bulletlist li {
-  margin: 0 0 15px 10px;
+  margin: 0 0 10px 10px;
 }
 .bulletlist li:before {
   content: "•";
@@ -516,7 +526,7 @@ video {
   border: 2px solid #004e66;
   color: #004e66;
   padding: 10px 20px 10px 35px;
-  margin: 30px 0 30px 0;
+  margin: 20px 0 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
@@ -555,6 +565,8 @@ iframe {
   background-size: 16px 16px;
   padding-right: 22px;
   text-decoration: none;
+  margin: 15px 0;
+  display: inline-block;
 }
 .external-link.inline,
 .external-link .inline:visited {
@@ -567,6 +579,7 @@ iframe {
 .internal-link {
   text-decoration: none;
   color: #004e66;
+  display: inline-block;
 }
 .internal-link:visited {
   color: #0093a7;
@@ -577,6 +590,9 @@ iframe {
 .internal-link h4,
 .internal-link p {
   display: inline;
+}
+.internal-link.aftertext {
+  margin: 15px 0;
 }
 .internal-link.aftertext:after {
   padding-left: 10px;
@@ -620,7 +636,7 @@ iframe {
 .module {
   display: inline-block;
   margin: 100px 0 0 30px;
-  padding: 30px 30px 45px 30px;
+  padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
 }
@@ -636,7 +652,7 @@ iframe {
   font-family: "soho gothic pro regular";
   font-size: 28px;
   line-height: 36px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   color: #222;
 }
 .module .module_theme {
@@ -697,7 +713,7 @@ iframe {
 }
 .module.module_statistics_text .subject,
 .module.module_statistics_graph .subject {
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
 }
 .module.module_statistics_text a,
 .module.module_statistics_graph a {
@@ -1209,7 +1225,7 @@ fieldset {
   .toppmeny .tab-links li,
   .tabs .tab-links li,
   .tabs-statistics .tabs .tab-links li {
-    width: 115px;
+    width: 114px;
   }
   .toppmeny .tab-links li a,
   .tabs .tab-links li a,
