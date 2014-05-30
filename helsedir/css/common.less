@@ -131,8 +131,6 @@ a {
 }
 
 p {
-    margin: 0 0 50px 0;
-
     &:focus, &:visited:focus {
         h2, h4, p {
             background: @colorDarkBlue;
@@ -774,7 +772,7 @@ iframe {
 
 .module {
     display: inline-block;
-    margin: 100px 0 0 30px;
+    margin: 0 0 0 30px;
     padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
@@ -786,6 +784,10 @@ iframe {
         color: @colorDarkBlue;
         text-decoration: none;
         margin-bottom: 25px;
+    }
+
+    a .module_header {
+        color: @colorMediumBlue;
     }
 
     .module_header {
@@ -879,6 +881,10 @@ iframe {
 
     &.module_statistics_graph {
     }
+
+    .external-link {
+        margin-top: 0;
+    }
 }
 
 .module_report {
@@ -914,7 +920,7 @@ iframe {
 .showmorenews {
     width: 250px;
     text-align: center;
-    margin: 50px 0;
+    margin: 50px auto;
     border: 2px solid @colorDarkBlue;
     color: @colorDarkBlue;
     background: white;
@@ -1289,7 +1295,7 @@ fieldset {
         top: 0;
         right: 0;
         position: absolute;
-        margin-right: -42%;
+        margin-right: -50%;
 
         &.module_person {
             top: auto;
@@ -1300,7 +1306,7 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -42%;
+            margin-right: -50%;
         }
     }
 

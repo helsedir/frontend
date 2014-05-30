@@ -92,9 +92,6 @@ a:visited {
   color: #0093a7;
   text-decoration: underline;
 }
-p {
-  margin: 0 0 50px 0;
-}
 p:focus,
 p:visited:focus {
   background: #004e66;
@@ -650,7 +647,7 @@ iframe {
 }
 .module {
   display: inline-block;
-  margin: 100px 0 0 30px;
+  margin: 0 0 0 30px;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -662,6 +659,9 @@ iframe {
   color: #004e66;
   text-decoration: none;
   margin-bottom: 25px;
+}
+.module a .module_header {
+  color: #0093a7;
 }
 .module .module_header {
   font-family: "soho gothic pro regular";
@@ -739,6 +739,9 @@ iframe {
 .module.module_statistics_text {
   max-width: 270px;
 }
+.module .external-link {
+  margin-top: 0;
+}
 .module_report {
   margin: 0 0 0 30px;
   padding: 0 40px 0 30px;
@@ -767,7 +770,7 @@ iframe {
 .showmorenews {
   width: 250px;
   text-align: center;
-  margin: 50px 0;
+  margin: 50px auto;
   border: 2px solid #004e66;
   color: #004e66;
   background: white;
@@ -1086,7 +1089,7 @@ fieldset {
     top: 0;
     right: 0;
     position: absolute;
-    margin-right: -42%;
+    margin-right: -50%;
   }
   .aside.module_person {
     top: auto;
@@ -1096,7 +1099,7 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -42%;
+    margin-right: -50%;
   }
   .module_person.kontakt {
     bottom: 0;
