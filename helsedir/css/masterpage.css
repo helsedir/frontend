@@ -307,17 +307,17 @@ footer .tabs .tab-links li.active a,
   background: white;
   color: #004e66;
 }
-footer .tabs .tab-links a,
-.toppmeny .tabs .tab-links a {
+footer .tabs .tab-links li a,
+.toppmeny .tabs .tab-links li a {
   background: #004e66;
   color: white;
   padding: 0 30px 0 20px;
   border-radius: 0;
 }
-footer .tabs .tab-links a:hover,
-.toppmeny .tabs .tab-links a:hover,
-footer .tabs .tab-links a:focus,
-.toppmeny .tabs .tab-links a:focus {
+footer .tabs .tab-links li a:hover,
+.toppmeny .tabs .tab-links li a:hover,
+footer .tabs .tab-links li a:focus,
+.toppmeny .tabs .tab-links li a:focus {
   background: #023c49;
   text-decoration: none;
   color: white;

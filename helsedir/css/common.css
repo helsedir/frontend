@@ -26,11 +26,10 @@ h1 {
   color: #004e66;
 }
 .ingress {
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   font-size: 26px;
   line-height: 30px;
   font-family: 'Calibri';
-  padding-bottom: 20px;
 }
 h2 {
   font-size: 36px;
@@ -709,6 +708,7 @@ h4.keyfigures {
 }
 .module.module_facts {
   border-left: 2px solid #0093a7;
+  margin-top: 30px;
 }
 .module.module_facts .bulletlist {
   margin-top: 10px;

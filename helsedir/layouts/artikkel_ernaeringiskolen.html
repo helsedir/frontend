@@ -20,20 +20,19 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <article class="col-md-8">
                 <ol class="breadcrumbs clearfix">
                     <li><a href="forside.html">Forside</a></li>
                     <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
                     <li class="active"><a href="transportside_ernaering.html">Ernæring</a></li>
                 </ol>
-            </div>
-        </div>
-        <div class="row">
-            <article class="col-md-8 col-lg-8">
+
                 <h1>Ernæring i skolen</h1>
                 <div class="ingress">
                     Slik jobber du med kosthold i skolen
                 </div>
+                <div class="border"></div>
+
                 <section>
                     <h2>Retningslinjer, råd og anbefalinger</h2>
                     <div>
@@ -110,9 +109,16 @@
                         <a href="#">Bestill boken</a>
 
                         <aside class="aside">
-                            <h3>Mengde (%) tilstatt sukker i norsk kosthold</h3>
-                            <img class="img-responsive" src="../img/statistikk_eksempel2.png" />
-                            <a href="#">Les om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                            <div class="module module_statistics_graph">
+                                <div class="module_description">Statistikk</div>
+                                <h5 class="module_header">
+                                    Mengde (%) tilsatt sukker i norsk kosthold
+                                </h5>
+                                <div id="module_chart_div"></div>
+
+                                <a href="#" class="internal-link aftertext">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                                <img src="../img/modules/EKG-lyseblaa.png" alt="">
+                            </div>
                         </aside>
                     </div>
                 </section>
@@ -122,31 +128,27 @@
                         <h3>Navn på et spennende prosjekt</h3>
                         <p>Kort beskrivelse av prosjektet</p>
                         <a href="#">lenke til er om prosjektet (eksternt)</a>
-                        <div class="aside bonneringsmodul clearfix">
-                            <p>Abonnér på denne siden</p>
-                            <i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a>
-                            <i class="fa fa-rss fa-lg"></i><a href="#">RSS-strøm</a>
-                        </div>
-                        <div class="module_person kontakt">
-                            <h3>Ansvarlig for denne siden</h3>
-                            <div class="stripes-outer">
-                                <div class="stripes cold left">
-                                    <div class="left"></div>
-                                    <div class="middle"></div>
-                                    <div class="right"></div>
-                                </div>
-                                <img src="">
-                            </div>
-
-                            <p>
-                                Martin Martinsen<br />
-                                Rådgiver<br />
-                                Telefon: 974 57 585<br />
-                                martinmartinsen@helsedir.no
-                            </p>
-                        </div>
                     </div>
                 </section>
+                <aside class="aside">
+                    <div class="module_person ">
+                        <p class="module_description">Ansvarlig for denne siden</p>
+                        <span><img src="../img/Lars_Erik_Pedersen.png"></span>
+                        <span class="person_information">
+                            <span class="name">Anne May Knudsen</span>
+                            <span class="role">Beslutningsforum</span>
+                            <span class="phone">975 92 815</span>
+                            <span class="e-mail"><a href="#">Anne.May.Knudsen@helsedir.no</a></span>
+                        </span>
+                    </div>
+                </aside>
+                <aside class="aside bottom ">
+                    <div class="module_subscribe">
+                        <p class="header">Abonnér på denne siden</p>
+                        <a href="#" class="e-mail"><img src="../img/ikon_epost.svg" alt="" /><p>E-post</p></a>
+                        <a href="#" class="rss"><img src="../img/ikon_rss.svg" alt="" /><p>RSS-strøm</p></a>
+                    </div>
+                </aside>
             </article>
         </div>
     </div>
@@ -160,5 +162,44 @@
     <script src="../js/calibriFont.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/mobileCollapse.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['år', 'kg/person/år', 'energiprosent'],
+                ['1970', 44, 14],
+                ['1980', 45, 18],
+                ['1990', 51, 15],
+                ['2000', 28, 18],
+                ['2010', 25, 11]
+            ]);
+
+            var options = {
+                vAxis: { minValue: 0, maxValue: 50 },
+                //                chartArea: { left: "5%", width: "60%" }
+                'chartArea': { 'width': '80%', 'height': '70%' },
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+                series: {
+                    0: { lineDashStyle: [14, 7] },
+                    1: { lineDashStyle: [5, 5] },
+                    4: { lineDashStyle: [7, 14] }
+                }, lineWidth: 3
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('module_chart_div'));
+            chart.draw(data, options);
+        }
+
+        $(window).resize(function () {
+            drawChart();
+        });
+    </script>
 </body>
 </html>

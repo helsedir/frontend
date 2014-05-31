@@ -6,10 +6,10 @@
     <title>Nye kreftlegemidler vurdert</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
-    <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
 
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet" />  <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/masterpage.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -77,36 +77,39 @@
                         <p>
                             Gjennomsnittlig ventetid per sektor for rettighetspasienter:
                         </p>
-                        <table class="table table-bordered">
-                            <tr>
-                                <th></th>
-                                <th>2012</th>
-                                <th>2013</th>
-                            </tr>
+                        <table class="table_general">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>2012</th>
+                                    <th>2013</th>
+                                </tr>
+                            </thead>
+
                             <tr>
                                 <td>Somatiske fagområder</td>
-                                <td>61 dager</td>
-                                <td>61 dager</td>
+                                <td data-title="2012">61 dager</td>
+                                <td data-title="2013">61 dager</td>
                             </tr>
                             <tr>
                                 <td>​Psykisk helsevern for voksne	</td>
-                                <td>​46 dager</td>
-                                <td>47 dager</td>
+                                <td data-title="2012">​46 dager</td>
+                                <td data-title="2013">47 dager</td>
                             </tr>
                             <tr>
                                 <td>​Psykisk helsevern for barn og unge</td>
-                                <td>55 dager</td>
-                                <td>52 dager</td>
+                                <td data-title="2012">55 dager</td>
+                                <td data-title="2013">52 dager</td>
                             </tr>
                             <tr>
                                 <td>​Tverrfaglig spesialisert rusbehandling	</td>
-                                <td>​63 dager</td>
-                                <td>​60 dager</td>
+                                <td data-title="2012">​63 dager</td>
+                                <td data-title="2013">​60 dager</td>
                             </tr>
                             <tr>
                                 <td>​Alle sektorer</td>
-                                <td>​60 dager</td>
-                                <td>​60 dager</td>
+                                <td data-title="2012">​60 dager</td>
+                                <td data-title="2013">​60 dager</td>
                             </tr>
                         </table>
                         <p>
@@ -125,43 +128,49 @@
                         <p>
                             Tabellen viser andel fristbrudd for de pasientene som har mottatt helsehjelp i 3. tertial 2012 og 2013. Med fristbrudd menes at pasienten ikke ble tatt til utredning eller fikk behandling innen den medisinsk satte fristen.
                         </p>
-                        <table class="table table-bordered">
-                            <tr>
-                                <th></th>
-                                <th>​ 3. tertial 2012</th>
-                                <th>
-                                    3. tertial 2013
-                                </th>
-                            </tr>
+                        <table class="table_general">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>​ 3. tertial 2012</th>
+                                    <th>
+                                        3. tertial 2013
+                                    </th>
+                                </tr>
+                            </thead>
                             <tr>
                                 <td>Somatiske fagområder</td>
-                                <td>7,3 prosent</td>
-                                <td>6,8 prosent</td>
+                                <td data-title="3. tertial 2012">7,3 prosent</td>
+                                <td data-title=" 3. tertial 2013">6,8 prosent</td>
                             </tr>
                             <tr>
                                 <td>​Psykisk helsevern for voksne	</td>
-                                <td>​4,9 prosent</td>
-                                <td>2,5 prosent</td>
+                                <td data-title="3. tertial 2012">​4,9 prosent</td>
+                                <td data-title=" 3. tertial 2013">2,5 prosent</td>
                             </tr>
                             <tr>
                                 <td>​Psykisk helsevern for barn og unge</td>
-                                <td>7,1 prosent</td>
-                                <td>2,8 prosent</td>
+                                <td data-title="3. tertial 2012">7,1 prosent</td>
+                                <td data-title=" 3. tertial 2013">2,8 prosent</td>
                             </tr>
                             <tr>
                                 <td>​Tverrfaglig spesialisert rusbehandling	</td>
-                                <td>​5,2 prosent</td>
-                                <td>​4,6 prosent</td>
+                                <td data-title="3. tertial 2012">​5,2 prosent</td>
+                                <td data-title=" 3. tertial 2013">​4,6 prosent</td>
                             </tr>
                         </table>
                     </div>
                 </section>
                 <aside class="aside">
-                    <div class="statistics_module">
-                        <a href="#"><h4>Utvikling i median ventetid i antall dager, siste 12 måneder</h4></a>
+                    <div class="module module_statistics_graph">
+                        <div class="module_description">Statistikk</div>
+                        <h5 class="module_header">
+                            Utvikling i median ventetid i antall dager, siste 12 måneder
+                        </h5>
                         <div id="chart_div"></div>
 
-                        <a href="#">Se ventetidsstatistikken</a>
+                        <a href="#" class="internal-link aftertext">Se ventetidsstatistikken</a>
+                        <img src="../img/modules/EKG-lyseblaa.png" alt="" />
                     </div>
                 </aside>
             </div>
@@ -177,7 +186,50 @@
     <script src="../js/calibriFont.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/mobileCollapse.js"></script>
+    <script src="../js/helsedir.js"></script>
     <script src="https://www.google.com/jsapi"></script>
-    <script src="../js/chart _module.js"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Måned', 'Somatikk', 'VOP', 'BUP', 'RUS'],
+              ['mar 13', 44, 36, 45, 35],
+              ['apr 13', 52, 41, 52, 42],
+              ['mai 13', 50, 39, 55, 42],
+              ['jun 13', 48, 40, 50, 42],
+              ['jul 13', 39, 33, 47, 42],
+              ['aug 13', 61, 55, 68, 36],
+              ['sep 13', 65, 39, 64, 38],
+              ['okt 13', 49, 35, 35, 35],
+              ['nov 13', 49, 35, 36, 36],
+              ['des 13', 44, 35, 39, 37],
+              ['jan 14', 56, 48, 50, 48],
+              ['feb 14', 52, 34, 48, 34],
+              ['mar 14', 47, 38, 42, 38]
+            ]);
+
+            var options = {
+                vAxis: { minValue: 20, maxValue: 70, title: "Antall dager", ticks: [20, 30, 40, 50, 60, 70] },
+                'chartArea': { 'width': '80%', 'height': '70%' },
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+                series: {
+                    0: { lineDashStyle: [14, 7] },
+                    1: { lineDashStyle: [5, 5] },
+                    4: { lineDashStyle: [7, 14] }
+                }, lineWidth: 3
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+        $(window).resize(function () {
+            drawChart();
+        });
+    </script>
 </body>
 </html>
