@@ -46,9 +46,8 @@
     }
 
     button {
-        display: block;
+        display: inline-block;
         margin-right: 25px;
-        float: left;
     }
 }
 
@@ -76,4 +75,33 @@
 
 h1 {
     margin-top: 0;
+}
+
+.search {
+    width: 85%;
+}
+
+.border {
+    padding-bottom: 27px;
+}
+
+.report {
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+
+        td {
+            padding: 0 10px;
+
+            &:first-child {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .report table {
+        width: 100%;
+    }
 }

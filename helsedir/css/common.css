@@ -557,21 +557,6 @@ video {
   background-position: 5% 50%;
   background-size: 10px;
 }
-.report table {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.report table td {
-  padding: 0 10px;
-}
-.report table td:first-child {
-  width: 25%;
-}
-@media only screen and (max-width: 900px) {
-  .report table {
-    width: 100%;
-  }
-}
 iframe {
   margin-bottom: 23px;
 }
