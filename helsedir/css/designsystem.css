@@ -130,4 +130,30 @@
 .hhs .headerlink:visited {
   text-decoration: none;
 }
+.illustrasjon table {
+  margin-bottom: 1em;
+}
+.illustrasjon table tr:nth-child(odd) td,
+.illustrasjon table tr:nth-child(odd) th {
+  background-color: #ebeaea;
+}
+.illustrasjon table tr:nth-child(even) td,
+.illustrasjon table tr:nth-child(even) th {
+  background-color: white;
+}
+.illustrasjon table th,
+.illustrasjon table td {
+  width: 20em;
+  padding: 0.5em;
+}
+.illustrasjon table .tableHeader {
+  font-family: "soho gothic pro medium";
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.illustrasjon table tr {
+  text-align: center;
+}
 /*# sourceMappingURL=designsystem.css.map */

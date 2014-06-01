@@ -330,7 +330,7 @@ a {
             text-decoration: none;
         }
 
-        .alfabetisk {
+        .alphabetical {
             font-size: 18px;
 
             ul {
@@ -343,6 +343,8 @@ a {
 
                     a {
                         color: @colorDarkBlue;
+                        display: inline-block;
+                        line-height: 22px;
                     }
                 }
             }
@@ -367,10 +369,11 @@ a {
     width: 70%;
     height: 40px;
     padding: 5px 10px;
-    background: white url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
+    background: white url('../img/ikon_forstorrelsesglass.svg') center no-repeat;
     border: 1px solid @colorDarkBlue;
     background-size: auto 80%;
-    background-position: 97%;
+    background-position-x: 97%;
+    background-position-y: 50%;
     cursor: pointer;
 }
 

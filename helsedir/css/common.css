@@ -274,17 +274,19 @@ a:visited:focus p {
   color: #004e66;
   text-decoration: none;
 }
-.tabs .tab-content .alfabetisk {
+.tabs .tab-content .alphabetical {
   font-size: 18px;
 }
-.tabs .tab-content .alfabetisk ul li:first-of-type {
+.tabs .tab-content .alphabetical ul li:first-of-type {
   border-bottom: solid 1px #bababa;
 }
-.tabs .tab-content .alfabetisk ul li {
+.tabs .tab-content .alphabetical ul li {
   border: none;
 }
-.tabs .tab-content .alfabetisk ul li a {
+.tabs .tab-content .alphabetical ul li a {
   color: #004e66;
+  display: inline-block;
+  line-height: 22px;
 }
 .chart_div {
   height: 450px;
@@ -301,10 +303,11 @@ a:visited:focus p {
   width: 70%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') center no-repeat;
   border: 1px solid #004e66;
   background-size: auto 80%;
-  background-position: 97%;
+  background-position-x: 97%;
+  background-position-y: 50%;
   cursor: pointer;
 }
 .search_withbutton .search {

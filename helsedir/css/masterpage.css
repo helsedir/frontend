@@ -117,10 +117,13 @@
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
-  background: url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+  background-image: url('../img/search_icon.png');
+  background-image: url('../img/ikon_forstorrelsesglass.svg');
+  background-repeat: no-repeat;
   background-size: auto 80%;
   background-color: #ffffff;
-  background-position: 97%;
+  background-position-x: 97%;
+  background-position-y: 50%;
   cursor: pointer;
 }
 .masterheader {

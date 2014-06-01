@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Helsedirektoratet</title>
     <link href="../css/reset.css" rel="stylesheet">
@@ -35,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile col-lg-offset-2" id="mainsearch">
+                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile col-lg-offset-2">
                     <form>
                         <label for="mainsearchinput" class="visuallyhidden">Søk</label>
                         <input id="mainsearchinput" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
@@ -93,7 +92,7 @@
                     <div class="entrancebutton menu">
                         <a href="#" class="js-expander" onclick="return false;">
                             <div>
-                                <h3 class>
+                                <h3>
                                     Alt innhold A til Å <i class="fa fa-bars"></i>
                                 </h3>
                             </div>
@@ -151,6 +150,8 @@
                                         <li><a href="#">Kurs og konferanser</a></li>
                                     </ul>
                                 </div>
+                                <div class="clearfix visible-xs visible-sm"></div>
+
                                 <div class=" col-sm-6 col-md-4">
                                     <ul>
 
@@ -166,8 +167,8 @@
                             </div>
                         </div>
                         <div id="tab2" class="tab">
-                            <div class="row alfabetisk">
-                                <div class="col-sm-2 col-md-3 col-lg-3">
+                            <div class="row alphabetical">
+                                <div class="col-md-3 col-lg-3">
                                     <a id="content_fullist" tabindex="-1"></a>
                                     <ul>
                                         <li>A</li>
@@ -208,7 +209,9 @@
                                         <li><a href="#">Graviditet, fødsel og amming</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="clearfix visible-xs visible-sm"></div>
+
+                                <div class="col-md-3 col-lg-3">
 
                                     <ul>
                                         <li>H</li>
@@ -239,7 +242,8 @@
                                         <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+
+                                <div class="col-md-3 col-lg-3">
 
                                     <ul>
                                         <li>M</li>
@@ -269,7 +273,7 @@
                                         <li><a href="#">Pårørende                           </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="col-md-3 col-lg-3">
 
                                     <ul>
                                         <li>R</li>
@@ -386,7 +390,7 @@
     </div>
     <div class="shortcuts">
         <ul>
-            <li><a href="#bottom" id="contentshortcut">Bunnlinje</a></li>
+            <li><a href="#bottom">Bunnlinje</a></li>
         </ul>
     </div>
     <footer class="footerwrapper">
@@ -421,6 +425,8 @@
                                                 <li><a href="#">Kurs og konferanser</a></li>
                                             </ul>
                                         </div>
+                                        <div class="clearfix visible-xs visible-sm"></div>
+
                                         <div class="col-sm-12 col-md-4">
                                             <ul>
 
@@ -434,8 +440,8 @@
                                     </div>
                                 </div>
                                 <div id="tabAlphabeticFooter" class="tab">
-                                    <div class="row alfabetisk">
-                                        <div class="col-sm-2 col-md-3 col-lg-3">
+                                    <div class="row alphabetical">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li>A</li>
@@ -476,7 +482,7 @@
                                                 <li><a href="#">Graviditet, fødsel og amming</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li>H</li>
@@ -507,7 +513,9 @@
                                                 <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="clearfix visible-xs visible-sm"></div>
+
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li>M</li>
@@ -537,7 +545,7 @@
                                                 <li><a href="#">Pårørende                           </a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li>R</li>
@@ -666,14 +674,16 @@
 
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/respond.js"></script>
+
     <script src="../js/sohoFont.js"></script>
     <script src="../js/calibriFont.js"></script>
     <script src="../js/expander_frontpage.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="../js/google.maps.js"></script>
-    <script src="../js/respond.js"></script>
     <script src="https://www.google.com/jsapi"></script>
     <script src="../js/chart.js"></script>
 
