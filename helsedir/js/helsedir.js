@@ -109,4 +109,9 @@
                 .slideDown(500);
         });
     });
+
+    //show/hide more news/conferences
+    $('.showmorenews').on('click', function () {
+        $(this).toggleClass('selected').siblings().toggleClass('visuallyhidden');
+    });
 });
