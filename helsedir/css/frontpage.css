@@ -18,27 +18,28 @@
 .entrancebutton {
   width: 250px;
   height: 230px;
-  border-radius: 4px;
-  background: #004e66;
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
   transition: all 0.5s;
 }
-.entrancebutton.menu {
+.entrancebutton.menu a {
   background: #838078;
 }
-.entrancebutton.menu h3 {
+.entrancebutton.menu a h3 {
   text-align: center;
   position: relative;
   margin: 80px 10px 15px 12px;
 }
-.entrancebutton.menu.js-expanded {
+.entrancebutton.menu a.js-expanded {
   background-color: #dbdcdd;
   color: black;
   padding-bottom: 65px;
 }
-.entrancebutton.menu:hover {
+.entrancebutton.menu a:hover {
+  background: #666460;
+}
+.entrancebutton.menu a:focus {
   background: #666460;
 }
 .entrancebutton a {
@@ -47,6 +48,19 @@
   display: inline-block;
   color: white;
   text-decoration: none;
+  border-radius: 4px;
+  background: #004e66;
+}
+.entrancebutton a:hover {
+  background: #02343f;
+}
+.entrancebutton a:hover h2,
+.entrancebutton a:hover p,
+.entrancebutton a:hover:focus,
+.entrancebutton a:hover h2:focus,
+.entrancebutton a:hover p:focus {
+  text-decoration: none;
+  color: white;
 }
 .entrancebutton a .innerDiv {
   position: relative;
@@ -73,20 +87,15 @@
 .entrancebutton a p {
   line-height: 23px;
 }
-.entrancebutton:visited,
-.entrancebutton:hover {
-  color: white;
-}
-.entrancebutton:hover {
+.entrancebutton a:focus {
   background: #02343f;
 }
-.entrancebutton:hover a,
-.entrancebutton:hover h2,
-.entrancebutton:hover p,
-.entrancebutton:hover a:focus,
-.entrancebutton:hover h2:focus,
-.entrancebutton:hover p:focus {
-  text-decoration: none;
+.entrancebutton a:focus h2,
+.entrancebutton a:focus p {
+  background: #02343f;
+}
+.entrancebutton:visited,
+.entrancebutton:hover {
   color: white;
 }
 .frontpagewrapper.grey {

@@ -95,18 +95,18 @@ a:visited {
   color: #0093a7;
   text-decoration: underline;
 }
-p:focus,
-p:visited:focus {
+a:focus,
+a:visited:focus {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
-p:focus h2,
-p:visited:focus h2,
-p:focus h4,
-p:visited:focus h4,
-p:focus p,
-p:visited:focus p {
+a:focus h2,
+a:visited:focus h2,
+a:focus h4,
+a:visited:focus h4,
+a:focus p,
+a:visited:focus p {
   background: #004e66;
   color: white !important;
   outline: 0;
@@ -552,7 +552,8 @@ video {
   background-position: 5% 50%;
   background-size: 10px;
 }
-.calltoaction:hover {
+.calltoaction:hover,
+.calltoaction:focus {
   color: white;
   background: #004e66 url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
   background-position: 5% 50%;

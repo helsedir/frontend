@@ -9,7 +9,8 @@
     <link href="../css/bootstrap-full.min.css" rel="stylesheet" />
 
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet" />  <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/masterpage.css" rel="stylesheet" />
     <link href="../css/hoeringer.css" rel="stylesheet" />
 </head>
 
@@ -17,85 +18,90 @@
     <div id="header"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <ol class="breadcrumbs clearfix">
-                    <li><a href="forside.html">Forside</a></li>
-                </ol>
-
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <h1>Høringer</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <article class="col-md-12 col-lg-12 sectionwithaside">
-
-                        <aside class="aside">
-                            <div>
-                                <h2>Avgrens visning</h2>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="tema">Tema</label>
-                                        <select id="tema" class="form-control">
-                                            <option class="tema_select_all">Alle tema</option>
-                                            <optgroup label="Folkehelse">
-                                                <option>   Alle i Folkehelse (15)</option>
-                                                <option>Folkehelsearbeid (9)</option>
-                                                <option>Seksuell helse (4)</option>
-                                                <option>Miljørettet helsevern (1)</option>
-                                            </optgroup>
-                                            <optgroup label="Helse og omsorgstjenester">
-                                                <option>Alle i Helse- og omsorgstjenester (37)</option>
-                                                <option>Omsorgstjenester (18)</option>
-                                                <option>Tannhelse (8)</option>
-                                                <option>Helsestasjon og skoletjenesten (1)</option>
-                                                <option>Sjeldne tilstander (1)</option>
-                                            </optgroup>
-                                            <optgroup label="Helsepersonell">
-                                                <option>Alle i Helsepersonell (6)</option>
-                                            </optgroup>
-                                            <optgroup label="Psykisk helse og rus">
-                                                <option>Alle i psykisk helse og rus (28)</option>
-                                                <option>Psykisk helsevern (6)</option>
-                                                <option>Behandling av rusmiddelproblemer i TSB (2)</option>
-                                                <option>Psykisk helsearbeid i kommunen (15)</option>
-                                                <option>Vold og traumer (1)</option>
-                                                <option>Rusmiddelarbeid i kommunen (10)</option>
-                                                <option>Brukere og pårørende (3)</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </form>
+            <article class="col-md-8">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li><a href="forside.html">Forside</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Høringer</h1>
+                    <div class="border"></div>
+                </header>
+                <aside class="aside alignwithheader">
+                    <div class="refinesearch">
+                        <h2>Avgrens visning</h2>
+                        <form class="dropdown">
+                            <div class="form-group">
+                                <label for="tema">Tema</label>
+                                <select id="tema" class="form-control">
+                                    <option>Alle tema</option>
+                                    <option>
+                                        Finansiering og helseøkonomi (3)
+                                    </option>
+                                    <option>
+                                        Folkehelse (307)
+                                    </option>
+                                    <option>
+                                        Giftinformasjon (4)
+                                    </option>
+                                    <option>
+                                        Global helse (10)
+                                    </option>
+                                    <option>
+                                        Helse- og omsorgstjenester (197)
+                                    </option>
+                                    <option>
+                                        Helsepersonell (20)
+                                    </option>
+                                    <option>
+                                        IT og helse (24)
+                                    </option>
+                                    <option>
+                                        Kvalitet og planlegging (250)
+                                    </option>
+                                    <option>
+                                        Psykisk helse og rus (117)
+                                    </option>
+                                    <option>
+                                        Samhandlingsreformen (3)
+                                    </option>
+                                    <option>
+                                        Statistikk og analyse (75)
+                                    </option>
+                                </select>
                             </div>
-                        </aside>
-                        <div class="hoeringer">
-                            <a href="#">Veileder for Nødnett i helsetjenesten</a>
-                            <p class="hoeringer_status">Ute på høring</p>
-                            <p class="hoeringer_deadline">Høringsfrist: 02.06.2014</p>
-                        </div>
-                        <div class="hoeringer">
-                            <a href="#">Kvinnehelse - 10 år etter kvinnestrategien</a>
-                            <p class="hoeringer_status">Ute på høring</p>
-                            <p class="hoeringer_deadline">Høringsfrist: 27.06.2014</p>
-                        </div>
-                        <div class="hoeringer">
-                            <a href="hoeringer_underbehandling.html">Utkast til revidering av veileder til forskrift om miljørettet helsevern i barnehager og skoler</a>
-                            <p class="hoeringer_status">Under behandling</p>
-                            <p class="hoeringer_deadline">Behandlingsfrist: 01.06.2014</p>
-                        </div>
-                        <div class="toggleshowmorenews">
-                            <div class="showmorenews"><a href="#" onclick="return false;">Vis flere høringer</a></div>
-                        </div>
-                    </article>
-                </div>
-                <aside class="aside">
-                    <div class="module_subscribe clearfix">
-                        <p>Abonnér på denne siden</p>
-                        <i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a>
-                        <i class="fa fa-rss fa-lg"></i><a href="#">RSS-strøm</a>
+                        </form>
                     </div>
                 </aside>
-            </div>
+                <section class="sectionwithaside">
+                    <div class="hoeringer">
+                        <a href="#">Veileder for Nødnett i helsetjenesten</a>
+                        <p class="hoeringer_status">Ute på høring</p>
+                        <p class="hoeringer_deadline">Høringsfrist: 02.06.2014</p>
+                    </div>
+                    <div class="hoeringer">
+                        <a href="#">Kvinnehelse - 10 år etter kvinnestrategien</a>
+                        <p class="hoeringer_status">Ute på høring</p>
+                        <p class="hoeringer_deadline">Høringsfrist: 27.06.2014</p>
+                    </div>
+                    <div class="hoeringer">
+                        <a href="hoeringer_underbehandling.html">Utkast til revidering av veileder til forskrift om miljørettet helsevern i barnehager og skoler</a>
+                        <p class="hoeringer_status">Under behandling</p>
+                        <p class="hoeringer_deadline">Behandlingsfrist: 01.06.2014</p>
+                    </div>
+                    <div class="toggleshowmorenews">
+                        <div class="showmorenews"><a href="#" onclick="return false;">Vis flere høringer</a></div>
+                    </div>
+                </section>
+                <aside class="aside bottom ">
+                    <div class="module_subscribe">
+                        <p class="header">Abonnér på denne siden</p>
+                        <a href="#" class="e-mail"><img src="../img/ikon_epost.svg" alt="" /><p>E-post</p></a>
+                        <a href="#" class="rss"><img src="../img/ikon_rss.svg" alt="" /><p>RSS-strøm</p></a>
+                    </div>
+                </aside>
+            </article>
         </div>
     </div>
 

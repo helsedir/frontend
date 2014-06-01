@@ -41,30 +41,34 @@
 .entrancebutton {
     width: 250px;
     height: 230px;
-    border-radius: 4px;
-    background: @colorDarkBlue;
     margin: 30px 30px 0 0;
     float: left;
     position: relative;
     transition: all 0.5s;
 
     &.menu {
-        background: #838078;
+        a {
+            background: #838078;
 
-        h3 {
-            text-align: center;
-            position: relative;
-            margin: 80px 10px 15px 12px;
-        }
+            h3 {
+                text-align: center;
+                position: relative;
+                margin: 80px 10px 15px 12px;
+            }
 
-        &.js-expanded {
-            background-color: #dbdcdd;
-            color: black;
-            padding-bottom: 65px;
-        }
+            &.js-expanded {
+                background-color: #dbdcdd;
+                color: black;
+                padding-bottom: 65px;
+            }
 
-        &:hover {
-            background: #666460;
+            &:hover {
+                background: #666460;
+            }
+
+            &:focus {
+                background: #666460;
+            }
         }
     }
 
@@ -74,6 +78,17 @@
         display: inline-block;
         color: white;
         text-decoration: none;
+        border-radius: 4px;
+        background: @colorDarkBlue;
+
+        &:hover {
+            background: #02343f;
+
+            h2, p, &:focus, h2:focus, p:focus {
+                text-decoration: none;
+                color: white;
+            }
+        }
 
         .innerDiv {
             position: relative;
@@ -104,19 +119,18 @@
         p {
             line-height: 23px;
         }
+
+        &:focus {
+            background: #02343f;
+
+            h2, p {
+                background: #02343f;
+            }
+        }
     }
 
     &:visited, &:hover {
         color: white;
-    }
-
-    &:hover {
-        background: #02343f;
-
-        a, h2, p, a:focus, h2:focus, p:focus {
-            text-decoration: none;
-            color: white;
-        }
     }
 }
 

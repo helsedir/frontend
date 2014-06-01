@@ -8,19 +8,25 @@
     <link href="../css/fonts.css" rel="stylesheet">
 
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet" />  <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/masterpage.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="header"></div>
     <div class="container">
-        <ol class="breadcrumbs clearfix">
-            <li><a href="forside.html">Forside</a></li>
-            <li><a href="transportside_omoss.html">Om Helsedirektoratet</a></li>
-        </ol>
-        <section class="row">
-            <article class="col-md-12 col-lg-8">
-                <h1>Kontakt oss</h1>
+        <div class="row">
+            <article class="col-md-8">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li><a href="forside.html">Forside</a></li>
+                            <li><a href="transportside_omoss.html">Om Helsedirektoratet</a></li>
+                        </ol>
+                    </nav>
+
+                    <h1>Kontakt oss</h1>
+                </header>
                 <section>
                     <h2>Sentralbord</h2>
                     <div>
@@ -32,9 +38,11 @@
                 <section>
                     <h2>Finn ansatt</h2>
                     <div>
-                        <form class="search">
-                            <input type="search" placeholder="Søk etter navn, kompetanse, tema eller avdeling" value="Søk etter navn, kompetanse, tema eller avdeling" /><button class="btn">Søk</button>
+                        <form>
+                            <label for="searchinput" class="visuallyhidden">Søk</label>
+                            <input id="searchinput" class="search" type="text" placeholder="Søk etter navn, kompetanse, tema eller avdeling" />
                         </form>
+
                         <p>Søk etter ansatt på navn, avdeling eller kompetanse eller <a href="artikkel_organisasjonskart.html">finn ansatt via organisasjonskartet</a></p>
                     </div>
                 </section>
@@ -93,7 +101,7 @@
                     </div>
                 </section>
             </article>
-        </section>
+        </div>
     </div>
 
     <div id="footer"></div>

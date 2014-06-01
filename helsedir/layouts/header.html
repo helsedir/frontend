@@ -1,12 +1,17 @@
-﻿<div class="container">
-    <header class="row ">
+﻿<div class="shortcuts">
+    <ul>
+        <li><a href="#content" id="contentshortcut">Innhold</a></li>
+    </ul>
+</div>
+<div class="container">
+    <header class="row masterheader">
         <div class="col-xs-8 col-sm-8 col-md-5 col-lg-4">
             <a href="forside.html"><span id="logo"></span></a>
         </div>
 
         <div class="col-md-2 col-lg-2 hidden-xs hidden-sm ">
             <div class="menubutton pull-right">
-                <a href="#" class="js-expander menyknapp">
+                <a href="#" class="js-expander">
                     <span>Alt innhold</span>
                     <i class="fa fa-bars"></i>
                 </a>
@@ -36,14 +41,16 @@
         <div class="container">
             <nav class="tabs">
                 <ul class="tab-links">
-                    <li class="active"><a href="#tabCategoriesHeader">Kategorier</a></li>
-                    <li><a href="#tabAlphabeticHeader">Innhold A-Å</a></li>
+                    <li class="active"><a id="content_categories_link" href="#tabCategoriesHeader">Kategorier</a></li>
+                    <li><a id="content_fullist_link" href="#tabAlphabeticHeader">Innhold A-Å</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="tabCategoriesHeader" class="tab active">
 
                         <div class="row">
                             <div class="col-sm-6 col-md-4">
+                                <a id="content_categories" tabindex="-1"></a>
+
                                 <ul>
                                     <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer</a></li>
                                     <li><a href="#">Nasjonale strategier og planer</a></li>
@@ -78,6 +85,7 @@
                     <div id="tabAlphabeticHeader" class="tab">
                         <div class="row alfabetisk">
                             <div class="col-sm-2 col-md-3 col-lg-3">
+                                <a id="content_fullist" tabindex="-1"></a>
 
                                 <ul>
                                     <li>A</li>
@@ -213,3 +221,4 @@
         </div>
     </div>
 </div>
+<a id="content" tabindex="-1"></a>

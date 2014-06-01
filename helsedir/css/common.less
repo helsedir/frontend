@@ -132,20 +132,18 @@ a {
         color: @colorMediumBlue;
         text-decoration: underline;
     }
-}
 
-p {
-    &:focus, &:visited:focus {
-        h2, h4, p {
+        &:focus, &:visited:focus {
+            h2, h4, p {
+                background: @colorDarkBlue;
+                color: white !important;
+                outline: 0;
+            }
+
             background: @colorDarkBlue;
             color: white !important;
             outline: 0;
         }
-
-        background: @colorDarkBlue;
-        color: white !important;
-        outline: 0;
-    }
 }
 
 .marginTop20px {
@@ -660,7 +658,7 @@ video {
     background-position: 5% 50%;
     background-size: 10px;
 
-    &:hover {
+    &:hover, &:focus {
         color: white;
         background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
         background-position: 5% 50%;
