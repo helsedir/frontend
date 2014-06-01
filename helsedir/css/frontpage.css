@@ -189,11 +189,11 @@
     margin: 0;
     color: white;
   }
-  .entrancebutton.menu h3 {
+  .entrancebutton.menu a h3 {
     margin: 15px 0 15px 12px;
-    text-align: left;
+    text-align: center;
   }
-  .entrancebutton.menu h3 .fa-bars {
+  .entrancebutton.menu a h3 .fa-bars {
     padding-left: 10px;
   }
 }

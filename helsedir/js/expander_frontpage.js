@@ -35,19 +35,4 @@
             $('#mainsearch input').focus();
         }
     });
-
-    $('#menushortcut').on('click', function () {
-        if (visible) {
-            expandedContent.slideUp('fast', function () {
-                expandedContent.addClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        } else {
-            expandedContent.slideUp(0, function () {
-                expandedContent.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
-        visible = !visible;
-    });
 });

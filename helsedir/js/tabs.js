@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    //script for hanlding tabs
+
     $('.tab').addClass('visuallyhidden');
     $('.tab.active').removeClass('visuallyhidden');
 
