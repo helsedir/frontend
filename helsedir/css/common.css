@@ -298,10 +298,11 @@ p:visited:focus p {
 }
 .search {
   margin-top: 30px;
+  width: 70%;
+  height: 40px;
+  padding: 5px 10px;
   background: #ffffff url('../img/ikon_forstorrelsesglass.svg') right center no-repeat;
   border: 1px solid #004e66;
-  padding: 5px 10px;
-  height: 40px;
   background-size: auto 80%;
   background-position: 97%;
   cursor: pointer;

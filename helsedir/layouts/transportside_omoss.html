@@ -10,32 +10,25 @@
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/transportside.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="header"></div>
     <div class="container ">
         <div class="row">
-            <nav class="col-md-12">
+            <div class="col-md-8">
                 <ol class="breadcrumbs clearfix">
                     <li><a href="forside.html">Forside</a></li>
                 </ol>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Om Helsedirektoratet</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 clearfix">
 
-                <h2 style="margin-top: 20px;">Finn kontaktperson</h2>
-                <form class="form-search form-horizontal" role="form">
-                    <label class="sr-only" for=""> Søk etter navn, kompetanse, tema eller avdeling</label>
-                    <div class="search">
-                        <input type="text" class="form-control input-lg typeahead" placeholder="Søk etter navn, kompetanse, tema eller avdeling">
-                    </div>
+                <h1>Om Helsedirektoratet</h1>
+                <div class="border"></div>
+
+                <h2>Finn kontaktperson</h2>
+                <form>
+                    <label for="searchinput" class="visuallyhidden">Søk etter navn, kompetanse, tema eller avdeling</label>
+                    <input id="searchinput" class="search" type="text" placeholder="Søk etter navn, kompetanse, tema eller avdeling" />
                 </form>
 
                 <div class="transportsideknapp clearfix">
@@ -106,14 +99,6 @@
                     <p>
                         Logoer, designretningslinjer
                     </p>
-                </div>
-
-                <h2>Fakta om Helsedirektoratet</h2>
-                <div class="spennendeTall">
-                    <p>noen spennende tall</p>
-                </div>
-                <div class="spennendeTall">
-                    <p>noen spennende tall</p>
                 </div>
             </div>
         </div>
