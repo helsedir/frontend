@@ -21,10 +21,10 @@
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
-  transition: all 0.5s;
 }
 .entrancebutton.menu a {
   background: #838078;
+  transition: all 0.5s;
 }
 .entrancebutton.menu a h3 {
   text-align: center;
@@ -50,6 +50,7 @@
   text-decoration: none;
   border-radius: 4px;
   background: #004e66;
+  transition: all 0.5s;
 }
 .entrancebutton a:hover {
   background: #02343f;
