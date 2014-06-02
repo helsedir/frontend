@@ -450,31 +450,68 @@ footer, .toppmeny {
         border-radius: 3px;
         margin: 20px 0 20px 0;
 
-        a {
-            background: @colorLightBlue;
-            padding: 10px 17px 15px 17px;
-            float: left;
-            line-height: 35px;
-            margin-top: 10px;
+        div {
+            word-spacing: -5px;
 
-            img {
-                height: 22px;
+            a {
+                padding: 31px 31px 30px 30px;
+                line-height: 35px;
+                margin-top: 10px;
+                display: inline-block;
+
+                img {
+                    height: 22px;
+                }
+
+                &.facebook, &.twitter, &.linkedin, &.youtube {
+                    &:hover, &:focus {
+                        background-color: @colorDarkBlue;
+                    }
+                }
+
+                &.facebook {
+                    background: @colorLightBlue url(../img/sosiale_ikon_facebook.png);
+                    background: @colorLightBlue url(../img/sosiale_ikon_facebook.svg);
+                    background-repeat: no-repeat;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.twitter {
+                    background: @colorLightBlue url(../img/sosiale_ikon_twitter.png);
+                    background: @colorLightBlue url(../img/sosiale_ikon_twitter.svg);
+                    background-repeat: no-repeat;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.linkedin {
+                    background: @colorLightBlue url(../img/sosiale_ikon_linkedin.png);
+                    background: @colorLightBlue url(../img/sosiale_ikon_linkedin.svg);
+                    background-repeat: no-repeat;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.youtube {
+                    background: @colorLightBlue url(../img/sosiale_ikon_youtube.png);
+                    background: @colorLightBlue url(../img/sosiale_ikon_youtube.svg);
+                    background-repeat: no-repeat;
+                    background-size: 53px 22px;
+                    background-position: 50%;
+                }
             }
 
-            &:hover, &:focus {
-                background: @colorDarkBlue;
-            }
+                a:last-of-type {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+
+                a:first-of-type {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
         }
-
-            a:last-of-type {
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
-            }
-
-            a:first-of-type {
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
-            }
     }
 }
 

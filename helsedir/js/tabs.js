@@ -6,7 +6,6 @@
 
     $('.tabs .tab-links a').on('click', function (e) {
         var currentAttrValue = $(this).attr('href');
-        console.log(currentAttrValue);
         // Show/Hide Tabs
         $('.tabs ' + currentAttrValue).addClass('active');
         $('.tabs ' + currentAttrValue).removeClass('visuallyhidden');
