@@ -1,106 +1,55 @@
 ﻿$(function () {
-    $('.department').each(function () {
+    $('.department .person').each(function () {
         $(this).addClass('visuallyhidden');
     });
 
-    $('#folkehelse').on('click', function () {
-        $('#folkehelse').toggleClass('selected');
-        var content = $('.department.folkehelse');
+    $('#helseoekonomiogfinansiering, #administrasjon, #primaerhelsetjenesten, #ehelseogit, #spesialisthelsetjenesten,#folkehelse ').on('click', function () {
+        event.preventDefault();
 
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-        } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
+        $(this).toggleClass('selected');
+        var id = $(this).attr('id');
+        var department = ".department." + id;
+        $('.person', department).each(function () {
+            if (!$(this).hasClass("visuallyhidden")) {
+                $(this).slideUp('fast', function () {
+                    $(this).addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+            } else {
+                $(this).slideUp(0, function () {
+                    $(this).removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            }
+        });
+        $('.sub-department', department).each(function () {
+            var windowWidth = $(window).width();
+            if (windowWidth <= 1199) {
+                if (!$(this).hasClass("visuallyhidden")) {
+                    $(this).slideUp('fast', function () {
+                        $(this).addClass('visuallyhidden')
+                            .slideDown(0);
+                    });
+                } else {
+                    $(this).slideUp(0, function () {
+                        $(this).removeClass('visuallyhidden')
+                            .slideDown(500);
+                    });
+                }
+            }
+        });
     });
 
-    $('#spesialisthelsetjenesten').on('click', function () {
-        $('#spesialisthelsetjenesten').toggleClass('selected');
-        var content = $('.department.spesialisthelsetjenesten');
+    $(window).on('load resize', function () {
+        var windowWidth = $(window).width();
 
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
+        if (windowWidth <= 1199) {
+            $(".sub-department").each(function () {
+                $(this).addClass('visuallyhidden');
             });
         } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
-    });
-
-    $('#ehelseogit').on('click', function () {
-        $('#ehelseogit').toggleClass('selected');
-        var content = $('.department.ehelseogit');
-
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-        } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
-    });
-
-    $('#primaerhelsetjenesten').on('click', function () {
-        $('#primaerhelsetjenesten').toggleClass('selected');
-        var content = $('.department.primaerhelsetjenesten');
-
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-        } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
-    });
-
-    $('#administrasjon').on('click', function () {
-        $('#administrasjon').toggleClass('selected');
-        var content = $('.department.administrasjon');
-
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-        } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-        }
-    });
-
-    $('#helseoekonomiogfinansiering').on('click', function () {
-        $('#helseoekonomiogfinansiering').toggleClass('selected');
-        var content = $('.department.helseoekonomiogfinansiering');
-
-        if (!content.hasClass("visuallyhidden")) {
-            content.slideUp('fast', function () {
-                content.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-        } else {
-            content.slideUp(0, function () {
-                content.removeClass('visuallyhidden')
-                    .slideDown(500);
+            $(".sub-department").each(function () {
+                $(this).removeClass('visuallyhidden');
             });
         }
     });

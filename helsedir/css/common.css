@@ -303,9 +303,10 @@ a:visited:focus p {
   width: 70%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url('../img/search_icon.png') center no-repeat;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') center no-repeat;
   border: 1px solid #004e66;
   background-size: auto 80%;
+  background-position: 97% 50%;
   background-position-x: 97%;
   background-position-y: 50%;
   cursor: pointer;
@@ -1120,16 +1121,6 @@ fieldset {
   }
 }
 @media only screen and (min-width: 900px) {
-  .module_subscribe {
-    margin: 0;
-    padding: 0;
-  }
-  .message_module {
-    margin: 0;
-  }
-  .module {
-    margin: 0;
-  }
   .statistics_compare button {
     margin-top: 30px;
   }
@@ -1140,6 +1131,16 @@ fieldset {
 @media only screen and (max-width: 900px) {
   iframe {
     width: 100%;
+  }
+  .module_subscribe {
+    margin: 0;
+    padding: 0;
+  }
+  .message_module {
+    margin: 0;
+  }
+  .module {
+    margin: 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
