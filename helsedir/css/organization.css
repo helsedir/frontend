@@ -23,6 +23,11 @@
 }
 .division .division_header p.division_name {
   text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Calibri';
+}
+.division .division_header p:last-of-type {
+  display: none;
 }
 .division .division_header.last {
   margin: 20px 0 10px 0;
@@ -219,10 +224,7 @@
     text-align: left;
     margin: 0;
   }
-  .division .division_header p:last-of-type {
-    display: none;
-  }
-  .division .division_header p:before {
+  .division .division_header p.division_name:before {
     content: "\f107";
     font-family: "FontAwesome";
     font-size: 25px;
@@ -230,7 +232,12 @@
     float: right;
     margin-right: 10px;
   }
-  .division .division_header.selected p:before {
+  .division .division_header p:last-of-type {
+    display: block;
+    font-size: 18px;
+    font-family: 'Calibri';
+  }
+  .division .division_header.selected p.division_name:before {
     content: "\f106";
     font-family: "FontAwesome";
     font-size: 25px;
@@ -251,6 +258,7 @@
   .division .division_header#primaerhelsetjenesten.selected:before,
   .division .division_header#administrasjon.selected:before {
     content: '';
+    background: none;
   }
   .division .department {
     width: 100%;
