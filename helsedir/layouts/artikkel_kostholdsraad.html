@@ -65,7 +65,7 @@
                             <div class="module module_statistics_graph">
                                 <div class="module_description">Statistikk</div>
                                 <h5 class="module_header">
-                                    Mengde (%) tilsatt sukker i norsk kosthold
+                                    Antall fedmeoperasjoner
                                 </h5>
                                 <div id="module_chart_div"></div>
 
@@ -188,31 +188,35 @@
         google.setOnLoadCallback(drawChart);
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ['år', 'kg/person/år', 'energiprosent'],
-                ['1970', 44, 14],
-                ['1980', 45, 18],
-                ['1990', 51, 15],
-                ['2000', 28, 18],
-                ['2010', 25, 11]
+              ['Year', 'Menn', 'Kvinner'],
+              ['2013', 1322, 6348],
+
             ]);
 
             var options = {
-                vAxis: { minValue: 0, maxValue: 50 },
+                //                vAxis: { minValue: 0, maxValue: 50 },
                 //                chartArea: { left: "5%", width: "60%" }
-                'chartArea': { 'width': '80%', 'height': '70%' },
+                'chartArea': { 'width': '70%', 'height': '70%' },
+                //                legend: {
+                //                    position: 'bottom',
+                //                    alignment: 'start'
+                //                },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+                //                series: {
+                //                    0: { lineDashStyle: [14, 7] },
+                //                    1: { lineDashStyle: [5, 5] },
+                //                    4: { lineDashStyle: [7, 14] }
+                //                }, lineWidth: 3
                 legend: {
                     position: 'bottom',
                     alignment: 'start'
                 },
-                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
-                series: {
-                    0: { lineDashStyle: [14, 7] },
-                    1: { lineDashStyle: [5, 5] },
-                    4: { lineDashStyle: [7, 14] }
-                }, lineWidth: 3
+                bar: {
+                    groupWidth: "50%"
+                }
             };
 
-            var chart = new google.visualization.LineChart(document.getElementById('module_chart_div'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_div'));
             chart.draw(data, options);
         }
 

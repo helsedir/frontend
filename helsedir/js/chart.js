@@ -26,7 +26,8 @@ function drawChart() {
             position: 'bottom',
             alignment: 'start'
         },
-        colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+        colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+
         series: {
             0: { lineDashStyle: [14, 7] },
             1: { lineDashStyle: [5, 5] },

@@ -4,7 +4,7 @@
     });
 
     $('#helseoekonomiogfinansiering, #administrasjon, #primaerhelsetjenesten, #ehelseogit, #spesialisthelsetjenesten,#folkehelse ').on('click', function () {
-        event.preventDefault();
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
         $(this).toggleClass('selected');
         var id = $(this).attr('id');
@@ -37,6 +37,9 @@
                     });
                 }
             }
+            else if ($(this).hasClass('visuallyhidden')) {
+                $(this).removeClass('visuallyhidden');
+            };
         });
     });
 

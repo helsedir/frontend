@@ -1174,9 +1174,9 @@
                             <img src="../img/modules/EKG-mellomblaa.png" alt="" />
                         </div>
                     </div>
-
+                    <h2>Statistikk i relasjonsmoduler</h2>
                     <a name="hhs-statistikkmodul1"></a>
-                    <h3 class="illustrasjonOverskrift">Statistikkmodul 1</h3>
+                    <h3 class="illustrasjonOverskrift">Statistikk - tall</h3>
                     <div class="module module_statistics_text">
                         <div class="module_description">Statistikk</div>
                         <h5 class="module_header">
@@ -1192,15 +1192,49 @@
                     </div>
 
                     <a name="hhs-statistikkmodul2"></a>
-                    <h3 class="illustrasjonOverskrift">Statistikkmodul 2</h3>
+                    <h3 class="illustrasjonOverskrift">Statistikk - graf</h3>
                     <div class="module module_statistics_graph">
                         <div class="module_description">Statistikk</div>
                         <h5 class="module_header">
                             Mengde (%) tilsatt sukker i norsk kosthold
                         </h5>
-                        <div id="module_chart_div"></div>
+                        <div id="module_chart_line"></div>
 
                         <a href="#" class="internal-link aftertext">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                        <img src="../img/modules/EKG-lyseblaa.png" alt="" />
+                    </div>
+
+                    <a name="hhs-statistikkmodul3"></a>
+                    <h3 class="illustrasjonOverskrift">Statistikk - søyler</h3>
+                    <div class="module module_statistics_graph">
+                        <div class="module_description">Statistikk</div>
+                        <h5 class="module_header">
+                            Antall barn der viktigste henvisningsgrunn var skolevegring eller skolefravær
+                        </h5>
+                        <div id="module_chart_column"></div>
+
+                        <a href="#" class="internal-link aftertext">Flere tall om skulking</a>
+                        <img src="../img/modules/EKG-lyseblaa.png" alt="" />
+                    </div>
+                    <div class="module module_statistics_graph">
+                        <div class="module_description">Statistikk</div>
+                        <h5 class="module_header">
+                            Antall pasienter behandlet innen psykisk helsevern
+                        </h5>
+                        <div id="module_chart_column2"></div>
+                        <ul id="module_chart_column2_legend"></ul>
+                        <a href="#" class="internal-link aftertext">Flere tall om skulking</a>
+                        <img src="../img/modules/EKG-lyseblaa.png" alt="" />
+                    </div>
+
+                    <div class="module module_statistics_graph">
+                        <div class="module_description">Statistikk</div>
+                        <h5 class="module_header">
+                            Poliklinisk aktivitet innen somatikk
+                        </h5>
+                        <div id="module_chart_donut"></div>
+                        <div id="module_chart_donut_legend"></div>
+                        <a href="#" class="internal-link aftertext">Flere tall om avtalespesialister</a>
                         <img src="../img/modules/EKG-lyseblaa.png" alt="" />
                     </div>
 
@@ -1299,7 +1333,7 @@
                     position: 'bottom',
                     alignment: 'start'
                 },
-                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
                 series: {
                     0: { lineDashStyle: [14, 7] },
                     1: { lineDashStyle: [5, 5] },
@@ -1307,13 +1341,91 @@
                 }, lineWidth: 3
             };
 
-            var chart = new google.visualization.LineChart(document.getElementById('module_chart_div'));
+            var chart = new google.visualization.LineChart(document.getElementById('module_chart_line'));
             chart.draw(data, options);
         }
 
         $(window).resize(function () {
             drawChart();
         });
+    </script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['År', 'Skolevegring', 'Skolefravær'],
+                ['2012', 1000, 400],
+                ['2013', 1170, 460],
+            ]);
+
+            var options = {
+                title: '',
+                'chartArea': { 'width': '70%', 'height': '70%' },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
+            chart.draw(data, options);
+            $(window).resize(function () {
+                drawChart();
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['År', 'Barn og unge', 'Voksne og TSB(rusbehandling)'],
+              ['2012', 55576, 130016],
+              ['2013', 55300, 136000],
+            ]);
+
+            var options = {
+                title: '',
+                'chartArea': { 'width': '50%', 'height': '70%' },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+                legend: {
+                    position: 'none'
+                },
+
+            };
+            var colors = ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"];
+            var legend = document.getElementById('module_chart_column2_legend');
+            var lis = [];
+
+            var total = 0;
+            for (var i = 0; i < data.getNumberOfRows() ; i++) {
+                // increment the total
+                total += data.getValue(i, 1);
+
+                // get the data
+                var label = data.getValue(0, i + 1);
+                var year = data.getValue(i, 0);
+                var value = data.getValue(i, 1);
+
+                // create the legend entry
+                lis[i] = document.createElement('li');
+                lis[i].id = 'legend_' + data.getValue(i, 0);
+                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i] + ';"></div>' + label + ': ' + value + '</span>';
+
+                // append to the legend list
+                legend.appendChild(lis[i]);
+            }
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column2'));
+            chart.draw(data, options);
+
+            $(window).resize(function () {
+                drawChart();
+            });
+        }
     </script>
     <script>
         $('#chart_div_column').singleColumns({
@@ -1346,6 +1458,51 @@
             //columns: [{ 'city': 'Oslo', 'number': 33 }, { 'city': 'Trondheim', 'number': 60 }],
             animate: true
         });
+    </script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['avtalespesialist', 'prosent'],
+          ['Privat avtalespesialist', 22],
+          ['Offentlig avtalespesialist', 78],
+            ]);
+
+            var options = {
+                title: 'My Daily Activities',
+                pieHole: 0.4,
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+                legend: {
+                    position: 'none'
+                }
+            };
+            var colors = ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"];
+            var legend = document.getElementById('module_chart_donut_legend');
+            var lis = [];
+
+            var total = 0;
+            for (var i = 0; i < data.getNumberOfRows() ; i++) {
+                // increment the total
+                total += data.getValue(i, 1);
+
+                // get the data
+                var label = data.getValue(i, 0);
+                var value = data.getValue(i, 1);
+                var percent = Math.ceil(1000 * value / total) / 10;
+
+                // create the legend entry
+                lis[i] = document.createElement('li');
+                lis[i].id = 'legend_' + data.getValue(i, 0);
+                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i] + ';"></div>' + label + ': ' + value + '</span>';
+
+                // append to the legend list
+                legend.appendChild(lis[i]);
+            }
+
+            var chart = new google.visualization.PieChart(document.getElementById('module_chart_donut'));
+            chart.draw(data, options);
+        }
     </script>
 </body>
 </html>

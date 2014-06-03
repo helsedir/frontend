@@ -652,8 +652,8 @@ h4.keyfigures {
 }
 .module .module_header {
   font-family: "soho gothic pro regular";
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 5px;
   color: #222;
 }
@@ -726,6 +726,9 @@ h4.keyfigures {
 }
 .module.module_statistics_text {
   max-width: 270px;
+}
+.module.module_statistics_graph {
+  max-width: 300px;
 }
 .module .external-link {
   margin-top: 0;
@@ -954,7 +957,7 @@ fieldset {
 }
 .message_module .module_header {
   font-family: "soho gothic pro regular";
-  font-size: 28px;
+  font-size: 24px;
   line-height: 36px;
   margin-bottom: 25px;
   color: #222;
@@ -1065,6 +1068,11 @@ fieldset {
 }
 .iveCharts .title.small {
   font-size: 16px;
+}
+#graph-source {
+  float: right;
+  font-size: 18px;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 1200px) {
   .aside {
