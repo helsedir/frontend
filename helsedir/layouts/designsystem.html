@@ -1427,7 +1427,7 @@
         google.setOnLoadCallback(drawChart);
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-              ['År', 'Barn og unge', 'Voksne og TSB(rusbehandling)'],
+              ['År', 'Barn og unge', 'Voksne og TSB (rusbehandling)'],
               ['2012', 55576, 130016],
               ['2013', 55300, 136000],
             ]);
@@ -1446,19 +1446,17 @@
             var lis = [];
 
             var total = 0;
-            for (var i = 0; i < data.getNumberOfRows() ; i++) {
+            for (var i = 1; i < data.getNumberOfColumns() ; i++) {
                 // increment the total
-                total += data.getValue(i, 1);
-
+                //                total += data.getValue(i, 1);
                 // get the data
-                var label = data.getValue(0, i + 1);
-                var year = data.getValue(i, 0);
-                var value = data.getValue(i, 1);
-
+                var label = data.getColumnLabel(i, 0);
+                //                var year = data.getValue(i, i);
+                //                var value = data.getValue(i, 1);
                 // create the legend entry
                 lis[i] = document.createElement('li');
-                lis[i].id = 'legend_' + data.getValue(i, 0);
-                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i] + ';"></div>' + label + ': ' + value + '</span>';
+                lis[i].id = 'legend_' + data.getColumnLabel(i, 0);
+                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i - 1] + ';"></div>' + label + '</span>';
 
                 // append to the legend list
                 legend.appendChild(lis[i]);
@@ -1538,7 +1536,7 @@
                 // create the legend entry
                 lis[i] = document.createElement('li');
                 lis[i].id = 'legend_' + data.getValue(i, 0);
-                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i] + ';"></div>' + label + ': ' + value + '</span>';
+                lis[i].innerHTML = '<div class="legendMarker" style="background-color:' + colors[i] + ';"></div>' + label + ': ' + value + '%' + '</span>';
 
                 // append to the legend list
                 legend.appendChild(lis[i]);
