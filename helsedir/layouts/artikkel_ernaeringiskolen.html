@@ -115,23 +115,55 @@
                             <div class="module module_statistics_graph">
                                 <div class="module_description">Statistikk</div>
                                 <h5 class="module_header">
-                                    Mengde (%) tilsatt sukker i norsk kosthold
+                                    Antall barn der viktigste henvisningsgrunn var skolevegring eller skolefravær
                                 </h5>
-                                <div id="module_chart_div"></div>
+                                <div id="module_chart_column"></div>
 
-                                <a href="#" class="internal-link aftertext">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
-                                <img src="../img/modules/EKG-lyseblaa.png" alt="">
+                                <a href="#" class="internal-link aftertext">Flere tall om skulking</a>
+                                <img src="../img/modules/EKG-lyseblaa.png" alt="" />
                             </div>
                         </aside>
                     </div>
                 </section>
-                <section>
+                <section class="sectionwithaside">
                     <h2 class="accordion_mobile">Lær av andre</h2>
                     <div>
                         <h3>Navn på et spennende prosjekt</h3>
                         <p>Kort beskrivelse av prosjektet</p>
                         <a href="#">lenke til er om prosjektet (eksternt)</a>
+
+                        <h3>Navn på et spennende prosjekt</h3>
+                        <p>Kort beskrivelse av prosjektet</p>
+                        <a href="#">lenke til er om prosjektet (eksternt)</a>
+
+                        <h3>Navn på et spennende prosjekt</h3>
+                        <p>Kort beskrivelse av prosjektet</p>
+                        <a href="#">lenke til er om prosjektet (eksternt)</a>
+
+                        <h3>Navn på et spennende prosjekt</h3>
+                        <p>Kort beskrivelse av prosjektet</p>
+                        <a href="#">lenke til er om prosjektet (eksternt)</a>
+
+                        <h3>Navn på et spennende prosjekt</h3>
+                        <p>Kort beskrivelse av prosjektet</p>
+                        <a href="#">lenke til er om prosjektet (eksternt)</a>
+                        <h3>Navn på et spennende prosjekt</h3>
+                        <p>Kort beskrivelse av prosjektet</p>
+                        <a href="#">lenke til er om prosjektet (eksternt)</a>
                     </div>
+                    <aside class="aside">
+                        <div class="module module_statistics_text">
+                            <div class="module_description">Statistikk</div>
+                            <h5 class="module_header">
+                                Skolevegring øker
+                            </h5>
+                            <p class="keyfigures">1200</p>
+                            <p>barn hadde skolevegring som viktigste henvisningsgrunn i 2013</p>
+                            <p class="keyfigures">973</p>
+                            <p>barn hadde det i 2012</p>
+                            <img src="../img/modules/EKG-lyseblaa.png" alt="" />
+                        </div>
+                    </aside>
                 </section>
                 <aside class="aside top">
                     <div class="module_person ">
@@ -174,37 +206,28 @@
         google.setOnLoadCallback(drawChart);
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ['år', 'kg/person/år', 'energiprosent'],
-                ['1970', 44, 14],
-                ['1980', 45, 18],
-                ['1990', 51, 15],
-                ['2000', 28, 18],
-                ['2010', 25, 11]
+                ['År', 'Skolevegring', 'Skolefravær'],
+                ['2012', 1000, 400],
+                ['2013', 1170, 460],
             ]);
 
             var options = {
-                vAxis: { minValue: 0, maxValue: 50 },
-                //                chartArea: { left: "5%", width: "60%" }
-                'chartArea': { 'width': '80%', 'height': '70%' },
+                title: '',
+                'chartArea': { 'width': '70%', 'height': '70%' },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+
                 legend: {
                     position: 'bottom',
                     alignment: 'start'
                 },
-                colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
-                series: {
-                    0: { lineDashStyle: [14, 7] },
-                    1: { lineDashStyle: [5, 5] },
-                    4: { lineDashStyle: [7, 14] }
-                }, lineWidth: 3
             };
 
-            var chart = new google.visualization.LineChart(document.getElementById('module_chart_div'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
             chart.draw(data, options);
+            $(window).resize(function () {
+                drawChart();
+            });
         }
-
-        $(window).resize(function () {
-            drawChart();
-        });
     </script>
 </body>
 </html>

@@ -14,16 +14,11 @@ function drawChart() {
         title: '',
         'chartArea': { 'width': '70%', 'height': '70%' },
         colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
-
         legend: {
             position: 'bottom',
             alignment: 'start'
         },
     };
-
-    var source_label = document.getElementById('graph-source');
-    var source_name = 'Helsedirektoratet, Norsk Pasientregister'
-    source_label.innerHTML = '<span>' + 'Kilde: ' + source_name + '</span>';
 
     var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
     chart.draw(data, options);

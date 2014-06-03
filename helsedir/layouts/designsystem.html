@@ -1203,6 +1203,15 @@
                         <a href="#" class="internal-link aftertext">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
                         <img src="../img/modules/EKG-lyseblaa.png" alt="" />
                     </div>
+                    <div class="module module_statistics_graph">
+                        <div class="module_description">Statistikk</div>
+                        <h5 class="module_header">
+                            Antall sykehusopphold med diabetes 1 + 2 med øyekomplikasjoner
+                        </h5>
+                        <div id="module_chart_line2"></div>
+                        <a href="#" class="internal-link aftertext">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                        <img src="../img/modules/EKG-lyseblaa.png" alt="" />
+                    </div>
 
                     <a name="hhs-statistikkmodul3"></a>
                     <h3 class="illustrasjonOverskrift">Statistikk - søyler</h3>
@@ -1354,6 +1363,42 @@
         google.setOnLoadCallback(drawChart);
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
+                ['år', 'Diabetes mellitus type I med øyekomplikasjoner', 'Diabetes mellitus type II med øyekompikasjoner'],
+                ['2009', 11879, 4948],
+                ['2010', 11273, 5661],
+                ['2011', 11489, 6570],
+                ['2012', 12082, 8515]
+            ]);
+
+            var options = {
+                vAxis: { minValue: 0, maxValue: 50, title: 'Antall' },
+                //                chartArea: { left: "5%", width: "60%" }
+                'chartArea': { 'width': '65%', 'height': '70%', 'left': '25%' },
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+                series: {
+                    0: { lineDashStyle: [14, 7] },
+                    1: { lineDashStyle: [5, 5] },
+                    4: { lineDashStyle: [7, 14] }
+                }, lineWidth: 3
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('module_chart_line2'));
+            chart.draw(data, options);
+        }
+
+        $(window).resize(function () {
+            drawChart();
+        });
+    </script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
                 ['År', 'Skolevegring', 'Skolefravær'],
                 ['2012', 1000, 400],
                 ['2013', 1170, 460],
@@ -1470,7 +1515,6 @@
             ]);
 
             var options = {
-                title: 'My Daily Activities',
                 pieHole: 0.4,
                 colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
                 legend: {
