@@ -97,7 +97,7 @@
   color: #004e66;
 }
 .menubutton a.js-expander.js-expanded {
-  padding-bottom: 44px;
+  padding-bottom: 46px;
   border-radius: 3px 3px 0 0;
   background-color: #d1d0c4;
   color: #004e66;
@@ -463,8 +463,90 @@ footer.rammeverk a:visited {
   .footerlinkswrapper .socialmedia a img {
     height: 16px;
   }
+  footer .tabs,
+  .toppmeny .tabs {
+    padding-left: 0;
+  }
+  footer .tabs .tab-links,
+  .toppmeny .tabs .tab-links {
+    padding-left: 0;
+  }
+  footer .tabs .tab-links li,
+  .toppmeny .tabs .tab-links li {
+    width: 100px;
+  }
+  footer .tabs .tab-links li a,
+  .toppmeny .tabs .tab-links li a {
+    padding: 0 15px 0 10px;
+  }
+  footer .tabs .tab-content,
+  .toppmeny .tabs .tab-content {
+    padding-left: 0;
+  }
+  .menubutton {
+    width: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+  }
+  .menubutton.mobile-menu {
+    display: inline-block;
+    border-radius: 3px;
+    background: #004e66 url('../img/ikon_meny_hvit.svg') no-repeat;
+    background-size: 15px;
+    background-position: center;
+  }
+  .menubutton.mobile-menu:hover {
+    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-menu.js-expanded {
+    padding-bottom: 47px;
+    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+    background-size: 15px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
+  }
+  .menubutton.mobile-search {
+    display: inline-block;
+    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search:focus {
+    text-decoration: none;
+    background-color: #dbdcdd;
+    color: #004e66;
+    border: solid 1px #004e66;
+  }
+  .menubutton.mobile-search:hover {
+    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search.js-expanded {
+    padding-bottom: 43px;
+    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background-size: 15px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
+  }
 }
 @media only screen and (max-width: 900px) {
+  .hidden-mobile {
+    display: none;
+    background-color: #dbdcdd;
+    padding: 20px;
+  }
+  .masterheader {
+    margin: 10px 0 10px 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .menubutton {
     width: 40px;
     margin-right: 5px;
@@ -486,7 +568,7 @@ footer.rammeverk a:visited {
     border-radius: 3px;
   }
   .menubutton.mobile-menu.js-expanded {
-    padding-bottom: 44px;
+    padding-bottom: 46px;
     background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
     background-size: 20px;
     background-position: 50% 35%;
@@ -517,14 +599,6 @@ footer.rammeverk a:visited {
     background-size: 29px;
     background-position: 50% 35%;
     border-radius: 3px 3px 0 0;
-  }
-  .hidden-mobile {
-    display: none;
-    background-color: #dbdcdd;
-    padding: 20px;
-  }
-  .masterheader {
-    margin: 10px 0 10px 0;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */

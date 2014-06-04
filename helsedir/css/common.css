@@ -53,7 +53,7 @@ h2 {
 }
 h2.accordion {
   border-bottom: 1px solid #004e66;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 h2.internal-link {
   color: #0093a7;
@@ -63,6 +63,10 @@ h3 {
   font-family: "soho gothic pro regular";
   margin: 35px 0 0 0;
   line-height: 36px;
+}
+h3.accordion {
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 10px;
 }
 h4 {
   font-weight: normal;
@@ -166,11 +170,13 @@ a:visited:focus p {
 .has-hidden-content h2:before,
 .has-hidden-content .accordion:before {
   float: left;
-  padding: 0 10px 0 0;
+  padding: 3px 10px 0 0;
   content: "\f107";
   font-family: "FontAwesome";
-  font-size: 50px;
-  color: #004e66;
+  font-size: 40px;
+}
+.has-hidden-content h3.accordion:before {
+  font-size: 30px;
 }
 .has-visible-content {
   cursor: pointer;
@@ -178,11 +184,13 @@ a:visited:focus p {
 .has-visible-content h2:before,
 .has-visible-content .accordion:before {
   float: left;
-  padding: 0 10px 0 0;
+  padding: 3px 10px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
-  font-size: 50px;
-  color: #004e66;
+  font-size: 40px;
+}
+.has-visible-content h3.accordion:before {
+  font-size: 30px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -319,8 +327,8 @@ a:visited:focus p {
   background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
   border: 1px solid #004e66;
   background-size: auto 80%;
-  background-position: 97% 50%;
-  background-position-x: 97%;
+  background-position: 99% 50%;
+  background-position-x: 99%;
   background-position-y: 50%;
   cursor: pointer;
 }
@@ -507,7 +515,7 @@ video {
   margin-top: 10px;
 }
 .bulletlist li {
-  margin: 0 0 10px 10px;
+  margin: 0 0 0 10px;
 }
 .bulletlist li:before {
   content: "•";
@@ -1089,7 +1097,6 @@ fieldset {
   font-size: 16px;
 }
 #graph-source {
-  float: right;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -1215,6 +1222,10 @@ fieldset {
   }
   .tabs .tab-content ul li {
     padding: 5px 0;
+  }
+  .accordion_mobile {
+    border-bottom: 1px solid #004e66;
+    padding-bottom: 10px;
   }
   .xs-no-padding {
     padding-left: 0 !important;
