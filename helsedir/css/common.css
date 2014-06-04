@@ -33,7 +33,7 @@ body {
 h1 {
   font-weight: normal;
   font-size: 48px;
-  font-family: "soho gothic pro light";
+  font-family: "Soho Gothic W01 Light";
   line-height: 60px;
   margin: 50px 0 0 0;
   color: #004e66;
@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 42px;
-  font-family: "soho gothic pro light";
+  font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
   color: #004e66;
 }
@@ -60,7 +60,7 @@ h2.internal-link {
 }
 h3 {
   font-size: 28px;
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   margin: 35px 0 0 0;
   line-height: 36px;
 }
@@ -73,7 +73,7 @@ h4 {
   font-size: 24px;
   line-height: 32px;
   margin-top: 55px;
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
 }
 h4.accordion {
   margin: 55px 0 0 0;
@@ -639,17 +639,17 @@ h4.keyfigures {
   font-size: 36px;
   color: #c63629;
   line-height: 42px;
-  font-family: "soho gothic pro light";
+  font-family: "Soho Gothic W01 Light";
 }
 .header2 {
   font-size: 36px;
   line-height: 42px;
-  font-family: "soho gothic pro light";
+  font-family: "Soho Gothic W01 Light";
   margin: 70px 0 0 0;
 }
 .header3 {
   font-size: 28px;
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   margin: 55px 0 0 0;
   line-height: 34px;
 }
@@ -672,7 +672,7 @@ h4.keyfigures {
   color: #0093a7;
 }
 .module .module_header {
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   font-size: 24px;
   line-height: 30px;
   color: #222;
@@ -764,7 +764,7 @@ h4.keyfigures {
 }
 .module_report .header3 {
   font-size: 28px;
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   line-height: 34px;
   margin: 0;
 }
@@ -805,10 +805,8 @@ h4.keyfigures {
 .crisis {
   margin: 15px;
   padding-bottom: 50px;
-  border: 5px solid #df9922;
-}
-.crisis .header2 {
-  color: #df9922;
+  background: white;
+  padding-top: 1px;
 }
 .crisis .header2,
 .crisis .header3 {
@@ -821,6 +819,21 @@ h4.keyfigures {
 .crisis .calltoaction {
   border-color: #df9922;
   color: black;
+}
+.crisis .border_crisis {
+  border-bottom: 5px solid #df9922;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.crisis #volcano {
+  height: 100px;
+  margin: 40px 60px;
+  display: block;
+}
+.crisis .bulletlist li:before {
+  content: "•";
+  color: #df9922;
+  margin-right: 20px;
 }
 .tema_select_all {
   font-weight: bold;
@@ -960,7 +973,7 @@ fieldset {
   border-bottom: 2px solid #004e66;
   margin-bottom: 17px;
   padding-bottom: 15px;
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   font-size: 28px;
   line-height: 42px;
 }
@@ -983,7 +996,7 @@ fieldset {
   margin-bottom: 25px;
 }
 .message_module .module_header {
-  font-family: "soho gothic pro regular";
+  font-family: "Soho Gothic W01 Regular";
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 25px;

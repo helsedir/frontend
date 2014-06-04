@@ -111,7 +111,7 @@
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
-        //icon: image
+        icon: image
     });
 }
 

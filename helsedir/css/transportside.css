@@ -9,6 +9,13 @@
   color: #0093a7;
   margin: 35px 0 0 0;
 }
+.transportsideknapp a h2:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+}
 .transportsideknapp a:visited {
   text-decoration: none;
   color: black;

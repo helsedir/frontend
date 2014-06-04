@@ -1,9 +1,8 @@
-﻿@fontRoboto: 'Roboto', sans-serif;
-@fontCalibri: 'Calibri';
+﻿@fontCalibri: 'Calibri';
 @fontCalibriBold: 'Calibri bold';
 @fontSoho: "soho gothic pro medium";
-@fontSohoLight: "soho gothic pro light";
-@fontSohoRegular: "soho gothic pro regular";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
 
 @colorDarkBlue: #004e66;
 @colorBlue023c49: #023c49;
@@ -943,10 +942,10 @@ p.keyfigures, h4.keyfigures {
 .crisis {
     margin: 15px;
     padding-bottom: 50px;
-    border: 5px solid @colorOrange;
+    background: white;
+    padding-top: 1px;
 
     .header2 {
-        color: @colorOrange;
     }
 
     .header2, .header3 {
@@ -961,6 +960,26 @@ p.keyfigures, h4.keyfigures {
     .calltoaction {
         border-color: @colorOrange;
         color: black;
+    }
+
+    .border_crisis {
+        border-bottom: 5px solid @colorOrange;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    #volcano {
+        height: 100px;
+        margin: 40px 60px;
+        display: block;
+    }
+
+    .bulletlist li {
+        &:before {
+            content: "•";
+            color: @colorOrange;
+            margin-right: 20px;
+        }
     }
 }
 
