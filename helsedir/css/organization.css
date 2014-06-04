@@ -125,6 +125,10 @@
 .division .department.helseoekonomiogfinansiering .sub-department {
   border-left: 4px solid #a1bf37;
 }
+.division .department.helseoekonomiogfinansiering .sub-department.helfo {
+  background: #dbdcdd;
+  margin-top: 0;
+}
 .division .department.spesialisthelsetjenesten .sub-department {
   border-left: 4px solid #aeaba8;
 }
@@ -132,7 +136,7 @@
   border-left: 4px solid #c63629;
 }
 .division .department.primaerhelsetjenesten .sub-department {
-  border-left: 4px solid #c63629;
+  border-left: 4px solid #df9922;
 }
 .division .department.administrasjon .sub-department {
   border-left: 4px solid #76428d;
@@ -143,7 +147,7 @@
   margin: 20px 0 0 0;
   line-height: 24px;
   width: 170px;
-  height: 55px;
+  height: 72px;
   background: white;
   display: table;
   position: relative;
@@ -161,12 +165,65 @@
   font-size: 25px;
   color: #004e66;
   left: 81px;
-  top: 17px;
+  top: 27px;
   padding-left: 65px;
   padding-right: 65px;
 }
+.division .department .sub-department#utviklingsdirektoer {
+  background: #76428d;
+  color: white;
+  height: 45px;
+  margin-bottom: 48px;
+  margin-top: 36px;
+}
+.division .department .sub-department#utviklingsdirektoer:after {
+  color: white;
+  top: 13px;
+}
 .division .department.administrasjon .sub-department {
-  margin: 20px 0 30px 0;
+  margin: 20px 0 0 0;
+}
+.etater {
+  margin-top: 33px;
+  font-size: 18px;
+}
+.border {
+  padding: 0;
+}
+.underliggende_etat {
+  color: #004e66;
+  padding: 6px 24px 6px 6px;
+  margin: 20px 30px 0 0;
+  line-height: 24px;
+  width: 170px;
+  height: 72px;
+  background: white;
+  display: table;
+  position: relative;
+  border-left: 4px solid #004e66;
+  float: left;
+}
+.underliggende_etat p {
+  font-size: 18px;
+  line-height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.underliggende_etat:after {
+  position: absolute;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: 25px;
+  color: #004e66;
+  left: 81px;
+  top: 27px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+@media only screen and (min-width: 1200px) {
+  #kunnskapssenteret {
+    margin-left: 192px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .division {
@@ -248,6 +305,12 @@
   }
   .division .department .sub-department:after {
     content: '';
+  }
+  .division .department .sub-department#utviklingsdirektoer {
+    margin: 10px 0;
+  }
+  .division .department .sub-department#utviklingsdirektoer p:before {
+    color: white;
   }
   .division .department.administrasjon .sub-department {
     margin: 10px 0 10px 0;

@@ -342,7 +342,7 @@ a:visited:focus p {
 ***********************************************************************/
 .module_subscribe {
   margin: 40px 0 0 0;
-  padding: 0 0 5px 30px;
+  padding: 0 0 5px 0;
   max-width: 300px;
 }
 .module_subscribe p {
@@ -647,7 +647,7 @@ h4.keyfigures {
 }
 .module {
   display: inline-block;
-  margin: 0 0 0 30px;
+  margin: 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -941,6 +941,10 @@ fieldset {
   /*Removes default arrow from firefox*/
   color: #222;
 }
+.refinesearch {
+  margin-left: 30px;
+  width: 300px;
+}
 .refinesearch h2,
 .refinesearch h5 {
   border-bottom: 2px solid #004e66;
@@ -1136,6 +1140,9 @@ fieldset {
 @media only screen and (max-width: 1199px) {
   .refinesearch {
     margin-top: 30px;
+    margin-left: 0;
+    max-width: 300px;
+    width: auto;
   }
   .border {
     display: none;
@@ -1179,7 +1186,8 @@ fieldset {
   }
 }
 @media only screen and (max-width: 600px) {
-  .aside {
+  .aside,
+  .aside.bottom {
     width: auto;
   }
   h1 {

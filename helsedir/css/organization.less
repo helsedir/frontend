@@ -184,6 +184,11 @@
         &.helseoekonomiogfinansiering {
             .sub-department {
                 border-left: 4px solid @colorGreen;
+
+                &.helfo {
+                    background: @colorLightGray2;
+                    margin-top: 0;
+                }
             }
         }
 
@@ -201,7 +206,7 @@
 
         &.primaerhelsetjenesten {
             .sub-department {
-                border-left: 4px solid @colorRed;
+                border-left: 4px solid @colorOrange;
             }
         }
 
@@ -217,7 +222,7 @@
             margin: 20px 0 0 0;
             line-height: 24px;
             width: 170px;
-            height: 55px;
+            height: 72px;
             background: white;
             display: table;
             position: relative;
@@ -236,15 +241,76 @@
                 font-size: 25px;
                 color: @colorDarkBlue;
                 left: 81px;
-                top: 17px;
+                top: 27px;
                 padding-left: 65px;
                 padding-right: 65px;
+            }
+
+            &#utviklingsdirektoer {
+                background: @colorPurple;
+                color: white;
+                height: 45px;
+                margin-bottom: 48px;
+                margin-top: 36px;
+
+                &:after {
+                    color: white;
+                    top: 13px;
+                }
             }
         }
 
         &.administrasjon .sub-department {
-            margin: 20px 0 30px 0;
+            margin: 20px 0 0 0;
         }
+    }
+}
+
+.etater {
+    margin-top: 33px;
+    font-size: 18px;
+}
+
+.border {
+    padding: 0;
+}
+
+.underliggende_etat {
+    color: @colorDarkBlue;
+    padding: 6px 24px 6px 6px;
+    margin: 20px 30px 0 0;
+    line-height: 24px;
+    width: 170px;
+    height: 72px;
+    background: white;
+    display: table;
+    position: relative;
+    border-left: 4px solid @colorDarkBlue;
+    float: left;
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &:after {
+        position: absolute;
+        content: "\f105";
+        font-family: "FontAwesome";
+        font-size: 25px;
+        color: @colorDarkBlue;
+        left: 81px;
+        top: 27px;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #kunnskapssenteret {
+        margin-left: 192px;
     }
 }
 
@@ -337,6 +403,14 @@
 
                 &:after {
                     content: '';
+                }
+
+                &#utviklingsdirektoer {
+                    margin: 10px 0;
+
+                    p:before {
+                        color: white;
+                    }
                 }
             }
 
