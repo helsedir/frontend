@@ -756,7 +756,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 0;
+    margin: 30px 0;
     padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
@@ -767,7 +767,7 @@ p.keyfigures, h4.keyfigures {
         text-transform: uppercase;
         color: @colorDarkBlue;
         text-decoration: none;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
     a .module_header {
@@ -778,8 +778,11 @@ p.keyfigures, h4.keyfigures {
         font-family: @fontSohoRegular;
         font-size: 24px;
         line-height: 30px;
-        margin-bottom: 5px;
         color: #222;
+
+        .internal-link.aftertext {
+            margin-bottom: 5px;
+        }
     }
 
     .module_theme {
@@ -1371,8 +1374,8 @@ fieldset {
         margin: 0;
     }
 
-    .module {
-        margin: 0;
+    .aside {
+        margin-top: 0;
     }
 }
 
