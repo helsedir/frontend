@@ -808,10 +808,6 @@ h4.keyfigures {
   background: white;
   padding-top: 1px;
 }
-.crisis .header2,
-.crisis .header3 {
-  margin-top: 30px;
-}
 .crisis .fa-exclamation {
   color: #df9922;
   font-size: 2em;
@@ -825,6 +821,11 @@ h4.keyfigures {
   padding-bottom: 20px;
   width: 100%;
 }
+.crisis .border_crisis_bottom {
+  border-bottom: 5px solid #df9922;
+  padding-bottom: 50px;
+  width: 100%;
+}
 .crisis #volcano {
   height: 100px;
   margin: 40px 60px;
@@ -834,6 +835,9 @@ h4.keyfigures {
   content: "•";
   color: #df9922;
   margin-right: 20px;
+}
+.crisis .urgentinformation {
+  padding-left: 50px;
 }
 .tema_select_all {
   font-weight: bold;
