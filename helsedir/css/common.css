@@ -736,7 +736,7 @@ h4.keyfigures {
 .module.module_statistics_text a,
 .module.module_statistics_graph a {
   margin-top: 30px;
-  line-height: 27px;
+  line-height: 22px;
   display: block;
 }
 .module.module_statistics_text {
@@ -1353,6 +1353,10 @@ fieldset {
   }
   .message_module .module_description {
     margin-left: 10px;
+  }
+  .chart_div {
+    height: 300px;
+    margin: 20px 0;
   }
 }
 @media braille {

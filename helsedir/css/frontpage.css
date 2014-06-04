@@ -154,8 +154,9 @@
   color: #c63629;
   display: block;
   font-family: "soho gothic pro light";
-  margin-right: 10px;
+  margin-right: 28px;
   line-height: 42px;
+  text-align: right;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
@@ -201,6 +202,9 @@
   }
   .entrancebutton.menu a h3 .fa-bars {
     padding-left: 10px;
+  }
+  .frontpage .chart_wrapper {
+    margin: 40px 0 0 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
