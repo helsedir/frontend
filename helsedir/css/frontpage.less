@@ -48,6 +48,9 @@
     &.menu {
         a {
             background: #838078;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
             transition: all 0.5s;
 
             h3 {
@@ -80,6 +83,9 @@
         text-decoration: none;
         border-radius: 4px;
         background: @colorDarkBlue;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
 
         &:hover {
@@ -259,6 +265,10 @@
     background: none;
 }
 
+#menu_search {
+    border-radius: 0;
+}
+
 @media only screen and (max-width: 599px) {
     .entrancebutton {
         width: 100%;
@@ -297,5 +307,12 @@
 @media only screen and (min-width: 600px) and (max-width: 899px) {
     .entrancebutton {
         margin: 30px 25px 0 0;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .border_grey {
+        padding-bottom: 30px;
+        border-bottom: 1px solid @colorMediumGray;
     }
 }

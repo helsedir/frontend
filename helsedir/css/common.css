@@ -309,6 +309,13 @@ a:visited:focus p {
   display: inline-block;
   line-height: 22px;
 }
+.tabs .tab-content .alphabetical .character {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tabs .tab-content .alphabetical .character:hover {
+  background: white;
+}
 .chart_div {
   height: 450px;
   margin: 20px 57px;
@@ -663,6 +670,7 @@ h4.keyfigures {
 .module .module_description {
   font-family: 'Calibri';
   font-size: 18px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #004e66;
   text-decoration: none;
@@ -679,6 +687,8 @@ h4.keyfigures {
 }
 .module .module_header .internal-link.aftertext {
   margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 30px;
 }
 .module .module_theme {
   font-family: 'Calibri';
@@ -691,7 +701,7 @@ h4.keyfigures {
 .module .module_ingress {
   display: inline;
 }
-.module img {
+.module img.pulse {
   position: absolute;
   left: 0;
   top: 0;
@@ -706,6 +716,9 @@ h4.keyfigures {
 }
 .module.module_related .bulletlist li:before {
   color: #a1bf37;
+}
+.module.module_related .illustration {
+  display: blockmo;
 }
 .module.module_publication {
   border-left: 2px solid #df9922;
@@ -1116,6 +1129,15 @@ fieldset {
 #graph-source {
   font-size: 18px;
   margin-right: 10px;
+}
+.image_intext {
+  float: right;
+  display: table;
+  width: 87px;
+  margin: 20px 0 20px 30px;
+}
+.image_intext figcaption {
+  font-size: 18px;
 }
 @media only screen and (min-width: 1200px) {
   .aside {

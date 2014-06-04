@@ -362,6 +362,15 @@ a {
                     }
                 }
             }
+
+            .character {
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &:hover {
+                    background: white;
+                }
+            }
         }
     }
 }
@@ -774,6 +783,7 @@ p.keyfigures, h4.keyfigures {
     .module_description {
         font-family: @fontCalibri;
         font-size: 18px;
+        line-height: 22px;
         text-transform: uppercase;
         color: @colorDarkBlue;
         text-decoration: none;
@@ -792,6 +802,8 @@ p.keyfigures, h4.keyfigures {
 
         .internal-link.aftertext {
             margin-bottom: 5px;
+            font-size: 24px;
+            line-height: 30px;
         }
     }
 
@@ -808,7 +820,7 @@ p.keyfigures, h4.keyfigures {
         display: inline;
     }
 
-    img {
+    img.pulse {
         position: absolute;
         left: 0;
         top: 0;
@@ -825,6 +837,10 @@ p.keyfigures, h4.keyfigures {
             li:before {
                 color: @colorGreen;
             }
+        }
+
+        .illustration {
+            display: blockmo;
         }
     }
 
@@ -1313,6 +1329,17 @@ fieldset {
 #graph-source {
     font-size: 18px;
     margin-right: 10px;
+}
+
+.image_intext {
+    float: right;
+    display: table;
+    width: 87px;
+    margin: 20px 0 20px 30px;
+
+    figcaption {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {

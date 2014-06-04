@@ -107,7 +107,7 @@
 
     var map = new google.maps.Map(document.getElementById("map"),
         mapOptions);
-    var image = '/img/pil.svg';
+    var image = '/img/googlemaps_pin.svg';
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
