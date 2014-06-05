@@ -28,24 +28,6 @@
   opacity: 1;
   height: auto;
 }
-.no-svg input[type="radio"] + label span {
-  background-image: url('../img/navigasjon/radioknapp_inaktiv.png') !important;
-}
-.no-svg input[type="radio"] + label span:hover {
-  background-image: url('../img/navigasjon/radioknapp_hover.png') !important;
-}
-.no-svg input[type="radio"]:checked + label span {
-  background-image: url(../img/navigasjon/radioknapp_valgt.png) !important;
-}
-.no-svg input[type="checkbox"] + label span {
-  background-image: url('../img/navigasjon/checkbox_inaktiv.png') !important;
-}
-.no-svg input[type="checkbox"] + label span:hover {
-  background-image: url('../img/navigasjon/checkbox_hover.png') !important;
-}
-.no-svg input[type="checkbox"]:checked + label span {
-  background-image: url(../img/navigasjon/checkbox_valgt.png) !important;
-}
 .menubutton a.js-expander i {
   margin-left: 0;
 }
