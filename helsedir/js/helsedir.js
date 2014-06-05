@@ -28,9 +28,6 @@
             });
             parentTag.addClass("has-visible-content");
             parentTag.removeClass("has-hidden-content");
-            $('html, body').animate({
-                scrollTop: collapseElement.offset().top
-            }, 700);
         }
     });
 

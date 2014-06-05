@@ -6,7 +6,7 @@ function drawChart() {
         ['11-20 år', 24, 98],
         ['21-30 år', 52, 243],
         ['31-40 år', 23, 323],
-        ['41-50 år', 18, 446],
+        ['41-50 år', 18, 446]
     ]);
 
     var options = {
@@ -17,7 +17,7 @@ function drawChart() {
         legend: {
             position: 'bottom',
             alignment: 'start'
-        },
+        }
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
