@@ -63,6 +63,7 @@
   max-height: 44px;
   background: #ffffff url('../img/logo.svg') no-repeat;
   display: block;
+  background-position: center;
 }
 .menubutton {
   width: 150px;
@@ -100,7 +101,7 @@
   color: #004e66;
 }
 .menubutton a.js-expander.js-expanded {
-  padding-bottom: 46px;
+  padding-bottom: 50px;
   border-radius: 3px 3px 0 0;
   background-color: #d1d0c4;
   color: #004e66;
@@ -271,7 +272,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -35px;
+  margin-top: -33px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
@@ -474,6 +475,10 @@ footer.rammeverk a:visited {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 /**********Media**********/
 @media only screen and (max-width: 1199px) {
   .masterheader .links {
@@ -504,76 +509,84 @@ footer.rammeverk a:visited {
   .toppmeny .tabs .tab-content {
     padding-left: 0;
   }
-  .menubutton {
-    width: 30px;
-    margin-right: 5px;
-    cursor: pointer;
-    float: left;
-  }
-  .menubutton.mobile-menu {
-    display: inline-block;
-    border-radius: 3px;
-    background: #004e66 url('../img/ikon_meny_hvit.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: center;
-  }
-  .menubutton.mobile-menu:hover {
-    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: center;
-    border-radius: 3px;
-  }
-  .menubutton.mobile-menu.js-expanded {
-    padding-bottom: 47px;
-    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: 50% 35%;
-    border-radius: 3px 3px 0 0;
-  }
-  .menubutton.mobile-search {
-    display: inline-block;
-    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: center;
-    border-radius: 3px;
-  }
-  .menubutton.mobile-search:focus {
-    text-decoration: none;
-    background-color: #dbdcdd;
-    color: #004e66;
-    border: solid 1px #004e66;
-  }
-  .menubutton.mobile-search:hover {
-    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: center;
-    border-radius: 3px;
-  }
-  .menubutton.mobile-search.js-expanded {
-    padding-bottom: 43px;
-    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-    -moz-background-size: 15px;
-    -o-background-size: 15px;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    background-position: 50% 35%;
-    border-radius: 3px 3px 0 0;
-  }
+  /*
+    .menubutton {
+        width: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+        float: left;
+
+        &.mobile-menu {
+            display: inline-block;
+            border-radius: 3px;
+            background: @colorDarkBlue url('../img/ikon_meny_hvit.svg') no-repeat;
+            -moz-background-size: 15px;
+            -o-background-size: 15px;
+            -webkit-background-size: 15px;
+            background-size: 15px;
+            background-position: center;
+
+            &:hover {
+                background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+                -moz-background-size: 15px;
+                -o-background-size: 15px;
+                -webkit-background-size: 15px;
+                background-size: 15px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 47px;
+                background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+                -moz-background-size: 15px;
+                -o-background-size: 15px;
+                -webkit-background-size: 15px;
+                background-size: 15px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+
+        &.mobile-search {
+            display: inline-block;
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            -moz-background-size: 15px;
+            -o-background-size: 15px;
+            -webkit-background-size: 15px;
+            background-size: 15px;
+            background-position: center;
+            border-radius: 3px;
+
+            &:focus {
+                text-decoration: none;
+                background-color: @colorLightGray2;
+                color: @colorDarkBlue;
+                border: solid 1px @colorDarkBlue;
+            }
+
+            &:hover {
+                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                -moz-background-size: 15px;
+                -o-background-size: 15px;
+                -webkit-background-size: 15px;
+                background-size: 15px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                -moz-background-size: 15px;
+                -o-background-size: 15px;
+                -webkit-background-size: 15px;
+                background-size: 15px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+    }*/
 }
 @media only screen and (max-width: 900px) {
   .hidden-mobile {
@@ -585,12 +598,11 @@ footer.rammeverk a:visited {
     margin: 10px 0 10px 0;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (max-width: 899px) {
   .menubutton {
     width: 40px;
     margin-right: 5px;
     cursor: pointer;
-    float: left;
   }
   .menubutton.mobile-menu {
     padding: 7px 11px 8px 11px;
@@ -656,6 +668,9 @@ footer.rammeverk a:visited {
     background-size: 29px;
     background-position: 50% 35%;
     border-radius: 3px 3px 0 0;
+  }
+  #logo {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */

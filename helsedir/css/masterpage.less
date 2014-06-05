@@ -98,6 +98,7 @@
     max-height: 44px;
     background: white url('../img/logo.svg') no-repeat;
     display: block;
+    background-position: center;
 }
 
 .menubutton {
@@ -139,7 +140,7 @@
         }
 
         &.js-expanded {
-            padding-bottom: 46px;
+            padding-bottom: 50px;
             border-radius: 3px 3px 0 0;
             background-color: #d1d0c4;
             color: @colorDarkBlue;
@@ -324,7 +325,7 @@ footer, .toppmeny {
     .tabs {
         margin-bottom: 50px;
         padding-left: 20px;
-        margin-top: -35px;
+        margin-top: -33px;
 
         .tab-links {
             padding-left: 20px;
@@ -534,6 +535,11 @@ footer, .toppmeny {
     }
 }
 
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 /**********Media**********/
 
 @media only screen and (max-width: 1199px) {
@@ -568,7 +574,7 @@ footer, .toppmeny {
             }
         }
     }
-
+    /*
     .menubutton {
         width: 30px;
         margin-right: 5px;
@@ -645,7 +651,7 @@ footer, .toppmeny {
                 border-radius: 3px 3px 0 0;
             }
         }
-    }
+    }*/
 }
 
 @media only screen and (max-width: 900px) {
@@ -660,12 +666,11 @@ footer, .toppmeny {
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (max-width: 899px) {
     .menubutton {
         width: 40px;
         margin-right: 5px;
         cursor: pointer;
-        float: left;
 
         &.mobile-menu {
             padding: 7px 11px 8px 11px;
@@ -738,5 +743,9 @@ footer, .toppmeny {
                 border-radius: 3px 3px 0 0;
             }
         }
+    }
+
+    #logo {
+        padding: 0;
     }
 }
