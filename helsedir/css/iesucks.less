@@ -43,17 +43,31 @@ body {
         background-image: url('../img/logo.png') !important;
     }
 
-    input[type="radio"] + label span {
-        background-image: url('../img/navigasjon/radioknapp_inaktiv.png') !important;
+    input[type="checkbox"] {
+        float: left;
+        width: auto;
+        opacity: 1;
+        height: autp;
+    }
 
-        &:hover {
-            background-image: url('../img/navigasjon/radioknapp_hover.png') !important;
+    input[type="radio"] {
+        float: left;
+        width: auto;
+        opacity: 1;
+        height: auto;
+    }
+
+        input[type="radio"] + label span {
+            background-image: url('../img/navigasjon/radioknapp_inaktiv.png') !important;
+
+            &:hover {
+                background-image: url('../img/navigasjon/radioknapp_hover.png') !important;
+            }
         }
-    }
 
-    input[type="radio"]:checked + label span {
-        background-image: url(../img/navigasjon/radioknapp_valgt.png) !important;
-    }
+        input[type="radio"]:checked + label span {
+            background-image: url(../img/navigasjon/radioknapp_valgt.png) !important;
+        }
 
     input[type="checkbox"] + label span {
         background-image: url('../img/navigasjon/checkbox_inaktiv.png') !important;
