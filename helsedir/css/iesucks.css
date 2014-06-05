@@ -16,4 +16,17 @@
 .menubutton a.js-expander i {
   margin-left: 0;
 }
+.mainsearch,
+.search {
+  background-image: url('../img/ikon_forstorrelsesglass_IE8.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 80%;
+  -o-background-size: auto 80%;
+  -webkit-background-size: auto 80%;
+  background-size: auto 80%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+}
 /*# sourceMappingURL=iesucks.css.map */
