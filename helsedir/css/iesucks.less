@@ -42,6 +42,30 @@ body {
     #logo {
         background-image: url('../img/logo.png') !important;
     }
+
+    input[type="radio"] + label span {
+        background-image: url('../img/navigasjon/radioknapp_inaktiv.png') !important;
+
+        &:hover {
+            background-image: url('../img/navigasjon/radioknapp_hover.png') !important;
+        }
+    }
+
+    input[type="radio"]:checked + label span {
+        background-image: url(../img/navigasjon/radioknapp_valgt.png) !important;
+    }
+
+    input[type="checkbox"] + label span {
+        background-image: url('../img/navigasjon/checkbox_inaktiv.png') !important;
+
+        &:hover {
+            background-image: url('../img/navigasjon/checkbox_hover.png') !important;
+        }
+    }
+
+    input[type="checkbox"]:checked + label span {
+        background-image: url(../img/navigasjon/checkbox_valgt.png) !important;
+    }
 }
 
 .menubutton a.js-expander i {
