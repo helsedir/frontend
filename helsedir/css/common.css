@@ -451,6 +451,7 @@ a:visited:focus p {
 }
 video {
   width: 100%;
+  margin-top: 10px;
 }
 .module_guide {
   border: 1px solid #bababa;
@@ -482,7 +483,6 @@ video {
   margin-right: 0;
   position: relative;
   width: 300px;
-  margin-top: 70px;
 }
 .aside h2,
 .aside.bottom h2 {
@@ -598,6 +598,7 @@ iframe {
 .external-link.inline,
 .external-link .inline:visited {
   text-decoration: underline;
+  margin: 0;
 }
 .external-link:visited {
   background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
@@ -662,7 +663,7 @@ h4.keyfigures {
 }
 .module {
   display: inline-block;
-  margin: 30px 0;
+  margin: 0 0 30px 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -1048,18 +1049,18 @@ fieldset {
   width: 100px;
 }
 .table_general {
-  border: 1px solid #d1d0cf;
-  width: 90%;
+  border: 1px solid #91c6c2;
   margin: 20px auto;
 }
 .table_general th {
-  background: #d1d0cf;
+  background: #91c6c2;
   text-align: center;
   font-size: 16px;
   padding: 5px;
+  line-height: 20px;
 }
 .table_general tr {
-  background: #f7f6f6;
+  background: #dfe8e7;
 }
 .table_general tr.odd {
   background: white;
@@ -1068,6 +1069,10 @@ fieldset {
   padding: 10px;
   text-align: center;
   font-size: 18px;
+}
+.table_general.alignleft th,
+.table_general.alignleft td {
+  text-align: left;
 }
 .iveCharts {
   margin: 0 auto 20px auto;
@@ -1363,7 +1368,7 @@ fieldset {
     display: block;
     width: 100%;
   }
-  .table_general thead {
+  .table_general thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;

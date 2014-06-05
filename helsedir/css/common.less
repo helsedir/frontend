@@ -541,6 +541,7 @@ a {
 
 video {
     width: 100%;
+    margin-top: 10px;
 }
 
 .module_guide {
@@ -575,7 +576,6 @@ video {
     margin-right: 0;
     position: relative;
     width: 300px;
-    margin-top: 70px;
 
     h2 {
         margin: 0;
@@ -702,6 +702,7 @@ iframe {
 
     &.inline, .inline:visited {
         text-decoration: underline;
+        margin: 0;
     }
 
     &:visited {
@@ -775,7 +776,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
@@ -1231,19 +1232,19 @@ fieldset {
 }
 
 .table_general {
-    border: 1px solid #d1d0cf;
-    width: 90%;
+    border: 1px solid #91c6c2;
     margin: 20px auto;
 
     th {
-        background: #d1d0cf;
+        background: #91c6c2;
         text-align: center;
         font-size: 16px;
         padding: 5px;
+        line-height: 20px;
     }
 
     tr {
-        background: #f7f6f6;
+        background: #dfe8e7;
 
         &.odd {
             background: white;
@@ -1254,6 +1255,12 @@ fieldset {
         padding: 10px;
         text-align: center;
         font-size: 18px;
+    }
+
+    &.alignleft {
+        th, td {
+            text-align: left;
+        }
     }
 }
 
@@ -1622,7 +1629,7 @@ fieldset {
             width: 100%;
         }
 
-        thead {
+        thead tr {
             position: absolute;
             top: -9999px;
             left: -9999px;
