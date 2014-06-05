@@ -20,6 +20,11 @@ $(document).ready(function () {
                     .slideDown(500);
                 expander.addClass('js-expanded');
             });
+
+            if ($('#mobilesearch').hasClass('js-expanded')) {
+                $('#mobilesearch').removeClass('js-expanded');
+                $('#mainsearch').slideUp(500);
+            };
         }
         visible = !visible;
     });
@@ -32,6 +37,10 @@ $(document).ready(function () {
             $(this).addClass('js-expanded');
             $('#mainsearch').slideDown(500);
             $('#mainsearch input').focus();
+            if ($('#mobilemenu').hasClass('js-expanded')) {
+                $('.js-expand').addClass('visuallyhidden');
+                $('#mobilemenu').removeClass('js-expanded');
+            };
         }
     });
 });

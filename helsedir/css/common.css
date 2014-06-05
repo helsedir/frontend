@@ -454,6 +454,23 @@ video {
   width: 100%;
   margin-top: 10px;
 }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .module_guide {
   border: 1px solid #bababa;
   padding-left: 10px;
@@ -668,6 +685,9 @@ h4.keyfigures {
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
+}
+.module.maincolumn {
+  margin-top: 30px;
 }
 .module .module_description {
   font-family: 'Calibri';
