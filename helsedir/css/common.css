@@ -1161,6 +1161,9 @@ fieldset {
     top: auto;
     margin-right: -50%;
   }
+  .aside.top {
+    margin-right: -46%;
+  }
   .module_person.kontakt {
     bottom: 0;
     right: 0;
