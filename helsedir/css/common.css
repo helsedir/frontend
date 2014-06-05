@@ -390,6 +390,7 @@ figure .metatext {
 }
 .metatext.statistics {
   text-align: right;
+  float: right;
 }
 .spennendeTall {
   border: 1px solid #222;

@@ -23,7 +23,7 @@ function drawChart() {
         legend: {
             position: 'none'
         },
-        colors: ['#004e66', '#0093a7', '#6cb4b5', "#df9922", '#a1bf37'],
+        colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
         lineWidth: 3,
         series: {
             0: { lineDashStyle: [14, 7] },
@@ -33,6 +33,7 @@ function drawChart() {
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+    drawLegend(data);
     chart.draw(data, options);
 }
 
