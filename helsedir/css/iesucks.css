@@ -31,10 +31,14 @@
 .no-svg input[type="radio"] + label span {
   margin: 0;
   vertical-align: auto;
+  width: auto;
+  height: auto;
 }
 .no-svg input[type="checkbox"] + label span {
   margin: 0;
   vertical-align: auto;
+  width: auto;
+  height: auto;
 }
 .menubutton a.js-expander i {
   margin-left: 0;
