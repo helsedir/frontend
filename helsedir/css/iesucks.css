@@ -30,11 +30,11 @@
 }
 .no-svg input[type="radio"] + label span {
   margin: 0;
-  vertical-align: middle;
+  vertical-align: auto;
 }
 .no-svg input[type="checkbox"] + label span {
   margin: 0;
-  vertical-align: middle;
+  vertical-align: auto;
 }
 .menubutton a.js-expander i {
   margin-left: 0;
