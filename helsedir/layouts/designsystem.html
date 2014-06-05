@@ -1378,10 +1378,6 @@
             var chart = new google.visualization.LineChart(document.getElementById('module_chart_line'));
             chart.draw(data, options);
         }
-
-        $(window).resize(function () {
-            drawChart();
-        });
     </script>
     <script type="text/javascript">
         google.load("visualization", "1", { packages: ["corechart"] });
@@ -1414,10 +1410,6 @@
             var chart = new google.visualization.LineChart(document.getElementById('module_chart_line2'));
             chart.draw(data, options);
         }
-
-        $(window).resize(function () {
-            drawChart();
-        });
     </script>
     <script type="text/javascript">
         google.load("visualization", "1", { packages: ["corechart"] });
@@ -1442,9 +1434,7 @@
 
             var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
             chart.draw(data, options);
-            $(window).resize(function () {
-                drawChart();
-            });
+
         }
     </script>
     <script type="text/javascript">
@@ -1490,9 +1480,6 @@
             var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column2'));
             chart.draw(data, options);
 
-            $(window).resize(function () {
-                drawChart();
-            });
         }
     </script>
     <script>
