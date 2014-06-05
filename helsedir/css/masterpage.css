@@ -1,7 +1,6 @@
 ﻿.footerwrapper {
   border-top: 5px solid #0093a7;
-  background: #004e66;
-  background: #d1d0c4;
+  background: #838078;
   border: none;
   padding-top: 50px;
   width: 100%;
@@ -91,20 +90,30 @@
 .menubutton a.js-expander:focus {
   text-decoration: none;
   background-color: #d1d0c4;
-  color: #004e66;
   border: solid 1px #004e66;
+}
+.menubutton a.js-expander:focus span,
+.menubutton a.js-expander:focus i {
+  color: white;
 }
 .menubutton a.js-expander:hover {
   text-decoration: none;
-  background-color: #d1d0c4;
+  background-color: #838078;
   border-radius: 3px;
-  color: #004e66;
+}
+.menubutton a.js-expander:hover span,
+.menubutton a.js-expander:hover i {
+  color: white;
 }
 .menubutton a.js-expander.js-expanded {
   padding-bottom: 50px;
   border-radius: 3px 3px 0 0;
-  background-color: #d1d0c4;
+  background-color: #838078;
   color: #004e66;
+}
+.menubutton a.js-expander.js-expanded span,
+.menubutton a.js-expander.js-expanded i {
+  color: white;
 }
 .menubutton a.js-expander i {
   /*font-size: 28px;*/
@@ -117,7 +126,7 @@
   height: 39px;
   /*max-width: 220px;*/
   width: 100%;
-  padding: 0 35px 0 5px;
+  padding: 0 28px 0 5px;
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
@@ -165,7 +174,7 @@ footer a:focus {
 /**********Header**********/
 .toppmeny {
   margin-bottom: 30px;
-  background: #d1d0c4;
+  background: #838078;
   padding: 0 0 50px 0 !important;
   /*.tab-links {
         margin: 0;
@@ -272,7 +281,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -33px;
+  margin-top: -35px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
@@ -509,6 +518,10 @@ footer.rammeverk a:visited {
   .toppmeny .tabs .tab-content {
     padding-left: 0;
   }
+  footer .tabs,
+  .toppmeny .tabs {
+    margin-top: -36px;
+  }
   /*
     .menubutton {
         width: 30px;
@@ -591,7 +604,7 @@ footer.rammeverk a:visited {
 @media only screen and (max-width: 900px) {
   .hidden-mobile {
     display: none;
-    background-color: #dbdcdd;
+    background-color: #838078;
     padding: 20px;
   }
   .masterheader {
@@ -616,7 +629,7 @@ footer.rammeverk a:visited {
     background-position: center;
   }
   .menubutton.mobile-menu:hover {
-    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+    background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
     -moz-background-size: 20px;
     -o-background-size: 20px;
     -webkit-background-size: 20px;
@@ -626,7 +639,7 @@ footer.rammeverk a:visited {
   }
   .menubutton.mobile-menu.js-expanded {
     padding-bottom: 46px;
-    background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+    background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
     -moz-background-size: 20px;
     -o-background-size: 20px;
     -webkit-background-size: 20px;
@@ -646,12 +659,12 @@ footer.rammeverk a:visited {
   }
   .menubutton.mobile-search:focus {
     text-decoration: none;
-    background-color: #dbdcdd;
+    background-color: #838078;
     color: #004e66;
     border: solid 1px #004e66;
   }
   .menubutton.mobile-search:hover {
-    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;
@@ -661,7 +674,7 @@ footer.rammeverk a:visited {
   }
   .menubutton.mobile-search.js-expanded {
     padding-bottom: 43px;
-    background: #dbdcdd url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+    background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
     -moz-background-size: 29px;
     -o-background-size: 29px;
     -webkit-background-size: 29px;

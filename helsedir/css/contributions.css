@@ -42,4 +42,9 @@
     margin-top: 0;
   }
 }
+@media only screen and (max-width: 599px) {
+  .aside {
+    margin-top: 70px;
+  }
+}
 /*# sourceMappingURL=contributions.css.map */

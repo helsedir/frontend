@@ -20,8 +20,7 @@
 
 .footerwrapper {
     border-top: 5px solid @colorMediumBlue;
-    background: @colorDarkBlue;
-    background: #d1d0c4;
+    background: #838078;
     border: none;
     padding-top: 50px;
     width: 100%;
@@ -128,22 +127,33 @@
         &:focus {
             text-decoration: none;
             background-color: #d1d0c4;
-            color: @colorDarkBlue;
+
+            span, i {
+                color: white;
+            }
+
             border: solid 1px @colorDarkBlue;
         }
 
         &:hover {
             text-decoration: none;
-            background-color: #d1d0c4;
+            background-color: #838078;
             border-radius: 3px;
-            color: @colorDarkBlue;
+
+            span, i {
+                color: white;
+            }
         }
 
         &.js-expanded {
             padding-bottom: 50px;
             border-radius: 3px 3px 0 0;
-            background-color: #d1d0c4;
+            background-color: #838078;
             color: @colorDarkBlue;
+
+            span, i {
+                color: white;
+            }
         }
 
         i {
@@ -161,7 +171,7 @@
     height: 39px;
     /*max-width: 220px;*/
     width: 100%;
-    padding: 0 35px 0 5px;
+    padding: 0 28px 0 5px;
     border-radius: 3px;
     border: 1px solid @colorDarkBlue;
     vertical-align: middle;
@@ -215,7 +225,7 @@
 /**********Header**********/
 .toppmeny {
     margin-bottom: 30px;
-    background: #d1d0c4;
+    background: #838078;
     padding: 0 0 50px 0 !important;
 
     .inner {
@@ -325,7 +335,7 @@ footer, .toppmeny {
     .tabs {
         margin-bottom: 50px;
         padding-left: 20px;
-        margin-top: -33px;
+        margin-top: -35px;
 
         .tab-links {
             padding-left: 20px;
@@ -574,6 +584,10 @@ footer, .toppmeny {
             }
         }
     }
+
+        footer .tabs, .toppmeny .tabs {
+            margin-top: -36px;
+        }
     /*
     .menubutton {
         width: 30px;
@@ -657,7 +671,7 @@ footer, .toppmeny {
 @media only screen and (max-width: 900px) {
     .hidden-mobile {
         display: none;
-        background-color: @colorLightGray2;
+        background-color: #838078;
         padding: 20px;
     }
 
@@ -684,7 +698,7 @@ footer, .toppmeny {
             background-position: center;
 
             &:hover {
-                background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
@@ -695,7 +709,7 @@ footer, .toppmeny {
 
             &.js-expanded {
                 padding-bottom: 46px;
-                background: #d1d0c4 url('../img/ikon_meny_blaa.svg') no-repeat;
+                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
@@ -717,13 +731,13 @@ footer, .toppmeny {
 
             &:focus {
                 text-decoration: none;
-                background-color: @colorLightGray2;
+                background-color: #838078;
                 color: @colorDarkBlue;
                 border: solid 1px @colorDarkBlue;
             }
 
             &:hover {
-                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
                 -moz-background-size: 30px;
                 -o-background-size: 30px;
                 -webkit-background-size: 30px;
@@ -734,7 +748,7 @@ footer, .toppmeny {
 
             &.js-expanded {
                 padding-bottom: 43px;
-                background: @colorLightGray2 url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
                 -moz-background-size: 29px;
                 -o-background-size: 29px;
                 -webkit-background-size: 29px;
