@@ -227,7 +227,7 @@
 
             var options = {
                 vAxis: { minValue: 20, maxValue: 70, title: "Antall dager", ticks: [20, 30, 40, 50, 60, 70] },
-                'chartArea': { 'width': '80%', 'height': '70%' },
+                'chartArea': { 'width': '70%', 'height': '60%' },
                 legend: {
                     position: 'bottom',
                     alignment: 'start'
@@ -243,9 +243,6 @@
             var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
-        $(window).resize(function () {
-            drawChart();
-        });
     </script>
 </body>
 </html>

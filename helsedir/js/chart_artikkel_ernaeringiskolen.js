@@ -20,7 +20,4 @@ function drawChart() {
 
     var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
     chart.draw(data, options);
-    $(window).resize(function () {
-        drawChart();
-    });
 }

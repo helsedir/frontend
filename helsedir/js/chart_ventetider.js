@@ -36,10 +36,6 @@ function drawChart() {
     chart.draw(data, options);
 }
 
-$(window).resize(function () {
-    drawChart();
-});
-
 function drawLegend(data) {
     var colors = ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"];
     var legend = document.getElementById('chart_div_legend');
