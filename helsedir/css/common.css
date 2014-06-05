@@ -1071,6 +1071,9 @@ fieldset {
   text-align: center;
   font-size: 18px;
 }
+.table_general td a {
+  line-height: 24px;
+}
 .table_general.alignleft th,
 .table_general.alignleft td {
   text-align: left;
