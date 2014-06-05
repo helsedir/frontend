@@ -1,4 +1,7 @@
-﻿.no-svg .facebook {
+﻿body {
+  background-attachment: local;
+}
+.no-svg .facebook {
   background-image: url(../img/sosiale_ikon_facebook.png) !important;
 }
 .no-svg .twitter {

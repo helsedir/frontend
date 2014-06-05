@@ -13,4 +13,17 @@
 .aside.alignwithheader {
   margin-top: 113px;
 }
+.hoeringer_details {
+  margin-top: 20px;
+}
+.hoeringer_details p,
+.hoeringer_details span {
+  display: table-cell;
+}
+.hoeringer_details .hoeringer_processing_deadline span,
+.hoeringer_details .hoeringer_deadline span,
+.hoeringer_details .hoeringer_status span,
+.hoeringer_details .hoeringer_theme span {
+  width: 100px;
+}
 /*# sourceMappingURL=hoeringer.css.map */
