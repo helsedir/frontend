@@ -40,6 +40,18 @@
   width: auto;
   height: auto;
 }
+.no-svg .e-mail {
+  background-image: url('../img/ikon_epost.png');
+  background-repeat: no-repeat;
+  background-size: 20px 27px;
+  padding-left: 30px;
+}
+.no-svg .rss {
+  background-image: url('../img/ikon_rss.png');
+  background-repeat: no-repeat;
+  background-size: 20px 27px;
+  padding-left: 30px;
+}
 .menubutton a.js-expander i {
   margin-left: 0;
 }
