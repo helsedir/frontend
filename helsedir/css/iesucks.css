@@ -46,11 +46,17 @@
   background-size: 20px 27px;
   padding-left: 30px;
 }
+.no-svg .e-mail img {
+  display: none;
+}
 .no-svg .rss {
   background-image: url('../img/ikon_rss.png');
   background-repeat: no-repeat;
   background-size: 20px 27px;
   padding-left: 30px;
+}
+.no-svg .rss img {
+  display: none;
 }
 .menubutton a.js-expander i {
   margin-left: 0;
