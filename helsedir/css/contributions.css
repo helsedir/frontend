@@ -1,16 +1,4 @@
-﻿.tilskudd {
-  margin-bottom: 10px;
-}
-.tilskudd a {
-  text-decoration: none;
-}
-.tilskudd p {
-  margin: 0;
-}
-.tilskudd h2.internal-link.aftertext {
-  margin-bottom: 0;
-}
-.tilskudd_sortcontrols {
+﻿.tilskudd_sortcontrols {
   margin-top: 35px;
   height: 25px;
 }

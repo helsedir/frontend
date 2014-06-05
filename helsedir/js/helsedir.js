@@ -109,6 +109,6 @@
 
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {
-        $(this).toggleClass('visuallyhidden').siblings().toggleClass('visuallyhidden');
+        $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
     });
 });
