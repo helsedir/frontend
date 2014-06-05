@@ -150,6 +150,7 @@
 .masterheader .links {
   color: #004e66;
   margin-right: 15px;
+  vertical-align: sub;
 }
 .masterheader .links:focus {
   background: #004e66;
@@ -281,7 +282,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -35px;
+  margin-top: -34px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
