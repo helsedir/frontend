@@ -28,6 +28,14 @@
   opacity: 1;
   height: auto;
 }
+.no-svg input[type="radio"] + label span {
+  margin: 0;
+  vertical-align: middle;
+}
+.no-svg input[type="checkbox"] + label span {
+  margin: 0;
+  vertical-align: middle;
+}
 .menubutton a.js-expander i {
   margin-left: 0;
 }
