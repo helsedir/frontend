@@ -181,6 +181,10 @@
         a {
             font-size: 26px;
         }
+
+        .internal-link.aftertext {
+            margin-top: 0;
+        }
     }
 
     p {
@@ -219,7 +223,20 @@
             text-align: right;
         }
 
+        .month {
+            margin-right: 28px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: @fontCalibri;
+            color: @colorRed;
+            display: block;
+            text-align: right;
+        }
+
         .conference_info {
+            .internal-link.aftertext {
+                margin-bottom: 9px;
+            }
         }
     }
 
@@ -267,6 +284,24 @@
 
 #menu_search {
     border-radius: 0;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        font-size: 16px;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 599px) {

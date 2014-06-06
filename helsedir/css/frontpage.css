@@ -137,6 +137,9 @@
 .frontpage .news a {
   font-size: 26px;
 }
+.frontpage .news .internal-link.aftertext {
+  margin-top: 0;
+}
 .frontpage p {
   margin: 0;
 }
@@ -167,6 +170,18 @@
   margin-right: 28px;
   line-height: 42px;
   text-align: right;
+}
+.frontpage .conferenceitem .month {
+  margin-right: 28px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Calibri';
+  color: #c63629;
+  display: block;
+  text-align: right;
+}
+.frontpage .conferenceitem .conference_info .internal-link.aftertext {
+  margin-bottom: 9px;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
@@ -200,6 +215,24 @@
 }
 #menu_search {
   border-radius: 0;
+}
+#menu_search::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 16px;
+}
+#menu_search:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 16px;
+  opacity: 1;
+}
+#menu_search::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 16px;
+  opacity: 1;
+}
+#menu_search:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 16px;
 }
 @media only screen and (max-width: 599px) {
   .entrancebutton {
