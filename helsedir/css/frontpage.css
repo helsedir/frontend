@@ -36,7 +36,7 @@
 }
 .entrancebutton.menu a.js-expanded {
   background-color: #dbdcdd;
-  color: black;
+  color: #222;
   padding-bottom: 65px;
 }
 .entrancebutton.menu a:hover {
@@ -112,8 +112,9 @@
   background: white;
 }
 .frontpagewrapper_crisis {
-  background: white;
+  background: #f4d01e;
   padding: 1px 0;
+  margin-bottom: 30px;
 }
 .frontpage {
   padding-bottom: 50px;
@@ -156,7 +157,7 @@
   line-height: 1em;
   font-size: 18px;
   margin-bottom: 10px;
-  color: black;
+  color: #222;
 }
 .frontpage .conferenceitem a {
   font-size: 26px;

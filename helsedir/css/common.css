@@ -846,7 +846,7 @@ h4.keyfigures {
   display: inline-block;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #222;
 }
 .showmorenews a:hover {
   text-decoration: none;
@@ -861,25 +861,39 @@ h4.keyfigures {
 .crisis {
   margin: 15px;
   padding-bottom: 50px;
-  background: white;
+  background: #f4d01e;
   padding-top: 1px;
+}
+.crisis h1 {
+  background-color: #f4d01e;
+  background-image: url(../img/kriseikon_trekant.svg);
+  background-size: 49px;
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #222;
+  padding-left: 80px;
 }
 .crisis .fa-exclamation {
   color: #df9922;
   font-size: 2em;
 }
 .crisis .calltoaction {
-  border-color: #df9922;
-  color: black;
+  border-color: #222;
+  color: #222;
+}
+.crisis .calltoaction:hover {
+  background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  color: white;
+}
+.crisis .calltoaction:hover:before {
+  color: white;
 }
 .crisis .border_crisis {
-  border-bottom: 5px solid #df9922;
+  border-bottom: 5px solid #222;
   padding-bottom: 20px;
-  width: 100%;
-}
-.crisis .border_crisis_bottom {
-  border-bottom: 5px solid #df9922;
-  padding-bottom: 50px;
   width: 100%;
 }
 .crisis #volcano {
@@ -889,11 +903,54 @@ h4.keyfigures {
 }
 .crisis .bulletlist li:before {
   content: "•";
-  color: #df9922;
+  color: #222;
   margin-right: 20px;
 }
 .crisis .urgentinformation {
   padding-left: 50px;
+}
+.crisis a {
+  text-decoration: underline;
+  color: #222;
+}
+.crisis a:hover,
+.crisis a:visited {
+  color: #222;
+}
+.crisis_banner {
+  background: #f4d01e;
+  height: 100px;
+}
+.crisis_banner .container {
+  background-color: #f4d01e;
+  background-image: url(../img/kriseikon_trekant.svg);
+  background-size: 49px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.crisis_banner h1 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 33px 0 0 58px;
+  padding: 0;
+  color: #222;
+  float: left;
+}
+.crisis_banner .crisis_info {
+  float: left;
+  margin-left: 40px;
+  max-width: 530px;
+  color: #222;
+}
+.crisis_banner .crisis_link {
+  float: left;
+  margin: 63px 0 0 20px;
+  display: block;
+  color: #222;
+}
+.crisis_banner .crisis_link:hover,
+.crisis_banner .crisis_link:visited {
+  color: #222;
 }
 .tema_select_all {
   font-weight: bold;
@@ -1142,7 +1199,7 @@ fieldset {
   display: block;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #222;
   text-decoration: none;
 }
 .transportsideknapp a h2 {
@@ -1158,14 +1215,14 @@ fieldset {
 }
 .transportsideknapp a:visited {
   text-decoration: none;
-  color: black;
+  color: #222;
 }
 .transportsideknapp a:visited h2 {
   color: #0093a7;
 }
 .transportsideknapp a:hover {
   text-decoration: none;
-  color: black;
+  color: #222;
 }
 .transportsideknapp a:hover h2 {
   text-decoration: underline;

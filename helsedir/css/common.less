@@ -995,7 +995,7 @@ p.keyfigures, h4.keyfigures {
         display: inline-block;
         width: 100%;
         height: 100%;
-        color: black;
+        color: #222;
 
         &:hover {
             text-decoration: none;
@@ -1014,10 +1014,17 @@ p.keyfigures, h4.keyfigures {
 .crisis {
     margin: 15px;
     padding-bottom: 50px;
-    background: white;
+    background: @colorYellow;
     padding-top: 1px;
 
     h1 {
+        background-color: @colorYellow;
+        background-image: url(../img/kriseikon_trekant.svg);
+        background-size: 49px;
+        background-position: left;
+        background-repeat: no-repeat;
+        color: #222;
+        padding-left: 80px;
     }
 
     .fa-exclamation {
@@ -1026,19 +1033,25 @@ p.keyfigures, h4.keyfigures {
     }
 
     .calltoaction {
-        border-color: @colorOrange;
-        color: black;
+        border-color: #222;
+        color: #222;
+
+        &:hover {
+            background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+            color: white;
+
+            &:before {
+                color: white;
+            }
+        }
     }
 
     .border_crisis {
-        border-bottom: 5px solid @colorOrange;
+        border-bottom: 5px solid #222;
         padding-bottom: 20px;
-        width: 100%;
-    }
-
-    .border_crisis_bottom {
-        border-bottom: 5px solid @colorOrange;
-        padding-bottom: 50px;
         width: 100%;
     }
 
@@ -1051,13 +1064,62 @@ p.keyfigures, h4.keyfigures {
     .bulletlist li {
         &:before {
             content: "•";
-            color: @colorOrange;
+            color: #222;
             margin-right: 20px;
         }
     }
 
     .urgentinformation {
         padding-left: 50px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #222;
+
+        &:hover, &:visited {
+            color: #222;
+        }
+    }
+}
+
+.crisis_banner {
+    background: @colorYellow;
+    height: 100px;
+
+    .container {
+        background-color: @colorYellow;
+        background-image: url(../img/kriseikon_trekant.svg);
+        background-size: 49px;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 33px 0 0 58px;
+        padding: 0;
+        color: #222;
+        float: left;
+    }
+
+    .crisis_info {
+        float: left;
+        margin-left: 40px;
+        max-width: 530px;
+        color: #222;
+    }
+
+    .crisis_link {
+        float: left;
+        margin: 63px 0 0 20px;
+        display: block;
+        color: #222;
+
+        &:hover, &:visited {
+            color: #222;
+        }
     }
 }
 
@@ -1352,7 +1414,7 @@ fieldset {
         display: block;
         width: 100%;
         height: 100%;
-        color: black;
+        color: #222;
         text-decoration: none;
 
         h2 {
@@ -1375,7 +1437,7 @@ fieldset {
                 color: @colorMediumBlue;
             }
 
-            color: black;
+            color: #222;
         }
 
         &:hover {
@@ -1385,7 +1447,7 @@ fieldset {
             }
 
             text-decoration: none;
-            color: black;
+            color: #222;
         }
     }
 
