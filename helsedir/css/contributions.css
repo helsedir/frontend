@@ -8,10 +8,14 @@
 #tilskuddsaar {
   display: none;
 }
+.tilskudd_information {
+  margin-top: 50px;
+}
 .tilskudd_information .tilskudd_info_attributes {
   width: 35%;
   float: left;
   margin-right: 10px;
+  font-weight: bold;
 }
 .tilskudd_information p {
   margin-bottom: 10px;

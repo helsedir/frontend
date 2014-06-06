@@ -427,21 +427,22 @@ figure .metatext {
 }
 .linklist {
   list-style-type: none;
-  text-decoration: underline;
   margin: 10px 0 15px 0;
 }
 .linklist a:visited {
   text-decoration: none;
 }
 .linklist li a,
-.linklist li a.internal-link.aftertext {
+.linklist li a.internal-link.arrow_right {
   margin-bottom: 5px;
 }
 .linklist li a.external-link {
   margin: 0;
 }
-.linklist li a.internal-link.aftertext {
+.linklist li a.internal-link.arrow_right,
+.linklist li a.external-link {
   text-decoration: none;
+  margin: 5px 0;
 }
 .bulletlist {
   list-style-position: outside;
@@ -545,10 +546,10 @@ iframe {
 .internal-link p {
   display: inline;
 }
-.internal-link.aftertext {
+.internal-link.arrow_right {
   margin: 15px 0;
 }
-.internal-link.aftertext:after {
+.internal-link.arrow_right:after {
   padding-left: 10px;
   content: "\f105";
   font-family: "FontAwesome";
@@ -606,7 +607,7 @@ h4.keyfigures {
   line-height: 30px;
   color: #222;
 }
-.module .module_header .internal-link.aftertext {
+.module .module_header .internal-link.arrow_right {
   margin-bottom: 5px;
   font-size: 24px;
   line-height: 30px;

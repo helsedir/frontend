@@ -504,14 +504,13 @@ figure {
 
 .linklist {
     list-style-type: none;
-    text-decoration: underline;
     margin: 10px 0 15px 0;
 
     a:visited {
         text-decoration: none;
     }
 
-    li a, li a.internal-link.aftertext {
+    li a, li a.internal-link.arrow_right {
         margin-bottom: 5px;
     }
 
@@ -519,8 +518,9 @@ figure {
             margin: 0;
         }
 
-        li a.internal-link.aftertext {
+        li a.internal-link.arrow_right, li a.external-link {
             text-decoration: none;
+            margin: 5px 0;
         }
 }
 
@@ -635,11 +635,11 @@ iframe {
         display: inline;
     }
 
-    &.aftertext {
+    &.arrow_right {
         margin: 15px 0;
     }
 
-        &.aftertext:after {
+        &.arrow_right:after {
             padding-left: 10px;
             content: "\f105";
             font-family: "FontAwesome";
@@ -704,7 +704,7 @@ p.keyfigures, h4.keyfigures {
         line-height: 30px;
         color: #222;
 
-        .internal-link.aftertext {
+        .internal-link.arrow_right {
             margin-bottom: 5px;
             font-size: 24px;
             line-height: 30px;

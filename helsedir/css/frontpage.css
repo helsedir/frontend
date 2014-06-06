@@ -138,7 +138,7 @@
 .frontpage .news a {
   font-size: 26px;
 }
-.frontpage .news .internal-link.aftertext {
+.frontpage .news .internal-link.arrow_right {
   margin-top: 0;
 }
 .frontpage p {
@@ -181,7 +181,7 @@
   display: block;
   text-align: right;
 }
-.frontpage .conferenceitem .conference_info .internal-link.aftertext {
+.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
   margin-bottom: 9px;
 }
 .frontpage .statistics_image {
