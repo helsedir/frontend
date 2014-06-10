@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Ventetider mars</title>
+    <title>Helsedirektoratet</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/frontpage.css" rel="stylesheet" />
     <link href="../css/statistics.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
     <!--[if lte IE 8]>
-    <link href="/css/ie8fix.css" rel="stylesheet">
+    <link href="/css/iesucks.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
     <script src="../js/html5.js"></script>
     <script src="../js/respond.js"></script>
@@ -32,35 +33,27 @@
     </script>
 </head>
 
-<body>
+<body class="no-background">
     <div id="header">
         <div class="shortcuts">
             <ul>
-                <li><a href="#content" id="contentshortcut">Hopp over meny</a></li>
+                <li><a href="#menu" tabindex="1" accesskey="i" id="menushortcut">Meny</a></li>
+                <li><a href="#content" id="contentshortcut">Innhold</a></li>
             </ul>
         </div>
         <div class="container">
             <header class="row masterheader">
-                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
-                    <a href="forside.html"><span id="logo"></span></a>
+                <div class="col-xs-8 col-sm-8 col-md-5 col-lg-4">
+                    <a href="forside.html" id="logo"></a>
                 </div>
 
-                <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
-                    <div class="menubutton pull-right">
-                        <a href="#" class="js-expander">
-                            <span>Alt innhold</span>
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-4 visible-xs xs-no-padding col-sm-4 visible-sm">
-                    <div class="menubutton mobile-menu js-expander">
-                    </div>
+                <div class="col-xs-2 col-xs-offset-2 visible-xs xs-no-padding col-sm-offset-3 col-sm-1 visible-sm">
+
                     <div class="menubutton mobile-search" id="mobilesearch">
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-2 col-lg-3 hidden-mobile" id="mainsearch">
+                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile col-lg-offset-2" id="mainsearch">
                     <form>
                         <label for="mainsearchinput" class="visuallyhidden">Søk</label>
                         <input id="mainsearchinput" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
@@ -73,16 +66,87 @@
             </header>
         </div>
     </div>
+    <div class="mainentrance">
+        <div class="container">
+            <div class="row forside">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+
+                    <div class="entrancebutton ">
+                        <a href="transportside_folkehelse.html">
+                            <div class="innerDiv">
+                                <h2>Folkehelse og forebygging</h2><p>Kosthold, fysisk aktivitet, psykisk helse, tobakk ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="entrancebutton">
+                        <a href="../medisinskeRetningslinjer/">
+                            <div class="innerDiv">
+                                <h2>Nasjonale faglige retningslinjer</h2><p>Anbefalinger og veiledere</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="entrancebutton">
+                        <a href="transportside_statistikk.html">
+                            <div class="innerDiv">
+                                <h2>Statistikk og analyse</h2>
+                                <p>Finn statistikk, lag egne rapporter, hent rådata</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton ">
+                        <a href="tilskudd.html">
+                            <div class="innerDiv"> <h2>Tilskudd</h2><p>Søk og rapporter tilskudd</p></div>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton">
+                        <a href="transportside_loverogregler.html">
+                            <div class="innerDiv">
+                                <h2>Lovfortolkninger</h2><p>Fortolkninger, brev og uttalelser</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton menu">
+                        <a href="#" class="js-expander" onclick="return false;">
+                            <div>
+                                <h3>
+                                    Alt innhold A til Å <i class="fa fa-bars"></i>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="row">-->
+            <!--                <div class="col-md-5 col-md-offset-7 menubar">-->
+            <!--                    <div class="js-expander menyknapp">-->
+            <!--                        <span>-->
+            <!--                            Alt innhold og søk <i class="fa fa-bars"></i>-->
+            <!--                        </span>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </div>
+
     <div class="toppmeny container-fluid js-expand visuallyhidden">
         <div class="inner container-fluid">
             <div class="container">
                 <nav class="tabs">
+                    <a id="menu" tabindex="-1"></a>
+
                     <ul class="tab-links">
-                        <li class="active"><a id="content_categories_link" href="#tabCategoriesHeader">Kategorier</a></li>
-                        <li><a id="content_fullist_link" href="#tabAlphabeticHeader">Innhold A-Å</a></li>
+                        <li class="active"><a id="content_categories_link" href="#tab1">Kategorier</a></li>
+                        <li><a id="content_fullist_link" href="#tab2">Innhold A-Å</a></li>
+                        <li class="menu_search hidden-sm hidden-xs">
+                            <label for="menu_search" class="visuallyhidden">Søk</label>
+                            <input id="menu_search" class="mainsearch" type="text" placeholder="Søk i alt innhold" />
+                        </li>
                     </ul>
                     <div class="tab-content">
-                        <div id="tabCategoriesHeader" class="tab active">
+                        <div id="tab1" class="tab active">
 
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
@@ -105,7 +169,9 @@
                                         <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="clearfix visible-xs visible-sm"></div>
+
+                                <div class=" col-sm-6 col-md-4">
                                     <ul>
 
                                         <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
@@ -119,10 +185,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="tabAlphabeticHeader" class="tab">
+                        <div id="tab2" class="tab">
                             <div class="row alphabetical">
-                                <div class="col-sm-2 col-md-3 col-lg-3">
-                                    <a id="content_fullist" tabindex="-1"></a>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
 
                                     <ul>
                                         <li class="character">A</li>
@@ -163,7 +228,7 @@
                                         <li><a href="#">Graviditet, fødsel og amming</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="col-sm-6 col-md-3 col-lg-3">
 
                                     <ul>
                                         <li class="character">H</li>
@@ -194,7 +259,8 @@
                                         <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="clearfix hidden-md hidden-lg"></div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
 
                                     <ul>
                                         <li class="character">M</li>
@@ -224,7 +290,7 @@
                                         <li><a href="#">Pårørende                           </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="col-sm-6 col-md-3 col-lg-3">
 
                                     <ul>
                                         <li class="character">R</li>
@@ -259,136 +325,89 @@
         </div>
     </div>
     <a id="content" tabindex="-1"></a>
-    <div class="container">
+    <div class="container frontpage">
+
         <div class="row">
-            <article class="col-md-7 col-lg-8">
-                <header id="pageheader">
-                    <nav>
-                        <ol class="breadcrumbs clearfix">
-                            <li><a href="forside.html">Forside</a></li>
-                            <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
-                            <li><a href="transportside_finnstatistikk.html">Finn statistikk</a></li>
-                        </ol>
-                    </nav>
-                    <h1>Ventetider</h1>
-                    <div class="border"></div>
-                </header>
-                <section class="sectionwithaside">
-                    <h2 class="accordion_mobile">Norge oktober 2013 - mars 2014</h2>
-                    <div>
-                        <h3>Utvikling i median ventetid i antall dager, siste 6 måneder</h3>
-                        <div class="statistics_chart">
-                            <div id="chart_div"></div>
-                            <div id="chart_div_legend"></div>
-                            <span class="metatext statistics clearfix">Kilde: Helsedirektoratet, Norsk Pasientregister</span>
-                        </div>
-                        <a class="pull-right" href="#">Last ned høyoppløselig versjon</a>
-
-                        <div class="statistics_table ">
-                            <table class="table_general">
-                                <thead>
-                                    <tr class="odd">
-                                        <th></th>
-                                        <th>Oktober 2013</th>
-                                        <th>November 2013</th>
-                                        <th>Desember 2013</th>
-                                        <th>Januar 2014</th>
-                                        <th>Februar 2014</th>
-                                        <th>Mars 2014</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="odd">
-                                        <td data-title="">Somatikk</td>
-                                        <td data-title="Oktober 2013">49</td>
-                                        <td data-title="November 2013">49</td>
-                                        <td data-title="Desember 2013">44</td>
-                                        <td data-title="Januar 2014">56</td>
-                                        <td data-title="Februar 2014">52</td>
-                                        <td data-title="Mars 2014">52</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="">VOP</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">39</td>
-                                        <td data-title="Januar 2014">50</td>
-                                        <td data-title="Februar 2014">48</td>
-                                        <td data-title="Mars 2014">42</td>
-                                    </tr>
-                                    <tr class="odd">
-                                        <td data-title="">BUP</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">39</td>
-                                        <td data-title="Januar 2014">50</td>
-                                        <td data-title="Februar 2014">48</td>
-                                        <td data-title="Mars 2014">42</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="">RUS</td>
-                                        <td data-title="Oktober 2013">35</td>
-                                        <td data-title="November 2013">36</td>
-                                        <td data-title="Desember 2013">37</td>
-                                        <td data-title="Januar 2014">48</td>
-                                        <td data-title="Februar 2014">34</td>
-                                        <td data-title="Mars 2014">38</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a class="pull-right " href="#">Last ned høyoppløselig versjon</a>
-                        </div>
-                    </div>
-                </section>
-
-                <aside class="aside">
-                    <div class="module module_message bubble">
-                        <div class="module_description">Nye tall hvert tertial</div>
-                        <p class="module_header">Neste publisering av tall</p>
-                        <p class="keyfigures">1.april 2014</p>
-                        <img src="../img/modules/snakkebob-mellomblaa.png" alt="">
-                    </div>
-
-                    <div class=" module module_publication">
-                        <div class="module_description ">Rapport</div>
-                        <h5 class="module_header"><a href="#" class="internal-link arrow_right">Kvalitet i ventelistedata (2014)</a></h5>
-                        <p class="module_theme">Statistikk</p><p class="module_ingress">Utfordringer og foreslått tiltak for å forbedre kvaliteten i ventelistestatistikken</p>
-                        <img class="pulse" src="../img/modules/EKG-orange.png" alt="">
-                    </div>
-                </aside>
-                <section class="statistics_reports ">
-                    <h2 class="">Rapportgenerator</h2>
-                    <div>
-                        <ul class="bulletlist">
-                            <li>Finn tall for din kommune</li>
-
-                            <li>Se på ventetiden for ulike diagnoser</li>
-                            <li>Last ned alle data</li>
-                        </ul>
-                        <a href="#" class="calltoaction">Lag tabeller og figurer</a>
-                    </div>
-                </section>
-                <section class="statistics_description">
-                    <h2 class="">Om statistikken</h2>
-                    <div class="wrapper">
-                        <h3 class="accordion">Generelt om statistikken</h3>
-                        <div class="content"></div>
-                    </div>
-
-                    <div class="wrapper">
-                        <h3 class="accordion">Definisjoner</h3>
-                        <div class="content">
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <h3 class="accordion"> Feilkilder</h3>
-                        <div class="content"></div>
-                    </div>
-                </section>
-            </article>
+            <section class="col-md-12  importantnews">
+                <div class="video-container">
+                    <iframe src="//www.youtube.com/embed/hhf9ovda9RU" frameborder="0"></iframe>
+                </div>
+                <a href="#"><h2 class="internal-link arrow_right noborder">Hver bevegelse teller - det er 30 minutter om dagen som gjelder! </h2></a>
+                <a href="#" class="calltoaction">Finn ut mer...</a>
+            </section>
         </div>
     </div>
+    <div class="frontpagewrapper white">
 
+        <div class="container frontpage">
+
+            <div class="row">
+                <section class="col-md-6 col-lg-6">
+                    <a href="nyheter.html"><h2>Nyheter</h2></a>
+                    <div class="news"><p>08.05.2014</p> <a href="#" class="internal-link arrow_right">Nye nasjonale kvalitetsindikatorer</a></div>
+                    <div class="news">
+                        <p>07.05.2014</p> <a href="#" class="internal-link arrow_right">Har du fått #dine30 i dag?</a>
+                    </div>
+                    <div class="news">
+                        <p>05.05.2014</p> <a href="#" class="internal-link arrow_right">Følg Helsekonferansen 2014 direkte</a>
+                    </div>
+                    <a href="nyheter.html" class="internal-link arrow_right">Se alle nyheter</a>
+                    <div class="border_grey"></div>
+                </section>
+                <section class="col-md-6 col-lg-6 newsandconference">
+                    <a href="kursogkonferanser.html"><h2>Kurs og konferanser</h2></a>
+                    <div class="conferenceitem clearfix">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="conference_date">7. - 8. </div>
+                                    <span class="month">august</span>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Helse&shy;konferanse</a><p>Oslo</p></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="conference_date">26. - 29.</div>
+                                    <span class="month">august</span>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Nordisk folkehelse&shy;konferanse</a><p>Trondheim</p></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="conference_date">19.</div>
+                                    <span class="month">juni</span>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Informasjonsseminar om EUs helseprogram og utlysning av midler for 2014</a><p>Oslo</p></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="kursogkonferanser.html" class="internal-link arrow_right">Se alle kurs og konferanser</a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="frontpagewrapper grey">
+        <div class="container frontpage">
+
+            <div class="row">
+                <section class="col-md-12">
+                    <a href="#"><h2>Antall pasienter med brystreduserende operasjoner i 2013</h2></a>
+                    <div class="chart_wrapper">
+                        <div id="chart_div" class="chart_div"></div>
+                        <p class="metatext statistics">Kilde: Helsedirektoratet, Norsk Pasientregister</p>
+                    </div>
+                    <a href="statistikk_ventetider.html" class="internal-link arrow_right">Se flere tall om kirurgiske prosedyrer</a>
+                </section>
+            </div>
+        </div>
+    </div>
     <div class="shortcuts">
         <ul>
             <li><a href="#bottom">Bunnlinje</a></li>
@@ -426,7 +445,9 @@
                                                 <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="clearfix visible-xs visible-sm"></div>
+
+                                        <div class=" col-sm-6 col-md-4">
                                             <ul>
 
                                                 <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
@@ -440,7 +461,7 @@
                                 </div>
                                 <div id="tabAlphabeticFooter" class="tab">
                                     <div class="row alphabetical">
-                                        <div class="col-sm-2 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li class="character">A</li>
@@ -481,7 +502,7 @@
                                                 <li><a href="#">Graviditet, fødsel og amming</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li class="character">H</li>
@@ -512,7 +533,8 @@
                                                 <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="clearfix hidden-md hidden-lg"></div>
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li class="character">M</li>
@@ -542,7 +564,7 @@
                                                 <li><a href="#">Pårørende                           </a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
 
                                             <ul>
                                                 <li class="character">R</li>
@@ -578,6 +600,7 @@
             </div>
         </div>
         <a id="bottom" tabindex="-1"></a>
+
         <div class="footerlinkswrapper">
             <div class="container">
                 <div class="row">
@@ -622,6 +645,15 @@
         <div id="map" class="map">
         </div>
     </footer>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/helsedir.js"></script>
+    <script src="../js/expander_frontpage.js"></script>
+    <script src="../js/statistics.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="../js/google.maps.js"></script>
+    <script src="../js/chart_column.js"></script>
 
     <!-- begin usabilla live embed code -->
     <script type="text/javascript">
@@ -629,16 +661,5 @@
         window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/05ef68e9ef78.js");
         /*]]>{/literal}*/</script>
     <!-- end usabilla live embed code -->
-
-    <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/tabs.js"></script>
-    <script src="../js/helsedir.js"></script>
-    <script src="../js/expandmenu.js"></script>
-    <script src="../js/statistics.js"></script>
-    <script src="https://www.google.com/jsapi"></script>
-    <script src="../js/chart_ventetider.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="../js/google.maps.js"></script>
-    <!--    <script src="../js/tabs.js"></script>-->
 </body>
 </html>

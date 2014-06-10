@@ -129,6 +129,9 @@ a:visited:focus p {
   color: white !important;
   outline: 0;
 }
+a:hover {
+  text-decoration: underline;
+}
 .marginTop20px {
   margin-top: 20px;
 }
@@ -503,6 +506,7 @@ figure .metatext {
   background: #ffffff url('../img/ikon_pilmothoyre.svg') no-repeat;
   background-position: 5% 50%;
   background-size: 10px;
+  cursor: pointer;
 }
 .calltoaction:hover,
 .calltoaction:focus {
