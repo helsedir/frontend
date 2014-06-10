@@ -3,13 +3,13 @@ google.setOnLoadCallback(drawChart);
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Måned', 'Somatikk', 'Voksenpsykiatrisk Poliklinikk (VOP) ', 'Barne- og ungsomspsykiatrisk Poliklinikk (BUP)', 'RUS', 'IPA'],
-        ['okt 13', 49, 35, 35, 35, 32],
-        ['nov 13', 49, 35, 36, 36, 30],
-        ['des 13', 44, 35, 39, 37, 28],
-        ['jan 14', 56, 48, 50, 48, 26],
-        ['feb 14', 52, 34, 48, 34, 24],
-        ['mar 14', 47, 38, 42, 38, 22]
+        ['Måned', 'Somatikk', 'Voksenpsykiatrisk Poliklinikk (VOP) ', 'Barne- og ungsomspsykiatrisk Poliklinikk (BUP)', 'RUS'],
+        ['okt 13', 49, 35, 35, 35],
+        ['nov 13', 49, 35, 36, 36],
+        ['des 13', 44, 35, 39, 37],
+        ['jan 14', 56, 48, 50, 48],
+        ['feb 14', 52, 34, 48, 34],
+        ['mar 14', 47, 38, 42, 38]
     ]);
 
     var options = {
