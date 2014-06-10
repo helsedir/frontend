@@ -107,11 +107,29 @@
 
     var map = new google.maps.Map(document.getElementById("map"),
         mapOptions);
+
     var image = '/img/googlemaps_pin.png';
+
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
         icon: image
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+        content: 'Helsedirektoratet\ Universitetsgata 2\ 0164 Oslo\ Norge',
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, this);
+    });
+
+    google.maps.event.addListener(marker, 'mouseover', function () {
+        infowindow.open(map, this);
+    });
+
+    google.maps.event.addListener(marker, 'mouseout', function () {
+        infowindow.close();
     });
 }
 
