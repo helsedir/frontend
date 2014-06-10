@@ -248,7 +248,7 @@ a:visited:focus p {
 }
 .tabs .tab-links li.active a {
   color: #004e66;
-  font-family: 'Calibri bold';
+  font-family: 'Calibri-Bold';
   background: white;
 }
 .tabs .tab-links li.active a:hover,
