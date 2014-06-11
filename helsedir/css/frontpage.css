@@ -22,27 +22,30 @@
   float: left;
   position: relative;
 }
-.entrancebutton.menu a {
+.entrancebutton.menu button {
   background: #838078;
+  border: none;
+  height: 230px;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.entrancebutton.menu a h3 {
-  text-align: center;
-  position: relative;
-  margin: 80px 10px 15px 12px;
+.entrancebutton.menu button h2 {
+  margin: auto;
+  font-size: 28px;
+  line-height: 35px;
+  color: white;
 }
-.entrancebutton.menu a.js-expanded {
+.entrancebutton.menu button.js-expanded {
   background-color: #dbdcdd;
   color: #222;
   padding-bottom: 65px;
 }
-.entrancebutton.menu a:hover {
+.entrancebutton.menu button:hover {
   background: #666460;
 }
-.entrancebutton.menu a:focus {
+.entrancebutton.menu button:focus {
   background: #666460;
 }
 .entrancebutton a {
@@ -249,7 +252,7 @@
 }
 .video-container {
   padding-bottom: 40%;
-  margin: 0;
+  margin: 40px 0 20px 0;
 }
 @media only screen and (max-width: 599px) {
   .entrancebutton {
@@ -262,11 +265,16 @@
     margin: 0;
     color: white;
   }
-  .entrancebutton.menu a h3 {
+  .entrancebutton.menu button {
+    width: 100%;
+    height: 93px;
+    border-radius: 4px;
+  }
+  .entrancebutton.menu h2 {
     margin: 15px 0 15px 12px;
     text-align: center;
   }
-  .entrancebutton.menu a h3 .fa-bars {
+  .entrancebutton.menu h2 .fa-bars {
     padding-left: 10px;
   }
   .frontpage .chart_wrapper {

@@ -52,8 +52,7 @@
   margin: 0;
   line-height: 1.5em;
 }
-#header,
-#footer {
+#header {
   background: white;
 }
 #logo {
@@ -63,6 +62,9 @@
   background: #ffffff url('../img/logo.svg') no-repeat;
   display: block;
   background-position: center;
+}
+#logo:focus {
+  background: url(../img/Helsedir_logo_focus.png) no-repeat center;
 }
 .menubutton {
   width: 150px;
@@ -125,8 +127,8 @@
 .mainsearch {
   height: 39px;
   /*max-width: 220px;*/
-  width: 100%;
-  padding: 0 28px 0 5px;
+  width: 86%;
+  padding: 0 37px 0 5px;
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
@@ -177,100 +179,6 @@ footer a:focus {
   margin-bottom: 30px;
   background: #838078;
   padding: 0 0 50px 0 !important;
-  /*.tab-links {
-        margin: 0;
-        margin-top: -35px;
-        background-color: transparent;
-
-        &:after {
-            display: block;
-            clear: both;
-            content: '';
-        }
-
-        li {
-            margin: 0 15px 0 0;
-            float: left;
-            list-style: none;
-            text-align: center;
-
-            a {
-                background-color: @colorDarkBlue;
-                border-radius: 0;
-                color: #ffffff;
-                font-family: @fontCalibri;
-                width: 100%;
-                padding-bottom: 6px;
-
-                &:hover, &:focus {
-                    background: @colorBlue023c49;
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-
-            &.active a, &.active a:hover {
-                color: #4c4c4c;
-                background-color: #ffffff;
-            }
-
-            &.active {
-                border: none !important;
-                font-family: @fontCalibriBold;
-                font-size: 20px;
-            }
-
-            input {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        a {
-            padding: 0 15px;
-            display: inline-block;
-            border-radius: 3px 3px 0px 0px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #4c4c4c;
-            transition: all linear 0.15s;
-            background: white;
-
-            &:hover, &:focus {
-                background: @colorBlue023c49;
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-
-    .tab-content {
-        border-top: none !important;
-        border-radius: 3px;
-        margin: 10px 0 10px 0;
-
-        li {
-            list-style-type: none;
-            border-bottom: 0,5px solid #a7a9ab;
-            font-family: @fontCalibri;
-            font-weight: 45px;
-            transition: all 0.3s;
-
-            a, a:visited, a:hover {
-                color: @colorDarkBlue;
-            }
-
-            &:hover {
-                background: #d1d0c4;
-            }
-        }
-    }
-
-    .tabs-statistics {
-        .tab-content {
-            padding: 15px 0 0 0;
-        }
-    }*/
 }
 .toppmeny .inner {
   background: #ffffff;
@@ -305,8 +213,8 @@ footer .tabs .tab-links li.active a,
 }
 footer .tabs .tab-links li.active a:focus,
 .toppmeny .tabs .tab-links li.active a:focus {
-  background: white;
-  color: #004e66 !important;
+  background: #004e66;
+  color: white;
 }
 footer .tabs .tab-links li.active:hover,
 .toppmeny .tabs .tab-links li.active:hover,
