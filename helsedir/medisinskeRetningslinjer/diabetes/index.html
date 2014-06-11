@@ -4,7 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
-		    <link href="http://helsedir.azurewebsites.net/css/reset.css" rel="stylesheet" />
+		    <link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
+
+    <link href="http://helsedir.azurewebsites.net/css/reset.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/common.css" rel="stylesheet" />
@@ -30,17 +42,16 @@
 		<span class="guidelineUpdated uppercase">Opprettet 30.05.2014, sist oppdatert 30.05.2014</span>
 	</header>
 	<section class="">
-	<p>
+	<div class="ingress">
 		Anbefalinger om forebygging, diagnostikk og behandling av diabetes.​​​
-	</p>
-	<form class="form-horizontal clearfix" role="form">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<label class="sr-only" for="">Søk i retningslinjene</label>
-			<div id="search_input" class="search_retningslinjer">
-				<input type="text" class="mainsearch form-control input-lg typeahead" placeholder="Søk i retningslinjen..." />
-			</div>
-		</div>
-	</form>
+	</div>
+	<div class="border"></div>
+	<form>
+  	<label for="searchinput" class="visuallyhidden">Søk i retningslinjen</label>
+    <div id="search_input">
+    	<input id="searchinput" class="search typeahead" type="text" placeholder="Søk etter anbefalinger i retningslinjen..." />
+     </div>
+   </form>
 
 	<h2>Innhold i retningslinjen</h2>
 		<ul class="bottomBorderOnListElementsMobile">

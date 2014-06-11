@@ -27,7 +27,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonale faglige retningslinjer</title>
-		    <link href="http://helsedir.azurewebsites.net/css/reset.css" rel="stylesheet" />
+		    <link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
+
+    <link href="http://helsedir.azurewebsites.net/css/reset.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/common.css" rel="stylesheet" />
@@ -51,30 +63,29 @@
 					<header>
 						<h1>Nasjonale faglige retningslinjer</h1>
 					</header>
-					<p class="">
+					<div class="ingress">
 						Anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper.
-					</p>
-					<form class="form-search form-horizontal clearfix" role="form">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<label class="sr-only" for="">Søk i retningslinjene</label>
-							<div id="search_input_retningslinjer" class="search_retningslinjer">
-								<input type="text" class="form-control input-lg typeahead" placeholder="Søk etter anbefalinger i retningslinjer og veiledere...">
-							</div>
-						</div>
-					</form>	
+					</div>
+					<div class="border"></div>
+					<form>
+          	<label for="searchinput" class="visuallyhidden">Søk i retningslinjer og veiledere</label>
+          	<div id="search_input_retningslinjer">
+            <input id="searchinput" class="search typeahead" type="text" placeholder="Søk etter anbefalinger i retningslinjer og veiledere..." />
+            </div>
+          </form>	
 					<div class="col-lg-6">
 						<h2>Retningslinjer</h2>
-						<ul>
-							<li><a href="antibiotika/">Antibiotika</a></li>
-							<li><a href="diabetes/">Diabetes</a></li>
-							<li><a href="spedbarnsernaering/">Spedbarnsernæring</a></li>
+						<ul class="bottomBorderOnListElementsMobile">
+							<li><a class="internal-link arrow_right" href="antibiotika/">Antibiotika</a></li>
+							<li><a class="internal-link arrow_right" href="diabetes/">Diabetes</a></li>
+							<li><a class="internal-link arrow_right" href="spedbarnsernaering/">Spedbarnsernæring</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-6">
 						<h2>Prioriteringsveiledere</h2>
-						<ul>
-							<li><a href="prioriteringsVeilederPsykiskHelsevern/">Psykisk helsevern</a></li>
-							<li><a href="prioriteringsVeilederFordoyelsessykdommer/">Fordøyelsessykdommer</a></li>
+						<ul class="bottomBorderOnListElementsMobile">
+							<li><a class="internal-link arrow_right" href="prioriteringsVeilederPsykiskHelsevern/">Psykisk helsevern</a></li>
+							<li><a class="internal-link arrow_right" href="prioriteringsVeilederFordoyelsessykdommer/">Fordøyelsessykdommer</a></li>
 						</ul>
 					</div>
 				</article>

@@ -1,7 +1,4 @@
 /* Spesifikt for retningslinjer */
-body {
-	background-color: #f7f6f6;
-}
 
 /* Fix for Bootstrap */
 .btn {
@@ -30,30 +27,16 @@ article p, section p {
 	margin-bottom: 10px;
 }
 
-article h1, section h1 {
-  line-height: 1.3em;
+.search, .twitter-typeahead {
+	width: 100%;
 }
 
-.search_retningslinjer:after{
-	content: "\f002"; 
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #004e66;
-    font-size: 26px;
-    position: absolute;
-    top:5px;
-    right: 30px;  
-}
-
+/* For twitter-typeahead */
 .search_retningslinjetittel {
 	font-size: 0.8em;
 	margin-left: 10px;
 	margin-top: 0px;
 }
-
-.twitter-typeahead { width: 100%; } 
 
 /*
 .guidelineInfo {
@@ -238,7 +221,7 @@ section header.section_heading h1 {
 	border-bottom: none;
 	font-size: 36px;
 	line-height: 42px;
-	font-family: "Soho Gothic W01 Light";
+	font-family: "soho gothic pro light";
 	margin: 70px 0 0 0;
 }
 
@@ -251,12 +234,6 @@ article section header h1, section header h1 {
 }
 
 
-
-p.grading {
-	display: none;
-}
-
-
 section.recommendation header h1 {
 	font-size: 1em;
 	margin-top: 1em;
@@ -264,6 +241,7 @@ section.recommendation header h1 {
 	margin-right: 1.5em;
 	padding-bottom: 0px;
 	border-bottom: none;
+	line-height: 30px;
 	
 }
 
