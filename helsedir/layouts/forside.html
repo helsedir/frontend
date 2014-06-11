@@ -46,7 +46,7 @@
         <div class="container">
             <header class="row masterheader">
                 <div class="col-xs-8 col-sm-8 col-md-5 col-lg-4">
-                    <a href="forside.html" id="logo"></a>
+                    <a href="forside.html" id="logo" title="Gå til forsiden"></a>
                 </div>
 
                 <div class="col-xs-2 col-xs-offset-2 visible-xs xs-no-padding col-sm-offset-3 col-sm-1 visible-sm">
@@ -121,15 +121,6 @@
                     </div>
                 </div>
             </div>
-            <!--            <div class="row">-->
-            <!--                <div class="col-md-5 col-md-offset-7 menubar">-->
-            <!--                    <div class="js-expander menyknapp">-->
-            <!--                        <span>-->
-            <!--                            Alt innhold og søk <i class="fa fa-bars"></i>-->
-            <!--                        </span>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
         </div>
     </div>
 
@@ -190,6 +181,7 @@
                         <div id="tab2" class="tab">
                             <div class="row alphabetical">
                                 <div class="col-sm-6 col-md-3 col-lg-3">
+                                    <a id="content_fullist" tabindex="-1"></a>
 
                                     <ul>
                                         <li class="character">A</li>
@@ -328,21 +320,34 @@
     </div>
     <a id="content" tabindex="-1"></a>
     <div class="container frontpage">
-        <a href="nyheter_ennyhet.html">
-            <h2>Nye kreftlegemidler vurdert</h2>
-            <div class="row">
-                <section class="col-md-6 col-lg-6 importantnews">
 
-                    <p class="ingress">
-                        Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.
-                    </p>
-                    <div class="calltoaction">Se hvilke kreftmidler som ble vurdert</div>
-                </section>
-                <section class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <img class="img-responsive hidden-xs hidden-sm importantphoto" src="../img/nyhetsillustrasjon.png" alt="Illustrasjonsfoto av legemidler" />
-                </section>
-            </div>
-        </a>
+        <div class="row">
+            <section class="col-md-12 importantnews">
+
+                <div class="video-container">
+                    <iframe src="//www.youtube.com/embed/hhf9ovda9RU" frameborder="0"></iframe>
+                </div>
+                <a href="#"><h2 class="internal-link arrow_right">Hver bevegelse teller - det er 30 minutter om dagen som gjelder! </h2></a>
+
+                <p class="ingress nomargin">
+                    Dine30 skal inspirere flere til å flette mer aktivitet inn i hverdagens gjøremål
+                </p>
+
+                <a href="#" class="calltoaction">Finn ut mer om #dine30</a>
+            </section>
+            <section class="col-md-12  importantnews">
+                <a href="nyheter_ennyhet.html">
+                    <h2>Nye kreftlegemidler vurdert</h2>
+                    <div class="text_and_image clearfix">
+                        <p class="ingress">
+                            Fredag 25.april offentliggjorde Statens legemiddelverk sine vurderinger av fire nye legemidler. De regionale helseforetakene skal videre avgjøre om disse fire og to andre nye kreftlegemidler skal tas i bruk.
+                        </p>
+                        <div class="calltoaction">Se hvilke kreftmidler som ble vurdert</div>
+                    </div>
+                    <img class="img-responsive hidden-xs hidden-sm importantphoto clearfix" src="../img/nyhetsillustrasjon.png" alt="Illustrasjonsfoto av legemidler" />
+                </a>
+            </section>
+        </div>
     </div>
     <div class="frontpagewrapper white">
 
