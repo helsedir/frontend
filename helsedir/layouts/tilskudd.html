@@ -48,10 +48,10 @@
 
                 <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
                     <div class="menubutton pull-right">
-                        <a href="#" class="js-expander">
+                        <button class="js-expander">
                             <span>Alt innhold</span>
                             <i class="fa fa-bars"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
@@ -279,17 +279,6 @@
                 </header>
 
                 <section class="sectionwithaside">
-                    <div class="tilskudd_sortcontrols">
-                        <div class="checkbox">
-                            <input type="radio" id="r1" name="radiobutton" checked="checked" />
-                            <label for="r1"><span></span>Gjeldende tilskudd</label>
-                        </div>
-                        <div class="checkbox">
-                            <input type="radio" id="r2" name="radiobutton" />
-                            <label for="r2"><span></span>Utgåtte tilskudd</label>
-                        </div>
-                    </div>
-                    <div class="border"></div>
                     <aside class="aside">
                         <div class="refinesearch">
                             <h2 class="accordion_mobile">Avgrens visning</h2>
@@ -385,6 +374,21 @@
                             </form>
                         </div>
                     </aside>
+                    <div class="tilskudd_sortcontrols">
+                        <fieldset>
+                            <legend class="visuallyhidden">Sorter tilskudd</legend>
+                            <div class="checkbox">
+                                <input type="radio" id="r1" name="radiobutton" checked="checked" />
+                                <label for="r1"><span></span>Gjeldende tilskudd</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" id="r2" name="radiobutton" />
+                                <label for="r2"><span></span>Utgåtte tilskudd</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="border"></div>
+
                     <p class="numberofcontributions">40 gjeldende tilskudd</p>
 
                     <div class="transportsideknapp clearfix">

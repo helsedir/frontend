@@ -14,6 +14,7 @@ $(document).ready(function () {
                     .slideDown(0);
                 expander.removeClass('js-expanded');
             });
+            expander.blur();
         } else {
             expandedContent.slideUp(0, function () {
                 expandedContent.removeClass('visuallyhidden')

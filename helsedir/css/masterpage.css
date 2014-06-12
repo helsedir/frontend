@@ -71,13 +71,13 @@
   min-height: 40px;
   text-align: center;
   display: inline-block;
-  padding-top: 3px;
 }
-.menubutton a.js-expander {
+.menubutton button.js-expander {
+  border: none;
   border-radius: 3px;
   background-color: #004e66;
   vertical-align: middle;
-  padding: 7px 12px 7px 12px;
+  padding: 7px 8px 7px 8px;
   color: #ffffff;
   font-weight: normal;
   -moz-transition: all 0.5s;
@@ -85,39 +85,41 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.menubutton a.js-expander:visited {
+.menubutton button.js-expander:visited {
   background-color: #004e66;
   color: #ffffff;
 }
-.menubutton a.js-expander:focus {
+.menubutton button.js-expander:focus {
   text-decoration: none;
   background-color: #d1d0c4;
   border: solid 1px #004e66;
 }
-.menubutton a.js-expander:focus span,
-.menubutton a.js-expander:focus i {
+.menubutton button.js-expander:focus span,
+.menubutton button.js-expander:focus i {
   color: white;
 }
-.menubutton a.js-expander:hover {
+.menubutton button.js-expander:hover {
   text-decoration: none;
   background-color: #838078;
   border-radius: 3px;
 }
-.menubutton a.js-expander:hover span,
-.menubutton a.js-expander:hover i {
+.menubutton button.js-expander:hover span,
+.menubutton button.js-expander:hover i {
   color: white;
 }
-.menubutton a.js-expander.js-expanded {
+.menubutton button.js-expander.js-expanded {
   padding-bottom: 50px;
   border-radius: 3px 3px 0 0;
   background-color: #838078;
   color: #004e66;
+  outline: 0;
+  border: none;
 }
-.menubutton a.js-expander.js-expanded span,
-.menubutton a.js-expander.js-expanded i {
+.menubutton button.js-expander.js-expanded span,
+.menubutton button.js-expander.js-expanded i {
   color: white;
 }
-.menubutton a.js-expander i {
+.menubutton button.js-expander i {
   /*font-size: 28px;*/
   margin-left: 10px;
 }
