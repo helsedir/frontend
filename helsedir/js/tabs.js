@@ -1,29 +1,65 @@
-﻿$(document).ready(function () {
-    //script for hanlding tabs
-
-    $('.tab').addClass('visuallyhidden');
-    $('.tab.active').removeClass('visuallyhidden');
-
-    $('.tabs .tab-links a').on('click', function (e) {
-        var currentAttrValue = $(this).attr('href');
-        // Show/Hide Tabs
-        $('.tabs ' + currentAttrValue).addClass('active');
-        $('.tabs ' + currentAttrValue).removeClass('visuallyhidden');
-        $('.tabs ' + currentAttrValue).siblings('div').removeClass('active');
-        $('.tabs ' + currentAttrValue).siblings('div').addClass('visuallyhidden');
-
-        // Change/remove current tab to active
-        $(this).parent('li').addClass('active').siblings().removeClass('active');
-        e.preventDefault();
-    });
-
-    $('#content_categories_link').on('click', function () {
-        document.getElementById('content_categories').focus();
-    });
-
-    $('#content_fullist_link').on('click', function () {
+﻿$('#tab_header1').keydown(function (ev) {
+    if (ev.which == 13) {
         var x = window.scrollX, y = window.scrollY;
-        document.getElementById('content_fullist').focus();
+        document.getElementById('content_categories').focus();
         window.scrollTo(x, y);
-    });
+    }
+});
+$('#tab_header2').keydown(function (ev) {
+    if (ev.which == 13) {
+        var x = window.scrollX, y = window.scrollY;
+        document.getElementById('content_alphabetical').focus();
+        window.scrollTo(x, y);
+    }
+});
+
+$('#tab_footer1').keydown(function (ev) {
+    if (ev.which == 13) {
+        var x = window.scrollX, y = window.scrollY;
+        document.getElementById('footer_content_categories').focus();
+        window.scrollTo(x, y);
+    }
+});
+$('#tab_footer2').keydown(function (ev) {
+    if (ev.which == 13) {
+        var x = window.scrollX, y = window.scrollY;
+        document.getElementById('footer_content_alphabetical').focus();
+        window.scrollTo(x, y);
+    }
+});
+
+$("li[role='tab']").click(function () {
+    $("li[role='tab']").attr("aria-selected", "false"); //deselect all the tabs
+    $(this).attr("aria-selected", "true");  // select this tab
+    $(this).blur();
+    var tabpanid = $(this).attr("aria-controls"); //find out what tab panel this tab controls
+    var tabpan = $("#" + tabpanid);
+    $("div[role='tabpanel']").attr("aria-hidden", "true"); //hide all the panels
+    $("div[role='tabpanel']").addClass('visuallyhidden');
+    tabpan.attr("aria-hidden", "false");  // show our panel
+    tabpan.removeClass('visuallyhidden');  // show our panel
+});
+
+$("li[role='tab']").keydown(function (ev) {
+    if (ev.which == 13) {
+        $(this).click();
+    }
+});
+
+//This adds keyboard function that pressing an arrow left or arrow right from the tabs toggle the tabs.
+$("li[role='tab']").keydown(function (ev) {
+    if ((ev.which == 39) || (ev.which == 37)) {
+        var selected = $(this).attr("aria-selected");
+        if (selected == "true") {
+            $("li[aria-selected='false']").attr("aria-selected", "true").focus();
+            $(this).blur();
+            $(this).attr("aria-selected", "false");
+            var tabpanid = $("li[aria-selected='true']").attr("aria-controls");
+            var tabpan = $("#" + tabpanid);
+            $("div[role='tabpanel']").attr("aria-hidden", "true");
+            $("div[role='tabpanel']").addClass('visuallyhidden');
+            tabpan.attr("aria-hidden", "false");
+            tabpan.removeClass('visuallyhidden');
+        }
+    }
 });

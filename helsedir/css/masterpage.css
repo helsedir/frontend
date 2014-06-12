@@ -190,7 +190,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -34px;
+  margin-top: -32px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
@@ -200,50 +200,40 @@ footer .tabs .tab-links,
 footer .tabs .tab-links li,
 .toppmeny .tabs .tab-links li {
   background: #004e66;
+  color: white;
+  padding: 0 30px 5px 20px;
+  border-radius: 0;
+  cursor: pointer;
 }
-footer .tabs .tab-links li.active,
-.toppmeny .tabs .tab-links li.active {
+footer .tabs .tab-links li[aria-selected='true'],
+.toppmeny .tabs .tab-links li[aria-selected='true'] {
   border: none;
   background: white;
-}
-footer .tabs .tab-links li.active a,
-.toppmeny .tabs .tab-links li.active a {
-  background: white;
   color: #004e66;
 }
-footer .tabs .tab-links li.active a:focus,
-.toppmeny .tabs .tab-links li.active a:focus {
-  background: #004e66;
+footer .tabs .tab-links li[aria-selected='true']:focus,
+.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
+  background: #02343f;
   color: white;
-}
-footer .tabs .tab-links li.active:hover,
-.toppmeny .tabs .tab-links li.active:hover,
-footer .tabs .tab-links li.active:hover a,
-.toppmeny .tabs .tab-links li.active:hover a,
-footer .tabs .tab-links li.active:focus,
-.toppmeny .tabs .tab-links li.active:focus {
-  background: white;
-  color: #004e66;
 }
 footer .tabs .tab-links li input,
 .toppmeny .tabs .tab-links li input {
   width: 100%;
   height: 100%;
 }
-footer .tabs .tab-links li a,
-.toppmeny .tabs .tab-links li a {
-  background: #004e66;
+footer .tabs .tab-links li:focus,
+.toppmeny .tabs .tab-links li:focus {
+  background: #02343f;
   color: white;
-  padding: 0 30px 0 20px;
-  border-radius: 0;
+  outline: 0;
 }
-footer .tabs .tab-links li a:hover,
-.toppmeny .tabs .tab-links li a:hover,
-footer .tabs .tab-links li a:focus,
-.toppmeny .tabs .tab-links li a:focus {
-  background: #023c49;
-  text-decoration: none;
-  color: white;
+footer .tabs .tab-links .menu_search,
+.toppmeny .tabs .tab-links .menu_search {
+  color: black;
+}
+footer .tabs .tab-links .menu_search .mainsearch,
+.toppmeny .tabs .tab-links .menu_search .mainsearch {
+  padding: 0 24px 0 5px;
 }
 footer .map,
 .toppmeny .map {

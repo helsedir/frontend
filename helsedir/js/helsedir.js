@@ -89,22 +89,13 @@
     //styles tables. workaround for IE8
     $('table.table_general tr:nth-child(2n+1)').addClass('odd');
 
-    //shortcuts for keyboard nagivation
-    $('#content_categories_link').on('click', function () {
-        document.getElementById('content_categories').focus();
-    });
-    $('#content_fullist_link').on('click', function () {
-        var x = window.scrollX, y = window.scrollY;
-        document.getElementById('content_fullist').focus();
-        window.scrollTo(x, y);
-    });
-
     $('#menushortcut').on('click', function () {
         var expandedContent = $(".js-expand");
         expandedContent.slideUp(0, function () {
             expandedContent.removeClass('visuallyhidden')
                 .slideDown(500);
         });
+        $('#tab_header1').focus();
     });
 
     //show/hide more news/conferences

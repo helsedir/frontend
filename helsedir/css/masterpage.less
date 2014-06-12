@@ -245,7 +245,7 @@ footer, .toppmeny {
     .tabs {
         margin-bottom: 50px;
         padding-left: 20px;
-        margin-top: -34px;
+        margin-top: -32px;
 
         .tab-links {
             padding-left: 20px;
@@ -254,23 +254,14 @@ footer, .toppmeny {
             li {
                 background: @colorDarkBlue;
 
-                &.active {
+                &[aria-selected='true'] {
                     border: none;
                     background: white;
+                    color: @colorDarkBlue;
 
-                    a {
-                        background: white;
-                        color: @colorDarkBlue;
-
-                        &:focus {
-                            background: @colorDarkBlue;
-                            color: white;
-                        }
-                    }
-
-                    &:hover, &:hover a, &:focus {
-                        background: white;
-                        color: @colorDarkBlue;
+                    &:focus {
+                        background: #02343f;
+                        color: white;
                     }
                 }
 
@@ -279,17 +270,24 @@ footer, .toppmeny {
                     height: 100%;
                 }
 
-                a {
-                    background: @colorDarkBlue;
-                    color: white;
-                    padding: 0 30px 0 20px;
-                    border-radius: 0;
+                background: @colorDarkBlue;
+                color: white;
+                padding: 0 30px 5px 20px;
+                border-radius: 0;
+                cursor: pointer;
 
-                    &:hover, &:focus {
-                        background: @colorBlue023c49;
-                        text-decoration: none;
-                        color: white;
-                    }
+                &:focus {
+                    background: #02343f;
+                    color: white;
+                    outline: 0;
+                }
+            }
+
+            .menu_search {
+                color: black;
+
+                .mainsearch {
+                    padding: 0 24px 0 5px;
                 }
             }
         }
