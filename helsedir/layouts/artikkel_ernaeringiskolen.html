@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ernæring i skolen</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
@@ -10,7 +11,9 @@
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
     <link href="../css/article.css" rel="stylesheet" />
-    <link href="../css/font_soho.css" rel="stylesheet"> <link href="../css/font_calibri.css" rel="stylesheet"> <link href="../css/print.css" rel="stylesheet">
+    <link href="../css/font_soho.css" rel="stylesheet">
+    <link href="../css/font_calibri.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
     <!--[if lte IE 8]>
     <link href="/css/ie8fix.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
@@ -27,7 +30,6 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
         })();
     </script>
-
 </head>
 
 <body>
@@ -40,7 +42,7 @@
         <div class="container">
             <header class="row masterheader">
                 <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4 nopadding">
-                     <a href="forside.html" id="logo" title="Gå til forsiden"></a>
+                    <a href="forside.html" id="logo" title="Gå til forsiden"></a>
                 </div>
 
                 <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
@@ -61,8 +63,10 @@
 
                 <div class="col-xs-12 col-md-2 col-lg-3 hidden-mobile" id="mainsearchcolumn">
                     <form>
-                        <span role="search"><label for="mainsearchinput" class="visuallyhidden">Søk</label>
-                        <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" /></span>
+                        <span role="search">
+                            <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                            <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
+                        </span>
                     </form>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
@@ -75,19 +79,19 @@
             <div class="inner container-fluid">
                 <div class="container">
                     <nav class="tabs">
-                        <ul class="tab-links">
-                            <li class="active"><a id="content_categories_link" href="#tabCategoriesHeader">Kategorier</a></li>
-                            <li><a id="content_fullist_link" href="#tabAlphabeticHeader">Innhold A-Å</a></li>
+
+                        <ul class="tab-links" role="tablist">
+                            <li class="tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
+                            <li class="tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
                         </ul>
                         <div class="tab-content">
-                            <div id="tabCategoriesHeader" class="tab active">
+                            <div id="panel_header1" class="tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
 
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
-                                        <a id="content_categories" tabindex="-1"></a>
 
                                         <ul>
-                                            <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer</a></li>
+                                            <li><a href="../medisinskeRetningslinjer/" id="content_categories">Nasjonale faglige retningslinjer</a></li>
                                             <li><a href="#">Nasjonale strategier og planer</a></li>
                                             <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
                                             <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
@@ -119,13 +123,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="tabAlphabeticHeader" class="tab">
+                            <div id="panel_header2" class="tab visuallyhidden tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
                                 <div class="row alphabetical">
                                     <div class="col-sm-6 col-md-3 col-lg-3">
 
                                         <ul>
                                             <li class="character">A</li>
-                                            <li><a href="#">AD/HD</a></li>
+                                            <li><a href="#" id="content_alphabetical">AD/HD</a></li>
                                             <li><a href="transportside_alkohol.html">Alkohol</a></li>
                                             <li><a href="#">Antibiotika</a></li>
                                             <li><a href="#">Astma og allergi</a></li>
@@ -446,18 +450,18 @@
                     <div class="row forside">
                         <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <nav class="tabs">
-                                <ul class="tab-links">
-                                    <li class="active"><a href="#tabCategoriesFooter">Kategorier</a></li>
-                                    <li><a href="#tabAlphabeticFooter">Innhold A-Å</a></li>
+
+                                <ul class="tab-links" role="tablist">
+                                    <li class="tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
+                                    <li class="tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div id="tabCategoriesFooter" class="tab active">
-
+                                    <div id="panel_footer1" class="tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-4">
 
                                                 <ul>
-                                                    <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer</a></li>
+                                                    <li><a href="../medisinskeRetningslinjer/" id="footer_content_categories">Nasjonale faglige retningslinjer</a></li>
                                                     <li><a href="#">Nasjonale strategier og planer</a></li>
                                                     <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
                                                     <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
@@ -489,13 +493,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="tabAlphabeticFooter" class="tab">
+                                    <div id="panel_footer2" class="tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
                                         <div class="row alphabetical">
                                             <div class="col-sm-6 col-md-3 col-lg-3">
 
                                                 <ul>
                                                     <li class="character">A</li>
-                                                    <li><a href="#">AD/HD</a></li>
+                                                    <li><a href="#" id="footer_content_alphabetical">AD/HD</a></li>
                                                     <li><a href="transportside_alkohol.html">Alkohol</a></li>
                                                     <li><a href="#">Antibiotika</a></li>
                                                     <li><a href="#">Astma og allergi</a></li>

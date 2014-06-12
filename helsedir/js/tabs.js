@@ -29,15 +29,28 @@ $('#tab_footer2').keydown(function (ev) {
 });
 
 $("li[role='tab']").click(function () {
-    $("li[role='tab']").attr("aria-selected", "false"); //deselect all the tabs
-    $(this).attr("aria-selected", "true");  // select this tab
-    $(this).blur();
-    var tabpanid = $(this).attr("aria-controls"); //find out what tab panel this tab controls
-    var tabpan = $("#" + tabpanid);
-    $("div[role='tabpanel']").attr("aria-hidden", "true"); //hide all the panels
-    $("div[role='tabpanel']").addClass('visuallyhidden');
-    tabpan.attr("aria-hidden", "false");  // show our panel
-    tabpan.removeClass('visuallyhidden');  // show our panel
+    if ($(this).hasClass('tabs_header')) {
+        $("li[role='tab'].tabs_header").attr("aria-selected", "false"); //deselect all the tabs
+        $(this).attr("aria-selected", "true"); // select this tab
+        $(this).blur();
+        var tabpanid = $(this).attr("aria-controls"); //find out what tab panel this tab controls
+        var tabpan = $("#" + tabpanid);
+        $("div[role='tabpanel'].tabpanel_header").attr("aria-hidden", "true"); //hide all the panels
+        $("div[role='tabpanel'].tabpanel_header").addClass('visuallyhidden');
+        tabpan.attr("aria-hidden", "false"); // show our panel
+        tabpan.removeClass('visuallyhidden'); // show our panel
+    }
+    if ($(this).hasClass('tabs_footer')) {
+        $("li[role='tab'].tabs_footer").attr("aria-selected", "false"); //deselect all the tabs
+        $(this).attr("aria-selected", "true"); // select this tab
+        $(this).blur();
+        var tabpanid = $(this).attr("aria-controls"); //find out what tab panel this tab controls
+        var tabpan = $("#" + tabpanid);
+        $("div[role='tabpanel'].tabpanel_footer").attr("aria-hidden", "true"); //hide all the panels
+        $("div[role='tabpanel'].tabpanel_footer").addClass('visuallyhidden');
+        tabpan.attr("aria-hidden", "false"); // show our panel
+        tabpan.removeClass('visuallyhidden'); // show our panel
+    }
 });
 
 $("li[role='tab']").keydown(function (ev) {
