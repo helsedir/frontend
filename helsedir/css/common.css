@@ -1446,13 +1446,6 @@ fieldset {
   .tabs .tab-links li,
   .tabs-statistics .tabs .tab-links li {
     width: 114px;
-  }
-  .toppmeny .tab-links li a,
-  .tabs .tab-links li a,
-  .tabs-statistics .tabs .tab-links li a,
-  .toppmeny .tab-links li a.active,
-  .tabs .tab-links li a.active,
-  .tabs-statistics .tabs .tab-links li a.active {
     font-size: 12px;
   }
   .table_general {
