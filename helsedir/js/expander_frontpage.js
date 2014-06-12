@@ -13,6 +13,8 @@
                 expandedContent.addClass('visuallyhidden')
                     .slideDown(0);
             });
+            expander.removeClass('js-expanded');
+            expander.blur();
         } else {
             expandedContent.slideUp(0, function () {
                 expandedContent.removeClass('visuallyhidden')
@@ -21,6 +23,7 @@
             $('html, body').animate({
                 scrollTop: expander.offset().top + 70
             }, 700);
+            expander.addClass('js-expanded');
         }
         visible = !visible;
     });

@@ -61,6 +61,22 @@
 .aside {
   margin-top: 40px;
 }
+.numberofpublications {
+  text-transform: uppercase;
+}
+.transportsideknapp .publication_year,
+.transportsideknapp .publication_type,
+.transportsideknapp .publication_tema {
+  float: left;
+  margin-right: 20px;
+}
+.transportsideknapp .publication_download {
+  display: inline-block;
+  text-decoration: underline;
+}
+.transportsideknapp .publication_download:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 900px) {
   .report table {
     width: 100%;

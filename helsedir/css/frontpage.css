@@ -30,6 +30,7 @@
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 4px;
 }
 .entrancebutton.menu button h2 {
   margin: auto;
@@ -38,9 +39,9 @@
   color: white;
 }
 .entrancebutton.menu button.js-expanded {
-  background-color: #dbdcdd;
-  color: #222;
-  padding-bottom: 65px;
+  background-color: #666460;
+  color: white;
+  outline: 0;
 }
 .entrancebutton.menu button:hover {
   background: #666460;

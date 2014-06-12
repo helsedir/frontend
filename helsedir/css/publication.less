@@ -1,5 +1,4 @@
-﻿@fontRoboto: 'Roboto', sans-serif;
-@fontCalibri: 'Calibri';
+﻿@fontCalibri: 'Calibri';
 @fontCalibriBold: 'Calibri-Bold';
 @fontSoho: "soho gothic pro medium";
 @fontSohoLight: "Soho Gothic W01 Light";
@@ -98,6 +97,26 @@
 
 .aside {
     margin-top: 40px;
+}
+
+.numberofpublications {
+    text-transform: uppercase;
+}
+
+.transportsideknapp {
+    .publication_year, .publication_type, .publication_tema {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .publication_download {
+        display: inline-block;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 @media only screen and (max-width:900px) {
