@@ -988,6 +988,11 @@ input[type="radio"] {
   opacity: 0;
   height: 0px;
 }
+input[type="radio"]:focus + label,
+input[type="radio"]:active + label {
+  background: #004e66;
+  color: white;
+}
 input[type="radio"] + label span {
   display: inline-block;
   width: 19px;
@@ -1086,6 +1091,17 @@ fieldset {
   /*Removes default arrow from firefox*/
   color: #222;
 }
+.dropdown select:hover,
+.dropdown select:focus,
+.dropdown select:active {
+  background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.svg') no-repeat;
+  background-position: 96%;
+  -moz-background-size: 20px;
+  -o-background-size: 20px;
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  color: white;
+}
 .refinesearch {
   width: 300px;
 }
@@ -1105,7 +1121,7 @@ fieldset {
   border: 1px solid #91c6c2;
   margin: 20px auto;
 }
-.table_general th {
+.table_general thead th {
   background: #91c6c2;
   text-align: center;
   font-size: 16px;
@@ -1118,11 +1134,13 @@ fieldset {
 .table_general tr.odd {
   background: white;
 }
+.table_general tbody th,
 .table_general td {
   padding: 10px;
   text-align: center;
   font-size: 18px;
 }
+.table_general tbody th a,
 .table_general td a {
   line-height: 24px;
 }
@@ -1433,13 +1451,13 @@ fieldset {
     content: attr(data-title) ":\00A0";
     font-weight: bold;
   }
-  .statistics_table table td:first-child {
+  .statistics_table table tbody th:first-child {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 6px;
     color: #333;
   }
-  .statistics_table table td:first-child:before {
+  .statistics_table table tbody th:first-child:before {
     content: '';
   }
   .toppmeny .tab-links li,
@@ -1469,12 +1487,14 @@ fieldset {
   .table_general tr {
     padding-bottom: 11px;
   }
+  .table_general tbody th,
   .table_general td {
     border: none;
     position: relative;
     padding: 0;
     padding-left: 50%;
   }
+  .table_general tbody th:before,
   .table_general td:before {
     position: absolute;
     left: 15px;
@@ -1485,11 +1505,16 @@ fieldset {
   .table_general td[data-title]:before {
     content: attr(data-title);
   }
-  .table_general td:first-child {
+  .table_general tbody th:first-child {
     background: #d1d0cf;
     font-weight: bold;
     padding: 5px 0 5px 15px;
     text-align: left;
+  }
+  .table_general caption {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
   }
   .module_message {
     padding: 15px 15px 25px 15px;

@@ -1161,6 +1161,13 @@ input[type="radio"] {
     width: 0px;
     opacity: 0;
     height: 0px;
+
+    &:focus, &:active {
+        & + label {
+            background: @colorDarkBlue;
+            color: white;
+        }
+    }
 }
 
     input[type="radio"] + label span {
@@ -1272,6 +1279,16 @@ fieldset {
         text-indent: 0.01px; /* Removes default arrow from firefox*/
         text-overflow: ""; /*Removes default arrow from firefox*/
         color: #222;
+
+        &:hover, &:focus, &:active {
+            background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.svg') no-repeat;
+            background-position: 96%;
+            -moz-background-size: 20px;
+            -o-background-size: 20px;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            color: white;
+        }
     }
 }
 
@@ -1296,7 +1313,7 @@ fieldset {
     border: 1px solid #91c6c2;
     margin: 20px auto;
 
-    th {
+    thead th {
         background: #91c6c2;
         text-align: center;
         font-size: 16px;
@@ -1312,7 +1329,7 @@ fieldset {
         }
     }
 
-    td {
+    tbody th, td {
         padding: 10px;
         text-align: center;
         font-size: 18px;
@@ -1711,14 +1728,14 @@ fieldset {
                 font-weight: bold;
             }
 
-            td:first-child {
+            tbody th:first-child {
                 font-size: 14px;
                 font-weight: bold;
                 margin-bottom: 6px;
                 color: #333;
             }
 
-                td:first-child:before {
+                tbody th:first-child:before {
                     content: '';
                 }
         }
@@ -1756,7 +1773,7 @@ fieldset {
             padding-bottom: 11px;
         }
 
-        td {
+        tbody th, td {
             border: none;
             position: relative;
             padding: 0;
@@ -1774,12 +1791,18 @@ fieldset {
                 content: attr(data-title);
             }
 
-            td:first-child {
+            tbody th:first-child {
                 background: #d1d0cf;
                 font-weight: bold;
                 padding: 5px 0 5px 15px;
                 text-align: left;
             }
+
+        caption {
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+        }
     }
 
     .module_message {
