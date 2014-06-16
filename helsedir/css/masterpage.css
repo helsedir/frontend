@@ -161,6 +161,9 @@
   color: white !important;
   outline: 0;
 }
+.masterheader .links:last-of-type {
+  margin-right: 0;
+}
 .masterheader a,
 .masterheader a:visited {
   color: #004e66;

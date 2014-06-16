@@ -116,8 +116,15 @@
         icon: image
     });
 
+    var contentString = '<p><b>Helsedirektoratet</b></p>' +
+        '<p>Universitetsgata 2, Oslo, Norge</p>' +
+        '<a href="www.helsedirektoratet.no">helsedirektoratet.no</a>' +
+        '<div><img jsvalues=".src:svImg" width="204" height="50" jstcache="11" src="https://cbks0.googleapis.com/cbk?output=thumbnail&amp;cb_client=apiv3&amp;v=4&amp;panoid=WrlXOEK46SMfn3nFGTa29g&amp;yaw=156.68235608599593&amp;w=204&amp;h=50&amp;thumb=2"></div>' +
+        '<p>810 20 050</p>' +
+        '<a href="#">mer informasjon</a>';
+
     var infowindow = new google.maps.InfoWindow({
-        content: 'Helsedirektoratet\ Universitetsgata 2\ 0164 Oslo\ Norge',
+        content: contentString
     });
 
     google.maps.event.addListener(marker, 'click', function () {

@@ -313,4 +313,9 @@
     float: left;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .center {
+    padding: 0 165px;
+  }
+}
 /*# sourceMappingURL=frontpage.css.map */
