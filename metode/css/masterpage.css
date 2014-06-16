@@ -1,0 +1,64 @@
+﻿.shortcuts {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.shortcuts ul {
+  overflow: hidden;
+  height: 0;
+}
+.shortcuts ul li {
+  list-style: none;
+}
+.shortcuts a {
+  position: absolute;
+  top: -2013px;
+  display: block;
+  border-radius: 5px;
+}
+.shortcuts a:focus {
+  top: 10px;
+}
+#logo {
+  display: block;
+  background: #ffffff url('../img/logo.png') no-repeat;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  -webkit-background-size: 60%;
+  background-size: 60%;
+  padding: 6px 16px 2px 12px;
+  min-height: 44px;
+  max-height: 44px;
+}
+#header {
+  background: white;
+  padding-top: 10px;
+}
+#footer {
+  padding-top: 50px;
+}
+.mainentrance {
+  background: white;
+}
+.footerlinkswrapper {
+  background: #838078;
+  background-position: right;
+  padding: 20px 0 50px 0;
+  color: white;
+}
+.footerlinkswrapper a,
+.footerlinkswrapper h4 {
+  color: white;
+}
+.method_entrance {
+  float: left;
+  margin-right: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news {
+  float: left;
+  width: 40%;
+  margin-right: 110px;
+}
+/*# sourceMappingURL=masterpage.css.map */
