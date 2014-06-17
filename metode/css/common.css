@@ -1146,6 +1146,12 @@ fieldset {
 .no-padding {
   padding: 0;
 }
+.h1_ingress {
+  font-size: 20px;
+  display: block;
+  margin: 0;
+  line-height: 24px;
+}
 @media only screen and (min-width: 1200px) {
   .aside {
     top: 0;
