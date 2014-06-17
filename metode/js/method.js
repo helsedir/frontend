@@ -1,13 +1,8 @@
 ﻿$(function () {
     $(".accordion_method").each(function () {
-        var heading = $(this);
-        heading.children().not('h2, .fa').each(function () {
-            var child = $(this);
-            child.addClass('visuallyhidden');
-        });
-        heading.children('h2').addClass('blur');
-
-        heading.addClass('has-hidden-content');
+        $(this).children('.more_information:first').addClass('visuallyhidden');
+        $(this).children('h2').addClass('blur');
+        $(this).addClass('has-hidden-content');
     });
 
     $(".method_evaluation").addClass('visuallyhidden');
@@ -28,30 +23,24 @@
 
     //handles click events on collapsible headings
     $(".accordion_method").click(function () {
-        var heading = $(this);
-        if (heading.hasClass("has-visible-content")) {
-            heading.children().not('h2, .fa').each(function () {
+        if ($(this).hasClass("has-visible-content")) {
+            $(this).children('.more_information:first').slideUp('fast', function () {
                 var child = $(this);
-                child.slideUp('fast', function () {
-                    child.addClass('visuallyhidden').slideDown(0);
-                });
+                child.addClass('visuallyhidden').slideDown(0);
             });
-            heading.children('h2').addClass('blur');
-            heading.removeClass('has-visible-content');
-            heading.addClass('has-hidden-content');
-        }
-        else if (heading.hasClass("has-hidden-content")) {
-            heading.children().not('h2, .fa').each(function () {
-                var child = $(this);
-                child.slideUp(0, function () {
-                    child.removeClass('visuallyhidden')
-                        .slideDown(500);
-                });
-            });
-            heading.children('h2').removeClass('blur');
 
-            heading.removeClass('has-hidden-content');
-            heading.addClass('has-visible-content');
+            $(this).children('h2').addClass('blur');
+            $(this).addClass('has-hidden-content').removeClass('has-visible-content');
+        }
+        else if ($(this).hasClass("has-hidden-content")) {
+            $(this).children('.more_information:first').slideUp(0, function () {
+                var child = $(this);
+                child.removeClass('visuallyhidden')
+                    .slideDown(500);
+            });
+
+            $(this).children('h2').removeClass('blur');
+            $(this).addClass('has-visible-content').removeClass('has-hidden-content');
         }
     });
 });
