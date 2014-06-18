@@ -65,17 +65,18 @@
                     <label for="kontaktperson">Navn på kontaktperson</label>
                     <input id="kontaktperson" class="form_field_standard" type="text">
 
-                    <label for="tlf">Telefonnummer</label>
-                    <input id="tlf" class="form_field_tel" type="tel" maxlength="8">
+                    <div class="phonenumber">
+                        <label for="tlf">Telefonnummer</label>
+                        <input id="tlf" class="form_field_tel" type="tel" maxlength="8">
+                    </div>
 
-                    <label for="epost">E-post</label>
-                    <input id="epost" class="form_field_email" type="email">
+                    <div class="email">
+                        <label for="epost">E-post</label>
+                        <input id="epost" class="form_field_email" type="email">
+                    </div>
 
                     <label for="sted">Sted</label>
                     <input id="sted" class="form_field_standard" type="text">
-
-                    <label for="postnummer">Postnummer</label>
-                    <input id="postnummer" class="form_field_zip" type="text" maxlength="4">
 
                     <h2>2. Om metoden</h2>
 
@@ -228,7 +229,7 @@
                         <label for="juridiske">Juridiske</label>
                     </fieldset>
 
-                    <h2>Begrunnelse</h2>
+                    <h2>3. Begrunnelse</h2>
 
                     <label>
                         Begrunn hvorfor metodevurderingen bør gjennomføres
@@ -246,13 +247,14 @@
                     </label>
 
                     <label>
-                        Sikkerhet under Beskriv kort opplysninger om kjente risikoforhold, sikkerhetsaspekter og bivirkninger
+                        Sikkerhet
+                        <p class="label_addition">Beskriv kort opplysninger om kjente risikoforhold, sikkerhetsaspekter og bivirkninger</p>
                         <textarea class="form_field_standard"></textarea>
                     </label>
 
                     <label>
                         Totalt antall pasienter i Norge metoden er aktuell for
-                        <textarea class="form_field_standard"></textarea>
+                        <input class="form_field_standard">
                     </label>
 
                     <label>
@@ -266,7 +268,7 @@
                     </label>
 
                     <label>
-                        Oppgi referanser til dokumentasjon om metodens effekt og sikkerhet.  under Du kan f .eks. henvise til tidligere metodevurderinger.  Du kan oppgi opptil 10 referanser.
+                        Oppgi referanser til dokumentasjon om metodens effekt og sikkerhet.  <p class="label_addition">Du kan f .eks. henvise til tidligere metodevurderinger.  Du kan oppgi opptil 10 referanser.</p>
                         <textarea class="form_field_standard"></textarea>
                     </label>
 
