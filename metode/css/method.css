@@ -53,14 +53,28 @@
 .wrapper .method_status.has-visible-content h3.accordion:before {
   font-size: 30px;
 }
-.wrapper .fa {
+.wrapper .method_status .method_warning {
+  color: red;
+}
+.wrapper .method_status .method_warning .fa-exclamation {
+  font-size: 60px;
+  margin-right: 10px;
+  float: left;
+}
+.wrapper .method_status .method_warning p {
+  padding-right: 30px;
+}
+.wrapper .method_status .more_information p a {
+  text-decoration: underline;
+}
+.wrapper .fa-info-circle {
   position: absolute;
   top: 1px;
   right: -30px;
   font-size: 26px;
   cursor: pointer;
 }
-.wrapper .fa.selected {
+.wrapper .fa-info-circle.selected {
   color: blue;
 }
 .wrapper .method_evaluation {

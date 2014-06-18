@@ -1,7 +1,6 @@
 ﻿$(function () {
     $(".accordion_method").each(function () {
         $(this).children('.more_information:first').addClass('visuallyhidden');
-        $(this).children('h2').addClass('blur');
         $(this).addClass('has-hidden-content');
     });
 
@@ -29,7 +28,6 @@
                 child.addClass('visuallyhidden').slideDown(0);
             });
 
-            $(this).children('h2').addClass('blur');
             $(this).addClass('has-hidden-content').removeClass('has-visible-content');
         }
         else if ($(this).hasClass("has-hidden-content")) {
@@ -39,7 +37,6 @@
                     .slideDown(500);
             });
 
-            $(this).children('h2').removeClass('blur');
             $(this).addClass('has-visible-content').removeClass('has-hidden-content');
         }
     });
