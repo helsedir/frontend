@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skjema | Helsedirektoratet</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/skjema.css" rel="stylesheet" />
+    <link href="../css/font_soho.css" rel="stylesheet">
+    <link href="../css/font_calibri.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/html5.js"></script>
+    <script src="../js/respond.js"></script>
+          <![endif]-->
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <header class="row masterheader">
+                <div class="col-xs-8 col-sm-8 col-md-5 col-lg-6">
+                    <a href="forside.html" id="logo" title="Gå til forsiden"></a>
+                </div>
+
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-2 col-lg-offset-4 no-padding">
+                    <div class="pull-right">
+                        <a class="links hidden-sm hidden-xs " href="#">OM OSS</a>
+                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+                <header id="pageheader">
+                    <h1>Send inn forslag til nasjonal metodevurdering</h1>
+                </header>
+
+                <div class="warning">
+                    <p>Alle innsendte forslag vil bli publisert i sin helhet. Hvis du mener det er noe som ikke kan offentliggjøres, ta kontakt med sekretariatet før du sender inn forslaget.</p>
+                </div>
+                <h2>1. Kontaktinformasjon</h2>
+                <form class="form">
+                    <label for="forslagsstiller">Navn på forslagsstiller</label>
+                    <input id="forslagsstiller" class="form_field_standard" type="text">
+
+                    <label for="kontaktperson">Navn på kontaktperson</label>
+                    <input id="kontaktperson" class="form_field_standard" type="text">
+
+                    <label for="tlf">Telefonnummer</label>
+                    <input id="tlf" class="form_field_tel" type="tel" maxlength="8">
+
+                    <label for="epost">E-post</label>
+                    <input id="epost" class="form_field_email" type="email">
+
+                    <label for="sted">Sted</label>
+                    <input id="sted" class="form_field_standard" type="text">
+
+                    <label for="postnummer">Postnummer</label>
+                    <input id="postnummer" class="form_field_zip" type="text" maxlength="4">
+                </form>
+                <h2>2. Om metoden</h2>
+                <form class="form">
+                    <label for="tittel">Tittel på bestillingen</label>
+                    <input id="tittel" class="form_field_standard" type="text">
+
+                    <label for="metodebeskrivelse_foreslaattt">Kort beskrivelse av metoden som foreslås vurdert</label>
+                    <textarea id="metodebeskrivelse_foreslaattt" class="form_field_standard"></textarea>
+
+                    <label for="metodebeskrivelse_dagens">Kort beskrivelse av dagens tilbud </label>
+                    <p class="label_addition">(Hvilken metode(r) brukes nå?  Status for metoden (gir kurativ behandling, forlenget levetid etc.) Vil metoden som foreslås vurdert erstatte eller komme i tillegg til dagens tilbud?)</p>
+                    <textarea id="metodebeskrivelse_dagens" class="form_field_standard"></textarea>
+
+                    <h3>Hva gjelder forslaget?</h3>
+
+                    <fieldset class="radiobuttongroup">
+                        <legend>Helt ny metode</legend>
+                        <label><input class="radio" type="radio" name="metode" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="metode" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Nytt bruksområde eller ny indikasjon for en etablert metode</legend>
+                        <label><input class="radio" type="radio" name="bruksomraade" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="bruksomraade" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Sammenligning mellom flere metoder</legend>
+                        <label><input class="radio" type="radio" name="sammenligning" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="sammenligning" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Er metoden tatt i bruk?</legend>
+                        <label><input class="radio" type="radio" name="metodeibruk" value="yes" id="methodinuse">Ja</label>
+                        <label><input class="radio" type="radio" name="metodeibruk" value="no">Nei</label>
+                    </fieldset>
+                    <div id="metodeibrukutfyllendetekst">
+                        <label for="">Beskriv eventuell bruk av metoden.</label>
+                        <p class="label_addition">Presisér om metoden er tatt i bruk innenfor klinisk praksis, eller innen forskning/utprøving</p>
+                        <textarea class="form_field_standard"></textarea>
+                    </div>
+
+                    <h3>Hva omfatter metoden?</h3>
+                    <fieldset class="checkbox">
+                        <input id="legemiddel" type="checkbox" name="metodeomfatter" value="legemiddel" />
+
+                        <label for="legemiddel">Legemiddel</label>
+                        <br />
+                        <input id="medisinskutstyr" type="checkbox" name="metodeomfatter" value="medisinskutstyr" />
+
+                        <label for="medisinskutstyr">Medisinsk utstyr/teknologi</label>
+                        <br />
+                        <input id="prosedyre" type="checkbox" name="metodeomfatter" value="prosedyre" />
+
+                        <label for="prosedyre">Prosedyre</label>
+                        <br />
+                        <input id="screening" type="checkbox" name="metodeomfatter" value="screening" />
+
+                        <label for="screening">Screening</label>
+                        <br />
+                        <input id="tjenester" type="checkbox" name="metodeomfatter" value="tjenester" />
+
+                        <label for="tjenester">Høyspesialiserte tjenester/nasjonale tilbud</label>
+                        <br />
+                        <input id="oppsett" type="checkbox" name="metodeomfatter" value="oppsett" />
+
+                        <label for="oppsett">Organisatorisk oppsett av helsetjenesten</label>
+                        <br />
+                        <input id="annet" type="checkbox" name="metodeomfatter" value="annet" />
+
+                        <label for="annet">Annet (beskriv)</label>
+                    </fieldset>
+                    <a href="#">Avbryt</a>
+                    <button class="calltoaction send">Send</button>
+                </form>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footerwrapper" id="footer">
+        <div class="footerlinkswrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-sm-12 col-md-4 ">
+                        <a href="kontaktoss.html">
+                            <h4 class="internal-link arrow_right">Kontakt oss</h4>
+                        </a>
+
+                        <p>Telefon: +47 810 20 050</p>
+                        <p>E-post: postmottak@helsedir.no</p>
+                        <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
+                        <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
+                    </section>
+                    <section class="col-sm-12 col-md-4">
+                        <a href="transportside_omoss.html">   <h4 class="internal-link arrow_right">Om Helsedirektoratet</h4></a>
+                        <p>Helsedirektoratet gjennomfører helsepolitikken, forvalter helselover og er faglig rådgiver innen helse.</p>
+                        <ul class="about">
+                            <li><a href="#">Ledige stillinger</a></li>
+                            <li><a href="artikkel_organisasjonskart.html">Organisasjonskart</a></li>
+                            <li><a href="#">Aktuelt</a></li>
+                            <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
+                            <li><a href="#">Presse</a></li>
+                        </ul>
+                    </section>
+                    <section class="col-sm-12 col-md-4 ">
+                        <h4>Abonner</h4>
+                        <a href="#"><p class="abonner">Nyheter på e-post</p></a>
+                        <a href="#"><p class="abonner">Nyheter på RSS</p></a>
+
+                        <div class="socialmedia clearfix">
+                            <h4>Følg oss på</h4>
+                            <div>
+                                <a class="twitter" href="#"></a>
+                                <a class="facebook" href="#"></a>
+                                <a class="youtube" href="#"></a>
+                                <a class="linkedin" href="#"></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/helsedir.js"></script>
+    <script src="../js/expandmenu.js"></script>
+    <script src="../js/schema.js"></script>
+</body>
+</html>

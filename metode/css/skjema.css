@@ -1,0 +1,67 @@
+﻿.warning {
+  color: #222;
+  margin: 30px 0;
+  padding: 10px 20px;
+  background: #fcf8e3;
+}
+.phonenumber,
+.email {
+  width: 45%;
+  float: left;
+}
+.email {
+  margin-left: 75px;
+}
+input,
+textarea {
+  width: 100%;
+}
+textarea {
+  height: 120px;
+}
+.label_addition {
+  font-size: 18px;
+  line-height: 22px;
+}
+label {
+  margin-top: 20px;
+}
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form input {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+.radiobuttongroup {
+  margin-top: 20px;
+}
+.radiobuttongroup label {
+  margin: 0 30px 0 0;
+  float: left;
+}
+.radiobuttongroup legend {
+  margin-right: 100px;
+}
+input.radio {
+  width: auto;
+}
+.checkbox input {
+  width: auto;
+  margin: 10px 20px 10px 0;
+}
+.checkbox label {
+  display: inline-block;
+  margin: 10px 0;
+}
+.calltoaction.send {
+  display: inline-block;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 599px) {
+  label {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=skjema.css.map */

@@ -868,79 +868,8 @@ h4.keyfigures {
   padding-bottom: 20px;
   width: 100%;
 }
-.checkbox {
-  margin-right: 20px;
-}
-input[type="radio"] {
-  float: left;
-  width: 0px;
-  opacity: 0;
-  height: 0px;
-}
-input[type="radio"]:focus + label,
-input[type="radio"]:active + label {
-  background: #004e66;
-  color: white;
-}
-input[type="radio"] + label span {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: -5px 10px 0 0;
-  vertical-align: middle;
-  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
-  cursor: pointer;
-  background-size: 19px;
-}
-input[type="radio"] + label span:hover {
-  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
-  background-size: 19px;
-}
-input[type="radio"]:checked + label span {
-  background: url(../img/navigasjon/radioknapp_valgt.svg) top no-repeat;
-  background-size: 19px;
-}
-input[type="checkbox"] {
-  float: left;
-  width: 0px;
-  opacity: 0;
-  height: 0px;
-}
-input[type="checkbox"] + label span {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: -5px 10px 0 0;
-  vertical-align: middle;
-  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
-  cursor: pointer;
-  background-size: 19px;
-}
-input[type="checkbox"] + label span:hover {
-  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
-  background-size: 19px;
-}
-input[type="checkbox"]:checked + label span {
-  background: url(../img/navigasjon/checkbox_valgt.svg) top no-repeat;
-  background-size: 19px;
-}
 fieldset {
   border: none !important;
-}
-.form label {
-  display: block;
-  margin-bottom: 10px;
-}
-.form input {
-  margin-bottom: 20px;
-  padding: 5px 10px;
-}
-.form .form_field_standard {
-  border: 1px solid #004e66;
-}
-.form .form_field_zip {
-  border: 1px solid #004e66;
-  width: 4em;
 }
 .cancelbutton {
   background: #004e66;
