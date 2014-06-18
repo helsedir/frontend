@@ -41,6 +41,9 @@ label {
   margin: 0 30px 0 0;
   float: left;
 }
+.radiobuttongroup input {
+  margin-right: 5px;
+}
 .radiobuttongroup legend {
   margin-right: 100px;
 }

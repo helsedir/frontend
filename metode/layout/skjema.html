@@ -76,9 +76,9 @@
 
                     <label for="postnummer">Postnummer</label>
                     <input id="postnummer" class="form_field_zip" type="text" maxlength="4">
-                </form>
-                <h2>2. Om metoden</h2>
-                <form class="form">
+
+                    <h2>2. Om metoden</h2>
+
                     <label for="tittel">Tittel på bestillingen</label>
                     <input id="tittel" class="form_field_standard" type="text">
 
@@ -144,9 +144,152 @@
                         <label for="oppsett">Organisatorisk oppsett av helsetjenesten</label>
                         <br />
                         <input id="annet" type="checkbox" name="metodeomfatter" value="annet" />
-
                         <label for="annet">Annet (beskriv)</label>
                     </fieldset>
+                    <div id="annet_utfyllendetekst">
+                        <label for="annet_utfyllende">Beskriv og inkluder eventuelt hvem som er anvarlig for utvikling av metoden</label>
+                        <textarea id="annet_utfyllende" class="form_field_standard"></textarea>
+                    </div>
+                    <h3>Metodens bruksområde</h3>
+                    <fieldset class="checkbox">
+                        <input id="forebygging" type="checkbox" name="bruksomraade" value="forebygging" />
+                        <label for="forebygging">Forebygging</label>
+                        <br />
+                        <input id="utredning" type="checkbox" name="bruksomraade" value="utredning" />
+                        <label for="utredning">Utredning og diagnostik</label>
+
+                        <br />
+                        <input id="behandling" type="checkbox" name="bruksomraade" value="behandling" />
+                        <label for="behandling">Behandling</label>
+
+                        <br />
+                        <input id="rehabilitering" type="checkbox" name="bruksomraade" value="rehabilitering" />
+                        <label for="rehabilitering">Rehabilitering</label>
+                        <br />
+                        <input id="spesialisthelsetjenesten" type="checkbox" name="bruksomraade" value="spesialisthelsetjenesten" />
+
+                        <label for="spesialisthelsetjenesten">Spesialisthelsetjenesten</label>
+                        <br />
+                        <input id="primaerhelsetjenesten" type="checkbox" name="bruksomraade" value="oppsettprimaerhelsetjenesten" />
+
+                        <label for="primaerhelsetjenesten">Primærhelsetjenesten</label>
+                    </fieldset>
+                    <h3>Involverer metoden bruk av stråling (ioniserende/ikke-ioniserende)?</h3>
+                    <fieldset class="radiobuttongroup">
+                        <legend class="visuallyhidden">Involverer metoden bruk av stråling (ioniserende/ikke-ioniserende)?</legend>
+                        <label><input class="radio" type="radio" name="straaling" value="yes" id="straaling">Ja</label>
+                        <label><input class="radio" type="radio" name="straaling" value="no">Nei</label>
+                    </fieldset>
+                    <div id="straling_utfyllendetekst">
+                        <label for="straling_utfyllende">Beskriv kort type strålekilde, utstyr og stråleeksponering</label>
+                        <textarea id="straling_utfyllende" class="form_field_standard"></textarea>
+                    </div>
+
+                    <label for="konsekvenser">Hvilke fagområde(r) gjelder metoden, og hvilke pasienter berøres?</label>
+                    <p class="label_addition">Får metoden også konsekvenser for andre grupper (som personell, pårørende?)</p>
+                    <textarea id="konsekvenser" class="form_field_standard"></textarea>
+
+                    <label>
+                        Foreslå hva som bør være hovedproblemstilling(er) for metodevurderingen, samt eventuelle underproblemstillinger
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <h3>Hvilke aspekter er relevante for vurderingen?</h3>
+                    <fieldset class="checkbox">
+                        <input id="kliniskeffekt" type="checkbox" name="aspekter" value="kliniskeffekt" />
+                        <label for="kliniskeffekt">Klinisk effekt</label>
+                        <br />
+
+                        <input id="sikkerhetbivirkninger" type="checkbox" name="aspekter" value="utredningsikkerhetbivirkninger" />
+                        <label for="sikkerhetbivirkninger">Sikkerhet/bivirkninger</label>
+                        <br />
+
+                        <input id="apsketer_behandling" type="checkbox" name="aspekter" value="apsketer_behandling" />
+                        <label for="apsketer_behandling">Behandling</label>
+                        <br />
+
+                        <input id="kostnaderressursbruk" type="checkbox" name="aspekter" value="kostnaderressursbruk" />
+                        <label for="kostnaderressursbruk">Kostnader/ressursbruk</label>
+                        <br />
+
+                        <input id="kostnadseffektivitet" type="checkbox" name="aspekter" value="kostnadseffektivitet" />
+                        <label for="kostnadseffektivitet">Kostnadseffektivitet</label>
+                        <br />
+
+                        <input id="organisatoriskekonsekvenser" type="checkbox" name="aspekter" value="organisatoriskekonsekvenser" />
+                        <label for="organisatoriskekonsekvenser">Organisatoriske konsekvenser</label>
+                        <br />
+
+                        <input id="etiske" type="checkbox" name="aspekter" value="etiske" />
+                        <label for="etiske">Etiske</label>
+                        <br />
+
+                        <input id="juridiske" type="checkbox" name="aspekter" value="juridiske" />
+                        <label for="juridiske">Juridiske</label>
+                    </fieldset>
+
+                    <h2>Begrunnelse</h2>
+
+                    <label>
+                        Begrunn hvorfor metodevurderingen bør gjennomføres
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Hva er alvorlighetsgraden på tilstanden metoden er ment for
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Hva er forventet effekt
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Sikkerhet under Beskriv kort opplysninger om kjente risikoforhold, sikkerhetsaspekter og bivirkninger
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Totalt antall pasienter i Norge metoden er aktuell for
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Konsekvenser for ressursbruk i helsetjenesten
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Behov for revisjon av eksisterende nasjonale faglige retningslinjer, evt. utarbeidelse av nye
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Oppgi referanser til dokumentasjon om metodens effekt og sikkerhet.  under Du kan f .eks. henvise til tidligere metodevurderinger.  Du kan oppgi opptil 10 referanser.
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <fieldset class="radiobuttongroup">
+                        <legend> Har metoden produsenter eller leverandører.</legend>
+                        <label><input class="radio" type="radio" name="produsentleverandoer" value="yes" id="produsentleverandoer">Ja</label>
+                        <label><input class="radio" type="radio" name="produsentleverandoer" value="no">Nei</label>
+                    </fieldset>
+                    <div id="produsentleverandoertekst">
+                        <label>
+                            Navn på produsenten eller leverandøren
+                            <textarea class="form_field_standard"></textarea>
+                        </label>
+                        <label>
+                            Status for markedsføringstillatelse (MT) eller CE-merking: (Når forventes MT- eller CE-merking? Eventuelt opplysning om planlagt tidspunkt for markedsføring)
+                            <textarea class="form_field_standard"></textarea>
+                        </label>
+                    </div>
+                    <label>
+                        Andre kommentarer (valgfritt)
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
                     <a href="#">Avbryt</a>
                     <button class="calltoaction send">Send</button>
                 </form>
