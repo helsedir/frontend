@@ -77,6 +77,14 @@ input.radio {
   margin: 35px 0 0 0;
   color: #004e66;
 }
+.navigate_forward .fa,
+.navigate_back .fa {
+  font-size: 21px;
+}
+.navigate_forward .fa-angle-right,
+.navigate_back .fa-angle-right {
+  vertical-align: bottom;
+}
 .border {
   border-bottom: 1px solid #004e66;
 }
