@@ -58,19 +58,19 @@
                     <p>Alle innsendte forslag vil bli publisert i sin helhet. Hvis du mener det er noe som ikke kan offentliggjøres, ta kontakt med sekretariatet før du sender inn forslaget.</p>
                 </div>
                 <h2>1. Kontaktinformasjon</h2>
-                <form class="form">
+                <form class="form" method="POST">
                     <label for="forslagsstiller">Navn på forslagsstiller</label>
                     <input id="forslagsstiller" class="form_field_standard" type="text">
 
                     <label for="kontaktperson">Navn på kontaktperson</label>
                     <input id="kontaktperson" class="form_field_standard" type="text">
 
-                    <div class="phonenumber">
+                    <div class="phonenumber clearfix">
                         <label for="tlf">Telefonnummer</label>
                         <input id="tlf" class="form_field_tel" type="tel" maxlength="8">
                     </div>
 
-                    <div class="email">
+                    <div class="email clearfix">
                         <label for="epost">E-post</label>
                         <input id="epost" class="form_field_email" type="email">
                     </div>
@@ -254,7 +254,7 @@
 
                     <label>
                         Totalt antall pasienter i Norge metoden er aktuell for
-                        <input class="form_field_standard">
+                        <input class="form_field_standard" type="text">
                     </label>
 
                     <label>
@@ -296,7 +296,7 @@
                         <label for="aksept">Jeg har lest og forstått at forslaget i sin helhet vil tilgjengeliggjøres på nettsiden.</label>
                     </fieldset>
                     <a href="#">Avbryt</a>
-                    <button class="calltoaction send">Send</button>
+                    <button type="submit" class="calltoaction send" value="send">Send</button>
                 </form>
             </article>
         </div>

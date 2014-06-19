@@ -132,6 +132,32 @@ input.radio {
     border-bottom: 1px solid @colorDarkBlue;
 }
 
+input[type=text], textarea {
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+    input[type=text]:focus, textarea:focus {
+        box-shadow: 0 0 5px magenta;
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid magenta;
+    }
+
+input[type=text], textarea, input[type=radio], input[type=checkbox] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+    input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+        box-shadow: 0 0 5px magenta;
+        border: 1px solid magenta;
+    }
+
 @media only screen and (max-width: 599px) {
     label {
         margin-top: 0;
