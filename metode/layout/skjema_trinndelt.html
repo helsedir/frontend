@@ -49,17 +49,28 @@
     </div>
     <div class="container">
         <div class="row">
-            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+            <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 <header id="pageheader">
-                    <h1>Send inn forslag til nasjonal metodevurdering</h1>
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li class="active"><a href="forside.html">Forside</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Send inn forslag til nasjonal metode&shy;vurdering</h1>
                 </header>
 
-                <div class="warning">
-                    <p>Alle innsendte forslag vil bli publisert i sin helhet. Hvis du mener det er noe som ikke kan offentliggjøres, ta kontakt med sekretariatet før du sender inn forslaget.</p>
-                </div>
-
                 <form class="form" method="POST">
+
                     <div id="step1">
+                        <ul class="breadcrumbs_schema clearfix">
+                            <li class="active"><a href="#">1. Kontaktinformasjon</a></li>
+                            <li><a href="#" class="gotostep2">2. Om metoden</a></li>
+                            <li><a href="#" class="gotostep3">3. Begrunnelse</a></li>
+                        </ul>
+                        <div class="warning">
+                            <p>Alle innsendte forslag vil bli publisert i sin helhet. Hvis du mener det er noe som ikke kan offentliggjøres, ta kontakt med sekretariatet før du sender inn forslaget.</p>
+                        </div>
+
                         <h2>1. Kontaktinformasjon</h2>
                         <label for="forslagsstiller">Navn på forslagsstiller</label>
                         <input id="forslagsstiller" class="form_field_standard" type="text">
@@ -88,6 +99,11 @@
                     </div>
 
                     <div id="step2">
+                        <ul class="breadcrumbs_schema clearfix">
+                            <li><a href="#" class="gotostep1">1. Kontaktinformasjon</a></li>
+                            <li class="active"><a href="#">2. Om metoden</a></li>
+                            <li><a href="#" class="gotostep3">3. Begrunnelse</a></li>
+                        </ul>
                         <h2>2. Om metoden</h2>
 
                         <label for="tittel">Tittel på bestillingen</label>
@@ -239,17 +255,22 @@
                             <label for="juridiske">Juridiske</label>
                         </fieldset>
                         <div class="navigate_forward pull-left">
-                            <a href="#" id="gotostep1">
+                            <a href="#" class="gotostep1">
                                 <span>Forrige trinn: Kontaktinformasjon</span>
                             </a>
                         </div>
                         <div class="navigate_forward pull-right">
-                            <a href="#" id="gotostep3">
+                            <a href="#" class="gotostep3">
                                 <span>Neste trinn: Begrunnelse</span>
                             </a>
                         </div>
                     </div>
                     <div id="step3">
+                        <ul class="breadcrumbs_schema clearfix">
+                            <li><a href="#" class="gotostep1">1. Kontaktinformasjon</a></li>
+                            <li><a href="#" class="gotostep2">2. Om metoden</a></li>
+                            <li class="active"><a href="#">3. Begrunnelse</a></li>
+                        </ul>
                         <h2>3. Begrunnelse</h2>
 
                         <label>
@@ -322,8 +343,8 @@
                             </a>
                         </div>
                         <div class="formbuttons pull-right">
-                            <a href="forside.html">Avbryt</a>
-                            <button id="formsubmit" type="submit" class="calltoaction send disabled" value="send" disabled="true">Send</button>
+                            <a href="#">Tøm skjema</a>
+                            <button id="formsubmit" type="submit" class="calltoaction send disabled" value="send" disabled="disabled">Send</button>
                         </div>
                     </div>
                 </form>
@@ -354,7 +375,14 @@
                         </ul>
                     </section>
                     <section class="col-sm-12 col-md-4 ">
-                        <a href="#"><h4 class="internal-link arrow_right">Logg inn</h4></a>
+                        <ul>
+                            <li>
+                                <a href="leverandoer.html"><h4 class="internal-link arrow_right">For leverandører</h4></a>
+                            </li>
+                            <li>
+                                <a href="#"><h4 class="internal-link arrow_right">Logg inn</h4></a>
+                            </li>
+                        </ul>
                     </section>
                 </div>
             </div>

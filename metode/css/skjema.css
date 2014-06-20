@@ -100,16 +100,20 @@ input.radio {
   border-bottom: 1px solid #004e66;
 }
 input[type=text],
+input[type=tel],
+input[type=email],
 textarea {
   outline: none;
-  padding: 3px 0px 3px 3px;
+  padding: 8px 10px;
   margin: 5px 1px 3px 0px;
   border: 1px solid #DDDDDD;
 }
 input[type=text]:focus,
-textarea:focus {
+textarea:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
   box-shadow: 0 0 5px magenta;
-  padding: 3px 0px 3px 3px;
+  padding: 8px 10px;
   margin: 5px 1px 3px 0px;
   border: 1px solid magenta;
 }
@@ -131,6 +135,79 @@ input[type=checkbox]:focus {
 }
 .formbuttons {
   margin-top: -10px;
+}
+.breadcrumbs_schema {
+  margin-top: 20px;
+  width: 100%;
+}
+.breadcrumbs_schema li {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 32%;
+  margin: 5px 1px 0 0;
+  text-indent: 35px;
+  position: relative;
+}
+.breadcrumbs_schema li:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -2px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #f7f6f6;
+  z-index: 0;
+}
+.breadcrumbs_schema li:first-child:before {
+  border-color: transparent;
+}
+.breadcrumbs_schema li a:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -15px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #ccc;
+  z-index: 10;
+}
+.breadcrumbs_schema li.active a {
+  background: #004e66;
+  z-index: 100;
+  color: white;
+}
+.breadcrumbs_schema li.active a:after {
+  border-left-color: #004e66;
+}
+.breadcrumbs_schema li a {
+  display: block;
+  background: #ccc;
+  line-height: 30px;
+  color: #222;
+}
+.breadcrumbs_schema li a:hover {
+  background: #0093a7;
+  color: white;
+}
+.breadcrumbs_schema li a:hover:after {
+  border-color: transparent transparent transparent #0093a7;
+}
+@media only screen and (max-width: 1199px) {
+  .breadcrumbs_schema li {
+    width: auto;
+    text-indent: 30px;
+  }
+  .phonenumber,
+  .email,
+  .zipcode,
+  .location {
+    width: auto;
+    float: none;
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 599px) {
   label {

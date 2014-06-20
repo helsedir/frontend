@@ -7,18 +7,17 @@
     $('#step3').addClass('visuallyhidden');
 
     $('input:radio[name="metodeibruk"]').change(
-    function () {
-        if ($(this).val() == 'yes') {
-            $('#metodeibrukutfyllendetekst').slideUp(0, function () {
-                $('#metodeibrukutfyllendetekst').removeClass('visuallyhidden').slideDown(500);
-            });
-        }
-        else {
-            $('#metodeibrukutfyllendetekst').slideUp('fast', function () {
-                $('#metodeibrukutfyllendetekst').addClass('visuallyhidden').slideDown(0);
-            });
-        }
-    });
+        function () {
+            if ($(this).val() == 'yes') {
+                $('#metodeibrukutfyllendetekst').slideUp(0, function () {
+                    $('#metodeibrukutfyllendetekst').removeClass('visuallyhidden').slideDown(500);
+                });
+            } else {
+                $('#metodeibrukutfyllendetekst').slideUp('fast', function () {
+                    $('#metodeibrukutfyllendetekst').addClass('visuallyhidden').slideDown(0);
+                });
+            }
+        });
 
     $('#annet').change(function () {
         if (this.checked) {
@@ -56,24 +55,22 @@
         }
     });
 
-    $('#gotostep1').click(function () {
+    $('.gotostep1').click(function () {
         $('#step1').removeClass('visuallyhidden');
         $('#step2').addClass('visuallyhidden');
+        $('#step3').addClass('visuallyhidden');
     });
 
     $('.gotostep2').click(function () {
         $('#step2').removeClass('visuallyhidden');
-        if (!$('#step1').hasClass('visuallyhidden')) {
-            $('#step1').addClass('visuallyhidden');
-        }
-        if (!$('#step3').hasClass('visuallyhidden')) {
-            $('#step3').addClass('visuallyhidden');
-        }
+        $('#step1').addClass('visuallyhidden');
+        $('#step3').addClass('visuallyhidden');
     });
 
-    $('#gotostep3').click(function () {
+    $('.gotostep3').click(function () {
         $('#step3').removeClass('visuallyhidden');
         $('#step2').addClass('visuallyhidden');
+        $('#step1').addClass('visuallyhidden');
     });
 
     $('#aksept').change(function () {
