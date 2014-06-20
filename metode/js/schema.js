@@ -3,6 +3,8 @@
     $('#annet_utfyllendetekst').addClass('visuallyhidden');
     $('#straling_utfyllendetekst').addClass('visuallyhidden');
     $('#produsentleverandoertekst').addClass('visuallyhidden');
+    $('#step2').addClass('visuallyhidden');
+    $('#step3').addClass('visuallyhidden');
 
     $('input:radio[name="metodeibruk"]').change(
     function () {
@@ -51,6 +53,36 @@
             $('#produsentleverandoertekst').slideUp('fast', function () {
                 $('#produsentleverandoertekst').addClass('visuallyhidden').slideDown(0);
             });
+        }
+    });
+
+    $('#gotostep1').click(function () {
+        $('#step1').removeClass('visuallyhidden');
+        $('#step2').addClass('visuallyhidden');
+    });
+
+    $('.gotostep2').click(function () {
+        $('#step2').removeClass('visuallyhidden');
+        if (!$('#step1').hasClass('visuallyhidden')) {
+            $('#step1').addClass('visuallyhidden');
+        }
+        if (!$('#step3').hasClass('visuallyhidden')) {
+            $('#step3').addClass('visuallyhidden');
+        }
+    });
+
+    $('#gotostep3').click(function () {
+        $('#step3').removeClass('visuallyhidden');
+        $('#step2').addClass('visuallyhidden');
+    });
+
+    $('#aksept').change(function () {
+        if (this.checked) {
+            $('#formsubmit').prop("disabled", false);
+            $('#formsubmit').removeClass('disabled');
+        } else {
+            $('#formsubmit').prop("disabled", true);
+            $('#formsubmit').addClass('disabled');
         }
     });
 });

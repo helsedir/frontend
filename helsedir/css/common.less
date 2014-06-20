@@ -1274,14 +1274,18 @@ fieldset {
         padding: 5px 38px 4px 10px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
-        background: white url('../img/knapp_nedtrekksmeny.svg') no-repeat; /*Adds background-image*/
+        background: white url('../img/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
-        text-indent: 0.01px; /* Removes default arrow from firefox*/
-        text-overflow: ""; /*Removes default arrow from firefox*/
+        text-indent: 0.01px;
+        text-overflow: '';
         color: #222;
 
+        &::-ms-expand {
+            display: none;
+        }
+
         &:hover, &:focus, &:active {
-            background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.svg') no-repeat;
+            background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
             background-position: 96%;
             -moz-background-size: 20px;
             -o-background-size: 20px;

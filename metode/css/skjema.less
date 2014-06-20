@@ -24,12 +24,12 @@
     background: #fcf8e3;
 }
 
-.phonenumber, .email {
+.phonenumber, .email, .zipcode, .location {
     width: 45%;
     float: left;
 }
 
-.email {
+.email, .location {
     margin-left: 75px;
 }
 
@@ -100,6 +100,11 @@ input.radio {
 .calltoaction.send {
     display: inline-block;
     margin-left: 30px;
+
+    &.disabled {
+        color: @colorDarkGray;
+        background-color: @colorLightGray;
+    }
 }
 
 .method_navigation {
@@ -119,6 +124,8 @@ input.radio {
 }
 
 .navigate_forward, .navigate_back {
+    margin-top: 20px;
+
     .fa {
         font-size: 21px;
     }
@@ -157,6 +164,10 @@ input[type=text], textarea, input[type=radio], input[type=checkbox] {
         box-shadow: 0 0 5px magenta;
         border: 1px solid magenta;
     }
+
+.formbuttons {
+    margin-top: -10px;
+}
 
 @media only screen and (max-width: 599px) {
     label {

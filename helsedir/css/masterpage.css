@@ -224,7 +224,6 @@ footer .tabs .tab-links li[aria-selected='true']:focus,
 footer .tabs .tab-links li input,
 .toppmeny .tabs .tab-links li input {
   width: 100%;
-  height: 100%;
 }
 footer .tabs .tab-links li:focus,
 .toppmeny .tabs .tab-links li:focus {
@@ -237,9 +236,26 @@ footer .tabs .tab-links .menu_search,
   color: black;
   padding-left: 0;
 }
-footer .tabs .tab-links .menu_search .mainsearch,
-.toppmeny .tabs .tab-links .menu_search .mainsearch {
+footer .tabs .tab-links .menu_search input,
+.toppmeny .tabs .tab-links .menu_search input {
   padding: 2px 24px 0 5px;
+  height: 27px;
+  /*max-width: 220px;*/
+  width: 86%;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background-image: url('../img/ikon_forstorrelsesglass.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 68%;
+  -o-background-size: auto 68%;
+  -webkit-background-size: auto 68%;
+  background-size: auto 68%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  cursor: pointer;
 }
 footer .map,
 .toppmeny .map {
