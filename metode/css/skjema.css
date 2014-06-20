@@ -10,6 +10,7 @@
 .location {
   width: 45%;
   float: left;
+  margin-bottom: 20px;
 }
 .email,
 .location {
@@ -33,7 +34,6 @@ label {
 }
 .form label {
   display: block;
-  margin-bottom: 10px;
 }
 .form input {
   margin-bottom: 20px;
@@ -98,6 +98,9 @@ input.radio {
 }
 .border {
   border-bottom: 1px solid #004e66;
+}
+input[type=tel] {
+  width: 137px;
 }
 input[type=text],
 input[type=tel],
