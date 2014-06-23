@@ -1,4 +1,11 @@
 /* Spesifikt for retningslinjer */
+body {
+	background-color: #f7f6f6;
+}
+
+#header {
+	background-color: #fff;
+}
 
 /* Fix for Bootstrap */
 .btn {
@@ -17,37 +24,120 @@ article header, section header {
 	height: auto; /* fix for customLess */
 }
 
-.guidelineUpdated {
-	font-size: 0.7em;
-	color: #666;
-}
-
-/*article p, section p {
+article p, section p {
 	display: block;
 	margin-bottom: 10px;
-} delete?*/ 
-
-.search, .twitter-typeahead {
-	width: 100%;
 }
 
-/* For twitter-typeahead */
+article h1, section h1 {
+  line-height: 1.3em;
+}
+
+.search_retningslinjer:after{
+	content: "\f002"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #004e66;;
+    font-size: 26px;
+    position: absolute;
+    top:5px;
+    right: 30px;  
+}
+
+.form-search {
+	margin-bottom: 100px;
+}
+
 .search_retningslinjetittel {
 	font-size: 0.8em;
 	margin-left: 10px;
-	margin-top: 0px;
 }
 
-.picoList {
+.twitter-typeahead { width: 100%; } 
+
+.guidelineInfo {
+	padding: 0.5em;
+}
+.guidelineInfo dt {
+	float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.guidelineInfo dt:after {
+	content: ":";
+}
+
+.guidelineInfo dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
+.subsections {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	line-height: 1.8em;
+	margin-top: 20px;
+}
+
+/* Fix for customLess */
+
+
+.subsections li {
+	margin-left: 0px;
+}
+
+.subsections a {
+	text-decoration: none;
+}
+
+.subsectionLink:after {
+	  content: "\f178"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #004e66;;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+.keyInfo {
+	padding: 0.5em;
+}
+
+.keyInfo dt {
+	float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.keyInfo dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
+/* PICO samkjør med guidelineInfo */
+.pico {
 	padding: 0.5em;
 	margin-bottom: 0px;
 }
 
-.picoList:not(:first-child) {
+.pico:not(:first-child) {
     margin-top: 30px;
 }
 
-.picoList dt {
+.pico dt {
 	float: left;
   clear: left;
   width: 100px;
@@ -55,43 +145,15 @@ article header, section header {
   font-weight: bold;
 }
 
-.picoList dt:after {
+.pico dt:after, .keyInfo dt:after {
 	content: ":";
 }
 
-.picoList dd {
+.pico dd {
 	margin: 0 0 0 110px;
 	padding: 0 0 0.5em 0;
 	font-weight: normal;
 }
-
-.evidensprofilList {
-	padding: 0.5em;
-	margin-bottom: 0px;
-}
-
-.evidensprofilList:not(:first-child) {
-    margin-top: 30px;
-}
-
-.evidensprofilList dt {
-	float: left;
-  clear: left;
-  width: 190px;
-  text-align: right;
-  font-weight: bold;
-}
-
-.evidensprofilList dt:after {
-	content: ":";
-}
-
-.evidensprofilList dd {
-	margin: 0 0 0 200px;
-	padding: 0 0 0.5em 0;
-	font-weight: normal;
-}
-
 
 .evidensprofil {
 	margin-top:10px;
@@ -101,7 +163,7 @@ article header, section header {
 	padding: 5px 10px 5px 10px;
 	margin: 10px 0px 10px 0px;
 	background-color: #fff;
-	box-shadow: 0 0.5px 1px #999;
+	box-shadow: 0 0.5px 1px #aaa;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 0.5px;
 	border-radius: 0.5px;
@@ -115,7 +177,7 @@ article header, section header {
 
 .recommendationType {
 	position: absolute;
-	top: -26px;
+	top: -28px;
 	left: 0px;
 }
 
@@ -126,53 +188,13 @@ article header, section header {
 
 .recommendationGrading {
 	position: absolute;
-	top: -32px;
-	right: -11px;
+	top: -35px;
+	right: -12px;
 	font-size: 0.8em;
-}
-
-.recommendationGrading span {
-	padding-right: 20px;
-}
-
-.recommendationGrading.weak span {
-	background-color: #FFDC00;
-}
-
-.recommendationGrading.strong span {
-	background-color: green;
-}
-
-.popoverText h4{
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 2px;
-	padding-top: 8px;
-	margin-top: 8px;
-}
-
-.popoverText p{
-	font-size: 14px;
-	line-height: 1.3em;
-}
-
-.recommendationGrading:after{
-	content: "\f05a"; 
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #fff;
-  font-size: 11px;
-  position: absolute;
-  top:1px;
-  right: 5px;  
 }
 
 .recommendation_text{
 	margin-top: 0.5em;
-	margin-right: 1.2em;
-	margin-bottom: 0.8em;
 }
 
 .recommendation_extras {
@@ -180,16 +202,12 @@ article header, section header {
 	margin-bottom: 10px;
 }
 
-.recommendation_extras h2{
-	margin-top: 0px;
-}
-
-.recommendation_extras p {
-	font-size: 100%;
-}
-
 .recommendation_kunnskapsgrunnlag {
 	margin-top: 10px;
+}
+
+.recommendation_tabs {
+	line-height: 1.4em;
 }
 
 .recommendation_tabs .resp-tabs-container {
@@ -207,11 +225,22 @@ article header, section header {
 }
 
 section header.section_heading h1 {
-	font-size: 36px;
+	margin-top: 1em;
+	margin-bottom: 0.1em;
 }
 
-article section header h1, section header h1 {
+.shortcuts {
+	margin-top: 20px;
+}
+
+article section header h1, section header h1, .subsections {
 	font-size: 1.333em;
+}
+
+
+
+p.grading {
+	display: none;
 }
 
 
@@ -220,49 +249,86 @@ section.recommendation header h1 {
 	margin-top: 1em;
 	margin-bottom: 0.1em;
 	margin-right: 1.5em;
-	padding-bottom: 0px;
-	border-bottom: none;
-	line-height: 30px;
+	padding-top: 8px;
 }
 
-.recommendation h2 {
-	font-size: 0.9em;
-	
+#local-nav.affix {
+    position: fixed;
+    top: 0px;
 }
+
+.form-inline .form-group input {
+    width:100%;
+}
+
+
 
 .accordion {
-	position: relative; /* for absolute- posisjonering av grading */
+	position: relative;
 }
 
-.accordion:after, .show_evidensprofil:before, .show_kunnskapsgrunnlag:before {
-	  content: "\f078"; 
+.accordion:after {
+    content: "\f078"; 
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #004e66;
-    padding-right: 0.3em;
-} 
-
-.accordion:after {
+    color: #004e66;;
     font-size: 20px;
+    padding-right: 0.3em;
     position: absolute;
     top: 0px;
-    right: 0;  
+    right: 0;
+    
 }
 
-.show_evidensprofil:before, .show_kunnskapsgrunnlag:before {
-   font-size: 14px;
-}
-
-.accordion.open:after, .show_evidensprofil.open:before, .show_kunnskapsgrunnlag.open:before {
-	content: "\f077";
+.accordion.open:after {
+    content: "\f077";
 }
 
 /* Actions/buttons */
+
+.show_kunnskapsgrunnlag:before {
+    content: "\f078"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #004e66;;
+    font-size: 14px;
+    padding-right: 0.3em;
+}
+
+.show_kunnskapsgrunnlag.open:before {
+    content: "\f077";
+}
+
 .show_evidensprofil{
 	margin-left: 120px;
 }
+
+.show_evidensprofil:before {
+	 content: "\f078"; 
+	 font-family: FontAwesome;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: inherit;
+   color: #004e66;;
+   font-size: 14px;
+   padding-right: 0.3em;
+}
+
+.show_evidensprofil.open:before {
+	content: "\f077";
+}
+
+
+
+/* icons */
+.fa-search {
+	border: none;
+}
+
 
 /* Helpers */
 .hidden {
@@ -273,36 +339,19 @@ section.recommendation header h1 {
 	text-transform: uppercase;
 }
 
-.horizontalList > li {
-	display: inline-block;
-  zoom:1;
-  *display:inline;
-  /* this fix is needed for IE7- */
-}
-
-.kvalitetKunnskapsgrunnlag {
-	display: inline;
-	margin-left: 5px;
-	color: #004e66;
-}
-
-h2.resp-accordion{
-	line-height: 1em;
-}
-
 
 @media screen and (max-width: 600px) {
-	/* PICO samkjør med guidelineInfo? */
-	.picoList {
+	/* PICO samkjør med guidelineInfo */
+	.pico {
 		margin-bottom: 0px;
 		padding: 0em;
 	}
 
-	.picoList:not(:first-child) {
+	.pico:not(:first-child) {
     margin-top: 30px;
 	}
 
-	.picoList dt {
+	.pico dt {
 		float: none;
 		clear: none;
 		width: 0px;
@@ -310,11 +359,11 @@ h2.resp-accordion{
 		font-weight: bold;
 		}
 
-	.picoList dt:after {
+	.pico dt:after {
 		content: ":";
 	}
 
-	.picoList dd {
+	.pico dd {
 		margin: 0 0 0 0;
 		padding: 0 0 0.5em 0;
 		font-weight: normal;
@@ -324,11 +373,15 @@ h2.resp-accordion{
 		margin-left: 0em;
 	}
 	
-	.bottomBorderOnListElementsMobile li {
+	.subsections li {
 		border-bottom: 1px solid #ccc;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}   
+	}
+    
+}
+	
+	/*section.recommendation header h1 {
+		margin-left: 1em;
+	}*/
 }
 
 /* Autocomplete */

@@ -1,2 +1,0 @@
-Skjema
-Trenger workaround for input-felter. IE9 og tidligere støtter ikke type="email"
