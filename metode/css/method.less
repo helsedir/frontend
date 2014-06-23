@@ -1,0 +1,105 @@
+﻿.wrapper {
+    position: relative;
+
+    .method_status {
+        background: #D7D6D6 url(../img/placeholder.png);
+        background-position: 10px 14px;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        padding: 10px 0 10px 70px;
+
+        h2 {
+            margin: 0 0 20px 0;
+
+            &.blur {
+                color: #aeaba8;
+            }
+        }
+
+        .method_attribute_label {
+            width: 20%;
+            float: left;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .method_attribute {
+            margin-bottom: 10px;
+        }
+
+        &.has-hidden-content {
+            cursor: pointer;
+
+            h2:before, .accordion:before {
+                float: right;
+                padding: 3px 10px 0 0;
+                content: "\f107";
+                font-family: "FontAwesome";
+                color: #004e66;
+                font-size: 40px;
+            }
+
+            h3.accordion:before {
+                font-size: 30px;
+            }
+        }
+
+        &.has-visible-content {
+            cursor: pointer;
+
+            h2:before, .accordion:before {
+                float: right;
+                padding: 3px 10px 0 0;
+                content: "\f106";
+                font-family: "FontAwesome";
+                color: #004e66;
+                font-size: 40px;
+            }
+
+            h3.accordion:before {
+                font-size: 30px;
+            }
+        }
+
+        .method_warning {
+            color: red;
+
+            .fa-exclamation {
+                font-size: 60px;
+                margin-right: 10px;
+                float: left;
+            }
+
+            p {
+                padding-right: 30px;
+            }
+        }
+
+        .more_information p a {
+            text-decoration: underline;
+        }
+    }
+
+    .fa-info-circle {
+        position: absolute;
+        top: 1px;
+        right: -30px;
+        font-size: 26px;
+        cursor: pointer;
+
+        &.selected {
+            color: blue;
+        }
+    }
+
+    .method_evaluation {
+        margin-top: 10px;
+        border: 1px solid #D7D6D6;
+        padding: 30px 10px 20px 70px;
+
+        a {
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+}

@@ -1,0 +1,262 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.warning {
+    color: #222;
+    margin: 30px 0;
+    padding: 10px 20px;
+    background: #fcf8e3;
+}
+
+.phonenumber, .email, .zipcode, .location {
+    width: 45%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.email, .location {
+    margin-left: 75px;
+}
+
+input, textarea {
+    width: 100%;
+    background: white;
+    color: #222;
+}
+
+textarea {
+    height: 120px;
+}
+
+.label_addition {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+.form {
+    label {
+        display: block;
+    }
+
+    input {
+        margin-bottom: 20px;
+        padding: 5px 10px;
+    }
+}
+
+.radiobuttongroup {
+    margin-top: 20px;
+
+    label {
+        margin: 0 30px 0 0;
+        float: left;
+    }
+
+    input {
+        margin-right: 5px;
+    }
+
+    legend {
+        margin-right: 100px;
+    }
+}
+
+input.radio {
+    width: auto;
+}
+
+.checkbox {
+    input {
+        width: auto;
+        margin: 10px 20px 10px 0;
+    }
+
+    label {
+        display: inline-block;
+        margin: 10px 0;
+    }
+}
+
+.calltoaction.send {
+    display: inline-block;
+    margin-left: 30px;
+
+    &.disabled {
+        color: @colorDarkGray;
+        background-color: @colorLightGray;
+    }
+}
+
+.method_navigation {
+    margin-top: 30px;
+
+    ol {
+        margin-right: 50px;
+    }
+}
+
+.schema_header {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: @fontSohoLight;
+    margin: 35px 0 0 0;
+    color: @colorDarkBlue;
+}
+
+.navigate_forward, .navigate_back {
+    margin-top: 20px;
+
+    .fa {
+        font-size: 21px;
+    }
+
+    .fa-angle-right {
+        vertical-align: bottom;
+    }
+}
+
+.border {
+    border-bottom: 1px solid @colorDarkBlue;
+}
+
+input[type=tel] {
+    width: 137px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+    outline: none;
+    padding: 8px 10px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+    input[type=text]:focus, textarea:focus, input[type=tel]:focus, input[type=email]:focus {
+        box-shadow: 0 0 5px magenta;
+        padding: 8px 10px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid magenta;
+    }
+
+input[type=text], textarea, input[type=radio], input[type=checkbox] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+    input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+        box-shadow: 0 0 5px magenta;
+        border: 1px solid magenta;
+    }
+
+.formbuttons {
+    margin-top: -10px;
+}
+
+.breadcrumbs_schema {
+    margin-top: 20px;
+    width: 100%;
+
+    li {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        width: 32%;
+        margin: 5px 1px 0 0;
+        text-indent: 35px;
+        position: relative;
+
+        &:before {
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            left: -2px;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent #f7f6f6;
+            z-index: 0;
+        }
+
+        &:first-child:before {
+            border-color: transparent;
+        }
+
+        a:after {
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            right: -15px;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent #ccc;
+            z-index: 10;
+        }
+
+        &.active a {
+            background: @colorDarkBlue;
+            z-index: 100;
+            color: white;
+        }
+
+            &.active a:after {
+                border-left-color: @colorDarkBlue;
+            }
+
+        a {
+            display: block;
+            background: #ccc;
+            line-height: 30px;
+            color: #222;
+        }
+
+            a:hover {
+                background: @colorMediumBlue;
+                color: white;
+            }
+
+                a:hover:after {
+                    border-color: transparent transparent transparent @colorMediumBlue;
+                }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .breadcrumbs_schema li {
+        width: auto;
+        text-indent: 30px;
+    }
+
+    .phonenumber, .email, .zipcode, .location {
+        width: auto;
+        float: none;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    label {
+        margin-top: 0;
+    }
+}

@@ -1,4 +1,4 @@
-.tabs a{
+.tabs a {
     cursor: pointer;
     padding: 5px;
     background: #ffffff;
@@ -7,17 +7,16 @@
     border-bottom: 0;
 }
 
-.tabs a:hover, .tabs a.active{
-    background: #666666;
-    color: #ffffff;
-}
+    .tabs a:hover, .tabs a.active {
+        background: #666666;
+        color: #ffffff;
+    }
 
 .tabContent {
     margin: 4px 0;
     padding: 5px;
 }
 
-#tab1{
+#tab1 {
     overflow: hidden;
 }
-

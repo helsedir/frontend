@@ -1,0 +1,32 @@
+﻿@media print {
+    body {
+        background: white url(../img/logo.svg) top left no-repeat;
+        color: black;
+        -moz-background-size: 50%;
+        -o-background-size: 50%;
+        -webkit-background-size: 50%;
+        background-size: 50%;
+        padding-top: 30px;
+    }
+
+    article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    #header, #footer, .module_subscribe, .breadcrumbs, .calltoaction, .mainentrance {
+        display: none;
+    }
+
+    a:after {
+        content: " [" attr(href) "] ";
+    }
+
+    .content {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+    }
+}

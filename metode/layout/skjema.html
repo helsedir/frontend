@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skjema | Helsedirektoratet</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/skjema.css" rel="stylesheet" />
+    <link href="../css/font_soho.css" rel="stylesheet">
+    <link href="../css/font_calibri.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/html5.js"></script>
+    <script src="../js/respond.js"></script>
+          <![endif]-->
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <header class="row masterheader">
+                <div class="col-xs-8 col-sm-8 col-md-5 col-lg-6">
+                    <a href="forside.html" id="logo" title="Gå til forsiden"></a>
+                </div>
+
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-2 col-lg-offset-4 no-padding">
+                    <div class="pull-right">
+                        <a class="links hidden-sm hidden-xs " href="#">OM OSS</a>
+                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li class="active"><a href="forside.html">Forside</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Send inn forslag til nasjonal metodevurdering</h1>
+                </header>
+
+                <div class="warning">
+                    <p>Alle innsendte forslag vil bli publisert i sin helhet. Hvis du mener det er noe som ikke kan offentliggjøres, ta kontakt med sekretariatet før du sender inn forslaget.</p>
+                </div>
+                <h2>1. Kontaktinformasjon</h2>
+                <form class="form" method="POST">
+                    <label for="forslagsstiller">Navn på forslagsstiller</label>
+                    <input id="forslagsstiller" class="form_field_standard" type="text">
+
+                    <label for="kontaktperson">Navn på kontaktperson</label>
+                    <input id="kontaktperson" class="form_field_standard" type="text">
+
+                    <div class="phonenumber clearfix">
+                        <label for="tlf">Telefonnummer</label>
+                        <input id="tlf" class="form_field_tel" type="tel" maxlength="8">
+                    </div>
+
+                    <div class="email clearfix">
+                        <label for="epost">E-post</label>
+                        <input id="epost" class="form_field_email" type="email">
+                    </div>
+
+                    <label for="sted">Sted</label>
+                    <input id="sted" class="form_field_standard" type="text">
+
+                    <h2>2. Om metoden</h2>
+
+                    <label for="tittel">Tittel på bestillingen</label>
+                    <input id="tittel" class="form_field_standard" type="text">
+
+                    <label for="metodebeskrivelse_foreslaattt">Kort beskrivelse av metoden som foreslås vurdert</label>
+                    <textarea id="metodebeskrivelse_foreslaattt" class="form_field_standard"></textarea>
+
+                    <label for="metodebeskrivelse_dagens">Kort beskrivelse av dagens tilbud </label>
+                    <p class="label_addition">(Hvilken metode(r) brukes nå?  Status for metoden (gir kurativ behandling, forlenget levetid etc.) Vil metoden som foreslås vurdert erstatte eller komme i tillegg til dagens tilbud?)</p>
+                    <textarea id="metodebeskrivelse_dagens" class="form_field_standard"></textarea>
+
+                    <h3>Hva gjelder forslaget?</h3>
+
+                    <fieldset class="radiobuttongroup">
+                        <legend>Helt ny metode</legend>
+                        <label><input class="radio" type="radio" name="metode" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="metode" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Nytt bruksområde eller ny indikasjon for en etablert metode</legend>
+                        <label><input class="radio" type="radio" name="bruksomraade" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="bruksomraade" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Sammenligning mellom flere metoder</legend>
+                        <label><input class="radio" type="radio" name="sammenligning" value="yes">Ja</label>
+                        <label><input class="radio" type="radio" name="sammenligning" value="no">Nei</label>
+                    </fieldset>
+                    <fieldset class="radiobuttongroup">
+                        <legend>Er metoden tatt i bruk?</legend>
+                        <label><input class="radio" type="radio" name="metodeibruk" value="yes" id="methodinuse">Ja</label>
+                        <label><input class="radio" type="radio" name="metodeibruk" value="no">Nei</label>
+                    </fieldset>
+                    <div id="metodeibrukutfyllendetekst">
+                        <label for="metode_utfyllende">Beskriv eventuell bruk av metoden.</label>
+                        <p class="label_addition">Presisér om metoden er tatt i bruk innenfor klinisk praksis, eller innen forskning/utprøving</p>
+                        <textarea id="metode_utfyllende" class="form_field_standard"></textarea>
+                    </div>
+
+                    <h3>Hva omfatter metoden?</h3>
+                    <fieldset class="checkbox">
+                        <input id="legemiddel" type="checkbox" name="metodeomfatter" value="legemiddel" />
+
+                        <label for="legemiddel">Legemiddel</label>
+                        <br />
+                        <input id="medisinskutstyr" type="checkbox" name="metodeomfatter" value="medisinskutstyr" />
+
+                        <label for="medisinskutstyr">Medisinsk utstyr/teknologi</label>
+                        <br />
+                        <input id="prosedyre" type="checkbox" name="metodeomfatter" value="prosedyre" />
+
+                        <label for="prosedyre">Prosedyre</label>
+                        <br />
+                        <input id="screening" type="checkbox" name="metodeomfatter" value="screening" />
+
+                        <label for="screening">Screening</label>
+                        <br />
+                        <input id="tjenester" type="checkbox" name="metodeomfatter" value="tjenester" />
+
+                        <label for="tjenester">Høyspesialiserte tjenester/nasjonale tilbud</label>
+                        <br />
+                        <input id="oppsett" type="checkbox" name="metodeomfatter" value="oppsett" />
+
+                        <label for="oppsett">Organisatorisk oppsett av helsetjenesten</label>
+                        <br />
+                        <input id="annet" type="checkbox" name="metodeomfatter" value="annet" />
+                        <label for="annet">Annet (beskriv)</label>
+                    </fieldset>
+                    <div id="annet_utfyllendetekst">
+                        <label for="annet_utfyllende">Beskriv og inkluder eventuelt hvem som er anvarlig for utvikling av metoden</label>
+                        <textarea id="annet_utfyllende" class="form_field_standard"></textarea>
+                    </div>
+                    <h3>Metodens bruksområde</h3>
+                    <fieldset class="checkbox">
+                        <input id="forebygging" type="checkbox" name="bruksomraade" value="forebygging" />
+                        <label for="forebygging">Forebygging</label>
+                        <br />
+                        <input id="utredning" type="checkbox" name="bruksomraade" value="utredning" />
+                        <label for="utredning">Utredning og diagnostik</label>
+
+                        <br />
+                        <input id="behandling" type="checkbox" name="bruksomraade" value="behandling" />
+                        <label for="behandling">Behandling</label>
+
+                        <br />
+                        <input id="rehabilitering" type="checkbox" name="bruksomraade" value="rehabilitering" />
+                        <label for="rehabilitering">Rehabilitering</label>
+                        <br />
+                        <input id="spesialisthelsetjenesten" type="checkbox" name="bruksomraade" value="spesialisthelsetjenesten" />
+
+                        <label for="spesialisthelsetjenesten">Spesialisthelsetjenesten</label>
+                        <br />
+                        <input id="primaerhelsetjenesten" type="checkbox" name="bruksomraade" value="oppsettprimaerhelsetjenesten" />
+
+                        <label for="primaerhelsetjenesten">Primærhelsetjenesten</label>
+                    </fieldset>
+                    <h3>Involverer metoden bruk av stråling (ioniserende/ikke-ioniserende)?</h3>
+                    <fieldset class="radiobuttongroup">
+                        <legend class="visuallyhidden">Involverer metoden bruk av stråling (ioniserende/ikke-ioniserende)?</legend>
+                        <label><input class="radio" type="radio" name="straaling" value="yes" id="straaling">Ja</label>
+                        <label><input class="radio" type="radio" name="straaling" value="no">Nei</label>
+                    </fieldset>
+                    <div id="straling_utfyllendetekst">
+                        <label for="straling_utfyllende">Beskriv kort type strålekilde, utstyr og stråleeksponering</label>
+                        <textarea id="straling_utfyllende" class="form_field_standard"></textarea>
+                    </div>
+
+                    <label for="konsekvenser">Hvilke fagområde(r) gjelder metoden, og hvilke pasienter berøres?</label>
+                    <p class="label_addition">Får metoden også konsekvenser for andre grupper (som personell, pårørende?)</p>
+                    <textarea id="konsekvenser" class="form_field_standard"></textarea>
+
+                    <label>
+                        Foreslå hva som bør være hovedproblemstilling(er) for metodevurderingen, samt eventuelle underproblemstillinger
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <h3>Hvilke aspekter er relevante for vurderingen?</h3>
+                    <fieldset class="checkbox">
+                        <input id="kliniskeffekt" type="checkbox" name="aspekter" value="kliniskeffekt" />
+                        <label for="kliniskeffekt">Klinisk effekt</label>
+                        <br />
+
+                        <input id="sikkerhetbivirkninger" type="checkbox" name="aspekter" value="utredningsikkerhetbivirkninger" />
+                        <label for="sikkerhetbivirkninger">Sikkerhet/bivirkninger</label>
+                        <br />
+
+                        <input id="apsketer_behandling" type="checkbox" name="aspekter" value="apsketer_behandling" />
+                        <label for="apsketer_behandling">Behandling</label>
+                        <br />
+
+                        <input id="kostnaderressursbruk" type="checkbox" name="aspekter" value="kostnaderressursbruk" />
+                        <label for="kostnaderressursbruk">Kostnader/ressursbruk</label>
+                        <br />
+
+                        <input id="kostnadseffektivitet" type="checkbox" name="aspekter" value="kostnadseffektivitet" />
+                        <label for="kostnadseffektivitet">Kostnadseffektivitet</label>
+                        <br />
+
+                        <input id="organisatoriskekonsekvenser" type="checkbox" name="aspekter" value="organisatoriskekonsekvenser" />
+                        <label for="organisatoriskekonsekvenser">Organisatoriske konsekvenser</label>
+                        <br />
+
+                        <input id="etiske" type="checkbox" name="aspekter" value="etiske" />
+                        <label for="etiske">Etiske</label>
+                        <br />
+
+                        <input id="juridiske" type="checkbox" name="aspekter" value="juridiske" />
+                        <label for="juridiske">Juridiske</label>
+                    </fieldset>
+
+                    <h2>3. Begrunnelse</h2>
+
+                    <label>
+                        Begrunn hvorfor metodevurderingen bør gjennomføres
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Hva er alvorlighetsgraden på tilstanden metoden er ment for
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Hva er forventet effekt
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Sikkerhet
+                        <p class="label_addition">Beskriv kort opplysninger om kjente risikoforhold, sikkerhetsaspekter og bivirkninger</p>
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Totalt antall pasienter i Norge metoden er aktuell for
+                        <input class="form_field_standard" type="text">
+                    </label>
+
+                    <label>
+                        Konsekvenser for ressursbruk i helsetjenesten
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Behov for revisjon av eksisterende nasjonale faglige retningslinjer, evt. utarbeidelse av nye
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <label>
+                        Oppgi referanser til dokumentasjon om metodens effekt og sikkerhet.  <p class="label_addition">Du kan f .eks. henvise til tidligere metodevurderinger.  Du kan oppgi opptil 10 referanser.</p>
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+
+                    <fieldset class="radiobuttongroup">
+                        <legend> Har metoden produsenter eller leverandører.</legend>
+                        <label><input class="radio" type="radio" name="produsentleverandoer" value="yes" id="produsentleverandoer">Ja</label>
+                        <label><input class="radio" type="radio" name="produsentleverandoer" value="no">Nei</label>
+                    </fieldset>
+                    <div id="produsentleverandoertekst">
+                        <label>
+                            Navn på produsenten eller leverandøren
+                            <textarea class="form_field_standard"></textarea>
+                        </label>
+                        <label>
+                            Status for markedsføringstillatelse (MT) eller CE-merking: (Når forventes MT- eller CE-merking? Eventuelt opplysning om planlagt tidspunkt for markedsføring)
+                            <textarea class="form_field_standard"></textarea>
+                        </label>
+                    </div>
+                    <label>
+                        Andre kommentarer (valgfritt)
+                        <textarea class="form_field_standard"></textarea>
+                    </label>
+                    <fieldset class="checkbox">
+                        <input id="aksept" type="checkbox" name="aksept" value="aksept" />
+                        <label for="aksept">Jeg har lest og forstått at forslaget i sin helhet vil tilgjengeliggjøres på nettsiden.</label>
+                    </fieldset>
+                    <a href="#">Avbryt</a>
+                    <button type="submit" class="calltoaction send" value="send">Send</button>
+                </form>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footerwrapper" id="footer">
+        <div class="footerlinkswrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-sm-12 col-md-4 ">
+                        <a href="kontaktoss.html">
+                            <h4 class="internal-link arrow_right">Kontakt oss</h4>
+                        </a>
+
+                        <p>Telefon: +47 24 16 38 20</p>
+                        <p>E-post: metodevurdering@helsedir.no</p>
+                        <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
+                        <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
+                    </section>
+                    <section class="col-sm-12 col-md-4">
+                        <a href="transportside_omoss.html">   <h4 class="internal-link arrow_right">Om oss</h4></a>
+                        <ul class="about">
+                            <li><a href="#">Hvem gjør hva</a></li>
+                            <li><a href="artikkel_organisasjonskart.html">Hvordan sende et forslag</a></li>
+                            <li><a href="#">Nyheter</a></li>
+                        </ul>
+                    </section>
+                    <section class="col-sm-12 col-md-4 ">
+                        <ul>
+                            <li>
+                                <a href="leverandoer.html"><h4 class="internal-link arrow_right">For leverandører</h4></a>
+                            </li>
+                            <li>
+                                <a href="#"><h4 class="internal-link arrow_right">Logg inn</h4></a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/helsedir.js"></script>
+    <script src="../js/expandmenu.js"></script>
+    <script src="../js/schema.js"></script>
+</body>
+</html>
