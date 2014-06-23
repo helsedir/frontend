@@ -55,13 +55,15 @@ jQuery(document).ready(function() {
         element.siblings('.recommendation_kunnskapsgrunnlag').addClass('hidden');
         element.removeClass('open');
         element.addClass('closed');
-        jQuery(this).text('Vis kunnskapsgrunnlaget');
+        //jQuery(this).text(jQuery(this).text().split("Skjul").join("Vis"));
+        jQuery(this).find('span').text(jQuery(this).text().split("Skjul").join("Vis"));      
       }
       else {
         element.siblings('.recommendation_kunnskapsgrunnlag').removeClass('hidden');
         element.removeClass('closed');
         element.addClass('open');
-        jQuery(this).text('Skjul kunnskapsgrunnlaget');
+        //jQuery(this).text(jQuery(this).text().split("Vis").join("Skjul"));
+        jQuery(this).find('span').text(jQuery(this).find('span').text().split("Vis").join("Skjul"));  
       }
 		//}
   });
@@ -90,7 +92,7 @@ jQuery(document).ready(function() {
   
   
   jQuery(".recommendation_tabs").easyResponsiveTabs({
-  	type: 'default', //Types: default, vertical, accordion           
+  	type: 'accordion', //Types: default, vertical, accordion           
     width: 'auto', //auto or any custom width
     fit: true,   // 100% fits in a container
     closed: 'accordion', // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -99,7 +101,7 @@ jQuery(document).ready(function() {
    
   
   jQuery(".pico_details_tabs").easyResponsiveTabs2({
-  	type: 'default', //Types: default, vertical, accordion           
+  	type: 'accordion', //Types: default, vertical, accordion           
     width: 'auto', //auto or any custom width
     fit: true,   // 100% fits in a container
     closed: 'accordion', // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -171,6 +173,20 @@ jQuery(document).ready(function() {
 	});
 	
 	window.localStorage.clear();
+	
+	
+	$('[data-toggle="popover_grading"]').popover({
+    html: true,
+    content: '<div class="popoverText"><h4>Svak</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være større enn eventuelle ulemper. Ulike valg kan være riktig for ulike pasienter, og helse- og omsorgspersonell må hjelpe til med å vurdere hva som er riktig i den enkelte situasjon.</p><h4>Sterk</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være klart større enn eventuelle ulemper. Pasienter og helse- og omsorgspersonell vil, i de fleste situasjoner, mene det er riktig å følge anbefalingen.</p></div>',
+    trigger: 'hover',
+        'placement': 'left'
+	});
+	
+	$('[data-toggle="popover_medicament"]').popover({
+    html: true,
+    trigger: 'hover',
+        'placement': 'top'
+	});
 	
    
 });

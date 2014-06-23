@@ -1,0 +1,60 @@
+﻿.search {
+  height: 39px;
+  /*max-width: 220px;*/
+  width: 86%;
+  padding: 0 37px 0 5px;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background-image: url('../img/ikon_forstorrelsesglass.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 68%;
+  -o-background-size: auto 68%;
+  -webkit-background-size: auto 68%;
+  background-size: auto 68%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  cursor: pointer;
+}
+.transportsideknapp .status_infomration {
+  float: left;
+  width: 500px;
+  margin: 24px 0 0 30px;
+}
+.transportsideknapp .status_infomration .status_received {
+  margin-right: 30px;
+}
+.transportsideknapp .status {
+  float: left;
+  padding: 20px;
+  width: 200px;
+  margin-top: 30px;
+}
+.transportsideknapp .status.preparation {
+  border: 2px solid purple;
+}
+.transportsideknapp .status.evaluation {
+  border: 2px solid green;
+}
+.transportsideknapp .status.decided {
+  border: 2px solid orange;
+}
+.transportsideknapp .status.cancelled {
+  border: 2px solid red;
+}
+.transportsideknapp a h2 {
+  margin-top: 50px;
+}
+.borderbox {
+  padding: 10px;
+  border: 1px solid #222;
+}
+#footer {
+  padding-top: 250px;
+}
+.external-link {
+  display: inline;
+}
+/*# sourceMappingURL=transportside.css.map */

@@ -1,0 +1,85 @@
+﻿.publication_sortcontrols {
+  width: 81%;
+}
+.publication_sortcontrols p {
+  display: inline;
+}
+.publication_sortcontrols a {
+  float: right;
+  margin-left: 15px;
+  color: #222;
+}
+.publication {
+  margin-top: 30px;
+}
+.publication a {
+  display: block;
+  text-decoration: underline;
+}
+.publication p {
+  display: inline-block;
+  margin-right: 25px;
+}
+.publication button {
+  display: block;
+  margin-right: 25px;
+}
+.publication_information {
+  margin: 50px 10px 0 0;
+}
+.publication_information .publication_info_attributes {
+  width: 35%;
+  float: left;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.publication_information p {
+  margin-bottom: 10px;
+}
+.sitedescription {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #004e66;
+}
+.search {
+  width: 100%;
+}
+.border {
+  padding-bottom: 27px;
+}
+.report table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.report table td {
+  padding: 0 10px;
+}
+.report table td:first-child {
+  width: 25%;
+}
+.aside {
+  margin-top: 40px;
+}
+.numberofpublications {
+  text-transform: uppercase;
+}
+.transportsideknapp .publication_year,
+.transportsideknapp .publication_type,
+.transportsideknapp .publication_tema {
+  float: left;
+  margin-right: 20px;
+}
+.transportsideknapp .publication_download {
+  display: inline-block;
+  text-decoration: underline;
+}
+.transportsideknapp .publication_download:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 900px) {
+  .report table {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=publication.css.map */

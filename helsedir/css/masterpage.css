@@ -1,0 +1,530 @@
+﻿.footerwrapper {
+  border-top: 5px solid #0093a7;
+  background: #838078;
+  border: none;
+  padding-top: 50px;
+  width: 100%;
+}
+.menuwrapper {
+  background: white;
+}
+.shortcuts {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.shortcuts ul {
+  overflow: hidden;
+  height: 0;
+}
+.shortcuts ul li {
+  list-style: none;
+}
+.shortcuts a {
+  position: absolute;
+  top: -2013px;
+  display: block;
+  border-radius: 5px;
+}
+.shortcuts a:focus {
+  top: 10px;
+}
+.forside article {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #dbdcdd;
+  padding-bottom: 20px;
+}
+.mobile-search {
+  display: none;
+}
+.hidden-mobile {
+  display: block;
+}
+.about {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.about a {
+  cursor: pointer;
+}
+.about li {
+  margin: 0;
+  line-height: 1.5em;
+}
+#header {
+  background: white;
+}
+#logo img {
+  display: block;
+  min-height: 44px;
+  max-height: 44px;
+}
+.menubutton {
+  width: 150px;
+  min-height: 40px;
+  text-align: center;
+  display: inline-block;
+}
+.menubutton button.js-expander {
+  border: none;
+  border-radius: 3px;
+  background-color: #004e66;
+  vertical-align: middle;
+  padding: 7px 8px 7px 8px;
+  color: #ffffff;
+  font-weight: normal;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.menubutton button.js-expander:visited {
+  background-color: #004e66;
+  color: #ffffff;
+}
+.menubutton button.js-expander:focus {
+  text-decoration: none;
+  background-color: #d1d0c4;
+  border: solid 1px #004e66;
+}
+.menubutton button.js-expander:focus span,
+.menubutton button.js-expander:focus i {
+  color: white;
+}
+.menubutton button.js-expander:hover {
+  text-decoration: none;
+  background-color: #838078;
+  border-radius: 3px;
+}
+.menubutton button.js-expander:hover span,
+.menubutton button.js-expander:hover i {
+  color: white;
+}
+.menubutton button.js-expander.js-expanded {
+  padding-bottom: 50px;
+  border-radius: 3px 3px 0 0;
+  background-color: #838078;
+  color: #004e66;
+  outline: 0;
+  border: none;
+}
+.menubutton button.js-expander.js-expanded span,
+.menubutton button.js-expander.js-expanded i {
+  color: white;
+}
+.menubutton button.js-expander i {
+  /*font-size: 28px;*/
+  margin-left: 10px;
+}
+.menyknapp {
+  vertical-align: middle;
+}
+.mainsearch {
+  height: 39px;
+  /*max-width: 220px;*/
+  width: 86%;
+  padding: 0 37px 0 5px;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background-image: url('../img/ikon_forstorrelsesglass.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 68%;
+  -o-background-size: auto 68%;
+  -webkit-background-size: auto 68%;
+  background-size: auto 68%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  cursor: pointer;
+}
+.masterheader {
+  height: 40px;
+  margin: 25px 0 35px 0;
+  background: white;
+}
+.masterheader .links {
+  color: #004e66;
+  margin-right: 15px;
+  vertical-align: sub;
+}
+.masterheader .links:focus {
+  background: #004e66;
+  color: white !important;
+  outline: 0;
+}
+.masterheader .links:last-of-type {
+  margin-right: 0;
+}
+.masterheader a,
+.masterheader a:visited {
+  color: #004e66;
+  text-decoration: none;
+}
+.masterheader,
+footer {
+  background: white;
+}
+.masterheader a:focus,
+footer a:focus {
+  background: white;
+  color: #004e66 !important;
+  outline: 0;
+}
+/**********Header**********/
+.toppmeny {
+  margin-bottom: 30px;
+  background: #838078;
+  padding: 0 0 50px 0 !important;
+}
+.toppmeny .inner {
+  background: #ffffff;
+  padding: 0;
+  margin-top: 60px;
+}
+/**********Footer**********/
+footer .tabs,
+.toppmeny .tabs {
+  margin-bottom: 50px;
+  padding-left: 20px;
+  margin-top: -32px;
+}
+footer .tabs .tab-links,
+.toppmeny .tabs .tab-links {
+  padding-left: 20px;
+  margin-right: 10px;
+}
+footer .tabs .tab-links li,
+.toppmeny .tabs .tab-links li {
+  background: #004e66;
+  color: white;
+  padding: 0 30px 5px 20px;
+  border-radius: 0;
+  cursor: pointer;
+}
+footer .tabs .tab-links li[aria-selected='true'],
+.toppmeny .tabs .tab-links li[aria-selected='true'] {
+  border: none;
+  background: white;
+  color: #004e66;
+}
+footer .tabs .tab-links li[aria-selected='true']:focus,
+.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
+  background: #02343f;
+  color: white;
+}
+footer .tabs .tab-links li input,
+.toppmeny .tabs .tab-links li input {
+  width: 100%;
+}
+footer .tabs .tab-links li:focus,
+.toppmeny .tabs .tab-links li:focus {
+  background: #02343f;
+  color: white;
+  outline: 0;
+}
+footer .tabs .tab-links .menu_search,
+.toppmeny .tabs .tab-links .menu_search {
+  color: black;
+  padding-left: 0;
+}
+footer .tabs .tab-links .menu_search input,
+.toppmeny .tabs .tab-links .menu_search input {
+  padding: 2px 24px 0 5px;
+  height: 27px;
+  /*max-width: 220px;*/
+  width: 86%;
+  border-radius: 3px;
+  border: 1px solid #004e66;
+  vertical-align: middle;
+  background-image: url('../img/ikon_forstorrelsesglass.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 68%;
+  -o-background-size: auto 68%;
+  -webkit-background-size: auto 68%;
+  background-size: auto 68%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  cursor: pointer;
+}
+footer .map,
+.toppmeny .map {
+  height: 500px;
+}
+footer .tab-content,
+.toppmeny .tab-content {
+  background: white;
+  border: none;
+  border-radius: 0;
+  margin: 10px 0;
+}
+footer .tab-content li,
+.toppmeny .tab-content li {
+  background: white;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+footer .tab-content li a,
+.toppmeny .tab-content li a {
+  color: #004e66;
+}
+footer .tab-content li:hover,
+.toppmeny .tab-content li:hover {
+  background: #d1d0c4;
+}
+footer.rammeverk {
+  height: 100%;
+  background: #004e66;
+  color: white;
+}
+footer.rammeverk p {
+  margin: 0.5rem;
+  padding-left: 1.3rem;
+}
+footer.rammeverk img {
+  padding-right: 0.4rem;
+  padding-left: 1.8rem;
+  vertical-align: middle;
+}
+footer.rammeverk a,
+footer.rammeverk a:visited {
+  color: white !important;
+  text-decoration: none;
+}
+#footer {
+  margin-top: 95px;
+}
+.footerlinkswrapper {
+  background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+  background-position: right;
+  padding: 20px 0 50px 0;
+}
+.footerlinkswrapper h4,
+.footerlinkswrapper p,
+.footerlinkswrapper a,
+.footerlinkswrapper a:visited,
+.footerlinkswrapper a:hover {
+  color: white;
+}
+.footerlinkswrapper h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footerlinkswrapper p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.footerlinkswrapper a {
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.footerlinkswrapper .socialmedia {
+  border-radius: 3px;
+  margin: 20px 0 20px 0;
+}
+.footerlinkswrapper .socialmedia div {
+  word-spacing: -5px;
+}
+.footerlinkswrapper .socialmedia div a {
+  padding: 31px 31px 30px 30px;
+  line-height: 35px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #6cb4b5;
+  transition: all 0.5s;
+}
+.footerlinkswrapper .socialmedia div a img {
+  height: 22px;
+}
+.footerlinkswrapper .socialmedia div a.facebook:hover,
+.footerlinkswrapper .socialmedia div a.twitter:hover,
+.footerlinkswrapper .socialmedia div a.linkedin:hover,
+.footerlinkswrapper .socialmedia div a.youtube:hover,
+.footerlinkswrapper .socialmedia div a.facebook:focus,
+.footerlinkswrapper .socialmedia div a.twitter:focus,
+.footerlinkswrapper .socialmedia div a.linkedin:focus,
+.footerlinkswrapper .socialmedia div a.youtube:focus {
+  background-color: #004e66;
+}
+.footerlinkswrapper .socialmedia div a.facebook {
+  background-image: url(../img/sosiale_ikon_facebook.svg);
+  background-repeat: no-repeat;
+  -moz-background-size: 27px 22px;
+  -o-background-size: 27px 22px;
+  -webkit-background-size: 27px 22px;
+  background-size: 27px 22px;
+  background-position: 50%;
+}
+.footerlinkswrapper .socialmedia div a.twitter {
+  background-image: url(../img/sosiale_ikon_twitter.svg);
+  background-repeat: no-repeat;
+  -moz-background-size: 27px 22px;
+  -o-background-size: 27px 22px;
+  -webkit-background-size: 27px 22px;
+  background-size: 27px 22px;
+  background-position: 50%;
+}
+.footerlinkswrapper .socialmedia div a.linkedin {
+  background-image: url(../img/sosiale_ikon_linkedin.svg);
+  background-repeat: no-repeat;
+  -moz-background-size: 27px 22px;
+  -o-background-size: 27px 22px;
+  -webkit-background-size: 27px 22px;
+  background-size: 27px 22px;
+  background-position: 50%;
+}
+.footerlinkswrapper .socialmedia div a.youtube {
+  background-image: url(../img/sosiale_ikon_youtube.svg);
+  background-repeat: no-repeat;
+  -moz-background-size: 53px 22px;
+  -o-background-size: 53px 22px;
+  -webkit-background-size: 53px 22px;
+  background-size: 53px 22px;
+  background-position: 50%;
+}
+.footerlinkswrapper .socialmedia div a:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.footerlinkswrapper .socialmedia div a:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/**********Media**********/
+@media only screen and (max-width: 1199px) {
+  .masterheader .links {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .footerlinkswrapper .socialmedia a img {
+    height: 16px;
+  }
+  footer .tabs,
+  .toppmeny .tabs {
+    padding-left: 0;
+  }
+  footer .tabs .tab-links,
+  .toppmeny .tabs .tab-links {
+    padding-left: 0;
+  }
+  footer .tabs .tab-links li,
+  .toppmeny .tabs .tab-links li {
+    width: 100px;
+    padding: 0 15px 0 10px;
+  }
+  footer .tabs .tab-content,
+  .toppmeny .tabs .tab-content {
+    padding-left: 0;
+  }
+  footer .tabs,
+  .toppmeny .tabs {
+    margin-top: -27px;
+  }
+  .toppmeny .inner {
+    margin-top: 40px;
+  }
+  .footerwrapper {
+    padding-top: 40px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  #mainsearchcolumn {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hidden-mobile {
+    display: none;
+    background-color: #838078;
+    padding: 20px;
+  }
+  .masterheader {
+    margin: 10px 0 10px 0;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .menubutton {
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .menubutton.mobile-menu {
+    padding: 7px 11px 8px 11px;
+    display: inline-block;
+    border-radius: 3px;
+    background: #004e66 url('../img/ikon_meny_hvit.svg') no-repeat;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: center;
+  }
+  .menubutton.mobile-menu:hover {
+    background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-menu.js-expanded {
+    padding-bottom: 46px;
+    background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
+  }
+  .menubutton.mobile-search {
+    display: inline-block;
+    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    -moz-background-size: 30px;
+    -o-background-size: 30px;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search:focus {
+    text-decoration: none;
+    background-color: #838078;
+    color: #004e66;
+    border: solid 1px #004e66;
+  }
+  .menubutton.mobile-search:hover {
+    background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    -moz-background-size: 30px;
+    -o-background-size: 30px;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search.js-expanded {
+    padding-bottom: 43px;
+    background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    -moz-background-size: 29px;
+    -o-background-size: 29px;
+    -webkit-background-size: 29px;
+    background-size: 29px;
+    background-position: 50% 35%;
+    border-radius: 3px 3px 0 0;
+  }
+}
+/*# sourceMappingURL=masterpage.css.map */

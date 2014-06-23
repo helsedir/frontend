@@ -1,0 +1,126 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.publication_sortcontrols {
+    width: 81%;
+
+    p {
+        display: inline;
+    }
+
+    a {
+        float: right;
+        margin-left: 15px;
+        color: #222;
+    }
+}
+
+.publication {
+    margin-top: 30px;
+
+    a {
+        display: block;
+        text-decoration: underline;
+    }
+
+    p {
+        display: inline-block;
+        margin-right: 25px;
+    }
+
+    button {
+        display: block;
+        margin-right: 25px;
+    }
+}
+
+.publication_information {
+    margin: 50px 10px 0 0;
+
+    .publication_info_attributes {
+        width: 35%;
+        float: left;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.sitedescription {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: @colorDarkBlue;
+}
+
+.search {
+    width: 100%;
+}
+
+.border {
+    padding-bottom: 27px;
+}
+
+.report {
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+
+        td {
+            padding: 0 10px;
+
+            &:first-child {
+                width: 25%;
+            }
+        }
+    }
+}
+
+.aside {
+    margin-top: 40px;
+}
+
+.numberofpublications {
+    text-transform: uppercase;
+}
+
+.transportsideknapp {
+    .publication_year, .publication_type, .publication_tema {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .publication_download {
+        display: inline-block;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .report table {
+        width: 100%;
+    }
+}

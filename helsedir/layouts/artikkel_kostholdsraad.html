@@ -1,42 +1,292 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kostholdsråd</title>
-    <link href="../css/reset.css" rel="stylesheet">
-
-    <link href="../css/fonts.css" rel="stylesheet">
-    <link href="../css/customLESS.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kostholdsråd | Helsedirektoratet</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/article.css" rel="stylesheet" />
+    <link href="../css/font_soho.css" rel="stylesheet">
+    <link href="../css/font_calibri.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
+
+    <!--[if lte IE 8]>
+    <link href="/css/ie8fix.css" rel="stylesheet">
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/html5.js"></script>
+    <script src="../js/respond.js"></script>
+          <![endif]-->
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
 </head>
 
 <body>
-    <div id="header"></div>
-    <div class="container">
-        <ol class="broedsmulesti clearfix">
-            <li><a href="forside.html">Forside</a></li>
-            <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
-            <li class="active"><a href="transportside_ernaering.html">Ernæring</a></li>
-        </ol>
-        <div class="row">
-            <article class="col-md-8 col-lg-8">
-
-                <h1>Kostholdsråd</h1>
-                <div class="ingress">
-                    Nye råd publisert i 2014....
+    <div id="header">
+        <div class="shortcuts">
+            <ul>
+                <li><a href="#content" id="contentshortcut">Gå til innhold</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <header class="row masterheader">
+                <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4 nopadding">
+                    <a href="forside.html" id="logo" title="Gå til forsiden">
+                        <img src="../img/logo.svg" alt="" />
+                    </a>
                 </div>
-                <div class="veiledermodul">
-                    <div class="innerDiv">
-                        <p>Veileder</p>
-                        <a href="#">
-                            Kosthold, ernæring og fysisk aktivitet - Anbefalinger om kosthold, ernæring og fysisk aktivitet
-                        </a>
-                        <p>2014</p>
+
+                <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
+                    <div class="menubutton pull-right">
+                        <button class="js-expander">
+                            <span>Alt innhold</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
                     </div>
                 </div>
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
+                    <div class="menubutton mobile-search pull-right" id="mobilesearch">
+                    </div>
+                    <div class="menubutton mobile-menu js-expander pull-right" id="mobilemenu">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-3 hidden-mobile" id="mainsearchcolumn">
+                    <form>
+                        <span role="search">
+                            <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                            <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
+                        </span>
+                    </form>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                    <a class="links hidden-sm hidden-xs" href="transportside_omoss.html">OM OSS</a>
+                    <a class="links hidden-sm hidden-xs" href="#">ENGLISH</a>
+                </div>
+            </header>
+        </div>
+        <div class="toppmeny container-fluid js-expand visuallyhidden">
+            <div class="inner container-fluid">
+                <div class="container">
+                    <nav class="tabs">
+
+                        <ul class="tab-links" role="tablist">
+                            <li class="tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
+                            <li class="tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="panel_header1" class="tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+
+                                        <ul>
+                                            <li><a href="../medisinskeRetningslinjer/" id="content_categories">Nasjonale faglige retningslinjer</a></li>
+                                            <li><a href="#">Nasjonale strategier og planer</a></li>
+                                            <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
+                                            <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
+                                            <li><a href="tilskudd.html">Tilskudd</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <ul>
+                                            <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
+                                            <li><a href="#">Beredskap</a></li>
+                                            <li><a href="transportside_loverogregler.html">Lover og rettigheter</a></li>
+                                            <li><a href="hoeringer.html">Høringer</a></li>
+                                            <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix visible-xs visible-sm"></div>
+
+                                    <div class=" col-sm-6 col-md-4">
+                                        <ul>
+
+                                            <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
+                                            <li><a href="#">Legemidler og medisinsk utstyr</a></li>
+                                            <li><a href="#">Godkjenning og turnus</a></li>
+                                            <li><a href="#">eHelse</a></li>
+                                            <li><a href="#">Helseøkonomi</a></li>
+                                            <li class="hidden_links"><a href="transportside_omoss.html" class="">Om oss</a></li>
+                                            <li class="hidden_links"><a href="#" class="">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel_header2" class="tab visuallyhidden tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
+                                <div class="row alphabetical">
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                        <ul>
+                                            <li class="character">A</li>
+                                            <li><a href="#" id="content_alphabetical">AD/HD</a></li>
+                                            <li><a href="transportside_alkohol.html">Alkohol</a></li>
+                                            <li><a href="#">Antibiotika</a></li>
+                                            <li><a href="#">Astma og allergi</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li class="character">B</li>
+                                            <li><a href="#">Beredskap og krisehåndtering</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li class="character">D</li>
+                                            <li><a href="artikkel_utredning_av_demens.html">Demens</a></li>
+                                            <li><a href="#">Diabetes</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li class="character">E</li>
+                                            <li><a href="#">E-resept</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">F</li>
+
+                                            <li><a href="transportside_folkehelse.html">Folkehelsearbeid</a></li>
+                                            <li><a href="#">Forgiftning</a></li>
+                                            <li><a href="#">Frisklivssentraler</a></li>
+                                            <li><a href="#">Fritt sykehusvalg </a></li>
+                                            <li><a href="#">Fysioterapi       </a></li>
+                                            <li><a href="#">Førerkort         </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">G</li>
+                                            <li><a href="#">Godkjenning og autorisasjon </a></li>
+                                            <li><a href="#">Graviditet, fødsel og amming</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                        <ul>
+                                            <li class="character">H</li>
+                                            <li><a href="#">Helsestasjon og skolehelsetjenesten    </a></li>
+                                            <li><a href="#">Helseøkonomi og finansiering           </a></li>
+                                            <li><a href="#">Hjerneslag                             </a></li>
+                                            <li><a href="#">Hjerte- og karsykdommer                </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">I</li>
+                                            <li><a href="#">Individuell plan og rehabilitiering    </a></li>
+                                            <li><a href="#">Influensa                              </a></li>
+                                            <li><a href="#">Innvandrerhelse                        </a></li>
+                                            <li><a href="#">IPLOS                                  </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">K</li>
+                                            <li><a href="#">Kjernejournal                          </a></li>
+                                            <li><a href="#">Kols                                   </a></li>
+                                            <li><a href="transportside_ernaering.html">Kosthold, ernæring og fysisk aktivitet </a></li>
+                                            <li><a href="#">Kreft                                  </a></li>
+                                            <li><a href="#">Kvalitetsindikatorer                   </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">L</li>
+                                            <li><a href="#">Legemidler                             </a></li>
+                                            <li><a href="#">Legestillingsregisteret                </a></li>
+                                            <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix hidden-md hidden-lg"></div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                        <ul>
+                                            <li class="character">M</li>
+
+                                            <li><a href="#">ME-CFS                                 </a></li>
+                                            <li><a href="#">Medisinsk bibliotek                    </a></li>
+                                            <li><a href="#">Medisinsk utstyr                       </a></li>
+                                            <li><a href="#">Medisinske koder og kodeverk           </a></li>
+                                            <li><a href="#">Motiverende intervju                   </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">N</li>
+                                            <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer       </a></li>
+                                            <li><a href="#">Nasjonale strategier og handlingsplaner</a></li>
+                                            <li><a href="#">Norsk pasientregister</a></li>
+                                            <li><a href="#">Nødnett</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">O</li>
+                                            <li><a href="#">Offshore                            </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">P</li>
+                                            <li><a href="#">Pasientrettigheter                  </a></li>
+                                            <li><a href="#">Psykisk helse                       </a></li>
+                                            <li><a href="#">Psykisk utviklingshemmede           </a></li>
+                                            <li><a href="#">Pårørende                           </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                        <ul>
+                                            <li class="character">R</li>
+                                            <li><a href="#">Refusjoner                          </a></li>
+                                            <li><a href="#">Rus og narkotika                    </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">S</li>
+                                            <li><a href="#">Samhandlingsreformen                </a></li>
+                                            <li><a href="#">Seksuell helse                      </a></li>
+                                            <li><a href="#">Skjemaer                            </a></li>
+                                            <li><a href="#">Smittevern                          </a></li>
+                                            <li><a href="transportside_statistikk.html">Statistikk, tall og analyse         </a></li>
+                                            <li><a href="#">Sykehjem og hjemmesykepleie         </a></li>
+                                            <li><a href="#">Sykemelding                         </a></li>
+                                            <li><a href="#">System for innføring av nye metoder </a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">T</li>
+                                            <li><a href="#">Tannhelse            </a></li>
+                                            <li><a href="#">Taushetsplikt        </a></li>
+                                            <li><a href="tilskudd.html">Tilskudd             </a></li>
+                                            <li><a href="#">Tobakk, røyk og snus </a></li>
+                                            <li><a href="#">Turnus </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <a id="content" tabindex="-1"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <article class="col-md-7 col-lg-8">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li><a href="forside.html">Forside</a></li>
+                            <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
+                            <li class="active"><a href="transportside_ernaering.html">Ernæring</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Kostholdsråd</h1>
+                    <div class="ingress">
+                        Nye råd publisert i 2014....
+                    </div>
+                    <div class="border"></div>
+                </header>
+
                 <section>
-                    <h2>
+                    <h2 class="accordion_mobile">
                         1. Spis variert
                     </h2>
                     <ul>
@@ -46,126 +296,435 @@
                         <li>Regelmessig fysisk aktivitet bidrar til å opprettholde kroppens energibalanse</li>
                     </ul>
                 </section>
-                <section class="avsnitt">
-                    <h2>2. Hold energibalansen</h2>
-                    <aside class="aside">
-                        <h3>Mengde (%) tilstatt sukker i norsk kosthold</h3>
-                        <img class="img-responsive" src="../img/statistikk_eksempel2.png" />
-                        <a href="#">Flere tall og utvikling i norsk kosthold</a>
-                    </aside>
+                <section>
+                    <h2 class="accordion_mobile">2. Hold energibalansen</h2>
                 </section>
 
-                <section>
-                    <h2>
+                <section class="sectionwithaside">
+                    <h2 class="accordion_mobile">
                         3. Spis fisk 2-3 ganger i uken
                     </h2>
-                    <ul>
-                        <li>En porsjon tilsvarer 100 gram, og kan for eksempel være en liten bolle med salat, en gulrot eller en middels stor frukt</li>
-                        <li>Du kan bruke friske, hermetiske, frosne, og varmebehandlede grønnsaker, frukt og bær. Mulighetene er mange. Halvparten av "fem om dagen" bør være grønnsaker</li>
-                        <li>Varier mellom ulike typer grønnsaker og frukt. Bruk gjerne tomater, løk, purre og hvitløk.</li>
-                        <li>Poteter er ikke inkludert i "fem om dagen", men hører med i et variert kosthold. Poteter inneholder mer kostfiber, vitaminer og mineraler enn vanlig ris og pasta. Du bør helst velge kokte eller bakte poteter.</li>
-                        <li>Belgvekster som bønner og linser, frø, krydder og urter inngår heller ikke i "fem om dagen". Disse har ofte et høyt innhold av næringsstoffer og hører med i et variert kosthold.</li>
-                        <li>Spis gjerne en liten håndfull usaltede nøtter om dagen.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>4. Spis grove kornprodukter</h2>
                     <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section>
-                    <h2>5. Spis grove kornprodukter hver dag</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section>
-                    <h2>6. Velg magert kjøtt</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section>
-                    <h2>7. Begrens salt</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section>
-                    <h2>8. Spis grove kornprodukter hver dag</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section>
-                    <h2>9. Velg vann som tørstedrikk</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                    </div>
-                </section>
-                <section class="avsnitt">
-                    <h2>10. Vær fysisk aktiv i minst 30 min hver dag</h2>
-                    <div>
-                        <ul>
-                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
-                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
-                        </ul>
-                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
-                        <aside class="aside retningslinjemodul">
-                            <div class="innerDiv">
-                                <p>Retningslinje</p>
-                                <a href="#">
-                                    Forebygging, utredning og behandling av overvekt og fedme hos barn og unge
-                                </a>
-                                <p>2011</p>
+
+                        <p>
+                            En porsjon tilsvarer 100 gram, og kan for eksempel være en liten bolle med salat, en gulrot eller en middels stor frukt
+                            Du kan bruke friske, hermetiske, frosne, og varmebehandlede grønnsaker, frukt og bær. Mulighetene er mange. Halvparten av "fem om dagen" bør være grønnsaker
+                            <figure class="image_intext clearfix">
+                                <img class="" src="../img/Fisk.jpg" alt="Illustrasjonsfoto av fisk" />
+                                <figcaption>Fisk har et høyt innhold av mange nødvendige næringsstoffer.</figcaption>
+                            </figure>
+                            Varier mellom ulike typer grønnsaker og frukt. Bruk gjerne tomater, løk, purre og hvitløk.
+                            Poteter er ikke inkludert i "fem om dagen", men hører med i et variert kosthold. Poteter inneholder mer kostfiber, vitaminer og mineraler enn vanlig ris og pasta. Du bør helst velge kokte eller bakte poteter.
+                            Belgvekster som bønner og linser, frø, krydder og urter inngår heller ikke i "fem om dagen". Disse har ofte et høyt innhold av næringsstoffer og hører med i et variert kosthold.
+                            Spis gjerne en liten håndfull usaltede nøtter om dagen.
+                        </p>
+
+                        <aside class="aside">
+                            <div class="module module_statistics_graph">
+                                <div class="module_description">Statistikk</div>
+                                <h5 class="module_header">
+                                    Antall fedmeoperasjoner
+                                </h5>
+                                <div id="module_chart_div"></div>
+
+                                <a href="#" class="internal-link arrow_right">Les mer om sammenhengen mellom bruk av sukker og livsstilssykdommer</a>
+                                <img class="pulse" src="../img/modules/EKG-lyseblaa.png" alt="">
                             </div>
                         </aside>
                     </div>
                 </section>
+                <section>
+                    <h2 class="accordion_mobile">4. Spis grove kornprodukter</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="accordion_mobile">5. Spis grove kornprodukter hver dag</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
+                <section class="sectionwithaside">
+                    <h2 class="accordion_mobile">6. Velg magert kjøtt</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                        <aside class="aside">
+                            <div class="module module_guidelines">
+                                <div class="module_description ">Nasjonal faglig retningslinje</div>
+                                <h5 class="module_header">
+                                    <a href="#" class="internal-link arrow_right">
+                                        Forebygging, utredning og behandling av overvekt og fedme hos barn og unge
+                                    </a>
+                                </h5>
+                                <p class="module_ingress">2011</p>
+                                <img class="pulse" src="../img/modules/EKG-sisteforsoek.png" alt="">
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="accordion_mobile">7. Begrens salt</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="accordion_mobile">8. Spis grove kornprodukter hver dag</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="accordion_mobile">9. Velg vann som tørstedrikk</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="accordion_mobile">10. Vær fysisk aktiv i minst 30 min hver dag</h2>
+                    <div>
+                        <ul>
+                            <li>Velg matvarer med begrensede mengder fett, sukker og salt</li>
+                            <li>Se etter Nøkkelhullet når du handler. Det gjør det enklere å sette sammen et sunt, variert og godt kosthold</li>
+                        </ul>
+                        <a href="#">Mer om variert kosthold (helsenorge.no)</a>
+                    </div>
+                </section>
 
                 <p> <i class="fa fa-print"></i>Skriv ut kostholdsrådene </p>
-                <div class="abonneringsmodul aside clearfix">
-                    <h4>Få oppdateringer på denne siden</h4>
-                    <div><i class="fa fa-envelope fa-lg"></i><a href="#">E-post</a></div>
-                    <div><i class="fa fa-rss fa-lg"></i><a href="#">RSS-strøm</a></div>
-                </div>
+
+                <aside class="aside bottom ">
+                    <div class="module module_subscribe">
+                        <p class="header">Abonnér på denne siden</p>
+                        <a href="#" class="e-mail"><img src="../img/ikon_epost.svg" alt="" /><p>E-post</p></a>
+                        <a href="#" class="rss"><img src="../img/ikon_rss.svg" alt="" /><p>RSS-strøm</p></a>
+                    </div>
+                </aside>
             </article>
         </div>
     </div>
 
-    <div id="footer"></div>
+    <div id="footer">
+        <div class="shortcuts">
+            <ul>
+                <li><a href="#bottom">Bunnlinje</a></li>
+            </ul>
+        </div>
+        <footer class="footerwrapper" role="contentinfo">
+            <div class="menuwrapper">
+                <div class="container">
+                    <div class="row forside">
+                        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <nav class="tabs">
+
+                                <ul class="tab-links" role="tablist">
+                                    <li class="tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
+                                    <li class="tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="panel_footer1" class="tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-4">
+
+                                                <ul>
+                                                    <li><a href="../medisinskeRetningslinjer/" id="footer_content_categories">Nasjonale faglige retningslinjer</a></li>
+                                                    <li><a href="#">Nasjonale strategier og planer</a></li>
+                                                    <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
+                                                    <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
+                                                    <li><a href="tilskudd.html">Tilskudd</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4">
+                                                <ul>
+                                                    <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
+                                                    <li><a href="#">Beredskap</a></li>
+                                                    <li><a href="transportside_loverogregler.html">Lover og rettigheter</a></li>
+                                                    <li><a href="hoeringer.html">Høringer</a></li>
+                                                    <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix visible-xs visible-sm"></div>
+
+                                            <div class=" col-sm-6 col-md-4">
+                                                <ul>
+
+                                                    <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
+                                                    <li><a href="#">Legemidler og medisinsk utstyr</a></li>
+                                                    <li><a href="#">Godkjenning og turnus</a></li>
+                                                    <li><a href="#">eHelse</a></li>
+                                                    <li><a href="#">Helseøkonomi</a></li>
+                                                    <li class="hidden_links"><a href="transportside_omoss.html" class="">Om oss</a></li>
+                                                    <li class="hidden_links"><a href="#" class="">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="panel_footer2" class="tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
+                                        <div class="row alphabetical">
+                                            <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                                <ul>
+                                                    <li class="character">A</li>
+                                                    <li><a href="#" id="footer_content_alphabetical">AD/HD</a></li>
+                                                    <li><a href="transportside_alkohol.html">Alkohol</a></li>
+                                                    <li><a href="#">Antibiotika</a></li>
+                                                    <li><a href="#">Astma og allergi</a></li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="character">B</li>
+                                                    <li><a href="#">Beredskap og krisehåndtering</a></li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="character">D</li>
+                                                    <li><a href="artikkel_utredning_av_demens.html">Demens</a></li>
+                                                    <li><a href="#">Diabetes</a></li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="character">E</li>
+                                                    <li><a href="#">E-resept</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">F</li>
+
+                                                    <li><a href="transportside_folkehelse.html">Folkehelsearbeid</a></li>
+                                                    <li><a href="#">Forgiftning</a></li>
+                                                    <li><a href="#">Frisklivssentraler</a></li>
+                                                    <li><a href="#">Fritt sykehusvalg </a></li>
+                                                    <li><a href="#">Fysioterapi       </a></li>
+                                                    <li><a href="#">Førerkort         </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">G</li>
+                                                    <li><a href="#">Godkjenning og autorisasjon </a></li>
+                                                    <li><a href="#">Graviditet, fødsel og amming</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                                <ul>
+                                                    <li class="character">H</li>
+                                                    <li><a href="#">Helsestasjon og skolehelsetjenesten    </a></li>
+                                                    <li><a href="#">Helseøkonomi og finansiering           </a></li>
+                                                    <li><a href="#">Hjerneslag                             </a></li>
+                                                    <li><a href="#">Hjerte- og karsykdommer                </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">I</li>
+                                                    <li><a href="#">Individuell plan og rehabilitiering    </a></li>
+                                                    <li><a href="#">Influensa                              </a></li>
+                                                    <li><a href="#">Innvandrerhelse                        </a></li>
+                                                    <li><a href="#">IPLOS                                  </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">K</li>
+                                                    <li><a href="#">Kjernejournal                          </a></li>
+                                                    <li><a href="#">Kols                                   </a></li>
+                                                    <li><a href="transportside_ernaering.html">Kosthold, ernæring og fysisk aktivitet </a></li>
+                                                    <li><a href="#">Kreft                                  </a></li>
+                                                    <li><a href="#">Kvalitetsindikatorer                   </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">L</li>
+                                                    <li><a href="#">Legemidler                             </a></li>
+                                                    <li><a href="#">Legestillingsregisteret                </a></li>
+                                                    <li><a href="transportside_loverogregler.html">Lover og fortolkninger                 </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix hidden-md hidden-lg"></div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                                <ul>
+                                                    <li class="character">M</li>
+
+                                                    <li><a href="#">ME-CFS                                 </a></li>
+                                                    <li><a href="#">Medisinsk bibliotek                    </a></li>
+                                                    <li><a href="#">Medisinsk utstyr                       </a></li>
+                                                    <li><a href="#">Medisinske koder og kodeverk           </a></li>
+                                                    <li><a href="#">Motiverende intervju                   </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">N</li>
+                                                    <li><a href="../medisinskeRetningslinjer/">Nasjonale faglige retningslinjer       </a></li>
+                                                    <li><a href="#">Nasjonale strategier og handlingsplaner</a></li>
+                                                    <li><a href="#">Norsk pasientregister</a></li>
+                                                    <li><a href="#">Nødnett</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">O</li>
+                                                    <li><a href="#">Offshore                            </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">P</li>
+                                                    <li><a href="#">Pasientrettigheter                  </a></li>
+                                                    <li><a href="#">Psykisk helse                       </a></li>
+                                                    <li><a href="#">Psykisk utviklingshemmede           </a></li>
+                                                    <li><a href="#">Pårørende                           </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                                <ul>
+                                                    <li class="character">R</li>
+                                                    <li><a href="#">Refusjoner                          </a></li>
+                                                    <li><a href="#">Rus og narkotika                    </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">S</li>
+                                                    <li><a href="#">Samhandlingsreformen                </a></li>
+                                                    <li><a href="#">Seksuell helse                      </a></li>
+                                                    <li><a href="#">Skjemaer                            </a></li>
+                                                    <li><a href="#">Smittevern                          </a></li>
+                                                    <li><a href="transportside_statistikk.html">Statistikk, tall og analyse         </a></li>
+                                                    <li><a href="#">Sykehjem og hjemmesykepleie         </a></li>
+                                                    <li><a href="#">Sykemelding                         </a></li>
+                                                    <li><a href="#">System for innføring av nye metoder </a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">T</li>
+                                                    <li><a href="#">Tannhelse            </a></li>
+                                                    <li><a href="#">Taushetsplikt        </a></li>
+                                                    <li><a href="tilskudd.html">Tilskudd             </a></li>
+                                                    <li><a href="#">Tobakk, røyk og snus </a></li>
+                                                    <li><a href="#">Turnus </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <a id="bottom" tabindex="-1"></a>
+            <div class="footerlinkswrapper">
+                <div class="container">
+                    <div class="row">
+                        <section class="col-sm-12 col-md-4 ">
+                            <a href="kontaktoss.html">
+                                <h4 class="internal-link arrow_right">Kontakt oss</h4>
+                            </a>
+                            <p>Telefon: +47 810 20 050</p>
+                            <p>E-post: <a href="mailto:postmottak@helsedir.no">postmottak@helsedir.no</a></p>
+                            <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
+                            <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
+                        </section>
+                        <section class="col-sm-12 col-md-4">
+                            <a href="transportside_omoss.html">   <h4 class="internal-link arrow_right">Om Helsedirektoratet</h4></a>
+                            <p>Helsedirektoratet gjennomfører helsepolitikken, forvalter helselover og er faglig rådgiver innen helse.</p>
+                            <ul class="about">
+                                <li><a href="#">Ledige stillinger</a></li>
+                                <li><a href="artikkel_organisasjonskart.html">Organisasjonskart</a></li>
+                                <li><a href="#">Aktuelt</a></li>
+                                <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
+                                <li><a href="#">Presse</a></li>
+                            </ul>
+                        </section>
+                        <section class="col-sm-12 col-md-4 ">
+                            <h4>Abonner</h4>
+                            <a href="#"><p class="abonner">Nyheter på e-post</p></a>
+                            <a href="#"><p class="abonner">Nyheter på RSS</p></a>
+
+                            <div class="socialmedia clearfix">
+                                <h4>Følg oss på</h4>
+                                <div>
+                                    <a class="twitter" href="#"></a>
+                                    <a class="facebook" href="#"></a>
+                                    <a class="youtube" href="#"></a>
+                                    <a class="linkedin" href="#"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="map">
+            </div>
+        </footer>
+
+        <!-- begin usabilla live embed code -->
+        <script type="text/javascript">
+            /*{literal}<![CDATA[*/window.lightningjs || function (c) { function g(b, d) { d && (d += (/\?/.test(d) ? "&" : "?") + "lv=1"); c[b] || function () { var i = window, h = document, j = b, g = h.location.protocol, l = "load", k = 0; (function () { function b() { a.P(l); a.w = 1; c[j]("_load") } c[j] = function () { function m() { m.id = e; return c[j].apply(m, arguments) } var b, e = ++k; b = this && this != i ? this.id || 0 : 0; (a.s = a.s || []).push([e, b, arguments]); m.then = function (b, c, h) { var d = a.fh[e] = a.fh[e] || [], j = a.eh[e] = a.eh[e] || [], f = a.ph[e] = a.ph[e] || []; b && d.push(b); c && j.push(c); h && f.push(h); return m }; return m }; var a = c[j]._ = {}; a.fh = {}; a.eh = {}; a.ph = {}; a.l = d ? d.replace(/^\/\//, (g == "https:" ? g : "http:") + "//") : d; a.p = { 0: +new Date }; a.P = function (b) { a.p[b] = new Date - a.p[0] }; a.w && b(); i.addEventListener ? i.addEventListener(l, b, !1) : i.attachEvent("on" + l, b); var q = function () { function b() { return ["<head></head><", c, ' onload="var d=', n, ";d.getElementsByTagName('head')[0].", d, "(d.", g, "('script')).", i, "='", a.l, "'\"></", c, ">"].join("") } var c = "body", e = h[c]; if (!e) return setTimeout(q, 100); a.P(1); var d = "appendChild", g = "createElement", i = "src", k = h[g]("div"), l = k[d](h[g]("div")), f = h[g]("iframe"), n = "document", p; k.style.display = "none"; e.insertBefore(k, e.firstChild).id = o + "-" + j; f.frameBorder = "0"; f.id = o + "-frame-" + j; /MSIE[ ]+6/.test(navigator.userAgent) && (f[i] = "javascript:false"); f.allowTransparency = "true"; l[d](f); try { f.contentWindow[n].open() } catch (s) { a.domain = h.domain, p = "javascript:var d=" + n + ".open();d.domain='" + h.domain + "';", f[i] = p + "void(0);" } try { var r = f.contentWindow[n]; r.write(b()); r.close() } catch (t) { f[i] = p + 'd.write("' + b().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();' } a.P(2) }; a.l && setTimeout(q, 0) })() }(); c[b].lv = "1"; return c[b] } var o = "lightningjs", k = window[o] = g(o); k.require = g; k.modules = c }({});
+            window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/05ef68e9ef78.js");
+            /*]]>{/literal}*/</script>
+        <!-- end usabilla live embed code -->
+    </div>
 
     <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/modernizr-latest.js"></script>
-    <script src="../js/headerFooter.js"></script>
-    <script src="../js/sohoFont.js"></script>
-    <script src="../js/calibriFont.js"></script>
-    <script src="../js/toggle.js"></script>
-    <script src="../js/mobileCollapse.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/helsedir.js"></script>
+    <script src="../js/expandmenu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="../js/google.maps.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Year', 'Menn', 'Kvinner'],
+              ['2013', 1322, 6348],
+
+            ]);
+
+            var options = {
+                //                vAxis: { minValue: 0, maxValue: 50 },
+                //                chartArea: { left: "5%", width: "60%" }
+                'chartArea': { 'width': '70%', 'height': '70%' },
+                //                legend: {
+                //                    position: 'bottom',
+                //                    alignment: 'start'
+                //                },
+                colors: ['#6cb4b5', '#a1bf37', '#004e66', '#0093a7', "#df9922"],
+                //                series: {
+                //                    0: { lineDashStyle: [14, 7] },
+                //                    1: { lineDashStyle: [5, 5] },
+                //                    4: { lineDashStyle: [7, 14] }
+                //                }, lineWidth: 3
+                legend: {
+                    position: 'bottom',
+                    alignment: 'start'
+                },
+                bar: {
+                    groupWidth: "50%"
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_div'));
+            chart.draw(data, options);
+        }
+
+        $(window).resize(function () {
+            drawChart();
+        });
+    </script>
 </body>
 </html>

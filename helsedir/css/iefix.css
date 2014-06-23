@@ -1,0 +1,14 @@
+﻿.search,
+.mainsearch {
+  background-color: white;
+  background-image: url('../img/ikon_forstorrelsesglass.png') !important;
+  border: 1px solid #004e66;
+  -moz-background-size: auto 80%;
+  -o-background-size: auto 80%;
+  -webkit-background-size: auto 80%;
+  background-size: auto 80%;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+}
+/*# sourceMappingURL=iefix.css.map */

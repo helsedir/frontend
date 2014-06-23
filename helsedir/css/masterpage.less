@@ -1,0 +1,617 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.footerwrapper {
+    border-top: 5px solid @colorMediumBlue;
+    background: #838078;
+    border: none;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.menuwrapper {
+    background: white;
+}
+
+.shortcuts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    ul {
+        overflow: hidden;
+        height: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: -2013px;
+        display: block;
+        border-radius: 5px;
+
+        &:focus {
+            top: 10px;
+        }
+    }
+}
+
+.forside {
+    article {
+        margin: 20px 0 20px 0;
+        border-bottom: 1px solid @colorLightGray2;
+        padding-bottom: 20px;
+    }
+}
+
+.mobile-search {
+    display: none;
+}
+
+.hidden-mobile {
+    display: block;
+}
+
+.about {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+
+    a {
+        cursor: pointer;
+    }
+
+    li {
+        margin: 0;
+        line-height: 1.5em;
+    }
+}
+
+#header {
+    background: white;
+}
+
+#logo img {
+    display: block;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+.menubutton {
+    width: 150px;
+    min-height: 40px;
+    text-align: center;
+    display: inline-block;
+
+    button.js-expander {
+        border: none;
+        border-radius: 3px;
+        background-color: @colorDarkBlue;
+        vertical-align: middle;
+        padding: 7px 8px 7px 8px;
+        color: #ffffff;
+        font-weight: normal;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:visited {
+            background-color: @colorDarkBlue;
+            color: #ffffff;
+        }
+
+        &:focus {
+            text-decoration: none;
+            background-color: #d1d0c4;
+
+            span, i {
+                color: white;
+            }
+
+            border: solid 1px @colorDarkBlue;
+        }
+
+        &:hover {
+            text-decoration: none;
+            background-color: #838078;
+            border-radius: 3px;
+
+            span, i {
+                color: white;
+            }
+        }
+
+        &.js-expanded {
+            padding-bottom: 50px;
+            border-radius: 3px 3px 0 0;
+            background-color: #838078;
+            color: @colorDarkBlue;
+            outline: 0;
+            border: none;
+
+            span, i {
+                color: white;
+            }
+        }
+
+        i {
+            /*font-size: 28px;*/
+            margin-left: 10px;
+        }
+    }
+}
+
+.menyknapp {
+    vertical-align: middle;
+}
+
+.mainsearch {
+    height: 39px;
+    /*max-width: 220px;*/
+    width: 86%;
+    padding: 0 37px 0 5px;
+    border-radius: 3px;
+    border: 1px solid @colorDarkBlue;
+    vertical-align: middle;
+    background-image: url('../img/ikon_forstorrelsesglass.png');
+    background-repeat: no-repeat;
+    -moz-background-size: auto 68%;
+    -o-background-size: auto 68%;
+    -webkit-background-size: auto 68%;
+    background-size: auto 68%;
+    background-color: #ffffff;
+    background-position: 97% 50%;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    cursor: pointer;
+}
+
+.masterheader {
+    height: 40px;
+    margin: 25px 0 35px 0;
+    background: white;
+
+    .links {
+        color: @colorDarkBlue;
+        margin-right: 15px;
+        vertical-align: sub;
+
+        &:focus {
+            background: @colorDarkBlue;
+            color: white !important;
+            outline: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    a, a:visited {
+        color: @colorDarkBlue;
+        text-decoration: none;
+    }
+}
+
+.masterheader, footer {
+    background: white;
+
+    a {
+        &:focus {
+            background: white;
+            color: @colorDarkBlue !important;
+            outline: 0;
+        }
+    }
+}
+
+/**********Header**********/
+.toppmeny {
+    margin-bottom: 30px;
+    background: #838078;
+    padding: 0 0 50px 0 !important;
+
+    .inner {
+        background: #ffffff;
+        padding: 0;
+        margin-top: 60px;
+    }
+}
+
+/**********Footer**********/
+
+footer, .toppmeny {
+    .tabs {
+        margin-bottom: 50px;
+        padding-left: 20px;
+        margin-top: -32px;
+
+        .tab-links {
+            padding-left: 20px;
+            margin-right: 10px;
+
+            li {
+                background: @colorDarkBlue;
+
+                &[aria-selected='true'] {
+                    border: none;
+                    background: white;
+                    color: @colorDarkBlue;
+
+                    &:focus {
+                        background: #02343f;
+                        color: white;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                }
+
+                background: @colorDarkBlue;
+                color: white;
+                padding: 0 30px 5px 20px;
+                border-radius: 0;
+                cursor: pointer;
+
+                &:focus {
+                    background: #02343f;
+                    color: white;
+                    outline: 0;
+                }
+            }
+
+            .menu_search {
+                color: black;
+                padding-left: 0;
+
+                input {
+                    padding: 2px 24px 0 5px;
+                    height: 27px;
+                    /*max-width: 220px;*/
+                    width: 86%;
+                    border-radius: 3px;
+                    border: 1px solid @colorDarkBlue;
+                    vertical-align: middle;
+                    background-image: url('../img/ikon_forstorrelsesglass.png');
+                    background-repeat: no-repeat;
+                    -moz-background-size: auto 68%;
+                    -o-background-size: auto 68%;
+                    -webkit-background-size: auto 68%;
+                    background-size: auto 68%;
+                    background-color: #ffffff;
+                    background-position: 97% 50%;
+                    background-position-x: 97%;
+                    background-position-y: 50%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .map {
+        height: 500px;
+    }
+
+    .tab-content {
+        background: white;
+        border: none;
+        border-radius: 0;
+        margin: 10px 0;
+
+        li {
+            background: white;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+
+            a {
+                color: @colorDarkBlue;
+            }
+
+            &:hover {
+                background: #d1d0c4;
+            }
+        }
+    }
+}
+
+    footer.rammeverk {
+        height: 100%;
+        background: @colorDarkBlue;
+        color: white;
+
+        p {
+            margin: 0.5rem;
+            padding-left: 1.3rem;
+        }
+
+        img {
+            padding-right: 0.4rem;
+            padding-left: 1.8rem;
+            vertical-align: middle;
+        }
+
+        a, a:visited {
+            color: white !important;
+            text-decoration: none;
+        }
+    }
+
+#footer {
+    margin-top: 95px;
+}
+
+.footerlinkswrapper {
+    background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+    background-position: right;
+    padding: 20px 0 50px 0;
+
+    h4, p, a, a:visited, a:hover {
+        color: white;
+    }
+
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    a {
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .socialmedia {
+        border-radius: 3px;
+        margin: 20px 0 20px 0;
+
+        div {
+            word-spacing: -5px;
+
+            a {
+                padding: 31px 31px 30px 30px;
+                line-height: 35px;
+                margin-top: 10px;
+                display: inline-block;
+                background-color: @colorLightBlue;
+                transition: all 0.5s;
+
+                img {
+                    height: 22px;
+                }
+
+                &.facebook, &.twitter, &.linkedin, &.youtube {
+                    &:hover, &:focus {
+                        background-color: @colorDarkBlue;
+                    }
+                }
+
+                &.facebook {
+                    background-image: url(../img/sosiale_ikon_facebook.svg);
+                    background-repeat: no-repeat;
+                    -moz-background-size: 27px 22px;
+                    -o-background-size: 27px 22px;
+                    -webkit-background-size: 27px 22px;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.twitter {
+                    background-image: url(../img/sosiale_ikon_twitter.svg);
+                    background-repeat: no-repeat;
+                    -moz-background-size: 27px 22px;
+                    -o-background-size: 27px 22px;
+                    -webkit-background-size: 27px 22px;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.linkedin {
+                    background-image: url(../img/sosiale_ikon_linkedin.svg);
+                    background-repeat: no-repeat;
+                    -moz-background-size: 27px 22px;
+                    -o-background-size: 27px 22px;
+                    -webkit-background-size: 27px 22px;
+                    background-size: 27px 22px;
+                    background-position: 50%;
+                }
+
+                &.youtube {
+                    background-image: url(../img/sosiale_ikon_youtube.svg);
+                    background-repeat: no-repeat;
+                    -moz-background-size: 53px 22px;
+                    -o-background-size: 53px 22px;
+                    -webkit-background-size: 53px 22px;
+                    background-size: 53px 22px;
+                    background-position: 50%;
+                }
+            }
+
+                a:last-of-type {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+
+                a:first-of-type {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+        }
+    }
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/**********Media**********/
+
+@media only screen and (max-width: 1199px) {
+    .masterheader .links {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .footerlinkswrapper .socialmedia a img {
+        height: 16px;
+    }
+
+    footer, .toppmeny {
+        .tabs {
+            padding-left: 0;
+
+            .tab-links {
+                padding-left: 0;
+
+                li {
+                    width: 100px;
+                    padding: 0 15px 0 10px;
+                }
+            }
+
+            .tab-content {
+                padding-left: 0;
+            }
+        }
+    }
+
+        footer .tabs, .toppmeny .tabs {
+            margin-top: -27px;
+        }
+
+        .toppmeny .inner {
+            margin-top: 40px;
+        }
+
+    .footerwrapper {
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    #mainsearchcolumn {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hidden-mobile {
+        display: none;
+        background-color: #838078;
+        padding: 20px;
+    }
+
+    .masterheader {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .menubutton {
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+
+        &.mobile-menu {
+            padding: 7px 11px 8px 11px;
+            display: inline-block;
+            border-radius: 3px;
+            background: @colorDarkBlue url('../img/ikon_meny_hvit.svg') no-repeat;
+            -moz-background-size: 20px;
+            -o-background-size: 20px;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            background-position: center;
+
+            &:hover {
+                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+                -moz-background-size: 20px;
+                -o-background-size: 20px;
+                -webkit-background-size: 20px;
+                background-size: 20px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 46px;
+                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+                -moz-background-size: 20px;
+                -o-background-size: 20px;
+                -webkit-background-size: 20px;
+                background-size: 20px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+
+        &.mobile-search {
+            display: inline-block;
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            -moz-background-size: 30px;
+            -o-background-size: 30px;
+            -webkit-background-size: 30px;
+            background-size: 30px;
+            background-position: center;
+            border-radius: 3px;
+
+            &:focus {
+                text-decoration: none;
+                background-color: #838078;
+                color: @colorDarkBlue;
+                border: solid 1px @colorDarkBlue;
+            }
+
+            &:hover {
+                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                -moz-background-size: 30px;
+                -o-background-size: 30px;
+                -webkit-background-size: 30px;
+                background-size: 30px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                padding-bottom: 43px;
+                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                -moz-background-size: 29px;
+                -o-background-size: 29px;
+                -webkit-background-size: 29px;
+                background-size: 29px;
+                background-position: 50% 35%;
+                border-radius: 3px 3px 0 0;
+            }
+        }
+    }
+}

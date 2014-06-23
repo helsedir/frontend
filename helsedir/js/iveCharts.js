@@ -1,6 +1,6 @@
 ﻿(function ($) {
     /* Single column graph */
-    $.fn.singleColumns = function(options) {
+    $.fn.singleColumns = function (options) {
         var self = this;
         self.css({
             'position': 'relative'
@@ -49,7 +49,7 @@
             var number = numberTemplate.clone();
             number.text((thousandsSeparator(opts.columns[i].number)));
             itemOuter.append(number);
-            
+
             /* Cloning the column item */
             var item = columnTemplate.clone();
             var itemHeight = (current.number * 80) / highestNumber;
@@ -59,7 +59,7 @@
                 backgroundColor: opts.colors[i],
                 marginLeft: itemMargin + '%',
             });
-             
+
             /* If animation option is true */
             if (opts.animate) {
                 item.animate({
@@ -129,8 +129,6 @@
                 width: opts.columnWidth + '%',
             });
 
-            
-           
             /* Looping through data for column creation */
             for (var i = 0; i < opts.columns[z].data.length; i++) {
                 var columnInner = columnInnerTemplate.clone();
@@ -195,9 +193,7 @@
         animate: true
     };
 
-    var thousandsSeparator = function(value) {
+    var thousandsSeparator = function (value) {
         return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
     };
-
 }(jQuery));
-
