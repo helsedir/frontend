@@ -208,10 +208,11 @@ a {
 
     h2:before, .accordion:before {
         float: left;
-        padding: 3px 10px 0 0;
+        padding: 3px 20px 0 0;
         content: "\f107";
         font-family: "FontAwesome";
         font-size: 40px;
+        cursor: pointer;
     }
 
     h3.accordion:before {
@@ -220,14 +221,16 @@ a {
 }
 
 .has-visible-content {
-    cursor: pointer;
-
     h2:before, .accordion:before {
         float: left;
-        padding: 3px 10px 0 0;
+        padding: 3px 20px 0 0;
         content: "\f106";
         font-family: "FontAwesome";
         font-size: 40px;
+    }
+
+    .accordion {
+        cursor: pointer;
     }
 
     h3.accordion:before {
@@ -462,8 +465,9 @@ figure {
 
 .metatext {
     font-family: @fontCalibri;
-    font-size: 16px;
+    font-size: 18px;
     color: #222;
+    line-height: 22px;
 
     &.statistics {
         text-align: right;
