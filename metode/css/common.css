@@ -896,8 +896,7 @@ fieldset {
   margin-bottom: 5px;
 }
 .dropdown select {
-  min-width: 270px;
-  max-width: 270px;
+  width: 100%;
   border: 1px solid #004e66;
   font-family: 'Calibri';
   font-size: 20px;
