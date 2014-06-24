@@ -156,6 +156,9 @@
 .illustrasjon table tr {
   text-align: center;
 }
+.illustrasjon.liten {
+  width: 25%;
+}
 #module_chart_column2_legend,
 #module_chart_donut_legend {
   margin: 30px 0 0 0;

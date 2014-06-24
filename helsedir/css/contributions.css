@@ -9,7 +9,7 @@
   display: none;
 }
 .tilskudd_information {
-  margin-top: 50px;
+  margin: 50px 0 0 0;
 }
 .tilskudd_information dt {
   width: auto;
@@ -26,9 +26,6 @@
   color: #004e66;
   font-size: 18px;
   margin-bottom: 30px;
-}
-.border {
-  padding-bottom: 32px;
 }
 @media only screen and (min-width: 599px) {
   .aside {
