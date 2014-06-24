@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prioriteringsveiledere</title>
+		    <link href="http://helsedir.azurewebsites.net/css/bootstrap-full.min.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/customLESS.css" rel="stylesheet" />
+    <link href="http://helsedir.azurewebsites.net/css/retningslinje.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div id="header"></div>
+<div class="container">  
+		  <div class="row">
+	<div class="col-md-8">
+  	<ol class="broedsmulesti">
+    	<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
+      <li><a href="../">Nasjonale faglige retningslinjer</a></li>
+      <li><a href="../">Nasjonal faglig retningslinje for spedbarnsernæring</a></li>
+     </ol>
+   </div>
+</div>
+<div class="row">
+
+	  		<section id="section1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	<header class="section_heading">
+  	<h1>Prioriteringsveiledere</h1>
+	</header>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Angst/tvang med liten begrensning av livsutfoldelse</h1>
+  <p>Ikke rett til prioritert helsehjelp</p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>Samtaleterapi med kognitiv tilnærming og pedagogisk opplæring om angstreaksjoner, avspenning og trening</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses ikke å være alvorlig</dd>
+			<dd>Helsehjelpen anses ikke å være nyttig</dd>
+			<dd>Helsehjelpen anses ikke å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>Depresjon og suicidalitet</li>
+					<li>komorbiditet, for eksempel alkoholmisbruk, misbruk av benzodiasepiner eller illegale rusmidler</li>
+					<li>Grad av stort symptomtrykk</li>
+					<li>Gøy grad av, eller raskt oppstått, funksjonssvikt</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Angst/tvang med begrensning av livsutfoldelse</h1>
+  <p><span class="maksfrist">30 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Samtaleterapi med kognitiv tilnærming evt. eksponeringsøvelser og restrukturering, og psykoedukasjon</li>
+					<li>Fysisk trening og avspenning</li>
+					<li>Vurdere medikamentelle tilnærminger med SSRI / Busperion / RIMA</li>
+					<li>Benzodiasepiner bør unngås</li>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>Depresjon</li>
+					<li>komorbiditet, for eksempel alkoholmisbruk, misbruk av benzodiasepiner eller illegale rusmidler</li>
+					<li>Grad av stort symptomtrykk</li>
+					<li>Høy grad av, eller raskt oppstått, funksjonssvikt</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Depresjon - lett til moderat MADRS < 20</h1>
+  <p>Ikke rett til prioritert helsehjelp</p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+			  <ul>
+			  	<li>Avventende observasjon</li>
+			  	<li>Samtaleterapi</li>
+			  </ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis ikke å være alvorlig</dd>
+			<dd>Helsehjelpen anses sannsynligvis ikke å være nyttig</dd>
+			<dd>Helsehjelpen anses sannsynligvis ikke å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>Akutt oppstått depresjon eller tilbakefall</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Depresjon - moderat til alvorlig, MADRS > 20</h1>
+  <p><span class="maksfrist">6 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Samtaleterapi med kognitiv tilnærming</li>
+					<li>Psykoedukasjon</li>
+					<li>Vurdere medikamentell behandling med SSRI eller andre antidepressiva</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses å være kostnadseffektiv</dd>
+			<dt>Veiledende rettighet og maksimumsfrist for start helsehjelp for tilstandsgruppen som pasienten tilhører</dt>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>akutt oppstått depresjon eller tilbakefall</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Depresjon - moderat, behandlingsresistens</h1>
+  <p><span class="maksfrist">4 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Samtaleterapi med kognitiv terapi</li>
+					<li>Vurdere medikamentell behandling med SSRI eller andre antidepressiva</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>akutt oppstått depresjon eller tilbakefall</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1 class="recommendation_heading">Depresjon - alvorlig, evt. med psykotiske symptomer</h1>
+  <p><span class="maksfrist">2 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Vurdere medikamentelle behandlingstiltak</li>
+					<li>Vurdere rammer for ambulant behandling vs. innleggelse</li>
+					<li>Kognitiv terapi</li>
+					<li>ECT</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>akutt oppstått depresjon eller tilbakefall</li>
+					<li>tidligere godt fungerende</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1 class="recommendation_heading">Mistanke om bipolar lidelse</h1>
+  <p>Ustabil fase: <span class="maksfrist">8 uker</span></p>
+  <p>Stabil fase:<span class="maksfrist">1 uke</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Psykoedukasjon av pasient og familie</li>
+					<li>Stemningsstabiliserende medikamentell behandling</li>
+					<li>Individuell plan</li>
+					<li>Langsiktig behandlingsplan og monitorering av svingninger og behandlingsrespons</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>positiv familieanamnese, tidlig debut</li>
+					<li>grad av kronifisering</li>
+					<li>komorbiditet, spesielt rusproblemer</li>
+					<li>grad av depresjon</li>
+					<li>grad av mani</li>
+					<li>ukritisk atferd</li>
+					<li>komorbiditet, spesielt rusproblemer</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Mistanke om ADHD (de alvorligste tilstandene)</h1>
+  <p>For pasienter over 23 år:<span class="maksfrist">30 uker</span></p>
+  <p>For pasienter under 23 år:<span class="maksfrist">65 virkedager</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Tilstandsgruppe/ klinisk bilde</dt>
+			<dd>Mistanke om ADHD (de alvorligste tilstandene)</dd>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Avklare og eventuelt behandle komorbide tilstander</li>
+					<li>Familieterapeutiske intervensjoner</li>
+					<li>Psykoterapi med fokus på mestring, struktur og psykoedukasjon</li>
+					<li>Tilrettelegging av skole og arbeid</li>
+					<li>Individuell plan</li>
+					<li>Farmakologisk behandling</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses å være alvorlig</dd>
+			<dd>Helsehjelpen anses sannsynligvis å være nyttig</dd>
+			<dd>Helsehjelpen anses under tvil å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<p>Dette er en heterogen gruppe og det er i utgangspunktet stor variasjon i alvorlighet av symptomer og i funksjonsnivå.</p>
+				<ul>
+					<li>rusmisbruk (påvirker også tilbudets art)</li>
+					<li>komorbiditet med andre psykiske eller somatiske lidelser</li>
+				</ul>
+				<p>Svakt sosialt nettverk kan gi høyere prioritet.</p>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Symptomer på mulig psykoseutvikling</h1>
+  <p><span class="maksfrist">2 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Psykoedukasjon av pasient og pårørende</li>
+					<li>Individuell plan</li>
+					<li>Medikamentell behandling</li>
+					<li>Kognitiv individualterapi ved vrangforestilling og stemmehøring</li>
+					<li>Egostøttende psykoterapi</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses å være nyttig</dd>
+			<dd>Helsehjelpen anses under tvil å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>førstegangssymptomer på psykose</li>
+					<li>manglende sykdomsfølelse og sykdomsinnsikt</li>
+					<li>funksjonsfall i forhold til skole, arbeid og sosial fungering</li>
+					<li>ulike forhold som kan skjule seg bak tidlige symptomer på psykose, for eksempel akutte forvirringstilstander, korte reaktive psykoser, mer omfattende og langvarige tilstander innenfor for eksempel schizofrenispekteret
+					</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Forverring av symptomer ved kjent psykotisk lidelse</h1>
+  <p><span class="maksfrist">2 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Individuell plan med aktiv tilbakefallsforebygging</li>
+					<li>Psykoedukasjon av pasient og pårørende</li>
+					<li>Medikamentell behandling</li>
+					<li>Kognitiv individualterapi ved vrangforestilling og stemmehøring</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses være nyttig</dd>
+			<dd>Helsehjelpen anses under tvil å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>tidligere sykdomshistorie</li>
+					<li>selvmordstanker</li>
+					<li>tidligere erfaring med tilbakefallsforebygging for aktuell pasient</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Alvorlige spiseforstyrrelser</h1>
+  <p><span class="maksfrist">12 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning</li>
+					<li>Psykoterapi med familiebehandling</li>
+					<li>Psykoedukasjon og kognitive tilnærminger</li>
+					<li>Individuell plan</li>
+					<li>Langsiktig behandlingsplan</li>
+					<li>Vurdere SSRI</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses å være alvorlig</dd>
+			<dd>Helsehjelpen anses sannsynligvis å være nyttig</dd>
+			<dd>Helsehjelpen anses sannsynligvis å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<ul>
+					<li>økt renselsesatferd</li>
+					<li>depresjon</li>
+					<li>alvorlige, somatiske tilleggssymptomer</li>
+					<li>KMI < 15, stor og rask vektreduksjon</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+  <section class="recommendation">
+	<div class="recommendation_intro">
+  <header class="recommendation_heading">
+		<div>
+  <h1>Psykisk utviklingshemning og psykiske lidelser</h1>
+  <p><span class="maksfrist">12 uker</span></p>
+		</div>
+  </header>
+</div>
+<div class="recommendation_text">
+
+</div>
+<div class="recommendation_extras hidden">
+<button type="button" class="show_kunnskapsgrunnlag btn btn-default">Vis kunnskapsgrunnlaget</button>
+<div class="recommendation_kunnskapsgrunnlag hidden">
+		<dl>
+			<dt>Aktuell helsehjelp i spesialisthelsetjenesten</dt>
+			<dd>
+				<ul>
+					<li>Utredning, evt. tverrfaglig</li>
+					<li>Individuell plan og tilpasset behandling/ oppfølging</li>
+				</ul>
+			</dd>
+			<dt>Gradering av vilkårene i prioriteringsforskriften</dt>
+			<dd>Tilstanden anses sannsynligvis å være alvorlig</dd>
+			<dd>Helsehjelpen anses sannsynligvis å være nyttig</dd>
+			<dd>Helsehjelpen anses under tvil å være kostnadseffektiv</dd>
+			<dt>Individuelle forhold som må vurdere før rettighet og maksimumsfrist fastsettes for den enkelte pasient</dt>
+			<dd>
+				<p>
+					Psykisk utviklingshemmede er en heterogen gruppe og graden av utviklingshemming spenner fra lett til dyp. De enkelte psykiske lidelser vil variere, og alvorlighet vil måtte vurderes ut fra disse faktorer.
+				</p>
+				<ul>
+					<li>symptomutforming</li>
+					<li>alvorlighet av grunntilstand</li>
+					<li>pasientens evne til medvirkning i behandlingen</li>
+					<li>komorbiditet</li>
+				</ul>
+			</dd>
+		</dl>
+</div>
+</div>
+</section>
+</section>
+			</div>
+</div>
+<div id="footer">
+	
+	
+</div>
+
+
+		    <script src="http://helsedir.azurewebsites.net/js/jquery-1.11.0.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/modernizr-latest.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/sohoFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/calibriFont.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/headerFooterRetningslinje.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/easyResponsiveTabs2.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/typeahead.jquery.js"></script>
+    <script src="http://helsedir.azurewebsites.net/js/retningslinje.js"></script>
+	</body>
+</html>
