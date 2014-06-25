@@ -46,7 +46,7 @@
   width: 100%;
 }
 .border {
-  padding-bottom: 27px;
+  padding-bottom: 40px;
 }
 .report table {
   width: 100%;
@@ -62,7 +62,11 @@
   margin-top: 40px;
 }
 .numberofpublications {
+  font-family: 'Calibri';
+  line-height: 20px;
   text-transform: uppercase;
+  font-size: 18px;
+  color: #004e66;
 }
 .transportsideknapp .publication_year,
 .transportsideknapp .publication_type,

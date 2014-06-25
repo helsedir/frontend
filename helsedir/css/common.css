@@ -497,11 +497,10 @@ figure .metatext {
 :-ms-input-placeholder {
   text-align: center;
 }
-/*******************************Ny forside******************************************/
 .calltoaction {
   border: 2px solid #004e66;
   color: #004e66;
-  padding: 10px 20px 10px 35px;
+  padding: 10px 20px 10px 30px;
   margin: 20px 0 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
@@ -512,6 +511,7 @@ figure .metatext {
   background-position: 5% 50%;
   background-size: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 .calltoaction:hover,
 .calltoaction:focus {
@@ -519,6 +519,19 @@ figure .metatext {
   background: #004e66 url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
   background-position: 5% 50%;
   background-size: 10px;
+}
+.calltoaction.download {
+  border: 2px solid #0093a7;
+  padding: 10px 70px 10px 0;
+  background: #ffffff url('../img/ikon_pdf_blaa.svg') no-repeat;
+  background-position: 95% 50%;
+  background-size: 20px;
+}
+.calltoaction.download:hover,
+.calltoaction.download:focus {
+  background: #0093a7 url('../img/ikon_pdf_hvit.svg') no-repeat;
+  background-position: 95% 50%;
+  background-size: 20px;
 }
 iframe {
   margin-bottom: 23px;
@@ -869,6 +882,7 @@ h4.keyfigures {
   background: none;
   border-top: 2px solid #004e66;
   padding-top: 15px;
+  margin: 40px 0 0 0;
   max-width: 300px;
   width: 100%;
 }
@@ -880,9 +894,14 @@ h4.keyfigures {
 }
 .module.module_print span,
 .module.module_social span {
-  margin: 0 10px 20px 0;
+  margin: 0 10px 0 0;
   height: 24px;
   width: 26px;
+}
+.module.module_print .ikon_print,
+.module.module_social .ikon_print {
+  margin-top: 15px;
+  display: block;
 }
 .module.module_print .ikon_facebook,
 .module.module_social .ikon_facebook {
@@ -911,7 +930,7 @@ h4.keyfigures {
 .module.module_print p,
 .module.module_social p {
   width: 70px;
-  margin: 0 20px 20px 0;
+  margin: 0 20px 0 0;
   color: #004e66;
   text-transform: uppercase;
   display: inline;
@@ -1177,8 +1196,7 @@ fieldset {
   margin-bottom: 5px;
 }
 .dropdown select {
-  min-width: 270px;
-  max-width: 270px;
+  width: 100%;
   border: 1px solid #004e66;
   font-family: 'Calibri';
   font-size: 20px;
@@ -1214,12 +1232,14 @@ fieldset {
 }
 .refinesearch h2,
 .refinesearch h5 {
-  border-bottom: 2px solid #004e66;
+  border-top: 2px solid #004e66;
   margin-bottom: 17px;
-  padding-bottom: 15px;
-  font-family: "Soho Gothic W01 Regular";
-  font-size: 28px;
-  line-height: 42px;
+  padding-top: 15px;
+  font-family: 'Calibri';
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #004e66;
 }
 .refinesearch select {
   margin-bottom: 20px;
