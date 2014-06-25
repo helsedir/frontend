@@ -409,6 +409,9 @@ figure .metatext {
 .sectionwithaside {
   position: relative;
 }
+.content {
+  position: relative;
+}
 .aside,
 .aside.bottom {
   margin-right: 0;
@@ -711,7 +714,8 @@ h4.keyfigures {
   text-transform: uppercase;
 }
 .module.module_subscribe .header {
-  border-bottom: 2px solid #004e66;
+  border-top: 2px solid #004e66;
+  padding-top: 15px;
   margin-bottom: 10px;
 }
 .module.module_subscribe a {
@@ -731,20 +735,35 @@ h4.keyfigures {
   float: left;
   margin-right: 10px;
 }
-.module.module_subscribe .e-mail img {
-  margin-right: 10px;
-  width: 27px;
-  height: 20px;
+.module.module_subscribe .e-mail {
+  width: 28px;
+  height: 23px;
+  padding-left: 32px;
+  background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+  background-size: 27px 20px;
+}
+.module.module_subscribe .e-mail:hover {
+  background: url(../img/modules/icons/epost_hover.svg) no-repeat;
+  background-size: 28px 23px;
 }
 .module.module_subscribe .e-mail p {
   display: inline;
   vertical-align: bottom;
   font-size: 16px;
 }
-.module.module_subscribe .rss img {
-  margin-right: 5px;
-  width: 27px;
-  height: 20px;
+.module.module_subscribe .rss {
+  width: 28px;
+  height: 23px;
+  padding-left: 32px;
+  background: url(../img/modules/icons/rss_regular.svg) no-repeat;
+  background-size: 27px 20px;
+}
+.module.module_subscribe .rss:hover {
+  background: url(../img/modules/icons/rss_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
 .module.module_subscribe .rss p {
   display: inline;
@@ -844,39 +863,53 @@ h4.keyfigures {
   border-top: 2px solid #004e66;
   padding-top: 15px;
 }
-.module.module_socialandprint {
+.module.module_print,
+.module.module_social {
   padding: 0;
   background: none;
+  border-top: 2px solid #004e66;
+  padding-top: 15px;
+  max-width: 300px;
+  width: 100%;
 }
-.module.module_socialandprint .print p,
-.module.module_socialandprint .share p,
-.module.module_socialandprint .print span,
-.module.module_socialandprint .share span {
+.module.module_print p,
+.module.module_social p,
+.module.module_print span,
+.module.module_social span {
   float: left;
 }
-.module.module_socialandprint .print span,
-.module.module_socialandprint .share span {
+.module.module_print span,
+.module.module_social span {
   margin: 0 10px 20px 0;
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 26px;
 }
-.module.module_socialandprint .print .ikon_facebook,
-.module.module_socialandprint .share .ikon_facebook {
-  background: url(../img/sosiale_ikon_facebook_blaa.svg) no-repeat;
+.module.module_print .ikon_facebook,
+.module.module_social .ikon_facebook {
+  background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.module.module_socialandprint .print .ikon_twitter,
-.module.module_socialandprint .share .ikon_twitter {
-  background: url(../img/sosiale_ikon_twitter_blaa.svg) no-repeat;
+.module.module_print .ikon_twitter,
+.module.module_social .ikon_twitter {
+  background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.module.module_socialandprint .print .ikon_skrivut,
-.module.module_socialandprint .share .ikon_skrivut {
-  background: url(../img/ikon_skriv_ut.svg) no-repeat;
+.module.module_print .ikon_skrivut,
+.module.module_social .ikon_skrivut {
+  background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.module.module_socialandprint .print p,
-.module.module_socialandprint .share p {
+.module.module_print p,
+.module.module_social p {
   width: 70px;
   margin: 0 20px 20px 0;
   color: #004e66;
@@ -885,17 +918,29 @@ h4.keyfigures {
   vertical-align: bottom;
   font-size: 16px;
 }
-.module.module_socialandprint .ikon_skrivut:hover {
-  background: url(../img/ikon_skriv_ut_hover.svg) no-repeat;
-  background-size: 27px 24px;
+.module.module_print .ikon_skrivut:hover,
+.module.module_social .ikon_skrivut:hover {
+  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
-.module.module_socialandprint .ikon_facebook:hover {
-  background: url(../img/sosiale_ikon_facebook_hover.svg) no-repeat;
-  background-size: 27px 24px;
+.module.module_print .ikon_facebook:hover,
+.module.module_social .ikon_facebook:hover {
+  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
-.module.module_socialandprint .ikon_twitter:hover {
-  background: url(../img/sosiale_ikon_twitter_hover.svg) no-repeat;
-  background-size: 27px 24px;
+.module.module_print .ikon_twitter:hover,
+.module.module_social .ikon_twitter:hover {
+  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
 .showmorenews {
   width: 250px;

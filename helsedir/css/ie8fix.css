@@ -41,7 +41,7 @@
   height: auto;
 }
 .no-svg .e-mail {
-  background-image: url('../img/ikon_epost.png');
+  background-image: url('../img/modules/icons/epost_regular.png');
   background-repeat: no-repeat;
   background-size: 20px 27px;
   padding-left: 30px;
@@ -50,13 +50,55 @@
   display: none;
 }
 .no-svg .rss {
-  background-image: url('../img/ikon_rss.png');
+  background-image: url('../img/modules/icons/rss_regular.png');
   background-repeat: no-repeat;
   background-size: 20px 27px;
   padding-left: 30px;
 }
 .no-svg .rss img {
   display: none;
+}
+.no-svg .module.module_socialandprint .ikon_facebook {
+  background: url(../img/modules/icons/facebook_blaa.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_twitter {
+  background: url(../img/modules/icons/twitter_blaa.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_skrivut {
+  background: url(../img/modules/icons/ikon_skriv_ut.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_skrivut:hover {
+  background: url(../img/modules/icons/skriv_ut_hover.png) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+.no-svg .module.module_socialandprint .ikon_facebook:hover {
+  background: url(../img/modules/icons/sosiale_ikon_facebook_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+.no-svg .module.module_socialandprint .ikon_twitter:hover {
+  background: url(../img/modules/icons/twitter_hover.png) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
 .menubutton a.js-expander i {
   margin-left: 0;

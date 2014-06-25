@@ -1,5 +1,4 @@
-﻿
-@fontCalibri: 'Calibri';
+﻿@fontCalibri: 'Calibri';
 @fontCalibriBold: 'Calibri-Bold';
 @fontSoho: "soho gothic pro medium";
 @fontSohoLight: "Soho Gothic W01 Light";
@@ -72,7 +71,7 @@ body {
     }
 
     .e-mail {
-        background-image: url('../img/ikon_epost.png');
+        background-image: url('../img/modules/icons/epost_regular.png');
         background-repeat: no-repeat;
         background-size: 20px 27px;
         padding-left: 30px;
@@ -83,13 +82,65 @@ body {
     }
 
     .rss {
-        background-image: url('../img/ikon_rss.png');
+        background-image: url('../img/modules/icons/rss_regular.png');
         background-repeat: no-repeat;
         background-size: 20px 27px;
         padding-left: 30px;
 
         img {
             display: none;
+        }
+    }
+
+    .module {
+        &.module_socialandprint {
+            .ikon_facebook {
+                background: url(../img/modules/icons/facebook_blaa.png) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
+
+            .ikon_twitter {
+                background: url(../img/modules/icons/twitter_blaa.png) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
+
+            .ikon_skrivut {
+                background: url(../img/modules/icons/ikon_skriv_ut.png) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
+
+                .ikon_skrivut:hover {
+                    background: url(../img/modules/icons/skriv_ut_hover.png) no-repeat;
+                    -moz-background-size: 28px 23px;
+                    -o-background-size: 28px 23px;
+                    -webkit-background-size: 28px 23px;
+                    background-size: 28px 23px;
+                }
+
+            .ikon_facebook:hover {
+                background: url(../img/modules/icons/sosiale_ikon_facebook_hover.svg) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
+            }
+
+            .ikon_twitter:hover {
+                background: url(../img/modules/icons/twitter_hover.png) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
+            }
         }
     }
 }

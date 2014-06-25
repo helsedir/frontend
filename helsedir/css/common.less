@@ -490,6 +490,10 @@ figure {
     position: relative;
 }
 
+.content {
+    position: relative;
+}
+
 .aside, .aside.bottom {
     margin-right: 0;
     position: relative;
@@ -829,7 +833,8 @@ p.keyfigures, h4.keyfigures {
         }
 
         .header {
-            border-bottom: 2px solid @colorDarkBlue;
+            border-top: 2px solid @colorDarkBlue;
+            padding-top: 15px;
             margin-bottom: 10px;
         }
 
@@ -855,10 +860,15 @@ p.keyfigures, h4.keyfigures {
         }
 
         .e-mail {
-            img {
-                margin-right: 10px;
-                width: 27px;
-                height: 20px;
+            width: 28px;
+            height: 23px;
+            padding-left: 32px;
+            background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+            background-size: 27px 20px;
+
+            &:hover {
+                background: url(../img/modules/icons/epost_hover.svg) no-repeat;
+                background-size: 28px 23px;
             }
 
             p {
@@ -869,10 +879,18 @@ p.keyfigures, h4.keyfigures {
         }
 
         .rss {
-            img {
-                margin-right: 5px;
-                width: 27px;
-                height: 20px;
+            width: 28px;
+            height: 23px;
+            padding-left: 32px;
+            background: url(../img/modules/icons/rss_regular.svg) no-repeat;
+            background-size: 27px 20px;
+
+            &:hover {
+                background: url(../img/modules/icons/rss_hover.svg) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
             }
 
             p {
@@ -995,60 +1013,80 @@ p.keyfigures, h4.keyfigures {
         }
     }
 
-    &.module_socialandprint {
+    &.module_print, &.module_social {
         padding: 0;
         background: none;
+        border-top: 2px solid @colorDarkBlue;
+        padding-top: 15px;
+        max-width: 300px;
+        width: 100%;
 
-        .print, .share {
-            p, span {
-                float: left;
-            }
+        p, span {
+            float: left;
+        }
 
-            span {
-                margin: 0 10px 20px 0;
-                height: 30px;
-                width: 30px;
-            }
+        span {
+            margin: 0 10px 20px 0;
+            height: 24px;
+            width: 26px;
+        }
 
-            .ikon_facebook {
-                background: url(../img/sosiale_ikon_facebook_blaa.svg) no-repeat;
-                background-size: 27px 20px;
-            }
+        .ikon_facebook {
+            background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+            -moz-background-size: 27px 20px;
+            -o-background-size: 27px 20px;
+            -webkit-background-size: 27px 20px;
+            background-size: 27px 20px;
+        }
 
-            .ikon_twitter {
-                background: url(../img/sosiale_ikon_twitter_blaa.svg) no-repeat;
-                background-size: 27px 20px;
-            }
+        .ikon_twitter {
+            background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+            -moz-background-size: 27px 20px;
+            -o-background-size: 27px 20px;
+            -webkit-background-size: 27px 20px;
+            background-size: 27px 20px;
+        }
 
-            .ikon_skrivut {
-                background: url(../img/ikon_skriv_ut.svg) no-repeat;
-                background-size: 27px 20px;
-            }
+        .ikon_skrivut {
+            background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+            -moz-background-size: 27px 20px;
+            -o-background-size: 27px 20px;
+            -webkit-background-size: 27px 20px;
+            background-size: 27px 20px;
+        }
 
-            p {
-                width: 70px;
-                margin: 0 20px 20px 0;
-                color: #004e66;
-                text-transform: uppercase;
-                display: inline;
-                vertical-align: bottom;
-                font-size: 16px;
-            }
+        p {
+            width: 70px;
+            margin: 0 20px 20px 0;
+            color: #004e66;
+            text-transform: uppercase;
+            display: inline;
+            vertical-align: bottom;
+            font-size: 16px;
         }
 
         .ikon_skrivut:hover {
-            background: url(../img/ikon_skriv_ut_hover.svg) no-repeat;
-            background-size: 27px 24px;
+            background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+            -moz-background-size: 28px 23px;
+            -o-background-size: 28px 23px;
+            -webkit-background-size: 28px 23px;
+            background-size: 28px 23px;
         }
 
         .ikon_facebook:hover {
-            background: url(../img/sosiale_ikon_facebook_hover.svg) no-repeat;
-            background-size: 27px 24px;
+            background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+            -moz-background-size: 28px 23px;
+            -o-background-size: 28px 23px;
+            -webkit-background-size: 28px 23px;
+            background-size: 28px 23px;
         }
 
         .ikon_twitter:hover {
-            background: url(../img/sosiale_ikon_twitter_hover.svg) no-repeat;
-            background-size: 27px 24px;
+            background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+            -moz-background-size: 28px 23px;
+            -o-background-size: 28px 23px;
+            -webkit-background-size: 28px 23px;
+            background-size: 28px 23px;
         }
     }
 }
