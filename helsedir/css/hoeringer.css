@@ -13,17 +13,18 @@
 .aside.alignwithheader {
   margin-top: 113px;
 }
-.hoeringer_details {
-  margin-top: 20px;
+.hoering_information {
+  margin: 50px 10px 0 0;
 }
-.hoeringer_details p,
-.hoeringer_details span {
-  display: table-cell;
+.hoering_information dt {
+  width: auto;
+  min-width: 250px;
+  padding-right: 10px;
+  float: left;
+  font-weight: bold;
 }
-.hoeringer_details .hoeringer_processing_deadline span,
-.hoeringer_details .hoeringer_deadline span,
-.hoeringer_details .hoeringer_status span,
-.hoeringer_details .hoeringer_theme span {
-  width: 100px;
+.hoering_information dd {
+  width: 65%;
+  float: left;
 }
 /*# sourceMappingURL=hoeringer.css.map */

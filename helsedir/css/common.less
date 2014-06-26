@@ -541,12 +541,15 @@ figure {
     margin-top: 10px;
 
     li {
-        margin: 0 0 0 10px;
+        margin: 0 0 0 25px;
+        display: block;
 
         &:before {
             content: "•";
             color: @colorDarkBlue;
-            margin-right: 20px;
+            margin: -1px 0 0 -25px;
+            display: block;
+            position: absolute;
         }
     }
 }
@@ -590,38 +593,40 @@ figure {
 
 .calltoaction {
     border: 2px solid @colorDarkBlue;
-    color: @colorDarkBlue;
-    padding: 10px 20px 10px 30px;
-    margin: 20px 0 30px 0;
+    color: white;
+    padding: 10px 20px 10px 45px;
+    margin: 20px 30px 30px 0;
     font-family: @fontCalibri;
     font-size: 20px;
     line-height: 24px;
-    width: 270px;
-    display: block;
-    background: white url('../img/ikon_pilmothoyre.svg') no-repeat;
-    background-position: 5% 50%;
+    display: inline-block;
+    min-width: 240px;
+    background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+    background-position: 20px 50%;
     background-size: 10px;
     cursor: pointer;
-    text-decoration: none;
+    text-align: left;
+    transition: all 0.5s;
 
     &:hover, &:focus {
         color: white;
-        background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
-        background-position: 5% 50%;
+        background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+        background-position: 20px 50%;
         background-size: 10px;
     }
 
-    &.download {
+    &.secondary {
         border: 2px solid @colorMediumBlue;
-        padding: 10px 70px 10px 0;
-        background: white url('../img/ikon_pdf_blaa.svg') no-repeat;
-        background-position: 95% 50%;
-        background-size: 20px;
+        background: white url('../img/ikon_pilmothoyre.png') no-repeat;
+        background-position: 20px 50%;
+        background-size: 10px;
+        color: @colorDarkBlue;
 
         &:hover, &:focus {
-            background: @colorMediumBlue url('../img/ikon_pdf_hvit.svg') no-repeat;
-            background-position: 95% 50%;
-            background-size: 20px;
+            background: @colorMediumBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+            background-position: 20px 50%;
+            background-size: 10px;
+            color: white;
         }
     }
 }
@@ -855,7 +860,7 @@ p.keyfigures, h4.keyfigures {
 
         a {
             font-size: 18px;
-            margin: 0 13px 0 0;
+            margin: 0 40px 0 0;
             text-decoration: none;
             color: @colorDarkBlue;
 
@@ -877,7 +882,7 @@ p.keyfigures, h4.keyfigures {
         .e-mail {
             width: 28px;
             height: 23px;
-            padding-left: 32px;
+            padding-left: 40px;
             background: url(../img/modules/icons/epost_regular.svg) no-repeat;
             background-size: 27px 20px;
 
@@ -896,7 +901,7 @@ p.keyfigures, h4.keyfigures {
         .rss {
             width: 28px;
             height: 23px;
-            padding-left: 32px;
+            padding-left: 40px;
             background: url(../img/modules/icons/rss_regular.svg) no-repeat;
             background-size: 27px 20px;
 
@@ -974,11 +979,55 @@ p.keyfigures, h4.keyfigures {
                 width: 100px;
             }
         }
+
+        &.date {
+            border: 2px solid @colorMediumBlue;
+            margin-bottom: 70px;
+
+            .keyfigures {
+                text-align: center;
+            }
+        }
+
+        &.date_small {
+            border: 2px solid @colorMediumBlue;
+            margin: 30px 0 10px 0;
+            padding: 5px 20px;
+
+            .keyfigures {
+                text-align: center;
+                color: @colorRed;
+                margin-left: 30px;
+                font-size: 24px;
+                font-family: @fontSohoRegular;
+            }
+        }
+
+        &.date_small_closed {
+            border: 2px solid @colorMediumBlue;
+            margin: 30px 0 10px 0;
+            padding: 5px 20px;
+            font-family: @fontSohoRegular;
+            font-size: 24px;
+            color: #838078;
+
+            .keyfigures {
+                margin: 0 30px;
+            }
+
+            .module_header {
+                color: #838078;
+            }
+
+            .closed {
+                color: @colorRed;
+            }
+        }
     }
 
     &.module_person {
         margin: 0;
-        padding: 20px 0 0 30px;
+        padding: 20px 0 0 0;
         width: 100%;
         background: none;
 
@@ -996,11 +1045,6 @@ p.keyfigures, h4.keyfigures {
             font-size: 18px;
         }
 
-            .role:after {
-                content: '|';
-                padding: 0 5px 0 10px;
-            }
-
         .person_information {
         }
 
@@ -1010,8 +1054,8 @@ p.keyfigures, h4.keyfigures {
         }
 
         img {
-            width: 100%;
-            margin-right: 22px;
+            width: 36%;
+            margin-right: 19px;
             float: left;
             margin-bottom: 14px;
         }
@@ -1032,9 +1076,8 @@ p.keyfigures, h4.keyfigures {
         padding: 0;
         background: none;
         border-top: 2px solid @colorDarkBlue;
-        padding-top: 15px;
-        margin: 40px 0 0 0;
-        max-width: 300px;
+        padding-top: 19px;
+        margin: 60px 0 0 0;
         width: 100%;
 
         p, span {
@@ -1048,7 +1091,6 @@ p.keyfigures, h4.keyfigures {
         }
 
         .ikon_print {
-            margin-top: 15px;
             display: block;
         }
 
@@ -1116,7 +1158,7 @@ p.keyfigures, h4.keyfigures {
     width: 250px;
     text-align: center;
     margin: 50px 0;
-    border: 2px solid @colorDarkBlue;
+    border: 2px solid #aeaba8;
     color: @colorDarkBlue;
     background: white;
     font-family: @fontCalibri;
@@ -1128,9 +1170,12 @@ p.keyfigures, h4.keyfigures {
         width: 100%;
         height: 100%;
         color: #222;
+        padding: 10px 20px 10px 30px;
 
         &:hover {
             text-decoration: none;
+            background-color: #aeaba8;
+            color: white;
         }
     }
 
@@ -1630,11 +1675,7 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -46%;
-        }
-
-        &.top {
-            margin-right: -46%;
+            margin-right: -50%;
         }
     }
 

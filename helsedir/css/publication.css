@@ -27,14 +27,16 @@
 .publication_information {
   margin: 50px 10px 0 0;
 }
-.publication_information .publication_info_attributes {
-  width: 35%;
+.publication_information dt {
+  width: auto;
+  min-width: 250px;
+  padding-right: 10px;
   float: left;
-  margin-right: 10px;
   font-weight: bold;
 }
-.publication_information p {
-  margin-bottom: 10px;
+.publication_information dd {
+  width: 65%;
+  float: left;
 }
 .sitedescription {
   margin-top: 40px;

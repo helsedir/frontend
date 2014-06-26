@@ -457,12 +457,15 @@ figure .metatext {
   margin-top: 10px;
 }
 .bulletlist li {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 25px;
+  display: block;
 }
 .bulletlist li:before {
   content: "•";
   color: #004e66;
-  margin-right: 20px;
+  margin: -1px 0 0 -25px;
+  display: block;
+  position: absolute;
 }
 .borderbox {
   margin-bottom: 20px;
@@ -499,39 +502,41 @@ figure .metatext {
 }
 .calltoaction {
   border: 2px solid #004e66;
-  color: #004e66;
-  padding: 10px 20px 10px 30px;
-  margin: 20px 0 30px 0;
+  color: white;
+  padding: 10px 20px 10px 45px;
+  margin: 20px 30px 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
-  width: 270px;
-  display: block;
-  background: #ffffff url('../img/ikon_pilmothoyre.svg') no-repeat;
-  background-position: 5% 50%;
+  display: inline-block;
+  min-width: 240px;
+  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
-  text-decoration: none;
+  text-align: left;
+  transition: all 0.5s;
 }
 .calltoaction:hover,
 .calltoaction:focus {
   color: white;
-  background: #004e66 url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
-  background-position: 5% 50%;
+  background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background-position: 20px 50%;
   background-size: 10px;
 }
-.calltoaction.download {
+.calltoaction.secondary {
   border: 2px solid #0093a7;
-  padding: 10px 70px 10px 0;
-  background: #ffffff url('../img/ikon_pdf_blaa.svg') no-repeat;
-  background-position: 95% 50%;
-  background-size: 20px;
+  background: #ffffff url('../img/ikon_pilmothoyre.png') no-repeat;
+  background-position: 20px 50%;
+  background-size: 10px;
+  color: #004e66;
 }
-.calltoaction.download:hover,
-.calltoaction.download:focus {
-  background: #0093a7 url('../img/ikon_pdf_hvit.svg') no-repeat;
-  background-position: 95% 50%;
-  background-size: 20px;
+.calltoaction.secondary:hover,
+.calltoaction.secondary:focus {
+  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background-position: 20px 50%;
+  background-size: 10px;
+  color: white;
 }
 iframe {
   margin-bottom: 23px;
@@ -733,7 +738,7 @@ h4.keyfigures {
 }
 .module.module_subscribe a {
   font-size: 18px;
-  margin: 0 13px 0 0;
+  margin: 0 40px 0 0;
   text-decoration: none;
   color: #004e66;
 }
@@ -751,7 +756,7 @@ h4.keyfigures {
 .module.module_subscribe .e-mail {
   width: 28px;
   height: 23px;
-  padding-left: 32px;
+  padding-left: 40px;
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
@@ -767,7 +772,7 @@ h4.keyfigures {
 .module.module_subscribe .rss {
   width: 28px;
   height: 23px;
-  padding-left: 32px;
+  padding-left: 40px;
   background: url(../img/modules/icons/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
@@ -833,9 +838,45 @@ h4.keyfigures {
   margin-bottom: -18px;
   width: 100px;
 }
+.module.module_message.date {
+  border: 2px solid #0093a7;
+  margin-bottom: 70px;
+}
+.module.module_message.date .keyfigures {
+  text-align: center;
+}
+.module.module_message.date_small {
+  border: 2px solid #0093a7;
+  margin: 30px 0 10px 0;
+  padding: 5px 20px;
+}
+.module.module_message.date_small .keyfigures {
+  text-align: center;
+  color: #c63629;
+  margin-left: 30px;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Regular";
+}
+.module.module_message.date_small_closed {
+  border: 2px solid #0093a7;
+  margin: 30px 0 10px 0;
+  padding: 5px 20px;
+  font-family: "Soho Gothic W01 Regular";
+  font-size: 24px;
+  color: #838078;
+}
+.module.module_message.date_small_closed .keyfigures {
+  margin: 0 30px;
+}
+.module.module_message.date_small_closed .module_header {
+  color: #838078;
+}
+.module.module_message.date_small_closed .closed {
+  color: #c63629;
+}
 .module.module_person {
   margin: 0;
-  padding: 20px 0 0 30px;
+  padding: 20px 0 0 0;
   width: 100%;
   background: none;
 }
@@ -852,17 +893,13 @@ h4.keyfigures {
   margin: 0;
   font-size: 18px;
 }
-.module.module_person .role:after {
-  content: '|';
-  padding: 0 5px 0 10px;
-}
 .module.module_person .name {
   font-size: 28px;
   line-height: 30px;
 }
 .module.module_person img {
-  width: 100%;
-  margin-right: 22px;
+  width: 36%;
+  margin-right: 19px;
   float: left;
   margin-bottom: 14px;
 }
@@ -881,9 +918,8 @@ h4.keyfigures {
   padding: 0;
   background: none;
   border-top: 2px solid #004e66;
-  padding-top: 15px;
-  margin: 40px 0 0 0;
-  max-width: 300px;
+  padding-top: 19px;
+  margin: 60px 0 0 0;
   width: 100%;
 }
 .module.module_print p,
@@ -900,7 +936,6 @@ h4.keyfigures {
 }
 .module.module_print .ikon_print,
 .module.module_social .ikon_print {
-  margin-top: 15px;
   display: block;
 }
 .module.module_print .ikon_facebook,
@@ -965,7 +1000,7 @@ h4.keyfigures {
   width: 250px;
   text-align: center;
   margin: 50px 0;
-  border: 2px solid #004e66;
+  border: 2px solid #aeaba8;
   color: #004e66;
   background: white;
   font-family: 'Calibri';
@@ -977,9 +1012,12 @@ h4.keyfigures {
   width: 100%;
   height: 100%;
   color: #222;
+  padding: 10px 20px 10px 30px;
 }
 .showmorenews a:hover {
   text-decoration: none;
+  background-color: #aeaba8;
+  color: white;
 }
 .showmorenews.selected {
   background: #004e66;
@@ -1399,10 +1437,7 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -46%;
-  }
-  .aside.top {
-    margin-right: -46%;
+    margin-right: -50%;
   }
   .module_person.kontakt {
     bottom: 0;
