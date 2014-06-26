@@ -47,9 +47,6 @@
 .search {
   width: 100%;
 }
-.border {
-  padding-bottom: 40px;
-}
 .report table {
   width: 100%;
   margin-bottom: 20px;
@@ -59,9 +56,6 @@
 }
 .report table td:first-child {
   width: 25%;
-}
-.aside {
-  margin-top: 40px;
 }
 .numberofpublications {
   font-family: 'Calibri';

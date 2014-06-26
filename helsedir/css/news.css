@@ -9,7 +9,6 @@
   margin: 0;
 }
 .border {
-  padding-bottom: 16px;
   margin-bottom: 25px;
 }
 .newsarchive {
@@ -45,5 +44,8 @@
 }
 .transportsideknapp.newsitem h2 {
   margin: 5px 0;
+}
+.refinesearch {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=news.css.map */
