@@ -4,6 +4,9 @@
 #header .container {
   background: white;
 }
+#footer .container {
+  background: #838078;
+}
 .entrancebuttons {
   margin: 0 auto;
   display: table;
