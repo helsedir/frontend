@@ -19,14 +19,22 @@
 .shortcuts a:focus {
   top: 10px;
 }
-#logo {
+.logo {
   display: block;
-  background: #ffffff url('../img/logo.png') no-repeat;
-  -moz-background-size: 70%;
-  -o-background-size: 70%;
-  -webkit-background-size: 70%;
-  background-size: 70%;
-  height: 76px;
+  height: 100px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.logo p {
+  color: #222;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Soho Gothic W01 Regular";
+}
+.logo p strong {
+  font-size: 24px;
+  line-height: 24px;
 }
 #header {
   background: white;

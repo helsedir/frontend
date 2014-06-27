@@ -17,6 +17,19 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
+.container {
+    background: @colorLightGray;
+}
+
+#header .container {
+    background: white;
+}
+
+.entrancebuttons {
+    margin: 0 auto;
+    display: table;
+}
+
 .entrancebutton {
     width: 250px;
     height: 230px;
@@ -28,10 +41,9 @@
         height: 100%;
         width: 100%;
         display: inline-block;
-        color: white;
+        color: @colorDarkBlue;
         text-decoration: none;
-        border-radius: 50%;
-        background: #838078;
+        background: white;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
         -webkit-transition: all 0.5s;
@@ -61,7 +73,7 @@
             font-size: 28px;
             line-height: 35px;
             padding-bottom: 5px;
-            color: white;
+            color: @colorDarkBlue;
             position: relative;
             text-align: center;
             margin-top: 100px;
@@ -85,5 +97,11 @@
 
     &:visited, &:hover {
         color: white;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .newsillustration {
+        margin-top: 50px;
     }
 }
