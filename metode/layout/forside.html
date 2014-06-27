@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Metode | Helsedirektoratet.no</title>
-    <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet">
@@ -40,8 +40,11 @@
         </div>
         <div class="container">
             <header class="row masterheader">
-                <div class="col-xs-8 col-sm-8 col-md-5 col-lg-6">
-                    <a href="forside.html" id="logo" title="Gå til forsiden"></a>
+                <div class="col-xs-12 col-sm-8 col-md-5 col-lg-5">
+                    <a href="forside.html" class="logo">
+                        <p>Nasjonalt system for</p>
+                        <p><strong>innføring av nye metoder i spesialisthelsetjenesten</strong></p>
+                    </a>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-lg-offset-3 no-padding">
                     <div class="pull-right">
@@ -57,20 +60,23 @@
             <div class="row forside">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
                     <h1>Alle metoder som tas i bruk i spesialisthelsetjenesten skal vurderes</h1>
-                    <div class="entrancebutton ">
-                        <a href="#">
-                            <h2>Finn metode</h2>
-                        </a>
-                    </div>
-                    <div class="entrancebutton">
-                        <a href="#">
-                            <h2>Send forslag</h2>
-                        </a>
-                    </div>
-                    <div class="entrancebutton">
-                        <a href="#">
-                            <h2>Om systemet</h2>
-                        </a>
+                    <div class="entrancebuttons clearfix">
+
+                        <div class="entrancebutton ">
+                            <a href="#">
+                                <h2>Finn metode</h2>
+                            </a>
+                        </div>
+                        <div class="entrancebutton">
+                            <a href="#">
+                                <h2>Send forslag</h2>
+                            </a>
+                        </div>
+                        <div class="entrancebutton">
+                            <a href="#">
+                                <h2>Om systemet</h2>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,8 +86,7 @@
     <div class="container">
         <div class="row forside">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2>Slik fungerer systemet for innføring av metoder</h2>
-                <p>(visualisering av prosessen)</p>
+                <h2> Faser ved innføring av nye metoder</h2>
                 <a href="oppstart.html" class="method_entrance"><h3>Oppstart</h3></a>
                 <a href="forslag.html" class="method_entrance"><h3>Forslag</h3></a>
                 <a href="metodevurdering.html" class="method_entrance"><h3>Metodevurdering</h3></a>
@@ -94,11 +99,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>Nyheter</h2>
                 <div class="news">
-                    <a href="#"><h3>En så viktig nyhet at det er verdt å bruke mer plass på forsiden</h3></a>
+                    <a href="#"><h3> Besluttet å innføre to nye kreftlegemidler </h3></a>
                     <p>19.august 2014</p>
-                    <p class="ingress">
-                        Ingress om noe veldig viktig som er nyttig for brukeren å vite
-                    </p>
+                    <p class=ingress>De regionale helseforetakenes Beslutningsforum fattet 19. mai de første beslutningene om nye kreftlegemidler</p>
+
+                    <a href="#">
+                        Se flere nyheter
+                    </a>
                 </div>
                 <div class="news">
                     <a href="#">Aktuelt</a>
@@ -109,6 +116,39 @@
                     <p>7.mars 2014</p>
                     <a href="#">Se alle nyheter</a>
                 </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <h2>Siste status oppdateringer</h2>
+                <a href="#">Humira. Nytt forslag </a>
+                <p>13.august 2014</p>
+                <a href="#">Glatirameracetat. Nytt forslag </a>
+                <p>1.august 2014</p>
+                <a href="#"> Helplasma for transfusjon. Til metodevurdering</a>
+                <p>1.juni 2014</p>
+                <a href="#"> Pertuzumab (Perjeta)</a>
+                <p>15.mai 2014</p>
+                <a href="#"> Pasientnær (on-site) høysensitiv CRP. Til mini-metodevurdering </a>
+                <p>15.mai 2014</p>
+
+                <a href="transportside.html"> Se status på alle metoder</a>
+
+                <h2> Er du pasient? Slik kan du bidra:</h2>
+
+                <ul class="bulletlist">
+                    <li>Gjennom brukerutvalg på sykehus </li>
+                    <li>Sende inn et forslag til metodevurdering </li>
+                    <li>Evaluere metoder som er i bruk</li>
+                </ul>
+                <a href="#">
+                    Les mer om brukermedvirkning
+                </a>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive newsillustration" src="../img/forside_nyhetsillustrasjon.png" alt="Illustrasjon" />
             </div>
         </div>
         <div class="row">

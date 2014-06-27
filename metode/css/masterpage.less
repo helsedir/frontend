@@ -1,4 +1,10 @@
-﻿.shortcuts {
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+.shortcuts {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -24,14 +30,25 @@
     }
 }
 
-#logo {
+.logo {
     display: block;
-    background: #ffffff url('../img/logo.png') no-repeat;
-    -moz-background-size: 70%;
-    -o-background-size: 70%;
-    -webkit-background-size: 70%;
-    background-size: 70%;
-    height: 76px;
+    height: 100px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    p {
+        color: #222;
+        margin: 0;
+        font-size: 18px;
+        font-family: @fontSohoRegular;
+
+        strong {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
 }
 
 #header {
