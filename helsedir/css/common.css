@@ -51,7 +51,7 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: "Soho Gothic W01 Light";
-  margin: 35px 0 0 0;
+  margin: 35px 0 10px 0;
   color: #004e66;
 }
 h2.accordion {
@@ -709,9 +709,6 @@ h4.keyfigures {
   line-height: 22px;
   display: block;
 }
-.module.module_statistics_text {
-  max-width: 270px;
-}
 .module.module_statistics_graph {
   max-width: 300px;
 }
@@ -794,6 +791,7 @@ h4.keyfigures {
   padding: 30px 30px 45px 30px;
   background: white;
   position: relative;
+  width: 100%;
 }
 .module.module_message .module_description {
   font-family: 'Calibri';
@@ -841,6 +839,7 @@ h4.keyfigures {
 .module.module_message.date {
   border: 2px solid #0093a7;
   margin-bottom: 70px;
+  text-align: center;
 }
 .module.module_message.date .keyfigures {
   text-align: center;

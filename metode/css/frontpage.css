@@ -41,15 +41,6 @@
   text-decoration: none;
   color: white;
 }
-.entrancebutton a h3 {
-  margin: 80px 0 0 0;
-  padding: 0;
-  font-size: 28px;
-  font-family: "Soho Gothic W01 Light";
-}
-.entrancebutton a h3 .fa-bars {
-  margin-top: 20px;
-}
 .entrancebutton a h2 {
   font-size: 28px;
   line-height: 35px;
@@ -57,13 +48,7 @@
   color: #004e66;
   position: relative;
   text-align: center;
-  margin-top: 100px;
-}
-.entrancebutton a p {
-  line-height: 23px;
-  position: relative;
-  margin-left: 12px;
-  margin-bottom: 15px;
+  margin-top: 30px;
 }
 .entrancebutton a:focus {
   background: #02343f;
@@ -75,6 +60,23 @@
 .entrancebutton:visited,
 .entrancebutton:hover {
   color: white;
+}
+.entrancebutton span {
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto;
+  height: 70px;
+  width: 70px;
+}
+.entrancebutton span.finnmetode {
+  background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.entrancebutton span.finnmetode:hover {
+  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+  background-size: 35px;
+  background-position: center;
 }
 @media only screen and (min-width: 900px) {
   .newsillustration {

@@ -62,17 +62,6 @@
             }
         }
 
-        h3 {
-            margin: 80px 0 0 0;
-            padding: 0;
-            font-size: 28px;
-            font-family: @fontSohoLight;
-
-            .fa-bars {
-                margin-top: 20px;
-            }
-        }
-
         h2 {
             font-size: 28px;
             line-height: 35px;
@@ -80,14 +69,7 @@
             color: @colorDarkBlue;
             position: relative;
             text-align: center;
-            margin-top: 100px;
-        }
-
-        p {
-            line-height: 23px;
-            position: relative;
-            margin-left: 12px;
-            margin-bottom: 15px;
+            margin-top: 30px;
         }
 
         &:focus {
@@ -101,6 +83,26 @@
 
     &:visited, &:hover {
         color: white;
+    }
+
+    span {
+        border-radius: 50%;
+        display: block;
+        margin: 30px auto;
+        height: 70px;
+        width: 70px;
+
+        &.finnmetode {
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            background-size: 35px;
+            background-position: center;
+
+            &:hover {
+                background: white url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+                background-size: 35px;
+                background-position: center;
+            }
+        }
     }
 }
 
