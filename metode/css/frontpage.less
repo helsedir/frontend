@@ -96,12 +96,38 @@
             background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
             background-size: 35px;
             background-position: center;
+        }
 
-            &:hover {
-                background: white url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-                background-size: 35px;
-                background-position: center;
-            }
+        &.sendforslag {
+            background: @colorDarkBlue no-repeat;
+            background-size: 35px;
+            background-position: center;
+        }
+
+        &.omsystemet {
+            background: @colorDarkBlue no-repeat;
+            background-size: 35px;
+            background-position: center;
+        }
+    }
+
+    &:hover {
+        span.finnmetode {
+            background: white url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+            background-size: 35px;
+            background-position: center;
+        }
+
+        span.sendforslag {
+            background: white no-repeat;
+            background-size: 35px;
+            background-position: center;
+        }
+
+        span.omsystemet {
+            background: white no-repeat;
+            background-size: 35px;
+            background-position: center;
         }
     }
 }

@@ -73,8 +73,28 @@
   background-size: 35px;
   background-position: center;
 }
-.entrancebutton span.finnmetode:hover {
+.entrancebutton span.sendforslag {
+  background: #004e66 no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.entrancebutton span.omsystemet {
+  background: #004e66 no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.entrancebutton:hover span.finnmetode {
   background: #ffffff url('../img/ikon_forstorrelsesglass.svg') no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.entrancebutton:hover span.sendforslag {
+  background: #ffffff no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.entrancebutton:hover span.omsystemet {
+  background: #ffffff no-repeat;
   background-size: 35px;
   background-position: center;
 }
