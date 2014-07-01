@@ -43,9 +43,6 @@
 #footer {
   padding-top: 50px;
 }
-.mainentrance {
-  background: white;
-}
 .footerlinkswrapper {
   background: #838078;
   background-position: right;
@@ -55,17 +52,6 @@
 .footerlinkswrapper a,
 .footerlinkswrapper h4 {
   color: white;
-}
-.method_entrance {
-  float: left;
-  margin-right: 30px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.news {
-  float: left;
-  width: 40%;
-  margin-right: 110px;
 }
 .links {
   margin-left: 20px;

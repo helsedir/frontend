@@ -17,6 +17,18 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
+h2 {
+    font-weight: normal;
+    font-size: 36px;
+    font-family: @fontSohoLight;
+    line-height: 45px;
+    margin: 50px 0 0 0;
+    color: #838078;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #aeaba8;
+    border-top: 1px solid #aeaba8;
+}
+
 .container {
     background: @colorLightGray;
 }
@@ -29,6 +41,16 @@
     background: #838078;
 }
 
+.frontpagewrapper {
+    &.white {
+        background: white;
+
+        .container {
+            background: white;
+        }
+    }
+}
+
 .entrancebuttons {
     margin: 0 auto;
     display: table;
@@ -37,7 +59,7 @@
 .entrancebutton {
     width: 250px;
     height: 230px;
-    margin: 30px 30px 0 0;
+    margin: 30px 60px 0 0;
     float: left;
     position: relative;
 
@@ -70,6 +92,7 @@
             position: relative;
             text-align: center;
             margin-top: 30px;
+            border: none;
         }
 
         &:focus {
@@ -105,9 +128,10 @@
         }
 
         &.omsystemet {
-            background: @colorDarkBlue no-repeat;
-            background-size: 35px;
-            background-position: center;
+            background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
+            background-size: 80px;
+            background-position: 0 100px;
+            transition: all 3s;
         }
     }
 
@@ -125,10 +149,213 @@
         }
 
         span.omsystemet {
-            background: white no-repeat;
-            background-size: 35px;
-            background-position: center;
+            background: white url(../img/eirik.gif) no-repeat;
+            background-size: 80px;
+            background-position: 0 3px;
         }
+    }
+}
+
+.method_entrance {
+    float: left;
+    margin: 50px 15px 50px 15px;
+    cursor: pointer;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 15px 0 30px 0;
+        font-size: 24px;
+        font-family: @fontSohoLight;
+        color: #222;
+    }
+
+    .drop_wrapper {
+        display: inline-block;
+        width: 100%;
+
+        .drop {
+            position: relative;
+            display: block;
+            width: 193px;
+            height: 163px;
+            margin: auto;
+
+            &.oppstart {
+                .drop_triangle {
+                    border-left: 4.1em solid #df9922;
+                }
+
+                .drop_circle {
+                    border: 4em solid #df9922;
+                }
+            }
+
+            &.forslag {
+                .drop_triangle {
+                    border-left: 4.1em solid #004e66;
+                }
+
+                .drop_circle {
+                    border: 4em solid #004e66;
+                }
+            }
+
+            &.metodevurdering {
+                .drop_triangle {
+                    border-left: 4.1em solid #0093a7;
+                }
+
+                .drop_circle {
+                    border: 4em solid #0093a7;
+                }
+            }
+
+            &.beslutning {
+                .drop_triangle {
+                    border-left: 4.1em solid #6cb4b5;
+                }
+
+                .drop_circle {
+                    border: 4em solid #6cb4b5;
+                }
+            }
+
+            &.implementering {
+                .drop_triangle {
+                    border-left: 4.1em solid #a1bf17;
+                }
+
+                .drop_circle {
+                    border: 4em solid #a1bf17;
+                }
+            }
+
+            .drop_triangle {
+                position: absolute;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                line-height: 0;
+                border: 4.1em solid transparent;
+                border-radius: 4.1em;
+                left: 5.5em;
+                top: 0em;
+                transition: all 0.5s;
+            }
+
+            .drop_circle {
+                position: absolute;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                line-height: 0;
+                border-radius: 4em;
+                left: 0em;
+                top: 0.08333333333333333em;
+                transition: all 0.5s;
+            }
+
+            .drop_number {
+                position: absolute;
+                display: inline-block;
+                top: 64px;
+                left: 61px;
+                font-size: 65px;
+                font-family: @fontSohoRegular;
+                color: white;
+            }
+        }
+    }
+
+    &:hover {
+        .drop_wrapper {
+            .drop {
+                &.oppstart {
+                    .drop_triangle {
+                        border-left: 4.1em solid #c98523;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #c98523;
+                    }
+                }
+
+                &.forslag {
+                    .drop_triangle {
+                        border-left: 4.1em solid #02343f;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #02343f;
+                    }
+                }
+
+                &.metodevurdering {
+                    .drop_triangle {
+                        border-left: 4.1em solid #01737c;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #01737c;
+                    }
+                }
+
+                &.beslutning {
+                    .drop_triangle {
+                        border-left: 4.1em solid #448c8a;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #448c8a;
+                    }
+                }
+
+                &.implementering {
+                    .drop_triangle {
+                        border-left: 4.1em solid #8ca037;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #8ca037;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainentrance {
+    margin: 50px 0;
+
+    .ingress {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+.news {
+    float: left;
+    width: 45%;
+
+    &:first-of-type {
+        margin-right: 110px;
+    }
+
+    .date {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .ingress {
+        margin: 10px 0;
     }
 }
 

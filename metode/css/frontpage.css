@@ -1,4 +1,15 @@
-﻿.container {
+﻿h2 {
+  font-weight: normal;
+  font-size: 36px;
+  font-family: "Soho Gothic W01 Light";
+  line-height: 45px;
+  margin: 50px 0 0 0;
+  color: #838078;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #aeaba8;
+  border-top: 1px solid #aeaba8;
+}
+.container {
   background: #f2f2f2;
 }
 #header .container {
@@ -7,6 +18,12 @@
 #footer .container {
   background: #838078;
 }
+.frontpagewrapper.white {
+  background: white;
+}
+.frontpagewrapper.white .container {
+  background: white;
+}
 .entrancebuttons {
   margin: 0 auto;
   display: table;
@@ -14,7 +31,7 @@
 .entrancebutton {
   width: 250px;
   height: 230px;
-  margin: 30px 30px 0 0;
+  margin: 30px 60px 0 0;
   float: left;
   position: relative;
 }
@@ -49,6 +66,7 @@
   position: relative;
   text-align: center;
   margin-top: 30px;
+  border: none;
 }
 .entrancebutton a:focus {
   background: #02343f;
@@ -79,9 +97,10 @@
   background-position: center;
 }
 .entrancebutton span.omsystemet {
-  background: #004e66 no-repeat;
-  background-size: 35px;
-  background-position: center;
+  background: #004e66 url(../img/eirik.gif) no-repeat;
+  background-size: 80px;
+  background-position: 0 100px;
+  transition: all 3s;
 }
 .entrancebutton:hover span.finnmetode {
   background: #ffffff url('../img/ikon_forstorrelsesglass.svg') no-repeat;
@@ -94,9 +113,151 @@
   background-position: center;
 }
 .entrancebutton:hover span.omsystemet {
-  background: #ffffff no-repeat;
-  background-size: 35px;
-  background-position: center;
+  background: #ffffff url(../img/eirik.gif) no-repeat;
+  background-size: 80px;
+  background-position: 0 3px;
+}
+.method_entrance {
+  float: left;
+  margin: 50px 15px 50px 15px;
+  cursor: pointer;
+}
+.method_entrance:first-of-type {
+  margin-left: 0;
+}
+.method_entrance:last-of-type {
+  margin-right: 0;
+}
+.method_entrance h3 {
+  text-align: center;
+  margin: 15px 0 30px 0;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
+}
+.method_entrance .drop_wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.method_entrance .drop_wrapper .drop {
+  position: relative;
+  display: block;
+  width: 193px;
+  height: 163px;
+  margin: auto;
+}
+.method_entrance .drop_wrapper .drop.oppstart .drop_triangle {
+  border-left: 4.1em solid #df9922;
+}
+.method_entrance .drop_wrapper .drop.oppstart .drop_circle {
+  border: 4em solid #df9922;
+}
+.method_entrance .drop_wrapper .drop.forslag .drop_triangle {
+  border-left: 4.1em solid #004e66;
+}
+.method_entrance .drop_wrapper .drop.forslag .drop_circle {
+  border: 4em solid #004e66;
+}
+.method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
+  border-left: 4.1em solid #0093a7;
+}
+.method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
+  border: 4em solid #0093a7;
+}
+.method_entrance .drop_wrapper .drop.beslutning .drop_triangle {
+  border-left: 4.1em solid #6cb4b5;
+}
+.method_entrance .drop_wrapper .drop.beslutning .drop_circle {
+  border: 4em solid #6cb4b5;
+}
+.method_entrance .drop_wrapper .drop.implementering .drop_triangle {
+  border-left: 4.1em solid #a1bf17;
+}
+.method_entrance .drop_wrapper .drop.implementering .drop_circle {
+  border: 4em solid #a1bf17;
+}
+.method_entrance .drop_wrapper .drop .drop_triangle {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: 4.1em solid transparent;
+  border-radius: 4.1em;
+  left: 5.5em;
+  top: 0em;
+  transition: all 0.5s;
+}
+.method_entrance .drop_wrapper .drop .drop_circle {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-radius: 4em;
+  left: 0em;
+  top: 0.08333333333333333em;
+  transition: all 0.5s;
+}
+.method_entrance .drop_wrapper .drop .drop_number {
+  position: absolute;
+  display: inline-block;
+  top: 64px;
+  left: 61px;
+  font-size: 65px;
+  font-family: "Soho Gothic W01 Regular";
+  color: white;
+}
+.method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
+  border-left: 4.1em solid #c98523;
+}
+.method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
+  border: 4em solid #c98523;
+}
+.method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
+  border-left: 4.1em solid #02343f;
+}
+.method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
+  border: 4em solid #02343f;
+}
+.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
+  border-left: 4.1em solid #01737c;
+}
+.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
+  border: 4em solid #01737c;
+}
+.method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
+  border-left: 4.1em solid #448c8a;
+}
+.method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
+  border: 4em solid #448c8a;
+}
+.method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
+  border-left: 4.1em solid #8ca037;
+}
+.method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
+  border: 4em solid #8ca037;
+}
+.mainentrance {
+  margin: 50px 0;
+}
+.mainentrance .ingress {
+  text-align: center;
+  margin-top: 40px;
+}
+.news {
+  float: left;
+  width: 45%;
+}
+.news:first-of-type {
+  margin-right: 110px;
+}
+.news .date {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.news .ingress {
+  margin: 10px 0;
 }
 @media only screen and (min-width: 900px) {
   .newsillustration {

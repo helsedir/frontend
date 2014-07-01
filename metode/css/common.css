@@ -21,24 +21,28 @@ body {
   font-family: 'Calibri';
   line-height: 27px;
   color: #222;
-  background: #f7f6f6;
+  background: #f2f2f2;
 }
 .no-background {
   background: white;
 }
 h1 {
   font-weight: normal;
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Soho Gothic W01 Light";
-  line-height: 60px;
+  line-height: 50px;
   margin: 50px 0 0 0;
-  color: #004e66;
+  color: #838078;
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid #aeaba8;
+  border-top: 1px solid #aeaba8;
 }
 .ingress {
   margin: 20px 0 20px 0;
-  font-size: 26px;
-  line-height: 30px;
-  font-family: 'Calibri';
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Soho Gothic W01 Light";
+  color: #004e66;
 }
 h2 {
   font-size: 36px;
@@ -55,7 +59,7 @@ h2.internal-link {
   color: #0093a7;
 }
 h3 {
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Soho Gothic W01 Regular";
   margin: 35px 0 0 0;
   line-height: 36px;
@@ -104,7 +108,7 @@ a {
   line-height: 27px;
 }
 a:visited {
-  color: #0093a7;
+  color: #222;
 }
 a:focus,
 a:visited:focus {
