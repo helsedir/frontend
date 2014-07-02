@@ -1,0 +1,119 @@
+﻿body {
+  background-attachment: local;
+}
+.no-svg .facebook {
+  background-image: url(../img/sosiale_ikon_facebook.png) !important;
+}
+.no-svg .twitter {
+  background-image: url(../img/sosiale_ikon_twitter.png) !important;
+}
+.no-svg .linkedin {
+  background-image: url(../img/sosiale_ikon_linkedin.png) !important;
+}
+.no-svg .youtube {
+  background-image: url(../img/sosiale_ikon_youtube.png) !important;
+}
+.no-svg #logo {
+  background-image: url('../img/logo.png') !important;
+}
+.no-svg input[type="checkbox"] {
+  float: left;
+  width: auto;
+  opacity: 1;
+  height: autp;
+}
+.no-svg input[type="radio"] {
+  float: left;
+  width: auto;
+  opacity: 1;
+  height: auto;
+}
+.no-svg input[type="radio"] + label span {
+  margin: 0;
+  vertical-align: auto;
+  width: auto;
+  height: auto;
+}
+.no-svg input[type="checkbox"] + label span {
+  margin: 0;
+  vertical-align: auto;
+  width: auto;
+  height: auto;
+}
+.no-svg .e-mail {
+  background-image: url('../img/modules/icons/epost_regular.png');
+  background-repeat: no-repeat;
+  background-size: 20px 27px;
+  padding-left: 30px;
+}
+.no-svg .e-mail img {
+  display: none;
+}
+.no-svg .rss {
+  background-image: url('../img/modules/icons/rss_regular.png');
+  background-repeat: no-repeat;
+  background-size: 20px 27px;
+  padding-left: 30px;
+}
+.no-svg .rss img {
+  display: none;
+}
+.no-svg .module.module_socialandprint .ikon_facebook {
+  background: url(../img/modules/icons/facebook_blaa.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_twitter {
+  background: url(../img/modules/icons/twitter_blaa.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_skrivut {
+  background: url(../img/modules/icons/ikon_skriv_ut.png) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+.no-svg .module.module_socialandprint .ikon_skrivut:hover {
+  background: url(../img/modules/icons/skriv_ut_hover.png) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+.no-svg .module.module_socialandprint .ikon_facebook:hover {
+  background: url(../img/modules/icons/sosiale_ikon_facebook_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+.no-svg .module.module_socialandprint .ikon_twitter:hover {
+  background: url(../img/modules/icons/twitter_hover.png) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+.menubutton a.js-expander i {
+  margin-left: 0;
+}
+.mainsearch,
+.search {
+  background-image: url('../img/ikon_forstorrelsesglass_IE8.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 80%;
+  -o-background-size: auto 80%;
+  -webkit-background-size: auto 80%;
+  background-size: auto 80%;
+  background-color: #ffffff;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+}
+/*# sourceMappingURL=ie8fix.css.map */

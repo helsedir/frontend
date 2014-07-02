@@ -1,0 +1,320 @@
+﻿.no-background {
+  background: #f7f6f6;
+}
+.fa-calendar-o {
+  float: left;
+  padding-right: 25px;
+  font-size: 300%;
+}
+.mainentrance {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 20px 0 40px 0;
+}
+.entrancebutton {
+  width: 250px;
+  height: 230px;
+  margin: 30px 30px 0 0;
+  float: left;
+  position: relative;
+}
+.entrancebutton.menu button {
+  background: #838078;
+  border: none;
+  height: 230px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+.entrancebutton.menu button h2 {
+  margin: auto;
+  font-size: 28px;
+  line-height: 35px;
+  color: white;
+}
+.entrancebutton.menu button.js-expanded {
+  background-color: #666460;
+  color: white;
+  outline: 0;
+}
+.entrancebutton.menu button:hover {
+  background: #666460;
+}
+.entrancebutton.menu button:focus {
+  background: #666460;
+}
+.entrancebutton a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #004e66;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.entrancebutton a:hover {
+  background: #02343f;
+}
+.entrancebutton a:hover h2,
+.entrancebutton a:hover p,
+.entrancebutton a:hover:focus,
+.entrancebutton a:hover h2:focus,
+.entrancebutton a:hover p:focus {
+  text-decoration: none;
+  color: white;
+}
+.entrancebutton a h3 {
+  margin: 80px 0 0 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: "Soho Gothic W01 Light";
+}
+.entrancebutton a h3 .fa-bars {
+  margin-top: 20px;
+}
+.entrancebutton a h2 {
+  font-size: 28px;
+  line-height: 35px;
+  margin: 80px 0 15px 12px;
+  padding-bottom: 5px;
+  color: white;
+  position: relative;
+}
+.entrancebutton a p {
+  line-height: 23px;
+  position: relative;
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.entrancebutton a:focus {
+  background: #02343f;
+}
+.entrancebutton a:focus h2,
+.entrancebutton a:focus p {
+  background: #02343f;
+}
+.entrancebutton:visited,
+.entrancebutton:hover {
+  color: white;
+}
+.frontpagewrapper.grey {
+  background: #DEDDDB;
+}
+.frontpagewrapper.white {
+  background: white;
+}
+.frontpagewrapper_crisis {
+  background: #f4d01e;
+  padding: 1px 0;
+  margin-bottom: 30px;
+}
+.frontpage {
+  padding-bottom: 50px;
+}
+.frontpage h2 {
+  margin: 50px 0 20px 0;
+  width: 100%;
+  border-bottom: 3px solid #004e66;
+  padding-bottom: 15px;
+}
+.frontpage h2.noborder {
+  border: none;
+}
+.frontpage a {
+  color: #004e66;
+}
+.frontpage .news {
+  margin-bottom: 20px;
+}
+.frontpage .news p {
+  color: #222;
+  font-size: 18px;
+}
+.frontpage .news a {
+  font-size: 26px;
+}
+.frontpage .news .internal-link.arrow_right {
+  margin-top: 0;
+}
+.frontpage p {
+  margin: 0;
+}
+.frontpage .conferenceitem {
+  margin-bottom: 20px;
+}
+.frontpage .conferenceitem table td:first-of-type {
+  width: 160px;
+  vertical-align: middle;
+  text-align: center;
+}
+.frontpage .conferenceitem p {
+  padding: 0;
+  line-height: 1em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+.frontpage .conferenceitem a {
+  font-size: 26px;
+  padding-left: 0;
+}
+.frontpage .conferenceitem .conference_date {
+  font-size: 36px;
+  color: #c63629;
+  display: block;
+  font-family: "Soho Gothic W01 Light";
+  margin-right: 28px;
+  line-height: 42px;
+  text-align: right;
+}
+.frontpage .conferenceitem .month {
+  margin-right: 28px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Calibri';
+  color: #c63629;
+  display: block;
+  text-align: right;
+}
+.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
+  margin-bottom: 9px;
+}
+.frontpage .statistics_image {
+  margin-bottom: 20px;
+}
+.frontpage .ingress {
+  border: none;
+  margin-top: 23px;
+}
+.frontpage .ingress.nomargin {
+  margin: 0;
+}
+.frontpage .importantnews .ingress {
+  margin-bottom: 20px;
+}
+.frontpage .importantnews .bulletlist {
+  margin-bottom: 35px;
+}
+.frontpage .importantnews .text_and_image {
+  width: 49%;
+  float: left;
+}
+.frontpage .importantnews .importantphoto {
+  margin: 28px 0 0 22px;
+  width: 49%;
+  float: left;
+}
+.frontpage.newsandconference {
+  background: white;
+}
+.frontpage .chart_wrapper {
+  margin: 40px 57px 0 57px;
+  background: white;
+  overflow: auto;
+}
+.frontpage #chart_div {
+  margin-bottom: 0;
+}
+.toppmeny .tabs .tab-links li.menu_search {
+  background: none;
+}
+#menu_search {
+  border-radius: 0;
+}
+#menu_search::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 16px;
+}
+#menu_search:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 16px;
+  opacity: 1;
+}
+#menu_search::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 16px;
+  opacity: 1;
+}
+#menu_search:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 16px;
+}
+.video-container {
+  padding-bottom: 40%;
+  margin: 40px 0 20px 0;
+}
+@media only screen and (max-width: 599px) {
+  .entrancebutton {
+    width: 100%;
+    height: 100%;
+    margin: 7.5px 0 7.5px 0;
+  }
+  .entrancebutton a h2 {
+    margin: 15px 0 0 12px;
+    color: white;
+  }
+  .entrancebutton a p {
+    margin: 0 0 15px 12px;
+    color: white;
+  }
+  .entrancebutton.menu button {
+    width: 100%;
+    height: 93px;
+    border-radius: 4px;
+  }
+  .entrancebutton.menu h2 {
+    margin: 15px 0 15px 12px;
+    text-align: center;
+  }
+  .entrancebutton.menu h2 .fa-bars {
+    padding-left: 10px;
+  }
+  .frontpage .chart_wrapper {
+    margin: 40px 0 0 0;
+  }
+  .frontpage .conferenceitem .conference_date {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .entrancebutton {
+    margin: 30px 25px 0 0;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .border_grey {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bababa;
+  }
+  .frontpage .importantnews .text_and_image {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .frontpage .importantnews .text_and_image {
+    width: 48%;
+    float: left;
+  }
+  .frontpage .importantnews .importantphoto {
+    margin: 28px 0 0 22px;
+    width: 48%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .center {
+    padding: 0 165px;
+  }
+}
+/*# sourceMappingURL=frontpage.css.map */

@@ -1,0 +1,78 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.organisasjonskart, .divisjon {
+    &.has-visible-content {
+        margin-bottom: 25px;
+        padding: 0;
+
+        > div, > h3 {
+            padding: 0 10px 5px 10px;
+        }
+
+        > ul {
+            padding-left: 30px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 10px;
+            border: 1px solid #222;
+            background: @colorMediumGray;
+            cursor: pointer;
+        }
+
+            h2:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f077";
+                font-family: "FontAwesome";
+            }
+    }
+
+    &.has-hidden-content {
+        margin-bottom: 25px;
+        padding: 0;
+        border: none;
+
+        h2, h3 {
+            margin: 0;
+            padding: 10px;
+            background: white;
+            cursor: pointer;
+        }
+
+            h2:before, h3:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f078";
+                font-family: "FontAwesome";
+            }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .aside {
+        margin-top: 58px;
+
+        &.top {
+            margin-top: 0;
+        }
+    }
+}

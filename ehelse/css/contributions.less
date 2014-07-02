@@ -1,0 +1,80 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.tilskudd_sortcontrols {
+    .checkbox {
+        display: inline-block;
+    }
+
+    margin-top: 35px;
+    height: 25px;
+}
+
+#tilskuddsaar {
+    display: none;
+}
+
+.tilskudd_information {
+    margin: 50px 0 0 0;
+
+    dt {
+        width: auto;
+        min-width: 250px;
+        padding-right: 10px;
+        float: left;
+        font-weight: bold;
+    }
+
+    dd {
+        width: 65%;
+        float: left;
+    }
+}
+
+.numberofcontributions {
+    color: @colorDarkBlue;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width:599px) {
+    .refinesearch {
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width:599px) {
+    .aside {
+        margin-top: 70px;
+    }
+
+    .tilskudd_information {
+        dd {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .tilskudd_information {
+        dd {
+            width: 45%;
+        }
+    }
+}

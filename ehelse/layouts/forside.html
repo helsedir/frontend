@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../img/icon.ico">
+
+    <title>Ehelse | Helsedirektoratet.no</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/frontpage.css" rel="stylesheet" />
+    <link href="../css/statistics.css" rel="stylesheet" />
+    <link href="../css/font_soho.css" rel="stylesheet">
+    <link href="../css/font_calibri.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
+
+    <!--[if lte IE 8]>
+    <link href="/css/ie8fix.css" rel="stylesheet">
+    <script src="../js/modernizr-latest.js"></script>
+    <script src="../js/html5.js"></script>
+    <script src="../js/respond.js"></script>
+          <![endif]-->
+    <script type="text/javascript">
+        var MTIProjectId = 'e2fdb423-4de3-47d7-999d-9093c5986e14';
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.com/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+    </script>
+</head>
+
+<body class="no-background">
+    <div id="header">
+        <div class="shortcuts">
+            <ul>
+                <li><a href="#" tabindex="1" accesskey="i" id="menushortcut">Gå til meny</a></li>
+                <li><a href="#content" id="contentshortcut">Gå til innhold</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <header class="row masterheader">
+                <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4 nopadding">
+                    <a href="forside.html" id="logo" title="Gå til forsiden">
+                        EHELSE.NO
+                    </a>
+                </div>
+
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
+                    <div class="menubutton mobile-search pull-right" id="mobilesearch">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-3 hidden-mobile" id="mainsearchcolumn">
+                    <form>
+                        <span role="search">
+                            <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                            <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
+                        </span>
+                    </form>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                    <div class="pull-right">
+                        <a class="links hidden-sm hidden-xs" href="#">OM E-HELSE</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="mainentrance">
+        <div class="container">
+            <div class="row forside">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                    <h1 class="visuallyhidden">Hovedinnganger</h1>
+                    <div class="entrancebutton ">
+                        <a href="#">
+                            <h2>Nasjonale prosjekter innen ehelse</h2>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="entrancebutton">
+                        <a href="#">
+                            <h2>Standarder, kodeverk og referansekatalog</h2>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="entrancebutton">
+                        <a href="#">
+                            <h2>Driftsmeldinger</h2>
+                            <p></p>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton ">
+                        <a href="#">
+                            <h2>Arkitektur og infrastruktur</h2>
+                            <p></p>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton">
+                        <a href="#">
+                            <h2>Informasjonssikkerhet</h2>
+                            <p></p>
+                        </a>
+                    </div>
+
+                    <div class="entrancebutton menu">
+                        <button class="js-expander">
+                            <h2>
+                                Alt innhold <i class="fa fa-bars"></i>
+                            </h2>
+                            <p class="visuallyhidden">Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toppmeny container-fluid js-expand visuallyhidden">
+        <div class="inner container-fluid">
+            <div class="container">
+                <h1 class="visuallyhidden">Hovedmeny</h1>
+                <nav class="tabs">
+                    <ul class="tab-links" role="tablist">
+                        <li class="tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
+                        <li class="tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                        <li class="menu_search hidden-sm hidden-xs">
+                            <form>
+                                <span role="search">
+                                    <label for="menu_search" class="visuallyhidden">Søk</label>
+                                    <input id="menu_search" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
+                                </span>
+                            </form>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="panel_header1" class="tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+
+                                    <ul>
+                                        <li><a href="../medisinskeRetningslinjer/" id="content_categories">Nasjonale faglige retningslinjer</a></li>
+                                        <li><a href="#">Nasjonale strategier og planer</a></li>
+                                        <li><a href="transportside_statistikk.html">Statistikk og analyse</a></li>
+                                        <li><a href="publikasjoner.html">Rapporter, brosjyrer og publikasjoner</a></li>
+                                        <li><a href="tilskudd.html">Tilskudd</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <ul>
+                                        <li><a href="transportside_folkehelse.html">Folkehelse og forebygging</a></li>
+                                        <li><a href="#">Beredskap</a></li>
+                                        <li><a href="transportside_loverogregler.html">Lover og rettigheter</a></li>
+                                        <li><a href="hoeringer.html">Høringer</a></li>
+                                        <li><a href="kursogkonferanser.html">Kurs og konferanser</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix visible-xs visible-sm"></div>
+
+                                <div class=" col-sm-6 col-md-4">
+                                    <ul>
+
+                                        <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
+                                        <li><a href="#">Legemidler og medisinsk utstyr</a></li>
+                                        <li><a href="#">Godkjenning og turnus</a></li>
+                                        <li><a href="#">eHelse</a></li>
+                                        <li><a href="#">Helseøkonomi</a></li>
+                                        <li class="hidden_links"><a href="transportside_omoss.html" class="">Om oss</a></li>
+                                        <li class="hidden_links"><a href="#" class="">English</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="panel_header2" class="tab visuallyhidden tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
+                            <div class="row alphabetical">
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">A</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">B</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">D</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">E</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">F</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">G</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">H</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">I</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">K</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">L</li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix hidden-md hidden-lg"></div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">M</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">N</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">O</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">P</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">R</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">S</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">T</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <a id="content" tabindex="-1"></a>
+    <div class="frontpagewrapper white">
+        <div class="container frontpage">
+
+            <div class="row">
+                <section class="col-md-6 col-lg-6">
+                    <a href="nyheter.html"><h2>Nyheter</h2></a>
+                    <div class="news">
+                        <a href="#" class="internal-link arrow_right">"Helseinformatikk Intro" - videreutdanning tilbud på NTNU</a>
+                        <p>01.07.2014</p>
+                    </div>
+                    <div class="news">
+                        <a href="#" class="internal-link arrow_right">E-læringsprogram i IPLOS</a>
+                        <p>21.06.2014</p>
+                    </div>
+                    <div class="news">
+                        <a href="#" class="internal-link arrow_right">Nå kan fastleger motta pasientlister elektronisk</a>
+                        <p>21.04.2014</p>
+                    </div>
+                    <a href="nyheter.html" class="internal-link arrow_right">Flere nyheter</a>
+                    <div class="border_grey"></div>
+                </section>
+                <section class="col-md-6 col-lg-6 newsandconference">
+                    <a href="#"><h2>Møter og konferanser</h2></a>
+                    <div class="conferenceitem clearfix">
+                        <table>
+                            <tr>
+                                <td>
+                                    <span class="month">august</span>
+
+                                    <div class="conference_date">23</div>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUFA</a><p>kl.10-15</p><p>Gardermoen</p></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <span class="month">September</span>
+
+                                    <div class="conference_date">18</div>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUIT</a><p>kl.10-15</p><p>Gardermoen</p></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="month">Oktober</span>
+
+                                    <div class="conference_date">14. - 15.</div>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Normkonferansen</a><p>Rica Holmenkollen Park Hotell i Oslo</p></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#" class="internal-link arrow_right">Kalender for ehelse</a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="shortcuts">
+        <ul>
+            <li><a href="#bottom">Bunnlinje</a></li>
+        </ul>
+    </div>
+    <footer class="footerwrapper" id="footer">
+        <div class="menuwrapper">
+            <div class="container">
+                <div class="row forside">
+                    <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="visuallyhidden">Bunnmeny</h1>
+                        <nav class="tabs">
+
+                            <ul class="tab-links" role="tablist">
+                                <li class="tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
+                                <li class="tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="panel_footer1" class="tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4">
+
+                                            <ul>
+                                                <li><a href="#" id="footer_content_categories">Prosjekter innen ehelse</a></li>
+                                                <li><a href="#">Nasjonale fagutvalg</a></li>
+                                                <li><a href="#">Driftsinformasjon</a></li>
+                                                <li><a href="#">Statistikk og analyse</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <ul>
+                                                <li><a href="#">Standarder og kodeverk</a></li>
+                                                <li><a href="#">Arkitektur og infrastruktur</a></li>
+                                                <li><a href="#">Innsatsområder og styringsdokumenter</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix visible-xs visible-sm"></div>
+
+                                        <div class=" col-sm-6 col-md-4">
+                                            <ul>
+
+                                                <li><a href="#">Nyheter</a></li>
+                                                <li><a href="#">Kurs og arrangement</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_footer2" class="tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
+                                    <div class="row alphabetical">
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                            <ul>
+                                                <li class="character">A</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="character">B</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="character">D</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="character">E</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">F</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">G</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                            <ul>
+                                                <li class="character">H</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">I</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">K</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">L</li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix hidden-md hidden-lg"></div>
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                            <ul>
+                                                <li class="character">M</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">N</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">O</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">P</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                            <ul>
+                                                <li class="character">R</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">S</li>
+                                            </ul>
+                                            <ul>
+                                                <li class="character">T</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <a id="bottom" tabindex="-1"></a>
+
+        <div class="footerlinkswrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-sm-12 col-md-4 ">
+                        <a href="#">
+                            <h4 class="internal-link arrow_right">Kontakt sekreteriatet</h4>
+                        </a>
+                        <p>Telefon: +47 810 20 050</p>
+                        <p>E-post: <a href="mailto:ehelse@helsedir.no">ehelse@helsedir.no</a></p>
+                        <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
+                        <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
+                    </section>
+                    <section class="col-sm-12 col-md-4"></section>
+                    <section class="col-sm-12 col-md-4 "></section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/helsedir.js"></script>
+    <script src="../js/expander_frontpage.js"></script>
+</body>
+</html>
