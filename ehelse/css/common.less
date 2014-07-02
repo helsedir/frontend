@@ -619,6 +619,73 @@ figure {
     }
 }
 
+.report {
+    margin: 50px 0 0 0;
+
+    a {
+        div.date {
+            float: left;
+            width: auto;
+            min-width: 160px;
+            padding-right: 20px;
+            font-weight: bold;
+            display: block;
+
+            &.expired {
+                span.date_number, span.date_monthyear {
+                    color: @colorDarkGray;
+                }
+            }
+        }
+
+        div.information {
+            float: left;
+            width: 78%;
+        }
+
+        span.date_number {
+            font-size: 36px;
+            display: block;
+            padding: 10px 0;
+            color: #c63629;
+            font-family: "Soho Gothic W01 Light";
+            text-align: center;
+        }
+
+        span.date_monthyear {
+            display: block;
+            color: #c63629;
+            font-family: "Soho Gothic W01 Light";
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 42px;
+            font-family: "Soho Gothic W01 Light";
+            margin: 0;
+            color: #004e66;
+            color: @colorMediumBlue;
+
+            &.internal-link.arrow_right {
+                margin: 0;
+            }
+        }
+
+        p {
+            margin: 0;
+            color: #222;
+        }
+
+        &:hover {
+            h2 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 .calltoaction {
     border: 2px solid @colorDarkBlue;
     color: white;

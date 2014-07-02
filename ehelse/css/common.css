@@ -522,6 +522,58 @@ figure .metatext {
 .datatable .pastdate {
   background: #dbdcdd;
 }
+.report {
+  margin: 50px 0 0 0;
+}
+.report a div.date {
+  float: left;
+  width: auto;
+  min-width: 160px;
+  padding-right: 20px;
+  font-weight: bold;
+  display: block;
+}
+.report a div.date.expired span.date_number,
+.report a div.date.expired span.date_monthyear {
+  color: #aeaba8;
+}
+.report a div.information {
+  float: left;
+  width: 78%;
+}
+.report a span.date_number {
+  font-size: 36px;
+  display: block;
+  padding: 10px 0;
+  color: #c63629;
+  font-family: "Soho Gothic W01 Light";
+  text-align: center;
+}
+.report a span.date_monthyear {
+  display: block;
+  color: #c63629;
+  font-family: "Soho Gothic W01 Light";
+  text-transform: uppercase;
+  text-align: center;
+}
+.report a h2 {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Soho Gothic W01 Light";
+  margin: 0;
+  color: #004e66;
+  color: #0093a7;
+}
+.report a h2.internal-link.arrow_right {
+  margin: 0;
+}
+.report a p {
+  margin: 0;
+  color: #222;
+}
+.report a:hover h2 {
+  text-decoration: underline;
+}
 .calltoaction {
   border: 2px solid #004e66;
   color: white;
