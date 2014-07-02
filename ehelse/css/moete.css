@@ -1,33 +1,33 @@
-﻿.hoeringer {
+﻿.meeting {
   padding-bottom: 15px;
   margin-top: 30px;
   border-bottom: 1px solid gray;
 }
-.hoeringer p {
+.meeting p {
   display: inline;
   margin-right: 30px;
 }
-.hoeringer a {
+.meeting a {
   display: block;
 }
 .aside.alignwithheader {
   margin-top: 113px;
 }
-.hoering_information {
+.meeting_information {
   margin: 50px 10px 0 0;
 }
-.hoering_information dt {
+.meeting_information dt {
   width: auto;
   min-width: 250px;
   padding-right: 10px;
   float: left;
   font-weight: bold;
 }
-.hoering_information dd {
+.meeting_information dd {
   width: 65%;
   float: left;
 }
 .refinesearch {
   margin-top: 20px;
 }
-/*# sourceMappingURL=hoeringer.css.map */
+/*# sourceMappingURL=moete.css.map */
