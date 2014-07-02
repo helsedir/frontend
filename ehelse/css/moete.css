@@ -13,20 +13,6 @@
 .aside.alignwithheader {
   margin-top: 113px;
 }
-.meeting_information {
-  margin: 50px 10px 0 0;
-}
-.meeting_information dt {
-  width: auto;
-  min-width: 250px;
-  padding-right: 10px;
-  float: left;
-  font-weight: bold;
-}
-.meeting_information dd {
-  width: 65%;
-  float: left;
-}
 .refinesearch {
   margin-top: 20px;
 }
