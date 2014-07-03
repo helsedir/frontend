@@ -128,7 +128,8 @@ h2 {
         }
 
         &.omsystemet {
-            background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
+            /*background: @colorDarkBlue url(../img/eirik.gif) no-repeat;*/
+            background: @colorDarkBlue no-repeat;
             background-size: 80px;
             background-position: 0 100px;
             transition: all 3s;
@@ -149,7 +150,8 @@ h2 {
         }
 
         span.omsystemet {
-            background: white url(../img/eirik.gif) no-repeat;
+            /* background: white url(../img/eirik.gif) no-repeat;*/
+            background: white no-repeat;
             background-size: 80px;
             background-position: 0 3px;
         }
@@ -342,13 +344,6 @@ h2 {
 }
 
 .news {
-    float: left;
-    width: 45%;
-
-    &:first-of-type {
-        margin-right: 110px;
-    }
-
     .date {
         font-size: 18px;
         margin-bottom: 10px;
@@ -357,10 +352,29 @@ h2 {
     .ingress {
         margin: 10px 0;
     }
+
+    h4 {
+        margin-top: 25px;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    .see-all {
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+.newsillustration {
+    margin-top: 25px;
+    width: 75%;
+}
+
+.module.module_message {
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 900px) {
-    .newsillustration {
-        margin-top: 50px;
-    }
 }
