@@ -542,29 +542,29 @@ figure .metatext {
   width: 78%;
 }
 .report a span.date_number {
-  font-size: 36px;
+  font-size: 28px;
+  font-family: "Soho Gothic W01 Regular";
+  line-height: 36px;
   display: block;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   color: #c63629;
-  font-family: "Soho Gothic W01 Light";
   text-align: center;
 }
 .report a span.date_monthyear {
+  font-size: 28px;
+  font-family: "Soho Gothic W01 Regular";
+  line-height: 36px;
   display: block;
   color: #c63629;
-  font-family: "Soho Gothic W01 Light";
   text-transform: uppercase;
   text-align: center;
 }
-.report a h2 {
-  font-size: 36px;
-  line-height: 42px;
-  font-family: "Soho Gothic W01 Light";
+.report a h3 {
   margin: 0;
   color: #004e66;
   color: #0093a7;
 }
-.report a h2.internal-link.arrow_right {
+.report a h3.internal-link.arrow_right {
   margin: 0;
 }
 .report a p {
