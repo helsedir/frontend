@@ -1,0 +1,87 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.search {
+    height: 39px;
+    /*max-width: 220px;*/
+    width: 86%;
+    padding: 0 37px 0 5px;
+    border-radius: 3px;
+    border: 1px solid @colorDarkBlue;
+    vertical-align: middle;
+    background-image: url('../img/ikon_forstorrelsesglass.png');
+    background-repeat: no-repeat;
+    -moz-background-size: auto 68%;
+    -o-background-size: auto 68%;
+    -webkit-background-size: auto 68%;
+    background-size: auto 68%;
+    background-color: #ffffff;
+    background-position: 97% 50%;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    cursor: pointer;
+}
+
+.transportsideknapp {
+    .status_infomration {
+        float: left;
+        width: 500px;
+        margin: 24px 0 0 30px;
+
+        .status_received {
+            margin-right: 30px;
+        }
+    }
+
+    .status {
+        float: left;
+        padding: 20px;
+        width: 200px;
+        margin-top: 30px;
+
+        &.preparation {
+            border: 2px solid purple;
+        }
+
+        &.evaluation {
+            border: 2px solid green;
+        }
+
+        &.decided {
+            border: 2px solid orange;
+        }
+
+        &.cancelled {
+            border: 2px solid red;
+        }
+    }
+
+    a h2 {
+        margin-top: 50px;
+    }
+}
+
+.borderbox {
+    padding: 10px;
+    border: 1px solid #222;
+}
+
+.external-link {
+    display: inline;
+}

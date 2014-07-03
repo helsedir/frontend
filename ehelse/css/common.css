@@ -523,7 +523,7 @@ figure .metatext {
   background: #dbdcdd;
 }
 .report {
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
 }
 .report a div.date {
   float: left;
@@ -542,18 +542,18 @@ figure .metatext {
   width: 78%;
 }
 .report a span.date_number {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Soho Gothic W01 Regular";
-  line-height: 36px;
+  line-height: 27px;
   display: block;
   padding: 0 0 10px 0;
   color: #c63629;
   text-align: center;
 }
 .report a span.date_monthyear {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Soho Gothic W01 Regular";
-  line-height: 36px;
+  line-height: 27px;
   display: block;
   color: #c63629;
   text-transform: uppercase;
@@ -563,6 +563,8 @@ figure .metatext {
   margin: 0;
   color: #004e66;
   color: #0093a7;
+  font-size: 20px;
+  line-height: 27px;
 }
 .report a h3.internal-link.arrow_right {
   margin: 0;
