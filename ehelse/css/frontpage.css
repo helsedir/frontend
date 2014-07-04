@@ -112,9 +112,15 @@
 }
 .entrancebutton.alternative a h2 {
   margin: 25px 12px 15px 12px;
+  font-size: 22px;
+  line-height: 29px;
 }
 .entrancebutton.alternative.menu button {
   height: 160px;
+}
+.entrancebutton.alternative.menu button h2 {
+  font-size: 22px;
+  line-height: 29px;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
