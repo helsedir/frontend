@@ -87,13 +87,18 @@
 }
 
 #header {
-    background: white;
+    background: @colorDarkBlue;
+    border-bottom: 6px solid @colorLightBlue;
 }
 
-#logo img {
-    display: block;
-    min-height: 44px;
-    max-height: 44px;
+#logo {
+    color: white;
+
+    img {
+        display: block;
+        min-height: 44px;
+        max-height: 44px;
+    }
 }
 
 .menubutton {
@@ -166,33 +171,50 @@
 }
 
 .mainsearch {
-    height: 39px;
-    /*max-width: 220px;*/
-    width: 95%;
-    padding: 0 30px 0 5px;
-    border-radius: 3px;
-    border: 1px solid @colorDarkBlue;
-    vertical-align: middle;
-    background-image: url('../img/ikon_forstorrelsesglass.png');
+    border: none;
+    border-bottom: 1px solid white;
+    background-image: url('../img/ikon_forstorrelsesglass_hvitt.png');
     background-repeat: no-repeat;
     -moz-background-size: auto 68%;
     -o-background-size: auto 68%;
     -webkit-background-size: auto 68%;
     background-size: auto 68%;
-    background-color: #ffffff;
+    background-color: @colorDarkBlue;
     background-position: 97% 50%;
-    background-position-x: 97%;
+    background-position-x: 99%;
     background-position-y: 50%;
     cursor: pointer;
+    color: white;
+    padding-right: 27px;
+
+    &::-webkit-input-placeholder {
+        color: white;
+        text-align: left;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: white;
+        text-align: left;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+        text-align: left;
+    }
+
+    &:-ms-input-placeholder {
+        color: white;
+        text-align: left;
+    }
 }
 
 .masterheader {
     height: 40px;
     margin: 25px 0 35px 0;
-    background: white;
+    background: @colorDarkBlue;
 
     .links {
-        color: @colorDarkBlue;
+        color: white;
         margin-right: 15px;
         vertical-align: sub;
 
@@ -208,12 +230,12 @@
     }
 
     a, a:visited {
-        color: @colorDarkBlue;
+        color: white;
         text-decoration: none;
     }
 }
 
-.masterheader, footer {
+footer {
     background: white;
 
     a {

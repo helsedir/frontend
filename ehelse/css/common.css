@@ -541,6 +541,9 @@ figure .metatext {
   float: left;
   width: 78%;
 }
+.report a div.information h3.internal-link.arrow_right {
+  margin-right: 30px;
+}
 .report a span.date_number {
   font-size: 20px;
   font-family: "Soho Gothic W01 Regular";
@@ -614,6 +617,9 @@ figure .metatext {
   background-size: 10px;
   color: white;
 }
+.calltoaction.download {
+  margin-top: 0;
+}
 iframe {
   margin-bottom: 23px;
 }
@@ -655,6 +661,16 @@ iframe {
 .internal-link.arrow_right:after {
   padding-left: 10px;
   content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+}
+.internal-link.document {
+  margin: 0;
+}
+.internal-link.document:after {
+  padding-left: 10px;
+  content: "\f0f6";
   font-family: "FontAwesome";
   font-size: inherit;
   text-decoration: none;
@@ -1340,12 +1356,21 @@ fieldset {
   background-size: 20px;
   color: white;
 }
+.numberofpublications {
+  margin-bottom: 17px;
+  padding-top: 15px;
+  font-family: 'Calibri';
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #004e66;
+}
 .refinesearch {
+  margin-top: 20px;
   width: 300px;
 }
 .refinesearch h2,
 .refinesearch h5 {
-  border-top: 2px solid #004e66;
   margin-bottom: 17px;
   padding-top: 15px;
   font-family: 'Calibri';
@@ -1458,23 +1483,22 @@ fieldset {
 .image_intext figcaption {
   font-size: 18px;
 }
+.transportsideknapp {
+  background: white;
+  padding: 10px 10px 50px 10px;
+  margin-top: 20px;
+}
 .transportsideknapp a {
   display: block;
   width: 100%;
   height: 100%;
   color: #222;
   text-decoration: none;
+  border-bottom: 2px dotted #004e66;
 }
 .transportsideknapp a h2 {
   color: #0093a7;
-  margin: 35px 0 0 0;
-}
-.transportsideknapp a h2:after {
-  padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
-  font-size: inherit;
-  text-decoration: none;
+  margin: 0;
 }
 .transportsideknapp a:visited {
   text-decoration: none;
@@ -1493,6 +1517,15 @@ fieldset {
 }
 .transportsideknapp p {
   margin: 0;
+}
+.transportsideknapp .ingress {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.transportsideknapp .status {
+  background: gainsboro;
+  padding: 10px 30px;
+  border-left: 15px solid purple;
 }
 .no-padding {
   padding: 0;

@@ -38,101 +38,86 @@
 
 .entrancebutton {
     width: 250px;
-    height: 230px;
+    height: 150px;
     margin: 30px 30px 0 0;
     float: left;
     position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    background: @colorDarkBlue;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 
     &.menu {
-        button {
-            background: #838078;
-            border: none;
-            height: 230px;
-            width: 250px;
-            -moz-transition: all 0.5s;
-            -o-transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s;
-            border-radius: 4px;
-
-            h2 {
-                margin: auto;
-                font-size: 28px;
-                line-height: 35px;
-                color: white;
-            }
-
-            &.js-expanded {
-                background-color: #666460;
-                color: white;
-                outline: 0;
-            }
-
-            &:hover {
-                background: #666460;
-            }
-
-            &:focus {
-                background: #666460;
-            }
-        }
-    }
-
-    a {
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        background: @colorDarkBlue;
+        border: none;
+        height: 150px;
+        width: 250px;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-
-        &:hover {
-            background: #02343f;
-
-            h2, p, &:focus, h2:focus, p:focus {
-                text-decoration: none;
-                color: white;
-            }
-        }
-
-        h3 {
-            margin: 80px 0 0 0;
-            padding: 0;
-            font-size: 28px;
-            font-family: @fontSohoLight;
-
-            .fa-bars {
-                margin-top: 20px;
-            }
-        }
+        border-radius: 4px;
 
         h2 {
-            font-size: 28px;
-            line-height: 35px;
-            margin: 80px 12px 15px 12px;
-            padding-bottom: 5px;
+            margin: auto;
+            font-size: 22px;
+            line-height: 26px;
             color: white;
-            position: relative;
         }
 
-        p {
-            line-height: 23px;
-            position: relative;
-            margin-left: 12px;
-            margin-bottom: 15px;
+        &.js-expanded {
+            background-color: #02343f;
+            color: white;
+            outline: 0;
         }
+    }
 
-        &:focus {
+    &:hover {
+        background: #02343f;
+        text-decoration: none;
+
+        h2, p, &:focus, h2:focus, p:focus {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    h3 {
+        margin: 80px 0 0 0;
+        padding: 0;
+        font-size: 28px;
+        font-family: @fontSohoLight;
+
+        .fa-bars {
+            margin-top: 20px;
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+        margin: 60px 12px 15px 20px;
+        padding-bottom: 5px;
+        color: white;
+        position: relative;
+    }
+
+    p {
+        line-height: 23px;
+        position: relative;
+        margin-left: 12px;
+        margin-bottom: 15px;
+    }
+
+    &:focus {
+        background: #02343f;
+
+        h2, p {
             background: #02343f;
-
-            h2, p {
-                background: #02343f;
-            }
         }
     }
 
@@ -143,18 +128,24 @@
     &.alternative {
         height: 160px;
 
-        a h2 {
+        h2 {
             margin: 25px 12px 15px 12px;
             font-size: 22px;
             line-height: 29px;
         }
 
-        &.menu button {
+        &.menu {
             height: 160px;
 
             h2 {
                 font-size: 22px;
                 line-height: 29px;
+            }
+
+            &:focus {
+                h2 {
+                    background: #666460;
+                }
             }
         }
     }

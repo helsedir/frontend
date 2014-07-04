@@ -16,42 +16,10 @@
 }
 .entrancebutton {
   width: 250px;
-  height: 230px;
+  height: 150px;
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
-}
-.entrancebutton.menu button {
-  background: #838078;
-  border: none;
-  height: 230px;
-  width: 250px;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 4px;
-}
-.entrancebutton.menu button h2 {
-  margin: auto;
-  font-size: 28px;
-  line-height: 35px;
-  color: white;
-}
-.entrancebutton.menu button.js-expanded {
-  background-color: #666460;
-  color: white;
-  outline: 0;
-}
-.entrancebutton.menu button:hover {
-  background: #666460;
-}
-.entrancebutton.menu button:focus {
-  background: #666460;
-}
-.entrancebutton a {
-  height: 100%;
-  width: 100%;
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -62,45 +30,67 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.entrancebutton a:hover {
-  background: #02343f;
+.entrancebutton.menu {
+  border: none;
+  height: 150px;
+  width: 250px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px;
 }
-.entrancebutton a:hover h2,
-.entrancebutton a:hover p,
-.entrancebutton a:hover:focus,
-.entrancebutton a:hover h2:focus,
-.entrancebutton a:hover p:focus {
+.entrancebutton.menu h2 {
+  margin: auto;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+}
+.entrancebutton.menu.js-expanded {
+  background-color: #02343f;
+  color: white;
+  outline: 0;
+}
+.entrancebutton:hover {
+  background: #02343f;
+  text-decoration: none;
+}
+.entrancebutton:hover h2,
+.entrancebutton:hover p,
+.entrancebutton:hover:focus,
+.entrancebutton:hover h2:focus,
+.entrancebutton:hover p:focus {
   text-decoration: none;
   color: white;
 }
-.entrancebutton a h3 {
+.entrancebutton h3 {
   margin: 80px 0 0 0;
   padding: 0;
   font-size: 28px;
   font-family: "Soho Gothic W01 Light";
 }
-.entrancebutton a h3 .fa-bars {
+.entrancebutton h3 .fa-bars {
   margin-top: 20px;
 }
-.entrancebutton a h2 {
-  font-size: 28px;
-  line-height: 35px;
-  margin: 80px 12px 15px 12px;
+.entrancebutton h2 {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 60px 12px 15px 20px;
   padding-bottom: 5px;
   color: white;
   position: relative;
 }
-.entrancebutton a p {
+.entrancebutton p {
   line-height: 23px;
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.entrancebutton a:focus {
+.entrancebutton:focus {
   background: #02343f;
 }
-.entrancebutton a:focus h2,
-.entrancebutton a:focus p {
+.entrancebutton:focus h2,
+.entrancebutton:focus p {
   background: #02343f;
 }
 .entrancebutton:visited,
@@ -110,17 +100,20 @@
 .entrancebutton.alternative {
   height: 160px;
 }
-.entrancebutton.alternative a h2 {
+.entrancebutton.alternative h2 {
   margin: 25px 12px 15px 12px;
   font-size: 22px;
   line-height: 29px;
 }
-.entrancebutton.alternative.menu button {
+.entrancebutton.alternative.menu {
   height: 160px;
 }
-.entrancebutton.alternative.menu button h2 {
+.entrancebutton.alternative.menu h2 {
   font-size: 22px;
   line-height: 29px;
+}
+.entrancebutton.alternative.menu:focus h2 {
+  background: #666460;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
