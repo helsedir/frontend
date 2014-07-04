@@ -1522,11 +1522,6 @@ fieldset {
   margin: 20px 0;
   font-size: 20px;
 }
-.transportsideknapp .status {
-  background: gainsboro;
-  padding: 10px 30px;
-  border-left: 15px solid purple;
-}
 .no-padding {
   padding: 0;
 }

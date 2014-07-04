@@ -18,6 +18,9 @@
   background-position-y: 50%;
   cursor: pointer;
 }
+.transportsideknapp {
+  padding: 10px 10px 25px 10px;
+}
 .transportsideknapp .status_infomration {
   float: left;
   width: 500px;
@@ -27,25 +30,30 @@
   margin-right: 30px;
 }
 .transportsideknapp .status {
+  background: #f7f6f6;
   float: left;
-  padding: 20px;
+  padding: 10px 20px;
   width: 200px;
-  margin-top: 30px;
 }
-.transportsideknapp .status.preparation {
-  border: 2px solid purple;
+.transportsideknapp .status.rute {
+  border-left: 20px solid purple;
 }
-.transportsideknapp .status.evaluation {
-  border: 2px solid green;
+.transportsideknapp .status.drift {
+  border-left: 20px solid green;
 }
-.transportsideknapp .status.decided {
-  border: 2px solid orange;
+.transportsideknapp .status.pilot {
+  border-left: 20px solid orange;
 }
 .transportsideknapp .status.cancelled {
-  border: 2px solid red;
+  border-left: 20px solid red;
 }
-.transportsideknapp a h2 {
-  margin-top: 50px;
+.transportsideknapp:after {
+  content: "\f178";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #004e66;
+  text-decoration: none;
+  float: right;
 }
 .borderbox {
   padding: 10px;

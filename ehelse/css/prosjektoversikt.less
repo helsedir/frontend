@@ -39,6 +39,8 @@
 }
 
 .transportsideknapp {
+    padding: 10px 10px 25px 10px;
+
     .status_infomration {
         float: left;
         width: 500px;
@@ -50,30 +52,35 @@
     }
 
     .status {
+        background: #f7f6f6;
         float: left;
-        padding: 20px;
+        padding: 10px 20px;
         width: 200px;
-        margin-top: 30px;
 
-        &.preparation {
-            border: 2px solid purple;
+        &.rute {
+            border-left: 20px solid purple;
         }
 
-        &.evaluation {
-            border: 2px solid green;
+        &.drift {
+            border-left: 20px solid green;
         }
 
-        &.decided {
-            border: 2px solid orange;
+        &.pilot {
+            border-left: 20px solid orange;
         }
 
         &.cancelled {
-            border: 2px solid red;
+            border-left: 20px solid red;
         }
     }
 
-    a h2 {
-        margin-top: 50px;
+    &:after {
+        content: "\f178";
+        font-family: "FontAwesome";
+        font-size: 30px;
+        color: @colorDarkBlue;
+        text-decoration: none;
+        float: right;
     }
 }
 
