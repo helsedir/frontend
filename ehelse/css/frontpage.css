@@ -107,6 +107,15 @@
 .entrancebutton:hover {
   color: white;
 }
+.entrancebutton.alternative {
+  height: 160px;
+}
+.entrancebutton.alternative a h2 {
+  margin: 25px 12px 15px 12px;
+}
+.entrancebutton.alternative.menu button {
+  height: 160px;
+}
 .frontpagewrapper.grey {
   background: #DEDDDB;
 }

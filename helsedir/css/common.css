@@ -1281,6 +1281,14 @@ fieldset {
 .refinesearch select {
   margin-bottom: 20px;
 }
+@-moz-document url-prefix() {
+  .refinesearch .form-group {
+    overflow: hidden;
+  }
+  .refinesearch .form-group select {
+    width: 317px;
+  }
+}
 .table_general {
   border: 1px solid #91c6c2;
   margin: 20px auto;
