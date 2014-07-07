@@ -19,7 +19,7 @@ body {
   padding: 0;
   font-size: 20px;
   font-family: 'Calibri';
-  line-height: 27px;
+  line-height: 30px;
   color: #222;
   background-color: #f7f6f6;
   background-image: url('../img/bakgrunn_menneske.svg');
@@ -35,20 +35,20 @@ body {
 }
 h1 {
   font-weight: normal;
-  font-size: 48px;
+  font-size: 40px;
   font-family: "Soho Gothic W01 Light";
-  line-height: 60px;
+  line-height: 48px;
   margin: 50px 0 0 0;
   color: #004e66;
 }
 .ingress {
   margin: 20px 0 20px 0;
-  font-size: 26px;
+  font-size: 25px;
   line-height: 30px;
   font-family: 'Calibri';
 }
 h2 {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 42px;
   font-family: "Soho Gothic W01 Light";
   margin: 35px 0 10px 0;
@@ -63,7 +63,7 @@ h2.internal-link {
 }
 h3 {
   font-size: 28px;
-  font-family: "Soho Gothic W01 Regular";
+  font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
   line-height: 36px;
 }
@@ -551,7 +551,7 @@ iframe {
 }
 .external-link.inline,
 .external-link .inline:visited {
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0;
 }
 .external-link:visited {
@@ -584,8 +584,15 @@ iframe {
   text-decoration: none;
 }
 .internal-link.inline,
-.internal-link .inline:visited {
-  text-decoration: underline;
+.internal-link.inline:visited {
+  border-bottom: 1px solid #bababa;
+}
+.internal-link.inline:hover,
+.internal-link.inline:visited:hover {
+  border-bottom: 1px solid #bababa;
+}
+.internal-link:hover {
+  text-decoration: none;
 }
 p.keyfigures,
 h4.keyfigures {
@@ -859,7 +866,7 @@ h4.keyfigures {
 .module.module_message.date_small_closed {
   border: 2px solid #0093a7;
   margin: 30px 0 10px 0;
-  padding: 5px 20px;
+  padding: 5px 20px 15px 20px;
   font-family: "Soho Gothic W01 Regular";
   font-size: 24px;
   color: #838078;
@@ -872,6 +879,7 @@ h4.keyfigures {
 }
 .module.module_message.date_small_closed .closed {
   color: #c63629;
+  display: block;
 }
 .module.module_person {
   margin: 0;
@@ -1420,7 +1428,7 @@ fieldset {
   color: #222;
 }
 .transportsideknapp a:hover h2 {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0093a7;
 }
 .transportsideknapp p {
@@ -1434,7 +1442,7 @@ fieldset {
     top: 0;
     right: 0;
     position: absolute;
-    margin-right: -50%;
+    margin-right: -77%;
   }
   .aside.module_person {
     top: auto;
@@ -1444,7 +1452,7 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -50%;
+    margin-right: -77%;
   }
   .module_person.kontakt {
     bottom: 0;
@@ -1529,15 +1537,21 @@ fieldset {
     width: auto;
   }
   h1 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 36px;
     margin-top: 40px;
   }
   h2 {
     font-size: 28px;
+    line-height: 32px;
   }
   h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  h4 {
     font-size: 22px;
+    line-height: 28px;
   }
   .statistics_compare {
     background: #ddd;
@@ -1697,6 +1711,10 @@ fieldset {
   .chart_div {
     height: 300px;
     margin: 20px 0;
+  }
+  .module.module_message.date_small_closed .keyfigures {
+    display: block;
+    margin: 0;
   }
 }
 @media braille {

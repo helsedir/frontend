@@ -58,8 +58,8 @@
 #logo img {
   display: block;
   /* min-height: 44px; */
-  max-height: 40px;
-  max-width: 292px;
+  max-height: 42px;
+  max-width: 302px;
 }
 .menubutton {
   width: 150px;
@@ -142,7 +142,7 @@
   cursor: pointer;
 }
 .masterheader {
-  height: 40px;
+  height: 41px;
   margin: 25px 0 35px 0;
   background: white;
 }
@@ -150,6 +150,8 @@
   color: #004e66;
   margin-right: 15px;
   vertical-align: sub;
+  display: inline-block;
+  padding-top: 7px;
 }
 .masterheader .links:focus {
   background: #004e66;
@@ -190,7 +192,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -32px;
+  margin-top: -35px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
@@ -432,7 +434,7 @@ footer.rammeverk a:visited {
   }
   footer .tabs,
   .toppmeny .tabs {
-    margin-top: -27px;
+    margin-top: -30px;
   }
   .toppmeny .inner {
     margin-top: 40px;
