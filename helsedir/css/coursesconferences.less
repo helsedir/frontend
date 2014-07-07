@@ -17,7 +17,7 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.conference {
+.conference_transport {
     margin: 50px 0 0 0;
 
     a {
@@ -32,7 +32,7 @@
 
         div.information {
             float: left;
-            width: 78%;
+            width: 75%;
         }
 
         span.date_number {
@@ -41,15 +41,16 @@
             padding: 10px 0;
             color: #c63629;
             font-family: "Soho Gothic W01 Light";
-            text-align: center;
+            text-align: right;
         }
 
         span.date_monthyear {
             display: block;
             color: #c63629;
-            font-family: "Soho Gothic W01 Light";
+            font-family: @fontCalibri;
+            font-size: 20px;
             text-transform: uppercase;
-            text-align: center;
+            text-align: right;
         }
 
         h2 {
@@ -66,7 +67,7 @@
         }
 
         p {
-            margin: 0;
+            margin: 3px 0 0 0;
             color: #222;
         }
 
@@ -75,6 +76,62 @@
                 text-decoration: underline;
             }
         }
+    }
+}
+
+.conference {
+    background: white;
+    padding: 30px 0 10px 12px;
+    margin-top: 0;
+
+    .details {
+        float: left;
+        width: auto;
+        min-width: 160px;
+        padding-right: 30px;
+        font-weight: bold;
+        display: block;
+
+        .date, .year, .time {
+            font-size: 20px;
+            font-family: @fontCalibri;
+            line-height: 27px;
+            display: block;
+            color: #c63629;
+            text-align: right;
+        }
+
+        .date {
+            font-size: 36px;
+            font-family: @fontSohoLight;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .information {
+        float: left;
+        width: 75%;
+
+        .information_header {
+            color: @colorMediumBlue;
+            font-size: 36px;
+            font-family: @fontSohoLight;
+            margin: 0 0 20px 0;
+        }
+
+        .information_text {
+        }
+    }
+
+    button {
+        margin-left: 15px;
+    }
+
+    img {
+        width: 170px;
+        vertical-align: middle;
+        margin-left: 105px;
     }
 }
 
@@ -102,6 +159,26 @@
 
 @media only screen and (max-width: 600px) {
     .conference {
+        .information {
+            float: none;
+
+            .information_header {
+                margin-top: 10px;
+            }
+        }
+
+        .details {
+            float: none;
+            width: 100%;
+
+            .date, .year, .time {
+                text-align: left;
+                display: inline-block;
+            }
+        }
+    }
+
+    .conference_transport {
         margin: 10px 0 10px 0;
         padding: 5px 0 20px 15px;
         background: white;
@@ -128,5 +205,16 @@
                 line-height: 27px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .conference .information {
+        width: 65%;
+    }
+
+    .conference img {
+        margin: 0 auto;
+        display: block;
     }
 }
