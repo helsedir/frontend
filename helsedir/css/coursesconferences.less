@@ -18,7 +18,7 @@
 @colorGreen: #a1bf37;
 
 .conference_transport {
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
 
     a {
         div.date {
@@ -145,6 +145,7 @@
     text-transform: uppercase;
     font-size: 18px;
     color: #004e66;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width:599px) {
@@ -206,10 +207,24 @@
             }
         }
     }
+
+        .conference_transport a span.date_number,
+        .conference_transport a span.date_monthyear {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .conference_transport a div.information {
+            width: 100%;
+        }
+
+        .conference_transport a h2.internal-link.arrow_right {
+            margin-bottom: 10px;
+        }
 }
 
-@media only screen and (max-width: 1199px) {
-    .conference .information {
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    .conference_transport a div.information {
         width: 65%;
     }
 
@@ -217,4 +232,14 @@
         margin: 0 auto;
         display: block;
     }
+
+    .conference_transport a {
+        span.date_number, span.date_monthyear {
+            text-align: left;
+        }
+    }
+
+        .conference_transport a div.date {
+            min-width: 150px;
+        }
 }

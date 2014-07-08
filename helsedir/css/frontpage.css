@@ -133,6 +133,57 @@
 .frontpage a {
   color: #004e66;
 }
+.frontpage a:hover h2 {
+  text-decoration: underline;
+}
+.frontpage a:hover h2.internal-link {
+  text-decoration: underline;
+  border-bottom: 3px solid #004e66;
+  padding-bottom: 4px;
+}
+.frontpage .internal-link {
+  text-decoration: none;
+  color: #004e66;
+  display: inline-block;
+}
+.frontpage .internal-link:visited {
+  color: #0093a7;
+}
+.frontpage .internal-link h2,
+.frontpage .internal-link h3,
+.frontpage .internal-link h4,
+.frontpage .internal-link p {
+  display: inline;
+}
+.frontpage .internal-link.arrow_right {
+  margin: 15px 0;
+  padding-bottom: 4px;
+}
+.frontpage .internal-link.arrow_right:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+  position: absolute;
+  padding-top: 3px;
+}
+.frontpage .internal-link.inline,
+.frontpage .internal-link.inline:visited {
+  border-bottom: 1px solid #bababa;
+}
+.frontpage .internal-link.inline:hover,
+.frontpage .internal-link.inline:visited:hover {
+  border-bottom: 1px solid #bababa;
+}
+.frontpage .internal-link:hover {
+  border-bottom: 1px solid #0093a7;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+.frontpage .internal-link:hover.arrow_right:after {
+  text-decoration: none;
+}
 .frontpage .news {
   margin-bottom: 20px;
 }

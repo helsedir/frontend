@@ -173,6 +173,63 @@
 
     a {
         color: @colorDarkBlue;
+
+        &:hover h2 {
+            text-decoration: underline;
+        }
+
+            &:hover h2.internal-link {
+                text-decoration: underline;
+                border-bottom: 3px solid #004e66;
+                padding-bottom: 4px;
+            }
+    }
+
+    .internal-link {
+        text-decoration: none;
+        color: @colorDarkBlue;
+        display: inline-block;
+
+        &:visited {
+            color: @colorMediumBlue;
+        }
+
+        h2, h3, h4, p {
+            display: inline;
+        }
+
+        &.arrow_right {
+            margin: 15px 0;
+            padding-bottom: 4px;
+        }
+
+            &.arrow_right:after {
+                padding-left: 10px;
+                content: "\f105";
+                font-family: "FontAwesome";
+                font-size: inherit;
+                text-decoration: none;
+                position: absolute;
+                padding-top: 3px;
+            }
+
+        &.inline, &.inline:visited {
+            border-bottom: 1px solid #bababa;
+
+            &:hover {
+                border-bottom: 1px solid #bababa;
+            }
+        }
+
+        &:hover {
+            border-bottom: 1px solid @colorMediumBlue;
+            text-decoration: none;
+            padding-bottom: 3px;
+
+            &.arrow_right:after {
+                text-decoration: none;
+            }
+        }
     }
 
     .news {

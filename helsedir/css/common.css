@@ -565,7 +565,6 @@ iframe {
 }
 .internal-link:visited {
   color: #0093a7;
-  text-decoration: none;
 }
 .internal-link h2,
 .internal-link h3,
@@ -575,6 +574,7 @@ iframe {
 }
 .internal-link.arrow_right {
   margin: 15px 0;
+  padding-bottom: 4px;
 }
 .internal-link.arrow_right:after {
   padding-left: 10px;
@@ -582,6 +582,8 @@ iframe {
   font-family: "FontAwesome";
   font-size: inherit;
   text-decoration: none;
+  position: absolute;
+  padding-top: 3px;
 }
 .internal-link.inline,
 .internal-link.inline:visited {
@@ -592,6 +594,9 @@ iframe {
   border-bottom: 1px solid #bababa;
 }
 .internal-link:hover {
+  text-decoration: none;
+}
+.internal-link:hover.arrow_right:after {
   text-decoration: none;
 }
 p.keyfigures,

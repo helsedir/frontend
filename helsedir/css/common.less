@@ -661,7 +661,6 @@ iframe {
 
     &:visited {
         color: @colorMediumBlue;
-        text-decoration: none;
     }
 
     h2, h3, h4, p {
@@ -670,6 +669,7 @@ iframe {
 
     &.arrow_right {
         margin: 15px 0;
+        padding-bottom: 4px;
     }
 
         &.arrow_right:after {
@@ -678,6 +678,8 @@ iframe {
             font-family: "FontAwesome";
             font-size: inherit;
             text-decoration: none;
+            position: absolute;
+            padding-top: 3px;
         }
 
     &.inline, &.inline:visited {
@@ -690,6 +692,10 @@ iframe {
 
     &:hover {
         text-decoration: none;
+
+        &.arrow_right:after {
+            text-decoration: none;
+        }
     }
 }
 
