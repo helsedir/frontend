@@ -88,7 +88,7 @@
 
 #header {
     background: @colorDarkBlue;
-    border-bottom: 6px solid @colorLightBlue;
+    border-bottom: 6px solid @colorMediumBlue;
 }
 
 #logo {
@@ -96,8 +96,7 @@
 
     img {
         display: block;
-        min-height: 44px;
-        max-height: 44px;
+        max-height: 39px;
     }
 }
 
@@ -186,6 +185,7 @@
     cursor: pointer;
     color: white;
     padding-right: 27px;
+    width: 170px;
 
     &::-webkit-input-placeholder {
         color: white;
@@ -208,24 +208,47 @@
     }
 }
 
+.mainsearchform {
+    span {
+        vertical-align: sub;
+
+        input {
+            vertical-align: middle;
+        }
+    }
+}
+
+.mainsearchcolumn {
+    float: left;
+    margin-top: 2px;
+}
+
 .masterheader {
     height: 40px;
     margin: 25px 0 35px 0;
     background: @colorDarkBlue;
 
     .links {
-        color: white;
-        margin-right: 15px;
-        vertical-align: sub;
+        margin-top: 2px;
 
-        &:focus {
-            background: @colorDarkBlue;
-            color: white !important;
-            outline: 0;
-        }
+        span {
+            vertical-align: sub;
 
-        &:last-of-type {
-            margin-right: 0;
+            a {
+                color: white;
+                margin-right: 15px;
+                vertical-align: sub;
+
+                &:focus {
+                    background: @colorDarkBlue;
+                    color: white !important;
+                    outline: 0;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
         }
     }
 
@@ -386,9 +409,10 @@ footer, .toppmeny {
 }
 
 .footerlinkswrapper {
-    background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+    background: @colorDarkBlue;
     background-position: right;
-    padding: 20px 0 50px 0;
+    padding: 40px 0 100px 0;
+    border-top: 6px solid @colorMediumBlue;
 
     h4, p, a, a:visited, a:hover {
         color: white;
@@ -397,18 +421,29 @@ footer, .toppmeny {
     h4 {
         margin-top: 20px;
         margin-bottom: 10px;
+        font-family: @fontSohoLight;
+        font-size: 28px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        border-bottom: 2px solid white;
     }
 
     p {
         margin: 0;
         font-size: 18px;
         line-height: 1.5em;
+        font-family: @fontCalibri;
+
+        a {
+            text-decoration: underline;
+        }
     }
 
     a {
-        text-decoration: underline;
+        text-decoration: none;
         font-size: 18px;
         line-height: 1.5em;
+        font-family: @fontCalibri;
     }
 
     .socialmedia {

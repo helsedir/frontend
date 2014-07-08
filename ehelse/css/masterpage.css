@@ -54,15 +54,14 @@
 }
 #header {
   background: #004e66;
-  border-bottom: 6px solid #6cb4b5;
+  border-bottom: 6px solid #0093a7;
 }
 #logo {
   color: white;
 }
 #logo img {
   display: block;
-  min-height: 44px;
-  max-height: 44px;
+  max-height: 39px;
 }
 .menubutton {
   width: 150px;
@@ -140,6 +139,7 @@
   cursor: pointer;
   color: white;
   padding-right: 27px;
+  width: 170px;
 }
 .mainsearch::-webkit-input-placeholder {
   color: white;
@@ -159,22 +159,38 @@
   color: white;
   text-align: left;
 }
+.mainsearchform span {
+  vertical-align: sub;
+}
+.mainsearchform span input {
+  vertical-align: middle;
+}
+.mainsearchcolumn {
+  float: left;
+  margin-top: 2px;
+}
 .masterheader {
   height: 40px;
   margin: 25px 0 35px 0;
   background: #004e66;
 }
 .masterheader .links {
+  margin-top: 2px;
+}
+.masterheader .links span {
+  vertical-align: sub;
+}
+.masterheader .links span a {
   color: white;
   margin-right: 15px;
   vertical-align: sub;
 }
-.masterheader .links:focus {
+.masterheader .links span a:focus {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
-.masterheader .links:last-of-type {
+.masterheader .links span a:last-of-type {
   margin-right: 0;
 }
 .masterheader a,
@@ -318,9 +334,10 @@ footer.rammeverk a:visited {
   margin-top: 95px;
 }
 .footerlinkswrapper {
-  background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
+  background: #004e66;
   background-position: right;
-  padding: 20px 0 50px 0;
+  padding: 40px 0 100px 0;
+  border-top: 6px solid #0093a7;
 }
 .footerlinkswrapper h4,
 .footerlinkswrapper p,
@@ -332,16 +349,26 @@ footer.rammeverk a:visited {
 .footerlinkswrapper h4 {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-family: "Soho Gothic W01 Light";
+  font-size: 28px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 .footerlinkswrapper p {
   margin: 0;
   font-size: 18px;
   line-height: 1.5em;
+  font-family: 'Calibri';
+}
+.footerlinkswrapper p a {
+  text-decoration: underline;
 }
 .footerlinkswrapper a {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 18px;
   line-height: 1.5em;
+  font-family: 'Calibri';
 }
 .footerlinkswrapper .socialmedia {
   border-radius: 3px;

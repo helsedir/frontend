@@ -48,7 +48,7 @@
             <header class="row masterheader">
                 <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4 nopadding">
                     <a href="forside.html" id="logo" title="Gå til forsiden">
-                        EHELSE.NO
+                        <img src="../img/ehelse.no_logo.png" alt="" />
                     </a>
                 </div>
 
@@ -58,18 +58,20 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile" id="mainsearchcolumn">
-                    <form>
-                        <span role="search">
-                            <label for="mainsearchinput" class="visuallyhidden">Søk</label>
-                            <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
+                <div class="hidden-xs hidden-sm col-md-6 col-md-offset-2 col-lg-5 col-lg-offset-3">
+                    <div class="mainsearchcolumn" id="mainsearchcolumn">
+                        <form class="mainsearchform hidden-mobile">
+                            <span role="search">
+                                <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                                <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
+                            </span>
+                        </form>
+                    </div>
+                    <div class="pull-right links">
+                        <span>
+                            <a class=" hidden-sm hidden-xs" href="#">Om ehelse.no</a>
+                            <a class=" hidden-sm hidden-xs" href="#">English</a>
                         </span>
-                    </form>
-                </div>
-                <div class="hidden-xs hidden-sm col-md-4 col-lg-3">
-                    <div class="pull-right">
-                        <a class="links hidden-sm hidden-xs" href="#">OM EHELSE.NO</a>
-                        <a class="links hidden-sm hidden-xs" href="#">ENGLISH</a>
                     </div>
                 </div>
             </header>
@@ -246,7 +248,7 @@
         <div class="container frontpage">
 
             <div class="row">
-                <section class="col-md-6 col-lg-6">
+                <section class="col-md-5 ">
                     <a href="nyheter.html"><h2>Nyheter</h2></a>
                     <div class="news">
                         <a href="#" class="internal-link arrow_right">"Helseinformatikk Intro" - videreutdanning tilbud på NTNU</a>
@@ -263,39 +265,57 @@
                     <a href="nyheter.html" class="internal-link arrow_right">Flere nyheter</a>
                     <div class="border_grey"></div>
                 </section>
-                <section class="col-md-6 col-lg-6 newsandconference">
+                <section class="col-md-5 col-md-offset-1  newsandconference">
                     <a href="#"><h2>Møter og konferanser</h2></a>
                     <div class="conferenceitem clearfix">
                         <table>
                             <tr>
                                 <td>
-                                    <span class="month">august</span>
 
-                                    <div class="conference_date">23</div>
+                                    <div class="conference_date">
+                                        23. <span class="month">august</span>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUFA</a><p>kl.10-15</p><p>Gardermoen</p></div>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUFA</a></div>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>
-                                    <span class="month">September</span>
-
-                                    <div class="conference_date">18</div>
+                                    <div class="conference_date">18. <span class="month">september</span></div>
                                 </td>
                                 <td>
-                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUIT</a><p>kl.10-15</p><p>Gardermoen</p></div>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUIT</a></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="month">Oktober</span>
 
-                                    <div class="conference_date">14. - 15.</div>
+                                    <div class="conference_date">
+                                        14.-15. <span class="month">oktober</span>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Normkonferansen</a><p>Rica Holmenkollen Park Hotell i Oslo</p></div>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Normkonferansen</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <div class="conference_date">22.-23. <span class="month">november</span></div>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUFA</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <div class="conference_date">3. <span class="month">desember</span></div>
+                                </td>
+                                <td>
+                                    <div class="conference_info"><a href="#" class="internal-link arrow_right">Møte i NUFA</a></div>
                                 </td>
                             </tr>
                         </table>
@@ -439,33 +459,15 @@
                 <div class="row">
                     <section class="col-sm-12 col-md-4 ">
                         <a href="#">
-                            <h4 class="internal-link arrow_right">Kontakt sekreteriatet</h4>
+                            <h4>Kontakt</h4>
                         </a>
                         <p>Telefon: +47 810 20 050</p>
                         <p>E-post: <a href="mailto:ehelse@helsedir.no">ehelse@helsedir.no</a></p>
                         <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
                         <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
                     </section>
-                    <section class="col-sm-12 col-md-4">
-                        <a href="#">
-                            <h4 class="internal-link arrow_right">Om ehelse.no</h4>
-                        </a>
-                        <ul class="linklist">
-                            <li><a href="#" class="internal-link arrow_right">Hvem gjør hva</a></li>
-                            <li><a href="#" class="internal-link arrow_right">Nyheter</a></li>
-                            <li><a href="#" class="internal-link arrow_right">Kurs og arrangement</a></li>
-                        </ul>
-                    </section>
-                    <section class="col-sm-12 col-md-4 ">
-                        <a href="#">
-                            <h4 class="internal-link arrow_right">Logg inn</h4>
-                        </a>
-                        <ul class="bulletlist">
-                            <li><p>for å bestille endring</p></li>
-                            <li><p>for å</p></li>
-                            <li><p>for å</p></li>
-                        </ul>
-                    </section>
+                    <section class="col-sm-12 col-md-4"></section>
+                    <section class="col-sm-12 col-md-4 "></section>
                 </div>
             </div>
         </div>
