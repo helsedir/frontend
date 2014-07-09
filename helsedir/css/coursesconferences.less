@@ -17,7 +17,7 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.conference_transport {
+.hContent.conference_transport {
     margin: 30px 0 0 0;
 
     a {
@@ -79,7 +79,7 @@
     }
 }
 
-.conference {
+.hContent.conference {
     background: white;
     padding: 30px 0 10px 12px;
     margin-top: 0;
@@ -135,11 +135,11 @@
     }
 }
 
-.refinesearch {
+.hContent.refinesearch {
     margin-top: 20px;
 }
 
-.month {
+.hContent.month {
     font-family: 'Calibri';
     line-height: 20px;
     text-transform: uppercase;
@@ -149,17 +149,13 @@
 }
 
 @media only screen and (min-width:599px) {
-    .aside {
+    .hContent.aside {
         margin-top: 0;
     }
 }
 
-.marginheaderwithoutingress {
-    margin-top: 113px;
-}
-
 @media only screen and (max-width: 600px) {
-    .conference {
+    .hContent.conference {
         .information {
             float: none;
 
@@ -179,7 +175,7 @@
         }
     }
 
-    .conference_transport {
+    .hContent.conference_transport {
         margin: 10px 0 10px 0;
         padding: 5px 0 20px 15px;
         background: white;
@@ -208,38 +204,38 @@
         }
     }
 
-        .conference_transport a span.date_number,
-        .conference_transport a span.date_monthyear {
+        .hContent.conference_transport a span.date_number,
+        .hContent.conference_transport a span.date_monthyear {
             font-size: 18px;
             margin-bottom: 0;
         }
 
-        .conference_transport a div.information {
+        .hContent.conference_transport a div.information {
             width: 100%;
         }
 
-        .conference_transport a h2.internal-link.arrow_right {
+        .hContent.conference_transport a h2.internal-link.arrow_right {
             margin-bottom: 10px;
         }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-    .conference_transport a div.information {
+    .hContent.conference_transport a div.information {
         width: 65%;
     }
 
-    .conference img {
+    .hContent.conference img {
         margin: 0 auto;
         display: block;
     }
 
-    .conference_transport a {
+    .hContent.conference_transport a {
         span.date_number, span.date_monthyear {
             text-align: left;
         }
     }
 
-        .conference_transport a div.date {
+        .hContent.conference_transport a div.date {
             min-width: 150px;
         }
 }

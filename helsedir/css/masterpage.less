@@ -17,7 +17,7 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.footerwrapper {
+.hContent.footerwrapper {
     border-top: 5px solid @colorMediumBlue;
     background: #838078;
     border: none;
@@ -25,11 +25,11 @@
     width: 100%;
 }
 
-.menuwrapper {
+.hContent.menuwrapper {
     background: white;
 }
 
-.shortcuts {
+.hContent.shortcuts {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -55,7 +55,7 @@
     }
 }
 
-.forside {
+.hContent.forside {
     article {
         margin: 20px 0 20px 0;
         border-bottom: 1px solid @colorLightGray2;
@@ -63,15 +63,15 @@
     }
 }
 
-.mobile-search {
+.hContent.mobile-search {
     display: none;
 }
 
-.hidden-mobile {
+.hContent.hidden-mobile {
     display: block;
 }
 
-.about {
+.hContent.about {
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
@@ -97,7 +97,7 @@
     max-width: 302px;
 }
 
-.menubutton {
+.hContent.menubutton {
     width: 150px;
     min-height: 40px;
     text-align: center;
@@ -162,11 +162,7 @@
     }
 }
 
-.menyknapp {
-    vertical-align: middle;
-}
-
-.mainsearch {
+.hContent.mainsearch {
     height: 39px;
     /*max-width: 220px;*/
     width: 95%;
@@ -187,7 +183,7 @@
     cursor: pointer;
 }
 
-.masterheader {
+.hContent.masterheader {
     height: 41px;
     margin: 25px 0 35px 0;
     background: white;
@@ -216,7 +212,7 @@
     }
 }
 
-.masterheader, footer {
+.hContent.masterheader, footer {
     background: white;
 
     a {
@@ -229,7 +225,7 @@
 }
 
 /**********Header**********/
-.toppmeny {
+.hContent.toppmeny {
     margin-bottom: 30px;
     background: #838078;
     padding: 0 0 50px 0 !important;
@@ -243,7 +239,7 @@
 
 /**********Footer**********/
 
-footer, .toppmeny {
+footer, .hContent.toppmeny {
     .tabs {
         margin-bottom: 50px;
         padding-left: 20px;
@@ -366,7 +362,7 @@ footer, .toppmeny {
     margin-top: 95px;
 }
 
-.footerlinkswrapper {
+.hContent.footerlinkswrapper {
     background: #838078 url('../img/menneske_i_footer.svg') no-repeat;
     background-position: right;
     padding: 20px 0 50px 0;
@@ -471,7 +467,7 @@ footer, .toppmeny {
     }
 }
 
-.nopadding {
+.hContent.nopadding {
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -479,17 +475,17 @@ footer, .toppmeny {
 /**********Media**********/
 
 @media only screen and (max-width: 1199px) {
-    .masterheader .links {
+    .hContent.masterheader .links {
         margin-right: 15px;
     }
 }
 
 @media only screen and (max-width: 599px) {
-    .footerlinkswrapper .socialmedia a img {
+    .hContent.footerlinkswrapper .socialmedia a img {
         height: 16px;
     }
 
-    footer, .toppmeny {
+    footer, .hContent.toppmeny {
         .tabs {
             padding-left: 0;
 
@@ -508,15 +504,15 @@ footer, .toppmeny {
         }
     }
 
-        footer .tabs, .toppmeny .tabs {
+        footer .tabs, .hContent.toppmeny .tabs {
             margin-top: -30px;
         }
 
-        .toppmeny .inner {
-            margin-top: 40px;
-        }
+    .toppmeny .inner {
+        margin-top: 40px;
+    }
 
-    .footerwrapper {
+    .hContent.footerwrapper {
         padding-top: 40px;
     }
 }
@@ -528,19 +524,19 @@ footer, .toppmeny {
 }
 
 @media only screen and (max-width: 900px) {
-    .hidden-mobile {
+    .hContent.hidden-mobile {
         display: none;
         background-color: #838078;
         padding: 20px;
     }
 
-    .masterheader {
+    .hContent.masterheader {
         margin: 10px 0 10px 0;
     }
 }
 
 @media only screen and (max-width: 899px) {
-    .menubutton {
+    .hContent.menubutton {
         width: 40px;
         margin-right: 5px;
         cursor: pointer;
