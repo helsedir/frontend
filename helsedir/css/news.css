@@ -1,21 +1,21 @@
-﻿.newsitem {
+﻿.hContent.newsitem {
   margin: 50px 0 70px 0;
 }
-.newsitem .newitem_date {
+.hContent.newsitem .newitem_date {
   font-size: 16px;
 }
-.newsitem .internal-link.arrow_right,
-.newsitem p {
+.hContent.newsitem .internal-link.arrow_right,
+.hContent.newsitem p {
   margin: 0;
 }
-.border {
+.hContent.border {
   margin-bottom: 25px;
 }
-.newsarchive {
+.hContent.newsarchive {
   margin-top: 50px;
 }
-.newsarchive h2,
-.newsarchive h5 {
+.hContent.newsarchive h2,
+.hContent.newsarchive h5 {
   border-bottom: 2px solid #004e66;
   margin-bottom: 17px;
   padding-bottom: 15px;
@@ -23,29 +23,29 @@
   font-size: 28px;
   line-height: 42px;
 }
-.filterlist li {
+.hContent.filterlist li {
   margin-bottom: 20px;
 }
-.filterlist li a {
+.hContent.filterlist li a {
   color: #004e66;
   font-size: 20px;
 }
-.filterlist .selectedfilter a,
-.filterlist .selectedfilter a:visited {
+.hContent.filterlist .selectedfilter a,
+.hContent.filterlist .selectedfilter a:visited {
   font-weight: bold;
   border-left: 3px solid #004e66;
   padding-left: 10px;
 }
-.newsdate {
+.hContent.newsdate {
   font-size: 18px;
 }
-.transportsideknapp.newsitem {
+.hContent.transportsideknapp.newsitem {
   margin: 35px 0;
 }
-.transportsideknapp.newsitem h2 {
+.hContent.transportsideknapp.newsitem h2 {
   margin: 5px 0;
 }
-.refinesearch {
+.hContent.refinesearch {
   margin-top: 20px;
 }
 /*# sourceMappingURL=news.css.map */

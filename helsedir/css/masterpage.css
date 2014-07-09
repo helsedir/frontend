@@ -185,53 +185,53 @@ footer a:focus {
   margin-top: 60px;
 }
 /**********Footer**********/
-footer .tabs,
-.hContent.toppmeny .tabs {
+footer .hContent.tabs,
+.hContent.toppmeny .hContent.tabs {
   margin-bottom: 50px;
   padding-left: 20px;
   margin-top: -35px;
 }
-footer .tabs .tab-links,
-.hContent.toppmeny .tabs .tab-links {
+footer .hContent.tabs .tab-links,
+.hContent.toppmeny .hContent.tabs .tab-links {
   padding-left: 20px;
   margin-right: 10px;
 }
-footer .tabs .tab-links li,
-.hContent.toppmeny .tabs .tab-links li {
+footer .hContent.tabs .tab-links li,
+.hContent.toppmeny .hContent.tabs .tab-links li {
   background: #004e66;
   color: white;
   padding: 0 30px 5px 20px;
   border-radius: 0;
   cursor: pointer;
 }
-footer .tabs .tab-links li[aria-selected='true'],
-.hContent.toppmeny .tabs .tab-links li[aria-selected='true'] {
+footer .hContent.tabs .tab-links li[aria-selected='true'],
+.hContent.toppmeny .hContent.tabs .tab-links li[aria-selected='true'] {
   border: none;
   background: white;
   color: #004e66;
 }
-footer .tabs .tab-links li[aria-selected='true']:focus,
-.hContent.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
+footer .hContent.tabs .tab-links li[aria-selected='true']:focus,
+.hContent.toppmeny .hContent.tabs .tab-links li[aria-selected='true']:focus {
   background: #02343f;
   color: white;
 }
-footer .tabs .tab-links li input,
-.hContent.toppmeny .tabs .tab-links li input {
+footer .hContent.tabs .tab-links li input,
+.hContent.toppmeny .hContent.tabs .tab-links li input {
   width: 100%;
 }
-footer .tabs .tab-links li:focus,
-.hContent.toppmeny .tabs .tab-links li:focus {
+footer .hContent.tabs .tab-links li:focus,
+.hContent.toppmeny .hContent.tabs .tab-links li:focus {
   background: #02343f;
   color: white;
   outline: 0;
 }
-footer .tabs .tab-links .menu_search,
-.hContent.toppmeny .tabs .tab-links .menu_search {
+footer .hContent.tabs .tab-links .menu_search,
+.hContent.toppmeny .hContent.tabs .tab-links .menu_search {
   color: black;
   padding-left: 0;
 }
-footer .tabs .tab-links .menu_search input,
-.hContent.toppmeny .tabs .tab-links .menu_search input {
+footer .hContent.tabs .tab-links .menu_search input,
+.hContent.toppmeny .hContent.tabs .tab-links .menu_search input {
   padding: 2px 24px 0 5px;
   height: 27px;
   /*max-width: 220px;*/

@@ -1,55 +1,55 @@
-﻿.dropdown-statistikk select {
+﻿.hContent.dropdown-statistikk select {
   width: 40%;
 }
-.dropdown-statistikk button {
+.hContent.dropdown-statistikk button {
   background: #df9922;
   border: 0;
 }
-.radiobuttons label {
+.hContent.radiobuttons label {
   display: block;
 }
-.statistics_compare {
+.hContent.statistics_compare {
   padding: 5px 0 10px 10px;
 }
-.statistics_compare p {
+.hContent.statistics_compare p {
   margin: 0;
 }
-.statistics_compare select {
+.hContent.statistics_compare select {
   display: block;
   margin-bottom: 20px;
   width: 100%;
 }
-.statistics_compare label {
+.hContent.statistics_compare label {
   display: inline-block;
 }
-.statistics_compare label input {
+.hContent.statistics_compare label input {
   margin-right: 5px;
 }
-.statistics_compare button {
+.hContent.statistics_compare button {
   background: white;
   border: 1px solid #bababa;
 }
-.statistics_compare a {
+.hContent.statistics_compare a {
   display: block;
 }
-.statistics_compare label,
-.statistics_compare a {
+.hContent.statistics_compare label,
+.hContent.statistics_compare a {
   padding-left: 15px;
 }
 #compare_hiddenfields {
   display: none;
 }
-.statistics h2 {
+.hContent.statistics h2 {
   text-align: center;
 }
-.statistics .fa-chevron-down {
+.hContent.statistics .fa-chevron-down {
   float: none;
   padding: 0;
 }
-.statistics_about h4 {
+.hContent.statistics_about h4 {
   margin: 50px 0 10px 0;
 }
-.statistics_about p {
+.hContent.statistics_about p {
   margin: 0;
 }
 #statistikktab1,
@@ -57,29 +57,29 @@
 #statistikktab3 {
   margin-top: 20px;
 }
-.statistics_chart {
+.hContent.statistics_chart {
   margin: 40px 0 0 0;
   background: white;
   overflow: auto;
 }
-.statistics_chart #chart_div {
+.hContent.statistics_chart #chart_div {
   height: 400px;
   width: 100%;
   display: inline-block;
 }
-.statistics_table {
+.hContent.statistics_table {
   margin-top: 50px;
   display: inline-block;
   width: 100%;
 }
-.table_general {
+.hContent.table_general {
   width: 100%;
   margin-bottom: 0;
 }
-.statistics_description {
+.hContent.statistics_description {
   margin: 40px 0;
 }
-.statistics_reports h2 {
+.hContent.statistics_reports h2 {
   margin-bottom: 10px;
 }
 #chart_div_legend {
@@ -87,7 +87,7 @@
   list-style: none;
   font-size: 16px;
 }
-div.legendMarker {
+.hContent.legendMarker {
   height: 1em;
   width: 1em;
   display: inline-block;

@@ -142,7 +142,7 @@ jQuery(document).ready(function() {
   displayKey: 'keyword',
   source: antibiotika.ttAdapter(),
   templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for antibiotika</h3>'
+    header: '<h3 class="hContent search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for antibiotika</h3>'
   }
 	},
 	{
@@ -150,7 +150,7 @@ jQuery(document).ready(function() {
   displayKey: 'keyword',
   source: diabetes.ttAdapter(),
   templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for diabetes</h3>'
+    header: '<h3 class="hContent search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for diabetes</h3>'
   }
   },
   {
@@ -158,7 +158,7 @@ jQuery(document).ready(function() {
   displayKey: 'keyword',
   source: spedbarn.ttAdapter(),
   templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for spedbarnsernæring</h3>'
+    header: '<h3 class="hContent search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for spedbarnsernæring</h3>'
   }
 	});
 	

@@ -54,7 +54,7 @@ h1 {
     color: @colorDarkBlue;
 }
 
-.ingress {
+.hContent.ingress {
     margin: 20px 0 20px 0;
     font-size: 25px;
     line-height: 30px;
@@ -159,15 +159,7 @@ a {
     }
 }
 
-.marginTop20px {
-    margin-top: 20px;
-}
-
-.marginBottom20px {
-    margin-bottom: 20px;
-}
-
-.breadcrumbs {
+.hContent.breadcrumbs {
     padding: 0;
     list-style-type: none;
     margin: 10px 0 0 0;
@@ -203,7 +195,7 @@ a {
         }
 }
 
-.has-hidden-content {
+.hContent.has-hidden-content {
     cursor: pointer;
 
     h2:before, .accordion:before {
@@ -220,7 +212,7 @@ a {
     }
 }
 
-.has-visible-content {
+.hContent.has-visible-content {
     h2:before, .accordion:before {
         float: left;
         padding: 3px 20px 0 0;
@@ -238,34 +230,23 @@ a {
     }
 }
 
-.clearfix:before,
-.clearfix:after {
+.hContent.clearfix:before,
+.hContent.clearfix:after {
     display: table;
     content: " ";
 }
 
-.clearfix:after {
+.hContent.clearfix:after {
     clear: both;
 }
 
-.utvidbaroverskrift {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-top: 0;
-    min-height: 70px;
-    width: 330px;
-    border: 1px solid #eeeeee;
-    background: #ffffff;
-}
-
-.fa-chevron-down {
+.hContent.fa-chevron-down {
     float: right;
     padding-top: 0.3rem;
     font-size: 1.5em;
 }
 
-.tabs {
+.hContent.tabs {
     position: inherit;
     height: 100%;
     width: 100%;
@@ -383,19 +364,19 @@ a {
     }
 }
 
-.chart_div {
+.hContent.chart_div {
     height: 450px;
     margin: 20px 57px;
     background: white;
 }
 
-.visuallyhidden {
+.hContent.visuallyhidden {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
 }
 
-.search {
+.hContent.search {
     margin-top: 30px;
     width: 100%;
     height: 40px;
@@ -412,7 +393,7 @@ a {
     cursor: pointer;
 }
 
-.search_withbutton {
+.hContent.search_withbutton {
     .search {
         display: inline;
         background: white;
@@ -438,7 +419,7 @@ video {
     margin-top: 10px;
 }
 
-.video-container {
+.hContent.video-container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
@@ -447,9 +428,9 @@ video {
     margin: 40px 0;
 }
 
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
+    .hContent.video-container iframe,
+    .hContent.video-container object,
+    .hContent.video-container embed {
         position: absolute;
         top: 0;
         left: 0;
@@ -463,7 +444,7 @@ figure {
     }
 }
 
-.metatext {
+.hContent.metatext {
     font-family: @fontCalibri;
     font-size: 18px;
     color: #222;
@@ -475,7 +456,7 @@ figure {
     }
 }
 
-.spennendeTall {
+.hContent.spennendeTall {
     border: 1px solid #222;
     width: 100%;
     margin-bottom: 10px;
@@ -486,15 +467,15 @@ figure {
     }
 }
 
-.sectionwithaside {
+.hContent.sectionwithaside {
     position: relative;
 }
 
-.content {
+.hContent.content {
     position: relative;
 }
 
-.aside, .aside.bottom {
+.hContent.aside, .hContent.aside.bottom {
     margin-right: 0;
     position: relative;
     width: 300px;
@@ -509,12 +490,7 @@ figure {
     }
 }
 
-.cleanlist {
-    list-style-type: none;
-    margin-left: 0;
-}
-
-.linklist {
+.hContent.linklist {
     list-style-type: none;
     margin: 10px 0 15px 0;
 
@@ -536,7 +512,7 @@ figure {
         }
 }
 
-.bulletlist {
+.hContent.bulletlist {
     list-style-position: outside;
     margin-top: 10px;
 
@@ -554,7 +530,7 @@ figure {
     }
 }
 
-.borderbox {
+.hContent.borderbox {
     margin-bottom: 20px;
     margin-top: 10px;
     border: 1px solid @colorMediumGray;
@@ -570,10 +546,6 @@ figure {
     }
 }
 
-.search_input {
-    width: 75%;
-    margin-bottom: 20px;
-}
 //Center text in input fields
 ::-webkit-input-placeholder {
     text-align: center;
@@ -591,7 +563,7 @@ figure {
     text-align: center;
 }
 
-.calltoaction {
+.hContent.calltoaction {
     border: 2px solid @colorDarkBlue;
     color: white;
     padding: 10px 20px 10px 45px;
@@ -635,7 +607,7 @@ iframe {
     margin-bottom: 23px;
 }
 
-.external-link {
+.hContent.external-link {
     background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
     background-size: 16px 16px;
     padding-right: 22px;
@@ -654,7 +626,7 @@ iframe {
     }
 }
 
-.internal-link {
+.hContent.internal-link {
     text-decoration: none;
     color: @colorDarkBlue;
     display: inline-block;
@@ -699,28 +671,21 @@ iframe {
     }
 }
 
-p.keyfigures, h4.keyfigures {
+.hContent p.keyfigures, .hContent h4.keyfigures {
     font-size: 36px;
     color: #c63629;
     line-height: 42px;
     font-family: @fontSohoLight;
 }
 
-.header2 {
-    font-size: 36px;
-    line-height: 42px;
-    font-family: @fontSohoLight;
-    margin: 70px 0 0 0;
-}
-
-.header3 {
+.hContent.header3 {
     font-size: 28px;
     font-family: @fontSohoRegular;
     margin: 55px 0 0 0;
     line-height: 34px;
 }
 
-.module {
+.hContent.module {
     display: inline-block;
     margin: 0 0 30px 0;
     padding: 30px 30px 30px 30px;
@@ -1167,7 +1132,7 @@ p.keyfigures, h4.keyfigures {
     }
 }
 
-.showmorenews {
+.hContent.showmorenews {
     width: 250px;
     text-align: center;
     margin: 50px 0;
@@ -1213,7 +1178,7 @@ p.keyfigures, h4.keyfigures {
     }
 }
 
-.crisis {
+.hContent.crisis {
     margin: 15px;
     padding-bottom: 50px;
     background: @colorYellow;
@@ -1285,7 +1250,7 @@ p.keyfigures, h4.keyfigures {
     }
 }
 
-.crisis_banner {
+.hContent.crisis_banner {
     background: @colorYellow;
     height: 100px;
 
@@ -1325,39 +1290,24 @@ p.keyfigures, h4.keyfigures {
     }
 }
 
-.tema_select_all {
-    font-weight: bold;
-}
 /**Kurs og konferanse*/
-.conference_details {
-    margin-top: 20px;
 
-    p, span {
-        display: table-cell;
-    }
-
-    .conference_date, .conference_location, .conference_audience {
-        span {
-            width: 100px;
-        }
-    }
-}
 /**Felles*/
-.border {
+.hContent.border {
     border-bottom: 2px solid @colorDarkBlue;
     padding-bottom: 20px;
     width: 100%;
 }
 
-.checkbox {
+.hContent.checkbox {
     margin-right: 20px;
 }
 
-input[type="radio"] {
+input.hContent[type="radio"] {
     float: left;
-    width: 0px;
+    width: 0;
     opacity: 0;
-    height: 0px;
+    height: 0;
 
     &:focus, &:active {
         & + label {
@@ -1367,7 +1317,7 @@ input[type="radio"] {
     }
 }
 
-    input[type="radio"] + label span {
+    input.hContent[type="radio"] + label span {
         display: inline-block;
         width: 19px;
         height: 19px;
@@ -1375,27 +1325,36 @@ input[type="radio"] {
         vertical-align: middle;
         background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
         cursor: pointer;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
         background-size: 19px;
 
         &:hover {
             background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
+            -moz-background-size: 19px;
+            -o-background-size: 19px;
+            -webkit-background-size: 19px;
             background-size: 19px;
         }
     }
 
-    input[type="radio"]:checked + label span {
+    input.hContent[type="radio"]:checked + label span {
         background: url(../img/navigasjon/radioknapp_valgt.svg)top no-repeat;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
         background-size: 19px;
     }
 
-input[type="checkbox"] {
+input.hContent[type="checkbox"] {
     float: left;
-    width: 0px;
+    width: 0;
     opacity: 0;
-    height: 0px;
+    height: 0;
 }
 
-    input[type="checkbox"] + label span {
+    input.hContent[type="checkbox"] + label span {
         display: inline-block;
         width: 19px;
         height: 19px;
@@ -1403,16 +1362,25 @@ input[type="checkbox"] {
         vertical-align: middle;
         background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
         cursor: pointer;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
         background-size: 19px;
 
         &:hover {
             background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
+            -moz-background-size: 19px;
+            -o-background-size: 19px;
+            -webkit-background-size: 19px;
             background-size: 19px;
         }
     }
 
-    input[type="checkbox"]:checked + label span {
+    input.hContent[type="checkbox"]:checked + label span {
         background: url(../img/navigasjon/checkbox_valgt.svg)top no-repeat;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
         background-size: 19px;
     }
 
@@ -1420,7 +1388,7 @@ fieldset {
     border: none !important;
 }
 
-.form {
+.hContent.form {
     label {
         display: block;
         margin-bottom: 10px;
@@ -1441,7 +1409,7 @@ fieldset {
     }
 }
 
-.cancelbutton {
+.hContent.cancelbutton {
     background: @colorDarkBlue;
     color: white;
     font-family: @fontCalibri;
@@ -1456,7 +1424,7 @@ fieldset {
     }
 }
 
-.dropdown {
+.hContent.dropdown {
     label {
         display: block;
         margin-bottom: 5px;
@@ -1492,7 +1460,7 @@ fieldset {
     }
 }
 
-.refinesearch {
+.hContent.refinesearch {
     h2, h5 {
         border-top: 2px solid @colorDarkBlue;
         margin-bottom: 17px;
@@ -1512,7 +1480,7 @@ fieldset {
 }
 
 @-moz-document url-prefix() {
-    .refinesearch {
+    .hContent.refinesearch {
         .form-group {
             overflow: hidden;
 
@@ -1523,7 +1491,7 @@ fieldset {
     }
 }
 
-.table_general {
+.hContent.table_general {
     border: 1px solid #91c6c2;
     margin: 20px auto;
 
@@ -1560,7 +1528,7 @@ fieldset {
     }
 }
 
-.iveCharts {
+.hContent.iveCharts {
     margin: 0 auto 20px auto;
     width: 100%;
     height: 300px;
@@ -1634,7 +1602,7 @@ fieldset {
     margin-right: 10px;
 }
 
-.image_intext {
+.hContent.image_intext {
     float: right;
     display: table;
     width: 87px;
@@ -1645,7 +1613,7 @@ fieldset {
     }
 }
 
-.transportsideknapp {
+.hContent.transportsideknapp {
     a {
         display: block;
         width: 100%;
@@ -1692,12 +1660,8 @@ fieldset {
     }
 }
 
-.no-padding {
-    padding: 0;
-}
-
 @media only screen and (min-width: 1200px) {
-    .aside {
+    .hContent.aside {
         top: 0;
         right: 0;
         position: absolute;
@@ -1716,7 +1680,7 @@ fieldset {
         }
     }
 
-    .module_person.kontakt {
+    .hContent.module_person.kontakt {
         bottom: 0;
         right: 0;
         position: absolute;
@@ -1726,7 +1690,7 @@ fieldset {
 }
 
 @media only screen and (min-width: 900px) and (max-width:1199px) {
-    .aside {
+    .hContent.aside {
         top: 0;
         right: 0;
         position: absolute;
@@ -1751,27 +1715,24 @@ fieldset {
 }
 
 @media only screen and (max-width: 1199px) {
-    .refinesearch {
+    .hContent.refinesearch {
         margin-top: 30px;
         margin-left: 0;
         max-width: 300px;
         width: auto;
     }
 
-    .border {
+    .hContent.border {
         display: none;
-    }
-
-    .bubble {
     }
 }
 
 @media only screen and (min-width: 900px) {
-    .statistics_compare button {
+    .hContent.statistics_compare button {
         margin-top: 30px;
     }
 
-    .hidden_links {
+    .hContent.hidden_links {
         display: none;
     }
 }
@@ -1781,22 +1742,22 @@ fieldset {
         width: 100%;
     }
 
-    .module_subscribe {
+    .hContent.module_subscribe {
         margin: 0;
         padding: 0;
     }
 
-    .module_message {
+    .hContent.module_message {
         margin: 0;
     }
 
-    .aside {
+    .hContent.aside {
         margin-top: 0;
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-    .socialmedia {
+    .hContent.socialmedia {
         a:first-of-type {
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
@@ -1805,7 +1766,7 @@ fieldset {
 }
 
 @media only screen and (min-width: 600px) {
-    .transportsideknapp {
+    .hContent.transportsideknapp {
         border: none;
 
         .fa-chevron-right {
@@ -1815,7 +1776,7 @@ fieldset {
 }
 
 @media only screen and (max-width: 600px) {
-    .aside, .aside.bottom {
+    .hContent.aside, .hContent.aside.bottom {
         width: auto;
     }
 
@@ -1840,20 +1801,16 @@ fieldset {
         line-height: 28px;
     }
 
-    .ingress {
+    .hContent.ingress {
         font-size: 23px;
     }
 
-    .statistics_compare {
+    .hContent.statistics_compare {
         background: #ddd;
         border-radius: 5px;
     }
 
-    .breadcrumbs {
-        margin: 0;
-    }
-
-    .tabs {
+    .hContent.tabs {
         .tab-content {
             ul {
                 margin-bottom: 0;
@@ -1865,17 +1822,17 @@ fieldset {
         }
     }
 
-    .accordion_mobile {
+    .hContent.accordion_mobile {
         border-bottom: 1px solid @colorDarkBlue;
         padding-bottom: 10px;
     }
 
-    .xs-no-padding {
+    .hContent.xs-no-padding {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 
-    .entrancebutton {
+    .hContent.entrancebutton {
         margin: 7.5px 0 7.5px 0;
         width: 100%;
         height: auto;
@@ -1889,14 +1846,14 @@ fieldset {
         }
     }
 
-    .socialmedia {
+    .hContent.socialmedia {
         a:first-of-type {
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
         }
     }
 
-    .transportsideknapp {
+    .hContent.transportsideknapp {
         margin: 10px 0 10px 0;
         padding: 5px 0 20px 15px;
         background: white;
@@ -1906,7 +1863,9 @@ fieldset {
         }
     }
 
-    .breadcrumbs {
+    .hContent.breadcrumbs {
+        margin: 0;
+
         li {
             display: none;
 
@@ -1925,7 +1884,7 @@ fieldset {
         }
     }
 
-    .statistics_table {
+    .hContent.statistics_table {
         table, tbody {
             display: block;
             width: 100%;
@@ -1966,7 +1925,7 @@ fieldset {
         }
     }
 
-    .toppmeny, .tabs, .tabs-statistics .tabs {
+    .hContent.toppmeny, .hContent.tabs, .hContent.tabs-statistics .tabs {
         .tab-links {
             li {
                 width: 114px;
@@ -1975,7 +1934,7 @@ fieldset {
         }
     }
 
-    .table_general {
+    .hContent.table_general {
         display: block;
         width: 100%;
 
@@ -2030,7 +1989,7 @@ fieldset {
         }
     }
 
-    .module_message {
+    .hContent.module_message {
         padding: 15px 15px 25px 15px;
 
         .module_description {
@@ -2038,23 +1997,23 @@ fieldset {
         }
     }
 
-    .chart_div {
+    .hContent.chart_div {
         height: 300px;
         margin: 20px 0;
     }
 
-    .module.module_message.date_small_closed .keyfigures {
+    .hContent.module.module_message.date_small_closed .keyfigures {
         display: block;
         margin: 0;
     }
 }
 
 @media braille {
-    .has-hidden-content div {
+    .hContent.has-hidden-content div {
         display: block !important;
     }
 
-    .hidden-mobile {
+    .hContent.hidden-mobile {
         display: block !important;
     }
 
