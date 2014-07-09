@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-h1 {
+h1.hContent {
   font-weight: normal;
   font-size: 40px;
   font-family: "Soho Gothic W01 Light";
@@ -47,89 +47,89 @@ h1 {
   line-height: 30px;
   font-family: 'Calibri';
 }
-h2 {
+h2.hContent {
   font-size: 34px;
   line-height: 42px;
   font-family: "Soho Gothic W01 Light";
   margin: 35px 0 10px 0;
   color: #004e66;
 }
-h2.accordion {
+h2.hContent.accordion {
   border-bottom: 1px solid #004e66;
   padding-bottom: 10px;
 }
-h2.internal-link {
+h2.hContent.internal-link {
   color: #0093a7;
 }
-h3 {
+h3.hContent {
   font-size: 28px;
   font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
   line-height: 36px;
 }
-h3.accordion {
+h3.hContent.accordion {
   border-bottom: 1px solid #bababa;
   padding-bottom: 10px;
 }
-h4 {
+h4.hContent {
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
   margin-top: 55px;
   font-family: "Soho Gothic W01 Regular";
 }
-h4.accordion {
+h4.hContent.accordion {
   margin: 55px 0 0 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #004e66;
 }
-h5 {
+h5.hContent {
   font-weight: normal;
   font-size: 18px;
 }
-p {
+p.hContent {
   margin: 10px 0 0 0;
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 27px;
 }
-ul.list {
+ul.hContent.list {
   list-style: none;
   margin: 0 0 24px 0;
 }
-ul.list li {
+ul.hContent.list li {
   padding-bottom: 15px;
 }
-ul.list li:before {
+ul.hContent.list li:before {
   content: "•";
   color: #004e66;
   margin-right: 20px;
 }
-a {
+a.hContent {
   color: #004e66;
   font-size: 20px;
   line-height: 27px;
 }
-a:visited {
+a.hContent:visited {
   color: #0093a7;
 }
-a:focus,
-a:visited:focus {
+a.hContent:focus,
+a.hContent:visited:focus {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
-a:focus h2,
-a:visited:focus h2,
-a:focus h4,
-a:visited:focus h4,
-a:focus p,
-a:visited:focus p {
+a.hContent:focus h2,
+a.hContent:visited:focus h2,
+a.hContent:focus h4,
+a.hContent:visited:focus h4,
+a.hContent:focus p,
+a.hContent:visited:focus p {
   background: #004e66;
   color: white !important;
   outline: 0;
 }
-a:hover {
+a.hContent:hover {
   text-decoration: underline;
 }
 .hContent.breadcrumbs {
@@ -368,7 +368,7 @@ video {
   width: 100%;
   height: 100%;
 }
-figure .metatext {
+figure.hContent .metatext {
   text-align: right;
 }
 .hContent.metatext {
@@ -514,7 +514,7 @@ figure .metatext {
   background-size: 10px;
   color: white;
 }
-iframe {
+iframe.hContent {
   margin-bottom: 23px;
 }
 .hContent.external-link {
@@ -1194,7 +1194,7 @@ input.hContent[type="checkbox"]:checked + label span {
   -webkit-background-size: 19px;
   background-size: 19px;
 }
-fieldset {
+fieldset.hContent {
   border: none !important;
 }
 .hContent.form label {
@@ -1489,7 +1489,7 @@ fieldset {
   }
 }
 @media only screen and (max-width: 900px) {
-  iframe {
+  iframe.hContent {
     width: 100%;
   }
   .hContent.module_subscribe {
@@ -1522,20 +1522,20 @@ fieldset {
   .hContent.aside.bottom {
     width: auto;
   }
-  h1 {
+  h1.hContent {
     font-size: 30px;
     line-height: 36px;
     margin-top: 40px;
   }
-  h2 {
+  h2.hContent {
     font-size: 28px;
     line-height: 32px;
   }
-  h3 {
+  h3.hContent {
     font-size: 26px;
     line-height: 30px;
   }
-  h4 {
+  h4.hContent {
     font-size: 22px;
     line-height: 28px;
   }
