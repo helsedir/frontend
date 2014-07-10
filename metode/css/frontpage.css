@@ -12,12 +12,6 @@
 .container {
   background: #f2f2f2;
 }
-#header .container {
-  background: white;
-}
-#footer .container {
-  background: #838078;
-}
 .frontpagewrapper.white {
   background: white;
 }
@@ -42,13 +36,10 @@
   color: #004e66;
   text-decoration: none;
   background: white;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  border-radius: 3px;
 }
 .entrancebutton a:hover {
-  background: #02343f;
+  background: #004e66;
 }
 .entrancebutton a:hover h2,
 .entrancebutton a:hover p,
@@ -62,18 +53,18 @@
   font-size: 28px;
   line-height: 35px;
   padding-bottom: 5px;
-  color: #004e66;
+  color: #838078;
   position: relative;
   text-align: center;
   margin-top: 30px;
   border: none;
 }
 .entrancebutton a:focus {
-  background: #02343f;
+  background: #004e66;
 }
 .entrancebutton a:focus h2,
 .entrancebutton a:focus p {
-  background: #02343f;
+  background: #004e66;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
@@ -82,47 +73,53 @@
 .entrancebutton span {
   border-radius: 50%;
   display: block;
-  margin: 30px auto;
+  margin: 47px auto 30px auto;
   height: 70px;
   width: 70px;
 }
 .entrancebutton span.finnmetode {
-  background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-  background-size: 35px;
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_soek_hvit.svg') no-repeat;
+  background-size: 30px;
   background-position: center;
 }
 .entrancebutton span.sendforslag {
-  background: #004e66 no-repeat;
-  background-size: 35px;
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_send_hvit.svg') no-repeat;
+  background-size: 32px;
   background-position: center;
 }
 .entrancebutton span.omsystemet {
-  background: #004e66 url(../img/eirik.gif) no-repeat;
-  /*background: @colorDarkBlue no-repeat;*/
-  background-size: 80px;
-  background-position: 0 100px;
-  transition: all 3s;
-  -moz-transform: rotate(-82deg);
-  -ms-transform: rotate(-82deg);
-  -o-transform: rotate(-82deg);
-  -webkit-transform: rotate(-82deg);
-  transform: rotate(-82deg);
+  /* background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
+           background: @colorDarkBlue no-repeat;
+            background-size: 80px;
+            background-position: 0 100px;
+            transition: all 3s;
+            -moz-transform: rotate(-82deg);
+            -ms-transform: rotate(-82deg);
+            -o-transform: rotate(-82deg);
+            -webkit-transform: rotate(-82deg);
+            transform: rotate(-82deg);*/
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_systemet_hvit.svg') no-repeat;
+  background-size: 41px;
+  background-position: center;
 }
 .entrancebutton:hover span.finnmetode {
-  background: #ffffff url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-  background-size: 35px;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
+  background-size: 30px;
   background-position: center;
 }
 .entrancebutton:hover span.sendforslag {
-  background: #ffffff no-repeat;
-  background-size: 35px;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
+  background-size: 32px;
   background-position: center;
 }
 .entrancebutton:hover span.omsystemet {
-  background: #ffffff url(../img/eirik.gif) no-repeat;
-  /* background: white no-repeat;*/
-  background-size: 80px;
-  background-position: 0 3px;
+  /*  background: white url(../img/eirik.gif) no-repeat;
+             background: white no-repeat;
+            background-size: 80px;
+            background-position: 0 3px;*/
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
+  background-size: 41px;
+  background-position: center;
 }
 .method_entrance {
   float: left;
@@ -137,7 +134,7 @@
 }
 .method_entrance h3 {
   text-align: center;
-  margin: 15px 0 30px 0;
+  margin: 15px 0 0 0;
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   color: #222;
@@ -154,22 +151,22 @@
   margin: auto;
 }
 .method_entrance .drop_wrapper .drop.oppstart .drop_triangle {
-  border-left: 4.1em solid #df9922;
-}
-.method_entrance .drop_wrapper .drop.oppstart .drop_circle {
-  border: 4em solid #df9922;
-}
-.method_entrance .drop_wrapper .drop.forslag .drop_triangle {
-  border-left: 4.1em solid #004e66;
-}
-.method_entrance .drop_wrapper .drop.forslag .drop_circle {
-  border: 4em solid #004e66;
-}
-.method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
   border-left: 4.1em solid #0093a7;
 }
-.method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
+.method_entrance .drop_wrapper .drop.oppstart .drop_circle {
   border: 4em solid #0093a7;
+}
+.method_entrance .drop_wrapper .drop.forslag .drop_triangle {
+  border-left: 4.1em solid #a1bf17;
+}
+.method_entrance .drop_wrapper .drop.forslag .drop_circle {
+  border: 4em solid #a1bf17;
+}
+.method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
+  border-left: 4.1em solid #004e66;
+}
+.method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
+  border: 4em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.beslutning .drop_triangle {
   border-left: 4.1em solid #6cb4b5;
@@ -178,10 +175,10 @@
   border: 4em solid #6cb4b5;
 }
 .method_entrance .drop_wrapper .drop.implementering .drop_triangle {
-  border-left: 4.1em solid #a1bf17;
+  border-left: 4.1em solid #df9922;
 }
 .method_entrance .drop_wrapper .drop.implementering .drop_circle {
-  border: 4em solid #a1bf17;
+  border: 4em solid #df9922;
 }
 .method_entrance .drop_wrapper .drop .drop_triangle {
   position: absolute;
@@ -216,22 +213,22 @@
   color: white;
 }
 .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
-  border-left: 4.1em solid #c98523;
-}
-.method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
-  border: 4em solid #c98523;
-}
-.method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
-  border-left: 4.1em solid #02343f;
-}
-.method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
-  border: 4em solid #02343f;
-}
-.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
   border-left: 4.1em solid #01737c;
 }
-.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
+.method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
   border: 4em solid #01737c;
+}
+.method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
+  border-left: 4.1em solid #8ca037;
+}
+.method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
+  border: 4em solid #8ca037;
+}
+.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
+  border-left: 4.1em solid #02343f;
+}
+.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
+  border: 4em solid #02343f;
 }
 .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
   border-left: 4.1em solid #448c8a;
@@ -240,27 +237,52 @@
   border: 4em solid #448c8a;
 }
 .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
-  border-left: 4.1em solid #8ca037;
+  border-left: 4.1em solid #c98523;
 }
 .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
-  border: 4em solid #8ca037;
+  border: 4em solid #c98523;
+}
+.method_entrance .heading_wrapper {
+  margin-bottom: 30px;
+  display: table-cell;
+  border-bottom: 3px dotted #222;
 }
 .mainentrance {
   margin: 50px 0;
 }
 .mainentrance .ingress {
-  text-align: center;
   margin-top: 40px;
+  font-size: 20px;
+  font-family: "Soho Gothic W01 Light";
+  color: #838078;
+  padding: 0 164px 0 105px;
 }
-.news .date {
+.news .date,
+.news .date_status {
   font-size: 18px;
   margin-bottom: 10px;
 }
+.news .date_status {
+  padding-left: 35px;
+}
 .news .ingress {
   margin: 10px 0;
+  color: #838078;
+  font-size: 24px;
+  font-family: 'Calibri';
 }
 .news h4 {
   margin-top: 25px;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #838078;
+  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+  background-size: 20px;
+  background-position: 0px 7px;
+  padding-left: 35px;
+}
+.news h3 {
+  margin-top: 24px;
 }
 .news p {
   margin-top: 0;
@@ -269,11 +291,26 @@
   margin-top: 20px;
   display: block;
 }
+.news a:hover {
+  text-decoration: none;
+}
+.news a:hover h3 {
+  font-weight: bold;
+}
+.news a h3 {
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #0093a7;
+  border-bottom: 3px dotted #0093a7;
+}
 .newsillustration {
   margin-top: 25px;
   width: 75%;
 }
 .module.module_message {
   margin-top: 20px;
+}
+.suppliers {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=frontpage.css.map */

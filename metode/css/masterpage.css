@@ -22,19 +22,13 @@
 .logo {
   display: block;
   height: 100px;
+  padding-top: 10px;
 }
 .logo:hover {
   text-decoration: none;
 }
-.logo p {
-  color: #222;
-  margin: 0;
-  font-size: 18px;
-  font-family: "Soho Gothic W01 Regular";
-}
-.logo p strong {
-  font-size: 24px;
-  line-height: 24px;
+.logo img {
+  height: 63px;
 }
 #header {
   background: white;
@@ -43,15 +37,39 @@
 #footer {
   padding-top: 50px;
 }
+#footer .container {
+  background: none;
+}
 .footerlinkswrapper {
-  background: #838078;
-  background-position: right;
-  padding: 20px 0 50px 0;
-  color: white;
+  background: #ffffff url(../img/footer_illustrasjon.png) no-repeat;
+  background-position: 80%;
+  color: #222;
 }
 .footerlinkswrapper a,
 .footerlinkswrapper h4 {
-  color: white;
+  color: #C63629;
+}
+.footerlinkswrapper a.internal-link,
+.footerlinkswrapper h4.internal-link {
+  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+  background-size: 20px;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Regular";
+}
+.footerlinkswrapper h4 {
+  margin-top: 38px;
+}
+.footerlinkswrapper .contact h5 {
+  font-weight: bold;
+  margin: 25px 0 0 0;
+  color: #838078;
+}
+.footerlinkswrapper .contact p {
+  margin-top: 0;
+  color: #838078;
+}
+#header .container {
+  background: white;
 }
 .links {
   margin-left: 20px;
@@ -64,5 +82,124 @@
 }
 .internal-link.arrow_right.loginlink:visited {
   color: white;
+}
+.mainsearch {
+  border: none;
+  border-bottom: 1px solid #004e66;
+  background-image: url('../img/ikon_forstorrelsesglass.png');
+  background-repeat: no-repeat;
+  -moz-background-size: auto 68%;
+  -o-background-size: auto 68%;
+  -webkit-background-size: auto 68%;
+  background-size: auto 68%;
+  background-position: 97% 50%;
+  background-position-x: 99%;
+  background-position-y: 50%;
+  cursor: pointer;
+  color: #004e66;
+  padding-right: 27px;
+  width: 170px;
+}
+.mainsearch::-webkit-input-placeholder {
+  color: #004e66;
+  text-align: left;
+}
+.mainsearch:-moz-placeholder {
+  /* Firefox 18- */
+  color: #004e66;
+  text-align: left;
+}
+.mainsearch::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #004e66;
+  text-align: left;
+}
+.mainsearch:-ms-input-placeholder {
+  color: #004e66;
+  text-align: left;
+}
+.mainsearchform span {
+  vertical-align: sub;
+}
+.mainsearchform span input {
+  vertical-align: middle;
+  line-height: 28px;
+}
+.mainsearchcolumn {
+  float: left;
+  margin-top: 2px;
+  line-height: 74px;
+}
+.masterheader .links {
+  margin-top: 2px;
+}
+.masterheader .links span {
+  vertical-align: sub;
+}
+.masterheader .links span a {
+  color: #004e66;
+  margin-right: 15px;
+  vertical-align: sub;
+}
+.masterheader .links span a:focus {
+  background: #004e66;
+  color: white !important;
+  outline: 0;
+}
+.masterheader .links span a:last-of-type {
+  margin-right: 0;
+}
+.logoline .helsedirektoratet,
+.logoline .kunnskapssenteret,
+.logoline .legemiddelverk,
+.logoline .helsemidt,
+.logoline .helsenord,
+.logoline .helsesoeroest,
+.logoline .helsevest,
+.logoline .straalevern {
+  height: 25px;
+  display: inline-block;
+  margin: 90px 20px 45px 0;
+}
+.logoline .helsedirektoratet {
+  background: url(../img/logoer/logo_hdir.png) no-repeat;
+  background-size: 170px 25px;
+  width: 170px;
+}
+.logoline .kunnskapssenteret {
+  background: url(../img/logoer/logo_KS.png) no-repeat;
+  background-size: 158px 25px;
+  width: 158px;
+}
+.logoline .legemiddelverk {
+  background: url(../img/logoer/logo_SLV.png) no-repeat;
+  background-size: 134px 25px;
+  width: 134px;
+}
+.logoline .helsemidt {
+  background: url(../img/logoer/logo_RHF_midt.png) no-repeat;
+  background-size: 139px 25px;
+  width: 139px;
+}
+.logoline .helsenord {
+  background: url(../img/logoer/logo_RHF_nord.png) no-repeat;
+  background-size: 101px 25px;
+  width: 101px;
+}
+.logoline .helsesoeroest {
+  background: url(../img/logoer/logo_RHF_sorost.png) no-repeat;
+  background-size: 115px 25px;
+  width: 115px;
+}
+.logoline .helsevest {
+  background: url(../img/logoer/logo_RHF_vest.png) no-repeat;
+  background-size: 94px 25px;
+  width: 94px;
+}
+.logoline .straalevern {
+  background: url(../img/logoer/Straalevernet.png) no-repeat;
+  background-size: 84px 25px;
+  width: 84px;
+  margin-right: 0;
 }
 /*# sourceMappingURL=masterpage.css.map */

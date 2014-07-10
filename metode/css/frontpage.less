@@ -16,6 +16,7 @@
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGrayMetode: #838078;
 
 h2 {
     font-weight: normal;
@@ -31,14 +32,6 @@ h2 {
 
 .container {
     background: @colorLightGray;
-}
-
-#header .container {
-    background: white;
-}
-
-#footer .container {
-    background: #838078;
 }
 
 .frontpagewrapper {
@@ -70,13 +63,10 @@ h2 {
         color: @colorDarkBlue;
         text-decoration: none;
         background: white;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
+        border-radius: 3px;
 
         &:hover {
-            background: #02343f;
+            background: @colorDarkBlue;
 
             h2, p, &:focus, h2:focus, p:focus {
                 text-decoration: none;
@@ -88,7 +78,7 @@ h2 {
             font-size: 28px;
             line-height: 35px;
             padding-bottom: 5px;
-            color: @colorDarkBlue;
+            color: @colorGrayMetode;
             position: relative;
             text-align: center;
             margin-top: 30px;
@@ -96,10 +86,10 @@ h2 {
         }
 
         &:focus {
-            background: #02343f;
+            background: @colorDarkBlue;
 
             h2, p {
-                background: #02343f;
+                background: @colorDarkBlue;
             }
         }
     }
@@ -111,25 +101,25 @@ h2 {
     span {
         border-radius: 50%;
         display: block;
-        margin: 30px auto;
+        margin: 47px auto 30px auto;
         height: 70px;
         width: 70px;
 
         &.finnmetode {
-            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-            background-size: 35px;
+            background: @colorDarkBlue url('../img/ikoner/hovedinngang_ikon_soek_hvit.svg') no-repeat;
+            background-size: 30px;
             background-position: center;
         }
 
         &.sendforslag {
-            background: @colorDarkBlue no-repeat;
-            background-size: 35px;
+            background: @colorDarkBlue url('../img/ikoner/hovedinngang_ikon_send_hvit.svg') no-repeat;
+            background-size: 32px;
             background-position: center;
         }
 
         &.omsystemet {
-            background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
-            /*background: @colorDarkBlue no-repeat;*/
+            /* background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
+           background: @colorDarkBlue no-repeat;
             background-size: 80px;
             background-position: 0 100px;
             transition: all 3s;
@@ -137,28 +127,34 @@ h2 {
             -ms-transform: rotate(-82deg);
             -o-transform: rotate(-82deg);
             -webkit-transform: rotate(-82deg);
-            transform: rotate(-82deg);
+            transform: rotate(-82deg);*/
+            background: @colorDarkBlue url('../img/ikoner/hovedinngang_ikon_systemet_hvit.svg') no-repeat;
+            background-size: 41px;
+            background-position: center;
         }
     }
 
     &:hover {
         span.finnmetode {
-            background: white url('../img/ikon_forstorrelsesglass.svg') no-repeat;
-            background-size: 35px;
+            background: white url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
+            background-size: 30px;
             background-position: center;
         }
 
         span.sendforslag {
-            background: white no-repeat;
-            background-size: 35px;
+            background: white url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
+            background-size: 32px;
             background-position: center;
         }
 
         span.omsystemet {
-            background: white url(../img/eirik.gif) no-repeat;
-            /* background: white no-repeat;*/
+            /*  background: white url(../img/eirik.gif) no-repeat;
+             background: white no-repeat;
             background-size: 80px;
-            background-position: 0 3px;
+            background-position: 0 3px;*/
+            background: white url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
+            background-size: 41px;
+            background-position: center;
         }
     }
 }
@@ -178,7 +174,7 @@ h2 {
 
     h3 {
         text-align: center;
-        margin: 15px 0 30px 0;
+        margin: 15px 0 0 0;
         font-size: 24px;
         font-family: @fontSohoLight;
         color: #222;
@@ -197,31 +193,31 @@ h2 {
 
             &.oppstart {
                 .drop_triangle {
-                    border-left: 4.1em solid #df9922;
+                    border-left: 4.1em solid #0093a7;
                 }
 
                 .drop_circle {
-                    border: 4em solid #df9922;
+                    border: 4em solid #0093a7;
                 }
             }
 
             &.forslag {
+                .drop_triangle {
+                    border-left: 4.1em solid #a1bf17;
+                }
+
+                .drop_circle {
+                    border: 4em solid #a1bf17;
+                }
+            }
+
+            &.metodevurdering {
                 .drop_triangle {
                     border-left: 4.1em solid #004e66;
                 }
 
                 .drop_circle {
                     border: 4em solid #004e66;
-                }
-            }
-
-            &.metodevurdering {
-                .drop_triangle {
-                    border-left: 4.1em solid #0093a7;
-                }
-
-                .drop_circle {
-                    border: 4em solid #0093a7;
                 }
             }
 
@@ -237,11 +233,11 @@ h2 {
 
             &.implementering {
                 .drop_triangle {
-                    border-left: 4.1em solid #a1bf17;
+                    border-left: 4.1em solid #df9922;
                 }
 
                 .drop_circle {
-                    border: 4em solid #a1bf17;
+                    border: 4em solid #df9922;
                 }
             }
 
@@ -287,31 +283,31 @@ h2 {
             .drop {
                 &.oppstart {
                     .drop_triangle {
-                        border-left: 4.1em solid #c98523;
+                        border-left: 4.1em solid #01737c;
                     }
 
                     .drop_circle {
-                        border: 4em solid #c98523;
+                        border: 4em solid #01737c;
                     }
                 }
 
                 &.forslag {
+                    .drop_triangle {
+                        border-left: 4.1em solid #8ca037;
+                    }
+
+                    .drop_circle {
+                        border: 4em solid #8ca037;
+                    }
+                }
+
+                &.metodevurdering {
                     .drop_triangle {
                         border-left: 4.1em solid #02343f;
                     }
 
                     .drop_circle {
                         border: 4em solid #02343f;
-                    }
-                }
-
-                &.metodevurdering {
-                    .drop_triangle {
-                        border-left: 4.1em solid #01737c;
-                    }
-
-                    .drop_circle {
-                        border: 4em solid #01737c;
                     }
                 }
 
@@ -327,15 +323,21 @@ h2 {
 
                 &.implementering {
                     .drop_triangle {
-                        border-left: 4.1em solid #8ca037;
+                        border-left: 4.1em solid #c98523;
                     }
 
                     .drop_circle {
-                        border: 4em solid #8ca037;
+                        border: 4em solid #c98523;
                     }
                 }
             }
         }
+    }
+
+    .heading_wrapper {
+        margin-bottom: 30px;
+        display: table-cell;
+        border-bottom: 3px dotted #222;
     }
 }
 
@@ -343,23 +345,44 @@ h2 {
     margin: 50px 0;
 
     .ingress {
-        text-align: center;
         margin-top: 40px;
+        font-size: 20px;
+        font-family: @fontSohoLight;
+        color: @colorGrayMetode;
+        padding: 0 164px 0 105px;
     }
 }
 
 .news {
-    .date {
+    .date, .date_status {
         font-size: 18px;
         margin-bottom: 10px;
     }
 
+    .date_status {
+        padding-left: 35px;
+    }
+
     .ingress {
         margin: 10px 0;
+        color: #838078;
+        font-size: 24px;
+        font-family: @fontCalibri;
     }
 
     h4 {
         margin-top: 25px;
+        font-size: 24px;
+        font-family: @fontSohoLight;
+        color: #838078;
+        background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+        background-size: 20px;
+        background-position: 0px 7px;
+        padding-left: 35px;
+    }
+
+    h3 {
+        margin-top: 24px;
     }
 
     p {
@@ -370,6 +393,23 @@ h2 {
         margin-top: 20px;
         display: block;
     }
+
+    a {
+        &:hover {
+            text-decoration: none;
+
+            h3 {
+                font-weight: bold;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: @fontSohoLight;
+            color: @colorMediumBlue;
+            border-bottom: 3px dotted @colorMediumBlue;
+        }
+    }
 }
 
 .newsillustration {
@@ -379,6 +419,10 @@ h2 {
 
 .module.module_message {
     margin-top: 20px;
+}
+
+.suppliers {
+    margin-top: 25px;
 }
 
 @media only screen and (min-width: 900px) {

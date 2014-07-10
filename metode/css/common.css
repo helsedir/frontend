@@ -55,9 +55,6 @@ h2.accordion {
   border-bottom: 1px solid #004e66;
   padding-bottom: 10px;
 }
-h2.internal-link {
-  color: #0093a7;
-}
 h3 {
   font-size: 30px;
   font-family: "Soho Gothic W01 Regular";
@@ -446,12 +443,16 @@ figure .metatext {
   margin-top: 10px;
 }
 .bulletlist li {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 25px;
+  display: block;
+  padding-bottom: 13px;
 }
 .bulletlist li:before {
   content: "•";
-  color: #004e66;
-  margin-right: 20px;
+  color: #0093a7;
+  margin: -1px 0 0 -25px;
+  display: block;
+  position: absolute;
 }
 .borderbox {
   margin-bottom: 20px;
@@ -488,26 +489,25 @@ figure .metatext {
 }
 /*******************************Ny forside******************************************/
 .calltoaction {
-  border: 2px solid #004e66;
-  color: #004e66;
-  padding: 10px 20px 10px 35px;
+  border: 2px solid #0093a7;
+  color: white;
+  padding: 10px 25px 10px 25px;
   margin: 20px 0 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
-  width: 270px;
+  max-width: 270px;
+  min-height: 50px;
   display: block;
-  background: #ffffff url('../img/ikon_pilmothoyre.svg') no-repeat;
-  background-position: 5% 50%;
-  background-size: 10px;
+  background: #0093a7;
   cursor: pointer;
+  border-radius: 10px;
+  border-top-left-radius: 0;
 }
 .calltoaction:hover,
 .calltoaction:focus {
   color: white;
-  background: #004e66 url('../img/ikon_pilmothoyre_hvit.svg') no-repeat;
-  background-position: 5% 50%;
-  background-size: 10px;
+  background: #0093a7;
 }
 iframe {
   margin-bottom: 23px;
@@ -530,33 +530,17 @@ iframe {
   background-size: 16px 16px;
 }
 .internal-link {
-  text-decoration: none;
-  color: #004e66;
-  display: inline-block;
+  color: #838078;
+  font-family: 'Calibri';
+  font-size: 20px;
+  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
+  background-size: 20px;
+  padding-left: 35px;
+  margin-top: 40px;
+  display: block;
 }
 .internal-link:visited {
-  color: #0093a7;
-  text-decoration: none;
-}
-.internal-link h2,
-.internal-link h3,
-.internal-link h4,
-.internal-link p {
-  display: inline;
-}
-.internal-link.arrow_right {
-  margin: 15px 0;
-}
-.internal-link.arrow_right:after {
-  padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
-  font-size: inherit;
-  text-decoration: none;
-}
-.internal-link.inline,
-.internal-link .inline:visited {
-  text-decoration: underline;
+  color: #838078;
 }
 p.keyfigures,
 h4.keyfigures {

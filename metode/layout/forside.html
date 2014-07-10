@@ -42,14 +42,28 @@
             <header class="row masterheader">
                 <div class="col-xs-12 col-sm-8 col-md-5 col-lg-5">
                     <a href="forside.html" class="logo">
-                        <p>Nasjonalt system for</p>
-                        <p><strong>innføring av nye metoder i spesialisthelsetjenesten</strong></p>
+                        <img src="../img/logo.png" alt="" />
                     </a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-lg-offset-3 no-padding">
-                    <div class="pull-right">
-                        <a class="links hidden-sm hidden-xs " href="omoss.html">OM SYSTEMET</a>
-                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
+                    <div class="mobile-search pull-right" id="mobilesearch">
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2">
+                    <div class="mainsearchcolumn" id="mainsearchcolumn">
+                        <form class="mainsearchform hidden-mobile">
+                            <span role="search">
+                                <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                                <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
+                            </span>
+                        </form>
+                    </div>
+                    <div class="pull-right links">
+                        <span>
+                            <a class=" hidden-sm hidden-xs" href="#">Om systemet</a>
+                            <a class=" hidden-sm hidden-xs" href="#">English</a>
+                        </span>
                     </div>
                 </div>
             </header>
@@ -81,7 +95,6 @@
                             </a>
                         </div>
                     </div>
-                    <p class="ingress">Alle metoder som tas i bruk i spesialisthelsetjenesten skal vurderes</p>
                 </div>
             </div>
         </div>
@@ -100,7 +113,7 @@
                                     <span class="drop_number">1</span>
                                 </span>
                             </span>
-                            <h3>Oppstart</h3>
+                            <div class="heading_wrapper"><h3>Oppstart</h3></div>
                         </a>
                         <a href="forslag.html" class="method_entrance ">
                             <span class="drop_wrapper">
@@ -109,7 +122,8 @@
                                     <i class="drop_circle"></i>
                                     <span class="drop_number">2</span>
                                 </span>
-                            </span><h3>Forslag</h3>
+                            </span>
+                            <div class="heading_wrapper"><h3>Forslag</h3></div>
                         </a>
                         <a href="metodevurdering.html" class="method_entrance ">
                             <span class="drop_wrapper">
@@ -118,7 +132,7 @@
                                     <i class="drop_circle"></i>
                                     <span class="drop_number">3</span>
                                 </span>
-                            </span><h3>Metodevurdering</h3>
+                            </span><div class="heading_wrapper"><h3>Metodevurdering</h3></div>
                         </a>
                         <a href="beslutning.html" class="method_entrance ">
                             <span class="drop_wrapper">
@@ -127,7 +141,7 @@
                                     <i class="drop_circle"></i>
                                     <span class="drop_number">4</span>
                                 </span>
-                            </span><h3>Beslutning</h3>
+                            </span><div class="heading_wrapper"><h3>Beslutning</h3></div>
                         </a>
                         <a href="implementering.html" class="method_entrance ">
                             <span class="drop_wrapper">
@@ -136,7 +150,7 @@
                                     <i class="drop_circle"></i>
                                     <span class="drop_number">5</span>
                                 </span>
-                            </span><h3>Implementering</h3>
+                            </span><div class="heading_wrapper"><h3>Implementering</h3></div>
                         </a>
                     </div>
                 </div>
@@ -153,30 +167,42 @@
                     <p class="date">19.august 2014</p>
 
                     <p class=ingress>De regionale helseforetakenes Beslutningsforum fattet 19. mai de første beslutningene om nye kreftlegemidler</p>
-                    <a href="#">
+                    <a href="#" class="internal-link">
                         Se flere nyheter
                     </a>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1">
                 <div class="news">
-                    <h2>Siste status oppdateringer</h2>
+                    <h2>Siste status&shy;oppdateringer</h2>
                     <a href="#"><h4>Humira. Nytt forslag</h4> </a>
-                    <p class="date">13.august 2014</p>
+                    <p class="date_status">13.august 2014</p>
                     <a href="#"><h4>Glatirameracetat. Nytt forslag</h4> </a>
-                    <p>1.august 2014</p>
+                    <p class="date_status">1.august 2014</p>
                     <a href="#"> <h4>Helplasma for transfusjon. Til metodevurdering</h4></a>
-                    <p>1.juni 2014</p>
+                    <p class="date_status">1.juni 2014</p>
                     <a href="#"> <h4>Pertuzumab (Perjeta)</h4></a>
-                    <p>15.mai 2014</p>
+                    <p class="date_status">15.mai 2014</p>
                     <a href="#"> <h4>Pasientnær (on-site) høysensitiv CRP. Til mini-metodevurdering</h4> </a>
-                    <p>15.mai 2014</p>
+                    <p class="date_status">15.mai 2014</p>
 
-                    <a href="transportside.html" class="see-all"> Se status på alle metoder</a>
+                    <a href="transportside.html" class="internal-link"> Se status på alle metoder</a>
                 </div>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Leverandører</h2>
+                <ul class="bulletlist suppliers">
+                    <li>Send inn forslag til metodevurdering</li>
+                    <li>Finn maler for innlevering av dokumentasjon</li>
+                    <li>Se frister for å gi innspill til innkomne forlag (neste frist 17. desember).</li>
+                </ul>
+                <button class="calltoaction">Gå til leverandørsidene</button>
+                <a href="#" class="internal-link">English pages for the industry</a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <h2> Er du pasient? Slik kan du bidra:</h2>
@@ -186,73 +212,64 @@
             <div class="col-md-6">
                 <ul class="bulletlist">
                     <li>Gjennom brukerutvalg på sykehus </li>
-                    <li>Sende inn et forslag til metodevurdering </li>
+                    <li>Sende inn et forslag til metodevurdering Sende inn et forslag til metodevurdering Sende inn et forslag til metodevurdering  </li>
                     <li>Evaluere metoder som er i bruk</li>
                 </ul>
                 <a href="#">
                     Les mer om brukermedvirkning
                 </a>
             </div>
-            <div class="col-md-5 col-md-offset-1">
-                <img class="newsillustration pull-left" src="../img/forside_nyhetsillustrasjon.png" alt="Illustrasjon" />
-            </div>
-        </div>
-        <h2>For leverandører av legemidler og utstyr som vurderes</h2>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="text_and_image clearfix">
-                    <ul class="bulletlist">
-                        <li>Send innspill til metodeforslag som omhandler deres produkt</li>
-                        <li>Last ned male og send utarbeidet dokumentasjon</li>
-                        <li>Se frister til innsending av innspill</li>
-                    </ul>
-                    <div class="calltoaction">Gå til leverandørsidene</div>
-                </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-                <div class="module module_message date">
-                    <h5 class="module_header">Frist for innspill</h5>
-                    <p class="keyfigures">17.september</p>
-                </div>
-            </div>
         </div>
     </div>
-    <footer class="footerwrapper" id="footer">
-        <div class="footerlinkswrapper">
+
+    <div id="footer">
+        <footer class="footerlinkswrapper">
             <div class="container">
                 <div class="row">
-                    <section class="col-sm-12 col-md-4 ">
-                        <a href="kontaktoss.html">
-                            <h4 class="internal-link arrow_right">Kontakt oss</h4>
-                        </a>
-                        <p>Telefon: +47 24 16 38 20</p>
-                        <p>E-post: metodevurdering@helsedir.no</p>
-                        <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
-                        <p>Post: Pb 7000 St.Olavs plass, 0130 Oslo</p>
+                    <section class="col-sm-12 col-md-7 ">
+                        <div class="contact">
+                            <a href="kontaktoss.html">
+                                <h4 class="">Kontakt oss</h4>
+                            </a>
+                            <h5>Ansvarlig for nettløsningen</h5>
+                            <p>Sekreteriatet for Nasjonalt system for innføring av nye metoder</p>
+
+                            <h5>Helsedirektoratet</h5>
+                            <p>E-post: metodevurdering@helsedir.no</p>
+                            <p>Besøk: Universitetsgata 2, 0130 Oslo</p>
+                            <p>Pb 7000 St. Olavs plass, 0130 Oslo</p>
+                        </div>
                     </section>
-                    <section class="col-sm-12 col-md-4">
-                        <a href="transportside_omoss.html">   <h4 class="internal-link arrow_right">Om oss</h4></a>
-                        <ul class="about">
-                            <li><a href="#">Hvem gjør hva</a></li>
-                            <li><a href="artikkel_organisasjonskart.html">Hvordan sende et forslag</a></li>
-                            <li><a href="#">Nyheter</a></li>
-                        </ul>
-                    </section>
-                    <section class="col-sm-12 col-md-4 ">
+
+                    <section class="col-sm-12 col-md-3 col-md-offset-2 ">
                         <ul>
                             <li>
-                                <a href="leverandoer.html"><h4 class="internal-link arrow_right">For leverandører</h4></a>
+                                <a href="transportside_omoss.html"> <h4 class="internal-link arrow_right">Om aktørene</h4></a>
                             </li>
                             <li>
-                                <a href="#"><h4 class="internal-link arrow_right">Logg inn</h4></a>
+                                <a href="leverandoer.html"><h4 class="internal-link arrow_right">Om systemet</h4></a>
+                            </li>
+                            <li>
+                                <a href="#"><h4 class="internal-link arrow_right">Presse</h4></a>
                             </li>
                         </ul>
                     </section>
                 </div>
+                <div class="row">
+                    <div class="col-md-12 logoline no-padding">
+                        <a class="helsedirektoratet" href="#"></a>
+                        <a class="kunnskapssenteret" href="#"></a>
+                        <a class="legemiddelverk" href="#"></a>
+                        <a class="helsemidt" href="#"></a>
+                        <a class="helsenord" href="#"></a>
+                        <a class="helsesoeroest" href="#"></a>
+                        <a class="helsevest" href="#"></a>
+                        <a class="straalevern" href="#"></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>

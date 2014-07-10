@@ -4,6 +4,19 @@
 @fontSohoLight: "Soho Gothic W01 Light";
 @fontSohoRegular: "Soho Gothic W01 Regular";
 
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
 .shortcuts {
     position: absolute;
     top: 10px;
@@ -33,21 +46,14 @@
 .logo {
     display: block;
     height: 100px;
+    padding-top: 10px;
 
     &:hover {
         text-decoration: none;
     }
 
-    p {
-        color: #222;
-        margin: 0;
-        font-size: 18px;
-        font-family: @fontSohoRegular;
-
-        strong {
-            font-size: 24px;
-            line-height: 24px;
-        }
+    img {
+        height: 63px;
     }
 }
 
@@ -57,18 +63,49 @@
 }
 
 #footer {
+    .container {
+        background: none;
+    }
+
     padding-top: 50px;
 }
 
 .footerlinkswrapper {
-    background: #838078;
-    background-position: right;
-    padding: 20px 0 50px 0;
-    color: white;
+    background: white url(../img/footer_illustrasjon.png) no-repeat;
+    background-position: 80%;
+    color: #222;
 
     a, h4 {
-        color: white;
+        color: #C63629;
+
+        &.internal-link {
+            background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+            background-size: 20px;
+            font-size: 24px;
+            font-family: @fontSohoRegular;
+        }
     }
+
+    h4 {
+        margin-top: 38px;
+    }
+
+    .contact {
+        h5 {
+            font-weight: bold;
+            margin: 25px 0 0 0;
+            color: #838078;
+        }
+
+        p {
+            margin-top: 0;
+            color: #838078;
+        }
+    }
+}
+
+#header .container {
+    background: white;
 }
 
 .links {
@@ -83,5 +120,143 @@
 
     &:visited {
         color: white;
+    }
+}
+
+.mainsearch {
+    border: none;
+    border-bottom: 1px solid @colorDarkBlue;
+    background-image: url('../img/ikon_forstorrelsesglass.png');
+    background-repeat: no-repeat;
+    -moz-background-size: auto 68%;
+    -o-background-size: auto 68%;
+    -webkit-background-size: auto 68%;
+    background-size: auto 68%;
+    background-position: 97% 50%;
+    background-position-x: 99%;
+    background-position-y: 50%;
+    cursor: pointer;
+    color: @colorDarkBlue;
+    padding-right: 27px;
+    width: 170px;
+
+    &::-webkit-input-placeholder {
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &:-ms-input-placeholder {
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+}
+
+.mainsearchform {
+    span {
+        vertical-align: sub;
+
+        input {
+            vertical-align: middle;
+            line-height: 28px;
+        }
+    }
+}
+
+.mainsearchcolumn {
+    float: left;
+    margin-top: 2px;
+    line-height: 74px;
+}
+
+.masterheader {
+    .links {
+        margin-top: 2px;
+
+        span {
+            vertical-align: sub;
+
+            a {
+                color: @colorDarkBlue;
+                margin-right: 15px;
+                vertical-align: sub;
+
+                &:focus {
+                    background: @colorDarkBlue;
+                    color: white !important;
+                    outline: 0;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.logoline {
+    .helsedirektoratet, .kunnskapssenteret, .legemiddelverk, .helsemidt, .helsenord, .helsesoeroest, .helsevest, .straalevern {
+        height: 25px;
+        display: inline-block;
+        margin: 90px 20px 45px 0;
+    }
+
+    .helsedirektoratet {
+        background: url(../img/logoer/logo_hdir.png) no-repeat;
+        background-size: 170px 25px;
+        width: 170px;
+    }
+
+    .kunnskapssenteret {
+        background: url(../img/logoer/logo_KS.png) no-repeat;
+        background-size: 158px 25px;
+        width: 158px;
+    }
+
+    .legemiddelverk {
+        background: url(../img/logoer/logo_SLV.png) no-repeat;
+        background-size: 134px 25px;
+        width: 134px;
+    }
+
+    .helsemidt {
+        background: url(../img/logoer/logo_RHF_midt.png) no-repeat;
+        background-size: 139px 25px;
+        width: 139px;
+    }
+
+    .helsenord {
+        background: url(../img/logoer/logo_RHF_nord.png) no-repeat;
+        background-size: 101px 25px;
+        width: 101px;
+    }
+
+    .helsesoeroest {
+        background: url(../img/logoer/logo_RHF_sorost.png) no-repeat;
+        background-size: 115px 25px;
+        width: 115px;
+    }
+
+    .helsevest {
+        background: url(../img/logoer/logo_RHF_vest.png) no-repeat;
+        background-size: 94px 25px;
+        width: 94px;
+    }
+
+    .straalevern {
+        background: url(../img/logoer/Straalevernet.png) no-repeat;
+        background-size: 84px 25px;
+        width: 84px;
+        margin-right: 0;
     }
 }
