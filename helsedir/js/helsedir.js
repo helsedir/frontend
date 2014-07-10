@@ -4,8 +4,8 @@
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
-        contentToHide.addClass('hContent visuallyhidden');
-        parentTag.addClass('hContent has-hidden-content');
+        contentToHide.addClass(' visuallyhidden');
+        parentTag.addClass(' has-hidden-content');
     });
 
     //handles click events on collapsible headings
@@ -41,8 +41,8 @@
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
                 if (!$contentToHide.hasClass('visuallyhidden') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
-                    $contentToHide.addClass('hContent visuallyhidden');
-                    $parentTag.addClass('hContent has-hidden-content');
+                    $contentToHide.addClass(' visuallyhidden');
+                    $parentTag.addClass(' has-hidden-content');
                 }
             });
         } else {

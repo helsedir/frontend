@@ -172,7 +172,7 @@ $.extend( $.expr[ ":" ], {
 });
 
 // support: jQuery <1.8
-if ( !$( "<a class="hContent">" ).outerWidth( 1 ).jquery ) {
+if ( !$( "<a >" ).outerWidth( 1 ).jquery ) {
 	$.each( [ "Width", "Height" ], function( i, name ) {
 		var side = name === "Width" ? [ "Left", "Right" ] : [ "Top", "Bottom" ],
 			type = name.toLowerCase(),
@@ -228,7 +228,7 @@ if ( !$.fn.addBack ) {
 }
 
 // support: jQuery 1.6.1, 1.6.2 (http://bugs.jquery.com/ticket/9413)
-if ( $( "<a class="hContent">" ).data( "a-b", "a" ).removeData( "a-b" ).data( "a-b" ) ) {
+if ( $( "<a >" ).data( "a-b", "a" ).removeData( "a-b" ).data( "a-b" ) ) {
 	$.fn.removeData = (function( removeData ) {
 		return function( key ) {
 			if ( arguments.length ) {
@@ -446,7 +446,7 @@ $.effects = {
 	support = color.support = {},
 
 	// element for support tests
-	supportElem = jQuery( "<p class="hContent">" )[ 0 ],
+	supportElem = jQuery( "<p >" )[ 0 ],
 
 	// colors = jQuery.Color.names
 	colors,

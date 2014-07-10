@@ -8,24 +8,28 @@
 @colorLightGray: #f2f2f2;
 @colorGreen: #a1bf37;
 
-#search_statistics {
-    width: 100%;
+.container {
+    #search_statistics {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 599px) {
-    .transportside {
-        .border {
-            margin-bottom: 15px;
-        }
+    .container {
+        &.transportside {
+            .border {
+                margin-bottom: 15px;
+            }
 
-        .transportsideknapp {
-            padding: 20px;
-            margin-bottom: 10px;
-            border-radius: 1px;
+            .transportsideknapp {
+                padding: 20px;
+                margin-bottom: 10px;
+                border-radius: 1px;
 
-            h2 {
-                line-height: 35px;
-                margin: 0 0 10px 0;
+                h2 {
+                    line-height: 35px;
+                    margin: 0 0 10px 0;
+                }
             }
         }
     }

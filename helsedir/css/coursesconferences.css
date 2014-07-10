@@ -1,7 +1,7 @@
-﻿.hContent.conference_transport {
+﻿.container .conference_transport {
   margin: 30px 0 0 0;
 }
-.hContent.conference_transport a div.date {
+.container .conference_transport a div.date {
   float: left;
   width: auto;
   min-width: 160px;
@@ -9,11 +9,11 @@
   font-weight: bold;
   display: block;
 }
-.hContent.conference_transport a div.information {
+.container .conference_transport a div.information {
   float: left;
   width: 75%;
 }
-.hContent.conference_transport a span.date_number {
+.container .conference_transport a span.date_number {
   font-size: 36px;
   display: block;
   padding: 10px 0;
@@ -21,7 +21,7 @@
   font-family: "Soho Gothic W01 Light";
   text-align: right;
 }
-.hContent.conference_transport a span.date_monthyear {
+.container .conference_transport a span.date_monthyear {
   display: block;
   color: #c63629;
   font-family: 'Calibri';
@@ -29,7 +29,7 @@
   text-transform: uppercase;
   text-align: right;
 }
-.hContent.conference_transport a h2 {
+.container .conference_transport a h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: "Soho Gothic W01 Light";
@@ -37,22 +37,22 @@
   color: #004e66;
   color: #0093a7;
 }
-.hContent.conference_transport a h2.internal-link.arrow_right {
+.container .conference_transport a h2.internal-link.arrow_right {
   margin: 0;
 }
-.hContent.conference_transport a p {
+.container .conference_transport a p {
   margin: 3px 0 0 0;
   color: #222;
 }
-.hContent.conference_transport a:hover h2 {
+.container .conference_transport a:hover h2 {
   text-decoration: underline;
 }
-.hContent.conference {
+.container .conference {
   background: white;
   padding: 30px 0 10px 12px;
   margin-top: 0;
 }
-.hContent.conference .details {
+.container .conference .details {
   float: left;
   width: auto;
   min-width: 160px;
@@ -60,9 +60,9 @@
   font-weight: bold;
   display: block;
 }
-.hContent.conference .details .date,
-.hContent.conference .details .year,
-.hContent.conference .details .time {
+.container .conference .details .date,
+.container .conference .details .year,
+.container .conference .details .time {
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 27px;
@@ -70,34 +70,34 @@
   color: #c63629;
   text-align: right;
 }
-.hContent.conference .details .date {
+.container .conference .details .date {
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.hContent.conference .information {
+.container .conference .information {
   float: left;
   width: 75%;
 }
-.hContent.conference .information .information_header {
+.container .conference .information .information_header {
   color: #0093a7;
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
   margin: 0 0 20px 0;
 }
-.hContent.conference button {
+.container .conference button {
   margin-left: 15px;
 }
-.hContent.conference img {
+.container .conference img {
   width: 170px;
   vertical-align: middle;
   margin-left: 105px;
 }
-.hContent.refinesearch {
+.container .refinesearch {
   margin-top: 20px;
 }
-.hContent.month {
+.container .month {
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
@@ -106,76 +106,76 @@
   margin-bottom: 0;
 }
 @media only screen and (min-width: 599px) {
-  .hContent.aside {
+  .container .aside {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  .hContent.conference .information {
+  .container .conference .information {
     float: none;
   }
-  .hContent.conference .information .information_header {
+  .container .conference .information .information_header {
     margin-top: 10px;
   }
-  .hContent.conference .details {
+  .container .conference .details {
     float: none;
     width: 100%;
   }
-  .hContent.conference .details .date,
-  .hContent.conference .details .year,
-  .hContent.conference .details .time {
+  .container .conference .details .date,
+  .container .conference .details .year,
+  .container .conference .details .time {
     text-align: left;
     display: inline-block;
   }
-  .hContent.conference_transport {
+  .container .conference_transport {
     margin: 10px 0 10px 0;
     padding: 5px 0 20px 15px;
     background: white;
   }
-  .hContent.conference_transport a span.date_number,
-  .hContent.conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear {
     text-align: left;
     display: inline-block;
     font-size: 24px;
     line-height: 27px;
   }
-  .hContent.conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_monthyear {
     margin-bottom: 20px;
   }
-  .hContent.conference_transport a div.date,
-  .hContent.conference_transport a div.information {
+  .container .conference_transport a div.date,
+  .container .conference_transport a div.information {
     float: none;
     width: auto;
   }
-  .hContent.conference_transport a h2 {
+  .container .conference_transport a h2 {
     font-size: 24px;
     line-height: 27px;
   }
-  .hContent.conference_transport a span.date_number,
-  .hContent.conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear {
     font-size: 18px;
     margin-bottom: 0;
   }
-  .hContent.conference_transport a div.information {
+  .container .conference_transport a div.information {
     width: 100%;
   }
-  .hContent.conference_transport a h2.internal-link.arrow_right {
+  .container .conference_transport a h2.internal-link.arrow_right {
     margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-  .hContent.conference_transport a div.information {
+  .container .conference_transport a div.information {
     width: 65%;
   }
-  .hContent.conference img {
+  .container .conference img {
     margin: 0 auto;
     display: block;
   }
-  .hContent.conference_transport a span.date_number,
-  .hContent.conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear {
     text-align: left;
   }
-  .hContent.conference_transport a div.date {
+  .container .conference_transport a div.date {
     min-width: 150px;
   }
 }

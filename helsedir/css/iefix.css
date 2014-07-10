@@ -1,5 +1,5 @@
-﻿.hContent.search,
-.hContent.mainsearch {
+﻿.container .search,
+.container .mainsearch {
   background-color: white;
   background-image: url('../img/ikon_forstorrelsesglass.png') !important;
   border: 1px solid #004e66;

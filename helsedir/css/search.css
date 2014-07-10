@@ -1,40 +1,40 @@
-﻿.hContent.search_withbutton input {
+﻿.container .search_withbutton input {
   width: 80%;
 }
-.hContent.search_withbutton .calltoaction {
+.container .search_withbutton .calltoaction {
   width: 100px;
 }
-.hContent.filterlist li {
+.container .filterlist li {
   display: inline;
   margin-right: 25px;
 }
-.hContent.filterlist li a {
+.container .filterlist li a {
   color: #004e66;
   font-size: 18px;
 }
-.hContent.filterlist .selectedfilter a,
-.hContent.filterlist .selectedfilter a:visited {
+.container .filterlist .selectedfilter a,
+.container .filterlist .selectedfilter a:visited {
   font-weight: bold;
   border-bottom: 3px solid #004e66;
   padding-bottom: 6px;
 }
-.hContent.numberofhits {
+.container .numberofhits {
   margin-top: 40px;
   text-transform: uppercase;
   font-size: 18px;
   color: #004e66;
 }
-.hContent.searchresult {
+.container .searchresult {
   margin: 50px 0 70px 0;
 }
-.hContent.searchresult .breadcrumbs a,
-.hContent.searchresult .breadcrumbs a:visited {
+.container .searchresult .breadcrumbs a,
+.container .searchresult .breadcrumbs a:visited {
   text-decoration: none;
 }
-.hContent.searchresult h2 {
+.container .searchresult h2 {
   margin-top: 10px;
 }
-.hContent.searchfield {
+.container .searchfield {
   margin: 40px 0 10px 0;
 }
 /*# sourceMappingURL=search.css.map */

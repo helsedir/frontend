@@ -1,44 +1,44 @@
-﻿.hContent.tilskudd_sortcontrols {
+﻿.container .tilskudd_sortcontrols {
   margin-top: 35px;
   height: 25px;
 }
-.hContent.tilskudd_sortcontrols .checkbox {
+.container .tilskudd_sortcontrols .checkbox {
   display: inline-block;
 }
-.hContent.tilskudd_information {
+.container .tilskudd_information {
   margin: 50px 0 0 0;
 }
-.hContent.tilskudd_information dt {
+.container .tilskudd_information dt {
   width: auto;
   min-width: 250px;
   padding-right: 10px;
   float: left;
   font-weight: bold;
 }
-.hContent.tilskudd_information dd {
+.container .tilskudd_information dd {
   width: 60%;
   float: left;
 }
-.hContent.numberofcontributions {
+.container .numberofcontributions {
   color: #004e66;
   font-size: 18px;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 599px) {
-  .hContent.refinesearch {
+  .container .refinesearch {
     margin-top: 45px;
   }
 }
 @media only screen and (max-width: 599px) {
-  .hContent.aside {
+  .container .aside {
     margin-top: 70px;
   }
-  .hContent.tilskudd_information dd {
+  .container .tilskudd_information dd {
     width: 60%;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .hContent.tilskudd_information dd {
+  .container .tilskudd_information dd {
     width: 45%;
   }
 }

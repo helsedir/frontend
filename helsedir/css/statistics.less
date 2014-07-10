@@ -17,127 +17,129 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.hContent.dropdown-statistikk {
-    select {
-        width: 40%;
-    }
+.container {
+    .dropdown-statistikk {
+        select {
+            width: 40%;
+        }
 
-    button {
-        background: @colorOrange;
-        border: 0;
-    }
-}
-
-.hContent.radiobuttons label {
-    display: block;
-}
-
-.hContent.statistics_compare {
-    padding: 5px 0 10px 10px;
-
-    p {
-        margin: 0;
-    }
-
-    select {
-        display: block;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    label {
-        display: inline-block;
-
-        input {
-            margin-right: 5px;
+        button {
+            background: @colorOrange;
+            border: 0;
         }
     }
 
-    button {
-        background: white;
-        border: 1px solid @colorMediumGray;
-    }
-
-    a {
+    .radiobuttons label {
         display: block;
     }
 
-    label, a {
-        padding-left: 15px;
+    .statistics_compare {
+        padding: 5px 0 10px 10px;
+
+        p {
+            margin: 0;
+        }
+
+        select {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        label {
+            display: inline-block;
+
+            input {
+                margin-right: 5px;
+            }
+        }
+
+        button {
+            background: white;
+            border: 1px solid @colorMediumGray;
+        }
+
+        a {
+            display: block;
+        }
+
+        label, a {
+            padding-left: 15px;
+        }
     }
-}
 
-#compare_hiddenfields {
-    display: none;
-}
-
-.hContent.statistics {
-    h2 {
-        text-align: center;
+    #compare_hiddenfields {
+        display: none;
     }
 
-    .fa-chevron-down {
-        float: none;
-        padding: 0;
+    .statistics {
+        h2 {
+            text-align: center;
+        }
+
+        .fa-chevron-down {
+            float: none;
+            padding: 0;
+        }
     }
-}
 
-.hContent.statistics_about {
-    h4 {
-        margin: 50px 0 10px 0;
+    .statistics_about {
+        h4 {
+            margin: 50px 0 10px 0;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 
-    p {
-        margin: 0;
+    #statistikktab1, #statistikktab2, #statistikktab3 {
+        margin-top: 20px;
     }
-}
 
-#statistikktab1, #statistikktab2, #statistikktab3 {
-    margin-top: 20px;
-}
+    .statistics_chart {
+        margin: 40px 0 0 0;
+        background: white;
+        overflow: auto;
 
-.hContent.statistics_chart {
-    margin: 40px 0 0 0;
-    background: white;
-    overflow: auto;
+        #chart_div {
+            height: 400px;
+            width: 100%;
+            display: inline-block;
+        }
+    }
 
-    #chart_div {
-        height: 400px;
-        width: 100%;
+    .statistics_table {
+        margin-top: 50px;
         display: inline-block;
+        width: 100%;
     }
-}
 
-.hContent.statistics_table {
-    margin-top: 50px;
-    display: inline-block;
-    width: 100%;
-}
-
-.hContent.table_general {
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.hContent.statistics_description {
-    margin: 40px 0;
-}
-
-.hContent.statistics_reports {
-    h2 {
-        margin-bottom: 10px;
+    .table_general {
+        width: 100%;
+        margin-bottom: 0;
     }
-}
 
-#chart_div_legend {
-    margin-left: 37px;
-    list-style: none;
-    font-size: 16px;
-}
+    .statistics_description {
+        margin: 40px 0;
+    }
 
-.hContent.legendMarker {
-    height: 1em;
-    width: 1em;
-    display: inline-block;
-    margin: 0 5px 0 0;
+    .statistics_reports {
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    #chart_div_legend {
+        margin-left: 37px;
+        list-style: none;
+        font-size: 16px;
+    }
+
+    .legendMarker {
+        height: 1em;
+        width: 1em;
+        display: inline-block;
+        margin: 0 5px 0 0;
+    }
 }

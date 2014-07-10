@@ -47,7 +47,7 @@ function drawLegend(data) {
         var label = data.getColumnLabel(i, 0);
         lis[i] = document.createElement('li');
         lis[i].id = 'legend_' + data.getColumnLabel(i, 0);
-        lis[i].innerHTML = '<div class="hContent legendMarker" style="background-color:' + colors[i - 1] + ';"></div>' + label + '</span>';
+        lis[i].innerHTML = '<div class=" legendMarker" style="background-color:' + colors[i - 1] + ';"></div>' + label + '</span>';
 
         // append to the legend list
         legend.appendChild(lis[i]);

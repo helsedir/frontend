@@ -17,225 +17,233 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.hContent.conference_transport {
-    margin: 30px 0 0 0;
+.container {
+    .conference_transport {
+        margin: 30px 0 0 0;
 
-    a {
-        div.date {
+        a {
+            div.date {
+                float: left;
+                width: auto;
+                min-width: 160px;
+                padding-right: 20px;
+                font-weight: bold;
+                display: block;
+            }
+
+            div.information {
+                float: left;
+                width: 75%;
+            }
+
+            span.date_number {
+                font-size: 36px;
+                display: block;
+                padding: 10px 0;
+                color: #c63629;
+                font-family: "Soho Gothic W01 Light";
+                text-align: right;
+            }
+
+            span.date_monthyear {
+                display: block;
+                color: #c63629;
+                font-family: @fontCalibri;
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: right;
+            }
+
+            h2 {
+                font-size: 36px;
+                line-height: 42px;
+                font-family: "Soho Gothic W01 Light";
+                margin: 0;
+                color: #004e66;
+                color: @colorMediumBlue;
+
+                &.internal-link.arrow_right {
+                    margin: 0;
+                }
+            }
+
+            p {
+                margin: 3px 0 0 0;
+                color: #222;
+            }
+
+            &:hover {
+                h2 {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .conference {
+        background: white;
+        padding: 30px 0 10px 12px;
+        margin-top: 0;
+
+        .details {
             float: left;
             width: auto;
             min-width: 160px;
-            padding-right: 20px;
+            padding-right: 30px;
             font-weight: bold;
             display: block;
+
+            .date, .year, .time {
+                font-size: 20px;
+                font-family: @fontCalibri;
+                line-height: 27px;
+                display: block;
+                color: #c63629;
+                text-align: right;
+            }
+
+            .date {
+                font-size: 36px;
+                font-family: @fontSohoLight;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
         }
 
-        div.information {
+        .information {
             float: left;
             width: 75%;
-        }
 
-        span.date_number {
-            font-size: 36px;
-            display: block;
-            padding: 10px 0;
-            color: #c63629;
-            font-family: "Soho Gothic W01 Light";
-            text-align: right;
-        }
+            .information_header {
+                color: @colorMediumBlue;
+                font-size: 36px;
+                font-family: @fontSohoLight;
+                margin: 0 0 20px 0;
+            }
 
-        span.date_monthyear {
-            display: block;
-            color: #c63629;
-            font-family: @fontCalibri;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-align: right;
-        }
-
-        h2 {
-            font-size: 36px;
-            line-height: 42px;
-            font-family: "Soho Gothic W01 Light";
-            margin: 0;
-            color: #004e66;
-            color: @colorMediumBlue;
-
-            &.internal-link.arrow_right {
-                margin: 0;
+            .information_text {
             }
         }
 
-        p {
-            margin: 3px 0 0 0;
-            color: #222;
+        button {
+            margin-left: 15px;
         }
 
-        &:hover {
-            h2 {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.hContent.conference {
-    background: white;
-    padding: 30px 0 10px 12px;
-    margin-top: 0;
-
-    .details {
-        float: left;
-        width: auto;
-        min-width: 160px;
-        padding-right: 30px;
-        font-weight: bold;
-        display: block;
-
-        .date, .year, .time {
-            font-size: 20px;
-            font-family: @fontCalibri;
-            line-height: 27px;
-            display: block;
-            color: #c63629;
-            text-align: right;
-        }
-
-        .date {
-            font-size: 36px;
-            font-family: @fontSohoLight;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
+        img {
+            width: 170px;
+            vertical-align: middle;
+            margin-left: 105px;
         }
     }
 
-    .information {
-        float: left;
-        width: 75%;
-
-        .information_header {
-            color: @colorMediumBlue;
-            font-size: 36px;
-            font-family: @fontSohoLight;
-            margin: 0 0 20px 0;
-        }
-
-        .information_text {
-        }
+    .refinesearch {
+        margin-top: 20px;
     }
 
-    button {
-        margin-left: 15px;
+    .month {
+        font-family: 'Calibri';
+        line-height: 20px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #004e66;
+        margin-bottom: 0;
     }
-
-    img {
-        width: 170px;
-        vertical-align: middle;
-        margin-left: 105px;
-    }
-}
-
-.hContent.refinesearch {
-    margin-top: 20px;
-}
-
-.hContent.month {
-    font-family: 'Calibri';
-    line-height: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #004e66;
-    margin-bottom: 0;
 }
 
 @media only screen and (min-width:599px) {
-    .hContent.aside {
-        margin-top: 0;
+    .container {
+        .aside {
+            margin-top: 0;
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .hContent.conference {
-        .information {
-            float: none;
-
-            .information_header {
-                margin-top: 10px;
-            }
-        }
-
-        .details {
-            float: none;
-            width: 100%;
-
-            .date, .year, .time {
-                text-align: left;
-                display: inline-block;
-            }
-        }
-    }
-
-    .hContent.conference_transport {
-        margin: 10px 0 10px 0;
-        padding: 5px 0 20px 15px;
-        background: white;
-
-        a {
-            span.date_number, span.date_monthyear {
-                text-align: left;
-                display: inline-block;
-                font-size: 24px;
-                line-height: 27px;
-            }
-
-            span.date_monthyear {
-                margin-bottom: 20px;
-            }
-
-            div.date, div.information {
+    .container {
+        .conference {
+            .information {
                 float: none;
-                width: auto;
+
+                .information_header {
+                    margin-top: 10px;
+                }
             }
 
-            h2 {
-                font-size: 24px;
-                line-height: 27px;
+            .details {
+                float: none;
+                width: 100%;
+
+                .date, .year, .time {
+                    text-align: left;
+                    display: inline-block;
+                }
             }
         }
+
+        .conference_transport {
+            margin: 10px 0 10px 0;
+            padding: 5px 0 20px 15px;
+            background: white;
+
+            a {
+                span.date_number, span.date_monthyear {
+                    text-align: left;
+                    display: inline-block;
+                    font-size: 24px;
+                    line-height: 27px;
+                }
+
+                span.date_monthyear {
+                    margin-bottom: 20px;
+                }
+
+                div.date, div.information {
+                    float: none;
+                    width: auto;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+            .conference_transport a span.date_number,
+            .conference_transport a span.date_monthyear {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+
+            .conference_transport a div.information {
+                width: 100%;
+            }
+
+            .conference_transport a h2.internal-link.arrow_right {
+                margin-bottom: 10px;
+            }
     }
-
-        .hContent.conference_transport a span.date_number,
-        .hContent.conference_transport a span.date_monthyear {
-            font-size: 18px;
-            margin-bottom: 0;
-        }
-
-        .hContent.conference_transport a div.information {
-            width: 100%;
-        }
-
-        .hContent.conference_transport a h2.internal-link.arrow_right {
-            margin-bottom: 10px;
-        }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-    .hContent.conference_transport a div.information {
-        width: 65%;
-    }
-
-    .hContent.conference img {
-        margin: 0 auto;
-        display: block;
-    }
-
-    .hContent.conference_transport a {
-        span.date_number, span.date_monthyear {
-            text-align: left;
+    .container {
+        .conference_transport a div.information {
+            width: 65%;
         }
-    }
 
-        .hContent.conference_transport a div.date {
-            min-width: 150px;
+        .conference img {
+            margin: 0 auto;
+            display: block;
         }
+
+        .conference_transport a {
+            span.date_number, span.date_monthyear {
+                text-align: left;
+            }
+        }
+
+            .conference_transport a div.date {
+                min-width: 150px;
+            }
+    }
 }

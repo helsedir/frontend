@@ -1,16 +1,16 @@
-﻿#search_statistics {
+﻿.container #search_statistics {
   width: 100%;
 }
 @media only screen and (max-width: 599px) {
-  .transportside .border {
+  .container.transportside .border {
     margin-bottom: 15px;
   }
-  .transportside .transportsideknapp {
+  .container.transportside .transportsideknapp {
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 1px;
   }
-  .transportside .transportsideknapp h2 {
+  .container.transportside .transportsideknapp h2 {
     line-height: 35px;
     margin: 0 0 10px 0;
   }

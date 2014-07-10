@@ -167,55 +167,55 @@ footer.rammeverk a:visited {
   content: "\f077";
   font-family: "FontAwesome";
 }
-.hContent.organisasjonskart.has-visible-content,
-.hContent.divisjon.has-visible-content {
+.organisasjonskart.has-visible-content,
+.divisjon.has-visible-content {
   margin-bottom: 25px;
   padding: 0;
 }
-.hContent.organisasjonskart.has-visible-content > div,
-.hContent.divisjon.has-visible-content > div,
-.hContent.organisasjonskart.has-visible-content > h3,
-.hContent.divisjon.has-visible-content > h3 {
+.organisasjonskart.has-visible-content > div,
+.divisjon.has-visible-content > div,
+.organisasjonskart.has-visible-content > h3,
+.divisjon.has-visible-content > h3 {
   padding: 0 10px 5px 10px;
 }
-.hContent.organisasjonskart.has-visible-content > ul,
-.hContent.divisjon.has-visible-content > ul {
+.organisasjonskart.has-visible-content > ul,
+.divisjon.has-visible-content > ul {
   padding-left: 30px;
 }
-.hContent.organisasjonskart.has-visible-content h2,
-.hContent.divisjon.has-visible-content h2 {
+.organisasjonskart.has-visible-content h2,
+.divisjon.has-visible-content h2 {
   margin: 0;
   padding: 10px;
   border: 1px solid #222;
   background: #b2babc;
   cursor: pointer;
 }
-.hContent.organisasjonskart.has-visible-content h2:before,
-.hContent.divisjon.has-visible-content h2:before {
+.organisasjonskart.has-visible-content h2:before,
+.divisjon.has-visible-content h2:before {
   float: left;
   padding-right: 10px;
   content: "\f077";
   font-family: "FontAwesome";
 }
-.hContent.organisasjonskart.has-hidden-content,
-.hContent.divisjon.has-hidden-content {
+.organisasjonskart.has-hidden-content,
+.divisjon.has-hidden-content {
   margin-bottom: 25px;
   padding: 0;
   border: none;
 }
-.hContent.organisasjonskart.has-hidden-content h2,
-.hContent.divisjon.has-hidden-content h2,
-.hContent.organisasjonskart.has-hidden-content h3,
-.hContent.divisjon.has-hidden-content h3 {
+.organisasjonskart.has-hidden-content h2,
+.divisjon.has-hidden-content h2,
+.organisasjonskart.has-hidden-content h3,
+.divisjon.has-hidden-content h3 {
   margin: 0;
   padding: 10px;
   background: white;
   cursor: pointer;
 }
-.hContent.organisasjonskart.has-hidden-content h2:before,
-.hContent.divisjon.has-hidden-content h2:before,
-.hContent.organisasjonskart.has-hidden-content h3:before,
-.hContent.divisjon.has-hidden-content h3:before {
+.organisasjonskart.has-hidden-content h2:before,
+.divisjon.has-hidden-content h2:before,
+.organisasjonskart.has-hidden-content h3:before,
+.divisjon.has-hidden-content h3:before {
   float: left;
   padding-right: 10px;
   content: "\f078";

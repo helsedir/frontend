@@ -1,7 +1,7 @@
 ﻿.no-background {
   background: #f7f6f6;
 }
-.hContent.mainentrance {
+.mainentrance {
   background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -10,14 +10,14 @@
   background-size: cover;
   padding: 20px 0 40px 0;
 }
-.hContent.entrancebutton {
+.container .entrancebutton {
   width: 250px;
   height: 230px;
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
 }
-.hContent.entrancebutton.menu button {
+.container .entrancebutton.menu button {
   background: #838078;
   border: none;
   height: 230px;
@@ -27,24 +27,24 @@
   transition: all 0.5s;
   border-radius: 4px;
 }
-.hContent.entrancebutton.menu button h2 {
+.container .entrancebutton.menu button h2 {
   margin: auto;
   font-size: 28px;
   line-height: 35px;
   color: white;
 }
-.hContent.entrancebutton.menu button.js-expanded {
+.container .entrancebutton.menu button.js-expanded {
   background-color: #666460;
   color: white;
   outline: 0;
 }
-.hContent.entrancebutton.menu button:hover {
+.container .entrancebutton.menu button:hover {
   background: #666460;
 }
-.hContent.entrancebutton.menu button:focus {
+.container .entrancebutton.menu button:focus {
   background: #666460;
 }
-.hContent.entrancebutton a {
+.container .entrancebutton a {
   height: 100%;
   width: 100%;
   display: inline-block;
@@ -57,27 +57,27 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.hContent.entrancebutton a:hover {
+.container .entrancebutton a:hover {
   background: #02343f;
 }
-.hContent.entrancebutton a:hover h2,
-.hContent.entrancebutton a:hover p,
-.hContent.entrancebutton a:hover:focus,
-.hContent.entrancebutton a:hover h2:focus,
-.hContent.entrancebutton a:hover p:focus {
+.container .entrancebutton a:hover h2,
+.container .entrancebutton a:hover p,
+.container .entrancebutton a:hover:focus,
+.container .entrancebutton a:hover h2:focus,
+.container .entrancebutton a:hover p:focus {
   text-decoration: none;
   color: white;
 }
-.hContent.entrancebutton a h3 {
+.container .entrancebutton a h3 {
   margin: 80px 0 0 0;
   padding: 0;
   font-size: 28px;
   font-family: "Soho Gothic W01 Light";
 }
-.hContent.entrancebutton a h3 .fa-bars {
+.container .entrancebutton a h3 .fa-bars {
   margin-top: 20px;
 }
-.hContent.entrancebutton a h2 {
+.container .entrancebutton a h2 {
   font-size: 28px;
   line-height: 35px;
   margin: 80px 0 15px 12px;
@@ -85,76 +85,65 @@
   color: white;
   position: relative;
 }
-.hContent.entrancebutton a p {
+.container .entrancebutton a p {
   line-height: 23px;
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.hContent.entrancebutton a:focus {
+.container .entrancebutton a:focus {
   background: #02343f;
 }
-.hContent.entrancebutton a:focus h2,
-.hContent.entrancebutton a:focus p {
+.container .entrancebutton a:focus h2,
+.container .entrancebutton a:focus p {
   background: #02343f;
 }
-.hContent.entrancebutton:visited,
-.hContent.entrancebutton:hover {
+.container .entrancebutton:visited,
+.container .entrancebutton:hover {
   color: white;
 }
-.hContent.frontpagewrapper.grey {
-  background: #DEDDDB;
-}
-.hContent.frontpagewrapper.white {
-  background: white;
-}
-.hContent.frontpagewrapper_crisis {
-  background: #f4d01e;
-  padding: 1px 0;
-  margin-bottom: 30px;
-}
-.hContent.frontpage {
+.container.frontpage {
   padding-bottom: 50px;
 }
-.hContent.frontpage h2 {
+.container.frontpage h2 {
   margin: 50px 0 20px 0;
   width: 100%;
   border-bottom: 3px solid #004e66;
   padding-bottom: 15px;
 }
-.hContent.frontpage h2.noborder {
+.container.frontpage h2.noborder {
   border: none;
 }
-.hContent.frontpage a {
+.container.frontpage a {
   color: #004e66;
 }
-.hContent.frontpage a:hover h2 {
+.container.frontpage a:hover h2 {
   text-decoration: underline;
 }
-.hContent.frontpage a:hover h2.internal-link {
+.container.frontpage a:hover h2.internal-link {
   text-decoration: underline;
   border-bottom: 3px solid #004e66;
   padding-bottom: 4px;
 }
-.hContent.frontpage .internal-link {
+.container.frontpage .internal-link {
   text-decoration: none;
   color: #004e66;
   display: inline-block;
 }
-.hContent.frontpage .internal-link:visited {
+.container.frontpage .internal-link:visited {
   color: #0093a7;
 }
-.hContent.frontpage .internal-link h2,
-.hContent.frontpage .internal-link h3,
-.hContent.frontpage .internal-link h4,
-.hContent.frontpage .internal-link p {
+.container.frontpage .internal-link h2,
+.container.frontpage .internal-link h3,
+.container.frontpage .internal-link h4,
+.container.frontpage .internal-link p {
   display: inline;
 }
-.hContent.frontpage .internal-link.arrow_right {
+.container.frontpage .internal-link.arrow_right {
   margin: 15px 0;
   padding-bottom: 4px;
 }
-.hContent.frontpage .internal-link.arrow_right:after {
+.container.frontpage .internal-link.arrow_right:after {
   padding-left: 10px;
   content: "\f105";
   font-family: "FontAwesome";
@@ -163,58 +152,58 @@
   position: absolute;
   padding-top: 3px;
 }
-.hContent.frontpage .internal-link.inline,
-.hContent.frontpage .internal-link.inline:visited {
+.container.frontpage .internal-link.inline,
+.container.frontpage .internal-link.inline:visited {
   border-bottom: 1px solid #bababa;
 }
-.hContent.frontpage .internal-link.inline:hover,
-.hContent.frontpage .internal-link.inline:visited:hover {
+.container.frontpage .internal-link.inline:hover,
+.container.frontpage .internal-link.inline:visited:hover {
   border-bottom: 1px solid #bababa;
 }
-.hContent.frontpage .internal-link:hover {
+.container.frontpage .internal-link:hover {
   border-bottom: 1px solid #0093a7;
   text-decoration: none;
   padding-bottom: 3px;
 }
-.hContent.frontpage .internal-link:hover.arrow_right:after {
+.container.frontpage .internal-link:hover.arrow_right:after {
   text-decoration: none;
 }
-.hContent.frontpage .news {
+.container.frontpage .news {
   margin-bottom: 20px;
 }
-.hContent.frontpage .news p {
+.container.frontpage .news p {
   color: #222;
   font-size: 18px;
 }
-.hContent.frontpage .news a {
+.container.frontpage .news a {
   font-size: 26px;
 }
-.hContent.frontpage .news .internal-link.arrow_right {
+.container.frontpage .news .internal-link.arrow_right {
   margin-top: 0;
 }
-.hContent.frontpage p {
+.container.frontpage p {
   margin: 0;
 }
-.hContent.frontpage .conferenceitem {
+.container.frontpage .conferenceitem {
   margin-bottom: 20px;
 }
-.hContent.frontpage .conferenceitem table td:first-of-type {
+.container.frontpage .conferenceitem table td:first-of-type {
   width: 160px;
   vertical-align: middle;
   text-align: center;
 }
-.hContent.frontpage .conferenceitem p {
+.container.frontpage .conferenceitem p {
   padding: 0;
   line-height: 1em;
   font-size: 18px;
   margin-bottom: 10px;
   color: #222;
 }
-.hContent.frontpage .conferenceitem a {
+.container.frontpage .conferenceitem a {
   font-size: 26px;
   padding-left: 0;
 }
-.hContent.frontpage .conferenceitem .conference_date {
+.container.frontpage .conferenceitem .conference_date {
   font-size: 36px;
   color: #c63629;
   display: block;
@@ -223,7 +212,7 @@
   line-height: 42px;
   text-align: right;
 }
-.hContent.frontpage .conferenceitem .month {
+.container.frontpage .conferenceitem .month {
   margin-right: 28px;
   font-size: 18px;
   text-transform: uppercase;
@@ -232,46 +221,61 @@
   display: block;
   text-align: right;
 }
-.hContent.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
+.container.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
   margin-bottom: 9px;
 }
-.hContent.frontpage .statistics_image {
+.container.frontpage .statistics_image {
   margin-bottom: 20px;
 }
-.hContent.frontpage .ingress {
+.container.frontpage .ingress {
   border: none;
   margin-top: 23px;
 }
-.hContent.frontpage .ingress.nomargin {
+.container.frontpage .ingress.nomargin {
   margin: 0;
 }
-.hContent.frontpage .importantnews .ingress {
+.container.frontpage .importantnews .ingress {
   margin-bottom: 20px;
 }
-.hContent.frontpage .importantnews .bulletlist {
+.container.frontpage .importantnews .bulletlist {
   margin-bottom: 35px;
 }
-.hContent.frontpage .importantnews .text_and_image {
+.container.frontpage .importantnews .text_and_image {
   width: 49%;
   float: left;
 }
-.hContent.frontpage .importantnews .importantphoto {
+.container.frontpage .importantnews .importantphoto {
   margin: 28px 0 0 22px;
   width: 49%;
   float: left;
 }
-.hContent.frontpage.newsandconference {
+.container.frontpage.newsandconference {
   background: white;
 }
-.hContent.frontpage .chart_wrapper {
+.container.frontpage .chart_wrapper {
   margin: 40px 57px 0 57px;
   background: white;
   overflow: auto;
 }
-.hContent.frontpage #chart_div {
+.container.frontpage #chart_div {
   margin-bottom: 0;
 }
-.hContent.toppmeny .tabs .tab-links li.menu_search {
+.container .video-container {
+  padding-bottom: 40%;
+  margin: 40px 0 20px 0;
+}
+.frontpagewrapper.grey {
+  background: #DEDDDB;
+}
+.frontpagewrapper.white {
+  background: white;
+}
+.frontpagewrapper_crisis {
+  background: #f4d01e;
+  padding: 1px 0;
+  margin-bottom: 30px;
+}
+.container-fluid.toppmeny .tabs .tab-links li.menu_search {
   background: none;
 }
 #menu_search {
@@ -295,72 +299,68 @@
   /* Internet Explorer 10+ */
   font-size: 16px;
 }
-.hContent.video-container {
-  padding-bottom: 40%;
-  margin: 40px 0 20px 0;
-}
 @media only screen and (max-width: 599px) {
-  .hContent.entrancebutton {
+  .container .entrancebutton {
     width: 100%;
     height: 100%;
     margin: 7.5px 0 7.5px 0;
   }
-  .hContent.entrancebutton a h2 {
+  .container .entrancebutton a h2 {
     margin: 15px 0 0 12px;
     color: white;
   }
-  .hContent.entrancebutton a p {
+  .container .entrancebutton a p {
     margin: 0 0 15px 12px;
     color: white;
   }
-  .hContent.entrancebutton.menu button {
+  .container .entrancebutton.menu button {
     width: 100%;
     height: 93px;
     border-radius: 4px;
   }
-  .hContent.entrancebutton.menu h2 {
+  .container .entrancebutton.menu h2 {
     margin: 15px 0 15px 12px;
     text-align: center;
   }
-  .hContent.entrancebutton.menu h2 .fa-bars {
+  .container .entrancebutton.menu h2 .fa-bars {
     padding-left: 10px;
   }
-  .hContent.frontpage .chart_wrapper {
+  .container.frontpage .chart_wrapper {
     margin: 40px 0 0 0;
   }
-  .hContent.frontpage .conferenceitem .conference_date {
+  .container.frontpage .conferenceitem .conference_date {
     font-size: 28px;
     margin-right: 20px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
-  .hContent.entrancebutton {
+  .container .entrancebutton {
     margin: 30px 25px 0 0;
   }
 }
 @media only screen and (max-width: 899px) {
-  .hContent.border_grey {
+  .container .border_grey {
     padding-bottom: 30px;
     border-bottom: 1px solid #bababa;
   }
-  .hContent.frontpage .importantnews .text_and_image {
+  .container.frontpage .importantnews .text_and_image {
     width: 100%;
     float: none;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-  .hContent.frontpage .importantnews .text_and_image {
+  .frontpage .importantnews .text_and_image {
     width: 48%;
     float: left;
   }
-  .hContent.frontpage .importantnews .importantphoto {
+  .frontpage .importantnews .importantphoto {
     margin: 28px 0 0 22px;
     width: 48%;
     float: left;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .hContent.center {
+  .container .center {
     padding: 0 165px;
   }
 }

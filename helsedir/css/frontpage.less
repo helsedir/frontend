@@ -21,7 +21,7 @@
     background: #f7f6f6;
 }
 
-.hContent.mainentrance {
+.mainentrance {
     background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -31,111 +31,312 @@
     padding: 20px 0 40px 0;
 }
 
-.hContent.entrancebutton {
-    width: 250px;
-    height: 230px;
-    margin: 30px 30px 0 0;
-    float: left;
-    position: relative;
+.container {
+    .entrancebutton {
+        width: 250px;
+        height: 230px;
+        margin: 30px 30px 0 0;
+        float: left;
+        position: relative;
 
-    &.menu {
-        button {
-            background: #838078;
-            border: none;
-            height: 230px;
+        &.menu {
+            button {
+                background: #838078;
+                border: none;
+                height: 230px;
+                -moz-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                border-radius: 4px;
+
+                h2 {
+                    margin: auto;
+                    font-size: 28px;
+                    line-height: 35px;
+                    color: white;
+                }
+
+                &.js-expanded {
+                    background-color: #666460;
+                    color: white;
+                    outline: 0;
+                }
+
+                &:hover {
+                    background: #666460;
+                }
+
+                &:focus {
+                    background: #666460;
+                }
+            }
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            background: @colorDarkBlue;
             -moz-transition: all 0.5s;
             -o-transition: all 0.5s;
             -webkit-transition: all 0.5s;
             transition: all 0.5s;
-            border-radius: 4px;
-
-            h2 {
-                margin: auto;
-                font-size: 28px;
-                line-height: 35px;
-                color: white;
-            }
-
-            &.js-expanded {
-                background-color: #666460;
-                color: white;
-                outline: 0;
-            }
 
             &:hover {
-                background: #666460;
+                background: #02343f;
+
+                h2, p, &:focus, h2:focus, p:focus {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            h3 {
+                margin: 80px 0 0 0;
+                padding: 0;
+                font-size: 28px;
+                font-family: @fontSohoLight;
+
+                .fa-bars {
+                    margin-top: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 35px;
+                margin: 80px 0 15px 12px;
+                padding-bottom: 5px;
+                color: white;
+                position: relative;
+            }
+
+            p {
+                line-height: 23px;
+                position: relative;
+                margin-left: 12px;
+                margin-bottom: 15px;
             }
 
             &:focus {
-                background: #666460;
+                background: #02343f;
+
+                h2, p {
+                    background: #02343f;
+                }
             }
+        }
+
+        &:visited, &:hover {
+            color: white;
         }
     }
 
-    a {
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        background: @colorDarkBlue;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-
-        &:hover {
-            background: #02343f;
-
-            h2, p, &:focus, h2:focus, p:focus {
-                text-decoration: none;
-                color: white;
-            }
-        }
-
-        h3 {
-            margin: 80px 0 0 0;
-            padding: 0;
-            font-size: 28px;
-            font-family: @fontSohoLight;
-
-            .fa-bars {
-                margin-top: 20px;
-            }
-        }
+    &.frontpage {
+        padding-bottom: 50px;
 
         h2 {
-            font-size: 28px;
-            line-height: 35px;
-            margin: 80px 0 15px 12px;
-            padding-bottom: 5px;
-            color: white;
-            position: relative;
+            margin: 50px 0 20px 0;
+            width: 100%;
+            border-bottom: 3px solid @colorDarkBlue;
+            padding-bottom: 15px;
+
+            &.noborder {
+                border: none;
+            }
+        }
+
+        a {
+            color: @colorDarkBlue;
+
+            &:hover h2 {
+                text-decoration: underline;
+            }
+
+                &:hover h2.internal-link {
+                    text-decoration: underline;
+                    border-bottom: 3px solid #004e66;
+                    padding-bottom: 4px;
+                }
+        }
+
+        .internal-link {
+            text-decoration: none;
+            color: @colorDarkBlue;
+            display: inline-block;
+
+            &:visited {
+                color: @colorMediumBlue;
+            }
+
+            h2, h3, h4, p {
+                display: inline;
+            }
+
+            &.arrow_right {
+                margin: 15px 0;
+                padding-bottom: 4px;
+            }
+
+                &.arrow_right:after {
+                    padding-left: 10px;
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    font-size: inherit;
+                    text-decoration: none;
+                    position: absolute;
+                    padding-top: 3px;
+                }
+
+            &.inline, &.inline:visited {
+                border-bottom: 1px solid #bababa;
+
+                &:hover {
+                    border-bottom: 1px solid #bababa;
+                }
+            }
+
+            &:hover {
+                border-bottom: 1px solid @colorMediumBlue;
+                text-decoration: none;
+                padding-bottom: 3px;
+
+                &.arrow_right:after {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .news {
+            margin-bottom: 20px;
+
+            p {
+                color: #222;
+                font-size: 18px;
+            }
+
+            a {
+                font-size: 26px;
+            }
+
+            .internal-link.arrow_right {
+                margin-top: 0;
+            }
         }
 
         p {
-            line-height: 23px;
-            position: relative;
-            margin-left: 12px;
-            margin-bottom: 15px;
+            margin: 0;
         }
 
-        &:focus {
-            background: #02343f;
-
-            h2, p {
-                background: #02343f;
+        .conferenceitem {
+            table td:first-of-type {
+                width: 160px;
+                vertical-align: middle;
+                text-align: center;
             }
+
+            margin-bottom: 20px;
+
+            p {
+                padding: 0;
+                line-height: 1em;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #222;
+            }
+
+            a {
+                font-size: 26px;
+                padding-left: 0;
+            }
+
+            .conference_date {
+                font-size: 36px;
+                color: @colorRed;
+                display: block;
+                font-family: @fontSohoLight;
+                margin-right: 28px;
+                line-height: 42px;
+                text-align: right;
+            }
+
+            .month {
+                margin-right: 28px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-family: @fontCalibri;
+                color: @colorRed;
+                display: block;
+                text-align: right;
+            }
+
+            .conference_info {
+                .internal-link.arrow_right {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+
+        .statistics_image {
+            margin-bottom: 20px;
+        }
+
+        .ingress {
+            border: none;
+            margin-top: 23px;
+
+            &.nomargin {
+                margin: 0;
+            }
+        }
+
+        .importantnews {
+            .ingress {
+                margin-bottom: 20px;
+            }
+
+            .bulletlist {
+                margin-bottom: 35px;
+            }
+
+            .text_and_image {
+                width: 49%;
+                float: left;
+            }
+
+            .importantphoto {
+                margin: 28px 0 0 22px;
+                width: 49%;
+                float: left;
+            }
+        }
+
+        &.newsandconference {
+            background: white;
+        }
+
+        .chart_wrapper {
+            margin: 40px 57px 0 57px;
+            background: white;
+            overflow: auto;
+        }
+
+        #chart_div {
+            margin-bottom: 0;
         }
     }
 
-    &:visited, &:hover {
-        color: white;
+    .video-container {
+        padding-bottom: 40%;
+        margin: 40px 0 20px 0;
     }
 }
 
-.hContent.frontpagewrapper {
+.frontpagewrapper {
     &.grey {
         background: #DEDDDB;
     }
@@ -145,207 +346,13 @@
     }
 }
 
-.hContent.frontpagewrapper_crisis {
+.frontpagewrapper_crisis {
     background: @colorYellow;
     padding: 1px 0;
     margin-bottom: 30px;
 }
 
-.hContent.frontpage {
-    padding-bottom: 50px;
-
-    h2 {
-        margin: 50px 0 20px 0;
-        width: 100%;
-        border-bottom: 3px solid @colorDarkBlue;
-        padding-bottom: 15px;
-
-        &.noborder {
-            border: none;
-        }
-    }
-
-    a {
-        color: @colorDarkBlue;
-
-        &:hover h2 {
-            text-decoration: underline;
-        }
-
-            &:hover h2.internal-link {
-                text-decoration: underline;
-                border-bottom: 3px solid #004e66;
-                padding-bottom: 4px;
-            }
-    }
-
-    .internal-link {
-        text-decoration: none;
-        color: @colorDarkBlue;
-        display: inline-block;
-
-        &:visited {
-            color: @colorMediumBlue;
-        }
-
-        h2, h3, h4, p {
-            display: inline;
-        }
-
-        &.arrow_right {
-            margin: 15px 0;
-            padding-bottom: 4px;
-        }
-
-            &.arrow_right:after {
-                padding-left: 10px;
-                content: "\f105";
-                font-family: "FontAwesome";
-                font-size: inherit;
-                text-decoration: none;
-                position: absolute;
-                padding-top: 3px;
-            }
-
-        &.inline, &.inline:visited {
-            border-bottom: 1px solid #bababa;
-
-            &:hover {
-                border-bottom: 1px solid #bababa;
-            }
-        }
-
-        &:hover {
-            border-bottom: 1px solid @colorMediumBlue;
-            text-decoration: none;
-            padding-bottom: 3px;
-
-            &.arrow_right:after {
-                text-decoration: none;
-            }
-        }
-    }
-
-    .news {
-        margin-bottom: 20px;
-
-        p {
-            color: #222;
-            font-size: 18px;
-        }
-
-        a {
-            font-size: 26px;
-        }
-
-        .internal-link.arrow_right {
-            margin-top: 0;
-        }
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .conferenceitem {
-        table td:first-of-type {
-            width: 160px;
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        margin-bottom: 20px;
-
-        p {
-            padding: 0;
-            line-height: 1em;
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        a {
-            font-size: 26px;
-            padding-left: 0;
-        }
-
-        .conference_date {
-            font-size: 36px;
-            color: @colorRed;
-            display: block;
-            font-family: @fontSohoLight;
-            margin-right: 28px;
-            line-height: 42px;
-            text-align: right;
-        }
-
-        .month {
-            margin-right: 28px;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-family: @fontCalibri;
-            color: @colorRed;
-            display: block;
-            text-align: right;
-        }
-
-        .conference_info {
-            .internal-link.arrow_right {
-                margin-bottom: 9px;
-            }
-        }
-    }
-
-    .statistics_image {
-        margin-bottom: 20px;
-    }
-
-    .ingress {
-        border: none;
-        margin-top: 23px;
-
-        &.nomargin {
-            margin: 0;
-        }
-    }
-
-    .importantnews {
-        .ingress {
-            margin-bottom: 20px;
-        }
-
-        .bulletlist {
-            margin-bottom: 35px;
-        }
-
-        .text_and_image {
-            width: 49%;
-            float: left;
-        }
-
-        .importantphoto {
-            margin: 28px 0 0 22px;
-            width: 49%;
-            float: left;
-        }
-    }
-
-    &.newsandconference {
-        background: white;
-    }
-
-    .chart_wrapper {
-        margin: 40px 57px 0 57px;
-        background: white;
-        overflow: auto;
-    }
-
-    #chart_div {
-        margin-bottom: 0;
-    }
-}
-
-.hContent.toppmeny .tabs .tab-links li.menu_search {
+.container-fluid.toppmeny .tabs .tab-links li.menu_search {
     background: none;
 }
 
@@ -371,79 +378,80 @@
     }
 }
 
-.hContent.video-container {
-    padding-bottom: 40%;
-    margin: 40px 0 20px 0;
-}
-
 @media only screen and (max-width: 599px) {
-    .hContent.entrancebutton {
-        width: 100%;
-        height: 100%;
-        margin: 7.5px 0 7.5px 0;
+    .container {
+        .entrancebutton {
+            width: 100%;
+            height: 100%;
+            margin: 7.5px 0 7.5px 0;
 
-        a {
-            h2 {
-                margin: 15px 0 0 12px;
-                color: white;
+            a {
+                h2 {
+                    margin: 15px 0 0 12px;
+                    color: white;
+                }
+
+                p {
+                    margin: 0 0 15px 12px;
+                    color: white;
+                }
             }
 
-            p {
-                margin: 0 0 15px 12px;
-                color: white;
-            }
-        }
+            &.menu {
+                button {
+                    width: 100%;
+                    height: 93px;
+                    border-radius: 4px;
+                }
 
-        &.menu {
-            button {
-                width: 100%;
-                height: 93px;
-                border-radius: 4px;
-            }
+                h2 {
+                    margin: 15px 0 15px 12px;
+                    text-align: center;
 
-            h2 {
-                margin: 15px 0 15px 12px;
-                text-align: center;
-
-                .fa-bars {
-                    padding-left: 10px;
+                    .fa-bars {
+                        padding-left: 10px;
+                    }
                 }
             }
         }
-    }
 
-    .hContent.frontpage .chart_wrapper {
-        margin: 40px 0 0 0;
-    }
+        &.frontpage .chart_wrapper {
+            margin: 40px 0 0 0;
+        }
 
-    .hContent.frontpage .conferenceitem .conference_date {
-        font-size: 28px;
-        margin-right: 20px;
+        &.frontpage .conferenceitem .conference_date {
+            font-size: 28px;
+            margin-right: 20px;
+        }
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
-    .hContent.entrancebutton {
-        margin: 30px 25px 0 0;
+    .container {
+        .entrancebutton {
+            margin: 30px 25px 0 0;
+        }
     }
 }
 
 @media only screen and (max-width: 899px) {
-    .hContent.border_grey {
-        padding-bottom: 30px;
-        border-bottom: 1px solid @colorMediumGray;
-    }
+    .container {
+        .border_grey {
+            padding-bottom: 30px;
+            border-bottom: 1px solid @colorMediumGray;
+        }
 
-    .hContent.frontpage .importantnews {
-        .text_and_image {
-            width: 100%;
-            float: none;
+        &.frontpage .importantnews {
+            .text_and_image {
+                width: 100%;
+                float: none;
+            }
         }
     }
 }
 
 @media only screen and (min-width:900px) and (max-width: 1199px) {
-    .hContent.frontpage .importantnews {
+    &.frontpage .importantnews {
         .text_and_image {
             width: 48%;
             float: left;
@@ -458,7 +466,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .hContent.center {
-        padding: 0 165px;
+    .container {
+        .center {
+            padding: 0 165px;
+        }
     }
 }

@@ -1,33 +1,33 @@
-﻿.hContent.hoeringer {
+﻿.container .hoeringer {
   padding-bottom: 15px;
   margin-top: 30px;
   border-bottom: 1px solid gray;
 }
-.hContent.hoeringer p {
+.container .hoeringer p {
   display: inline;
   margin-right: 30px;
 }
-.hContent.hoeringer a {
+.container .hoeringer a {
   display: block;
 }
-.hContent.aside.alignwithheader {
+.container .aside.alignwithheader {
   margin-top: 113px;
 }
-.hContent.hoering_information {
+.container .hoering_information {
   margin: 50px 10px 0 0;
 }
-.hContent.hoering_information dt {
+.container .hoering_information dt {
   width: auto;
   min-width: 250px;
   padding-right: 10px;
   float: left;
   font-weight: bold;
 }
-.hContent.hoering_information dd {
+.container .hoering_information dd {
   width: 60%;
   float: left;
 }
-.hContent.refinesearch {
+.container .refinesearch {
   margin-top: 20px;
 }
 /*# sourceMappingURL=hoeringer.css.map */

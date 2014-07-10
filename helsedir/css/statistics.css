@@ -1,93 +1,93 @@
-﻿.hContent.dropdown-statistikk select {
+﻿.container .dropdown-statistikk select {
   width: 40%;
 }
-.hContent.dropdown-statistikk button {
+.container .dropdown-statistikk button {
   background: #df9922;
   border: 0;
 }
-.hContent.radiobuttons label {
+.container .radiobuttons label {
   display: block;
 }
-.hContent.statistics_compare {
+.container .statistics_compare {
   padding: 5px 0 10px 10px;
 }
-.hContent.statistics_compare p {
+.container .statistics_compare p {
   margin: 0;
 }
-.hContent.statistics_compare select {
+.container .statistics_compare select {
   display: block;
   margin-bottom: 20px;
   width: 100%;
 }
-.hContent.statistics_compare label {
+.container .statistics_compare label {
   display: inline-block;
 }
-.hContent.statistics_compare label input {
+.container .statistics_compare label input {
   margin-right: 5px;
 }
-.hContent.statistics_compare button {
+.container .statistics_compare button {
   background: white;
   border: 1px solid #bababa;
 }
-.hContent.statistics_compare a {
+.container .statistics_compare a {
   display: block;
 }
-.hContent.statistics_compare label,
-.hContent.statistics_compare a {
+.container .statistics_compare label,
+.container .statistics_compare a {
   padding-left: 15px;
 }
-#compare_hiddenfields {
+.container #compare_hiddenfields {
   display: none;
 }
-.hContent.statistics h2 {
+.container .statistics h2 {
   text-align: center;
 }
-.hContent.statistics .fa-chevron-down {
+.container .statistics .fa-chevron-down {
   float: none;
   padding: 0;
 }
-.hContent.statistics_about h4 {
+.container .statistics_about h4 {
   margin: 50px 0 10px 0;
 }
-.hContent.statistics_about p {
+.container .statistics_about p {
   margin: 0;
 }
-#statistikktab1,
-#statistikktab2,
-#statistikktab3 {
+.container #statistikktab1,
+.container #statistikktab2,
+.container #statistikktab3 {
   margin-top: 20px;
 }
-.hContent.statistics_chart {
+.container .statistics_chart {
   margin: 40px 0 0 0;
   background: white;
   overflow: auto;
 }
-.hContent.statistics_chart #chart_div {
+.container .statistics_chart #chart_div {
   height: 400px;
   width: 100%;
   display: inline-block;
 }
-.hContent.statistics_table {
+.container .statistics_table {
   margin-top: 50px;
   display: inline-block;
   width: 100%;
 }
-.hContent.table_general {
+.container .table_general {
   width: 100%;
   margin-bottom: 0;
 }
-.hContent.statistics_description {
+.container .statistics_description {
   margin: 40px 0;
 }
-.hContent.statistics_reports h2 {
+.container .statistics_reports h2 {
   margin-bottom: 10px;
 }
-#chart_div_legend {
+.container #chart_div_legend {
   margin-left: 37px;
   list-style: none;
   font-size: 16px;
 }
-.hContent.legendMarker {
+.container .legendMarker {
   height: 1em;
   width: 1em;
   display: inline-block;
