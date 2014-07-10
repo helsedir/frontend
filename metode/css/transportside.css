@@ -1,51 +1,116 @@
 ﻿.search {
-  height: 39px;
-  /*max-width: 220px;*/
-  width: 86%;
-  padding: 0 37px 0 5px;
-  border-radius: 3px;
-  border: 1px solid #004e66;
-  vertical-align: middle;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
+  border: none;
+  border-bottom: 1px solid #aeaba8;
+  background-image: url('../img/ikoner/soek_ikon_graa.svg');
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
   -moz-background-size: auto 68%;
   -o-background-size: auto 68%;
   -webkit-background-size: auto 68%;
   background-size: auto 68%;
-  background-color: #ffffff;
   background-position: 97% 50%;
-  background-position-x: 97%;
+  background-position-x: 99%;
   background-position-y: 50%;
   cursor: pointer;
+  color: #222;
+  padding-right: 27px;
+  padding-left: 0;
+  margin-top: 50px;
+  width: 50%;
 }
-.transportsideknapp .status_infomration {
+.search::-webkit-input-placeholder {
+  color: #222;
+  text-align: left;
+}
+.search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #222;
+  text-align: left;
+}
+.search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #222;
+  text-align: left;
+}
+.search:-ms-input-placeholder {
+  color: #222;
+  text-align: left;
+}
+.resultnumber {
+  color: #838078;
+  text-transform: uppercase;
+}
+.transportsideknapp {
+  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 93%;
+  margin-top: 50px;
+  max-width: 685px;
+}
+.transportsideknapp a,
+.transportsideknapp a:visited {
+  display: inline-block;
+  padding: 20px 30px 30px 30px;
+}
+.transportsideknapp a .status_infomration,
+.transportsideknapp a:visited .status_infomration {
   float: left;
-  width: 500px;
+  width: 395px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp .status_infomration .status_received {
+.transportsideknapp a .status_infomration .status_received,
+.transportsideknapp a:visited .status_infomration .status_received {
   margin-right: 30px;
 }
-.transportsideknapp .status {
+.transportsideknapp a .status,
+.transportsideknapp a:visited .status {
   float: left;
   padding: 20px;
   width: 200px;
   margin-top: 30px;
+  font-family: "Soho Gothic W01 Light";
+  font-size: 20px;
+  color: #222;
 }
-.transportsideknapp .status.preparation {
-  border: 2px solid purple;
+.transportsideknapp a .status.preparation,
+.transportsideknapp a:visited .status.preparation {
+  border-right: 4px solid purple;
 }
-.transportsideknapp .status.evaluation {
-  border: 2px solid green;
+.transportsideknapp a .status.evaluation,
+.transportsideknapp a:visited .status.evaluation {
+  border-right: 4px solid green;
 }
-.transportsideknapp .status.decided {
-  border: 2px solid orange;
+.transportsideknapp a .status.decided,
+.transportsideknapp a:visited .status.decided {
+  border-right: 4px solid orange;
 }
-.transportsideknapp .status.cancelled {
-  border: 2px solid red;
+.transportsideknapp a .status.cancelled,
+.transportsideknapp a:visited .status.cancelled {
+  border-right: 4px solid red;
 }
-.transportsideknapp a h2 {
-  margin-top: 50px;
+.transportsideknapp a h2,
+.transportsideknapp a:visited h2 {
+  margin: 0 0 20px 0;
+  color: #c63629;
+  border-bottom: 3px dotted #c63629;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.transportsideknapp a h2:hover,
+.transportsideknapp a:visited h2:hover {
+  text-decoration: none;
+}
+.transportsideknapp a p,
+.transportsideknapp a:visited p {
+  color: #838078;
+}
+.transportsideknapp a:hover,
+.transportsideknapp a:visited:hover {
+  text-decoration: none;
+}
+.transportsideknapp a:hover h2,
+.transportsideknapp a:visited:hover h2 {
+  text-decoration: none;
 }
 .borderbox {
   padding: 10px;
@@ -53,8 +118,5 @@
 }
 #footer {
   padding-top: 250px;
-}
-.external-link {
-  display: inline;
 }
 /*# sourceMappingURL=transportside.css.map */

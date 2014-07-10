@@ -161,8 +161,12 @@ h2 {
 
 .method_entrance {
     float: left;
-    margin: 50px 15px 50px 15px;
+    margin: 50px 57px 50px 15px;
     cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 170px;
 
     &:first-of-type {
         margin-left: 0;
@@ -178,6 +182,7 @@ h2 {
         font-size: 24px;
         font-family: @fontSohoLight;
         color: #222;
+        border-bottom: 3px dotted #222;
     }
 
     .drop_wrapper {
@@ -336,8 +341,7 @@ h2 {
 
     .heading_wrapper {
         margin-bottom: 30px;
-        display: table-cell;
-        border-bottom: 3px dotted #222;
+        display: inline-block;
     }
 }
 
@@ -361,6 +365,7 @@ h2 {
 
     .date_status {
         padding-left: 35px;
+        line-height: 20px;
     }
 
     .ingress {
@@ -373,6 +378,7 @@ h2 {
     h4 {
         margin-top: 25px;
         font-size: 24px;
+        line-height: 29px;
         font-family: @fontSohoLight;
         color: #838078;
         background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;

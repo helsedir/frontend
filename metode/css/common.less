@@ -171,7 +171,7 @@ a {
         li:after {
             font-family: "FontAwesome";
             content: '\f104';
-            color: @colorDarkBlue;
+            color: @colorMediumBlue;
             font-size: 25px;
             margin: 0 5px 0 5px;
             vertical-align: middle;
@@ -186,10 +186,11 @@ a {
         font-family: @fontCalibri;
         font-size: 18px;
         line-height: 22px;
+        color: @colorMediumBlue;
     }
 
         a:visited {
-            color: @colorDarkBlue;
+            color: @colorMediumBlue;
         }
 }
 
@@ -600,22 +601,29 @@ iframe {
     margin-bottom: 23px;
 }
 
-.external-link {
-    background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-    background-size: 16px 16px;
-    padding-right: 22px;
-    text-decoration: none;
-    margin: 15px 0;
-    display: inline-block;
+.external-link, a.external-link {
+    color: #838078;
+    font-family: 'Calibri';
+    font-size: 20px;
+    background: url(../img/ekstern_lenke_mellomblaa.svg) no-repeat;
+    background-size: 10px;
+    background-position: 0px 7px;
+    padding-left: 15px;
+    margin-top: 18px;
+    display: block;
+    cursor: pointer;
 
-    &.inline, .inline:visited {
-        text-decoration: underline;
-        margin: 0;
+    &:hover {
+        text-decoration: none;
+        color: #838078;
     }
 
     &:visited {
-        background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-        background-size: 16px 16px;
+        color: #838078;
+    }
+
+    &.last {
+        margin-top: 20px;
     }
 }
 
@@ -657,9 +665,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 0 0 30px 0;
-    padding: 30px 30px 30px 30px;
-    background: white;
+    margin: 0 0 50px 0;
     position: relative;
 
     &.maincolumn {
@@ -681,10 +687,10 @@ p.keyfigures, h4.keyfigures {
     }
 
     .module_header {
-        font-family: @fontSohoRegular;
+        font-family: @fontSohoLight;
         font-size: 24px;
         line-height: 30px;
-        color: #222;
+        color: #838078;
 
         .internal-link.arrow_right {
             margin-bottom: 5px;
@@ -715,8 +721,6 @@ p.keyfigures, h4.keyfigures {
     }
 
     &.module_related {
-        border-left: 2px solid @colorGreen;
-
         .bulletlist {
             margin-top: 10px;
 
@@ -781,10 +785,6 @@ p.keyfigures, h4.keyfigures {
 
     &.module_statistics_graph {
         max-width: 300px;
-    }
-
-    .external-link {
-        margin-top: 0;
     }
 
     &.module_subscribe {
@@ -1039,25 +1039,29 @@ fieldset {
 .dropdown {
     label {
         display: block;
-        margin-bottom: 5px;
+        font-size: 18px;
+        font-family: @fontCalibri;
+        color: #838078;
     }
 
     select {
         width: 100%;
-        border: 1px solid @colorDarkBlue;
+        border: none;
+        border-bottom: 1px solid #838078;
         font-family: @fontCalibri;
         font-size: 20px;
-        padding: 5px 38px 4px 10px;
+        padding: 0 38px 4px 0;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
-        background: white url('../img/knapp_nedtrekksmeny.svg') no-repeat; /*Adds background-image*/
-        background-position: 100%; /*Position of the background-image*/
+        background: url('../img/pil_nedover_graa.svg') no-repeat; /*Adds background-image*/
+        background-position: 96%; /*Position of the background-image*/
+        background-size: 20px;
         text-indent: 0.01px; /* Removes default arrow from firefox*/
         text-overflow: ""; /*Removes default arrow from firefox*/
         color: #222;
 
-        &:hover, &:focus, &:active {
-            background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.svg') no-repeat;
+        &:focus, &:active {
+            background: #838078 url('../img/pil_nedover_hvit.svg') no-repeat;
             background-position: 96%;
             -moz-background-size: 20px;
             -o-background-size: 20px;
@@ -1069,13 +1073,15 @@ fieldset {
 }
 
 .refinesearch {
+    margin-bottom: 45px;
+
     h2, h5 {
-        border-bottom: 2px solid @colorDarkBlue;
-        margin-bottom: 17px;
+        margin-bottom: 5px;
         padding-bottom: 15px;
         font-family: @fontSohoRegular;
-        font-size: 28px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 28px;
+        color: #838078;
     }
 
     select {
@@ -1204,53 +1210,6 @@ fieldset {
 
     figcaption {
         font-size: 18px;
-    }
-}
-
-.transportsideknapp {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: #222;
-        text-decoration: none;
-
-        h2 {
-            color: @colorMediumBlue;
-            margin: 35px 0 0 0;
-
-            &:after {
-                padding-left: 10px;
-                content: "\f105";
-                font-family: "FontAwesome";
-                font-size: inherit;
-                text-decoration: none;
-            }
-        }
-
-        &:visited {
-            text-decoration: none;
-
-            h2 {
-                color: @colorMediumBlue;
-            }
-
-            color: #222;
-        }
-
-        &:hover {
-            h2 {
-                text-decoration: underline;
-                color: @colorMediumBlue;
-            }
-
-            text-decoration: none;
-            color: #222;
-        }
-    }
-
-    p {
-        margin: 0;
     }
 }
 

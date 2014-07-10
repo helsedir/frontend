@@ -123,8 +123,12 @@
 }
 .method_entrance {
   float: left;
-  margin: 50px 15px 50px 15px;
+  margin: 50px 57px 50px 15px;
   cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 170px;
 }
 .method_entrance:first-of-type {
   margin-left: 0;
@@ -138,6 +142,7 @@
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   color: #222;
+  border-bottom: 3px dotted #222;
 }
 .method_entrance .drop_wrapper {
   display: inline-block;
@@ -244,8 +249,7 @@
 }
 .method_entrance .heading_wrapper {
   margin-bottom: 30px;
-  display: table-cell;
-  border-bottom: 3px dotted #222;
+  display: inline-block;
 }
 .mainentrance {
   margin: 50px 0;
@@ -264,6 +268,7 @@
 }
 .news .date_status {
   padding-left: 35px;
+  line-height: 20px;
 }
 .news .ingress {
   margin: 10px 0;
@@ -274,6 +279,7 @@
 .news h4 {
   margin-top: 25px;
   font-size: 24px;
+  line-height: 29px;
   font-family: "Soho Gothic W01 Light";
   color: #838078;
   background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;

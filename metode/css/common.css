@@ -142,7 +142,7 @@ a.underline {
 .breadcrumbs li:after {
   font-family: "FontAwesome";
   content: '\f104';
-  color: #004e66;
+  color: #0093a7;
   font-size: 25px;
   margin: 0 5px 0 5px;
   vertical-align: middle;
@@ -155,9 +155,10 @@ a.underline {
   font-family: 'Calibri';
   font-size: 18px;
   line-height: 22px;
+  color: #0093a7;
 }
 .breadcrumbs a:visited {
-  color: #004e66;
+  color: #0093a7;
 }
 .has-hidden-content {
   cursor: pointer;
@@ -512,22 +513,31 @@ figure .metatext {
 iframe {
   margin-bottom: 23px;
 }
-.external-link {
-  background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-  background-size: 16px 16px;
-  padding-right: 22px;
+.external-link,
+a.external-link {
+  color: #838078;
+  font-family: 'Calibri';
+  font-size: 20px;
+  background: url(../img/ekstern_lenke_mellomblaa.svg) no-repeat;
+  background-size: 10px;
+  background-position: 0px 7px;
+  padding-left: 15px;
+  margin-top: 18px;
+  display: block;
+  cursor: pointer;
+}
+.external-link:hover,
+a.external-link:hover {
   text-decoration: none;
-  margin: 15px 0;
-  display: inline-block;
+  color: #838078;
 }
-.external-link.inline,
-.external-link .inline:visited {
-  text-decoration: underline;
-  margin: 0;
+.external-link:visited,
+a.external-link:visited {
+  color: #838078;
 }
-.external-link:visited {
-  background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-  background-size: 16px 16px;
+.external-link.last,
+a.external-link.last {
+  margin-top: 20px;
 }
 .internal-link {
   color: #838078;
@@ -563,9 +573,7 @@ h4.keyfigures {
 }
 .module {
   display: inline-block;
-  margin: 0 0 30px 0;
-  padding: 30px 30px 30px 30px;
-  background: white;
+  margin: 0 0 50px 0;
   position: relative;
 }
 .module.maincolumn {
@@ -584,10 +592,10 @@ h4.keyfigures {
   color: #0093a7;
 }
 .module .module_header {
-  font-family: "Soho Gothic W01 Regular";
+  font-family: "Soho Gothic W01 Light";
   font-size: 24px;
   line-height: 30px;
-  color: #222;
+  color: #838078;
 }
 .module .module_header .internal-link.arrow_right {
   margin-bottom: 5px;
@@ -611,9 +619,6 @@ h4.keyfigures {
   top: 0;
   margin-left: -19px;
   height: 100px;
-}
-.module.module_related {
-  border-left: 2px solid #a1bf37;
 }
 .module.module_related .bulletlist {
   margin-top: 10px;
@@ -669,9 +674,6 @@ h4.keyfigures {
 }
 .module.module_statistics_graph {
   max-width: 300px;
-}
-.module .external-link {
-  margin-top: 0;
 }
 .module.module_subscribe {
   margin: 40px 0 0 0;
@@ -881,32 +883,35 @@ fieldset {
 }
 .dropdown label {
   display: block;
-  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: 'Calibri';
+  color: #838078;
 }
 .dropdown select {
   width: 100%;
-  border: 1px solid #004e66;
+  border: none;
+  border-bottom: 1px solid #838078;
   font-family: 'Calibri';
   font-size: 20px;
-  padding: 5px 38px 4px 10px;
+  padding: 0 38px 4px 0;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/knapp_nedtrekksmeny.svg') no-repeat;
+  background: url('../img/pil_nedover_graa.svg') no-repeat;
   /*Adds background-image*/
-  background-position: 100%;
+  background-position: 96%;
   /*Position of the background-image*/
+  background-size: 20px;
   text-indent: 0.01px;
   /* Removes default arrow from firefox*/
   text-overflow: "";
   /*Removes default arrow from firefox*/
   color: #222;
 }
-.dropdown select:hover,
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.svg') no-repeat;
+  background: #838078 url('../img/pil_nedover_hvit.svg') no-repeat;
   background-position: 96%;
   -moz-background-size: 20px;
   -o-background-size: 20px;
@@ -915,16 +920,17 @@ fieldset {
   color: white;
 }
 .refinesearch {
+  margin-bottom: 45px;
   width: 300px;
 }
 .refinesearch h2,
 .refinesearch h5 {
-  border-bottom: 2px solid #004e66;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
   padding-bottom: 15px;
   font-family: "Soho Gothic W01 Regular";
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #838078;
 }
 .refinesearch select {
   margin-bottom: 20px;
@@ -1029,42 +1035,6 @@ fieldset {
 }
 .image_intext figcaption {
   font-size: 18px;
-}
-.transportsideknapp a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #222;
-  text-decoration: none;
-}
-.transportsideknapp a h2 {
-  color: #0093a7;
-  margin: 35px 0 0 0;
-}
-.transportsideknapp a h2:after {
-  padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
-  font-size: inherit;
-  text-decoration: none;
-}
-.transportsideknapp a:visited {
-  text-decoration: none;
-  color: #222;
-}
-.transportsideknapp a:visited h2 {
-  color: #0093a7;
-}
-.transportsideknapp a:hover {
-  text-decoration: none;
-  color: #222;
-}
-.transportsideknapp a:hover h2 {
-  text-decoration: underline;
-  color: #0093a7;
-}
-.transportsideknapp p {
-  margin: 0;
 }
 .no-padding {
   padding: 0;
