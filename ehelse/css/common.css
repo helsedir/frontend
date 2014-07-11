@@ -21,24 +21,20 @@ body {
   font-family: 'Calibri';
   line-height: 27px;
   color: #222;
+  background: url('../img/aside_dekorasjon.png');
   background-color: #f7f6f6;
-  background-position: 100% 20%;
-  background-position-x: 100%;
-  background-position-y: 20%;
-  -webkit-background-size: 40% auto;
-  -moz-background-size: 40% auto;
-  -o-background-size: 40% auto;
-  background-size: 40% auto;
+  background-position: 79% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 h1 {
   font-weight: normal;
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Soho Gothic W01 Light";
-  line-height: 60px;
+  line-height: 44px;
   margin: 50px 0 0 0;
-  color: #004e66;
+  color: #838078;
+  padding: 0 0 8px 0;
 }
 .ingress {
   margin: 20px 0 20px 0;
@@ -47,11 +43,11 @@ h1 {
   font-family: 'Calibri';
 }
 h2 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 36px;
   font-family: "Soho Gothic W01 Light";
-  margin: 35px 0 10px 0;
-  color: #004e66;
+  margin: 35px 0 0 0;
+  color: #222;
 }
 h2.accordion {
   border-bottom: 1px solid #004e66;
@@ -61,10 +57,11 @@ h2.internal-link {
   color: #0093a7;
 }
 h3 {
-  font-size: 28px;
-  font-family: "Soho Gothic W01 Regular";
+  font-size: 26px;
+  font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
-  line-height: 36px;
+  line-height: 32px;
+  color: #222;
 }
 h3.accordion {
   border-bottom: 1px solid #bababa;
@@ -73,9 +70,10 @@ h3.accordion {
 h4 {
   font-weight: normal;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
   margin-top: 55px;
-  font-family: "Soho Gothic W01 Regular";
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
 }
 h4.accordion {
   margin: 55px 0 0 0;
@@ -580,26 +578,26 @@ figure .metatext {
   text-decoration: underline;
 }
 .calltoaction {
-  border: 2px solid #004e66;
-  color: white;
-  padding: 10px 20px 10px 45px;
+  border: none;
+  border-top: 4px solid #f4d01e;
+  color: #222;
+  padding: 10px 20px 10px 20px;
   margin: 20px 30px 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
+  font-weight: bold;
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
-  background-position: 20px 50%;
-  background-size: 10px;
+  background: #df9922;
   cursor: pointer;
   text-align: left;
   transition: all 0.5s;
 }
 .calltoaction:hover,
 .calltoaction:focus {
-  color: white;
-  background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  color: #222;
+  background: #c98523;
   background-position: 20px 50%;
   background-size: 10px;
 }
@@ -615,7 +613,7 @@ figure .metatext {
   background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
-  color: white;
+  color: #222;
 }
 .calltoaction.download {
   margin-top: 0;
@@ -641,29 +639,18 @@ iframe {
   background-size: 16px 16px;
 }
 .internal-link {
-  text-decoration: none;
-  color: #004e66;
-  display: inline-block;
+  color: #838078;
+  font-family: 'Calibri';
+  font-size: 20px;
+  background: url(../img/ikoner/lenkepil_orange.svg) no-repeat;
+  background-size: 20px;
+  padding-left: 35px;
+  margin-top: 11px;
+  display: block;
+  background-position: 0 7px;
 }
 .internal-link:visited {
-  color: #0093a7;
-  text-decoration: none;
-}
-.internal-link h2,
-.internal-link h3,
-.internal-link h4,
-.internal-link p {
-  display: inline;
-}
-.internal-link.arrow_right {
-  margin: 15px 0;
-}
-.internal-link.arrow_right:after {
-  padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
-  font-size: inherit;
-  text-decoration: none;
+  color: #004e66;
 }
 .internal-link.document {
   margin: 0;
@@ -821,9 +808,9 @@ h4.keyfigures {
   text-transform: uppercase;
 }
 .module.module_subscribe .header {
-  border-top: 2px solid #004e66;
-  padding-top: 15px;
-  margin-bottom: 10px;
+  border-top: 4px solid #004e66;
+  padding-bottom: 15px;
+  text-align: right;
 }
 .module.module_subscribe a {
   font-size: 18px;
@@ -966,8 +953,8 @@ h4.keyfigures {
   color: #c63629;
 }
 .module.module_person {
-  margin: 0;
-  padding: 20px 0 0 0;
+  margin: 100px 0 0 0;
+  padding: 0;
   width: 100%;
   background: none;
 }
@@ -983,6 +970,9 @@ h4.keyfigures {
 .module.module_person .e-mail {
   margin: 0;
   font-size: 18px;
+}
+.module.module_person .person_information {
+  margin-top: 20px;
 }
 .module.module_person .name {
   font-size: 28px;
@@ -1000,9 +990,8 @@ h4.keyfigures {
   text-transform: uppercase;
   color: #004e66;
   text-decoration: none;
-  margin-bottom: 15px;
-  border-top: 2px solid #004e66;
-  padding-top: 15px;
+  border-top: 4px solid #004e66;
+  text-align: right;
 }
 .module.module_print,
 .module.module_social {
@@ -1087,36 +1076,74 @@ h4.keyfigures {
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
-.showmorenews {
-  width: 250px;
-  text-align: center;
-  margin: 50px 0;
-  border: 2px solid #aeaba8;
-  color: #004e66;
-  background: white;
-  font-family: 'Calibri';
-  font-size: 20px;
-  line-height: 24px;
-}
-.showmorenews a {
-  display: inline-block;
+.module.module_contact {
+  border-top: 4px solid #df9922;
+  margin: 100px 0 0 0;
+  padding: 5px 10px 15px 15px;
   width: 100%;
-  height: 100%;
-  color: #222;
-  padding: 10px 20px 10px 30px;
+  background: white;
 }
-.showmorenews a:hover {
+.module.module_contact .header {
+  font-family: 'Calibri';
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #004e66;
   text-decoration: none;
-  background-color: #aeaba8;
-  color: white;
+  text-align: right;
+  margin-top: 0;
 }
-.showmorenews.selected {
-  background: #004e66;
+.module.module_contact .title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 32px;
 }
-.showmorenews.selected a,
-.showmorenews.selected a:visited {
-  color: white;
+.module.module_contact .contact_information {
+  width: 100%;
 }
+.module.module_contact .contact_information .information_attribute {
+  font-weight: bold;
+  width: 40%;
+  float: left;
+}
+.module.module_contact .contact_information .information_data {
+  width: 60%;
+  float: left;
+}
+/*
+.showmorenews {
+    width: 250px;
+    text-align: center;
+    margin: 50px 0;
+    border: 2px solid #aeaba8;
+    color: @colorDarkBlue;
+    background: white;
+    font-family: @fontCalibri;
+    font-size: 20px;
+    line-height: 24px;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #222;
+        padding: 10px 20px 10px 30px;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #aeaba8;
+            color: white;
+        }
+    }
+
+    &.selected {
+        background: @colorDarkBlue;
+
+        a, a:visited {
+            color: white;
+        }
+    }
+}*/
 .crisis {
   margin: 15px;
   padding-bottom: 50px;
@@ -1326,15 +1353,15 @@ fieldset {
 }
 .dropdown select {
   width: 100%;
-  border: 1px solid #004e66;
+  border: none;
   font-family: 'Calibri';
   font-size: 20px;
-  padding: 5px 38px 4px 10px;
+  padding: 5px 38px 4px 5px;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/knapp_nedtrekksmeny.png') no-repeat;
+  background: #ffffff url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
@@ -1348,13 +1375,10 @@ fieldset {
 .dropdown select:hover,
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
-  background-position: 96%;
-  -moz-background-size: 20px;
-  -o-background-size: 20px;
-  -webkit-background-size: 20px;
-  background-size: 20px;
+  background: #004e66 url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
+  background-position: 100%;
   color: white;
+  border: none;
 }
 .numberofpublications {
   margin-bottom: 17px;
@@ -1368,19 +1392,24 @@ fieldset {
 .refinesearch {
   margin-top: 20px;
   width: 300px;
+  border-top: 4px solid #df9922;
 }
 .refinesearch h2,
 .refinesearch h5 {
   margin-bottom: 17px;
-  padding-top: 15px;
+  padding-top: 0;
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
   font-size: 18px;
   color: #004e66;
+  text-align: right;
 }
 .refinesearch select {
   margin-bottom: 20px;
+}
+.refinesearch label {
+  padding-left: 9px;
 }
 .table_general {
   border: 1px solid #91c6c2;
@@ -1485,7 +1514,6 @@ fieldset {
 }
 .transportsideknapp {
   background: white;
-  padding: 10px 10px 50px 10px;
   margin-top: 20px;
 }
 .transportsideknapp a {
@@ -1494,11 +1522,13 @@ fieldset {
   height: 100%;
   color: #222;
   text-decoration: none;
-  border-bottom: 2px dotted #004e66;
+  padding: 20px 30px 30px 30px;
 }
 .transportsideknapp a h2 {
   color: #0093a7;
   margin: 0;
+  border-bottom: 2px dotted #004e66;
+  padding-bottom: 7px;
 }
 .transportsideknapp a:visited {
   text-decoration: none;
@@ -1512,7 +1542,6 @@ fieldset {
   color: #222;
 }
 .transportsideknapp a:hover h2 {
-  text-decoration: underline;
   color: #0093a7;
 }
 .transportsideknapp p {

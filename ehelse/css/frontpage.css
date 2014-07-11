@@ -136,7 +136,7 @@
 .frontpage h2 {
   margin: 50px 0 20px 0;
   width: 100%;
-  border-bottom: 3px solid #004e66;
+  border-bottom: 3px solid #222;
   padding-bottom: 15px;
 }
 .frontpage h2.noborder {
@@ -151,6 +151,7 @@
 .frontpage .news p {
   color: #004e66;
   font-size: 20px;
+  padding-left: 35px;
 }
 .frontpage .news a {
   font-size: 24px;
@@ -168,12 +169,8 @@
   margin: 0;
 }
 .frontpage .conferenceitem {
-  margin-bottom: 20px;
-}
-.frontpage .conferenceitem table td:first-of-type {
-  width: 240px;
-  vertical-align: middle;
-  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .frontpage .conferenceitem p {
   padding: 0;
@@ -184,7 +181,6 @@
 }
 .frontpage .conferenceitem a {
   font-size: 24px;
-  padding-left: 0;
 }
 .frontpage .conferenceitem .conference_date {
   font-size: 24px;
@@ -196,7 +192,6 @@
   text-align: right;
 }
 .frontpage .conferenceitem .month {
-  margin-right: 28px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   color: #c63629;
@@ -207,8 +202,13 @@
   font-family: "Soho Gothic W01 Light";
   color: #004e66;
 }
-.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
-  margin-bottom: 9px;
+.frontpage div.conferenceitem > div:nth-child(2n-1) {
+  width: 44%;
+  float: left;
+}
+.frontpage div.conferenceitem > div:nth-child(2n) {
+  width: 48%;
+  float: left;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;
@@ -245,6 +245,14 @@
 }
 .frontpage #chart_div {
   margin-bottom: 0;
+}
+.frontpage .showmorenews {
+  margin-top: 30px;
+}
+.internal-link {
+  background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+  background-size: 20px;
+  background-position: 0 7px;
 }
 .toppmeny .tabs .tab-links li.menu_search {
   background: none;

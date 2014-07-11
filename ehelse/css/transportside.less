@@ -8,6 +8,12 @@
 @colorLightGray: #f2f2f2;
 @colorGreen: #a1bf37;
 
+@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
 #search_statistics {
     width: 100%;
 }
@@ -26,6 +32,41 @@
             h2 {
                 line-height: 35px;
                 margin: 0 0 10px 0;
+            }
+        }
+    }
+}
+
+.transportsideknapp {
+    background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+    background-size: 45px;
+    background-position: 96% 93%;
+    margin-top: 50px;
+    max-width: 685px;
+
+    a, a:visited {
+        display: inline-block;
+        padding: 20px 30px 30px 30px;
+
+        .status_infomration {
+            float: left;
+            width: 395px;
+            margin: 24px 0 0 30px;
+
+            .status_received {
+                margin-right: 30px;
+            }
+        }
+
+        p {
+            color: #838078;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            h2 {
+                text-decoration: none;
             }
         }
     }

@@ -32,25 +32,21 @@ body {
     font-family: 'Calibri';
     line-height: 27px;
     color: #222;
+    background: url('../img/aside_dekorasjon.png');
     background-color: #f7f6f6;
-    background-position: 100% 20%;
-    background-position-x: 100%;
-    background-position-y: 20%;
-    -webkit-background-size: 40% auto;
-    -moz-background-size: 40% auto;
-    -o-background-size: 40% auto;
-    background-size: 40% auto;
+    background-position: 79% 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 h1 {
     font-weight: normal;
-    font-size: 48px;
+    font-size: 36px;
     font-family: @fontSohoLight;
-    line-height: 60px;
+    line-height: 44px;
     margin: 50px 0 0 0;
-    color: @colorDarkBlue;
+    color: #838078;
+    padding: 0 0 8px 0;
 }
 
 .ingress {
@@ -61,11 +57,11 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 36px;
     font-family: @fontSohoLight;
-    margin: 35px 0 10px 0;
-    color: @colorDarkBlue;
+    margin: 35px 0 0 0;
+    color: #222;
 
     &.accordion {
         border-bottom: 1px solid @colorDarkBlue;
@@ -78,10 +74,11 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
-    font-family: @fontSohoRegular;
+    font-size: 26px;
+    font-family: @fontSohoLight;
     margin: 35px 0 0 0;
-    line-height: 36px;
+    line-height: 32px;
+    color: #222;
 
     &.accordion {
         border-bottom: 1px solid @colorMediumGray;
@@ -92,9 +89,10 @@ h3 {
 h4 {
     font-weight: normal;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
     margin-top: 55px;
-    font-family: @fontSohoRegular;
+    font-family: @fontSohoLight;
+    color: #222;
 
     &.accordion {
         margin: 55px 0 0 0;
@@ -693,25 +691,25 @@ figure {
 }
 
 .calltoaction {
-    border: 2px solid @colorDarkBlue;
-    color: white;
-    padding: 10px 20px 10px 45px;
+    border: none;
+    border-top: 4px solid @colorYellow;
+    color: #222;
+    padding: 10px 20px 10px 20px;
     margin: 20px 30px 30px 0;
     font-family: @fontCalibri;
     font-size: 20px;
+    font-weight: bold;
     line-height: 24px;
     display: inline-block;
     min-width: 240px;
-    background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
-    background-position: 20px 50%;
-    background-size: 10px;
+    background: @colorOrange;
     cursor: pointer;
     text-align: left;
     transition: all 0.5s;
 
     &:hover, &:focus {
-        color: white;
-        background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+        color: #222;
+        background: #c98523;
         background-position: 20px 50%;
         background-size: 10px;
     }
@@ -727,7 +725,7 @@ figure {
             background: @colorMediumBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
-            color: white;
+            color: #222;
         }
     }
 
@@ -760,30 +758,19 @@ iframe {
 }
 
 .internal-link {
-    text-decoration: none;
-    color: @colorDarkBlue;
-    display: inline-block;
+    color: #838078;
+    font-family: @fontCalibri;
+    font-size: 20px;
+    background: url(../img/ikoner/lenkepil_orange.svg) no-repeat;
+    background-size: 20px;
+    padding-left: 35px;
+    margin-top: 11px;
+    display: block;
+    background-position: 0 7px;
 
     &:visited {
-        color: @colorMediumBlue;
-        text-decoration: none;
+        color: @colorDarkBlue;
     }
-
-    h2, h3, h4, p {
-        display: inline;
-    }
-
-    &.arrow_right {
-        margin: 15px 0;
-    }
-
-        &.arrow_right:after {
-            padding-left: 10px;
-            content: "\f105";
-            font-family: "FontAwesome";
-            font-size: inherit;
-            text-decoration: none;
-        }
 
     &.document {
         margin: 0;
@@ -966,9 +953,9 @@ p.keyfigures, h4.keyfigures {
         }
 
         .header {
-            border-top: 2px solid @colorDarkBlue;
-            padding-top: 15px;
-            margin-bottom: 10px;
+            border-top: 4px solid @colorDarkBlue;
+            padding-bottom: 15px;
+            text-align: right;
         }
 
         a {
@@ -1141,8 +1128,8 @@ p.keyfigures, h4.keyfigures {
     }
 
     &.module_person {
-        margin: 0;
-        padding: 20px 0 0 0;
+        margin: 100px 0 0 0;
+        padding: 0;
         width: 100%;
         background: none;
 
@@ -1161,6 +1148,7 @@ p.keyfigures, h4.keyfigures {
         }
 
         .person_information {
+            margin-top: 20px;
         }
 
         .name {
@@ -1181,9 +1169,8 @@ p.keyfigures, h4.keyfigures {
             text-transform: uppercase;
             color: @colorDarkBlue;
             text-decoration: none;
-            margin-bottom: 15px;
-            border-top: 2px solid @colorDarkBlue;
-            padding-top: 15px;
+            border-top: 4px solid @colorDarkBlue;
+            text-align: right;
         }
     }
 
@@ -1267,8 +1254,48 @@ p.keyfigures, h4.keyfigures {
             background-size: 28px 23px;
         }
     }
-}
 
+    &.module_contact {
+        border-top: 4px solid @colorOrange;
+        margin: 100px 0 0 0;
+        padding: 5px 10px 15px 15px;
+        width: 100%;
+        background: white;
+
+        .header {
+            font-family: 'Calibri';
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #004e66;
+            text-decoration: none;
+            text-align: right;
+            margin-top: 0;
+        }
+
+        .title {
+            margin-bottom: 20px;
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .contact_information {
+            width: 100%;
+
+            .information_attribute {
+                font-weight: bold;
+                width: 40%;
+                float: left;
+            }
+
+            .information_data {
+                width: 60%;
+                float: left;
+            }
+        }
+    }
+}
+/*
 .showmorenews {
     width: 250px;
     text-align: center;
@@ -1301,7 +1328,7 @@ p.keyfigures, h4.keyfigures {
             color: white;
         }
     }
-}
+}*/
 
 .crisis {
     margin: 15px;
@@ -1554,13 +1581,13 @@ fieldset {
 
     select {
         width: 100%;
-        border: 1px solid @colorDarkBlue;
+        border: none;
         font-family: @fontCalibri;
         font-size: 20px;
-        padding: 5px 38px 4px 10px;
+        padding: 5px 38px 4px 5px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
-        background: white url('../img/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
+        background: white url('../img/ikoner/knapp_pil_nedover.svg') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
         text-indent: 0.01px;
         text-overflow: '';
@@ -1571,13 +1598,10 @@ fieldset {
         }
 
         &:hover, &:focus, &:active {
-            background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
-            background-position: 96%;
-            -moz-background-size: 20px;
-            -o-background-size: 20px;
-            -webkit-background-size: 20px;
-            background-size: 20px;
+            background: @colorDarkBlue url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
+            background-position: 100%;
             color: white;
+            border: none;
         }
     }
 }
@@ -1595,19 +1619,25 @@ fieldset {
 .refinesearch {
     margin-top: 20px;
     width: 300px;
+    border-top: 4px solid @colorOrange;
 
     h2, h5 {
         margin-bottom: 17px;
-        padding-top: 15px;
+        padding-top: 0;
         font-family: @fontCalibri;
         line-height: 20px;
         text-transform: uppercase;
         font-size: 18px;
         color: #004e66;
+        text-align: right;
     }
 
     select {
         margin-bottom: 20px;
+    }
+
+    label {
+        padding-left: 9px;
     }
 }
 
@@ -1735,7 +1765,6 @@ fieldset {
 
 .transportsideknapp {
     background: white;
-    padding: 10px 10px 50px 10px;
     margin-top: 20px;
 
     a {
@@ -1744,11 +1773,13 @@ fieldset {
         height: 100%;
         color: #222;
         text-decoration: none;
-        border-bottom: 2px dotted @colorDarkBlue;
+        padding: 20px 30px 30px 30px;
 
         h2 {
             color: @colorMediumBlue;
             margin: 0;
+            border-bottom: 2px dotted @colorDarkBlue;
+            padding-bottom: 7px;
         }
 
         &:visited {
@@ -1763,7 +1794,6 @@ fieldset {
 
         &:hover {
             h2 {
-                text-decoration: underline;
                 color: @colorMediumBlue;
             }
 

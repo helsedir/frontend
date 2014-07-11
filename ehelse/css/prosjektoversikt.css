@@ -19,7 +19,9 @@
   cursor: pointer;
 }
 .transportsideknapp {
-  padding: 10px 10px 25px 10px;
+  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 93%;
 }
 .transportsideknapp .status_infomration {
   float: left;
@@ -36,24 +38,16 @@
   width: 200px;
 }
 .transportsideknapp .status.rute {
-  border-left: 20px solid purple;
+  border-left: 50px solid purple;
 }
 .transportsideknapp .status.drift {
-  border-left: 20px solid green;
+  border-left: 50px solid green;
 }
 .transportsideknapp .status.pilot {
-  border-left: 20px solid orange;
+  border-left: 50px solid orange;
 }
 .transportsideknapp .status.cancelled {
-  border-left: 20px solid red;
-}
-.transportsideknapp:after {
-  content: "\f178";
-  font-family: "FontAwesome";
-  font-size: 30px;
-  color: #004e66;
-  text-decoration: none;
-  float: right;
+  border-left: 50px solid red;
 }
 .borderbox {
   padding: 10px;
