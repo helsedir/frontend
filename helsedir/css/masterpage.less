@@ -105,7 +105,7 @@
             border-radius: 3px;
             background-color: @colorDarkBlue;
             vertical-align: middle;
-            padding: 7px 8px 7px 8px;
+            padding: 6px 8px 5px 8px;
             color: #ffffff;
             font-weight: normal;
             -moz-transition: all 0.5s;
@@ -160,24 +160,36 @@
     }
 
     .mainsearch {
-        height: 39px;
+        height: 41px;
         /*max-width: 220px;*/
-        width: 95%;
-        padding: 0 30px 0 5px;
+        width: 279px;
         border-radius: 3px;
-        border: 1px solid @colorDarkBlue;
+        border: 1px inset @colorDarkBlue;
         vertical-align: middle;
-        background-image: url('../img/ikon_forstorrelsesglass.png');
-        background-repeat: no-repeat;
-        -moz-background-size: auto 68%;
-        -o-background-size: auto 68%;
-        -webkit-background-size: auto 68%;
-        background-size: auto 68%;
-        background-color: #ffffff;
-        background-position: 97% 50%;
-        background-position-x: 97%;
-        background-position-y: 50%;
         cursor: pointer;
+        display: inline-block;
+        padding-left: 5px;
+        background: white;
+
+        input {
+            border: none;
+            padding: 0;
+            width: 234px;
+            vertical-align: sub;
+        }
+
+        button {
+            border: none;
+            background: none;
+            width: 29px;
+            padding: 0;
+            vertical-align: middle;
+
+            img {
+                width: 25px;
+                vertical-align: middle;
+            }
+        }
     }
 
     .masterheader {
@@ -621,6 +633,14 @@
         &.footerwrapper, .footerwrapper {
             padding-top: 40px;
         }
+
+        .mainsearch {
+            width: 100%;
+
+            input {
+                width: 82%;
+            }
+        }
     }
 }
 
@@ -628,6 +648,14 @@
     #header, #footer {
         #mainsearchcolumn {
             padding: 0;
+        }
+
+        .mainsearch {
+            width: 170px;
+
+            input {
+                width: 125px;
+            }
         }
     }
 }
@@ -723,6 +751,18 @@
                     background-position: 50% 35%;
                     border-radius: 3px 3px 0 0;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    #header {
+        .mainsearch {
+            width: 100%;
+
+            input {
+                width: 92%;
             }
         }
     }

@@ -332,6 +332,12 @@
     font-size: 28px;
     margin-right: 20px;
   }
+  #header .mainsearch {
+    width: 100%;
+  }
+  #header .mainsearch input {
+    width: 82%;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .container .entrancebutton {
@@ -358,10 +364,24 @@
     width: 48%;
     float: left;
   }
+  #header .mainsearch {
+    width: 100%;
+  }
+  #header .mainsearch input {
+    width: 82%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container .center {
     padding: 0 165px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  #header .mainsearch {
+    width: 100%;
+  }
+  #header .mainsearch input {
+    width: 92%;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */

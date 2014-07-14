@@ -96,7 +96,7 @@
   border-radius: 3px;
   background-color: #004e66;
   vertical-align: middle;
-  padding: 7px 8px 7px 8px;
+  padding: 6px 8px 5px 8px;
   color: #ffffff;
   font-weight: normal;
   -moz-transition: all 0.5s;
@@ -155,24 +155,36 @@
 }
 #header .mainsearch,
 #footer .mainsearch {
-  height: 39px;
+  height: 41px;
   /*max-width: 220px;*/
-  width: 95%;
-  padding: 0 30px 0 5px;
+  width: 279px;
   border-radius: 3px;
-  border: 1px solid #004e66;
+  border: 1px inset #004e66;
   vertical-align: middle;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
-  background-repeat: no-repeat;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-color: #ffffff;
-  background-position: 97% 50%;
-  background-position-x: 97%;
-  background-position-y: 50%;
   cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+  background: white;
+}
+#header .mainsearch input,
+#footer .mainsearch input {
+  border: none;
+  padding: 0;
+  width: 234px;
+  vertical-align: sub;
+}
+#header .mainsearch button,
+#footer .mainsearch button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
+  vertical-align: middle;
+}
+#header .mainsearch button img,
+#footer .mainsearch button img {
+  width: 25px;
+  vertical-align: middle;
 }
 #header .masterheader,
 #footer .masterheader {
@@ -616,11 +628,27 @@
   #footer .footerwrapper {
     padding-top: 40px;
   }
+  #header .mainsearch,
+  #footer .mainsearch {
+    width: 100%;
+  }
+  #header .mainsearch input,
+  #footer .mainsearch input {
+    width: 82%;
+  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   #header #mainsearchcolumn,
   #footer #mainsearchcolumn {
     padding: 0;
+  }
+  #header .mainsearch,
+  #footer .mainsearch {
+    width: 170px;
+  }
+  #header .mainsearch input,
+  #footer .mainsearch input {
+    width: 125px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -713,6 +741,14 @@
     background-size: 29px;
     background-position: 50% 35%;
     border-radius: 3px 3px 0 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  #header .mainsearch {
+    width: 100%;
+  }
+  #header .mainsearch input {
+    width: 92%;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */
