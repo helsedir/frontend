@@ -237,7 +237,7 @@
         .tabs {
             margin-bottom: 50px;
             padding-left: 20px;
-            margin-top: -35px;
+            margin-top: -40px;
 
             .tab-links {
                 padding-left: 20px;
@@ -262,7 +262,7 @@
                     }
 
                     color: white;
-                    padding: 0 30px 5px 20px;
+                    padding: 5px 30px 5px 20px;
                     border-radius: 0;
                     cursor: pointer;
 
@@ -320,6 +320,8 @@
 
                 a {
                     color: @colorDarkBlue;
+                    width: 100%;
+                    display: inline-block;
                 }
 
                 &:hover {
@@ -699,6 +701,7 @@
                 -webkit-background-size: 20px;
                 background-size: 20px;
                 background-position: center;
+                margin-right: 10px;
 
                 &:hover {
                     background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
@@ -750,14 +753,16 @@
                 }
 
                 &.js-expanded {
-                    padding-bottom: 43px;
-                    background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-                    -moz-background-size: 29px;
-                    -o-background-size: 29px;
-                    -webkit-background-size: 29px;
-                    background-size: 29px;
-                    background-position: 50% 35%;
+                    padding: 5px 0 10px 0;
                     border-radius: 3px 3px 0 0;
+                    background: #838078;
+
+                    &:before {
+                        font-family: "FontAwesome";
+                        content: '\f00d';
+                        font-size: 25px;
+                        color: white;
+                    }
                 }
             }
         }

@@ -116,6 +116,7 @@
 }
 .container.frontpage a {
   color: #004e66;
+  text-decoration: none;
 }
 .container.frontpage a:hover h2 {
   text-decoration: underline;
@@ -123,7 +124,7 @@
 .container.frontpage a:hover h2.internal-link {
   text-decoration: underline;
   border-bottom: 3px solid #004e66;
-  padding-bottom: 4px;
+  padding-bottom: 0;
 }
 .container.frontpage .internal-link {
   text-decoration: none;
@@ -141,7 +142,7 @@
 }
 .container.frontpage .internal-link.arrow_right {
   margin: 15px 0;
-  padding-bottom: 4px;
+  padding: 0;
 }
 .container.frontpage .internal-link.arrow_right:after {
   padding-left: 10px;
@@ -170,16 +171,18 @@
 }
 .container.frontpage .news {
   margin-bottom: 20px;
+  margin-top: 35px;
 }
 .container.frontpage .news p {
   color: #222;
   font-size: 18px;
+  line-height: 22px;
 }
 .container.frontpage .news a {
   font-size: 26px;
 }
 .container.frontpage .news .internal-link.arrow_right {
-  margin-top: 0;
+  margin: 0;
 }
 .container.frontpage p {
   margin: 0;
@@ -194,7 +197,7 @@
 }
 .container.frontpage .conferenceitem p {
   padding: 0;
-  line-height: 1em;
+  line-height: 22px;
   font-size: 18px;
   margin-bottom: 10px;
   color: #222;

@@ -114,7 +114,7 @@ body {
         margin: 10px 0 0 0;
         font-size: 20px;
         font-family: 'Calibri';
-        line-height: 27px;
+        line-height: 30px;
     }
 
     ul {
@@ -138,6 +138,7 @@ body {
         color: @colorDarkBlue;
         font-size: 20px;
         line-height: 27px;
+        text-decoration: underline;
 
         &:visited {
             color: @colorMediumBlue;
@@ -154,10 +155,6 @@ body {
                 color: white !important;
                 outline: 0;
             }
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
     .breadcrumbs {
@@ -517,7 +514,7 @@ body {
         margin-top: 10px;
 
         li {
-            margin: 0 0 0 25px;
+            margin: 0 0 10px 25px;
             display: block;
 
             &:before {
@@ -955,6 +952,58 @@ body {
                 }
             }
 
+            &.feedback {
+                border: 2px solid @colorMediumBlue;
+                margin-bottom: 70px;
+                padding: 20px 30px 10px 20px;
+                max-width: 300px;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: -18px;
+                    width: 100px;
+                    left: 10px;
+                }
+
+                .message {
+                    margin: 0;
+                }
+
+                .module_description {
+                    margin-bottom: 15px;
+                }
+
+                .module_header {
+                    margin-bottom: 10px;
+                }
+
+                label {
+                    margin-right: 20px;
+                    color: @colorDarkBlue;
+                }
+
+                input[type="checkbox"] + label span {
+                    margin-right: 5px;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 70px;
+                    resize: none;
+                    border: 2px solid @colorDarkBlue;
+                }
+
+                button {
+                    background: @colorDarkBlue;
+                    color: white;
+                    text-align: center;
+                    border: none;
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
+            }
+
             &.date {
                 border: 2px solid @colorMediumBlue;
                 margin-bottom: 70px;
@@ -1008,6 +1057,10 @@ body {
             width: 100%;
             background: none;
 
+            a {
+                text-decoration: none;
+            }
+
             h3 {
                 margin-bottom: 1rem;
             }
@@ -1023,6 +1076,7 @@ body {
             }
 
             .person_information {
+                margin-top: 10px;
             }
 
             .name {
@@ -1054,49 +1108,66 @@ body {
             background: none;
             border-top: 2px solid @colorDarkBlue;
             padding-top: 19px;
-            margin: 60px 0 0 0;
+            margin: 60px 0 31px 0;
             width: 100%;
+
+            a, a:visited {
+                color: @colorDarkBlue;
+                text-transform: uppercase;
+                float: left;
+                margin: 0 50px 0 0;
+                font-size: 16px;
+                line-height: 24px;
+                text-decoration: none;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
 
             p, span {
                 float: left;
             }
 
             span {
-                margin: 0 10px 0 0;
+                margin: 0 3px 0 0;
                 height: 24px;
                 width: 26px;
             }
 
-            .ikon_print {
-                display: block;
-            }
-
             .ikon_facebook {
-                background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
-                -moz-background-size: 27px 20px;
-                -o-background-size: 27px 20px;
-                -webkit-background-size: 27px 20px;
-                background-size: 27px 20px;
+                span {
+                    background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+                    -moz-background-size: 27px 20px;
+                    -o-background-size: 27px 20px;
+                    -webkit-background-size: 27px 20px;
+                    background-size: 27px 20px;
+                }
             }
 
             .ikon_twitter {
-                background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
-                -moz-background-size: 27px 20px;
-                -o-background-size: 27px 20px;
-                -webkit-background-size: 27px 20px;
-                background-size: 27px 20px;
+                span {
+                    background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+                    -moz-background-size: 27px 20px;
+                    -o-background-size: 27px 20px;
+                    -webkit-background-size: 27px 20px;
+                    background-size: 27px 20px;
+                }
             }
 
             .ikon_skrivut {
-                background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
-                -moz-background-size: 27px 20px;
-                -o-background-size: 27px 20px;
-                -webkit-background-size: 27px 20px;
-                background-size: 27px 20px;
+                display: block;
+
+                span {
+                    background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+                    -moz-background-size: 27px 20px;
+                    -o-background-size: 27px 20px;
+                    -webkit-background-size: 27px 20px;
+                    background-size: 27px 20px;
+                }
             }
 
             p {
-                width: 70px;
                 margin: 0 20px 0 0;
                 color: #004e66;
                 text-transform: uppercase;
@@ -1106,27 +1177,33 @@ body {
             }
 
             .ikon_skrivut:hover {
-                background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
-                -moz-background-size: 28px 23px;
-                -o-background-size: 28px 23px;
-                -webkit-background-size: 28px 23px;
-                background-size: 28px 23px;
+                span {
+                    background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+                    -moz-background-size: 28px 23px;
+                    -o-background-size: 28px 23px;
+                    -webkit-background-size: 28px 23px;
+                    background-size: 28px 23px;
+                }
             }
 
             .ikon_facebook:hover {
-                background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
-                -moz-background-size: 28px 23px;
-                -o-background-size: 28px 23px;
-                -webkit-background-size: 28px 23px;
-                background-size: 28px 23px;
+                span {
+                    background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+                    -moz-background-size: 28px 23px;
+                    -o-background-size: 28px 23px;
+                    -webkit-background-size: 28px 23px;
+                    background-size: 28px 23px;
+                }
             }
 
             .ikon_twitter:hover {
-                background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
-                -moz-background-size: 28px 23px;
-                -o-background-size: 28px 23px;
-                -webkit-background-size: 28px 23px;
-                background-size: 28px 23px;
+                span {
+                    background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+                    -moz-background-size: 28px 23px;
+                    -o-background-size: 28px 23px;
+                    -webkit-background-size: 28px 23px;
+                    background-size: 28px 23px;
+                }
             }
         }
     }
@@ -1153,6 +1230,7 @@ body {
             height: 100%;
             color: #222;
             padding: 10px 20px 10px 30px;
+            text-decoration: none;
 
             &:hover {
                 text-decoration: none;
@@ -1787,7 +1865,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
     .container {
         .aside, .aside.bottom {
             width: auto;
@@ -2018,6 +2096,16 @@ body {
         .module.module_message.date_small_closed .keyfigures {
             display: block;
             margin: 0;
+        }
+
+        .module.module_social {
+            margin-bottom: 0;
+
+            a {
+                float: none;
+                display: block;
+                margin: 0 0 30px 0;
+            }
         }
     }
 }
