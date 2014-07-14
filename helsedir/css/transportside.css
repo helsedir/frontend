@@ -1,7 +1,4 @@
-﻿.container #search_statistics {
-  width: 100%;
-}
-@media only screen and (max-width: 599px) {
+﻿@media only screen and (max-width: 599px) {
   .container.transportside .border {
     margin-bottom: 15px;
   }

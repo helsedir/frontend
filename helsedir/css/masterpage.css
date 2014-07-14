@@ -571,6 +571,8 @@
 }
 .container-fluid.toppmeny .tab-content li a {
   color: #004e66;
+  display: inline-block;
+  width: 100%;
 }
 .container-fluid.toppmeny .tab-content li:hover {
   background: #d1d0c4;

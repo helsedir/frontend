@@ -450,6 +450,7 @@ body {
         &.statistics {
             text-align: right;
             float: right;
+            padding: 10px 20px 15px 10px;
         }
     }
 
@@ -1209,7 +1210,7 @@ body {
     }
 
     .showmorenews {
-        width: 250px;
+        width: 300px;
         text-align: center;
         margin: 50px 0;
         color: @colorDarkBlue;
@@ -1838,6 +1839,15 @@ body {
 
         .aside {
             margin-top: 0;
+            width: auto;
+
+            .module {
+                margin-top: 30px;
+
+                &.module_statistics_graph {
+                    max-width: none;
+                }
+            }
         }
     }
 }

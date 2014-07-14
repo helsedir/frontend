@@ -465,6 +465,7 @@ body {
 .container-fluid .metatext.statistics {
   text-align: right;
   float: right;
+  padding: 10px 20px 15px 10px;
 }
 .container .spennendeTall,
 .container-fluid .spennendeTall {
@@ -1303,7 +1304,7 @@ body {
 }
 .container .showmorenews,
 .container-fluid .showmorenews {
-  width: 250px;
+  width: 300px;
   text-align: center;
   margin: 50px 0;
   color: #004e66;
@@ -1912,6 +1913,13 @@ body {
   }
   .container .aside {
     margin-top: 0;
+    width: auto;
+  }
+  .container .aside .module {
+    margin-top: 30px;
+  }
+  .container .aside .module.module_statistics_graph {
+    max-width: none;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
