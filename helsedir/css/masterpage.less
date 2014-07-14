@@ -512,29 +512,37 @@
                 }
             }
 
-            .menu_search {
-                color: black;
-                padding-left: 0;
+            .menu_search form {
+                height: 35px;
+                /*max-width: 220px;*/
+                width: 212px;
+                border: 1px inset @colorDarkBlue;
+                vertical-align: middle;
+                cursor: pointer;
+                display: inline-block;
+                padding-left: 5px;
+                background: white;
 
                 input {
-                    padding: 2px 24px 0 5px;
-                    height: 27px;
-                    /*max-width: 220px;*/
-                    width: 86%;
-                    border-radius: 3px;
-                    border: 1px solid @colorDarkBlue;
+                    border: none;
+                    padding: 0;
+                    width: 170px;
+                    height: 28px;
                     vertical-align: middle;
-                    background-image: url('../img/ikon_forstorrelsesglass.png');
-                    background-repeat: no-repeat;
-                    -moz-background-size: auto 68%;
-                    -o-background-size: auto 68%;
-                    -webkit-background-size: auto 68%;
-                    background-size: auto 68%;
-                    background-color: #ffffff;
-                    background-position: 97% 50%;
-                    background-position-x: 97%;
-                    background-position-y: 50%;
-                    cursor: pointer;
+                    color: black;
+                }
+
+                button {
+                    border: none;
+                    background: none;
+                    width: 29px;
+                    padding: 0;
+                    vertical-align: middle;
+
+                    img {
+                        width: 23px;
+                        vertical-align: sub;
+                    }
                 }
             }
         }

@@ -521,29 +521,35 @@
   color: white;
   outline: 0;
 }
-.container-fluid.toppmeny .tabs .tab-links .menu_search {
-  color: black;
-  padding-left: 0;
-}
-.container-fluid.toppmeny .tabs .tab-links .menu_search input {
-  padding: 2px 24px 0 5px;
-  height: 27px;
+.container-fluid.toppmeny .tabs .tab-links .menu_search form {
+  height: 35px;
   /*max-width: 220px;*/
-  width: 86%;
-  border-radius: 3px;
-  border: 1px solid #004e66;
+  width: 212px;
+  border: 1px inset #004e66;
   vertical-align: middle;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
-  background-repeat: no-repeat;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-color: #ffffff;
-  background-position: 97% 50%;
-  background-position-x: 97%;
-  background-position-y: 50%;
   cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+  background: white;
+}
+.container-fluid.toppmeny .tabs .tab-links .menu_search form input {
+  border: none;
+  padding: 0;
+  width: 170px;
+  height: 28px;
+  vertical-align: middle;
+  color: black;
+}
+.container-fluid.toppmeny .tabs .tab-links .menu_search form button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
+  vertical-align: middle;
+}
+.container-fluid.toppmeny .tabs .tab-links .menu_search form button img {
+  width: 23px;
+  vertical-align: sub;
 }
 .container-fluid.toppmeny .map {
   height: 500px;
