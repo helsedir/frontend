@@ -14,6 +14,7 @@
   background: white;
   display: table;
   position: relative;
+  cursor: pointer;
 }
 .container .division .division_header p {
   text-align: center;
@@ -96,22 +97,27 @@
 .container .division .department {
   float: left;
 }
-.container .division .department .person {
+.container .division .department .person,
+.container .division .department .person_sub {
   color: #004e66;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   font-family: "Soho Gothic W01 Regular";
   font-size: 18px;
   line-height: 24px;
   width: 170px;
+  margin-bottom: 10px;
 }
-.container .division .department .person p {
+.container .division .department .person p,
+.container .division .department .person_sub p {
   margin: 0;
 }
-.container .division .department .person p.e-mail {
+.container .division .department .person p.e-mail,
+.container .division .department .person_sub p.e-mail {
   word-break: break-all;
   text-decoration: underline;
 }
-.container .division .department .person .title {
+.container .division .department .person .title,
+.container .division .department .person_sub .title {
   font-family: 'Calibri';
   font-size: 18px;
   text-transform: uppercase;
@@ -119,69 +125,151 @@
   text-decoration: none;
   margin-bottom: 10px;
 }
-.container .division .department.folkehelse .sub-department {
+.container .division .department.folkehelse .sub-department .box {
   border-left: 4px solid #6cb4b5;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department {
+.container .division .department.folkehelse .sub-department .box.selected {
+  border: 4px solid #6cb4b5;
+}
+.container .division .department.folkehelse .sub-department .box.selected:before {
+  background: #6cb4b5;
+}
+.container .division .department.folkehelse .sub-department .box ~ .person_sub {
+  border-left: 3px dotted #6cb4b5;
+}
+.container .division .department.folkehelse .person_sub {
+  border-bottom: 4px solid #6cb4b5;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-department .box {
   border-left: 4px solid #a1bf37;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department.helfo {
+.container .division .department.helseoekonomiogfinansiering .sub-department .box.helfo {
   background: #dbdcdd;
   margin-top: 0;
 }
-.container .division .department.spesialisthelsetjenesten .sub-department {
+.container .division .department.helseoekonomiogfinansiering .sub-department .box.selected {
+  border: 4px solid #a1bf37;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-department .box.selected:before {
+  background: #a1bf37;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-department .box ~ .person_sub {
+  border-left: 3px dotted #a1bf37;
+}
+.container .division .department.helseoekonomiogfinansiering .person_sub {
+  border-bottom: 4px solid #a1bf37;
+}
+.container .division .department.spesialisthelsetjenesten .sub-department .box {
   border-left: 4px solid #aeaba8;
 }
-.container .division .department.ehelseogit .sub-department {
+.container .division .department.spesialisthelsetjenesten .sub-department .box.selected {
+  border: 4px solid #aeaba8;
+}
+.container .division .department.spesialisthelsetjenesten .sub-department .box.selected:before {
+  background: #aeaba8;
+}
+.container .division .department.spesialisthelsetjenesten .sub-department .box.selected ~ .person_sub {
+  border-left: 3px dotted #aeaba8;
+}
+.container .division .department.spesialisthelsetjenesten .person_sub {
+  border-bottom: 4px solid #aeaba8;
+}
+.container .division .department.ehelseogit .sub-department .box {
   border-left: 4px solid #c63629;
 }
-.container .division .department.primaerhelsetjenesten .sub-department {
+.container .division .department.ehelseogit .sub-department .box.selected {
+  border: 4px solid #c63629;
+}
+.container .division .department.ehelseogit .sub-department .box.selected:before {
+  background: #c63629;
+}
+.container .division .department.ehelseogit .sub-department .box.selected ~ .person_sub {
+  border-left: 3px dotted #c63629;
+}
+.container .division .department.ehelseogit .person_sub {
+  border-bottom: 4px solid #c63629;
+}
+.container .division .department.primaerhelsetjenesten .sub-department .box {
   border-left: 4px solid #df9922;
 }
-.container .division .department.administrasjon .sub-department {
-  border-left: 4px solid #76428d;
+.container .division .department.primaerhelsetjenesten .sub-department .box.selected {
+  border: 4px solid #df9922;
 }
-.container .division .department .sub-department {
+.container .division .department.primaerhelsetjenesten .sub-department .box.selected:before {
+  background: #df9922;
+}
+.container .division .department.primaerhelsetjenesten .sub-department .box.selected ~ .person_sub {
+  border-left: 3px dotted #df9922;
+}
+.container .division .department.primaerhelsetjenesten .person_sub {
+  border-bottom: 4px solid #df9922;
+}
+.container .division .department.administrasjon .sub-department .box {
+  border-left: 4px solid #76428d;
+  margin-right: 0;
+}
+.container .division .department.administrasjon .sub-department .box.selected {
+  border: 4px solid #76428d;
+}
+.container .division .department.administrasjon .sub-department .box.selected:before {
+  background: #76428d;
+}
+.container .division .department.administrasjon .sub-department .box.selected ~ .person_sub {
+  border-left: 3px dotted #76428d;
+}
+.container .division .department.administrasjon .person_sub {
+  border-bottom: 4px solid #76428d;
+}
+.container .division .department .sub-department .box {
   color: #004e66;
-  padding: 6px 24px 6px 6px;
-  margin: 20px 0 0 0;
-  line-height: 24px;
+  padding: 10px 6px 6px 2px;
+  margin: 20px 22px 10px 0;
   width: 170px;
-  height: 72px;
+  height: 90px;
   background: white;
   display: table;
   position: relative;
-}
-.container .division .department .sub-department p {
+  cursor: pointer;
+  text-align: center;
   font-size: 18px;
   line-height: 20px;
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 5px;
 }
-.container .division .department .sub-department:after {
+.container .division .department .sub-department .box:before {
   position: absolute;
-  content: "\f105";
+  content: "\f107";
   font-family: "FontAwesome";
-  font-size: 25px;
   color: #004e66;
-  left: 81px;
-  top: 27px;
-  padding-left: 65px;
-  padding-right: 65px;
+  top: 63px;
+  font-size: 30px;
+  right: 0;
+  padding: 0 70px 0 73px;
 }
-.container .division .department .sub-department#utviklingsdirektoer {
+.container .division .department .sub-department .box.selected {
+  padding: 6px;
+  margin-bottom: 0;
+}
+.container .division .department .sub-department .box.selected:before {
+  content: "\f106";
+  font-family: "FontAwesome";
+  color: white;
+}
+.container .division .department .sub-department#utviklingsdirektoer .box {
   background: #76428d;
   color: white;
   height: 45px;
-  margin-bottom: 32px;
-  margin-top: 36px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.container .division .department .sub-department#utviklingsdirektoer:after {
+.container .division .department .sub-department#utviklingsdirektoer .box:before {
+  content: '';
+}
+.container .division .department .sub-department#utviklingsdirektoer .box:after {
   color: white;
   top: 13px;
 }
 .container .division .department.administrasjon .sub-department {
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .container .etater {
   margin-top: 33px;
@@ -221,17 +309,18 @@
   padding-right: 65px;
 }
 .container .director {
-  border: 4px solid #004e66;
-  width: 100%;
-  height: 80px;
+  width: 33.3333333333%;
+  height: 100px;
   display: table;
+  margin: 0 auto;
+  background: #004e66 url(../img/menneske_i_footer.svg) no-repeat right top;
 }
 .container .director p {
   text-align: center;
   font-family: "Soho Gothic W01 Regular";
   font-size: 18px;
   line-height: 20px;
-  color: #004e66;
+  color: white;
 }
 .container .director p:first-of-type {
   text-transform: uppercase;
@@ -297,7 +386,8 @@
   .container .division .department {
     width: 100%;
   }
-  .container .division .department .person {
+  .container .division .department .person,
+  .container .division .department .person_sub {
     padding: 10px 10px 0 10px;
   }
   .container .division .department .sub-department {

@@ -36,6 +36,7 @@
             background: white;
             display: table;
             position: relative;
+            cursor: pointer;
 
             p {
                 text-align: center;
@@ -148,13 +149,14 @@
         .department {
             float: left;
 
-            .person {
+            .person, .person_sub {
                 color: @colorDarkBlue;
-                padding: 10px;
+                padding: 20px 10px 10px 10px;
                 font-family: @fontSohoRegular;
                 font-size: 18px;
                 line-height: 24px;
                 width: 170px;
+                margin-bottom: 10px;
 
                 p {
                     margin: 0;
@@ -176,82 +178,192 @@
             }
 
             &.folkehelse {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorLightBlue;
+
+                    &.selected {
+                        border: 4px solid @colorLightBlue;
+
+                        &:before {
+                            background: @colorLightBlue;
+                        }
+                    }
+
+                    & ~ .person_sub {
+                        border-left: 3px dotted @colorLightBlue;
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorLightBlue;
                 }
             }
 
             &.helseoekonomiogfinansiering {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorGreen;
 
                     &.helfo {
                         background: @colorLightGray2;
                         margin-top: 0;
                     }
+
+                    &.selected {
+                        border: 4px solid @colorGreen;
+
+                        &:before {
+                            background: @colorGreen;
+                        }
+                    }
+
+                    & ~ .person_sub {
+                        border-left: 3px dotted @colorGreen;
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorGreen;
                 }
             }
 
             &.spesialisthelsetjenesten {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorDarkGray;
+
+                    &.selected {
+                        border: 4px solid @colorDarkGray;
+
+                        &:before {
+                            background: @colorDarkGray;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorDarkGray;
+                        }
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorDarkGray;
                 }
             }
 
             &.ehelseogit {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorRed;
+
+                    &.selected {
+                        border: 4px solid @colorRed;
+
+                        &:before {
+                            background: @colorRed;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorRed;
+                        }
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorRed;
                 }
             }
 
             &.primaerhelsetjenesten {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorOrange;
+
+                    &.selected {
+                        border: 4px solid @colorOrange;
+
+                        &:before {
+                            background: @colorOrange;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorOrange;
+                        }
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorOrange;
                 }
             }
 
             &.administrasjon {
-                .sub-department {
+                .sub-department .box {
                     border-left: 4px solid @colorPurple;
+                    margin-right: 0;
+
+                    &.selected {
+                        border: 4px solid @colorPurple;
+
+                        &:before {
+                            background: @colorPurple;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorPurple;
+                        }
+                    }
+                }
+
+                .person_sub {
+                    border-bottom: 4px solid @colorPurple;
                 }
             }
 
             .sub-department {
-                color: @colorDarkBlue;
-                padding: 6px 24px 6px 6px;
-                margin: 20px 0 0 0;
-                line-height: 24px;
-                width: 170px;
-                height: 72px;
-                background: white;
-                display: table;
-                position: relative;
-
-                p {
+                .box {
+                    color: #004e66;
+                    padding: 10px 6px 6px 2px;
+                    margin: 20px 22px 10px 0;
+                    width: 170px;
+                    height: 90px;
+                    background: white;
+                    display: table;
+                    position: relative;
+                    cursor: pointer;
+                    text-align: center;
                     font-size: 18px;
                     line-height: 20px;
-                    display: table-cell;
-                    vertical-align: middle;
+                    margin-top: 5px;
+
+                    &:before {
+                        position: absolute;
+                        content: "\f107";
+                        font-family: "FontAwesome";
+                        color: #004e66;
+                        top: 63px;
+                        font-size: 30px;
+                        right: 0;
+                        padding: 0 70px 0 73px;
+                    }
+
+                    &.selected {
+                        padding: 6px;
+                        margin-bottom: 0;
+
+                        &:before {
+                            content: "\f106";
+                            font-family: "FontAwesome";
+                            color: white;
+                        }
+                    }
                 }
 
-                &:after {
-                    position: absolute;
-                    content: "\f105";
-                    font-family: "FontAwesome";
-                    font-size: 25px;
-                    color: @colorDarkBlue;
-                    left: 81px;
-                    top: 27px;
-                    padding-left: 65px;
-                    padding-right: 65px;
-                }
-
-                &#utviklingsdirektoer {
+                &#utviklingsdirektoer .box {
                     background: @colorPurple;
                     color: white;
                     height: 45px;
-                    margin-bottom: 32px;
-                    margin-top: 36px;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+
+                    &:before {
+                        content: '';
+                    }
 
                     &:after {
                         color: white;
@@ -261,7 +373,7 @@
             }
 
             &.administrasjon .sub-department {
-                margin: 20px 0 0 0;
+                margin: 10px 0 0 0;
             }
         }
     }
@@ -309,17 +421,18 @@
     }
 
     .director {
-        border: 4px solid @colorDarkBlue;
-        width: 100%;
-        height: 80px;
+        width: 33.3333333333%;
+        height: 100px;
         display: table;
+        margin: 0 auto;
+        background: @colorDarkBlue url(../img/menneske_i_footer.svg) no-repeat right top;
 
         p {
             text-align: center;
             font-family: @fontSohoRegular;
             font-size: 18px;
             line-height: 20px;
-            color: @colorDarkBlue;
+            color: white;
 
             &:first-of-type {
                 text-transform: uppercase;
@@ -399,7 +512,7 @@
             .department {
                 width: 100%;
 
-                .person {
+                .person, .person_sub {
                     padding: 10px 10px 0 10px;
                 }
 

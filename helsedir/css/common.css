@@ -217,6 +217,10 @@ body {
 .container-fluid .has-hidden-content h3.accordion:before {
   font-size: 30px;
 }
+.container .has-visible-content,
+.container-fluid .has-visible-content {
+  cursor: pointer;
+}
 .container .has-visible-content h2:before,
 .container-fluid .has-visible-content h2:before,
 .container .has-visible-content .accordion:before,
@@ -226,10 +230,6 @@ body {
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
-}
-.container .has-visible-content .accordion,
-.container-fluid .has-visible-content .accordion {
-  cursor: pointer;
 }
 .container .has-visible-content h3.accordion:before,
 .container-fluid .has-visible-content h3.accordion:before {
