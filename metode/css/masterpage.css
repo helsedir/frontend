@@ -29,6 +29,7 @@
 }
 .logo img {
   height: 63px;
+  width: 100%;
 }
 #header {
   background: white;
@@ -201,5 +202,11 @@
   background-size: 84px 25px;
   width: 84px;
   margin-right: 0;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=masterpage.css.map */
