@@ -74,7 +74,7 @@
         display: inline-block;
         padding: 20px 30px 30px 30px;
 
-        .status_infomration {
+        .status_information {
             float: left;
             width: 395px;
             margin: 24px 0 0 30px;
@@ -147,4 +147,35 @@
 
 #footer {
     padding-top: 250px;
+}
+
+@media only screen and (max-width: 599px) {
+    .search {
+        width: auto;
+        max-width: 300px;
+    }
+
+    .transportsideknapp a {
+        padding-left: 0;
+
+        .status_information {
+            margin-left: 0;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .drops {
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .transportsideknapp a {
+        .status_information {
+            margin-left: 0;
+            width: auto;
+        }
+    }
 }

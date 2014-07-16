@@ -52,14 +52,14 @@
   display: inline-block;
   padding: 20px 30px 30px 30px;
 }
-.transportsideknapp a .status_infomration,
-.transportsideknapp a:visited .status_infomration {
+.transportsideknapp a .status_information,
+.transportsideknapp a:visited .status_information {
   float: left;
   width: 395px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp a .status_infomration .status_received,
-.transportsideknapp a:visited .status_infomration .status_received {
+.transportsideknapp a .status_information .status_received,
+.transportsideknapp a:visited .status_information .status_received {
   margin-right: 30px;
 }
 .transportsideknapp a .status,
@@ -121,5 +121,29 @@
 }
 #footer {
   padding-top: 250px;
+}
+@media only screen and (max-width: 599px) {
+  .search {
+    width: auto;
+    max-width: 300px;
+  }
+  .transportsideknapp a {
+    padding-left: 0;
+  }
+  .transportsideknapp a .status_information {
+    margin-left: 0;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .drops {
+    margin-top: 45px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .transportsideknapp a .status_information {
+    margin-left: 0;
+    width: auto;
+  }
 }
 /*# sourceMappingURL=transportside.css.map */
