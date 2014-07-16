@@ -643,24 +643,39 @@ body {
 }
 .container .external-link,
 .container-fluid .external-link {
-  background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-  background-size: 16px 16px;
-  padding-right: 22px;
   text-decoration: none;
   margin: 15px 0;
   display: inline-block;
+  /*
+        &.inline, .inline:visited {
+            text-decoration: none;
+            margin: 0;
+        }
+
+        &:visited {
+            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+            background-size: 16px 16px;
+        }*/
 }
-.container .external-link.inline,
-.container-fluid .external-link.inline,
-.container .external-link .inline:visited,
-.container-fluid .external-link .inline:visited {
-  text-decoration: none;
-  margin: 0;
-}
-.container .external-link:visited,
-.container-fluid .external-link:visited {
-  background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+.container .external-link:after,
+.container-fluid .external-link:after {
+  content: '';
+  background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
   background-size: 16px 16px;
+  display: inline;
+  padding-left: 25px;
+}
+.container .external-link h1,
+.container-fluid .external-link h1,
+.container .external-link h2,
+.container-fluid .external-link h2,
+.container .external-link h3,
+.container-fluid .external-link h3,
+.container .external-link h4,
+.container-fluid .external-link h4,
+.container .external-link h5,
+.container-fluid .external-link h5 {
+  display: inline;
 }
 .container .internal-link,
 .container-fluid .internal-link {

@@ -603,13 +603,18 @@ body {
     }
 
     .external-link {
-        background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-        background-size: 16px 16px;
-        padding-right: 22px;
         text-decoration: none;
         margin: 15px 0;
         display: inline-block;
 
+        &:after {
+            content: '';
+            background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
+            background-size: 16px 16px;
+            display: inline;
+            padding-left: 25px;
+        }
+        /*
         &.inline, .inline:visited {
             text-decoration: none;
             margin: 0;
@@ -618,6 +623,9 @@ body {
         &:visited {
             background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
             background-size: 16px 16px;
+        }*/
+        h1, h2, h3, h4, h5 {
+            display: inline;
         }
     }
 

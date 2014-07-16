@@ -37,4 +37,7 @@
 .container .searchfield {
   margin: 40px 0 10px 0;
 }
+.container .highlight {
+  font-weight: bold;
+}
 /*# sourceMappingURL=search.css.map */

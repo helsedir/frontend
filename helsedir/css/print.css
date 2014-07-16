@@ -19,8 +19,12 @@
   .module_subscribe,
   .breadcrumbs,
   .calltoaction,
-  .mainentrance {
-    display: none;
+  .mainentrance,
+  aside,
+  .aside,
+  iframe,
+  .module_social {
+    display: none !important;
   }
   a:after {
     content: " [" attr(href) "] ";
