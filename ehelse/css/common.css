@@ -566,6 +566,7 @@ figure .metatext {
   color: #0093a7;
   font-size: 20px;
   line-height: 27px;
+  display: inline-block;
 }
 .report a h3.internal-link.arrow_right {
   margin: 0;
@@ -1372,7 +1373,6 @@ fieldset {
 .dropdown select::-ms-expand {
   display: none;
 }
-.dropdown select:hover,
 .dropdown select:focus,
 .dropdown select:active {
   background: #004e66 url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;

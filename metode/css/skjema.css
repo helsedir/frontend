@@ -207,6 +207,7 @@ input[type=checkbox]:focus {
 .method_entrance h3 {
   margin-top: 0;
   font-size: 18px;
+  border: none;
 }
 .method_entrance .drop_wrapper .drop {
   position: relative;
