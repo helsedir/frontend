@@ -2,11 +2,13 @@
   position: relative;
 }
 .wrapper .method_status {
-  background: #d7d6d6 url(../img/placeholder.png);
+  background: #ffffff url(../img/placeholder.png);
   background-position: 10px 14px;
   background-repeat: no-repeat;
+  border-left: 6px solid #004e66;
   margin-top: 30px;
-  padding: 10px 0 10px 70px;
+  padding: 10px 40px 30px 70px;
+  position: relative;
 }
 .wrapper .method_status h2 {
   margin: 0 0 20px 0;
@@ -28,12 +30,17 @@
 }
 .wrapper .method_status.has-hidden-content h2:before,
 .wrapper .method_status.has-hidden-content .accordion:before {
-  float: right;
-  padding: 3px 10px 0 0;
   content: "\f107";
   font-family: "FontAwesome";
-  color: #004e66;
-  font-size: 40px;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #004e66;
+  padding: 0;
+  padding: 0 5px;
+  line-height: 30px;
 }
 .wrapper .method_status.has-hidden-content h3.accordion:before {
   font-size: 30px;
@@ -43,39 +50,51 @@
 }
 .wrapper .method_status.has-visible-content h2:before,
 .wrapper .method_status.has-visible-content .accordion:before {
-  float: right;
-  padding: 3px 10px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
-  color: #004e66;
-  font-size: 40px;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #004e66;
+  padding: 0;
+  padding: 0 5px;
+  line-height: 30px;
 }
 .wrapper .method_status.has-visible-content h3.accordion:before {
   font-size: 30px;
 }
 .wrapper .method_status .method_warning {
-  color: red;
+  color: white;
 }
 .wrapper .method_status .method_warning .fa-exclamation {
-  font-size: 60px;
+  font-size: 20px;
   margin-right: 10px;
   float: left;
+  background: red;
+  padding: 10px 15px;
 }
 .wrapper .method_status .method_warning p {
+  color: #222;
   padding-right: 30px;
 }
 .wrapper .method_status .more_information p a {
   text-decoration: underline;
 }
-.wrapper .fa-info-circle {
+.wrapper .fa-info {
   position: absolute;
-  top: 1px;
-  right: -30px;
-  font-size: 26px;
+  top: 9px;
+  right: 11px;
+  font-size: 18px;
   cursor: pointer;
+  color: white;
+  background: #004e66;
+  line-height: 20px;
+  padding: 4px 11px;
 }
-.wrapper .fa-info-circle.selected {
-  color: blue;
+.wrapper .fa-info.selected {
+  background: #0093a7;
 }
 .wrapper .method_evaluation {
   margin-top: 10px;
@@ -85,5 +104,20 @@
 .wrapper .method_evaluation a {
   text-decoration: underline;
   color: blue;
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper .method_status .method_attribute_label {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .wrapper .method_status .method_attribute_label {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .wrapper .method_status {
+    padding: 10px 40px 30px 15px;
+  }
 }
 /*# sourceMappingURL=method.css.map */

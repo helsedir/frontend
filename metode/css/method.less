@@ -1,12 +1,33 @@
-﻿.wrapper {
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorBlue023c49: #023c49;
+@colorMediumBlue: #0093a7;
+@colorLightBlue: #6cb4b5;
+@colorOrange: #df9922;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorDarkGray: #aeaba8;
+@colorLightGray: #f2f2f2;
+@colorMediumGray: #bababa;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+
+.wrapper {
     position: relative;
 
     .method_status {
-        background: #D7D6D6 url(../img/placeholder.png);
+        background: white url(../img/placeholder.png);
         background-position: 10px 14px;
         background-repeat: no-repeat;
+        border-left: 6px solid @colorDarkBlue;
         margin-top: 30px;
-        padding: 10px 0 10px 70px;
+        padding: 10px 40px 30px 70px;
+        position: relative;
 
         h2 {
             margin: 0 0 20px 0;
@@ -31,12 +52,17 @@
             cursor: pointer;
 
             h2:before, .accordion:before {
-                float: right;
-                padding: 3px 10px 0 0;
                 content: "\f107";
                 font-family: "FontAwesome";
-                color: #004e66;
-                font-size: 40px;
+                color: white;
+                font-size: 30px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                background: #004e66;
+                padding: 0;
+                padding: 0 5px;
+                line-height: 30px;
             }
 
             h3.accordion:before {
@@ -48,12 +74,17 @@
             cursor: pointer;
 
             h2:before, .accordion:before {
-                float: right;
-                padding: 3px 10px 0 0;
                 content: "\f106";
                 font-family: "FontAwesome";
-                color: #004e66;
-                font-size: 40px;
+                color: white;
+                font-size: 30px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                background: #004e66;
+                padding: 0;
+                padding: 0 5px;
+                line-height: 30px;
             }
 
             h3.accordion:before {
@@ -62,15 +93,18 @@
         }
 
         .method_warning {
-            color: red;
+            color: white;
 
             .fa-exclamation {
-                font-size: 60px;
+                font-size: 20px;
                 margin-right: 10px;
                 float: left;
+                background: red;
+                padding: 10px 15px;
             }
 
             p {
+                color: #222;
                 padding-right: 30px;
             }
         }
@@ -80,15 +114,19 @@
         }
     }
 
-    .fa-info-circle {
+    .fa-info {
         position: absolute;
-        top: 1px;
-        right: -30px;
-        font-size: 26px;
+        top: 9px;
+        right: 11px;
+        font-size: 18px;
         cursor: pointer;
+        color: white;
+        background: #004e66;
+        line-height: 20px;
+        padding: 4px 11px;
 
         &.selected {
-            color: blue;
+            background: @colorMediumBlue;
         }
     }
 
@@ -100,6 +138,30 @@
         a {
             text-decoration: underline;
             color: blue;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .wrapper .method_status .method_attribute_label {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .wrapper {
+        .method_status {
+            .method_attribute_label {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:899px) {
+    .wrapper {
+        .method_status {
+            padding: 10px 40px 30px 15px;
         }
     }
 }
