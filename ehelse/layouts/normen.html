@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="hidden-xs hidden-sm col-md-7 col-md-offset-1 col-lg-5 col-lg-offset-3">
+                <div class="col-xs-12 col-md-7 col-md-offset-1 col-lg-5 col-lg-offset-3" id="mainsearch">
                     <div class="mainsearchcolumn  hidden-mobile" id="mainsearchcolumn">
                         <form class="mainsearchform">
                             <span role="search">
@@ -65,7 +65,7 @@
                     <div class="pull-right links">
                         <span>
                             <a class=" hidden-sm hidden-xs" href="#">Om ehelse.no</a>
-                            <a class=" hidden-sm hidden-xs" href="#">English</a>
+                            <a class=" hidden-sm hidden-xs" href="artikkel_engelsk.html">English</a>
                         </span>
                     </div>
                 </div>
@@ -85,9 +85,12 @@
                     <h1>Norm for informasjonssikkerhet</h1>
                 </header>
 
-                <form>
-                    <label for="searchinput" class="visuallyhidden">Søk</label>
-                    <input id="searchinput" class="search" type="text" placeholder="Søk på tittel eller IS-nummer" />
+                <form class="searchform">
+                    <label class="visuallyhidden" for="Finn_tittel">Søk på tittel eller IS-nummer</label>
+                    <input id="Finn_tittel" type="text" class="search" placeholder="Søk på tittel eller IS-nummer">
+                    <button type="submit" class="search_button">
+                        <img src="../img/ikon_forstorrelsesglass.png" alt="Søk" />
+                    </button>
                 </form>
                 <div class="content">
 

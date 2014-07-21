@@ -101,6 +101,10 @@
 .entrancebutton:hover {
   color: white;
 }
+.entrancebutton:visited:hover,
+.entrancebutton:hover:hover {
+  background: #02343f;
+}
 .entrancebutton.alternative {
   height: 160px;
 }
@@ -250,12 +254,14 @@
   margin-top: 30px;
 }
 .internal-link {
-  background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+  background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
   background-size: 20px;
   background-position: 0 7px;
 }
 .toppmeny .tabs .tab-links li.menu_search {
   background: none;
+  width: 170px;
+  padding: 0;
 }
 #menu_search {
   border-radius: 0;
@@ -281,6 +287,24 @@
 .video-container {
   padding-bottom: 40%;
   margin: 40px 0 20px 0;
+}
+.search_button img {
+  width: 20px;
+  vertical-align: initial;
+}
+.menu_search input {
+  height: 27px;
+  width: 77%;
+  cursor: pointer;
+  border: none;
+  color: #004e66;
+}
+.searchform {
+  border: 1px solid #004e66;
+  margin: 0;
+  height: 31px;
+  background: white;
+  padding-left: 0;
 }
 @media only screen and (max-width: 599px) {
   .entrancebutton {
@@ -326,7 +350,7 @@
     margin-top: 5px;
   }
   .internal-link {
-    background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+    background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
     background-size: 20px;
     background-position: 0 13px;
   }
@@ -346,7 +370,7 @@
     margin-top: 3px;
   }
   .internal-link {
-    background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+    background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
     background-size: 20px;
     background-position: 0 50%;
   }

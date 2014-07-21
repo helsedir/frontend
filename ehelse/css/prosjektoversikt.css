@@ -1,24 +1,4 @@
-﻿.search {
-  height: 39px;
-  /*max-width: 220px;*/
-  width: 86%;
-  padding: 0 37px 0 5px;
-  border-radius: 3px;
-  border: 1px solid #004e66;
-  vertical-align: middle;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
-  background-repeat: no-repeat;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-color: #ffffff;
-  background-position: 97% 50%;
-  background-position-x: 97%;
-  background-position-y: 50%;
-  cursor: pointer;
-}
-.transportsideknapp {
+﻿.transportsideknapp {
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 96% 93%;

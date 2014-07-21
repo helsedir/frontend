@@ -50,16 +50,4 @@
             $('#tab_header1').focus();
         }
     });
-
-    $('#mobilesearch').on('click', function () {
-        console.log('trole');
-        if ($('#mainsearchcolumn').is(':visible')) {
-            $(this).removeClass('js-expanded');
-            $('#mainsearchcolumn').slideUp(500);
-        } else {
-            $(this).addClass('js-expanded');
-            $('#mainsearchcolumn').slideDown(500);
-            $('#mainsearchcolumn input').focus();
-        }
-    });
 });

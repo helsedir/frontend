@@ -392,21 +392,60 @@ a {
     left: -9999px !important;
 }
 
-.search {
+.searchform {
     margin-top: 30px;
+    margin-bottom: 20px;
+    height: 41px;
     width: 100%;
-    height: 40px;
-    padding: 5px 10px;
-    background: white url('../img/ikon_forstorrelsesglass.png') center no-repeat;
-    border: 1px solid @colorDarkBlue;
-    -moz-background-size: auto 80%;
-    -o-background-size: auto 80%;
-    -webkit-background-size: auto 80%;
-    background-size: auto 80%;
-    background-position: 99% 50%;
-    background-position-x: 99%;
-    background-position-y: 50%;
+    border: none;
+    border-bottom: 1px solid @colorDarkBlue;
+    vertical-align: middle;
     cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.search {
+    width: 94%;
+    height: 40px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    vertical-align: sub;
+
+    &::-webkit-input-placeholder {
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+
+    &:-ms-input-placeholder {
+        color: @colorDarkBlue;
+        text-align: left;
+    }
+}
+
+.search_button {
+    border: none;
+    background: none;
+    width: 29px;
+    padding: 0;
+    vertical-align: middle;
+
+    img {
+        width: 25px;
+        vertical-align: middle;
+    }
 }
 
 .search_withbutton {
@@ -762,7 +801,7 @@ iframe {
     color: #838078;
     font-family: @fontCalibri;
     font-size: 20px;
-    background: url(../img/ikoner/lenkepil_orange.svg) no-repeat;
+    background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
     padding-left: 35px;
     margin-top: 11px;
@@ -1083,12 +1122,25 @@ p.keyfigures, h4.keyfigures {
         }
 
         &.date {
-            border: 2px solid @colorMediumBlue;
+            border-top: 4px solid @colorOrange;
             margin-bottom: 70px;
-            text-align: center;
+            padding: 0 10px 20px 0;
+
+            .module_header {
+                margin-top: 0;
+                text-align: right;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
 
             .keyfigures {
-                text-align: center;
+                &.day, &.month {
+                    text-align: center;
+                    margin: 0;
+                    font-size: 26px;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
             }
         }
 
@@ -1588,8 +1640,12 @@ fieldset {
         padding: 5px 38px 4px 5px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
-        background: white url('../img/ikoner/knapp_pil_nedover.svg') no-repeat; /*Adds background-image*/
+        background: white url('../img/ikoner/knapp_pil_nedover.png') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
+        -moz-background-size: 38px;
+        -o-background-size: 38px;
+        -webkit-background-size: 38px;
+        background-size: 38px;
         text-indent: 0.01px;
         text-overflow: '';
         color: #222;
@@ -1599,8 +1655,12 @@ fieldset {
         }
 
         &:focus, &:active {
-            background: @colorDarkBlue url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
+            background: @colorDarkBlue url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
             background-position: 100%;
+            -moz-background-size: 38px;
+            -o-background-size: 38px;
+            -webkit-background-size: 38px;
+            background-size: 38px;
             color: white;
             border: none;
         }
@@ -1639,6 +1699,33 @@ fieldset {
 
     label {
         padding-left: 9px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .refinesearch {
+        .form-group {
+            overflow: hidden;
+
+            select {
+                width: 317px;
+                background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #FFF;
+                -moz-background-size: 39px;
+                -o-background-size: 39px;
+                -webkit-background-size: 39px;
+                background-size: 39px;
+
+                &:focus, &:active {
+                    background: @colorDarkBlue url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+                    background-position: 95%;
+                    color: white;
+                    -moz-background-size: 39px;
+                    -o-background-size: 39px;
+                    -webkit-background-size: 39px;
+                    background-size: 39px;
+                }
+            }
+        }
     }
 }
 
@@ -1817,6 +1904,39 @@ fieldset {
     padding: 0;
 }
 
+.filterlist {
+    .selectedfilter {
+        margin-bottom: 10px;
+
+        a, a:visited {
+            font-weight: bold;
+            border-bottom: 3px solid #004e66;
+            padding-bottom: 6px;
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 22px;
+
+        a {
+            color: #004e66;
+            font-size: 18px;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.numberofhits {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #004e66;
+}
+
 @media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
@@ -1833,7 +1953,7 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -50%;
+            margin-right: -54%;
         }
     }
 
@@ -1862,7 +1982,7 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -71%;
+            margin-right: -79%;
         }
 
         &.top {
@@ -1884,6 +2004,10 @@ fieldset {
     }
 
     .bubble {
+    }
+
+    .search {
+        width: 86%;
     }
 }
 

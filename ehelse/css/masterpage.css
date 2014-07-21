@@ -188,7 +188,7 @@
   border: none;
   padding: 0;
   width: 170px;
-  vertical-align: sub;
+  vertical-align: middle;
 }
 .masterheader {
   height: 40px;
@@ -269,41 +269,11 @@ footer .tabs .tab-links li[aria-selected='true']:focus,
   background: #02343f;
   color: white;
 }
-footer .tabs .tab-links li input,
-.toppmeny .tabs .tab-links li input {
-  width: 100%;
-}
 footer .tabs .tab-links li:focus,
 .toppmeny .tabs .tab-links li:focus {
   background: #02343f;
   color: white;
   outline: 0;
-}
-footer .tabs .tab-links .menu_search,
-.toppmeny .tabs .tab-links .menu_search {
-  color: black;
-  padding-left: 0;
-}
-footer .tabs .tab-links .menu_search input,
-.toppmeny .tabs .tab-links .menu_search input {
-  padding: 2px 24px 0 5px;
-  height: 27px;
-  /*max-width: 220px;*/
-  width: 86%;
-  border-radius: 3px;
-  border: 1px solid #004e66;
-  vertical-align: middle;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
-  background-repeat: no-repeat;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-color: #ffffff;
-  background-position: 97% 50%;
-  background-position-x: 97%;
-  background-position-y: 50%;
-  cursor: pointer;
 }
 footer .map,
 .toppmeny .map {
@@ -596,7 +566,7 @@ footer.rammeverk a:visited {
     margin-bottom: 10px;
   }
   .mainsearchform input {
-    width: 92%;
+    width: 82%;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */

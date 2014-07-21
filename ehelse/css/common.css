@@ -328,21 +328,55 @@ a:hover {
   top: -9999px !important;
   left: -9999px !important;
 }
-.search {
+.searchform {
   margin-top: 30px;
+  margin-bottom: 20px;
+  height: 41px;
   width: 100%;
-  height: 40px;
-  padding: 5px 10px;
-  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
-  border: 1px solid #004e66;
-  -moz-background-size: auto 80%;
-  -o-background-size: auto 80%;
-  -webkit-background-size: auto 80%;
-  background-size: auto 80%;
-  background-position: 99% 50%;
-  background-position-x: 99%;
-  background-position-y: 50%;
+  border: none;
+  border-bottom: 1px solid #004e66;
+  vertical-align: middle;
   cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+}
+.search {
+  width: 94%;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  vertical-align: sub;
+}
+.search::-webkit-input-placeholder {
+  color: #004e66;
+  text-align: left;
+}
+.search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #004e66;
+  text-align: left;
+}
+.search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #004e66;
+  text-align: left;
+}
+.search:-ms-input-placeholder {
+  color: #004e66;
+  text-align: left;
+}
+.search_button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
+  vertical-align: middle;
+}
+.search_button img {
+  width: 25px;
+  vertical-align: middle;
 }
 .search_withbutton .search {
   display: inline;
@@ -643,7 +677,7 @@ iframe {
   color: #838078;
   font-family: 'Calibri';
   font-size: 20px;
-  background: url(../img/ikoner/lenkepil_orange.svg) no-repeat;
+  background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
   background-size: 20px;
   padding-left: 35px;
   margin-top: 11px;
@@ -917,12 +951,23 @@ h4.keyfigures {
   width: 100px;
 }
 .module.module_message.date {
-  border: 2px solid #0093a7;
+  border-top: 4px solid #df9922;
   margin-bottom: 70px;
-  text-align: center;
+  padding: 0 10px 20px 0;
 }
-.module.module_message.date .keyfigures {
+.module.module_message.date .module_header {
+  margin-top: 0;
+  text-align: right;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.module.module_message.date .keyfigures.day,
+.module.module_message.date .keyfigures.month {
   text-align: center;
+  margin: 0;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 .module.module_message.date_small {
   border: 2px solid #0093a7;
@@ -1362,10 +1407,14 @@ fieldset {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/knapp_pil_nedover.png') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
+  -moz-background-size: 38px;
+  -o-background-size: 38px;
+  -webkit-background-size: 38px;
+  background-size: 38px;
   text-indent: 0.01px;
   text-overflow: '';
   color: #222;
@@ -1375,8 +1424,12 @@ fieldset {
 }
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
+  background: #004e66 url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
   background-position: 100%;
+  -moz-background-size: 38px;
+  -o-background-size: 38px;
+  -webkit-background-size: 38px;
+  background-size: 38px;
   color: white;
   border: none;
 }
@@ -1410,6 +1463,29 @@ fieldset {
 }
 .refinesearch label {
   padding-left: 9px;
+}
+@-moz-document url-prefix() {
+  .refinesearch .form-group {
+    overflow: hidden;
+  }
+  .refinesearch .form-group select {
+    width: 317px;
+    background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #ffffff;
+    -moz-background-size: 39px;
+    -o-background-size: 39px;
+    -webkit-background-size: 39px;
+    background-size: 39px;
+  }
+  .refinesearch .form-group select:focus,
+  .refinesearch .form-group select:active {
+    background: #004e66 url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+    background-position: 95%;
+    color: white;
+    -moz-background-size: 39px;
+    -o-background-size: 39px;
+    -webkit-background-size: 39px;
+    background-size: 39px;
+  }
 }
 .table_general {
   border: 1px solid #91c6c2;
@@ -1554,6 +1630,32 @@ fieldset {
 .no-padding {
   padding: 0;
 }
+.filterlist .selectedfilter {
+  margin-bottom: 10px;
+}
+.filterlist .selectedfilter a,
+.filterlist .selectedfilter a:visited {
+  font-weight: bold;
+  border-bottom: 3px solid #004e66;
+  padding-bottom: 6px;
+}
+.filterlist li {
+  display: inline-block;
+  margin-right: 22px;
+}
+.filterlist li a {
+  color: #004e66;
+  font-size: 18px;
+}
+.filterlist li:last-of-type {
+  margin-right: 0;
+}
+.numberofhits {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #004e66;
+}
 @media only screen and (min-width: 1200px) {
   .aside {
     top: 0;
@@ -1569,7 +1671,7 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -50%;
+    margin-right: -54%;
   }
   .module_person.kontakt {
     bottom: 0;
@@ -1594,7 +1696,7 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -71%;
+    margin-right: -79%;
   }
   .aside.top {
     margin-right: -72%;
@@ -1609,6 +1711,9 @@ fieldset {
   }
   .border {
     display: none;
+  }
+  .search {
+    width: 86%;
   }
 }
 @media only screen and (min-width: 900px) {
