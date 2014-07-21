@@ -40,10 +40,25 @@
                         <span>i spesialisthelsetjenesten</span>
                     </a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-lg-offset-3 no-padding">
-                    <div class="pull-right">
-                        <a class="links hidden-sm hidden-xs " href="omoss.html">OM SYSTEMET</a>
-                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
+                    <div class="mobile-search pull-right" id="mobilesearch">
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2">
+                    <div class="mainsearchcolumn" id="mainsearchcolumn">
+                        <form class="mainsearchform hidden-mobile">
+                            <span role="search">
+                                <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                                <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
+                            </span>
+                        </form>
+                    </div>
+                    <div class="pull-right links">
+                        <span>
+                            <a class=" hidden-sm hidden-xs" href="#">Om systemet</a>
+                            <a class=" hidden-sm hidden-xs" href="#">English</a>
+                        </span>
                     </div>
                 </div>
             </header>
@@ -60,32 +75,40 @@
                     </nav>
                     <h1>Registrer deg</h1>
                 </header>
-                <form class="form" method="POST">
-                    <label for="orgnr">Org.nr</label>
-                    <input id="orgnr" class="form_field_standard" type="text" required>
-                    <label for="firmanavn">Firmanavn</label>
-                    <input id="firmanavn" class="form_field_standard" type="text" required>
-                    <label for="adresse">Adresse</label>
-                    <input id="adresse" class="form_field_standard" type="text" required>
-                    <div class="zipcode clearfix">
-                        <label for="postnr">Postnummer</label>
-                        <input id="postnr" class="form_field_standard" type="text" maxlength="4" required>
+                <div class="content">
+                    <form class="form" method="POST">
+                        <label for="orgnr">Org.nr</label>
+                        <input id="orgnr" class="form_field_standard" type="text" required>
+                        <label for="firmanavn">Firmanavn</label>
+                        <input id="firmanavn" class="form_field_standard" type="text" required>
+                        <label for="adresse">Adresse</label>
+                        <input id="adresse" class="form_field_standard" type="text" required>
+                        <div class="zipcode clearfix">
+                            <label for="postnr">Postnummer</label>
+                            <input id="postnr" class="form_field_standard" type="text" maxlength="4" required>
+                        </div>
+                        <div class="location clearfix">
+                            <label for="sted">Sted</label>
+                            <input id="sted" class="form_field_standard" type="text" required>
+                        </div>
+                        <label for="land">Land</label>
+                        <input id="land" class="form_field_standard" type="text" required>
+                        <label for="kontaktperson">Kontaktperson</label>
+                        <input id="kontaktperson" class="form_field_standard" type="text" required>
+                        <label for="tlf">Telefonnummer</label>
+                        <input id="tlf" class="form_field_tel" type="tel" maxlength="8" required>
+                        <label for="epost">E-post</label>
+                        <input id="epost" class="form_field_email" type="email" required>
+                        <a href="#">Avbryt</a>
+                        <button type="submit" class="calltoaction send" value="send">Send</button>
+                    </form>
+
+                    <div class=" module module_social">
+                        <a href="javascript:window.print()" class=" ikon_skrivut">
+                            <span></span>skriv ut
+                        </a>
                     </div>
-                    <div class="location clearfix">
-                        <label for="sted">Sted</label>
-                        <input id="sted" class="form_field_standard" type="text" required>
-                    </div>
-                    <label for="land">Land</label>
-                    <input id="land" class="form_field_standard" type="text" required>
-                    <label for="kontaktperson">Kontaktperson</label>
-                    <input id="kontaktperson" class="form_field_standard" type="text" required>
-                    <label for="tlf">Telefonnummer</label>
-                    <input id="tlf" class="form_field_tel" type="tel" maxlength="8" required>
-                    <label for="epost">E-post</label>
-                    <input id="epost" class="form_field_email" type="email" required>
-                    <a href="#">Avbryt</a>
-                    <button type="submit" class="calltoaction send" value="send">Send</button>
-                </form>
+                </div>
             </article>
         </div>
     </div>

@@ -41,10 +41,25 @@
                         <span>i spesialisthelsetjenesten</span>
                     </a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-lg-offset-3 no-padding">
-                    <div class="pull-right">
-                        <a class="links hidden-sm hidden-xs " href="omoss.html">OM SYSTEMET</a>
-                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
+                    <div class="mobile-search pull-right" id="mobilesearch">
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2">
+                    <div class="mainsearchcolumn" id="mainsearchcolumn">
+                        <form class="mainsearchform hidden-mobile">
+                            <span role="search">
+                                <label for="mainsearchinput" class="visuallyhidden">Søk</label>
+                                <input id="mainsearchinput" class="mainsearch" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
+                            </span>
+                        </form>
+                    </div>
+                    <div class="pull-right links">
+                        <span>
+                            <a class=" hidden-sm hidden-xs" href="#">Om systemet</a>
+                            <a class=" hidden-sm hidden-xs" href="#">English</a>
+                        </span>
                     </div>
                 </div>
             </header>
@@ -63,72 +78,92 @@
                     <p class="ingress">
                     </p>
                 </header>
-                <nav class="clearfix">
-                    <a href="oppstart.html" class="method_entrance ">
-                        <span class="drop_wrapper">
-                            <span class="drop oppstart ">
-                                <i class="drop_triangle"></i>
-                                <i class="drop_circle"></i>
-                                <span class="drop_number">1</span>
+                <div class="content">
+                    <nav class="clearfix">
+                        <a href="oppstart.html" class="method_entrance ">
+                            <span class="drop_wrapper">
+                                <span class="drop oppstart ">
+                                    <i class="drop_triangle"></i>
+                                    <i class="drop_circle"></i>
+                                    <span class="drop_number">1</span>
+                                </span>
                             </span>
-                        </span>
-                        <div class="heading_wrapper"><h3>Oppstart</h3></div>
-                    </a>
-                    <a href="forslag.html" class="method_entrance ">
-                        <span class="drop_wrapper">
-                            <span class="drop forslag">
-                                <i class="drop_triangle"></i>
-                                <i class="drop_circle"></i>
-                                <span class="drop_number">2</span>
+                            <div class="heading_wrapper"><h3>Oppstart</h3></div>
+                        </a>
+                        <a href="forslag.html" class="method_entrance ">
+                            <span class="drop_wrapper">
+                                <span class="drop forslag">
+                                    <i class="drop_triangle"></i>
+                                    <i class="drop_circle"></i>
+                                    <span class="drop_number">2</span>
+                                </span>
                             </span>
-                        </span>
-                        <div class="heading_wrapper"><h3>Forslag</h3></div>
-                    </a>
-                    <a href="metodevurdering.html" class="method_entrance ">
-                        <span class="drop_wrapper">
-                            <span class="drop metodevurdering">
-                                <i class="drop_triangle"></i>
-                                <i class="drop_circle"></i>
-                                <span class="drop_number">3</span>
-                            </span>
-                        </span><div class="heading_wrapper"><h3>Metodevurdering</h3></div>
-                    </a>
-                    <a href="beslutning.html" class="method_entrance ">
-                        <span class="drop_wrapper">
-                            <span class="drop beslutning selected">
-                                <i class="drop_triangle"></i>
-                                <i class="drop_circle"></i>
-                                <span class="drop_number">4</span>
-                            </span>
-                        </span><div class="heading_wrapper"><h3>Beslutning</h3></div>
-                    </a>
-                    <a href="implementering.html" class="method_entrance ">
-                        <span class="drop_wrapper">
-                            <span class="drop implementering">
-                                <i class="drop_triangle"></i>
-                                <i class="drop_circle"></i>
-                                <span class="drop_number">5</span>
-                            </span>
-                        </span><div class="heading_wrapper"><h3>Implementering</h3></div>
-                    </a>
-                </nav>
-                <h1>4. Beslutning</h1>
-                <p>Her kommer tekst om beslutning</p>
-                <section></section>
-                <nav>
-                    <div class="navigate_back pull-left">
-                        <a href="metodevurdering.html">
-                            <i class="fa fa-angle-left"></i>
-                            <span>Forrige steg: Metodevurdering</span>
+                            <div class="heading_wrapper"><h3>Forslag</h3></div>
+                        </a>
+                        <a href="metodevurdering.html" class="method_entrance ">
+                            <span class="drop_wrapper">
+                                <span class="drop metodevurdering">
+                                    <i class="drop_triangle"></i>
+                                    <i class="drop_circle"></i>
+                                    <span class="drop_number">3</span>
+                                </span>
+                            </span><div class="heading_wrapper"><h3>Metodevurdering</h3></div>
+                        </a>
+                        <a href="beslutning.html" class="method_entrance ">
+                            <span class="drop_wrapper">
+                                <span class="drop beslutning selected">
+                                    <i class="drop_triangle"></i>
+                                    <i class="drop_circle"></i>
+                                    <span class="drop_number">4</span>
+                                </span>
+                            </span><div class="heading_wrapper"><h3>Beslutning</h3></div>
+                        </a>
+                        <a href="implementering.html" class="method_entrance ">
+                            <span class="drop_wrapper">
+                                <span class="drop implementering">
+                                    <i class="drop_triangle"></i>
+                                    <i class="drop_circle"></i>
+                                    <span class="drop_number">5</span>
+                                </span>
+                            </span><div class="heading_wrapper"><h3>Implementering</h3></div>
+                        </a>
+                    </nav>
+                    <h1>4. Beslutning</h1>
+                    <p>Her kommer tekst om beslutning</p>
+                    <section></section>
+                    <nav>
+                        <div class="navigate_back pull-left">
+                            <a href="metodevurdering.html">
+                                <i class="fa fa-angle-left"></i>
+                                <span>Forrige steg: Metodevurdering</span>
+                            </a>
+                        </div>
+                        <div class="navigate_forward pull-right">
+                            <a href="implementering.html">
+                                <span>Neste steg: Implementering</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </nav>
+                    <aside class="aside">
+                        <div class=" module module_subscribe clearfix">
+                            <p class="header">Abonnér på denne siden</p>
+                            <a href="#" class="e-mail"><p>E-post</p></a>
+                            <a href="#" class="rss"><p>RSS-strøm</p></a>
+                        </div>
+                        <div class="module module_information has-hidden-content">
+                            <p class="accordion">Relatert innhold</p>
+                            <div class="visuallyhidden">
+                                <p>Pudding pie cookie candy canes cheesecake marzipan pie icing gummi bears. Cotton candy cheesecake pie. Chocolate icing pudding bear claw chupa chups cotton candy. Jelly-o unerdwear.com apple pie sugar plum bonbon icing. Brownie sweet soufflé fruitcake toffee cookie tootsie roll donut. </p>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class=" module module_social">
+                        <a href="javascript:window.print()" class=" ikon_skrivut">
+                            <span></span>skriv ut
                         </a>
                     </div>
-                    <div class="navigate_forward pull-right">
-                        <a href="implementering.html">
-                            <span>Neste steg: Implementering</span>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </div>
-                </nav>
+                </div>
             </article>
         </div>
     </div>
