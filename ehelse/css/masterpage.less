@@ -171,8 +171,6 @@
 
 .mainsearch {
     border: none;
-    border-bottom: 1px solid white;
-    background-image: url('../img/ikon_forstorrelsesglass_hvitt.png');
     background-repeat: no-repeat;
     -moz-background-size: auto 68%;
     -o-background-size: auto 68%;
@@ -209,18 +207,41 @@
 }
 
 .mainsearchform {
+    float: left;
+    margin-top: 2px;
+    height: 41px;
+    /* max-width: 220px; */
+    border: none;
+    border-bottom: 1px solid white;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+    background: @colorDarkBlue;
+
     span {
         vertical-align: sub;
+    }
 
-        input {
+    button {
+        border: none;
+        background: none;
+        width: 29px;
+        padding: 0;
+        vertical-align: middle;
+
+        img {
+            width: 18px;
             vertical-align: middle;
         }
     }
-}
 
-.mainsearchcolumn {
-    float: left;
-    margin-top: 2px;
+    input {
+        border: none;
+        padding: 0;
+        width: 170px;
+        vertical-align: sub;
+    }
 }
 
 .masterheader {
@@ -580,18 +601,6 @@ footer, .toppmeny {
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .hidden-mobile {
-        display: none;
-        background-color: #838078;
-        padding: 20px;
-    }
-
-    .masterheader {
-        margin: 10px 0 10px 0;
-    }
-}
-
 @media only screen and (max-width: 899px) {
     .menubutton {
         width: 40px;
@@ -610,7 +619,7 @@ footer, .toppmeny {
             background-position: center;
 
             &:hover {
-                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+                background: @colorMediumBlue url('../img/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
@@ -621,7 +630,7 @@ footer, .toppmeny {
 
             &.js-expanded {
                 padding-bottom: 46px;
-                background: #838078 url('../img/ikon_meny_hvit.svg') no-repeat;
+                background: @colorMediumBlue url('../img/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
@@ -643,13 +652,13 @@ footer, .toppmeny {
 
             &:focus {
                 text-decoration: none;
-                background-color: #838078;
+                background-color: @colorMediumBlue;
                 color: @colorDarkBlue;
                 border: solid 1px @colorDarkBlue;
             }
 
             &:hover {
-                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                background: @colorMediumBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
                 -moz-background-size: 30px;
                 -o-background-size: 30px;
                 -webkit-background-size: 30px;
@@ -659,15 +668,39 @@ footer, .toppmeny {
             }
 
             &.js-expanded {
-                padding-bottom: 43px;
-                background: #838078 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
-                -moz-background-size: 29px;
-                -o-background-size: 29px;
-                -webkit-background-size: 29px;
-                background-size: 29px;
-                background-position: 50% 35%;
-                border-radius: 3px 3px 0 0;
+                background: @colorMediumBlue;
+                border-radius: 3px;
+                padding-top: 6px;
+
+                &:before {
+                    font-family: "FontAwesome";
+                    content: '\f00d';
+                    font-size: 25px;
+                    color: white;
+                }
             }
+        }
+    }
+
+    .hidden-mobile {
+        display: none;
+        padding: 10px;
+    }
+
+    .masterheader {
+        margin: 10px 0 10px 0;
+    }
+
+    .mainsearchcolumn {
+        float: none;
+    }
+
+    .mainsearchform {
+        width: 100%;
+        margin-bottom: 10px;
+
+        input {
+            width: 92%;
         }
     }
 }

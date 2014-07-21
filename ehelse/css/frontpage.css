@@ -296,9 +296,9 @@
     margin: 0 0 15px 12px;
     color: white;
   }
-  .entrancebutton.menu button {
+  .entrancebutton.menu {
     width: 100%;
-    height: 93px;
+    height: 106px;
     border-radius: 4px;
   }
   .entrancebutton.menu h2 {
@@ -315,10 +315,40 @@
     font-size: 28px;
     margin-right: 20px;
   }
+  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 45%;
+  }
+  .frontpage div.conferenceitem > div:nth-child(2n) {
+    width: 45%;
+  }
+  .frontpage .conferenceitem .conference_info a {
+    line-height: 42px;
+    margin-top: 5px;
+  }
+  .internal-link {
+    background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+    background-size: 20px;
+    background-position: 0 13px;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .entrancebutton {
     margin: 30px 25px 0 0;
+  }
+  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 35%;
+  }
+  .frontpage div.conferenceitem > div:nth-child(2n) {
+    width: 55%;
+  }
+  .frontpage .conferenceitem .conference_info a {
+    line-height: 42px;
+    margin-top: 3px;
+  }
+  .internal-link {
+    background: url(../img/ikoner/lenkepil_blaa.svg) no-repeat;
+    background-size: 20px;
+    background-position: 0 50%;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -340,6 +370,9 @@
     margin: 28px 0 0 22px;
     width: 48%;
     float: left;
+  }
+  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 43%;
   }
 }
 @media only screen and (min-width: 1200px) {

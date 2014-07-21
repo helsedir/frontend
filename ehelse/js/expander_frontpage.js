@@ -52,13 +52,14 @@
     });
 
     $('#mobilesearch').on('click', function () {
-        if ($('#mainsearch').is(':visible')) {
+        console.log('trole');
+        if ($('#mainsearchcolumn').is(':visible')) {
             $(this).removeClass('js-expanded');
-            $('#mainsearch').slideUp(500);
+            $('#mainsearchcolumn').slideUp(500);
         } else {
             $(this).addClass('js-expanded');
-            $('#mainsearch').slideDown(500);
-            $('#mainsearch input').focus();
+            $('#mainsearchcolumn').slideDown(500);
+            $('#mainsearchcolumn input').focus();
         }
     });
 });
