@@ -1,339 +1,335 @@
 /* Spesifikt for retningslinjer */
 
-/* Fix for Bootstrap */
-.btn {
-	border-radius: 0px;
-	border: 1px solid #004e66;
+/* Frontpage */
+
+/* Frontpage */
+
+.container .filterlist .selectedfilter a h2, 
+.container .filterlist .selectedfilter a:visited h2 {
+	font-weight: bold;
+	border-bottom: 3px solid #004e66;
+	padding-bottom: 6px;
 }
 
-.label {
-	border-radius: 0px;
-	font-weight: 100;
+.container .filterlist a {
+	text-decoration: none;
 }
 
-article header, section header {
-	background: none;
-	margin-bottom: 0px;
-	height: auto; /* fix for customLess */
+.container .filterlist li:not(:first-child){
+	padding-left: 20px;
 }
 
-.guidelineUpdated {
-	font-size: 0.7em;
-	color: #666;
-}
-
-/*article p, section p {
-	display: block;
-	margin-bottom: 10px;
-} delete?*/ 
-
-.search, .twitter-typeahead {
-	width: 100%;
-}
-
-/* For twitter-typeahead */
-.search_retningslinjetittel {
-	font-size: 0.8em;
-	margin-left: 10px;
-	margin-top: 0px;
-}
-
-.picoList {
-	padding: 0.5em;
-	margin-bottom: 0px;
-}
-
-.picoList:not(:first-child) {
-    margin-top: 30px;
-}
-
-.picoList dt {
-	float: left;
-  clear: left;
-  width: 100px;
-  text-align: right;
-  font-weight: bold;
-}
-
-.picoList dt:after {
-	content: ":";
-}
-
-.picoList dd {
-	margin: 0 0 0 110px;
-	padding: 0 0 0.5em 0;
-	font-weight: normal;
-}
-
-.evidensprofilList {
-	padding: 0.5em;
-	margin-bottom: 0px;
-}
-
-.evidensprofilList:not(:first-child) {
-    margin-top: 30px;
-}
-
-.evidensprofilList dt {
-	float: left;
-  clear: left;
-  width: 190px;
-  text-align: right;
-  font-weight: bold;
-}
-
-.evidensprofilList dt:after {
-	content: ":";
-}
-
-.evidensprofilList dd {
-	margin: 0 0 0 200px;
-	padding: 0 0 0.5em 0;
-	font-weight: normal;
-}
-
-
-.evidensprofil {
-	margin-top:10px;
-}
-
-.recommendation {
-	padding: 5px 10px 5px 10px;
-	margin: 10px 0px 10px 0px;
-	background-color: #fff;
-	box-shadow: 0 0.5px 1px #999;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 0.5px;
-	border-radius: 0.5px;
-}
-
-.recommendation header {
-	cursor: pointer;
-	margin: 0px;
-}
-
-
-.recommendationType {
-	position: absolute;
-	top: -26px;
-	left: 0px;
-}
-
-.recommendationType span {
-	font-size: 0.6em;
-	color: #004e66;
-}
-
-.recommendationGrading {
-	position: absolute;
-	top: -32px;
-	right: -11px;
-	font-size: 0.8em;
-}
-
-.recommendationGrading span {
+.container .filterlist li:not(:last-child){
 	padding-right: 20px;
 }
 
-.recommendationGrading.weak span {
-	background-color: #FFDC00;
+/* Transportpage */
+
+/* Migrate into common.css */
+.container .transportsideknapp a h3, 
+.container-fluid .transportsideknapp a h3
+.container .transportsideknapp a:visited h3, 
+.container-fluid .transportsideknapp a:visited h3 {
+	color: #0093a7;
 }
 
-.recommendationGrading.strong span {
-	background-color: green;
+/* Migrate into common.css */
+.container .transportsideknapp a h3:after,
+.container-fluid .transportsideknapp a h3:after {
+	padding-left: 10px;
+	content: "\f105";
+	font-family: "FontAwesome";
+	font-size: inherit;
+	text-decoration: none;
 }
 
-.popoverText h4{
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 2px;
-	padding-top: 8px;
-	margin-top: 8px;
+/* Fix for Bootstrap */
+.container .btn { /* delete? */
+	border-radius: 0px;
+	border: 1px solid #004e66;
+	font-size: 18px;
+	background-color: #f7f6f6;
 }
 
-.popoverText p{
-	font-size: 14px;
-	line-height: 1.3em;
+/**** ARTICLE AND SECTION ****/
+
+
+
+
+
+
+/**** RECOMMENDATION *****/
+
+.container section.recommendation {
+	padding: 5px 10px 5px 10px;
+	margin: 50px 0px 30px 0px;
 }
 
-.recommendationGrading:after{
+.container section.recommendation .header_wrapper {
+	cursor: pointer;
+	margin: 0px;
+	position: relative; /* For absolute positioning of context */
+}
+
+/** HEADINGS FOR RECOMMENDATION HEADINGS **/
+
+/* Similar to H2 */
+.container section.recommendation h1{
+	font-size: 34px;
+	line-height: 42px;
+	font-family: "Soho Gothic W01 Light";
+	margin: 35px 0 10px 0;
+	color: #004e66;
+}
+
+/* Similar to H3 */
+.container section.recommendation h2 {
+	font-size: 28px;
+	line-height: 36px;
+	font-family: "Soho Gothic W01 Light";
+	margin: 35px 0 0 0;
+	color: #222;
+}
+
+/* Similar to H4 */
+.container section.recommendation h3 {
+	font-size: 24px;
+	line-height: 32px;
+	font-family: "Soho Gothic W01 Regular";
+	margin: 35px 0 0 0;
+	color: #222;
+}
+
+/* Similar to H5 */
+.container section.recommendation h4 {
+	font-size: 20px;
+	line-height: 28px;
+	font-family: "Soho Gothic W01 Regular";
+	margin: 35px 0 0 0;
+	color: #222;
+}
+
+/* Similar to H6 */
+.container section.recommendation h5 {
+	font-size: 20px;
+	line-height: 28px;
+	font-family: "Soho Gothic W01 Light";
+	margin: 35px 0 0 0;
+	color: #222;
+}
+
+.container section.recommendation .accordion { /* delete? */
+	border-bottom: 1px solid #bababa;
+	padding-bottom: 10px;
+}
+
+/* Header context */
+.container section.recommendation header .context {
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	font-family: 'Calibri';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #004e66;
+	text-decoration: none;
+	margin-bottom: 25px;
+}
+
+/* Accordion for H1, move to common.css? */
+.container section.recommendation .accordion.closed header h1:before {
+	float: left;
+  padding: 3px 20px 0 0;
+  content: "\f107";
+  font-family: "FontAwesome";
+  cursor: pointer;
+} 
+
+/* Accordion for H1, move to common.css? */
+.container section.recommendation .accordion.open header h1:before {
+	float: left;
+  padding: 3px 20px 0 0;
+  content: "\f106";
+  font-family: "FontAwesome";
+  cursor: pointer;
+}  
+
+
+/* RECOMMENDATION - CONTENT */
+
+.container .kunnskapsgrunnlag dl {
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+.container .kunnskapsgrunnlag dt {
+	float: left;
+  clear: left;
+  text-align: right;
+  font-weight: bold;
+}
+
+.container .kunnskapsgrunnlag dt:after {
+	content: ":";
+}
+
+.container .kunnskapsgrunnlag dd {
+	padding: 0 0 10px 0;
+	font-weight: normal;
+}
+
+.container .picoList dt {
+  width: 120px;
+}
+
+.container .picoList dd {
+	margin: 0 0 0 130px;
+}
+
+.container .evidensprofil {
+	margin-left: 140px;
+}
+
+.container .evidensprofilList dt {
+  width: 250px;
+} 
+
+.container .evidensprofilList dd {
+	margin: 0 0 0 260px;
+}
+
+
+/**** GLYPHS ****/
+.container .recommendationGrading:after{
 	content: "\f05a"; 
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  color: #fff;
-  font-size: 11px;
+  color: #999;
+  font-size: 14px;
   position: absolute;
-  top:1px;
-  right: 5px;  
+  top:0px;
+  margin-left: 5px; 
 }
 
-.recommendation_text{
-	margin-top: 0.5em;
-	margin-right: 1.2em;
-	margin-bottom: 0.8em;
-}
-
-.recommendation_extras {
-	margin-top: 10px;
+/**** MISC ****/
+.popoverText h4{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 2px;
+	padding-top: 8px;
+	margin-top: 8px;
 	margin-bottom: 10px;
 }
 
-.recommendation_extras h2{
-	margin-top: 0px;
+.popoverText p{
+	font-size: 14px;
+	line-height: 16px;
 }
 
-.recommendation_extras p {
-	font-size: 100%;
+.container .smallGrayText {
+	font-size: 0.7em;
+	color: #838078;
 }
 
-.recommendation_kunnskapsgrunnlag {
-	margin-top: 10px;
-}
-
-.recommendation_tabs .resp-tabs-container {
-	font-size: 0.8em;
-	line-height: 1.4em;
-}
-
-.grading {
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #999;
-	margin-top: 30px;
-	width: 100%;
-	padding-left: 5px;
-	font-size: 0.8em;
-}
-
-section header.section_heading h1 {
-	font-size: 36px;
-}
-
-article section header h1, section header h1 {
-	font-size: 1.333em;
-}
-
-
-section.recommendation header h1 {
-	font-size: 1em;
-	margin-top: 1em;
-	margin-bottom: 0.1em;
-	margin-right: 1.5em;
-	padding-bottom: 0px;
-	border-bottom: none;
-	line-height: 30px;
-}
-
-.recommendation h2 {
-	font-size: 0.9em;
-	
-}
-
-.accordion {
-	position: relative; /* for absolute- posisjonering av grading */
-}
-
-.accordion:after, .show_evidensprofil:before, .show_kunnskapsgrunnlag:before {
-	  content: "\f078"; 
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #004e66;
-    padding-right: 0.3em;
-} 
-
-.accordion:after {
-    font-size: 20px;
-    position: absolute;
-    top: 0px;
-    right: 0;  
-}
-
-.show_evidensprofil:before, .show_kunnskapsgrunnlag:before {
-   font-size: 14px;
-}
-
-.accordion.open:after, .show_evidensprofil.open:before, .show_kunnskapsgrunnlag.open:before {
-	content: "\f077";
-}
-
-/* Actions/buttons */
-.show_evidensprofil{
-	margin-left: 120px;
-}
-
-/* Helpers */
-.hidden {
-	display: none;
-}
-
-.uppercase {
+/* HELPERS */
+.container .uppercase {
 	text-transform: uppercase;
 }
 
-.horizontalList > li {
+.container .inlineGlyphs {
+	display: inline;
+	margin-left: 5px;
+	font-size: 20px;
+}
+
+.container .horizontalList > li {
 	display: inline-block;
   zoom:1;
   *display:inline;
   /* this fix is needed for IE7- */
 }
 
-.kvalitetKunnskapsgrunnlag {
-	display: inline;
-	margin-left: 5px;
-	color: #004e66;
-}
-
-h2.resp-accordion{
-	line-height: 1em;
-}
 
 
-@media screen and (max-width: 600px) {
-	/* PICO samkjør med guidelineInfo? */
-	.picoList {
-		margin-bottom: 0px;
-		padding: 0em;
+/**** MEDIAQUERIES ****/
+@media screen and (max-width: 599px) {
+
+	.container section.recommendation h1{
+		font-size: 28px;
+		line-height: 32px;
+	}
+	
+	.container section.recommendation h2{
+		font-size: 26px;
+		line-height: 30px;
+	}
+	
+	.container section.recommendation h3{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	
+	.container section.recommendation h4{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	.container section.recommendation h5{
+		font-size: 18px;
+		line-height: 26px;
 	}
 
-	.picoList:not(:first-child) {
+	.container .kunnskapsgrunnlag dl {
+		margin-bottom: 0px;
+		padding: 10px 0 0 0;
+	}
+
+	.container .kunnskapsgrunnlag dl:not(:first-child) {
     margin-top: 30px;
 	}
 
-	.picoList dt {
+	.container .kunnskapsgrunnlag dt {
 		float: none;
 		clear: none;
 		width: 0px;
 		text-align: right;
 		font-weight: bold;
-		}
+	}
 
-	.picoList dt:after {
+	.container .kunnskapsgrunnlag dt:after {
 		content: ":";
 	}
 
-	.picoList dd {
+	.container .kunnskapsgrunnlag dd {
 		margin: 0 0 0 0;
-		padding: 0 0 0.5em 0;
-		font-weight: normal;
 	}
 	
-	.show_evidensprofil{
-		margin-left: 0em;
+	.container .evidensprofil{
+		margin-left: 0px;
 	}
 	
-	.bottomBorderOnListElementsMobile li {
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}   
+	.container .inlineGlyphs {
+		display: block;
+	}  
 }
 
-/* Autocomplete */
-.tt-query,
-.tt-hint {
+/* AUTOCOMPLETE */
+
+/* For twitter-typeahead */
+.container .search_retningslinjetittel {
+	font-size: 0.8em;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+
+.container .search, .twitter-typeahead {
+	width: 100%;
+}
+
+.container .tt-query,
+.container .tt-hint {
     width: 396px;
     height: 30px;
     padding: 8px 12px;
@@ -346,17 +342,17 @@ h2.resp-accordion{
     outline: none;
 }
 
-.tt-query {
+.container .tt-query {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-.tt-hint {
+.container .tt-hint {
     color: #999
 }
 
-.tt-dropdown-menu {
+.container .tt-dropdown-menu {
     width: 422px;
     margin-top: 5px;
     padding: 8px 0;
@@ -371,19 +367,23 @@ h2.resp-accordion{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
-.tt-suggestion {
+.container .tt-suggestion {
     padding: 3px 20px;
     font-size: 18px;
     line-height: 24px;
 }
 
-.tt-suggestion.tt-cursor {
+.container .tt-suggestion.tt-cursor {
     color: #fff;
     background-color: #004e66;
     cursor: pointer;
 
 }
 
-.tt-suggestion p {
+.container .tt-suggestion p {
     margin: 0;
 }
+
+
+/* For popover, in boostrap.css? */
+.popover{position:absolute;top:0;left:0;z-index:1010;display:none;max-width:276px;padding:1px;text-align:left;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);white-space:normal}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{margin:0;padding:8px 14px;font-size:14px;font-weight:400;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{border-width:10px;content:""}.popover.top>.arrow{left:50%;margin-left:-11px;border-bottom-width:0;border-top-color:#999;border-top-color:rgba(0,0,0,.25);bottom:-11px}.popover.top>.arrow:after{content:" ";bottom:1px;margin-left:-10px;border-bottom-width:0;border-top-color:#fff}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-left-width:0;border-right-color:#999;border-right-color:rgba(0,0,0,.25)}.popover.right>.arrow:after{content:" ";left:1px;bottom:-10px;border-left-width:0;border-right-color:#fff}.popover.bottom>.arrow{left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25);top:-11px}.popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}.popover.left>.arrow:after{content:" ";right:1px;border-right-width:0;border-left-color:#fff;bottom:-10px}
