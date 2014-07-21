@@ -221,49 +221,49 @@
 
     .helsedirektoratet {
         background: url(../img/logoer/logo_hdir.png) no-repeat;
-        background-size: 170px 25px;
+        background-size: 100%;
         width: 170px;
     }
 
     .kunnskapssenteret {
         background: url(../img/logoer/logo_KS.png) no-repeat;
-        background-size: 158px 25px;
+        background-size: 100%;
         width: 158px;
     }
 
     .legemiddelverk {
         background: url(../img/logoer/logo_SLV.png) no-repeat;
-        background-size: 134px 25px;
+        background-size: 100%;
         width: 134px;
     }
 
     .helsemidt {
         background: url(../img/logoer/logo_RHF_midt.png) no-repeat;
-        background-size: 139px 25px;
+        background-size: 100%;
         width: 139px;
     }
 
     .helsenord {
         background: url(../img/logoer/logo_RHF_nord.png) no-repeat;
-        background-size: 101px 25px;
+        background-size: 100%;
         width: 101px;
     }
 
     .helsesoeroest {
         background: url(../img/logoer/logo_RHF_sorost.png) no-repeat;
-        background-size: 115px 25px;
+        background-size: 100%;
         width: 115px;
     }
 
     .helsevest {
         background: url(../img/logoer/logo_RHF_vest.png) no-repeat;
-        background-size: 94px 25px;
+        background-size: 100%;
         width: 94px;
     }
 
     .straalevern {
         background: url(../img/logoer/Straalevernet.png) no-repeat;
-        background-size: 84px 25px;
+        background-size: 100%;
         width: 84px;
         margin-right: 0;
     }
@@ -273,5 +273,17 @@
     .logo {
         height: auto;
         padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .logoline {
+        margin-top: 30px;
+
+        .helsedirektoratet, .kunnskapssenteret, .legemiddelverk, .helsemidt, .helsenord, .helsesoeroest, .helsevest, .straalevern {
+            height: 25px;
+            display: inline-block;
+            margin: 20px 20px 20px 0;
+        }
     }
 }
