@@ -210,6 +210,15 @@ body {
         }
     }
 
+    .nested-accordion.has-hidden-content > .accordion:before {
+        float: left;
+        padding: 3px 20px 0 0;
+        content: "\f107";
+        font-family: "FontAwesome";
+        font-size: 40px;
+        cursor: pointer;
+    }
+
     .has-visible-content {
         cursor: pointer;
 
@@ -224,6 +233,14 @@ body {
         h3.accordion:before {
             font-size: 30px;
         }
+    }
+
+    .nested-accordion.has-visible-content > .accordion:before {
+        float: left;
+        padding: 3px 20px 0 0;
+        content: "\f106";
+        font-family: "FontAwesome";
+        font-size: 40px;
     }
 
     .clearfix:before,

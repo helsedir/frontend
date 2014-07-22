@@ -217,6 +217,15 @@ body {
 .container-fluid .has-hidden-content h3.accordion:before {
   font-size: 30px;
 }
+.container .nested-accordion.has-hidden-content > .accordion:before,
+.container-fluid .nested-accordion.has-hidden-content > .accordion:before {
+  float: left;
+  padding: 3px 20px 0 0;
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-size: 40px;
+  cursor: pointer;
+}
 .container .has-visible-content,
 .container-fluid .has-visible-content {
   cursor: pointer;
@@ -234,6 +243,14 @@ body {
 .container .has-visible-content h3.accordion:before,
 .container-fluid .has-visible-content h3.accordion:before {
   font-size: 30px;
+}
+.container .nested-accordion.has-visible-content > .accordion:before,
+.container-fluid .nested-accordion.has-visible-content > .accordion:before {
+  float: left;
+  padding: 3px 20px 0 0;
+  content: "\f106";
+  font-family: "FontAwesome";
+  font-size: 40px;
 }
 .container .clearfix:before,
 .container-fluid .clearfix:before,
