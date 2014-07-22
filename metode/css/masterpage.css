@@ -78,10 +78,6 @@
 #header .container {
   background: white;
 }
-.links {
-  margin-left: 20px;
-  line-height: 74px;
-}
 .internal-link.arrow_right.loginlink {
   color: white;
   display: block;
@@ -92,16 +88,6 @@
 }
 .mainsearch {
   border: none;
-  border-bottom: 1px solid #004e66;
-  background-image: url('../img/ikon_forstorrelsesglass.png');
-  background-repeat: no-repeat;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-position: 97% 50%;
-  background-position-x: 99%;
-  background-position-y: 50%;
   cursor: pointer;
   color: #004e66;
   padding-right: 27px;
@@ -125,20 +111,44 @@
   color: #004e66;
   text-align: left;
 }
+.mainsearchcolumn {
+  margin-top: 28px;
+}
+.mainsearchform {
+  float: left;
+  margin-top: 2px;
+  height: 41px;
+  /* max-width: 220px; */
+  border: none;
+  border-bottom: 1px solid #004e66;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+  background: white;
+}
 .mainsearchform span {
   vertical-align: sub;
 }
-.mainsearchform span input {
+.mainsearchform button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
   vertical-align: middle;
-  line-height: 28px;
 }
-.mainsearchcolumn {
-  float: left;
-  margin-top: 2px;
-  line-height: 74px;
+.mainsearchform button img {
+  width: 18px;
+  vertical-align: middle;
+}
+.mainsearchform input {
+  border: none;
+  padding: 0;
+  width: 170px;
+  vertical-align: middle;
 }
 .masterheader .links {
-  margin-top: 2px;
+  margin-left: 20px;
 }
 .masterheader .links span {
   vertical-align: sub;
@@ -209,6 +219,9 @@
   width: 84px;
   margin-right: 0;
 }
+.hidden-mobile {
+  display: block;
+}
 @media only screen and (max-width: 600px) {
   .logo {
     height: auto;
@@ -230,6 +243,73 @@
     height: 25px;
     display: inline-block;
     margin: 20px 20px 20px 0;
+  }
+  .mainsearchform input {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .menubutton {
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    min-height: 40px;
+    text-align: center;
+  }
+  .menubutton.mobile-search {
+    display: inline-block;
+    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    -moz-background-size: 30px;
+    -o-background-size: 30px;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+    margin-top: 31px;
+  }
+  .menubutton.mobile-search:focus {
+    text-decoration: none;
+    background-color: #0093a7;
+    color: #004e66;
+    border: solid 1px #004e66;
+  }
+  .menubutton.mobile-search:hover {
+    background: #0093a7 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    -moz-background-size: 30px;
+    -o-background-size: 30px;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 3px;
+  }
+  .menubutton.mobile-search.js-expanded {
+    background: #0093a7;
+    border-radius: 3px;
+    padding-top: 6px;
+  }
+  .menubutton.mobile-search.js-expanded:before {
+    font-family: "FontAwesome";
+    content: '\f00d';
+    font-size: 25px;
+    color: white;
+  }
+  .hidden-mobile {
+    display: none;
+    padding: 10px;
+  }
+  .masterheader {
+    margin: 10px 0 10px 0;
+  }
+  .mainsearchcolumn {
+    float: none;
+    margin-top: 0;
+  }
+  .mainsearchform {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mainsearchform input {
+    width: 82%;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */

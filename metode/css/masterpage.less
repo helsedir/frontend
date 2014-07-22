@@ -116,11 +116,6 @@
     background: white;
 }
 
-.links {
-    margin-left: 20px;
-    line-height: 74px;
-}
-
 .internal-link.arrow_right.loginlink {
     color: white;
     display: block;
@@ -133,16 +128,6 @@
 
 .mainsearch {
     border: none;
-    border-bottom: 1px solid @colorDarkBlue;
-    background-image: url('../img/ikon_forstorrelsesglass.png');
-    background-repeat: no-repeat;
-    -moz-background-size: auto 68%;
-    -o-background-size: auto 68%;
-    -webkit-background-size: auto 68%;
-    background-size: auto 68%;
-    background-position: 97% 50%;
-    background-position-x: 99%;
-    background-position-y: 50%;
     cursor: pointer;
     color: @colorDarkBlue;
     padding-right: 27px;
@@ -169,26 +154,51 @@
     }
 }
 
-.mainsearchform {
-    span {
-        vertical-align: sub;
-
-        input {
-            vertical-align: middle;
-            line-height: 28px;
-        }
-    }
+.mainsearchcolumn {
+    margin-top: 28px;
 }
 
-.mainsearchcolumn {
+.mainsearchform {
     float: left;
     margin-top: 2px;
-    line-height: 74px;
+    height: 41px;
+    /* max-width: 220px; */
+    border: none;
+    border-bottom: 1px solid @colorDarkBlue;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+    background: white;
+
+    span {
+        vertical-align: sub;
+    }
+
+    button {
+        border: none;
+        background: none;
+        width: 29px;
+        padding: 0;
+        vertical-align: middle;
+
+        img {
+            width: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    input {
+        border: none;
+        padding: 0;
+        width: 170px;
+        vertical-align: middle;
+    }
 }
 
 .masterheader {
     .links {
-        margin-top: 2px;
+        margin-left: 20px;
 
         span {
             vertical-align: sub;
@@ -269,6 +279,10 @@
     }
 }
 
+.hidden-mobile {
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
     .logo {
         height: auto;
@@ -284,6 +298,87 @@
             height: 25px;
             display: inline-block;
             margin: 20px 20px 20px 0;
+        }
+    }
+
+    .mainsearchform {
+        input {
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .menubutton {
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+        min-height: 40px;
+        text-align: center;
+
+        &.mobile-search {
+            display: inline-block;
+            background: @colorDarkBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+            -moz-background-size: 30px;
+            -o-background-size: 30px;
+            -webkit-background-size: 30px;
+            background-size: 30px;
+            background-position: center;
+            border-radius: 3px;
+            margin-top: 31px;
+
+            &:focus {
+                text-decoration: none;
+                background-color: @colorMediumBlue;
+                color: @colorDarkBlue;
+                border: solid 1px @colorDarkBlue;
+            }
+
+            &:hover {
+                background: @colorMediumBlue url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                -moz-background-size: 30px;
+                -o-background-size: 30px;
+                -webkit-background-size: 30px;
+                background-size: 30px;
+                background-position: center;
+                border-radius: 3px;
+            }
+
+            &.js-expanded {
+                background: @colorMediumBlue;
+                border-radius: 3px;
+                padding-top: 6px;
+
+                &:before {
+                    font-family: "FontAwesome";
+                    content: '\f00d';
+                    font-size: 25px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .hidden-mobile {
+        display: none;
+        padding: 10px;
+    }
+
+    .masterheader {
+        margin: 10px 0 10px 0;
+    }
+
+    .mainsearchcolumn {
+        float: none;
+        margin-top: 0;
+    }
+
+    .mainsearchform {
+        width: 100%;
+        margin-bottom: 10px;
+
+        input {
+            width: 82%;
         }
     }
 }
