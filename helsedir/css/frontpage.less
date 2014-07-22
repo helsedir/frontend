@@ -179,8 +179,12 @@
             }
 
             &.arrow_right {
-                margin: 15px 0;
+                margin: 15px 0 4px 0;
                 padding: 0;
+
+                &:hover {
+                    margin-bottom: 0;
+                }
             }
 
                 &.arrow_right:after {
@@ -236,12 +240,7 @@
         }
 
         .conferenceitem {
-            table td:first-of-type {
-                width: 160px;
-                vertical-align: middle;
-                text-align: center;
-            }
-
+            width: 100%;
             margin-bottom: 20px;
 
             p {
@@ -276,13 +275,20 @@
                 display: block;
                 text-align: right;
             }
-
-            .conference_info {
-                .internal-link.arrow_right {
-                    margin-bottom: 9px;
-                }
-            }
         }
+
+            .conferenceitem > div:nth-child(2n-1) {
+                width: 25%;
+                float: left;
+                min-height: 85px;
+                padding-top: 15px;
+            }
+
+            .conferenceitem > div:nth-child(2n) {
+                width: 68%;
+                float: left;
+                min-height: 100px;
+            }
 
         .statistics_image {
             margin-bottom: 20px;
@@ -426,6 +432,31 @@
             font-size: 28px;
             margin-right: 20px;
         }
+
+        &.frontpage .conferenceitem > div:nth-child(2n-1) {
+            width: 100%;
+            float: none;
+            text-align: left;
+            padding-top: 0;
+            min-height: 0;
+
+            .month {
+                text-align: left;
+                display: inline;
+            }
+        }
+
+        &.frontpage .conferenceitem > div:nth-child(2n) {
+            width: 100%;
+            float: none;
+            text-align: left;
+            min-height: 0;
+            margin-bottom: 30px;
+
+            .internal-link.arrow_right {
+                margin-top: 0;
+            }
+        }
     }
 
     #header {
@@ -484,6 +515,16 @@
             input {
                 width: 82%;
             }
+        }
+    }
+
+    .container {
+        &.frontpage .conferenceitem > div:nth-child(2n-1) {
+            width: 34%;
+        }
+
+        &.frontpage .conferenceitem > div:nth-child(2n) {
+            width: 58%;
         }
     }
 }

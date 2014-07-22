@@ -663,6 +663,7 @@ body {
   text-decoration: none;
   margin: 15px 0;
   display: inline-block;
+  width: 100%;
   /*
         &.inline, .inline:visited {
             text-decoration: none;
@@ -677,8 +678,8 @@ body {
 .container .external-link:after,
 .container-fluid .external-link:after {
   content: '';
-  background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-  background-size: 16px 16px;
+  background: url('../img/ekstern_lenke_mellomblaa.svg') right no-repeat;
+  background-size: 15px 15px;
   display: inline;
   padding-left: 25px;
 }
@@ -699,6 +700,7 @@ body {
   text-decoration: none;
   color: #004e66;
   display: inline-block;
+  margin-bottom: 1px;
 }
 .container .internal-link:visited,
 .container-fluid .internal-link:visited {
@@ -716,8 +718,12 @@ body {
 }
 .container .internal-link.arrow_right,
 .container-fluid .internal-link.arrow_right {
-  margin: 15px 0;
+  margin: 15px 0 4px 0;
   padding-bottom: 4px;
+}
+.container .internal-link.arrow_right:hover,
+.container-fluid .internal-link.arrow_right:hover {
+  margin-bottom: 0;
 }
 .container .internal-link.arrow_right:after,
 .container-fluid .internal-link.arrow_right:after {
@@ -744,6 +750,7 @@ body {
 .container .internal-link:hover,
 .container-fluid .internal-link:hover {
   text-decoration: none;
+  margin-bottom: 0;
 }
 .container .internal-link:hover.arrow_right:after,
 .container-fluid .internal-link:hover.arrow_right:after {

@@ -623,11 +623,12 @@ body {
         text-decoration: none;
         margin: 15px 0;
         display: inline-block;
+        width: 100%;
 
         &:after {
             content: '';
-            background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-            background-size: 16px 16px;
+            background: url('../img/ekstern_lenke_mellomblaa.svg') right no-repeat;
+            background-size: 15px 15px;
             display: inline;
             padding-left: 25px;
         }
@@ -650,6 +651,7 @@ body {
         text-decoration: none;
         color: @colorDarkBlue;
         display: inline-block;
+        margin-bottom: 1px;
 
         &:visited {
             color: @colorMediumBlue;
@@ -660,8 +662,12 @@ body {
         }
 
         &.arrow_right {
-            margin: 15px 0;
+            margin: 15px 0 4px 0;
             padding-bottom: 4px;
+
+            &:hover {
+                margin-bottom: 0;
+            }
         }
 
             &.arrow_right:after {
@@ -684,6 +690,7 @@ body {
 
         &:hover {
             text-decoration: none;
+            margin-bottom: 0;
 
             &.arrow_right:after {
                 text-decoration: none;

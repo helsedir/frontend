@@ -141,8 +141,11 @@
   display: inline;
 }
 .container.frontpage .internal-link.arrow_right {
-  margin: 15px 0;
+  margin: 15px 0 4px 0;
   padding: 0;
+}
+.container.frontpage .internal-link.arrow_right:hover {
+  margin-bottom: 0;
 }
 .container.frontpage .internal-link.arrow_right:after {
   padding-left: 10px;
@@ -188,12 +191,8 @@
   margin: 0;
 }
 .container.frontpage .conferenceitem {
+  width: 100%;
   margin-bottom: 20px;
-}
-.container.frontpage .conferenceitem table td:first-of-type {
-  width: 160px;
-  vertical-align: middle;
-  text-align: center;
 }
 .container.frontpage .conferenceitem p {
   padding: 0;
@@ -224,8 +223,16 @@
   display: block;
   text-align: right;
 }
-.container.frontpage .conferenceitem .conference_info .internal-link.arrow_right {
-  margin-bottom: 9px;
+.container.frontpage .conferenceitem > div:nth-child(2n-1) {
+  width: 25%;
+  float: left;
+  min-height: 85px;
+  padding-top: 15px;
+}
+.container.frontpage .conferenceitem > div:nth-child(2n) {
+  width: 68%;
+  float: left;
+  min-height: 100px;
 }
 .container.frontpage .statistics_image {
   margin-bottom: 20px;
@@ -335,6 +342,27 @@
     font-size: 28px;
     margin-right: 20px;
   }
+  .container.frontpage .conferenceitem > div:nth-child(2n-1) {
+    width: 100%;
+    float: none;
+    text-align: left;
+    padding-top: 0;
+    min-height: 0;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n-1) .month {
+    text-align: left;
+    display: inline;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n) {
+    width: 100%;
+    float: none;
+    text-align: left;
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n) .internal-link.arrow_right {
+    margin-top: 0;
+  }
   #header .mainsearch {
     width: 100%;
   }
@@ -372,6 +400,12 @@
   }
   #header .mainsearch input {
     width: 82%;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n-1) {
+    width: 34%;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n) {
+    width: 58%;
   }
 }
 @media only screen and (min-width: 1200px) {
