@@ -22,7 +22,7 @@
                 });
             }
         });
-        $('.sub-department', department).each(function () {
+        $('.sub-department, .etater', department).each(function () {
             var windowWidth = $(window).width();
             if (windowWidth <= 1199) {
                 if (!$(this).hasClass("visuallyhidden")) {
@@ -72,15 +72,55 @@
         }
     });
 
+    var waitForFinalEvent = (function () {
+        var timers = {};
+        return function (callback, ms, uniqueId) {
+            if (!uniqueId) {
+                uniqueId = "Don't call this twice without a uniqueId";
+            }
+            if (timers[uniqueId]) {
+                clearTimeout(timers[uniqueId]);
+            }
+            timers[uniqueId] = setTimeout(callback, ms);
+        };
+    })();
+
+    /*$(window).resize(function () {
+        var windowWidthBefore = $(window).width();
+        waitForFinalEvent(function () {
+            var windowWidth = $(window).width();
+
+            console.log("old " + windowWidthBefore + " new " + windowWidth);
+
+            if (windowWidth <= 1199 && windowWidthBefore >= 1200) {
+                $(".sub-department, .etater, .person").each(function () {
+                    $(this).addClass('visuallyhidden');
+                });
+            }
+            else {
+                if (windowWidth <= 1199 && windowWidthBefore <= 1199) {
+                } else {
+                    $(".sub-department, .etater, .person ").each(function () {
+                        $(this).removeClass('visuallyhidden');
+                    });
+                }
+            }
+        }, 500, "some unique string");
+    });*/
+
     $(window).on('load resize', function () {
         var windowWidth = $(window).width();
 
         if (windowWidth <= 1199) {
-            $(".sub-department").each(function () {
+            $(".sub-department, .etater, .person, .person_sub").each(function () {
                 $(this).addClass('visuallyhidden');
             });
+
+            $(".division_header.selected, .box.selected").each(function () {
+                $(this).removeClass('selected');
+            });
         } else {
-            $(".sub-department").each(function () {
+            $(".sub-department, .etater ").each(function () {
                 $(this).removeClass('visuallyhidden');
             });
         }

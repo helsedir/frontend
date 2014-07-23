@@ -45,11 +45,14 @@
   color: white;
   left: 0;
   top: 95px;
-  padding: 0 74px 7px 73px;
   font-size: 30px;
+  left: 46%;
 }
 .container .division .division_header#folkehelse {
   border: 4px solid #6cb4b5;
+}
+.container .division .division_header#folkehelse.selected {
+  border-bottom: 31px solid #6cb4b5;
 }
 .container .division .division_header#folkehelse.selected:before {
   background: #6cb4b5;
@@ -57,11 +60,17 @@
 .container .division .division_header#helseoekonomiogfinansiering {
   border: 4px solid #a1bf37;
 }
+.container .division .division_header#helseoekonomiogfinansiering.selected {
+  border-bottom: 31px solid #a1bf37;
+}
 .container .division .division_header#helseoekonomiogfinansiering.selected:before {
   background: #a1bf37;
 }
 .container .division .division_header#spesialisthelsetjenesten {
   border: 4px solid #aeaba8;
+}
+.container .division .division_header#spesialisthelsetjenesten.selected {
+  border-bottom: 31px solid #aeaba8;
 }
 .container .division .division_header#spesialisthelsetjenesten.selected:before {
   background: #aeaba8;
@@ -69,17 +78,26 @@
 .container .division .division_header#ehelseogit {
   border: 4px solid #c63629;
 }
+.container .division .division_header#ehelseogit.selected {
+  border-bottom: 31px solid #c63629;
+}
 .container .division .division_header#ehelseogit.selected:before {
   background: #c63629;
 }
 .container .division .division_header#primaerhelsetjenesten {
   border: 4px solid #df9922;
 }
+.container .division .division_header#primaerhelsetjenesten.selected {
+  border-bottom: 31px solid #df9922;
+}
 .container .division .division_header#primaerhelsetjenesten.selected:before {
   background: #df9922;
 }
 .container .division .division_header#administrasjon {
   border: 4px solid #76428d;
+}
+.container .division .division_header#administrasjon.selected {
+  border-bottom: 31px solid #76428d;
 }
 .container .division .division_header#administrasjon.selected:before {
   background: #76428d;
@@ -90,8 +108,7 @@
   font-family: "FontAwesome";
   color: #004e66;
   top: 95px;
-  left: 0;
-  padding: 0 74px 3px 73px;
+  left: 46%;
   font-size: 30px;
 }
 .container .division .department {
@@ -130,6 +147,7 @@
 }
 .container .division .department.folkehelse .sub-department .box.selected {
   border: 4px solid #6cb4b5;
+  border-bottom: 23px solid #6cb4b5;
 }
 .container .division .department.folkehelse .sub-department .box.selected:before {
   background: #6cb4b5;
@@ -149,6 +167,7 @@
 }
 .container .division .department.helseoekonomiogfinansiering .sub-department .box.selected {
   border: 4px solid #a1bf37;
+  border-bottom: 23px solid #a1bf37;
 }
 .container .division .department.helseoekonomiogfinansiering .sub-department .box.selected:before {
   background: #a1bf37;
@@ -164,6 +183,7 @@
 }
 .container .division .department.spesialisthelsetjenesten .sub-department .box.selected {
   border: 4px solid #aeaba8;
+  border-bottom: 23px solid #aeaba8;
 }
 .container .division .department.spesialisthelsetjenesten .sub-department .box.selected:before {
   background: #aeaba8;
@@ -179,6 +199,7 @@
 }
 .container .division .department.ehelseogit .sub-department .box.selected {
   border: 4px solid #c63629;
+  border-bottom: 23px solid #c63629;
 }
 .container .division .department.ehelseogit .sub-department .box.selected:before {
   background: #c63629;
@@ -194,6 +215,7 @@
 }
 .container .division .department.primaerhelsetjenesten .sub-department .box.selected {
   border: 4px solid #df9922;
+  border-bottom: 23px solid #df9922;
 }
 .container .division .department.primaerhelsetjenesten .sub-department .box.selected:before {
   background: #df9922;
@@ -210,6 +232,7 @@
 }
 .container .division .department.administrasjon .sub-department .box.selected {
   border: 4px solid #76428d;
+  border-bottom: 23px solid #76428d;
 }
 .container .division .department.administrasjon .sub-department .box.selected:before {
   background: #76428d;
@@ -241,9 +264,9 @@
   font-family: "FontAwesome";
   color: #004e66;
   top: 63px;
+  left: 0;
   font-size: 30px;
   right: 0;
-  padding: 0 70px 0 73px;
 }
 .container .division .department .sub-department .box.selected {
   padding: 6px;
@@ -253,6 +276,7 @@
   content: "\f106";
   font-family: "FontAwesome";
   color: white;
+  left: 4%;
 }
 .container .division .department .sub-department#utviklingsdirektoer .box {
   background: #76428d;
@@ -347,29 +371,19 @@
     text-align: left;
     margin: 0;
   }
-  .container .division .division_header p.division_name:before {
-    content: "\f107";
-    font-family: "FontAwesome";
-    font-size: 25px;
-    color: #004e66;
-    float: right;
-    margin-right: 10px;
-  }
   .container .division .division_header p:last-of-type {
     display: block;
     font-size: 18px;
     font-family: 'Calibri';
   }
-  .container .division .division_header.selected p.division_name:before {
-    content: "\f106";
-    font-family: "FontAwesome";
-    font-size: 25px;
-    color: #004e66;
-    float: right;
-    margin-right: 10px;
-  }
   .container .division .division_header:before {
-    content: '';
+    position: absolute;
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: #004e66;
+    top: 15px;
+    left: 96%;
+    font-size: 30px;
   }
   .container .division .division_header.last {
     margin: 10px 15px 10px 0;
@@ -380,8 +394,56 @@
   .container .division .division_header#ehelseogit.selected:before,
   .container .division .division_header#primaerhelsetjenesten.selected:before,
   .container .division .division_header#administrasjon.selected:before {
-    content: '';
+    position: absolute;
+    content: "\f106";
+    font-family: "FontAwesome";
+    color: #004e66;
+    top: 15px;
+    left: 96%;
+    font-size: 30px;
     background: none;
+  }
+  .container .division .division_header#folkehelse.selected {
+    border-bottom: 4px solid #6cb4b5;
+  }
+  .container .division .division_header#folkehelse.selected ~ .department {
+    border-left: 3px dotted #6cb4b5;
+    border-bottom: 4px solid #6cb4b5;
+  }
+  .container .division .division_header#helseoekonomiogfinansiering.selected {
+    border-bottom: 4px solid #a1bf37;
+  }
+  .container .division .division_header#helseoekonomiogfinansiering.selected ~ .department {
+    border-left: 3px dotted #a1bf37;
+    border-bottom: 4px solid #a1bf37;
+  }
+  .container .division .division_header#spesialisthelsetjenesten.selected {
+    border-bottom: 4px solid #aeaba8;
+  }
+  .container .division .division_header#spesialisthelsetjenesten.selected ~ .department {
+    border-left: 3px dotted #aeaba8;
+    border-bottom: 4px solid #aeaba8;
+  }
+  .container .division .division_header#ehelseogit.selected {
+    border-bottom: 4px solid #c63629;
+  }
+  .container .division .division_header#ehelseogit.selected ~ .department {
+    border-left: 3px dotted #c63629;
+    border-bottom: 4px solid #c63629;
+  }
+  .container .division .division_header#primaerhelsetjenesten.selected {
+    border-bottom: 4px solid #df9922;
+  }
+  .container .division .division_header#primaerhelsetjenesten.selected ~ .department {
+    border-left: 3px dotted #df9922;
+    border-bottom: 4px solid #df9922;
+  }
+  .container .division .division_header#administrasjon.selected {
+    border-bottom: 4px solid #76428d;
+  }
+  .container .division .division_header#administrasjon.selected ~ .department {
+    border-left: 3px dotted #76428d;
+    border-bottom: 4px solid #76428d;
   }
   .container .division .department {
     width: 100%;
@@ -389,25 +451,19 @@
   .container .division .department .person,
   .container .division .department .person_sub {
     padding: 10px 10px 0 10px;
+    width: 60%;
+    float: right;
   }
   .container .division .department .sub-department {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0 0;
     padding: 5px 0 5px 10px;
-    width: 100%;
-    height: 50px;
+    width: 60%;
+    float: right;
   }
   .container .division .department .sub-department p {
     text-align: left;
     margin: 0;
     width: 100%;
-  }
-  .container .division .department .sub-department p:before {
-    content: "\f105";
-    font-family: "FontAwesome";
-    font-size: 25px;
-    color: #004e66;
-    float: right;
-    margin-right: 10px;
   }
   .container .division .department .sub-department:after {
     content: '';
@@ -418,8 +474,96 @@
   .container .division .department .sub-department#utviklingsdirektoer p:before {
     color: white;
   }
+  .container .division .department .sub-department .box {
+    width: 100%;
+    float: right;
+    height: 70px;
+    text-align: left;
+    padding: 24px 6px 6px 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .container .division .department .sub-department .box:before {
+    top: 28px;
+    left: 94%;
+    padding: 0;
+  }
+  .container .division .department .sub-department .box.selected {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .container .division .department .sub-department .box.selected:before {
+    background: none !important;
+    left: 95%;
+    top: 60px;
+    content: "\f106";
+  }
+  .container .division .department .sub-department .person_sub {
+    float: right;
+    width: 100%;
+    padding-bottom: 10px;
+  }
   .container .division .department.administrasjon .sub-department {
     margin: 10px 0 10px 0;
+  }
+  .container .etater {
+    width: 59%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .container .division .department .sub-department .box:before {
+    left: 92%;
+  }
+  .container .division .department .sub-department .box.selected:before {
+    left: 92%;
+  }
+  .container .division .division_header:before {
+    left: 95%;
+  }
+  .container .division .division_header#folkehelse.selected:before,
+  .container .division .division_header#helseoekonomiogfinansiering.selected:before,
+  .container .division .division_header#spesialisthelsetjenesten.selected:before,
+  .container .division .division_header#ehelseogit.selected:before,
+  .container .division .division_header#primaerhelsetjenesten.selected:before,
+  .container .division .division_header#administrasjon.selected:before {
+    left: 95%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .container .division .division_header#folkehelse.selected:before,
+  .container .division .division_header#helseoekonomiogfinansiering.selected:before,
+  .container .division .division_header#spesialisthelsetjenesten.selected:before,
+  .container .division .division_header#ehelseogit.selected:before,
+  .container .division .division_header#primaerhelsetjenesten.selected:before,
+  .container .division .division_header#administrasjon.selected:before {
+    left: 91%;
+  }
+  .container .division .department .sub-department .box:before {
+    left: 90%;
+  }
+  .container .division .department .sub-department .box.selected:before {
+    left: 90%;
+  }
+  .container .division .department .sub-department {
+    width: 100%;
+    float: none;
+  }
+  .container .division .department .sub-department .box {
+    float: none;
+    padding-right: 27px;
+  }
+  .container .division .department .person,
+  .container .division .department .person_sub {
+    width: 100%;
+    float: none;
+  }
+  .container .division .division_header {
+    padding: 5px 25px 5px 10px;
+  }
+  .container .division .division_header:before {
+    left: 91%;
   }
 }
 /*# sourceMappingURL=organization.css.map */
