@@ -1,22 +1,11 @@
 ﻿.search {
   border: none;
-  border-bottom: 1px solid #aeaba8;
-  background-image: url('../img/ikoner/soek_ikon_graa.svg');
-  background-repeat: no-repeat;
-  background-color: #f2f2f2;
-  -moz-background-size: auto 68%;
-  -o-background-size: auto 68%;
-  -webkit-background-size: auto 68%;
-  background-size: auto 68%;
-  background-position: 97% 50%;
-  background-position-x: 99%;
-  background-position-y: 50%;
   cursor: pointer;
   color: #222;
   padding-right: 27px;
   padding-left: 0;
-  margin-top: 50px;
   width: 50%;
+  background: #f2f2f2;
 }
 .search::-webkit-input-placeholder {
   color: #222;
@@ -35,6 +24,12 @@
 .search:-ms-input-placeholder {
   color: #222;
   text-align: left;
+}
+.searchform {
+  width: 61%;
+}
+.searchform input {
+  width: 92%;
 }
 .resultnumber {
   color: #838078;
@@ -123,16 +118,15 @@
   padding-top: 250px;
 }
 @media only screen and (max-width: 599px) {
-  .search {
-    width: auto;
-    max-width: 300px;
-  }
   .transportsideknapp a {
     padding-left: 0;
   }
   .transportsideknapp a .status_information {
     margin-left: 0;
     width: auto;
+  }
+  .searchform input {
+    width: 86%;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -144,6 +138,9 @@
   .transportsideknapp a .status_information {
     margin-left: 0;
     width: auto;
+  }
+  .searchform {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=transportside.css.map */

@@ -326,19 +326,9 @@ a.underline {
   left: -9999px !important;
 }
 .search {
-  margin-top: 30px;
   width: 70%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
-  border: 1px solid #004e66;
-  -moz-background-size: auto 80%;
-  -o-background-size: auto 80%;
-  -webkit-background-size: auto 80%;
-  background-size: auto 80%;
-  background-position: 99% 50%;
-  background-position-x: 99%;
-  background-position-y: 50%;
   cursor: pointer;
 }
 .search_withbutton .search {
