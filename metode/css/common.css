@@ -502,8 +502,8 @@ figure .metatext {
 .calltoaction:hover,
 .calltoaction:focus {
   color: white;
-  background: #004e66;
-  border: 2px solid #004e66;
+  background: #01737c;
+  border: 2px solid #01737c;
 }
 iframe {
   margin-bottom: 23px;
@@ -809,9 +809,8 @@ h4.keyfigures {
 .module.module_person {
   margin: 25px 0 0 0;
   padding: 0 0 0 15px;
-  width: 270px;
+  width: 285px;
   background: none;
-  border-left: 6px solid #004e66;
 }
 .module.module_person h3 {
   margin-bottom: 1rem;
@@ -824,14 +823,24 @@ h4.keyfigures {
 .module.module_person .e-mail {
   margin: 0;
   font-size: 18px;
+  line-height: 20px;
+  color: #838078;
+}
+.module.module_person .role {
+  margin-bottom: 5px;
 }
 .module.module_person .person_information a {
   text-decoration: underline;
+  line-height: 18px;
+  display: block;
+  color: #838078;
 }
 .module.module_person .name {
-  font-size: 28px;
-  line-height: 36px;
-  margin: 0 0 20px 0;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 15px 0;
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
 }
 .module.module_person img {
   width: 130px;
@@ -842,9 +851,11 @@ h4.keyfigures {
   font-family: 'Calibri';
   font-size: 18px;
   text-transform: uppercase;
-  color: #004e66;
+  color: #838078;
   text-decoration: none;
   margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #0093a7;
 }
 .module.module_information {
   margin: 0;
@@ -1633,20 +1644,19 @@ fieldset {
   .module.module_information {
     margin-left: 25px;
   }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
   .method_entrance {
-    float: none;
     /* margin: 50px 57px 50px 15px; */
     cursor: pointer;
     display: block;
     vertical-align: middle;
     text-align: center;
-    width: 170px;
+    width: 169px;
     margin: 20px auto 10px auto;
   }
-  .method_entrance:first-of-type,
-  .method_entrance:last-of-type {
-    margin-left: auto;
-    margin-right: auto;
+  .method_entrance h3 {
+    font-size: 22px;
   }
   .method_entrance .drop_wrapper .drop {
     position: relative;
