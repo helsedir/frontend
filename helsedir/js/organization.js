@@ -1,5 +1,5 @@
 ﻿$(function () {
-    $('.person, .person_sub').each(function () {
+    $('.person, .person_sub, .person_subsub, .subsub-divisions').each(function () {
         $(this).addClass('visuallyhidden');
     });
 
@@ -22,7 +22,7 @@
                 });
             }
         });
-        $('.sub-department, .etater', department).each(function () {
+        $('.sub-division, .etater', department).each(function () {
             var windowWidth = $(window).width();
             if (windowWidth <= 1199) {
                 if (!$(this).hasClass("visuallyhidden")) {
@@ -43,21 +43,22 @@
         });
     });
 
-    $('.sub-department').on('click', function () {
+    $('.sub-division').on('click', function (e) {
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
+
         if ($(this).children('.box').hasClass('selected')) {
             $(this).children('.box').removeClass('selected');
 
-            $(this).children('.person_sub').slideUp('fast', function () {
+            $(this).children('.person_sub, .subsub-divisions, .decorativeborder').slideUp('fast', function () {
                 $(this).addClass('visuallyhidden')
                     .slideDown(0);
             });
         } else {
-            $(this).siblings('.sub-department').children('.box').each(function () {
+            $(this).siblings('.sub-division').children('.box').each(function () {
                 $(this).removeClass('selected');
             });
 
-            $(this).siblings('.sub-department').children('.person_sub').each(function () {
+            $(this).siblings('.sub-division').children('.person_sub, .subsub-divisions, .decorativeborder').each(function () {
                 $(this).slideUp('fast', function () {
                     $(this).addClass('visuallyhidden')
                         .slideDown(0);
@@ -65,7 +66,37 @@
             });
 
             $(this).children('.box').addClass('selected');
-            $(this).children('.person_sub').slideUp(0, function () {
+            $(this).children('.person_sub, .subsub-divisions, .decorativeborder').slideUp(0, function () {
+                $(this).removeClass('visuallyhidden')
+                    .slideDown(500);
+            });
+        }
+    });
+
+    $('.subsub-division').on('click', function (e) {
+        e.stopPropagation();
+        if ($(this).children('.box').hasClass('selected')) {
+            $(this).children('.box').removeClass('selected');
+
+            $(this).children('.person_subsub').slideUp('fast', function () {
+                $(this).addClass('visuallyhidden')
+                    .slideDown(0);
+            });
+        }
+        else {
+            $(this).siblings('.subsub-division').children('.box').each(function () {
+                $(this).removeClass('selected');
+            });
+
+            $(this).siblings('.subsub-division').children('.person_subsub').each(function () {
+                $(this).slideUp('fast', function () {
+                    $(this).addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+            });
+
+            $(this).children('.box').addClass('selected');
+            $(this).children('.person_subsub').slideUp(0, function () {
                 $(this).removeClass('visuallyhidden')
                     .slideDown(500);
             });
@@ -93,14 +124,14 @@
             console.log("old " + windowWidthBefore + " new " + windowWidth);
 
             if (windowWidth <= 1199 && windowWidthBefore >= 1200) {
-                $(".sub-department, .etater, .person").each(function () {
+                $(".sub-division, .etater, .person").each(function () {
                     $(this).addClass('visuallyhidden');
                 });
             }
             else {
                 if (windowWidth <= 1199 && windowWidthBefore <= 1199) {
                 } else {
-                    $(".sub-department, .etater, .person ").each(function () {
+                    $(".sub-division, .etater, .person ").each(function () {
                         $(this).removeClass('visuallyhidden');
                     });
                 }
@@ -112,7 +143,7 @@
         var windowWidth = $(window).width();
 
         if (windowWidth <= 1199) {
-            $(".sub-department, .etater, .person, .person_sub").each(function () {
+            $(".sub-division, .etater, .person, .person_sub, .person_subsub").each(function () {
                 $(this).addClass('visuallyhidden');
             });
 
@@ -120,7 +151,7 @@
                 $(this).removeClass('selected');
             });
         } else {
-            $(".sub-department, .etater ").each(function () {
+            $(".sub-division, .etater ").each(function () {
                 $(this).removeClass('visuallyhidden');
             });
         }

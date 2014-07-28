@@ -115,26 +115,29 @@
   float: left;
 }
 .container .division .department .person,
-.container .division .department .person_sub {
+.container .division .department .person_sub,
+.container .division .department .person_subsub {
   color: #004e66;
   padding: 20px 10px 10px 10px;
   font-family: "Soho Gothic W01 Regular";
   font-size: 18px;
   line-height: 24px;
   width: 170px;
-  margin-bottom: 10px;
 }
 .container .division .department .person p,
-.container .division .department .person_sub p {
+.container .division .department .person_sub p,
+.container .division .department .person_subsub p {
   margin: 0;
 }
 .container .division .department .person p.e-mail,
-.container .division .department .person_sub p.e-mail {
+.container .division .department .person_sub p.e-mail,
+.container .division .department .person_subsub p.e-mail {
   word-break: break-all;
   text-decoration: underline;
 }
 .container .division .department .person .title,
-.container .division .department .person_sub .title {
+.container .division .department .person_sub .title,
+.container .division .department .person_subsub .title {
   font-family: 'Calibri';
   font-size: 18px;
   text-transform: uppercase;
@@ -142,108 +145,174 @@
   text-decoration: none;
   margin-bottom: 10px;
 }
-.container .division .department.folkehelse .sub-department .box {
+.container .division .department.folkehelse .sub-division .box {
   border-left: 4px solid #6cb4b5;
 }
-.container .division .department.folkehelse .sub-department .box.selected {
+.container .division .department.folkehelse .sub-division .box.selected {
   border: 4px solid #6cb4b5;
   border-bottom: 23px solid #6cb4b5;
 }
-.container .division .department.folkehelse .sub-department .box.selected:before {
+.container .division .department.folkehelse .sub-division .box.selected:before {
   background: #6cb4b5;
 }
-.container .division .department.folkehelse .sub-department .box ~ .person_sub {
+.container .division .department.folkehelse .sub-division .box ~ .person_sub {
   border-left: 3px dotted #6cb4b5;
 }
-.container .division .department.folkehelse .person_sub {
+.container .division .department.folkehelse .person_sub,
+.container .division .department.folkehelse .person_subsub {
   border-bottom: 4px solid #6cb4b5;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department .box {
+.container .division .department.folkehelse .sub-division .subsub-divisions .subsub-division .circle {
+  background: #6cb4b5;
+}
+.container .division .department.folkehelse .sub-division .decorativeborder {
+  border-right: 3px dotted #6cb4b5;
+  border-bottom: 3px dotted #6cb4b5;
+}
+.container .division .department.folkehelse .sub-division .subsub-divisions {
+  border-left: 3px dotted #6cb4b5;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-division .box {
   border-left: 4px solid #a1bf37;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department .box.helfo {
+.container .division .department.helseoekonomiogfinansiering .sub-division .box.helfo {
   background: #dbdcdd;
   margin-top: 0;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department .box.selected {
+.container .division .department.helseoekonomiogfinansiering .sub-division .box.selected {
   border: 4px solid #a1bf37;
   border-bottom: 23px solid #a1bf37;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department .box.selected:before {
+.container .division .department.helseoekonomiogfinansiering .sub-division .box.selected:before {
   background: #a1bf37;
 }
-.container .division .department.helseoekonomiogfinansiering .sub-department .box ~ .person_sub {
+.container .division .department.helseoekonomiogfinansiering .sub-division .box ~ .person_sub {
   border-left: 3px dotted #a1bf37;
 }
-.container .division .department.helseoekonomiogfinansiering .person_sub {
+.container .division .department.helseoekonomiogfinansiering .person_sub,
+.container .division .department.helseoekonomiogfinansiering .person_subsub {
   border-bottom: 4px solid #a1bf37;
 }
-.container .division .department.spesialisthelsetjenesten .sub-department .box {
+.container .division .department.helseoekonomiogfinansiering .sub-division .subsub-divisions .subsub-division .circle {
+  background: #a1bf37;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-division .decorativeborder {
+  border-right: 3px dotted #a1bf37;
+  border-bottom: 3px dotted #a1bf37;
+}
+.container .division .department.helseoekonomiogfinansiering .sub-division .subsub-divisions {
+  border-left: 3px dotted #a1bf37;
+}
+.container .division .department.spesialisthelsetjenesten .sub-division .box {
   border-left: 4px solid #aeaba8;
 }
-.container .division .department.spesialisthelsetjenesten .sub-department .box.selected {
+.container .division .department.spesialisthelsetjenesten .sub-division .box.selected {
   border: 4px solid #aeaba8;
   border-bottom: 23px solid #aeaba8;
 }
-.container .division .department.spesialisthelsetjenesten .sub-department .box.selected:before {
+.container .division .department.spesialisthelsetjenesten .sub-division .box.selected:before {
   background: #aeaba8;
 }
-.container .division .department.spesialisthelsetjenesten .sub-department .box.selected ~ .person_sub {
+.container .division .department.spesialisthelsetjenesten .sub-division .box.selected ~ .person_sub {
   border-left: 3px dotted #aeaba8;
 }
-.container .division .department.spesialisthelsetjenesten .person_sub {
+.container .division .department.spesialisthelsetjenesten .person_sub,
+.container .division .department.spesialisthelsetjenesten .person_subsub {
   border-bottom: 4px solid #aeaba8;
 }
-.container .division .department.ehelseogit .sub-department .box {
+.container .division .department.spesialisthelsetjenesten .sub-division .subsub-divisions .subsub-division .circle {
+  background: #aeaba8;
+}
+.container .division .department.spesialisthelsetjenesten .sub-division .decorativeborder {
+  border-right: 3px dotted #aeaba8;
+  border-bottom: 3px dotted #aeaba8;
+}
+.container .division .department.spesialisthelsetjenesten .sub-division .subsub-divisions {
+  border-left: 3px dotted #aeaba8;
+}
+.container .division .department.ehelseogit .sub-division .box {
   border-left: 4px solid #c63629;
 }
-.container .division .department.ehelseogit .sub-department .box.selected {
+.container .division .department.ehelseogit .sub-division .box.selected {
   border: 4px solid #c63629;
   border-bottom: 23px solid #c63629;
 }
-.container .division .department.ehelseogit .sub-department .box.selected:before {
+.container .division .department.ehelseogit .sub-division .box.selected:before {
   background: #c63629;
 }
-.container .division .department.ehelseogit .sub-department .box.selected ~ .person_sub {
+.container .division .department.ehelseogit .sub-division .box.selected ~ .person_sub {
   border-left: 3px dotted #c63629;
 }
-.container .division .department.ehelseogit .person_sub {
+.container .division .department.ehelseogit .person_sub,
+.container .division .department.ehelseogit .person_subsub {
   border-bottom: 4px solid #c63629;
 }
-.container .division .department.primaerhelsetjenesten .sub-department .box {
+.container .division .department.ehelseogit .sub-division .subsub-divisions .subsub-division .circle {
+  background: #c63629;
+}
+.container .division .department.ehelseogit .sub-division .decorativeborder {
+  border-right: 3px dotted #c63629;
+  border-bottom: 3px dotted #c63629;
+}
+.container .division .department.ehelseogit .sub-division .subsub-divisions {
+  border-left: 3px dotted #c63629;
+}
+.container .division .department.primaerhelsetjenesten .sub-division .box {
   border-left: 4px solid #df9922;
 }
-.container .division .department.primaerhelsetjenesten .sub-department .box.selected {
+.container .division .department.primaerhelsetjenesten .sub-division .box.selected {
   border: 4px solid #df9922;
   border-bottom: 23px solid #df9922;
 }
-.container .division .department.primaerhelsetjenesten .sub-department .box.selected:before {
+.container .division .department.primaerhelsetjenesten .sub-division .box.selected:before {
   background: #df9922;
 }
-.container .division .department.primaerhelsetjenesten .sub-department .box.selected ~ .person_sub {
+.container .division .department.primaerhelsetjenesten .sub-division .box.selected ~ .person_sub {
   border-left: 3px dotted #df9922;
 }
-.container .division .department.primaerhelsetjenesten .person_sub {
+.container .division .department.primaerhelsetjenesten .person_sub,
+.container .division .department.primaerhelsetjenesten .person_subsub {
   border-bottom: 4px solid #df9922;
 }
-.container .division .department.administrasjon .sub-department .box {
+.container .division .department.primaerhelsetjenesten .sub-division .subsub-divisions .subsub-division .circle {
+  background: #df9922;
+}
+.container .division .department.primaerhelsetjenesten .sub-division .decorativeborder {
+  border-right: 3px dotted #df9922;
+  border-bottom: 3px dotted #df9922;
+}
+.container .division .department.primaerhelsetjenesten .sub-division .subsub-divisions {
+  border-left: 3px dotted #df9922;
+}
+.container .division .department.administrasjon .sub-division .box {
   border-left: 4px solid #76428d;
   margin-right: 0;
 }
-.container .division .department.administrasjon .sub-department .box.selected {
+.container .division .department.administrasjon .sub-division .box.selected {
   border: 4px solid #76428d;
   border-bottom: 23px solid #76428d;
 }
-.container .division .department.administrasjon .sub-department .box.selected:before {
+.container .division .department.administrasjon .sub-division .box.selected:before {
   background: #76428d;
 }
-.container .division .department.administrasjon .sub-department .box.selected ~ .person_sub {
+.container .division .department.administrasjon .sub-division .box.selected ~ .person_sub {
   border-left: 3px dotted #76428d;
 }
-.container .division .department.administrasjon .person_sub {
+.container .division .department.administrasjon .person_sub,
+.container .division .department.administrasjon .person_subsub {
   border-bottom: 4px solid #76428d;
 }
-.container .division .department .sub-department .box {
+.container .division .department.administrasjon .sub-division .subsub-divisions .subsub-division .circle {
+  background: #76428d;
+}
+.container .division .department.administrasjon .sub-division .decorativeborder {
+  border-right: 3px dotted #76428d;
+  border-bottom: 3px dotted #76428d;
+}
+.container .division .department.administrasjon .sub-division .subsub-divisions {
+  border-left: 3px dotted #76428d;
+}
+.container .division .department .sub-division .box {
   color: #004e66;
   padding: 10px 6px 6px 2px;
   margin: 20px 22px 10px 0;
@@ -258,7 +327,7 @@
   line-height: 20px;
   margin-top: 5px;
 }
-.container .division .department .sub-department .box:before {
+.container .division .department .sub-division .box:before {
   position: absolute;
   content: "\f107";
   font-family: "FontAwesome";
@@ -268,31 +337,71 @@
   font-size: 30px;
   right: 0;
 }
-.container .division .department .sub-department .box.selected {
+.container .division .department .sub-division .box.selected {
   padding: 6px;
   margin-bottom: 0;
 }
-.container .division .department .sub-department .box.selected:before {
+.container .division .department .sub-division .box.selected:before {
   content: "\f106";
   font-family: "FontAwesome";
   color: white;
   left: 4%;
 }
-.container .division .department .sub-department#utviklingsdirektoer .box {
+.container .division .department .sub-division#utviklingsdirektoer .box {
   background: #76428d;
   color: white;
   height: 45px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.container .division .department .sub-department#utviklingsdirektoer .box:before {
+.container .division .department .sub-division#utviklingsdirektoer .box:before {
   content: '';
 }
-.container .division .department .sub-department#utviklingsdirektoer .box:after {
+.container .division .department .sub-division#utviklingsdirektoer .box:after {
   color: white;
   top: 13px;
 }
-.container .division .department.administrasjon .sub-department {
+.container .division .department .sub-division .subsub-divisions {
+  padding-top: 10px;
+  position: relative;
+}
+.container .division .department .sub-division .subsub-divisions:before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  height: 27px;
+  width: 3px;
+  border-left: 3px solid #f7f6f6;
+  bottom: 0;
+}
+.container .division .department .sub-division .subsub-divisions .subsub-division {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container .division .department .sub-division .subsub-divisions .subsub-division .circle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -10%;
+  top: 30px;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  line-height: 33px;
+  font-size: 28px;
+}
+.container .division .department .sub-division .subsub-divisions .subsub-division .box {
+  margin-top: 0;
+  width: 163px;
+  margin-left: 5px;
+}
+.container .division .department .sub-division .decorativeborder {
+  width: 85px;
+  height: 35px;
+}
+.container .division .department.administrasjon .sub-division {
   margin: 10px 0 0 0;
 }
 .container .etater {
@@ -454,27 +563,27 @@
     width: 60%;
     float: right;
   }
-  .container .division .department .sub-department {
+  .container .division .department .sub-division {
     margin: 10px 0 0 0;
     padding: 5px 0 5px 10px;
     width: 60%;
     float: right;
   }
-  .container .division .department .sub-department p {
+  .container .division .department .sub-division p {
     text-align: left;
     margin: 0;
     width: 100%;
   }
-  .container .division .department .sub-department:after {
+  .container .division .department .sub-division:after {
     content: '';
   }
-  .container .division .department .sub-department#utviklingsdirektoer {
+  .container .division .department .sub-division#utviklingsdirektoer {
     margin: 10px 0;
   }
-  .container .division .department .sub-department#utviklingsdirektoer p:before {
+  .container .division .department .sub-division#utviklingsdirektoer p:before {
     color: white;
   }
-  .container .division .department .sub-department .box {
+  .container .division .department .sub-division .box {
     width: 100%;
     float: right;
     height: 70px;
@@ -483,28 +592,28 @@
     margin-right: 0;
     margin-bottom: 0;
   }
-  .container .division .department .sub-department .box:before {
+  .container .division .department .sub-division .box:before {
     top: 28px;
     left: 94%;
     padding: 0;
   }
-  .container .division .department .sub-department .box.selected {
+  .container .division .department .sub-division .box.selected {
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 20px;
   }
-  .container .division .department .sub-department .box.selected:before {
+  .container .division .department .sub-division .box.selected:before {
     background: none !important;
     left: 95%;
     top: 60px;
     content: "\f106";
   }
-  .container .division .department .sub-department .person_sub {
+  .container .division .department .sub-division .person_sub {
     float: right;
     width: 100%;
     padding-bottom: 10px;
   }
-  .container .division .department.administrasjon .sub-department {
+  .container .division .department.administrasjon .sub-division {
     margin: 10px 0 10px 0;
   }
   .container .etater {
@@ -513,10 +622,10 @@
   }
 }
 @media only screen and (max-width: 899px) {
-  .container .division .department .sub-department .box:before {
+  .container .division .department .sub-division .box:before {
     left: 92%;
   }
-  .container .division .department .sub-department .box.selected:before {
+  .container .division .department .sub-division .box.selected:before {
     left: 92%;
   }
   .container .division .division_header:before {
@@ -540,17 +649,17 @@
   .container .division .division_header#administrasjon.selected:before {
     left: 91%;
   }
-  .container .division .department .sub-department .box:before {
+  .container .division .department .sub-division .box:before {
     left: 90%;
   }
-  .container .division .department .sub-department .box.selected:before {
+  .container .division .department .sub-division .box.selected:before {
     left: 90%;
   }
-  .container .division .department .sub-department {
+  .container .division .department .sub-division {
     width: 100%;
     float: none;
   }
-  .container .division .department .sub-department .box {
+  .container .division .department .sub-division .box {
     float: none;
     padding-right: 27px;
   }

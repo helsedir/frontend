@@ -160,14 +160,13 @@
         .department {
             float: left;
 
-            .person, .person_sub {
+            .person, .person_sub, .person_subsub {
                 color: @colorDarkBlue;
                 padding: 20px 10px 10px 10px;
                 font-family: @fontSohoRegular;
                 font-size: 18px;
                 line-height: 24px;
                 width: 170px;
-                margin-bottom: 10px;
 
                 p {
                     margin: 0;
@@ -189,7 +188,7 @@
             }
 
             &.folkehelse {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorLightBlue;
 
                     &.selected {
@@ -206,13 +205,26 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorLightBlue;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorLightBlue;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorLightBlue;
+                    border-bottom: 3px dotted @colorLightBlue;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorLightBlue;
                 }
             }
 
             &.helseoekonomiogfinansiering {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorGreen;
 
                     &.helfo {
@@ -234,13 +246,26 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorGreen;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorGreen;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorGreen;
+                    border-bottom: 3px dotted @colorGreen;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorGreen;
                 }
             }
 
             &.spesialisthelsetjenesten {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorDarkGray;
 
                     &.selected {
@@ -257,13 +282,26 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorDarkGray;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorDarkGray;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorDarkGray;
+                    border-bottom: 3px dotted @colorDarkGray;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorDarkGray;
                 }
             }
 
             &.ehelseogit {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorRed;
 
                     &.selected {
@@ -280,13 +318,26 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorRed;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorRed;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorRed;
+                    border-bottom: 3px dotted @colorRed;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorRed;
                 }
             }
 
             &.primaerhelsetjenesten {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorOrange;
 
                     &.selected {
@@ -303,13 +354,26 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorOrange;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorOrange;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorOrange;
+                    border-bottom: 3px dotted @colorOrange;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorOrange;
                 }
             }
 
             &.administrasjon {
-                .sub-department .box {
+                .sub-division .box {
                     border-left: 4px solid @colorPurple;
                     margin-right: 0;
 
@@ -327,12 +391,25 @@
                     }
                 }
 
-                .person_sub {
+                .person_sub, .person_subsub {
                     border-bottom: 4px solid @colorPurple;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorPurple;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorPurple;
+                    border-bottom: 3px dotted @colorPurple;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorPurple;
                 }
             }
 
-            .sub-department {
+            .sub-division {
                 .box {
                     color: #004e66;
                     padding: 10px 6px 6px 2px;
@@ -388,9 +465,55 @@
                         top: 13px;
                     }
                 }
+
+                .subsub-divisions {
+                    padding-top: 10px;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: -3px;
+                        height: 27px;
+                        width: 3px;
+                        border-left: 3px solid #f7f6f6;
+                        bottom: 0;
+                    }
+
+                    .subsub-division {
+                        position: relative;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+
+                        .circle {
+                            border-radius: 50%;
+                            width: 36px;
+                            height: 36px;
+                            position: absolute;
+                            left: -10%;
+                            top: 30px;
+                            z-index: 1;
+                            color: white;
+                            text-align: center;
+                            line-height: 33px;
+                            font-size: 28px;
+                        }
+
+                        .box {
+                            margin-top: 0;
+                            width: 163px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .decorativeborder {
+                    width: 85px;
+                    height: 35px;
+                }
             }
 
-            &.administrasjon .sub-department {
+            &.administrasjon .sub-division {
                 margin: 10px 0 0 0;
             }
         }
@@ -598,7 +721,7 @@
                     float: right;
                 }
 
-                .sub-department {
+                .sub-division {
                     margin: 10px 0 0 0;
                     padding: 5px 0 5px 10px;
                     width: 60%;
@@ -658,7 +781,7 @@
                     }
                 }
 
-                &.administrasjon .sub-department {
+                &.administrasjon .sub-division {
                     margin: 10px 0 10px 0;
                 }
             }
@@ -672,11 +795,11 @@
 }
 
 @media only screen and (max-width: 899px) {
-    .container .division .department .sub-department .box:before {
+    .container .division .department .sub-division .box:before {
         left: 92%;
     }
 
-    .container .division .department .sub-department .box.selected:before {
+    .container .division .department .sub-division .box.selected:before {
         left: 92%;
     }
 
@@ -694,18 +817,18 @@
         left: 91%;
     }
 
-    .container .division .department .sub-department .box:before {
+    .container .division .department .sub-division .box:before {
         left: 90%;
     }
 
-    .container .division .department .sub-department .box.selected:before {
+    .container .division .department .sub-division .box.selected:before {
         left: 90%;
     }
 
     .container {
         .division {
             .department {
-                .sub-department {
+                .sub-division {
                     width: 100%;
                     float: none;
 
