@@ -53,9 +53,23 @@
                 $(this).addClass('visuallyhidden')
                     .slideDown(0);
             });
+
+            if ($(this).parent().siblings('.division_header').hasClass('selected')) {
+                $(this).siblings('.person').slideUp(0, function () {
+                    $(this).removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            };
         } else {
             $(this).siblings('.sub-division').children('.box').each(function () {
                 $(this).removeClass('selected');
+            });
+
+            $(this).siblings('.person').each(function () {
+                $(this).slideUp('fast', function () {
+                    $(this).addClass('visuallyhidden')
+                        .slideDown(0);
+                });
             });
 
             $(this).siblings('.sub-division').children('.person_sub, .subsub-divisions, .decorativeborder').each(function () {
@@ -82,6 +96,13 @@
                 $(this).addClass('visuallyhidden')
                     .slideDown(0);
             });
+
+            $(this).parent().siblings('.person_sub').each(function () {
+                $(this).slideUp(0, function () {
+                    $(this).removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            });
         }
         else {
             $(this).siblings('.subsub-division').children('.box').each(function () {
@@ -99,6 +120,13 @@
             $(this).children('.person_subsub').slideUp(0, function () {
                 $(this).removeClass('visuallyhidden')
                     .slideDown(500);
+            });
+
+            $(this).parent().siblings('.person_sub').each(function () {
+                $(this).slideUp('fast', function () {
+                    $(this).addClass('visuallyhidden')
+                        .slideDown(0);
+                });
             });
         }
     });

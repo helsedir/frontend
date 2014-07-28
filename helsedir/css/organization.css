@@ -560,13 +560,13 @@
   .container .division .department .person,
   .container .division .department .person_sub {
     padding: 10px 10px 0 10px;
-    width: 60%;
+    width: 90%;
     float: right;
   }
   .container .division .department .sub-division {
     margin: 10px 0 0 0;
     padding: 5px 0 5px 10px;
-    width: 60%;
+    width: 90%;
     float: right;
   }
   .container .division .department .sub-division p {
@@ -613,6 +613,61 @@
     width: 100%;
     padding-bottom: 10px;
   }
+  .container .division .department .sub-division .decorativeborder {
+    width: 50%;
+  }
+  .container .division .department .sub-division .subsub-divisions {
+    display: inline-block !important;
+    width: 100%;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division {
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 7px;
+    width: 100%;
+    float: right;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division:after {
+    content: '';
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box {
+    width: 100%;
+    float: right;
+    height: 70px;
+    text-align: left;
+    padding: 24px 6px 6px 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box:before {
+    top: 28px;
+    left: 94%;
+    padding: 0;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box.selected {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box.selected:before {
+    background: none !important;
+    left: 95%;
+    top: 60px;
+    content: "\f106";
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .person_subsub {
+    float: right;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .circle {
+    left: -4%;
+    top: 25px;
+  }
   .container .division .department.administrasjon .sub-division {
     margin: 10px 0 10px 0;
   }
@@ -639,6 +694,16 @@
   .container .division .division_header#administrasjon.selected:before {
     left: 95%;
   }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box:before {
+    left: 90%;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .box.selected:before {
+    left: 91%;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .circle {
+    left: -4%;
+    top: 25px;
+  }
 }
 @media only screen and (max-width: 599px) {
   .container .division .division_header#folkehelse.selected:before,
@@ -656,12 +721,17 @@
     left: 90%;
   }
   .container .division .department .sub-division {
-    width: 100%;
-    float: none;
+    width: 95%;
   }
   .container .division .department .sub-division .box {
     float: none;
     padding-right: 27px;
+  }
+  .container .division .department .sub-division .subsub-divisions {
+    float: right;
+  }
+  .container .division .department .sub-division .subsub-divisions .subsub-division .circle {
+    left: -5%;
   }
   .container .division .department .person,
   .container .division .department .person_sub {

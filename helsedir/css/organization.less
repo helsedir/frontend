@@ -717,14 +717,14 @@
 
                 .person, .person_sub {
                     padding: 10px 10px 0 10px;
-                    width: 60%;
+                    width: 90%;
                     float: right;
                 }
 
                 .sub-division {
                     margin: 10px 0 0 0;
                     padding: 5px 0 5px 10px;
-                    width: 60%;
+                    width: 90%;
                     float: right;
 
                     p {
@@ -779,6 +779,72 @@
                         width: 100%;
                         padding-bottom: 10px;
                     }
+
+                    .decorativeborder {
+                        width: 50%;
+                    }
+
+                    .subsub-divisions {
+                        display: inline-block !important;
+                        width: 100%;
+
+                        .subsub-division {
+                            margin: 10px 0 0 0;
+                            padding: 5px 0 5px 7px;
+                            width: 100%;
+                            float: right;
+
+                            p {
+                                text-align: left;
+                                margin: 0;
+                                width: 100%;
+                            }
+
+                            &:after {
+                                content: '';
+                            }
+
+                            .box {
+                                width: 100%;
+                                float: right;
+                                height: 70px;
+                                text-align: left;
+                                padding: 24px 6px 6px 10px;
+                                margin-right: 0;
+                                margin-bottom: 0;
+
+                                &:before {
+                                    top: 28px;
+                                    left: 94%;
+                                    padding: 0;
+                                }
+
+                                &.selected {
+                                    padding-top: 20px;
+                                    padding-left: 10px;
+                                    padding-bottom: 20px;
+
+                                    &:before {
+                                        background: none !important;
+                                        left: 95%;
+                                        top: 60px;
+                                        content: "\f106";
+                                    }
+                                }
+                            }
+
+                            .person_subsub {
+                                float: right;
+                                width: 100%;
+                                padding-bottom: 10px;
+                            }
+
+                            .circle {
+                                left: -4%;
+                                top: 25px;
+                            }
+                        }
+                    }
                 }
 
                 &.administrasjon .sub-division {
@@ -810,6 +876,35 @@
     .container .division .division_header#folkehelse.selected:before, .container .division .division_header#helseoekonomiogfinansiering.selected:before, .container .division .division_header#spesialisthelsetjenesten.selected:before, .container .division .division_header#ehelseogit.selected:before, .container .division .division_header#primaerhelsetjenesten.selected:before, .container .division .division_header#administrasjon.selected:before {
         left: 95%;
     }
+
+    .container {
+        .division {
+            .department {
+                .sub-division {
+                    .subsub-divisions {
+                        .subsub-division {
+                            .box {
+                                &:before {
+                                    left: 90%;
+                                }
+
+                                &.selected {
+                                    &:before {
+                                        left: 91%;
+                                    }
+                                }
+                            }
+
+                            .circle {
+                                left: -4%;
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 599px) {
@@ -829,12 +924,21 @@
         .division {
             .department {
                 .sub-division {
-                    width: 100%;
-                    float: none;
+                    width: 95%;
 
                     .box {
                         float: none;
                         padding-right: 27px;
+                    }
+
+                    .subsub-divisions {
+                        float: right;
+
+                        .subsub-division {
+                            .circle {
+                                left: -5%;
+                            }
+                        }
                     }
                 }
 
