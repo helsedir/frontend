@@ -67,9 +67,9 @@
             </header>
         </div>
     </div>
-    <div class="container">
+    <article class="container">
         <div class="row">
-            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+            <div class="col-md-12">
                 <header id="pageheader">
                     <nav>
                         <ol class="breadcrumbs clearfix">
@@ -81,6 +81,10 @@
                         <span class="h1_ingress">3.linje kjemoterapi ved matastatistk brystkreft</span>
                     </h1>
                 </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
                 <div class="content">
                     <div class="wrapper">
                         <div class="method_status accordion_method">
@@ -90,7 +94,7 @@
                             <span class="method_attribute_label">ID-nummer:</span><p class="method_attribute">2013_002</p>
                             <div class="more_information"></div>
                         </div>
-                        <i class="fa fa-info"></i>
+                        <span class="informationicon">i</span>
                     </div>
                     <div class="wrapper">
                         <div class="method_status accordion_method">
@@ -99,23 +103,19 @@
                             <span class="method_attribute_label">Ansvarlig:</span><p class="method_attribute">Bestillerforum RHF</p>
                             <div class="more_information"></div>
                         </div>
-                        <i class="fa fa-info"></i>
+                        <span class="informationicon">i</span>
                     </div>
                     <div class="wrapper sectionwithaside">
-                        <div class="method_status accordion_method">
+                        <div class="method_status metodevurdering accordion_method">
                             <h2 class="">Metodevurdering</h2>
+
                             <span class="method_attribute_label">Startet:</span><p class="method_attribute">20.01.2014</p>
                             <span class="method_attribute_label">Ferdig:</span><p class="method_attribute">01.03.2014</p>
                             <span class="method_attribute_label">Ansvarlig:</span><p class="method_attribute">Statens legemiddelverk</p>
                             <span class="method_attribute_label">Konklusjon:</span><p class="method_attribute">Anbefaler å innføre</p>
                             <div class="more_information"></div>
                         </div>
-                        <i id="method_evaluation_link" class="fa fa-info"></i>
-                        <div class="method_evaluation">
-                            <p>Metodevurderingen gjennomføres hos Kunnskapssenteret eller Statens Legemiddelverk etter de har mottatt dokumentasjon fra leverandør/produsent.</p>
-                            <p><a href="#">En hurtig metodevurdering</a>, skal foreligge senest 180 dager etter det at Statens Legemiddelverk eller Kunnskapssenteret har mottatt all nødvendig dokumentasjon fra leverandøren(e)/produsenten(e), eller den som markedsfører metoden.</p>
-                            <p><a href="#">En fullstendig metodevurdering</a> er ofte mere arbeidskrevende, og kan ta cirka 8 til 12 månader.</p>
-                        </div>
+                        <span class="informationicon">i</span>
 
                         <aside class="aside">
                             <div class="module module_information">
@@ -128,8 +128,13 @@
                         </aside>
                     </div>
                     <div class="wrapper">
-                        <div class="method_status accordion_method">
+                        <div class="method_status beslutning accordion_method">
                             <h2 class="">Beslutning</h2>
+                            <div class="method_evaluation">
+                                <p>Metodevurderingen gjennomføres hos Kunnskapssenteret eller Statens Legemiddelverk etter de har mottatt dokumentasjon fra leverandør/produsent.</p>
+                                <p><a href="#">En hurtig metodevurdering</a>, skal foreligge senest 180 dager etter det at Statens Legemiddelverk eller Kunnskapssenteret har mottatt all nødvendig dokumentasjon fra leverandøren(e)/produsenten(e), eller den som markedsfører metoden.</p>
+                                <p><a href="#">En fullstendig metodevurdering</a> er ofte mere arbeidskrevende, og kan ta cirka 8 til 12 månader.</p>
+                            </div>
                             <span class="method_attribute_label">Startet:</span><p class="method_attribute">20.04.2014</p>
                             <span class="method_attribute_label">Ferdig:</span><p class="method_attribute">01.05.2014</p>
                             <span class="method_attribute_label">Ansvarlig:</span><p class="method_attribute"> Beslutningsforumet RHF</p>
@@ -143,7 +148,7 @@
                                 </p>
                             </div>
                         </div>
-                        <i class="fa fa-info"></i>
+                        <span id="method_evaluation_link" class="informationicon">i</span>
                     </div>
                     <aside class="aside">
                         <div class=" module module_subscribe clearfix">
@@ -165,9 +170,9 @@
                         </div>
                     </aside>
                 </div>
-            </article>
+            </div>
         </div>
-    </div>
+    </article>
     <footer class="footerwrapper" id="footer">
         <div class="footerlinkswrapper">
             <div class="container">

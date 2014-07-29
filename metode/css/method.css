@@ -5,25 +5,32 @@
   background: #ffffff url(../img/placeholder.png);
   background-position: 10px 14px;
   background-repeat: no-repeat;
-  border-left: 6px solid #004e66;
+  border-left: 6px solid #a1bf37;
   margin-top: 30px;
-  padding: 10px 40px 30px 70px;
+  padding: 10px 0 60px 0;
   position: relative;
 }
 .wrapper .method_status h2 {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 41px;
 }
-.wrapper .method_status h2.blur {
-  color: #aeaba8;
+.wrapper .method_status.beslutning {
+  border-left: 6px solid #6cb4b5;
+}
+.wrapper .method_status.metodevurdering {
+  border-left: 6px solid #004e66;
 }
 .wrapper .method_status .method_attribute_label {
   width: 20%;
   float: left;
   margin-right: 10px;
   font-weight: bold;
+  margin-left: 41px;
 }
 .wrapper .method_status .method_attribute {
+  margin-top: 0;
   margin-bottom: 10px;
+  display: inline-block;
+  width: 62%;
 }
 .wrapper .method_status.has-hidden-content {
   cursor: pointer;
@@ -33,14 +40,16 @@
   content: "\f107";
   font-family: "FontAwesome";
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   position: absolute;
-  right: 10px;
+  right: 40px;
   bottom: 10px;
   background: #004e66;
   padding: 0;
-  padding: 0 5px;
+  padding: 6px 9px;
   line-height: 30px;
+  height: 40px;
+  width: 40px;
 }
 .wrapper .method_status.has-hidden-content h3.accordion:before {
   font-size: 30px;
@@ -53,53 +62,75 @@
   content: "\f106";
   font-family: "FontAwesome";
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   position: absolute;
-  right: 10px;
+  right: 40px;
   bottom: 10px;
-  background: #004e66;
+  background: #0093a7;
   padding: 0;
-  padding: 0 5px;
+  padding: 6px 9px;
   line-height: 30px;
+  height: 40px;
+  width: 40px;
 }
 .wrapper .method_status.has-visible-content h3.accordion:before {
   font-size: 30px;
 }
 .wrapper .method_status .method_warning {
   color: white;
+  margin-left: 41px;
 }
-.wrapper .method_status .method_warning .fa-exclamation {
-  font-size: 20px;
-  margin-right: 10px;
+.wrapper .method_status .method_warning .exclamation {
+  font-family: 'Calibri';
+  font-size: 30px;
   float: left;
-  background: red;
-  padding: 10px 15px;
+  background: #c63629;
+  padding: 5px 15px;
+  margin: 7px 67px 37px 51px;
+  display: block;
+  height: 40px;
+  width: 40px;
 }
 .wrapper .method_status .method_warning p {
   color: #222;
-  padding-right: 30px;
+  width: 556px;
+}
+.wrapper .method_status .more_information {
+  margin-left: 41px;
 }
 .wrapper .method_status .more_information p a {
   text-decoration: underline;
 }
-.wrapper .fa-info {
+.wrapper .informationicon {
   position: absolute;
-  top: 9px;
-  right: 11px;
-  font-size: 18px;
+  right: 40px;
+  top: 8px;
+  font-size: 32px;
   cursor: pointer;
   color: white;
   background: #004e66;
   line-height: 20px;
-  padding: 4px 11px;
+  padding: 9px 16px;
+  display: block;
+  height: 40px;
+  width: 40px;
 }
-.wrapper .fa-info.selected {
+.wrapper .informationicon.selected {
   background: #0093a7;
+  padding: 9px 9px;
+  overflow: hidden;
+}
+.wrapper .informationicon.selected:before {
+  content: "\f106";
+  font-family: "FontAwesome";
+  color: white;
+  font-size: 35px;
+  margin-right: 7px;
 }
 .wrapper .method_evaluation {
   margin-top: 10px;
-  border: 1px solid #D7D6D6;
-  padding: 30px 10px 20px 70px;
+  padding: 30px 10px 20px 51px;
+  background: #f2f2f2;
 }
 .wrapper .method_evaluation a {
   text-decoration: underline;

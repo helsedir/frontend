@@ -24,17 +24,24 @@
         background: white url(../img/placeholder.png);
         background-position: 10px 14px;
         background-repeat: no-repeat;
-        border-left: 6px solid @colorDarkBlue;
+        border-left: 6px solid @colorGreen;
         margin-top: 30px;
-        padding: 10px 40px 30px 70px;
+        padding: 10px 0 60px 0;
         position: relative;
 
         h2 {
-            margin: 0 0 20px 0;
+            margin: 0 0 20px 41px;
 
             &.blur {
-                color: #aeaba8;
             }
+        }
+
+        &.beslutning {
+            border-left: 6px solid @colorLightBlue;
+        }
+
+        &.metodevurdering {
+            border-left: 6px solid @colorDarkBlue;
         }
 
         .method_attribute_label {
@@ -42,10 +49,14 @@
             float: left;
             margin-right: 10px;
             font-weight: bold;
+            margin-left: 41px;
         }
 
         .method_attribute {
+            margin-top: 0;
             margin-bottom: 10px;
+            display: inline-block;
+            width: 62%;
         }
 
         &.has-hidden-content {
@@ -55,14 +66,16 @@
                 content: "\f107";
                 font-family: "FontAwesome";
                 color: white;
-                font-size: 30px;
+                font-size: 35px;
                 position: absolute;
-                right: 10px;
+                right: 40px;
                 bottom: 10px;
                 background: #004e66;
                 padding: 0;
-                padding: 0 5px;
+                padding: 6px 9px;
                 line-height: 30px;
+                height: 40px;
+                width: 40px;
             }
 
             h3.accordion:before {
@@ -77,14 +90,16 @@
                 content: "\f106";
                 font-family: "FontAwesome";
                 color: white;
-                font-size: 30px;
+                font-size: 35px;
                 position: absolute;
-                right: 10px;
+                right: 40px;
                 bottom: 10px;
-                background: #004e66;
+                background: @colorMediumBlue;
                 padding: 0;
-                padding: 0 5px;
+                padding: 6px 9px;
                 line-height: 30px;
+                height: 40px;
+                width: 40px;
             }
 
             h3.accordion:before {
@@ -94,46 +109,68 @@
 
         .method_warning {
             color: white;
+            margin-left: 41px;
 
-            .fa-exclamation {
-                font-size: 20px;
-                margin-right: 10px;
+            .exclamation {
+                font-family: 'Calibri';
+                font-size: 30px;
                 float: left;
-                background: red;
-                padding: 10px 15px;
+                background: #c63629;
+                padding: 5px 15px;
+                margin: 7px 67px 37px 51px;
+                display: block;
+                height: 40px;
+                width: 40px;
             }
 
             p {
                 color: #222;
-                padding-right: 30px;
+                width: 556px;
             }
         }
 
-        .more_information p a {
-            text-decoration: underline;
+        .more_information {
+            margin-left: 41px;
+
+            p a {
+                text-decoration: underline;
+            }
         }
     }
 
-    .fa-info {
+    .informationicon {
         position: absolute;
-        top: 9px;
-        right: 11px;
-        font-size: 18px;
+        right: 40px;
+        top: 8px;
+        font-size: 32px;
         cursor: pointer;
         color: white;
         background: #004e66;
         line-height: 20px;
-        padding: 4px 11px;
+        padding: 9px 16px;
+        display: block;
+        height: 40px;
+        width: 40px;
 
         &.selected {
             background: @colorMediumBlue;
+            padding: 9px 9px;
+            overflow: hidden;
+
+            &:before {
+                content: "\f106";
+                font-family: "FontAwesome";
+                color: white;
+                font-size: 35px;
+                margin-right: 7px;
+            }
         }
     }
 
     .method_evaluation {
         margin-top: 10px;
-        border: 1px solid #D7D6D6;
-        padding: 30px 10px 20px 70px;
+        padding: 30px 10px 20px 51px;
+        background: #f2f2f2;
 
         a {
             text-decoration: underline;

@@ -516,7 +516,7 @@ a.external-link {
   background: url(../img/ekstern_lenke_mellomblaa.svg) no-repeat;
   background-size: 10px;
   background-position: 0px 7px;
-  padding-left: 15px;
+  padding-left: 22px;
   margin-top: 18px;
   display: block;
   cursor: pointer;
@@ -630,23 +630,14 @@ h4.keyfigures {
 .module.module_guidelines {
   border-left: 2px solid #c63629;
 }
-.module.module_facts {
-  border-left: 2px solid #0093a7;
-  margin-top: 30px;
-}
 .module.module_facts .bulletlist {
   margin-top: 10px;
 }
 .module.module_facts .bulletlist li:before {
   color: #0093a7;
 }
-.module.module_statistics_text,
-.module.module_statistics_graph {
-  border-left: 2px solid #6cb4b5;
-}
-.module.module_statistics_text h5,
-.module.module_statistics_graph h5 {
-  color: #004e66;
+.module.module_facts p {
+  color: #838078;
 }
 .module.module_statistics_text .keyfigures,
 .module.module_statistics_graph .keyfigures {
@@ -671,30 +662,31 @@ h4.keyfigures {
   max-width: 300px;
 }
 .module.module_subscribe {
-  padding: 0 0 5px 15px;
+  padding: 0 0 5px 0;
   max-width: 300px;
   background: none;
   width: 100%;
-  border-left: 6px solid #004e66;
 }
 .module.module_subscribe p {
   font-size: 18px;
   line-height: 18px;
   margin: 0;
-  color: #004e66;
+  color: #0093a7;
   text-transform: uppercase;
 }
 .module.module_subscribe .header {
-  margin-bottom: 10px;
+  color: #838078;
+  border-bottom: 4px solid #0093a7;
+  padding-bottom: 10px;
 }
 .module.module_subscribe a {
   font-size: 18px;
   margin: 0 20px 0 0;
   text-decoration: none;
-  color: #004e66;
+  color: #0093a7;
 }
 .module.module_subscribe a:visited {
-  color: #004e66;
+  color: #0093a7;
   text-decoration: none;
 }
 .module.module_subscribe a:hover {
@@ -712,11 +704,6 @@ h4.keyfigures {
   background-size: 27px 20px;
   background-position: 0% 100%;
 }
-.module.module_subscribe .e-mail:hover {
-  background: url(../img/ikoner/epost_hover.svg) no-repeat;
-  background-size: 28px 23px;
-  background-position: 0% 100%;
-}
 .module.module_subscribe .e-mail p {
   display: inline;
   vertical-align: bottom;
@@ -730,14 +717,6 @@ h4.keyfigures {
   background-size: 27px 20px;
   background-position: 0% 100%;
 }
-.module.module_subscribe .rss:hover {
-  background: url(../img/ikoner/rss_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
-  background-position: 0% 100%;
-}
 .module.module_subscribe .rss p {
   display: inline;
   vertical-align: bottom;
@@ -745,11 +724,11 @@ h4.keyfigures {
 }
 .module.module_message {
   display: inline-block;
-  margin: 100px 0 0 0;
-  padding: 30px 30px 45px 30px;
+  padding: 17px 30px 31px 22px;
   background: white;
   position: relative;
   width: 100%;
+  border-left: 4px solid #0093a7;
 }
 .module.module_message .module_description {
   font-family: 'Calibri';
@@ -760,11 +739,11 @@ h4.keyfigures {
   margin-bottom: 25px;
 }
 .module.module_message .module_header {
-  font-family: "Soho Gothic W01 Regular";
+  font-family: "Soho Gothic W01 Light";
   font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 25px;
-  color: #222;
+  line-height: 30px;
+  margin-bottom: 13px;
+  color: #838078;
 }
 .module.module_message .message {
   margin-left: 30px;
@@ -806,10 +785,21 @@ h4.keyfigures {
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
 }
+.module.module_message p.keyfigures {
+  margin-top: 0;
+}
+.module.module_message.withdrops {
+  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 89% 87%;
+  padding-bottom: 60px;
+}
+.module.module_message.withdrops .drops {
+  margin-top: 15px;
+}
 .module.module_person {
-  margin: 25px 0 0 0;
-  padding: 0 0 0 15px;
-  width: 285px;
+  padding: 0;
+  width: 300px;
   background: none;
 }
 .module.module_person h3 {
@@ -830,15 +820,20 @@ h4.keyfigures {
   margin-bottom: 5px;
 }
 .module.module_person .person_information a {
-  text-decoration: underline;
   line-height: 18px;
   display: block;
   color: #838078;
 }
+.module.module_person .person_information a.internal-link.arrow_right {
+  margin-top: 0;
+  background-size: 18px;
+  padding-left: 28px;
+  line-height: 19px;
+}
 .module.module_person .name {
   font-size: 24px;
   line-height: 30px;
-  margin: 0 0 15px 0;
+  margin: 0 0 7px 0;
   font-family: "Soho Gothic W01 Light";
   color: #222;
 }
@@ -853,8 +848,8 @@ h4.keyfigures {
   text-transform: uppercase;
   color: #838078;
   text-decoration: none;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 4px solid #0093a7;
 }
 .module.module_information {
@@ -892,14 +887,13 @@ h4.keyfigures {
 .module.module_social {
   padding: 0;
   background: none;
-  border-top: 2px solid #004e66;
-  padding-top: 19px;
+  border-top: 4px solid #0093a7;
   margin: 60px 0 0 0;
   width: 100%;
 }
 .module.module_social a,
 .module.module_social a:visited {
-  color: #004e66;
+  color: #0093a7;
   text-transform: uppercase;
   float: left;
   margin: 0 50px 0 0;
@@ -916,7 +910,7 @@ h4.keyfigures {
   float: left;
 }
 .module.module_social span {
-  margin: 0 3px 0 0;
+  margin: 0 10px 0 0;
   height: 24px;
   width: 26px;
 }
@@ -936,6 +930,10 @@ h4.keyfigures {
 }
 .module.module_social .ikon_skrivut {
   display: block;
+  padding: 10px 20px 10px 13px;
+}
+.module.module_social .ikon_skrivut:hover {
+  background: #d1d0cf;
 }
 .module.module_social .ikon_skrivut span {
   background: url(../img/ikoner/skriv_ut_regular.svg) no-repeat;
@@ -951,27 +949,6 @@ h4.keyfigures {
   display: inline;
   vertical-align: bottom;
   font-size: 16px;
-}
-.module.module_social .ikon_skrivut:hover span {
-  background: url(../img/ikoner/skriv_ut_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
-}
-.module.module_social .ikon_facebook:hover span {
-  background: url(../img/ikoner/facebook_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
-}
-.module.module_social .ikon_twitter:hover span {
-  background: url(../img/ikoner/twitter_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
 }
 .showmorenews {
   width: 250px;
@@ -1105,9 +1082,8 @@ fieldset {
 }
 .refinesearch h2,
 .refinesearch h5 {
-  margin-bottom: 5px;
-  padding-bottom: 15px;
-  font-family: "Soho Gothic W01 Regular";
+  margin-bottom: 18px;
+  font-family: "Soho Gothic W01 Light";
   font-size: 24px;
   line-height: 28px;
   color: #838078;

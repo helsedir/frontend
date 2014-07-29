@@ -69,18 +69,17 @@
     </div>
     <article class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-12 ">
                 <header id="pageheader">
                     <nav>
                         <ol class="breadcrumbs clearfix">
                             <li class="active"><a href="forside.html">Forside</a></li>
                         </ol>
                     </nav>
-                    <h1>Finn metode</h1>
+                    <h1>
+                        Finn metode<a href="oppstart.html" title="Gå til informasjonssider om metodevurderingsprosessen"><img class="img-responsive drops" src="../img/drops.png" alt="" /></a>
+                    </h1>
                 </header>
-            </div>
-            <div class="col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-4">
-                <a href="oppstart.html" title="Gå til informasjonssider om metodevurderingsprosessen"><img class="img-responsive drops" src="../img/drops.png" alt="" /></a>
             </div>
         </div>
         <div class="row">
@@ -177,33 +176,42 @@
                                     Se alle søkeresultater på kunnskapssenteret.no
                                 </a>
                             </div>
-                            <div class="borderbox">
-                                <h5>Siste ferdigstilte mini-metodevurderinger på Kunnskapssentret</h5>
-                                <ul class="bulletlist">
-                                    <li>
-                                        <a class="">
-                                            Enkeltrom i familie-barn vennlig nyfødtavdeling
-                                        </a>
-                                    </li>
 
-                                    <li>
-                                        <a class="">
-                                            Lavfrekvent laser (Low level laser) i behandling av oral mucositt
-                                        </a>
-                                    </li>
+                            <div class="module module_facts">
+                                <h5 class="module_header">Relatert innhold</h5>
 
-                                    <li>
-                                        <a class="">
-                                            HPV DNA testing på cervicale celler innsamlet i Surepath - konserveringsvæske (BD Diagnostics-TriPath)
-                                        </a>
-                                    </li>
+                                <p>
+                                    Pacemaker uten elektrodeledning (Nanostim) i behandling av atrieflimmer og bradykardi
+                                </p>
 
-                                    <li>
-                                        <a class="">
-                                            Se alle mini-metodevurderinger på kunnskapssentret.no
-                                        </a>
-                                    </li>
-                                </ul>
+                                <p>
+                                    Aromatasehemmere (Letrozol, Anastrozol og Exemestan) i behandling av postmenopausale kvinner med tidlig østrogenreseptor (ER) -positiv brystkreft
+                                </p>
+
+                                <p>
+                                    Implanterbar batteridrevet kateterdrenering (Alfapump) ved behandlingsresistent og tilbakevendende væske i buken (ascites).
+                                </p>
+
+                                <a href="#" class="external-link">
+                                    Se alle søkeresultater på kunnskapssenteret.no
+                                </a>
+                            </div>
+
+                            <div class="module module_message date">
+                                <h5 class="module_header">Frist for innsending av innspill</h5>
+                                <p class="keyfigures">29. august</p>
+                            </div>
+
+                            <div class=" module module_statistics_graph">
+                                <h5 class=" module_header">
+                                    Antall innkomne forslag
+                                </h5>
+                                <div id="module_chart_column"></div>
+                            </div>
+
+                            <div class="module module_message withdrops">
+                                <h5 class="module_header">Hvordan forgår metodevurdering?</h5>
+                                <a href="oppstart.html" title="Gå til informasjonssider om metodevurderingsprosessen"><img class="img-responsive drops" src="../img/drops.png" alt="" /></a>
                             </div>
                         </aside>
                         <div class="transportsideknapp clearfix">
@@ -325,5 +333,29 @@
     <script src="../js/helsedir.js"></script>
     <script src="../js/expandmenu.js"></script>
     <script src="../js/method.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Type', 'Antall forslag', { role: 'style' }],
+                ['Legemiddel', 42, '#6cb4b5'],
+                ['Medisinsk utstyr/prosedyrer', 10, '#a1bf37'],
+            ]);
+
+            var options = {
+                title: '',
+                'chartArea': { 'width': '70%', 'height': '70%' },
+                backgroundColor: '#f2f2f2',
+                legend: 'none',
+                vAxis: { minValue: 0, maxValue: 50 }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
+            chart.draw(data, options);
+
+        }
+    </script>
 </body>
 </html>

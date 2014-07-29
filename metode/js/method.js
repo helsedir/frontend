@@ -13,7 +13,7 @@
             });
             $(this).addClass('selected');
         } else {
-            $(".method_evaluation").slideUp('fast', function () {
+            $(".method_evaluation").slideUp('slow', function () {
                 $(".method_evaluation").addClass('visuallyhidden').slideDown(0);
             });
             $(this).removeClass('selected');
