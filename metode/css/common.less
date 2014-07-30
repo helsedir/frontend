@@ -43,28 +43,37 @@ h1 {
     font-weight: normal;
     font-size: 36px;
     font-family: @fontSohoLight;
-    line-height: 50px;
+    line-height: 44px;
     margin: 50px 0 0 0;
     color: #838078;
-    padding: 0 0 8px 0;
-    border-bottom: 1px solid #aeaba8;
+    padding: 0 0 4px 0;
     border-top: 1px solid #aeaba8;
+    border-bottom: 1px solid #aeaba8;
+}
+
+.h1b {
+    color: #222;
+    border: none;
 }
 
 .ingress {
     margin: 20px 0 20px 0;
     font-size: 24px;
-    line-height: 28px;
-    font-family: @fontSohoLight;
-    color: @colorDarkBlue;
+    line-height: 30px;
+    font-family: @fontCalibri;
+    color: #838078;
+}
+
+.headingwrapper {
+    color: #838078;
 }
 
 h2 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 36px;
     font-family: @fontSohoLight;
     margin: 35px 0 0 0;
-    color: @colorDarkBlue;
+    color: #222;
 
     &.accordion {
         border-bottom: 1px solid @colorDarkBlue;
@@ -73,10 +82,10 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
-    font-family: @fontSohoRegular;
+    font-size: 26px;
+    font-family: @fontSohoLight;
     margin: 35px 0 0 0;
-    line-height: 36px;
+    line-height: 32px;
 
     &.accordion {
         border-bottom: 1px solid @colorMediumGray;
@@ -87,9 +96,10 @@ h3 {
 h4 {
     font-weight: normal;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
     margin-top: 55px;
-    font-family: @fontSohoRegular;
+    font-family: @fontSohoLight;
+    color: #222;
 
     &.accordion {
         margin: 55px 0 0 0;
@@ -100,7 +110,9 @@ h4 {
 
 h5 {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #838078;
 }
 
 p {
@@ -108,6 +120,16 @@ p {
     font-size: 20px;
     font-family: 'Calibri';
     line-height: 27px;
+    color: #838078;
+
+    a {
+        border-bottom: 1px solid #aeaba8;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #222;
+        }
+    }
 }
 
 ul {
@@ -620,6 +642,30 @@ iframe {
 
     &.last {
         margin-top: 20px;
+    }
+
+    &.inline {
+        padding-left: 17px;
+        background: url(../img/navigasjon/ekstern_lenke_sort.svg) no-repeat;
+        background-size: 10px;
+        background-position: 0px 10px;
+        color: #222;
+        border-bottom: 1px solid #aeaba8;
+        display: inline;
+        position: relative;
+
+        &:hover {
+            border-bottom: 1px solid #222;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            height: 27px;
+            width: 17px;
+            border-bottom: 1px solid #f7f6f6;
+        }
     }
 }
 

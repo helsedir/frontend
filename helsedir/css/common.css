@@ -733,7 +733,7 @@ body {
   font-size: inherit;
   text-decoration: none;
   position: absolute;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 .container .internal-link.inline,
 .container-fluid .internal-link.inline,

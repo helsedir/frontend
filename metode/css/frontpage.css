@@ -171,7 +171,8 @@
   text-decoration: none;
 }
 .news a:hover h3 {
-  font-weight: bold;
+  color: #01737c;
+  border-bottom: 3px dotted #01737c;
 }
 .news a h3 {
   font-size: 24px;
@@ -209,6 +210,123 @@
   }
   .entrancebuttons .entrancebutton span {
     margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .entrancebuttons .entrancebutton {
+    margin-top: 10px;
+  }
+  .entrancebuttons .entrancebutton a h2 {
+    text-align: left;
+  }
+  .entrancebuttons .entrancebutton span {
+    margin: 10px 20px;
+    float: left;
+  }
+  .method_entrance {
+    float: none;
+    vertical-align: initial;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    background: white;
+    border-radius: 3px;
+  }
+  .method_entrance .heading_wrapper {
+    float: left;
+    width: auto;
+    margin: 10px 0 10px 5%;
+  }
+  .method_entrance .heading_wrapper h3 {
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .method_entrance .drop_wrapper {
+    width: 63px;
+    float: left;
+    margin: 10px 0 5px 4%;
+  }
+  .method_entrance .drop_wrapper .drop {
+    position: relative;
+    display: inline-block;
+    width: 63px;
+    height: 55px;
+    margin: 0;
+  }
+  .method_entrance .drop_wrapper .drop.oppstart .drop_triangle {
+    border-left: 1.4em solid #0093a7;
+  }
+  .method_entrance .drop_wrapper .drop.oppstart .drop_circle {
+    border: 1.3em solid #0093a7;
+  }
+  .method_entrance .drop_wrapper .drop.forslag .drop_triangle {
+    border-left: 1.4em solid #a1bf17;
+  }
+  .method_entrance .drop_wrapper .drop.forslag .drop_circle {
+    border: 1.3em solid #a1bf17;
+  }
+  .method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
+    border-left: 1.4em solid #004e66;
+  }
+  .method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
+    border: 1.3em solid #004e66;
+  }
+  .method_entrance .drop_wrapper .drop.beslutning .drop_triangle {
+    border-left: 1.4em solid #6cb4b5;
+  }
+  .method_entrance .drop_wrapper .drop.beslutning .drop_circle {
+    border: 1.3em solid #6cb4b5;
+  }
+  .method_entrance .drop_wrapper .drop.implementering .drop_triangle {
+    border-left: 1.4em solid #df9922;
+  }
+  .method_entrance .drop_wrapper .drop.implementering .drop_circle {
+    border: 1.3em solid #df9922;
+  }
+  .method_entrance .drop_wrapper .drop .drop_triangle {
+    border: 1.4em solid transparent;
+    left: 1.7em;
+  }
+  .method_entrance .drop_wrapper .drop .drop_number {
+    top: 15px;
+    left: 17px;
+    font-size: 32px;
+  }
+  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
+    border-left: 1.4em solid #01737c;
+  }
+  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
+    border: 1.3em solid #01737c;
+  }
+  .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
+    border-left: 1.4em solid #8ca037;
+  }
+  .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
+    border: 1.3em solid #8ca037;
+  }
+  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
+    border-left: 1.4em solid #02343f;
+  }
+  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
+    border: 1.3em solid #02343f;
+  }
+  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
+    border-left: 1.4em solid #448c8a;
+  }
+  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
+    border: 1.3em solid #448c8a;
+  }
+  .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
+    border-left: 1.4em solid #c98523;
+  }
+  .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
+    border: 1.3em solid #c98523;
+  }
+  .frontpagewrapper.white .container {
+    background: #f2f2f2;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */

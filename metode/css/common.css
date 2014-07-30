@@ -30,36 +30,43 @@ h1 {
   font-weight: normal;
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
-  line-height: 50px;
+  line-height: 44px;
   margin: 50px 0 0 0;
   color: #838078;
-  padding: 0 0 8px 0;
-  border-bottom: 1px solid #aeaba8;
+  padding: 0 0 4px 0;
   border-top: 1px solid #aeaba8;
+  border-bottom: 1px solid #aeaba8;
+}
+.h1b {
+  color: #222;
+  border: none;
 }
 .ingress {
   margin: 20px 0 20px 0;
   font-size: 24px;
-  line-height: 28px;
-  font-family: "Soho Gothic W01 Light";
-  color: #004e66;
+  line-height: 30px;
+  font-family: 'Calibri';
+  color: #838078;
+}
+.headingwrapper {
+  color: #838078;
 }
 h2 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 36px;
   font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
-  color: #004e66;
+  color: #222;
 }
 h2.accordion {
   border-bottom: 1px solid #004e66;
   padding-bottom: 10px;
 }
 h3 {
-  font-size: 30px;
-  font-family: "Soho Gothic W01 Regular";
+  font-size: 26px;
+  font-family: "Soho Gothic W01 Light";
   margin: 35px 0 0 0;
-  line-height: 36px;
+  line-height: 32px;
 }
 h3.accordion {
   border-bottom: 1px solid #bababa;
@@ -68,9 +75,10 @@ h3.accordion {
 h4 {
   font-weight: normal;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
   margin-top: 55px;
-  font-family: "Soho Gothic W01 Regular";
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
 }
 h4.accordion {
   margin: 55px 0 0 0;
@@ -79,13 +87,23 @@ h4.accordion {
 }
 h5 {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #838078;
 }
 p {
   margin: 10px 0 0 0;
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 27px;
+  color: #838078;
+}
+p a {
+  border-bottom: 1px solid #aeaba8;
+}
+p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #222;
 }
 ul.list {
   list-style: none;
@@ -533,6 +551,30 @@ a.external-link:visited {
 .external-link.last,
 a.external-link.last {
   margin-top: 20px;
+}
+.external-link.inline,
+a.external-link.inline {
+  padding-left: 17px;
+  background: url(../img/navigasjon/ekstern_lenke_sort.svg) no-repeat;
+  background-size: 10px;
+  background-position: 0px 10px;
+  color: #222;
+  border-bottom: 1px solid #aeaba8;
+  display: inline;
+  position: relative;
+}
+.external-link.inline:hover,
+a.external-link.inline:hover {
+  border-bottom: 1px solid #222;
+}
+.external-link.inline:before,
+a.external-link.inline:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 27px;
+  width: 17px;
+  border-bottom: 1px solid #f7f6f6;
 }
 .internal-link {
   color: #838078;
