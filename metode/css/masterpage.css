@@ -51,6 +51,7 @@
   background: #ffffff url(../img/footer_illustrasjon.png) no-repeat;
   background-position: 80%;
   color: #222;
+  background-size: contain;
 }
 .footerlinkswrapper a,
 .footerlinkswrapper h4 {
@@ -65,6 +66,8 @@
 }
 .footerlinkswrapper h4 {
   margin-top: 38px;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Regular";
 }
 .footerlinkswrapper .contact h5 {
   font-weight: bold;
@@ -74,6 +77,42 @@
 .footerlinkswrapper .contact p {
   margin-top: 0;
   color: #838078;
+}
+.footerlinkswrapper .linklist {
+  margin-top: 96px;
+  margin-bottom: 0;
+}
+.footerlinkswrapper .linklist li a p {
+  padding-bottom: 1px;
+}
+.footerlinkswrapper .linklist li a:hover {
+  text-decoration: none;
+}
+.footerlinkswrapper .linklist li a:hover p {
+  border-bottom: 1px solid #C63629;
+  padding-bottom: 0;
+}
+.footerlinkswrapper .linklist li a:hover p:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 28px;
+  width: 50px;
+  border-bottom: 1px solid white;
+}
+.footerlinkswrapper .linklist .internal-link {
+  margin-top: 5px;
+  color: #838078;
+  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+  background-size: 20px;
+  display: inline-block;
+}
+.footerlinkswrapper .linklist_headings {
+  margin-top: 38px;
+}
+.footerlinkswrapper .linklist_headings h4.internal-link {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 #header .container {
   background: white;

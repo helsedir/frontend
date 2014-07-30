@@ -82,6 +82,7 @@
     background: white url(../img/footer_illustrasjon.png) no-repeat;
     background-position: 80%;
     color: #222;
+    background-size: contain;
 
     a, h4 {
         color: #C63629;
@@ -96,6 +97,8 @@
 
     h4 {
         margin-top: 38px;
+        font-size: 24px;
+        font-family: "Soho Gothic W01 Regular";
     }
 
     .contact {
@@ -108,6 +111,52 @@
         p {
             margin-top: 0;
             color: #838078;
+        }
+    }
+
+    .linklist {
+        margin-top: 96px;
+        margin-bottom: 0;
+
+        li a p {
+            padding-bottom: 1px;
+        }
+
+        li a:hover {
+            text-decoration: none;
+
+            p {
+                border-bottom: 1px solid #C63629;
+                padding-bottom: 0;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    height: 28px;
+                    width: 50px;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+
+        .internal-link {
+            margin-top: 5px;
+            color: #838078;
+            background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+            background-size: 20px;
+            display: inline-block;
+        }
+    }
+
+    .linklist_headings {
+        margin-top: 38px;
+
+        h4 {
+            &.internal-link {
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
         }
     }
 }

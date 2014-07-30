@@ -212,7 +212,7 @@
     margin: 30px auto;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 899px) {
   .entrancebuttons .entrancebutton {
     margin-top: 10px;
   }
@@ -295,6 +295,9 @@
     left: 17px;
     font-size: 32px;
   }
+  .method_entrance:hover {
+    background: #aeaba8;
+  }
   .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
     border-left: 1.4em solid #01737c;
   }
@@ -324,6 +327,9 @@
   }
   .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
     border: 1.3em solid #c98523;
+  }
+  .frontpagewrapper.white {
+    background: #f2f2f2;
   }
   .frontpagewrapper.white .container {
     background: #f2f2f2;
