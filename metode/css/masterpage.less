@@ -370,15 +370,38 @@
     display: block;
 }
 
-@media only screen and (max-width: 5990px) {
+@media only screen and (max-width: 599px) {
     .logo {
         height: auto;
-        padding-bottom: 20px;
+        padding: 0;
+
+        span {
+            font-size: 12px;
+            line-height: 18px;
+
+            &.highlight {
+                font-size: 18px;
+            }
+        }
     }
 
     .footerlinkswrapper {
         background-color: white;
         background-image: none;
+    }
+
+    header {
+        .no-padding {
+            padding: 0;
+        }
+
+        &.masterheader {
+            margin: 0px 0 10px 0;
+        }
+
+        .menubutton.mobile-search {
+            margin-top: 10px;
+        }
     }
 }
 

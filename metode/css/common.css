@@ -739,12 +739,13 @@ h4.keyfigures {
   margin-right: 10px;
 }
 .module.module_subscribe .e-mail {
-  width: 28px;
-  height: 23px;
   padding-left: 40px;
   background: url(../img/ikoner/epost_regular.svg) no-repeat;
   background-size: 27px 20px;
-  background-position: 0% 100%;
+  background-position: 10% 50%;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 10px 10px 45px;
 }
 .module.module_subscribe .e-mail p {
   display: inline;
@@ -752,17 +753,22 @@ h4.keyfigures {
   font-size: 16px;
 }
 .module.module_subscribe .rss {
-  width: 28px;
-  height: 23px;
   padding-left: 40px;
   background: url(../img/ikoner/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
-  background-position: 0% 100%;
+  background-position: 10% 50%;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 10px 10px 45px;
 }
 .module.module_subscribe .rss p {
   display: inline;
   vertical-align: bottom;
   font-size: 16px;
+}
+.module.module_subscribe .e-mail:hover,
+.module.module_subscribe .rss:hover {
+  background-color: #d1d0cf;
 }
 .module.module_message {
   display: inline-block;
@@ -816,9 +822,10 @@ h4.keyfigures {
   width: 100px;
 }
 .module.module_message.date_small {
-  border: 2px solid #0093a7;
-  margin: 30px 0 10px 0;
+  border-left: 7px solid #0093a7;
+  margin: 20px 0 10px 0;
   padding: 5px 20px;
+  max-width: 600px;
 }
 .module.module_message.date_small .keyfigures {
   text-align: center;
@@ -826,6 +833,11 @@ h4.keyfigures {
   margin-left: 30px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
+}
+.module.module_message.date_small .module_header {
+  font-size: 20px;
+  color: #838078;
+  font-family: 'Calibri';
 }
 .module.module_message p.keyfigures {
   margin-top: 0;
