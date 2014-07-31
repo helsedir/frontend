@@ -844,7 +844,7 @@ p.keyfigures, h4.keyfigures {
         .header {
             color: #838078;
             border-bottom: 4px solid @colorMediumBlue;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
 
         a {
@@ -1016,7 +1016,7 @@ p.keyfigures, h4.keyfigures {
         }
 
         .role, .phone, .e-mail {
-            margin: 0;
+            margin: 0 0 0 7px;
             font-size: 18px;
             line-height: 20px;
             color: #838078;
@@ -1037,6 +1037,7 @@ p.keyfigures, h4.keyfigures {
                     background-size: 18px;
                     padding-left: 28px;
                     line-height: 19px;
+                    margin-left: 7px;
                 }
             }
         }
@@ -1044,9 +1045,9 @@ p.keyfigures, h4.keyfigures {
         .name {
             font-size: 24px;
             line-height: 30px;
-            margin: 0 0 7px 0;
+            margin: 0 0 7px 7px;
             font-family: @fontSohoLight;
-            color: #222;
+            color: @colorMediumBlue;
         }
 
         img {
@@ -2021,6 +2022,10 @@ fieldset {
     .module {
         &.module_information {
             margin-left: 25px;
+        }
+
+        &.module_person {
+            margin-top: 30px;
         }
     }
 }

@@ -158,11 +158,59 @@
   }
 }
 @media only screen and (max-width: 599px) {
+  h1 {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .wrapper .informationicon {
+    right: 15px;
+  }
+  .wrapper .method_status {
+    padding-left: 0;
+  }
   .wrapper .method_status .method_attribute_label {
+    width: 115px;
+    margin-left: 10px;
+  }
+  .wrapper .method_status .method_attribute {
+    margin-left: 10px;
+    width: 67%;
+  }
+  .wrapper .method_status h2 {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .wrapper .method_status .method_warning {
+    margin-left: 10px;
+  }
+  .wrapper .method_status .method_warning .exclamation {
+    margin-left: 75px;
+    margin-right: 20px;
+  }
+  .wrapper .method_status .method_warning p {
+    width: 93%;
+  }
+  .wrapper .method_status.has-hidden-content h2:before,
+  .wrapper .method_status.has-hidden-content .accordion:before {
+    right: 15px;
+  }
+  .wrapper .method_status.has-visible-content h2:before,
+  .wrapper .method_status.has-visible-content .accordion:before {
+    right: 15px;
+  }
+  .wrapper .method_evaluation .icon {
+    display: none;
+  }
+  .wrapper .method_evaluation .information {
+    float: left;
     width: 100%;
   }
+  .wrapper .method_evaluation {
+    padding: 0 0 0 10px;
+  }
 }
-@media only screen and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .wrapper .method_status {
     padding: 10px 40px 30px 15px;
   }

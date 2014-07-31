@@ -385,11 +385,6 @@
         }
     }
 
-    .footerlinkswrapper {
-        background-color: white;
-        background-image: none;
-    }
-
     header {
         .no-padding {
             padding: 0;
@@ -402,6 +397,27 @@
         .menubutton.mobile-search {
             margin-top: 10px;
         }
+    }
+
+    .footerlinkswrapper {
+        background-color: white;
+        background-image: none;
+
+        .logoline {
+            .helsedirektoratet, .kunnskapssenteret, .legemiddelverk, .helsemidt, .helsenord, .helsesoeroest, .helsevest, .straalevern {
+                width: 127px;
+                height: 23px;
+                margin: 15px 0 0 15px;
+            }
+
+            .kunnskapssenteret, .helsemidt, .helsesoeroest, .straalevern {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    #footer {
+        padding-top: 0;
     }
 }
 
@@ -469,16 +485,13 @@
             }
 
             &.js-expanded {
-                background: @colorMediumBlue;
+                background: @colorMediumBlue url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
+                -moz-background-size: 24px;
+                -o-background-size: 24px;
+                -webkit-background-size: 24px;
+                background-size: 24px;
+                background-position: center;
                 border-radius: 3px;
-                padding-top: 6px;
-
-                &:before {
-                    font-family: "FontAwesome";
-                    content: '\f00d';
-                    font-size: 25px;
-                    color: white;
-                }
             }
         }
     }

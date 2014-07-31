@@ -222,7 +222,7 @@ h2 {
 
             h3 {
                 color: #01737c;
-                border-bottom: 3px dotted #01737c;
+                border-bottom: 2px dotted #01737c;
             }
         }
 
@@ -242,6 +242,14 @@ h2 {
 
 .module.module_message {
     margin-top: 20px;
+}
+
+.wrapper_leverandorer, .wrapper_pasienter {
+    background: white;
+
+    .container {
+        background: white;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
@@ -442,14 +450,6 @@ h2 {
             }
         }
     }
-
-    .frontpagewrapper.white {
-        background: #f2f2f2;
-
-        .container {
-            background: #f2f2f2;
-        }
-    }
 }
 
 @media only screen and (max-width: 599px) {
@@ -467,8 +467,38 @@ h2 {
     }
 
     .wrapper_statusoppdateringer {
-        background: #e4f3f6;
+        background: white;
         padding-bottom: 20px;
-        padding-top: 10px;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+
+    .wrapper_spesialisthelsetjenesten {
+        background: white;
+
+        .container {
+            background: white;
+        }
+    }
+
+    .wrapper_leverandorer {
+        background: #f2f2f2;
+        padding-bottom: 20px;
+
+        .container {
+            background: #f2f2f2;
+        }
+    }
+
+    .wrapper_pasienter {
+        background: #f2f2f2;
+
+        .container {
+            background: #f2f2f2;
+        }
+    }
+
+    .footerlinkswrapper .linklist {
+        margin-top: 30px;
     }
 }

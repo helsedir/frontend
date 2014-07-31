@@ -719,7 +719,7 @@ h4.keyfigures {
 .module.module_subscribe .header {
   color: #838078;
   border-bottom: 4px solid #0093a7;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .module.module_subscribe a {
   font-size: 18px;
@@ -865,7 +865,7 @@ h4.keyfigures {
 .module.module_person .role,
 .module.module_person .phone,
 .module.module_person .e-mail {
-  margin: 0;
+  margin: 0 0 0 7px;
   font-size: 18px;
   line-height: 20px;
   color: #838078;
@@ -883,13 +883,14 @@ h4.keyfigures {
   background-size: 18px;
   padding-left: 28px;
   line-height: 19px;
+  margin-left: 7px;
 }
 .module.module_person .name {
   font-size: 24px;
   line-height: 30px;
-  margin: 0 0 7px 0;
+  margin: 0 0 7px 7px;
   font-family: "Soho Gothic W01 Light";
-  color: #222;
+  color: #0093a7;
 }
 .module.module_person img {
   width: 130px;
@@ -1676,6 +1677,9 @@ fieldset {
 @media only screen and (max-width: 599px) {
   .module.module_information {
     margin-left: 25px;
+  }
+  .module.module_person {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
