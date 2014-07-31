@@ -173,7 +173,7 @@
   border: none;
   background: none;
   width: 29px;
-  padding: 0;
+  padding: 5px 0 4px 0;
   vertical-align: middle;
 }
 .mainsearchform button img {
@@ -206,7 +206,7 @@
   border: none;
   background: none;
   width: 29px;
-  padding: 0;
+  padding: 5px 0 4px 0;
   vertical-align: middle;
 }
 .searchform button img {
@@ -294,10 +294,14 @@
 .hidden-mobile {
   display: block;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 5990px) {
   .logo {
     height: auto;
     padding-bottom: 20px;
+  }
+  .footerlinkswrapper {
+    background-color: white;
+    background-image: none;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -319,6 +323,8 @@
   .mainsearchform input {
     width: 150px;
   }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
   .footerlinkswrapper {
     background: #ffffff url(../img/footer_illustrasjon.png) no-repeat;
     background-position: 80%;

@@ -1536,6 +1536,9 @@ fieldset {
   text-align: center;
   width: 170px;
 }
+.method_entrance:focus {
+  background: none;
+}
 .method_entrance:first-of-type {
   margin-left: 0;
 }
@@ -1548,7 +1551,7 @@ fieldset {
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   color: #222;
-  border-bottom: 3px dotted #222;
+  border-bottom: 2px dotted #222;
 }
 .method_entrance .drop_wrapper {
   display: inline-block;

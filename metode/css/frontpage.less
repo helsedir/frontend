@@ -23,7 +23,7 @@ h2 {
     font-size: 36px;
     font-family: @fontSohoLight;
     line-height: 45px;
-    margin: 50px 0 0 0;
+    margin: 50px 0 31px 0;
     color: #838078;
     padding: 0 0 5px 0;
     border-bottom: 1px solid #aeaba8;
@@ -35,6 +35,8 @@ h2 {
 }
 
 .frontpagewrapper {
+    padding-bottom: 30px;
+
     &.white {
         background: white;
 
@@ -228,7 +230,7 @@ h2 {
             font-size: 24px;
             font-family: @fontSohoLight;
             color: @colorMediumBlue;
-            border-bottom: 3px dotted @colorMediumBlue;
+            border-bottom: 2px dotted @colorMediumBlue;
         }
     }
 }
@@ -240,10 +242,6 @@ h2 {
 
 .module.module_message {
     margin-top: 20px;
-}
-
-.suppliers {
-    margin-top: 25px;
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
@@ -456,5 +454,12 @@ h2 {
         .container {
             background: #f2f2f2;
         }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .no-padding {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
