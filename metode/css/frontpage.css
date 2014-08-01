@@ -12,9 +12,6 @@
 .container {
   background: #f2f2f2;
 }
-.frontpagewrapper {
-  padding-bottom: 30px;
-}
 .frontpagewrapper.white {
   background: white;
 }
@@ -215,6 +212,12 @@
   }
   .entrancebuttons .entrancebutton span {
     margin: 30px auto;
+  }
+  .frontpagewrapper.white.entrance {
+    background: #f2f2f2;
+  }
+  .frontpagewrapper.white.entrance .container {
+    background: #f2f2f2;
   }
 }
 @media only screen and (max-width: 899px) {

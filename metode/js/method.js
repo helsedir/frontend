@@ -6,7 +6,7 @@
 
     $(".method_evaluation").addClass('visuallyhidden');
 
-    $("#method_evaluation_link").click(function () {
+    $("#method_evaluation_link").click(function (e) {
         if ($('.method_evaluation').hasClass("visuallyhidden")) {
             $(".method_evaluation").slideUp(0, function () {
                 $(".method_evaluation").removeClass('visuallyhidden').slideDown(500);

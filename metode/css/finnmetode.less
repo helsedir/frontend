@@ -66,69 +66,67 @@
     background-position: 96% 93%;
     margin-top: 50px;
     max-width: 685px;
+    display: inline-block;
+    padding: 20px 30px 30px 30px;
 
-    a, a:visited {
+    .status_information {
+        float: left;
+        width: 395px;
+        margin: 24px 0 0 30px;
+
+        .status_received {
+            margin-right: 30px;
+        }
+    }
+
+    .status {
+        float: left;
+        padding: 20px;
+        width: 200px;
+        margin-top: 30px;
+        font-family: @fontSohoLight;
+        font-size: 20px;
+        color: #222;
+
+        &.preparation {
+            border-right: 4px solid green;
+        }
+
+        &.evaluation {
+            border-right: 4px solid @colorDarkBlue;
+        }
+
+        &.decided {
+            border-right: 4px solid @colorLightBlue;
+        }
+
+        &.cancelled {
+            border-right: 4px solid #c63629;
+        }
+    }
+
+    h2 {
+        margin: 0 0 20px 0;
+        color: #c63629;
+        border-bottom: 3px dotted #c63629;
+        padding-bottom: 5px;
         display: inline-block;
-        padding: 20px 30px 30px 30px;
-
-        .status_information {
-            float: left;
-            width: 395px;
-            margin: 24px 0 0 30px;
-
-            .status_received {
-                margin-right: 30px;
-            }
-        }
-
-        .status {
-            float: left;
-            padding: 20px;
-            width: 200px;
-            margin-top: 30px;
-            font-family: @fontSohoLight;
-            font-size: 20px;
-            color: #222;
-
-            &.preparation {
-                border-right: 4px solid purple;
-            }
-
-            &.evaluation {
-                border-right: 4px solid green;
-            }
-
-            &.decided {
-                border-right: 4px solid orange;
-            }
-
-            &.cancelled {
-                border-right: 4px solid #c63629;
-            }
-        }
-
-        h2 {
-            margin: 0 0 20px 0;
-            color: #c63629;
-            border-bottom: 3px dotted #c63629;
-            padding-bottom: 5px;
-            display: inline-block;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        p {
-            color: #838078;
-        }
+        width: 90%;
 
         &:hover {
             text-decoration: none;
+        }
+    }
 
-            h2 {
-                text-decoration: none;
-            }
+    p {
+        color: #838078;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        h2 {
+            text-decoration: none;
         }
     }
 }
@@ -148,7 +146,7 @@
 }
 
 @media only screen and (max-width: 599px) {
-    .transportsideknapp a {
+    .transportsideknapp {
         padding-left: 0;
 
         .status_information {
@@ -172,7 +170,7 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    .transportsideknapp a {
+    .transportsideknapp {
         .status_information {
             margin-left: 0;
             width: auto;

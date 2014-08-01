@@ -20,15 +20,23 @@
 .transportsideknapp {
     background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
     background-size: 45px;
-    background-position: 96% 87%;
+    background-position: 90% 87%;
     margin-top: 50px;
     max-width: 685px;
+    width: 100%;
+    padding: 20px 0 40px 45px;
 
     a {
         padding-bottom: 0;
     }
 
     p {
-        padding: 0 30px 30px 30px;
+        padding: 0 30px 30px 0;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .transportsideknapp p {
+        padding-left: 0;
     }
 }

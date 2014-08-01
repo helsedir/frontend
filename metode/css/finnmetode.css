@@ -41,24 +41,18 @@
   background-position: 96% 93%;
   margin-top: 50px;
   max-width: 685px;
-}
-.transportsideknapp a,
-.transportsideknapp a:visited {
   display: inline-block;
   padding: 20px 30px 30px 30px;
 }
-.transportsideknapp a .status_information,
-.transportsideknapp a:visited .status_information {
+.transportsideknapp .status_information {
   float: left;
   width: 395px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp a .status_information .status_received,
-.transportsideknapp a:visited .status_information .status_received {
+.transportsideknapp .status_information .status_received {
   margin-right: 30px;
 }
-.transportsideknapp a .status,
-.transportsideknapp a:visited .status {
+.transportsideknapp .status {
   float: left;
   padding: 20px;
   width: 200px;
@@ -67,44 +61,36 @@
   font-size: 20px;
   color: #222;
 }
-.transportsideknapp a .status.preparation,
-.transportsideknapp a:visited .status.preparation {
-  border-right: 4px solid purple;
-}
-.transportsideknapp a .status.evaluation,
-.transportsideknapp a:visited .status.evaluation {
+.transportsideknapp .status.preparation {
   border-right: 4px solid green;
 }
-.transportsideknapp a .status.decided,
-.transportsideknapp a:visited .status.decided {
-  border-right: 4px solid orange;
+.transportsideknapp .status.evaluation {
+  border-right: 4px solid #004e66;
 }
-.transportsideknapp a .status.cancelled,
-.transportsideknapp a:visited .status.cancelled {
+.transportsideknapp .status.decided {
+  border-right: 4px solid #6cb4b5;
+}
+.transportsideknapp .status.cancelled {
   border-right: 4px solid #c63629;
 }
-.transportsideknapp a h2,
-.transportsideknapp a:visited h2 {
+.transportsideknapp h2 {
   margin: 0 0 20px 0;
   color: #c63629;
   border-bottom: 3px dotted #c63629;
   padding-bottom: 5px;
   display: inline-block;
+  width: 90%;
 }
-.transportsideknapp a h2:hover,
-.transportsideknapp a:visited h2:hover {
+.transportsideknapp h2:hover {
   text-decoration: none;
 }
-.transportsideknapp a p,
-.transportsideknapp a:visited p {
+.transportsideknapp p {
   color: #838078;
 }
-.transportsideknapp a:hover,
-.transportsideknapp a:visited:hover {
+.transportsideknapp:hover {
   text-decoration: none;
 }
-.transportsideknapp a:hover h2,
-.transportsideknapp a:visited:hover h2 {
+.transportsideknapp:hover h2 {
   text-decoration: none;
 }
 .drops {
@@ -119,10 +105,10 @@
   padding-top: 250px;
 }
 @media only screen and (max-width: 599px) {
-  .transportsideknapp a {
+  .transportsideknapp {
     padding-left: 0;
   }
-  .transportsideknapp a .status_information {
+  .transportsideknapp .status_information {
     margin-left: 0;
     width: auto;
   }
@@ -137,7 +123,7 @@
   }
 }
 @media only screen and (max-width: 1199px) {
-  .transportsideknapp a .status_information {
+  .transportsideknapp .status_information {
     margin-left: 0;
     width: auto;
   }

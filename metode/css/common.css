@@ -542,7 +542,8 @@ a.external-link {
 .external-link:hover,
 a.external-link:hover {
   text-decoration: none;
-  color: #838078;
+  color: #222;
+  transition: all 0.5s;
 }
 .external-link:visited,
 a.external-link:visited {
@@ -588,6 +589,16 @@ a.external-link.inline:before {
 }
 .internal-link:visited {
   color: #838078;
+}
+.internal-link.inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #222;
+}
+.internal-link.inline:hover {
+  color: #222;
 }
 p.keyfigures,
 h4.keyfigures {
@@ -1353,7 +1364,7 @@ fieldset {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .aside,
   .aside.bottom {
     width: auto;
@@ -1407,7 +1418,7 @@ fieldset {
   }
   .transportsideknapp {
     margin: 10px 0 10px 0;
-    padding: 5px 0 20px 15px;
+    padding: 5px 0 40px 15px;
     background: white;
   }
   .transportsideknapp h2,

@@ -633,7 +633,8 @@ iframe {
 
     &:hover {
         text-decoration: none;
-        color: #838078;
+        color: #222;
+        transition: all 0.5s;
     }
 
     &:visited {
@@ -681,6 +682,18 @@ iframe {
 
     &:visited {
         color: #838078;
+    }
+
+    &.inline {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        background: none;
+        color: #222;
+
+        &:hover {
+            color: #222;
+        }
     }
 }
 
@@ -1594,7 +1607,7 @@ fieldset {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
     .aside, .aside.bottom {
         width: auto;
     }
@@ -1667,7 +1680,7 @@ fieldset {
 
     .transportsideknapp {
         margin: 10px 0 10px 0;
-        padding: 5px 0 20px 15px;
+        padding: 5px 0 40px 15px;
         background: white;
 
         h2, p {
