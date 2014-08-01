@@ -957,7 +957,7 @@ body {
 .container-fluid .module.module_subscribe .e-mail {
   width: 28px;
   height: 23px;
-  padding-left: 40px;
+  padding-left: 33px;
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
@@ -969,14 +969,13 @@ body {
 .container .module.module_subscribe .e-mail p,
 .container-fluid .module.module_subscribe .e-mail p {
   display: inline;
-  vertical-align: bottom;
   font-size: 16px;
 }
 .container .module.module_subscribe .rss,
 .container-fluid .module.module_subscribe .rss {
   width: 28px;
   height: 23px;
-  padding-left: 40px;
+  padding-left: 30px;
   background: url(../img/modules/icons/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
@@ -991,7 +990,6 @@ body {
 .container .module.module_subscribe .rss p,
 .container-fluid .module.module_subscribe .rss p {
   display: inline;
-  vertical-align: bottom;
   font-size: 16px;
 }
 .container .module.module_message,
@@ -2186,6 +2184,10 @@ body {
     float: none;
     display: block;
     margin: 0 0 30px 0;
+  }
+  .container .module.module_message.date_small .keyfigures {
+    display: inline-block;
+    margin-left: 0;
   }
 }
 @media braille {

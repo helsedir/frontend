@@ -295,6 +295,7 @@
 }
 .container-fluid.toppmeny .tabs .tab-links li.menu_search {
   background: none;
+  padding-top: 0;
 }
 #menu_search {
   border-radius: 0;
