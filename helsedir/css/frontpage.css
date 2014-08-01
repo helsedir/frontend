@@ -384,13 +384,24 @@
   }
 }
 @media only screen and (max-width: 899px) {
-  .container .border_grey {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #bababa;
-  }
   .container.frontpage .importantnews .text_and_image {
     width: 100%;
     float: none;
+  }
+  .container.frontpage {
+    padding-bottom: 10px;
+  }
+  .container.frontpage h2 {
+    margin-top: 40px;
+  }
+  .container.frontpage .conferenceitem {
+    margin-bottom: 0;
+  }
+  .container.frontpage .conferenceitem > div:nth-child(2n) {
+    margin-bottom: 20px;
+  }
+  .container.frontpage .conferenceitem .conference_date {
+    line-height: 34px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {

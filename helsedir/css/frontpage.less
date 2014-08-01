@@ -490,15 +490,30 @@
 
 @media only screen and (max-width: 899px) {
     .container {
-        .border_grey {
-            padding-bottom: 30px;
-            border-bottom: 1px solid @colorMediumGray;
-        }
-
         &.frontpage .importantnews {
             .text_and_image {
                 width: 100%;
                 float: none;
+            }
+        }
+
+        &.frontpage {
+            padding-bottom: 10px;
+
+            h2 {
+                margin-top: 40px;
+            }
+
+            .conferenceitem {
+                margin-bottom: 0;
+
+                & > div:nth-child(2n) {
+                    margin-bottom: 20px;
+                }
+
+                .conference_date {
+                    line-height: 34px;
+                }
             }
         }
     }
