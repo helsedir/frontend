@@ -389,7 +389,7 @@
     float: none;
   }
   .container.frontpage {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .container.frontpage h2 {
     margin-top: 40px;
@@ -402,6 +402,19 @@
   }
   .container.frontpage .conferenceitem .conference_date {
     line-height: 34px;
+  }
+  .container.frontpage .ingress {
+    margin-top: 0;
+  }
+  .container .video-container {
+    margin: 40px 0 0 0;
+  }
+  .container .calltoaction {
+    margin-top: 0;
+  }
+  .container .border_grey {
+    border-top: 1px solid #aeaba8;
+    margin-top: 20px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
