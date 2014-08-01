@@ -1886,6 +1886,10 @@ body {
 .container-fluid .transportsideknapp p {
   margin: 0;
 }
+.container .figure,
+.container-fluid .figure {
+  margin: 40px 0 75px 0;
+}
 @media only screen and (min-width: 1200px) {
   .container .aside {
     top: 0;

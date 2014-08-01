@@ -172,6 +172,14 @@
 .container.frontpage .internal-link:hover.arrow_right:after {
   text-decoration: none;
 }
+.container.frontpage a h2.internal-link.arrow_right {
+  padding-bottom: 15px;
+  margin-bottom: 19px;
+}
+.container.frontpage a h2.internal-link.arrow_right:hover {
+  margin-bottom: 19px;
+  text-decoration: none;
+}
 .container.frontpage .news {
   margin-bottom: 20px;
   margin-top: 35px;
@@ -367,7 +375,7 @@
     width: 100%;
   }
   #header .mainsearch input {
-    width: 82%;
+    width: 85%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {

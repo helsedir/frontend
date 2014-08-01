@@ -646,6 +646,10 @@
   #footer .mainsearch input {
     width: 82%;
   }
+  #header .hidden-mobile,
+  #footer .hidden-mobile {
+    margin-left: -15px;
+  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   #header #mainsearchcolumn,
@@ -744,16 +748,14 @@
   }
   #header .menubutton.mobile-search.js-expanded,
   #footer .menubutton.mobile-search.js-expanded {
-    padding: 5px 0 10px 0;
+    padding: 5px 0 46px 0;
     border-radius: 3px 3px 0 0;
-    background: #838078;
-  }
-  #header .menubutton.mobile-search.js-expanded:before,
-  #footer .menubutton.mobile-search.js-expanded:before {
-    font-family: "FontAwesome";
-    content: '\f00d';
-    font-size: 25px;
-    color: white;
+    background: #838078 url('../img/ikon_lukk_kryss.svg') no-repeat;
+    -moz-background-size: 22px;
+    -o-background-size: 22px;
+    -webkit-background-size: 22px;
+    background-size: 22px;
+    background-position: 50% 26%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {

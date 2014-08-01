@@ -35,7 +35,7 @@
     $(window).on('load resize', function () {
         var windowWidth = $(window).width();
 
-        if (windowWidth <= 583) {
+        if (windowWidth <= 599) {
             $(".accordion_mobile").each(function () {
                 var $collapseElement = $(this);
                 var $contentToHide = $collapseElement.next();
@@ -45,6 +45,8 @@
                     $parentTag.addClass(' has-hidden-content');
                 }
             });
+            //stretch search field in header to window width on mobile screens
+            $('#mainsearch').css('width', windowWidth);
         } else {
             $(".accordion_mobile").each(function () {
                 var $collapseElement = $(this);
@@ -63,7 +65,7 @@
     $(".accordion_mobile").click(function () {
         var windowWidth = $(window).width();
 
-        if (windowWidth <= 583) {
+        if (windowWidth <= 599) {
             var $header = $(this);
             var $content = $header.next();
             var $parent = $header.parent();

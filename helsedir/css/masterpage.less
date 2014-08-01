@@ -653,6 +653,10 @@
                 width: 82%;
             }
         }
+
+        .hidden-mobile {
+            margin-left: -15px;
+        }
     }
 }
 
@@ -755,16 +759,15 @@
                 }
 
                 &.js-expanded {
-                    padding: 5px 0 10px 0;
+                    padding: 5px 0 46px 0;
                     border-radius: 3px 3px 0 0;
-                    background: #838078;
-
-                    &:before {
-                        font-family: "FontAwesome";
-                        content: '\f00d';
-                        font-size: 25px;
-                        color: white;
-                    }
+                    border-radius: 3px 3px 0 0;
+                    background: #838078 url('../img/ikon_lukk_kryss.svg') no-repeat;
+                    -moz-background-size: 22px;
+                    -o-background-size: 22px;
+                    -webkit-background-size: 22px;
+                    background-size: 22px;
+                    background-position: 50% 26%;
                 }
             }
         }
