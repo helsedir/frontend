@@ -65,11 +65,6 @@ body {
   margin: 35px 0 10px 0;
   color: #004e66;
 }
-.container h2.accordion,
-.container-fluid h2.accordion {
-  border-bottom: 1px solid #004e66;
-  padding-bottom: 10px;
-}
 .container h2.internal-link,
 .container-fluid h2.internal-link {
   color: #0093a7;
@@ -81,11 +76,6 @@ body {
   margin: 35px 0 0 0;
   line-height: 36px;
 }
-.container h3.accordion,
-.container-fluid h3.accordion {
-  border-bottom: 1px solid #bababa;
-  padding-bottom: 10px;
-}
 .container h4,
 .container-fluid h4 {
   font-weight: normal;
@@ -93,12 +83,6 @@ body {
   line-height: 32px;
   margin-top: 55px;
   font-family: "Soho Gothic W01 Regular";
-}
-.container h4.accordion,
-.container-fluid h4.accordion {
-  margin: 55px 0 0 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #004e66;
 }
 .container h5,
 .container-fluid h5 {
@@ -198,14 +182,17 @@ body {
 .container-fluid .breadcrumbs a:visited {
   color: #004e66;
 }
+.container .accordion h3,
+.container-fluid .accordion h3 {
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 10px;
+}
 .container .has-hidden-content,
 .container-fluid .has-hidden-content {
   cursor: pointer;
 }
 .container .has-hidden-content h2:before,
-.container-fluid .has-hidden-content h2:before,
-.container .has-hidden-content .accordion:before,
-.container-fluid .has-hidden-content .accordion:before {
+.container-fluid .has-hidden-content h2:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f107";
@@ -213,9 +200,14 @@ body {
   font-size: 40px;
   cursor: pointer;
 }
-.container .has-hidden-content h3.accordion:before,
-.container-fluid .has-hidden-content h3.accordion:before {
+.container .has-hidden-content.accordion h3:before,
+.container-fluid .has-hidden-content.accordion h3:before {
+  float: left;
+  padding: 3px 20px 0 0;
+  content: "\f107";
+  font-family: "FontAwesome";
   font-size: 30px;
+  cursor: pointer;
 }
 .container .nested-accordion.has-hidden-content > .accordion:before,
 .container-fluid .nested-accordion.has-hidden-content > .accordion:before {
@@ -231,17 +223,19 @@ body {
   cursor: pointer;
 }
 .container .has-visible-content h2:before,
-.container-fluid .has-visible-content h2:before,
-.container .has-visible-content .accordion:before,
-.container-fluid .has-visible-content .accordion:before {
+.container-fluid .has-visible-content h2:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
 }
-.container .has-visible-content h3.accordion:before,
-.container-fluid .has-visible-content h3.accordion:before {
+.container .has-visible-content.accordion h3:before,
+.container-fluid .has-visible-content.accordion h3:before {
+  float: left;
+  padding: 3px 20px 0 0;
+  content: "\f106";
+  font-family: "FontAwesome";
   font-size: 30px;
 }
 .container .nested-accordion.has-visible-content > .accordion:before,
@@ -495,8 +489,8 @@ body {
   text-align: center;
   padding: 30px;
 }
-.container .sectionwithaside,
-.container-fluid .sectionwithaside {
+.container .relative-container,
+.container-fluid .relative-container {
   position: relative;
 }
 .container .content,
@@ -2024,7 +2018,7 @@ body {
   .container .tabs .tab-content ul li {
     padding: 5px 0;
   }
-  .container .accordion_mobile {
+  .container .accordion_mobile h2 {
     border-bottom: 1px solid #004e66;
     padding-bottom: 10px;
   }

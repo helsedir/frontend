@@ -69,11 +69,6 @@ body {
         margin: 35px 0 10px 0;
         color: @colorDarkBlue;
 
-        &.accordion {
-            border-bottom: 1px solid @colorDarkBlue;
-            padding-bottom: 10px;
-        }
-
         &.internal-link {
             color: @colorMediumBlue;
         }
@@ -84,11 +79,6 @@ body {
         font-family: @fontSohoLight;
         margin: 35px 0 0 0;
         line-height: 36px;
-
-        &.accordion {
-            border-bottom: 1px solid @colorMediumGray;
-            padding-bottom: 10px;
-        }
     }
 
     h4 {
@@ -97,12 +87,6 @@ body {
         line-height: 32px;
         margin-top: 55px;
         font-family: @fontSohoRegular;
-
-        &.accordion {
-            margin: 55px 0 0 0;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #004e66;
-        }
     }
 
     h5 {
@@ -193,10 +177,17 @@ body {
             }
     }
 
+    .accordion {
+        h3 {
+            border-bottom: 1px solid @colorMediumGray;
+            padding-bottom: 10px;
+        }
+    }
+
     .has-hidden-content {
         cursor: pointer;
 
-        h2:before, .accordion:before {
+        h2:before {
             float: left;
             padding: 3px 20px 0 0;
             content: "\f107";
@@ -205,8 +196,17 @@ body {
             cursor: pointer;
         }
 
-        h3.accordion:before {
-            font-size: 30px;
+        &.accordion {
+            h3 {
+                &:before {
+                    float: left;
+                    padding: 3px 20px 0 0;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 
@@ -222,7 +222,7 @@ body {
     .has-visible-content {
         cursor: pointer;
 
-        h2:before, .accordion:before {
+        h2:before {
             float: left;
             padding: 3px 20px 0 0;
             content: "\f106";
@@ -230,8 +230,16 @@ body {
             font-size: 40px;
         }
 
-        h3.accordion:before {
-            font-size: 30px;
+        &.accordion {
+            h3 {
+                &:before {
+                    float: left;
+                    padding: 3px 20px 0 0;
+                    content: "\f106";
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                }
+            }
         }
     }
 
@@ -480,7 +488,7 @@ body {
         }
     }
 
-    .sectionwithaside {
+    .relative-container {
         position: relative;
     }
 
@@ -1966,7 +1974,7 @@ body {
             }
         }
 
-        .accordion_mobile {
+        .accordion_mobile h2 {
             border-bottom: 1px solid @colorDarkBlue;
             padding-bottom: 10px;
         }

@@ -62,7 +62,7 @@
   color: #222;
 }
 .transportsideknapp .status.preparation {
-  border-right: 4px solid green;
+  border-right: 4px solid #a1bf37;
 }
 .transportsideknapp .status.evaluation {
   border-right: 4px solid #004e66;

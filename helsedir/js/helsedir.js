@@ -1,6 +1,6 @@
 ﻿$(function () {
     //creates collapsible headings. The tag wrapping this class will get an angle icon
-    $(".accordion").each(function () {
+    $(".accordion h3").each(function () {
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
@@ -9,7 +9,7 @@
     });
 
     //handles click events on collapsible headings
-    $(".accordion").click(function () {
+    $(".accordion h3").click(function () {
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
@@ -36,7 +36,7 @@
         var windowWidth = $(window).width();
 
         if (windowWidth <= 599) {
-            $(".accordion_mobile").each(function () {
+            $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
@@ -48,7 +48,7 @@
             //stretch search field in header to window width on mobile screens
             $('#mainsearch').css('width', windowWidth);
         } else {
-            $(".accordion_mobile").each(function () {
+            $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
@@ -62,7 +62,7 @@
         }
     });
     //handles click events on collapsible mobile headings
-    $(".accordion_mobile").click(function () {
+    $(".accordion_mobile h2").click(function () {
         var windowWidth = $(window).width();
 
         if (windowWidth <= 599) {
