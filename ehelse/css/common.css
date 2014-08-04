@@ -38,9 +38,10 @@ h1 {
 }
 .ingress {
   margin: 20px 0 20px 0;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 30px;
-  font-family: 'Calibri';
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
 }
 h2 {
   font-size: 30px;
@@ -64,8 +65,10 @@ h3 {
   color: #222;
 }
 h3.accordion {
-  border-bottom: 1px solid #bababa;
-  padding-bottom: 10px;
+  background: white;
+  border-right: 4px solid #f4d01e;
+  padding: 20px 20px 22px 20px;
+  margin-bottom: 10px;
 }
 h4 {
   font-weight: normal;
@@ -83,6 +86,7 @@ h4.accordion {
 h5 {
   font-weight: normal;
   font-size: 18px;
+  color: #838078;
 }
 p {
   margin: 10px 0 0 0;
@@ -488,12 +492,12 @@ figure .metatext {
   margin-top: 10px;
 }
 .bulletlist li {
-  margin: 0 0 0 25px;
+  margin: 0 0 13px 25px;
   display: block;
 }
 .bulletlist li:before {
   content: "•";
-  color: #004e66;
+  color: #df9922;
   margin: -1px 0 0 -25px;
   display: block;
   position: absolute;
@@ -555,7 +559,7 @@ figure .metatext {
   background: #dbdcdd;
 }
 .report {
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .report a div.date {
   float: left;
@@ -575,24 +579,23 @@ figure .metatext {
 }
 .report a div.information h3.internal-link.arrow_right {
   margin-right: 30px;
+  color: #c63629;
 }
 .report a span.date_number {
   font-size: 20px;
   font-family: "Soho Gothic W01 Regular";
   line-height: 27px;
-  display: block;
+  display: inline-block;
   padding: 0 0 10px 0;
   color: #c63629;
-  text-align: center;
 }
 .report a span.date_monthyear {
   font-size: 20px;
   font-family: "Soho Gothic W01 Regular";
   line-height: 27px;
-  display: block;
+  display: inline-block;
   color: #c63629;
   text-transform: uppercase;
-  text-align: center;
 }
 .report a h3 {
   margin: 0;
@@ -617,7 +620,7 @@ figure .metatext {
   border-top: 4px solid #f4d01e;
   color: #222;
   padding: 10px 20px 10px 20px;
-  margin: 20px 30px 30px 0;
+  margin: 30px 30px 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   font-weight: bold;
@@ -656,22 +659,56 @@ figure .metatext {
 iframe {
   margin-bottom: 23px;
 }
-.external-link {
-  background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-  background-size: 16px 16px;
-  padding-right: 22px;
+.external-link,
+a.external-link {
+  color: #838078;
+  font-family: 'Calibri';
+  font-size: 20px;
+  background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+  background-size: 14px;
+  background-position: 0px 7px;
+  padding-left: 26px;
+  margin-top: 13px;
+  display: block;
+  cursor: pointer;
+}
+.external-link:hover,
+a.external-link:hover {
   text-decoration: none;
-  margin: 15px 0;
-  display: inline-block;
+  color: #222;
+  transition: all 0.5s;
+}
+.external-link:visited,
+a.external-link:visited {
+  color: #838078;
+}
+.external-link.last,
+a.external-link.last {
+  margin-top: 20px;
 }
 .external-link.inline,
-.external-link .inline:visited {
-  text-decoration: underline;
-  margin: 0;
+a.external-link.inline {
+  padding-left: 17px;
+  background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+  background-size: 10px;
+  background-position: 0px 10px;
+  color: #222;
+  border-bottom: 1px solid #aeaba8;
+  display: inline;
+  position: relative;
 }
-.external-link:visited {
-  background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-  background-size: 16px 16px;
+.external-link.inline:hover,
+a.external-link.inline:hover {
+  border-bottom: 1px solid #222;
+}
+.external-link.inline:before,
+a.external-link.inline:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 27px;
+  width: 17px;
+  border-bottom: 1px solid #f7f6f6;
 }
 .internal-link {
   color: #838078;
@@ -689,11 +726,11 @@ iframe {
 }
 .internal-link.document {
   margin: 0;
+  color: #838078;
 }
 .internal-link.document:after {
   padding-left: 10px;
-  content: "\f0f6";
-  font-family: "FontAwesome";
+  content: "(pdf)";
   font-size: inherit;
   text-decoration: none;
 }
@@ -722,7 +759,7 @@ h4.keyfigures {
 }
 .module {
   display: inline-block;
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -740,7 +777,7 @@ h4.keyfigures {
   margin-bottom: 5px;
 }
 .module a .module_header {
-  color: #0093a7;
+  color: #222;
 }
 .module .module_header {
   font-family: "Soho Gothic W01 Regular";
@@ -791,7 +828,6 @@ h4.keyfigures {
 }
 .module.module_facts {
   border-left: 2px solid #0093a7;
-  margin-top: 30px;
 }
 .module.module_facts .bulletlist {
   margin-top: 10px;
@@ -830,7 +866,6 @@ h4.keyfigures {
   margin-top: 0;
 }
 .module.module_subscribe {
-  margin: 40px 0 0 0;
   padding: 0 0 5px 0;
   max-width: 300px;
   background: none;
@@ -840,12 +875,14 @@ h4.keyfigures {
   font-size: 18px;
   margin: 0;
   color: #004e66;
-  text-transform: uppercase;
 }
 .module.module_subscribe .header {
-  border-top: 4px solid #004e66;
-  padding-bottom: 15px;
-  text-align: right;
+  border-bottom: 4px solid #df9922;
+  text-align: left;
+  color: #222;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .module.module_subscribe a {
   font-size: 18px;
@@ -868,17 +905,19 @@ h4.keyfigures {
   width: 28px;
   height: 23px;
   padding-left: 40px;
+  padding-bottom: 3px;
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
-  background-size: 27px 20px;
+  background-size: 27px 23px;
 }
 .module.module_subscribe .e-mail:hover {
-  background: url(../img/modules/icons/epost_hover.svg) no-repeat;
-  background-size: 28px 23px;
+  background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+  background-size: 28px 26px;
 }
 .module.module_subscribe .e-mail p {
   display: inline;
   vertical-align: bottom;
-  font-size: 16px;
+  font-size: 18px;
+  color: #222;
 }
 .module.module_subscribe .rss {
   width: 28px;
@@ -888,7 +927,7 @@ h4.keyfigures {
   background-size: 27px 20px;
 }
 .module.module_subscribe .rss:hover {
-  background: url(../img/modules/icons/rss_hover.svg) no-repeat;
+  background: url(../img/modules/icons/rss_regular.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -897,11 +936,11 @@ h4.keyfigures {
 .module.module_subscribe .rss p {
   display: inline;
   vertical-align: bottom;
-  font-size: 16px;
+  font-size: 18px;
+  color: #222;
 }
 .module.module_message {
   display: inline-block;
-  margin: 100px 0 0 0;
   padding: 30px 30px 45px 30px;
   background: white;
   position: relative;
@@ -953,11 +992,11 @@ h4.keyfigures {
 .module.module_message.date {
   border-top: 4px solid #df9922;
   margin-bottom: 70px;
-  padding: 0 10px 20px 0;
+  padding: 0 0 20px 10px;
 }
 .module.module_message.date .module_header {
   margin-top: 0;
-  text-align: right;
+  text-align: left;
   font-size: 20px;
   margin-bottom: 15px;
 }
@@ -999,7 +1038,6 @@ h4.keyfigures {
   color: #c63629;
 }
 .module.module_person {
-  margin: 100px 0 0 0;
   padding: 0;
   width: 100%;
   background: none;
@@ -1018,11 +1056,13 @@ h4.keyfigures {
   font-size: 18px;
 }
 .module.module_person .person_information {
-  margin-top: 20px;
+  margin-top: 4px;
 }
 .module.module_person .name {
   font-size: 28px;
   line-height: 30px;
+  color: #222;
+  margin-top: 8px;
 }
 .module.module_person img {
   width: 36%;
@@ -1034,10 +1074,11 @@ h4.keyfigures {
   font-family: 'Calibri';
   font-size: 18px;
   text-transform: uppercase;
-  color: #004e66;
+  color: #222;
   text-decoration: none;
-  border-top: 4px solid #004e66;
-  text-align: right;
+  border-bottom: 4px solid #df9922;
+  text-align: left;
+  padding-bottom: 3px;
 }
 .module.module_print,
 .module.module_social {
@@ -1045,7 +1086,6 @@ h4.keyfigures {
   background: none;
   border-top: 2px solid #004e66;
   padding-top: 19px;
-  margin: 60px 0 0 0;
   width: 100%;
 }
 .module.module_print p,
@@ -1123,38 +1163,45 @@ h4.keyfigures {
   background-size: 28px 23px;
 }
 .module.module_contact {
-  border-top: 4px solid #df9922;
-  margin: 100px 0 0 0;
-  padding: 5px 10px 15px 15px;
+  background: none;
   width: 100%;
-  background: white;
+  padding: 0;
 }
 .module.module_contact .header {
   font-family: 'Calibri';
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #004e66;
+  color: #222;
   text-decoration: none;
-  text-align: right;
+  text-align: left;
   margin-top: 0;
+  padding-bottom: 3px;
 }
-.module.module_contact .title {
-  margin-bottom: 20px;
+.module.module_contact .wrapper {
+  border-top: 4px solid #df9922;
+  padding: 5px 10px 15px 0;
+}
+.module.module_contact .wrapper .title {
+  margin-bottom: 4px;
   font-size: 26px;
   line-height: 32px;
+  margin-top: 3px;
 }
-.module.module_contact .contact_information {
+.module.module_contact .wrapper .contact_information {
   width: 100%;
 }
-.module.module_contact .contact_information .information_attribute {
-  font-weight: bold;
+.module.module_contact .wrapper .contact_information .information_attribute {
   width: 40%;
   float: left;
+  font-size: 18px;
+  line-height: 22px;
 }
-.module.module_contact .contact_information .information_data {
+.module.module_contact .wrapper .contact_information .information_data {
   width: 60%;
   float: left;
+  line-height: 22px;
+  font-size: 18px;
 }
 /*
 .showmorenews {
@@ -1395,7 +1442,6 @@ fieldset {
 }
 .dropdown label {
   display: block;
-  margin-bottom: 5px;
 }
 .dropdown select {
   width: 100%;
@@ -1443,23 +1489,24 @@ fieldset {
   color: #004e66;
 }
 .refinesearch {
-  margin-top: 20px;
   width: 300px;
-  border-top: 4px solid #df9922;
+  margin-bottom: 60px;
 }
 .refinesearch h2,
 .refinesearch h5 {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   padding-top: 0;
+  padding-bottom: 3px;
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
   font-size: 18px;
-  color: #004e66;
-  text-align: right;
+  color: #222;
+  text-align: left;
+  border-bottom: 4px solid #df9922;
 }
 .refinesearch select {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .refinesearch label {
   padding-left: 9px;
@@ -1598,13 +1645,14 @@ fieldset {
   height: 100%;
   color: #222;
   text-decoration: none;
-  padding: 20px 30px 30px 30px;
+  padding: 20px 30px 40px 30px;
 }
 .transportsideknapp a h2 {
   color: #0093a7;
   margin: 0;
   border-bottom: 2px dotted #004e66;
   padding-bottom: 7px;
+  margin-bottom: 10px;
 }
 .transportsideknapp a:visited {
   text-decoration: none;

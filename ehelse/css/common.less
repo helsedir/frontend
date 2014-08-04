@@ -51,9 +51,10 @@ h1 {
 
 .ingress {
     margin: 20px 0 20px 0;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
-    font-family: @fontCalibri;
+    font-family: @fontSohoLight;
+    color: #222;
 }
 
 h2 {
@@ -81,8 +82,10 @@ h3 {
     color: #222;
 
     &.accordion {
-        border-bottom: 1px solid @colorMediumGray;
-        padding-bottom: 10px;
+        background: white;
+        border-right: 4px solid @colorYellow;
+        padding: 20px 20px 22px 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -104,6 +107,7 @@ h4 {
 h5 {
     font-weight: normal;
     font-size: 18px;
+    color: #838078;
 }
 
 p {
@@ -577,12 +581,12 @@ figure {
     margin-top: 10px;
 
     li {
-        margin: 0 0 0 25px;
+        margin: 0 0 13px 25px;
         display: block;
 
         &:before {
             content: "•";
-            color: @colorDarkBlue;
+            color: @colorOrange;
             margin: -1px 0 0 -25px;
             display: block;
             position: absolute;
@@ -657,7 +661,7 @@ figure {
 }
 
 .report {
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
 
     a {
         div.date {
@@ -681,6 +685,7 @@ figure {
 
             h3.internal-link.arrow_right {
                 margin-right: 30px;
+                color: #c63629;
             }
         }
 
@@ -688,20 +693,18 @@ figure {
             font-size: 20px;
             font-family: "Soho Gothic W01 Regular";
             line-height: 27px;
-            display: block;
+            display: inline-block;
             padding: 0 0 10px 0;
             color: #c63629;
-            text-align: center;
         }
 
         span.date_monthyear {
             font-size: 20px;
             font-family: "Soho Gothic W01 Regular";
             line-height: 27px;
-            display: block;
+            display: inline-block;
             color: #c63629;
             text-transform: uppercase;
-            text-align: center;
         }
 
         h3 {
@@ -735,7 +738,7 @@ figure {
     border-top: 4px solid @colorYellow;
     color: #222;
     padding: 10px 20px 10px 20px;
-    margin: 20px 30px 30px 0;
+    margin: 30px 30px 30px 0;
     font-family: @fontCalibri;
     font-size: 20px;
     font-weight: bold;
@@ -778,22 +781,54 @@ iframe {
     margin-bottom: 23px;
 }
 
-.external-link {
-    background: url('../img/navigasjon/ikon_eksternlenke.svg') right no-repeat;
-    background-size: 16px 16px;
-    padding-right: 22px;
-    text-decoration: none;
-    margin: 15px 0;
-    display: inline-block;
+.external-link, a.external-link {
+    color: #838078;
+    font-family: 'Calibri';
+    font-size: 20px;
+    background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+    background-size: 14px;
+    background-position: 0px 7px;
+    padding-left: 26px;
+    margin-top: 13px;
+    display: block;
+    cursor: pointer;
 
-    &.inline, .inline:visited {
-        text-decoration: underline;
-        margin: 0;
+    &:hover {
+        text-decoration: none;
+        color: #222;
+        transition: all 0.5s;
     }
 
     &:visited {
-        background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-        background-size: 16px 16px;
+        color: #838078;
+    }
+
+    &.last {
+        margin-top: 20px;
+    }
+
+    &.inline {
+        padding-left: 17px;
+        background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+        background-size: 10px;
+        background-position: 0px 10px;
+        color: #222;
+        border-bottom: 1px solid #aeaba8;
+        display: inline;
+        position: relative;
+
+        &:hover {
+            border-bottom: 1px solid #222;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            height: 27px;
+            width: 17px;
+            border-bottom: 1px solid #f7f6f6;
+        }
     }
 }
 
@@ -814,11 +849,11 @@ iframe {
 
     &.document {
         margin: 0;
+        color: #838078;
 
         &:after {
             padding-left: 10px;
-            content: "\f0f6";
-            font-family: "FontAwesome";
+            content: "(pdf)";
             font-size: inherit;
             text-decoration: none;
         }
@@ -852,7 +887,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
     padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
@@ -872,7 +907,7 @@ p.keyfigures, h4.keyfigures {
     }
 
     a .module_header {
-        color: @colorMediumBlue;
+        color: #222;
     }
 
     .module_header {
@@ -935,7 +970,6 @@ p.keyfigures, h4.keyfigures {
 
     &.module_facts {
         border-left: 2px solid @colorMediumBlue;
-        margin-top: 30px;
 
         .bulletlist {
             margin-top: 10px;
@@ -979,7 +1013,6 @@ p.keyfigures, h4.keyfigures {
     }
 
     &.module_subscribe {
-        margin: 40px 0 0 0;
         padding: 0 0 5px 0;
         max-width: 300px;
         background: none;
@@ -989,13 +1022,15 @@ p.keyfigures, h4.keyfigures {
             font-size: 18px;
             margin: 0;
             color: @colorDarkBlue;
-            text-transform: uppercase;
         }
 
         .header {
-            border-top: 4px solid @colorDarkBlue;
-            padding-bottom: 15px;
-            text-align: right;
+            border-bottom: 4px solid @colorOrange;
+            text-align: left;
+            color: #222;
+            padding-bottom: 3px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
         }
 
         a {
@@ -1023,18 +1058,20 @@ p.keyfigures, h4.keyfigures {
             width: 28px;
             height: 23px;
             padding-left: 40px;
+            padding-bottom: 3px;
             background: url(../img/modules/icons/epost_regular.svg) no-repeat;
-            background-size: 27px 20px;
+            background-size: 27px 23px;
 
             &:hover {
-                background: url(../img/modules/icons/epost_hover.svg) no-repeat;
-                background-size: 28px 23px;
+                background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+                background-size: 28px 26px;
             }
 
             p {
                 display: inline;
                 vertical-align: bottom;
-                font-size: 16px;
+                font-size: 18px;
+                color: #222;
             }
         }
 
@@ -1046,7 +1083,7 @@ p.keyfigures, h4.keyfigures {
             background-size: 27px 20px;
 
             &:hover {
-                background: url(../img/modules/icons/rss_hover.svg) no-repeat;
+                background: url(../img/modules/icons/rss_regular.svg) no-repeat;
                 -moz-background-size: 28px 23px;
                 -o-background-size: 28px 23px;
                 -webkit-background-size: 28px 23px;
@@ -1056,14 +1093,14 @@ p.keyfigures, h4.keyfigures {
             p {
                 display: inline;
                 vertical-align: bottom;
-                font-size: 16px;
+                font-size: 18px;
+                color: #222;
             }
         }
     }
 
     &.module_message {
         display: inline-block;
-        margin: 100px 0 0 0;
         padding: 30px 30px 45px 30px;
         background: white;
         position: relative;
@@ -1124,11 +1161,11 @@ p.keyfigures, h4.keyfigures {
         &.date {
             border-top: 4px solid @colorOrange;
             margin-bottom: 70px;
-            padding: 0 10px 20px 0;
+            padding: 0 0 20px 10px;
 
             .module_header {
                 margin-top: 0;
-                text-align: right;
+                text-align: left;
                 font-size: 20px;
                 margin-bottom: 15px;
             }
@@ -1181,7 +1218,6 @@ p.keyfigures, h4.keyfigures {
     }
 
     &.module_person {
-        margin: 100px 0 0 0;
         padding: 0;
         width: 100%;
         background: none;
@@ -1201,12 +1237,14 @@ p.keyfigures, h4.keyfigures {
         }
 
         .person_information {
-            margin-top: 20px;
+            margin-top: 4px;
         }
 
         .name {
             font-size: 28px;
             line-height: 30px;
+            color: #222;
+            margin-top: 8px;
         }
 
         img {
@@ -1220,10 +1258,11 @@ p.keyfigures, h4.keyfigures {
             font-family: @fontCalibri;
             font-size: 18px;
             text-transform: uppercase;
-            color: @colorDarkBlue;
+            color: #222;
             text-decoration: none;
-            border-top: 4px solid @colorDarkBlue;
-            text-align: right;
+            border-bottom: 4px solid @colorOrange;
+            text-align: left;
+            padding-bottom: 3px;
         }
     }
 
@@ -1232,7 +1271,6 @@ p.keyfigures, h4.keyfigures {
         background: none;
         border-top: 2px solid @colorDarkBlue;
         padding-top: 19px;
-        margin: 60px 0 0 0;
         width: 100%;
 
         p, span {
@@ -1309,41 +1347,49 @@ p.keyfigures, h4.keyfigures {
     }
 
     &.module_contact {
-        border-top: 4px solid @colorOrange;
-        margin: 100px 0 0 0;
-        padding: 5px 10px 15px 15px;
+        background: none;
         width: 100%;
-        background: white;
+        padding: 0;
 
         .header {
             font-family: 'Calibri';
             font-size: 18px;
             line-height: 22px;
             text-transform: uppercase;
-            color: #004e66;
+            color: #222;
             text-decoration: none;
-            text-align: right;
+            text-align: left;
             margin-top: 0;
+            padding-bottom: 3px;
         }
 
-        .title {
-            margin-bottom: 20px;
-            font-size: 26px;
-            line-height: 32px;
-        }
+        .wrapper {
+            border-top: 4px solid @colorOrange;
+            padding: 5px 10px 15px 0;
 
-        .contact_information {
-            width: 100%;
-
-            .information_attribute {
-                font-weight: bold;
-                width: 40%;
-                float: left;
+            .title {
+                margin-bottom: 4px;
+                font-size: 26px;
+                line-height: 32px;
+                margin-top: 3px;
             }
 
-            .information_data {
-                width: 60%;
-                float: left;
+            .contact_information {
+                width: 100%;
+
+                .information_attribute {
+                    width: 40%;
+                    float: left;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                .information_data {
+                    width: 60%;
+                    float: left;
+                    line-height: 22px;
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -1629,7 +1675,6 @@ fieldset {
 .dropdown {
     label {
         display: block;
-        margin-bottom: 5px;
     }
 
     select {
@@ -1678,23 +1723,24 @@ fieldset {
 }
 
 .refinesearch {
-    margin-top: 20px;
     width: 300px;
-    border-top: 4px solid @colorOrange;
+    margin-bottom: 60px;
 
     h2, h5 {
-        margin-bottom: 17px;
+        margin-bottom: 8px;
         padding-top: 0;
+        padding-bottom: 3px;
         font-family: @fontCalibri;
         line-height: 20px;
         text-transform: uppercase;
         font-size: 18px;
-        color: #004e66;
-        text-align: right;
+        color: #222;
+        text-align: left;
+        border-bottom: 4px solid @colorOrange;
     }
 
     select {
-        margin-bottom: 20px;
+        margin-bottom: 8px;
     }
 
     label {
@@ -1861,13 +1907,14 @@ fieldset {
         height: 100%;
         color: #222;
         text-decoration: none;
-        padding: 20px 30px 30px 30px;
+        padding: 20px 30px 40px 30px;
 
         h2 {
             color: @colorMediumBlue;
             margin: 0;
             border-bottom: 2px dotted @colorDarkBlue;
             padding-bottom: 7px;
+            margin-bottom: 10px;
         }
 
         &:visited {

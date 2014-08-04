@@ -148,6 +148,7 @@
 .wrapper .method_evaluation .information {
   float: left;
   width: 64%;
+  margin-bottom: 15px;
 }
 .wrapper .method_evaluation .information p:first-of-type {
   margin-top: 0;

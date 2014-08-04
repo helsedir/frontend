@@ -18,16 +18,16 @@
   width: 200px;
 }
 .transportsideknapp .status.rute {
-  border-left: 50px solid purple;
+  border-left: 50px solid #6cb4b5;
 }
 .transportsideknapp .status.drift {
-  border-left: 50px solid green;
+  border-left: 50px solid #a1bf37;
 }
 .transportsideknapp .status.pilot {
-  border-left: 50px solid orange;
+  border-left: 50px solid #df9922;
 }
 .transportsideknapp .status.cancelled {
-  border-left: 50px solid red;
+  border-left: 50px solid #c63629;
 }
 .borderbox {
   padding: 10px;
