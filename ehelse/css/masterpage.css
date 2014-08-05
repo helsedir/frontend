@@ -68,14 +68,17 @@
   min-height: 40px;
   text-align: center;
   display: inline-block;
+  float: left;
+  margin-right: 40px;
+  margin-top: 6px;
 }
 .menubutton button.js-expander {
   border: none;
   border-radius: 3px;
-  background-color: #004e66;
+  background-color: #ffffff;
   vertical-align: middle;
   padding: 7px 8px 7px 8px;
-  color: #ffffff;
+  color: #004e66;
   font-weight: normal;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -83,12 +86,12 @@
   transition: all 0.5s;
 }
 .menubutton button.js-expander:visited {
-  background-color: #004e66;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #004e66;
 }
 .menubutton button.js-expander:focus {
   text-decoration: none;
-  background-color: #d1d0c4;
+  background-color: #ffffff;
   border: solid 1px #004e66;
 }
 .menubutton button.js-expander:focus span,
@@ -97,7 +100,7 @@
 }
 .menubutton button.js-expander:hover {
   text-decoration: none;
-  background-color: #838078;
+  background-color: #0093a7;
   border-radius: 3px;
 }
 .menubutton button.js-expander:hover span,
@@ -107,7 +110,7 @@
 .menubutton button.js-expander.js-expanded {
   padding-bottom: 50px;
   border-radius: 3px 3px 0 0;
-  background-color: #838078;
+  background-color: #0093a7;
   color: #004e66;
   outline: 0;
   border: none;
@@ -188,15 +191,12 @@
   border: none;
   padding: 0;
   width: 170px;
-  vertical-align: middle;
+  vertical-align: sub;
 }
 .masterheader {
   height: 40px;
   margin: 25px 0 35px 0;
   background: #004e66;
-}
-.masterheader .links {
-  margin-top: 2px;
 }
 .masterheader .links span {
   vertical-align: sub;
@@ -229,8 +229,7 @@ footer a:focus {
 }
 /**********Header**********/
 .toppmeny {
-  margin-bottom: 30px;
-  background: #838078;
+  background: #0093a7;
   padding: 0 0 50px 0 !important;
 }
 .toppmeny .inner {
@@ -243,7 +242,7 @@ footer .tabs,
 .toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
-  margin-top: -32px;
+  margin-top: -40px;
 }
 footer .tabs .tab-links,
 .toppmeny .tabs .tab-links {
@@ -254,7 +253,7 @@ footer .tabs .tab-links li,
 .toppmeny .tabs .tab-links li {
   background: #004e66;
   color: white;
-  padding: 0 30px 5px 20px;
+  padding: 5px 30px 8px 20px;
   border-radius: 0;
   cursor: pointer;
 }
@@ -269,11 +268,49 @@ footer .tabs .tab-links li[aria-selected='true']:focus,
   background: #02343f;
   color: white;
 }
+footer .tabs .tab-links li input,
+.toppmeny .tabs .tab-links li input {
+  width: 100%;
+}
 footer .tabs .tab-links li:focus,
 .toppmeny .tabs .tab-links li:focus {
   background: #02343f;
   color: white;
   outline: 0;
+}
+footer .tabs .tab-links .menu_search form,
+.toppmeny .tabs .tab-links .menu_search form {
+  height: 40px;
+  /*max-width: 220px;*/
+  width: 212px;
+  border: 1px inset #004e66;
+  vertical-align: middle;
+  cursor: text;
+  display: inline-block;
+  padding-left: 5px;
+  background: white;
+}
+footer .tabs .tab-links .menu_search form input,
+.toppmeny .tabs .tab-links .menu_search form input {
+  border: none;
+  padding: 0;
+  width: 170px;
+  height: 28px;
+  vertical-align: middle;
+  color: black;
+}
+footer .tabs .tab-links .menu_search form button,
+.toppmeny .tabs .tab-links .menu_search form button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
+  vertical-align: middle;
+}
+footer .tabs .tab-links .menu_search form button img,
+.toppmeny .tabs .tab-links .menu_search form button img {
+  width: 23px;
+  vertical-align: sub;
 }
 footer .map,
 .toppmeny .map {
@@ -440,6 +477,11 @@ footer.rammeverk a:visited {
 @media only screen and (max-width: 1199px) {
   .masterheader .links {
     margin-right: 15px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .masterheader .links {
+    margin-top: 2px;
   }
 }
 @media only screen and (max-width: 599px) {

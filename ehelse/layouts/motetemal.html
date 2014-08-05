@@ -53,9 +53,17 @@
 
                     <div class="menubutton mobile-search pull-right" id="mobilesearch">
                     </div>
+                    <div class=" menubutton mobile-menu js-expander pull-right" id="mobilemenu">
+                    </div>
                 </div>
 
-                <div class="col-xs-12 col-md-7 col-md-offset-1 col-lg-5 col-lg-offset-3" id="mainsearch">
+                <div class="col-xs-12 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1" id="mainsearch">
+                    <div class=" menubutton hidden-mobile">
+                        <button class="js-expander">
+                            <span>Alt innhold</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
                     <div class="mainsearchcolumn  hidden-mobile" id="mainsearchcolumn">
                         <form class="mainsearchform" action="soekeresultatside.html">
                             <span role="search">
@@ -76,8 +84,126 @@
                 </div>
             </header>
         </div>
-        <a id="content" tabindex="-1"></a>
     </div>
+    <div class=" toppmeny  container-fluid js-expand visuallyhidden">
+        <div class="inner container-fluid">
+            <div class="container">
+                <nav class="tabs">
+                    <ul class="tab-links" role="tablist">
+                        <li class="tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
+                        <li class="tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="panel_header1" class="tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+
+                                    <ul>
+                                        <li><a href="#" id="content_categories">Strategier og planer</a></li>
+                                        <li><a href="#">Nasjonale e-helseutvalg</a></li>
+                                        <li><a href="#">Driftsinformasjon</a></li>
+                                        <li><a href="#">IKT-infrastruktur og felleskomponenter</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <ul>
+                                        <li><a href="#">Standarder, terminologi og kodeverk</a></li>
+                                        <li><a href="#">Utredning Én innbygger – én journal</a></li>
+                                        <li><a href="#">Innbyggertjenester</a></li>
+                                        <li><a href="#">Helsepersonelltjenester</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix visible-xs visible-sm"></div>
+
+                                <div class=" col-sm-6 col-md-4">
+                                    <ul>
+
+                                        <li><a href="#">Personvern og informasjonssikkerhet</a></li>
+                                        <li><a href="#">Styrings- og kunnskapsgrunnlag</a></li>
+                                        <li><a href="#">Nyheter</a></li>
+                                        <li><a href="#">Kurs og arrangement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="panel_header2" class="tab visuallyhidden tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
+                            <div class="row alphabetical">
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">A</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">B</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">D</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="character">E</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">F</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">G</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">H</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">I</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">K</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">L</li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix hidden-md hidden-lg"></div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">M</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">N</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">O</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">P</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+
+                                    <ul>
+                                        <li class="character">R</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">S</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character">T</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <a id="content" tabindex="-1"></a>
 
     <div class="container">
         <div class="row">
