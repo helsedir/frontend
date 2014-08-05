@@ -417,7 +417,7 @@ body {
   background-position: 99% 50%;
   background-position-x: 99%;
   background-position-y: 50%;
-  cursor: pointer;
+  cursor: text;
 }
 .container .search_withbutton .search,
 .container-fluid .search_withbutton .search {
@@ -1333,6 +1333,25 @@ body {
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
+.container .module.urgentinformation_module,
+.container-fluid .module.urgentinformation_module {
+  position: relative;
+  border-left: 2px solid #222;
+  background: none;
+  padding-top: 0;
+}
+.container .module.urgentinformation_module .pulse,
+.container-fluid .module.urgentinformation_module .pulse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -18px;
+  height: 100px;
+}
+.container .module.urgentinformation_module .header3,
+.container-fluid .module.urgentinformation_module .header3 {
+  margin-top: 0;
+}
 .container .showmorenews,
 .container-fluid .showmorenews {
   width: 300px;
@@ -1382,15 +1401,14 @@ body {
   background-size: 12%;
   background-position: 7% 50%;
 }
-.container .crisis,
-.container-fluid .crisis {
-  margin: 15px;
+.container.crisis,
+.container-fluid.crisis {
   padding-bottom: 50px;
   background: #f4d01e;
   padding-top: 1px;
 }
-.container .crisis h1,
-.container-fluid .crisis h1 {
+.container.crisis h1,
+.container-fluid.crisis h1 {
   background-color: #f4d01e;
   background-image: url(../img/kriseikon_trekant.svg);
   background-size: 49px;
@@ -1399,59 +1417,64 @@ body {
   color: #222;
   padding-left: 80px;
 }
-.container .crisis .fa-exclamation,
-.container-fluid .crisis .fa-exclamation {
+.container.crisis .fa-exclamation,
+.container-fluid.crisis .fa-exclamation {
   color: #df9922;
   font-size: 2em;
 }
-.container .crisis .calltoaction,
-.container-fluid .crisis .calltoaction {
+.container.crisis .calltoaction,
+.container-fluid.crisis .calltoaction {
   border-color: #222;
   color: #222;
+  background: #ffffff url(../img/ikon_pilmothoyre.png) no-repeat;
+  text-decoration: none;
+  padding: 10px 20px 10px 15px;
+  background-position: 95% 50%;
+  background-size: 10px;
 }
-.container .crisis .calltoaction:hover,
-.container-fluid .crisis .calltoaction:hover {
+.container.crisis .calltoaction:hover,
+.container-fluid.crisis .calltoaction:hover {
   background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position: 5% 50%;
+  background-position: 95% 50%;
   color: white;
 }
-.container .crisis .calltoaction:hover:before,
-.container-fluid .crisis .calltoaction:hover:before {
+.container.crisis .calltoaction:hover:before,
+.container-fluid.crisis .calltoaction:hover:before {
   color: white;
 }
-.container .crisis .border_crisis,
-.container-fluid .crisis .border_crisis {
+.container.crisis .border_crisis,
+.container-fluid.crisis .border_crisis {
   border-bottom: 5px solid #222;
   padding-bottom: 20px;
   width: 100%;
 }
-.container .crisis #volcano,
-.container-fluid .crisis #volcano {
+.container.crisis #volcano,
+.container-fluid.crisis #volcano {
   height: 100px;
   margin: 40px 60px;
   display: block;
 }
-.container .crisis .bulletlist li:before,
-.container-fluid .crisis .bulletlist li:before {
+.container.crisis .bulletlist li:before,
+.container-fluid.crisis .bulletlist li:before {
   content: "•";
   color: #222;
   margin-right: 20px;
 }
-.container .crisis .urgentinformation,
-.container-fluid .crisis .urgentinformation {
+.container.crisis .urgentinformation,
+.container-fluid.crisis .urgentinformation {
   padding-left: 50px;
 }
-.container .crisis a,
-.container-fluid .crisis a {
+.container.crisis a,
+.container-fluid.crisis a {
   text-decoration: underline;
   color: #222;
 }
-.container .crisis a:hover,
-.container-fluid .crisis a:hover,
-.container .crisis a:visited,
-.container-fluid .crisis a:visited {
+.container.crisis a:hover,
+.container-fluid.crisis a:hover,
+.container.crisis a:visited,
+.container-fluid.crisis a:visited {
   color: #222;
 }
 .container .crisis_banner,

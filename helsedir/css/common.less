@@ -411,7 +411,7 @@ body {
         background-position: 99% 50%;
         background-position-x: 99%;
         background-position-y: 50%;
-        cursor: pointer;
+        cursor: text;
     }
 
     .search_withbutton {
@@ -1243,6 +1243,25 @@ body {
                 }
             }
         }
+
+        &.urgentinformation_module {
+            position: relative;
+            border-left: 2px solid #222;
+            background: none;
+            padding-top: 0;
+
+            .pulse {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-left: -18px;
+                height: 100px;
+            }
+
+            .header3 {
+                margin-top: 0;
+            }
+        }
     }
 
     .showmorenews {
@@ -1292,8 +1311,7 @@ body {
         }
     }
 
-    .crisis {
-        margin: 15px;
+    &.crisis {
         padding-bottom: 50px;
         background: @colorYellow;
         padding-top: 1px;
@@ -1316,12 +1334,17 @@ body {
         .calltoaction {
             border-color: #222;
             color: #222;
+            background: white url(../img/ikon_pilmothoyre.png) no-repeat;
+            text-decoration: none;
+            padding: 10px 20px 10px 15px;
+            background-position: 95% 50%;
+            background-size: 10px;
 
             &:hover {
                 background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
                 background-size: 10px;
                 background-repeat: no-repeat;
-                background-position: 5% 50%;
+                background-position: 95% 50%;
                 color: white;
 
                 &:before {
