@@ -62,12 +62,14 @@
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         border-radius: 4px;
+        background: white;
 
         h2 {
             margin: auto;
             font-size: 22px;
             line-height: 26px;
-            color: white;
+            color: @colorDarkBlue;
+            transition: all 0.5s;
 
             .fa-bars {
                 padding-left: 10px;
@@ -75,9 +77,19 @@
         }
 
         &.js-expanded {
-            background-color: #02343f;
-            color: white;
+            background-color: white;
+            color: @colorDarkBlue;
             outline: 0;
+        }
+
+        &:focus h2 {
+            background: white;
+        }
+
+        &:hover {
+            h2 {
+                background: #02343f;
+            }
         }
     }
 
@@ -158,6 +170,10 @@
             }
         }
     }
+}
+
+.search_button {
+    float: none;
 }
 
 .frontpagewrapper {

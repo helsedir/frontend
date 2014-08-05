@@ -45,7 +45,7 @@ h1 {
     font-family: @fontSohoLight;
     line-height: 44px;
     margin: 50px 0 0 0;
-    color: #838078;
+    color: #222;
     padding: 0 0 8px 0;
 }
 
@@ -53,7 +53,7 @@ h1 {
     margin: 20px 0 20px 0;
     font-size: 24px;
     line-height: 30px;
-    font-family: @fontSohoLight;
+    font-family: @fontCalibri;
     color: #222;
 }
 
@@ -113,8 +113,9 @@ h5 {
 p {
     margin: 10px 0 0 0;
     font-size: 20px;
-    font-family: 'Calibri';
-    line-height: 27px;
+    font-family: @fontCalibri;
+    line-height: 30px;
+    color: #838078;
 }
 
 ul {
@@ -402,7 +403,6 @@ a {
     height: 41px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid @colorDarkBlue;
     vertical-align: middle;
     cursor: text;
     display: inline-block;
@@ -410,45 +410,48 @@ a {
 }
 
 .search {
-    width: 94%;
+    width: 93%;
     height: 40px;
-    background: none;
+    background: white;
     cursor: text;
     border: none;
-    padding: 0;
+    padding: 0 0 0 20px;
     vertical-align: sub;
+    float: left;
 
     &::-webkit-input-placeholder {
-        color: @colorDarkBlue;
+        color: #838078;
         text-align: left;
     }
 
     &:-moz-placeholder { /* Firefox 18- */
-        color: @colorDarkBlue;
+        color: #838078;
         text-align: left;
     }
 
     &::-moz-placeholder { /* Firefox 19+ */
-        color: @colorDarkBlue;
+        color: #838078;
         text-align: left;
     }
 
     &:-ms-input-placeholder {
-        color: @colorDarkBlue;
+        color: #838078;
         text-align: left;
     }
 }
 
 .search_button {
     border: none;
-    background: none;
-    width: 29px;
+    background: @colorYellow;
+    width: 39px;
+    height: 40px;
     padding: 0;
-    vertical-align: middle;
+    vertical-align: bottom;
+    float: left;
 
     img {
         width: 25px;
-        vertical-align: middle;
+        vertical-align: bottom;
     }
 }
 
@@ -1269,50 +1272,69 @@ p.keyfigures, h4.keyfigures {
     &.module_print, &.module_social {
         padding: 0;
         background: none;
-        border-top: 2px solid @colorDarkBlue;
+        border-top: 2px solid #004e66;
         padding-top: 19px;
+        margin: 60px 0 31px 0;
         width: 100%;
+        margin-top: 50px;
+
+        a, a:visited {
+            color: @colorDarkBlue;
+            text-transform: uppercase;
+            float: left;
+            margin: 0 50px 0 0;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
 
         p, span {
             float: left;
         }
 
         span {
-            margin: 0 10px 0 0;
+            margin: 0 3px 0 0;
             height: 24px;
             width: 26px;
         }
 
-        .ikon_print {
-            display: block;
-        }
-
         .ikon_facebook {
-            background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
-            -moz-background-size: 27px 20px;
-            -o-background-size: 27px 20px;
-            -webkit-background-size: 27px 20px;
-            background-size: 27px 20px;
+            span {
+                background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
         }
 
         .ikon_twitter {
-            background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
-            -moz-background-size: 27px 20px;
-            -o-background-size: 27px 20px;
-            -webkit-background-size: 27px 20px;
-            background-size: 27px 20px;
+            span {
+                background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
         }
 
         .ikon_skrivut {
-            background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
-            -moz-background-size: 27px 20px;
-            -o-background-size: 27px 20px;
-            -webkit-background-size: 27px 20px;
-            background-size: 27px 20px;
+            display: block;
+
+            span {
+                background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+                -moz-background-size: 27px 20px;
+                -o-background-size: 27px 20px;
+                -webkit-background-size: 27px 20px;
+                background-size: 27px 20px;
+            }
         }
 
         p {
-            width: 70px;
             margin: 0 20px 0 0;
             color: #004e66;
             text-transform: uppercase;
@@ -1322,27 +1344,33 @@ p.keyfigures, h4.keyfigures {
         }
 
         .ikon_skrivut:hover {
-            background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
-            -moz-background-size: 28px 23px;
-            -o-background-size: 28px 23px;
-            -webkit-background-size: 28px 23px;
-            background-size: 28px 23px;
+            span {
+                background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
+            }
         }
 
         .ikon_facebook:hover {
-            background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
-            -moz-background-size: 28px 23px;
-            -o-background-size: 28px 23px;
-            -webkit-background-size: 28px 23px;
-            background-size: 28px 23px;
+            span {
+                background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
+            }
         }
 
         .ikon_twitter:hover {
-            background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
-            -moz-background-size: 28px 23px;
-            -o-background-size: 28px 23px;
-            -webkit-background-size: 28px 23px;
-            background-size: 28px 23px;
+            span {
+                background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+                -moz-background-size: 28px 23px;
+                -o-background-size: 28px 23px;
+                -webkit-background-size: 28px 23px;
+                background-size: 28px 23px;
+            }
         }
     }
 
@@ -1675,6 +1703,7 @@ fieldset {
 .dropdown {
     label {
         display: block;
+        margin-bottom: 5px;
     }
 
     select {
@@ -1713,13 +1742,13 @@ fieldset {
 }
 
 .numberofpublications {
-    margin-bottom: 17px;
+    margin-bottom: 30px;
     padding-top: 15px;
     font-family: 'Calibri';
     line-height: 20px;
     text-transform: uppercase;
     font-size: 18px;
-    color: #004e66;
+    color: #838078;
 }
 
 .refinesearch {
@@ -1727,7 +1756,7 @@ fieldset {
     margin-bottom: 60px;
 
     h2, h5 {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         padding-top: 0;
         padding-bottom: 3px;
         font-family: @fontCalibri;
@@ -1740,7 +1769,7 @@ fieldset {
     }
 
     select {
-        margin-bottom: 8px;
+        margin-bottom: 20px;
     }
 
     label {
@@ -1985,12 +2014,47 @@ fieldset {
     color: #004e66;
 }
 
+.timeandplace {
+    margin-top: 20px;
+    padding: 10px 10px 10px 0;
+    float: left;
+}
+
+.status_prosjekt {
+    background: white;
+    float: left;
+    padding: 10px 15px;
+    width: 200px;
+    margin-right: 60px;
+    margin-top: 28px;
+
+    span {
+        font-weight: bold;
+    }
+
+    &.rute {
+        border-left: 50px solid @colorLightBlue;
+    }
+
+    &.drift {
+        border-left: 50px solid @colorGreen;
+    }
+
+    &.pilot {
+        border-left: 50px solid @colorOrange;
+    }
+
+    &.cancelled {
+        border-left: 50px solid @colorRed;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
         right: 0;
         position: absolute;
-        margin-right: -54%;
+        margin-right: -77%;
 
         &.module_person {
             top: auto;
@@ -2001,7 +2065,7 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -54%;
+            margin-right: -77%;
         }
     }
 
@@ -2009,7 +2073,7 @@ fieldset {
         bottom: 0;
         right: 0;
         position: absolute;
-        margin-right: -54%;
+        margin-right: -77%;
         width: 386px;
     }
 }
@@ -2055,7 +2119,7 @@ fieldset {
     }
 
     .search {
-        width: 86%;
+        width: 91%;
     }
 }
 
@@ -2085,6 +2149,10 @@ fieldset {
 
     .aside {
         margin-top: 0;
+    }
+
+    .search {
+        width: 84%;
     }
 }
 

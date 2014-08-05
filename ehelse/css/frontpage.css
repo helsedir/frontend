@@ -40,20 +40,28 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-radius: 4px;
+  background: white;
 }
 .entrancebutton.menu h2 {
   margin: auto;
   font-size: 22px;
   line-height: 26px;
-  color: white;
+  color: #004e66;
+  transition: all 0.5s;
 }
 .entrancebutton.menu h2 .fa-bars {
   padding-left: 10px;
 }
 .entrancebutton.menu.js-expanded {
-  background-color: #02343f;
-  color: white;
+  background-color: white;
+  color: #004e66;
   outline: 0;
+}
+.entrancebutton.menu:focus h2 {
+  background: white;
+}
+.entrancebutton.menu:hover h2 {
+  background: #02343f;
 }
 .entrancebutton:hover {
   background: #02343f;
@@ -122,6 +130,9 @@
 }
 .entrancebutton.alternative.menu:focus h2 {
   background: #666460;
+}
+.search_button {
+  float: none;
 }
 .frontpagewrapper.grey {
   background: #DEDDDB;
