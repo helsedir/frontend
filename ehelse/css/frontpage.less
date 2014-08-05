@@ -77,18 +77,25 @@
         }
 
         &.js-expanded {
-            background-color: white;
-            color: @colorDarkBlue;
+            background-color: @colorMediumBlue;
+            color: white;
             outline: 0;
+
+            h2 {
+                background-color: @colorMediumBlue;
+                color: white;
+            }
         }
 
         &:focus h2 {
-            background: white;
+            background-color: @colorMediumBlue;
         }
 
         &:hover {
+            background: @colorMediumBlue !important;
+
             h2 {
-                background: #02343f;
+                background: @colorMediumBlue;
             }
         }
     }
