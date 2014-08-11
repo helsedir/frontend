@@ -25,31 +25,31 @@
     background: white;
 }
 
-    .shortcuts, #header .shortcuts, #footer .shortcuts {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+.shortcuts, #header .shortcuts, #footer .shortcuts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
-        ul {
-            overflow: hidden;
-            height: 0;
+    ul {
+        overflow: hidden;
+        height: 0;
 
-            li {
-                list-style: none;
-            }
-        }
-
-        a {
-            position: absolute;
-            top: -2013px;
-            display: block;
-            border-radius: 5px;
-
-            &:focus {
-                top: 10px;
-            }
+        li {
+            list-style: none;
         }
     }
+
+    a {
+        position: absolute;
+        top: -2013px;
+        display: block;
+        border-radius: 5px;
+
+        &:focus {
+            top: 10px;
+        }
+    }
+}
 
 #header, #footer {
     &.footerwrapper, .footerwrapper {
@@ -58,6 +58,10 @@
         border: none;
         padding-top: 60px;
         width: 100%;
+    }
+
+    a {
+        border-bottom: none;
     }
 
     .menuwrapper {
@@ -79,6 +83,7 @@
 
         a {
             cursor: pointer;
+            border-bottom: none;
         }
 
         li {
@@ -322,6 +327,7 @@
                     color: @colorDarkBlue;
                     width: 100%;
                     display: inline-block;
+                    border-bottom: none;
                 }
 
                 &:hover {
@@ -445,15 +451,15 @@
                     }
                 }
 
-                    a:last-of-type {
-                        border-top-right-radius: 3px;
-                        border-bottom-right-radius: 3px;
-                    }
+                a:last-of-type {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
 
-                    a:first-of-type {
-                        border-top-left-radius: 3px;
-                        border-bottom-left-radius: 3px;
-                    }
+                a:first-of-type {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
             }
         }
     }

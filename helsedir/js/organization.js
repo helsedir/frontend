@@ -3,7 +3,7 @@
         $(this).addClass('visuallyhidden');
     });
 
-    $('#helseoekonomiogfinansiering, #administrasjon, #primaerhelsetjenesten, #ehelseogit, #spesialisthelsetjenesten,#folkehelse ').on('click', function () {
+    $('#helseoekonomiogfinansiering, #administrasjon, #primaerhelsetjenesten, #ehelseogit, #spesialisthelsetjenesten,#folkehelse ').on('click', function (event) {
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
         $(this).toggleClass('selected');
@@ -43,7 +43,7 @@
         });
     });
 
-    $('.sub-division').on('click', function (e) {
+    $('.sub-division').on('click', function (event) {
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
         if ($(this).children('.box').hasClass('selected')) {

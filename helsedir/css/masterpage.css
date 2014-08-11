@@ -49,6 +49,10 @@
   padding-top: 60px;
   width: 100%;
 }
+#header a,
+#footer a {
+  border-bottom: none;
+}
 #header .menuwrapper,
 #footer .menuwrapper {
   background: white;
@@ -70,6 +74,7 @@
 #header .about a,
 #footer .about a {
   cursor: pointer;
+  border-bottom: none;
 }
 #header .about li,
 #footer .about li {
@@ -321,6 +326,7 @@
   color: #004e66;
   width: 100%;
   display: inline-block;
+  border-bottom: none;
 }
 #header footer .tab-content li:hover,
 #footer footer .tab-content li:hover {

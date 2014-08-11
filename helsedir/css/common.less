@@ -128,7 +128,13 @@ body {
         color: @colorDarkBlue;
         font-size: 20px;
         line-height: 27px;
-        text-decoration: underline;
+        border-bottom: 1px solid @colorDarkBlue;
+        padding-bottom: 1px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
 
         &:visited {
             color: @colorMediumBlue;
@@ -176,6 +182,7 @@ body {
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
+            border-bottom: none;
         }
 
         a:visited {
@@ -671,6 +678,7 @@ body {
         margin: 15px 0;
         display: inline-block;
         width: 100%;
+        border-bottom: none;
 
         &:after {
             content: '';
@@ -699,6 +707,7 @@ body {
         color: @colorDarkBlue;
         display: inline-block;
         margin-bottom: 1px;
+        border-bottom: none;
 
         &:visited {
             color: @colorMediumBlue;
@@ -713,7 +722,6 @@ body {
             padding-bottom: 4px;
 
             &:hover {
-                margin-bottom: 0;
             }
         }
 
@@ -737,7 +745,6 @@ body {
 
         &:hover {
             text-decoration: none;
-            margin-bottom: 0;
 
             &.arrow_right:after {
                 text-decoration: none;
@@ -761,7 +768,7 @@ body {
 
     .module {
         display: inline-block;
-        margin: 0 0 30px 0;
+        margin: 20px 0 0 0;
         padding: 30px 30px 30px 30px;
         background: white;
         position: relative;
@@ -917,6 +924,7 @@ body {
                 margin: 0 40px 0 0;
                 text-decoration: none;
                 color: @colorDarkBlue;
+                border-bottom: none;
 
                 &:visited {
                     color: @colorDarkBlue;
@@ -1204,6 +1212,7 @@ body {
                 font-size: 16px;
                 line-height: 24px;
                 text-decoration: none;
+                border-bottom: none;
 
                 &:last-of-type {
                     margin-right: 0;
@@ -1814,6 +1823,7 @@ body {
             height: 100%;
             color: #222;
             text-decoration: none;
+            border-bottom: none;
 
             h2 {
                 color: @colorMediumBlue;

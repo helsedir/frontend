@@ -122,7 +122,13 @@ body {
   color: #004e66;
   font-size: 20px;
   line-height: 27px;
-  text-decoration: underline;
+  border-bottom: 1px solid #004e66;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+.container a:hover,
+.container-fluid a:hover {
+  text-decoration: none;
 }
 .container a:visited,
 .container-fluid a:visited {
@@ -183,6 +189,7 @@ body {
   font-family: 'Calibri';
   font-size: 18px;
   line-height: 22px;
+  border-bottom: none;
 }
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
@@ -697,6 +704,7 @@ body {
   margin: 15px 0;
   display: inline-block;
   width: 100%;
+  border-bottom: none;
   /*
         &.inline, .inline:visited {
             text-decoration: none;
@@ -734,6 +742,7 @@ body {
   color: #004e66;
   display: inline-block;
   margin-bottom: 1px;
+  border-bottom: none;
 }
 .container .internal-link:visited,
 .container-fluid .internal-link:visited {
@@ -753,10 +762,6 @@ body {
 .container-fluid .internal-link.arrow_right {
   margin: 15px 0 4px 0;
   padding-bottom: 4px;
-}
-.container .internal-link.arrow_right:hover,
-.container-fluid .internal-link.arrow_right:hover {
-  margin-bottom: 0;
 }
 .container .internal-link.arrow_right:after,
 .container-fluid .internal-link.arrow_right:after {
@@ -783,7 +788,6 @@ body {
 .container .internal-link:hover,
 .container-fluid .internal-link:hover {
   text-decoration: none;
-  margin-bottom: 0;
 }
 .container .internal-link:hover.arrow_right:after,
 .container-fluid .internal-link:hover.arrow_right:after {
@@ -808,7 +812,7 @@ body {
 .container .module,
 .container-fluid .module {
   display: inline-block;
-  margin: 0 0 30px 0;
+  margin: 20px 0 0 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -976,6 +980,7 @@ body {
   margin: 0 40px 0 0;
   text-decoration: none;
   color: #004e66;
+  border-bottom: none;
 }
 .container .module.module_subscribe a:visited,
 .container-fluid .module.module_subscribe a:visited {
@@ -1275,6 +1280,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
+  border-bottom: none;
 }
 .container .module.module_print a:last-of-type,
 .container-fluid .module.module_print a:last-of-type,
@@ -1912,6 +1918,7 @@ body {
   height: 100%;
   color: #222;
   text-decoration: none;
+  border-bottom: none;
 }
 .container .transportsideknapp a h2,
 .container-fluid .transportsideknapp a h2 {
