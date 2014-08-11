@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-  	
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
@@ -291,27 +268,26 @@
         <a id="content" tabindex="-1"></a>
     </div>
     <article class="container">  
-		  <div class="row">
+	  	<div class="row">
 	<div class="col-md-7">
-		<nav>
-  		<ol class="breadcrumbs clearfix">
-    		<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
-				<li><a href="../" class="active">Nasjonale faglige retningslinjer</a></li>
-			</ol>
-		</nav>
-   </div>
+		<header id="pageheader">
+			<nav>
+	  		<ol class="breadcrumbs clearfix">
+	    		<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
+					<li><a href="../" class="active">Nasjonale faglige retningslinjer</a></li>
+				</ol>
+			</nav>
+			<h1>Nasjonal faglig retningslinje for spedbarnsernæring</h1>
+			<div class="ingress">
+				Introtekst... <a href="#" class="smallGrayText">mer ...</a>
+			</div>
+			<span class="smallGrayText uppercase">Opprettet 30.05.2014 - Sist oppdatert 30.05.2014</span>
+		</header>
+	</div>
 </div>
 
-	  		<div class="row">
+<div class="row">
 	<div class="col-md-7">
-	<section class="sectionwithaside">
-	<header>
-		<h1 id="sidetittel">Nasjonal faglig retningslinje for spedbarnsernæring</h1>
-		<span class="smallGrayText uppercase">Opprettet 30.05.2014, sist oppdatert 30.05.2014</span>
-	</header>
-	<div class="ingress">
-		Introtekst... <a href="#" class="smallGrayText">Les mer...</a>
-	</div>
 	<div class="border"></div>
 	<form>
   	<label for="searchinput" class="visuallyhidden">Søk i retningslinjen</label>
@@ -330,18 +306,28 @@
 			</div>
 		</li>
 	</ul>
-	<aside class="aside">
-		<div class="module module_related">
-			<h3 class=" module_header">Relaterte retningslinjer</h3>
-			<ul class="linklist">
-				<li><a href="#">Retningslinje X</a></li>
-				<li><a href="#">Retningslinje Y</a></li>
-				<li><a href="#">Retningslinje Z</a></li>
-			</ul>
-			<img class="pulse" src="http://helsedir.azurewebsites.net/img/modules/EKG-groenn.png" alt="">
+	
+	<div class=" module module_social">
+    <a href="javascript:window.print()" class=" ikon_skrivut">
+        <span></span>skriv ut
+    </a>
+    <a href="#" class="ikon_facebook"><span></span>metodikk</a>
+    <a href="#" class="ikon_twitter"><span></span>disclaimer</a>
+	</div>
+	<aside class=" aside bottom">
+  	<div class=" module module_person ">
+      <h5 class=" module_description">Ansvarlig for denne siden</h5>
+      <a href="mailto:Anne.May.Knudsen@helsedir.no">
+      	<img src="http://helsedir.azurewebsites.net/img/eirik.gif" alt="Erik">
+        <div class="name">Eirik H. Rønjum</div>
+      </a>
+      <div class="person_information">
+      	<p class="role">Webstrateg</p>
+        <p class="phone">Mobil: 975 92 815</p>
+      </div>
 		</div>
 	</aside>
-	</section>
+	
 	</div> <!-- cols -->
 </div><!-- row -->
 		</article> <!-- end container -->
