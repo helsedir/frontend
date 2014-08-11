@@ -267,6 +267,9 @@
   width: 49%;
   float: left;
 }
+.container.frontpage .importantnews a {
+  border-bottom: none;
+}
 .container.frontpage.newsandconference {
   background: white;
 }

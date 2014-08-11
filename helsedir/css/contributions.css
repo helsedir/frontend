@@ -22,6 +22,7 @@
 .container .numberofcontributions {
   color: #004e66;
   font-size: 18px;
+  line-height: 22px;
 }
 .container .transportsideknapp .date {
   margin-right: 20px;

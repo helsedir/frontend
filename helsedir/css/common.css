@@ -1,4 +1,4 @@
-article,
+﻿article,
 aside,
 details,
 figcaption,
@@ -22,7 +22,7 @@ body {
   line-height: 30px;
   color: #222;
   background-color: #f7f6f6;
-  background-image: url(../img/bakgrunn_menneske.svg);
+  background-image: url('../img/bakgrunn_menneske.svg');
   background-position: 100% 20%;
   background-position-x: 100%;
   background-position-y: 20%;
@@ -222,12 +222,8 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
-.container .accordion.nested-accordion.has-hidden-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
-.container .accordion.nested-accordion.has-hidden-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
-.container .accordion.nested-accordion.has-hidden-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
+.container .nested-accordion.has-hidden-content > .accordion:before,
+.container-fluid .nested-accordion.has-hidden-content > .accordion:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f107";
@@ -255,12 +251,8 @@ body {
   font-family: "FontAwesome";
   font-size: 30px;
 }
-.container .accordion.nested-accordion.has-visible-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h3:before,
-.container .accordion.nested-accordion.has-visible-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
-.container .accordion.nested-accordion.has-visible-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
+.container .nested-accordion.has-visible-content > .accordion:before,
+.container-fluid .nested-accordion.has-visible-content > .accordion:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f106";
@@ -429,7 +421,7 @@ body {
   width: 100%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url(../img/ikon_forstorrelsesglass.png) center no-repeat;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
   border: 1px solid #004e66;
   -moz-background-size: auto 80%;
   -o-background-size: auto 80%;
@@ -456,7 +448,7 @@ body {
 .container .searchfield input,
 .container-fluid .searchfield input {
   border: none;
-  padding: 0;
+  padding: 0 0 0 10px;
   width: 94%;
   vertical-align: sub;
 }
@@ -642,21 +634,21 @@ body {
 }
 .container ::-webkit-input-placeholder,
 .container-fluid ::-webkit-input-placeholder {
-  text-align: center;
+  text-align: left;
 }
 .container :-moz-placeholder,
 .container-fluid :-moz-placeholder {
   /* Firefox 18- */
-  text-align: center;
+  text-align: left;
 }
 .container ::-moz-placeholder,
 .container-fluid ::-moz-placeholder {
   /* Firefox 19+ */
-  text-align: center;
+  text-align: left;
 }
 .container :-ms-input-placeholder,
 .container-fluid :-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
 }
 .container .calltoaction,
 .container-fluid .calltoaction {
@@ -669,7 +661,7 @@ body {
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
@@ -681,14 +673,14 @@ body {
 .container .calltoaction:focus,
 .container-fluid .calltoaction:focus {
   color: white;
-  background: #02343f url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
 }
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #ffffff url(../img/ikon_pilmothoyre.png) no-repeat;
+  background: #ffffff url('../img/ikon_pilmothoyre.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: #004e66;
@@ -697,7 +689,7 @@ body {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #0093a7 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: white;
@@ -720,7 +712,7 @@ body {
         }
 
         &:visited {
-            background: url(../img/navigasjon/ikon_eksternlenkebesoekt.svg) right no-repeat;
+            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
             background-size: 16px 16px;
         }*/
 }
@@ -979,7 +971,7 @@ body {
 .container .module.module_subscribe .header,
 .container-fluid .module.module_subscribe .header {
   border-top: 2px solid #004e66;
-  padding-top: 15px;
+  padding-top: 10px;
   margin-bottom: 10px;
 }
 .container .module.module_subscribe a,
@@ -1401,6 +1393,7 @@ body {
   border-left: 2px solid #222;
   background: none;
   padding-top: 0;
+  margin-top: 0;
 }
 .container .module.urgentinformation_module .pulse,
 .container-fluid .module.urgentinformation_module .pulse {
@@ -1439,6 +1432,7 @@ body {
   color: #222;
   padding: 10px 20px 10px 30px;
   text-decoration: none;
+  border-bottom: none;
 }
 .container .showmorenews a:hover,
 .container-fluid .showmorenews a:hover {
@@ -1465,7 +1459,7 @@ body {
 }
 .container.crisis,
 .container-fluid.crisis {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background: #f4d01e;
   padding-top: 1px;
 }
@@ -1478,6 +1472,7 @@ body {
   background-repeat: no-repeat;
   color: #222;
   padding-left: 80px;
+  margin-top: 30px;
 }
 .container.crisis .fa-exclamation,
 .container-fluid.crisis .fa-exclamation {
@@ -1532,6 +1527,7 @@ body {
 .container-fluid.crisis a {
   text-decoration: underline;
   color: #222;
+  border-bottom: none;
 }
 .container.crisis a:hover,
 .container-fluid.crisis a:hover,
@@ -1539,21 +1535,26 @@ body {
 .container-fluid.crisis a:visited {
   color: #222;
 }
-.container .crisis_banner,
-.container-fluid .crisis_banner {
+.container.crisis .header3,
+.container-fluid.crisis .header3 {
+  margin-top: 30px;
+}
+.container.crisis_banner,
+.container-fluid.crisis_banner {
   background: #f4d01e;
   height: 100px;
+  padding: 0;
 }
-.container .crisis_banner .container,
-.container-fluid .crisis_banner .container {
+.container.crisis_banner .container,
+.container-fluid.crisis_banner .container {
   background-color: #f4d01e;
   background-image: url(../img/kriseikon_trekant.svg);
   background-size: 49px;
   background-position: left;
   background-repeat: no-repeat;
 }
-.container .crisis_banner h1,
-.container-fluid .crisis_banner h1 {
+.container.crisis_banner h1,
+.container-fluid.crisis_banner h1 {
   font-size: 28px;
   line-height: 34px;
   margin: 33px 0 0 58px;
@@ -1561,24 +1562,24 @@ body {
   color: #222;
   float: left;
 }
-.container .crisis_banner .crisis_info,
-.container-fluid .crisis_banner .crisis_info {
+.container.crisis_banner .crisis_info,
+.container-fluid.crisis_banner .crisis_info {
   float: left;
   margin-left: 40px;
   max-width: 530px;
   color: #222;
 }
-.container .crisis_banner .crisis_link,
-.container-fluid .crisis_banner .crisis_link {
+.container.crisis_banner .crisis_link,
+.container-fluid.crisis_banner .crisis_link {
   float: left;
   margin: 63px 0 0 20px;
   display: block;
   color: #222;
 }
-.container .crisis_banner .crisis_link:hover,
-.container-fluid .crisis_banner .crisis_link:hover,
-.container .crisis_banner .crisis_link:visited,
-.container-fluid .crisis_banner .crisis_link:visited {
+.container.crisis_banner .crisis_link:hover,
+.container-fluid.crisis_banner .crisis_link:hover,
+.container.crisis_banner .crisis_link:visited,
+.container-fluid.crisis_banner .crisis_link:visited {
   color: #222;
 }
 .container .border,
@@ -1612,7 +1613,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url(../img/navigasjon/radioknapp_inaktiv.svg) top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1621,7 +1622,7 @@ body {
 }
 .container input[type="radio"] + label span:hover,
 .container-fluid input[type="radio"] + label span:hover {
-  background: url(../img/navigasjon/radioknapp_hover.svg) top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1649,7 +1650,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url(../img/navigasjon/checkbox_inaktiv.svg) top left no-repeat;
+  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1658,7 +1659,7 @@ body {
 }
 .container input[type="checkbox"] + label span:hover,
 .container-fluid input[type="checkbox"] + label span:hover {
-  background: url(../img/navigasjon/checkbox_hover.svg) top left no-repeat;
+  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1762,7 +1763,7 @@ body {
 .container-fluid .refinesearch h5 {
   border-top: 2px solid #004e66;
   margin-bottom: 17px;
-  padding-top: 15px;
+  padding-top: 10px;
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;

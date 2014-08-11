@@ -441,7 +441,7 @@ body {
 
         input {
             border: none;
-            padding: 0;
+            padding: 0 0 0 10px;
             width: 94%;
             vertical-align: sub;
         }
@@ -614,19 +614,19 @@ body {
     }
     //Center text in input fields
     ::-webkit-input-placeholder {
-        text-align: center;
+        text-align: left;
     }
 
     :-moz-placeholder { /* Firefox 18- */
-        text-align: center;
+        text-align: left;
     }
 
     ::-moz-placeholder { /* Firefox 19+ */
-        text-align: center;
+        text-align: left;
     }
 
     :-ms-input-placeholder {
-        text-align: center;
+        text-align: left;
     }
 
     .calltoaction {
@@ -915,7 +915,7 @@ body {
 
             .header {
                 border-top: 2px solid @colorDarkBlue;
-                padding-top: 15px;
+                padding-top: 10px;
                 margin-bottom: 10px;
             }
 
@@ -1306,6 +1306,7 @@ body {
             border-left: 2px solid #222;
             background: none;
             padding-top: 0;
+            margin-top: 0;
 
             .pulse {
                 position: absolute;
@@ -1344,6 +1345,7 @@ body {
             color: #222;
             padding: 10px 20px 10px 30px;
             text-decoration: none;
+            border-bottom: none;
 
             &:hover {
                 text-decoration: none;
@@ -1369,7 +1371,7 @@ body {
     }
 
     &.crisis {
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         background: @colorYellow;
         padding-top: 1px;
 
@@ -1381,6 +1383,7 @@ body {
             background-repeat: no-repeat;
             color: #222;
             padding-left: 80px;
+            margin-top: 30px;
         }
 
         .fa-exclamation {
@@ -1437,16 +1440,22 @@ body {
         a {
             text-decoration: underline;
             color: #222;
+            border-bottom: none;
 
             &:hover, &:visited {
                 color: #222;
             }
         }
+
+        .header3 {
+            margin-top: 30px;
+        }
     }
 
-    .crisis_banner {
+    &.crisis_banner {
         background: @colorYellow;
         height: 100px;
+        padding: 0;
 
         .container {
             background-color: @colorYellow;
@@ -1470,6 +1479,9 @@ body {
             margin-left: 40px;
             max-width: 530px;
             color: #222;
+
+            p {
+            }
         }
 
         .crisis_link {
@@ -1656,7 +1668,7 @@ body {
         h2, h5 {
             border-top: 2px solid @colorDarkBlue;
             margin-bottom: 17px;
-            padding-top: 15px;
+            padding-top: 10px;
             font-family: @fontCalibri;
             line-height: 20px;
             text-transform: uppercase;

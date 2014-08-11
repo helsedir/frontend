@@ -11,6 +11,7 @@
 .container .filterlist li a {
   color: #004e66;
   font-size: 18px;
+  border-bottom: none;
 }
 .container .filterlist .selectedfilter a,
 .container .filterlist .selectedfilter a:visited {
@@ -33,6 +34,9 @@
 }
 .container .searchresult h2 {
   margin-top: 10px;
+}
+.container .searchresult a {
+  border-bottom: none;
 }
 .container .searchfield {
   margin: 40px 0 10px 0;

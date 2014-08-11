@@ -406,10 +406,10 @@
 }
 .container .underliggende_etat {
   color: #004e66;
-  padding: 6px 24px 6px 6px;
+  padding: 6px 24px 6px 16px;
   margin: 20px 30px 0 0;
   line-height: 24px;
-  width: 170px;
+  width: 190px;
   height: 72px;
   background: white;
   display: table;
@@ -429,7 +429,7 @@
   font-family: "FontAwesome";
   font-size: 25px;
   color: #004e66;
-  left: 81px;
+  left: 103px;
   top: 27px;
   padding-left: 65px;
   padding-right: 65px;
