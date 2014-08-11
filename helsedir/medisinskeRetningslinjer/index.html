@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-  	
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasjonale faglige retningslinjer</title>
@@ -293,21 +270,21 @@
     <article class="container">  
 		<div class="row">
 			<div class="col-md-7">
-				<nav>
-					<ol class="breadcrumbs clearfix">
-						<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
-					</ol>
-				</nav>
+				<header id="pageheader">
+					<nav>
+						<ol class="breadcrumbs clearfix">
+							<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
+						</ol>
+					</nav>
+					<h1>Nasjonale faglige retningslinjer</h1>
+					<div class="ingress">
+						Anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper. <a href="#" class="smallGrayText">Les mer...</a>
+					</div>
+				</header>
 			</div>
 		</div>
 			<div class="row">
 	<div class="col-md-7"> 
-					<header>
-						<h1>Nasjonale faglige retningslinjer</h1>
-					</header>
-					<div class="ingress">
-						Anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper. <a href="#" class="smallGrayText">Les mer...</a>
-					</div>
 					<div class="border"></div>
 					<form>
           	<label for="searchinput" class="visuallyhidden">Søk i retningslinjer og veiledere</label>
@@ -321,7 +298,6 @@
 							<li><a href="index2.html"><h2>Prioriteringsveiledere</h2></a></li>
 						</ul>
           
-
 						<ul>
 							<li>
 								<div class="transportsideknapp">
@@ -345,8 +321,26 @@
 								</div>
 							</li>
 						</ul>
-					</div>
-				
+						<div class=" module module_social">
+	            <a href="javascript:window.print()" class=" ikon_skrivut">
+	                <span></span>skriv ut
+	            </a>
+	            <a href="#" class="ikon_facebook"><span></span>del på facebook</a>
+	            <a href="#" class="ikon_twitter"><span></span>del på twitter</a>
+						</div>
+						<aside class=" aside top">
+            	<div class=" module module_person ">
+                <h5 class=" module_description">Ansvarlig for denne siden</h5>
+                <a href="mailto:Anne.May.Knudsen@helsedir.no">
+                	<img src="http://helsedir.azurewebsites.net/img/eirik.gif" alt="Erik">
+                  <div class="name">Eirik H. Rønjum</div>
+                </a>
+                <div class="person_information">
+                	<p class="role">Webstrateg</p>
+                  <p class="phone">Mobil: 975 92 815</p>
+                </div>
+							</div>
+						</aside>				
 
 			</div> <!-- cols -->
 </div><!-- row --> 				
