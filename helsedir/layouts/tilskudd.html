@@ -267,53 +267,25 @@
                         </ol>
                     </nav>
                     <h1>Tilskudd</h1>
+                    <p>Vi bruker Altinn for å søke og rapportere på tilskudd. <a href="#" class="">Søk eller rapporter på tilskudd hos Altinn.</a></p>
+                    <form class=" searchfield">
+                        <label for="search" class=" visuallyhidden">Søk i alt innhold</label>
+                        <input id="search" class="" type="text" placeholder="Søk i alt innhold">
+                        <button type="submit">
+                            <img src="../img/ikon_forstorrelsesglass.png" alt="Søk">
+                        </button>
+                    </form>
                 </header>
             </div>
         </div>
         <div class="row">
             <div class="col-md-7 ">
-                <div class=" content">
+                <div class="content">
                     <aside class=" aside top">
                         <div class="accordion_mobile refinesearch">
                             <h2>Avgrens visning</h2>
                             <form class=" dropdown">
-                                <div class="form-group">
-                                    <label for="tema">Tema</label>
-                                    <select role="listbox" id="tema" class="form-control">
-                                        <option role="option">Alle tema</option>
-                                        <option role="option">
-                                            Finansiering og helseøkonomi (3)
-                                        </option>
-                                        <option role="option">
-                                            Folkehelse (307)
-                                        </option>
-                                        <option role="option">
-                                            Giftinformasjon (4)
-                                        </option>
-                                        <option role="option">
-                                            Global helse (10)
-                                        </option>
-                                        <option role="option">Helse- og omsorgstjenester (197)</option>
-                                        <option role="option">
-                                            Helsepersonell (20)
-                                        </option>
-                                        <option role="option">
-                                            IT og helse (24)
-                                        </option>
-                                        <option role="option">
-                                            Kvalitet og planlegging (250)
-                                        </option>
-                                        <option role="option">
-                                            Psykisk helse og rus (117)
-                                        </option>
-                                        <option role="option">
-                                            Samhandlingsreformen (3)
-                                        </option>
-                                        <option role="option">
-                                            Statistikk og analyse (75)
-                                        </option>
-                                    </select>
-                                </div>
+
                                 <div class="form-group">
                                     <label for="type">Hvem kan søke</label>
                                     <select role="listbox" id="type" class="form-control">
@@ -344,38 +316,53 @@
                                 </div>
                             </form>
                         </div>
+                        <div class=" module module_related">
+                            <div class=" module_description ">Spørsmål om bruk av altinn.no? </div>
+                            <a href="https://www.altinn.no/no/Toppmeny/Kontakt-og-hjelp/Altinn-brukerservice/" class="external-link">Kontakt Altinn brukerservice</a>
+
+                            <img class="pulse" src="../img/modules/EKG-groenn.png" alt="">
+                        </div>
+                        <div class=" module module_related">
+                            <h5 class=" module_header"><a href="http://helsedirektoratet.no/tilskudd/soknadsprosessen/Sider/default.aspx" class=" internal-link arrow_right">Hva skjer i søkeprosessen</a></h5>
+                            <p class=" module_ingress">Innsending av søknader, saksbehandling og rapportering</p>
+                            <img class="pulse" src="../img/modules/EKG-groenn.png" alt="">
+                        </div>
                     </aside>
-                    <div class=" tilskudd_sortcontrols">
-                        <fieldset>
-                            <legend class=" visuallyhidden">Sorter tilskudd</legend>
-                            <div class=" checkbox">
-                                <input type="radio" id="r1" name="radiobutton" checked="checked" value="soeke" />
-                                <label for="r1"><span></span>Søke</label>
-                            </div>
-                            <div class=" checkbox">
-                                <input type="radio" id="r2" name="radiobutton" value="rapportere" />
-                                <label for="r2"><span></span>Rapportere</label>
-                            </div>
-                        </fieldset>
-                    </div>
                     <div class=" border"></div>
                     <p class=" numberofcontributions">40 TILSKUDD <span id="sort_tema"></span><span id="sort_type"></span></p>
 
                     <div class=" transportsideknapp clearfix">
                         <a href="tilskudd_et_tilskudd.html"><h2>Etablering av nye dagaktivitetstilbud til hjemmeboende personer med demens</h2></a>
-                        <p>Søknadsfrist: 15.08.2014</p>
+                        <p class="date">Løpende behandling av søkander</p>
+                        <p class="target">Kommuner</p>
                     </div>
                     <div class=" transportsideknapp clearfix">
-                        <a href="#"><h2>Frivillig arbeid</h2></a>
-                        <p>Søknadsfrist: 25.09.2014</p>
+                        <a href="tilskudd_et_tilskudd_type2.html"><h2>Tilskudd - type 2</h2></a>
+                        <p class="date">Søknadsfrist: 25.09.2014</p><p class="target">Stiftelser, organisasjoner</p>
+                    </div>
+                    <div class=" transportsideknapp clearfix">
+                        <a href="tilskudd_et_tilskudd_type3.html"><h2>Tilskudd - type 3</h2></a>
+                        <p class="date">Søknadsfrist: 01.10.2014</p><p class="target">Stiftelser, organisasjoner</p>
+                    </div>
+                    <div class=" transportsideknapp clearfix">
+                        <a href="tilskudd_et_tilskudd_type4.html"><h2>Tilskudd - type 4</h2></a>
+                        <p class="date">Søknadsfrist: 01.11.2014</p><p class="target">Kommuner, Stiftelser, Organisasjoner, Statlige/kommunale/fylkeskommunale bedrifter</p>
                     </div>
                     <div class=" transportsideknapp clearfix">
                         <a href="#"><h2>Menn i helse - nasjonalt prosjekt</h2></a>
-                        <p>Søknadsfrist: 01.10.2014</p>
+                        <p class="date">Rapporteringsfrist: 01.10.2014</p><p class="target">Kommuner</p>
                     </div>
                     <div class=" transportsideknapp clearfix">
                         <a href="#"><h2>Velferdsteknologi i kommunene</h2></a>
-                        <p>Søknadsfrist: 01.11.2014</p>
+                        <p class="date">Rapporteringsfrist: 01.11.2014</p><p class="target">Kommuner</p>
+                    </div>
+                    <div class=" transportsideknapp clearfix">
+                        <a href="#"><h2>Menn i helse - nasjonalt prosjekt</h2></a>
+                        <p class="date">Rapporteringsfrist: 01.10.2014</p><p class="target">Kommuner</p>
+                    </div>
+                    <div class=" transportsideknapp clearfix">
+                        <a href="#"><h2>Velferdsteknologi i kommunene</h2></a>
+                        <p class="date">Rapporteringsfrist: 01.11.2014</p><p class="target">Kommuner</p>
                     </div>
                     <div class="toggleshowmorenews">
                         <div class=" showmorenews">
@@ -383,19 +370,19 @@
                         </div>
                         <div class=" transportsideknapp clearfix visuallyhidden">
                             <a href="tilskudd_et_tilskudd.html"><h2>Etablering av nye dagaktivitetstilbud til hjemmeboende personer med demens</h2></a>
-                            <p>Søknadsfrist: 15.08.2014</p>
+                            <p class="date">Søknadsfrist: 15.08.2014</p><p class="target">Kommuner</p>
                         </div>
                         <div class=" transportsideknapp clearfix visuallyhidden">
                             <a href="#"><h2>Frivillig arbeid</h2></a>
-                            <p>Søknadsfrist: 25.09.2014</p>
+                            <p class="date">Søknadsfrist: 25.09.2014</p><p class="target">Kommuner</p>
                         </div>
                         <div class=" transportsideknapp clearfix visuallyhidden">
                             <a href="#"><h2>Menn i helse - nasjonalt prosjekt</h2></a>
-                            <p>Søknadsfrist: 01.10.2014</p>
+                            <p class="date">Søknadsfrist: 01.10.2014</p><p class="target">Kommuner</p>
                         </div>
                         <div class=" transportsideknapp clearfix visuallyhidden">
                             <a href="#"><h2>Velferdsteknologi i kommunene</h2></a>
-                            <p>Søknadsfrist: 01.11.2014</p>
+                            <p class="date">Søknadsfrist: 01.11.2014</p><p class="target">Kommuner</p>
                         </div>
                     </div>
                     <aside class=" aside bottom">

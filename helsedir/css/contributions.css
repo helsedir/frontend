@@ -22,11 +22,17 @@
 .container .numberofcontributions {
   color: #004e66;
   font-size: 18px;
-  margin-bottom: 30px;
+}
+.container .transportsideknapp .date {
+  margin-right: 20px;
+  display: inline-block;
+}
+.container .transportsideknapp .target {
+  display: inline-block;
 }
 @media only screen and (min-width: 599px) {
   .container .refinesearch {
-    margin-top: 45px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 599px) {

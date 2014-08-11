@@ -57,6 +57,12 @@ body {
   line-height: 30px;
   font-family: 'Calibri';
 }
+.container .ingress a,
+.container-fluid .ingress a {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Calibri';
+}
 .container h2,
 .container-fluid h2 {
   font-size: 34px;
@@ -418,6 +424,39 @@ body {
   background-position-x: 99%;
   background-position-y: 50%;
   cursor: text;
+}
+.container .searchfield,
+.container-fluid .searchfield {
+  margin: 20px 0 0 0;
+  height: 41px;
+  /*max-width: 220px;*/
+  width: 100%;
+  border: 1px inset #004e66;
+  vertical-align: middle;
+  cursor: text;
+  display: inline-block;
+  padding-left: 5px;
+  background: white;
+}
+.container .searchfield input,
+.container-fluid .searchfield input {
+  border: none;
+  padding: 0;
+  width: 94%;
+  vertical-align: sub;
+}
+.container .searchfield button,
+.container-fluid .searchfield button {
+  border: none;
+  background: none;
+  width: 29px;
+  padding: 0;
+  vertical-align: middle;
+}
+.container .searchfield button img,
+.container-fluid .searchfield button img {
+  width: 25px;
+  vertical-align: middle;
 }
 .container .search_withbutton .search,
 .container-fluid .search_withbutton .search {
@@ -829,6 +868,7 @@ body {
 .container .module.module_related,
 .container-fluid .module.module_related {
   border-left: 2px solid #a1bf37;
+  margin-top: 50px;
 }
 .container .module.module_related .bulletlist,
 .container-fluid .module.module_related .bulletlist {
@@ -841,6 +881,10 @@ body {
 .container .module.module_related .illustration,
 .container-fluid .module.module_related .illustration {
   display: blockmo;
+}
+.container .module.module_related .internal-link.arrow_right,
+.container-fluid .module.module_related .internal-link.arrow_right {
+  margin-top: 0;
 }
 .container .module.module_publication,
 .container-fluid .module.module_publication {
@@ -1122,6 +1166,10 @@ body {
   margin-left: 30px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
+}
+.container .module.module_message.date_small .expired,
+.container-fluid .module.module_message.date_small .expired {
+  color: #bababa;
 }
 .container .module.module_message.date_small_closed,
 .container-fluid .module.module_message.date_small_closed {
@@ -1961,6 +2009,12 @@ body {
   .container .border {
     display: none;
   }
+  .container .searchfield {
+    width: 100%;
+  }
+  .container .searchfield input {
+    width: 91%;
+  }
 }
 @media only screen and (min-width: 900px) {
   .container .statistics_compare button {
@@ -2205,6 +2259,12 @@ body {
   .container .module.module_message.date_small .keyfigures {
     display: inline-block;
     margin-left: 0;
+  }
+  .container .searchfield {
+    width: 100%;
+  }
+  .container .searchfield input {
+    width: 84%;
   }
 }
 @media braille {

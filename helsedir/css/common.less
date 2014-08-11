@@ -60,6 +60,12 @@ body {
         font-size: 25px;
         line-height: 30px;
         font-family: @fontCalibri;
+
+        a {
+            font-size: 25px;
+            line-height: 30px;
+            font-family: @fontCalibri;
+        }
     }
 
     h2 {
@@ -110,11 +116,11 @@ body {
                 padding-bottom: 15px;
             }
 
-                li:before {
-                    content: "•";
-                    color: @colorDarkBlue;
-                    margin-right: 20px;
-                }
+            li:before {
+                content: "•";
+                color: @colorDarkBlue;
+                margin-right: 20px;
+            }
         }
     }
 
@@ -128,17 +134,17 @@ body {
             color: @colorMediumBlue;
         }
 
-            &:focus, &:visited:focus {
-                h2, h4, p {
-                    background: @colorDarkBlue;
-                    color: white !important;
-                    outline: 0;
-                }
-
+        &:focus, &:visited:focus {
+            h2, h4, p {
                 background: @colorDarkBlue;
                 color: white !important;
                 outline: 0;
             }
+
+            background: @colorDarkBlue;
+            color: white !important;
+            outline: 0;
+        }
     }
 
     .breadcrumbs {
@@ -152,18 +158,18 @@ body {
             padding-right: 0.3rem;
         }
 
-            li:after {
-                font-family: "FontAwesome";
-                content: '\f104';
-                color: @colorDarkBlue;
-                font-size: 25px;
-                margin: 0 5px 0 5px;
-                vertical-align: middle;
-            }
+        li:after {
+            font-family: "FontAwesome";
+            content: '\f104';
+            color: @colorDarkBlue;
+            font-size: 25px;
+            margin: 0 5px 0 5px;
+            vertical-align: middle;
+        }
 
-            li:last-child:after {
-                content: '';
-            }
+        li:last-child:after {
+            content: '';
+        }
 
         a {
             text-decoration: underline;
@@ -172,9 +178,9 @@ body {
             line-height: 22px;
         }
 
-            a:visited {
-                color: @colorDarkBlue;
-            }
+        a:visited {
+            color: @colorDarkBlue;
+        }
     }
 
     .accordion {
@@ -414,6 +420,39 @@ body {
         cursor: text;
     }
 
+    .searchfield {
+        margin: 20px 0 0 0;
+        height: 41px;
+        /*max-width: 220px;*/
+        width: 100%;
+        border: 1px inset @colorDarkBlue;
+        vertical-align: middle;
+        cursor: text;
+        display: inline-block;
+        padding-left: 5px;
+        background: white;
+
+        input {
+            border: none;
+            padding: 0;
+            width: 94%;
+            vertical-align: sub;
+        }
+
+        button {
+            border: none;
+            background: none;
+            width: 29px;
+            padding: 0;
+            vertical-align: middle;
+
+            img {
+                width: 25px;
+                vertical-align: middle;
+            }
+        }
+    }
+
     .search_withbutton {
         .search {
             display: inline;
@@ -448,15 +487,15 @@ body {
         margin: 40px 0;
     }
 
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     figure {
         .metatext {
@@ -523,14 +562,14 @@ body {
             margin-bottom: 5px;
         }
 
-            li a.external-link {
-                margin: 0;
-            }
+        li a.external-link {
+            margin: 0;
+        }
 
-            li a.internal-link.arrow_right, li a.external-link {
-                text-decoration: none;
-                margin: 5px 0;
-            }
+        li a.internal-link.arrow_right, li a.external-link {
+            text-decoration: none;
+            margin: 5px 0;
+        }
     }
 
     .bulletlist {
@@ -678,15 +717,15 @@ body {
             }
         }
 
-            &.arrow_right:after {
-                padding-left: 10px;
-                content: "\f105";
-                font-family: "FontAwesome";
-                font-size: inherit;
-                text-decoration: none;
-                position: absolute;
-                padding-top: 2px;
-            }
+        &.arrow_right:after {
+            padding-left: 10px;
+            content: "\f105";
+            font-family: "FontAwesome";
+            font-size: inherit;
+            text-decoration: none;
+            position: absolute;
+            padding-top: 2px;
+        }
 
         &.inline, &.inline:visited {
             border-bottom: 1px solid #bababa;
@@ -781,6 +820,7 @@ body {
 
         &.module_related {
             border-left: 2px solid @colorGreen;
+            margin-top: 50px;
 
             .bulletlist {
                 margin-top: 10px;
@@ -792,6 +832,10 @@ body {
 
             .illustration {
                 display: blockmo;
+            }
+
+            .internal-link.arrow_right {
+                margin-top: 0;
             }
         }
 
@@ -1062,6 +1106,10 @@ body {
                     margin-left: 30px;
                     font-size: 24px;
                     font-family: @fontSohoRegular;
+                }
+
+                .expired {
+                    color: @colorMediumGray;
                 }
             }
 
@@ -1452,35 +1500,35 @@ body {
         }
     }
 
-        input[type="radio"] + label span {
-            display: inline-block;
-            width: 19px;
-            height: 19px;
-            margin: -5px 10px 0 0;
-            vertical-align: middle;
-            background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
-            cursor: pointer;
-            -moz-background-size: 19px;
-            -o-background-size: 19px;
-            -webkit-background-size: 19px;
-            background-size: 19px;
+    input[type="radio"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -5px 10px 0 0;
+        vertical-align: middle;
+        background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+        cursor: pointer;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
+        background-size: 19px;
 
-            &:hover {
-                background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
-                -moz-background-size: 19px;
-                -o-background-size: 19px;
-                -webkit-background-size: 19px;
-                background-size: 19px;
-            }
-        }
-
-        input[type="radio"]:checked + label span {
-            background: url(../img/navigasjon/radioknapp_valgt.svg)top no-repeat;
+        &:hover {
+            background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
             -moz-background-size: 19px;
             -o-background-size: 19px;
             -webkit-background-size: 19px;
             background-size: 19px;
         }
+    }
+
+    input[type="radio"]:checked + label span {
+        background: url(../img/navigasjon/radioknapp_valgt.svg)top no-repeat;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
+        background-size: 19px;
+    }
 
     input[type="checkbox"] {
         float: left;
@@ -1489,35 +1537,35 @@ body {
         height: 0;
     }
 
-        input[type="checkbox"] + label span {
-            display: inline-block;
-            width: 19px;
-            height: 19px;
-            margin: -5px 10px 0 0;
-            vertical-align: middle;
-            background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
-            cursor: pointer;
-            -moz-background-size: 19px;
-            -o-background-size: 19px;
-            -webkit-background-size: 19px;
-            background-size: 19px;
+    input[type="checkbox"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -5px 10px 0 0;
+        vertical-align: middle;
+        background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
+        cursor: pointer;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
+        background-size: 19px;
 
-            &:hover {
-                background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
-                -moz-background-size: 19px;
-                -o-background-size: 19px;
-                -webkit-background-size: 19px;
-                background-size: 19px;
-            }
-        }
-
-        input[type="checkbox"]:checked + label span {
-            background: url(../img/navigasjon/checkbox_valgt.svg)top no-repeat;
+        &:hover {
+            background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
             -moz-background-size: 19px;
             -o-background-size: 19px;
             -webkit-background-size: 19px;
             background-size: 19px;
         }
+    }
+
+    input[type="checkbox"]:checked + label span {
+        background: url(../img/navigasjon/checkbox_valgt.svg)top no-repeat;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
+        background-size: 19px;
+    }
 
     fieldset {
         border: none !important;
@@ -1881,6 +1929,14 @@ body {
         .border {
             display: none;
         }
+
+        .searchfield {
+            width: 100%;
+
+            input {
+                width: 91%;
+            }
+        }
     }
 }
 
@@ -2094,9 +2150,9 @@ body {
                     color: #333;
                 }
 
-                    tbody th:first-child:before {
-                        content: '';
-                    }
+                tbody th:first-child:before {
+                    content: '';
+                }
             }
         }
 
@@ -2146,16 +2202,16 @@ body {
                 }
             }
 
-                th[data-title]:before, td[data-title]:before {
-                    content: attr(data-title);
-                }
+            th[data-title]:before, td[data-title]:before {
+                content: attr(data-title);
+            }
 
-                tbody th:first-child {
-                    background: #d1d0cf;
-                    font-weight: bold;
-                    padding: 5px 0 5px 15px;
-                    text-align: left;
-                }
+            tbody th:first-child {
+                background: #d1d0cf;
+                font-weight: bold;
+                padding: 5px 0 5px 15px;
+                text-align: left;
+            }
 
             caption {
                 position: absolute !important;
@@ -2195,6 +2251,14 @@ body {
         .module.module_message.date_small .keyfigures {
             display: inline-block;
             margin-left: 0;
+        }
+
+        .searchfield {
+            width: 100%;
+
+            input {
+                width: 84%;
+            }
         }
     }
 }
