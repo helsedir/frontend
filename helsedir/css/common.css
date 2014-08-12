@@ -821,6 +821,32 @@ body {
 .container-fluid .module.maincolumn {
   margin-top: 30px;
 }
+.container .module a,
+.container-fluid .module a {
+  border-bottom: none;
+}
+.container .module a h5,
+.container-fluid .module a h5 {
+  margin: 15px 0 5px 0;
+  padding-bottom: 4px;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: none;
+  color: #0093a7;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Soho Gothic W01 Regular";
+}
+.container .module a h5:after,
+.container-fluid .module a h5:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  text-decoration: none;
+  position: absolute;
+  padding-top: 2px;
+}
 .container .module .module_description,
 .container-fluid .module .module_description {
   font-family: 'Calibri';
