@@ -141,19 +141,12 @@
   display: inline;
 }
 .container.frontpage .internal-link.arrow_right {
-  margin: 15px 0 4px 0;
   padding: 0;
 }
 .container.frontpage .internal-link.arrow_right:hover {
   margin-bottom: 0;
 }
 .container.frontpage .internal-link.arrow_right:after {
-  padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
-  font-size: inherit;
-  text-decoration: none;
-  position: absolute;
   padding-top: 3px;
 }
 .container.frontpage .internal-link.inline,
@@ -211,7 +204,6 @@
 }
 .container.frontpage .conferenceitem a {
   font-size: 26px;
-  padding-left: 0;
 }
 .container.frontpage .conferenceitem .conference_date {
   font-size: 36px;

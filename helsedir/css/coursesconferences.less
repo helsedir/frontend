@@ -93,7 +93,7 @@
             font-weight: bold;
             display: block;
 
-            .date, .year, .time {
+            .date, .year {
                 font-size: 20px;
                 font-family: @fontCalibri;
                 line-height: 27px;
@@ -118,10 +118,13 @@
                 color: @colorMediumBlue;
                 font-size: 36px;
                 font-family: @fontSohoLight;
-                margin: 0 0 20px 0;
+                margin: 0 0 17px 0;
             }
 
             .information_text {
+            }
+
+            .time {
             }
         }
 
@@ -131,8 +134,9 @@
 
         img {
             width: 170px;
-            vertical-align: middle;
-            margin-left: 105px;
+            float: right;
+            margin-top: 20px;
+            margin-right: 17px;
         }
     }
 
@@ -209,19 +213,19 @@
             }
         }
 
-            .conference_transport a span.date_number,
-            .conference_transport a span.date_monthyear {
-                font-size: 18px;
-                margin-bottom: 0;
-            }
+        .conference_transport a span.date_number,
+        .conference_transport a span.date_monthyear {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
 
-            .conference_transport a div.information {
-                width: 100%;
-            }
+        .conference_transport a div.information {
+            width: 100%;
+        }
 
-            .conference_transport a h2.internal-link.arrow_right {
-                margin-bottom: 10px;
-            }
+        .conference_transport a h2.internal-link.arrow_right {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -242,8 +246,8 @@
             }
         }
 
-            .conference_transport a div.date {
-                min-width: 150px;
-            }
+        .conference_transport a div.date {
+            min-width: 150px;
+        }
     }
 }

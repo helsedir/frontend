@@ -1501,6 +1501,10 @@ body {
 .container-fluid.crisis .calltoaction:hover:before {
   color: white;
 }
+.container.crisis .calltoaction a,
+.container-fluid.crisis .calltoaction a {
+  color: white;
+}
 .container.crisis .border_crisis,
 .container-fluid.crisis .border_crisis {
   border-bottom: 5px solid #222;

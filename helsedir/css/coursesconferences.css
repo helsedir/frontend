@@ -61,8 +61,7 @@
   display: block;
 }
 .container .conference .details .date,
-.container .conference .details .year,
-.container .conference .details .time {
+.container .conference .details .year {
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 27px;
@@ -84,15 +83,16 @@
   color: #0093a7;
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
-  margin: 0 0 20px 0;
+  margin: 0 0 17px 0;
 }
 .container .conference button {
   margin-left: 15px;
 }
 .container .conference img {
   width: 170px;
-  vertical-align: middle;
-  margin-left: 105px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 17px;
 }
 .container .refinesearch {
   margin-top: 20px;
