@@ -222,6 +222,19 @@
   color: #004e66;
   text-decoration: none;
 }
+#header .masterheader .shoppingcart_form,
+#footer .masterheader .shoppingcart_form {
+  float: left;
+}
+#header .masterheader .shoppingcart_form .shoppingcartbutton,
+#footer .masterheader .shoppingcart_form .shoppingcartbutton {
+  background: url('../img/ikon_handlevogn.svg') no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 25px;
+  display: none;
+}
 #header .masterheader,
 #footer .masterheader,
 #header footer,
@@ -579,6 +592,7 @@
   color: #004e66;
   display: inline-block;
   width: 100%;
+  border-bottom: none;
 }
 .container-fluid.toppmeny .tab-content li:hover {
   background: #d1d0c4;

@@ -655,13 +655,14 @@ body {
 
         &.secondary {
             border: 2px solid @colorMediumBlue;
-            background: white url('../img/ikon_pilmothoyre.png') no-repeat;
+            background: @colorMediumBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
-            color: @colorDarkBlue;
+            color: white;
 
             &:hover, &:focus {
-                background: @colorMediumBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+                background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+                border: 2px solid #01737c;
                 background-position: 20px 50%;
                 background-size: 10px;
                 color: white;

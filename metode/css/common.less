@@ -47,7 +47,6 @@ h1 {
     margin: 50px 0 0 0;
     color: #838078;
     padding: 0 0 4px 0;
-    border-top: 1px solid #aeaba8;
     border-bottom: 1px solid #aeaba8;
 }
 
@@ -141,11 +140,11 @@ ul {
             padding-bottom: 15px;
         }
 
-            li:before {
-                content: "•";
-                color: @colorDarkBlue;
-                margin-right: 20px;
-            }
+        li:before {
+            content: "•";
+            color: @colorDarkBlue;
+            margin-right: 20px;
+        }
     }
 }
 
@@ -158,17 +157,17 @@ a {
         color: #222;
     }
 
-        &:focus, &:visited:focus {
-            h2, h4, p {
-                background: @colorDarkBlue;
-                color: white !important;
-                outline: 0;
-            }
-
+    &:focus, &:visited:focus {
+        h2, h4, p {
             background: @colorDarkBlue;
             color: white !important;
             outline: 0;
         }
+
+        background: @colorDarkBlue;
+        color: white !important;
+        outline: 0;
+    }
 
     &:hover {
         text-decoration: underline;
@@ -194,18 +193,18 @@ a {
         padding-right: 0.3rem;
     }
 
-        li:after {
-            font-family: "FontAwesome";
-            content: '\f104';
-            color: @colorMediumBlue;
-            font-size: 25px;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
-        }
+    li:after {
+        font-family: "FontAwesome";
+        content: '\f104';
+        color: @colorMediumBlue;
+        font-size: 25px;
+        margin: 0 5px 0 5px;
+        vertical-align: middle;
+    }
 
-        li:last-child:after {
-            content: '';
-        }
+    li:last-child:after {
+        content: '';
+    }
 
     a {
         text-decoration: underline;
@@ -215,9 +214,9 @@ a {
         color: @colorMediumBlue;
     }
 
-        a:visited {
-            color: @colorMediumBlue;
-        }
+    a:visited {
+        color: @colorMediumBlue;
+    }
 }
 
 .has-hidden-content {
@@ -451,15 +450,15 @@ video {
     margin: 40px 0;
 }
 
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 figure {
     .metatext {
@@ -525,14 +524,14 @@ figure {
         margin-bottom: 5px;
     }
 
-        li a.external-link {
-            margin: 0;
-        }
+    li a.external-link {
+        margin: 0;
+    }
 
-        li a.internal-link.arrow_right, li a.external-link {
-            text-decoration: none;
-            margin: 5px 0;
-        }
+    li a.internal-link.arrow_right, li a.external-link {
+        text-decoration: none;
+        margin: 5px 0;
+    }
 }
 
 .bulletlist {
@@ -913,9 +912,9 @@ p.keyfigures, h4.keyfigures {
             }
         }
 
-            .e-mail:hover, .rss:hover {
-                background-color: #d1d0cf;
-            }
+        .e-mail:hover, .rss:hover {
+            background-color: #d1d0cf;
+        }
     }
 
     &.module_message {
@@ -1742,9 +1741,9 @@ fieldset {
                 color: #333;
             }
 
-                tbody th:first-child:before {
-                    content: '';
-                }
+            tbody th:first-child:before {
+                content: '';
+            }
         }
     }
 
@@ -1794,16 +1793,16 @@ fieldset {
             }
         }
 
-            th[data-title]:before, td[data-title]:before {
-                content: attr(data-title);
-            }
+        th[data-title]:before, td[data-title]:before {
+            content: attr(data-title);
+        }
 
-            tbody th:first-child {
-                background: #d1d0cf;
-                font-weight: bold;
-                padding: 5px 0 5px 15px;
-                text-align: left;
-            }
+        tbody th:first-child {
+            background: #d1d0cf;
+            font-weight: bold;
+            padding: 5px 0 5px 15px;
+            text-align: left;
+        }
 
         caption {
             position: absolute !important;

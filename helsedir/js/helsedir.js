@@ -104,4 +104,8 @@
     $('.showmorenews').on('click', function () {
         $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
     });
+
+    $('.order').on('click', function () {
+        $('.shoppingcartbutton').toggle(800);
+    });
 });
