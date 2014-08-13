@@ -136,12 +136,14 @@
         background: url(../img/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
         background-position: 100% 72%;
         background-size: 28px;
+        margin-top: 21px;
     }
 
     .navigate_back {
-        background: url(../img/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
-        background-position: 0 72%;
-        background-size: 28px;
+        background: url(../img/pil_forrigeside_morkeblaa.svg) no-repeat;
+        background-position: 0% 90%;
+        background-size: 24px;
+        padding-left: 33px;
     }
 
     .cancel, .continue {
@@ -177,10 +179,10 @@
     }
 
     input[type=text]:focus, textarea:focus, input[type=tel]:focus, input[type=email]:focus {
-        box-shadow: 0 0 5px magenta;
+        box-shadow: 0 0 5px @colorMediumBlue;
         padding: 8px 10px;
         margin: 5px 1px 3px 0px;
-        border: 1px solid magenta;
+        border: 1px solid @colorMediumBlue;
     }
 
     input[type=text], textarea, input[type=radio], input[type=checkbox] {
@@ -191,8 +193,8 @@
     }
 
     input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=checkbox]:focus {
-        box-shadow: 0 0 5px magenta;
-        border: 1px solid magenta;
+        box-shadow: 0 0 5px @colorMediumBlue;
+        border: 1px solid @colorMediumBlue;
     }
 
     .formbuttons {
@@ -279,16 +281,31 @@
 
                 th, td {
                     text-align: left;
+                    padding-left: 10px;
+                }
+
+                tr td:first-child, tr th:first-child {
+                    padding-left: 20px;
                 }
 
                 td {
-                    padding-left: 5px;
+                    &.inputfield {
+                        padding-bottom: 0;
+                        width: 11%;
+
+                        input {
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
                 }
 
                 button {
                     border: none;
                     border-bottom: 1px solid #838078;
                     background: none;
+                    height: 29px;
                 }
             }
         }
@@ -304,7 +321,16 @@
         label {
             margin-bottom: 0;
         }
+
+        .calltoaction {
+            margin-top: 0;
+            margin-right: 0;
+        }
     }
+}
+
+#header .masterheader .shoppingcart_form .shoppingcartbutton {
+    display: block;
 }
 
 @media only screen and(max-width: 599px) {

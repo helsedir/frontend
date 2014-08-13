@@ -78,6 +78,9 @@
                     </form>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                    <form action="handlekurv.html" class="shoppingcart_form">
+                        <button class="shoppingcartbutton"></button>
+                    </form>
                     <div class="pull-right">
                         <a class=" links hidden-sm hidden-xs" href="transportside_omoss.html">OM OSS</a>
                         <a class=" links hidden-sm hidden-xs" href="#">ENGLISH</a>
@@ -300,6 +303,7 @@
                                     <li><a href="#" class="gotostep3">3. Kvittering</a></li>
                                 </ul>
                                 <div class="shoppingcart_table">
+                                    <h2>Du har lagt følgende publikasjoner i handlekurven:</h2>
                                     <table class=" table_general">
                                         <caption class=" visuallyhidden">Innhold i din handlekurv</caption>
                                         <thead>
@@ -313,30 +317,30 @@
                                         </thead>
                                         <tbody>
                                             <tr class="odd">
-                                                <td data-title="Tittel">Spennende rapport</td>
-                                                <td data-title="IS-nummer">815 493 00</td>
+                                                <td data-title="Tittel">Medisinsk kull - Forebygging av forgiftninger</td>
+                                                <td data-title="IS-nummer">IS-1634</td>
                                                 <td data-title="Språk">Norsk</td>
-                                                <td data-title="Antall">1</td>
+                                                <td data-title="Antall" class="inputfield"><input /></td>
                                                 <td data-title="Fjern"><button>Fjern</button></td>
                                             </tr>
                                             <tr>
-                                                <td data-title="Tittel">Spennende rapport</td>
-                                                <td data-title="IS-nummer">815 493 00</td>
+                                                <td data-title="Tittel">Forgiftninger kan unngås</td>
+                                                <td data-title="IS-nummer">IS-1205</td>
                                                 <td data-title="Språk">Norsk</td>
-                                                <td data-title="Antall">2</td>
+                                                <td data-title="Antall" class="inputfield"><input /></td>
                                                 <td data-title="Fjern"><button>Fjern</button></td>
                                             </tr>
                                             <tr class="odd">
-                                                <td data-title="Tittel">Spennende rapport</td>
-                                                <td data-title="IS-nummer">815 493 00</td>
+                                                <td data-title="Tittel">Giftige sopper</td>
+                                                <td data-title="IS-nummer">IS-1206 </td>
                                                 <td data-title="Språk">Norsk</td>
-                                                <td data-title="Antall">1</td>
+                                                <td data-title="Antall" class="inputfield"><input /></td>
                                                 <td data-title="Fjern"><button>Fjern</button></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="continue pull-left">
+                                <div class="navigate_back continue pull-left">
                                     <a href="publikasjoner_artikkel_fysiskaktivitetsnivaa.html" class="">
                                         <span>Fortsett å handle</span>
                                     </a>
@@ -347,9 +351,9 @@
                                     </a>
                                 </div>
                                 <div class="navigate_forward pull-right">
-                                    <a href="#" class="gotostep2">
-                                        <span>Neste trinn: Kontaktinfo</span>
-                                    </a>
+                                    <button class="calltoaction gotostep2" onclick="return false;">
+                                        Neste trinn: Kontaktinfo
+                                    </button>
                                 </div>
                             </div>
                             <div id="step2">
@@ -402,16 +406,16 @@
                                     </div>
                                 </div>
 
-                                <div class="navigate_forward pull-left">
+                                <div class="navigate_back pull-left">
                                     <a href="#" class="gotostep1">
                                         <span>Tilbake til handlekurven</span>
                                     </a>
                                 </div>
 
                                 <div class="navigate_forward pull-right">
-                                    <a href="#" class="gotostep3">
+                                    <button class="calltoaction gotostep3" onclick="return false;">
                                         <span>Bestill</span>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div class="cancel pull-right">
                                     <a href="publikasjoner_artikkel_fysiskaktivitetsnivaa.html" class="">
@@ -427,7 +431,7 @@
                                 </ul>
                                 <h2>Kvittering</h2>
                                 <p>Takk for din bestilling. Du får publikasjonene til den oppgitte adressen i løpet av 1 uke.</p>
-                                <div class="navigate_forward pull-left">
+                                <div class="navigate_back pull-left">
                                     <a href="#" class="gotostep2">
                                         <span>Forrige trinn: Kontaktinfo</span>
                                     </a>
