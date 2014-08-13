@@ -189,7 +189,8 @@
 .container .breadcrumbs_schema li:first-child:before {
   border-color: transparent;
 }
-.container .breadcrumbs_schema li a:after {
+.container .breadcrumbs_schema li a:after,
+.container .breadcrumbs_schema li span:after {
   content: " ";
   height: 0;
   width: 0;
@@ -209,12 +210,14 @@
 .container .breadcrumbs_schema li.active a:after {
   border-left-color: #df9922;
 }
-.container .breadcrumbs_schema li a {
+.container .breadcrumbs_schema li a,
+.container .breadcrumbs_schema li span {
   display: block;
   background: #ccc;
   line-height: 30px;
   color: #222;
   border-bottom: none;
+  height: 30px;
 }
 .container .breadcrumbs_schema li a:hover {
   background: #0093a7;
