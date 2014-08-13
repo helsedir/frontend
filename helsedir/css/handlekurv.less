@@ -186,6 +186,10 @@
         border: 1px solid @colorMediumBlue;
     }
 
+    input[maxlength="4"] {
+        width: 63px;
+    }
+
     .formbuttons {
         margin-top: -10px;
     }
@@ -412,7 +416,7 @@
             .shoppingcart_table {
                 .table_general {
                     th, td {
-                        text-align: center;
+                        padding-left: 130px;
                     }
 
                     td.inputfield {
@@ -421,6 +425,10 @@
                         input {
                             width: 10%;
                         }
+                    }
+
+                    tr td:first-child, tr th:first-child {
+                        padding-left: 130px;
                     }
                 }
             }
@@ -440,6 +448,11 @@
             button {
                 margin-left: 20px;
             }
+        }
+
+        .breadcrumbs_schema li, .breadcrumbs_schema.receipt li {
+            display: block;
+            width: 95%;
         }
     }
 }

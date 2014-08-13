@@ -147,6 +147,9 @@
   box-shadow: 0 0 5px #0093a7;
   border: 1px solid #0093a7;
 }
+.container input[maxlength="4"] {
+  width: 63px;
+}
 .container .formbuttons {
   margin-top: -10px;
 }
@@ -333,13 +336,17 @@
   }
   .container .shoppingcart .shoppingcart_table .table_general th,
   .container .shoppingcart .shoppingcart_table .table_general td {
-    text-align: center;
+    padding-left: 130px;
   }
   .container .shoppingcart .shoppingcart_table .table_general td.inputfield {
     width: 100%;
   }
   .container .shoppingcart .shoppingcart_table .table_general td.inputfield input {
     width: 10%;
+  }
+  .container .shoppingcart .shoppingcart_table .table_general tr td:first-child,
+  .container .shoppingcart .shoppingcart_table .table_general tr th:first-child {
+    padding-left: 130px;
   }
   .container .navigate_back {
     float: right;
@@ -353,6 +360,11 @@
   }
   .container .navigate_forward button {
     margin-left: 20px;
+  }
+  .container .breadcrumbs_schema li,
+  .container .breadcrumbs_schema.receipt li {
+    display: block;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=handlekurv.css.map */
