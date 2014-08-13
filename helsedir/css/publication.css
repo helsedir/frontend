@@ -1,4 +1,7 @@
-﻿.container .publication_information {
+﻿.container form {
+  display: initial;
+}
+.container .publication_information {
   margin: 50px 10px 0 0;
 }
 .container .publication_information dt {
