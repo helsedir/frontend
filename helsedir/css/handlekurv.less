@@ -243,13 +243,14 @@
             }
 
             &.active a {
-                background: @colorDarkBlue;
+                background: @colorOrange;
                 z-index: 100;
-                color: white;
+                color: #222;
+                border-right: none;
             }
 
             &.active a:after {
-                border-left-color: @colorDarkBlue;
+                border-left-color: @colorOrange;
             }
 
             a {
@@ -267,6 +268,83 @@
 
             a:hover:after {
                 border-color: transparent transparent transparent @colorMediumBlue;
+            }
+        }
+
+        &.receipt {
+            li {
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                width: 32%;
+                margin: 5px 1px 0 0;
+                text-indent: 35px;
+                position: relative;
+
+                &:before {
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    left: -2px;
+                    border-style: solid;
+                    border-width: 15px 0 15px 15px;
+                    border-color: transparent transparent transparent #f7f6f6;
+                    z-index: 0;
+                }
+
+                &:first-child:before {
+                    border-color: transparent;
+                }
+
+                span:after {
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    right: -15px;
+                    border-style: solid;
+                    border-width: 15px 0 15px 15px;
+                    border-color: transparent transparent transparent #ccc;
+                    z-index: 10;
+                }
+
+                &.active span {
+                    background: @colorOrange;
+                    z-index: 100;
+                    color: #222;
+                    border-right: none;
+
+                    &:hover {
+                        background: @colorOrange;
+                        color: #222;
+
+                        &:after {
+                            border-color: transparent transparent transparent @colorOrange;
+                        }
+                    }
+                }
+
+                &.active span:after {
+                    border-left-color: @colorOrange;
+                }
+
+                span {
+                    display: block;
+                    background: #ccc;
+                    line-height: 30px;
+                    color: #222;
+                    border-bottom: none;
+                }
+
+                span:hover {
+                    background: #ccc;
+                    color: #222;
+                }
+
+                span:hover:after {
+                    border-color: transparent transparent transparent #ccc;
+                }
             }
         }
     }
@@ -297,6 +375,7 @@
                             width: 100%;
                             margin: 0;
                             padding: 0;
+                            text-align: center;
                         }
                     }
                 }

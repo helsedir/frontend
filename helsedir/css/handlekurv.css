@@ -201,12 +201,13 @@
   z-index: 10;
 }
 .container .breadcrumbs_schema li.active a {
-  background: #004e66;
+  background: #df9922;
   z-index: 100;
-  color: white;
+  color: #222;
+  border-right: none;
 }
 .container .breadcrumbs_schema li.active a:after {
-  border-left-color: #004e66;
+  border-left-color: #df9922;
 }
 .container .breadcrumbs_schema li a {
   display: block;
@@ -221,6 +222,70 @@
 }
 .container .breadcrumbs_schema li a:hover:after {
   border-color: transparent transparent transparent #0093a7;
+}
+.container .breadcrumbs_schema.receipt li {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 32%;
+  margin: 5px 1px 0 0;
+  text-indent: 35px;
+  position: relative;
+}
+.container .breadcrumbs_schema.receipt li:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -2px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #f7f6f6;
+  z-index: 0;
+}
+.container .breadcrumbs_schema.receipt li:first-child:before {
+  border-color: transparent;
+}
+.container .breadcrumbs_schema.receipt li span:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -15px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #ccc;
+  z-index: 10;
+}
+.container .breadcrumbs_schema.receipt li.active span {
+  background: #df9922;
+  z-index: 100;
+  color: #222;
+  border-right: none;
+}
+.container .breadcrumbs_schema.receipt li.active span:hover {
+  background: #df9922;
+  color: #222;
+}
+.container .breadcrumbs_schema.receipt li.active span:hover:after {
+  border-color: transparent transparent transparent #df9922;
+}
+.container .breadcrumbs_schema.receipt li.active span:after {
+  border-left-color: #df9922;
+}
+.container .breadcrumbs_schema.receipt li span {
+  display: block;
+  background: #ccc;
+  line-height: 30px;
+  color: #222;
+  border-bottom: none;
+}
+.container .breadcrumbs_schema.receipt li span:hover {
+  background: #ccc;
+  color: #222;
+}
+.container .breadcrumbs_schema.receipt li span:hover:after {
+  border-color: transparent transparent transparent #ccc;
 }
 .container .shoppingcart .shoppingcart_table {
   display: inline-block;
@@ -246,6 +311,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .container .shoppingcart .shoppingcart_table .table_general button {
   border: none;

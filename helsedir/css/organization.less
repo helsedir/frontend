@@ -437,7 +437,7 @@
                         &:before {
                             content: "\f106";
                             font-family: "FontAwesome";
-                            color: white;
+                            color: #004e66;
                         }
                     }
                 }
@@ -467,7 +467,7 @@
                         content: "";
                         position: absolute;
                         left: -3px;
-                        height: 27px;
+                        height: 45px;
                         width: 3px;
                         border-left: 3px solid #f7f6f6;
                         bottom: 0;
@@ -475,7 +475,7 @@
 
                     .subsub-division {
                         position: relative;
-                        margin-top: 20px;
+                        margin-top: 10px;
                         margin-bottom: 10px;
 
                         .circle {
@@ -498,11 +498,15 @@
                             margin-left: 5px;
                         }
                     }
+
+                    .subsub-division:last-child {
+                        margin-bottom: 40px;
+                    }
                 }
 
                 .decorativeborder {
                     width: 85px;
-                    height: 35px;
+                    height: 20px;
                 }
             }
 
@@ -760,8 +764,9 @@
 
                             &:before {
                                 background: none !important;
+                                top: 22px;
                                 left: 95%;
-                                top: 60px;
+                                padding: 0;
                                 content: "\f106";
                             }
                         }
@@ -774,12 +779,14 @@
                     }
 
                     .decorativeborder {
-                        width: 50%;
+                        width: 40%;
+                        margin-left: 75px;
                     }
 
                     .subsub-divisions {
                         display: inline-block !important;
-                        width: 100%;
+                        width: 90%;
+                        float: right;
 
                         .subsub-division {
                             margin: 10px 0 0 0;
@@ -833,7 +840,7 @@
                             }
 
                             .circle {
-                                left: -2%;
+                                left: -3%;
                                 top: 25px;
                             }
                         }

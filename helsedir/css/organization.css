@@ -338,7 +338,7 @@
 .container .division .department .sub-division .box.selected:before {
   content: "\f106";
   font-family: "FontAwesome";
-  color: white;
+  color: #004e66;
 }
 .container .division .department .sub-division#utviklingsdirektoer .box {
   background: #76428d;
@@ -362,14 +362,14 @@
   content: "";
   position: absolute;
   left: -3px;
-  height: 27px;
+  height: 45px;
   width: 3px;
   border-left: 3px solid #f7f6f6;
   bottom: 0;
 }
 .container .division .department .sub-division .subsub-divisions .subsub-division {
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .container .division .department .sub-division .subsub-divisions .subsub-division .circle {
@@ -390,9 +390,12 @@
   width: 163px;
   margin-left: 5px;
 }
+.container .division .department .sub-division .subsub-divisions .subsub-division:last-child {
+  margin-bottom: 40px;
+}
 .container .division .department .sub-division .decorativeborder {
   width: 85px;
-  height: 35px;
+  height: 20px;
 }
 .container .division .department.administrasjon .sub-division {
   margin: 10px 0 0 0;
@@ -597,8 +600,9 @@
   }
   .container .division .department .sub-division .box.selected:before {
     background: none !important;
+    top: 22px;
     left: 95%;
-    top: 60px;
+    padding: 0;
     content: "\f106";
   }
   .container .division .department .sub-division .person_sub {
@@ -607,11 +611,13 @@
     padding-bottom: 10px;
   }
   .container .division .department .sub-division .decorativeborder {
-    width: 50%;
+    width: 40%;
+    margin-left: 75px;
   }
   .container .division .department .sub-division .subsub-divisions {
     display: inline-block !important;
-    width: 100%;
+    width: 90%;
+    float: right;
   }
   .container .division .department .sub-division .subsub-divisions .subsub-division {
     margin: 10px 0 0 0;
@@ -658,7 +664,7 @@
     padding-bottom: 10px;
   }
   .container .division .department .sub-division .subsub-divisions .subsub-division .circle {
-    left: -2%;
+    left: -3%;
     top: 25px;
   }
   .container .division .department.administrasjon .sub-division {
