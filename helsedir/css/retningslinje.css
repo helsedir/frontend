@@ -84,6 +84,7 @@
 	font-family: "Soho Gothic W01 Light";
 	margin: 35px 0 10px 0;
 	color: #004e66;
+	padding-left: 33px;
 }
 
 /* Similar to H3 */
@@ -109,7 +110,7 @@
 	font-size: 20px;
 	line-height: 28px;
 	font-family: "Soho Gothic W01 Regular";
-	margin: 35px 0 0 0;
+	margin: 0 0 0 0;
 	color: #222;
 }
 
@@ -118,7 +119,7 @@
 	font-size: 20px;
 	line-height: 28px;
 	font-family: "Soho Gothic W01 Light";
-	margin: 35px 0 0 0;
+	margin: 15px 0 0 0;
 	color: #222;
 }
 
@@ -134,10 +135,10 @@
 /* Header context */
 .container section.recommendation header .context {
 	position: absolute;
-	top: -40px;
-	left: 0px;
+	top: -32px;
+	left: 32px;
 	font-family: 'Calibri';
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	color: #004e66;
 	text-decoration: none;
@@ -146,8 +147,9 @@
 
 /* Accordion for H1, move to common.css? */
 .container section.recommendation .accordion.closed header h1:before {
-	float: left;
-  padding: 3px 20px 0 0;
+	position: absolute;
+	left: 0px;
+  padding: 2px 0 0 0;
   content: "\f107";
   font-family: "FontAwesome";
   cursor: pointer;
@@ -155,8 +157,9 @@
 
 /* Accordion for H1, move to common.css? */
 .container section.recommendation .accordion.open header h1:before {
-	float: left;
-  padding: 3px 20px 0 0;
+	position: absolute;
+	left: 0px;
+  padding: 2px 0 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   cursor: pointer;
@@ -196,6 +199,7 @@
 
 .container .evidensprofil {
 	margin-left: 140px;
+	margin-bottom: 40px;
 }
 
 .container .evidensprofilList dt {
@@ -204,6 +208,19 @@
 
 .container .evidensprofilList dd {
 	margin: 0 0 0 260px;
+}
+
+/**** TABLE ****/
+.container .table_general tbody th,
+.container-fluid .table_general tbody th,
+.container .table_general td,
+.container-fluid .table_general td {
+		text-align: left;
+}
+
+.container .table_general thead th,
+.container-fluid .table_general thead th {
+text-align: left;
 }
 
 
@@ -236,7 +253,8 @@
 	line-height: 16px;
 }
 
-.container .smallGrayText {
+.container .smallGrayText,
+.container .ingress .smallGrayText {
 	font-size: 0.7em;
 	color: #838078;
 }
@@ -324,6 +342,13 @@
 	
 	.container .inlineGlyphs {
 		display: block;
+	}
+	
+	.container .table_general tbody th:first-child {
+		background: #d1d0cf;
+		font-weight: bold;
+		padding: 5px 0 5px 15px;
+		text-align: center;
 	}  
 }
 
