@@ -18,14 +18,14 @@
 .transportsideknapp {
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
-  background-position: 96% 87%;
+  background-position: 96% 90%;
   margin-top: 50px;
   max-width: 685px;
 }
 .transportsideknapp a,
 .transportsideknapp a:visited {
   display: inline-block;
-  padding: 20px 30px 70px 30px;
+  padding: 20px 30px 50px 30px;
 }
 .transportsideknapp a .status_infomration,
 .transportsideknapp a:visited .status_infomration {

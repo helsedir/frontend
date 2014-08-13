@@ -89,6 +89,7 @@
 }
 .transportsideknapp:hover {
   text-decoration: none;
+  box-shadow: #d3d3d3 0 0 0 4px;
 }
 .transportsideknapp:hover h2 {
   text-decoration: none;
