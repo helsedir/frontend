@@ -222,16 +222,14 @@ body {
             }
         }
     }
-
-    .nested-accordion.has-hidden-content > .accordion:before {
+    /* .nested-accordion.has-hidden-content > .accordion:before {
         float: left;
         padding: 3px 20px 0 0;
         content: "\f107";
         font-family: "FontAwesome";
         font-size: 40px;
         cursor: pointer;
-    }
-
+    }*/
     .has-visible-content {
         cursor: pointer;
 
@@ -255,15 +253,13 @@ body {
             }
         }
     }
-
-    .nested-accordion.has-visible-content > .accordion:before {
+    /*    .nested-accordion.has-visible-content > .accordion:before {
         float: left;
         padding: 3px 20px 0 0;
         content: "\f106";
         font-family: "FontAwesome";
         font-size: 40px;
-    }
-
+    }*/
     .clearfix:before,
     .clearfix:after {
         display: table;
@@ -1227,8 +1223,8 @@ body {
             padding: 0;
             background: none;
             border-top: 2px solid @colorDarkBlue;
-            padding-top: 19px;
-            margin: 60px 0 31px 0;
+            padding-top: 13px;
+            margin: 67px 0 31px 0;
             width: 100%;
 
             a, a:visited {
@@ -1910,6 +1906,33 @@ body {
     .figure {
         margin: 40px 0 75px 0;
     }
+}
+
+.container .accordion.nested-accordion.has-hidden-content > h3:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
+.container .accordion.nested-accordion.has-hidden-content > h4:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
+.container .accordion.nested-accordion.has-hidden-content > h5:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
+    float: left;
+    padding: 3px 20px 0 0;
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.container .accordion.nested-accordion.has-visible-content > h3:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h3:before,
+.container .accordion.nested-accordion.has-visible-content > h4:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
+.container .accordion.nested-accordion.has-visible-content > h5:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
+    float: left;
+    padding: 3px 20px 0 0;
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 40px;
 }
 
 @media only screen and (min-width: 1200px) {
