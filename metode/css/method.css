@@ -19,6 +19,9 @@
 .wrapper .method_status.metodevurdering {
   border-left: 6px solid #004e66;
 }
+.wrapper .method_status.implementering {
+  border-left: 6px solid #df9922;
+}
 .wrapper .method_status .method_attribute_label {
   width: 20%;
   float: left;

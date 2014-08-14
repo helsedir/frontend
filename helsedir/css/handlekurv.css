@@ -296,6 +296,10 @@
 .container .shoppingcart .shoppingcart_table .table_general tr td:first-child,
 .container .shoppingcart .shoppingcart_table .table_general tr th:first-child {
   padding-left: 20px;
+  width: 300px;
+}
+.container .shoppingcart .shoppingcart_table .table_general td a {
+  font-size: 18px;
 }
 .container .shoppingcart .shoppingcart_table .table_general td.inputfield {
   padding-bottom: 0;
@@ -306,6 +310,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  border: 1px solid #004e66;
+  outline: none;
+}
+.container .shoppingcart .shoppingcart_table .table_general td.inputfield input:focus {
+  box-shadow: 0 0 5px #0093a7;
+  border: 1px solid #0093a7;
 }
 .container .shoppingcart .shoppingcart_table .table_general button {
   border: none;

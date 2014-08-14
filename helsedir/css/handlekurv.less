@@ -358,9 +358,14 @@
 
                 tr td:first-child, tr th:first-child {
                     padding-left: 20px;
+                    width: 300px;
                 }
 
                 td {
+                    a {
+                        font-size: 18px;
+                    }
+
                     &.inputfield {
                         padding-bottom: 0;
                         width: 11%;
@@ -370,6 +375,13 @@
                             margin: 0;
                             padding: 0;
                             text-align: center;
+                            border: 1px solid @colorDarkBlue;
+                            outline: none;
+
+                            &:focus {
+                                box-shadow: 0 0 5px #0093a7;
+                                border: 1px solid #0093a7;
+                            }
                         }
                     }
                 }

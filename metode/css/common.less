@@ -619,7 +619,7 @@ iframe {
 }
 
 .external-link, a.external-link {
-    color: #838078;
+    color: #222;
     font-family: 'Calibri';
     font-size: 20px;
     background: url(../img/ekstern_lenke_mellomblaa.svg) no-repeat;
@@ -637,7 +637,7 @@ iframe {
     }
 
     &:visited {
-        color: #838078;
+        color: #222;
     }
 
     &.last {
@@ -837,6 +837,8 @@ p.keyfigures, h4.keyfigures {
 
     &.module_statistics_graph {
         max-width: 300px;
+        background: white;
+        padding: 10px;
     }
 
     &.module_subscribe {
@@ -1196,21 +1198,29 @@ p.keyfigures, h4.keyfigures {
 }
 
 .showmorenews {
-    width: 250px;
+    width: 300px;
     text-align: center;
     margin: 50px 0;
-    border: 2px solid @colorDarkBlue;
-    color: @colorDarkBlue;
-    background: white;
-    font-family: @fontCalibri;
+    color: #004e66;
+    background: #d1d0cf url(../img/spinner.png) no-repeat;
+    font-family: 'Calibri';
     font-size: 20px;
     line-height: 24px;
+    -moz-background-size: 12%;
+    -o-background-size: 12%;
+    -webkit-background-size: 12%;
+    background-size: 12%;
+    background-position: 7% 50%;
+    transition: all 0.5s;
 
     a {
         display: inline-block;
         width: 100%;
         height: 100%;
         color: #222;
+        padding: 10px 20px 10px 30px;
+        text-decoration: none;
+        border-bottom: none;
 
         &:hover {
             text-decoration: none;
