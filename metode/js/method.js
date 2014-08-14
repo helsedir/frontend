@@ -12,11 +12,13 @@
                 $(".method_evaluation").removeClass('visuallyhidden').slideDown(500);
             });
             $(this).addClass('selected');
+            $(this).text('Skjul forklaring');
         } else {
             $(".method_evaluation").slideUp('slow', function () {
                 $(".method_evaluation").addClass('visuallyhidden').slideDown(0);
             });
             $(this).removeClass('selected');
+            $(this).text('Vis forklaring');
         }
     });
 

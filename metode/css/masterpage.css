@@ -71,7 +71,7 @@
 }
 .footerlinkswrapper .contact h5 {
   font-weight: bold;
-  margin: 25px 0 0 0;
+  margin: 22px 0 0 0;
   color: #838078;
 }
 .footerlinkswrapper .contact p {
@@ -82,29 +82,19 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
-.footerlinkswrapper .linklist li a p {
-  padding-bottom: 1px;
+.footerlinkswrapper .linklist li a {
+  font-size: 20px;
+  font-family: 'Calibri';
 }
 .footerlinkswrapper .linklist li a:hover {
-  text-decoration: none;
-}
-.footerlinkswrapper .linklist li a:hover p {
-  border-bottom: 1px solid #C63629;
-  padding-bottom: 0;
-}
-.footerlinkswrapper .linklist li a:hover p:before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  height: 28px;
-  width: 50px;
-  border-bottom: 1px solid white;
+  text-decoration: underline;
 }
 .footerlinkswrapper .linklist .internal-link {
   margin-top: 5px;
   color: #838078;
   background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
   background-size: 20px;
+  background-position: 0 5px;
   display: inline-block;
 }
 .footerlinkswrapper .linklist_headings {

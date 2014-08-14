@@ -32,13 +32,13 @@
   height: 100%;
   width: 100%;
   display: inline-block;
-  color: #004e66;
+  color: white;
   text-decoration: none;
-  background: white;
+  background: #004e66;
   border-radius: 3px;
 }
 .entrancebutton a:hover {
-  background: #004e66;
+  background: white;
 }
 .entrancebutton a:hover h2,
 .entrancebutton a:hover p,
@@ -46,13 +46,13 @@
 .entrancebutton a:hover h2:focus,
 .entrancebutton a:hover p:focus {
   text-decoration: none;
-  color: white;
+  color: #838078;
 }
 .entrancebutton a h2 {
   font-size: 28px;
   line-height: 35px;
   padding-bottom: 5px;
-  color: #838078;
+  color: white;
   position: relative;
   text-align: center;
   margin-top: 30px;
@@ -67,7 +67,7 @@
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
-  color: white;
+  color: #838078;
 }
 .entrancebutton span {
   border-radius: 50%;
@@ -77,12 +77,12 @@
   width: 70px;
 }
 .entrancebutton span.finnmetode {
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_soek_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
 .entrancebutton span.sendforslag {
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_send_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
@@ -97,17 +97,17 @@
             -o-transform: rotate(-82deg);
             -webkit-transform: rotate(-82deg);
             transform: rotate(-82deg);*/
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_systemet_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
   background-size: 41px;
   background-position: center;
 }
 .entrancebutton:hover span.finnmetode {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_soek_hvit.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
 .entrancebutton:hover span.sendforslag {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_send_hvit.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
@@ -116,7 +116,7 @@
              background: white no-repeat;
             background-size: 80px;
             background-position: 0 3px;*/
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
+  background: #004e66 url('../img/ikoner/hovedinngang_ikon_systemet_hvit.svg') no-repeat;
   background-size: 41px;
   background-position: center;
 }
@@ -178,6 +178,9 @@
   font-family: "Soho Gothic W01 Light";
   color: #0093a7;
   border-bottom: 2px dotted #0093a7;
+}
+.news .news_item {
+  margin-bottom: 50px;
 }
 .newsillustration {
   margin-top: 25px;

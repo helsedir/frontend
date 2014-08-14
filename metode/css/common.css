@@ -885,8 +885,8 @@ h4.keyfigures {
 }
 .module.module_person .person_information a {
   line-height: 18px;
-  display: block;
-  color: #838078;
+  display: inline-block;
+  color: #222;
 }
 .module.module_person .person_information a.internal-link.arrow_right {
   margin-top: 0;
@@ -898,7 +898,7 @@ h4.keyfigures {
 .module.module_person .name {
   font-size: 24px;
   line-height: 30px;
-  margin: 0 0 7px 7px;
+  margin: 0 0 7px 0;
   font-family: "Soho Gothic W01 Light";
   color: #0093a7;
 }
@@ -1281,10 +1281,10 @@ fieldset {
     bottom: 0;
     right: 0;
     top: auto;
-    margin-right: -46%;
+    margin-right: -52%;
   }
   .aside.top {
-    margin-right: -46%;
+    margin-right: -52%;
   }
   .module_person.kontakt {
     bottom: 0;

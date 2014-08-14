@@ -194,6 +194,7 @@ body {
         h3 {
             border-bottom: 1px solid @colorMediumGray;
             padding-bottom: 10px;
+            padding-left: 33px;
         }
     }
 
@@ -212,12 +213,12 @@ body {
         &.accordion {
             h3 {
                 &:before {
-                    float: left;
-                    padding: 3px 20px 0 0;
                     content: "\f107";
                     font-family: "FontAwesome";
                     font-size: 30px;
                     cursor: pointer;
+                    position: absolute;
+                    left: 0;
                 }
             }
         }
@@ -244,11 +245,11 @@ body {
         &.accordion {
             h3 {
                 &:before {
-                    float: left;
-                    padding: 3px 20px 0 0;
                     content: "\f106";
                     font-family: "FontAwesome";
                     font-size: 30px;
+                    position: absolute;
+                    left: 0;
                 }
             }
         }
@@ -1934,12 +1935,12 @@ body {
 .container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
 .container .accordion.nested-accordion.has-hidden-content > h5:before,
 .container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
-    float: left;
-    padding: 3px 20px 0 0;
     content: "\f107";
     font-family: "FontAwesome";
     font-size: 40px;
     cursor: pointer;
+    position: absolute;
+    left: 0;
 }
 
 .container .accordion.nested-accordion.has-visible-content > h3:before,
@@ -1948,11 +1949,11 @@ body {
 .container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
 .container .accordion.nested-accordion.has-visible-content > h5:before,
 .container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
-    float: left;
-    padding: 3px 20px 0 0;
     content: "\f106";
     font-family: "FontAwesome";
     font-size: 40px;
+    position: absolute;
+    left: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2152,6 +2153,9 @@ body {
         .accordion_mobile h2 {
             border-bottom: 1px solid @colorDarkBlue;
             padding-bottom: 10px;
+            padding-left: 33px;
+            -ms-word-break: break-word;
+            word-break: break-word;
         }
 
         .xs-no-padding {
