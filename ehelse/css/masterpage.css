@@ -219,6 +219,11 @@
   color: white;
   text-decoration: none;
 }
+.masterheader .logo_subheading {
+  font-size: 18px;
+  color: white;
+  font-family: 'Calibri';
+}
 footer {
   background: white;
 }

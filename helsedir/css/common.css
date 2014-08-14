@@ -1504,8 +1504,8 @@ body {
   color: #df9922;
   font-size: 2em;
 }
-.container.crisis .calltoaction,
-.container-fluid.crisis .calltoaction {
+.container.crisis .button,
+.container-fluid.crisis .button {
   border-color: #222;
   color: #222;
   background: #ffffff url(../img/ikon_pilmothoyre.png) no-repeat;
@@ -1514,20 +1514,20 @@ body {
   background-position: 95% 50%;
   background-size: 10px;
 }
-.container.crisis .calltoaction:hover,
-.container-fluid.crisis .calltoaction:hover {
+.container.crisis .button:hover,
+.container-fluid.crisis .button:hover {
   background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
   color: white;
 }
-.container.crisis .calltoaction:hover:before,
-.container-fluid.crisis .calltoaction:hover:before {
+.container.crisis .button:hover:before,
+.container-fluid.crisis .button:hover:before {
   color: white;
 }
-.container.crisis .calltoaction a,
-.container-fluid.crisis .calltoaction a {
+.container.crisis .button a,
+.container-fluid.crisis .button a {
   color: white;
 }
 .container.crisis .border_crisis,
@@ -1542,8 +1542,18 @@ body {
   margin: 40px 60px;
   display: block;
 }
-.container.crisis .bulletlist li:before,
-.container-fluid.crisis .bulletlist li:before {
+.container.crisis .ul,
+.container-fluid.crisis .ul {
+  list-style-position: outside;
+  margin-top: 10px;
+}
+.container.crisis .ul li,
+.container-fluid.crisis .ul li {
+  margin: 0 0 10px 25px;
+  display: block;
+}
+.container.crisis .ul li:before,
+.container-fluid.crisis .ul li:before {
   content: "•";
   color: #222;
   margin-right: 20px;
@@ -1564,9 +1574,23 @@ body {
 .container-fluid.crisis a:visited {
   color: #222;
 }
-.container.crisis .header3,
-.container-fluid.crisis .header3 {
-  margin-top: 30px;
+.container.crisis h3,
+.container-fluid.crisis h3 {
+  font-size: 28px;
+  font-family: "Soho Gothic W01 Regular";
+  margin: 0;
+  line-height: 34px;
+}
+.container.crisis .module.urgentinformation_module,
+.container-fluid.crisis .module.urgentinformation_module,
+.container.crisis .module.urgentinformation_module,
+.container-fluid.crisis .module.urgentinformation_module {
+  position: relative;
+  border-left: 2px solid #222;
+  background: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0 30px 30px 30px;
 }
 .container.crisis_banner,
 .container-fluid.crisis_banner {

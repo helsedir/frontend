@@ -1414,7 +1414,7 @@ body {
             font-size: 2em;
         }
 
-        .calltoaction {
+        .button {
             border-color: #222;
             color: #222;
             background: white url(../img/ikon_pilmothoyre.png) no-repeat;
@@ -1452,11 +1452,19 @@ body {
             display: block;
         }
 
-        .bulletlist li {
-            &:before {
-                content: "•";
-                color: #222;
-                margin-right: 20px;
+        .ul {
+            list-style-position: outside;
+            margin-top: 10px;
+
+            li {
+                margin: 0 0 10px 25px;
+                display: block;
+
+                &:before {
+                    content: "•";
+                    color: #222;
+                    margin-right: 20px;
+                }
             }
         }
 
@@ -1474,8 +1482,20 @@ body {
             }
         }
 
-        .header3 {
-            margin-top: 30px;
+        h3 {
+            font-size: 28px;
+            font-family: "Soho Gothic W01 Regular";
+            margin: 0;
+            line-height: 34px;
+        }
+
+        .module.urgentinformation_module, .module.urgentinformation_module {
+            position: relative;
+            border-left: 2px solid #222;
+            background: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0 30px 30px 30px;
         }
     }
 
