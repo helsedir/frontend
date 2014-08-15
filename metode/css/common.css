@@ -580,7 +580,8 @@ a.external-link.inline:before {
   color: #838078;
   font-family: 'Calibri';
   font-size: 20px;
-  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
+  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+  background-position: 0 7px;
   background-size: 20px;
   padding-left: 35px;
   margin-top: 40px;
@@ -1131,6 +1132,26 @@ fieldset {
   background-size: 20px;
   color: white;
 }
+.filterlist {
+  margin-bottom: 50px;
+}
+.filterlist .selectedfilter a {
+  font-weight: bold;
+  border-bottom: 3px solid #004e66;
+  padding-bottom: 6px;
+}
+.filterlist .selectedfilter a:hover {
+  text-decoration: none;
+}
+.filterlist li {
+  display: inline;
+  margin-right: 25px;
+}
+.filterlist li a {
+  color: #004e66;
+  font-size: 18px;
+  border-bottom: none;
+}
 @-moz-document url-prefix() {
   .refinesearch .form-group {
     overflow: hidden;
@@ -1275,6 +1296,9 @@ fieldset {
   display: block;
   margin: 0;
   line-height: 24px;
+}
+.searchresult {
+  margin-bottom: 70px;
 }
 @media only screen and (min-width: 1200px) {
   .aside {

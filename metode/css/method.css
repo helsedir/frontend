@@ -35,14 +35,21 @@
   width: 20%;
   float: left;
   margin-right: 10px;
-  font-weight: bold;
   margin-left: 41px;
+  margin-top: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Calibri';
+  line-height: 22px;
 }
 .wrapper .method_status .method_attribute {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   display: inline-block;
   width: 60%;
+  font-size: 18px;
+  font-family: 'Calibri';
+  line-height: 22px;
 }
 .wrapper .method_status.has-hidden-content {
   cursor: pointer;
@@ -110,8 +117,7 @@
   width: 556px;
 }
 .wrapper .method_status .more_information {
-  margin-left: 41px;
-  width: 81%;
+  width: 93%;
 }
 .wrapper .informationicon {
   position: absolute;
