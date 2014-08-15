@@ -406,7 +406,7 @@ figure .metatext {
   text-align: center;
   padding: 30px;
 }
-.sectionwithaside {
+.relative_container {
   position: relative;
 }
 .aside,
@@ -840,9 +840,9 @@ h4.keyfigures {
   max-width: 600px;
 }
 .module.module_message.date_small .keyfigures {
-  text-align: center;
+  display: block;
+  text-align: left;
   color: #c63629;
-  margin-left: 30px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
 }

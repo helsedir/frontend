@@ -123,21 +123,21 @@
   width: 170px;
 }
 .mainsearch::-webkit-input-placeholder {
-  color: #004e66;
+  color: #838078;
   text-align: left;
 }
 .mainsearch:-moz-placeholder {
   /* Firefox 18- */
-  color: #004e66;
+  color: #838078;
   text-align: left;
 }
 .mainsearch::-moz-placeholder {
   /* Firefox 19+ */
-  color: #004e66;
+  color: #838078;
   text-align: left;
 }
 .mainsearch:-ms-input-placeholder {
-  color: #004e66;
+  color: #838078;
   text-align: left;
 }
 .mainsearchcolumn {
