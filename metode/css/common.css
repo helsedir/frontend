@@ -449,6 +449,9 @@ figure .metatext {
   text-decoration: none;
   margin: 5px 0;
 }
+.linklist .internal-link {
+  margin-top: 10px;
+}
 .bulletlist {
   list-style-position: outside;
   margin-top: 10px;
@@ -457,6 +460,7 @@ figure .metatext {
   margin: 0 0 0 25px;
   display: block;
   padding-bottom: 13px;
+  color: #838078;
 }
 .bulletlist li:before {
   content: "•";
@@ -577,7 +581,7 @@ a.external-link.inline:before {
   border-bottom: 1px solid #f7f6f6;
 }
 .internal-link {
-  color: #838078;
+  color: #222;
   font-family: 'Calibri';
   font-size: 20px;
   background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
@@ -588,7 +592,7 @@ a.external-link.inline:before {
   display: block;
 }
 .internal-link:visited {
-  color: #838078;
+  color: #222;
 }
 .internal-link.inline {
   display: inline;

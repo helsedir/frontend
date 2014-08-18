@@ -6,19 +6,21 @@
 
     $(".method_evaluation").addClass('visuallyhidden');
 
-    $("#method_evaluation_link").click(function (e) {
-        if ($('.method_evaluation').hasClass("visuallyhidden")) {
-            $(".method_evaluation").slideUp(0, function () {
-                $(".method_evaluation").removeClass('visuallyhidden').slideDown(500);
+    $(".informationicon").click(function (e) {
+        var informationicon = $(this);
+        var evaluation = $(this).siblings('.method_status').children('.method_evaluation:first');
+        if (evaluation.hasClass("visuallyhidden")) {
+            evaluation.slideUp(0, function () {
+                evaluation.removeClass('visuallyhidden').slideDown(500);
             });
-            $(this).addClass('selected');
-            $(this).text('Skjul forklaring');
+            informationicon.addClass('selected');
+            informationicon.text('Skjul forklaring');
         } else {
-            $(".method_evaluation").slideUp('slow', function () {
-                $(".method_evaluation").addClass('visuallyhidden').slideDown(0);
+            evaluation.slideUp('slow', function () {
+                evaluation.addClass('visuallyhidden').slideDown(0);
             });
-            $(this).removeClass('selected');
-            $(this).text('Vis forklaring');
+            informationicon.removeClass('selected');
+            informationicon.text('Vis forklaring');
         }
     });
 
