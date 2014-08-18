@@ -1137,7 +1137,7 @@ fieldset {
   color: white;
 }
 .filterlist {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .filterlist .selectedfilter a {
   font-weight: bold;

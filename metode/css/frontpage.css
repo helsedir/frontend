@@ -169,6 +169,9 @@
   margin-top: 20px;
   display: block;
 }
+.news a.internal-link:hover {
+  text-decoration: underline;
+}
 .news a:hover {
   text-decoration: none;
 }
