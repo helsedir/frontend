@@ -15,17 +15,21 @@ jQuery(document).ready(function() {
   jQuery('.header_wrapper').addClass('closed');
   
   
-  jQuery('.header_wrapper').on('click', function() {
-			var element = jQuery(this);
-      if (element.hasClass('open')) {
-        element.siblings('.text, .background_information').addClass('visuallyhidden');
-        element.removeClass('open');
-        element.addClass('closed');
+  jQuery('.recommendation h1').on('click', function() {
+			var wrapper = jQuery(this).parent().parent();
+      if (wrapper.hasClass('open')) {
+      	wrapper.siblings('.text, .background_information').slideUp('fast', function () {
+        	wrapper.siblings('.text, .background_information').addClass('visuallyhidden').slideDown(0);
+        });  
+        wrapper.removeClass('open');
+        wrapper.addClass('closed');
       }
       else {
-        element.siblings('.text, .background_information').removeClass('visuallyhidden');
-        element.removeClass('closed');
-        element.addClass('open');
+      	wrapper.siblings('.text, .background_information').slideUp(0, function () {
+      		wrapper.siblings('.text, .background_information').removeClass('visuallyhidden').slideDown(500);
+        });
+        wrapper.removeClass('closed');
+        wrapper.addClass('open');
       }
   });
  

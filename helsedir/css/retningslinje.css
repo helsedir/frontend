@@ -94,6 +94,7 @@
 	font-family: "Soho Gothic W01 Light";
 	margin: 35px 0 0 0;
 	color: #222;
+	padding-left: 33px;
 }
 
 /* Similar to H4 */
@@ -103,6 +104,7 @@
 	font-family: "Soho Gothic W01 Regular";
 	margin: 35px 0 0 0;
 	color: #222;
+	padding-left: 33px;
 }
 
 /* Similar to H5 */
@@ -112,6 +114,12 @@
 	font-family: "Soho Gothic W01 Regular";
 	margin: 0 0 0 0;
 	color: #222;
+	padding-left: 33px;
+}
+
+/* Similar to H5 */
+.container section.recommendation .keyInfo h4 {
+	margin: 25px 0 0 0;
 }
 
 /* Similar to H6 */
@@ -121,6 +129,7 @@
 	font-family: "Soho Gothic W01 Light";
 	margin: 15px 0 0 0;
 	color: #222;
+	padding-left: 33px;
 }
 
 .container section.recommendation h1,
@@ -134,19 +143,31 @@
 
 /* Header context */
 .container section.recommendation header .context {
-	position: absolute;
-	top: -32px;
-	left: 32px;
+	padding-left: 33px;
 	font-family: 'Calibri';
 	font-size: 16px;
-	text-transform: uppercase;
+	line-height: 18px;
 	color: #004e66;
 	text-decoration: none;
-	margin-bottom: 25px;
+	margin-bottom: -30px;
+}
+
+.container section.recommendation header .context .column {
+	display: inline-block;
+	vertical-align: top;
+} 
+
+.container section.recommendation header .context .gradingText {
+	width: 300px;
+} 
+
+.container section.recommendation header .context .gradingTitle {
+	margin-right: 5px;
 }
 
 /* Accordion for H1, move to common.css? */
-.container section.recommendation .accordion.closed header h1:before {
+.container section.recommendation .accordion.closed header h1:before,
+.container .has-hidden-content h2:before {
 	position: absolute;
 	left: 0px;
   padding: 2px 0 0 0;
@@ -156,17 +177,29 @@
 } 
 
 /* Accordion for H1, move to common.css? */
-.container section.recommendation .accordion.open header h1:before {
+.container section.recommendation .accordion.open header h1:before,
+.container .has-visible-content h2:before {
 	position: absolute;
 	left: 0px;
   padding: 2px 0 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   cursor: pointer;
-}  
+} 
+
+.container section.recommendation .leftBorder {
+	border-left: 2px solid #004e66;
+	margin-left: 7px;
+	padding-left: 10px;
+} 
 
 
 /* RECOMMENDATION - CONTENT */
+
+.container .background_information,
+.container .text {
+	position: relative;
+}
 
 .container .kunnskapsgrunnlag dl {
 	padding: 10px;
@@ -198,6 +231,7 @@
 }
 
 .container .evidensprofil {
+	position: relative;
 	margin-left: 140px;
 	margin-bottom: 40px;
 }
@@ -226,15 +260,16 @@ text-align: left;
 
 /**** GLYPHS ****/
 .container .recommendationGrading:after{
-	content: "\f05a"; 
+	content: url(../img/modules/icons/ikon_disclaimer_regular.svg); 
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
   color: #999;
-  font-size: 14px;
+  width: 14px;
+  height: 10px;
   position: absolute;
-  top:0px;
+  top: 1px;
   margin-left: 5px; 
 }
 
@@ -439,6 +474,51 @@ text-align: left;
   -webkit-background-size: 20px;
   background-size: 20px;
   color: white;
+}
+
+/* IKONER */
+.container .module.module_print .ikon_disclaimer span,
+.container-fluid .module.module_print .ikon_disclaimer span,
+.container .module.module_social .ikon_disclaimer span,
+.container-fluid .module.module_social .ikon_disclaimer span {
+  background: url(../img/modules/icons/ikon_disclaimer_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_disclaimer:hover span,
+.container-fluid .module.module_print .ikon_disclaimer:hover span,
+.container .module.module_social .ikon_disclaimer:hover span,
+.container-fluid .module.module_social .ikon_disclaimer:hover span {
+  background: url(../img/modules/icons/ikon_disclaimer_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+
+.container .module.module_print .ikon_metode span,
+.container-fluid .module.module_print .ikon_metode span,
+.container .module.module_social .ikon_metode span,
+.container-fluid .module.module_social .ikon_metode span {
+  background: url(../img/modules/icons/ikon_metodikk_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_metode:hover span,
+.container-fluid .module.module_print .ikon_metode:hover span,
+.container .module.module_social .ikon_metode:hover span,
+.container-fluid .module.module_social .ikon_metode:hover span {
+  background: url(../img/modules/icons/ikon_metodikk_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }
 
 
