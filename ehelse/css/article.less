@@ -38,12 +38,12 @@
             cursor: pointer;
         }
 
-            h2:before {
-                float: left;
-                padding-right: 10px;
-                content: "\f077";
-                font-family: "FontAwesome";
-            }
+        h2:before {
+            float: left;
+            padding-right: 10px;
+            content: "\f077";
+            font-family: "FontAwesome";
+        }
     }
 
     &.has-hidden-content {
@@ -58,12 +58,63 @@
             cursor: pointer;
         }
 
-            h2:before, h3:before {
-                float: left;
-                padding-right: 10px;
-                content: "\f078";
-                font-family: "FontAwesome";
+        h2:before, h3:before {
+            float: left;
+            padding-right: 10px;
+            content: "\f078";
+            font-family: "FontAwesome";
+        }
+    }
+}
+
+.table_course {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+
+    .table_general {
+        width: 100%;
+
+        th, td {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        tr td:first-child, tr th:first-child {
+            padding-left: 20px;
+        }
+
+        td {
+            a {
+                font-size: 18px;
             }
+
+            &.inputfield {
+                padding-bottom: 0;
+                width: 11%;
+
+                input {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    border: 1px solid @colorDarkBlue;
+                    outline: none;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #0093a7;
+                        border: 1px solid #0093a7;
+                    }
+                }
+            }
+        }
+
+        button {
+            border: none;
+            border-bottom: 1px solid #838078;
+            background: none;
+            height: 29px;
+        }
     }
 }
 

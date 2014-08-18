@@ -444,7 +444,7 @@ figure .metatext {
   text-align: center;
   padding: 30px;
 }
-.sectionwithaside {
+.relative_container {
   position: relative;
 }
 .content {

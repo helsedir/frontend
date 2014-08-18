@@ -52,6 +52,48 @@
   content: "\f078";
   font-family: "FontAwesome";
 }
+.table_course {
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
+}
+.table_course .table_general {
+  width: 100%;
+}
+.table_course .table_general th,
+.table_course .table_general td {
+  text-align: left;
+  padding-left: 10px;
+}
+.table_course .table_general tr td:first-child,
+.table_course .table_general tr th:first-child {
+  padding-left: 20px;
+}
+.table_course .table_general td a {
+  font-size: 18px;
+}
+.table_course .table_general td.inputfield {
+  padding-bottom: 0;
+  width: 11%;
+}
+.table_course .table_general td.inputfield input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #004e66;
+  outline: none;
+}
+.table_course .table_general td.inputfield input:focus {
+  box-shadow: 0 0 5px #0093a7;
+  border: 1px solid #0093a7;
+}
+.table_course .table_general button {
+  border: none;
+  border-bottom: 1px solid #838078;
+  background: none;
+  height: 29px;
+}
 @media only screen and (min-width: 900px) {
   .aside {
     margin-top: 58px;
