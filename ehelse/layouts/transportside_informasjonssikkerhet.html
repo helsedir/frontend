@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../img/icon.ico">
-
-    <title>Ehelse | Helsedirektoratet.no</title>
+    <title>Transportside | Helsedirektoratet</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
-    <link href="../css/frontpage.css" rel="stylesheet" />
-    <link href="../css/statistics.css" rel="stylesheet" />
+    <link href="../css/transportside.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
     <link href="../css/print.css" rel="stylesheet">
-
     <!--[if lte IE 8]>
     <link href="/css/ie8fix.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
@@ -36,7 +33,7 @@
     </script>
 </head>
 
-<body class="no-background">
+<body>
     <div id="header">
         <div class="shortcuts">
             <ul>
@@ -57,9 +54,17 @@
 
                     <div class="menubutton mobile-search pull-right" id="mobilesearch">
                     </div>
+                    <div class=" menubutton mobile-menu js-expander pull-right" id="mobilemenu">
+                    </div>
                 </div>
 
-                <div class="col-xs-12 col-md-7 col-md-offset-1 col-lg-5 col-lg-offset-2" id="mainsearch">
+                <div class="col-xs-12 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-0" id="mainsearch">
+                    <div class=" menubutton hidden-mobile">
+                        <button class="js-expander">
+                            <span>Alt innhold</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
                     <div class="mainsearchcolumn  hidden-mobile" id="mainsearchcolumn">
                         <form class="mainsearchform" action="soekeresultatside.html">
                             <span role="search">
@@ -81,64 +86,13 @@
             </header>
         </div>
     </div>
-    <div class="mainentrance">
-        <div class="container">
-            <div class="row forside">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
-                    <h1 class="visuallyhidden">Hovedinnganger</h1>
-                    <a href="prosjektoversikt.html" class="entrancebutton ">
-                        <h2>Nasjonale prosjekter og tiltak</h2>
-                        <p></p>
-                    </a>
-                    <a href="transportside_standarder.html" class="entrancebutton ">
-                        <h2>Standarder, kodeverk og referansekatalog</h2>
-                        <p></p>
-                    </a>
-                    <a href="#" class="entrancebutton ">
-                        <h2>Driftsinformasjon</h2>
-                        <p></p>
-                    </a>
-
-                    <a href="transportside_mal.html" class="entrancebutton ">
-                        <h2>Møter og referater fra utvalg</h2>
-                        <p></p>
-                    </a>
-
-                    <a href="transportside_informasjonssikkerhet.html" class="entrancebutton ">
-                        <h2>Informasjons&shy;sikkerhet og Normen</h2>
-                        <p></p>
-                    </a>
-
-                    <button class="js-expander entrancebutton menu">
-                        <h2>
-                            Alt innhold <i class="fa fa-bars"></i>
-                        </h2>
-                        <p class="visuallyhidden">Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="toppmeny container-fluid js-expand visuallyhidden">
+    <div class=" toppmeny  container-fluid js-expand visuallyhidden">
         <div class="inner container-fluid">
             <div class="container">
-                <h1 class="visuallyhidden">Hovedmeny</h1>
                 <nav class="tabs">
                     <ul class="tab-links" role="tablist">
                         <li class="tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
                         <li class="tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
-                        <li class="menu_search hidden-sm hidden-xs">
-                            <form class="searchform">
-                                <span role="search">
-                                    <label for="menu_search" class="visuallyhidden">Søk</label>
-                                    <input id="menu_search" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
-                                    <button type="submit" class="search_button">
-                                        <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
-                                    </button>
-                                </span>
-                            </form>
-                        </li>
                     </ul>
                     <div class="tab-content">
                         <div id="panel_header1" class="tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
@@ -251,52 +205,56 @@
         </div>
     </div>
     <a id="content" tabindex="-1"></a>
-    <div class="frontpagewrapper white">
-        <div class="container frontpage">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-7 col-lg-7">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li><a href="forside.html">Forside</a></li>
+                        </ol>
+                    </nav>
 
-            <div class="row">
-                <section class="col-md-5 ">
-                    <a href="nyheter.html"><h2>Nyheter</h2></a>
-                    <div class="news">
-                        <a href="#" class="internal-link arrow_right">"Helseinformatikk Intro" - videreutdanning tilbud på NTNU</a>
-                        <p>01.07.2014</p>
-                    </div>
-                    <div class="news">
-                        <a href="#" class="internal-link arrow_right">E-læringsprogram i IPLOS</a>
-                        <p>21.06.2014</p>
-                    </div>
-                    <div class="news">
-                        <a href="#" class="internal-link arrow_right">Nå kan fastleger motta pasientlister elektronisk</a>
-                        <p>21.04.2014</p>
-                    </div>
-                    <a href="#" class="internal-link arrow_right showmorenews">Flere nyheter</a>
-                    <div class="border_grey"></div>
-                </section>
-                <section class="col-md-5 col-md-offset-1  newsandconference">
-                    <a href="#"><h2>Møter og konferanser</h2></a>
-                    <div class="conferenceitem clearfix">
-                        <div class="conference_date">23. <span class="month">august</span></div>
-                        <div class="conference_info"><a href="motetemal.html" class="internal-link arrow_right">Møte i NUFA</a></div>
-                        <div class="conference_date">18. <span class="month">september</span></div>
-                        <div class="conference_info"><a href="motetemal.html" class="internal-link arrow_right">Møte i NUIT</a></div>
-                        <div class="conference_date">14.-15. <span class="month">oktober</span></div>
-                        <div class="conference_info"><a href="motetemal.html" class="internal-link arrow_right">Norm&shy;konferansen</a></div>
-                        <div class="conference_date">22.-23. <span class="month">november</span></div>
-                        <div class="conference_info"><a href="motetemal.html" class="internal-link arrow_right">Møte i NUFA</a></div>
-                        <div class="conference_date">3. <span class="month">desember</span></div>
-                        <div class="conference_info"><a href="motetemal.html" class="internal-link arrow_right">Møte i NUFA</a></div>
-                    </div>
-                    <a href="#" class="internal-link arrow_right">Kalender for e-helse</a>
-                </section>
+                    <h1>Informasjonssikkerhet</h1>
+                </header>
+                <div class="content ">
+                    <div class="border"></div>
+
+                    <a href="transportside_norm.html" class="transportsideknapp clearfix">
+                        <h2>Norm for informasjonssikkerhet</h2>
+                    </a>
+
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Annet om informasjonssikkerhet</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Annet om informasjonssikkerhet</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Annet om informasjonssikkerhet</h2>
+                    </a>
+
+                    <aside class="aside top">
+                        <div class="module module_contact">
+                            <p class="header">kontakt</p>
+                            <div class="wrapper">
+                                <p class="title">Sekretariatet</p>
+                                <div class="contact_information clearfix">
+                                    <span class="information_data"><a href="#">sikkerhetsnormen@helsedir.no</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
     </div>
-    <div class="shortcuts">
-        <ul>
-            <li><a href="#bottom">Bunnlinje</a></li>
-        </ul>
-    </div>
     <div id="footer">
+        <div class="shortcuts">
+            <ul>
+                <li><a href="#bottom">Bunnlinje</a></li>
+            </ul>
+        </div>
         <footer class="footerwrapper">
             <div class="menuwrapper">
                 <div class="container">
@@ -440,9 +398,10 @@
             </div>
         </footer>
     </div>
+
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
-    <script src="../js/expander_frontpage.js"></script>
+    <script src="../js/expandmenu.js"></script>
 </body>
 </html>

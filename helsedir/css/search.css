@@ -5,8 +5,9 @@
   width: 100px;
 }
 .container .filterlist li {
-  display: inline;
   margin-right: 25px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 .container .filterlist li a {
   color: #004e66;

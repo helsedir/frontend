@@ -26,9 +26,6 @@
   .module_social {
     display: none !important;
   }
-  a:after {
-    content: " [" attr(href) "] ";
-  }
   .content {
     position: relative !important;
     top: auto !important;

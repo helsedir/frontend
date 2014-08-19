@@ -58,17 +58,11 @@
   outline: 0;
 }
 .entrancebutton.menu.js-expanded h2 {
-  background-color: #0093a7;
   color: white;
-}
-.entrancebutton.menu:focus h2 {
-  background-color: #0093a7;
+  background: none;
 }
 .entrancebutton.menu:hover {
   background: #0093a7 !important;
-}
-.entrancebutton.menu:hover h2 {
-  background: #0093a7;
 }
 .entrancebutton:hover {
   background: #02343f;

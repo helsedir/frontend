@@ -1435,7 +1435,8 @@ body {
 }
 .container .showmorenews,
 .container-fluid .showmorenews {
-  width: 300px;
+  width: auto;
+  max-width: 300px;
   text-align: center;
   margin: 50px 0;
   color: #004e66;
