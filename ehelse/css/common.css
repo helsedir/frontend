@@ -435,6 +435,23 @@ figure .metatext {
   text-align: right;
   float: right;
 }
+.metadata {
+  margin: 50px 10px 30px 0;
+}
+.metadata span:nth-child(2n+1) {
+  width: auto;
+  min-width: 280px;
+  padding-right: 10px;
+  float: left;
+  font-weight: bold;
+}
+.metadata span {
+  width: 62%;
+  min-width: 0;
+  padding-right: 0;
+  font-weight: normal;
+  float: left;
+}
 .spennendeTall {
   border: 1px solid #222;
   width: 100%;
@@ -1493,7 +1510,7 @@ fieldset {
 }
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+  background: #004e66 url('../img/ikoner/knapp_pil_nedover.png') no-repeat;
   background-position: 100%;
   -moz-background-size: 38px;
   -o-background-size: 38px;
@@ -1503,7 +1520,7 @@ fieldset {
   border: none;
 }
 .numberofpublications {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 15px;
   font-family: 'Calibri';
   line-height: 20px;

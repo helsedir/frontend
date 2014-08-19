@@ -21,32 +21,32 @@
   background-position: 96% 90%;
   margin-top: 50px;
   max-width: 685px;
-}
-.transportsideknapp a,
-.transportsideknapp a:visited {
+  width: 100%;
   display: inline-block;
   padding: 20px 30px 50px 30px;
 }
-.transportsideknapp a .status_infomration,
-.transportsideknapp a:visited .status_infomration {
+.transportsideknapp .status_infomration {
   float: left;
   width: 395px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp a .status_infomration .status_received,
-.transportsideknapp a:visited .status_infomration .status_received {
+.transportsideknapp .status_infomration .status_received {
   margin-right: 30px;
 }
-.transportsideknapp a p,
-.transportsideknapp a:visited p {
+.transportsideknapp h2 {
+  margin: 0;
+  border-bottom: 2px dotted #004e66;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+.transportsideknapp p {
   color: #838078;
 }
-.transportsideknapp a:hover,
-.transportsideknapp a:visited:hover {
+.transportsideknapp:hover {
   text-decoration: none;
+  box-shadow: #d3d3d3 0 0 0 4px;
 }
-.transportsideknapp a:hover h2,
-.transportsideknapp a:visited:hover h2 {
+.transportsideknapp:hover h2 {
   text-decoration: none;
 }
 /*# sourceMappingURL=transportside.css.map */
