@@ -3,6 +3,8 @@
 jQuery(document).ready(function() {
 
 	jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
+	jQuery('.gradingInfo').addClass('visuallyhidden');
+	jQuery('.recommendationGrading').addClass('closed');
 
   jQuery(window).resize(function () {
       jQuery('.header_wrapper').addClass('accordion');
@@ -16,22 +18,17 @@ jQuery(document).ready(function() {
   
   
   jQuery('.recommendation h1').on('click', function() {
-			var wrapper = jQuery(this).parent().parent();
-      if (wrapper.hasClass('open')) {
-      	wrapper.siblings('.text, .background_information').slideUp('fast', function () {
-        	wrapper.siblings('.text, .background_information').addClass('visuallyhidden').slideDown(0);
-        });  
-        wrapper.removeClass('open');
-        wrapper.addClass('closed');
-      }
-      else {
-      	wrapper.siblings('.text, .background_information').slideUp(0, function () {
-      		wrapper.siblings('.text, .background_information').removeClass('visuallyhidden').slideDown(500);
-        });
-        wrapper.removeClass('closed');
-        wrapper.addClass('open');
-      }
+  	var wrapper = jQuery(this).parent().parent();
+  		slider(wrapper, wrapper.siblings('.text, .background_information'));
   });
+  
+  jQuery('.recommendationGrading').on('click', function() {
+  		slider(jQuery(this), jQuery(this).parent().siblings('.gradingInfo'));
+  });
+  
+  
+
+  
  
 	/** Twitter typeahead **/
 	var antibiotika = new Bloodhound({
@@ -116,3 +113,19 @@ jQuery(document).ready(function() {
 	
    
 });
+
+  function slider(accordion, areaToExpand) {
+	  if(accordion.hasClass('open')){
+		  areaToExpand.slideUp('fast', function () {
+			  areaToExpand.addClass('visuallyhidden').slideDown(0);
+		  });
+		  accordion.removeClass('open');
+		  accordion.addClass('closed');
+	  } else {
+		  areaToExpand.slideUp(0, function () {
+			  areaToExpand.removeClass('visuallyhidden').slideDown(500);
+		  });
+		  accordion.removeClass('closed');
+		  accordion.addClass('open');
+	  }
+  }

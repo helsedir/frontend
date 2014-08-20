@@ -22,7 +22,7 @@ body {
   line-height: 30px;
   color: #222;
   background-color: #f7f6f6;
-  background-image: url('../img/bakgrunn_menneske.svg');
+  background-image: url(../img/bakgrunn_menneske.svg);
   background-position: 100% 20%;
   background-position-x: 100%;
   background-position-y: 20%;
@@ -420,7 +420,7 @@ body {
   width: 100%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
+  background: #ffffff url(../img/ikon_forstorrelsesglass.png) center no-repeat;
   border: 1px solid #004e66;
   -moz-background-size: auto 80%;
   -o-background-size: auto 80%;
@@ -660,7 +660,7 @@ body {
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #004e66 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
@@ -672,14 +672,14 @@ body {
 .container .calltoaction:focus,
 .container-fluid .calltoaction:focus {
   color: white;
-  background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #02343f url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
 }
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #0093a7 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: white;
@@ -688,7 +688,7 @@ body {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #01737c url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
   border: 2px solid #01737c;
   background-position: 20px 50%;
   background-size: 10px;
@@ -712,7 +712,7 @@ body {
         }
 
         &:visited {
-            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+            background: url(../img/navigasjon/ikon_eksternlenkebesoekt.svg) right no-repeat;
             background-size: 16px 16px;
         }*/
 }
@@ -1668,7 +1668,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+  background: url(../img/navigasjon/radioknapp_inaktiv.svg) top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1677,7 +1677,7 @@ body {
 }
 .container input[type="radio"] + label span:hover,
 .container-fluid input[type="radio"] + label span:hover {
-  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
+  background: url(../img/navigasjon/radioknapp_hover.svg) top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1705,7 +1705,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
+  background: url(../img/navigasjon/checkbox_inaktiv.svg) top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1714,7 +1714,7 @@ body {
 }
 .container input[type="checkbox"] + label span:hover,
 .container-fluid input[type="checkbox"] + label span:hover {
-  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
+  background: url(../img/navigasjon/checkbox_hover.svg) top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -2032,7 +2032,7 @@ body {
 .container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
   content: "\f107";
   font-family: "FontAwesome";
-  font-size: 40px;
+  /*font-size: 40px;*/
   cursor: pointer;
   position: absolute;
   left: 0;
@@ -2045,7 +2045,7 @@ body {
 .container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
   content: "\f106";
   font-family: "FontAwesome";
-  font-size: 40px;
+  /*font-size: 40px;*/
   position: absolute;
   left: 0;
 }
