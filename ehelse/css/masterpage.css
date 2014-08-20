@@ -223,6 +223,8 @@
   font-size: 18px;
   color: white;
   font-family: 'Calibri';
+  margin-top: 0;
+  line-height: 22px;
 }
 footer {
   background: white;

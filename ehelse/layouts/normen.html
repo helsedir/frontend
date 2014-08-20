@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Norm for informasjonssikkerhet | Helsedirektoratet</title>
+    <title>Prosjekter og tiltak | Helsedirektoratet</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/search.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
     <!--[if lte IE 8]>
@@ -104,7 +105,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-4">
                                     <ul>
-                                        <li><a href="transportside_standarder.html">Standarder, terminologi og kodeverk</a></li>
+                                        <li><a href="standarder.html">Standarder, terminologi og kodeverk</a></li>
                                         <li><a href="#">Utredning Én innbygger – én journal</a></li>
                                         <li><a href="#">Innbyggertjenester</a></li>
                                         <li><a href="#">Helsepersonelltjenester</a></li>
@@ -202,26 +203,31 @@
     <a id="content" tabindex="-1"></a>
     <div class="container">
         <div class="row">
-            <article class="col-md-7 col-lg-7">
+            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
                 <header id="pageheader">
                     <nav>
                         <ol class="breadcrumbs clearfix">
-                            <li><a href="forside.html">Forside</a></li>
+                            <li class="active"><a href="forside.html">Forside</a></li>
                         </ol>
                     </nav>
-                    <h1>Norm for informasjonssikkerhet</h1>
+                    <h1>Normen</h1>
                 </header>
-
-                <form class="searchform">
-                    <label class="visuallyhidden" for="Finn_tittel">Søk på tittel eller IS-nummer</label>
-                    <input id="Finn_tittel" type="text" class="search" placeholder="Søk på tittel eller IS-nummer">
-                    <button type="submit" class="search_button">
-                        <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
-                    </button>
-                </form>
                 <div class="content">
-
-                    <aside class="aside">
+                    <form class="searchform" action="soekeresultatside.html">
+                        <label class="visuallyhidden" for="Finn_normen">Finn Normen-dokumenter</label>
+                        <input id="Finn_normen" type="text" class="search" placeholder="Finn Normen-dokumenter">
+                        <button type="submit" class="search_button">
+                            <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
+                        </button>
+                    </form>
+                    <ul class=" filterlist">
+                        <li><a href="#">Alt innhold </a>51</li>
+                        <li><a href="prosjektoversikt.html">Prosjekter og tiltak </a>5</li>
+                        <li class="selectedfilter"><a href="#">Normen-dokumenter </a>22</li>
+                        <li><a href="standarder.html">Standarder og koder </a>10</li>
+                    </ul>
+                    <p class="numberofpublications">22 Normen-dokumenter</p>
+                    <aside class="aside aside_search">
                         <div class="refinesearch">
                             <h2>Avgrens visning</h2>
                             <form class="dropdown">
@@ -305,41 +311,36 @@
                                 </div>
                             </form>
                         </div>
-                    </aside>
-
-                    <p class="numberofpublications">100 Normen-dokumenter</p>
-
-                    <a href="#"><p>0. Målgruppe i faktaark</p></a>
-                    <a href="artikkel.html"><p>1. Ansvar og organisering</p></a>
-                    <a href="#"><p>2. Styringssystem for informasjonssikkerhet</p></a>
-                    <a href="#"><p>3. Oversikt over anbefalte prosedyrer i styringssystemet for informasjonssikkerhet</p></a>
-                    <a href="#"><p>4. Kartlegging og klassifisering av systemer i henhold til kritikalitet i forhold til behov for tilgjengelighet</p></a>
-                    <a href="#"><p>5. Fastsette akseptkriterier for tilgjengelighet, konfidensialitet, integritet og kvalitet</p></a>
-                    <a href="#"><p>6. Sikkerhetsrevisjon</p></a>
-                    <a href="#"><p>7. Risikovurdering</p></a>
-                    <a href="#"><p>8. Avviksbehandling</p></a>
-                    <a href="#"><p>9. Opplæring av ledere og medarbeidere</p></a>
-                    <a href="#"><p>10. Bruk av databehandler (ekstern driftsenhet)</p></a>
-                    <a href="#"><p>11. Nødprosedyrer</p></a>
-                    <a href="#"><p>12. Tilbakerapportering av resultater fra IT-driften</p></a>
-                    <a href="#"><p>13. Oversikt over behandlinger av helse- og personopplysninger i virksomheten</p></a>
-                    <a href="#"><p>14. Tilgangsstyring</p></a>
-                    <a href="#"><p>15. Hendelsesregistrering og oppfølging</p></a>
-                    <a href="#"><p>16. Etablering av løsning for meldingskommunikasjon</p></a>
-                    <a href="#"><p>17. Fysisk sikring av områder og utstyr</p></a>
-                    <a href="#"><p>18. Sikring av bærbart utstyr</p></a>
-                    <a href="#"><p>19. Tiltak for å hindre ondsinnet programvare</p></a>
-                    <a href="#"><p>20. Sikkerhets- og samhandlingsarkitektur</p></a>
-                    <a href="#"><p>21. Sikkerhetskopi (backup)</p></a>
-                    <a href="#"><p>22. Kontroll og sikring av ekstern tilgang</p></a>
-
-                    <aside class="aside bottom">
-                        <div class="module module_subscribe clearfix">
+                        <div class=" module module_subscribe clearfix">
                             <p class="header">Abonnér på denne siden</p>
                             <a href="#" class="e-mail"><p>E-post</p></a>
                             <a href="#" class="rss"><p>RSS-strøm</p></a>
                         </div>
                     </aside>
+
+                    <a class="transportsideknapp_dokument" href="#"><h2>0. Målgruppe i faktaark</h2></a>
+                    <a class="transportsideknapp_dokument" href="artikkel.html"><h2>1. Ansvar og organisering</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>2. Styringssystem for informasjonssikkerhet</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>3. Oversikt over anbefalte prosedyrer i styringssystemet for informasjonssikkerhet</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>4. Kartlegging og klassifisering av systemer i henhold til kritikalitet i forhold til behov for tilgjengelighet</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>5. Fastsette akseptkriterier for tilgjengelighet, konfidensialitet, integritet og kvalitet</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>6. Sikkerhetsrevisjon</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>7. Risikovurdering</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>8. Avviksbehandling</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>9. Opplæring av ledere og medarbeidere</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>10. Bruk av databehandler (ekstern driftsenhet)</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>11. Nødprosedyrer</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>12. Tilbakerapportering av resultater fra IT-driften</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>13. Oversikt over behandlinger av helse- og personopplysninger i virksomheten</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>14. Tilgangsstyring</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>15. Hendelsesregistrering og oppfølging</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>16. Etablering av løsning for meldingskommunikasjon</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>17. Fysisk sikring av områder og utstyr</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>18. Sikring av bærbart utstyr</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>19. Tiltak for å hindre ondsinnet programvare</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>20. Sikkerhets- og samhandlingsarkitektur</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>21. Sikkerhetskopi (backup)</h2></a>
+                    <a class="transportsideknapp_dokument" href="#"><h2>22. Kontroll og sikring av ekstern tilgang</h2></a>
                 </div>
             </article>
         </div>
@@ -372,7 +373,7 @@
                                                     <li><a href="#">Faggrupper og utvalg</a></li>
                                                     <li><a href="#">Driftsinformasjon</a></li>
                                                     <li><a href="#">IKT-infrastruktur og felleskomponenter</a></li>
-                                                    <li><a href="transportside_standarder.html">Standarder, terminologi og kodeverk</a></li>
+                                                    <li><a href="standarder.html">Standarder, terminologi og kodeverk</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6 col-md-4">

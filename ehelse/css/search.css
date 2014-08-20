@@ -1,40 +1,77 @@
-﻿.search_withbutton input {
-  width: 80%;
+﻿.transportsideknapp {
+  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 93%;
 }
-.search_withbutton .calltoaction {
-  width: 100px;
+.transportsideknapp .status_infomration {
+  float: left;
+  width: 500px;
+  margin: 24px 0 0 30px;
 }
-.filterlist li {
-  display: inline;
-  margin-right: 25px;
+.transportsideknapp .status_infomration .status_received {
+  margin-right: 30px;
 }
-.filterlist li a {
-  color: #004e66;
-  font-size: 18px;
+.transportsideknapp .status {
+  background: #f7f6f6;
+  float: left;
+  padding: 10px 20px;
+  width: 200px;
 }
-.filterlist .selectedfilter a,
-.filterlist .selectedfilter a:visited {
-  font-weight: bold;
-  border-bottom: 3px solid #004e66;
-  padding-bottom: 6px;
+.transportsideknapp .status.rute {
+  border-left: 50px solid #6cb4b5;
 }
-.numberofhits {
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #004e66;
+.transportsideknapp .status.drift {
+  border-left: 50px solid #a1bf37;
 }
-.searchresult {
-  margin: 50px 0 70px 0;
+.transportsideknapp .status.pilot {
+  border-left: 50px solid #df9922;
 }
-.searchresult .breadcrumbs a,
-.searchresult .breadcrumbs a:visited {
+.transportsideknapp .status.cancelled {
+  border-left: 50px solid #c63629;
+}
+.borderbox {
+  padding: 10px;
+  border: 1px solid #222;
+}
+.transportsideknapp_dokument {
+  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 50%;
+  margin-top: 10px;
+  max-width: 685px;
+  width: 100%;
+  display: inline-block;
+  padding: 0 75px 10px 30px;
+}
+.transportsideknapp_dokument .status_infomration {
+  float: left;
+  width: 395px;
+  margin: 24px 0 0 30px;
+}
+.transportsideknapp_dokument .status_infomration .status_received {
+  margin-right: 30px;
+}
+.transportsideknapp_dokument h2 {
+  padding: 10px 30px 0 0;
+  margin: 0;
+  color: #0093a7;
+}
+.transportsideknapp_dokument p {
+  color: #838078;
+}
+.transportsideknapp_dokument:hover {
+  text-decoration: none;
+  box-shadow: #0093a7 0 0 0 2px;
+}
+.transportsideknapp_dokument:hover h2 {
   text-decoration: none;
 }
-.searchresult h2 {
-  margin-top: 10px;
+.external-link {
+  display: inline;
 }
-.searchfield {
-  margin: 40px 0 10px 0;
+@media only screen and (min-width: 900px) {
+  .aside_search {
+    top: 24px;
+  }
 }
 /*# sourceMappingURL=search.css.map */

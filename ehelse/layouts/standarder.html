@@ -10,6 +10,7 @@
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/search.css" rel="stylesheet" />
     <link href="../css/transportside.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
@@ -105,7 +106,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-4">
                                     <ul>
-                                        <li><a href="transportside_standarder.html">Standarder, terminologi og kodeverk</a></li>
+                                        <li><a href="standarder.html">Standarder, terminologi og kodeverk</a></li>
                                         <li><a href="#">Utredning Én innbygger – én journal</a></li>
                                         <li><a href="#">Innbyggertjenester</a></li>
                                         <li><a href="#">Helsepersonelltjenester</a></li>
@@ -213,16 +214,22 @@
                     <h1>Alle standarder i referansekatalogen</h1>
                 </header>
 
-                <form class="searchform">
-                    <label class="visuallyhidden" for="Finn_tittel">Søk på tittel eller IS-nummer</label>
-                    <input id="Finn_tittel" type="text" class="search" placeholder="Søk på tittel eller IS-nummer">
-                    <button type="submit" class="search_button">
-                        <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
-                    </button>
-                </form>
                 <div class="content">
-
-                    <aside class="aside">
+                    <form class="searchform">
+                        <label class="visuallyhidden" for="Finn_tittel">Søk på tittel eller IS-nummer</label>
+                        <input id="Finn_tittel" type="text" class="search" placeholder="Søk på tittel eller IS-nummer">
+                        <button type="submit" class="search_button">
+                            <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
+                        </button>
+                    </form>
+                    <ul class=" filterlist">
+                        <li><a href="#">Alt innhold </a>51</li>
+                        <li><a href="prosjektoversikt.html">Prosjekter og tiltak </a>5</li>
+                        <li><a href="normen.html">Normen-dokumenter </a>20</li>
+                        <li class="selectedfilter"><a href="standarder.html">Standarder og koder </a>10</li>
+                    </ul>
+                    <p class="numberofpublications">6 standarder</p>
+                    <aside class="aside aside_search">
                         <div class="refinesearch">
                             <h2>Avgrens visning</h2>
                             <form class="dropdown">
@@ -256,35 +263,45 @@
                                     <label for="emne">Emne</label>
                                     <select role="listbox" id="emne" class="form-control">
                                         <option role="option">
-                                            Elektronisk samhandling
+                                            Alle
                                         </option>
-                                        <option role="option">
-                                            Henvisning + epikrise
-                                        </option>
+                                        <optgroup label="Informasjonsinnhold og strukturert føring av journal">
+                                            <option role="option">Alle</option>
+                                            <option role="option">Grunnleggende krav</option>
+                                            <option role="option">Krav til innhold og funksjonalitet</option>
+                                        </optgroup>
+                                        <optgroup label="Elektronisk samhandling">
+                                            <option role="option">Alle i elektronisk samhandling</option>
+                                            <option role="option">Rekvisisjon/henvisning og svarrapport</option>
+                                            <option role="option">Laboratoriemedisin og radiologi</option>
+                                            <option role="option">Pleie- og omsorgsmeldinger</option>
+                                            <option role="option">E-resept</option>
+                                            <option role="option">Samhandling med NAV og Helfo</option>
+                                            <option role="option">Melding av opplysninger til Norsk pasientregister</option>
+                                            <option role="option">Melding av opplysninger til øvrige sentrale helseregistre</option>
+                                        </optgroup>
                                     </select>
                                 </div>
                             </form>
                         </div>
                     </aside>
 
-                    <p class="numberofpublications">100 standarder </p>
-
-                    <a href="referansekatalog.html" class="transportsideknapp">
+                    <a href="referansekatalog.html" class="transportsideknapp_dokument">
                         <h2>Svarrapport - medisinsk biokjemi</h2>
                     </a>
-                    <a href="#" class="transportsideknapp">
+                    <a href="#" class="transportsideknapp_dokument">
                         <h2>Standard</h2>
                     </a>
-                    <a href="#" class="transportsideknapp">
+                    <a href="#" class="transportsideknapp_dokument">
                         <h2>Standard</h2>
                     </a>
-                    <a href="#" class="transportsideknapp">
+                    <a href="#" class="transportsideknapp_dokument">
                         <h2>Standard</h2>
                     </a>
-                    <a href="#" class="transportsideknapp">
+                    <a href="#" class="transportsideknapp_dokument">
                         <h2>Standard</h2>
                     </a>
-                    <a href="#" class="transportsideknapp">
+                    <a href="#" class="transportsideknapp_dokument">
                         <h2>Standard</h2>
                     </a>
                     <aside class="aside bottom">
@@ -326,7 +343,7 @@
                                                     <li><a href="#">Faggrupper og utvalg</a></li>
                                                     <li><a href="#">Driftsinformasjon</a></li>
                                                     <li><a href="#">IKT-infrastruktur og felleskomponenter</a></li>
-                                                    <li><a href="transportside_standarder.html">Standarder, terminologi og kodeverk</a></li>
+                                                    <li><a href="standarder.html">Standarder, terminologi og kodeverk</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6 col-md-4">

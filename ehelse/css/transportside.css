@@ -24,13 +24,14 @@
   border-bottom: 2px dotted #004e66;
   padding-bottom: 7px;
   margin-bottom: 10px;
+  color: #0093a7;
 }
 .transportsideknapp p {
   color: #838078;
 }
 .transportsideknapp:hover {
   text-decoration: none;
-  box-shadow: #d3d3d3 0 0 0 4px;
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .transportsideknapp:hover h2 {
   text-decoration: none;

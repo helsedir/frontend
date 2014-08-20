@@ -36,4 +36,9 @@
 .external-link {
   display: inline;
 }
+@media only screen and (min-width: 900px) {
+  .aside_search {
+    top: 24px;
+  }
+}
 /*# sourceMappingURL=prosjektoversikt.css.map */

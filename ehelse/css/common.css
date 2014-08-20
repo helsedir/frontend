@@ -526,6 +526,7 @@ figure .metatext {
 .bulletlist li {
   margin: 0 0 13px 25px;
   display: block;
+  color: #838078;
 }
 .bulletlist li:before {
   content: "•";
@@ -533,6 +534,9 @@ figure .metatext {
   margin: -1px 0 0 -25px;
   display: block;
   position: absolute;
+}
+.bulletlist li a {
+  color: #222;
 }
 .borderbox {
   margin-bottom: 20px;
@@ -693,7 +697,7 @@ iframe {
 }
 .external-link,
 a.external-link {
-  color: #838078;
+  color: #222;
   font-family: 'Calibri';
   font-size: 20px;
   background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
@@ -712,7 +716,7 @@ a.external-link:hover {
 }
 .external-link:visited,
 a.external-link:visited {
-  color: #838078;
+  color: #222;
 }
 .external-link.last,
 a.external-link.last {
@@ -1538,7 +1542,7 @@ fieldset {
   line-height: 20px;
   text-transform: uppercase;
   font-size: 18px;
-  color: #838078;
+  color: #222;
 }
 .refinesearch {
   width: 300px;
@@ -1716,7 +1720,7 @@ fieldset {
 .transportsideknapp a:hover {
   text-decoration: none;
   color: #222;
-  box-shadow: #d3d3d3 0 0 0 4px;
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .transportsideknapp a:hover h2 {
   color: #0093a7;
@@ -1733,20 +1737,26 @@ fieldset {
 }
 .filterlist .selectedfilter {
   margin-bottom: 10px;
+  background: #f4d01e;
+  padding: 5px 10px;
+  font-weight: bold;
 }
 .filterlist .selectedfilter a,
 .filterlist .selectedfilter a:visited {
   font-weight: bold;
-  border-bottom: 3px solid #004e66;
-  padding-bottom: 6px;
 }
 .filterlist li {
   display: inline-block;
   margin-right: 22px;
+  color: #004e66;
+  font-size: 16px;
 }
 .filterlist li a {
-  color: #004e66;
-  font-size: 18px;
+  color: #222;
+  font-size: 16px;
+}
+.filterlist li a:hover {
+  text-decoration: none;
 }
 .filterlist li:last-of-type {
   margin-right: 0;

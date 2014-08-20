@@ -1,5 +1,4 @@
-﻿
-@fontCalibri: 'Calibri';
+﻿@fontCalibri: 'Calibri';
 @fontCalibriBold: 'Calibri-Bold';
 @fontSoho: "soho gothic pro medium";
 @fontSohoLight: "Soho Gothic W01 Light";
@@ -18,55 +17,96 @@
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 
-.search_withbutton {
-    input {
-        width: 80%;
-    }
+.transportsideknapp {
+    .status_infomration {
+        float: left;
+        width: 500px;
+        margin: 24px 0 0 30px;
 
-    .calltoaction {
-        width: 100px;
-    }
-}
-
-.filterlist {
-    li {
-        display: inline;
-        margin-right: 25px;
-
-        a {
-            color: @colorDarkBlue;
-            font-size: 18px;
+        .status_received {
+            margin-right: 30px;
         }
     }
 
-    .selectedfilter a, .selectedfilter a:visited {
-        font-weight: bold;
-        border-bottom: 3px solid @colorDarkBlue;
-        padding-bottom: 6px;
+    .status {
+        background: #f7f6f6;
+        float: left;
+        padding: 10px 20px;
+        width: 200px;
+
+        &.rute {
+            border-left: 50px solid @colorLightBlue;
+        }
+
+        &.drift {
+            border-left: 50px solid @colorGreen;
+        }
+
+        &.pilot {
+            border-left: 50px solid @colorOrange;
+        }
+
+        &.cancelled {
+            border-left: 50px solid @colorRed;
+        }
     }
+
+    background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+    background-size: 45px;
+    background-position: 96% 93%;
 }
 
-.numberofhits {
-    margin-top: 40px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: @colorDarkBlue;
+.borderbox {
+    padding: 10px;
+    border: 1px solid #222;
 }
 
-.searchresult {
-    margin: 50px 0 70px 0;
+.transportsideknapp_dokument {
+    background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+    background-size: 45px;
+    background-position: 96% 50%;
+    margin-top: 10px;
+    max-width: 685px;
+    width: 100%;
+    display: inline-block;
+    padding: 0 75px 10px 30px;
 
-    .breadcrumbs {
-        a, a:visited {
-            text-decoration: none;
+    .status_infomration {
+        float: left;
+        width: 395px;
+        margin: 24px 0 0 30px;
+
+        .status_received {
+            margin-right: 30px;
         }
     }
 
     h2 {
-        margin-top: 10px;
+        padding: 10px 30px 0 0;
+        margin: 0;
+        color: @colorMediumBlue;
+    }
+
+    p {
+        color: #838078;
+    }
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: @colorMediumBlue 0 0 0 2px;
+
+        h2 {
+            text-decoration: none;
+        }
     }
 }
 
-.searchfield {
-    margin: 40px 0 10px 0;
+.external-link {
+    display: inline;
+}
+
+@media only screen and (min-width: 900px) {
+    .aside_search {
+        top: 24px;
+    }
 }
