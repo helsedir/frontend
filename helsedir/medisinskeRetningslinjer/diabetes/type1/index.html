@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+  	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nasjonal faglig retningslinje for diabetes</title>
+    <title>Nasjonal faglig retningslinje for spedbarnsernæring</title>
 		    <link href="http://helsedir.azurewebsites.net/css/bootstrap.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/reset.css" rel="stylesheet" />
     <link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
@@ -269,36 +292,29 @@
         <a id="content" tabindex="-1"></a>
     </div>
     <article class="container">  
-	  		<div class="row">
+	  	<div class="row">
 	<div class="col-md-7">
 		<header id="pageheader">
 			<nav>
 	  		<ol class="breadcrumbs clearfix">
 	    		<li><a href="http://helsedir.azurewebsites.net/layouts/forside.html">Forside</a></li>
 					<li><a href="../../" class="active">Nasjonale faglige retningslinjer</a></li>
-					<li><a href="../" class="active">Nasjonal faglig retningslinje for bruk av antibiotika i spesialishelsetjeneste</a></li>
+					<li><a href="../" class="active">Nasjonal faglig retningslinje diabetes</a></li>
 				</ol>
 			</nav>
-			<h1>Allment</h1>
+			<h1>Type I</h1>
 		</header>
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-md-7">
-<div class="border"></div>
+  <div class="border"></div>
   <ul>
-		<li><div class="transportsideknapp"><a href="#"><h2>Allergi</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Akutt dystoni</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Anafylaksi</h2></a></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Dykkeskader</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Dødsfall</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Feber og hypertermi</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Hypotermi</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Importsykdommer</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Meinigitt</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="sepsis/"><h2>Sepsis</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Strømskader</h2></a></div></li>
-		<li><div class="transportsideknapp"><a href="#"><h2>Synkope</h2></a></div></li>
+		<li><div class="transportsideknapp"><a href="diagnostikkAvDiabetes/"><h2>Diagnostikk</h2></a></div></li>
+		<li><div class="transportsideknapp"><a href="kontrollrutiner/"><h2>Kontrollrutiner</h2></a></div></li>
+		<li><div class="transportsideknapp"><a href="opplaering/"><h2>Opplæring</h2></a></li>
+		<li><div class="transportsideknapp"><a href="utredningNaarDiagnosenErStilt"><h2>Utredning når diagnosen er stilt</h2></a></div></li>
 	</ul>
 	<aside class="aside">
 		<div class="module module_related">

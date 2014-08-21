@@ -155,14 +155,29 @@
 .container section.recommendation header .context .column {
 	display: inline-block;
 	vertical-align: top;
-} 
+}
 
-.container section.recommendation header .context .gradingText {
-	width: 300px;
-} 
+.container .gradingInfo {
+	margin-top: 8px;
+}
 
-.container section.recommendation header .context .gradingTitle {
-	margin-right: 5px;
+.container .gradingInfo dl {
+	width: 320px;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+.container .gradingInfo dt {
+	float: left;
+  clear: left;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.container .gradingInfo dd {
+	padding: 0 0 10px 0;
+	margin: 0 0 0 48px;
+	font-weight: normal;
 }
 
 /* Accordion for H1, move to common.css? */
@@ -199,6 +214,11 @@
 .container .background_information,
 .container .text {
 	position: relative;
+}
+
+/* fix to prevent jumping in slider */
+.container p:first-of-type {
+	margin-top: 0px;
 }
 
 .container .kunnskapsgrunnlag dl {
@@ -328,7 +348,7 @@ text-align: left;
 	}
 	
 	.container .filterlist a h2 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 	.container section.recommendation h3{
@@ -384,7 +404,15 @@ text-align: left;
 		font-weight: bold;
 		padding: 5px 0 5px 15px;
 		text-align: center;
-	}  
+	} 
+	
+	.container .filterlist li:not(:first-child){
+		padding-left: 7px;
+}
+
+	.container .filterlist li:not(:last-child){
+		padding-right: 7px;
+	} 
 }
 
 /* AUTOCOMPLETE */
