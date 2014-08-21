@@ -27,6 +27,17 @@
         }
         visible = !visible;
     });
+
+    $('.hide_menu').on('click', function () {
+        expandedContent.slideUp('fast', function () {
+            expandedContent.addClass('visuallyhidden')
+                .slideDown(0);
+        });
+        expander.removeClass('js-expanded');
+        expander.blur();
+        visible = !visible;
+    });
+
     expander.keydown(function (ev) {
         if (ev.which == 13) {
             if (visible) {

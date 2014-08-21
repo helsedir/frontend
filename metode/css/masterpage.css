@@ -23,6 +23,7 @@
   display: block;
   height: 100px;
   padding-top: 10px;
+  max-width: 302px;
 }
 .logo:hover {
   text-decoration: none;
@@ -31,11 +32,17 @@
   font-family: "Soho Gothic W01 Light";
   display: block;
   font-size: 16px;
+  line-height: 23px;
+  color: #004e66;
 }
 .logo span.highlight {
   text-transform: uppercase;
-  color: #004e66;
+  color: #0093a7;
   font-size: 22px;
+  font-family: "Soho Gothic W01 Regular";
+}
+.logo span.right {
+  text-align: right;
 }
 #header {
   background: white;

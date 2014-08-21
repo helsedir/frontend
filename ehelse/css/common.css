@@ -67,7 +67,7 @@ h3 {
 h3.accordion {
   background: white;
   border-right: 4px solid #f4d01e;
-  padding: 20px 20px 22px 39px;
+  padding: 20px 20px 22px 43px;
   margin-bottom: 10px;
 }
 h4 {
@@ -189,7 +189,7 @@ a:hover {
   cursor: pointer;
   position: absolute;
   left: 0;
-  padding-left: 6px;
+  padding-left: 10px;
 }
 .has-visible-content h2:before,
 .has-visible-content .accordion:before {
@@ -209,7 +209,7 @@ a:hover {
   cursor: pointer;
   position: absolute;
   left: 0;
-  padding-left: 6px;
+  padding-left: 10px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -1487,7 +1487,7 @@ fieldset {
   border: none;
 }
 .cancelbutton:hover {
-  background: #02343f;
+  background: #002e41;
 }
 .dropdown label {
   display: block;

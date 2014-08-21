@@ -65,7 +65,7 @@
   background: #0093a7 !important;
 }
 .entrancebutton:hover {
-  background: #02343f;
+  background: #002e41;
   text-decoration: none;
 }
 .entrancebutton:hover h2,
@@ -100,11 +100,11 @@
   margin-bottom: 15px;
 }
 .entrancebutton:focus {
-  background: #02343f;
+  background: #002e41;
 }
 .entrancebutton:focus h2,
 .entrancebutton:focus p {
-  background: #02343f;
+  background: #002e41;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
@@ -112,7 +112,7 @@
 }
 .entrancebutton:visited:hover,
 .entrancebutton:hover:hover {
-  background: #02343f;
+  background: #002e41;
 }
 .entrancebutton.alternative {
   height: 160px;

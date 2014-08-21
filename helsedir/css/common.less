@@ -5,17 +5,20 @@
 @fontSohoRegular: "Soho Gothic W01 Regular";
 
 @colorDarkBlue: #004e66;
-@colorBlue023c49: #023c49;
+@colorDarkBlueHover: #002e41;
 @colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
 @colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
-@colorLightGray: #f2f2f2;
-@colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -192,7 +195,7 @@ body {
 
     .accordion {
         h3 {
-            border-bottom: 1px solid @colorMediumGray;
+            border-bottom: 1px solid @colorDarkGray;
             padding-bottom: 10px;
             padding-left: 33px;
         }
@@ -332,7 +335,7 @@ body {
 
                     &:hover, &:focus {
                         color: white;
-                        background: #666460;
+                        background: #5e5d57;
                     }
                 }
             }
@@ -346,7 +349,7 @@ body {
                 list-style-type: none;
                 margin-left: 0;
                 padding: 5px 0 5px 10px;
-                border-bottom: solid 1px @colorMediumGray;
+                border-bottom: solid 1px @colorDarkGray;
 
                 @media only screen and (min-width:900px) {
                     &:last-of-type {
@@ -369,7 +372,7 @@ body {
 
                 ul {
                     li:first-of-type {
-                        border-bottom: solid 1px @colorMediumGray;
+                        border-bottom: solid 1px @colorDarkGray;
                     }
 
                     li {
@@ -597,7 +600,7 @@ body {
     .borderbox {
         margin-bottom: 20px;
         margin-top: 10px;
-        border: 1px solid @colorMediumGray;
+        border: 1px solid @colorDarkGray;
         padding-left: 10px;
         background: white;
 
@@ -645,7 +648,7 @@ body {
 
         &:hover, &:focus {
             color: white;
-            background: #02343f url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+            background: @colorDarkBlueHover url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
         }
@@ -734,10 +737,10 @@ body {
         }
 
         &.inline, &.inline:visited {
-            border-bottom: 1px solid #bababa;
+            border-bottom: 1px solid @colorDarkGray;
 
             &:hover {
-                border-bottom: 1px solid #bababa;
+                border-bottom: 1px solid @colorDarkGray;
             }
         }
 
@@ -1141,7 +1144,7 @@ body {
                 }
 
                 .expired {
-                    color: @colorMediumGray;
+                    color: @colorDarkGray;
                 }
             }
 
@@ -1386,7 +1389,7 @@ body {
         }
 
         &:hover {
-            background: #bababa url(../img/spinner.png) no-repeat;
+            background: @colorDarkGray url(../img/spinner.png) no-repeat;
             -moz-background-size: 12%;
             -o-background-size: 12%;
             -webkit-background-size: 12%;
@@ -1426,7 +1429,7 @@ body {
             background-size: 10px;
 
             &:hover {
-                background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
+                background: #5e5d57 url(../img/ikon_pilmothoyre_hvit.png);
                 background-size: 10px;
                 background-repeat: no-repeat;
                 background-position: 95% 50%;
@@ -1673,7 +1676,7 @@ body {
         border: none;
 
         &:hover {
-            background: #02343f;
+            background: @colorDarkBlueHover;
         }
     }
 
@@ -1768,7 +1771,7 @@ body {
         }
 
         tr {
-            background: #dfe8e7;
+            background: #daecec;
 
             &.odd {
                 background: white;

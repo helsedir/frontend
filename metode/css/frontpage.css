@@ -28,6 +28,12 @@
   float: left;
   position: relative;
 }
+.entrancebutton.aboutthesystem a {
+  background: #0093a7;
+}
+.entrancebutton.aboutthesystem a:hover {
+  background: #01737c;
+}
 .entrancebutton a {
   height: 100%;
   width: 100%;
@@ -36,9 +42,10 @@
   text-decoration: none;
   background: #004e66;
   border-radius: 3px;
+  transition: all 0.5s;
 }
 .entrancebutton a:hover {
-  background: white;
+  background: #002e41;
 }
 .entrancebutton a:hover h2,
 .entrancebutton a:hover p,
@@ -46,7 +53,7 @@
 .entrancebutton a:hover h2:focus,
 .entrancebutton a:hover p:focus {
   text-decoration: none;
-  color: #838078;
+  color: white;
 }
 .entrancebutton a h2 {
   font-size: 28px;
@@ -102,12 +109,12 @@
   background-position: center;
 }
 .entrancebutton:hover span.finnmetode {
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_soek_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
 .entrancebutton:hover span.sendforslag {
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_send_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
@@ -116,7 +123,7 @@
              background: white no-repeat;
             background-size: 80px;
             background-position: 0 3px;*/
-  background: #004e66 url('../img/ikoner/hovedinngang_ikon_systemet_hvit.svg') no-repeat;
+  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
   background-size: 41px;
   background-position: center;
 }
@@ -328,10 +335,10 @@
     border: 1.3em solid #8ca037;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-    border-left: 1.4em solid #02343f;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-    border: 1.3em solid #02343f;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
     border-left: 1.4em solid #448c8a;

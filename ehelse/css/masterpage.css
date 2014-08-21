@@ -272,7 +272,7 @@ footer .tabs .tab-links li[aria-selected='true'],
 }
 footer .tabs .tab-links li[aria-selected='true']:focus,
 .toppmeny .tabs .tab-links li[aria-selected='true']:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
 }
 footer .tabs .tab-links li input,
@@ -281,7 +281,7 @@ footer .tabs .tab-links li input,
 }
 footer .tabs .tab-links li:focus,
 .toppmeny .tabs .tab-links li:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
   outline: 0;
 }
@@ -318,6 +318,14 @@ footer .tabs .tab-links .menu_search form button img,
 .toppmeny .tabs .tab-links .menu_search form button img {
   width: 23px;
   vertical-align: sub;
+}
+footer .tabs .hide_menu,
+.toppmeny .tabs .hide_menu {
+  background: none;
+  border: none;
+  float: right;
+  margin: 4px 174px 0 0;
+  color: white;
 }
 footer .map,
 .toppmeny .map {

@@ -34,15 +34,15 @@
   color: white;
 }
 .container .entrancebutton.menu button.js-expanded {
-  background-color: #666460;
+  background-color: #5e5d57;
   color: white;
   outline: 0;
 }
 .container .entrancebutton.menu button:hover {
-  background: #666460;
+  background: #5e5d57;
 }
 .container .entrancebutton.menu button:focus {
-  background: #666460;
+  background: #5e5d57;
 }
 .container .entrancebutton a {
   height: 100%;
@@ -58,7 +58,7 @@
   transition: all 0.5s;
 }
 .container .entrancebutton a:hover {
-  background: #02343f;
+  background: #002e41;
 }
 .container .entrancebutton a:hover h2,
 .container .entrancebutton a:hover p,
@@ -92,11 +92,11 @@
   margin-bottom: 15px;
 }
 .container .entrancebutton a:focus {
-  background: #02343f;
+  background: #002e41;
 }
 .container .entrancebutton a:focus h2,
 .container .entrancebutton a:focus p {
-  background: #02343f;
+  background: #002e41;
 }
 .container .entrancebutton:visited,
 .container .entrancebutton:hover {
@@ -151,11 +151,11 @@
 }
 .container.frontpage .internal-link.inline,
 .container.frontpage .internal-link.inline:visited {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #aeaba8;
 }
 .container.frontpage .internal-link.inline:hover,
 .container.frontpage .internal-link.inline:visited:hover {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #aeaba8;
 }
 .container.frontpage .internal-link:hover {
   border-bottom: 1px solid #0093a7;

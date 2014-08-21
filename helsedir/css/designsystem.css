@@ -52,6 +52,8 @@
 .hhs .illustrasjonsWrapper {
   float: left;
   margin-right: 1em;
+  margin-bottom: 20px;
+  width: 73px;
 }
 .hhs .boks {
   border: 1px solid #ddd;

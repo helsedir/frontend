@@ -5,17 +5,23 @@
 @fontSohoRegular: "Soho Gothic W01 Regular";
 
 @colorDarkBlue: #004e66;
+@colorDarkBlueHover: #002e41;
 @colorBlue023c49: #023c49;
 @colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
 @colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
 
 .no-background {
     background: #f7f6f6;
@@ -99,7 +105,7 @@
     }
 
     &:hover {
-        background: #02343f;
+        background: @colorDarkBlueHover;
         text-decoration: none;
 
         h2, p, &:focus, h2:focus, p:focus {
@@ -136,10 +142,10 @@
     }
 
     &:focus {
-        background: #02343f;
+        background: @colorDarkBlueHover;
 
         h2, p {
-            background: #02343f;
+            background: @colorDarkBlueHover;
         }
     }
 
@@ -147,7 +153,7 @@
         color: white;
 
         &:hover {
-            background: #02343f;
+            background: @colorDarkBlueHover;
         }
     }
 

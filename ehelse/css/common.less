@@ -5,17 +5,23 @@
 @fontSohoRegular: "Soho Gothic W01 Regular";
 
 @colorDarkBlue: #004e66;
-@colorBlue023c49: #023c49;
+@colorDarkBlueHover: #002e41;
+@colorBlue: #023c49;
 @colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
 @colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -29,7 +35,7 @@ html {
 body {
     padding: 0;
     font-size: 20px;
-    font-family: 'Calibri';
+    font-family: @fontCalibri;
     line-height: 27px;
     color: #222;
     background: url('../img/aside_dekorasjon.png');
@@ -84,7 +90,7 @@ h3 {
     &.accordion {
         background: white;
         border-right: 4px solid @colorYellow;
-        padding: 20px 20px 22px 39px;
+        padding: 20px 20px 22px 43px;
         margin-bottom: 10px;
     }
 }
@@ -224,7 +230,7 @@ a {
         cursor: pointer;
         position: absolute;
         left: 0;
-        padding-left: 6px;
+        padding-left: 10px;
     }
 }
 
@@ -248,7 +254,7 @@ a {
         cursor: pointer;
         position: absolute;
         left: 0;
-        padding-left: 6px;
+        padding-left: 10px;
     }
 }
 
@@ -1727,7 +1733,7 @@ fieldset {
     border: none;
 
     &:hover {
-        background: #02343f;
+        background: @colorDarkBlueHover;
     }
 }
 

@@ -1,15 +1,21 @@
 ﻿@colorDarkBlue: #004e66;
+@colorDarkBlueHover: #002e41;
 @colorBlue023c49: #023c49;
 @colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
 @colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
 
 .meeting {
     p {
@@ -56,6 +62,76 @@
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+
+.conference_transport {
+    margin: 30px 0 0 0;
+
+    a {
+        div.date {
+            float: left;
+            width: auto;
+            min-width: 160px;
+            padding-right: 20px;
+            font-weight: bold;
+            display: block;
+        }
+
+        div.information {
+            float: left;
+            width: 75%;
+
+            p {
+                margin-left: 35px;
+            }
+
+            .internal-link {
+                background-position: 0 15px;
+            }
+        }
+
+        span.date_number {
+            font-size: 36px;
+            display: block;
+            padding: 10px 0;
+            color: #c63629;
+            font-family: "Soho Gothic W01 Light";
+            text-align: right;
+        }
+
+        span.date_monthyear {
+            display: block;
+            color: #c63629;
+            font-family: @fontCalibri;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 42px;
+            font-family: "Soho Gothic W01 Light";
+            margin: 0;
+            color: #004e66;
+            color: @colorMediumBlue;
+
+            &.internal-link.arrow_right {
+                margin: 0;
+            }
+        }
+
+        p {
+            margin: 3px 0 0 0;
+            color: #222;
+        }
+
+        &:hover {
+            h2 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
 
 .conference {
     background: white;
@@ -156,11 +232,68 @@
             }
         }
     }
+
+    .conference_transport {
+        margin: 10px 0 10px 0;
+        padding: 5px 0 20px 15px;
+        background: white;
+
+        a {
+            span.date_number, span.date_monthyear {
+                text-align: left;
+                display: inline-block;
+                font-size: 24px;
+                line-height: 27px;
+            }
+
+            span.date_monthyear {
+                margin-bottom: 20px;
+            }
+
+            div.date, div.information {
+                float: none;
+                width: auto;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .conference_transport a span.date_number,
+    .conference_transport a span.date_monthyear {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .conference_transport a div.information {
+        width: 100%;
+    }
+
+    .conference_transport a h2.internal-link.arrow_right {
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
+    .conference_transport a div.information {
+        width: 65%;
+    }
+
     .conference img {
         margin: 0 auto;
         display: block;
+    }
+
+    .conference_transport a {
+        span.date_number, span.date_monthyear {
+            text-align: left;
+        }
+    }
+
+    .conference_transport a div.date {
+        min-width: 150px;
     }
 }

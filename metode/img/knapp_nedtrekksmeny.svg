@@ -6,6 +6,6 @@
 <rect x="0" fill="#FFFFFF" width="40" height="40"/>
 <g>
 	<polyline fill="#FFFFFF" points="29,15.3 20,24 11,15.3 	"/>
-	<polygon fill="#004E66" points="20,25.4 10.3,16 11.7,14.6 20,22.6 28.3,14.6 29.7,16 	"/>
+	<polygon fill="@colorDarkBlue" points="20,25.4 10.3,16 11.7,14.6 20,22.6 28.3,14.6 29.7,16 	"/>
 </g>
 </svg>

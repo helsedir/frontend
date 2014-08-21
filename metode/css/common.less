@@ -5,17 +5,23 @@
 @fontSohoRegular: "Soho Gothic W01 Regular";
 
 @colorDarkBlue: #004e66;
-@colorBlue023c49: #023c49;
+@colorDarkBlueHover: #002e41;
+@colorBlue: #023c49;
 @colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
 @colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
 @colorLightGray: #f2f2f2;
 @colorMediumGray: #bababa;
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -103,7 +109,7 @@ h4 {
     &.accordion {
         margin: 55px 0 0 0;
         padding-bottom: 20px;
-        border-bottom: 1px solid #004e66;
+        border-bottom: 1px solid @colorDarkBlue;
     }
 }
 
@@ -1194,7 +1200,7 @@ p.keyfigures, h4.keyfigures {
 
         p {
             margin: 0 20px 0 0;
-            color: #004e66;
+            color: @colorDarkBlue;
             text-transform: uppercase;
             display: inline;
             vertical-align: bottom;
@@ -1207,7 +1213,7 @@ p.keyfigures, h4.keyfigures {
     width: 300px;
     text-align: center;
     margin: 50px 0;
-    color: #004e66;
+    color: @colorDarkBlue;
     background: #d1d0cf url(../img/spinner.png) no-repeat;
     font-family: 'Calibri';
     font-size: 20px;
@@ -1281,7 +1287,7 @@ fieldset {
     border: none;
 
     &:hover {
-        background: #02343f;
+        background: @colorDarkBlueHover;
     }
 }
 
@@ -1331,7 +1337,7 @@ fieldset {
     .selectedfilter {
         a {
             font-weight: bold;
-            border-bottom: 3px solid #004e66;
+            border-bottom: 3px solid @colorDarkBlue;
             padding-bottom: 6px;
 
             &:hover {
@@ -1345,7 +1351,7 @@ fieldset {
         margin-right: 25px;
 
         a {
-            color: #004e66;
+            color: @colorDarkBlue;
             font-size: 18px;
             border-bottom: none;
         }
@@ -1744,7 +1750,7 @@ fieldset {
                 &:before {
                     font-family: "FontAwesome";
                     content: '\f104';
-                    color: #004e66;
+                    color: @colorDarkBlue;
                     font-size: 25px;
                     margin: 0 5px 0 5px;
                     vertical-align: middle;
@@ -1950,11 +1956,11 @@ fieldset {
 
             &.metodevurdering {
                 .drop_triangle {
-                    border-left: 4.1em solid #004e66;
+                    border-left: 4.1em solid @colorDarkBlue;
                 }
 
                 .drop_circle {
-                    border: 4em solid #004e66;
+                    border: 4em solid @colorDarkBlue;
                 }
             }
 
@@ -2040,11 +2046,11 @@ fieldset {
 
                 &.metodevurdering {
                     .drop_triangle {
-                        border-left: 4.1em solid #02343f;
+                        border-left: 4.1em solid @colorDarkBlueHover;
                     }
 
                     .drop_circle {
-                        border: 4em solid #02343f;
+                        border: 4em solid @colorDarkBlueHover;
                     }
                 }
 
@@ -2133,11 +2139,11 @@ fieldset {
 
                 &.metodevurdering {
                     .drop_triangle {
-                        border-left: 3.1em solid #004e66;
+                        border-left: 3.1em solid @colorDarkBlue;
                     }
 
                     .drop_circle {
-                        border: 3em solid #004e66;
+                        border: 3em solid @colorDarkBlue;
                     }
                 }
 
@@ -2199,11 +2205,11 @@ fieldset {
 
                     &.metodevurdering {
                         .drop_triangle {
-                            border-left: 3.1em solid #02343f;
+                            border-left: 3.1em solid @colorDarkBlueHover;
                         }
 
                         .drop_circle {
-                            border: 3em solid #02343f;
+                            border: 3em solid @colorDarkBlueHover;
                         }
                     }
 

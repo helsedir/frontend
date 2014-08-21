@@ -22,7 +22,7 @@ body {
   line-height: 30px;
   color: #222;
   background-color: #f7f6f6;
-  background-image: url(../img/bakgrunn_menneske.svg);
+  background-image: url('../img/bakgrunn_menneske.svg');
   background-position: 100% 20%;
   background-position-x: 100%;
   background-position-y: 20%;
@@ -212,7 +212,7 @@ body {
 }
 .container .accordion h3,
 .container-fluid .accordion h3 {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #aeaba8;
   padding-bottom: 10px;
   padding-left: 33px;
 }
@@ -340,7 +340,7 @@ body {
 .container .tabs .tab-links li a:focus,
 .container-fluid .tabs .tab-links li a:focus {
   color: white;
-  background: #666460;
+  background: #5e5d57;
 }
 .container .tabs .tab-content,
 .container-fluid .tabs .tab-content {
@@ -352,7 +352,7 @@ body {
   list-style-type: none;
   margin-left: 0;
   padding: 5px 0 5px 10px;
-  border-bottom: solid 1px #bababa;
+  border-bottom: solid 1px #aeaba8;
 }
 @media only screen and (min-width: 900px) {
   .container .tabs .tab-content li:last-of-type,
@@ -379,7 +379,7 @@ body {
 }
 .container .tabs .tab-content .alphabetical ul li:first-of-type,
 .container-fluid .tabs .tab-content .alphabetical ul li:first-of-type {
-  border-bottom: solid 1px #bababa;
+  border-bottom: solid 1px #aeaba8;
 }
 .container .tabs .tab-content .alphabetical ul li,
 .container-fluid .tabs .tab-content .alphabetical ul li {
@@ -420,7 +420,7 @@ body {
   width: 100%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url(../img/ikon_forstorrelsesglass.png) center no-repeat;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
   border: 1px solid #004e66;
   -moz-background-size: auto 80%;
   -o-background-size: auto 80%;
@@ -615,7 +615,7 @@ body {
 .container-fluid .borderbox {
   margin-bottom: 20px;
   margin-top: 10px;
-  border: 1px solid #bababa;
+  border: 1px solid #aeaba8;
   padding-left: 10px;
   background: white;
 }
@@ -660,7 +660,7 @@ body {
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
@@ -672,14 +672,14 @@ body {
 .container .calltoaction:focus,
 .container-fluid .calltoaction:focus {
   color: white;
-  background: #02343f url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #002e41 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
 }
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #0093a7 url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: white;
@@ -688,7 +688,7 @@ body {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #01737c url(../img/ikon_pilmothoyre_hvit.png) no-repeat;
+  background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   border: 2px solid #01737c;
   background-position: 20px 50%;
   background-size: 10px;
@@ -712,7 +712,7 @@ body {
         }
 
         &:visited {
-            background: url(../img/navigasjon/ikon_eksternlenkebesoekt.svg) right no-repeat;
+            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
             background-size: 16px 16px;
         }*/
 }
@@ -777,13 +777,13 @@ body {
 .container-fluid .internal-link.inline,
 .container .internal-link.inline:visited,
 .container-fluid .internal-link.inline:visited {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #aeaba8;
 }
 .container .internal-link.inline:hover,
 .container-fluid .internal-link.inline:hover,
 .container .internal-link.inline:visited:hover,
 .container-fluid .internal-link.inline:visited:hover {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #aeaba8;
 }
 .container .internal-link:hover,
 .container-fluid .internal-link:hover {
@@ -1200,7 +1200,7 @@ body {
 }
 .container .module.module_message.date_small .expired,
 .container-fluid .module.module_message.date_small .expired {
-  color: #bababa;
+  color: #aeaba8;
 }
 .container .module.module_message.date_small_closed,
 .container-fluid .module.module_message.date_small_closed {
@@ -1477,7 +1477,7 @@ body {
 }
 .container .showmorenews:hover,
 .container-fluid .showmorenews:hover {
-  background: #bababa url(../img/spinner.png) no-repeat;
+  background: #aeaba8 url(../img/spinner.png) no-repeat;
   -moz-background-size: 12%;
   -o-background-size: 12%;
   -webkit-background-size: 12%;
@@ -1518,7 +1518,7 @@ body {
 }
 .container.crisis .button:hover,
 .container-fluid.crisis .button:hover {
-  background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
+  background: #5e5d57 url(../img/ikon_pilmothoyre_hvit.png);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -1668,7 +1668,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url(../img/navigasjon/radioknapp_inaktiv.svg) top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1677,7 +1677,7 @@ body {
 }
 .container input[type="radio"] + label span:hover,
 .container-fluid input[type="radio"] + label span:hover {
-  background: url(../img/navigasjon/radioknapp_hover.svg) top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1705,7 +1705,7 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url(../img/navigasjon/checkbox_inaktiv.svg) top left no-repeat;
+  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1714,7 +1714,7 @@ body {
 }
 .container input[type="checkbox"] + label span:hover,
 .container-fluid input[type="checkbox"] + label span:hover {
-  background: url(../img/navigasjon/checkbox_hover.svg) top left no-repeat;
+  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1764,7 +1764,7 @@ body {
 }
 .container .cancelbutton:hover,
 .container-fluid .cancelbutton:hover {
-  background: #02343f;
+  background: #002e41;
 }
 .container .dropdown label,
 .container-fluid .dropdown label {
@@ -1864,7 +1864,7 @@ body {
 }
 .container .table_general tr,
 .container-fluid .table_general tr {
-  background: #dfe8e7;
+  background: #daecec;
 }
 .container .table_general tr.odd,
 .container-fluid .table_general tr.odd {

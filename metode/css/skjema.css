@@ -296,10 +296,10 @@ input[type=checkbox]:focus {
   border: 2em solid #8ca037;
 }
 .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-  border-left: 2.1em solid #02343f;
+  border-left: 2.1em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-  border: 2em solid #02343f;
+  border: 2em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
   border-left: 2.1em solid #448c8a;
@@ -401,11 +401,11 @@ input[type=checkbox]:focus {
 
                 &.metodevurdering.selected {
                     .drop_triangle {
-                        border-left: 1.4em solid #004e66;
+                        border-left: 1.4em solid @colorDarkBlue;
                     }
 
                     .drop_circle {
-                        border: 1.3em solid #004e66;
+                        border: 1.3em solid @colorDarkBlue;
                     }
                 }
 
@@ -481,11 +481,11 @@ input[type=checkbox]:focus {
 
                     &.metodevurdering {
                         .drop_triangle {
-                            border-left: 1.4em solid #02343f;
+                            border-left: 1.4em solid @colorDarkBlueHover;
                         }
 
                         .drop_circle {
-                            border: 1.3em solid #02343f;
+                            border: 1.3em solid @colorDarkBlueHover;
                         }
                     }
 
@@ -611,10 +611,10 @@ input[type=checkbox]:focus {
     border: 1.3em solid #8ca037;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-    border-left: 1.4em solid #02343f;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-    border: 1.3em solid #02343f;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
     border-left: 1.4em solid #448c8a;
@@ -737,10 +737,10 @@ input[type=checkbox]:focus {
     border: 1.3em solid #8ca037;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-    border-left: 1.4em solid #02343f;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-    border: 1.3em solid #02343f;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
     border-left: 1.4em solid #448c8a;

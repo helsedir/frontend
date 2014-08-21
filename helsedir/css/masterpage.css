@@ -117,7 +117,7 @@
 #header .menubutton button.js-expander:focus,
 #footer .menubutton button.js-expander:focus {
   text-decoration: none;
-  background-color: #d1d0c4;
+  background-color: #dedddb;
   border: solid 1px #004e66;
 }
 #header .menubutton button.js-expander:focus span,
@@ -276,7 +276,7 @@
 }
 #header footer .tabs .tab-links li[aria-selected='true']:focus,
 #footer footer .tabs .tab-links li[aria-selected='true']:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
 }
 #header footer .tabs .tab-links li input,
@@ -285,7 +285,7 @@
 }
 #header footer .tabs .tab-links li:focus,
 #footer footer .tabs .tab-links li:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
   outline: 0;
 }
@@ -343,7 +343,7 @@
 }
 #header footer .tab-content li:hover,
 #footer footer .tab-content li:hover {
-  background: #d1d0c4;
+  background: #dedddb;
 }
 #header footer.rammeverk,
 #footer footer.rammeverk {
@@ -531,14 +531,14 @@
   color: #004e66;
 }
 .container-fluid.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
 }
 .container-fluid.toppmeny .tabs .tab-links li input {
   width: 100%;
 }
 .container-fluid.toppmeny .tabs .tab-links li:focus {
-  background: #02343f;
+  background: #002e41;
   color: white;
   outline: 0;
 }
@@ -595,7 +595,7 @@
   border-bottom: none;
 }
 .container-fluid.toppmeny .tab-content li:hover {
-  background: #d1d0c4;
+  background: #dedddb;
 }
 /**********Media**********/
 @media only screen and (max-width: 1199px) {
