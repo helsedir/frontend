@@ -758,7 +758,7 @@ a.external-link.inline:before {
   background-position: 0 7px;
 }
 .internal-link:visited {
-  color: #004e66;
+  color: #838078;
 }
 .internal-link.document {
   margin: 0;
@@ -844,17 +844,11 @@ h4.keyfigures {
   margin-left: -19px;
   height: 100px;
 }
-.module.module_related {
-  border-left: 2px solid #a1bf37;
-}
 .module.module_related .bulletlist {
   margin-top: 10px;
 }
-.module.module_related .bulletlist li:before {
-  color: #a1bf37;
-}
 .module.module_related .illustration {
-  display: blockmo;
+  display: block;
 }
 .module.module_publication {
   border-left: 2px solid #df9922;
