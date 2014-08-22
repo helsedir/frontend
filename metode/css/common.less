@@ -1302,15 +1302,14 @@ fieldset {
     select {
         width: 100%;
         border: none;
-        border-bottom: 1px solid #838078;
         font-family: @fontCalibri;
         font-size: 20px;
-        padding: 0 38px 4px 0;
+        padding: 5px 38px 4px 5px;
         -webkit-appearance: none; /*Removes default chrome and safari style*/
         -moz-appearance: none; /* Removes Default Firefox style*/
-        background: url('../img/pil_nedover_graa.png') no-repeat; /*Adds background-image*/
-        background-position: 96%; /*Position of the background-image*/
-        background-size: 20px;
+        background: white url('../img/ikoner/knapp_dropdownmeny.png') no-repeat; /*Adds background-image*/
+        background-position: 100% 0; /*Position of the background-image*/
+        background-size: 38px;
         text-indent: 0.01px; /* Removes default arrow from firefox*/
         text-overflow: ""; /*Removes default arrow from firefox*/
         color: #222;
@@ -1321,7 +1320,7 @@ fieldset {
 
         &:focus, &:active {
             background: #838078 url('../img/pil_nedover_hvit.png') no-repeat;
-            background-position: 96%;
+            background-position: 97%;
             -moz-background-size: 20px;
             -o-background-size: 20px;
             -webkit-background-size: 20px;
@@ -1537,12 +1536,52 @@ fieldset {
     margin-bottom: 70px;
 }
 
+.searchform {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 41px;
+    /* max-width: 220px; */
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+    background: none;
+
+    span {
+        vertical-align: sub;
+    }
+
+    button {
+        border: none;
+        width: 40px;
+        height: 40px;
+        padding: 5px 0 4px 0;
+        vertical-align: middle;
+        background: url(../img/ikoner/knapp_soekefelt.svg) no-repeat;
+
+        img {
+            width: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    input {
+        border: none;
+        padding: 0;
+        width: 170px;
+        vertical-align: middle;
+        background: white;
+        padding-left: 10px;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
         right: 0;
         position: absolute;
-        margin-right: -54%;
+        margin-right: -75%;
 
         &.module_person {
             top: auto;
@@ -1553,11 +1592,11 @@ fieldset {
             bottom: 0;
             right: 0;
             top: auto;
-            margin-right: -52%;
+            margin-right: -75%;
         }
 
         &.top {
-            margin-right: -52%;
+            margin-right: -75%;
         }
     }
 
@@ -1565,7 +1604,7 @@ fieldset {
         bottom: 0;
         right: 0;
         position: absolute;
-        margin-right: -54%;
+        margin-right: -75%;
         width: 386px;
     }
 }
@@ -1893,10 +1932,9 @@ fieldset {
 }
 
 .method_entrance {
-    float: left;
-    margin: 50px 52px 50px 15px;
+    margin: 50px 40px 50px 40px;
     cursor: pointer;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     text-align: center;
     width: 170px;
@@ -1907,10 +1945,6 @@ fieldset {
 
     &:first-of-type {
         margin-left: 0;
-    }
-
-    &:last-of-type {
-        margin-right: 0;
     }
 
     h3 {

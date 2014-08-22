@@ -210,32 +210,32 @@
   color: #c63629;
   display: block;
   font-family: "Soho Gothic W01 Light";
-  margin-left: 28px;
+  margin-right: 28px;
   line-height: 27px;
   text-align: right;
 }
 .container.frontpage .conferenceitem .month {
-  margin-left: 28px;
   font-size: 18px;
   text-transform: uppercase;
   font-family: 'Calibri';
   color: #c63629;
   display: block;
   text-align: right;
+  margin-top: 2px;
 }
 .container.frontpage .conferenceitem .external-link {
   margin-bottom: 0;
 }
 .container.frontpage .conferenceitem > div:nth-child(2n-1) {
-  width: 68%;
-  float: left;
-  min-height: 100px;
-}
-.container.frontpage .conferenceitem > div:nth-child(2n) {
   width: 25%;
   float: left;
   min-height: 85px;
   padding-top: 15px;
+}
+.container.frontpage .conferenceitem > div:nth-child(2n) {
+  width: 68%;
+  float: left;
+  min-height: 100px;
 }
 .container.frontpage .statistics_image {
   margin-bottom: 20px;

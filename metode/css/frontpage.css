@@ -63,6 +63,7 @@
   position: relative;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 0;
   border: none;
 }
 .entrancebutton a:focus {
@@ -71,6 +72,11 @@
 .entrancebutton a:focus h2,
 .entrancebutton a:focus p {
   background: #004e66;
+}
+.entrancebutton a p {
+  text-align: center;
+  color: white;
+  margin-top: 0;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
@@ -209,6 +215,10 @@
 .wrapper_leverandorer .container,
 .wrapper_pasienter .container {
   background: white;
+}
+.drops {
+  width: 100%;
+  text-align: center;
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .entrancebutton {
@@ -389,8 +399,17 @@
   .wrapper_pasienter .container {
     background: #f2f2f2;
   }
-  .footerlinkswrapper .linklist {
-    margin-top: 30px;
+  .news h2 {
+    margin-bottom: 15px;
+  }
+  .news h3 {
+    margin-top: 15px;
+  }
+  .news .news_item {
+    margin-bottom: 15px;
+  }
+  .news .internal-link {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */

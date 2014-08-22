@@ -26,10 +26,10 @@
   text-align: left;
 }
 .searchform {
-  width: 61%;
+  width: 100%;
 }
 .searchform input {
-  width: 92%;
+  width: 93%;
 }
 .resultnumber {
   color: #838078;
@@ -46,7 +46,7 @@
 }
 .transportsideknapp .status_information {
   float: left;
-  width: 395px;
+  width: 362px;
   margin: 24px 0 0 30px;
 }
 .transportsideknapp .status_information .status_received {
