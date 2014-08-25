@@ -578,18 +578,19 @@ a.external-link.inline:hover {
   border-bottom: 1px solid #222;
 }
 .internal-link {
-  color: #222;
+  color: #838078;
   font-family: 'Calibri';
   font-size: 20px;
   background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-  background-position: 0 7px;
+  background-position: 0 5px;
   background-size: 20px;
   padding-left: 35px;
   margin-top: 40px;
-  display: block;
+  display: inline;
+  border-bottom: 1px solid #838078;
 }
 .internal-link:visited {
-  color: #222;
+  color: #838078;
 }
 .internal-link.inline {
   display: inline;
@@ -600,6 +601,10 @@ a.external-link.inline:hover {
 }
 .internal-link.inline:hover {
   color: #222;
+}
+.internal-link:hover {
+  color: #222;
+  border-bottom: 1px solid #222;
 }
 p.keyfigures,
 h4.keyfigures {
@@ -1650,14 +1655,6 @@ fieldset {
 .method_entrance:first-of-type {
   margin-left: 0;
 }
-.method_entrance h3 {
-  text-align: center;
-  margin: 15px 0 0 0;
-  font-size: 24px;
-  font-family: "Soho Gothic W01 Light";
-  color: #222;
-  border-bottom: 2px dotted #222;
-}
 .method_entrance .drop_wrapper {
   display: inline-block;
   width: 100%;
@@ -1765,6 +1762,14 @@ fieldset {
 .method_entrance .heading_wrapper {
   margin-bottom: 30px;
   display: inline-block;
+}
+.method_entrance .heading_wrapper h3 {
+  color: #0093a7;
+  text-align: center;
+  margin: 15px 0 0 0;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  border-bottom: 2px dotted #0093a7;
 }
 @media only screen and (max-width: 599px) {
   .module.module_information {

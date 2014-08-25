@@ -678,18 +678,19 @@ iframe {
 }
 
 .internal-link {
-    color: #222;
+    color: #838078;
     font-family: @fontCalibri;
     font-size: 20px;
     background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-    background-position: 0 7px;
+    background-position: 0 5px;
     background-size: 20px;
     padding-left: 35px;
     margin-top: 40px;
-    display: block;
+    display: inline;
+    border-bottom: 1px solid #838078;
 
     &:visited {
-        color: #222;
+        color: #838078;
     }
 
     &.inline {
@@ -702,6 +703,11 @@ iframe {
         &:hover {
             color: #222;
         }
+    }
+
+    &:hover {
+        color: #222;
+        border-bottom: 1px solid #222;
     }
 }
 
@@ -1965,15 +1971,6 @@ fieldset {
         margin-left: 0;
     }
 
-    h3 {
-        text-align: center;
-        margin: 15px 0 0 0;
-        font-size: 24px;
-        font-family: @fontSohoLight;
-        color: #222;
-        border-bottom: 2px dotted #222;
-    }
-
     .drop_wrapper {
         display: inline-block;
         width: 100%;
@@ -2132,6 +2129,15 @@ fieldset {
     .heading_wrapper {
         margin-bottom: 30px;
         display: inline-block;
+
+        h3 {
+            color: @colorMediumBlue;
+            text-align: center;
+            margin: 15px 0 0 0;
+            font-size: 24px;
+            font-family: @fontSohoLight;
+            border-bottom: 2px dotted @colorMediumBlue;
+        }
     }
 }
 

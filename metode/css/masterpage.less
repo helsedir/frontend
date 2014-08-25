@@ -51,32 +51,10 @@
 
 .logo {
     display: block;
-    height: 100px;
-    padding-top: 10px;
-    max-width: 302px;
-
-    &:hover {
-        text-decoration: none;
-    }
-
-    span {
-        font-family: @fontSohoLight;
-        display: block;
-        font-size: 16px;
-        line-height: 23px;
-        color: @colorDarkBlue;
-
-        &.highlight {
-            text-transform: uppercase;
-            color: @colorMediumBlue;
-            font-size: 22px;
-            font-family: @fontSohoRegular;
-        }
-
-        &.right {
-            text-align: right;
-        }
-    }
+    height: 76px;
+    margin-top: 19px;
+    max-width: 346px;
+    background: url(../img/logo.svg) no-repeat;
 }
 
 #header {
@@ -133,13 +111,18 @@
         margin-top: 20px;
         margin-bottom: 0;
 
-        li a {
-            font-size: 20px;
-            font-family: @fontCalibri;
+        li {
+            margin-bottom: 15px;
+
+            a {
+                font-size: 20px;
+                font-family: @fontCalibri;
+                line-height: 27px;
+            }
         }
 
         li a:hover {
-            text-decoration: underline;
+            border-bottom: 1px solid #222;
         }
 
         .internal-link {
@@ -148,7 +131,7 @@
             background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
             background-size: 20px;
             background-position: 0 5px;
-            display: inline-block;
+            display: inline;
         }
     }
 
@@ -272,6 +255,40 @@
             }
         }
     }
+
+    .about {
+        display: inline-block;
+        background: #004e66 url('../img/knapp_Omoss.svg') no-repeat;
+        -moz-background-size: 41px;
+        -o-background-size: 41px;
+        -webkit-background-size: 41px;
+        background-size: 41px;
+        background-position: center;
+        border-radius: 3px;
+        margin-top: 31px;
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+        min-height: 40px;
+        text-align: center;
+    }
+
+    .english {
+        display: inline-block;
+        background: #004e66 url('../img/knapp_English.svg') no-repeat;
+        -moz-background-size: 41px;
+        -o-background-size: 41px;
+        -webkit-background-size: 41px;
+        background-size: 41px;
+        background-position: center;
+        border-radius: 3px;
+        margin-top: 31px;
+        width: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+        min-height: 40px;
+        text-align: center;
+    }
 }
 
 .logoline {
@@ -336,21 +353,6 @@
 }
 
 @media only screen and (max-width: 599px) {
-    .logo {
-        height: auto;
-        padding: 0;
-        width: 242px;
-
-        span {
-            font-size: 12px;
-            line-height: 18px;
-
-            &.highlight {
-                font-size: 18px;
-            }
-        }
-    }
-
     header {
         .no-padding {
             padding: 0;
@@ -358,10 +360,10 @@
 
         &.masterheader {
             margin: 0px 0 10px 0;
-        }
 
-        .menubutton.mobile-search {
-            margin-top: 10px;
+            .menubutton, .about, .english {
+                margin-top: 16px;
+            }
         }
     }
 
@@ -400,6 +402,10 @@
     #footer {
         padding-top: 0;
     }
+
+    .logo {
+        height: 37px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -429,6 +435,16 @@
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    header {
+        &.masterheader {
+            .menubutton {
+                margin-top: 31px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 899px) {
     .menubutton {
         width: 40px;
@@ -446,7 +462,6 @@
             background-size: 30px;
             background-position: center;
             border-radius: 3px;
-            margin-top: 31px;
 
             &:focus {
                 text-decoration: none;

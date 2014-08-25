@@ -152,7 +152,6 @@
   margin-bottom: 10px;
 }
 .news .date_status {
-  padding-left: 35px;
   line-height: 20px;
 }
 .news .ingress {
@@ -166,11 +165,9 @@
   font-size: 24px;
   line-height: 29px;
   font-family: "Soho Gothic W01 Light";
-  color: #222;
-  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-  background-size: 20px;
-  background-position: 0px 7px;
-  padding-left: 35px;
+  color: #0093a7;
+  border-bottom: 2px dotted #0093a7;
+  display: inline;
 }
 .news h3 {
   margin-top: 24px;
@@ -181,9 +178,6 @@
 .news .see-all {
   margin-top: 20px;
   display: block;
-}
-.news a.internal-link:hover {
-  text-decoration: underline;
 }
 .news a:hover {
   text-decoration: none;
@@ -197,9 +191,10 @@
   font-family: "Soho Gothic W01 Light";
   color: #0093a7;
   border-bottom: 2px dotted #0093a7;
+  display: inline;
 }
 .news .news_item {
-  margin-bottom: 50px;
+  margin-bottom: 23px;
 }
 .newsillustration {
   margin-top: 25px;
@@ -376,6 +371,7 @@
   }
   h2 {
     margin-top: 30px;
+    font-size: 28px;
   }
   .wrapper_statusoppdateringer {
     background: white;
@@ -413,6 +409,27 @@
   }
   .news .internal-link {
     margin-top: 15px;
+  }
+  .entrancebutton span {
+    width: 60px;
+    height: 60px;
+  }
+  .entrancebutton span.sendforslag,
+  .entrancebutton span.finnmetode {
+    background-size: 28px;
+  }
+  .entrancebutton span.omsystemet {
+    background-size: 32px;
+  }
+  .entrancebutton:hover span.sendforslag,
+  .entrancebutton:hover span.finnmetode {
+    background-size: 28px;
+  }
+  .entrancebutton:hover span.omsystemet {
+    background-size: 32px;
+  }
+  .entrancebutton a h2 {
+    margin-top: 23px;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */
