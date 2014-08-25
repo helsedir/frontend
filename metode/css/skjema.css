@@ -8,7 +8,7 @@
 .email,
 .zipcode,
 .location {
-  width: 45%;
+  width: 44%;
   float: left;
   margin-bottom: 20px;
 }
@@ -57,10 +57,10 @@ input.radio {
 }
 .checkbox input {
   width: auto;
-  margin: 10px 20px 10px 0;
+  margin: 10px 10px 10px 0;
 }
 .checkbox label {
-  display: inline-block;
+  display: inline;
   margin: 10px 0;
 }
 .calltoaction.send {
@@ -157,7 +157,7 @@ input[type=checkbox]:focus {
   line-height: 30px;
   width: 32%;
   margin: 5px 1px 0 0;
-  text-indent: 35px;
+  text-indent: 22px;
   position: relative;
 }
 .breadcrumbs_schema li:before {

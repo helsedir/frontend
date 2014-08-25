@@ -447,7 +447,7 @@ figure .metatext {
 .linklist li a.internal-link.arrow_right,
 .linklist li a.external-link {
   text-decoration: none;
-  margin: 5px 0;
+  margin: 5px 0 15px 0;
 }
 .linklist .internal-link {
   margin-top: 10px;
@@ -531,26 +531,28 @@ iframe {
 }
 .external-link,
 a.external-link {
-  color: #222;
+  color: #838078;
   font-family: 'Calibri';
   font-size: 20px;
-  background: url(../img/ekstern_lenke_mellomblaa.svg) no-repeat;
-  background-size: 10px;
-  background-position: 0px 7px;
-  padding-left: 22px;
-  margin-top: 18px;
-  display: block;
-  cursor: pointer;
+  line-height: 30px;
+  text-decoration: none;
+  margin: 15px 0;
+  display: inline;
+  border-bottom: 1px solid #838078;
+}
+.external-link:after,
+a.external-link:after {
+  content: '';
+  background: url('../img/ekstern_lenke_mellomblaa.svg') right 67% no-repeat;
+  background-size: 11px;
+  display: inline;
+  padding-left: 17px;
 }
 .external-link:hover,
 a.external-link:hover {
   text-decoration: none;
   color: #222;
-  transition: all 0.5s;
-}
-.external-link:visited,
-a.external-link:visited {
-  color: #222;
+  border-bottom: 1px solid #222;
 }
 .external-link.last,
 a.external-link.last {
@@ -558,27 +560,22 @@ a.external-link.last {
 }
 .external-link.inline,
 a.external-link.inline {
-  padding-left: 17px;
-  background: url(../img/navigasjon/ekstern_lenke_sort.svg) no-repeat;
-  background-size: 10px;
-  background-position: 0px 10px;
   color: #222;
   border-bottom: 1px solid #aeaba8;
   display: inline;
   position: relative;
 }
+.external-link.inline:after,
+a.external-link.inline:after {
+  content: '';
+  background: url('../img/navigasjon/ekstern_lenke_sort.svg') right 67% no-repeat;
+  background-size: 11px;
+  display: inline;
+  padding-left: 17px;
+}
 .external-link.inline:hover,
 a.external-link.inline:hover {
   border-bottom: 1px solid #222;
-}
-.external-link.inline:before,
-a.external-link.inline:before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  height: 27px;
-  width: 17px;
-  border-bottom: 1px solid #f7f6f6;
 }
 .internal-link {
   color: #222;
@@ -672,6 +669,11 @@ h4.keyfigures {
   margin-left: -19px;
   height: 100px;
 }
+.module.module_related {
+  padding: 20px 28px;
+  border-left: 4px solid #0093a7;
+  background: white;
+}
 .module.module_related .bulletlist {
   margin-top: 10px;
 }
@@ -680,6 +682,9 @@ h4.keyfigures {
 }
 .module.module_related .illustration {
   display: blockmo;
+}
+.module.module_related .linklist li {
+  margin-bottom: 20px;
 }
 .module.module_publication {
   border-left: 2px solid #df9922;
@@ -891,7 +896,8 @@ h4.keyfigures {
   margin-bottom: 5px;
 }
 .module.module_person .person_information a {
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 27px;
   display: inline-block;
   color: #222;
 }
@@ -907,7 +913,7 @@ h4.keyfigures {
   line-height: 30px;
   margin: 0 0 7px 0;
   font-family: "Soho Gothic W01 Light";
-  color: #0093a7;
+  color: #838078;
 }
 .module.module_person img {
   width: 130px;
@@ -1121,19 +1127,22 @@ fieldset {
   text-overflow: "";
   /*Removes default arrow from firefox*/
   color: #222;
+  /* &:focus, &:active {
+            background: #838078 url('../img/pil_nedover_hvit.png') no-repeat;
+            background-position: 97%;
+            -moz-background-size: 20px;
+            -o-background-size: 20px;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            color: white;
+        }
+           */
 }
 .dropdown select::-ms-expand {
   display: none;
 }
-.dropdown select:focus,
-.dropdown select:active {
-  background: #838078 url('../img/pil_nedover_hvit.png') no-repeat;
-  background-position: 97%;
-  -moz-background-size: 20px;
-  -o-background-size: 20px;
-  -webkit-background-size: 20px;
-  background-size: 20px;
-  color: white;
+.dropdown select.selected {
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .filterlist {
   margin-bottom: 20px;
@@ -1161,17 +1170,17 @@ fieldset {
   }
   .refinesearch .form-group select {
     width: 317px;
-    background: url('../img/pil_nedover_graa.png') no-repeat scroll 90% center;
-    background-size: 20px;
+    background: #ffffff url('../img/ikoner/knapp_dropdownmeny.png') no-repeat scroll 94% center;
+    background-size: 36px;
   }
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: #838078 url('../img/pil_nedover_hvit.png') no-repeat;
-    background-position: 90%;
-    -moz-background-size: 20px;
-    -o-background-size: 20px;
-    -webkit-background-size: 20px;
-    background-size: 20px;
+    background: #838078 url('../img/ikoner/knapp_dropdownmeny.png') no-repeat;
+    background-position: 94%;
+    -moz-background-size: 36px;
+    -o-background-size: 36px;
+    -webkit-background-size: 36px;
+    background-size: 36px;
     color: white;
   }
 }
@@ -1312,7 +1321,6 @@ fieldset {
   vertical-align: middle;
   cursor: pointer;
   display: inline-block;
-  padding-left: 5px;
   background: none;
 }
 .searchform span {
@@ -1337,6 +1345,10 @@ fieldset {
   vertical-align: middle;
   background: white;
   padding-left: 10px;
+  float: left;
+}
+.searchform input:hover {
+  box-shadow: #0093a7 0 0 0 2px;
 }
 @media only screen and (min-width: 1200px) {
   .aside {
@@ -1384,15 +1396,13 @@ fieldset {
     margin-right: -79%;
   }
   .aside.top {
-    margin-right: -72%;
+    margin-right: -79%;
   }
 }
 @media only screen and (max-width: 1199px) {
   .refinesearch {
     margin-top: 30px;
     margin-left: 0;
-    max-width: 300px;
-    width: auto;
   }
   .border {
     display: none;
@@ -1406,7 +1416,7 @@ fieldset {
     display: none;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 899px) {
   iframe {
     width: 100%;
   }
@@ -1419,9 +1429,13 @@ fieldset {
   }
   .aside {
     margin-top: 30px;
+    width: 100%;
+  }
+  .refinesearch {
+    width: 100%;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .socialmedia a:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;

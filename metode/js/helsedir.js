@@ -59,6 +59,56 @@
             });
         }
     });
+
+    $(window).on('load resize', function () {
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 899) {
+            $(".refinesearch").each(function () {
+                var $contentToHide = $(this).children('.dropdown');
+                if (!$contentToHide.hasClass('visuallyhidden') && !$(this).hasClass('has-visible-content') && !$(this).is('a')) {
+                    $contentToHide.addClass('visuallyhidden');
+                    $(this).addClass('has-hidden-content');
+                }
+            });
+        } else {
+            $(".refinesearch").each(function () {
+                var $contentToHide = $(this).children('.dropdown');
+
+                if (($contentToHide.hasClass('visuallyhidden') || $(this).hasClass('has-hidden-content')) && !$(this).hasClass('accordion') && !$(this).is('a')) {
+                    $contentToHide.removeClass('visuallyhidden');
+                    $(this).removeClass('has-hidden-content');
+                } else if ($(this).hasClass('has-visible-content')) {
+                    $(this).removeClass('has-visible-content');
+                }
+            });
+        }
+    });
+
+    $(".refinesearch").click(function () {
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 899) {
+            var $content = $(this).children('.dropdown');
+
+            if ($(this).hasClass("has-hidden-content")) {
+                $(this).addClass("has-visible-content");
+                $(this).removeClass("has-hidden-content");
+                $content.slideUp(0, function () {
+                    $content.removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            } else {
+                $(this).removeClass("has-visible-content");
+                $(this).addClass("has-hidden-content");
+                $content.slideUp('fast', function () {
+                    $content.addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+            }
+        }
+    });
+
     //handles click events on collapsible mobile headings
     $(".accordion_mobile").click(function () {
         var windowWidth = $(window).width();
@@ -101,5 +151,9 @@
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {
         $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
+    });
+
+    $('.form-control').change(function () {
+        $(this).addClass('selected');
     });
 });

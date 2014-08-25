@@ -29,7 +29,7 @@
   width: 100%;
 }
 .searchform input {
-  width: 93%;
+  width: 612px;
 }
 .resultnumber {
   color: #838078;
@@ -39,7 +39,7 @@
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 96% 93%;
-  margin-top: 50px;
+  margin-top: 46px;
   max-width: 685px;
   display: inline-block;
   padding: 20px 30px 30px 30px;
@@ -89,7 +89,7 @@
 }
 .transportsideknapp:hover {
   text-decoration: none;
-  box-shadow: #0093a7 0 0 0 1px;
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .transportsideknapp:hover h2 {
   text-decoration: none;
@@ -106,15 +106,12 @@
   padding-top: 250px;
 }
 @media only screen and (max-width: 599px) {
-  .transportsideknapp {
-    padding-left: 0;
-  }
   .transportsideknapp .status_information {
     margin-left: 0;
     width: auto;
   }
   .searchform input {
-    width: 86%;
+    width: 84%;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -128,8 +125,13 @@
     margin-left: 0;
     width: auto;
   }
+}
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
   .searchform {
     width: 100%;
+  }
+  .searchform input {
+    width: 91%;
   }
 }
 /*# sourceMappingURL=finnmetode.css.map */

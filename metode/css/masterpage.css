@@ -78,8 +78,9 @@
 }
 .footerlinkswrapper .contact h5 {
   font-weight: bold;
-  margin: 22px 0 0 0;
+  margin: 22px 0 10px 0;
   color: #838078;
+  line-height: 28px;
 }
 .footerlinkswrapper .contact p {
   margin-top: 0;

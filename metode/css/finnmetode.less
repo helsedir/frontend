@@ -57,7 +57,7 @@
     width: 100%;
 
     input {
-        width: 93%;
+        width: 612px;
     }
 }
 
@@ -70,7 +70,7 @@
     background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
     background-size: 45px;
     background-position: 96% 93%;
-    margin-top: 50px;
+    margin-top: 46px;
     max-width: 685px;
     display: inline-block;
     padding: 20px 30px 30px 30px;
@@ -130,7 +130,7 @@
 
     &:hover {
         text-decoration: none;
-        box-shadow: @colorMediumBlue 0 0 0 1px;
+        box-shadow: @colorMediumBlue 0 0 0 2px;
 
         h2 {
             text-decoration: none;
@@ -154,8 +154,6 @@
 
 @media only screen and (max-width: 599px) {
     .transportsideknapp {
-        padding-left: 0;
-
         .status_information {
             margin-left: 0;
             width: auto;
@@ -164,7 +162,7 @@
 
     .searchform {
         input {
-            width: 86%;
+            width: 84%;
         }
     }
 }
@@ -183,11 +181,14 @@
             width: auto;
         }
     }
+}
 
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
     .searchform {
         width: 100%;
 
         input {
+            width: 91%;
         }
     }
 }
