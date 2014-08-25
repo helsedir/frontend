@@ -370,8 +370,17 @@
     margin: 10px 0;
   }
   h2 {
-    margin-top: 30px;
+    margin-top: 2px;
+    margin-bottom: 10px;
     font-size: 28px;
+    line-height: 32px;
+  }
+  .drops {
+    margin-bottom: 10px;
+  }
+  .news .ingress {
+    font-size: 20px;
+    line-height: 24px;
   }
   .wrapper_statusoppdateringer {
     background: white;

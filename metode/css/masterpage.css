@@ -287,7 +287,7 @@
   header.masterheader .menubutton,
   header.masterheader .about,
   header.masterheader .english {
-    margin-top: 16px;
+    margin-top: 0;
   }
   .footerlinkswrapper {
     background-color: white;
@@ -329,6 +329,7 @@
   }
   .logo {
     height: 37px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 1199px) {
