@@ -1328,9 +1328,6 @@ fieldset {
   display: inline-block;
   background: none;
 }
-.searchform span {
-  vertical-align: sub;
-}
 .searchform button {
   border: none;
   width: 40px;
@@ -1777,6 +1774,27 @@ fieldset {
   }
   .module.module_person {
     margin-top: 30px;
+  }
+  .searchform {
+    width: 100%;
+    display: table;
+  }
+  .searchform .searchform_row {
+    display: table-row;
+  }
+  .searchform .searchform_row .searchform_cell_input {
+    display: table-cell;
+    width: 100%;
+  }
+  .searchform .searchform_row .searchform_cell_input input {
+    width: 100%;
+  }
+  .searchform .searchform_row .searchform_cell_button {
+    display: table-cell;
+  }
+  .searchform .searchform_row .searchform_cell_button button {
+    vertical-align: baseline;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {

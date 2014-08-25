@@ -191,11 +191,11 @@
 }
 .masterheader .about {
   display: inline-block;
-  background: #004e66 url('../img/knapp_Omoss.svg') no-repeat;
-  -moz-background-size: 41px;
-  -o-background-size: 41px;
-  -webkit-background-size: 41px;
-  background-size: 41px;
+  background: #004e66 url('../img/knapp_Omoss.png') no-repeat;
+  -moz-background-size: 40px;
+  -o-background-size: 40px;
+  -webkit-background-size: 40px;
+  background-size: 40px;
   background-position: center;
   border-radius: 3px;
   margin-top: 31px;
@@ -207,11 +207,11 @@
 }
 .masterheader .english {
   display: inline-block;
-  background: #004e66 url('../img/knapp_English.svg') no-repeat;
-  -moz-background-size: 41px;
-  -o-background-size: 41px;
-  -webkit-background-size: 41px;
-  background-size: 41px;
+  background: #004e66 url('../img/knapp_English.png') no-repeat;
+  -moz-background-size: 40px;
+  -o-background-size: 40px;
+  -webkit-background-size: 40px;
+  background-size: 40px;
   background-position: center;
   border-radius: 3px;
   margin-top: 31px;
