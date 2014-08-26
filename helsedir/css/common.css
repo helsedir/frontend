@@ -694,6 +694,13 @@ body {
   background-size: 10px;
   color: white;
 }
+.container .calltoaction:disabled,
+.container-fluid .calltoaction:disabled {
+  background: #f7f6f6 url('../img/ikon_pilmothoyre_graa.png') no-repeat;
+  color: #838078;
+  background-position: 20px 50%;
+  background-size: 10px;
+}
 .container iframe,
 .container-fluid iframe {
   margin-bottom: 23px;
@@ -1179,7 +1186,7 @@ body {
 }
 .container .module.module_message.date,
 .container-fluid .module.module_message.date {
-  border: 2px solid #0093a7;
+  border: 2px solid #6cb4b5;
   margin-bottom: 70px;
   text-align: center;
 }
@@ -1189,7 +1196,7 @@ body {
 }
 .container .module.module_message.date_small,
 .container-fluid .module.module_message.date_small {
-  border: 2px solid #0093a7;
+  border: 2px solid #6cb4b5;
   margin: 30px 0 10px 0;
   padding: 5px 20px;
 }
@@ -1197,7 +1204,7 @@ body {
 .container-fluid .module.module_message.date_small .keyfigures {
   text-align: center;
   color: #c63629;
-  margin-left: 30px;
+  margin-left: 27px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
 }
@@ -1207,7 +1214,7 @@ body {
 }
 .container .module.module_message.date_small_closed,
 .container-fluid .module.module_message.date_small_closed {
-  border: 2px solid #0093a7;
+  border: 2px solid #6cb4b5;
   margin: 30px 0 10px 0;
   padding: 5px 20px 15px 20px;
   font-family: "Soho Gothic W01 Regular";

@@ -668,6 +668,13 @@ body {
                 color: white;
             }
         }
+
+        &:disabled {
+            background: #f7f6f6 url('../img/ikon_pilmothoyre_graa.png') no-repeat;
+            color: #838078;
+            background-position: 20px 50%;
+            background-size: 10px;
+        }
     }
 
     iframe {
@@ -1124,7 +1131,7 @@ body {
             }
 
             &.date {
-                border: 2px solid @colorMediumBlue;
+                border: 2px solid @colorLightBlue;
                 margin-bottom: 70px;
                 text-align: center;
 
@@ -1134,14 +1141,14 @@ body {
             }
 
             &.date_small {
-                border: 2px solid @colorMediumBlue;
+                border: 2px solid @colorLightBlue;
                 margin: 30px 0 10px 0;
                 padding: 5px 20px;
 
                 .keyfigures {
                     text-align: center;
                     color: @colorRed;
-                    margin-left: 30px;
+                    margin-left: 27px;
                     font-size: 24px;
                     font-family: @fontSohoRegular;
                 }
@@ -1152,7 +1159,7 @@ body {
             }
 
             &.date_small_closed {
-                border: 2px solid @colorMediumBlue;
+                border: 2px solid @colorLightBlue;
                 margin: 30px 0 10px 0;
                 padding: 5px 20px 15px 20px;
                 font-family: @fontSohoRegular;
