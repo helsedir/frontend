@@ -256,6 +256,15 @@
   .frontpagewrapper.white.entrance .container {
     background: #f2f2f2;
   }
+  .news {
+    margin-bottom: 25px;
+  }
+  .news .news_item .date {
+    margin-bottom: 0;
+  }
+  .news .news_item .ingress {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 899px) {
   .entrancebuttons .entrancebutton {
@@ -377,6 +386,16 @@
   .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
     border: 1.3em solid #c98523;
   }
+  .wrapper_statusoppdateringer {
+    background: #f2f2f2;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  .wrapper_aktuelt {
+    background: white;
+    padding: 5px 0;
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 599px) {
   .no-padding {
@@ -400,10 +419,14 @@
     line-height: 24px;
   }
   .wrapper_statusoppdateringer {
-    background: white;
-    padding-bottom: 20px;
-    margin-top: 10px;
+    background: #f2f2f2;
+    padding-bottom: 10px;
     padding-top: 5px;
+  }
+  .wrapper_aktuelt {
+    background: white;
+    padding: 5px 0;
+    margin-top: 10px;
   }
   .wrapper_spesialisthelsetjenesten {
     background: white;
