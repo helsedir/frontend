@@ -84,6 +84,7 @@
   display: inline;
   background: none;
   padding-left: 0;
+  position: static;
 }
 .footerlinkswrapper .linklist li a.internal-link:before {
   content: "";
@@ -96,6 +97,9 @@
   /* background-position: 0 5px; */
   background-size: 20px;
   margin: -1px 0 0 0;
+}
+.footerlinkswrapper .linklist li a.internal-link:hover {
+  color: #222;
 }
 .footerlinkswrapper .linklist li a:hover {
   border-bottom: 1px solid #222;

@@ -451,6 +451,23 @@ figure .metatext {
 }
 .linklist .internal-link {
   margin-top: 10px;
+  color: #838078;
+  display: inline;
+  background: none;
+  padding-left: 0;
+  position: static;
+}
+.linklist .internal-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: inherit;
+  height: 30px;
+  width: 23px;
+  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
+  /* background-position: 0 5px; */
+  background-size: 20px;
+  margin: -1px 0 0 0;
 }
 .bulletlist {
   list-style-position: outside;
@@ -614,6 +631,7 @@ a.external-link.inline:hover {
 .internal-link:hover {
   color: #222;
   border-bottom: 1px solid #222;
+  text-decoration: none;
 }
 p.keyfigures,
 h4.keyfigures {
@@ -737,7 +755,8 @@ h4.keyfigures {
 .module.module_statistics_graph {
   max-width: 300px;
   background: white;
-  padding: 10px;
+  padding: 20px 28px;
+  border-left: 4px solid #0093a7;
 }
 .module.module_subscribe {
   padding: 0 0 5px 0;
@@ -858,7 +877,7 @@ h4.keyfigures {
   width: 100px;
 }
 .module.module_message.date_small {
-  border-left: 7px solid #0093a7;
+  border-left: 4px solid #0093a7;
   margin: 20px 0 10px 0;
   padding: 5px 20px;
   max-width: 600px;
@@ -1798,6 +1817,10 @@ fieldset {
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   border-bottom: 2px dotted #0093a7;
+}
+.method_entrance .heading_wrapper h3:hover {
+  color: #01737c;
+  border-bottom: 2px dotted #01737c;
 }
 @media only screen and (max-width: 599px) {
   .module.module_information {

@@ -541,6 +541,24 @@ figure {
 
     .internal-link {
         margin-top: 10px;
+        color: #838078;
+        display: inline;
+        background: none;
+        padding-left: 0;
+        position: static;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: inherit;
+            height: 30px;
+            width: 23px;
+            background: url(../img/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
+            /* background-position: 0 5px; */
+            background-size: 20px;
+            margin: -1px 0 0 0;
+        }
     }
 }
 
@@ -718,6 +736,7 @@ iframe {
     &:hover {
         color: #222;
         border-bottom: 1px solid #222;
+        text-decoration: none;
     }
 }
 
@@ -873,7 +892,8 @@ p.keyfigures, h4.keyfigures {
     &.module_statistics_graph {
         max-width: 300px;
         background: white;
-        padding: 10px;
+        padding: 20px 28px;
+        border-left: 4px solid #0093a7;
     }
 
     &.module_subscribe {
@@ -1015,7 +1035,7 @@ p.keyfigures, h4.keyfigures {
         }
 
         &.date_small {
-            border-left: 7px solid #0093a7;
+            border-left: 4px solid #0093a7;
             margin: 20px 0 10px 0;
             padding: 5px 20px;
             max-width: 600px;
@@ -2168,6 +2188,11 @@ fieldset {
             font-size: 24px;
             font-family: @fontSohoLight;
             border-bottom: 2px dotted @colorMediumBlue;
+
+            &:hover {
+                color: #01737c;
+                border-bottom: 2px dotted #01737c;
+            }
         }
     }
 }

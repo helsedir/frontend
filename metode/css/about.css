@@ -1,11 +1,11 @@
 ﻿.transportsideknapp {
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
-  background-position: 90% 87%;
-  margin-top: 50px;
+  background-position: 96% 93%;
+  margin-top: 46px;
   max-width: 685px;
   width: 100%;
-  padding: 20px 0 40px 45px;
+  padding: 20px 30px 30px 30px;
 }
 .transportsideknapp a {
   padding-bottom: 0;
