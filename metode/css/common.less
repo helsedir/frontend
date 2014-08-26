@@ -681,13 +681,23 @@ iframe {
     color: #838078;
     font-family: @fontCalibri;
     font-size: 20px;
-    background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-    background-position: 0 5px;
-    background-size: 20px;
-    padding-left: 35px;
-    margin-top: 40px;
     display: inline;
     border-bottom: 1px solid #838078;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 30px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 16px;
+        bottom: 0;
+        height: 22px;
+        width: 23px;
+        background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+        /* background-position: 0 5px; */
+        background-size: 20px;
+    }
 
     &:visited {
         color: #838078;
@@ -1569,6 +1579,7 @@ fieldset {
         width: 40px;
         height: 40px;
         padding: 5px 0 4px 0;
+        margin-left: -2px;
         vertical-align: middle;
         background: url(../img/ikoner/knapp_soekefelt.svg) no-repeat;
 
@@ -1587,7 +1598,7 @@ fieldset {
         padding-left: 10px;
         float: left;
 
-        &:hover {
+        &:focus {
             box-shadow: #0093a7 0 0 0 2px;
         }
     }

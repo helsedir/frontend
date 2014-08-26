@@ -80,16 +80,26 @@
   font-family: 'Calibri';
   line-height: 27px;
 }
+.footerlinkswrapper .linklist li a.internal-link {
+  color: #838078;
+  display: inline;
+  background: none;
+  padding-left: 0;
+}
+.footerlinkswrapper .linklist li a.internal-link:before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: inherit;
+  height: 30px;
+  width: 23px;
+  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+  /* background-position: 0 5px; */
+  background-size: 20px;
+  margin: -1px 0 0 -30px;
+}
 .footerlinkswrapper .linklist li a:hover {
   border-bottom: 1px solid #222;
-}
-.footerlinkswrapper .linklist .internal-link {
-  margin-top: 5px;
-  color: #838078;
-  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
-  background-size: 20px;
-  background-position: 0 5px;
-  display: inline;
 }
 .footerlinkswrapper .linklist_headings {
   margin-top: 38px;
@@ -191,7 +201,7 @@
 }
 .masterheader .about {
   display: inline-block;
-  background: #004e66 url('../img/knapp_Omoss.svg') no-repeat;
+  background: url('../img/knapp_Omoss_mellomblaa.svg') no-repeat;
   -moz-background-size: 40px;
   -o-background-size: 40px;
   -webkit-background-size: 40px;
@@ -207,7 +217,7 @@
 }
 .masterheader .english {
   display: inline-block;
-  background: #004e66 url('../img/knapp_English.svg') no-repeat;
+  background: url('../img/knapp_English_mellomblaa.svg') no-repeat;
   -moz-background-size: 40px;
   -o-background-size: 40px;
   -webkit-background-size: 40px;
