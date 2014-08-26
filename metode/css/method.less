@@ -32,11 +32,11 @@
         background-repeat: no-repeat;
         border-left: 6px solid @colorGreen;
         margin-top: 30px;
-        padding: 10px 0 60px 0;
+        padding: 20px 30px 60px 0;
         position: relative;
 
         h2 {
-            margin: 0 0 20px 41px;
+            margin: 0 0 20px 30px;
         }
 
         &.blur {
@@ -44,11 +44,11 @@
         }
 
         p {
-            margin-left: 41px;
+            margin-left: 30px;
         }
 
         h3 {
-            margin: 40px 0 10px 41px;
+            margin: 40px 0 10px 30px;
         }
 
         &.beslutning {
@@ -67,7 +67,7 @@
             width: 20%;
             float: left;
             margin-right: 10px;
-            margin-left: 41px;
+            margin-left: 30px;
             margin-top: 3px;
             font-weight: bold;
             font-size: 18px;
@@ -137,7 +137,7 @@
 
         .method_warning {
             color: white;
-            margin-left: 41px;
+            margin-left: 30px;
 
             .exclamation {
                 font-family: 'Calibri';
@@ -160,26 +160,53 @@
         .more_information {
             width: 93%;
         }
+
+        &.passive {
+            border-left: 6px solid #838078;
+            background: #dedddb;
+            color: #222;
+            padding: 13px 0;
+
+            h2, p {
+                color: #222;
+            }
+
+            h2:before {
+                display: none;
+            }
+        }
     }
 
     .informationicon {
         position: absolute;
-        right: 20px;
-        top: 15px;
-        font-size: 20px;
-        text-decoration: underline;
+        right: 45px;
+        top: 13px;
+        font-size: 31px;
+        /* text-decoration: underline; */
         cursor: pointer;
         color: #0093a7;
         line-height: 20px;
         /* padding: 5px 12px; */
         display: block;
         height: 30px;
-        width: 130px;
+        width: 20px;
+        padding: 16px;
+
+        &.selected {
+            background: url(../img/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
+            background-size: 16px;
+            background-position: 2px 3px;
+            top: 31px;
+            right: 44px;
+            padding: 0;
+            height: 21px;
+            padding: 10px;
+        }
     }
 
     .method_evaluation {
         margin-top: 10px;
-        padding: 30px 10px 20px 41px;
+        padding: 30px 10px 20px 30px;
         background: #f2f2f2;
 
         a {
@@ -193,7 +220,7 @@
             color: white;
             background: #838078;
             padding: 5px 15px;
-            margin: 7px 67px 37px 51px;
+            margin: 7px 67px 37px 31px;
             display: block;
             height: 40px;
             width: 40px;
@@ -226,29 +253,36 @@
     .wrapper {
         .informationicon {
             right: 15px;
+
+            &.selected {
+                right: 15px;
+                top: 25px;
+            }
         }
 
         .method_status {
             padding-left: 0;
+            padding-right: 15px;
+            margin-top: 22px;
 
             .method_attribute_label {
                 width: 115px;
-                margin-left: 10px;
+                margin-left: 15px;
             }
 
             .method_attribute {
-                margin-left: 10px;
+                margin-left: 15px;
                 width: 67%;
             }
 
             h2 {
-                margin-left: 10px;
+                margin-left: 15px;
                 font-size: 24px;
                 line-height: 30px;
             }
 
             .method_warning {
-                margin-left: 10px;
+                margin-left: 15px;
 
                 .exclamation {
                     margin-left: 75px;
@@ -258,6 +292,11 @@
                 p {
                     width: 93%;
                 }
+            }
+
+            p {
+                margin-top: 30px;
+                margin-left: 15px;
             }
         }
     }
@@ -288,7 +327,25 @@
 @media only screen and (min-width: 600px) and (max-width:899px) {
     .wrapper {
         .method_status {
-            padding: 10px 40px 30px 15px;
+            padding: 10px 40px 44px 15px;
+
+            h2, p, .method_attribute, .method_attribute_label {
+                margin-left: 10px;
+            }
+
+            p {
+                margin-top: 30px;
+            }
+        }
+
+        .informationicon {
+            right: 47px;
+            top: 4px;
+
+            &.selected {
+                right: 45px;
+                top: 20px;
+            }
         }
     }
 }

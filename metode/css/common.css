@@ -943,6 +943,7 @@ h4.keyfigures {
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 4px solid #0093a7;
+  width: 100%;
 }
 .module.module_information {
   margin: 0;
@@ -1045,7 +1046,7 @@ h4.keyfigures {
 .showmorenews {
   width: 300px;
   text-align: center;
-  margin: 50px 0;
+  margin: 40px 0 50px 0;
   color: #004e66;
   background: #dedddb url(../img/spinner.png) no-repeat;
   font-family: 'Calibri';
@@ -1475,13 +1476,16 @@ fieldset {
   h1 {
     font-size: 36px;
     line-height: 42px;
-    margin-top: 40px;
+    margin-top: 15px;
   }
   h2 {
     font-size: 28px;
   }
   h3 {
     font-size: 22px;
+  }
+  .ingress {
+    margin: 11px 0 10px 0;
   }
   .statistics_compare {
     background: #ddd;
@@ -1638,9 +1642,20 @@ fieldset {
   .module_message .module_description {
     margin-left: 10px;
   }
+  .module.module_social {
+    margin: 0;
+  }
   .chart_div {
     height: 300px;
     margin: 20px 0;
+  }
+  .searchform {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .refinesearch,
+  .aside.top {
+    margin-top: 10px;
   }
 }
 @media braille {
@@ -1790,6 +1805,7 @@ fieldset {
   }
   .module.module_person {
     margin-top: 30px;
+    width: 100%;
   }
   .searchform {
     width: 100%;

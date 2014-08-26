@@ -74,7 +74,7 @@
   border-right: 4px solid #c63629;
 }
 .transportsideknapp h2 {
-  margin: 0 0 20px 0;
+  margin: 0;
   color: #c63629;
   border-bottom: 3px dotted #c63629;
   padding-bottom: 5px;
@@ -102,16 +102,12 @@
   padding: 10px;
   border: 1px solid #222;
 }
-#footer {
-  padding-top: 250px;
-}
 @media only screen and (max-width: 599px) {
-  .transportsideknapp .status_information {
-    margin-left: 0;
-    width: auto;
-  }
   .searchform input {
     width: 84%;
+  }
+  .resultnumber {
+    margin-top: 25px;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -119,20 +115,48 @@
     margin-top: 45px;
     float: none;
   }
+  .refinesearch {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
   .transportsideknapp {
     background-position: 96% 95%;
     padding: 20px 30px 50px 30px;
     margin-top: 20px;
     width: 100%;
   }
-  .refinesearch {
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 1199px) {
   .transportsideknapp .status_information {
     margin-left: 0;
-    width: auto;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .transportsideknapp .status_information p {
+    margin-top: 0;
+  }
+  .transportsideknapp .status_information p.status_received {
+    margin-right: 0;
+  }
+  .transportsideknapp .status {
+    width: 100%;
+    padding: 10px 0 7px 0;
+    margin-top: 5px;
+  }
+  .transportsideknapp .status.preparation {
+    border-right: none;
+    border-bottom: 4px solid #a1bf37;
+  }
+  .transportsideknapp .status.evaluation {
+    border-right: none;
+    border-bottom: 4px solid #004e66;
+  }
+  .transportsideknapp .status.decided {
+    border-right: none;
+    border-bottom: 4px solid #6cb4b5;
+  }
+  .transportsideknapp .status.cancelled {
+    border-right: none;
+    border-bottom: 4px solid #c63629;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {

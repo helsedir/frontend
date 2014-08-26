@@ -112,7 +112,7 @@
     }
 
     h2 {
-        margin: 0 0 20px 0;
+        margin: 0;
         color: #c63629;
         border-bottom: 3px dotted #c63629;
         padding-bottom: 5px;
@@ -148,22 +148,15 @@
     border: 1px solid #222;
 }
 
-#footer {
-    padding-top: 250px;
-}
-
 @media only screen and (max-width: 599px) {
-    .transportsideknapp {
-        .status_information {
-            margin-left: 0;
-            width: auto;
-        }
-    }
-
     .searchform {
         input {
             width: 84%;
         }
+    }
+
+    .resultnumber {
+        margin-top: 25px;
     }
 }
 
@@ -173,13 +166,6 @@
         float: none;
     }
 
-    .transportsideknapp {
-        background-position: 96% 95%;
-        padding: 20px 30px 50px 30px;
-        margin-top: 20px;
-        width: 100%;
-    }
-
     .refinesearch {
         margin-bottom: 0;
     }
@@ -187,9 +173,49 @@
 
 @media only screen and (max-width: 1199px) {
     .transportsideknapp {
+        background-position: 96% 95%;
+        padding: 20px 30px 50px 30px;
+        margin-top: 20px;
+        width: 100%;
+
         .status_information {
             margin-left: 0;
-            width: auto;
+            width: 100%;
+            margin-top: 5px;
+
+            p {
+                margin-top: 0;
+
+                &.status_received {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .status {
+            width: 100%;
+            padding: 10px 0 7px 0;
+            margin-top: 5px;
+
+            &.preparation {
+                border-right: none;
+                border-bottom: 4px solid @colorGreen;
+            }
+
+            &.evaluation {
+                border-right: none;
+                border-bottom: 4px solid @colorDarkBlue;
+            }
+
+            &.decided {
+                border-right: none;
+                border-bottom: 4px solid @colorLightBlue;
+            }
+
+            &.cancelled {
+                border-right: none;
+                border-bottom: 4px solid #c63629;
+            }
         }
     }
 }

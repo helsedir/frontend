@@ -7,20 +7,20 @@
   background-repeat: no-repeat;
   border-left: 6px solid #a1bf37;
   margin-top: 30px;
-  padding: 10px 0 60px 0;
+  padding: 20px 30px 60px 0;
   position: relative;
 }
 .wrapper .method_status h2 {
-  margin: 0 0 20px 41px;
+  margin: 0 0 20px 30px;
 }
 .wrapper .method_status.blur {
   background: #dbdcdd;
 }
 .wrapper .method_status p {
-  margin-left: 41px;
+  margin-left: 30px;
 }
 .wrapper .method_status h3 {
-  margin: 40px 0 10px 41px;
+  margin: 40px 0 10px 30px;
 }
 .wrapper .method_status.beslutning {
   border-left: 6px solid #6cb4b5;
@@ -35,7 +35,7 @@
   width: 20%;
   float: left;
   margin-right: 10px;
-  margin-left: 41px;
+  margin-left: 30px;
   margin-top: 3px;
   font-weight: bold;
   font-size: 18px;
@@ -99,7 +99,7 @@
 }
 .wrapper .method_status .method_warning {
   color: white;
-  margin-left: 41px;
+  margin-left: 30px;
 }
 .wrapper .method_status .method_warning .exclamation {
   font-family: 'Calibri';
@@ -119,23 +119,47 @@
 .wrapper .method_status .more_information {
   width: 93%;
 }
+.wrapper .method_status.passive {
+  border-left: 6px solid #838078;
+  background: #dedddb;
+  color: #222;
+  padding: 13px 0;
+}
+.wrapper .method_status.passive h2,
+.wrapper .method_status.passive p {
+  color: #222;
+}
+.wrapper .method_status.passive h2:before {
+  display: none;
+}
 .wrapper .informationicon {
   position: absolute;
-  right: 20px;
-  top: 15px;
-  font-size: 20px;
-  text-decoration: underline;
+  right: 45px;
+  top: 13px;
+  font-size: 31px;
+  /* text-decoration: underline; */
   cursor: pointer;
   color: #0093a7;
   line-height: 20px;
   /* padding: 5px 12px; */
   display: block;
   height: 30px;
-  width: 130px;
+  width: 20px;
+  padding: 16px;
+}
+.wrapper .informationicon.selected {
+  background: url(../img/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
+  background-size: 16px;
+  background-position: 2px 3px;
+  top: 31px;
+  right: 44px;
+  padding: 0;
+  height: 21px;
+  padding: 10px;
 }
 .wrapper .method_evaluation {
   margin-top: 10px;
-  padding: 30px 10px 20px 41px;
+  padding: 30px 10px 20px 30px;
   background: #f2f2f2;
 }
 .wrapper .method_evaluation a {
@@ -148,7 +172,7 @@
   color: white;
   background: #838078;
   padding: 5px 15px;
-  margin: 7px 67px 37px 51px;
+  margin: 7px 67px 37px 31px;
   display: block;
   height: 40px;
   width: 40px;
@@ -174,24 +198,30 @@
   .wrapper .informationicon {
     right: 15px;
   }
+  .wrapper .informationicon.selected {
+    right: 15px;
+    top: 25px;
+  }
   .wrapper .method_status {
     padding-left: 0;
+    padding-right: 15px;
+    margin-top: 22px;
   }
   .wrapper .method_status .method_attribute_label {
     width: 115px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .wrapper .method_status .method_attribute {
-    margin-left: 10px;
+    margin-left: 15px;
     width: 67%;
   }
   .wrapper .method_status h2 {
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 24px;
     line-height: 30px;
   }
   .wrapper .method_status .method_warning {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .wrapper .method_status .method_warning .exclamation {
     margin-left: 75px;
@@ -199,6 +229,10 @@
   }
   .wrapper .method_status .method_warning p {
     width: 93%;
+  }
+  .wrapper .method_status p {
+    margin-top: 30px;
+    margin-left: 15px;
   }
   .wrapper .method_status.has-hidden-content h2:before,
   .wrapper .method_status.has-hidden-content .accordion:before {
@@ -222,7 +256,24 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .wrapper .method_status {
-    padding: 10px 40px 30px 15px;
+    padding: 10px 40px 44px 15px;
+  }
+  .wrapper .method_status h2,
+  .wrapper .method_status p,
+  .wrapper .method_status .method_attribute,
+  .wrapper .method_status .method_attribute_label {
+    margin-left: 10px;
+  }
+  .wrapper .method_status p {
+    margin-top: 30px;
+  }
+  .wrapper .informationicon {
+    right: 47px;
+    top: 4px;
+  }
+  .wrapper .informationicon.selected {
+    right: 45px;
+    top: 20px;
   }
 }
 /*# sourceMappingURL=method.css.map */

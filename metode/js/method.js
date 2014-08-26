@@ -14,13 +14,14 @@
                 evaluation.removeClass('visuallyhidden').slideDown(500);
             });
             informationicon.addClass('selected');
-            informationicon.text('Skjul forklaring');
+            informationicon.text('');
         } else {
             evaluation.slideUp('slow', function () {
                 evaluation.addClass('visuallyhidden').slideDown(0);
             });
+
             informationicon.removeClass('selected');
-            informationicon.text('Vis forklaring');
+            informationicon.text('?');
         }
     });
 
