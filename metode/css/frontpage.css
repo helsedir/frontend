@@ -386,6 +386,8 @@
   .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
     border: 1.3em solid #c98523;
   }
+}
+@media only screen and (max-width: 599px) {
   .wrapper_statusoppdateringer {
     background: #f2f2f2;
     padding-bottom: 10px;
@@ -396,8 +398,6 @@
     padding: 5px 0;
     margin-top: 10px;
   }
-}
-@media only screen and (max-width: 599px) {
   .no-padding {
     padding-left: 15px;
     padding-right: 15px;
@@ -479,6 +479,18 @@
   }
   .entrancebutton a h2 {
     margin-top: 23px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  h2 {
+    margin-top: 0;
+  }
+  .drops,
+  .news {
+    margin-bottom: 50px;
+  }
+  #footer {
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=frontpage.css.map */

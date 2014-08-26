@@ -119,6 +119,15 @@
     margin-top: 45px;
     float: none;
   }
+  .transportsideknapp {
+    background-position: 96% 95%;
+    padding: 20px 30px 50px 30px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .refinesearch {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .transportsideknapp .status_information {
@@ -132,6 +141,17 @@
   }
   .searchform input {
     width: 91%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .aside {
+    top: 470px;
+  }
+  .aside.top {
+    top: 0;
+  }
+  input {
+    width: 93%;
   }
 }
 /*# sourceMappingURL=finnmetode.css.map */

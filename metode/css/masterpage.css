@@ -394,12 +394,12 @@
   }
   .menubutton.mobile-search:focus {
     text-decoration: none;
-    background-color: #0093a7;
+    background-color: #004e66;
     color: #004e66;
     border: solid 1px #004e66;
   }
   .menubutton.mobile-search:hover {
-    background: #0093a7 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;
@@ -408,7 +408,7 @@
     border-radius: 3px;
   }
   .menubutton.mobile-search.js-expanded {
-    background: #0093a7 url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
+    background: #004e66 url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
     -moz-background-size: 24px;
     -o-background-size: 24px;
     -webkit-background-size: 24px;
@@ -433,6 +433,9 @@
   }
   .mainsearchform input {
     width: 82%;
+  }
+  .footerlinkswrapper {
+    background: white;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */

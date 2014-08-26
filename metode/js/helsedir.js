@@ -108,6 +108,9 @@
             }
         }
     });
+    $(".refinesearch select").click(function (event) {
+        event.stopPropagation();
+    });
 
     //handles click events on collapsible mobile headings
     $(".accordion_mobile").click(function () {
