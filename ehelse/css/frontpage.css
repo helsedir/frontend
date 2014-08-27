@@ -165,8 +165,8 @@
   margin: 20px 0 20px 0;
 }
 .frontpage .news p {
-  color: #004e66;
-  font-size: 20px;
+  color: #838078;
+  font-size: 18px;
   padding-left: 35px;
 }
 .frontpage .news a {
@@ -186,7 +186,7 @@
 }
 .frontpage .conferenceitem {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .frontpage .conferenceitem p {
   padding: 0;
@@ -199,19 +199,22 @@
   font-size: 24px;
 }
 .frontpage .conferenceitem .conference_date {
-  font-size: 24px;
+  font-size: 26px;
   color: #c63629;
   display: block;
   font-family: "Soho Gothic W01 Light";
-  margin: 3px 28px 0 0;
-  line-height: 42px;
+  margin-right: 28px;
+  line-height: 27px;
   text-align: right;
 }
 .frontpage .conferenceitem .month {
-  font-size: 24px;
-  font-family: "Soho Gothic W01 Light";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Calibri';
   color: #c63629;
+  display: block;
   text-align: right;
+  margin-top: 2px;
 }
 .frontpage .conferenceitem .conference_info a {
   font-size: 24px;
@@ -219,12 +222,16 @@
   color: #004e66;
 }
 .frontpage div.conferenceitem > div:nth-child(2n-1) {
-  width: 44%;
+  width: 25%;
   float: left;
+  min-height: 75px;
+  padding-top: 10px;
 }
 .frontpage div.conferenceitem > div:nth-child(2n) {
-  width: 48%;
+  width: 68%;
   float: left;
+  min-height: 75px;
+  padding-top: 11px;
 }
 .frontpage .statistics_image {
   margin-bottom: 20px;

@@ -212,7 +212,6 @@ input[type=checkbox]:focus {
   vertical-align: middle;
   text-align: center;
   margin: 20px 0 10px 0;
-  width: 183px;
 }
 .method_entrance:last-of-type {
   margin-right: 0;
@@ -325,11 +324,6 @@ input[type=checkbox]:focus {
     width: auto;
     float: none;
     margin-left: 0;
-  }
-}
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
-  .method_entrance {
-    width: 135px;
   }
 }
 @media only screen and (max-width: 599px) {
