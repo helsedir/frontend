@@ -334,8 +334,12 @@
   margin-bottom: 0;
 }
 .container .shoppingcart .calltoaction {
-  min-width: 125px;
   margin: 0 0 0 20px;
+  width: auto;
+  min-width: 125px;
+}
+.container .shoppingcart input[type=submit] {
+  padding: 10px 20px 10px 45px;
 }
 #header .masterheader .shoppingcart_form .shoppingcartbutton {
   display: block;

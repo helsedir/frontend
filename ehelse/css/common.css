@@ -300,10 +300,8 @@ a:hover {
   padding: 5px 0 5px 10px;
   border-bottom: solid 1px #bababa;
 }
-@media only screen and (min-width: 900px) {
-  .tabs .tab-content li:last-of-type {
-    border-bottom: 0;
-  }
+.tabs .tab-content li:last-of-type {
+  border-bottom: 0;
 }
 .tabs .tab-content li:before {
   content: "";
@@ -1503,7 +1501,7 @@ fieldset {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/ikoner/knapp_pil_nedover.png') no-repeat;
+  background: #ffffff url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
@@ -1520,7 +1518,7 @@ fieldset {
 }
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/ikoner/knapp_pil_nedover.png') no-repeat;
+  background: #004e66 url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
   background-position: 100%;
   -moz-background-size: 38px;
   -o-background-size: 38px;

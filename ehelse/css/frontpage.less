@@ -267,22 +267,21 @@
         }
 
         .conference_date {
-            font-size: 26px;
             color: #c63629;
             display: block;
-            font-family: "Soho Gothic W01 Light";
+            font-size: 24px;
+            font-family: @fontSohoLight;
             margin-right: 28px;
             line-height: 27px;
-            text-align: right;
+            text-align: left;
         }
 
         .month {
-            font-size: 18px;
+            font-size: 24px;
+            font-family: @fontSohoLight;
             text-transform: uppercase;
-            font-family: 'Calibri';
             color: #c63629;
-            display: block;
-            text-align: right;
+            text-align: left;
             margin-top: 2px;
         }
 
@@ -290,20 +289,21 @@
             a {
                 font-size: 24px;
                 font-family: @fontSohoLight;
-                color: @colorDarkBlue;
+                color: #222;
+                margin-top: 0;
             }
         }
     }
 
     div.conferenceitem > div:nth-child(2n-1) {
-        width: 25%;
+        width: 45%;
         float: left;
         min-height: 75px;
         padding-top: 10px;
     }
 
     div.conferenceitem > div:nth-child(2n) {
-        width: 68%;
+        width: 45%;
         float: left;
         min-height: 75px;
         padding-top: 11px;
@@ -363,7 +363,7 @@
 }
 
 .internal-link {
-    background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+    background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
     background-position: 0 7px;
 }
@@ -442,6 +442,10 @@
             }
         }
 
+        h2 {
+            margin-top: 20px;
+        }
+
         &.menu {
             width: 100%;
             height: 106px;
@@ -478,12 +482,29 @@
     .frontpage .conferenceitem .conference_info a {
         line-height: 42px;
         margin-top: 5px;
+        background-position: 0 13px;
     }
 
     .internal-link {
-        background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+        background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
         background-size: 20px;
-        background-position: 0 13px;
+        background-position: 0 8px;
+    }
+
+    .frontpage h2 {
+        margin-top: 30px;
+    }
+
+    .frontpage .news:first-of-type, .frontpage .news {
+        margin: 15px 0;
+    }
+
+    .frontpage .showmorenews {
+        margin-top: 15px;
+    }
+
+    .frontpage .news p {
+        line-height: 24px;
     }
 }
 
@@ -506,7 +527,7 @@
     }
 
     .internal-link {
-        background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+        background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
         background-size: 20px;
         background-position: 0 50%;
     }

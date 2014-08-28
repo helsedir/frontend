@@ -630,11 +630,37 @@ footer.rammeverk {
     .footerwrapper {
         padding-top: 40px;
     }
+
+    .toppmeny .tabs .hide_menu {
+        margin-right: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #footer {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
     #mainsearchcolumn {
         padding: 0;
+    }
+
+    .menubutton {
+        margin-right: 20px;
+    }
+
+    .mainsearchform input {
+        width: 112px;
+    }
+
+    .masterheader .links {
+        margin-right: 0;
+    }
+
+    .toppmeny .tabs .hide_menu {
+        margin-right: 31px;
     }
 }
 
@@ -643,6 +669,7 @@ footer.rammeverk {
         width: 40px;
         margin-right: 5px;
         cursor: pointer;
+        float: right;
 
         &.mobile-menu {
             padding: 7px 11px 8px 11px;
@@ -666,13 +693,13 @@ footer.rammeverk {
             }
 
             &.js-expanded {
-                padding-bottom: 46px;
-                background: @colorMediumBlue url('../img/ikon_meny_hvit.svg') no-repeat;
+                padding-bottom: 70px;
+                background: #0093a7 url('../img/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
-                background-size: 20px;
-                background-position: 50% 35%;
+                /* background-size: 20px; */
+                background-position: 50% 18%;
                 border-radius: 3px 3px 0 0;
             }
         }
@@ -739,5 +766,9 @@ footer.rammeverk {
         input {
             width: 82%;
         }
+    }
+
+    .toppmeny .tabs .hide_menu {
+        margin-right: 0;
     }
 }

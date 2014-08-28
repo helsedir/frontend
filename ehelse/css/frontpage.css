@@ -199,36 +199,36 @@
   font-size: 24px;
 }
 .frontpage .conferenceitem .conference_date {
-  font-size: 26px;
   color: #c63629;
   display: block;
+  font-size: 24px;
   font-family: "Soho Gothic W01 Light";
   margin-right: 28px;
   line-height: 27px;
-  text-align: right;
+  text-align: left;
 }
 .frontpage .conferenceitem .month {
-  font-size: 18px;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
   text-transform: uppercase;
-  font-family: 'Calibri';
   color: #c63629;
-  display: block;
-  text-align: right;
+  text-align: left;
   margin-top: 2px;
 }
 .frontpage .conferenceitem .conference_info a {
   font-size: 24px;
   font-family: "Soho Gothic W01 Light";
-  color: #004e66;
+  color: #222;
+  margin-top: 0;
 }
 .frontpage div.conferenceitem > div:nth-child(2n-1) {
-  width: 25%;
+  width: 45%;
   float: left;
   min-height: 75px;
   padding-top: 10px;
 }
 .frontpage div.conferenceitem > div:nth-child(2n) {
-  width: 68%;
+  width: 45%;
   float: left;
   min-height: 75px;
   padding-top: 11px;
@@ -273,7 +273,7 @@
   margin-top: 30px;
 }
 .internal-link {
-  background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+  background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
   background-size: 20px;
   background-position: 0 7px;
 }
@@ -339,6 +339,9 @@
     margin: 0 0 15px 12px;
     color: white;
   }
+  .entrancebutton h2 {
+    margin-top: 20px;
+  }
   .entrancebutton.menu {
     width: 100%;
     height: 106px;
@@ -367,11 +370,25 @@
   .frontpage .conferenceitem .conference_info a {
     line-height: 42px;
     margin-top: 5px;
+    background-position: 0 13px;
   }
   .internal-link {
-    background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+    background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
-    background-position: 0 13px;
+    background-position: 0 8px;
+  }
+  .frontpage h2 {
+    margin-top: 30px;
+  }
+  .frontpage .news:first-of-type,
+  .frontpage .news {
+    margin: 15px 0;
+  }
+  .frontpage .showmorenews {
+    margin-top: 15px;
+  }
+  .frontpage .news p {
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -389,7 +406,7 @@
     margin-top: 3px;
   }
   .internal-link {
-    background: url(../img/ikoner/lenkepil_blaa.png) no-repeat;
+    background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
     background-position: 0 50%;
   }
