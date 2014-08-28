@@ -454,21 +454,19 @@ footer.rammeverk {
     }
 }
 
-#footer {
-    margin-top: 95px;
-}
-
 .footerlinkswrapper {
-    background: url('../img/footer.png') no-repeat;
-    padding: 40px 0 338px 0;
-    background-size: cover;
+    background: @colorDarkBlue url('../img/footer.png') no-repeat;
+    background-size: contain;
+    padding: 20px 0 250px 0;
+    background-position: 100% 110%;
+    border-top: 6px solid @colorMediumBlue;
 
     h4, p, a, a:visited, a:hover {
         color: white;
     }
 
     h4 {
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 10px;
         font-family: @fontSohoLight;
         font-size: 28px;
