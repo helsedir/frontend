@@ -267,32 +267,33 @@
                 margin-right: 10px;
 
                 li {
-                    background: @colorDarkBlue;
+                    span.tabs_header, form {
+                        background: @colorDarkBlue;
+                        color: white;
+                        padding: 5px 30px 5px 20px;
+                        border-radius: 0;
+                        cursor: pointer;
 
-                    &[aria-selected='true'] {
-                        border: none;
-                        background: white;
-                        color: @colorDarkBlue;
+                        &[aria-selected='true'] {
+                            border: none;
+                            background: white;
+                            color: @colorDarkBlue;
 
-                        &:focus {
-                            background: @colorDarkBlueHover;
-                            color: white;
+                            &:focus {
+                                background: @colorDarkBlueHover;
+                                color: white;
+                            }
                         }
                     }
 
                     input {
                         width: 100%;
-                    }
 
-                    color: white;
-                    padding: 5px 30px 5px 20px;
-                    border-radius: 0;
-                    cursor: pointer;
-
-                    &:focus {
-                        background: @colorDarkBlueHover;
-                        color: white;
-                        outline: 0;
+                        &:focus {
+                            background: @colorDarkBlueHover;
+                            color: white;
+                            outline: 0;
+                        }
                     }
                 }
 
@@ -509,32 +510,37 @@
             margin-right: 10px;
 
             li {
-                background: @colorDarkBlue;
+                span.tabs_header, form {
+                    background: @colorDarkBlue;
+                    color: white;
+                    padding: 5px 30px 5px 20px;
+                    border-radius: 0;
+                    cursor: pointer;
 
-                &[aria-selected='true'] {
-                    border: none;
-                    background: white;
-                    color: @colorDarkBlue;
+                    &[aria-selected='true'] {
+                        border: none;
+                        background: white;
+                        color: @colorDarkBlue;
+
+                        &:focus {
+                            background: @colorDarkBlueHover;
+                            color: white;
+                        }
+                    }
 
                     &:focus {
                         background: @colorDarkBlueHover;
                         color: white;
+                        outline: 0;
                     }
+                }
+
+                form {
+                    padding: 0;
                 }
 
                 input {
                     width: 100%;
-                }
-
-                color: white;
-                padding: 5px 30px 5px 20px;
-                border-radius: 0;
-                cursor: pointer;
-
-                &:focus {
-                    background: @colorDarkBlueHover;
-                    color: white;
-                    outline: 0;
                 }
             }
 
@@ -627,7 +633,7 @@
                 .tab-links {
                     padding-left: 0;
 
-                    li {
+                    li span.tabs_header, form {
                         width: 100px;
                         padding: 0 15px 0 10px;
                     }
@@ -647,7 +653,7 @@
                 .tab-links {
                     padding-left: 0;
 
-                    li {
+                    li span.tabs_header, form {
                         width: 100px;
                         padding: 0 15px 0 10px;
                     }

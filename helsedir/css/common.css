@@ -295,8 +295,10 @@ body {
   clear: both;
   content: '';
 }
-.container .tabs .tab-links li,
-.container-fluid .tabs .tab-links li {
+.container .tabs .tab-links li span.tabs_header,
+.container-fluid .tabs .tab-links li span.tabs_header,
+.container .tabs .tab-links li form,
+.container-fluid .tabs .tab-links li form {
   margin: 0;
   float: left;
   list-style: none;
@@ -306,25 +308,35 @@ body {
   transition: all linear 0.15s;
   padding-bottom: 6px;
 }
-.container .tabs .tab-links li.active,
-.container-fluid .tabs .tab-links li.active {
+.container .tabs .tab-links li span.tabs_header.active,
+.container-fluid .tabs .tab-links li span.tabs_header.active,
+.container .tabs .tab-links li form.active,
+.container-fluid .tabs .tab-links li form.active {
   border: none;
 }
-.container .tabs .tab-links li.active a,
-.container-fluid .tabs .tab-links li.active a {
+.container .tabs .tab-links li span.tabs_header.active a,
+.container-fluid .tabs .tab-links li span.tabs_header.active a,
+.container .tabs .tab-links li form.active a,
+.container-fluid .tabs .tab-links li form.active a {
   color: #004e66;
   font-family: 'Calibri-Bold';
   background: white;
 }
-.container .tabs .tab-links li.active a:hover,
-.container-fluid .tabs .tab-links li.active a:hover,
-.container .tabs .tab-links li.active a:focus,
-.container-fluid .tabs .tab-links li.active a:focus {
+.container .tabs .tab-links li span.tabs_header.active a:hover,
+.container-fluid .tabs .tab-links li span.tabs_header.active a:hover,
+.container .tabs .tab-links li form.active a:hover,
+.container-fluid .tabs .tab-links li form.active a:hover,
+.container .tabs .tab-links li span.tabs_header.active a:focus,
+.container-fluid .tabs .tab-links li span.tabs_header.active a:focus,
+.container .tabs .tab-links li form.active a:focus,
+.container-fluid .tabs .tab-links li form.active a:focus {
   background: white;
   color: #004e66;
 }
-.container .tabs .tab-links li a,
-.container-fluid .tabs .tab-links li a {
+.container .tabs .tab-links li span.tabs_header a,
+.container-fluid .tabs .tab-links li span.tabs_header a,
+.container .tabs .tab-links li form a,
+.container-fluid .tabs .tab-links li form a {
   display: inline-block;
   font-size: 16px;
   transition: all linear 0.15s;
@@ -335,10 +347,14 @@ body {
   font-family: 'Calibri';
   background: #838078;
 }
-.container .tabs .tab-links li a:hover,
-.container-fluid .tabs .tab-links li a:hover,
-.container .tabs .tab-links li a:focus,
-.container-fluid .tabs .tab-links li a:focus {
+.container .tabs .tab-links li span.tabs_header a:hover,
+.container-fluid .tabs .tab-links li span.tabs_header a:hover,
+.container .tabs .tab-links li form a:hover,
+.container-fluid .tabs .tab-links li form a:hover,
+.container .tabs .tab-links li span.tabs_header a:focus,
+.container-fluid .tabs .tab-links li span.tabs_header a:focus,
+.container .tabs .tab-links li form a:focus,
+.container-fluid .tabs .tab-links li form a:focus {
   color: white;
   background: #5e5d57;
 }
@@ -399,6 +415,10 @@ body {
 .container .tabs .tab-content .alphabetical .character:hover,
 .container-fluid .tabs .tab-content .alphabetical .character:hover {
   background: white;
+}
+.container .tabs .tab-content .tabpanel_header[aria-hidden="true"],
+.container-fluid .tabs .tab-content .tabpanel_header[aria-hidden="true"] {
+  display: none;
 }
 .container .chart_div,
 .container-fluid .chart_div {
@@ -2287,9 +2307,12 @@ body {
   .container .statistics_table table tbody th:first-child:before {
     content: '';
   }
-  .container .toppmeny .tab-links li,
-  .container .tabs .tab-links li,
-  .container .tabs-statistics .tabs .tab-links li {
+  .container .toppmeny .tab-links li span.tabs_header,
+  .container .tabs .tab-links li span.tabs_header,
+  .container .tabs-statistics .tabs .tab-links li span.tabs_header,
+  .container .toppmeny .tab-links li form,
+  .container .tabs .tab-links li form,
+  .container .tabs-statistics .tabs .tab-links li form {
     width: 114px;
     font-size: 12px;
   }

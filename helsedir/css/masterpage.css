@@ -260,22 +260,28 @@
   padding-left: 20px;
   margin-right: 10px;
 }
-#header footer .tabs .tab-links li,
-#footer footer .tabs .tab-links li {
+#header footer .tabs .tab-links li span.tabs_header,
+#footer footer .tabs .tab-links li span.tabs_header,
+#header footer .tabs .tab-links li form,
+#footer footer .tabs .tab-links li form {
   background: #004e66;
   color: white;
   padding: 5px 30px 5px 20px;
   border-radius: 0;
   cursor: pointer;
 }
-#header footer .tabs .tab-links li[aria-selected='true'],
-#footer footer .tabs .tab-links li[aria-selected='true'] {
+#header footer .tabs .tab-links li span.tabs_header[aria-selected='true'],
+#footer footer .tabs .tab-links li span.tabs_header[aria-selected='true'],
+#header footer .tabs .tab-links li form[aria-selected='true'],
+#footer footer .tabs .tab-links li form[aria-selected='true'] {
   border: none;
   background: white;
   color: #004e66;
 }
-#header footer .tabs .tab-links li[aria-selected='true']:focus,
-#footer footer .tabs .tab-links li[aria-selected='true']:focus {
+#header footer .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+#footer footer .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+#header footer .tabs .tab-links li form[aria-selected='true']:focus,
+#footer footer .tabs .tab-links li form[aria-selected='true']:focus {
   background: #002e41;
   color: white;
 }
@@ -283,8 +289,8 @@
 #footer footer .tabs .tab-links li input {
   width: 100%;
 }
-#header footer .tabs .tab-links li:focus,
-#footer footer .tabs .tab-links li:focus {
+#header footer .tabs .tab-links li input:focus,
+#footer footer .tabs .tab-links li input:focus {
   background: #002e41;
   color: white;
   outline: 0;
@@ -518,29 +524,36 @@
   padding-left: 20px;
   margin-right: 10px;
 }
-.container-fluid.toppmeny .tabs .tab-links li {
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header,
+.container-fluid.toppmeny .tabs .tab-links li form {
   background: #004e66;
   color: white;
   padding: 5px 30px 5px 20px;
   border-radius: 0;
   cursor: pointer;
 }
-.container-fluid.toppmeny .tabs .tab-links li[aria-selected='true'] {
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true'],
+.container-fluid.toppmeny .tabs .tab-links li form[aria-selected='true'] {
   border: none;
   background: white;
   color: #004e66;
 }
-.container-fluid.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+.container-fluid.toppmeny .tabs .tab-links li form[aria-selected='true']:focus {
   background: #002e41;
   color: white;
 }
-.container-fluid.toppmeny .tabs .tab-links li input {
-  width: 100%;
-}
-.container-fluid.toppmeny .tabs .tab-links li:focus {
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header:focus,
+.container-fluid.toppmeny .tabs .tab-links li form:focus {
   background: #002e41;
   color: white;
   outline: 0;
+}
+.container-fluid.toppmeny .tabs .tab-links li form {
+  padding: 0;
+}
+.container-fluid.toppmeny .tabs .tab-links li input {
+  width: 100%;
 }
 .container-fluid.toppmeny .tabs .tab-links .menu_search form {
   height: 40px;
@@ -617,8 +630,10 @@
   #footer footer .tabs .tab-links {
     padding-left: 0;
   }
-  #header footer .tabs .tab-links li,
-  #footer footer .tabs .tab-links li {
+  #header footer .tabs .tab-links li span.tabs_header,
+  #footer footer .tabs .tab-links li span.tabs_header,
+  #header footer .tabs .tab-links form,
+  #footer footer .tabs .tab-links form {
     width: 100px;
     padding: 0 15px 0 10px;
   }
@@ -635,8 +650,10 @@
   #footer .container-fluid.toppmeny .tabs .tab-links {
     padding-left: 0;
   }
-  #header .container-fluid.toppmeny .tabs .tab-links li,
-  #footer .container-fluid.toppmeny .tabs .tab-links li {
+  #header .container-fluid.toppmeny .tabs .tab-links li span.tabs_header,
+  #footer .container-fluid.toppmeny .tabs .tab-links li span.tabs_header,
+  #header .container-fluid.toppmeny .tabs .tab-links form,
+  #footer .container-fluid.toppmeny .tabs .tab-links form {
     width: 100px;
     padding: 0 15px 0 10px;
   }

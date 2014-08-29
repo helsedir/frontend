@@ -38,6 +38,14 @@
 .container .transportsideknapp .publication_download:hover {
   text-decoration: underline;
 }
+.container .refinesearch.publication {
+  width: 100%;
+}
+.container .refinesearch.publication .form-group {
+  width: 243px;
+  display: inline-block;
+  margin-right: 30px;
+}
 @media only screen and (min-width: 1200px) {
   .container .refinesearch {
     margin-top: 20px;
