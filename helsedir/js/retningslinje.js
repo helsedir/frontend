@@ -25,36 +25,17 @@ jQuery(document).ready(function() {
   jQuery('.recommendationGrading').on('click', function() {
   		slider(jQuery(this), jQuery(this).parent().siblings('.gradingInfo'));
   });
-  
-  
 
-  
  
 	/** Twitter typeahead **/
 	var antibiotika = new Bloodhound({
   	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		local: [{"keyword":"antibiotika"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
+		local: [{"keyword":"antibiotika"}, {"keyword":"amming"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
 		//prefetch: '../data/antibiotika.json'
 	});
  
-	var diabetes = new Bloodhound({
-  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
-		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		local: [{"keyword":"diabetes"}, {"keyword":"antibiotika"}, {"keyword":"type I"},{"keyword":"type II"},{"keyword":"intravenøst"},{"keyword":"insulin"}]
-		//prefetch: '../data/diabetes.json'
-	});
-	
-	var spedbarn = new Bloodhound({
-  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
-		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		local: [{"keyword":"amming"},{"keyword":"ernæring"},{"keyword":"melk"}]
-		//prefetch: '../data/spedbarn.json'
-	});
- 
 	antibiotika.initialize();
-	diabetes.initialize();
-	spedbarn.initialize();
  
 	$('#search_input_retningslinjer .typeahead').typeahead({
 		hint: false,
@@ -63,26 +44,7 @@ jQuery(document).ready(function() {
 	{
   name: 'antibiotika',
   displayKey: 'keyword',
-  source: antibiotika.ttAdapter(),
-  templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for antibiotika</h3>'
-  }
-	},
-	{
-  name: 'diabetes',
-  displayKey: 'keyword',
-  source: diabetes.ttAdapter(),
-  templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for diabetes</h3>'
-  }
-  },
-  {
-	name: 'spedbarn',
-  displayKey: 'keyword',
-  source: spedbarn.ttAdapter(),
-  templates: {
-    header: '<h3 class="search_retningslinjetittel uppercase">Nasjonal faglig retningslinje for spedbarnsernæring</h3>'
-  }
+  source: antibiotika.ttAdapter()
 	});
 	
 	
@@ -97,35 +59,51 @@ jQuery(document).ready(function() {
 	
 	window.localStorage.clear();
 	
-	
-	$('[data-toggle="popover_grading"]').popover({
-    html: true,
-    content: '<div class="popoverText"><h4>Svak</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være større enn eventuelle ulemper. Ulike valg kan være riktig for ulike pasienter, og helse- og omsorgspersonell må hjelpe til med å vurdere hva som er riktig i den enkelte situasjon.</p><h4>Sterk</h4><p>Fordelene ved å følge anbefalingen vil for de fleste være klart større enn eventuelle ulemper. Pasienter og helse- og omsorgspersonell vil, i de fleste situasjoner, mene det er riktig å følge anbefalingen.</p></div>',
-    trigger: 'hover',
-        'placement': 'right'
-	});
-	
-	$('[data-toggle="popover_medicament"]').popover({
-    html: true,
-    trigger: 'hover',
-        'placement': 'top'
-	});
-	
-   
+	prettyPrint();
+  epj(); 
 });
 
-  function slider(accordion, areaToExpand) {
-	  if(accordion.hasClass('open')){
-		  areaToExpand.slideUp('fast', function () {
-			  areaToExpand.addClass('visuallyhidden').slideDown(0);
-		  });
-		  accordion.removeClass('open');
-		  accordion.addClass('closed');
-	  } else {
-		  areaToExpand.slideUp(0, function () {
-			  areaToExpand.removeClass('visuallyhidden').slideDown(500);
-		  });
-		  accordion.removeClass('closed');
-		  accordion.addClass('open');
-	  }
+
+function goFromSearchToRecommendation(destination, headline) {
+	window.location.href = destination;
+	
+	$(window).bind("load", function() {
+   alert("t");
+	});
+	
+	//$(".container").find(".recommendation h1").addClass('open');
+}
+
+function slider(accordion, areaToExpand) {
+  if(accordion.hasClass('open')){
+	  areaToExpand.slideUp('fast', function () {
+		  areaToExpand.addClass('visuallyhidden').slideDown(0);
+	  });
+	  accordion.removeClass('open');
+	  accordion.addClass('closed');
+  } else {
+	  areaToExpand.slideUp(0, function () {
+		  areaToExpand.removeClass('visuallyhidden').slideDown(500);
+	  });
+	  accordion.removeClass('closed');
+	  accordion.addClass('open');
   }
+}
+
+function prettyPrint() {
+	if($("article").is(".printable")){
+		/*$(".closed").addClass("open");
+		$(".closed").removeClass("closed");*/
+	
+		$(".visuallyhidden").removeClass("visuallyhidden");
+	}
+}
+
+function epj() {
+	if($("article").is(".epj")){
+		/*$(".closed").addClass("open");
+		$(".closed").removeClass("closed");*/
+	
+		$(".text.visuallyhidden, .background_information.visuallyhidden").removeClass("visuallyhidden");
+	}
+}

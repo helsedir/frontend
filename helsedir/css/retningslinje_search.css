@@ -1,0 +1,36 @@
+/* Spesifikt for søk retningslinjer, flyttes til search.css? */
+
+.container .searchresult {
+	margin: 50px 0 50px 0 !important; 
+}
+
+.container .searchresult h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 50px 0 0 0;
+}
+
+.container .searchresult h2 {
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 0px;	
+}
+
+.container .searchresult .internal-link {
+	margin-top: 0px;
+}
+
+.container .searchresult .breadcrumbs,
+.container-fluid .searchresult .breadcrumbs {
+	margin: 5px 0 0 0;
+}
+
+.container .searchContext {
+	font-size: 16px;
+	margin-top: 25px !important;
+}
+
+.container .searchContext a{
+	display: inline;
+	font-size: 16px;
+}

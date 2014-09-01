@@ -13,6 +13,7 @@
     <link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
     <link href="http://helsedir.azurewebsites.net/css/font_calibri.css" rel="stylesheet">
     <link href="http://helsedir.azurewebsites.net/css/print.css" rel="stylesheet">
+    <link href="http://helsedir.azurewebsites.net/css/retningslinje_search.css" rel="stylesheet">
 
     <!--[if lte IE 8]>
     	<link href="http://helsedir.azurewebsites.net/css/ie8fix.css" rel="stylesheet">
@@ -287,8 +288,8 @@
 			          </li>
 			        </ol>
 			      </nav>
-			      <h1>Søk</h1>
-			      <div class=" border"></div>
+			      <h1>Søk - Nasjonale faglige retningslinjer</h1>
+			      <div class="border"></div>
 			    </header>
 			  </div>
 			</div>
@@ -296,11 +297,14 @@
 				<div class="col-md-7">
 					<form class=" searchfield">
           	<label for="search" class=" visuallyhidden">Søk etter anbefalinger i alle retningslinjer</label>
-            <input id="search" class=" mainsearch" type="text" placeholder="Søk etter anbefalinger i alle retningslinjer">
+            <input id="search" class="mainsearch" type="text" placeholder="" value="amming">
           </form>
 					<ul class="filterlist">
-          	<li class="selectedfilter"><a href="#">Anbefalinger</a></li>
-            <li><a href="#">Retningslinjer</a></li>
+          	<li><a href="#">Alt innhold (16)</a></li>
+            <li class="selectedfilter"><a href="#">Retningslinjer (7)</a></li>
+            <li><a href="#">Statistikk (2)</a></li>
+            <li><a href="#">Tilskudd (1)</a></li>
+            <li><a href="#">Nyheter (9)</a></li>
           </ul>
 					<h2 class="visuallyhidden">Søketreff</h2>
 					
@@ -308,6 +312,16 @@
                         <div class="accordion_mobile refinesearch">
                             <h2>Avgrens søketreff</h2>
                             <form class=" dropdown">
+                            <div class="form-group">
+                                    <label for="tema">Vis treff i</label>
+                                    <select role="listbox" id="tema" class="form-control" onchange="javascript:location.href = this.value;">
+                                        <option role="option" value="soeketreff.html" selected="true">Anbefalinger (4)</option>
+                                        <option role="option" value="soeketreff_retningslinjer.html">
+                                            Retningslinjer (3)
+                                        </option>
+                                    </select>
+                                </div>
+
                                 <div class="form-group">
                                     <label for="tema">Tema</label>
                                     <select role="listbox" id="tema" class="form-control">
@@ -347,229 +361,66 @@
                                         </option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="type">Type</label>
-                                    <select role="listbox" id="type" class="form-control">
-                                        <option role="option">Alle typer</option>
-                                        <option role="option">
-                                            Brosjyrer (151)
-                                        </option>
-                                        <option role="option">
-                                            Handlingsplaner og strategier (15)
-                                        </option>
-                                        <option role="option">
-                                            Håndbøker (14)
-                                        </option>
-                                        <option role="option">
-                                            Informasjonspakker (1)
-                                        </option>
-                                        <option role="option">
-                                            Lovpålagte skjema (6)
-                                        </option>
-                                        <option role="option">
-                                            Nasjonale faglige retningslinjer (62)
-                                        </option>
-                                        <option role="option">
-                                            Opplæring (26)
-                                        </option>
-                                        <option role="option">
-                                            Plakater og kort (33)
-                                        </option>
-                                        <option role="option">
-                                            Protokoller (4)
-                                        </option>
-                                        <option role="option">
-                                            Rapporter (356)
-                                        </option>
-                                        <option role="option">
-                                            Regelverk (16)
-                                        </option>
-                                        <option role="option">
-                                            Rekvisita (1)
-                                        </option>
-                                        <option role="option">
-                                            Rundskriv (50)
-                                        </option>
-                                        <option role="option">
-                                            Veiledere (162)
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="aar">År</label>
-                                    <select role="listbox" id="aar" class="form-control">
-                                        <option role="option">Alle år</option>
-                                        <option role="option">
-                                            2014 (53)
-                                        </option>
-                                        <option role="option">
-                                            2013 (104)
-                                        </option>
-                                        <option role="option">
-                                            2012 (86)
-                                        </option>
-                                        <option role="option">
-                                            2011 (111)
-                                        </option>
-                                        <option role="option">
-                                            2010 (111)
-                                        </option>
-                                        <option role="option">
-                                            2009 (140)
-                                        </option>
-                                        <option role="option">
-                                            2008 (85)
-                                        </option>
-                                        <option role="option">
-                                            2007 (60)
-                                        </option>
-                                        <option role="option">
-                                            2006 (33)
-                                        </option>
-                                        <option role="option">
-                                            2005 (38)
-                                        </option>
-                                        <option role="option">
-                                            2004 (23)
-                                        </option>
-                                        <option role="option">
-                                            2003 (23)
-                                        </option>
-                                        <option role="option">
-                                            2002 (9)
-                                        </option>
-                                        <option role="option">
-                                            2001 (6)
-                                        </option>
-                                        <option role="option">2000 (6)</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="spraak">Språk</label>
-                                    <select role="listbox" id="spraak" class="form-control">
-                                        <option role="option">
-                                            Albansk (2)
-                                        </option>|
-                                        <option role="option">
-                                            Amharisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Arabisk (10)
-                                        </option>|
-                                        <option role="option">
-                                            Bosnisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Dansk (2)
-                                        </option>|
-                                        <option role="option">
-                                            Engelsk (53)
-                                        </option>|
-                                        <option role="option">
-                                            Farsi (3)
-                                        </option>|
-                                        <option role="option">
-                                            Finsk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Fransk (5)
-                                        </option>|
-                                        <option role="option">
-                                            Kinesisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Kurdisk (2)
-                                        </option>|
-                                        <option role="option">
-                                            Litauisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Nord-samisk (1)
-                                        </option>|
-                                        <option selected="">
-                                            Norsk (bokmål) (855)
-                                        </option>|
-                                        <option role="option">
-                                            Norsk (nynorsk) (47)
-                                        </option>|
-                                        <option role="option">
-                                            Polsk (2)
-                                        </option>|
-                                        <option role="option">
-                                            Russisk (3)
-                                        </option>|
-                                        <option role="option">
-                                            Samisk (10)
-                                        </option>|
-                                        <option role="option">
-                                            Serbisk-bosnisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Somali (10)
-                                        </option>|
-                                        <option role="option">
-                                            Sorani (3)
-                                        </option>|
-                                        <option role="option">
-                                            Spansk (4)
-                                        </option>|
-                                        <option role="option">
-                                            Svensk (2)
-                                        </option>|
-                                        <option role="option">
-                                            Sør-samisk (1)
-                                        </option>|
-                                        <option role="option">
-                                            Tagalog (1)
-                                        </option>|
-                                        <option role="option">
-                                            Thai (1)
-                                        </option>|
-                                        <option role="option">
-                                            Tigrinja (1)
-                                        </option>|
-                                        <option role="option">
-                                            Tyrkisk (5)
-                                        </option>|
-                                        <option role="option">
-                                            Urdu (12)
-                                        </option>|
-                                        <option role="option">    Vietnamesisk (2)</option>|
-                                    </select>
-                                </div>
-                            </form>
+                             </form>
                         </div>
                     </aside>
 					
 					
-					<p class="numberofhits">48 treff på "diabetes"</p>
+					<p class="searchContext">4 treff på "amming" i anbefalinger. <a href="#" class="internal-link arrow_right">Søk etter "amming" i fritekst i retningslinjene</a></p>
 					<ol>
 						<li>
 							<article class="searchresult">
+								<h1>Spedbarnsernæring</h1>
 								<ol class="breadcrumbs clearfix">
-									<li><a href="#">Forside</a></li>
-									<li><a href="#">Nasjonale faglige retningslinjer</a></li>
-									<li><a href="#">Nasjonal faglig retningslinje for spedbarnsernæring</a></li>
 									<li><a href="#">Lengden av fullammingsperioden og tidspunkt for introduksjon av fast føde</a></li>
 								</ol>
-								<a href="#"><h2 class="internal-link arrow_right">Morsmelk som hovednæring i de første 6 levemånedene</h2></a>
+								<a href="http://helsedir.azurewebsites.net/medisinskeRetningslinjer/spedbarnsernaering/lengdenAvFullammingsperioden/" onclick=""><h2 class="internal-link arrow_right">Morsmelk anbefales som hovednæring i de første XX levemånedene</h2></a>
 								<p>
-								Det anbefales morsmelk som hovednæring i de første 6 levemånedene. Dersom spedbarnet vokser tilfredsstillende og mor trives med å fullamme, kan gjerne morsmelk gis som eneste næring til 6 måneders alder...
+								Det anbefales morsmelk som hovednæring i de første XX levemånedene. Dersom spedbarnet vokser tilfredsstillende og mor trives med å fullamme, kan gjerne morsmelk gis som eneste næring til XX måneders alder...
 								</p>
 							</article>
 						</li>
 						<li>
 							<article class="searchresult">
+								<h1>Diabetes</h1>
 								<ol class="breadcrumbs clearfix">
-									<li><a href="#">Forside</a></li>
-									<li><a href="#">Nasjonale faglige retningslinjer</a></li>
+									<li><a href="#">Type I</a></li>
+									<li><a href="#">Diagnostikk av diabetes</a></li>
 								</ol>
-								<a href="#"><h2 class="internal-link arrow_right">tittel</h2></a>
+								<a href="http://helsedir.azurewebsites.net/medisinskeRetningslinjer/diabetes/type1/diagnostikkAvDiabetes/"><h2 class="internal-link arrow_right">Ved nyoppdaget hjerte- og karsykdom</h2></a>
 								<p>
-								Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+								Hos pasienter med nyoppdaget hjerte- og karsykdom bør det uføres en peroral glukosetoleransetest.
 								</p>
 							</article>
 						</li>
+						<li>
+							<article class="searchresult">
+								<h1>Diabetes</h1>
+								<ol class="breadcrumbs clearfix">
+									<li><a href="#">Type I</a></li>
+									<li><a href="#">Diagnostikk av diabetes</a></li>
+								</ol>
+								<a href="http://helsedir.azurewebsites.net/medisinskeRetningslinjer/diabetes/type1/diagnostikkAvDiabetes/"><h2 class="internal-link arrow_right">Lete aktivt ved høy risiko</h2></a>
+								<p>
+								Hos pasienter med høy risiko for diabetes bør man lete aktivt etter diabetes
+								</p>
+							</article>
+						</li>
+						<li>
+							<article class="searchresult">
+								<h1>Antibiotika i spesialisthelsetjenesten</h1>
+								<ol class="breadcrumbs clearfix">
+									<li><a href="#">Allment</a></li>
+									<li><a href="#">Sepsis</a></li>
+									<li><a href="#">Ukjent fokus, ukjent mikrobe</a></li>
+								</ol>
+								<a href="http://helsedir.azurewebsites.net/medisinskeRetningslinjer/diabetes/type1/diagnostikkAvDiabetes/"><h2 class="internal-link arrow_right">Standard regime</h2></a>
+								<p>
+									Benzylpenicillin iv 3g x 4 + Gentamicin* iv 5-7 mg/kg x 1
+								</p>
+							</article>
+						</li>
+
 					</ol>
 				</div>
 			</div>
