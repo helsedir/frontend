@@ -67,14 +67,17 @@ $('#tab_header1').keydown(function (ev) {
         var x = window.scrollX, y = window.scrollY;
         $('#content_categories').focus();
         window.scrollTo(x, y);
+        return false;
     }
-    return false;
+    return true;
 });
+
 $('#tab_header2').keydown(function (ev) {
     if (ev.which == 13) {
         var x = window.scrollX, y = window.scrollY;
         $('#content_alphabetical').focus();
         window.scrollTo(x, y);
+        return false;
     }
-    return false;
+    return true;
 });
