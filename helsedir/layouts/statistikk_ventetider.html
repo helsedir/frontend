@@ -68,12 +68,12 @@
 
                 <div class="col-xs-12 col-md-2 col-lg-3  hidden-mobile" id="mainsearchcolumn">
                     <form class="mainsearch">
-                        <h1 class=" visuallyhidden">Søk</h1>
+
                         <span role="search">
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
                             <button type="submit">
-                                <img src="../img/ikon_forstorrelsesglass.png" alt="Søk" />
+                                <img src="../img/ikon_forstorrelsesglass.png" alt="Søkeknapp" />
                             </button>
                         </span>
                     </form>
@@ -87,23 +87,20 @@
             </header>
         </div>
     </div>
-    <div class=" toppmeny  container-fluid js-expand visuallyhidden">
+    <div class=" toppmeny  container-fluid js-expand">
         <div class="inner container-fluid">
             <div class="container">
                 <h1 class=" visuallyhidden">Hovedmeny</h1>
 
                 <nav class=" tabs">
-
                     <ul class=" tab-links" role="tablist">
-                        <li class=" tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</li>
-                        <li class=" tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                        <li role="presentation"><span class=" tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</span></li>
+                        <li role="presentation"><span class=" tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
                     </ul>
                     <div class=" tab-content">
                         <div id="panel_header1" class=" tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
-
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
-
                                     <ul>
                                         <li><a href="../medisinskeRetningslinjer/" id="content_categories">Nasjonale faglige retningslinjer</a></li>
                                         <li><a href="#">Nasjonale strategier og planer</a></li>
@@ -122,10 +119,8 @@
                                     </ul>
                                 </div>
                                 <div class=" clearfix visible-xs visible-sm"></div>
-
                                 <div class=" col-sm-6 col-md-4">
                                     <ul>
-
                                         <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
                                         <li><a href="#">Legemidler og medisinsk utstyr</a></li>
                                         <li><a href="#">Godkjenning og turnus</a></li>
@@ -137,10 +132,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="panel_header2" class=" tab visuallyhidden tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
+                        <div id="panel_header2" class=" tab tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
                             <div class="row alphabetical">
                                 <div class="col-sm-6 col-md-3 col-lg-3">
-
                                     <ul>
                                         <li class="character">A</li>
                                         <li><a href="#" id="content_alphabetical">AD/HD</a></li>
@@ -148,25 +142,21 @@
                                         <li><a href="#">Antibiotika</a></li>
                                         <li><a href="#">Astma og allergi</a></li>
                                     </ul>
-
                                     <ul>
                                         <li class="character">B</li>
                                         <li><a href="#">Beredskap og krisehåndtering</a></li>
                                     </ul>
-
                                     <ul>
                                         <li class="character">D</li>
                                         <li><a href="artikkel_utredning_av_demens.html">Demens</a></li>
                                         <li><a href="#">Diabetes</a></li>
                                     </ul>
-
                                     <ul>
                                         <li class="character">E</li>
                                         <li><a href="#">E-resept</a></li>
                                     </ul>
                                     <ul>
                                         <li class="character">F</li>
-
                                         <li><a href="transportside_folkehelse.html">Folkehelsearbeid</a></li>
                                         <li><a href="#">Forgiftning</a></li>
                                         <li><a href="#">Frisklivssentraler</a></li>
@@ -181,7 +171,6 @@
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 col-md-3 col-lg-3">
-
                                     <ul>
                                         <li class="character">H</li>
                                         <li><a href="#">Helsestasjon og skolehelsetjenesten    </a></li>
@@ -213,10 +202,8 @@
                                 </div>
                                 <div class=" clearfix hidden-md hidden-lg"></div>
                                 <div class="col-sm-6 col-md-3 col-lg-3">
-
                                     <ul>
                                         <li class="character">M</li>
-
                                         <li><a href="#">ME-CFS                                 </a></li>
                                         <li><a href="#">Medisinsk bibliotek                    </a></li>
                                         <li><a href="#">Medisinsk utstyr                       </a></li>
@@ -243,7 +230,6 @@
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 col-md-3 col-lg-3">
-
                                     <ul>
                                         <li class="character">R</li>
                                         <li><a href="#">Refusjoner                          </a></li>
@@ -313,7 +299,7 @@
                                     <caption class=" visuallyhidden">Utvikling i median ventetid i antall dager, siste 6 måneder. For mer informasjon om statistikken, kontakt Ola N. Ordmann på telefon 81549300</caption>
                                     <thead>
                                         <tr class="odd">
-                                            <th></th>
+                                            <th scope="col">Sektor</th>
                                             <th scope="col">Oktober 2013</th>
                                             <th scope="col">November 2013</th>
                                             <th scope="col">Desember 2013</th>
@@ -455,8 +441,8 @@
                             <nav class=" tabs">
 
                                 <ul class=" tab-links" role="tablist">
-                                    <li class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
-                                    <li class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                                    <li role="presentation"><span class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</span></li>
+                                    <li role="presentation"><span class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
                                 </ul>
                                 <div class=" tab-content">
                                     <div id="panel_footer1" class=" tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
@@ -496,7 +482,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="panel_footer2" class=" tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
+                                    <div id="panel_footer2" class="tab tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
                                         <div class="row alphabetical">
                                             <div class="col-sm-6 col-md-3 col-lg-3">
 

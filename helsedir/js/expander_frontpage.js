@@ -9,17 +9,11 @@
 
     expander.click(function () {
         if (visible) {
-            expandedContent.slideUp('fast', function () {
-                expandedContent.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
+            expandedContent.slideUp(500);
             expander.removeClass('js-expanded');
             expander.blur();
         } else {
-            expandedContent.slideUp(0, function () {
-                expandedContent.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
+            expandedContent.slideDown(500);
             $('html, body').animate({
                 scrollTop: expander.offset().top + 70
             }, 700);
@@ -30,17 +24,11 @@
     expander.keydown(function (ev) {
         if (ev.which == 13) {
             if (visible) {
-                expandedContent.slideUp('fast', function () {
-                    expandedContent.addClass('visuallyhidden')
-                        .slideDown(0);
-                });
+                expandedContent.slideUp(500);
                 expander.removeClass('js-expanded');
                 expander.blur();
             } else {
-                expandedContent.slideUp(0, function () {
-                    expandedContent.removeClass('visuallyhidden')
-                        .slideDown(500);
-                });
+                expandedContent.slideDown(500);
                 $('html, body').animate({
                     scrollTop: expander.offset().top + 70
                 }, 700);

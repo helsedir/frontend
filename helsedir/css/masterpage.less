@@ -30,6 +30,10 @@
     background: white;
 }
 
+.js-expand {
+    display: none;
+}
+
 .shortcuts, #header .shortcuts, #footer .shortcuts {
     position: absolute;
     top: 10px;
@@ -267,7 +271,7 @@
                 margin-right: 10px;
 
                 li {
-                    span.tabs_header, form {
+                    span.tabs_header, span.tabs_footer, form {
                         background: @colorDarkBlue;
                         color: white;
                         padding: 5px 30px 5px 20px;
@@ -510,7 +514,7 @@
             margin-right: 10px;
 
             li {
-                span.tabs_header, form {
+                span.tabs_header, span.tabs_footer, form {
                     background: @colorDarkBlue;
                     color: white;
                     padding: 5px 30px 5px 20px;
@@ -633,7 +637,7 @@
                 .tab-links {
                     padding-left: 0;
 
-                    li span.tabs_header, form {
+                    li span.tabs_header, li span.tabs_footer, form {
                         width: 100px;
                         padding: 0 15px 0 10px;
                     }
@@ -653,7 +657,7 @@
                 .tab-links {
                     padding-left: 0;
 
-                    li span.tabs_header, form {
+                    li span.tabs_header, li span.tabs_footer, form {
                         width: 100px;
                         padding: 0 15px 0 10px;
                     }

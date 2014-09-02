@@ -185,6 +185,12 @@
 .container.frontpage .news a {
   font-size: 26px;
 }
+.container.frontpage .news a h3 {
+  font-size: 26px;
+  margin: 0;
+  line-height: 28px;
+  font-family: 'Calibri';
+}
 .container.frontpage .news .internal-link.arrow_right {
   margin: 0;
 }

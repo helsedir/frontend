@@ -60,7 +60,6 @@
 
                 <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile col-lg-offset-2" id="mainsearch">
                     <form class="mainsearch">
-                        <h1 class=" visuallyhidden">Søk</h1>
                         <span role="search">
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
@@ -122,7 +121,7 @@
                             <h2>
                                 Alt innhold A til Å <i class="fa fa-bars"></i>
                             </h2>
-                            <p class=" visuallyhidden">Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
+                            <p class=" visuallyhidden">Hovedmeny. Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
                         </button>
                     </div>
                 </div>
@@ -130,21 +129,25 @@
         </div>
     </div>
 
-    <div class="toppmeny container-fluid js-expand visuallyhidden">
+    <div class="toppmeny container-fluid js-expand">
         <div class="inner container-fluid">
             <div class="container">
                 <h1 class=" visuallyhidden">Hovedmeny</h1>
                 <nav class=" tabs">
                     <ul class=" tab-links" role="tablist">
-                        <li role="presentation"><span id="tab_header1" class="tabs_header" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</span></li>
-                        <li role="presentation"><span id="tab_header2" class="tabs_header" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
+                        <li role="presentation">
+                            <span id="tab_header1" class="tabs_header" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</span>
+                        </li>
+                        <li role="presentation">
+                            <span id="tab_header2" class="tabs_header" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</span>
+                        </li>
                         <li role="presentation" class="menu_search hidden-sm hidden-xs">
                             <form>
                                 <span role="search">
                                     <label for="menu_search" class=" visuallyhidden">Søk</label>
                                     <input id="menu_search" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
                                     <button type="submit">
-                                        <img src="../img/ikon_forstorrelsesglass.png" alt="Søk" />
+                                        <img src="../img/ikon_forstorrelsesglass.png" alt="Søkeknapp" />
                                     </button>
                                 </span>
                             </form>
@@ -331,6 +334,7 @@
         <div class="container  frontpage">
             <div class="row">
                 <section class="col-md-12 importantnews">
+                    <h2 class="visuallyhidden">Viktig nyhet</h2>
                     <div class=" video-container">
                         <iframe src="//www.youtube.com/embed/hhf9ovda9RU?autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -348,6 +352,8 @@
     <div class="container  frontpage">
         <div class="row">
             <section class="col-md-12  importantnews">
+                <h2 class="visuallyhidden">Viktig nyhet</h2>
+
                 <a href="nyheter_ennyhet.html">
                     <h2>Nye kreftlegemidler vurdert</h2>
                     <div class="text_and_image  clearfix">
@@ -369,15 +375,15 @@
                 <section class="col-md-6 col-lg-6">
                     <a href="nyheter.html"><h2>Nyheter</h2></a>
                     <div class="news">
-                        <a href="#" class=" internal-link arrow_right">Nye nasjonale kvalitetsindikatorer</a>
+                        <a href="#" class=" internal-link arrow_right"><h3>Nye nasjonale kvalitetsindikatorer</h3></a>
                         <p>08.05.2014</p>
                     </div>
                     <div class="news">
-                        <a href="#" class=" internal-link arrow_right">Har du fått #dine30 i dag?</a>
+                        <a href="#" class=" internal-link arrow_right"><h3>Har du fått #dine30 i dag?</h3></a>
                         <p>07.05.2014</p>
                     </div>
                     <div class="news">
-                        <a href="#" class=" internal-link arrow_right">Følg Helsekonferansen 2014 direkte</a>
+                        <a href="#" class=" internal-link arrow_right"><h3>Følg Helsekonferansen 2014 direkte</h3></a>
                         <p>05.05.2014</p>
                     </div>
                     <a href="nyheter.html" class=" internal-link arrow_right">Se alle nyheter</a>
@@ -392,7 +398,7 @@
                             <span class="month">august</span>
                         </div>
                         <div class="conference_info">
-                            <a href="#" class=" external-link">Helse&shy;konferanse</a><p>Oslo</p>
+                            <a href="#" class=" external-link">Helsekonferanse</a><p>Oslo</p>
                         </div>
 
                         <div class="conference_date">
@@ -400,7 +406,7 @@
                             <span class="month">august</span>
                         </div>
                         <div class="conference_info">
-                            <a href="#" class=" external-link">Nordisk folkehelse&shy;konferanse</a><p>Trondheim</p>
+                            <a href="#" class=" external-link">Nordisk folkehelsekonferanse</a><p>Trondheim</p>
                         </div>
 
                         <div class="conference_date">
@@ -446,8 +452,8 @@
                             <nav class=" tabs">
 
                                 <ul class=" tab-links" role="tablist">
-                                    <li class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
-                                    <li class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                                    <li role="presentation"><span class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</span></li>
+                                    <li role="presentation"><span class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
                                 </ul>
                                 <div class=" tab-content">
                                     <div id="panel_footer1" class=" tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
@@ -487,7 +493,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="panel_footer2" class=" tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
+                                    <div id="panel_footer2" class="tab tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
                                         <div class="row alphabetical">
                                             <div class="col-sm-6 col-md-3 col-lg-3">
 

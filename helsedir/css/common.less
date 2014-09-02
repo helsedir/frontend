@@ -298,7 +298,7 @@ body {
             }
 
             li {
-                span.tabs_header, form {
+                span.tabs_header, span.tabs_footer, form {
                     margin: 0;
                     float: left;
                     list-style: none;
@@ -399,6 +399,10 @@ body {
             }
 
             .tabpanel_header[aria-hidden="true"] {
+                display: none;
+            }
+
+            .tabpanel_footer[aria-hidden="true"] {
                 display: none;
             }
         }
@@ -2279,7 +2283,7 @@ body {
         .toppmeny, .tabs, .tabs-statistics .tabs {
             .tab-links {
                 li {
-                    span.tabs_header, form {
+                    span.tabs_header, span.tabs_footer, form {
                         width: 114px;
                         font-size: 12px;
                     }

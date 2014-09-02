@@ -49,15 +49,27 @@ $("span[role='tab']").keydown(function (ev) {
     if ((ev.which == 39) || (ev.which == 37)) {
         var selected = $(this).attr("aria-selected");
         if (selected == "true") {
-            $("span[aria-selected='false']").attr("aria-selected", "true").focus();
-            $(this).blur();
-            $(this).attr("aria-selected", "false");
-            var tabpanid = $("span[aria-selected='true']").attr("aria-controls");
-            var tabpan = $("#" + tabpanid);
-            $("div[role='tabpanel']").attr("aria-hidden", "true");
-            $("div[role='tabpanel']").hide();
-            tabpan.attr("aria-hidden", "false");
-            tabpan.show();
+            if ($(this).hasClass('tabs_header')) {
+                $("span.tabs_header[aria-selected='false']").attr("aria-selected", "true").focus();
+                $(this).blur();
+                $(this).attr("aria-selected", "false");
+                var tabpanid = $("span.tabs_header[aria-selected='true']").attr("aria-controls");
+                var tabpan = $("#" + tabpanid);
+                $("div.tabpanel_header[role='tabpanel']").attr("aria-hidden", "true");
+                $("div.tabpanel_header[role='tabpanel']").hide();
+                tabpan.attr("aria-hidden", "false");
+                tabpan.show();
+            } else {
+                $("span.tabs_footer[aria-selected='false']").attr("aria-selected", "true").focus();
+                $(this).blur();
+                $(this).attr("aria-selected", "false");
+                var tabpanid = $("span.tabs_footer[aria-selected='true']").attr("aria-controls");
+                var tabpan = $("#" + tabpanid);
+                $("div.tabpanel_footer[role='tabpanel']").attr("aria-hidden", "true");
+                $("div.tabpanel_footer[role='tabpanel']").hide();
+                tabpan.attr("aria-hidden", "false");
+                tabpan.show();
+            }
         }
     }
 });
