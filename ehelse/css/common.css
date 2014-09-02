@@ -761,12 +761,6 @@ a.external-link.inline:before {
   margin: 0;
   color: #838078;
 }
-.internal-link.document:after {
-  padding-left: 10px;
-  content: "(pdf)";
-  font-size: inherit;
-  text-decoration: none;
-}
 .internal-link.inline,
 .internal-link .inline:visited {
   text-decoration: underline;
@@ -849,6 +843,9 @@ h4.keyfigures {
 }
 .module.module_related .illustration {
   display: block;
+}
+.module.module_related img.normen {
+  border: 1px solid black;
 }
 .module.module_publication {
   border-left: 2px solid #df9922;
