@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Prosjekter og tiltak | Helsedirektoratet</title>
-    <link href="../css/reset.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icon.ico">
+    <title>Transportside | Helsedirektoratet</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
-    <link href="../css/search.css" rel="stylesheet" />
+    <link href="../css/transportside.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
     <!--[if lte IE 8]>
+    <link href="/css/ie8fix.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
     <script src="../js/html5.js"></script>
     <script src="../js/respond.js"></script>
@@ -29,6 +32,7 @@
         })();
     </script>
 </head>
+
 <body>
     <div id="header">
         <div class="shortcuts">
@@ -200,165 +204,47 @@
         </div>
     </div>
     <a id="content" tabindex="-1"></a>
-    <div class="container">
+    <div class="container ">
         <div class="row">
-            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <div class="col-md-7 col-lg-7">
                 <header id="pageheader">
                     <nav>
                         <ol class="breadcrumbs clearfix">
-                            <li class="active"><a href="forside.html">Forside</a></li>
+                            <li><a href="forside.html">Forside</a></li>
                         </ol>
                     </nav>
-                    <h1>Styring, koordinering og prioritering</h1>
+
+                    <h1>
+                        Nasjonale prosjekter og tiltak
+                    </h1>
                 </header>
                 <div class="content">
-                    <form class="searchform" action="prosjektoversikt_soek.html">
-                        <label class="visuallyhidden" for="Finn_prosjekt">Finn prosjekt</label>
-                        <input id="Finn_prosjekt" type="text" class="search" placeholder="Søk i nasjonale prosjekter og tiltak">
-                        <button class="search_button">
-                            <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
-                        </button>
-                    </form>
-
-                    <p class="numberofpublications">5 prosjekter og tiltak</p>
-                    <aside class="aside aside_search">
-                        <div class="refinesearch">
-                            <h2 class="accordion_mobile">Avgrens visning</h2>
-                            <form class="dropdown">
-                                <!--                                <div class="form-group">-->
-                                <!--                                    <label for="innsatsomraade">Innsatsområde</label>-->
-                                <!--                                    <select role="listbox" id="innsatsomraade" class="form-control">-->
-                                <!--                                        <option role="option">Alle</option>-->
-                                <!--                                        <option role="option">Styring, koordinering og prioritering</option>-->
-                                <!--                                        <option role="option">Innbyggertjenester</option>-->
-                                <!--                                        <option role="option">Helsepersonelltjenester</option>-->
-                                <!--                                        <option role="option">Styrings- og kunnskapsgrunnlag</option>-->
-                                <!--                                        <option role="option">Personvern og informasjonssikkerhet</option>-->
-                                <!--                                        <option role="option">Standarder, terminologi og kodeverk</option>-->
-                                <!--                                        <option role="option">Forskning, innovasjon og kompetanse</option>-->
-                                <!--                                        <option role="option">IKT-infrastruktur og felleskomponenter</option>-->
-                                <!--                                    </select>-->
-                                <!--                                </div>-->
-
-                                <div class="form-group">
-                                    <label for="tiltakseier">Tiltakseier</label>
-                                    <select role="listbox" id="tiltakseier" class="form-control">
-                                        <option role="option" selected="selected">Alle </option>
-                                        <option role="option">
-                                            Direktoratet for arbeidstilsynet
-                                        </option>
-                                        <option role="option">
-                                            Folkehelseinstituttet
-                                        </option>
-                                        <option role="option">
-                                            Helsedirektoratet
-                                        </option>
-
-                                        <option role="option">
-                                            Helse- og omsorgsdepartementet
-                                        </option>
-                                        <option role="option">
-                                            KommIT/ Helse Sør-Øst
-                                        </option>
-                                        <option role="option">
-                                            Nasjonal IKT
-                                        </option>
-                                        <option role="option">
-                                            NAV
-                                        </option>
-                                        <option role="option">
-                                            Norsk Helsenett
-                                        </option>
-                                        <option role="option">
-                                            NPE
-                                        </option>
-                                        <option role="option">
-                                            Pasientreiser AS
-                                        </option>
-                                        <option role="option">
-                                            Statens legemiddelverk
-                                        </option>
-                                        <option role="option">
-                                            Statens strålevern
-                                        </option>
-                                        <option role="option">
-                                            Styringsgruppen for Normen
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="status">Status</label>
-                                    <select role="listbox" id="status" class="form-control">
-                                        <option role="option" selected="selected">Alle </option>
-                                        <option role="option">
-                                            Ikke startet
-                                        </option>
-                                        <option role="option">
-                                            Pågår
-                                        </option>
-                                        <option role="option">
-                                            I drift
-                                        </option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class=" module module_subscribe clearfix">
-                            <p class="header">Abonnér på denne siden</p>
-                            <a href="#" class="e-mail"><p>E-post</p></a>
-                            <a href="#" class="rss"><p>RSS-strøm</p></a>
-                        </div>
-                    </aside>
-
-                    <div class="transportsideknapp">
-                        <a href="etprosjekt.html">
-                            <div class="clearfix">
-                                <h2>Digital dialog fastlege - innbygger</h2>
-
-                                <p class="ingress"> Etablere løsning for digital dialog mellom fastlege og innbygger med timebestilling, fornye resept, e-konsultasjon og e-dialoger for administrative gjøremål</p>
-                                <span class="status rute">Pågår, i rute</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="transportsideknapp">
-                        <a href="etprosjekt.html">
-                            <div class="clearfix">
-                                <h2>Felles nettløsning for spesialist&shy;helsetjenesten - én helseportal</h2>
-                                <p class="ingress">Smaordning av helseforetakenes nettløsninger i én, felles plattform. Pilot ved St.Olavs hospital HF fra mai 2015</p>
-                                <span class="status rute">Pågår, i rute</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="transportsideknapp">
-                        <a href="etprosjekt.html">
-                            <div class="clearfix">
-                                <h2>Innsyn journal i Helse Nord</h2>
-                                <p class="ingress">Innsyn i sykehusjournalen for pasienter i Helse Nord, i første omgang Universitetssykehuset i Nord-Norge HF.</p>
-                                <span class="status rute">Pågår, i rute</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="transportsideknapp">
-                        <a href="etprosjekt.html">
-                            <div class="clearfix">
-                                <h2>Tjenester ved sjukehusa i Helse Vest</h2>
-                                <p class="ingress">Oversikt over eil utval timane dine og moglegheit til å legge avtalde timar i eigne kalender. Pilot ved alle helseforetak i Helse Vest (Bergen, Stavanger, Førde og Fonna)</p>
-                                <span class="status pilot">Pilot</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="transportsideknapp">
-                        <a href="etprosjekt.html">
-                            <div class="clearfix">
-                                <h2>Meld bivirkninger</h2>
-                                <p class="ingress">Meld bivirkninger av medisiner til Legemiddelverket ved hjelp av elektronisk meldeskjema</p>
-                                <span class="status drift">I drift</span>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="prosjektoversikt.html" class="transportsideknapp clearfix">
+                        <h2>Styring, koordinering og prioritering</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Innbyggertjenester</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Helsepersonelltjenester</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Styrings- og kunnskapsgrunnlag</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Personvern og informasjonssikkerhet</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Standarder, terminologi og kodeverk</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>Forskning, innovasjon og kompetanse</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp clearfix">
+                        <h2>IKT-infrastruktur og felleskomponenter</h2>
+                    </a>
                 </div>
-            </article>
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -528,6 +414,7 @@
             </div>
         </footer>
     </div>
+
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>

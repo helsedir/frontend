@@ -841,6 +841,9 @@ h4.keyfigures {
   margin-left: -19px;
   height: 100px;
 }
+.module.module_related {
+  min-width: 300px;
+}
 .module.module_related .bulletlist {
   margin-top: 10px;
 }
