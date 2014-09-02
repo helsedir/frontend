@@ -487,6 +487,9 @@ footer.rammeverk a:visited {
   padding: 0 !important;
   margin: 0 !important;
 }
+#footer {
+  margin-top: 50px;
+}
 /**********Media**********/
 @media only screen and (max-width: 1199px) {
   .masterheader .links {
