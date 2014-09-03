@@ -67,8 +67,8 @@ body {
     }
 
     h2 {
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 30px;
+        line-height: 36px;
         font-family: @roboto;
         margin: 35px 0 10px 0;
         color: @colorDarkBlue;
@@ -415,21 +415,49 @@ body {
         left: -9999px !important;
     }
 
-    .search {
+    .searchform {
         margin-top: 30px;
+        margin-bottom: 20px;
+        height: 41px;
         width: 100%;
-        height: 40px;
-        padding: 5px 10px;
-        background: white url('../img/ikoner/ikon_forstorrelsesglass.png') center no-repeat;
-        border: 1px solid @colorDarkBlue;
-        -moz-background-size: auto 80%;
-        -o-background-size: auto 80%;
-        -webkit-background-size: auto 80%;
-        background-size: auto 80%;
-        background-position: 99% 50%;
-        background-position-x: 99%;
-        background-position-y: 50%;
+        border: none;
+        vertical-align: middle;
         cursor: text;
+        display: inline-block;
+
+        input {
+            width: 93%;
+            height: 40px;
+            background: white;
+            cursor: text;
+            border: none;
+            padding: 0 0 0 20px;
+            vertical-align: sub;
+            float: left;
+        }
+
+        button {
+            border: none;
+            width: 39px;
+            height: 40px;
+            padding: 0;
+            vertical-align: bottom;
+            float: left;
+
+            img {
+                width: 25px;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    .numberofpublications {
+        margin-bottom: 20px;
+        padding-top: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #222;
     }
 
     .searchfield {
@@ -1709,7 +1737,7 @@ body {
             padding: 5px 38px 4px 10px;
             -webkit-appearance: none; /*Removes default chrome and safari style*/
             -moz-appearance: none; /* Removes Default Firefox style*/
-            background: white url('../img/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
+            background: white url('../img/ikoner/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
             background-position: 100%; /*Position of the background-image*/
             text-indent: 0.01px;
             text-overflow: '';
@@ -1720,7 +1748,7 @@ body {
             }
 
             &:hover, &:focus, &:active {
-                background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
+                background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
                 background-position: 96%;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
@@ -1733,7 +1761,6 @@ body {
 
     .refinesearch {
         h2, h5 {
-            border-top: 2px solid @colorDarkBlue;
             margin-bottom: 17px;
             padding-top: 10px;
             font-family: @roboto;
@@ -1924,6 +1951,28 @@ body {
             h2 {
                 text-decoration: none;
             }
+        }
+    }
+
+    .transportsideknapp_dokument {
+        background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 50%;
+        margin-top: 10px;
+        max-width: 685px;
+        width: 100%;
+        display: inline-block;
+        padding: 0 75px 10px 30px;
+
+        h2 {
+            padding: 10px 30px 0 0;
+            margin: 0;
+            color: #0093a7;
+        }
+
+        &:hover {
+            text-decoration: none;
+            box-shadow: #0093a7 0 0 0 2px;
         }
     }
 

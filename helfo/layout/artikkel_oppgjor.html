@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../img/icon.ico">
-
-    <title>Forside | HELFO</title>
+    <title>Slik sender du inn oppgjør | HELFO</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
-    <link href="../css/frontpage.css" rel="stylesheet" />
 
     <!--[if lte IE 8]>
     <link href="/css/ie8fix.css" rel="stylesheet">
@@ -20,32 +18,43 @@
     <script src="../js/html5.js"></script>
     <script src="../js/respond.js"></script>
     <![endif]-->
+
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="no-background">
+<body>
     <div id="header">
         <div class=" shortcuts">
             <ul>
-                <li><a href="#" tabindex="1" accesskey="i" id="menushortcut">Gå til meny</a></li>
                 <li><a href="#content" id="contentshortcut">Gå til innhold</a></li>
             </ul>
         </div>
         <div class="container">
-            <header class="row  masterheader">
-                <div class="col-xs-8 col-sm-8 col-md-5 col-lg-4 nopadding">
+            <header class="row masterheader">
+                <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4  nopadding">
                     <a href="forside.html" id="logo" title="Gå til forsiden">
                     </a>
                 </div>
 
-                <div class="col-xs-2 col-xs-offset-2 visible-xs xs-no-padding col-sm-offset-3 col-sm-1 visible-sm">
+                <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
+                    <div class=" menubutton pull-right">
+                        <button class="js-expander">
+                            <span>Alt innhold</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
 
                     <div class=" menubutton mobile-search pull-right" id="mobilesearch">
                     </div>
+                    <div class=" menubutton mobile-menu js-expander pull-right" id="mobilemenu">
+                    </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-lg-3 hidden-mobile col-lg-offset-2" id="mainsearch">
+                <div class="col-xs-12 col-md-2 col-lg-3  hidden-mobile" id="mainsearchcolumn">
                     <form class="mainsearch">
+
                         <span role="search">
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
@@ -55,210 +64,154 @@
                         </span>
                     </form>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-3 col-lg-3  nopadding">
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
                     <div class="pull-right">
-                        <a class="links hidden-sm hidden-xs " href="#">OM OSS</a>
-                        <a class="links hidden-sm hidden-xs " href="#">ENGLISH</a>
+                        <a class=" links hidden-sm hidden-xs" href="#">OM OSS</a>
+                        <a class=" links hidden-sm hidden-xs" href="#">ENGLISH</a>
                     </div>
                 </div>
             </header>
         </div>
-    </div>
-    <div class=" mainentrance">
-        <div class="container">
-            <div class="row  forside">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  center">
-                    <h1 class=" visuallyhidden">Hovedinnganger</h1>
-                    <div class=" entrancebutton ">
-                        <a href="transportside_avtale.html">
-                            <h2>Avtale med HELFO</h2>
-                            <p></p>
-                        </a>
-                    </div>
-                    <div class=" entrancebutton">
-                        <a href="transportside_oppgjor.html">
-                            <h2>Oppgjør</h2>
-                        </a>
-                    </div>
-                    <div class=" entrancebutton">
-                        <a href="#">
-                            <h2>Takster</h2>
-                        </a>
-                    </div>
-
-                    <div class=" entrancebutton ">
-                        <a href="skjema.html">
-                            <h2>Skjema</h2>
-                        </a>
-                    </div>
-
-                    <div class=" entrancebutton">
-                        <a href="transportside_helseaktorer.html">
-                            <h2>Helseaktør</h2>
-                        </a>
-                    </div>
-
-                    <div class=" entrancebutton menu">
-                        <button class="js-expander">
-                            <h2>
-                                Alt innhold A til Å <i class="fa fa-bars"></i>
-                            </h2>
-                            <p class=" visuallyhidden">Hovedmeny. Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
-                        </button>
-                    </div>
+        <div class=" toppmeny  container-fluid js-expand">
+            <div class="inner container-fluid">
+                <div class="container">
+                    <nav class=" tabs">
+                        <ul class=" tab-links" role="tablist">
+                            <li role="presentation"><span class=" tabs_header" id="tab_header1" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</span></li>
+                            <li role="presentation"><span class=" tabs_header" id="tab_header2" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
+                        </ul>
+                        <div class=" tab-content">
+                            <div id="panel_header1" class=" tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <ul>
+                                            <li><a href="../medisinskeRetningslinjer/" id="content_categories"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <ul></ul>
+                                    </div>
+                                    <div class=" clearfix visible-xs visible-sm"></div>
+                                    <div class=" col-sm-6 col-md-4">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel_header2" class=" tab tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
+                                <div class="row alphabetical">
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <ul>
+                                            <li class="character">A</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">B</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">D</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">E</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">F</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">G</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <ul>
+                                            <li class="character">H</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">I</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">K</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">L</li>
+                                        </ul>
+                                    </div>
+                                    <div class=" clearfix hidden-md hidden-lg"></div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <ul>
+                                            <li class="character">M</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">N</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">O</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">P</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <ul>
+                                            <li class="character">R</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">S</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="character">T</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
+        <a id="content" tabindex="-1"></a>
     </div>
-
-    <div class="toppmeny container-fluid js-expand">
-        <div class="inner container-fluid">
-            <div class="container">
-                <h1 class=" visuallyhidden">Hovedmeny</h1>
-                <nav class=" tabs">
-                    <ul class=" tab-links" role="tablist">
-                        <li role="presentation">
-                            <span id="tab_header1" class="tabs_header" role="tab" aria-controls="panel_header1" aria-selected="true" tabindex="0">Kategorier</span>
-                        </li>
-                        <li role="presentation">
-                            <span id="tab_header2" class="tabs_header" role="tab" aria-controls="panel_header2" aria-selected="false" tabindex="0">Innhold A-Å</span>
-                        </li>
-                        <li role="presentation" class="menu_search hidden-sm hidden-xs">
-                            <form>
-                                <span role="search">
-                                    <label for="menu_search" class=" visuallyhidden">Søk</label>
-                                    <input id="menu_search" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
-                                    <button type="submit">
-                                        <img src="../img/ikoner/ikon_forstorrelsesglass.png" alt="Søkeknapp" />
-                                    </button>
-                                </span>
-                            </form>
-                        </li>
+    <article class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <header id="pageheader">
+                    <nav>
+                        <ol class=" breadcrumbs clearfix">
+                            <li><a href="forside.html">Forside</a></li>
+                            <li><a href="transportside_oppgjor.html">Oppgjør</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Slik sender du inn oppgjør</h1>
+                    <p class="ingress">
+                        Du kan sende oppgjør på tre forskjellige måter
+                    </p>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 ">
+                <div class="content">
+                    <h2>Her vises de tre alternativene</h2>
+                    <p> 1.Sender du inn oppgjør over norsk helsenett?</p>
+                    <ul class="bulletlist">
+                        <li>Unntaksbestemmelser – bare for leger ?</li>
+                        <li>Informasjon om hvordan du gjør det praktisk- kontakt din EPJ-leverandør</li>
+                        <li>Fordeler for deg som sender automatisk oppgjør</li>
                     </ul>
-                    <div class=" tab-content">
-                        <div id="panel_header1" class=" tab tabpanel_header" aria-labelledby="tab_header1" aria-hidden="false" role="tabpanel">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-4">
-                                    <ul>
-                                        <li><a href="#" id="content_categories"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <ul></ul>
-                                </div>
-                                <div class=" clearfix visible-xs visible-sm"></div>
-                                <div class=" col-sm-6 col-md-4">
-                                    <ul></ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="panel_header2" class=" tab tabpanel_header" aria-labelledby="tab_header2" aria-hidden="true" role="tabpanel">
-                            <div class="row alphabetical">
-                                <div class="col-sm-6 col-md-3 col-lg-3">
-                                    <ul>
-                                        <li class="character">A</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">B</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">D</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">E</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">F</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">G</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-3 col-lg-3">
-                                    <ul>
-                                        <li class="character">H</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">I</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">K</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">L</li>
-                                    </ul>
-                                </div>
-                                <div class=" clearfix hidden-md hidden-lg"></div>
-                                <div class="col-sm-6 col-md-3 col-lg-3">
-                                    <ul>
-                                        <li class="character">M</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">N</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">O</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">P</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-3 col-lg-3">
-                                    <ul>
-                                        <li class="character">R</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">S</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="character">T</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <a id="content" tabindex="-1"></a>
-    <div class=" frontpagewrapper white">
-
-        <div class="container  frontpage">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="nyheter.html"><h2>Viktige meldinger</h2></a>
+                    <p>2.Sender du inn oppgjør på CD/diskett/minnepinne(USB)</p>
+                    <ul class="bulletlist">
+                        <li> (beskrive alle ulemper i neste trinn – vise informasjon om hvordan etterpå)</li>
+                        <li>Informasjon om hvordan du gjør det praktisk- kontakt din EPJ-leverandør</li>
+                        <li>Fordel hvis du går over til norsk helsenett (NHN)</li>
+                    </ul>
+                    <p>3.Sender du inn oppgjør på papir, med skjemaer (beskriv det riktig)….. (manuelle oppgjør)</p>
+                    <ul class="bulletlist">
+                        <li>(beskrive alle ulemper i neste trinn – vise informasjon om hvordan etterpå)</li>
+                        <li>Informasjon om hvordan du gjør det praktisk- kontakt din EPJ-leverandør</li>
+                        <li>Fordeler hvis du bruker norsk helsenett (NHN) eller annen elektronisk (CD etc)</li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <section class="col-md-6 col-lg-6">
-                    <div class="news">
-                        <a href="#" class=" internal-link arrow_right"><h3>Status for saksbehandlingstider</h3></a>
-                    </div>
-                    <p>Oversikt oppdatert 22.august</p>
-                    <div class=" border_grey"></div>
-                </section>
-                <section class="col-md-6 col-lg-6 newsandconference">
-                    <div class="news">
-                        <a href="#" class=" internal-link arrow_right"><h3>Endring av takster for leger</h3></a>
-                    </div>
-                    <div class="news">
-                        <a href="#" class=" internal-link arrow_right"><h3>Takst for oppkobling til Norsk Helsenett for fysioterapauter</h3></a>
-                    </div>
-                    <div class="news">
-                        <a href="#" class=" internal-link arrow_right"><h3>Feil i .... (driftsmelding)</h3></a>
-                    </div>
-                    <a href="#" class=" internal-link arrow_right">Se alle viktige meldinger</a>
-                </section>
-            </div>
         </div>
-    </div>
-    <div class=" shortcuts">
-        <ul>
-            <li><a href="#bottom">Bunnlinje</a></li>
-        </ul>
-    </div>
+    </article>
+
     <div id="footer">
         <div class=" shortcuts">
             <ul>
@@ -408,9 +361,10 @@
             </div>
         </footer>
     </div>
+
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
-    <script src="../js/expander_frontpage.js"></script>
+    <script src="../js/expandmenu.js"></script>
 </body>
 </html>

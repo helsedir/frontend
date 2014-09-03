@@ -108,7 +108,6 @@
 .container.frontpage h2 {
   margin: 50px 0 20px 0;
   width: 100%;
-  border-bottom: 3px solid #004e66;
   padding-bottom: 15px;
 }
 .container.frontpage h2.noborder {
@@ -175,7 +174,7 @@
 }
 .container.frontpage .news {
   margin-bottom: 20px;
-  margin-top: 35px;
+  margin-top: 0;
 }
 .container.frontpage .news p {
   color: #222;

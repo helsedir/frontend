@@ -79,8 +79,8 @@ body {
 }
 .container h2,
 .container-fluid h2 {
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 36px;
   font-family: 'Roboto', sans-serif;
   margin: 35px 0 10px 0;
   color: #004e66;
@@ -453,22 +453,50 @@ body {
   top: -9999px !important;
   left: -9999px !important;
 }
-.container .search,
-.container-fluid .search {
+.container .searchform,
+.container-fluid .searchform {
   margin-top: 30px;
+  margin-bottom: 20px;
+  height: 41px;
   width: 100%;
-  height: 40px;
-  padding: 5px 10px;
-  background: #ffffff url('../img/ikoner/ikon_forstorrelsesglass.png') center no-repeat;
-  border: 1px solid #004e66;
-  -moz-background-size: auto 80%;
-  -o-background-size: auto 80%;
-  -webkit-background-size: auto 80%;
-  background-size: auto 80%;
-  background-position: 99% 50%;
-  background-position-x: 99%;
-  background-position-y: 50%;
+  border: none;
+  vertical-align: middle;
   cursor: text;
+  display: inline-block;
+}
+.container .searchform input,
+.container-fluid .searchform input {
+  width: 93%;
+  height: 40px;
+  background: white;
+  cursor: text;
+  border: none;
+  padding: 0 0 0 20px;
+  vertical-align: sub;
+  float: left;
+}
+.container .searchform button,
+.container-fluid .searchform button {
+  border: none;
+  width: 39px;
+  height: 40px;
+  padding: 0;
+  vertical-align: bottom;
+  float: left;
+}
+.container .searchform button img,
+.container-fluid .searchform button img {
+  width: 25px;
+  vertical-align: bottom;
+}
+.container .numberofpublications,
+.container-fluid .numberofpublications {
+  margin-bottom: 20px;
+  padding-top: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #222;
 }
 .container .searchfield,
 .container-fluid .searchfield {
@@ -1831,7 +1859,7 @@ body {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/knapp_nedtrekksmeny.png') no-repeat;
+  background: #ffffff url('../img/ikoner/knapp_nedtrekksmeny.png') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
@@ -1849,7 +1877,7 @@ body {
 .container-fluid .dropdown select:focus,
 .container .dropdown select:active,
 .container-fluid .dropdown select:active {
-  background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
+  background: #004e66 url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
   background-position: 96%;
   -moz-background-size: 20px;
   -o-background-size: 20px;
@@ -1865,7 +1893,6 @@ body {
 .container-fluid .refinesearch h2,
 .container .refinesearch h5,
 .container-fluid .refinesearch h5 {
-  border-top: 2px solid #004e66;
   margin-bottom: 17px;
   padding-top: 10px;
   font-family: 'Roboto', sans-serif;
@@ -2055,6 +2082,28 @@ body {
 .container .transportsideknapp:hover h2,
 .container-fluid .transportsideknapp:hover h2 {
   text-decoration: none;
+}
+.container .transportsideknapp_dokument,
+.container-fluid .transportsideknapp_dokument {
+  background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 50%;
+  margin-top: 10px;
+  max-width: 685px;
+  width: 100%;
+  display: inline-block;
+  padding: 0 75px 10px 30px;
+}
+.container .transportsideknapp_dokument h2,
+.container-fluid .transportsideknapp_dokument h2 {
+  padding: 10px 30px 0 0;
+  margin: 0;
+  color: #0093a7;
+}
+.container .transportsideknapp_dokument:hover,
+.container-fluid .transportsideknapp_dokument:hover {
+  text-decoration: none;
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .container .figure,
 .container-fluid .figure {
