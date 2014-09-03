@@ -93,13 +93,13 @@ input.radio {
   color: #0093a7;
 }
 .navigate_forward {
-  background: url(../img/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
+  background: url(../img/ikoner/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
   background-position: 100% 60%;
   background-size: 28px;
   padding-right: 36px;
 }
 .navigate_back {
-  background: url(../img/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
+  background: url(../img/ikoner/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
   background-position: 0 60%;
   background-size: 28px;
   padding-left: 36px;
@@ -212,7 +212,7 @@ input[type=checkbox]:focus {
   vertical-align: middle;
   text-align: center;
   margin: 20px 0 10px 0;
-  width: 24%;
+  width: 16%;
 }
 .method_entrance:first-of-type {
   margin-left: 0;
