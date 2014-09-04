@@ -1,6 +1,43 @@
 /* Spesifikt for retningslinjer */
 
-/* Frontpage */
+.pageHeaderBackground {
+	background: url(../img/forside_bakgrunn_abstrahert_graaere.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 20px 0 40px 0;
+}
+
+.pageHeaderBackground h1 {
+	margin: 0 0 0 0;
+	padding: 20px 5px 30px 10px;
+	background-color: #fff;
+}
+
+
+.pageHeaderBackground #pageheader {
+	background-color: #46AEA5;
+	padding-left: 30px;
+}
+
+.pageHeaderBackground .breadcrumbs {
+	background-color: #004e66;
+	padding: 2px 0 2px 10px;
+}
+
+.pageHeaderBackground .breadcrumbs li:after {
+	color: #fff;
+}
+
+.pageHeaderBackground .container .breadcrumbs a,
+.pageHeaderBackground .container .breadcrumbs a.active,
+.pageHeaderBackground .container .breadcrumbs a.visited{
+	color: #fff;
+}
+
+
 
 /* Frontpage */
 
@@ -50,10 +87,21 @@
 /**** ARTICLE AND SECTION ****/
 
 /**** RECOMMENDATION *****/
-
 .container section.recommendation {
 	padding: 5px 10px 5px 10px;
-	margin: 50px 0px 30px 0px;
+	margin: 20px 0px 20px 0px;
+	border-left: 3px solid #6F7369;
+	background-color: #fff;
+}
+
+.container section.recommendation:first-of-type {
+	margin: 50px 0px 20px 0px;
+}
+
+.container section.recommendation.open {
+	border-top: 3px solid #6F7369;
+	border-right: 3px solid #6F7369;
+	border-bottom: 3px solid #6F7369;
 }
 
 .container section.recommendation .header_wrapper {
@@ -69,7 +117,7 @@
 	font-size: 34px;
 	line-height: 42px;
 	font-family: "Soho Gothic W01 Light";
-	margin: 35px 0 10px 0;
+	margin: 10px 0 10px 0;
 	color: #004e66;
 	padding-left: 33px;
 }
@@ -124,8 +172,8 @@
 .container section.recommendation h3,
 .container section.recommendation h4,
 .container section.recommendation h5  { /* delete? */
-	border-bottom: 1px solid #bababa;
-	padding-bottom: 10px;
+	/*border-bottom: 1px solid #bababa;*/
+	/*padding-bottom: 10px;*/
 }
 
 /* Header context */
@@ -322,6 +370,24 @@ text-align: left;
 
 
 /**** MEDIAQUERIES ****/
+@media only screen and (min-width: 1200px) {
+	/* aside */
+	.container .aside {
+		top: 0;
+		right: 0;
+		position: absolute;
+		margin-right: -48%;
+	}
+	
+	
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 599px) {
 
 	.container section.recommendation h1{

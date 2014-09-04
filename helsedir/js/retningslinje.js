@@ -19,7 +19,13 @@ jQuery(document).ready(function() {
   
   jQuery('.recommendation h1').on('click', function() {
   	var wrapper = jQuery(this).parent().parent();
-  		slider(wrapper, wrapper.siblings('.text, .background_information'));
+  	if(wrapper.parent().is('.open')){
+	  	wrapper.parent().removeClass('open');
+  	} else {
+	  	wrapper.parent().addClass('open');
+  	}
+  	
+  	slider(wrapper, wrapper.siblings('.text, .background_information'));
   });
   
   jQuery('.recommendationGrading').on('click', function() {
