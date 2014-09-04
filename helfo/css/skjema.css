@@ -273,16 +273,16 @@ input[type=checkbox]:focus {
   font-size: 50px;
 }
 .method_entrance .drop_wrapper .drop.oppstart.selected .drop_triangle {
-  border-left: 2.1em solid #0093a7;
+  border-left: 2.1em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.oppstart.selected .drop_circle {
-  border: 2em solid #0093a7;
+  border: 2em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.forslag.selected .drop_triangle {
-  border-left: 2.1em solid #a1bf17;
+  border-left: 2.1em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.forslag.selected .drop_circle {
-  border: 2em solid #a1bf17;
+  border: 2em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_triangle {
   border-left: 2.1em solid #004e66;
@@ -291,16 +291,16 @@ input[type=checkbox]:focus {
   border: 2em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.beslutning.selected .drop_triangle {
-  border-left: 2.1em solid #6cb4b5;
+  border-left: 2.1em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.beslutning.selected .drop_circle {
-  border: 2em solid #6cb4b5;
+  border: 2em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.implementering.selected .drop_triangle {
-  border-left: 2.1em solid #df9922;
+  border-left: 2.1em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.implementering.selected .drop_circle {
-  border: 2em solid #df9922;
+  border: 2em solid #004e66;
 }
 .method_entrance .drop_wrapper .drop.oppstart .drop_triangle,
 .method_entrance .drop_wrapper .drop.forslag .drop_triangle,
@@ -319,16 +319,16 @@ input[type=checkbox]:focus {
   border: 2em solid #aeaba8;
 }
 .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
-  border-left: 2.1em solid #01737c;
+  border-left: 2.1em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
-  border: 2em solid #01737c;
+  border: 2em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
-  border-left: 2.1em solid #8ca037;
+  border-left: 2.1em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
-  border: 2em solid #8ca037;
+  border: 2em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
   border-left: 2.1em solid #002e41;
@@ -337,16 +337,16 @@ input[type=checkbox]:focus {
   border: 2em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
-  border-left: 2.1em solid #448c8a;
+  border-left: 2.1em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
-  border: 2em solid #448c8a;
+  border: 2em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
-  border-left: 2.1em solid #c98523;
+  border-left: 2.1em solid #002e41;
 }
 .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
-  border: 2em solid #c98523;
+  border: 2em solid #002e41;
 }
 @media only screen and (max-width: 1199px) {
   .breadcrumbs_schema li {
@@ -415,16 +415,16 @@ input[type=checkbox]:focus {
     margin: 0;
   }
   .method_entrance .drop_wrapper .drop.oppstart.selected .drop_triangle {
-    border-left: 1.4em solid #0093a7;
+    border-left: 1.4em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.oppstart.selected .drop_circle {
-    border: 1.3em solid #0093a7;
+    border: 1.3em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.forslag.selected .drop_triangle {
-    border-left: 1.4em solid #a1bf17;
+    border-left: 1.4em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.forslag.selected .drop_circle {
-    border: 1.3em solid #a1bf17;
+    border: 1.3em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_triangle {
     border-left: 1.4em solid #004e66;
@@ -433,16 +433,16 @@ input[type=checkbox]:focus {
     border: 1.3em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.beslutning.selected .drop_triangle {
-    border-left: 1.4em solid #6cb4b5;
+    border-left: 1.4em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.beslutning.selected .drop_circle {
-    border: 1.3em solid #6cb4b5;
+    border: 1.3em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.implementering.selected .drop_triangle {
-    border-left: 1.4em solid #df9922;
+    border-left: 1.4em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop.implementering.selected .drop_circle {
-    border: 1.3em solid #df9922;
+    border: 1.3em solid #004e66;
   }
   .method_entrance .drop_wrapper .drop .drop_triangle {
     border: 1.4em solid transparent;
@@ -470,16 +470,16 @@ input[type=checkbox]:focus {
     border: 1.3em solid #aeaba8;
   }
   .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
-    border-left: 1.4em solid #01737c;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
-    border: 1.3em solid #01737c;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
-    border-left: 1.4em solid #8ca037;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
-    border: 1.3em solid #8ca037;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
     border-left: 1.4em solid #002e41;
@@ -488,16 +488,16 @@ input[type=checkbox]:focus {
     border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
-    border-left: 1.4em solid #448c8a;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
-    border: 1.3em solid #448c8a;
+    border: 1.3em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
-    border-left: 1.4em solid #c98523;
+    border-left: 1.4em solid #002e41;
   }
   .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
-    border: 1.3em solid #c98523;
+    border: 1.3em solid #002e41;
   }
 }
 /*

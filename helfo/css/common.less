@@ -123,7 +123,7 @@ body {
     }
 
     a {
-        color: @colorDarkBlue;
+        color: @colorMediumBlue;
         font-size: 20px;
         line-height: 27px;
         /*border-bottom: 1px solid @colorDarkBlue;*/
@@ -148,6 +148,10 @@ body {
             background: @colorDarkBlue;
             color: white !important;
             outline: 0;
+        }
+
+        &.inline {
+            border-bottom: 1px solid @colorMediumBlue;
         }
     }
 
@@ -426,7 +430,7 @@ body {
         display: inline-block;
 
         input {
-            width: 93%;
+            width: 92%;
             height: 40px;
             background: white;
             cursor: text;
@@ -441,6 +445,7 @@ body {
             width: 39px;
             height: 40px;
             padding: 0;
+            margin-left: 13px;
             vertical-align: bottom;
             float: left;
 
@@ -852,7 +857,7 @@ body {
             font-size: 18px;
             line-height: 22px;
             text-transform: uppercase;
-            color: @colorDarkBlue;
+            color: #222;
             text-decoration: none;
             margin-bottom: 5px;
         }
@@ -862,10 +867,11 @@ body {
         }
 
         .module_header {
-            font-family: @roboto;
+            margin-top: 0;
+            margin-bottom: 5px;
             font-size: 24px;
             line-height: 30px;
-            color: #222;
+            color: @colorMediumBlue;
 
             .internal-link.arrow_right {
                 margin-bottom: 5px;
@@ -896,14 +902,12 @@ body {
         }
 
         &.module_related {
-            border-left: 2px solid @colorGreen;
             margin-top: 50px;
 
             .bulletlist {
                 margin-top: 10px;
 
                 li:before {
-                    color: @colorGreen;
                 }
             }
 
@@ -913,6 +917,23 @@ body {
 
             .internal-link.arrow_right {
                 margin-top: 0;
+            }
+
+            &.clickable {
+                border: none;
+
+                .source {
+                    color: #222;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    box-shadow: @colorMediumBlue 0 0 0 2px;
+
+                    h5 {
+                        text-decoration: none;
+                    }
+                }
             }
         }
 

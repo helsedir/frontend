@@ -133,7 +133,7 @@ body {
 }
 .container a,
 .container-fluid a {
-  color: #004e66;
+  color: #0093a7;
   font-size: 20px;
   line-height: 27px;
   /*border-bottom: 1px solid @colorDarkBlue;*/
@@ -171,6 +171,10 @@ body {
   background: #004e66;
   color: white !important;
   outline: 0;
+}
+.container a.inline,
+.container-fluid a.inline {
+  border-bottom: 1px solid #0093a7;
 }
 .container .breadcrumbs,
 .container-fluid .breadcrumbs {
@@ -466,7 +470,7 @@ body {
 }
 .container .searchform input,
 .container-fluid .searchform input {
-  width: 93%;
+  width: 92%;
   height: 40px;
   background: white;
   cursor: text;
@@ -481,6 +485,7 @@ body {
   width: 39px;
   height: 40px;
   padding: 0;
+  margin-left: 13px;
   vertical-align: bottom;
   float: left;
 }
@@ -930,7 +935,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #004e66;
+  color: #222;
   text-decoration: none;
   margin-bottom: 5px;
 }
@@ -940,10 +945,11 @@ body {
 }
 .container .module .module_header,
 .container-fluid .module .module_header {
-  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 24px;
   line-height: 30px;
-  color: #222;
+  color: #0093a7;
 }
 .container .module .module_header .internal-link.arrow_right,
 .container-fluid .module .module_header .internal-link.arrow_right {
@@ -974,16 +980,11 @@ body {
 }
 .container .module.module_related,
 .container-fluid .module.module_related {
-  border-left: 2px solid #a1bf37;
   margin-top: 50px;
 }
 .container .module.module_related .bulletlist,
 .container-fluid .module.module_related .bulletlist {
   margin-top: 10px;
-}
-.container .module.module_related .bulletlist li:before,
-.container-fluid .module.module_related .bulletlist li:before {
-  color: #a1bf37;
 }
 .container .module.module_related .illustration,
 .container-fluid .module.module_related .illustration {
@@ -992,6 +993,23 @@ body {
 .container .module.module_related .internal-link.arrow_right,
 .container-fluid .module.module_related .internal-link.arrow_right {
   margin-top: 0;
+}
+.container .module.module_related.clickable,
+.container-fluid .module.module_related.clickable {
+  border: none;
+}
+.container .module.module_related.clickable .source,
+.container-fluid .module.module_related.clickable .source {
+  color: #222;
+}
+.container .module.module_related.clickable:hover,
+.container-fluid .module.module_related.clickable:hover {
+  text-decoration: none;
+  box-shadow: #0093a7 0 0 0 2px;
+}
+.container .module.module_related.clickable:hover h5,
+.container-fluid .module.module_related.clickable:hover h5 {
+  text-decoration: none;
 }
 .container .module.module_publication,
 .container-fluid .module.module_publication {
