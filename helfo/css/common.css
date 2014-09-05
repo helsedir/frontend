@@ -116,6 +116,10 @@ body {
   font-family: 'Roboto';
   line-height: 30px;
 }
+.container p a,
+.container-fluid p a {
+  border-bottom: 1px solid #0093a7;
+}
 .container ul.list,
 .container-fluid ul.list {
   list-style: none;
@@ -394,10 +398,6 @@ body {
   .container-fluid .tabs .tab-content li:last-of-type {
     border-bottom: 0;
   }
-}
-.container .tabs .tab-content li:before,
-.container-fluid .tabs .tab-content li:before {
-  content: "";
 }
 .container .tabs .tab-content a,
 .container-fluid .tabs .tab-content a,
