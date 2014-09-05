@@ -268,8 +268,8 @@ input[type=checkbox]:focus {
   display: inline-block;
   font-family: 'Roboto';
   color: white;
-  top: 30px;
-  left: 28px;
+  top: 20px;
+  left: 20px;
   font-size: 50px;
 }
 .method_entrance .drop_wrapper .drop.oppstart.selected .drop_triangle {
