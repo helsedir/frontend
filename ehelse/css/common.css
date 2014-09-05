@@ -846,6 +846,7 @@ h4.keyfigures {
 }
 .module.module_related img.normen {
   border: 1px solid black;
+  width: 248px;
 }
 .module.module_publication {
   border-left: 2px solid #df9922;

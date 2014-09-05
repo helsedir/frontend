@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Alle standarder i referansekatalogen | Helsedirektoratet</title>
-    <link href="../css/reset.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icon.ico">
+    <title>
+        Digital dialog fastlege – innbygger
+        | Helsedirektoratet
+    </title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
-    <link href="../css/search.css" rel="stylesheet" />
-    <link href="../css/transportside.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
     <!--[if lte IE 8]>
+    <link href="/css/ie8fix.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
     <script src="../js/html5.js"></script>
     <script src="../js/respond.js"></script>
@@ -30,6 +34,7 @@
         })();
     </script>
 </head>
+
 <body>
     <div id="header">
         <div class="shortcuts">
@@ -201,109 +206,97 @@
         </div>
     </div>
     <a id="content" tabindex="-1"></a>
-    <div class="container">
+
+    <article class="container">
         <div class="row">
-            <article class="col-md-7 col-lg-7">
+            <div class="col-md-12">
                 <header id="pageheader">
                     <nav>
                         <ol class="breadcrumbs clearfix">
                             <li><a href="forside.html">Forside</a></li>
+                            <li><a href="prosjektoversikt_soek.html">Prosjektoversikt</a></li>
                         </ol>
                     </nav>
-                    <h1>Standarder, kodeverk og referansekatalog</h1>
+                    <h1>Digital dialog fastlege – innbygger</h1>
                 </header>
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-lg-7">
                 <div class="content">
-                    <form class="searchform">
-                        <label class="visuallyhidden" for="Finn_tittel">Søk på tittel eller IS-nummer</label>
-                        <input id="Finn_tittel" type="text" class="search" placeholder="Søk på tittel eller IS-nummer">
-                        <button type="submit" class="search_button">
-                            <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søk" />
-                        </button>
-                    </form>
-                    <ul class=" filterlist">
-                        <li><a href="#">Alt innhold </a>51</li>
-                        <li><a href="prosjektoversikt.html">Prosjekter og tiltak </a>5</li>
-                        <li><a href="normen_faktaark.html">Normen-dokumenter </a>20</li>
-                        <li class="selectedfilter"><a href="standarder.html">Standarder og koder </a>10</li>
-                    </ul>
-                    <p class="numberofpublications">6 standarder</p>
-                    <aside class="aside aside_search">
-                        <div class="refinesearch">
-                            <h2>Avgrens visning</h2>
-                            <form class="dropdown">
-                                <div class="form-group">
-                                    <label for="utgiver">Utgiver</label>
-                                    <select role="listbox" id="utgiver" class="form-control">
-                                        <option role="option">Alle</option>
-                                        <option role="option">
-                                            Helsedir
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="status">Status</label>
-                                    <select role="listbox" id="status" class="form-control">
-                                        <option role="option">Alle</option>
-                                    </select>
-                                </div>
+                    <!--                    <div class="clearfix">-->
+                    <!--                        <div class="status_prosjekt pilot">-->
+                    <!--                            <span>Fase: </span>Pilot-->
+                    <!--                        </div>-->
+                    <!---->
+                    <!--                        <div class="timeandplace">-->
+                    <!--                            <div class="metatext"><span class="bold">Tiltakseier:</span> Helse Vest RHF</div>-->
+                    <!--                            $1$                            <div class="metatext"><span class="bold">Startet:</span> 27.04.2014</div>#1#-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <div class="metadata clearfix">
 
-                                <div class="form-group">
-                                    <label for="emne">Emne</label>
-                                    <select role="listbox" id="emne" class="form-control">
-                                        <option role="option">
-                                            Alle
-                                        </option>
-                                        <optgroup label="Informasjonsinnhold og strukturert føring av journal">
-                                            <option role="option">Alle</option>
-                                            <option role="option">Grunnleggende krav</option>
-                                            <option role="option">Krav til innhold og funksjonalitet</option>
-                                        </optgroup>
-                                        <optgroup label="Elektronisk samhandling">
-                                            <option role="option">Alle i elektronisk samhandling</option>
-                                            <option role="option">Rekvisisjon/henvisning og svarrapport</option>
-                                            <option role="option">Laboratoriemedisin og radiologi</option>
-                                            <option role="option">Pleie- og omsorgsmeldinger</option>
-                                            <option role="option">E-resept</option>
-                                            <option role="option">Samhandling med NAV og Helfo</option>
-                                            <option role="option">Melding av opplysninger til Norsk pasientregister</option>
-                                            <option role="option">Melding av opplysninger til øvrige sentrale helseregistre</option>
-                                        </optgroup>
-                                    </select>
+                        <span>Fase: </span>
+                        <span>Fase 1</span>
+                        <span>Tiltakseier: </span>
+                        <span>Helsedirektoratet</span>
+                        <span>Handlingsplan e-helse:</span>
+                        <span>2.2</span>
+                        <span>Sist oppdatert: </span>
+                        <span>02.09.2014 </span>
+                    </div>
+                    <p class="ingress">Digital dialog er en ny tjeneste som muliggjør sikker digital dialog mellom pasienten og fastlegen.</p>
+
+                    <section>
+                        <h2>Om prosjektet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus risus, egestas at feugiat in, gravida in eros. Aliquam erat volutpat. Vivamus ut urna congue, semper metus pretium, gravida lacus. Nulla rutrum ipsum pellentesque felis commodo, id malesuada odio vehicula. Quisque malesuada magna eu velit blandit sodales. Phasellus eu enim ut erat porttitor venenatis ut quis lacus. Nunc molestie sed magna in tristique. Nunc aliquam orci a tortor interdum accumsan. Integer aliquam rutrum nisl a bibendum.</p>
+                        <section>
+                            <h3 class="accordion">Organisering og mandat</h3>
+                            <div></div>
+                        </section>
+                        <section>
+                            <h3 class="accordion">Fase 1: Analyse</h3>
+                            <div></div>
+                        </section>
+                        <section>
+                            <h3 class="accordion">Fase 2: </h3>
+                            <div></div>
+                        </section>
+                    </section>
+                    <div class=" module module_social">
+                        <a href="javascript:window.print()" class=" ikon_skrivut">
+                            <span></span>skriv ut
+                        </a>
+                        <a href="#" class="ikon_facebook"><span></span>del på facebook</a>
+                        <a href="#" class="ikon_twitter"><span></span>del på twitter</a>
+                    </div>
+                    <aside class="aside">
+                        <div class="module module_contact">
+                            <p class="header">kontakt</p>
+                            <div class="wrapper">
+                                <p class="title">Prosjekteier </p>
+                                <div class="contact_information clearfix">
+                                    <span class="information_attribute">Navn:</span><span class="information_data">Siri Langerud</span>
+                                    <span class="information_attribute">E-post:</span><span class="information_data"><a href="#">sl@helsedir.no</a></span>
+                                    <span class="information_attribute">Mobil:</span><span class="information_data">971 21212</span>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </aside>
 
-                    <a href="referansekatalog.html" class="transportsideknapp_dokument">
-                        <h2>Svarrapport - medisinsk biokjemi</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Standard</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Standard</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Standard</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Standard</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Standard</h2>
-                    </a>
-                    <aside class="aside bottom">
-                        <div class="module module_subscribe clearfix">
-                            <p class="header">Abonnér på denne siden</p>
-                            <a href="#" class="e-mail"><p>E-post</p></a>
-                            <a href="#" class="rss"><p>RSS-strøm</p></a>
+                        <div class="module module_related">
+                            <h5 class="module_header">Dokumenter</h5>
+                            <ul class="linklist">
+                                <li><a href="#" class="internal-link">Forprosjektrapport</a></li>
+                                <li><a href="#" class="internal-link">Dokumenter</a></li>
+                                <li><a href="#" class="internal-link">Dokumenter</a></li>
+                            </ul>
                         </div>
                     </aside>
                 </div>
-            </article>
+            </div>
         </div>
-    </div>
+    </article>
+
     <div id="footer">
         <div class="shortcuts">
             <ul>
@@ -471,6 +464,7 @@
             </div>
         </footer>
     </div>
+
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
