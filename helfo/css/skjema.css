@@ -235,7 +235,7 @@ input[type=checkbox]:focus {
 .method_entrance .drop_wrapper .drop {
   position: relative;
   display: block;
-  width: 97px;
+  width: 78px;
   height: 95px;
   margin: auto;
   overflow: hidden;

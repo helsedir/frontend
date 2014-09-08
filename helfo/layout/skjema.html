@@ -241,7 +241,7 @@
                             <img src="../img/ikoner/ikon_forstorrelsesglass.png" alt="Søk" />
                         </button>
                     </form>
-                    <p class="numberofpublications">50 treff</p>
+                    <p class="numberofpublications">19 treff</p>
                     <aside class="aside aside_search">
                         <div class="refinesearch">
                             <h2>Avgrens visning</h2>
@@ -281,30 +281,30 @@
                             </form>
                         </div>
                     </aside>
-
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Bekreftelse på avsluttet behandling av fristbruddpasient (02-01.02)</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Bekreftelse på kjøp av helsetjenester fristbruddpasient (02-01.02)</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Forenklet samleregning (05-10.05)</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Fullmakt for utbetaling av refusjon til et forsikringsselskap for helsehjelp i utlandet (05-24.11)</h2>
-                    </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Henvisning/tilvising til fysioterapi (05-08.05)</h2>
-                    </a>
-
-                    <div class="category_lege">
+                    <div class="category_shared">
                         <a href="#" class="transportsideknapp_dokument">
+                            <h2>Bekreftelse på avsluttet behandling av fristbruddpasient (02-01.02)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Bekreftelse på kjøp av helsetjenester fristbruddpasient (02-01.02)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Forenklet samleregning (05-10.05)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Fullmakt for utbetaling av refusjon til et forsikringsselskap for helsehjelp i utlandet (05-24.11)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Henvisning/tilvising til fysioterapi (05-08.05)</h2>
+                        </a>
+                    </div>
+                    <div class="category_lege">
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20fastlege-05-04.25-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
                             <h2>
                                 Opplysningsskjema for fastlege (05-04.25)
                             </h2>
                         </a>
-                        <a href="#" class="transportsideknapp_dokument">
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20lege-05-04.26-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
                             <h2>
                                 Opplysningsskjema for lege (05-04.26)
                             </h2>
@@ -329,8 +329,8 @@
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Henvisning/tilvising til kjeveortopedisk behandling (05-06.10)</h2>
                         </a>
-                        <a href="#" class="transportsideknapp_dokument">
-                            <h2>Opplysningsskjema for private tannleger />tannpleiere med direkte oppgjør (05-06.23)</h2>
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20privatpraktiserende%20tannleger%20og%20tannpleiere%20med%20direkte%20oppgj%C3%B8r-05-06.23-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for private tannleger / tannpleiere med direkte oppgjør (05-06.23)</h2>
                         </a>
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Samleregning/samlerekning for tannbehandling (05-06.22)</h2>
@@ -349,7 +349,7 @@
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Henvisning/tilvising til spesialist (05-04.21)</h2>
                         </a>
-                        <a href="#" class="transportsideknapp_dokument">
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20kiropraktor-05-09.03-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
                             <h2>Opplysningsskjema for kiropraktor (05-09.03)</h2>
                         </a>
                         <a href="#" class="transportsideknapp_dokument">
@@ -567,24 +567,33 @@
             console.log(yrke);
 
             if (yrke === 'Lege') {
-                $('.category_lege').show();
-                $('.category_kiropraktor').hide();
-                $('.category_tannlege').hide();
+                $('.category_lege').slideDown();
+                $('.category_kiropraktor').slideUp();
+                $('.category_tannlege').slideUp();
+                $('.category_shared').slideUp();
+                $('.numberofpublications').text('5 treff');
+
             }
             else if (yrke == "Kiropraktor") {
-                $('.category_kiropraktor').show();
-                $('.category_lege').hide();
-                $('.category_tannlege').hide();
+                $('.category_kiropraktor').slideDown();
+                $('.category_lege').slideUp();
+                $('.category_tannlege').slideUp();
+                $('.category_shared').slideUp();
+                $('.numberofpublications').text('4 treff');
             }
             else if (yrke == "Tannlege/tannpleier") {
-                $('.category_tannlege').show();
-                $('.category_lege').hide();
-                $('.category_kiropraktor').hide();
+                $('.category_tannlege').slideDown();
+                $('.category_lege').slideUp();
+                $('.category_kiropraktor').slideUp();
+                $('.category_shared').slideUp();
+                $('.numberofpublications').text('5 treff');
             }
             else if (yrke == "Alle") {
-                $('.category_tannlege').show();
-                $('.category_lege').show();
-                $('.category_kiropraktor').show();
+                $('.category_tannlege').slideDown();
+                $('.category_lege').slideDown();
+                $('.category_kiropraktor').slideDown();
+                $('.category_shared').slideDown();
+                $('.numberofpublications').text('19 treff');
             }
         });
 
@@ -603,16 +612,22 @@
                 $("#yrke").val("Lege");
                 $('.category_kiropraktor').hide();
                 $('.category_tannlege').hide();
+                $('.category_shared').hide();
+                $('.numberofpublications').text('5 treff');
             }
             else if (getQueryVariable("yrke") == "tannlege") {
                 $("#yrke").val("Tannlege/tannpleier");
                 $('.category_lege').hide();
                 $('.category_kiropraktor').hide();
+                $('.category_shared').hide();
+                $('.numberofpublications').text('5 treff');
             }
             else if (getQueryVariable("yrke") == "kiropraktor") {
                 $("#yrke").val("Kiropraktor");
                 $('.category_lege').hide();
                 $('.category_tannlege').hide();
+                $('.category_shared').hide();
+                $('.numberofpublications').text('4 treff');
             }
         });
     </script>
