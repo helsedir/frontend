@@ -291,14 +291,69 @@
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Forenklet samleregning (05-10.05)</h2>
                         </a>
+
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Fullmakt for utbetaling av refusjon til et forsikringsselskap for helsehjelp i utlandet (05-24.11)</h2>
                         </a>
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Henvisning/tilvising til fysioterapi (05-08.05)</h2>
                         </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Henvisning/tilvising til kjeveortopedisk behandling (05-06.10)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Henvisning/tilvising til spesialist (05-04.21)
+                            </h2>
+                        </a>
+
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20fastlege-05-04.25-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                            <h2>
+                                Opplysningsskjema for fastlege (05-04.25)
+                            </h2>
+                        </a>
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20kiropraktor-05-09.03-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for kiropraktor (05-09.03)</h2>
+                        </a>
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20lege-05-04.26-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                            <h2>
+                                Opplysningsskjema for lege (05-04.26)
+                            </h2>
+                        </a>
+                        <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20privatpraktiserende%20tannleger%20og%20tannpleiere%20med%20direkte%20oppgj%C3%B8r-05-06.23-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for private tannleger / tannpleiere med direkte oppgjør (05-06.23)</h2>
+                        </a>
+
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Regning medisinsk behandling lege (05-04.05)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2> Regning/rekning kiropraktor (05-09.01)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Samleregning for medisinsk behandling (05-04.12)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Samleregning/samlerekning for tannbehandling (05-06.22)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Skjema for elektronisk innsending og samtykke DOT (05-06.26)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Skjema for tannbehandling § 5-6 (05-06.20)</h2>
+                        </a>
                     </div>
+
                     <div class="category_lege">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Henvisning/tilvising til spesialist (05-04.21)
+                            </h2>
+                        </a>
                         <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20fastlege-05-04.25-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
                             <h2>
                                 Opplysningsskjema for fastlege (05-04.25)
@@ -317,11 +372,6 @@
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>
                                 Samleregning for medisinsk behandling (05-04.12)
-                            </h2>
-                        </a>
-                        <a href="#" class="transportsideknapp_dokument">
-                            <h2>
-                                Henvisning/tilvising til spesialist (05-04.21)
                             </h2>
                         </a>
                     </div>
@@ -589,9 +639,9 @@
                 $('.numberofpublications').text('5 treff');
             }
             else if (yrke == "Alle") {
-                $('.category_tannlege').slideDown();
-                $('.category_lege').slideDown();
-                $('.category_kiropraktor').slideDown();
+                $('.category_tannlege').slideUp();
+                $('.category_lege').slideUp();
+                $('.category_kiropraktor').slideUp();
                 $('.category_shared').slideDown();
                 $('.numberofpublications').text('19 treff');
             }
@@ -628,6 +678,12 @@
                 $('.category_tannlege').hide();
                 $('.category_shared').hide();
                 $('.numberofpublications').text('4 treff');
+            } else {
+                $('.category_tannlege').hide();
+                $('.category_lege').hide();
+                $('.category_kiropraktor').hide();
+                $('.category_shared').show();
+                $('.numberofpublications').text('19 treff');
             }
         });
     </script>
