@@ -86,15 +86,15 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <ul>
-                                            <li><a href="#" id="content_categories">Avtale</a></li>
-                                            <li><a href="#">Takster</a></li>
-                                            <li><a href="#">Oppgjør</a></li>
+                                            <li><a href="transportside_avtale.html" id="content_categories">Avtale</a></li>
+                                            <li><a href="transportside_takster.html">Takster</a></li>
+                                            <li><a href="transportside_oppgjor.html">Oppgjør</a></li>
                                             <li><a href="transportside_refusjon.html">Refusjon</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-sm-6 col-md-4">
                                         <ul>
-                                            <li><a href="#">Skjema</a></li>
+                                            <li><a href="skjema.html">Skjema</a></li>
                                             <li><a href="#">Frikort</a></li>
                                             <li><a href="#">Vikar</a></li>
                                             <li><a href="#">På vegne av pasient</a></li>
@@ -152,13 +152,13 @@
                                         </ul>
                                         <ul>
                                             <li class="character">K</li>
-                                            <li><a href="#">Kiropraktor</a></li>
+                                            <li><a href="transportside_kiropraktor.html">Kiropraktor</a></li>
                                             <li><a href="#">Kommune og fylkeskommune</a></li>
                                             <li><a href="#">Kurssentra og andre senter</a></li>
                                         </ul>
                                         <ul>
                                             <li class="character">L</li>
-                                            <li class=""><a href="#">Lege</a></li>
+                                            <li class=""><a href="transportside_leger.html">Lege</a></li>
                                             <li class=""><a href="#">Logoped og audiopedagog</a></li>
                                             <li class=""><a href="#">Leverandører</a></li>
                                         </ul>
@@ -194,7 +194,7 @@
                                         </ul>
                                         <ul>
                                             <li class="character">T</li>
-                                            <li><a href="#">Tannlege og tannpleier</a></li>
+                                            <li><a href="transportside_tannlege.html">Tannlege og tannpleier</a></li>
                                         </ul>
                                         <ul>
                                             <li class="character">U</li>
@@ -250,9 +250,15 @@
                                     <label for="yrke">Yrke</label>
                                     <select role="listbox" id="yrke" class="form-control">
                                         <option role="option">Alle</option>
-                                        <option role="option">
-                                            Helsedir
-                                        </option>
+
+                                        <option role="option">Lege</option>
+                                        <option role="option">Tannlege/tannpleier</option>
+                                        <option role="option">Fysioterapeut</option>
+                                        <option role="option">Apotek/bandasjist     </option>
+                                        <option role="option">Jordmor/helsestasjon  </option>
+                                        <option role="option">Manuellterapeut       </option>
+                                        <option role="option">Kiropraktor</option>
+                                        <option role="option">Ortoptist             </option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -291,9 +297,65 @@
                     <a href="#" class="transportsideknapp_dokument">
                         <h2>Henvisning/tilvising til fysioterapi (05-08.05)</h2>
                     </a>
-                    <a href="#" class="transportsideknapp_dokument">
-                        <h2>Henvisning/tilvising til kjeveortopedisk behandling (05-06.10)</h2>
-                    </a>
+
+                    <div class="category_lege">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Opplysningsskjema for fastlege (05-04.25)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Opplysningsskjema for lege (05-04.26)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Regning medisinsk behandling lege (05-04.05)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Samleregning for medisinsk behandling (05-04.12)
+                            </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>
+                                Henvisning/tilvising til spesialist (05-04.21)
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="category_tannlege">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Henvisning/tilvising til kjeveortopedisk behandling (05-06.10)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for private tannleger />tannpleiere med direkte oppgjør (05-06.23)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Samleregning/samlerekning for tannbehandling (05-06.22)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Skjema for elektronisk innsending og samtykke DOT (05-06.26)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Skjema for tannbehandling § 5-6 (05-06.20)</h2>
+                        </a>
+                    </div>
+                    <div class="category_kiropraktor">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2> Forenklet samleregning (05-10.05)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Henvisning/tilvising til spesialist (05-04.21)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for kiropraktor (05-09.03)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2> Regning/rekning kiropraktor (05-09.01)</h2>
+                        </a>
+                    </div>
                     <aside class="aside bottom">
                         <div class="module module_subscribe clearfix">
                             <p class="header">Abonnér på denne siden</p>
@@ -328,15 +390,15 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-4">
                                                 <ul>
-                                                    <li><a href="#" id="footer_content_categories">Avtale</a></li>
-                                                    <li><a href="#">Takster</a></li>
-                                                    <li><a href="#">Oppgjør</a></li>
+                                                    <li><a href="transportside_avtale.html" id="footer_content_categories">Avtale</a></li>
+                                                    <li><a href="transportside_takster.html">Takster</a></li>
+                                                    <li><a href="transportside_oppgjor.html">Oppgjør</a></li>
                                                     <li><a href="transportside_refusjon.html">Refusjon</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6 col-md-4">
                                                 <ul>
-                                                    <li><a href="#">Skjema</a></li>
+                                                    <li><a href="skjema.html">Skjema</a></li>
                                                     <li><a href="#">Frikort</a></li>
                                                     <li><a href="#">Vikar</a></li>
                                                     <li><a href="#">På vegne av pasient</a></li>
@@ -394,13 +456,13 @@
                                                 </ul>
                                                 <ul>
                                                     <li class="character">K</li>
-                                                    <li><a href="#">Kiropraktor</a></li>
+                                                    <li><a href="transportside_kiropraktor.html">Kiropraktor</a></li>
                                                     <li><a href="#">Kommune og fylkeskommune</a></li>
                                                     <li><a href="#">Kurssentra og andre senter</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">L</li>
-                                                    <li class=""><a href="#">Lege</a></li>
+                                                    <li class=""><a href="transportside_leger.html">Lege</a></li>
                                                     <li class=""><a href="#">Logoped og audiopedagog</a></li>
                                                     <li class=""><a href="#">Leverandører</a></li>
                                                 </ul>
@@ -436,7 +498,7 @@
                                                 </ul>
                                                 <ul>
                                                     <li class="character">T</li>
-                                                    <li><a href="#">Tannlege og tannpleier</a></li>
+                                                    <li><a href="transportside_tannlege.html">Tannlege og tannpleier</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">U</li>
@@ -499,5 +561,60 @@
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
     <script src="../js/expandmenu.js"></script>
+    <script type="text/javascript">
+        $("#yrke").on('change', function () {
+            var yrke = $(this).val().replace(/\d+/g, '').replace(/\(|\)/g, '');
+            console.log(yrke);
+
+            if (yrke === 'Lege') {
+                $('.category_lege').show();
+                $('.category_kiropraktor').hide();
+                $('.category_tannlege').hide();
+            }
+            else if (yrke == "Kiropraktor") {
+                $('.category_kiropraktor').show();
+                $('.category_lege').hide();
+                $('.category_tannlege').hide();
+            }
+            else if (yrke == "Tannlege/tannpleier") {
+                $('.category_tannlege').show();
+                $('.category_lege').hide();
+                $('.category_kiropraktor').hide();
+            }
+            else if (yrke == "Alle") {
+                $('.category_tannlege').show();
+                $('.category_lege').show();
+                $('.category_kiropraktor').show();
+            }
+        });
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) { return pair[1]; }
+            }
+            return (false);
+        }
+
+        $(function () {
+            if (getQueryVariable("yrke") == "lege") {
+                $("#yrke").val("Lege");
+                $('.category_kiropraktor').hide();
+                $('.category_tannlege').hide();
+            }
+            else if (getQueryVariable("yrke") == "tannlege") {
+                $("#yrke").val("Tannlege/tannpleier");
+                $('.category_lege').hide();
+                $('.category_kiropraktor').hide();
+            }
+            else if (getQueryVariable("yrke") == "kiropraktor") {
+                $("#yrke").val("Kiropraktor");
+                $('.category_lege').hide();
+                $('.category_tannlege').hide();
+            }
+        });
+    </script>
 </body>
 </html>

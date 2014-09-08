@@ -1884,24 +1884,20 @@ body {
   text-indent: 0.01px;
   text-overflow: '';
   color: #222;
+  /*
+            &:hover, &:focus, &:active {
+                background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
+                background-position: 96%;
+                -moz-background-size: 20px;
+                -o-background-size: 20px;
+                -webkit-background-size: 20px;
+                background-size: 20px;
+                color: white;
+            }*/
 }
 .container .dropdown select::-ms-expand,
 .container-fluid .dropdown select::-ms-expand {
   display: none;
-}
-.container .dropdown select:hover,
-.container-fluid .dropdown select:hover,
-.container .dropdown select:focus,
-.container-fluid .dropdown select:focus,
-.container .dropdown select:active,
-.container-fluid .dropdown select:active {
-  background: #004e66 url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
-  background-position: 96%;
-  -moz-background-size: 20px;
-  -o-background-size: 20px;
-  -webkit-background-size: 20px;
-  background-size: 20px;
-  color: white;
 }
 .container .refinesearch,
 .container-fluid .refinesearch {
