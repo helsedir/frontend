@@ -732,7 +732,7 @@ body {
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #004e66 url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
@@ -744,14 +744,14 @@ body {
 .container .calltoaction:focus,
 .container-fluid .calltoaction:focus {
   color: white;
-  background: #002e41 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #002e41 url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
 }
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #0093a7 url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: white;
@@ -760,7 +760,7 @@ body {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #01737c url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
   border: 2px solid #01737c;
   background-position: 20px 50%;
   background-size: 10px;

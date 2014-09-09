@@ -11,6 +11,7 @@
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
+    <link href="../css/nosvg.css" rel="stylesheet" />
 
     <!--[if lte IE 8]>
     <link href="/css/ie8fix.css" rel="stylesheet">
@@ -265,16 +266,17 @@
                                     <label for="tema">Tema</label>
                                     <select role="listbox" id="tema" class="form-control">
                                         <option role="option">Alle</option>
+                                        <option role="option">Avtale</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="sprak">Språk</label>
                                     <select role="listbox" id="sprak" class="form-control">
                                         <option role="option">
-                                            Norsk(bokmål)
+                                            Norsk (bokmål)
                                         </option>
                                         <option role="option">
-                                            Norsk(nynorsk)
+                                            Norsk (nynorsk)
                                         </option>
                                     </select>
                                 </div>
@@ -612,9 +614,8 @@
     <script src="../js/helsedir.js"></script>
     <script src="../js/expandmenu.js"></script>
     <script type="text/javascript">
-        $("#yrke").on('change', function () {
+        $("#yrke").on('change', function (event) {
             var yrke = $(this).val().replace(/\d+/g, '').replace(/\(|\)/g, '');
-            console.log(yrke);
 
             if (yrke === 'Lege') {
                 $('.category_lege').slideDown();
@@ -685,6 +686,7 @@
                 $('.category_shared').show();
                 $('.numberofpublications').text('19 treff');
             }
+
         });
     </script>
 </body>
