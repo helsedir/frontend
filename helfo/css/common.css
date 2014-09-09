@@ -223,8 +223,8 @@ body {
   padding-bottom: 10px;
   padding-left: 33px;
 }
-.container .has-hidden-content,
-.container-fluid .has-hidden-content {
+.container .has-hidden-content h2,
+.container-fluid .has-hidden-content h2 {
   cursor: pointer;
 }
 .container .has-hidden-content h2:before,
@@ -234,6 +234,9 @@ body {
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
+}
+.container .has-hidden-content.accordion h3,
+.container-fluid .has-hidden-content.accordion h3 {
   cursor: pointer;
 }
 .container .has-hidden-content.accordion h3:before,
@@ -241,12 +244,11 @@ body {
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 30px;
-  cursor: pointer;
   position: absolute;
   left: 0;
 }
-.container .has-visible-content,
-.container-fluid .has-visible-content {
+.container .has-visible-content h2,
+.container-fluid .has-visible-content h2 {
   cursor: pointer;
 }
 .container .has-visible-content h2:before,
@@ -256,6 +258,10 @@ body {
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
+}
+.container .has-visible-content.accordion h3,
+.container-fluid .has-visible-content.accordion h3 {
+  cursor: pointer;
 }
 .container .has-visible-content.accordion h3:before,
 .container-fluid .has-visible-content.accordion h3:before {
@@ -1965,7 +1971,6 @@ body {
 .container .table_general td,
 .container-fluid .table_general td {
   padding: 10px;
-  text-align: center;
   font-size: 18px;
 }
 .container .table_general tbody th a,
@@ -2067,7 +2072,7 @@ body {
 }
 .container .transportsideknapp,
 .container-fluid .transportsideknapp {
-  background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+  background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px;
   background-position: 96% 90%;
   margin-top: 50px;
@@ -2099,7 +2104,7 @@ body {
 }
 .container .transportsideknapp_dokument,
 .container-fluid .transportsideknapp_dokument {
-  background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+  background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px;
   background-position: 96% 50%;
   margin-top: 10px;
@@ -2564,5 +2569,10 @@ html {
   font-weight: 400;
   margin: 0;
   padding: 0.2rem 0;
+}
+.container .takst_table {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
 }
 /*# sourceMappingURL=common.css.map */

@@ -205,24 +205,26 @@ body {
     }
 
     .has-hidden-content {
-        cursor: pointer;
-
-        h2:before {
-            float: left;
-            padding: 3px 20px 0 0;
-            content: "\f107";
-            font-family: "FontAwesome";
-            font-size: 40px;
+        h2 {
             cursor: pointer;
+
+            &:before {
+                float: left;
+                padding: 3px 20px 0 0;
+                content: "\f107";
+                font-family: "FontAwesome";
+                font-size: 40px;
+            }
         }
 
         &.accordion {
             h3 {
+                cursor: pointer;
+
                 &:before {
                     content: "\f107";
                     font-family: "FontAwesome";
                     font-size: 30px;
-                    cursor: pointer;
                     position: absolute;
                     left: 0;
                 }
@@ -238,18 +240,22 @@ body {
         cursor: pointer;
     }*/
     .has-visible-content {
-        cursor: pointer;
+        h2 {
+            cursor: pointer;
 
-        h2:before {
-            float: left;
-            padding: 3px 20px 0 0;
-            content: "\f106";
-            font-family: "FontAwesome";
-            font-size: 40px;
+            &:before {
+                float: left;
+                padding: 3px 20px 0 0;
+                content: "\f106";
+                font-family: "FontAwesome";
+                font-size: 40px;
+            }
         }
 
         &.accordion {
             h3 {
+                cursor: pointer;
+
                 &:before {
                     content: "\f106";
                     font-family: "FontAwesome";
@@ -1843,7 +1849,6 @@ body {
 
         tbody th, td {
             padding: 10px;
-            text-align: center;
             font-size: 18px;
 
             a {
@@ -1944,7 +1949,7 @@ body {
     }
 
     .transportsideknapp {
-        background: white url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+        background: white url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
         background-size: 45px;
         background-position: 96% 90%;
         margin-top: 50px;
@@ -1976,7 +1981,7 @@ body {
     }
 
     .transportsideknapp_dokument {
-        background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.svg) no-repeat;
+        background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
         background-size: 45px;
         background-position: 96% 50%;
         margin-top: 10px;
@@ -2547,5 +2552,11 @@ html {
         font-weight: 400;
         margin: 0;
         padding: 0.2rem 0;
+    }
+
+    .takst_table {
+        margin-top: 50px;
+        display: inline-block;
+        width: 100%;
     }
 }
