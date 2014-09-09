@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8"> 
 	<title>Print</title>
-	<link rel="stylesheet" type="text/css" href="../../css/retningslinjer_print2.css" />
+	<link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
+	<link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
+	<link href="http://helsedir.azurewebsites.net/css/font_calibri.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/retningslinje_print2.css" />
 </head>
 <body>
 	<header>
@@ -95,7 +98,7 @@
 	<script type="text/javascript" src="../../js/retningslinje_print.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1")
+			retningslinjer.getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1")
 		});
 	</script>
 </body>
