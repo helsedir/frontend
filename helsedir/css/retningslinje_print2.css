@@ -48,7 +48,9 @@ body > header img{
 	margin-top: 25px;
 	}
 
-
+	dl dt{
+		font-family: "Calibri-Bold";
+	}
 
 
 }
