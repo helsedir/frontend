@@ -6,5 +6,12 @@ var retningslinjer = {
 			console.log(viewModel);
 			ko.mapping.fromJS(data, viewModel);
 			ko.applyBindings(viewModel, document.getElementById("htmlTop"));
+
+			printTableOfContents(data);
 		});
-}}
+	},
+
+	printTableOfContents: function(data){
+		console.log(data);
+	}
+};
