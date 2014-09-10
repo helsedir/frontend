@@ -217,11 +217,29 @@ body {
 .container-fluid .breadcrumbs a:visited {
   color: #004e66;
 }
-.container .accordion h3,
-.container-fluid .accordion h3 {
-  border-bottom: 1px solid #aeaba8;
-  padding-bottom: 10px;
-  padding-left: 33px;
+.container .accordion,
+.container-fluid .accordion {
+  /* h3 {
+            border-bottom: 1px solid @colorDarkGray;
+            padding-bottom: 10px;
+            padding-left: 33px;
+        }*/
+}
+.container .has-hidden-content,
+.container-fluid .has-hidden-content {
+  /* &.accordion {
+            h3 {
+                cursor: pointer;
+
+                &:before {
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        } */
 }
 .container .has-hidden-content h2,
 .container-fluid .has-hidden-content h2 {
@@ -235,17 +253,22 @@ body {
   font-family: "FontAwesome";
   font-size: 40px;
 }
-.container .has-hidden-content.accordion h3,
-.container-fluid .has-hidden-content.accordion h3 {
-  cursor: pointer;
-}
-.container .has-hidden-content.accordion h3:before,
-.container-fluid .has-hidden-content.accordion h3:before {
-  content: "\f107";
-  font-family: "FontAwesome";
-  font-size: 30px;
-  position: absolute;
-  left: 0;
+.container .has-visible-content,
+.container-fluid .has-visible-content {
+  /*
+        &.accordion {
+            h3 {
+                cursor: pointer;
+
+                &:before {
+                    content: "\f106";
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }*/
 }
 .container .has-visible-content h2,
 .container-fluid .has-visible-content h2 {
@@ -258,18 +281,6 @@ body {
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
-}
-.container .has-visible-content.accordion h3,
-.container-fluid .has-visible-content.accordion h3 {
-  cursor: pointer;
-}
-.container .has-visible-content.accordion h3:before,
-.container-fluid .has-visible-content.accordion h3:before {
-  content: "\f106";
-  font-family: "FontAwesome";
-  font-size: 30px;
-  position: absolute;
-  left: 0;
 }
 .container .clearfix:before,
 .container-fluid .clearfix:before,
@@ -2515,6 +2526,14 @@ html {
   padding: 0;
 }
 .container h3 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 3.2rem 0 1.2rem 0;
+  padding: 0;
+}
+.container .h3 {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: 'Roboto', sans-serif;
