@@ -7,103 +7,107 @@
 	<link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
 	<link href="http://helsedir.azurewebsites.net/css/font_calibri.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/retningslinje_print2.css" />
+
 </head>
 <body>
 	<header>
 		<img src="../../img/Helsedir_logo.svg">
 		<h1 data-bind="text: title"></h1>
 	</header>
+	
+		<h2>Innholdsfortegnelse</h2>
+		<ol id="tocList"></ol>
 
-	<section id="toc">
-
-	</section>
-
-	<section data-bind="foreach: sections">
-		<h2 data-bind="text: heading"></h2>
-		
-		<p data-bind="text: text"></p>
-
-		<!--recommendations-->
-		<section data-bind="foreach: recommendations">
-			<h3 data-bind="text: heading"></h3>	
+	<article>
+		<section data-bind="foreach: sections">
+			<h2 data-bind="text: heading"></h2>
+			
 			<p data-bind="text: text"></p>
 
-			<h4>Kunnskapsgrunnlag</h4>
+			<!--recommendations-->
+			<section data-bind="foreach: recommendations">
+				<h3 data-bind="text: heading"></h3>	
+				<p data-bind="text: text"></p>
 
-			<!--keyInfo-->
-			<!-- ko if: keyInfo().length > 0-->
-			<section data-bind="foreach: keyInfo">
-				<!-- ko if: benefits-->
-				<h5>Fordeler og ulemper</h5>
-				<p data-bind="text: benefits"></p>
+				<h4>Kunnskapsgrunnlag</h4>
+
+				<!--keyInfo-->
+				<!-- ko if: keyInfo().length > 0-->
+				<section data-bind="foreach: keyInfo">
+					<!-- ko if: benefits-->
+					<h5>Fordeler og ulemper</h5>
+					<p data-bind="text: benefits"></p>
+					<!-- /ko -->
+
+					<!-- ko if: evidence-->
+					<h5>Kvalitet på dokumentasjonen</h5>
+					<p data-bind="text: evidence"></p>
+					<!-- /ko -->
+
+					<!-- ko if: preference-->
+					<h5>Verdier og preferanser</h5>
+					<p data-bind="text: preference"></p>
+					<!-- /ko -->
+
+					<!-- ko if: resources-->
+					<h5>Ressurshensyn</h5>
+					<p data-bind="text: resources"></p>
+					<!-- /ko -->
+
+				</section>
 				<!-- /ko -->
 
-				<!-- ko if: evidence-->
-				<h5>Kvalitet på dokumentasjonen</h5>
-				<p data-bind="text: evidence"></p>
+				<!--PICO-->
+				<!-- ko if: picos().length > 0-->
+				<h5>Vitenskapelige spørsmål</h5>
+				<section data-bind="foreach: picos">
+					<dl>
+						<dt>Populasjon</dt>
+						<dd data-bind="text: population"></dd>
+						<dt>Intervensjon</dt>
+						<dd data-bind="text: intervention"></dd>
+						<dt>Komparator</dt>
+						<dd data-bind="text: control"></dd>
+						<dt>Utfall</dt>
+						<dd data-bind="text: outcome"></dd>
+					</dl>
+				</section>
 				<!-- /ko -->
 
-				<!-- ko if: preference-->
-				<h5>Verdier og preferanser</h5>
-				<p data-bind="text: preference"></p>
+				<!-- ko if: rational-->
+				<h5>Rasjonale</h5>
+				<p data-bind="text: rational"></p>
 				<!-- /ko -->
 
-				<!-- ko if: resources-->
-				<h5>Ressurshensyn</h5>
-				<p data-bind="text: resources"></p>
+				<!-- ko if: practicalAdvice-->
+				<h5>Praktisk info</h5>
+				<p data-bind="text: practicalAdvice"></p>
 				<!-- /ko -->
 
+				<!--PICO-->
+				<!-- ko if: references().length > 0-->
+				<h5>Referanser</h5>
+				<ol>
+					<li data-bind="foreach: references">
+						<span data-bind="text: basics_autors"></span>. 
+						<span data-bind="text: title"></span>.
+						<span data-bind="text: basics_journal"></span>
+						<span data-bind="text: basics_year"></span>
+					</li>
+				</ol>
+				<!-- /ko -->
 			</section>
-			<!-- /ko -->
-
-			<!--PICO-->
-			<!-- ko if: picos().length > 0-->
-			<h5>Vitenskapelige spørsmål</h5>
-			<section data-bind="foreach: picos">
-				<dl>
-					<dt>Populasjon</dt>
-					<dd data-bind="text: population"></dd>
-					<dt>Intervensjon</dt>
-					<dd data-bind="text: intervention"></dd>
-					<dt>Komparator</dt>
-					<dd data-bind="text: control"></dd>
-					<dt>Utfall</dt>
-					<dd data-bind="text: outcome"></dd>
-				</dl>
-			</section>
-			<!-- /ko -->
-
-			<!-- ko if: rational-->
-			<h5>Rasjonale</h5>
-			<p data-bind="text: rational"></p>
-			<!-- /ko -->
-
-			<!-- ko if: practicalAdvice-->
-			<h5>Praktisk info</h5>
-			<p data-bind="text: practicalAdvice"></p>
-			<!-- /ko -->
-
-			<!--PICO-->
-			<!-- ko if: references().length > 0-->
-			<h5>Referanser</h5>
-			<ol>
-				<li data-bind="foreach: references">
-					<span data-bind="text: basics_autors"></span>. 
-					<span data-bind="text: title"></span>.
-					<span data-bind="text: basics_journal"></span>
-					<span data-bind="text: basics_year"></span>
-				</li>
-			</ol>
-			<!-- /ko -->
 		</section>
-	</section>
+	</article>
 	<script type="text/javascript" src="../../js/knockout.js"></script>
 	<script type="text/javascript" src="../../js/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="../../js/knockout.mapping.js"></script>
 	<script type="text/javascript" src="../../js/retningslinje_print.js"></script>
+	<script type="text/javascript" src="../../js/jquery.tableofcontents.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			retningslinjer.getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1")
+			retningslinjer.getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1");
+			setTimeout(function(){$("#tocList").tableOfContents('article', {startLevel: 2})}, 1000);
 		});
 	</script>
 </body>
