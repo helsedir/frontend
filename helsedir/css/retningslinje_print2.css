@@ -1,6 +1,11 @@
 
 body > header img{
 	width: 20em;
+	float: right;
+}
+
+header > h1{
+	clear: both;
 }
 
 @media print{
