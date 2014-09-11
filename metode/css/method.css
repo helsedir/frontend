@@ -21,6 +21,7 @@
 }
 .wrapper .method_status p.text {
   margin-top: 20px;
+  font-weight: bold;
 }
 .wrapper .method_status h3 {
   margin: 40px 0 10px 30px;
