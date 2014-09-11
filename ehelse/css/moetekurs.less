@@ -90,30 +90,31 @@
         }
 
         span.date_number {
-            font-size: 36px;
             display: block;
-            padding: 10px 0;
+            padding: 7px 0 10px 0;
             color: #c63629;
-            font-family: "Soho Gothic W01 Light";
             text-align: right;
+            font-size: 24px;
+            font-family: "Soho Gothic W01 Light";
+            text-transform: uppercase;
         }
 
         span.date_monthyear {
             display: block;
-            color: #c63629;
-            font-family: @fontCalibri;
-            font-size: 20px;
             text-transform: uppercase;
             text-align: right;
+            font-size: 24px;
+            font-family: "Soho Gothic W01 Light";
+            color: #c63629;
+            margin-top: 2px;
         }
 
         h2 {
-            font-size: 36px;
-            line-height: 42px;
-            font-family: "Soho Gothic W01 Light";
             margin: 0;
-            color: #004e66;
-            color: @colorMediumBlue;
+            font-size: 30px;
+            line-height: 36px;
+            font-family: @fontSohoLight;
+            color: #222;
 
             &.internal-link.arrow_right {
                 margin: 0;
@@ -295,11 +296,5 @@
 
     .conference_transport a div.date {
         min-width: 150px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .conference_transport a div.information .internal-link {
-        white-space: pre;
     }
 }

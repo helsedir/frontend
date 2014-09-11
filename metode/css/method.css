@@ -19,6 +19,9 @@
 .wrapper .method_status p {
   margin-left: 30px;
 }
+.wrapper .method_status p.text {
+  margin-top: 20px;
+}
 .wrapper .method_status h3 {
   margin: 40px 0 10px 30px;
 }
@@ -32,7 +35,7 @@
   border-left: 6px solid #df9922;
 }
 .wrapper .method_status .method_attribute_label {
-  width: 20%;
+  width: 27%;
   float: left;
   margin-right: 10px;
   margin-left: 30px;
