@@ -1,0 +1,59 @@
+    <article class="container">  
+        <div class="row">
+            <div class="col-md-7">
+                <header id="pageheader">
+                    <nav>
+                        <ol class="breadcrumbs clearfix">
+                            <li><a href="../layouts/forside.html">Forside</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Nasjonale faglige retningslinjer</h1>
+                    <!--<div class="ingress">
+                        Anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper. <a href="#" class="smallGrayText">Les mer...</a>
+                    </div>-->
+                </header>
+            </div>
+        </div>
+            <div class="row">
+    <div class="col-md-7"> 
+                    <div class="border"></div>
+                    <form>
+            <label for="searchinput" class="visuallyhidden">Søk i retningslinjer og veiledere</label>
+            <div id="search_input_retningslinjer">
+            <input id="searchinput" class="search typeahead" type="text" placeholder="Søk etter anbefalinger i retningslinjer og veiledere..." />
+            </div>
+          </form>   
+          
+                    <h2>Innhold</h2>
+
+                    <ul>
+                        <li ng-repeat="retningslinje in retningslinjer">
+                                <div class="transportsideknapp">
+                                    <a href="#/{{retningslinje.guidelineId}}">
+                                        <h3>{{retningslinje.title}}</h3>
+                                    </a>
+                                </div>
+                        </li>
+                    </ul>
+          
+                       
+
+                        <div class="module module_social">
+                <a href="#" class="ikon_metode"><span></span>metode</a>
+                        </div>
+                        <aside class="aside top">
+                <div class="module module_person ">
+                <h5 class="module_description">Ansvarlig for denne siden</h5>
+                <a href="mailto:Anne.May.Knudsen@helsedir.no">
+                  <div class="name">Retningslinjesekreteriatet</div>
+                </a>
+                <div class="person_information">
+                  <p class="phone">E-post: xx@helsedir.no</p>
+                </div>
+                            </div>
+                        </aside>                
+
+            </div> <!-- cols -->
+</div><!-- row -->              
+        </article> <!-- end container -->
+
