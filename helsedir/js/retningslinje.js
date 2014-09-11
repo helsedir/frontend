@@ -12,68 +12,69 @@ var retningslinjer = {
 	}
 };
 
-jQuery(document).ready(function() {
+$(runJqueryUIStuff());
 
-	jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
-	jQuery('.gradingInfo').addClass('visuallyhidden');
-	jQuery('.recommendationGrading').addClass('closed');
+function runJqueryUIStuff(){
+		jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
+		jQuery('.gradingInfo').addClass('visuallyhidden');
+		jQuery('.recommendationGrading').addClass('closed');
 
-  jQuery(window).resize(function () {
-      jQuery('.header_wrapper').addClass('accordion');
-      jQuery('.accordion.open').siblings('.text').removeClass('visuallyhidden');
-      jQuery('.accordion.closed').siblings('.text').addClass('visuallyhidden');
+	  jQuery(window).resize(function () {
+	      jQuery('.header_wrapper').addClass('accordion');
+	      jQuery('.accordion.open').siblings('.text').removeClass('visuallyhidden');
+	      jQuery('.accordion.closed').siblings('.text').addClass('visuallyhidden');
 
-  });
+	  });
 
-  jQuery(window).trigger('resize'); 
-  jQuery('.header_wrapper').addClass('closed');
-  
-  
-  jQuery('.recommendation h1').on('click', function() {
-  	var wrapper = jQuery(this).parent().parent();
-  		slider(wrapper, wrapper.siblings('.text, .background_information'));
-  });
-  
-  jQuery('.recommendationGrading').on('click', function() {
-  		slider(jQuery(this), jQuery(this).parent().siblings('.gradingInfo'));
-  });
+	  jQuery(window).trigger('resize'); 
+	  jQuery('.header_wrapper').addClass('closed');
+	  
+	  
+	  jQuery('.recommendation h1').on('click', function() {
+	  	var wrapper = jQuery(this).parent().parent();
+	  		slider(wrapper, wrapper.siblings('.text, .background_information'));
+	  });
+	  
+	  jQuery('.recommendationGrading').on('click', function() {
+	  		slider(jQuery(this), jQuery(this).parent().siblings('.gradingInfo'));
+	  });
 
- 
-	/** Twitter typeahead **/
-	var antibiotika = new Bloodhound({
-  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
-		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		local: [{"keyword":"antibiotika"}, {"keyword":"amming"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
-		//prefetch: '../data/antibiotika.json'
-	});
- 
-	antibiotika.initialize();
- 
-	$('#search_input_retningslinjer .typeahead').typeahead({
-		hint: false,
-  	highlight: true
-	},
-	{
-  name: 'antibiotika',
-  displayKey: 'keyword',
-  source: antibiotika.ttAdapter()
-	});
-	
-	
-	$('#search_input_retningslinjer').bind('typeahead:selected', function(obj, datum, name) {      
-        window.location.href = 'soeketreff.html';
-	});
-	
-	$(document).on('typeahead:opened', function(event, datum) {
-  	var width = $(event.target).width();
-		$('.tt-dropdown-menu').width(width);
-	});
-	
-	window.localStorage.clear();
-	
-	prettyPrint();
-  epj(); 
-});
+	 
+		/** Twitter typeahead **/
+		var antibiotika = new Bloodhound({
+	  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			local: [{"keyword":"antibiotika"}, {"keyword":"amming"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
+			//prefetch: '../data/antibiotika.json'
+		});
+	 
+		antibiotika.initialize();
+	 
+		$('#search_input_retningslinjer .typeahead').typeahead({
+			hint: false,
+	  	highlight: true
+		},
+		{
+	  name: 'antibiotika',
+	  displayKey: 'keyword',
+	  source: antibiotika.ttAdapter()
+		});
+		
+		
+		$('#search_input_retningslinjer').bind('typeahead:selected', function(obj, datum, name) {      
+	        window.location.href = 'soeketreff.html';
+		});
+		
+		$(document).on('typeahead:opened', function(event, datum) {
+	  	var width = $(event.target).width();
+			$('.tt-dropdown-menu').width(width);
+		});
+		
+		window.localStorage.clear();
+		
+		prettyPrint();
+	  epj();
+}
 
 
 function goFromSearchToRecommendation(destination, headline) {
