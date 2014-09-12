@@ -50,7 +50,7 @@
                     <form class="mainsearch">
                         <span role="search">
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
-                            <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
+                            <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
                             <button type="submit">
                                 <img src="../img/ikoner/ikon_forstorrelsesglass.png" alt="Søkeknapp" />
                             </button>
@@ -73,38 +73,44 @@
                     <h1 class=" visuallyhidden">Hovedinnganger</h1>
                     <div class=" entrancebutton ">
                         <a href="transportside_avtale.html">
+                            <span class="avtale"></span>
                             <h2>Avtale</h2>
                             <p>Inngå og endre avtale</p>
                         </a>
                     </div>
                     <div class=" entrancebutton">
                         <a href="transportside_oppgjor.html">
+                            <span class="oppgjor"></span>
                             <h2>Oppgjør</h2>
                             <p>Sende inn oppgjør</p>
                         </a>
                     </div>
                     <div class=" entrancebutton">
                         <a href="transportside_takster.html">
+                            <span class="takster"></span>
                             <h2>Takster</h2>
                             <p>Bruk av takstsystemet</p>
                         </a>
                     </div>
                     <div class=" entrancebutton">
                         <a href="transportside_helseaktorer.html">
+                            <span class="helseaktor"></span>
                             <h2>Helseaktør</h2>
-                            <p>Lege, tannlege, fysioterapeut, kiropraktor og andre</p>
+                            <!--                            <p>Lege, tannlege, fysioterapeut, kiropraktor og andre</p>-->
                         </a>
                     </div>
                     <div class=" entrancebutton ">
                         <a href="skjema.html">
+                            <span class="skjema"></span>
                             <h2>Skjema</h2>
                         </a>
                     </div>
 
                     <div class=" entrancebutton menu">
                         <button class="js-expander">
+                            <span></span>
                             <h2>
-                                Alt innhold A til Å <i class="fa fa-bars"></i>
+                                Alt innhold A til Å
                             </h2>
                             <p class=" visuallyhidden">Hovedmeny. Velg tema etter kategorisk sortering, alfabetisk sortering eller søk etter tema</p>
                         </button>
@@ -277,10 +283,14 @@
     <div class=" frontpagewrapper white">
 
         <div class="container  frontpage">
-
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="nyheter.html"><h2>Viktige meldinger</h2></a>
+                </div>
+            </div>
             <div class="row">
                 <section class="col-md-6 col-lg-6">
-                    <a href="nyheter.html"><h2>Viktig melding</h2></a>
+
                     <div class="news">
                         <a href="#" class=" internal-link arrow_right"><h3>Status for saksbehandlingstider</h3></a>
                     </div>
@@ -288,7 +298,7 @@
                     <div class=" border_grey"></div>
                 </section>
                 <section class="col-md-6 col-lg-6 newsandconference">
-                    <a href="#"><h2>Flere meldinger</h2></a>
+
                     <div class="news">
                         <a href="artikkel_takstendring.html" class=" internal-link arrow_right"><h3>Endring av takster for leger</h3></a>
                     </div>

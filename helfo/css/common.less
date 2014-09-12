@@ -1956,6 +1956,7 @@ body {
         width: 100%;
         display: inline-block;
         padding: 20px 30px 50px 30px;
+        box-shadow: #badde9 0 0 0 2px;
 
         h2 {
             margin: 0;
@@ -2471,6 +2472,8 @@ html {
         font-weight: 300;
         margin: 6.3rem 0 2.4rem 0;
         padding: 0;
+        border-bottom: 2px solid #88b9cb;
+        color: #222;
     }
 
     h1.alternative {
@@ -2479,60 +2482,58 @@ html {
         line-height: 44px;
         margin: 50px 0 0 0;
         padding: 0 0 4px 0;
+        color: #222;
     }
 
     h2 {
-        font-size: 3.0rem;
-        line-height: 3.6rem;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
         font-family: @roboto;
         font-weight: 300;
         margin: 2.4rem 0 1.6rem 0;
         padding: 0;
+        color: #222;
     }
 
     h3 {
-        font-size: 1.8rem;
-        line-height: 2.4rem;
+        font-size: 3.0rem;
+        line-height: 3.6rem;
         font-family: @roboto;
-        font-weight: 700;
+        font-weight: 300;
         margin: 3.2rem 0 1.2rem 0;
         padding: 0;
-    }
-
-    .h3 {
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-        font-family: @roboto;
-        font-weight: 700;
-        margin: 3.2rem 0 1.2rem 0;
-        padding: 0;
+        color: #222;
     }
 
     h4 {
         font-size: 1.6rem;
-        line-height: 2.4rem;
+        line-height: 2.0rem;
         font-family: @roboto;
-        font-weight: 500;
+        font-weight: 400;
         margin: 3.2rem 0 0 0;
         padding: 0;
+        text-transform: uppercase;
+        color: #222;
     }
 
     .ingress {
-        font-size: 2.2rem;
-        line-height: 3.0rem;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
         font-family: @roboto;
-        font-weight: 400;
+        font-weight: 300;
         margin: 1.6rem 0 1.6rem 0;
         padding: 0 1.6rem;
+        color: #222;
     }
 
     p {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: 2.0rem;
+        line-height: 3.0rem;
         font-family: @roboto;
-        font-weight: 400;
+        font-weight: 300;
         margin: 0;
         padding: 0.8rem 0;
+        color: #222;
     }
 
     .bulletlist li {
@@ -2542,6 +2543,7 @@ html {
         font-weight: 400;
         margin: 0 0 0 2.5rem;
         padding: 0.8rem 0;
+        color: #222;
 
         &:before {
             content: "•";
@@ -2560,11 +2562,33 @@ html {
         font-weight: 400;
         margin: 0;
         padding: 0.2rem 0;
+        color: #eb6a0a;
+        border-bottom: #c2c3c4;
+
+        h1, h2, h3, h4, h5 {
+            color: #398ca9;
+        }
     }
 
     .takst_table {
         margin-top: 50px;
         display: inline-block;
         width: 100%;
+    }
+
+    .breadcrumbs {
+        a {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            font-family: @roboto;
+            font-weight: 400;
+            margin: 0;
+            padding: 0.2rem 0;
+            color: #756d6a;
+
+            &:visited {
+                color: #756d6a;
+            }
+        }
     }
 }

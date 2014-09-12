@@ -2,25 +2,26 @@
   background: #f7f6f6;
 }
 .mainentrance {
-  background: url('../img/forside_bakgrunn_abstrahert_graaere.png');
+  background: url('../img/bakgrunn_forside.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 0 0 10px 0;
+  padding: 15px 0 40px 0;
 }
 .container .entrancebutton {
-  width: 250px;
-  height: 230px;
+  width: 240px;
+  height: 220px;
   margin: 30px 30px 0 0;
   float: left;
   position: relative;
 }
 .container .entrancebutton.menu button {
-  background: #838078;
+  background: white;
   border: none;
-  height: 230px;
+  height: 220px;
+  width: 100%;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -31,27 +32,38 @@
   margin: auto;
   font-size: 28px;
   line-height: 35px;
-  color: white;
+  color: #222;
 }
 .container .entrancebutton.menu button.js-expanded {
-  background-color: #5e5d57;
-  color: white;
+  background-color: white;
+  color: #222;
   outline: 0;
 }
 .container .entrancebutton.menu button:hover {
-  background: #5e5d57;
+  background: white;
 }
 .container .entrancebutton.menu button:focus {
-  background: #5e5d57;
+  background: white;
+}
+.container .entrancebutton.menu button span {
+  border-radius: 50%;
+  display: block;
+  margin: -30px auto 5px auto;
+  height: 85px;
+  width: 85px;
+  background: #ffffff url('../img/ikoner/hovedinngang_altinnhold.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
 }
 .container .entrancebutton a {
   height: 100%;
   width: 100%;
   display: inline-block;
-  color: white;
+  color: #58585a;
   text-decoration: none;
-  border-radius: 4px;
-  background: #004e66;
+  border: #badde9 0 0 0 2px;
+  border-radius: 5px;
+  background: white;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -80,16 +92,21 @@
 .container .entrancebutton a h2 {
   font-size: 28px;
   line-height: 35px;
-  margin: 80px 0 15px 12px;
   padding-bottom: 5px;
-  color: white;
+  color: #58585a;
   position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .container .entrancebutton a p {
   line-height: 23px;
   position: relative;
-  margin-left: 12px;
+  margin-left: 0;
   margin-bottom: 15px;
+  color: #58585a;
+  padding-top: 0;
+  text-align: center;
 }
 .container .entrancebutton a:focus {
   background: #002e41;
@@ -102,6 +119,41 @@
 .container .entrancebutton:hover {
   color: white;
 }
+.container .entrancebutton span {
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto 5px auto;
+  height: 85px;
+  width: 85px;
+  background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton span.avtale {
+  background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton span.helseaktor {
+  background: #ffffff url('../img/ikoner/hovedinngang_helseaktor.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton span.oppgjor {
+  background: #ffffff url('../img/ikoner/hovedinngang_oppgjor.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton span.takster {
+  background: #ffffff url('../img/ikoner/hovedinngang_takster.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton span.skjema {
+  background: #ffffff url('../img/ikoner/hovedinngang_skjema.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
 .container.frontpage {
   padding-bottom: 50px;
 }
@@ -109,6 +161,7 @@
   margin: 30px 0 20px 0;
   width: 100%;
   padding-bottom: 15px;
+  border-bottom: 2px solid #88b9cb;
 }
 .container.frontpage h2.noborder {
   border: none;
