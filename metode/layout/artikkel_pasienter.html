@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Om systemet | Nasjonalt system for innføring av nye metoder i spesialisthelsetjenesten</title>
+    <title>For pasienter | Nasjonalt system for innføring av nye metoder i spesialisthelsetjenesten</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
-    <link href="../css/finnmetode.css" rel="stylesheet" />
-    <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/method.css" rel="stylesheet" />
     <link href="../css/font_soho.css" rel="stylesheet">
     <link href="../css/font_calibri.css" rel="stylesheet">
     <!--[if lte IE 8]>
@@ -76,48 +75,21 @@
                             <li class="active"><a href="forside.html">Forside</a></li>
                         </ol>
                     </nav>
-                    <h1>Om systemet</h1>
+                    <h1>For Pasienter</h1>
                 </header>
             </div>
         </div>
         <div class="row">
             <div class="col-md-7">
                 <div class="content">
-                    <p class="ingress">Systemet er etablert for å sikre at nye metoder som tas i bruk i spesialisthelsetjenesten har vært igjennom en standardisert prosess når det gjelder vurdering av blant annet effekt, sikkerhet og kostnader.</p>
-
-                    <a href="artikkel_omsystemet.html" class="transportsideknapp clearfix">
-                        <h2>Om nasjonalt system for innføring av nye metoder</h2>
-
-                        <p></p>
-                    </a>
-
-                    <a href="#" class="transportsideknapp clearfix">
-                        <h2>Hvordan foregår metodevurdering</h2>
-
-                        <p>Fem faser i metodevurderingen: oppstart, forslag, metodevurdering, beslutning, implementering</p>
-                    </a>
-                    <a href="hvemgjoerhva.html" class="transportsideknapp clearfix">
-                        <h2>Hvem gjør hva</h2>
-
-                        <p>Sentrale aktører og deres ansvar</p>
-                    </a>
-
-                    <a href="artikkel_tidslop_og_frister.html" class="transportsideknapp clearfix">
-                        <h2>Tidsløp og frister</h2>
-
-                        <p></p>
-                    </a>
-                    <a href="#" class="transportsideknapp clearfix">
-                        <h2>Sentrale begreper og definisjoner</h2>
-
-                        <p>
-                        </p>
-                    </a>
-                    <a href="#" class="transportsideknapp clearfix">
-                        <h2>Sentrale dokumenter</h2>
-
-                        <p>Bakgrunnsdokumenter, veiledere og presentasjoner</p>
-                    </a>
+                    <p class="ingress">Alle nye legemidler, medisinsk utstyr eller nye prosedyrer som skal tas i bruk på norske sykehus skal være funnet trygge og effektive. </p>
+                    <p class="ingress">Dette er bakgrunnen for at man i Norge har innført et nasjonalt system som skal sikre at en metode blir vurdert likt og basert på kunnskap, før de tas i bruk i spesialisthelsetjenesten. Målet er blant annet å bidra til bedre og tryggere pasientbehandling.</p>
+                    <h2>Pasienter kan sende inn forslag</h2>
+                    <p>    Ansatte i spesialisthelsetjenesten, myndigheter, pasienter og leverandør av metoder med flere kan alle komme med forslag på nye metoder de ønsker skal bli gjennomgå en nasjonal metodevurdering.</p>
+                    <p>Les mer om hvordan <a href="forslag.html">fremme et forslag</a></p>
+                    <h2> Brukermedvirkning</h2>
+                    <p>    Gjennom regionale og sykehusspesifikke brukerutvalg kan pasienter og pårørende være med på å påvirke at helsetjenesten videreutvikles på best mulig måte for alle pasienter. Se de regionale helseforetakenes nettsider for informasjon om hvordan pasienter kan medvirke.</p>
+                    <p> Mange av metodene som gjennomgår en metodevurdering er ikke tatt i bruk i spesialisthelsetjenesten i Norge.  Det er heller ikke sikkert at de vil bli tatt i bruk.</p>
 
                     <aside class="aside top">
                         <div class=" module module_person ">
@@ -128,12 +100,6 @@
                             <div class="person_information">
                                 <p>E-post: <a href="#">metodevurdering@helsedir.no</a></p>
                             </div>
-                        </div>
-                        <div class=" module module_statistics_graph">
-                            <h5 class=" module_header">
-                                Antall innkomne forslag i 2013
-                            </h5>
-                            <div id="module_chart_column"></div>
                         </div>
                     </aside>
                 </div>
@@ -212,29 +178,5 @@
     <script src="../js/helsedir.js"></script>
     <script src="../js/expandmenu.js"></script>
     <script src="../js/method.js"></script>
-    <script src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("visualization", "1", { packages: ["corechart"] });
-        google.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Type', 'Antall forslag', { role: 'style' }],
-                ['Legemiddel', 42, '#6cb4b5'],
-                ['Medisinsk utstyr/prosedyrer', 10, '#a1bf37'],
-            ]);
-
-            var options = {
-                title: '',
-                'chartArea': { 'width': '70%', 'height': '70%' },
-                backgroundColor: '#fff',
-                legend: 'none',
-                vAxis: { minValue: 0, maxValue: 50 }
-            };
-
-            var chart = new google.visualization.ColumnChart(document.getElementById('module_chart_column'));
-            chart.draw(data, options);
-
-        }
-    </script>
 </body>
 </html>
