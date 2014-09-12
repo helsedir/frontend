@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8"> 
 	<title>Print</title>
-	<link href="http://helsedir.azurewebsites.net/css/fonts.css" rel="stylesheet" />
-	<link href="http://helsedir.azurewebsites.net/css/font_soho.css" rel="stylesheet">
-	<link href="http://helsedir.azurewebsites.net/css/font_calibri.css" rel="stylesheet">
+	<link href="../../css/fonts.css" rel="stylesheet" />
+	<link href="../../css/font_soho.css" rel="stylesheet">
+	<link href="../../css/font_calibri.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/retningslinje_print2.css" />
 
 </head>
@@ -107,6 +107,10 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			retningslinjer.getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1");
+
+			
+			//setTimeout(function(){$("#tocList").tableOfContents('article', {startLevel: 2})}, 1000);
+			setTimeout(function(){retningslinjer.addIndex()}, 1000);
 			setTimeout(function(){$("#tocList").tableOfContents('article', {startLevel: 2})}, 1000);
 		});
 	</script>

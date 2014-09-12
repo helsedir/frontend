@@ -536,5 +536,11 @@
     <script type="text/javascript" src="../js/retningslinjecontrollers.js"></script> 
     <script type="text/javascript" src="../js/retningslinjeServices.js"></script> 
     <script type="text/javascript" src="../js/retningslinje.js"></script>
+    <script>
+    //We need to wait until Angular is finished with the DOM
+        setTimeout(function(){
+            runJqueryUIStuff();
+        }, 700);
+    </script>
 	</body>
 </html>
