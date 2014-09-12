@@ -21,7 +21,7 @@ var retningslinjer = {
 		    }
 
 		    // just found a levelDown event
-		    if (indices[hIndex] == undefined) {
+		    if (indices[hIndex] === undefined) {
 		       indices[hIndex] = 0;
 		    }
 
