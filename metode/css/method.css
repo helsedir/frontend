@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   border-left: 6px solid #a1bf37;
   margin-top: 30px;
-  padding: 20px 30px 60px 0;
+  padding: 20px 0 60px 0;
   position: relative;
 }
 .wrapper .method_status h2 {
@@ -135,6 +135,9 @@
 }
 .wrapper .method_status.passive h2:before {
   display: none;
+}
+.wrapper .method_status .method_metadata {
+  padding-right: 30px;
 }
 .wrapper .informationicon {
   position: absolute;
