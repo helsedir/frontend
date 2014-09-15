@@ -79,7 +79,7 @@ $colorWhite: #ffffff;
 	background: $colorWhite;
 
 	.header_wrapper{
-		.gradingStrong{
+		header.gradingStrong{
 				border-left: 5px solid #77438d;
 		}
 		header.gradingWeak{
@@ -107,5 +107,9 @@ $colorWhite: #ffffff;
 				}
 			}	
 		}
+	}
+
+	.text{
+		padding-left: 50px;
 	}
 }

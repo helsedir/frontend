@@ -48,7 +48,7 @@
   padding: 0;
   background: #ffffff;
 }
-.recommendation .header_wrapper .gradingStrong {
+.recommendation .header_wrapper header.gradingStrong {
   border-left: 5px solid #77438d;
 }
 .recommendation .header_wrapper header.gradingWeak {
@@ -71,6 +71,9 @@
   content: "\f107";
   font-family: "FontAwesome";
   cursor: pointer;
+}
+.recommendation .text {
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=retningslinjer_endringer.css.map */

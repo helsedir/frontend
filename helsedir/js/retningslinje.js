@@ -118,13 +118,13 @@ function runJqueryUIStuff(){
 	    });
 
 	    //show/hide more news/conferences
-	    $('.showmorenews').on('click', function () {
-	        $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
-	    });
+	    //$('.showmorenews').on('click', function () {
+	     //   $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
+	    //});
 
-	    $('.order').on('click', function () {
-	        $('.shoppingcartbutton').toggle(800);
-	    });
+	   // $('.order').on('click', function () {
+	    //    $('.shoppingcartbutton').toggle(800);
+	    //});
 	});
 		jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
 		jQuery('.gradingInfo').addClass('visuallyhidden');
@@ -142,6 +142,7 @@ function runJqueryUIStuff(){
 	  
 	  
 	  jQuery('.recommendation h2').on('click', function() {
+	  	$(this).parent().toggleClass('gradingWeak', 2000);
 	  	var wrapper = jQuery(this).parent().parent();
 	  		slider(wrapper, wrapper.siblings('.text, .background_information'));
 	  });
