@@ -30,7 +30,7 @@ function runJqueryUIStuff(){
 	        var collapseElement = $(this);
 	        var contentToHide = collapseElement.next();
 	        var parentTag = collapseElement.parent();
-
+	        console.log("click");
 	        if (!contentToHide.hasClass("visuallyhidden")) {
 	            contentToHide.slideUp('fast', function () {
 	                contentToHide.addClass('visuallyhidden')
