@@ -25,7 +25,6 @@
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   border-radius: 4px;
 }
 .container .entrancebutton.menu button h2 {
@@ -34,13 +33,20 @@
   line-height: 35px;
   color: #222;
 }
-.container .entrancebutton.menu button.js-expanded {
-  background-color: white;
+.container .entrancebutton.menu button.js-expanded span {
+  background: #ffffff url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
   color: #222;
   outline: 0;
 }
 .container .entrancebutton.menu button:hover {
   background: white;
+}
+.container .entrancebutton.menu button:hover span {
+  background: #ffffff url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
 }
 .container .entrancebutton.menu button:focus {
   background: white;
@@ -68,17 +74,6 @@
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-.container .entrancebutton a:hover {
-  background: #002e41;
-}
-.container .entrancebutton a:hover h2,
-.container .entrancebutton a:hover p,
-.container .entrancebutton a:hover:focus,
-.container .entrancebutton a:hover h2:focus,
-.container .entrancebutton a:hover p:focus {
-  text-decoration: none;
-  color: white;
 }
 .container .entrancebutton a h3 {
   margin: 80px 0 0 0;
@@ -114,6 +109,31 @@
 .container .entrancebutton a:focus h2,
 .container .entrancebutton a:focus p {
   background: #002e41;
+}
+.container .entrancebutton a:hover span.avtale {
+  background: #ffffff url('../img/ikoner/hovedinngang_avtale_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton a:hover span.helseaktor {
+  background: #ffffff url('../img/ikoner/hovedinngang_helseaktor_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton a:hover span.oppgjor {
+  background: #ffffff url('../img/ikoner/hovedinngang_oppgjor_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton a:hover span.takster {
+  background: #ffffff url('../img/ikoner/hovedinngang_takster_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.container .entrancebutton a:hover span.skjema {
+  background: #ffffff url('../img/ikoner/hovedinngang_skjema_hover.svg') no-repeat;
+  background-size: 90px;
+  background-position: center;
 }
 .container .entrancebutton:visited,
 .container .entrancebutton:hover {

@@ -387,7 +387,7 @@
 }
 #header .footerlinkswrapper,
 #footer .footerlinkswrapper {
-  background: #838078;
+  background: #d9dadb;
   padding: 20px 0 50px 0;
 }
 #header .footerlinkswrapper h4,
@@ -400,7 +400,7 @@
 #footer .footerlinkswrapper a:visited,
 #header .footerlinkswrapper a:hover,
 #footer .footerlinkswrapper a:hover {
-  color: white;
+  color: #222;
 }
 #header .footerlinkswrapper h4,
 #footer .footerlinkswrapper h4 {

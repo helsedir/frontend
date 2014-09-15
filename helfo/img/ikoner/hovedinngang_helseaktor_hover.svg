@@ -4,8 +4,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 102 102" enable-background="new 0 0 102 102" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1" y1="51" x2="101" y2="51">
-	<stop  offset="0" style="stop-color:#E85236"/>
-	<stop  offset="1" style="stop-color:@colorOrange"/>
+	<stop  offset="0" style="stop-color:#222222"/>
+	<stop  offset="0.1854" style="stop-color:#582F27"/>
+	<stop  offset="0.3852" style="stop-color:#8B3B2D"/>
+	<stop  offset="0.5734" style="stop-color:#B34531"/>
+	<stop  offset="0.7443" style="stop-color:#D04C34"/>
+	<stop  offset="0.8921" style="stop-color:#E25035"/>
+	<stop  offset="1" style="stop-color:#E85236"/>
 </linearGradient>
 <circle fill="url(#SVGID_1_)" cx="51" cy="51" r="50"/>
 <path fill="#FFFFFF" d="M66.3,29.5c-1.5-1-3.6-2.3-5.1-2.3c-1.4,0-2.6,0.7-3.4,1.7c-1.4,0-2.7,0.1-4.1,0.2c0-1.5,0-2.4,0-2.6

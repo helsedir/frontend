@@ -6,7 +6,7 @@
 @colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
 @colorLightBlueHover: #4f8889;
-@colorOrange: #df9922;
+@colorOrange: #eb6a0a;
 @colorOrangeHover: #b8811d;
 @colorRed: #c63629;
 @colorYellow: #f4d01e;
@@ -103,10 +103,6 @@ body {
         font-size: 20px;
         font-family: 'Roboto';
         line-height: 30px;
-
-        a {
-            border-bottom: 1px solid @colorMediumBlue;
-        }
     }
 
     ul {
@@ -136,10 +132,6 @@ body {
 
         &:hover {
             text-decoration: none;
-        }
-
-        &:visited {
-            color: @colorMediumBlue;
         }
 
         &:focus, &:visited:focus {
@@ -172,7 +164,7 @@ body {
 
         li:after {
             font-family: "FontAwesome";
-            content: '\f104';
+            content: '\f177';
             color: @colorDarkBlue;
             font-size: 25px;
             margin: 0 5px 0 5px;
@@ -1959,6 +1951,9 @@ body {
         box-shadow: #badde9 0 0 0 2px;
 
         h2 {
+            font-size: 3.0rem;
+            line-height: 3.6rem;
+            font-weight: 300;
             margin: 0;
             border-bottom: 2px dotted #004e66;
             padding-bottom: 7px;
@@ -2471,7 +2466,7 @@ html {
         font-family: @roboto;
         font-weight: 300;
         margin: 6.3rem 0 2.4rem 0;
-        padding: 0;
+        padding: 0 0 2px 0;
         border-bottom: 2px solid #88b9cb;
         color: #222;
     }
@@ -2534,6 +2529,21 @@ html {
         margin: 0;
         padding: 0.8rem 0;
         color: #222;
+
+        a {
+            font-size: 2.0rem;
+            line-height: 3.0rem;
+            font-family: @roboto;
+            font-weight: 400;
+            margin: 0;
+            padding: 0.2rem 0;
+            color: @colorOrange;
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
     }
 
     .bulletlist li {
@@ -2553,6 +2563,14 @@ html {
             position: absolute;
             font-size: 30px;
         }
+
+        a {
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
     }
 
     a {
@@ -2562,8 +2580,7 @@ html {
         font-weight: 400;
         margin: 0;
         padding: 0.2rem 0;
-        color: #eb6a0a;
-        border-bottom: #c2c3c4;
+        color: @colorOrange;
 
         h1, h2, h3, h4, h5 {
             color: #398ca9;

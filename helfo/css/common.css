@@ -116,10 +116,6 @@ body {
   font-family: 'Roboto';
   line-height: 30px;
 }
-.container p a,
-.container-fluid p a {
-  border-bottom: 1px solid #0093a7;
-}
 .container ul.list,
 .container-fluid ul.list {
   list-style: none;
@@ -147,10 +143,6 @@ body {
 .container a:hover,
 .container-fluid a:hover {
   text-decoration: none;
-}
-.container a:visited,
-.container-fluid a:visited {
-  color: #0093a7;
 }
 .container a:focus,
 .container-fluid a:focus,
@@ -195,7 +187,7 @@ body {
 .container .breadcrumbs li:after,
 .container-fluid .breadcrumbs li:after {
   font-family: "FontAwesome";
-  content: '\f104';
+  content: '\f177';
   color: #004e66;
   font-size: 25px;
   margin: 0 5px 0 5px;
@@ -1030,7 +1022,7 @@ body {
 }
 .container .module.module_publication,
 .container-fluid .module.module_publication {
-  border-left: 2px solid #df9922;
+  border-left: 2px solid #eb6a0a;
 }
 .container .module.module_guidelines,
 .container-fluid .module.module_guidelines {
@@ -1615,7 +1607,7 @@ body {
 }
 .container.crisis .fa-exclamation,
 .container-fluid.crisis .fa-exclamation {
-  color: #df9922;
+  color: #eb6a0a;
   font-size: 2em;
 }
 .container.crisis .button,
@@ -2095,6 +2087,9 @@ body {
 }
 .container .transportsideknapp h2,
 .container-fluid .transportsideknapp h2 {
+  font-size: 3.0rem;
+  line-height: 3.6rem;
+  font-weight: 300;
   margin: 0;
   border-bottom: 2px dotted #004e66;
   padding-bottom: 7px;
@@ -2509,7 +2504,7 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 6.3rem 0 2.4rem 0;
-  padding: 0;
+  padding: 0 0 2px 0;
   border-bottom: 2px solid #88b9cb;
   color: #222;
 }
@@ -2567,6 +2562,19 @@ html {
   padding: 0.8rem 0;
   color: #222;
 }
+.container p a {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.2rem 0;
+  color: #eb6a0a;
+  border-bottom: 1px solid #c2c3c4;
+}
+.container p a:hover {
+  border-bottom: 1px solid #eb6a0a;
+}
 .container .bulletlist li {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -2584,6 +2592,12 @@ html {
   position: absolute;
   font-size: 30px;
 }
+.container .bulletlist li a {
+  border-bottom: 1px solid #c2c3c4;
+}
+.container .bulletlist li a:hover {
+  border-bottom: 1px solid #eb6a0a;
+}
 .container a {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -2592,7 +2606,6 @@ html {
   margin: 0;
   padding: 0.2rem 0;
   color: #eb6a0a;
-  border-bottom: #c2c3c4;
 }
 .container a h1,
 .container a h2,

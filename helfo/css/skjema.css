@@ -208,7 +208,7 @@ input[type=checkbox]:focus {
 }
 .method_entrance {
   cursor: pointer;
-  display: inline-block;
+  float: left;
   vertical-align: middle;
   text-align: center;
   margin: 20px 0 10px 0;
@@ -500,179 +500,28 @@ input[type=checkbox]:focus {
     border: 1.3em solid #002e41;
   }
 }
-/*
-@media only screen and (min-width: 600px) and (max-width: 899px) {
-    .method_entrance {
-        float: none;
-        vertical-align: initial;
-        text-align: left;
-        width: 100%;
-        display: inline-block;
-        margin: 5px 0 0 0;
-        background: white;
-        border-radius: 3px;
-
-        .heading_wrapper {
-            float: left;
-            width: auto;
-            margin: 27px 0 10px 5%;
-
-            h3 {
-                text-align: left;
-                border: none;
-                font-size: 20px;
-                line-height: 24px;
-
-                &.selected {
-                    border-bottom: 4px solid #838078;
-                }
-            }
-        }
-
-        .drop_wrapper {
-            width: 63px;
-            float: left;
-            margin: 10px 0 5px 4%;
-
-            .drop {
-                position: relative;
-                display: inline-block;
-                width: 63px;
-                height: 55px;
-                margin: 0;
-
-                &.oppstart.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid #0093a7;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid #0093a7;
-                    }
-                }
-
-                &.forslag.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid #a1bf17;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid #a1bf17;
-                    }
-                }
-
-                &.metodevurdering.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                &.beslutning.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid #6cb4b5;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid #6cb4b5;
-                    }
-                }
-
-                &.implementering.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid #df9922;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid #df9922;
-                    }
-                }
-
-                .drop_triangle {
-                    border: 1.4em solid transparent;
-                    left: 1.7em;
-                }
-
-                .drop_number {
-                    top: 15px;
-                    left: 17px;
-                    font-size: 32px;
-                }
-
-                &.oppstart, &.forslag, &.metodevurdering, &.beslutning, &.implementering {
-                    .drop_triangle {
-                        border: 1.4em solid transparent;
-                        left: 1.7em;
-                        border-left: 1.4em solid @colorDarkGray;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkGray;
-                    }
-                }
-            }
-        }
-
-        &:hover {
-            background: #aeaba8;
-
-            .drop_wrapper {
-                .drop {
-                    &.oppstart {
-                        .drop_triangle {
-                            border-left: 1.4em solid #01737c;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid #01737c;
-                        }
-                    }
-
-                    &.forslag {
-                        .drop_triangle {
-                            border-left: 1.4em solid #8ca037;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid #8ca037;
-                        }
-                    }
-
-                    &.metodevurdering {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-
-                    &.beslutning {
-                        .drop_triangle {
-                            border-left: 1.4em solid #448c8a;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid #448c8a;
-                        }
-                    }
-
-                    &.implementering {
-                        .drop_triangle {
-                            border-left: 1.4em solid #c98523;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid #c98523;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}*/
+.selected span {
+  background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
+  background-size: 85px;
+  background-position: center;
+  display: block;
+  height: 90px;
+  width: 100%;
+}
+.selected h3 {
+  border-bottom: 5px solid #eb6a0a;
+}
+.passive span {
+  background: url(../img/ikoner/helfo_pil_passiv.svg) no-repeat;
+  background-size: 85px;
+  background-position: center;
+  display: block;
+  height: 90px;
+  width: 100%;
+}
+.passive:hover span {
+  background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
+  background-size: 85px;
+  background-position: center;
+}
 /*# sourceMappingURL=skjema.css.map */
