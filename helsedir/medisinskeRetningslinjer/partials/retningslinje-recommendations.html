@@ -1,24 +1,32 @@
 <article class="container">  
+ 
+<!--Header row-->
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-12">
       <header id="pageheader">
         <nav>
           <ol class="breadcrumbs clearfix">
             <li><a href="../../../layouts/forside.html">Forside</a></li>
             <li><a href="../../" class="active">Nasjonale faglige retningslinjer</a></li>
-            <li><a href="../" class="active">Nasjonal faglig retningslinje for spedbarnsernæring</a></li>
+            <li><a href="../" class="active">Spedbarnsernæring</a></li>
           </ol>
         </nav>
-        <h1>{{section.heading}}</h1>
+        <div class="headerGroup">
+          <span>{{retningslinje.title}}</span>
+          <h1>{{section.heading}}</h1>
+        </div>
       </header>
     </div>
   </div>
+
+<!--Recommendations-->
   <div class="row">
     <div class="col-md-7">
-      <div class="border"></div>
+
       <section class="recommendation" ng-repeat="recommendation in section.recommendations">
         <div class="header_wrapper">
-          <header>
+          <header class="gradingStrong">
+            <!--
             <div class="context">
               <div class="column uppercase">Anbefaling</div>
               <div class="column leftBorder">
@@ -48,8 +56,8 @@
                   </dd>
                 </dl>
               </div>
-            </div>
-            <h1>{{recommendation.heading}}</h1>
+            </div>-->
+            <h2>{{recommendation.heading}}</h2>
           </header>
         </div>
         <div class="text">
@@ -57,12 +65,7 @@
         </div>
         <div class="accordion background_information visuallyhidden">
           <h2>Kunnskapsgrunnlag </h2>
-<!--<ul class="inlineGlyphs horizontalList">
-<li><i class="fa fa-plus-circle"></i></li>
-<li><i class="fa fa-plus-circle"></i></li>
-<li><i class="fa fa-circle-o"></i></li>
-<li><i class="fa fa-circle-o"></i></li>
-</ul>-->
+
 <div class="kunnskapsgrunnlag">
   <div class="accordion nested-accordion">
     <h3>Nøkkelinfo</h3>
@@ -510,9 +513,9 @@
 </div>
 </div>
 </section>
-
-</section>
-<aside class="aside">
+</div>
+<div class="col-md-4 offset2">
+<aside class="col-md-4 offset1">
   <div class="module module_related">
     <h3 class=" module_header">Relaterte anbefalinger</h3>
     <ul class="linklist">
@@ -532,6 +535,7 @@
     <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
   </div>
 </aside>
-</div> <!-- cols -->
+</div>
+
 </div><!-- row -->
 </article> <!-- end container 

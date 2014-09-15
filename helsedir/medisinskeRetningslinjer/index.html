@@ -14,6 +14,7 @@
     <link href="../css/font_calibri.css" rel="stylesheet">
     <link href="../css/print.css" rel="stylesheet">
     <link href="../css/retningslinje_search.css" rel="stylesheet">
+    <link href="../css/retningslinjer_endringer.css" rel="stylesheet">
 
     <!--[if lte IE 8]>
     	<link href="../css/ie8fix.css" rel="stylesheet">
@@ -24,6 +25,7 @@
  
   </head>
   <body>
+
     <div id="header">
         <div class="shortcuts">
             <ul>
@@ -41,7 +43,7 @@
                 <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
                     <div class="menubutton pull-right">
                         <button class="js-expander" style="cursor: pointer;">
-                            <span>Alt innhold</span>
+                            <span>Meny</span>
                             <i class="fa fa-bars"></i>
                         </button>
                     </div>
@@ -65,7 +67,7 @@
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
                     <div class="pull-right">
                         <a class="links hidden-sm hidden-xs" href="transportside_omoss.html">OM OSS</a>
-                        <a class="links hidden-sm hidden-xs" href="#">ENGLISH</a>
+                        <a class="links hidden-sm hidden-xs" href="#">EN</a>
                     </div>
                 </div>
             </header>
@@ -263,6 +265,7 @@
 
 
 <!--Main content-->
+<span class="glyphicon glyphicon-search"></span>
    <div ng-view></div>
 
 <!--footer-->
@@ -455,7 +458,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
                             </nav>
                         </section>
@@ -501,7 +504,7 @@
                                     <a class=" linkedin" href="#"></a>
                                 </div>
                             </div>
-                        </section>
+                        </section> 
                     </div>
                 </div>
             </div>
@@ -536,6 +539,7 @@
     <script type="text/javascript" src="../js/retningslinjecontrollers.js"></script> 
     <script type="text/javascript" src="../js/retningslinjeServices.js"></script> 
     <script type="text/javascript" src="../js/retningslinje.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>
     <script>
     //We need to wait until Angular is finished with the DOM
         setTimeout(function(){
