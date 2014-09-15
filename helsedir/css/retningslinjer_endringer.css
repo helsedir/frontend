@@ -1,0 +1,65 @@
+#pageheader {
+  background: #ffffff;
+  border-left: 19px solid #004e66;
+}
+#pageheader nav {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+#pageheader .headerGroup {
+  color: #ffffff;
+  background: rgba(119, 67, 141, 0.89);
+  background-image: url("../img/Livslinje-enkel-lilla.svg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  overflow: hidden;
+}
+#pageheader .headerGroup h1 {
+  color: #ffffff;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-top: 0px;
+  padding-bottom: 45px;
+  display: block;
+}
+#pageheader .headerGroup span {
+  font: "Calibri";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.recommendation {
+  padding: 0;
+  background: #ffffff;
+}
+.recommendation .header_wrapper .gradingStrong {
+  border-left: 5px solid #77438d;
+}
+.recommendation .header_wrapper header.gradingWeak {
+  border-left: 5px solid #69b4b6;
+}
+.recommendation .header_wrapper header.gradingNone {
+  border-left: 5px solid #aeaba8;
+}
+.recommendation .header_wrapper header h2 {
+  display: block;
+  color: #004e66;
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 45px;
+  padding-top: 30px;
+}
+.recommendation .header_wrapper header h2:before {
+  position: absolute;
+  left: 15px;
+  content: "\f107";
+  font-family: "FontAwesome";
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=retningslinjer_endringer.css.map */
