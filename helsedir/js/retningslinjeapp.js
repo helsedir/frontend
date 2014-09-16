@@ -19,3 +19,4 @@ retningslinjeApp.config(['$routeProvider',
 			redirectTo: '/medisinskeRetningslinjer'
 		});
 	}]);
+
