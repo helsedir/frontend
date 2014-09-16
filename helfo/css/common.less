@@ -137,12 +137,12 @@ body {
         &:focus, &:visited:focus {
             h2, h4, p {
                 background: @colorDarkBlue;
-                color: white !important;
+                color: white;
                 outline: 0;
             }
 
             background: @colorDarkBlue;
-            color: white !important;
+            color: white;
             outline: 0;
         }
 
@@ -625,6 +625,16 @@ body {
         }
     }
 
+    .numberedlist {
+        list-style-position: outside;
+        margin-top: 10px;
+
+        li {
+            margin: 0 0 10px 0;
+            display: block;
+        }
+    }
+
     .borderbox {
         margin-bottom: 20px;
         margin-top: 10px;
@@ -658,27 +668,22 @@ body {
     }
 
     .calltoaction {
-        border: 2px solid @colorDarkBlue;
+        margin: 30px 0 0 0;
+        min-width: 0;
+        border: none;
+        padding: 10px 35px 10px 10px;
+        background: #6e8c22;
         color: white;
-        padding: 10px 20px 10px 45px;
-        margin: 20px 30px 30px 0;
         font-family: @roboto;
         font-size: 20px;
         line-height: 24px;
         display: inline-block;
-        min-width: 240px;
-        background: @colorDarkBlue url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
-        background-position: 20px 50%;
-        background-size: 10px;
         cursor: pointer;
         text-align: left;
         transition: all 0.5s;
 
-        &:hover, &:focus {
-            color: white;
-            background: @colorDarkBlueHover url('../img/ikoner/ikon_pilmothoyre_hvit.png') no-repeat;
-            background-position: 20px 50%;
-            background-size: 10px;
+        &:hover {
+            background: #536f2b;
         }
 
         &.secondary {
@@ -981,6 +986,7 @@ body {
         &.module_feedback {
             .module_description {
                 margin-top: -40px;
+                margin-bottom: 15px;
             }
 
             .module_header {
@@ -989,15 +995,6 @@ body {
 
             .calltoaction {
                 float: right;
-                background: #6e8c22;
-                margin: 30px 0 0 0;
-                min-width: 0;
-                border: none;
-                padding: 10px 35px 10px 10px;
-
-                &:hover {
-                    background: #536f2b;
-                }
             }
 
             input[type=text] {
@@ -1716,6 +1713,7 @@ body {
         &:hover {
             text-decoration: none;
             box-shadow: @colorMediumBlue 0 0 0 2px;
+            border: none;
 
             h2 {
                 text-decoration: none;
@@ -2297,6 +2295,24 @@ html {
             position: absolute;
             font-size: 30px;
         }
+
+        a {
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
+    }
+
+    .numberedlist li {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: @roboto;
+        font-weight: 400;
+        margin: 0 0 0 0;
+        padding: 0.8rem 0;
+        color: #222;
 
         a {
             border-bottom: 1px solid #c2c3c4;

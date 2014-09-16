@@ -98,16 +98,22 @@ input.radio {
   font-size: 18px;
   color: #0093a7;
 }
+.navigate_forward a:focus,
+.navigate_back a:focus,
+.navigate_forward a:focus:visited,
+.navigate_back a:focus:visited {
+  background: #e0deca;
+}
 .navigate_forward {
   background: url(../img/ikoner/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
   background-position: 100% 60%;
-  background-size: 28px;
+  background-size: 28px 28px;
   padding-right: 36px;
 }
 .navigate_back {
   background: url(../img/ikoner/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
   background-position: 0 60%;
-  background-size: 28px;
+  background-size: 28px 28px;
   padding-left: 36px;
 }
 .border {
@@ -239,124 +245,8 @@ a.method_entrance .drop_wrapper {
   display: inline-block;
   width: 100%;
 }
-a.method_entrance .drop_wrapper .drop {
-  position: relative;
-  display: block;
-  width: 78px;
-  height: 95px;
-  margin: auto;
-  overflow: hidden;
-}
-a.method_entrance .drop_wrapper .drop .drop_triangle {
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  border: 2.1em solid transparent;
-  border-radius: 2.1em;
-  left: 5.5em;
-  top: 0em;
-  transition: all 0.5s;
-}
-a.method_entrance .drop_wrapper .drop .drop_circle {
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  border-radius: 2em;
-  left: 0em;
-  top: 0.08333333333333333em;
-  transition: all 0.5s;
-}
-a.method_entrance .drop_wrapper .drop .drop_number {
-  position: absolute;
-  display: inline-block;
-  font-family: 'Roboto';
-  color: white;
-  top: 20px;
-  left: 20px;
-  font-size: 50px;
-}
-a.method_entrance .drop_wrapper .drop.oppstart.selected .drop_triangle {
-  border-left: 2.1em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.oppstart.selected .drop_circle {
-  border: 2em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.forslag.selected .drop_triangle {
-  border-left: 2.1em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.forslag.selected .drop_circle {
-  border: 2em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_triangle {
-  border-left: 2.1em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_circle {
-  border: 2em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.beslutning.selected .drop_triangle {
-  border-left: 2.1em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.beslutning.selected .drop_circle {
-  border: 2em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.implementering.selected .drop_triangle {
-  border-left: 2.1em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.implementering.selected .drop_circle {
-  border: 2em solid #004e66;
-}
-a.method_entrance .drop_wrapper .drop.oppstart .drop_triangle,
-a.method_entrance .drop_wrapper .drop.forslag .drop_triangle,
-a.method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle,
-a.method_entrance .drop_wrapper .drop.beslutning .drop_triangle,
-a.method_entrance .drop_wrapper .drop.implementering .drop_triangle {
-  border: 2.1em solid transparent;
-  left: 2.7em;
-  border-left: 2.1em solid #aeaba8;
-}
-a.method_entrance .drop_wrapper .drop.oppstart .drop_circle,
-a.method_entrance .drop_wrapper .drop.forslag .drop_circle,
-a.method_entrance .drop_wrapper .drop.metodevurdering .drop_circle,
-a.method_entrance .drop_wrapper .drop.beslutning .drop_circle,
-a.method_entrance .drop_wrapper .drop.implementering .drop_circle {
-  border: 2em solid #aeaba8;
-}
 a.method_entrance:hover {
   border: none;
-}
-a.method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
-  border-left: 2.1em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
-  border: 2em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
-  border-left: 2.1em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
-  border: 2em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-  border-left: 2.1em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-  border: 2em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
-  border-left: 2.1em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
-  border: 2em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
-  border-left: 2.1em solid #002e41;
-}
-a.method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
-  border: 2em solid #002e41;
 }
 @media only screen and (max-width: 1199px) {
   .breadcrumbs_schema li {
@@ -412,107 +302,10 @@ a.method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
   .method_entrance .heading_wrapper h3.selected {
     border-bottom: 2px solid #838078;
   }
-  .method_entrance .drop_wrapper {
-    width: 100%;
-    float: left;
-    margin: 0;
-  }
-  .method_entrance .drop_wrapper .drop {
-    position: relative;
-    display: inline-block;
-    width: 63px;
-    height: 55px;
-    margin: 0;
-  }
-  .method_entrance .drop_wrapper .drop.oppstart.selected .drop_triangle {
-    border-left: 1.4em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.oppstart.selected .drop_circle {
-    border: 1.3em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.forslag.selected .drop_triangle {
-    border-left: 1.4em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.forslag.selected .drop_circle {
-    border: 1.3em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_triangle {
-    border-left: 1.4em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.metodevurdering.selected .drop_circle {
-    border: 1.3em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.beslutning.selected .drop_triangle {
-    border-left: 1.4em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.beslutning.selected .drop_circle {
-    border: 1.3em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.implementering.selected .drop_triangle {
-    border-left: 1.4em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop.implementering.selected .drop_circle {
-    border: 1.3em solid #004e66;
-  }
-  .method_entrance .drop_wrapper .drop .drop_triangle {
-    border: 1.4em solid transparent;
-    left: 1.7em;
-  }
-  .method_entrance .drop_wrapper .drop .drop_number {
-    top: 15px;
-    left: 17px;
-    font-size: 32px;
-  }
-  .method_entrance .drop_wrapper .drop.oppstart .drop_triangle,
-  .method_entrance .drop_wrapper .drop.forslag .drop_triangle,
-  .method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle,
-  .method_entrance .drop_wrapper .drop.beslutning .drop_triangle,
-  .method_entrance .drop_wrapper .drop.implementering .drop_triangle {
-    border: 1.4em solid transparent;
-    left: 1.7em;
-    border-left: 1.4em solid #aeaba8;
-  }
-  .method_entrance .drop_wrapper .drop.oppstart .drop_circle,
-  .method_entrance .drop_wrapper .drop.forslag .drop_circle,
-  .method_entrance .drop_wrapper .drop.metodevurdering .drop_circle,
-  .method_entrance .drop_wrapper .drop.beslutning .drop_circle,
-  .method_entrance .drop_wrapper .drop.implementering .drop_circle {
-    border: 1.3em solid #aeaba8;
-  }
-  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
-    border-left: 1.4em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
-    border: 1.3em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
-    border-left: 1.4em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
-    border: 1.3em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
-    border-left: 1.4em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
-    border: 1.3em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
-    border-left: 1.4em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
-    border: 1.3em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
-    border-left: 1.4em solid #002e41;
-  }
-  .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
-    border: 1.3em solid #002e41;
-  }
 }
 .selected span {
   background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
-  background-size: 85px;
+  background-size: 85px 85px;
   background-position: center;
   display: block;
   height: 90px;
@@ -523,7 +316,7 @@ a.method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
 }
 .passive span {
   background: url(../img/ikoner/helfo_pil_passiv.svg) no-repeat;
-  background-size: 85px;
+  background-size: 85px 85px;
   background-position: center;
   display: block;
   height: 90px;
@@ -531,7 +324,7 @@ a.method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
 }
 .passive:hover span {
   background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
-  background-size: 85px;
+  background-size: 85px 85px;
   background-position: center;
 }
 /*# sourceMappingURL=skjema.css.map */

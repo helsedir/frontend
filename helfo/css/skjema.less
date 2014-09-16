@@ -134,20 +134,24 @@ input.radio {
             font-size: 18px;
             color: @colorMediumBlue;
         }
+
+        &:focus, &:focus:visited {
+            background: #e0deca;
+        }
     }
 }
 
 .navigate_forward {
     background: url(../img/ikoner/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
     background-position: 100% 60%;
-    background-size: 28px;
+    background-size: 28px 28px;
     padding-right: 36px;
 }
 
 .navigate_back {
     background: url(../img/ikoner/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
     background-position: 0 60%;
-    background-size: 28px;
+    background-size: 28px 28px;
     padding-left: 36px;
 }
 
@@ -288,170 +292,10 @@ a.method_entrance {
     .drop_wrapper {
         display: inline-block;
         width: 100%;
-
-        .drop {
-            position: relative;
-            display: block;
-            width: 78px;
-            height: 95px;
-            margin: auto;
-            overflow: hidden;
-
-            .drop_triangle {
-                position: absolute;
-                display: inline-block;
-                width: 0;
-                height: 0;
-                line-height: 0;
-                border: 2.1em solid transparent;
-                border-radius: 2.1em;
-                left: 5.5em;
-                top: 0em;
-                transition: all 0.5s;
-            }
-
-            .drop_circle {
-                position: absolute;
-                display: inline-block;
-                width: 0;
-                height: 0;
-                line-height: 0;
-                border-radius: 2em;
-                left: 0em;
-                top: 0.08333333333333333em;
-                transition: all 0.5s;
-            }
-
-            .drop_number {
-                position: absolute;
-                display: inline-block;
-                font-family: @roboto;
-                color: white;
-                top: 20px;
-                left: 20px;
-                font-size: 50px;
-            }
-
-            &.oppstart.selected {
-                .drop_triangle {
-                    border-left: 2.1em solid @colorDarkBlue;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkBlue;
-                }
-            }
-
-            &.forslag.selected {
-                .drop_triangle {
-                    border-left: 2.1em solid @colorDarkBlue;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkBlue;
-                }
-            }
-
-            &.metodevurdering.selected {
-                .drop_triangle {
-                    border-left: 2.1em solid @colorDarkBlue;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkBlue;
-                }
-            }
-
-            &.beslutning.selected {
-                .drop_triangle {
-                    border-left: 2.1em solid @colorDarkBlue;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkBlue;
-                }
-            }
-
-            &.implementering.selected {
-                .drop_triangle {
-                    border-left: 2.1em solid @colorDarkBlue;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkBlue;
-                }
-            }
-
-            &.oppstart, &.forslag, &.metodevurdering, &.beslutning, &.implementering {
-                .drop_triangle {
-                    border: 2.1em solid transparent;
-                    left: 2.7em;
-                    border-left: 2.1em solid @colorDarkGray;
-                }
-
-                .drop_circle {
-                    border: 2em solid @colorDarkGray;
-                }
-            }
-        }
     }
 
     &:hover {
         border: none;
-
-        .drop_wrapper {
-            .drop {
-                &.oppstart {
-                    .drop_triangle {
-                        border-left: 2.1em solid @colorDarkBlueHover;
-                    }
-
-                    .drop_circle {
-                        border: 2em solid @colorDarkBlueHover;
-                    }
-                }
-
-                &.forslag {
-                    .drop_triangle {
-                        border-left: 2.1em solid @colorDarkBlueHover;
-                    }
-
-                    .drop_circle {
-                        border: 2em solid @colorDarkBlueHover;
-                    }
-                }
-
-                &.metodevurdering {
-                    .drop_triangle {
-                        border-left: 2.1em solid @colorDarkBlueHover;
-                    }
-
-                    .drop_circle {
-                        border: 2em solid @colorDarkBlueHover;
-                    }
-                }
-
-                &.beslutning {
-                    .drop_triangle {
-                        border-left: 2.1em solid @colorDarkBlueHover;
-                    }
-
-                    .drop_circle {
-                        border: 2em solid @colorDarkBlueHover;
-                    }
-                }
-
-                &.implementering {
-                    .drop_triangle {
-                        border-left: 2.1em solid @colorDarkBlueHover;
-                    }
-
-                    .drop_circle {
-                        border: 2em solid @colorDarkBlueHover;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -520,156 +364,13 @@ a.method_entrance {
                 }
             }
         }
-
-        .drop_wrapper {
-            width: 100%;
-            float: left;
-            margin: 0;
-
-            .drop {
-                position: relative;
-                display: inline-block;
-                width: 63px;
-                height: 55px;
-                margin: 0;
-
-                &.oppstart.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                &.forslag.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                &.metodevurdering.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                &.beslutning.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                &.implementering.selected {
-                    .drop_triangle {
-                        border-left: 1.4em solid @colorDarkBlue;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkBlue;
-                    }
-                }
-
-                .drop_triangle {
-                    border: 1.4em solid transparent;
-                    left: 1.7em;
-                }
-
-                .drop_number {
-                    top: 15px;
-                    left: 17px;
-                    font-size: 32px;
-                }
-
-                &.oppstart, &.forslag, &.metodevurdering, &.beslutning, &.implementering {
-                    .drop_triangle {
-                        border: 1.4em solid transparent;
-                        left: 1.7em;
-                        border-left: 1.4em solid @colorDarkGray;
-                    }
-
-                    .drop_circle {
-                        border: 1.3em solid @colorDarkGray;
-                    }
-                }
-            }
-        }
-
-        &:hover {
-            .drop_wrapper {
-                .drop {
-                    &.oppstart {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-
-                    &.forslag {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-
-                    &.metodevurdering {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-
-                    &.beslutning {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-
-                    &.implementering {
-                        .drop_triangle {
-                            border-left: 1.4em solid @colorDarkBlueHover;
-                        }
-
-                        .drop_circle {
-                            border: 1.3em solid @colorDarkBlueHover;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
 .selected {
     span {
         background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
-        background-size: 85px;
+        background-size: 85px 85px;
         background-position: center;
         display: block;
         height: 90px;
@@ -684,7 +385,7 @@ a.method_entrance {
 .passive {
     span {
         background: url(../img/ikoner/helfo_pil_passiv.svg) no-repeat;
-        background-size: 85px;
+        background-size: 85px 85px;
         background-position: center;
         display: block;
         height: 90px;
@@ -694,7 +395,7 @@ a.method_entrance {
     &:hover {
         span {
             background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
-            background-size: 85px;
+            background-size: 85px 85px;
             background-position: center;
         }
     }

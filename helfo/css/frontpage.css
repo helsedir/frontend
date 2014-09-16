@@ -20,7 +20,7 @@
 }
 .container .entrancebutton.menu button {
   background: white;
-  border: none;
+  border: 1px solid #d9dadb;
   height: 220px;
   width: 100%;
   -moz-transition: all 0.5s;
@@ -42,7 +42,7 @@
   outline: 0;
 }
 .container .entrancebutton.menu button:hover {
-  background: white;
+  background: #d9dadb;
 }
 .container .entrancebutton.menu button:hover span {
   background: #ffffff url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
@@ -69,7 +69,7 @@
   color: #58585a;
   text-decoration: none;
   border-bottom: 0;
-  border: #badde9 0 0 0 2px;
+  border: 1px solid #d9dadb;
   border-radius: 5px;
   background: white;
   -moz-transition: all 0.5s;
@@ -97,6 +97,7 @@
   margin-bottom: 0;
 }
 .container .entrancebutton a p {
+  font-size: 1.8rem;
   line-height: 23px;
   position: relative;
   margin-left: 0;
@@ -106,11 +107,15 @@
   text-align: center;
 }
 .container .entrancebutton a:focus {
-  background: #002e41;
+  background: #d9dadb;
 }
 .container .entrancebutton a:focus h2,
 .container .entrancebutton a:focus p {
-  background: #002e41;
+  background: #d9dadb;
+  color: #222;
+}
+.container .entrancebutton a:hover {
+  background: #d9dadb;
 }
 .container .entrancebutton a:hover span.avtale {
   background: #ffffff url('../img/ikoner/hovedinngang_avtale_hover.svg') no-repeat;

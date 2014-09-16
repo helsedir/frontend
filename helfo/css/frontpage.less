@@ -43,7 +43,7 @@
         &.menu {
             button {
                 background: white;
-                border: none;
+                border: 1px solid #d9dadb;
                 height: 220px;
                 width: 100%;
                 -moz-transition: all 0.5s;
@@ -69,7 +69,7 @@
                 }
 
                 &:hover {
-                    background: white;
+                    background: #d9dadb;
 
                     span {
                         background: #ffffff url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
@@ -102,7 +102,7 @@
             color: #58585a;
             text-decoration: none;
             border-bottom: 0;
-            border: #badde9 0 0 0 2px;
+            border: 1px solid #d9dadb;
             border-radius: 5px;
             background: white;
             -moz-transition: all 0.5s;
@@ -133,6 +133,7 @@
             }
 
             p {
+                font-size: 1.8rem;
                 line-height: 23px;
                 position: relative;
                 margin-left: 0;
@@ -143,14 +144,17 @@
             }
 
             &:focus {
-                background: @colorDarkBlueHover;
+                background: #d9dadb;
 
                 h2, p {
-                    background: @colorDarkBlueHover;
+                    background: #d9dadb;
+                    color: #222;
                 }
             }
 
             &:hover {
+                background: #d9dadb;
+
                 span {
                     &.avtale {
                         background: #ffffff url('../img/ikoner/hovedinngang_avtale_hover.svg') no-repeat;
