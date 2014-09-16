@@ -1621,7 +1621,7 @@ body {
 }
 .container .refinesearch,
 .container-fluid .refinesearch {
-  background: #88BACB;
+  background: #badde9;
   padding: 15px 15px 5px 15px;
   width: 300px;
 }
@@ -1796,7 +1796,6 @@ body {
   width: 100%;
   display: inline-block;
   padding: 20px 30px 50px 30px;
-  box-shadow: #badde9 0 0 0 2px;
 }
 .container .transportsideknapp h2,
 .container-fluid .transportsideknapp h2 {
@@ -1804,7 +1803,6 @@ body {
   line-height: 3.6rem;
   font-weight: 300;
   margin: 0;
-  border-bottom: 2px dotted #004e66;
   padding-bottom: 7px;
   margin-bottom: 10px;
   color: #0093a7;
@@ -1816,8 +1814,16 @@ body {
 .container .transportsideknapp:hover,
 .container-fluid .transportsideknapp:hover {
   text-decoration: none;
-  box-shadow: #0093a7 0 0 0 2px;
+  background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
+  background-size: 46px;
+  background-position: 96% 90%;
   border: none;
+}
+.container .transportsideknapp:hover h2,
+.container-fluid .transportsideknapp:hover h2,
+.container .transportsideknapp:hover p,
+.container-fluid .transportsideknapp:hover p {
+  color: #222;
 }
 .container .transportsideknapp:hover h2,
 .container-fluid .transportsideknapp:hover h2 {
@@ -2248,10 +2254,10 @@ html {
   color: #222;
 }
 .container .ingress {
-  font-size: 2.4rem;
-  line-height: 3.4rem;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 1.6rem 0 1.6rem 0;
   padding: 0 1.6rem;
   color: #222;
@@ -2269,7 +2275,7 @@ html {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   padding: 0.2rem 0;
   color: #eb6a0a;
@@ -2320,7 +2326,7 @@ html {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   padding: 0.2rem 0;
   color: #eb6a0a;

@@ -43,13 +43,13 @@
         &.menu {
             button {
                 background: white;
-                border: 1px solid #d9dadb;
                 height: 220px;
                 width: 100%;
                 -moz-transition: all 0.5s;
                 -o-transition: all 0.5s;
                 -webkit-transition: all 0.5s;
                 border-radius: 4px;
+                border: none;
 
                 h2 {
                     margin: auto;
@@ -59,27 +59,19 @@
                 }
 
                 &.js-expanded {
-                    span {
-                        background: white url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                        color: #222;
-                        outline: 0;
-                    }
+                    background: #badde9;
+                    border: none;
+                    outline: none;
                 }
 
                 &:hover {
-                    background: #d9dadb;
-
-                    span {
-                        background: #ffffff url('../img/ikoner/hovedinngang_altinnhold_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
+                    background: #badde9;
                 }
 
                 &:focus {
-                    background: white;
+                    background: #badde9;
+                    border: none;
+                    outline: none;
                 }
 
                 span {
@@ -102,7 +94,6 @@
             color: #58585a;
             text-decoration: none;
             border-bottom: 0;
-            border: 1px solid #d9dadb;
             border-radius: 5px;
             background: white;
             -moz-transition: all 0.5s;
@@ -144,48 +135,16 @@
             }
 
             &:focus {
-                background: #d9dadb;
+                background: #badde9;
 
                 h2, p {
-                    background: #d9dadb;
+                    background: #badde9;
                     color: #222;
                 }
             }
 
             &:hover {
-                background: #d9dadb;
-
-                span {
-                    &.avtale {
-                        background: #ffffff url('../img/ikoner/hovedinngang_avtale_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
-
-                    &.helseaktor {
-                        background: #ffffff url('../img/ikoner/hovedinngang_helseaktor_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
-
-                    &.oppgjor {
-                        background: #ffffff url('../img/ikoner/hovedinngang_oppgjor_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
-
-                    &.takster {
-                        background: #ffffff url('../img/ikoner/hovedinngang_takster_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
-
-                    &.skjema {
-                        background: #ffffff url('../img/ikoner/hovedinngang_skjema_hover.svg') no-repeat;
-                        background-size: 90px;
-                        background-position: center;
-                    }
-                }
+                background: #badde9;
             }
         }
 
@@ -463,7 +422,7 @@
 
 .frontpagewrapper {
     &.grey {
-        background: #DEDDDB;
+        background: #d9dadb;
     }
 
     &.white {
@@ -512,12 +471,10 @@
             a {
                 h2 {
                     margin: 15px 0 0 12px;
-                    color: white;
                 }
 
                 p {
                     margin: 0 0 15px 12px;
-                    color: white;
                 }
             }
 

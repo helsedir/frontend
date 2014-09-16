@@ -121,8 +121,9 @@ input.radio {
     margin-top: 30px;
 
     a {
-        border: none;
+        margin: 0;
         padding: 10px 15px;
+        border: none;
 
         &:hover {
             border: none;
@@ -130,9 +131,16 @@ input.radio {
             border-radius: 19.8rem;
         }
 
+        &:visited {
+            color: #756d6a;
+        }
+
         span {
-            font-size: 18px;
-            color: @colorMediumBlue;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            font-family: @roboto;
+            font-weight: 400;
+            color: #756d6a;
         }
 
         &:focus, &:focus:visited {
@@ -142,14 +150,14 @@ input.radio {
 }
 
 .navigate_forward {
-    background: url(../img/ikoner/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
+    background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
     background-position: 100% 60%;
     background-size: 28px 28px;
     padding-right: 36px;
 }
 
 .navigate_back {
-    background: url(../img/ikoner/pil_forrigesteg_forrigeside_mellomblaa.svg) no-repeat;
+    background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
     background-position: 0 60%;
     background-size: 28px 28px;
     padding-left: 36px;
