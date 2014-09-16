@@ -117,7 +117,18 @@ $colorBlack: #000000;
 
         /* Styling for EKG border  */
         .textContainer {
-            border-left: 2px solid #77438d;
+            &.gradingStrong {
+                border-left: 2px solid #77438d;
+            }
+            &.gradingWeak {
+                border-left: 2px solid #69b4b6;
+            }
+            &.gradingNone {
+                border-left: 2px solid #aeaba8;
+            }
+            &.gradingBlank {
+                border-left: 2px solid #fffff1;
+            }
             padding-left: 20px;
             padding-top: 0;
 
@@ -156,12 +167,20 @@ $colorBlack: #000000;
     .closepane{
     	width: 100%;
     	height: 30px;
-    	background-color: $colorPurple;
     	display: block;
     	i{
     		color: $colorWhite;
     		margin-left: 20px;
     		font-size: 28px;
+    	}
+    	&.gradingStrong {
+    	    background-color: #77438d;
+    	}
+    	&.gradingWeak {
+    	    background-color: #69b4b6;
+    	}
+    	&.gradingNone {
+    	    background-color: #aeaba8;
     	}
     }
 }

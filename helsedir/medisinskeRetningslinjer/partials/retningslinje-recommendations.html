@@ -29,8 +29,10 @@
           </header>
         </div>
         <div class="text">
-          <div class="textContainer">
-            <img class="pulse" src="../../../img/modules/line-ekg-purple.svg">
+          <div class="textContainer" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}">
+            <img ng-show="recommendation.strength == 'strong'" class="pulse" src="../../../img/modules/line-ekg-purple.svg">
+            <img ng-show="recommendation.strength == 'weak'" class="pulse" src="../../../img/modules/line-ekg-seagreen.svg">
+            <img ng-show="recommendation.strength == null" class="pulse" src="../../../img/modules/line-ekg-gray.svg">
             <p>{{recommendation.text}}</p>
           </div>
           <nav>
@@ -50,7 +52,7 @@
             <div class="tab-pane" id="referanser"></div>
           </div>
         </div>
-        <a href="#" class="closepane weak"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="closepane" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}"><i class="fa fa-angle-up"></i></a>
       </section>
       <aside class="aside">
         <div class="module module_related">

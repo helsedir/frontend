@@ -85,9 +85,20 @@
   /* Navigational tabs within recommendation */
 }
 .recommendation .text .textContainer {
-  border-left: 2px solid #77438d;
   padding-left: 20px;
   padding-top: 0;
+}
+.recommendation .text .textContainer.gradingStrong {
+  border-left: 2px solid #77438d;
+}
+.recommendation .text .textContainer.gradingWeak {
+  border-left: 2px solid #69b4b6;
+}
+.recommendation .text .textContainer.gradingNone {
+  border-left: 2px solid #aeaba8;
+}
+.recommendation .text .textContainer.gradingBlank {
+  border-left: 2px solid #fffff1;
 }
 .recommendation .text .textContainer img.pulse {
   position: absolute;
@@ -119,13 +130,21 @@
 .recommendation .closepane {
   width: 100%;
   height: 30px;
-  background-color: rgba(119, 67, 141, 0.89);
   display: block;
 }
 .recommendation .closepane i {
   color: #ffffff;
   margin-left: 20px;
   font-size: 28px;
+}
+.recommendation .closepane.gradingStrong {
+  background-color: #77438d;
+}
+.recommendation .closepane.gradingWeak {
+  background-color: #69b4b6;
+}
+.recommendation .closepane.gradingNone {
+  background-color: #aeaba8;
 }
 
 /*# sourceMappingURL=retningslinjer_endringer.css.map */
