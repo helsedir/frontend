@@ -57,6 +57,9 @@
 .recommendation .header_wrapper header.gradingNone {
   border-left: 5px solid #aeaba8;
 }
+.recommendation .header_wrapper header.gradingBlank {
+  border-left: 5px solid #fffff1;
+}
 .recommendation .header_wrapper header h2 {
   display: block;
   color: #004e66;
@@ -73,7 +76,16 @@
   cursor: pointer;
 }
 .recommendation .text {
-  padding-left: 50px;
+  margin-left: 50px;
+  border-left: 3px solid #77438d;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.recommendation .text img.pulse {
+  position: absolute;
+  left: -18px;
+  top: 0px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=retningslinjer_endringer.css.map */

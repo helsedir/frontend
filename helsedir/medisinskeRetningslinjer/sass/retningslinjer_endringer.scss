@@ -88,6 +88,9 @@ $colorWhite: #ffffff;
 		header.gradingNone{
 				border-left: 5px solid #aeaba8;
 		}
+		header.gradingBlank{
+				border-left: 5px solid #fffff1;
+		}
 
 		header{
 
@@ -110,6 +113,15 @@ $colorWhite: #ffffff;
 	}
 
 	.text{
-		padding-left: 50px;
+		margin-left: 50px;
+		border-left: 3px solid #77438d;
+		padding-right: 30px;
+		padding-left: 10px;
+		img.pulse{
+			position: absolute;
+			left: -18px;
+			top: 0px;
+			height: 100px;
+		}
 	}
 }

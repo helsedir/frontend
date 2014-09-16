@@ -141,8 +141,11 @@ function runJqueryUIStuff(){
 	  jQuery('.header_wrapper').addClass('closed');
 	  
 	  
-	  jQuery('.recommendation h2').on('click', function() {
-	  	$(this).parent().toggleClass('gradingWeak', 2000);
+	  jQuery('.recommendation').on('click', 'h2', function() {
+	  	$(this).parent().toggleClass("gradingBlank", 300);
+	  	//$(this).parent().toggleClass("gradingWeak", 500);
+	  	
+	  	
 	  	var wrapper = jQuery(this).parent().parent();
 	  		slider(wrapper, wrapper.siblings('.text, .background_information'));
 	  });
