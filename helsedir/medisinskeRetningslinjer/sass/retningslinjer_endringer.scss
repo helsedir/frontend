@@ -117,6 +117,12 @@ $colorBlack: #000000;
 
         /* Styling for EKG border  */
         .textContainer {
+        	img.pulse {
+        		top: 40px;
+        	    position: absolute;
+        	    left: -7px;
+        	    height: 57px;
+        	}
             &.gradingStrong {
                 border-left: 2px solid #77438d;
             }
@@ -125,6 +131,9 @@ $colorBlack: #000000;
             }
             &.gradingNone {
                 border-left: 2px solid #aeaba8;
+                img.pulse {
+                	top:0px;
+                }
             }
             &.gradingBlank {
                 border-left: 2px solid #fffff1;
@@ -133,9 +142,9 @@ $colorBlack: #000000;
             padding-top: 0;
 
             img.pulse {
+            	top: 40px;
                 position: absolute;
                 left: -7px;
-                top: 40px;
                 height: 57px;
             }
 

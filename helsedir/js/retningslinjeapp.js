@@ -1,5 +1,6 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
 	'ngRoute', 'retningslinjeControllers', 'retningslinjeServices']);
+
 retningslinjeApp.config(['$routeProvider', 
 	function($routeProvider){
 		$routeProvider.when('/medisinskeRetningslinjer', {

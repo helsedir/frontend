@@ -30,7 +30,7 @@
         </div>
         <div class="text">
           <div class="textContainer" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}">
-            <img ng-show="recommendation.strength == 'strong'" class="pulse" src="../../../img/modules/line-ekg-purple.svg">
+            <img  ng-show="recommendation.strength == 'strong'" class="pulse" src="../../../img/modules/line-ekg-purple.svg">
             <img ng-show="recommendation.strength == 'weak'" class="pulse" src="../../../img/modules/line-ekg-seagreen.svg">
             <img ng-show="recommendation.strength == null" class="pulse" src="../../../img/modules/line-ekg-gray.svg">
             <i ng-hide="recommendation.strength == null" class="icon" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}">i</i>

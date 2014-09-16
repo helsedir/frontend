@@ -90,6 +90,12 @@
   /*Grading icon*/
   /*Grading text*/
 }
+.recommendation .text .textContainer img.pulse {
+  top: 40px;
+  position: absolute;
+  left: -7px;
+  height: 57px;
+}
 .recommendation .text .textContainer.gradingStrong {
   border-left: 2px solid #77438d;
 }
@@ -99,13 +105,16 @@
 .recommendation .text .textContainer.gradingNone {
   border-left: 2px solid #aeaba8;
 }
+.recommendation .text .textContainer.gradingNone img.pulse {
+  top: 0px;
+}
 .recommendation .text .textContainer.gradingBlank {
   border-left: 2px solid #fffff1;
 }
 .recommendation .text .textContainer img.pulse {
+  top: 40px;
   position: absolute;
   left: -7px;
-  top: 40px;
   height: 57px;
 }
 .recommendation .text .textContainer .icon {
