@@ -121,9 +121,13 @@ input.radio {
     margin-top: 30px;
 
     a {
+        border: none;
+        padding: 10px 15px;
+
         &:hover {
-            border-bottom: 1px solid @colorMediumBlue;
-            text-decoration: none;
+            border: none;
+            background: #e0deca;
+            border-radius: 19.8rem;
         }
 
         span {
@@ -254,13 +258,14 @@ input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=chec
     }
 }
 
-.method_entrance {
+a.method_entrance {
     cursor: pointer;
     float: left;
     vertical-align: middle;
     text-align: center;
     margin: 20px 0 10px 0;
     width: 16%;
+    border: none;
 
     &:first-of-type {
         margin-left: 0;
@@ -392,6 +397,8 @@ input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=chec
     }
 
     &:hover {
+        border: none;
+
         .drop_wrapper {
             .drop {
                 &.oppstart {
