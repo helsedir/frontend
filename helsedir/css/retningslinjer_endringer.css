@@ -87,6 +87,8 @@
 .recommendation .text .textContainer {
   padding-left: 20px;
   padding-top: 0;
+  /*Grading icon*/
+  /*Grading text*/
 }
 .recommendation .text .textContainer.gradingStrong {
   border-left: 2px solid #77438d;
@@ -103,8 +105,37 @@
 .recommendation .text .textContainer img.pulse {
   position: absolute;
   left: -7px;
-  top: 0px;
+  top: 40px;
   height: 57px;
+}
+.recommendation .text .textContainer .icon {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: "soho gothic pro medium";
+  font-size: 20px;
+  color: #ffffff;
+  padding: 3px 16px;
+  font-weight: bold;
+}
+.recommendation .text .textContainer .icon.gradingStrong {
+  background-color: #77438d;
+}
+.recommendation .text .textContainer .icon.gradingWeak {
+  background-color: #69b4b6;
+}
+.recommendation .text .textContainer .icon.gradingNone {
+  background-color: #aeaba8;
+}
+.recommendation .text .textContainer .recommendationstrength {
+  font-family: "Calibri-Bold";
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.recommendation .text .textContainer .recommendationstrength.gradingStrong {
+  color: #77438d;
+}
+.recommendation .text .textContainer .recommendationstrength.gradingWeak {
+  color: #69b4b6;
 }
 .recommendation .text nav {
   margin-top: 45px;
