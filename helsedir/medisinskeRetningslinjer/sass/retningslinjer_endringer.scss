@@ -1,5 +1,5 @@
-$fontCalibri: 'Calibri';
-$fontCalibriBold: 'Calibri-Bold';
+$fontCalibri: "Calibri";
+$fontCalibriBold: "Calibri-Bold";
 $fontSoho: "soho gothic pro medium";
 $fontSohoLight: "Soho Gothic W01 Light";
 $fontSohoRegular: "Soho Gothic W01 Regular";
@@ -13,7 +13,7 @@ $colorLightBlueHover: #4f8889;
 $colorOrange: #df9922;
 $colorOrangeHover: #b8811d;
 $colorRed: #c63629;
-$colorYellow: #f4d01e; 
+$colorYellow: #f4d01e;
 $colorYellowHover: #c7ad1c;
 $colorDarkGray: #aeaba8;
 $colorLightGray2: #dbdcdd;
@@ -21,107 +21,147 @@ $colorGreen: #a1bf37;
 $colorGreenHover: #748f29;
 $colorPurple: rgba(119, 67, 141, 0.89);
 $colorWhite: #ffffff;
+$colorBlack: #000000;
 
-#pageheader{
-	background: $colorWhite;
-	border-left: 19px solid $colorDarkBlue; 
-
-	nav{
-		margin-top: 15px;
-		margin-bottom: 5px;
-		margin-left: 30px;
-	}
-
-	.headerGroup{
-		color: $colorWhite;
-		background: $colorPurple;
-		background-image: url('../img/Livslinje-enkel-lilla.svg');
-		background-repeat: repeat-x;
-		background-size: cover;
-		overflow: hidden;
-
-		h1{
-			color: $colorWhite;
-			margin-top: 25px;
-			padding-left: 30px;
-			padding-top: 0px;
-			padding-bottom: 45px;
-			display: block;
-			//position: relative;
-		}
-
-		span{
-			font: $fontCalibri;
-			text-transform: uppercase;
-			font-size: 18px;
-			line-height: 22px;
-			display: inline-block;
-			margin-left: 30px;
-			margin-top: 30px;
-		}
-		.icon{
-			display: block;
-			font-family: $fontSoho;
-			position: absolute;
-			bottom: 0;
-			right: 15px;
-			cursor: pointer;
-			padding: 3px 16px;
-			background-color: rgba(255, 255, 255, 0.4);
-			font-weight: bold;
-		}
-	}
-
+#pageheader {
+    background: $colorWhite;
+    border-left: 19px solid $colorDarkBlue;
+    nav {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+    .headerGroup {
+        color: $colorWhite;
+        background: $colorPurple;
+        background-image: url("../img/Livslinje-enkel-lilla.svg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        overflow: hidden;
+        h1 {
+            color: $colorWhite;
+            margin-top: 25px;
+            padding-left: 30px;
+            padding-top: 0px;
+            padding-bottom: 45px;
+            display: block;
+            //position: relative;
+       
+        }
+        span {
+            font: $fontCalibri;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 22px;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .icon {
+            display: block;
+            font-family: $fontSoho;
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            cursor: pointer;
+            padding: 3px 16px;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-weight: bold;
+        }
+    }
 }
 
-.recommendation{
-	padding: 0;
-	background: $colorWhite;
+.recommendation {
 
-	.header_wrapper{
-		header.gradingStrong{
-				border-left: 5px solid #77438d;
-		}
-		header.gradingWeak{
-				border-left: 5px solid #69b4b6;
-		}
-		header.gradingNone{
-				border-left: 5px solid #aeaba8;
-		}
-		header.gradingBlank{
-				border-left: 5px solid #fffff1;
-		}
+    .hidden {
+        display: none;
+    }
 
-		header{
+    padding: 0;
+    background: $colorWhite;
+    .header_wrapper {
+        header.gradingStrong {
+            border-left: 5px solid #77438d;
+        }
+        header.gradingWeak {
+            border-left: 5px solid #69b4b6;
+        }
+        header.gradingNone {
+            border-left: 5px solid #aeaba8;
+        }
+        header.gradingBlank {
+            border-left: 5px solid #fffff1;
+        }
 
-			h2{
-				display: block;
-				color: $colorDarkBlue;
-				position: relative;
-				padding-left: 45px;
-				padding-bottom: 45px;
-				padding-top: 30px;
-				&:before{
-					position: absolute;
-					left:15px;
-					content: "\f107";
-					font-family: "FontAwesome";
-					cursor: pointer;
-				}
-			}	
-		}
-	}
+        header {
+            h2 {
+                display: block;
+                color: $colorDarkBlue;
+                position: relative;
+                padding-left: 45px;
+                padding-bottom: 45px;
+                padding-top: 30px;
+                &:before {
+                    position: absolute;
+                    left: 15px;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .text {
+        margin-left: 50px;
+        margin-right: 30px;
 
-	.text{
-		margin-left: 50px;
-		border-left: 3px solid #77438d;
-		padding-right: 30px;
-		padding-left: 10px;
-		img.pulse{
-			position: absolute;
-			left: -18px;
-			top: 0px;
-			height: 100px;
-		}
-	}
+        /* Styling for EKG border  */
+        .textContainer {
+            border-left: 2px solid #77438d;
+            padding-left: 20px;
+            padding-top: 0;
+
+            img.pulse {
+                position: absolute;
+                left: -7px;
+                top: 0px;
+                height: 57px;
+            }
+        }
+        /* Navigational tabs within recommendation */
+        nav {
+            margin-top: 45px;
+            width: 100%;
+            ul.tabnav {
+                text-align: justify;
+                li {
+                    padding: 0 7px;
+                    display: inline-block;
+                    background-color: $colorLightGray2;
+                    a {
+                        font-size: 18px;
+                        color: $colorBlack;
+                    }
+                }
+                //Hack to make juistify work
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .closepane{
+    	width: 100%;
+    	height: 30px;
+    	background-color: $colorPurple;
+    	display: block;
+    	i{
+    		color: $colorWhite;
+    		margin-left: 20px;
+    		font-size: 28px;
+    	}
+    }
 }

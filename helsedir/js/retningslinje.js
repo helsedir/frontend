@@ -128,6 +128,7 @@ function runJqueryUIStuff(){
 	});
 		jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
 		jQuery('.gradingInfo').addClass('visuallyhidden');
+		jQuery('.closepane').addClass('visuallyhidden');
 		jQuery('.recommendationGrading').addClass('closed');
 
 	  jQuery(window).resize(function () {
@@ -142,15 +143,33 @@ function runJqueryUIStuff(){
 	  
 	  
 	  jQuery('.recommendation').on('click', 'h2', function() {
+	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
-	  	//$(this).parent().toggleClass("gradingWeak", 500);
 	  	
-	  	
-	  	var wrapper = jQuery(this).parent().parent();
-	  		slider(wrapper, wrapper.siblings('.text, .background_information'));
+	  	var wrapper = $(this).closest(".header_wrapper");
+	  	slider(wrapper, wrapper.siblings('.text, .background_information, .closepane'));
+
 	  });
 
+	  //Navigational tabs within recommendations
+	  $(".recommendation").find(".tab-pane").addClass("hidden");
+	  $(".recommendation").find(".tabnav").children().each(function(){
+	  	$(this).find("a").on("click", function(e){
+	  		e.preventDefault();
+	  		//hide the open tabs
+	  		$(".recommendation").find(".tab-pane").hide();
+	  		//get the item we are going to open
+	  		var data = $(this).data("link");
+	  		var dataElement = $(this).closest(".text").find("#"+data);
+	  		dataElement.show();
+	  	});
+	  });
 	 
+	 //Button to close dropdown
+	 $(".recommendation").find(".closepane").on("click", function(e){
+	 	e.preventDefault();
+
+	 });
 		
 		
 }
