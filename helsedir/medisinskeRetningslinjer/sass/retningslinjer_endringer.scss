@@ -204,6 +204,19 @@ $colorBlack: #000000;
                 }
             }
         }
+
+        .tab-content{
+        	.tab-pane{
+        		background-color: $colorLightGray2;
+        		section.pico{
+        			dl{
+        				dt{
+        					font-weight: bold;
+        				}
+        			}
+        		}
+        	}
+        }
     }
 
     .closepane{

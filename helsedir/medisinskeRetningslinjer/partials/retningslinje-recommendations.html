@@ -39,20 +39,33 @@
             <p>{{recommendation.text}}</p>
           </div>
           <nav>
-          <ul class="tabnav">
-            <li><a href="#nokkelinfo" data-link="nokkelinfo">Nøkkelinfo</a></li>
-            <li><a href="#vitenskap" data-link="vitenskap">Vitenskapelige spm.</a></li>
-            <li><a href="#rasjonale" data-link="rasjonale">Rasjonale</a></li>
-            <li><a href="#praktisk" data-link="praktisk">Praktisk info</a></li>
-            <li><a href="#referanser" data-link="referanser">Referanser</a></li>
-          </ul>
+            <ul class="tabnav">
+              <li><a href="#nokkelinfo" data-link="nokkelinfo">Nøkkelinfo</a></li>
+              <li><a href="#vitenskap" data-link="vitenskap">Vitenskapelige spm.</a></li>
+              <li><a href="#rasjonale" data-link="rasjonale">Rasjonale</a></li>
+              <li><a href="#praktisk" data-link="praktisk">Praktisk info</a></li>
+              <li><a href="#referanser" data-link="referanser">Referanser</a></li>
+            </ul>
           </nav>
           <div class="tab-content">
-            <div class="tab-pane" id="nokkelinfo"></div>
-            <div class="tab-pane" id="vitenskap"></div>
-            <div class="tab-pane" id="rasjonale"></div>
-            <div class="tab-pane" id="praktisk"></div>
-            <div class="tab-pane" id="referanser"></div>
+            <div class="tab-pane" id="nokkelinfo">a</div>
+            <div class="tab-pane" id="vitenskap">
+              <section class="pico" ng-repeat="pico in recommendation.picos">
+                <dl>
+                  <dt>Populasjon</dt>
+                  <dd>{{pico.population}}</dd>
+                  <dt>Intervensjon</dt>
+                  <dd>{{pico.intervention}}</dd>
+                  <dt>Komparator</dt>
+                  <dd>{{pico.control}}</dd>
+                  <dt>Utfall</dt>
+                  <dd><span ng-repeat="outcome in picoOutcomes">{{outcome.outcome}}</span></dd>
+                </dl>
+              </section>
+            </div>
+            <div class="tab-pane" id="rasjonale">b</div>
+            <div class="tab-pane" id="praktisk">c</div>
+            <div class="tab-pane" id="referanser">d</div>
           </div>
         </div>
         <a href="#" grading="{{recommendation.strength}}" class="closepane"><i class="fa fa-angle-up"></i></a>
@@ -78,5 +91,7 @@
         </div>
       </aside>
     </div>
-    </div><!-- row -->
-    </article> <!-- end container -->
+    <!-- row -->
+  </div>
+  <!-- end container -->
+</article>
