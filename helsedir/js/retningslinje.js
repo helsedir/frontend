@@ -187,8 +187,16 @@ function runJqueryUIStuff(){
 	 //Button to close dropdown
 	 $(".recommendation").find(".closepane").on("click", function(e){
 	 	e.preventDefault();
-	 });
-		
+	 	var wrapper = $(this).closest(".recommendation").find(".header_wrapper");
+	 	var areaToExpand = wrapper.siblings('.text, .background_information, .closepane');
+	 	if(wrapper.hasClass('open')){
+	 		areaToExpand.slideUp('fast', function () {
+			areaToExpand.addClass('visuallyhidden').slideDown(0);
+			$(wrapper).find("header").removeClass("gradingBlank", 300);
+			wrapper.removeClass('open');
+			wrapper.addClass('closed');
+		});
+	 }	});
 		
 }
 
