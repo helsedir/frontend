@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container aside.aside {
-    margin-right: -69%;
+    margin-right: -48%;
   }
 }
 
@@ -70,6 +70,7 @@
   border-left: 5px solid #fffff1;
 }
 .recommendation .header_wrapper header h2 {
+  margin-right: 30px;
   display: block;
   color: #004e66;
   position: relative;
@@ -85,20 +86,14 @@
   cursor: pointer;
 }
 .recommendation .text {
-  margin-left: 50px;
-  margin-right: 30px;
   /* Styling for EKG border  */
   /* Navigational tabs within recommendation */
 }
 .recommendation .text .textContainer {
+  margin-left: 50px;
+  margin-right: 30px;
   padding-left: 20px;
   padding-top: 0;
-}
-.recommendation .text .textContainer img.pulse {
-  top: 40px;
-  position: absolute;
-  left: -7px;
-  height: 57px;
 }
 .recommendation .text .textContainer.gradingStrong {
   border-left: 2px solid #77438d;
@@ -118,7 +113,7 @@
 .recommendation .text .textContainer img.pulse {
   top: 40px;
   position: absolute;
-  left: -7px;
+  left: 43px;
   height: 57px;
 }
 .recommendation .text .textContainer .recommendationexplanation {
@@ -168,32 +163,32 @@
 .recommendation .text .textContainer .recommendationexplanation p.gradingWeak {
   background-color: #c1dfdd;
 }
-.recommendation .text nav {
+.recommendation .text .tabs {
   margin-top: 45px;
   width: 100%;
 }
-.recommendation .text nav ul.tabnav {
+.recommendation .text .tabs ul {
+  margin-left: 50px;
+  margin-right: 30px;
   text-align: justify;
 }
-.recommendation .text nav ul.tabnav li {
-  padding: 0 7px;
+.recommendation .text .tabs ul .resp-tab-item {
+  cursor: pointer;
+  padding: 2px 15px;
   display: inline-block;
-  background-color: #dbdcdd;
+  background-color: #e7e7e6;
 }
-.recommendation .text nav ul.tabnav li a {
+.recommendation .text .tabs ul .resp-tab-item a {
   font-size: 18px;
   color: #000000;
 }
-.recommendation .text nav ul.tabnav:after {
+.recommendation .text .tabs ul:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
-.recommendation .text .tab-content .tab-pane {
-  background-color: #dbdcdd;
-}
-.recommendation .text .tab-content .tab-pane section.pico dl dt {
-  font-weight: bold;
+.recommendation .text .tabs .resp-tabs-container {
+  background-color: #f5f5f5;
 }
 .recommendation .closepane {
   width: 100%;

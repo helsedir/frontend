@@ -170,19 +170,7 @@ function runJqueryUIStuff(){
 	  	}
 	  });
 
-	  //Navigational tabs within recommendations
-	  $(".recommendation").find(".tab-pane").addClass("hidden");
-	  $(".recommendation").find(".tabnav").children().each(function(){
-	  	$(this).find("a").on("click", function(e){
-	  		e.preventDefault();
-	  		//hide the open tabs
-	  		$(".recommendation").find(".tab-pane").hide();
-	  		//get the item we are going to open
-	  		var data = $(this).data("link");
-	  		var dataElement = $(this).closest(".text").find("#"+data);
-	  		dataElement.show();
-	  	});
-	  });
+
 	 
 	 //Button to close dropdown
 	 $(".recommendation").find(".closepane").on("click", function(e){
@@ -190,13 +178,25 @@ function runJqueryUIStuff(){
 	 	var wrapper = $(this).closest(".recommendation").find(".header_wrapper");
 	 	var areaToExpand = wrapper.siblings('.text, .background_information, .closepane');
 	 	if(wrapper.hasClass('open')){
+	 		$(wrapper).find(".resp-tab-content-active").removeClass(".resp-tab-content-active");
+	 		$(wrapper).find(".resp-tab-active").removeClass(".resp-tab-active");
 	 		areaToExpand.slideUp('fast', function () {
 			areaToExpand.addClass('visuallyhidden').slideDown(0);
 			$(wrapper).find("header").removeClass("gradingBlank", 300);
 			wrapper.removeClass('open');
 			wrapper.addClass('closed');
+
 		});
 	 }	});
+
+	 //responsive tabs
+	 $('.tabs').easyResponsiveTabs({
+	     type: 'default', //Types: default, vertical, accordion           
+
+	     closed: true// Start closed if in accordion view
+	 });
+
+	 $('.recommendation').find("h2").first().trigger("click");
 		
 }
 

@@ -21,7 +21,7 @@
   </div>
   <!--Recommendations-->
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-8">
       <section class="recommendation" ng-repeat="recommendation in section.recommendations">
         <div class="header_wrapper">
           <header grading="{{recommendation.strength}}">
@@ -52,34 +52,35 @@
             </div>
             <p>{{recommendation.text}}</p>
           </div>
-          <nav>
-            <ul class="tabnav">
-              <li><a href="#nokkelinfo" data-link="nokkelinfo">Nøkkelinfo</a></li>
-              <li><a href="#vitenskap" data-link="vitenskap">Vitenskapelige spm.</a></li>
-              <li><a href="#rasjonale" data-link="rasjonale">Rasjonale</a></li>
-              <li><a href="#praktisk" data-link="praktisk">Praktisk info</a></li>
-              <li><a href="#referanser" data-link="referanser">Referanser</a></li>
-            </ul>
-          </nav>
-          <div class="tab-content">
-            <div class="tab-pane" id="nokkelinfo">a</div>
-            <div class="tab-pane" id="vitenskap">
-              <section class="pico" ng-repeat="pico in recommendation.picos">
-                <dl>
-                  <dt>Populasjon</dt>
-                  <dd>{{pico.population}}</dd>
-                  <dt>Intervensjon</dt>
-                  <dd>{{pico.intervention}}</dd>
-                  <dt>Komparator</dt>
-                  <dd>{{pico.control}}</dd>
-                  <dt>Utfall</dt>
-                  <dd><span ng-repeat="outcome in picoOutcomes">{{outcome.outcome}}</span></dd>
-                </dl>
-              </section>
+          <div class="tabs">
+              <ul class="resp-tabs-list">
+              <li><a href="#nokkelinfo">Nøkkelinfo</a></li>
+              <li><a href="#vitenskap">Vitenskapelige spm.</a></li>
+              <li><a href="#rasjonale">Rasjonale</a></li>
+              <li><a href="#praktisk">Praktisk info</a></li>
+              <li><a href="#referanser">Referanser</a></li>
+              </ul>
+
+              <div class="resp-tabs-container">
+              <div id="nokkelinfo"></div>
+              <div id="vitenskap">
+                <section class="pico" ng-repeat="pico in recommendation.picos">
+                  <dl>
+                    <dt>Populasjon</dt>
+                    <dd>{{pico.population}}</dd>
+                    <dt>Intervensjon</dt>
+                    <dd>{{pico.intervention}}</dd>
+                    <dt>Komparator</dt>
+                    <dd>{{pico.control}}</dd>
+                    <dt>Utfall</dt>
+                    <dd><span ng-repeat="outcome in picoOutcomes">{{outcome.outcome}}</span></dd>
+                  </dl>
+                </section>
+              </div>
+              <div id="rasjonale">{{recommendation.rational}}</div>
+              <div id="praktisk">{{recommendation.practicalAdvice}}</div>
+              <div id="referanser">{{recommendation.refs}}</div>
             </div>
-            <div class="tab-pane" id="rasjonale">b</div>
-            <div class="tab-pane" id="praktisk">c</div>
-            <div class="tab-pane" id="referanser">d</div>
           </div>
         </div>
         <a href="#" grading="{{recommendation.strength}}" class="closepane"><i class="fa fa-angle-up"></i></a>
@@ -105,6 +106,7 @@
         </div>
       </aside>
     </div>
+
     <!-- row -->
   </div>
   <!-- end container -->
