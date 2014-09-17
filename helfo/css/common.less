@@ -2365,6 +2365,11 @@ html {
 
         h1, h2, h3, h4, h5 {
             color: #398ca9;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid #398ca9;
+            }
         }
     }
 
@@ -2395,5 +2400,58 @@ html {
                 color: #756d6a;
             }
         }
+    }
+
+    .navigate_forward, .navigate_back {
+        margin-top: 30px;
+
+        a {
+            margin: 0;
+            padding: 10px 15px;
+            border: none;
+
+            &:hover {
+                border: none;
+                background: #e0deca;
+                border-radius: 19.8rem;
+            }
+
+            &:visited {
+                color: #756d6a;
+            }
+
+            span {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                font-family: @roboto;
+                font-weight: 400;
+                color: #756d6a;
+            }
+
+            &:focus, &:focus:visited {
+                background: #e0deca;
+            }
+        }
+    }
+
+    .navigate_forward {
+        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+        background-position: 28% 100%;
+        background-size: 28px 28px;
+        padding-right: 36px;
+    }
+
+    .navigate_forward.pull-right {
+        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+        background-position: 100% 60%;
+        background-size: 28px 28px;
+        padding-right: 36px;
+    }
+
+    .navigate_back.pull-left {
+        background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
+        background-position: 0 60%;
+        background-size: 28px 28px;
+        padding-left: 36px;
     }
 }

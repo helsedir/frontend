@@ -78,52 +78,6 @@ input.radio {
   margin: 35px 0 0 0;
   color: #004e66;
 }
-.navigate_forward,
-.navigate_back {
-  margin-top: 30px;
-}
-.navigate_forward a,
-.navigate_back a {
-  margin: 0;
-  padding: 10px 15px;
-  border: none;
-}
-.navigate_forward a:hover,
-.navigate_back a:hover {
-  border: none;
-  background: #e0deca;
-  border-radius: 19.8rem;
-}
-.navigate_forward a:visited,
-.navigate_back a:visited {
-  color: #756d6a;
-}
-.navigate_forward a span,
-.navigate_back a span {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  font-family: 'Roboto';
-  font-weight: 400;
-  color: #756d6a;
-}
-.navigate_forward a:focus,
-.navigate_back a:focus,
-.navigate_forward a:focus:visited,
-.navigate_back a:focus:visited {
-  background: #e0deca;
-}
-.navigate_forward {
-  background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
-  background-position: 100% 60%;
-  background-size: 28px 28px;
-  padding-right: 36px;
-}
-.navigate_back {
-  background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
-  background-position: 0 60%;
-  background-size: 28px 28px;
-  padding-left: 36px;
-}
 .border {
   border-bottom: 1px solid #004e66;
 }

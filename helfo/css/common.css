@@ -2364,6 +2364,14 @@ html {
 .container a h4,
 .container a h5 {
   color: #398ca9;
+  border-bottom: 1px solid transparent;
+}
+.container a h1:hover,
+.container a h2:hover,
+.container a h3:hover,
+.container a h4:hover,
+.container a h5:hover {
+  border-bottom: 1px solid #398ca9;
 }
 .container .takst_table {
   margin-top: 50px;
@@ -2387,5 +2395,57 @@ html {
 }
 .container .breadcrumbs a:visited {
   color: #756d6a;
+}
+.container .navigate_forward,
+.container .navigate_back {
+  margin-top: 30px;
+}
+.container .navigate_forward a,
+.container .navigate_back a {
+  margin: 0;
+  padding: 10px 15px;
+  border: none;
+}
+.container .navigate_forward a:hover,
+.container .navigate_back a:hover {
+  border: none;
+  background: #e0deca;
+  border-radius: 19.8rem;
+}
+.container .navigate_forward a:visited,
+.container .navigate_back a:visited {
+  color: #756d6a;
+}
+.container .navigate_forward a span,
+.container .navigate_back a span {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #756d6a;
+}
+.container .navigate_forward a:focus,
+.container .navigate_back a:focus,
+.container .navigate_forward a:focus:visited,
+.container .navigate_back a:focus:visited {
+  background: #e0deca;
+}
+.container .navigate_forward {
+  background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+  background-position: 28% 100%;
+  background-size: 28px 28px;
+  padding-right: 36px;
+}
+.container .navigate_forward.pull-right {
+  background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+  background-position: 100% 60%;
+  background-size: 28px 28px;
+  padding-right: 36px;
+}
+.container .navigate_back.pull-left {
+  background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
+  background-position: 0 60%;
+  background-size: 28px 28px;
+  padding-left: 36px;
 }
 /*# sourceMappingURL=common.css.map */

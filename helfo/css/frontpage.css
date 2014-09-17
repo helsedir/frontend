@@ -89,6 +89,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  border: none;
 }
 .container .entrancebutton a p {
   font-size: 1.8rem;
@@ -110,6 +111,9 @@
 }
 .container .entrancebutton a:hover {
   background: #badde9;
+}
+.container .entrancebutton a:hover h2 {
+  border: none;
 }
 .container .entrancebutton:visited,
 .container .entrancebutton:hover {
