@@ -23,6 +23,15 @@ $colorPurple: rgba(119, 67, 141, 0.89);
 $colorWhite: #ffffff;
 $colorBlack: #000000;
 
+.container{
+        aside.aside{
+            @media screen and (min-width: 1200px){
+                margin-right: -69%;
+            }
+        }
+}
+
+
 #pageheader {
     background: $colorWhite;
     border-left: 19px solid $colorDarkBlue;

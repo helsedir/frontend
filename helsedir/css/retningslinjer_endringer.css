@@ -1,3 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .container aside.aside {
+    margin-right: -69%;
+  }
+}
+
 #pageheader {
   background: #ffffff;
   border-left: 19px solid #004e66;
