@@ -203,6 +203,9 @@ a.method_entrance h3 {
 a.method_entrance h3.selected {
   border-bottom: 4px solid #838078;
 }
+a.method_entrance h3:hover {
+  border: none;
+}
 a.method_entrance .drop_wrapper {
   display: inline-block;
   width: 100%;

@@ -1,6 +1,6 @@
 ﻿@roboto: 'Roboto';
 
-@colorDarkBlue: #004e66;
+@colorDarkBlue: #002c42;
 @colorDarkBlueHover: #002e41;
 
 @colorMediumBlue: #0093a7;
@@ -130,7 +130,7 @@
 
             &:focus {
                 text-decoration: none;
-                background-color: #dedddb;
+                background-color: #d9dadb;
 
                 span, i {
                     color: white;
@@ -141,24 +141,24 @@
 
             &:hover {
                 text-decoration: none;
-                background-color: #838078;
+                background-color: #d9dadb;
                 border-radius: 3px;
 
                 span, i {
-                    color: white;
+                    color: #002c42;
                 }
             }
 
             &.js-expanded {
                 padding-bottom: 50px;
                 border-radius: 3px 3px 0 0;
-                background-color: #838078;
-                color: @colorDarkBlue;
+                background-color: #d9dadb;
+                color: #002c42;
                 outline: 0;
                 border: none;
 
                 span, i {
-                    color: white;
+                    color: #002c42;
                 }
             }
 
@@ -174,7 +174,7 @@
         /*max-width: 220px;*/
         width: 279px;
         border-radius: 0;
-        border: 1px inset @colorDarkBlue;
+        border: 1px inset #c2c3c4;
         vertical-align: middle;
         cursor: text;
         display: inline-block;
@@ -196,7 +196,7 @@
             vertical-align: middle;
 
             img {
-                width: 25px;
+                width: 21px;
                 vertical-align: middle;
             }
         }
@@ -212,7 +212,7 @@
             margin-right: 15px;
             vertical-align: sub;
             display: inline-block;
-            padding-top: 7px;
+            padding: 10px 8px 8px 8px;
             text-transform: uppercase;
 
             &:focus {
@@ -223,6 +223,11 @@
 
             &:last-of-type {
                 margin-right: 0;
+            }
+
+            &:hover {
+                background: #d9dadb;
+                color: #002c42;
             }
         }
 
@@ -344,14 +349,19 @@
                 transition: all 0.3s;
 
                 a {
-                    color: @colorDarkBlue;
+                    color: #222;
                     width: 100%;
                     display: inline-block;
                     border-bottom: none;
+                    font-size: 1.8rem;
                 }
 
                 &:hover {
-                    background: #dedddb;
+                    background: #d9dadb;
+                }
+
+                &.character:hover {
+                    background: white;
                 }
             }
         }
@@ -385,11 +395,13 @@
 
         h4, p, a, a:visited, a:hover {
             color: #222;
+            border: none;
         }
 
         h4 {
             margin-top: 20px;
             margin-bottom: 10px;
+            text-transform: none;
         }
 
         p {
@@ -490,7 +502,7 @@
 }
 
 .container-fluid.toppmeny {
-    background: #838078;
+    background: #d9dadb;
     padding: 0 0 50px 0 !important;
 
     .inner {
@@ -597,14 +609,19 @@
             transition: all 0.3s;
 
             a {
-                color: @colorDarkBlue;
+                color: #222;
                 display: inline-block;
                 width: 100%;
                 border-bottom: none;
+                font-size: 1.8rem;
+
+                &:focus {
+                    color: white;
+                }
             }
 
             &:hover {
-                background: #dedddb;
+                background: #d9dadb;
             }
         }
     }
@@ -710,7 +727,7 @@
     #header, #footer {
         .hidden-mobile {
             display: none;
-            background-color: #838078;
+            background-color: #d9dadb;
             padding: 20px;
         }
 
@@ -740,7 +757,7 @@
                 margin-right: 10px;
 
                 &:hover {
-                    background: #838078 url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
+                    background: #d9dadb url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
                     -moz-background-size: 20px;
                     -o-background-size: 20px;
                     -webkit-background-size: 20px;
@@ -751,7 +768,7 @@
 
                 &.js-expanded {
                     padding-bottom: 46px;
-                    background: #838078 url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
+                    background: #d9dadb url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
                     -moz-background-size: 20px;
                     -o-background-size: 20px;
                     -webkit-background-size: 20px;
@@ -773,13 +790,13 @@
 
                 &:focus {
                     text-decoration: none;
-                    background-color: #838078;
+                    background-color: #d9dadb;
                     color: @colorDarkBlue;
                     border: solid 1px @colorDarkBlue;
                 }
 
                 &:hover {
-                    background: #838078 url('../img/ikoner/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                    background: #d9dadb url('../img/ikoner/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
                     -moz-background-size: 30px;
                     -o-background-size: 30px;
                     -webkit-background-size: 30px;
@@ -792,7 +809,7 @@
                     padding: 5px 0 46px 0;
                     border-radius: 3px 3px 0 0;
                     border-radius: 3px 3px 0 0;
-                    background: #838078 url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
+                    background: #d9dadb url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
                     -moz-background-size: 22px;
                     -o-background-size: 22px;
                     -webkit-background-size: 22px;
@@ -817,5 +834,12 @@
                 width: 92%;
             }
         }
+    }
+}
+
+.contact {
+    p {
+        width: 35%;
+        float: left;
     }
 }

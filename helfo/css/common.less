@@ -1,6 +1,6 @@
 ﻿@roboto: 'Roboto', sans-serif;
 
-@colorDarkBlue: #004e66;
+@colorDarkBlue: #002c42;
 @colorDarkBlueHover: #002e41;
 @colorMediumBlue: #0093a7;
 @colorMediumBlueHover: #006371;
@@ -359,7 +359,6 @@ body {
             }
 
             a, a:visited, a:hover {
-                color: @colorDarkBlue;
                 text-decoration: none;
             }
 
@@ -671,12 +670,13 @@ body {
         margin: 30px 0 0 0;
         min-width: 0;
         border: none;
-        padding: 10px 35px 10px 10px;
+        padding: 10px 25px 10px 20px;
         background: #6e8c22;
         color: white;
         font-family: @roboto;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        font-weight: 400;
         display: inline-block;
         cursor: pointer;
         text-align: left;
@@ -1701,6 +1701,11 @@ body {
             margin: 0;
             padding-bottom: 7px;
             color: @colorMediumBlue;
+            border: none;
+
+            &:hover {
+                border: none;
+            }
         }
 
         p {
@@ -1708,7 +1713,7 @@ body {
             padding-top: 0;
         }
 
-        &:hover {
+        &:hover, &:focus, &:visited:focus {
             text-decoration: none;
             background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
             background-size: 46px;
@@ -1717,6 +1722,7 @@ body {
 
             h2, p {
                 color: #222;
+                background: #badde9;
             }
 
             h2 {
@@ -1743,6 +1749,11 @@ body {
             padding: 10px 30px 0 0;
             margin: 0;
             color: #0093a7;
+            border: none;
+
+            &:hover {
+                border: none;
+            }
         }
 
         &:hover {
@@ -2250,8 +2261,8 @@ html {
     }
 
     h4 {
-        font-size: 1.6rem;
-        line-height: 2.0rem;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
         font-family: @roboto;
         font-weight: 400;
         margin: 3.2rem 0 0 0;
@@ -2363,7 +2374,7 @@ html {
             border-bottom: 1px solid @colorOrange;
         }
 
-        h1, h2, h3, h4, h5 {
+        h1, h2, h3, h4 {
             color: #398ca9;
             border-bottom: 1px solid transparent;
 
@@ -2392,7 +2403,7 @@ html {
 
             &:hover {
                 border: none;
-                background: #e0deca;
+                background: #d9dadb;
                 border-radius: 19.8rem;
             }
 
@@ -2412,7 +2423,7 @@ html {
 
             &:hover {
                 border: none;
-                background: #e0deca;
+                background: #d9dadb;
                 border-radius: 19.8rem;
             }
 
@@ -2429,7 +2440,7 @@ html {
             }
 
             &:focus, &:focus:visited {
-                background: #e0deca;
+                background: #d9dadb;
             }
         }
     }

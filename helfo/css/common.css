@@ -62,7 +62,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 48px;
   margin: 50px 0 0 0;
-  color: #004e66;
+  color: #002c42;
 }
 .container .ingress,
 .container-fluid .ingress {
@@ -83,7 +83,7 @@ body {
   line-height: 36px;
   font-family: 'Roboto', sans-serif;
   margin: 35px 0 10px 0;
-  color: #004e66;
+  color: #002c42;
 }
 .container h2.internal-link,
 .container-fluid h2.internal-link {
@@ -128,7 +128,7 @@ body {
 .container ul.list li:before,
 .container-fluid ul.list li:before {
   content: "•";
-  color: #004e66;
+  color: #002c42;
   margin-right: 20px;
 }
 .container a,
@@ -148,7 +148,7 @@ body {
 .container-fluid a:focus,
 .container a:visited:focus,
 .container-fluid a:visited:focus {
-  background: #004e66;
+  background: #002c42;
   color: white;
   outline: 0;
 }
@@ -164,7 +164,7 @@ body {
 .container-fluid a:focus p,
 .container a:visited:focus p,
 .container-fluid a:visited:focus p {
-  background: #004e66;
+  background: #002c42;
   color: white;
   outline: 0;
 }
@@ -188,7 +188,7 @@ body {
 .container-fluid .breadcrumbs li:after {
   font-family: "FontAwesome";
   content: '\f177';
-  color: #004e66;
+  color: #002c42;
   font-size: 25px;
   margin: 0 5px 0 5px;
   vertical-align: middle;
@@ -205,7 +205,7 @@ body {
 }
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
-  color: #004e66;
+  color: #002c42;
 }
 .container .accordion,
 .container-fluid .accordion {
@@ -338,7 +338,7 @@ body {
 .container-fluid .tabs .tab-links li span.tabs_footer.active a,
 .container .tabs .tab-links li form.active a,
 .container-fluid .tabs .tab-links li form.active a {
-  color: #004e66;
+  color: #002c42;
   font-family: 'Roboto', sans-serif;
   background: white;
 }
@@ -355,7 +355,7 @@ body {
 .container .tabs .tab-links li form.active a:focus,
 .container-fluid .tabs .tab-links li form.active a:focus {
   background: white;
-  color: #004e66;
+  color: #002c42;
 }
 .container .tabs .tab-links li span.tabs_header a,
 .container-fluid .tabs .tab-links li span.tabs_header a,
@@ -412,7 +412,6 @@ body {
 .container-fluid .tabs .tab-content a:visited,
 .container .tabs .tab-content a:hover,
 .container-fluid .tabs .tab-content a:hover {
-  color: #004e66;
   text-decoration: none;
 }
 .container .tabs .tab-content .alphabetical,
@@ -429,7 +428,7 @@ body {
 }
 .container .tabs .tab-content .alphabetical ul li a,
 .container-fluid .tabs .tab-content .alphabetical ul li a {
-  color: #004e66;
+  color: #002c42;
   display: inline-block;
   line-height: 22px;
 }
@@ -516,7 +515,7 @@ body {
   height: 41px;
   /*max-width: 220px;*/
   width: 100%;
-  border: 1px inset #004e66;
+  border: 1px inset #002c42;
   vertical-align: middle;
   cursor: text;
   display: inline-block;
@@ -674,7 +673,7 @@ body {
 .container .bulletlist li:before,
 .container-fluid .bulletlist li:before {
   content: "•";
-  color: #004e66;
+  color: #002c42;
   margin: -1px 0 0 -25px;
   display: block;
   position: absolute;
@@ -732,12 +731,13 @@ body {
   margin: 30px 0 0 0;
   min-width: 0;
   border: none;
-  padding: 10px 35px 10px 10px;
+  padding: 10px 25px 10px 20px;
   background: #6e8c22;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  font-weight: 400;
   display: inline-block;
   cursor: pointer;
   text-align: left;
@@ -820,7 +820,7 @@ body {
 .container .internal-link,
 .container-fluid .internal-link {
   text-decoration: none;
-  color: #004e66;
+  color: #002c42;
   display: inline-block;
   margin-bottom: 1px;
   border-bottom: none;
@@ -1127,7 +1127,7 @@ body {
 .container-fluid .module.module_social {
   padding: 0;
   background: none;
-  border-top: 2px solid #004e66;
+  border-top: 2px solid #002c42;
   padding-top: 13px;
   margin: 67px 0 31px 0;
   width: 100%;
@@ -1140,7 +1140,7 @@ body {
 .container-fluid .module.module_print a:visited,
 .container .module.module_social a:visited,
 .container-fluid .module.module_social a:visited {
-  color: #004e66;
+  color: #002c42;
   text-transform: uppercase;
   float: left;
   margin: 0 50px 0 0;
@@ -1260,7 +1260,7 @@ body {
   max-width: 300px;
   text-align: center;
   margin: 50px 0;
-  color: #004e66;
+  color: #002c42;
   background: #d1d0cf url(../img/spinner.png) no-repeat;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -1288,7 +1288,7 @@ body {
 }
 .container .showmorenews.selected,
 .container-fluid .showmorenews.selected {
-  background: #004e66;
+  background: #002c42;
 }
 .container .showmorenews.selected a,
 .container-fluid .showmorenews.selected a,
@@ -1460,7 +1460,7 @@ body {
 }
 .container .border,
 .container-fluid .border {
-  border-bottom: 2px solid #004e66;
+  border-bottom: 2px solid #002c42;
   padding-bottom: 20px;
   width: 100%;
 }
@@ -1477,7 +1477,7 @@ body {
 }
 .container input[type="radio"]:focus + label,
 .container-fluid input[type="radio"]:focus + label {
-  background: #004e66;
+  background: #002c42;
   color: white;
 }
 .container input[type="radio"] + label span,
@@ -1559,16 +1559,16 @@ body {
 }
 .container .form .form_field_standard,
 .container-fluid .form .form_field_standard {
-  border: 1px solid #004e66;
+  border: 1px solid #002c42;
 }
 .container .form .form_field_zip,
 .container-fluid .form .form_field_zip {
-  border: 1px solid #004e66;
+  border: 1px solid #002c42;
   width: 4em;
 }
 .container .cancelbutton,
 .container-fluid .cancelbutton {
-  background: #004e66;
+  background: #002c42;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -1652,7 +1652,7 @@ body {
   .refinesearch .form-group select:hover,
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
+    background: #002c42 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
     background-position: 92%;
     -moz-background-size: 20px;
     -o-background-size: 20px;
@@ -1805,6 +1805,11 @@ body {
   margin: 0;
   padding-bottom: 7px;
   color: #0093a7;
+  border: none;
+}
+.container .transportsideknapp h2:hover,
+.container-fluid .transportsideknapp h2:hover {
+  border: none;
 }
 .container .transportsideknapp p,
 .container-fluid .transportsideknapp p {
@@ -1812,7 +1817,11 @@ body {
   padding-top: 0;
 }
 .container .transportsideknapp:hover,
-.container-fluid .transportsideknapp:hover {
+.container-fluid .transportsideknapp:hover,
+.container .transportsideknapp:focus,
+.container-fluid .transportsideknapp:focus,
+.container .transportsideknapp:visited:focus,
+.container-fluid .transportsideknapp:visited:focus {
   text-decoration: none;
   background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
   background-size: 46px;
@@ -1821,12 +1830,25 @@ body {
 }
 .container .transportsideknapp:hover h2,
 .container-fluid .transportsideknapp:hover h2,
+.container .transportsideknapp:focus h2,
+.container-fluid .transportsideknapp:focus h2,
+.container .transportsideknapp:visited:focus h2,
+.container-fluid .transportsideknapp:visited:focus h2,
 .container .transportsideknapp:hover p,
-.container-fluid .transportsideknapp:hover p {
+.container-fluid .transportsideknapp:hover p,
+.container .transportsideknapp:focus p,
+.container-fluid .transportsideknapp:focus p,
+.container .transportsideknapp:visited:focus p,
+.container-fluid .transportsideknapp:visited:focus p {
   color: #222;
+  background: #badde9;
 }
 .container .transportsideknapp:hover h2,
-.container-fluid .transportsideknapp:hover h2 {
+.container-fluid .transportsideknapp:hover h2,
+.container .transportsideknapp:focus h2,
+.container-fluid .transportsideknapp:focus h2,
+.container .transportsideknapp:visited:focus h2,
+.container-fluid .transportsideknapp:visited:focus h2 {
   text-decoration: none;
 }
 .container .transportsideknapp_dokument,
@@ -1849,6 +1871,11 @@ body {
   padding: 10px 30px 0 0;
   margin: 0;
   color: #0093a7;
+  border: none;
+}
+.container .transportsideknapp_dokument h2:hover,
+.container-fluid .transportsideknapp_dokument h2:hover {
+  border: none;
 }
 .container .transportsideknapp_dokument:hover,
 .container-fluid .transportsideknapp_dokument:hover {
@@ -2027,7 +2054,7 @@ body {
     padding: 5px 0;
   }
   .container .accordion_mobile h2 {
-    border-bottom: 1px solid #004e66;
+    border-bottom: 1px solid #002c42;
     padding-bottom: 10px;
     padding-left: 33px;
     -ms-word-break: break-word;
@@ -2259,8 +2286,8 @@ html {
   color: #222;
 }
 .container h4 {
-  font-size: 1.6rem;
-  line-height: 2.0rem;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 3.2rem 0 0 0;
@@ -2361,16 +2388,14 @@ html {
 .container a h1,
 .container a h2,
 .container a h3,
-.container a h4,
-.container a h5 {
+.container a h4 {
   color: #398ca9;
   border-bottom: 1px solid transparent;
 }
 .container a h1:hover,
 .container a h2:hover,
 .container a h3:hover,
-.container a h4:hover,
-.container a h5:hover {
+.container a h4:hover {
   border-bottom: 1px solid #398ca9;
 }
 .container .takst_table {
@@ -2390,7 +2415,7 @@ html {
 }
 .container .breadcrumbs a:hover {
   border: none;
-  background: #e0deca;
+  background: #d9dadb;
   border-radius: 19.8rem;
 }
 .container .breadcrumbs a:visited {
@@ -2409,7 +2434,7 @@ html {
 .container .navigate_forward a:hover,
 .container .navigate_back a:hover {
   border: none;
-  background: #e0deca;
+  background: #d9dadb;
   border-radius: 19.8rem;
 }
 .container .navigate_forward a:visited,
@@ -2428,7 +2453,7 @@ html {
 .container .navigate_back a:focus,
 .container .navigate_forward a:focus:visited,
 .container .navigate_back a:focus:visited {
-  background: #e0deca;
+  background: #d9dadb;
 }
 .container .navigate_forward {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
