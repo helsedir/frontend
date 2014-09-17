@@ -1790,12 +1790,12 @@ body {
 .container-fluid .transportsideknapp {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px;
-  background-position: 96% 90%;
+  background-position: 96% 50%;
   margin-top: 20px;
   max-width: 685px;
   width: 100%;
   display: inline-block;
-  padding: 20px 30px 50px 30px;
+  padding: 10px 92px 15px 30px;
 }
 .container .transportsideknapp h2,
 .container-fluid .transportsideknapp h2 {
@@ -1804,19 +1804,19 @@ body {
   font-weight: 300;
   margin: 0;
   padding-bottom: 7px;
-  margin-bottom: 10px;
   color: #0093a7;
 }
 .container .transportsideknapp p,
 .container-fluid .transportsideknapp p {
   color: #838078;
+  padding-top: 0;
 }
 .container .transportsideknapp:hover,
 .container-fluid .transportsideknapp:hover {
   text-decoration: none;
   background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
   background-size: 46px;
-  background-position: 96% 90%;
+  background-position: 96% 50%;
   border: none;
 }
 .container .transportsideknapp:hover h2,
@@ -1838,20 +1838,35 @@ body {
   max-width: 685px;
   width: 100%;
   display: inline-block;
-  padding: 0 75px 10px 30px;
+  padding: 0 92px 10px 30px;
   border: none;
 }
 .container .transportsideknapp_dokument h2,
 .container-fluid .transportsideknapp_dokument h2 {
+  font-size: 3.0rem;
+  line-height: 3.6rem;
+  font-weight: 300;
   padding: 10px 30px 0 0;
   margin: 0;
   color: #0093a7;
 }
 .container .transportsideknapp_dokument:hover,
 .container-fluid .transportsideknapp_dokument:hover {
-  border: none;
   text-decoration: none;
-  box-shadow: #0093a7 0 0 0 2px;
+  background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
+  background-size: 46px;
+  background-position: 96% 50%;
+  border: none;
+}
+.container .transportsideknapp_dokument:hover h2,
+.container-fluid .transportsideknapp_dokument:hover h2,
+.container .transportsideknapp_dokument:hover p,
+.container-fluid .transportsideknapp_dokument:hover p {
+  color: #222;
+}
+.container .transportsideknapp_dokument:hover h2,
+.container-fluid .transportsideknapp_dokument:hover h2 {
+  text-decoration: none;
 }
 .container .figure,
 .container-fluid .figure {
@@ -2253,13 +2268,21 @@ html {
   text-transform: uppercase;
   color: #222;
 }
+.container h5 {
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222;
+}
 .container .ingress {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 1.6rem 0 1.6rem 0;
-  padding: 0 1.6rem;
+  padding: 0;
   color: #222;
 }
 .container p {
