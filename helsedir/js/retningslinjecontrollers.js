@@ -11,7 +11,7 @@ retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$rou
         $scope.retningslinje = Retningslinje.get({
             id: $routeParams.guidelineId
         });
-        console.log($scope);
+
     }
 ]);
 
@@ -30,7 +30,6 @@ retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope'
 
         function link(scope, element, attrs) {
             scope.$watch(attrs.grading, function(value) {
-                    console.log(element[0]);
 
                     if (attrs.grading == "strong")
                         element.addClass("gradingStrong");

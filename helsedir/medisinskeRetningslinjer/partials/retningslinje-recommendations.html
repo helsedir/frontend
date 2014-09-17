@@ -30,12 +30,26 @@
         </div>
         <div class="text">
           <div class="textContainer" data-grading="{{recommendation.strength}}">
-            <img ng-show="recommendation.strength == 'strong'" class="pulse" src="../../../img/modules/line-ekg-purple.svg">
-            <img ng-show="recommendation.strength == 'weak'" class="pulse" src="../../../img/modules/line-ekg-seagreen.svg">
-            <img ng-show="recommendation.strength == null" class="pulse" src="../../../img/modules/line-ekg-gray.svg">
-            <i ng-hide="recommendation.strength == null" class="icon" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}">i</i>
-            <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
-            <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
+            <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.svg">
+            <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.svg">
+            <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.svg">
+            <div class="recommendationexplanation">
+              <i ng-hide="recommendation.strength == null" class="icon" ng-class="{gradingStrong: recommendation.strength == 'strong', gradingWeak: recommendation.strength == 'weak', gradingNone: recommendation.strength == null}">i</i>
+              <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
+              <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
+              <p grading="{{recommendation.strength}}" ng-show="recommendation.strength == 'strong'" >
+              Denne anbefalingen er sterk Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. 
+              </p>
+              <p grading="{{recommendation.strength}}" ng-show="recommendation.strength == 'weak'">
+              Denne anbefalingen er svak Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              </p>
+            </div>
             <p>{{recommendation.text}}</p>
           </div>
           <nav>

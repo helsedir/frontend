@@ -151,6 +151,25 @@ function runJqueryUIStuff(){
 
 	  });
 
+	  //hide recommendation explanation text
+	  $(".recommendationexplanation").find("p").hide();
+
+	  //show recommendation explanation text on click
+	  $(".recommendationexplanation").on("click", function(){
+	  	var animationSpeed = 300;
+	  	$(this).find("p").slideToggle(animationSpeed);
+	  	var height = $(this).parent().outerHeight();
+	  	var pulse = $(this).parent(".textContainer").find(".pulse");
+	  	if(pulse.hasClass("closed")){
+	  		pulse.animate({"top" : height-20+"px"}, animationSpeed);
+	  		pulse.removeClass("closed");
+	  	}
+	  	else{
+	  		pulse.animate({"top" : "40px"}, animationSpeed);
+	  		pulse.addClass("closed");
+	  	}
+	  });
+
 	  //Navigational tabs within recommendations
 	  $(".recommendation").find(".tab-pane").addClass("hidden");
 	  $(".recommendation").find(".tabnav").children().each(function(){
@@ -168,7 +187,6 @@ function runJqueryUIStuff(){
 	 //Button to close dropdown
 	 $(".recommendation").find(".closepane").on("click", function(e){
 	 	e.preventDefault();
-
 	 });
 		
 		
