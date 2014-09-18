@@ -1125,13 +1125,31 @@ body {
   vertical-align: bottom;
   padding-right: 50px;
 }
+.container .module.module_contact .address:before,
+.container-fluid .module.module_contact .address:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/ikoner/ikon_postadresse.svg) no-repeat;
+  vertical-align: sub;
+  padding-right: 50px;
+}
+.container .module.module_contact .address p,
+.container-fluid .module.module_contact .address p {
+  display: inline-table;
+  padding-top: 12px;
+}
+.container .module.module_contact .description,
+.container-fluid .module.module_contact .description {
+  padding-left: 50px;
+}
 .container .module.module_print,
 .container-fluid .module.module_print,
 .container .module.module_social,
 .container-fluid .module.module_social {
   padding: 0;
   background: none;
-  border-top: 2px solid #002c42;
   padding-top: 13px;
   margin: 67px 0 31px 0;
   width: 100%;
@@ -1144,14 +1162,15 @@ body {
 .container-fluid .module.module_print a:visited,
 .container .module.module_social a:visited,
 .container-fluid .module.module_social a:visited {
-  color: #002c42;
-  text-transform: uppercase;
+  color: #222;
+  font-weight: 400;
   float: left;
   margin: 0 50px 0 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 2rem;
+  line-height: 2.4rem;
   text-decoration: none;
   border-bottom: none;
+  padding: 10px 15px;
 }
 .container .module.module_print a:last-of-type,
 .container-fluid .module.module_print a:last-of-type,
@@ -1162,6 +1181,16 @@ body {
 .container .module.module_social a:visited:last-of-type,
 .container-fluid .module.module_social a:visited:last-of-type {
   margin-right: 0;
+}
+.container .module.module_print a:hover,
+.container-fluid .module.module_print a:hover,
+.container .module.module_social a:hover,
+.container-fluid .module.module_social a:hover,
+.container .module.module_print a:visited:hover,
+.container-fluid .module.module_print a:visited:hover,
+.container .module.module_social a:visited:hover,
+.container-fluid .module.module_social a:visited:hover {
+  background-color: #D9DADB;
 }
 .container .module.module_print p,
 .container-fluid .module.module_print p,
@@ -1177,29 +1206,9 @@ body {
 .container-fluid .module.module_print span,
 .container .module.module_social span,
 .container-fluid .module.module_social span {
-  margin: 0 3px 0 0;
+  margin: 0 12px 0 0;
   height: 24px;
   width: 26px;
-}
-.container .module.module_print .ikon_facebook span,
-.container-fluid .module.module_print .ikon_facebook span,
-.container .module.module_social .ikon_facebook span,
-.container-fluid .module.module_social .ikon_facebook span {
-  background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
-  -moz-background-size: 27px 20px;
-  -o-background-size: 27px 20px;
-  -webkit-background-size: 27px 20px;
-  background-size: 27px 20px;
-}
-.container .module.module_print .ikon_twitter span,
-.container-fluid .module.module_print .ikon_twitter span,
-.container .module.module_social .ikon_twitter span,
-.container-fluid .module.module_social .ikon_twitter span {
-  background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
-  -moz-background-size: 27px 20px;
-  -o-background-size: 27px 20px;
-  -webkit-background-size: 27px 20px;
-  background-size: 27px 20px;
 }
 .container .module.module_print .ikon_skrivut,
 .container-fluid .module.module_print .ikon_skrivut,
@@ -1211,52 +1220,11 @@ body {
 .container-fluid .module.module_print .ikon_skrivut span,
 .container .module.module_social .ikon_skrivut span,
 .container-fluid .module.module_social .ikon_skrivut span {
-  background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
-  -moz-background-size: 27px 20px;
-  -o-background-size: 27px 20px;
-  -webkit-background-size: 27px 20px;
-  background-size: 27px 20px;
-}
-.container .module.module_print p,
-.container-fluid .module.module_print p,
-.container .module.module_social p,
-.container-fluid .module.module_social p {
-  margin: 0 20px 0 0;
-  color: #004e66;
-  text-transform: uppercase;
-  display: inline;
-  vertical-align: bottom;
-  font-size: 16px;
-}
-.container .module.module_print .ikon_skrivut:hover span,
-.container-fluid .module.module_print .ikon_skrivut:hover span,
-.container .module.module_social .ikon_skrivut:hover span,
-.container-fluid .module.module_social .ikon_skrivut:hover span {
-  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
-}
-.container .module.module_print .ikon_facebook:hover span,
-.container-fluid .module.module_print .ikon_facebook:hover span,
-.container .module.module_social .ikon_facebook:hover span,
-.container-fluid .module.module_social .ikon_facebook:hover span {
-  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
-}
-.container .module.module_print .ikon_twitter:hover span,
-.container-fluid .module.module_print .ikon_twitter:hover span,
-.container .module.module_social .ikon_twitter:hover span,
-.container-fluid .module.module_social .ikon_twitter:hover span {
-  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
-  -moz-background-size: 28px 23px;
-  -o-background-size: 28px 23px;
-  -webkit-background-size: 28px 23px;
-  background-size: 28px 23px;
+  background: url(../img/ikoner/skriv_ut_regular.svg) no-repeat;
+  -moz-background-size: 27px 22px;
+  -o-background-size: 27px 22px;
+  -webkit-background-size: 27px 22px;
+  background-size: 27px 22px;
 }
 .container .showmorenews,
 .container-fluid .showmorenews {
@@ -2309,8 +2277,8 @@ html {
   color: #222;
 }
 .container h5 {
-  font-size: 2.3rem;
-  line-height: 2.8rem;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #222;
