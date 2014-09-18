@@ -88,13 +88,13 @@
 
 
                 //Active correct tab
-                $($respTabs.find('.resp-tab-item')[tabNum]).addClass('resp-tab-active');
+                //$($respTabs.find('.resp-tab-item')[tabNum]).addClass('resp-tab-active');
 
                 //keep closed if option = 'closed' or option is 'accordion' and the element is in accordion mode
                 if(options.closed !== true && !(options.closed === 'accordion' && !$respTabsList.is(':visible')) && !(options.closed === 'tabs' && $respTabsList.is(':visible'))) {                  
                    console.log("hei");
-                    $($respTabs.find('.resp-accordion')[tabNum]).addClass('resp-tab-active');
-                    $($respTabs.find('.resp-tab-content')[tabNum]).addClass('resp-tab-content-active').attr('style', 'display:block');
+                    //$($respTabs.find('.resp-accordion')[tabNum]).addClass('resp-tab-active');
+                    //$($respTabs.find('.resp-tab-content')[tabNum]).addClass('resp-tab-content-active').attr('style', 'display:block');
                 }
                 //assign proper classes for when tabs mode is activated before making a selection in accordion mode
                 else {

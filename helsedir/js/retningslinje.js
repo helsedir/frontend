@@ -152,16 +152,22 @@ function runJqueryUIStuff(){
 	  });
 
 	  //hide recommendation explanation text
-	  $(".recommendationexplanation").find("p").hide();
+	  $(".recommendationexplanation").find("div").hide();
 
 	  //show recommendation explanation text on click
 	  $(".recommendationexplanation").on("click", function(){
 	  	var animationSpeed = 300;
-	  	$(this).find("p").slideToggle(animationSpeed);
-	  	var height = $(this).parent().outerHeight();
+	  	$(this).find("div").slideToggle(animationSpeed);
+	  	
+	  	var height = $(this).find("p").first();
+	  	if(height.hasClass("ng-hide"))
+	  		height = height.next();
+
+	  	height = height[0].scrollHeight;
+	  	
 	  	var pulse = $(this).parent(".textContainer").find(".pulse");
 	  	if(pulse.hasClass("closed")){
-	  		pulse.animate({"top" : height-20+"px"}, animationSpeed);
+	  		pulse.animate({"top" : height+50+"px"}, animationSpeed);
 	  		pulse.removeClass("closed");
 	  	}
 	  	else{
@@ -192,10 +198,13 @@ function runJqueryUIStuff(){
 	 //responsive tabs
 	 $('.tabs').easyResponsiveTabs({
 	     type: 'default', //Types: default, vertical, accordion           
-
-	     closed: true// Start closed if in accordion view
+	     closed: true,// Start closed if in accordion view
+	     activate: function(event) { // Callback function if tab is switched  
+	     	$(this).closest("ul").addClass("open");
+	      }
 	 });
 
+	 //for debugging
 	 $('.recommendation').find("h2").first().trigger("click");
 		
 }
