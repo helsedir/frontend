@@ -163,16 +163,18 @@ body {
         }
 
         li:after {
-            font-family: "FontAwesome";
-            content: '\f177';
-            color: @colorDarkBlue;
-            font-size: 25px;
+            content: '';
+            height: 28px;
+            width: 28px;
+            display: inline-block;
+            background: url('../img/ikoner/pil_tilbake_brun.svg') no-repeat;
+            background-size: 28px 28px;
             margin: 0 5px 0 5px;
-            vertical-align: middle;
+            vertical-align: bottom;
         }
 
         li:last-child:after {
-            content: '';
+            background: none;
         }
 
         a {
@@ -188,10 +190,10 @@ body {
 
     .accordion {
         /* h3 {
-            border-bottom: 1px solid @colorDarkGray;
-            padding-bottom: 10px;
-            padding-left: 33px;
-        }*/
+			border-bottom: 1px solid @colorDarkGray;
+			padding-bottom: 10px;
+			padding-left: 33px;
+		}*/
     }
 
     .has-hidden-content {
@@ -207,27 +209,27 @@ body {
             }
         }
         /* &.accordion {
-            h3 {
-                cursor: pointer;
+			h3 {
+				cursor: pointer;
 
-                &:before {
-                    content: "\f107";
-                    font-family: "FontAwesome";
-                    font-size: 30px;
-                    position: absolute;
-                    left: 0;
-                }
-            }
-        } */
+				&:before {
+					content: "\f107";
+					font-family: "FontAwesome";
+					font-size: 30px;
+					position: absolute;
+					left: 0;
+				}
+			}
+		} */
     }
     /* .nested-accordion.has-hidden-content > .accordion:before {
-        float: left;
-        padding: 3px 20px 0 0;
-        content: "\f107";
-        font-family: "FontAwesome";
-        font-size: 40px;
-        cursor: pointer;
-    }*/
+		float: left;
+		padding: 3px 20px 0 0;
+		content: "\f107";
+		font-family: "FontAwesome";
+		font-size: 40px;
+		cursor: pointer;
+	}*/
     .has-visible-content {
         h2 {
             cursor: pointer;
@@ -241,27 +243,27 @@ body {
             }
         }
         /*
-        &.accordion {
-            h3 {
-                cursor: pointer;
+		&.accordion {
+			h3 {
+				cursor: pointer;
 
-                &:before {
-                    content: "\f106";
-                    font-family: "FontAwesome";
-                    font-size: 30px;
-                    position: absolute;
-                    left: 0;
-                }
-            }
-        }*/
+				&:before {
+					content: "\f106";
+					font-family: "FontAwesome";
+					font-size: 30px;
+					position: absolute;
+					left: 0;
+				}
+			}
+		}*/
     }
     /*    .nested-accordion.has-visible-content > .accordion:before {
-        float: left;
-        padding: 3px 20px 0 0;
-        content: "\f106";
-        font-family: "FontAwesome";
-        font-size: 40px;
-    }*/
+		float: left;
+		padding: 3px 20px 0 0;
+		content: "\f106";
+		font-family: "FontAwesome";
+		font-size: 40px;
+	}*/
     .clearfix:before,
     .clearfix:after {
         display: table;
@@ -510,7 +512,7 @@ body {
         }
     }
     /**********************************************************************
-    Moduler
+	Moduler
 ***********************************************************************/
     video {
         width: 100%;
@@ -728,15 +730,15 @@ body {
             padding-left: 25px;
         }
         /*
-        &.inline, .inline:visited {
-            text-decoration: none;
-            margin: 0;
-        }
+		&.inline, .inline:visited {
+			text-decoration: none;
+			margin: 0;
+		}
 
-        &:visited {
-            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-            background-size: 16px 16px;
-        }*/
+		&:visited {
+			background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+			background-size: 16px 16px;
+		}*/
         h1, h2, h3, h4, h5 {
             display: inline;
         }
@@ -849,7 +851,9 @@ body {
             text-transform: uppercase;
             color: #222;
             text-decoration: none;
-            margin-bottom: 5px;
+            margin-top: -30px;
+            margin-bottom: 15px;
+            padding: 0.8rem 0;
         }
 
         a .module_header {
@@ -1508,15 +1512,15 @@ body {
                 display: none;
             }
             /*
-            &:hover, &:focus, &:active {
-                background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
-                background-position: 96%;
-                -moz-background-size: 20px;
-                -o-background-size: 20px;
-                -webkit-background-size: 20px;
-                background-size: 20px;
-                color: white;
-            }*/
+			&:hover, &:focus, &:active {
+				background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
+				background-position: 96%;
+				-moz-background-size: 20px;
+				-o-background-size: 20px;
+				-webkit-background-size: 20px;
+				background-size: 20px;
+				color: white;
+			}*/
         }
     }
 
@@ -1528,15 +1532,22 @@ body {
         h2, h5 {
             margin-top: 5px;
             margin-bottom: 15px;
+            font-size: 2.3rem;
+            line-height: 2.8rem;
             font-family: @roboto;
-            line-height: 20px;
-            text-transform: uppercase;
-            font-size: 18px;
+            font-weight: 400;
             color: #222;
         }
 
         select {
             margin-bottom: 10px;
+
+            option {
+                font-size: 2.0rem;
+                line-height: 3.0rem;
+                font-family: @roboto;
+                font-weight: 300;
+            }
         }
     }
 
@@ -2037,12 +2048,14 @@ body {
                     display: block;
 
                     &:before {
-                        font-family: "FontAwesome";
-                        content: '\f104';
-                        color: #004e66;
-                        font-size: 25px;
+                        content: '';
+                        height: 28px;
+                        width: 28px;
+                        display: inline-block;
+                        background: url('../img/ikoner/pil_tilbake_brun.svg') no-repeat;
+                        background-size: 28px 28px;
                         margin: 0 5px 0 5px;
-                        vertical-align: middle;
+                        vertical-align: bottom;
                     }
                 }
             }
@@ -2221,8 +2234,8 @@ html {
 
 .container {
     h1 {
-        font-size: 4.8rem;
-        line-height: 6.0rem;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
         font-family: @roboto;
         font-weight: 300;
         margin: 6.3rem 0 2.4rem 0;
@@ -2233,16 +2246,17 @@ html {
 
     h1.alternative {
         font-weight: 300;
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 3.0rem;
+        line-height: 3.6rem;
         margin: 50px 0 0 0;
         padding: 0 0 4px 0;
         color: #222;
+        border: none;
     }
 
     h2 {
-        font-size: 3.6rem;
-        line-height: 4.8rem;
+        font-size: 3.0rem;
+        line-height: 3.6rem;
         font-family: @roboto;
         font-weight: 300;
         margin: 2.4rem 0 1.6rem 0;
@@ -2251,8 +2265,8 @@ html {
     }
 
     h3 {
-        font-size: 3.0rem;
-        line-height: 3.6rem;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
         font-family: @roboto;
         font-weight: 300;
         margin: 3.2rem 0 1.2rem 0;
@@ -2264,19 +2278,17 @@ html {
         font-size: 2.3rem;
         line-height: 2.8rem;
         font-family: @roboto;
-        font-weight: 400;
+        font-weight: 300;
         margin: 3.2rem 0 0 0;
         padding: 0;
-        text-transform: uppercase;
         color: #222;
     }
 
     h5 {
-        font-size: 1.6rem;
-        line-height: 2.0rem;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
         font-family: @roboto;
         font-weight: 400;
-        text-transform: uppercase;
         color: #222;
     }
 
@@ -2464,5 +2476,13 @@ html {
         background-position: 0 60%;
         background-size: 28px 28px;
         padding-left: 36px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        .ingress {
+            width: 57%;
+        }
     }
 }

@@ -35,22 +35,22 @@ body {
 .container,
 .container-fluid {
   /* .nested-accordion.has-hidden-content > .accordion:before {
-        float: left;
-        padding: 3px 20px 0 0;
-        content: "\f107";
-        font-family: "FontAwesome";
-        font-size: 40px;
-        cursor: pointer;
-    }*/
+		float: left;
+		padding: 3px 20px 0 0;
+		content: "\f107";
+		font-family: "FontAwesome";
+		font-size: 40px;
+		cursor: pointer;
+	}*/
   /*    .nested-accordion.has-visible-content > .accordion:before {
-        float: left;
-        padding: 3px 20px 0 0;
-        content: "\f106";
-        font-family: "FontAwesome";
-        font-size: 40px;
-    }*/
+		float: left;
+		padding: 3px 20px 0 0;
+		content: "\f106";
+		font-family: "FontAwesome";
+		font-size: 40px;
+	}*/
   /**********************************************************************
-    Moduler
+	Moduler
 ***********************************************************************/
   /**Kurs og konferanse*/
   /**Felles*/
@@ -186,16 +186,18 @@ body {
 }
 .container .breadcrumbs li:after,
 .container-fluid .breadcrumbs li:after {
-  font-family: "FontAwesome";
-  content: '\f177';
-  color: #002c42;
-  font-size: 25px;
+  content: '';
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  background: url('../img/ikoner/pil_tilbake_brun.svg') no-repeat;
+  background-size: 28px 28px;
   margin: 0 5px 0 5px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .container .breadcrumbs li:last-child:after,
 .container-fluid .breadcrumbs li:last-child:after {
-  content: '';
+  background: none;
 }
 .container .breadcrumbs a,
 .container-fluid .breadcrumbs a {
@@ -210,26 +212,26 @@ body {
 .container .accordion,
 .container-fluid .accordion {
   /* h3 {
-            border-bottom: 1px solid @colorDarkGray;
-            padding-bottom: 10px;
-            padding-left: 33px;
-        }*/
+			border-bottom: 1px solid @colorDarkGray;
+			padding-bottom: 10px;
+			padding-left: 33px;
+		}*/
 }
 .container .has-hidden-content,
 .container-fluid .has-hidden-content {
   /* &.accordion {
-            h3 {
-                cursor: pointer;
+			h3 {
+				cursor: pointer;
 
-                &:before {
-                    content: "\f107";
-                    font-family: "FontAwesome";
-                    font-size: 30px;
-                    position: absolute;
-                    left: 0;
-                }
-            }
-        } */
+				&:before {
+					content: "\f107";
+					font-family: "FontAwesome";
+					font-size: 30px;
+					position: absolute;
+					left: 0;
+				}
+			}
+		} */
 }
 .container .has-hidden-content h2,
 .container-fluid .has-hidden-content h2 {
@@ -246,19 +248,19 @@ body {
 .container .has-visible-content,
 .container-fluid .has-visible-content {
   /*
-        &.accordion {
-            h3 {
-                cursor: pointer;
+		&.accordion {
+			h3 {
+				cursor: pointer;
 
-                &:before {
-                    content: "\f106";
-                    font-family: "FontAwesome";
-                    font-size: 30px;
-                    position: absolute;
-                    left: 0;
-                }
-            }
-        }*/
+				&:before {
+					content: "\f106";
+					font-family: "FontAwesome";
+					font-size: 30px;
+					position: absolute;
+					left: 0;
+				}
+			}
+		}*/
 }
 .container .has-visible-content h2,
 .container-fluid .has-visible-content h2 {
@@ -783,15 +785,15 @@ body {
   display: inline-block;
   border-bottom: none;
   /*
-        &.inline, .inline:visited {
-            text-decoration: none;
-            margin: 0;
-        }
+		&.inline, .inline:visited {
+			text-decoration: none;
+			margin: 0;
+		}
 
-        &:visited {
-            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-            background-size: 16px 16px;
-        }*/
+		&:visited {
+			background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+			background-size: 16px 16px;
+		}*/
 }
 .container .external-link:after,
 .container-fluid .external-link:after {
@@ -929,7 +931,9 @@ body {
   text-transform: uppercase;
   color: #222;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-top: -30px;
+  margin-bottom: 15px;
+  padding: 0.8rem 0;
 }
 .container .module a .module_header,
 .container-fluid .module a .module_header {
@@ -1605,15 +1609,15 @@ body {
   text-overflow: '';
   color: #222;
   /*
-            &:hover, &:focus, &:active {
-                background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
-                background-position: 96%;
-                -moz-background-size: 20px;
-                -o-background-size: 20px;
-                -webkit-background-size: 20px;
-                background-size: 20px;
-                color: white;
-            }*/
+			&:hover, &:focus, &:active {
+				background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
+				background-position: 96%;
+				-moz-background-size: 20px;
+				-o-background-size: 20px;
+				-webkit-background-size: 20px;
+				background-size: 20px;
+				color: white;
+			}*/
 }
 .container .dropdown select::-ms-expand,
 .container-fluid .dropdown select::-ms-expand {
@@ -1631,15 +1635,22 @@ body {
 .container-fluid .refinesearch h5 {
   margin-top: 5px;
   margin-bottom: 15px;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
   font-family: 'Roboto', sans-serif;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-weight: 400;
   color: #222;
 }
 .container .refinesearch select,
 .container-fluid .refinesearch select {
   margin-bottom: 10px;
+}
+.container .refinesearch select option,
+.container-fluid .refinesearch select option {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 @-moz-document url-prefix() {
   .refinesearch .form-group {
@@ -2098,12 +2109,14 @@ body {
     display: block;
   }
   .container .breadcrumbs li:last-child:before {
-    font-family: "FontAwesome";
-    content: '\f104';
-    color: #004e66;
-    font-size: 25px;
+    content: '';
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    background: url('../img/ikoner/pil_tilbake_brun.svg') no-repeat;
+    background-size: 28px 28px;
     margin: 0 5px 0 5px;
-    vertical-align: middle;
+    vertical-align: bottom;
   }
   .container .statistics_table table,
   .container .statistics_table tbody {
@@ -2250,8 +2263,8 @@ html {
   font-size: 62.5%;
 }
 .container h1 {
-  font-size: 4.8rem;
-  line-height: 6.0rem;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 6.3rem 0 2.4rem 0;
@@ -2261,15 +2274,16 @@ html {
 }
 .container h1.alternative {
   font-weight: 300;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 3.0rem;
+  line-height: 3.6rem;
   margin: 50px 0 0 0;
   padding: 0 0 4px 0;
   color: #222;
+  border: none;
 }
 .container h2 {
-  font-size: 3.6rem;
-  line-height: 4.8rem;
+  font-size: 3.0rem;
+  line-height: 3.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 2.4rem 0 1.6rem 0;
@@ -2277,8 +2291,8 @@ html {
   color: #222;
 }
 .container h3 {
-  font-size: 3.0rem;
-  line-height: 3.6rem;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 3.2rem 0 1.2rem 0;
@@ -2289,18 +2303,16 @@ html {
   font-size: 2.3rem;
   line-height: 2.8rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 3.2rem 0 0 0;
   padding: 0;
-  text-transform: uppercase;
   color: #222;
 }
 .container h5 {
-  font-size: 1.6rem;
-  line-height: 2.0rem;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
   color: #222;
 }
 .container .ingress {
@@ -2472,5 +2484,10 @@ html {
   background-position: 0 60%;
   background-size: 28px 28px;
   padding-left: 36px;
+}
+@media only screen and (min-width: 900px) {
+  .container .ingress {
+    width: 57%;
+  }
 }
 /*# sourceMappingURL=common.css.map */

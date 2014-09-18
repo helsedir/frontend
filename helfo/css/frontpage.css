@@ -306,12 +306,14 @@
 .container.frontpage .ingress {
   border: none;
   margin-top: 23px;
+  width: 100%;
 }
 .container.frontpage .ingress.nomargin {
   margin: 0;
 }
 .container.frontpage .importantnews .ingress {
   margin-bottom: 20px;
+  width: 100%;
 }
 .container.frontpage .importantnews .bulletlist {
   margin-bottom: 35px;

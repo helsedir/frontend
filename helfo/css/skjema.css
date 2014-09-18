@@ -268,6 +268,40 @@ a.method_entrance:hover {
     border-bottom: 2px solid #838078;
   }
 }
+.selected {
+  /*
+    span {
+        width: 86px;
+        height: 60px;
+        background: @colorOrange;
+        position: relative;
+        display: block;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 43px solid transparent;
+            border-right: 43px solid transparent;
+            border-top: 20px solid white;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 43px solid transparent;
+            border-right: 43px solid transparent;
+            border-top: 25px solid @colorOrange;
+        }
+    } */
+}
 .selected span {
   background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
   background-size: 85px 85px;

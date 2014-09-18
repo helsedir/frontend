@@ -1,0 +1,24 @@
+﻿.method_entrance .drop_wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.method_entrance .drop_wrapper .drop > i {
+  display: none !important;
+}
+.method_entrance .drop_wrapper .drop {
+  width: 200px;
+  height: 166px;
+}
+.method_entrance .drop_wrapper .drop.forslag {
+  background: url(../img/ikoner/draape_forslag.png) no-repeat;
+}
+.method_entrance .drop_wrapper .drop.metodevurdering {
+  background: url(../img/ikoner/draape_metodevurdering.png) no-repeat;
+}
+.method_entrance .drop_wrapper .drop.beslutning {
+  background: url(../img/ikoner/draape_beslutning.png) no-repeat;
+}
+.method_entrance .drop_wrapper .drop.implementering {
+  background: url(../img/ikoner/draape_implementering.png) no-repeat;
+}
+/*# sourceMappingURL=ie8fix.css.map */
