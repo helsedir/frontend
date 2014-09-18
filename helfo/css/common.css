@@ -1010,7 +1010,7 @@ body {
 .container .module.module_related.regelverk:hover,
 .container-fluid .module.module_related.regelverk:hover {
   text-decoration: none;
-  box-shadow: #9aaf65 0 0 0 2px;
+  box-shadow: #dbcee3 0 0 0 2px;
 }
 .container .module.module_related.regelverk:hover h5,
 .container-fluid .module.module_related.regelverk:hover h5 {
@@ -1612,9 +1612,6 @@ body {
 .container .refinesearch select,
 .container-fluid .refinesearch select {
   margin-bottom: 10px;
-}
-.container .refinesearch select option,
-.container-fluid .refinesearch select option {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;

@@ -97,6 +97,21 @@
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
+.no-svg .container .module.module_contact .phone:before {
+  background: url(../img/ikoner/ikon_telefon.png) no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+.no-svg .container .module.module_contact .email:before {
+  background: url(../img/ikoner/ikon_epost.png) no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+.no-svg .container .module.module_contact .address:before {
+  background: url(../img/ikoner/ikon_postadresse.png) no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
 .no-svg .container .transportsideknapp {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px;
