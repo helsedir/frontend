@@ -1,9 +1,12 @@
-@media screen and (min-width: 1200px) {
-  .container aside.aside {
-    margin-right: -48%;
-  }
-}
-
+   /* aside{
+        @media screen (min-width: 1200px){
+        margin-top: 
+           .module_related{
+            margin-top:
+           }
+        }
+    }
+}*/
 #pageheader {
   background: #ffffff;
   border-left: 19px solid #004e66;
