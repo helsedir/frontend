@@ -1140,10 +1140,6 @@ body {
   display: inline-table;
   padding-top: 12px;
 }
-.container .module.module_contact .description,
-.container-fluid .module.module_contact .description {
-  padding-left: 50px;
-}
 .container .module.module_print,
 .container-fluid .module.module_print,
 .container .module.module_social,
@@ -2312,10 +2308,10 @@ html {
   border-bottom: 1px solid #eb6a0a;
 }
 .container .bulletlist li {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 0 2.5rem;
   padding: 0.8rem 0;
   color: #222;
@@ -2335,10 +2331,10 @@ html {
   border-bottom: 1px solid #eb6a0a;
 }
 .container .numberedlist li {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 0 0;
   padding: 0.8rem 0;
   color: #222;
@@ -2350,8 +2346,8 @@ html {
   border-bottom: 1px solid #eb6a0a;
 }
 .container a {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0;
