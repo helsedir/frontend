@@ -1,3 +1,28 @@
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 993px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 $fontCalibri: "Calibri";
 $fontCalibriBold: "Calibri-Bold";
@@ -29,14 +54,47 @@ $colorgrading-blank: #ffffff;
     }
 }*/
 
+@include breakpoint("mobile") {
+    .col-md-12.pageheader {
+        padding: 0;
+    }
+}
+
 
 #pageheader {
     background: $colorWhite;
     border-left: 19px solid $colorDarkBlue;
+    @include breakpoint("mobile") {
+        border: none;
+        margin: 0;
+    }
+
     nav {
         margin-top: 15px;
         margin-bottom: 5px;
         margin-left: 30px;
+        @include breakpoint("mobile") {
+            margin: 0;
+            background: $colorDarkBlue;
+            li {
+                margin-left: 45px;
+                padding: 7px 0px;
+                &:before {
+                    position: absolute;
+                    left: 20px;
+                    top: 5px;
+                    font-family: "FontAwesome";
+                    content: "\f104";
+                    font-size: 40px;
+                    vertical-align: middle;
+                    color: $colorWhite;
+                }
+            }
+            a {
+                color: $colorWhite;
+                font-size: 24px;
+            }
+        }
     }
     .headerGroup {
         color: $colorWhite;
@@ -45,6 +103,10 @@ $colorgrading-blank: #ffffff;
         background-repeat: repeat-x;
         background-size: cover;
         overflow: hidden;
+        @include breakpoint("mobile") {
+            background: none;
+        }
+
         h1 {
             color: $colorWhite;
             margin-top: 25px;
@@ -53,16 +115,24 @@ $colorgrading-blank: #ffffff;
             padding-bottom: 45px;
             display: block;
             //position: relative;
-       
+            @include breakpoint("mobile") {
+                padding-left: 15px;
+                padding-right: 15px;
+                color: #004e66;
+                font-size: 36px;
+            }
         }
         span {
-            font: $fontCalibri;
+            font-family: $fontCalibri;
             text-transform: uppercase;
             font-size: 18px;
             line-height: 22px;
             display: inline-block;
             margin-left: 30px;
             margin-top: 30px;
+            @include breakpoint("mobile") {
+                display: none;
+            }
         }
         .icon {
             display: block;
@@ -81,16 +151,18 @@ $colorgrading-blank: #ffffff;
 .recommendation {
     padding: 0;
     background: $colorWhite;
-
-    dl dt{
+    margin-top: 25px;
+    &:first-child {
+        margin-top: 40px;
+    }
+    dl dt {
         font-weight: bold;
     }
-
-    @media (min-width: 768px){
-        .dl-horizontal{
+    @media (min-width: 768px) {
+        .dl-horizontal {
             width: 100%;
             overflow: auto;
-            dt{
+            dt {
                 float: left;
                 //width: 160px;
                 overflow: hidden;
@@ -99,14 +171,18 @@ $colorgrading-blank: #ffffff;
                 text-overflow: ellipsis;
                 white-space: nowrap;
             }
-            dd{
+            dd {
                 margin-left: 120px;
                 //float: left;
+           
             }
         }
     }
-
-
+    @include breakpoint("mobile"){
+        &.open{
+            margin-bottom: 150px;
+        }
+    }
     .header_wrapper {
         header.gradingStrong {
             border-left: 5px solid $colorgrading-strong;
@@ -119,9 +195,14 @@ $colorgrading-blank: #ffffff;
         }
         header.gradingBlank {
             border-left: 5px solid #fffff1;
+            /*Change to site background on mobile */
+            @include breakpoint("mobile") {
+                border-left: 5px solid #f5f5f5;
+            }
         }
         header {
             h2 {
+                margin-top: 0;
                 margin-right: 30px;
                 display: block;
                 color: $colorDarkBlue;
@@ -135,100 +216,177 @@ $colorgrading-blank: #ffffff;
                     content: "\f107";
                     font-family: "FontAwesome";
                     cursor: pointer;
+                    @include breakpoint("mobile") {
+                        left: 0px;
+                        font-size: 40px;
+                    }
+                }
+                @include breakpoint("mobile") {
+                    &.clicked {
+                        background: #f5f5f5;
+                    }
+                    width: 100%;
+                    padding-right: 45px;
                 }
             }
         }
     }
     .text {
 
+        .recommendationexplanation {
+            /*Grading icon*/
+            margin-left: 50px;
+            padding-left: 20px;
+            @include breakpoint("mobile"){
+                margin-left: 0;
+                padding-left: 0;
+            }
+            &.gradingStrong {
+                border-left: 2px solid $colorgrading-strong;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingWeak {
+                border-left: 2px solid $colorgrafing-weak;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingNone {
+                border-left: 2px solid $colorgrading-none;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingBlank {
+                border-left: 2px solid $colorgrading-blank;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            .icon {
+                margin-bottom: 10px;
+                display: inline-block;
+                font-family: $fontSoho;
+                font-size: 20px;
+                color: $colorWhite;
+                padding: 3px 16px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 0;
+                &.gradingStrong {
+                    background-color: $colorgrading-strong;
+                }
+                &.gradingWeak {
+                    background-color: $colorgrafing-weak;
+                }
+                &.gradingNone {
+                    background-color: $colorgrading-none;
+                }
+                @include breakpoint("mobile") {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 25px;
+                    padding: 8px 20px;
+                }
+            }
+            /*Grading header*/
+            .recommendationstrength {
+                cursor: pointer;
+                font-family: $fontCalibriBold;
+                text-transform: uppercase;
+                margin-left: 15px;
+                &.gradingStrong {
+                    color: $colorgrading-strong;
+                }
+                &.gradingWeak {
+                    color: $colorgrafing-weak;
+                }
+                @include breakpoint("mobile") {
+                    display: block;
+                    padding-top: 15px;
+                    font-size: 24px;
+                    font-family: $fontCalibri;
+                    
+                }
+            }
+            /*Grading text*/
+            .explainingtext {
+                margin-top: 0;
+                padding: 10px;
+                &.gradingStrong {
+                    background-color: #ded2e4;
+                }
+                &.gradingWeak {
+                    background-color: #c1dfdd;
+                }
+                p {
+                    max-width: 650px;
+                }
+                @include breakpoint("mobile"){
+                    padding: 25px 15px;
+                    font-size: 24px;
+                }
+            }
+        }
         /* Styling for EKG border  */
         .textContainer {
             margin-left: 50px;
             margin-right: 30px;
             padding-left: 20px;
             padding-top: 0;
+            @include breakpoint("mobile") {
+                margin: 0;
+                padding: 15px;
+            }
 
             &.gradingStrong {
                 border-left: 2px solid $colorgrading-strong;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
             }
             &.gradingWeak {
                 border-left: 2px solid $colorgrafing-weak;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
             }
             &.gradingNone {
                 border-left: 2px solid $colorgrading-none;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
             }
             &.gradingBlank {
                 border-left: 2px solid $colorgrading-blank;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
             }
-
-            .recommendation-text{
+            .recommendation-text {
                 max-width: 650px;
-                margin-top: 15px;
+                padding-top: 15px;
             }
-            
             img.pulse {
                 top: 40px;
                 position: absolute;
                 left: 43px;
                 height: 57px;
-            }
-            .recommendationexplanation {
-                /*Grading icon*/
-                .icon {
-                    margin-bottom: 10px;
-                    display: inline-block;
-                    font-family: $fontSoho;
-                    font-size: 20px;
-                    color: $colorWhite;
-                    padding: 3px 16px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    margin-bottom: 0;
-                    &.gradingStrong {
-                        background-color: $colorgrading-strong;
-                    }
-                    &.gradingWeak {
-                        background-color: $colorgrafing-weak;
-                    }
-                    &.gradingNone {
-                        background-color: $colorgrading-none;
-                    }
-                }
-                /*Grading header*/
-                .recommendationstrength {
-                    cursor: pointer;
-                    font-family: $fontCalibriBold;
-                    text-transform: uppercase;
-                    margin-left: 10px;
-                    &.gradingStrong {
-                        color: $colorgrading-strong;
-                    }
-                    &.gradingWeak {
-                        color: $colorgrafing-weak;
-                    }
-                }
-                /*Grading text*/
-                .explainingtext{
-                	margin-top: 0;
-                	padding: 10px;
-                	&.gradingStrong {
-                	    background-color: #ded2e4;
-                	}
-                	&.gradingWeak {
-                	    background-color: #c1dfdd;
-                	}
-                    p{
-                        max-width: 650px;
-                    }
+                @include breakpoint("mobile") {
+                    display: none;
                 }
             }
+
         }
         /* Navigational tabs within recommendation */
         .tabs {
             margin-top: 45px;
             width: 100%;
             ul {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
                 margin-left: 50px;
                 margin-right: 30px;
                 text-align: justify;
@@ -239,7 +397,7 @@ $colorgrading-blank: #ffffff;
                     display: inline-block;
                     background-color: $colorLightGray;
                     margin-right: $margin;
-                    &:last{
+                    &:last {
                         margin-right: 0px;
                         margin-left: $margin;
                     }
@@ -247,43 +405,97 @@ $colorgrading-blank: #ffffff;
                         font-size: 18px;
                         color: $colorBlack;
                     }
-
-                    &.resp-tab-active{
+                    &.resp-tab-active {
                         background-color: #f6f6f6;
                         height: 40px;
                         font-weight: bold;
                     }
                 }
-                &.open{
+                &.open {
                     margin-bottom: 0px;
                 }
             }
-
-            .resp-tabs-container{
+            .resp-tabs-container {
                 $border: 15px solid $colorWhite;
                 border-left: $border;
                 border-right: $border;
                 border-bottom: $border;
-                background-color: #f5f5f5;
-                > div{
+                @include breakpoint("desktop") {
+                    background-color: #f5f5f5;
+                }
+
+                @include breakpoint("tablet") {
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                @include breakpoint("mobile") {
+                    margin: 0;
+                    border: 0;
+                    background-color: #f6f6f6;
+                    padding-top: 30px;
+                }
+
+                /* container divs for tab content */
+                > div {
                     padding-top: 30px;
                     margin-left: 70px;
-                    margin-right: 30px; 
+                    margin-right: 30px;
                     padding-bottom: 30px;
+                    @include breakpoint("tablet") {
+                        background-color: #f6f6f6;
+                        margin: 0;
+                        padding-left: 70px;
+                        padding-right: 30px;
+                    }
+                }
+                h3 {
+                    padding: 7px 20px;
+                    background-color: #e7e7e6;
+                    //margin-top: 0;
+                    margin-top: 3px;
+                    @include breakpoint("mobile") {
+                        background-color: #f6f6f6;
+                        padding: 0 0 30px 0;
+                        margin-top: 0;
+                    }
+
+                    a {
+                        font-size: 24px;
+                        color: $colorBlack;
+                            &:before {
+                                padding-right: 10px;
+                                font-size: 30px;
+                                content: "\f107";
+                                font-family: "FontAwesome";
+                                text-decoration: none;
+                                color: #838078;
+                            }
+                        
+                    }
+                    &.resp-tab-active {
+                        font-weight: bold;
+                        background-color: #f6f6f6;
+                    }
                 }
             }
-            
         }
-
     }
     .closepane {
         width: 100%;
         height: 30px;
         display: block;
+        @include breakpoint("mobile"){
+            height: 60px;
+        }
         i {
             color: $colorWhite;
             margin-left: 20px;
             font-size: 28px;
+            @include breakpoint("mobile"){
+                font-size: 45px;
+                @include vertical-align();
+            }
         }
         &.gradingStrong {
             background-color: $colorgrading-strong;
@@ -293,6 +505,48 @@ $colorgrading-blank: #ffffff;
         }
         &.gradingNone {
             background-color: $colorgrading-none;
+        }
+    }
+}
+
+aside.retningslinjer {
+    @include breakpoint("tablet") {
+        float: none;
+    }
+
+    .module_related {
+        width: 100%;
+        h3 {
+            font-family: $fontCalibri;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: $colorDarkBlue;
+            line-height: 20px;
+        }
+        ul.linklist {
+            li {
+                font-size: 26px;
+                margin-bottom: 5px;
+            }
+            a {
+                color: $colorDarkBlue;
+                font-size: 26px;
+                font-family: $fontSohoRegular;
+                &:after {
+                    padding-left: 10px;
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    text-decoration: none;
+                    font-size: inherit;
+                }
+            }
+        }
+        &.green {
+            border-left: 2px solid #a1bf37;
+        }
+        &.blue {
+            border-left: 2px solid #6bb3b4;
         }
     }
 }

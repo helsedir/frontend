@@ -9,11 +9,12 @@
                 width: 'auto',
                 fit: true,
                 closed: false,
+                slideSpeed: 400,
                 activate: function(){}
             }
             //Variables
             var options = $.extend(defaults, options);            
-            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
+            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, jslide = opt.slideSpeed, vtabs = 'vertical', accord = 'accordion';
 
             
             //Events
@@ -52,7 +53,7 @@
 
                 //Assigning the h2 markup to accordion title
                 var $tabItemh2;
-                $respTabs.find('.resp-tab-content').before("<h2 class='resp-accordion' role='tab'><span class='resp-arrow'></span></h2>");
+                $respTabs.find('.resp-tab-content').before("<h3 class='resp-accordion' role='tab'></h3>");
 
                 var itemCount = 0;
                 $respTabs.find('.resp-accordion').each(function () {

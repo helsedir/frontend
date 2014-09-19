@@ -30,7 +30,7 @@ function runJqueryUIStuff(){
 	        var collapseElement = $(this);
 	        var contentToHide = collapseElement.next();
 	        var parentTag = collapseElement.parent();
-	        console.log("click");
+
 	        if (!contentToHide.hasClass("visuallyhidden")) {
 	            contentToHide.slideUp('fast', function () {
 	                contentToHide.addClass('visuallyhidden')
@@ -45,6 +45,7 @@ function runJqueryUIStuff(){
 	            });
 	            parentTag.addClass("has-visible-content");
 	            parentTag.removeClass("has-hidden-content");
+
 	        }
 	    });
 
@@ -145,7 +146,8 @@ function runJqueryUIStuff(){
 	  jQuery('.recommendation').on('click', 'h2', function() {
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
-	  	
+	  	$(this).closest("section").toggleClass("open");
+	  	$(this).toggleClass("clicked"); //make element same background as page
 	  	var wrapper = $(this).closest(".header_wrapper");
 	  	slider(wrapper, wrapper.siblings('.text, .background_information, .closepane'));
 
@@ -164,8 +166,10 @@ function runJqueryUIStuff(){
 	  		height = height.next();
 
 	  	height = height[0].scrollHeight;
+	  	console.log(height);
 	  	
-	  	var pulse = $(this).parent(".textContainer").find(".pulse");
+	  	//make ekg move on expand
+	  	var pulse = $(this).parent().find(".pulse");
 	  	if(pulse.hasClass("closed")){
 	  		pulse.animate({"top" : height+50+"px"}, animationSpeed);
 	  		pulse.removeClass("closed");
@@ -189,7 +193,9 @@ function runJqueryUIStuff(){
 	 		areaToExpand.slideUp('fast', function () {
 			areaToExpand.addClass('visuallyhidden').slideDown(0);
 			$(wrapper).find("header").removeClass("gradingBlank", 300);
+			$(wrapper).find("header").find("h2").removeClass("clicked");
 			wrapper.removeClass('open');
+			wrapper.closest("section").removeClass("open");
 			wrapper.addClass('closed');
 
 		});
@@ -206,6 +212,7 @@ function runJqueryUIStuff(){
 
 	 //for debugging
 	 $('.recommendation').find("h2").first().trigger("click");
+	 //$('.recommendation').find(".tabs").find("a").first().trigger("click");
 		
 }
 
