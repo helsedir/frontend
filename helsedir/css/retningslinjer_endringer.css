@@ -1,3 +1,4 @@
+@charset "UTF-8";
    /* aside{
         @media screen (min-width: 1200px){
         margin-top: 
@@ -180,6 +181,9 @@
     font-size: 40px;
   }
 }
+.recommendation .header_wrapper header h2.clicked:before {
+  content: "";
+}
 @media (max-width: 768px) {
   .recommendation .header_wrapper header h2 {
     width: 100%;
@@ -239,15 +243,23 @@
   }
 }
 .recommendation .text .recommendationexplanation .icon {
+  padding: 7px 15px;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+}
+.recommendation .text .recommendationexplanation .icon:before {
+  content: "\f129";
   margin-bottom: 10px;
   display: inline-block;
-  font-family: "soho gothic pro medium";
+  font-family: "FontAwesome";
   font-size: 20px;
   color: #ffffff;
-  padding: 3px 16px;
-  font-weight: bold;
   cursor: pointer;
   margin-bottom: 0;
+}
+.recommendation .text .recommendationexplanation .icon.open:before {
+  content: "";
 }
 .recommendation .text .recommendationexplanation .icon.gradingStrong {
   background-color: #77438d;
@@ -264,7 +276,9 @@
     top: 0;
     right: 0;
     font-size: 25px;
-    padding: 8px 20px;
+    padding: 10px 15px;
+    width: 50px;
+    text-align: center;
   }
 }
 .recommendation .text .recommendationexplanation .recommendationstrength {
@@ -285,6 +299,7 @@
     padding-top: 15px;
     font-size: 24px;
     font-family: "Calibri";
+    height: 51px;
   }
 }
 .recommendation .text .recommendationexplanation .explainingtext {
@@ -420,7 +435,8 @@
     margin: 0;
     border: 0;
     background-color: #f6f6f6;
-    padding-top: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }
 .recommendation .text .tabs .resp-tabs-container > div {
@@ -437,6 +453,11 @@
     padding-right: 30px;
   }
 }
+@media (max-width: 768px) {
+  .recommendation .text .tabs .resp-tabs-container > div {
+    background-color: #e0e0e0;
+  }
+}
 .recommendation .text .tabs .resp-tabs-container h3 {
   padding: 7px 20px;
   background-color: #e7e7e6;
@@ -444,13 +465,10 @@
 }
 @media (max-width: 768px) {
   .recommendation .text .tabs .resp-tabs-container h3 {
-    background-color: #f6f6f6;
-    padding: 0 0 30px 0;
-    margin-top: 0;
+    background-color: #ffffff;
   }
 }
 .recommendation .text .tabs .resp-tabs-container h3 a {
-  font-size: 24px;
   color: #000000;
 }
 .recommendation .text .tabs .resp-tabs-container h3 a:before {
@@ -462,8 +480,15 @@
   color: #838078;
 }
 .recommendation .text .tabs .resp-tabs-container h3.resp-tab-active {
-  font-weight: bold;
   background-color: #f6f6f6;
+}
+@media (max-width: 768px) {
+  .recommendation .text .tabs .resp-tabs-container h3.resp-tab-active {
+    background-color: #e0e0e0;
+  }
+}
+.recommendation .text .tabs .resp-tabs-container h3.resp-tab-active a:before {
+  content: "\f106";
 }
 .recommendation .closepane {
   width: 100%;
@@ -507,6 +532,12 @@
 }
 aside.retningslinjer .module_related {
   width: 100%;
+}
+aside.retningslinjer .module_related.module {
+  margin-top: 25px;
+}
+aside.retningslinjer .module_related.module:last-child {
+  margin-bottom: 25px;
 }
 aside.retningslinjer .module_related h3 {
   font-family: "Calibri";

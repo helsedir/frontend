@@ -19,18 +19,18 @@
       </header>
     </div>
   </div>
-  <!--Recommendations-->
+  <!--Recommendations-->  
   <div class="row">
     <div class="col-md-12 col-lg-8">
       <section class="recommendation" ng-repeat="recommendation in section.recommendations">
         <div class="header_wrapper">
           <header grading="{{recommendation.strength}}">
-            <h2>{{recommendation.heading}}</h2>
+            <h2>{{recommendation.heading}}</h2> 
           </header>
         </div>
         <div class="text">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
-            <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}">i</i>
+            <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}"></i>
             <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
             <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
             <div class="explainingtext" grading="{{recommendation.strength}}">

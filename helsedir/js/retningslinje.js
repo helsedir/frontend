@@ -160,6 +160,8 @@ function runJqueryUIStuff(){
 	  $(".recommendationexplanation").on("click", function(){
 	  	var animationSpeed = 300;
 	  	$(this).find("div").slideToggle(animationSpeed);
+	  	$(this).toggleClass("open");
+	  	$(this).find("i").toggleClass("open");
 	  	
 	  	var height = $(this).find("p").first();
 	  	if(height.hasClass("ng-hide"))
@@ -205,6 +207,7 @@ function runJqueryUIStuff(){
 	 $('.tabs').easyResponsiveTabs({
 	     type: 'default', //Types: default, vertical, accordion           
 	     closed: true,// Start closed if in accordion view
+	     slideSpeed: 200,
 	     activate: function(event) { // Callback function if tab is switched  
 	     	$(this).closest("ul").addClass("open");
 	      }

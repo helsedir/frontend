@@ -15,7 +15,7 @@
         }
     }
 }
-
+  
 @mixin vertical-align {
   position: relative;
   top: 50%;
@@ -221,6 +221,11 @@ $colorgrading-blank: #ffffff;
                         font-size: 40px;
                     }
                 }
+                &.clicked{
+                    &:before{
+                        content:"\f106"
+                    }
+                }
                 @include breakpoint("mobile") {
                     &.clicked {
                         background: #f5f5f5;
@@ -266,15 +271,31 @@ $colorgrading-blank: #ffffff;
                 }
             }
             .icon {
+                padding: 7px 15px;
+                width: 50px;
+                text-align: center;
+                display: inline-block;
+                &:before{
+                content: "\f129";
                 margin-bottom: 10px;
                 display: inline-block;
-                font-family: $fontSoho;
+                font-family: "FontAwesome";
                 font-size: 20px;
                 color: $colorWhite;
-                padding: 3px 16px;
-                font-weight: bold;
+                //width: 50px;
+                //padding: 14px 2px;
+                
+                //padding: 3px 13px;
+                //font-weight: bold;
                 cursor: pointer;
                 margin-bottom: 0;
+
+                }
+                &.open{
+                    &:before{
+                    content: "\f00d"
+                }
+                }
                 &.gradingStrong {
                     background-color: $colorgrading-strong;
                 }
@@ -289,7 +310,9 @@ $colorgrading-blank: #ffffff;
                     top: 0;
                     right: 0;
                     font-size: 25px;
-                    padding: 8px 20px;
+                    padding: 10px 15px;
+                    width: 50px;
+                    text-align: center;
                 }
             }
             /*Grading header*/
@@ -309,7 +332,7 @@ $colorgrading-blank: #ffffff;
                     padding-top: 15px;
                     font-size: 24px;
                     font-family: $fontCalibri;
-                    
+                    height: 51px;
                 }
             }
             /*Grading text*/
@@ -433,7 +456,8 @@ $colorgrading-blank: #ffffff;
                     margin: 0;
                     border: 0;
                     background-color: #f6f6f6;
-                    padding-top: 30px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
                 }
 
                 /* container divs for tab content */
@@ -448,6 +472,9 @@ $colorgrading-blank: #ffffff;
                         padding-left: 70px;
                         padding-right: 30px;
                     }
+                    @include breakpoint("mobile"){
+                        background-color: #e0e0e0;
+                    }
                 }
                 h3 {
                     padding: 7px 20px;
@@ -455,13 +482,11 @@ $colorgrading-blank: #ffffff;
                     //margin-top: 0;
                     margin-top: 3px;
                     @include breakpoint("mobile") {
-                        background-color: #f6f6f6;
-                        padding: 0 0 30px 0;
-                        margin-top: 0;
+                        background-color: $colorWhite;
                     }
 
                     a {
-                        font-size: 24px;
+                        //font-size: 24px;
                         color: $colorBlack;
                             &:before {
                                 padding-right: 10px;
@@ -474,8 +499,16 @@ $colorgrading-blank: #ffffff;
                         
                     }
                     &.resp-tab-active {
-                        font-weight: bold;
+
                         background-color: #f6f6f6;
+                        @include breakpoint("mobile"){
+                            background-color: #e0e0e0;
+                        }
+                        a{
+                            &:before{
+                                content: "\f106";
+                            }
+                        }
                     }
                 }
             }
@@ -515,6 +548,12 @@ aside.retningslinjer {
     }
 
     .module_related {
+        &.module{
+            margin-top: 25px; //override default
+            &:last-child{
+                margin-bottom: 25px;
+            }
+        }
         width: 100%;
         h3 {
             font-family: $fontCalibri;
@@ -550,3 +589,4 @@ aside.retningslinjer {
         }
     }
 }
+
