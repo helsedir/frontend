@@ -245,11 +245,6 @@ a.method_entrance {
         }
     }
 
-    .drop_wrapper {
-        display: inline-block;
-        width: 100%;
-    }
-
     &:hover {
         border: none;
     }
@@ -324,13 +319,22 @@ a.method_entrance {
 }
 
 .selected {
-    span {
+    .icon {
         background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
         background-size: 85px 85px;
         background-position: center;
-        display: block;
         height: 90px;
         width: 100%;
+        display: inline-block;
+        position: relative;
+
+        .number {
+            color: white;
+            position: absolute;
+            top: 32px;
+            left: 80px;
+            font-size: 4rem;
+        }
     }
     /*
     span {
@@ -364,23 +368,32 @@ a.method_entrance {
             border-top: 25px solid @colorOrange;
         }
     } */
-    h3 {
-        border-bottom: 5px solid @colorOrange;
+    .heading_wrapper h3 {
+        color: @colorOrange;
     }
 }
 
 .passive {
-    span {
+    .icon {
         background: url(../img/ikoner/helfo_pil_passiv.svg) no-repeat;
         background-size: 85px 85px;
         background-position: center;
-        display: block;
         height: 90px;
         width: 100%;
+        display: inline-block;
+        position: relative;
+
+        .number {
+            color: white;
+            position: absolute;
+            top: 32px;
+            left: 80px;
+            font-size: 4rem;
+        }
     }
 
     &:hover {
-        span {
+        .icon {
             background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
             background-size: 85px 85px;
             background-position: center;

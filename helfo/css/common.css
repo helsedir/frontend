@@ -478,7 +478,7 @@ body {
 }
 .container .searchform input,
 .container-fluid .searchform input {
-  width: 92%;
+  width: 94%;
   height: 40px;
   background: white;
   cursor: text;
@@ -493,9 +493,9 @@ body {
   width: 39px;
   height: 40px;
   padding: 0;
-  margin-left: 13px;
   vertical-align: bottom;
   float: left;
+  background: #badde9;
 }
 .container .searchform button img,
 .container-fluid .searchform button img {
@@ -713,20 +713,24 @@ body {
 .container ::-webkit-input-placeholder,
 .container-fluid ::-webkit-input-placeholder {
   text-align: left;
+  font-weight: 300;
 }
 .container :-moz-placeholder,
 .container-fluid :-moz-placeholder {
   /* Firefox 18- */
   text-align: left;
+  font-weight: 300;
 }
 .container ::-moz-placeholder,
 .container-fluid ::-moz-placeholder {
   /* Firefox 19+ */
   text-align: left;
+  font-weight: 300;
 }
 .container :-ms-input-placeholder,
 .container-fluid :-ms-input-placeholder {
   text-align: left;
+  font-weight: 300;
 }
 .container .calltoaction,
 .container-fluid .calltoaction {
@@ -901,6 +905,21 @@ body {
   position: relative;
   min-width: 300px;
 }
+.container .module p,
+.container-fluid .module p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+.container .module p a,
+.container-fluid .module p a {
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+.container .module p a:hover,
+.container-fluid .module p a:hover {
+  border-bottom: 1px solid #c2c3c4;
+}
 .container .module a h5,
 .container-fluid .module a h5 {
   margin: 15px 0 5px 0;
@@ -925,15 +944,9 @@ body {
 }
 .container .module .module_description,
 .container-fluid .module .module_description {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.0rem;
-  text-transform: uppercase;
-  color: #222;
-  text-decoration: none;
-  margin-top: -30px;
+  margin-top: -45px;
   margin-bottom: 15px;
-  padding: 0.8rem 0;
+  padding: 1.2rem 0;
 }
 .container .module a .module_header,
 .container-fluid .module a .module_header {
@@ -943,15 +956,6 @@ body {
 .container-fluid .module .module_header {
   margin-top: 0;
   margin-bottom: 5px;
-  font-size: 2.0rem;
-  font-weight: 400;
-  line-height: 30px;
-}
-.container .module .module_header .internal-link.arrow_right,
-.container-fluid .module .module_header .internal-link.arrow_right {
-  margin-bottom: 5px;
-  font-size: 24px;
-  line-height: 30px;
 }
 .container .module .module_theme,
 .container-fluid .module .module_theme {
@@ -969,6 +973,7 @@ body {
 .container .module.module_related,
 .container-fluid .module.module_related {
   margin-top: 50px;
+  padding-bottom: 10px;
 }
 .container .module.module_related .bulletlist,
 .container-fluid .module.module_related .bulletlist {
@@ -976,18 +981,23 @@ body {
 }
 .container .module.module_related .module_description,
 .container-fluid .module.module_related .module_description {
-  margin-top: -40px;
+  margin-bottom: 5px;
+  margin-top: -45px;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 .container .module.module_related .module_header,
 .container-fluid .module.module_related .module_header {
-  margin-top: 20px;
+  margin-top: 0;
 }
 .container .module.module_related.clickable,
 .container-fluid .module.module_related.clickable {
   border: none;
   background: #ffffff url(../img/ikoner/pil_sort.svg) no-repeat;
-  background-size: 45px;
-  background-position: 93% 90%;
+  background-size: 36px;
+  background-position: 93% 92%;
 }
 .container .module.module_related.clickable .source,
 .container-fluid .module.module_related.clickable .source {
@@ -996,7 +1006,7 @@ body {
 .container .module.module_related.clickable.viktigemeldinger:hover,
 .container-fluid .module.module_related.clickable.viktigemeldinger:hover {
   text-decoration: none;
-  box-shadow: #ee8672 0 0 0 2px;
+  box-shadow: #f2a56b 0 0 0 2px;
 }
 .container .module.module_related.clickable.viktigemeldinger:hover h5,
 .container-fluid .module.module_related.clickable.viktigemeldinger:hover h5 {
@@ -1004,13 +1014,13 @@ body {
 }
 .container .module.module_related.regelverk,
 .container-fluid .module.module_related.regelverk {
-  border-top: 45px solid #dbcee3;
-  border-bottom: 10px solid #dbcee3;
+  border-top: 45px solid #badde9;
+  border-bottom: 10px solid #badde9;
 }
 .container .module.module_related.regelverk:hover,
 .container-fluid .module.module_related.regelverk:hover {
   text-decoration: none;
-  box-shadow: #dbcee3 0 0 0 2px;
+  box-shadow: #badde9 0 0 0 4px;
 }
 .container .module.module_related.regelverk:hover h5,
 .container-fluid .module.module_related.regelverk:hover h5 {
@@ -1018,8 +1028,8 @@ body {
 }
 .container .module.module_related.viktigemeldinger,
 .container-fluid .module.module_related.viktigemeldinger {
-  border-top: 45px solid #f8cbc2;
-  border-bottom: 10px solid #f8cbc2;
+  border-top: 45px solid #f8d2b5;
+  border-bottom: 10px solid #f8d2b5;
 }
 .container .module.module_subscribe,
 .container-fluid .module.module_subscribe {
@@ -1028,11 +1038,17 @@ body {
 }
 .container .module.module_subscribe .module_description,
 .container-fluid .module.module_subscribe .module_description {
-  margin-top: -40px;
+  margin-top: -45px;
+  margin-bottom: 5px;
 }
 .container .module.module_subscribe .module_header,
 .container-fluid .module.module_subscribe .module_header {
   margin-top: 20px;
+}
+.container .module.module_subscribe .rss,
+.container-fluid .module.module_subscribe .rss {
+  width: 45%;
+  display: inline-block;
 }
 .container .module.module_subscribe .rss:before,
 .container-fluid .module.module_subscribe .rss:before {
@@ -1041,33 +1057,36 @@ body {
   width: 25px;
   height: 25px;
   background: url(../img/ikoner/ikon_rss.svg) no-repeat;
-  vertical-align: sub;
-  padding-right: 50px;
+  vertical-align: top;
+  padding-right: 35px;
 }
 .container .module.module_subscribe .email,
 .container-fluid .module.module_subscribe .email {
-  margin-bottom: 5px;
-  margin-top: 10px;
+  width: 50%;
+  display: inline-block;
 }
 .container .module.module_subscribe .email:before,
 .container-fluid .module.module_subscribe .email:before {
   content: '';
   display: inline-block;
   width: 25px;
-  height: 25px;
+  height: 35px;
   background: url(../img/ikoner/ikon_epost.svg) no-repeat;
   vertical-align: bottom;
-  padding-right: 50px;
+  padding-right: 45px;
+}
+.container .module.module_subscribe a,
+.container-fluid .module.module_subscribe a {
+  border: none;
+}
+.container .module.module_subscribe a:hover,
+.container-fluid .module.module_subscribe a:hover {
+  border-bottom: 1px solid #c2c3c4;
 }
 .container .module.module_feedback,
 .container-fluid .module.module_feedback {
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
-}
-.container .module.module_feedback .module_description,
-.container-fluid .module.module_feedback .module_description {
-  margin-top: -40px;
-  margin-bottom: 15px;
 }
 .container .module.module_feedback .module_header,
 .container-fluid .module.module_feedback .module_header {
@@ -1082,14 +1101,20 @@ body {
   margin-top: 10px;
   width: 100%;
 }
+.container .module.module_feedback label,
+.container-fluid .module.module_feedback label {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
 .container .module.module_contact,
 .container-fluid .module.module_contact {
+  padding-bottom: 5px;
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
 }
 .container .module.module_contact .module_description,
 .container-fluid .module.module_contact .module_description {
-  margin-top: -40px;
+  margin-bottom: 0;
 }
 .container .module.module_contact .module_header,
 .container-fluid .module.module_contact .module_header {
@@ -1124,6 +1149,14 @@ body {
   background: url(../img/ikoner/ikon_epost.svg) no-repeat;
   vertical-align: bottom;
   padding-right: 50px;
+}
+.container .module.module_contact .email a,
+.container-fluid .module.module_contact .email a {
+  border: none;
+}
+.container .module.module_contact .email a:hover,
+.container-fluid .module.module_contact .email a:hover {
+  border-bottom: 1px solid #c2c3c4;
 }
 .container .module.module_contact .address:before,
 .container-fluid .module.module_contact .address:before {
@@ -1590,20 +1623,25 @@ body {
 .container .refinesearch,
 .container-fluid .refinesearch {
   background: #badde9;
-  padding: 15px 15px 5px 15px;
+  padding: 0 15px 5px 15px;
   width: 300px;
+  margin-top: 30px;
 }
 .container .refinesearch h2,
 .container-fluid .refinesearch h2,
 .container .refinesearch h5,
 .container-fluid .refinesearch h5 {
-  margin-top: 5px;
+  padding-top: 1.2rem;
   margin-bottom: 15px;
-  font-size: 2.3rem;
-  line-height: 2.8rem;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #222;
+}
+.container .refinesearch label,
+.container-fluid .refinesearch label {
+  font-weight: 300;
 }
 .container .refinesearch select,
 .container-fluid .refinesearch select {
@@ -2026,9 +2064,7 @@ body {
     padding: 5px 0;
   }
   .container .accordion_mobile h2 {
-    border-bottom: 1px solid #002c42;
     padding-bottom: 10px;
-    padding-left: 33px;
     -ms-word-break: break-word;
     word-break: break-word;
   }
@@ -2232,6 +2268,8 @@ html {
   padding: 0 0 2px 0;
   border-bottom: 2px solid #88b9cb;
   color: #222;
+  display: inline-block;
+  min-width: 667px;
 }
 .container h1.alternative {
   font-weight: 300;
@@ -2273,7 +2311,7 @@ html {
   font-size: 2.1rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #222;
 }
 .container .ingress {
@@ -2318,7 +2356,7 @@ html {
 }
 .container .bulletlist li:before {
   content: "•";
-  color: #004e66;
+  color: #54abca;
   margin: 1px 0 0 -25px;
   display: block;
   position: absolute;
@@ -2382,14 +2420,11 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 0;
-  padding: 10px 15px;
   color: #756d6a;
   border: none;
 }
 .container .breadcrumbs a:hover {
-  border: none;
-  background: #d9dadb;
-  border-radius: 19.8rem;
+  border-bottom: 1px solid #c2c3c4;
 }
 .container .breadcrumbs a:visited {
   color: #756d6a;
@@ -2401,14 +2436,11 @@ html {
 .container .navigate_forward a,
 .container .navigate_back a {
   margin: 0;
-  padding: 10px 15px;
   border: none;
 }
 .container .navigate_forward a:hover,
 .container .navigate_back a:hover {
-  border: none;
-  background: #d9dadb;
-  border-radius: 19.8rem;
+  border-bottom: 1px solid #c2c3c4;
 }
 .container .navigate_forward a:visited,
 .container .navigate_back a:visited {
@@ -2419,14 +2451,8 @@ html {
   font-size: 1.8rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #756d6a;
-}
-.container .navigate_forward a:focus,
-.container .navigate_back a:focus,
-.container .navigate_forward a:focus:visited,
-.container .navigate_back a:focus:visited {
-  background: #d9dadb;
 }
 .container .navigate_forward {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
@@ -2436,13 +2462,13 @@ html {
 }
 .container .navigate_forward.pull-right {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
-  background-position: 100% 60%;
+  background-position: 100% 75%;
   background-size: 28px 28px;
   padding-right: 36px;
 }
 .container .navigate_back.pull-left {
   background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
-  background-position: 0 60%;
+  background-position: 0 75%;
   background-size: 28px 28px;
   padding-left: 36px;
 }

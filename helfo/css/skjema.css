@@ -194,10 +194,6 @@ a.method_entrance h3.selected {
 a.method_entrance h3:hover {
   border: none;
 }
-a.method_entrance .drop_wrapper {
-  display: inline-block;
-  width: 100%;
-}
 a.method_entrance:hover {
   border: none;
 }
@@ -290,26 +286,42 @@ a.method_entrance:hover {
         }
     } */
 }
-.selected span {
+.selected .icon {
   background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
   background-size: 85px 85px;
   background-position: center;
-  display: block;
   height: 90px;
   width: 100%;
+  display: inline-block;
+  position: relative;
 }
-.selected h3 {
-  border-bottom: 5px solid #eb6a0a;
+.selected .icon .number {
+  color: white;
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  font-size: 4rem;
 }
-.passive span {
+.selected .heading_wrapper h3 {
+  color: #eb6a0a;
+}
+.passive .icon {
   background: url(../img/ikoner/helfo_pil_passiv.svg) no-repeat;
   background-size: 85px 85px;
   background-position: center;
-  display: block;
   height: 90px;
   width: 100%;
+  display: inline-block;
+  position: relative;
 }
-.passive:hover span {
+.passive .icon .number {
+  color: white;
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  font-size: 4rem;
+}
+.passive:hover .icon {
   background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
   background-size: 85px 85px;
   background-position: center;

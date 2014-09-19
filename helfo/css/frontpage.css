@@ -311,10 +311,6 @@
 .container.frontpage .ingress.nomargin {
   margin: 0;
 }
-.container.frontpage .importantnews .ingress {
-  margin-bottom: 20px;
-  width: 100%;
-}
 .container.frontpage .importantnews .bulletlist {
   margin-bottom: 35px;
 }
@@ -329,6 +325,13 @@
 }
 .container.frontpage .importantnews a {
   border-bottom: none;
+}
+.container.frontpage .importantnews a h2 {
+  color: #222;
+  text-decoration: none;
+}
+.container.frontpage .importantnews a h2:hover {
+  border-bottom: 2px solid #88b9cb;
 }
 .container.frontpage.newsandconference {
   background: white;

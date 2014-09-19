@@ -108,4 +108,13 @@
     $('.order').on('click', function () {
         $('.shoppingcartbutton').toggle(800);
     });
+
+    $('.module_feedback input:radio[name=contact]').click(function () {
+        if ($('.hidden').hasClass('visuallyhidden')) {
+            $('.hidden').slideUp(0, function () {
+                $('.hidden').removeClass('visuallyhidden')
+                    .slideDown(500);
+            });
+        }
+    });
 });

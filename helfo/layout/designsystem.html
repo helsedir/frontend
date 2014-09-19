@@ -36,7 +36,7 @@
                 <h2>h2 - Roboto Light (300) 30/36px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
                 <h3>h3 - Roboto Light (300) 26/32px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
                 <h4>h4 - Roboto Light (300) 23/28px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
-                <h5>h5 moduloverskrift - Roboto Regular (400) 21/26px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h5>
+                <h5>h5 moduloverskrift - Roboto Medium (500) 21/26px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h5>
                 <p>p - Roboto Light (300) 20/30px - Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
                 <p class="ingress">ingress - Roboto Regular (400) 20/30px - Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
 
@@ -71,6 +71,25 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 designcontainer">
+                <h4>Modul viktige meldinger med lenker</h4>
+                <div style="width: 300px">
+                    <div class="module module_related viktigemeldinger">
+                        <p class="module_description">Viktige meldinger</p>
+                        <p>
+                            <a href="artikkel_takstendring_leger.html">Nye takster for leger fra 1.juli 2014</a>
+                        </p>
+                        <p>
+                            <a href="#">Pasienter som viser sitt europeiske helsetrygdkort (EHIC)</a>
+                        </p>
+                        <p>
+                            <a href="#">Helsefortakene overtar finansiering av utvalgte legemidler</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-12 designcontainer">
@@ -95,9 +114,11 @@
                         <label for="r1"><span></span>Ja</label>
                         <input type="radio" id="r2" name="contact" value="nei" />
                         <label for="r2"><span></span>Nei</label>
-                        <label for="t1" class="visuallyhidden">Fortell...</label>
-                        <input id="t1" type="text" placeholder="Fortell..." />
-                        <button class="calltoaction">Send</button>
+                        <div class="visuallyhidden hidden">
+                            <label for="t1" class="visuallyhidden">Fortell...</label>
+                            <input id="t1" type="text" placeholder="Fortell..." />
+                            <button class="calltoaction">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,8 +145,8 @@
                 <div style="width: 300px">
                     <div class="module module_subscribe">
                         <h5 class="module_description">Abonnér på denne siden</h5>
-                        <div class="email"><a href="mailto:post@helfo.no">post@helfo.no</a></div>
-                        <div class="rss"><a href="#">RSS-strøm</a></div>
+                        <div class="email"><a href="mailto:post@helfo.no">E-post</a></div>
+                        <div class="rss"><a href="#">RSS</a></div>
                     </div>
                 </div>
             </div>
@@ -135,7 +156,7 @@
             <div class="col-md-12 designcontainer">
                 <h4>Avgrens visning</h4>
                 <div style="width: 300px">
-                    <div class="refinesearch">
+                    <div class="refinesearch accordion_mobile">
                         <h2>Avgrens visning</h2>
                         <form class="dropdown">
                             <div class="form-group">
