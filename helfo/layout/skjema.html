@@ -253,16 +253,15 @@
                                     <label for="yrke">Yrke</label>
                                     <select role="listbox" id="yrke" class="form-control">
                                         <option role="option">Alle</option>
-
                                         <option role="option">Lege</option>
                                         <option role="option">Tannlege/tannpleier</option>
                                         <option role="option">Fysioterapeut</option>
                                         <option role="option">Apotek/bandasjist</option>
                                         <option role="option">Jordmor/helsestasjon</option>
                                         <option role="option">Manuellterapeut</option>
-                                        <option role="option">Leverandør</option>
                                         <option role="option">Kiropraktor</option>
                                         <option role="option">Ortoptist</option>
+                                        <option role="option">Leverandør</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -372,6 +371,9 @@
                     </div>
 
                     <div class="category_lege">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Henvisning/tilvising til fysioterapi (05-08.05)</h2>
+                        </a>
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>
                                 Henvisning/tilvising til spesialist (05-04.21)
@@ -643,7 +645,7 @@
                             <ul class="bulletlist">
                                 <li>HELFOs organisasjon</li>
                                 <li>Ledige stillinger</li>
-                                <li>Kurs og konferanser</li>
+
                                 <li>Mediehenvendelser</li>
                             </ul>
                         </section>
@@ -696,6 +698,7 @@
                 $('.numberofpublications').text('5 treff');
             }
             else if (yrke == "Apotek/bandasjist") {
+                $('.content').css('min-height', '500px');
                 $('.category_tannlege').slideUp();
                 $('.category_lege').slideUp();
                 $('.category_kiropraktor').slideUp();
@@ -703,7 +706,6 @@
                 $('.category_leverandoer').slideUp();
                 $('.category_apotek').slideDown();
                 $('.numberofpublications').text('2 treff');
-                $('.module_subscribe').hide();
             }
             else if (yrke == "Leverandør") {
                 $('.category_tannlege').slideUp();
@@ -713,7 +715,6 @@
                 $('.category_apotek').slideUp();
                 $('.category_leverandoer').slideDown();
                 $('.numberofpublications').text('4 treff');
-                $('.module_subscribe').hide();
             }
             else if (yrke == "Alle") {
                 $('.category_tannlege').slideUp();
@@ -765,13 +766,14 @@
             }
             else if (getQueryVariable("yrke") == "apotek") {
                 $("#yrke").val("Apotek/bandasjist");
+                $('.content').css('height', '500px');
                 $('.category_lege').hide();
                 $('.category_tannlege').hide();
                 $('.category_shared').hide();
                 $('.category_kiropraktor').hide();
                 $('.category_leverandoer').hide();
                 $('.numberofpublications').text('2 treff');
-                $('.module_subscribe').hide();
+
             }
             else if (getQueryVariable("yrke") == "leverandoer") {
                 $("#yrke").val("Leverandør");
@@ -781,7 +783,6 @@
                 $('.category_kiropraktor').hide();
                 $('.category_apotek').hide();
                 $('.numberofpublications').text('4 treff');
-                $('.module_subscribe').hide();
             }
             else {
                 $('.category_tannlege').hide();
