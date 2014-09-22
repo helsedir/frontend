@@ -4,5 +4,5 @@
 gruntfile.js
 node_modules/
 package.json
-sass/
 .sass-cache
+target/

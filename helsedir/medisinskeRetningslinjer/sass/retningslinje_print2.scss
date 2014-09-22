@@ -1,0 +1,133 @@
+@media screen{
+	#tocList{
+	ol{
+		counter-reset: item;
+	}
+	li{
+		display: block;
+	}
+	li:before{  
+		content: counters(item, ".") " "; 
+		counter-increment: item;
+	}
+	}
+	
+
+	body{
+		background: white;
+		font-size: 12pt;
+		font-family:  Calibri;
+		line-height: 27px;
+	}
+
+	body >header{
+		width: 100%;
+		top:0;
+	}
+	body > header img{
+		float:right;
+		margin: 0;
+		padding: 0;
+		width: 200pt;
+	}
+
+	header > h1{
+		clear: both;
+	}
+
+	h1,h2,h3{
+		font-family: "Soho Gothic W01 Light";
+	}
+
+	h4,h5,h6{
+		font-family: "Soho Gothic W01 Regular";
+	}
+
+	h1 {
+		font-size: 24pt;
+	}
+
+	h2 {
+	font-size: 14pt;
+	margin-top: 25px;
+	}
+
+	dl dt{
+		font-family: "Calibri-Bold";
+	}
+}
+
+body > header img{
+	width: 20em;
+	float: right;
+}
+
+header > h1{
+	clear: both;
+}
+
+@media print{
+	@page{
+		margin: 2cm;
+
+	}
+
+	#tocList{
+	ol{
+		counter-reset: item;
+	}
+	li{
+		display: block;
+	}
+	li:before{  
+		content: counters(item, ".") " "; 
+		counter-increment: item;
+	}
+	}
+	
+
+	body{
+		background: white;
+		font-size: 12pt;
+		font-family:  Calibri;
+		line-height: 27px;
+	}
+
+	body >header{
+		width: 100%;
+		top:0;
+	}
+	body > header img{
+		float:right;
+		margin: 0;
+		padding: 0;
+		width: 200pt;
+	}
+
+	header > h1{
+		clear: both;
+	}
+
+	h1,h2,h3{
+		font-family: "Soho Gothic W01 Light";
+	}
+
+	h4,h5,h6{
+		font-family: "Soho Gothic W01 Regular";
+	}
+
+	h1 {
+		font-size: 24pt;
+	}
+
+	h2 {
+	font-size: 14pt;
+	margin-top: 25px;
+	}
+
+	dl dt{
+		font-family: "Calibri-Bold";
+	}
+
+
+}
