@@ -1,8 +1,8 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
 	'ngRoute', 'retningslinjeControllers', 'retningslinjeServices']);
 
-retningslinjeApp.config(['$routeProvider', '$locationProvider', 
-	function($routeProvider,$locationProvider){
+retningslinjeApp.config(['$routeProvider', 
+	function($routeProvider){
 		$routeProvider.when('/', {
 			templateUrl: 'partials/retningslinje-list.html',
 			controller: 'retningslinjeListCtrl'
@@ -18,6 +18,5 @@ retningslinjeApp.config(['$routeProvider', '$locationProvider',
 		otherwise({
 			redirectTo: '/'
 		});
-		 $locationProvider.html5Mode(true);
 	}]);
 
