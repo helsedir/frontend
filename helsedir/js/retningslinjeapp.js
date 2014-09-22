@@ -1,9 +1,9 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
 	'ngRoute', 'retningslinjeControllers', 'retningslinjeServices']);
 
-retningslinjeApp.config(['$routeProvider', 
-	function($routeProvider){
-		$routeProvider.when('/medisinskeRetningslinjer', {
+retningslinjeApp.config(['$routeProvider', '$locationProvider', 
+	function($routeProvider,$locationProvider){
+		$routeProvider.when('/', {
 			templateUrl: 'partials/retningslinje-list.html',
 			controller: 'retningslinjeListCtrl'
 		}).
@@ -16,7 +16,8 @@ retningslinjeApp.config(['$routeProvider',
 			controller: 'retningslinjeRecommendationCtrl'
 		}).
 		otherwise({
-			redirectTo: '/medisinskeRetningslinjer'
+			redirectTo: '/'
 		});
+		 $locationProvider.html5Mode(true);
 	}]);
 
