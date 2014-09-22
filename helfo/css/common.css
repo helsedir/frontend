@@ -1598,7 +1598,8 @@ body {
 }
 .container .dropdown select.selected,
 .container-fluid .dropdown select.selected {
-  box-shadow: #0093a7 0 0 0 2px;
+  box-shadow: #0093a7 0 0 0 4px;
+  font-weight: bold;
 }
 .container .refinesearch,
 .container-fluid .refinesearch {
@@ -1781,7 +1782,7 @@ body {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px 20px;
   background-position: 96% 50%;
-  margin-top: 20px;
+  margin-top: 15px;
   max-width: 685px;
   width: 100%;
   display: inline-block;
@@ -1846,7 +1847,7 @@ body {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
   background-size: 45px 20px;
   background-position: 96% 50%;
-  margin-top: 10px;
+  margin-top: 15px;
   max-width: 685px;
   width: 100%;
   display: inline-block;
@@ -1929,7 +1930,7 @@ body {
     margin-right: -77%;
   }
   .container h1 {
-    min-width: 667px;
+    min-width: 651px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {

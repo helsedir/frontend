@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../img/HELFO-logo.ico">
-    <title>
-        Slik endrer/fjerner du produkter på produkt- og prislistene | HELFO
-    </title>
+    <title>Søkeside | HELFO</title>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/skjema.css" rel="stylesheet">
     <link href="../css/masterpage.css" rel="stylesheet" />
     <link href="../css/nosvg.css" rel="stylesheet" />
+
     <!--[if lte IE 8]>
     <link href="/css/ie8fix.css" rel="stylesheet">
     <script src="../js/modernizr-latest.js"></script>
     <script src="../js/html5.js"></script>
     <script src="../js/respond.js"></script>
     <![endif]-->
+
     <link href='http://fonts.googleapis.com/css?family=Roboto:700,500,400,300' rel='stylesheet' type='text/css'>
-    <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/veiviser.js"></script>
 </head>
+
 <body>
     <div id="header">
         <div class=" shortcuts">
@@ -39,6 +37,7 @@
                         <img src="../img/HELFO-logo.svg" alt="" />
                     </a>
                 </div>
+
                 <div class="col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0 hidden-xs hidden-sm ">
                     <div class=" menubutton pull-right">
                         <button class="js-expander">
@@ -48,13 +47,16 @@
                     </div>
                 </div>
                 <div class="col-xs-5 visible-xs xs-no-padding col-sm-4 visible-sm">
+
                     <div class=" menubutton mobile-search pull-right" id="mobilesearch">
                     </div>
                     <div class=" menubutton mobile-menu js-expander pull-right" id="mobilemenu">
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-md-2 col-lg-3  hidden-mobile" id="mainsearchcolumn">
                     <form class="mainsearch">
+
                         <span role="search">
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
@@ -225,59 +227,66 @@
                 <header id="pageheader">
                     <nav>
                         <ol class=" breadcrumbs clearfix">
-                            <li>
-                                <a href="forside.html">
-                                    Forside
-                                </a>
-                            </li>
-                            <li>
-                                <a href="transportside_blaaresept.html">
-                                    Blå resept
-                                </a>
-                            </li>
+                            <li><a href="forside.html">Forside</a></li>
                         </ol>
                     </nav>
-                    <h1>Slik endrer/fjerner du produkter på produkt- og prislistene</h1>
+                    <h1>Søk</h1>
                 </header>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-md-7 ">
                 <div class="content">
-                    <nav class="clearfix">
-                        <a href="veiviser_produktpris_fjerne_1.html" class="method_entrance selected">
-                            <div class="icon"><span class="number">1</span></div><div class="heading_wrapper"><h3>Hvem kan søke</h3></div>
-                        </a>
-                        <a href="veiviser_produktpris_fjerne_2.html" class="method_entrance passive">
-                            <div class="icon"><span class="number">2</span></div><div class="heading_wrapper"><h3>Hvordan søke</h3></div>
-                        </a>
-                        <a href="veiviser_produktpris_fjerne_3.html" class="method_entrance passive">
-                            <div class="icon"><span class="number">3</span></div><div class="heading_wrapper"><h3>Sende inn</h3></div>
-                        </a>
-                        <a href="veiviser_produktpris_fjerne_4.html" class="method_entrance passive">
-                            <div class="icon"><span class="number">4</span></div><div class="heading_wrapper"><h3>Saksbehandling</h3></div>
-                        </a>
-                    </nav>
+                    <form class="searchform">
+                        <label for="search" class="visuallyhidden">Søk i alt innhold</label>
+                        <input id="search" class="" type="text" placeholder="Søk i alt innhold">
+                        <button type="submit">
+                            <img src="../img/ikoner/ikon_forstørrelsesglass_sort.svg" alt="Søk" />
+                        </button>
+                    </form>
+
+                    <h2 class=" visuallyhidden">Søkeresultat</h2>
+                    <p class="numberofpublications">x treff</p>
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2>Bekreftelse på avsluttet behandling av fristbruddpasient (02-01.02)</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2>Bekreftelse på kjøp av helsetjenester fristbruddpasient (02-01.02)</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2>Forenklet samleregning (05-10.05)</h2>
+                    </a>
+
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2>Fullmakt for utbetaling av refusjon til et forsikringsselskap for helsehjelp i utlandet (05-24.11)</h2>
+                    </a>
+                    <a href="artikkel_oppgjor_faq.html" class="transportsideknapp clearfix">
+                        <h2>Ofte stilte spørsmål</h2>
+                    </a>
+                    <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20fastlege-05-04.25-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
+                        <h2>
+                            Opplysningsskjema for fastlege (05-04.25)
+                        </h2>
+                    </a>
+                    <a href="artikkel_prisproduktliste.html" class="transportsideknapp clearfix">
+                        <h2>Produkt- og prislistene</h2>
+                    </a>
+                    <a href="skjema.html?yrke=leverandoer" class="transportsideknapp clearfix">
+                        <h2>Skjema for leverandører</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2> Regning/rekning kiropraktor (05-09.01)</h2>
+                    </a>
+                    <a href="#" class="transportsideknapp_dokument">
+                        <h2>
+                            Samleregning for medisinsk behandling (05-04.12)
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-7">
-                <h2>1. Hvem kan søke </h2>
-                <p>Leverandører av medisinsk forbruksmateriell eller næringsmidler som har ført inn varer på en eller flere av våre produkt- og prislister kan endre eller fjerne varene.</p>
-                <p>Hvis du søker på vegne av leverandør, må du legge ved en fullmakt fra leverandøren.</p>
-
-                <nav>
-
-                    <div class="navigate_forward pull-right">
-                        <a href="veiviser_produktpris_fjerne_2.html">
-                            <span>Neste steg: Hvordan søke</span>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </article>
+
     <div id="footer">
         <div class=" shortcuts">
             <ul>
@@ -290,6 +299,7 @@
                     <div class="row  forside">
                         <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <nav class=" tabs">
+
                                 <ul class=" tab-links" role="tablist">
                                     <li role="presentation"><span class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</span></li>
                                     <li role="presentation"><span class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
@@ -325,15 +335,22 @@
                                     <div id="panel_footer2" class="tab tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
                                         <div class="row alphabetical">
                                             <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                 <ul>
                                                     <li class="character">A</li>
+                                                    <li><a href="#">Apotek og bandasjist</a></li>
                                                 </ul>
+
                                                 <ul>
                                                     <li class="character">B</li>
+                                                    <li><a href="#">Behandling i utlandet</a></li>
                                                 </ul>
+
                                                 <ul>
                                                     <li class="character">D</li>
+                                                    <li><a href="#">Diagnoser og takster</a></li>
                                                 </ul>
+
                                                 <ul>
                                                     <li class="character">E</li>
                                                 </ul>
@@ -345,6 +362,7 @@
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                 <ul>
                                                     <li class="character">H</li>
                                                 </ul>
@@ -352,36 +370,66 @@
                                                     <li class="character">I</li>
                                                 </ul>
                                                 <ul>
+                                                    <li class="character">J</li>
+                                                    <li><a href="#">Jordmor og helsestasjon</a></li>
+                                                </ul>
+                                                <ul>
                                                     <li class="character">K</li>
+                                                    <li><a href="transportside_kiropraktor.html">Kiropraktor</a></li>
+                                                    <li><a href="#">Kommune og fylkeskommune</a></li>
+                                                    <li><a href="#">Kurssentra og andre senter</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">L</li>
+                                                    <li><a href="transportside_leger.html">Lege</a></li>
+                                                    <li><a href="#">Logoped og audiopedagog</a></li>
+                                                    <li><a href="transportside_leverandor.html">Leverandører</a></li>
                                                 </ul>
                                             </div>
                                             <div class=" clearfix hidden-md hidden-lg"></div>
                                             <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                 <ul>
                                                     <li class="character">M</li>
+                                                    <li><a href="#">Manuellterapeut</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">N</li>
+                                                    <li><a href="#">Nasjonalt kontaktpunkt</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">O</li>
+                                                    <li><a href="#">Ortoptist</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">P</li>
+                                                    <li><a href="artikkel_prisproduktliste.html">Produkt- og prislisten</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                 <ul>
                                                     <li class="character">R</li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">S</li>
+                                                    <li><a href="#">Sykehus og poliklinikk</a></li>
                                                 </ul>
                                                 <ul>
                                                     <li class="character">T</li>
+                                                    <li><a href="transportside_tannlege.html">Tannlege og tannpleier</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">U</li>
+                                                    <li>
+                                                        <a href="#">Utbetalingsvedtak</a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="character">V</li>
+                                                    <li>
+                                                        <a href="#">Veiledet tjeneste</a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -435,6 +483,7 @@
         </footer>
     </div>
 
+    <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/helsedir.js"></script>
     <script src="../js/expandmenu.js"></script>
