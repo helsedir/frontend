@@ -122,6 +122,44 @@
   background-size: 45px;
   background-position: 96% 50%;
 }
+.no-svg .container .breadcrumbs li:last-child:before {
+  background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
+  background-size: 28px 28px;
+}
+.no-svg .container .breadcrumbs li:after {
+  background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
+  background-size: 28px 28px;
+}
+.no-svg .container .entrancebutton span.avtale {
+  background: #ffffff url('../img/ikoner/hovedinngang_avtale.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.no-svg .container .entrancebutton span.helseaktor {
+  background: #ffffff url('../img/ikoner/hovedinngang_helseaktor.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.no-svg .container .entrancebutton span.oppgjor {
+  background: #ffffff url('../img/ikoner/hovedinngang_oppgjor.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.no-svg .container .entrancebutton span.takster {
+  background: #ffffff url('../img/ikoner/hovedinngang_takster.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.no-svg .container .entrancebutton span.skjema {
+  background: #ffffff url('../img/ikoner/hovedinngang_skjema.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+.no-svg .container .entrancebutton.menu button span {
+  background: #ffffff url('../img/ikoner/hovedinngang_altinnhold.png') no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
 .no-svg .menubutton a.js-expander i {
   margin-left: 0;
 }

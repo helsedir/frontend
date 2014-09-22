@@ -220,7 +220,7 @@ a.method_entrance {
     vertical-align: middle;
     text-align: center;
     margin: 20px 0 10px 0;
-    width: 16%;
+    width: 16.5%;
     border: none;
 
     &:first-of-type {
@@ -265,6 +265,13 @@ a.method_entrance {
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
     .method_entrance {
+        &.selected, &.passive {
+            .icon {
+                .number {
+                    left: 58px;
+                }
+            }
+        }
     }
 }
 
@@ -315,6 +322,14 @@ a.method_entrance {
                 }
             }
         }
+
+        &.selected, &.passive {
+            .icon {
+                .number {
+                    left: 36px;
+                }
+            }
+        }
     }
 }
 
@@ -332,7 +347,7 @@ a.method_entrance {
             color: white;
             position: absolute;
             top: 32px;
-            left: 80px;
+            left: 83px;
             font-size: 4rem;
         }
     }
@@ -387,7 +402,7 @@ a.method_entrance {
             color: white;
             position: absolute;
             top: 32px;
-            left: 80px;
+            left: 83px;
             font-size: 4rem;
         }
     }

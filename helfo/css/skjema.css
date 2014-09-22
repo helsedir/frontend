@@ -174,7 +174,7 @@ a.method_entrance {
   vertical-align: middle;
   text-align: center;
   margin: 20px 0 10px 0;
-  width: 16%;
+  width: 16.5%;
   border: none;
 }
 a.method_entrance:first-of-type {
@@ -209,6 +209,12 @@ a.method_entrance:hover {
     width: auto;
     float: none;
     margin-left: 0;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .method_entrance.selected .icon .number,
+  .method_entrance.passive .icon .number {
+    left: 58px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -250,6 +256,10 @@ a.method_entrance:hover {
   }
   .method_entrance .heading_wrapper h3.selected {
     border-bottom: 2px solid #838078;
+  }
+  .method_entrance.selected .icon .number,
+  .method_entrance.passive .icon .number {
+    left: 36px;
   }
 }
 .selected {
@@ -299,7 +309,7 @@ a.method_entrance:hover {
   color: white;
   position: absolute;
   top: 32px;
-  left: 80px;
+  left: 83px;
   font-size: 4rem;
 }
 .selected .heading_wrapper h3 {
@@ -318,7 +328,7 @@ a.method_entrance:hover {
   color: white;
   position: absolute;
   top: 32px;
-  left: 80px;
+  left: 83px;
   font-size: 4rem;
 }
 .passive:hover .icon {

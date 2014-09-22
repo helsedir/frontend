@@ -715,10 +715,6 @@
   #footer .mainsearch input {
     width: 82%;
   }
-  #header .hidden-mobile,
-  #footer .hidden-mobile {
-    margin-left: -15px;
-  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   #header #mainsearchcolumn,
