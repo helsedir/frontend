@@ -350,6 +350,10 @@ body {
                             color: @colorDarkBlue;
                             display: inline-block;
                             line-height: 22px;
+
+                            &:focus {
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -910,6 +914,24 @@ body {
 
             &.regelverk {
                 border-top: 45px solid #badde9;
+                border-bottom: 10px solid #badde9;
+
+                &:hover {
+                    text-decoration: none;
+                    box-shadow: #badde9 0 0 0 4px;
+
+                    h5 {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &.relevant {
+                .module_description {
+                    margin-top: -70px;
+                }
+
+                border-top: 70px solid #badde9;
                 border-bottom: 10px solid #badde9;
 
                 &:hover {

@@ -393,6 +393,10 @@ body {
   display: inline-block;
   line-height: 22px;
 }
+.container .tabs .tab-content .alphabetical ul li a:focus,
+.container-fluid .tabs .tab-content .alphabetical ul li a:focus {
+  color: white;
+}
 .container .tabs .tab-content .alphabetical .character,
 .container-fluid .tabs .tab-content .alphabetical .character {
   text-transform: uppercase;
@@ -983,6 +987,24 @@ body {
 }
 .container .module.module_related.regelverk:hover h5,
 .container-fluid .module.module_related.regelverk:hover h5 {
+  text-decoration: none;
+}
+.container .module.module_related.relevant,
+.container-fluid .module.module_related.relevant {
+  border-top: 70px solid #badde9;
+  border-bottom: 10px solid #badde9;
+}
+.container .module.module_related.relevant .module_description,
+.container-fluid .module.module_related.relevant .module_description {
+  margin-top: -70px;
+}
+.container .module.module_related.relevant:hover,
+.container-fluid .module.module_related.relevant:hover {
+  text-decoration: none;
+  box-shadow: #badde9 0 0 0 4px;
+}
+.container .module.module_related.relevant:hover h5,
+.container-fluid .module.module_related.relevant:hover h5 {
   text-decoration: none;
 }
 .container .module.module_related.viktigemeldinger,

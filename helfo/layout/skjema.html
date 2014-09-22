@@ -257,11 +257,12 @@
                                         <option role="option">Lege</option>
                                         <option role="option">Tannlege/tannpleier</option>
                                         <option role="option">Fysioterapeut</option>
-                                        <option role="option">Apotek/bandasjist     </option>
-                                        <option role="option">Jordmor/helsestasjon  </option>
-                                        <option role="option">Manuellterapeut       </option>
+                                        <option role="option">Apotek/bandasjist</option>
+                                        <option role="option">Jordmor/helsestasjon</option>
+                                        <option role="option">Manuellterapeut</option>
+                                        <option role="option">Leverandør</option>
                                         <option role="option">Kiropraktor</option>
-                                        <option role="option">Ortoptist             </option>
+                                        <option role="option">Ortoptist</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -350,6 +351,24 @@
                         <a href="#" class="transportsideknapp_dokument">
                             <h2>Skjema for tannbehandling § 5-6 (05-06.20)</h2>
                         </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for apotek (05-14.18) </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for bandasjist (05-14.19)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Fjerning av produkt fra produkt- og prislisten (05-14.23)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nytt produkt for medisinsk forbruksmateriell og næringsmidler til spesielle medisinske formål (05-14.20)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nytt produkt for medisinsk forbruksmateriell ved diabetes og glukosemåling ved intravenøs ernæring (05-14.21)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nye blodsukkertester (word)</h2>
+                        </a>
                     </div>
 
                     <div class="category_lege">
@@ -396,6 +415,28 @@
                             <h2>Skjema for tannbehandling § 5-6 (05-06.20)</h2>
                         </a>
                     </div>
+                    <div class="category_apotek">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for apotek (05-14.18) </h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Opplysningsskjema for bandasjist (05-14.19)</h2>
+                        </a>
+                    </div>
+                    <div class="category_leverandoer">
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Fjerning av produkt fra produkt- og prislisten (05-14.23)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nytt produkt for medisinsk forbruksmateriell og næringsmidler til spesielle medisinske formål (05-14.20)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nytt produkt for medisinsk forbruksmateriell ved diabetes og glukosemåling ved intravenøs ernæring (05-14.21)</h2>
+                        </a>
+                        <a href="#" class="transportsideknapp_dokument">
+                            <h2>Nye blodsukkertester (word)</h2>
+                        </a>
+                    </div>
                     <div class="category_kiropraktor">
                         <a href="#" class="transportsideknapp_dokument">
                             <h2> Forenklet samleregning (05-10.05)</h2>
@@ -413,8 +454,8 @@
                     <aside class="aside bottom">
                         <div class="module module_subscribe">
                             <h5 class="module_description">Abonnér på denne siden</h5>
-                            <div class="email"><a href="mailto:post@helfo.no">post@helfo.no</a></div>
-                            <div class="rss"><a href="#">RSS-strøm</a></div>
+                            <div class="email"><a href="mailto:post@helfo.no">E-post</a></div>
+                            <div class="rss"><a href="#">RSS</a></div>
                         </div>
                     </aside>
                 </div>
@@ -629,6 +670,8 @@
                 $('.category_kiropraktor').slideUp();
                 $('.category_tannlege').slideUp();
                 $('.category_shared').slideUp();
+                $('.category_apotek').slideUp();
+                $('.category_leverandoer').slideUp();
                 $('.numberofpublications').text('5 treff');
 
             }
@@ -637,6 +680,8 @@
                 $('.category_lege').slideUp();
                 $('.category_tannlege').slideUp();
                 $('.category_shared').slideUp();
+                $('.category_apotek').slideUp();
+                $('.category_leverandoer').slideUp();
                 $('.numberofpublications').text('4 treff');
             }
             else if (yrke == "Tannlege/tannpleier") {
@@ -644,14 +689,37 @@
                 $('.category_lege').slideUp();
                 $('.category_kiropraktor').slideUp();
                 $('.category_shared').slideUp();
+                $('.category_apotek').slideUp();
+                $('.category_leverandoer').slideUp();
                 $('.numberofpublications').text('5 treff');
+            }
+            else if (yrke == "Apotek/bandasjist") {
+                $('.category_tannlege').slideUp();
+                $('.category_lege').slideUp();
+                $('.category_kiropraktor').slideUp();
+                $('.category_shared').slideUp();
+                $('.category_leverandoer').slideUp();
+                $('.category_apotek').slideDown();
+                $('.numberofpublications').text('2 treff');
+                $('.module_subscribe').hide();
+            }
+            else if (yrke == "Leverandør") {
+                $('.category_tannlege').slideUp();
+                $('.category_lege').slideUp();
+                $('.category_kiropraktor').slideUp();
+                $('.category_shared').slideUp();
+                $('.category_apotek').slideUp();
+                $('.category_leverandoer').slideDown();
+                $('.numberofpublications').text('4 treff');
+                $('.module_subscribe').hide();
             }
             else if (yrke == "Alle") {
                 $('.category_tannlege').slideUp();
                 $('.category_lege').slideUp();
                 $('.category_kiropraktor').slideUp();
+                $('.category_apotek').slideUp();
                 $('.category_shared').slideDown();
-                $('.numberofpublications').text('19 treff');
+                $('.numberofpublications').text('25 treff');
             }
         });
 
@@ -671,6 +739,8 @@
                 $('.category_kiropraktor').hide();
                 $('.category_tannlege').hide();
                 $('.category_shared').hide();
+                $('.category_leverandoer').hide();
+                $('.category_apotek').hide();
                 $('.numberofpublications').text('5 treff');
             }
             else if (getQueryVariable("yrke") == "tannlege") {
@@ -678,6 +748,8 @@
                 $('.category_lege').hide();
                 $('.category_kiropraktor').hide();
                 $('.category_shared').hide();
+                $('.category_leverandoer').hide();
+                $('.category_apotek').hide();
                 $('.numberofpublications').text('5 treff');
             }
             else if (getQueryVariable("yrke") == "kiropraktor") {
@@ -685,13 +757,36 @@
                 $('.category_lege').hide();
                 $('.category_tannlege').hide();
                 $('.category_shared').hide();
+                $('.category_leverandoer').hide();
+                $('.category_apotek').hide();
                 $('.numberofpublications').text('4 treff');
-            } else {
+            }
+            else if (getQueryVariable("yrke") == "apotek") {
+                $("#yrke").val("Apotek/bandasjist");
+                $('.category_lege').hide();
+                $('.category_tannlege').hide();
+                $('.category_shared').hide();
+                $('.category_kiropraktor').hide();
+                $('.category_leverandoer').hide();
+                $('.numberofpublications').text('2 treff');
+                $('.module_subscribe').hide();
+            }
+            else if (getQueryVariable("yrke") == "leverandoer") {
+                $("#yrke").val("Leverandør");
+                $('.category_lege').hide();
+                $('.category_tannlege').hide();
+                $('.category_shared').hide();
+                $('.category_kiropraktor').hide();
+                $('.category_apotek').hide();
+                $('.numberofpublications').text('4 treff');
+                $('.module_subscribe').hide();
+            }
+            else {
                 $('.category_tannlege').hide();
                 $('.category_lege').hide();
                 $('.category_kiropraktor').hide();
                 $('.category_shared').show();
-                $('.numberofpublications').text('19 treff');
+                $('.numberofpublications').text('25 treff');
             }
 
         });
