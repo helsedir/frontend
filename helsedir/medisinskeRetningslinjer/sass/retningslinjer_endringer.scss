@@ -1,4 +1,10 @@
 @mixin breakpoint($point) {
+    @if $point == desktop-lg-under {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
     @if $point == desktop {
         @media (min-width: 993px) {
             @content;
@@ -220,10 +226,7 @@ $colorgrading-blank: #ffffff;
                     content: "\f107";
                     font-family: "FontAwesome";
                     cursor: pointer;
-                    @include breakpoint("mobile") {
-                        left: 0px;
-                        font-size: 40px;
-                    }
+                    
                 }
                 &.clicked{
                     &:before{
@@ -234,6 +237,7 @@ $colorgrading-blank: #ffffff;
                     &.clicked {
                         background: #f5f5f5;
                     }
+                    padding-bottom: 15px;
                     width: 100%;
                     padding-right: 45px;
                 }
@@ -523,14 +527,14 @@ $colorgrading-blank: #ffffff;
         height: 30px;
         display: block;
         @include breakpoint("mobile"){
-            height: 60px;
+            height: 44px;
         }
         i {
             color: $colorWhite;
             margin-left: 20px;
             font-size: 28px;
             @include breakpoint("mobile"){
-                font-size: 45px;
+                font-size: 30px;
                 @include vertical-align();
             }
         }
@@ -549,6 +553,10 @@ $colorgrading-blank: #ffffff;
 aside.retningslinjer {
     @include breakpoint("tablet") {
         float: none;
+    }
+    @include breakpoint("desktop-lg-under") {
+        float: none;
+        margin-top: 1000px;
     }
 
     .module_related {

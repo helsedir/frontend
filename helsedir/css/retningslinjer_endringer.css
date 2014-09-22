@@ -179,17 +179,12 @@
   font-family: "FontAwesome";
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .recommendation .header_wrapper header h2:before {
-    left: 0px;
-    font-size: 40px;
-  }
-}
 .recommendation .header_wrapper header h2.clicked:before {
   content: "";
 }
 @media (max-width: 768px) {
   .recommendation .header_wrapper header h2 {
+    padding-bottom: 15px;
     width: 100%;
     padding-right: 45px;
   }
@@ -501,7 +496,7 @@
 }
 @media (max-width: 768px) {
   .recommendation .closepane {
-    height: 60px;
+    height: 44px;
   }
 }
 .recommendation .closepane i {
@@ -511,7 +506,7 @@
 }
 @media (max-width: 768px) {
   .recommendation .closepane i {
-    font-size: 45px;
+    font-size: 30px;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -532,6 +527,12 @@
 @media (max-width: 992px) {
   aside.retningslinjer {
     float: none;
+  }
+}
+@media (max-width: 1200px) {
+  aside.retningslinjer {
+    float: none;
+    margin-top: 1000px;
   }
 }
 aside.retningslinjer .module_related {
