@@ -154,12 +154,12 @@ function runJqueryUIStuff(){
 	  });
 
 	  //hide recommendation explanation text
-	  $(".recommendationexplanation").find("div").hide();
+	  $(".recommendationexplanation").find(".explainingtext").hide();
 
 	  //show recommendation explanation text on click
 	  $(".recommendationexplanation").on("click", function(){
 	  	var animationSpeed = 300;
-	  	$(this).find("div").slideToggle(animationSpeed);
+	  	$(this).find(".explainingtext").slideToggle(animationSpeed);
 	  	$(this).toggleClass("open");
 	  	$(this).find("i").toggleClass("open");
 	  	
@@ -216,6 +216,12 @@ function runJqueryUIStuff(){
 	 //for debugging
 	 $('.recommendation').find("h2").first().trigger("click");
 	 //$('.recommendation').find(".tabs").find("a").first().trigger("click");
+
+	 $("#picoEvidensprofil").modal({
+	 	//escapeClose: false,
+	 	//clickClose: false,
+	 	showClose: false
+	 });
 		
 }
 
