@@ -117,4 +117,8 @@
             });
         }
     });
+
+    $('.form-control').change(function () {
+        $(this).addClass('selected');
+    });
 });

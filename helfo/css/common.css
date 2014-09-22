@@ -131,47 +131,6 @@ body {
   color: #002c42;
   margin-right: 20px;
 }
-.container a,
-.container-fluid a {
-  color: #0093a7;
-  font-size: 20px;
-  line-height: 27px;
-  /*border-bottom: 1px solid @colorDarkBlue;*/
-  padding-bottom: 1px;
-  cursor: pointer;
-}
-.container a:hover,
-.container-fluid a:hover {
-  text-decoration: none;
-}
-.container a:focus,
-.container-fluid a:focus,
-.container a:visited:focus,
-.container-fluid a:visited:focus {
-  background: #002c42;
-  color: white;
-  outline: 0;
-}
-.container a:focus h2,
-.container-fluid a:focus h2,
-.container a:visited:focus h2,
-.container-fluid a:visited:focus h2,
-.container a:focus h4,
-.container-fluid a:focus h4,
-.container a:visited:focus h4,
-.container-fluid a:visited:focus h4,
-.container a:focus p,
-.container-fluid a:focus p,
-.container a:visited:focus p,
-.container-fluid a:visited:focus p {
-  background: #002c42;
-  color: white;
-  outline: 0;
-}
-.container a.inline,
-.container-fluid a.inline {
-  border-bottom: 1px solid #0093a7;
-}
 .container .breadcrumbs,
 .container-fluid .breadcrumbs {
   padding: 0;
@@ -1006,7 +965,7 @@ body {
 .container .module.module_related.clickable.viktigemeldinger:hover,
 .container-fluid .module.module_related.clickable.viktigemeldinger:hover {
   text-decoration: none;
-  box-shadow: #f2a56b 0 0 0 2px;
+  box-shadow: #f8d2b5 0 0 0 4px;
 }
 .container .module.module_related.clickable.viktigemeldinger:hover h5,
 .container-fluid .module.module_related.clickable.viktigemeldinger:hover h5 {
@@ -1096,10 +1055,13 @@ body {
 .container-fluid .module.module_feedback .calltoaction {
   float: right;
 }
-.container .module.module_feedback input[type=text],
-.container-fluid .module.module_feedback input[type=text] {
+.container .module.module_feedback textarea,
+.container-fluid .module.module_feedback textarea {
   margin-top: 10px;
   width: 100%;
+  resize: none;
+  max-width: 260px;
+  height: 130px;
 }
 .container .module.module_feedback label,
 .container-fluid .module.module_feedback label {
@@ -1478,8 +1440,11 @@ body {
 }
 .container input[type="radio"]:focus + label,
 .container-fluid input[type="radio"]:focus + label {
-  background: #002c42;
-  color: white;
+  border: 1px dotted #222;
+}
+.container input[type="radio"] + label,
+.container-fluid input[type="radio"] + label {
+  border: 1px solid white;
 }
 .container input[type="radio"] + label span,
 .container-fluid input[type="radio"] + label span {
@@ -1605,20 +1570,14 @@ body {
   text-indent: 0.01px;
   text-overflow: '';
   color: #222;
-  /*
-			&:hover, &:focus, &:active {
-				background: @colorDarkBlue url('../img/ikoner/knapp_nedtrekksmeny_hvit.png') no-repeat;
-				background-position: 96%;
-				-moz-background-size: 20px;
-				-o-background-size: 20px;
-				-webkit-background-size: 20px;
-				background-size: 20px;
-				color: white;
-			}*/
 }
 .container .dropdown select::-ms-expand,
 .container-fluid .dropdown select::-ms-expand {
   display: none;
+}
+.container .dropdown select.selected,
+.container-fluid .dropdown select.selected {
+  box-shadow: #0093a7 0 0 0 2px;
 }
 .container .refinesearch,
 .container-fluid .refinesearch {
@@ -1799,13 +1758,13 @@ body {
 .container .transportsideknapp,
 .container-fluid .transportsideknapp {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
-  background-size: 45px;
+  background-size: 45px 20px;
   background-position: 96% 50%;
   margin-top: 20px;
   max-width: 685px;
   width: 100%;
   display: inline-block;
-  padding: 10px 92px 15px 30px;
+  padding: 10px 92px 15px 20px;
 }
 .container .transportsideknapp h2,
 .container-fluid .transportsideknapp h2 {
@@ -1834,7 +1793,7 @@ body {
 .container-fluid .transportsideknapp:visited:focus {
   text-decoration: none;
   background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
-  background-size: 46px;
+  background-size: 46px 46px;
   background-position: 96% 50%;
   border: none;
 }
@@ -1864,19 +1823,19 @@ body {
 .container .transportsideknapp_dokument,
 .container-fluid .transportsideknapp_dokument {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
-  background-size: 45px;
+  background-size: 45px 20px;
   background-position: 96% 50%;
   margin-top: 10px;
   max-width: 685px;
   width: 100%;
   display: inline-block;
-  padding: 0 92px 10px 30px;
+  padding: 0 92px 20px 20px;
   border: none;
 }
 .container .transportsideknapp_dokument h2,
 .container-fluid .transportsideknapp_dokument h2 {
-  font-size: 3.0rem;
-  line-height: 3.6rem;
+  font-size: 2.3rem;
+  line-height: 2.9rem;
   font-weight: 300;
   padding: 10px 30px 0 0;
   margin: 0;
@@ -1891,7 +1850,7 @@ body {
 .container-fluid .transportsideknapp_dokument:hover {
   text-decoration: none;
   background: #badde9 url(../img/ikoner/pil_sort.svg) no-repeat;
-  background-size: 46px;
+  background-size: 46px 46px;
   background-position: 96% 50%;
   border: none;
 }
@@ -2392,9 +2351,12 @@ html {
   padding: 0.2rem 0;
   color: #eb6a0a;
   border-bottom: 1px solid #c2c3c4;
+  cursor: pointer;
 }
 .container a:hover {
   border-bottom: 1px solid #eb6a0a;
+  color: #eb6a0a;
+  text-decoration: none;
 }
 .container a h1,
 .container a h2,
@@ -2408,6 +2370,22 @@ html {
 .container a h3:hover,
 .container a h4:hover {
   border-bottom: 1px solid #398ca9;
+}
+.container a:focus,
+.container a:visited:focus {
+  background: #002c42;
+  color: white;
+  outline: 0;
+}
+.container a:focus h2,
+.container a:visited:focus h2,
+.container a:focus h4,
+.container a:visited:focus h4,
+.container a:focus p,
+.container a:visited:focus p {
+  background: #002c42;
+  color: white;
+  outline: 0;
 }
 .container .takst_table {
   margin-top: 50px;
