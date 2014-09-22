@@ -479,6 +479,30 @@
     border-top: 1px solid #aeaba8;
     margin-top: 20px;
   }
+  .container .entrancebutton span {
+    margin: 10px 20px;
+    float: left;
+  }
+  .container .entrancebutton a h2 {
+    text-align: left;
+    margin: 22px 0 0 12px;
+  }
+  .container .entrancebutton a p {
+    text-align: left;
+  }
+  .container .entrancebutton.menu button {
+    height: 109px;
+  }
+  .container .entrancebutton.menu button span {
+    margin: 10px 17px;
+  }
+  .container .entrancebutton.menu button h2 {
+    text-align: left;
+    margin: 22px 0 0 12px;
+  }
+  .mainentrance {
+    padding-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .frontpage .importantnews .text_and_image {

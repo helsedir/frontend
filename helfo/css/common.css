@@ -866,7 +866,6 @@ body {
   padding: 0 25px 20px 15px;
   background: white;
   position: relative;
-  min-width: 300px;
 }
 .container .module p,
 .container-fluid .module p {
@@ -1929,6 +1928,9 @@ body {
     top: auto;
     margin-right: -77%;
   }
+  .container h1 {
+    min-width: 667px;
+  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .container .aside {
@@ -1947,6 +1949,9 @@ body {
   .container .aside.top {
     margin-right: -72%;
   }
+  .container h1 {
+    min-width: 477px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .container .refinesearch {
@@ -1964,6 +1969,12 @@ body {
   .container .searchfield input {
     width: 91%;
   }
+  .container .searchform {
+    margin-top: 30px;
+  }
+  .container .searchform input {
+    width: 91%;
+  }
 }
 @media only screen and (min-width: 900px) {
   .container .statistics_compare button {
@@ -1978,8 +1989,7 @@ body {
     width: 100%;
   }
   .container .module_subscribe {
-    margin: 0;
-    padding: 0;
+    margin: 30px 0;
   }
   .container .module_message {
     margin: 0;
@@ -1994,6 +2004,9 @@ body {
   .container .aside .module.module_statistics_graph {
     max-width: none;
   }
+  .container h1 {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .container .socialmedia a:first-of-type {
@@ -2007,6 +2020,9 @@ body {
   }
   .container .transportsideknapp .fa-chevron-right {
     display: none;
+  }
+  .container .module {
+    min-width: 300px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -2192,6 +2208,9 @@ body {
     top: -9999px !important;
     left: -9999px !important;
   }
+  .container .module {
+    width: 100%;
+  }
   .container .module_message {
     padding: 15px 15px 25px 15px;
   }
@@ -2224,6 +2243,9 @@ body {
   .container .searchfield input {
     width: 84%;
   }
+  .container .searchform input {
+    width: 85%;
+  }
 }
 @media braille {
   .container .has-hidden-content div {
@@ -2250,7 +2272,6 @@ html {
   border-bottom: 2px solid #88b9cb;
   color: #222;
   display: inline-block;
-  min-width: 667px;
 }
 .container h1.alternative {
   font-weight: 300;
