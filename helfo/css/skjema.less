@@ -179,68 +179,9 @@ a.method_entrance {
     &:hover {
         border: none;
     }
-}
 
-@media only screen and (max-width: 1199px) {
-    .breadcrumbs_schema li {
-        width: auto;
-        text-indent: 30px;
-    }
-
-    .phonenumber, .email, .zipcode, .location {
-        width: auto;
-        float: none;
-        margin-left: 0;
-    }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
-}
-
-@media only screen and (max-width: 599px) {
-    .method_entrance {
-        margin-bottom: 0;
-        float: left;
-        width: 25%;
-
-        .heading_wrapper {
-            width: auto;
-            margin: 0;
-
-            h3 {
-                display: none;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 899px) {
-    label {
-        margin-top: 0;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    a.method_entrance {
-        margin-top: 0;
-        margin-bottom: 0;
-        float: left;
-        width: 33%;
-
-        .heading_wrapper {
-            width: auto;
-            margin: 0;
-
-            h3 {
-                text-align: center;
-                border: none;
-                font-size: 16px;
-                line-height: 20px;
-                padding-bottom: 2px;
-            }
-        }
+    &:focus {
+        background: none;
     }
 }
 
@@ -323,6 +264,106 @@ a.method_entrance {
             background: url(../img/ikoner/helfo_pil_hover.svg) no-repeat;
             background-size: 85px 85px;
             background-position: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .breadcrumbs_schema li {
+        width: auto;
+        text-indent: 30px;
+    }
+
+    .phonenumber, .email, .zipcode, .location {
+        width: auto;
+        float: none;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 599px) {
+    a.method_entrance {
+        margin-bottom: 0;
+        float: left;
+        width: 16.5%;
+        margin-top: 0;
+
+        .heading_wrapper {
+            width: auto;
+            margin: 0;
+
+            h3 {
+                display: none;
+            }
+        }
+    }
+
+    .selected {
+        &:hover {
+            .icon {
+                background-size: 40px 40px;
+            }
+        }
+
+        .icon {
+            background-size: 40px 40px;
+            height: 40px;
+            width: 40px;
+
+            .number {
+                display: none;
+            }
+        }
+    }
+
+    .passive {
+        &:hover {
+            .icon {
+                background-size: 40px 40px;
+            }
+        }
+
+        .icon {
+            background-size: 40px 40px;
+            height: 40px;
+            width: 40px;
+
+            .number {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    label {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    a.method_entrance {
+        margin-top: 0;
+        margin-bottom: 0;
+        float: left;
+        width: 33%;
+
+        .heading_wrapper {
+            width: auto;
+            margin: 0;
+
+            h3 {
+                text-align: center;
+                border: none;
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 2px;
+            }
         }
     }
 }

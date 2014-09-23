@@ -194,6 +194,11 @@
   width: 21px;
   vertical-align: middle;
 }
+@-moz-document url-prefix() {
+  #header .mainsearch input {
+    vertical-align: bottom;
+  }
+}
 #header .masterheader,
 #footer .masterheader {
   height: 41px;

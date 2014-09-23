@@ -974,19 +974,28 @@ body {
 .container-fluid .module.module_related.clickable.viktigemeldinger:hover h5 {
   text-decoration: none;
 }
+.container .module.module_related.clickable.regelverk:hover,
+.container-fluid .module.module_related.clickable.regelverk:hover {
+  text-decoration: none;
+  box-shadow: #badde9 0 0 0 4px;
+}
+.container .module.module_related.clickable.regelverk:hover h5,
+.container-fluid .module.module_related.clickable.regelverk:hover h5 {
+  text-decoration: none;
+}
+.container .module.module_related.clickable.relevant:hover,
+.container-fluid .module.module_related.clickable.relevant:hover {
+  text-decoration: none;
+  box-shadow: #badde9 0 0 0 4px;
+}
+.container .module.module_related.clickable.relevant:hover h5,
+.container-fluid .module.module_related.clickable.relevant:hover h5 {
+  text-decoration: none;
+}
 .container .module.module_related.regelverk,
 .container-fluid .module.module_related.regelverk {
   border-top: 45px solid #badde9;
   border-bottom: 10px solid #badde9;
-}
-.container .module.module_related.regelverk:hover,
-.container-fluid .module.module_related.regelverk:hover {
-  text-decoration: none;
-  box-shadow: #badde9 0 0 0 4px;
-}
-.container .module.module_related.regelverk:hover h5,
-.container-fluid .module.module_related.regelverk:hover h5 {
-  text-decoration: none;
 }
 .container .module.module_related.relevant,
 .container-fluid .module.module_related.relevant {
@@ -996,15 +1005,6 @@ body {
 .container .module.module_related.relevant .module_description,
 .container-fluid .module.module_related.relevant .module_description {
   margin-top: -70px;
-}
-.container .module.module_related.relevant:hover,
-.container-fluid .module.module_related.relevant:hover {
-  text-decoration: none;
-  box-shadow: #badde9 0 0 0 4px;
-}
-.container .module.module_related.relevant:hover h5,
-.container-fluid .module.module_related.relevant:hover h5 {
-  text-decoration: none;
 }
 .container .module.module_related.viktigemeldinger,
 .container-fluid .module.module_related.viktigemeldinger {
@@ -1833,6 +1833,7 @@ body {
 .container .transportsideknapp:visited:focus p,
 .container-fluid .transportsideknapp:visited:focus p {
   color: #222;
+  background: none;
 }
 .container .transportsideknapp:hover h2,
 .container-fluid .transportsideknapp:hover h2,
