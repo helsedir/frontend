@@ -1,60 +1,106 @@
-    <article class="container">  
-        <div class="row">
-            <div class="col-md-7">
-                <header id="pageheader">
-                    <nav>
-                        <ol class="breadcrumbs clearfix">
-                            <li><a href="../layouts/forside.html">Forside</a></li>
-                        </ol>
-                    </nav>
-                    <h1>Nasjonale faglige retningslinjer</h1>
-                    <!--<div class="ingress">
-                        Anbefalinger som etablerer en nasjonal standard for utredning, behandling og oppfølging av pasientgrupper, brukergrupper eller diagnosegrupper. <a href="#" class="smallGrayText">Les mer...</a>
-                    </div>-->
-                </header>
-            </div>
+<article class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <header id="pageheader">
+                <nav>
+                    <ol class="breadcrumbs clearfix">
+                        <li><a href="../layouts/forside.html">Forside</a></li>
+                    </ol>
+                </nav>
+                <h1>Nasjonale faglige retningslinjer</h1>
+            </header>
         </div>
-            <div class="row">
-    <div class="col-md-7"> 
-                    <div class="border"></div>
-                    <form>
-            <label for="searchinput" class="visuallyhidden">Søk i retningslinjer og veiledere</label>
-            <div id="search_input_retningslinjer">
-            <input id="searchinput" class="search typeahead" type="text" placeholder="Søk etter anbefalinger i retningslinjer og veiledere..." />
-            </div>
-          </form>   
-          
-                    <h2>Innhold</h2>
-
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <form class="retningslinjerSok">
+                <label for="searchinput">Søk etter anbefalinger i retningslinjer og veiledere</label>
+                <div id="search_input_retningslinjer">
+                    <input id="searchinput" class="search typeahead" type="text" placeholder="Amming, Sepsis, R10, Benzylpenicillin.." />
+                </div>
+            </form>
+            
+            <div class="content">
+                 <aside class="aside">
+            <div class="accordion_mobile refinesearch">
+                <h2>Avgrens visning</h2>
+                <form>
                     <ul>
-                        <li ng-repeat="retningslinje in retningslinjer">
-                                <div class="transportsideknapp">
-                                    <a href="/{{retningslinje.guidelineId}}">
-                                        <!-- guidelines.title -->
-                                        <h3>{{retningslinje.title}}</h3>
-                                    </a>
-                                </div>
+                        <li>
+                            <input type="radio" name="radiobutton" id="alle" value="alle">
+                            <label for="alle"><span></span>Alle</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="barn" value="barn_og_svangerskap">
+                            <label for="barn"><span></span>Barn og svangerskap</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="kreft" value="kreft">
+                            <label for="kreft"><span></span>Kreft</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="psykiske" value="psykiske_lidelser">
+                            <label for="psykiske"><span></span>Psykiske lidelser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="fysiske" value="fysiske_lidelser">
+                            <label for="fysiske"><span></span>Fysiske lidelser</label>
                         </li>
                     </ul>
-          
-                       
-
-                        <div class="module module_social">
+                </form>
+            </div>
+        </aside>
+           
+            <span class="number">120 retningslinjer og veiledere</span>
+            <ul class="retningslinjer">
+                <li ng-repeat="retningslinje in retningslinjer">
+                    <div class="transportsideknapp">
+                        <a href="/{{retningslinje.guidelineId}}">
+                            <!-- guidelines.title -->
+                            <h3>{{retningslinje.title}}</h3>
+                            <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{retningslinje.shortTitle}}</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- cols -->
+               <aside class="aside">
+            <div class="module module_related green">
+                           <h3>Relaterte anbefalinger</h3>
+                           <ul class="linklist">
+                               <li><a href="#">Sepsis</a></li>
+                               <li><a href="#">Antibiotika</a></li>
+                               <li><a href="#">Sepsis</a></li>
+                           </ul>
+                           <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
+                       </div>
+                       <div class="module module_related blue">
+                           <h3>Relaterte retningslinjer</h3>
+                           <ul class="linklist">
+                               <li><a href="#">Antibiotika</a></li>
+                               <li><a href="#">Sepsis</a></li>
+                               <li><a href="#">Sepsis</a></li>
+                           </ul>
+                           <img class="pulse" src="../../../img/modules/EKG-lyseblaa.png" alt="">
+                       </div>
+                   </aside>
+        </div>
+    </div>
+   
+        
+       
+        <!-- row -->
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="module module_social col-md-7">
                 <a href="#" class="ikon_metode"><span></span>metode</a>
-                        </div>
-                        <aside class="aside top">
-                <div class="module module_person ">
-                <h5 class="module_description">Ansvarlig for denne siden</h5>
-                <a href="mailto:Anne.May.Knudsen@helsedir.no">
-                  <div class="name">Retningslinjesekreteriatet</div>
-                </a>
-                <div class="person_information">
-                  <p class="phone">E-post: xx@helsedir.no</p>
-                </div>
-                            </div>
-                        </aside>                
-
-            </div> <!-- cols -->
-</div><!-- row -->              
-        </article> <!-- end container -->
-
+            </div>
+        </div>
+        
+    </div>
+    <!-- end container -->
+    <div class=" checkbox">
+        
+    </div>
+</article>

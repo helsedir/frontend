@@ -1,0 +1,46 @@
+@media (max-width: 992px) {
+  aside.retningslinjer {
+    float: none;
+  }
+}
+aside.retningslinjer .module_related {
+  width: 100%;
+}
+aside.retningslinjer .module_related.module {
+  margin-top: 25px;
+}
+aside.retningslinjer .module_related.module:last-child {
+  margin-bottom: 25px;
+}
+aside.retningslinjer .module_related h3 {
+  font-family: "Calibri";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #004e66;
+  line-height: 20px;
+}
+aside.retningslinjer .module_related ul.linklist li {
+  font-size: 20px;
+  font-family: "Soho Gothic W01 Regular";
+}
+aside.retningslinjer .module_related ul.linklist a {
+  color: #004e66;
+  font-size: 20px;
+  font-family: "Soho Gothic W01 Regular";
+}
+aside.retningslinjer .module_related ul.linklist a:after {
+  padding-left: 10px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  text-decoration: none;
+  font-size: inherit;
+}
+aside.retningslinjer .module_related.green {
+  border-left: 2px solid #a1bf37;
+}
+aside.retningslinjer .module_related.blue {
+  border-left: 2px solid #6bb3b4;
+}
+
+/*# sourceMappingURL=retningslinjer_common.css.map */

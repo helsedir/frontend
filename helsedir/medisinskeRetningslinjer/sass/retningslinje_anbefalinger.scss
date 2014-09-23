@@ -589,55 +589,7 @@ $colorgrading-blank: #ffffff;
     }
 }
 
-aside.retningslinjer {
-    @include breakpoint("tablet") {
-        float: none;
-    }
 
-    .module_related {
-
-        &.module{
-            margin-top: 25px; //override default
-            &:last-child{
-                margin-bottom: 25px;
-            }
-        }
-        width: 100%;
-        h3 {
-            font-family: $fontCalibri;
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-top: 0;
-            color: $colorDarkBlue;
-            line-height: 20px;
-        }
-        ul.linklist {
-            li {
-                font-size: 20px;
-                //margin-bottom: 5px;
-                font-family: $fontSohoRegular;
-            }
-            a {
-                color: $colorDarkBlue;
-                font-size: 20px;
-                font-family: $fontSohoRegular;
-                &:after {
-                    padding-left: 10px;
-                    content: "\f105";
-                    font-family: "FontAwesome";
-                    text-decoration: none;
-                    font-size: inherit;
-                }
-            }
-        }
-        &.green {
-            border-left: 2px solid #a1bf37;
-        }
-        &.blue {
-            border-left: 2px solid #6bb3b4;
-        }
-    }
-}
 
 .picoModal{
     display: none;

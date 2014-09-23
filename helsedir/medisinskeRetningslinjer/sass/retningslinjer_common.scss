@@ -1,0 +1,94 @@
+@mixin breakpoint($point) {
+    @if $point == desktop-lg-under {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $point == desktop {
+        @media (min-width: 993px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+$fontCalibri: "Calibri";
+$fontCalibriBold: "Calibri-Bold";
+$fontSoho: "soho gothic pro medium";
+$fontSohoLight: "Soho Gothic W01 Light";
+$fontSohoRegular: "Soho Gothic W01 Regular";
+
+$colorDarkBlue: #004e66;
+$colorDarkBlueHover: #002e41;
+
+$colorPurple: rgba(119, 67, 141, 0.89);
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorLightGray: #e7e7e6;
+
+$colorgrading-strong: #77438d;
+$colorgrading-weak: #69b4b6;
+$colorgrading-none: #aeaba8;
+$colorgrading-blank: #ffffff;
+
+
+
+aside.retningslinjer {
+    @include breakpoint("tablet") {
+        float: none;
+    }
+
+    .module_related {
+
+        &.module{
+            margin-top: 25px; //override default
+            &:last-child{
+                margin-bottom: 25px;
+            }
+        }
+        width: 100%;
+        h3 {
+            font-family: $fontCalibri;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: $colorDarkBlue;
+            line-height: 20px;
+        }
+        ul.linklist {
+            li {
+                font-size: 20px;
+                //margin-bottom: 5px;
+                font-family: $fontSohoRegular;
+            }
+            a {
+                color: $colorDarkBlue;
+                font-size: 20px;
+                font-family: $fontSohoRegular;
+                &:after {
+                    padding-left: 10px;
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    text-decoration: none;
+                    font-size: inherit;
+                }
+            }
+        }
+        &.green {
+            border-left: 2px solid #a1bf37;
+        }
+        &.blue {
+            border-left: 2px solid #6bb3b4;
+        }
+    }
+}

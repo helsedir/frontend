@@ -30,14 +30,14 @@
 }
 
 /* Migrate into common.css */
-.container .transportsideknapp a h3:after,
+/*.container .transportsideknapp a h3:after,
 .container-fluid .transportsideknapp a h3:after {
 	padding-left: 10px;
 	content: "\f105";
 	font-family: "FontAwesome";
 	font-size: inherit;
 	text-decoration: none;
-}
+}*/
 
 /* Fix for Bootstrap */
 .container .btn { /* delete? */
@@ -167,27 +167,7 @@
 	font-weight: normal;
 }
 
-/* Accordion for H1, move to common.css? */
-.container section.recommendation .accordion.closed header h1:before,
-.container .has-hidden-content h2:before {
-	position: absolute;
-	left: 0px;
-  padding: 2px 0 0 0;
-  content: "\f107";
-  font-family: "FontAwesome";
-  cursor: pointer;
-} 
 
-/* Accordion for H1, move to common.css? */
-.container section.recommendation .accordion.open header h1:before,
-.container .has-visible-content h2:before {
-	position: absolute;
-	left: 0px;
-  padding: 2px 0 0 0;
-  content: "\f106";
-  font-family: "FontAwesome";
-  cursor: pointer;
-} 
 
 .container section.recommendation .leftBorder {
 	border-left: 2px solid #004e66;

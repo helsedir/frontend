@@ -1,8 +1,9 @@
-var retningslinjeControllers = angular.module('retningslinjeControllers', []);
+var retningslinjeControllers = angular.module('retningslinjeControllers', ['angularLoad']);
 
-retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Retningslinje',
-    function($scope, Retningslinje) {
+retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Retningslinje', 'angularLoad', 
+    function($scope, Retningslinje, angularLoad) {
         $scope.retningslinjer = Retningslinje.query();
+        angularLoad.loadCSS("../css/retningslinjer_forside.css");
     }
 ]);
 
@@ -15,13 +16,14 @@ retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$rou
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope', '$routeParams', 'Retningslinje',
-    function($scope, $routeParams, Retningslinje) {
+retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope', '$routeParams', 'Retningslinje', 'angularLoad',
+    function($scope, $routeParams, Retningslinje, angularLoad) {
         $scope.retningslinje = Retningslinje.get({
                 id: $routeParams.guidelineId
             },
             function(retningslinje) {
                 $scope.section = retningslinje.sections[$routeParams.sectionId - 1];
+                angularLoad.loadCSS("../css/retningslinje_anbefalinger.css");
             }
         );
     }
