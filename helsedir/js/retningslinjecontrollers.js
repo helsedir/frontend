@@ -7,11 +7,12 @@ retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Retning
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$routeParams', 'Retningslinje',
-    function($scope, $routeParams, Retningslinje) {
+retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$routeParams', 'Retningslinje', 'angularLoad',
+    function($scope, $routeParams, Retningslinje, angularLoad) {
         $scope.retningslinje = Retningslinje.get({
             id: $routeParams.guidelineId
         });
+        angularLoad.loadCSS("../css/retningslinje_forside.css");
 
     }
 ]);

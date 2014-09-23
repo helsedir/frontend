@@ -1,48 +1,55 @@
-<article class="container">  
-	<div class="row">
-		<div class="col-md-12">
-			<header id="pageheader">
-				<nav>
-					<ol class="breadcrumbs clearfix">
-						<li><a href="../../layouts/forside.html">Forside</a></li>
-						<li><a href="../" class="active">Nasjonale faglige retningslinjer</a></li>
-					</ol>
-				</nav>
-				<h1>{{retningslinje.title}}</h1>
-			</header>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-7">
-			<div class="border"></div>
-			
-			<ul>
-				<li ng-repeat="section in retningslinje.sections">
-					<div class="transportsideknapp">
-						<a href="/{{retningslinje.guidelineId}}/section/{{section.sectionId}}" title="Lengden av fullammingsperioden og tidspunkt for introduksjon av fast føde">
-							<h3>{{section.heading}}</h3>
-						</a>
-					</div>
-				</li>
-			</ul>
-
-			<div class="module module_social">
-				<a href="javascript:window.print()" class=" ikon_skrivut"><span></span>skriv ut</a>
-				<a href="#" class="ikon_disclaimer"><span></span>disclaimer</a>
-				<a href="#" class="ikon_metode"><span></span>metode</a>
-			</div>
-			<aside class=" aside bottom">
-				<div class=" module module_person ">
-					<h5 class=" module_description">Ansvarlig for retningslinjen</h5>
-					<a href="mailto:Anne.May.Knudsen@helsedir.no">
-						<div class="name">Avd XX</div>
-					</a>
-					<div class="person_information">
-						<p class="phone">E-post: avdxx@helsedir.no</p>
-					</div>
+<article>
+		<header id="pageheader">
+			<div class="headerGroup">
+				<div class="container">
+					<h1>{{retningslinje.title}}</h1>
+					<span>Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
+					<ul>
+						<li><span>40</span>Anbefalinger</li>
+						<li><span>2014</span>Sist oppdatert</li>
+						<li><span>2214</span>IS-nummer</li>
+					</ul>
+					<a href="#omRetningslinjen" title="" class="omRetningslinjen">Om retnignslinjen</a>
 				</div>
-			</aside>
-		</div> <!-- cols -->
-	</div><!-- row -->
-</article> <!-- end container -->
+
+			</div>
+			
+		</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<label for="searchinput">Søk etter anbefalinger i denne retningslinjen</label>
+				<div id="search_input_retningslinjer">
+				    <input id="searchinput" class="search typeahead" type="text" placeholder="Amming, Sepsis, R10, Benzylpenicillin.." />
+				</div>
+				
+				<h2>Innhold i denne retningslinjen</h2>
+				<ul>
+					<li ng-repeat="section in retningslinje.sections">
+						<div class="transportsideknapp">
+							<a href="/{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
+								<h3>{{section.heading}}</h3>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="module module_social">
+					<a href="javascript:window.print()" class=" ikon_skrivut"><span></span>skriv ut</a>
+					<a href="#" class="ikon_disclaimer"><span></span>disclaimer</a>
+					<a href="#" class="ikon_metode"><span></span>metode</a>
+				</div>
+				<aside class=" aside">
+					<div class=" module module_person ">
+						<h5 class=" module_description">Ansvarlig for retningslinjen</h5>
+						<a href="mailto:Anne.May.Knudsen@helsedir.no">
+							<div class="name">Avd XX</div>
+						</a>
+						<div class="person_information">
+							<p class="phone">E-post: avdxx@helsedir.no</p>
+						</div>
+					</div>
+				</aside>
+				</div> <!-- cols -->
+				</div><!-- row -->
+			</div>
+			</article> <!-- end container -->

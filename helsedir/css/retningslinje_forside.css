@@ -1,0 +1,85 @@
+#pageheader {
+  background: #ffffff;
+  border-left: 19px solid #004e66;
+  color: #ffffff;
+  background: rgba(119, 67, 141, 0.89);
+  background-image: url("../img/Livslinje-enkel-lilla.svg");
+  background-repeat: no-repeat;
+  background-size: 200% 60%;
+  background-position: bottom;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  #pageheader {
+    border: none;
+    margin: 0;
+  }
+}
+#pageheader .headerGroup {
+  margin-left: -13px;
+}
+@media (max-width: 768px) {
+  #pageheader .headerGroup {
+    background: none;
+  }
+}
+#pageheader .headerGroup h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-family: "Soho Gothic W01 Light";
+  line-height: 48px;
+  color: #ffffff;
+  padding-top: 0px;
+  display: block;
+}
+@media (max-width: 768px) {
+  #pageheader .headerGroup h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #004e66;
+    font-size: 36px;
+  }
+}
+#pageheader .headerGroup span {
+  font-family: "Soho Gothic W01 Light";
+  line-height: 22px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  #pageheader .headerGroup span {
+    display: none;
+  }
+}
+#pageheader .headerGroup li {
+  margin-right: 30px;
+  font-size: 18px;
+  display: inline-block;
+}
+#pageheader .headerGroup li span {
+  font-size: 35px;
+  margin-bottom: 5px;
+  display: block;
+}
+#pageheader .headerGroup a.omRetningslinjen {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  color: #ffffff;
+  font-size: 18px;
+}
+#pageheader .headerGroup a.omRetningslinjen:before {
+  color: #ffffff;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "FontAwesome";
+  content: "\f129";
+  text-align: center;
+  width: 80px;
+  padding: 25px 0;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=retningslinje_forside.css.map */

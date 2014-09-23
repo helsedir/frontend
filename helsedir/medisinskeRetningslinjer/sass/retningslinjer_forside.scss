@@ -38,26 +38,15 @@ span.number {
     color: $blueText;
 }
 
-aside.retningslinjer {
-    @media (max-width: 1200px) {
-        float: none;
+.avgrens {
+    input[type="radio"]:focus + label {
+        background: none;
+        font-weight: bold;
+        color: #000000;
     }
-    .avgrens {
-        border-top: 2px solid $blueText;
-        margin-bottom: 50px;
-        h3 {
-            margin-top: 0;
-            color: $blueText;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-family: "Calibri";
-        }
-        input[type="radio"] + label {
-            &:active, &:focus {
-                background: none;
-                font-weight: bold;
-                color: #000000;
-            }
-        }
+    input[type="radio"]:active + label {
+        background: none;
+        font-weight: bold;
+        color: #000000;
     }
 }
