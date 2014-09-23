@@ -815,7 +815,7 @@
   }
   #header .menubutton.mobile-search:hover,
   #footer .menubutton.mobile-search:hover {
-    background: #d9dadb url('../img/ikoner/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background: #d9dadb url('../img/ikoner/ikon_forstorrelsesglass.png') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;

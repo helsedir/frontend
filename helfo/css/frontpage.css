@@ -125,9 +125,6 @@
   margin: 30px auto 5px auto;
   height: 85px;
   width: 85px;
-  background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
-  background-size: 90px;
-  background-position: center;
 }
 .container .entrancebutton span.avtale {
   background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
@@ -481,7 +478,7 @@
     margin: 40px 0 0 0;
   }
   .container .calltoaction {
-    margin-top: 0;
+    margin-top: 20px;
   }
   .container .border_grey {
     border-top: 1px solid #aeaba8;

@@ -127,6 +127,18 @@
   background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
   background-size: 28px 28px;
 }
+.no-svg .container .entrancebutton:hover span.avtale,
+.no-svg .container .entrancebutton:hover span.helseaktor,
+.no-svg .container .entrancebutton:hover span.oppgjor,
+.no-svg .container .entrancebutton:hover span.takster,
+.no-svg .container .entrancebutton:hover span.skjema {
+  background-color: #badde9;
+}
+.no-svg .container .entrancebutton span {
+  border-radius: 0;
+  height: 88px;
+  width: 88px;
+}
 .no-svg .container .entrancebutton span.avtale {
   background: #ffffff url('../img/ikoner/hovedinngang_avtale.png') no-repeat;
   background-size: 90px;
@@ -156,6 +168,12 @@
   background: #ffffff url('../img/ikoner/hovedinngang_altinnhold.png') no-repeat;
   background-size: 90px;
   background-position: center;
+  border-radius: 0;
+  height: 88px;
+  width: 88px;
+}
+.no-svg .container .entrancebutton.menu button:hover span {
+  background-color: #badde9;
 }
 .no-svg .menubutton a.js-expander i {
   margin-left: 0;
