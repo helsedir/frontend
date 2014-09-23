@@ -2001,7 +2001,7 @@ body {
     width: auto;
   }
   .container .aside .module {
-    margin-top: 30px;
+    margin: 30px 0;
   }
   .container .aside .module.module_statistics_graph {
     max-width: none;

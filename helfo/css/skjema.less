@@ -145,75 +145,6 @@ input[type=text]:focus, textarea:focus, input[type=radio]:focus, input[type=chec
     margin-top: -10px;
 }
 
-.breadcrumbs_schema {
-    margin-top: 20px;
-    width: 100%;
-
-    li {
-        display: inline-block;
-        height: 30px;
-        line-height: 30px;
-        width: 32%;
-        margin: 5px 1px 0 0;
-        text-indent: 22px;
-        position: relative;
-
-        &:before {
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            left: -2px;
-            border-style: solid;
-            border-width: 15px 0 15px 15px;
-            border-color: transparent transparent transparent #f7f6f6;
-            z-index: 0;
-        }
-
-        &:first-child:before {
-            border-color: transparent;
-        }
-
-        a:after {
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            right: -15px;
-            border-style: solid;
-            border-width: 15px 0 15px 15px;
-            border-color: transparent transparent transparent #ccc;
-            z-index: 10;
-        }
-
-        &.active a {
-            background: @colorDarkBlue;
-            z-index: 100;
-            color: white;
-        }
-
-        &.active a:after {
-            border-left-color: @colorDarkBlue;
-        }
-
-        a {
-            display: block;
-            background: #ccc;
-            line-height: 30px;
-            color: #222;
-        }
-
-        a:hover {
-            background: @colorMediumBlue;
-            color: white;
-        }
-
-        a:hover:after {
-            border-color: transparent transparent transparent @colorMediumBlue;
-        }
-    }
-}
-
 a.method_entrance {
     cursor: pointer;
     float: left;
@@ -264,15 +195,6 @@ a.method_entrance {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-    .method_entrance {
-        &.selected, &.passive {
-            .icon {
-                .number {
-                    left: 58px;
-                }
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 599px) {
@@ -301,33 +223,22 @@ a.method_entrance {
         font-size: 22px;
     }
 
-    .method_entrance {
+    a.method_entrance {
+        margin-top: 0;
         margin-bottom: 0;
         float: left;
-        width: 25%;
+        width: 33%;
 
         .heading_wrapper {
             width: auto;
             margin: 0;
 
             h3 {
-                text-align: left;
+                text-align: center;
                 border: none;
                 font-size: 16px;
                 line-height: 20px;
                 padding-bottom: 2px;
-
-                &.selected {
-                    border-bottom: 2px solid #838078;
-                }
-            }
-        }
-
-        &.selected, &.passive {
-            .icon {
-                .number {
-                    left: 36px;
-                }
             }
         }
     }
@@ -339,7 +250,7 @@ a.method_entrance {
         background-size: 85px 85px;
         background-position: center;
         height: 90px;
-        width: 100%;
+        width: 90px;
         display: inline-block;
         position: relative;
 
@@ -347,7 +258,7 @@ a.method_entrance {
             color: white;
             position: absolute;
             top: 32px;
-            left: 83px;
+            left: 35px;
             font-size: 4rem;
         }
     }
@@ -394,7 +305,7 @@ a.method_entrance {
         background-size: 85px 85px;
         background-position: center;
         height: 90px;
-        width: 100%;
+        width: 90px;
         display: inline-block;
         position: relative;
 
@@ -402,7 +313,7 @@ a.method_entrance {
             color: white;
             position: absolute;
             top: 32px;
-            left: 83px;
+            left: 35px;
             font-size: 4rem;
         }
     }

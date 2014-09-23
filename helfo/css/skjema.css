@@ -109,65 +109,6 @@ input[type=checkbox]:focus {
 .formbuttons {
   margin-top: -10px;
 }
-.breadcrumbs_schema {
-  margin-top: 20px;
-  width: 100%;
-}
-.breadcrumbs_schema li {
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  width: 32%;
-  margin: 5px 1px 0 0;
-  text-indent: 22px;
-  position: relative;
-}
-.breadcrumbs_schema li:before {
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  left: -2px;
-  border-style: solid;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent #f7f6f6;
-  z-index: 0;
-}
-.breadcrumbs_schema li:first-child:before {
-  border-color: transparent;
-}
-.breadcrumbs_schema li a:after {
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  right: -15px;
-  border-style: solid;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent #ccc;
-  z-index: 10;
-}
-.breadcrumbs_schema li.active a {
-  background: #004e66;
-  z-index: 100;
-  color: white;
-}
-.breadcrumbs_schema li.active a:after {
-  border-left-color: #004e66;
-}
-.breadcrumbs_schema li a {
-  display: block;
-  background: #ccc;
-  line-height: 30px;
-  color: #222;
-}
-.breadcrumbs_schema li a:hover {
-  background: #0093a7;
-  color: white;
-}
-.breadcrumbs_schema li a:hover:after {
-  border-color: transparent transparent transparent #0093a7;
-}
 a.method_entrance {
   cursor: pointer;
   float: left;
@@ -211,12 +152,6 @@ a.method_entrance:hover {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
-  .method_entrance.selected .icon .number,
-  .method_entrance.passive .icon .number {
-    left: 58px;
-  }
-}
 @media only screen and (max-width: 599px) {
   .method_entrance {
     margin-bottom: 0;
@@ -238,28 +173,22 @@ a.method_entrance:hover {
   h1 {
     font-size: 22px;
   }
-  .method_entrance {
+  a.method_entrance {
+    margin-top: 0;
     margin-bottom: 0;
     float: left;
-    width: 25%;
+    width: 33%;
   }
-  .method_entrance .heading_wrapper {
+  a.method_entrance .heading_wrapper {
     width: auto;
     margin: 0;
   }
-  .method_entrance .heading_wrapper h3 {
-    text-align: left;
+  a.method_entrance .heading_wrapper h3 {
+    text-align: center;
     border: none;
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 2px;
-  }
-  .method_entrance .heading_wrapper h3.selected {
-    border-bottom: 2px solid #838078;
-  }
-  .method_entrance.selected .icon .number,
-  .method_entrance.passive .icon .number {
-    left: 36px;
   }
 }
 .selected {
@@ -301,7 +230,7 @@ a.method_entrance:hover {
   background-size: 85px 85px;
   background-position: center;
   height: 90px;
-  width: 100%;
+  width: 90px;
   display: inline-block;
   position: relative;
 }
@@ -309,7 +238,7 @@ a.method_entrance:hover {
   color: white;
   position: absolute;
   top: 32px;
-  left: 83px;
+  left: 35px;
   font-size: 4rem;
 }
 .selected .heading_wrapper h3 {
@@ -320,7 +249,7 @@ a.method_entrance:hover {
   background-size: 85px 85px;
   background-position: center;
   height: 90px;
-  width: 100%;
+  width: 90px;
   display: inline-block;
   position: relative;
 }
@@ -328,7 +257,7 @@ a.method_entrance:hover {
   color: white;
   position: absolute;
   top: 32px;
-  left: 83px;
+  left: 35px;
   font-size: 4rem;
 }
 .passive:hover .icon {
