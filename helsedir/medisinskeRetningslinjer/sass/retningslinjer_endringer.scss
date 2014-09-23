@@ -21,6 +21,8 @@
         }
     }
 }
+
+
   
 @mixin vertical-align {
   position: relative;
@@ -118,7 +120,7 @@ $colorgrading-blank: #ffffff;
 
         h1 {
             color: $colorWhite;
-            margin-top: 25px;
+            margin-top: 20px;
             padding-left: 30px;
             padding-top: 0px;
             padding-bottom: 45px;
@@ -533,6 +535,7 @@ $colorgrading-blank: #ffffff;
                     li{
                         display: inline-block;
                         margin-right: 20px;
+                        line-height: 40px;
                         a{
                             font-size: 18px;
                             text-decoration: underline;
@@ -544,6 +547,9 @@ $colorgrading-blank: #ffffff;
                                 height: 15px;
                                 margin-left: 15px;
                             }
+                        }
+                        @include breakpoint("mobile"){
+                            display: block;
                         }
                         
                         

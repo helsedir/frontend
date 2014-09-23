@@ -72,7 +72,24 @@
               <li><a href="#referanser">Referanser</a></li>
             </ul>
             <div class="resp-tabs-container">
-              <div id="nokkelinfo"></div>
+              <div id="nokkelinfo">
+                <section>
+                  <h2>Fordeler og ulemper</h2>
+                  {{recommendation.keyInfo.benefits}}
+                </section>
+                <section>
+                  <h2>Kvalitet på dokumentasjonen</h2>
+                  {{recommendation.keyInfo.evidence}}
+                </section>
+                <section>
+                  <h2>Verdier og preferanser</h2>
+                  {{recommendation.keyInfo.preference}}
+                </section>
+                <section>
+                  <h2>Ressurshensyn</h2>
+                  {{recommendation.keyInfo.resources}}
+                </section>
+              </div>
               <div id="vitenskap">
                 <section class="pico" ng-repeat="pico in recommendation.picos">
                   <dl class="dl-horizontal">
