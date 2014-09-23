@@ -87,13 +87,16 @@
 #header #logo,
 #footer #logo {
   padding: 0;
-  display: inline;
+  background: url(../img/HELFO-logo.svg) no-repeat;
+  display: block;
+  height: 42px;
+  width: 155px;
 }
-#header #logo img,
-#footer #logo img {
-  /* min-height: 44px; */
-  max-height: 42px;
-  max-width: 155px;
+#header #logo:focus,
+#footer #logo:focus {
+  background: url(../img/HELFO-logo.svg) no-repeat !important;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 #header .menubutton,
 #footer .menubutton {
@@ -306,7 +309,7 @@
 #footer footer .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
 #header footer .tabs .tab-links li form[aria-selected='true']:focus,
 #footer footer .tabs .tab-links li form[aria-selected='true']:focus {
-  background: #006371;
+  background: #badde9;
   color: white;
 }
 #header footer .tabs .tab-links li input,
@@ -572,14 +575,14 @@
 .container-fluid.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
 .container-fluid.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
 .container-fluid.toppmeny .tabs .tab-links li form[aria-selected='true']:focus {
-  background: #006371;
-  color: white;
+  background: #badde9;
+  color: #222;
 }
 .container-fluid.toppmeny .tabs .tab-links li span.tabs_header:focus,
 .container-fluid.toppmeny .tabs .tab-links li span.tabs_footer:focus,
 .container-fluid.toppmeny .tabs .tab-links li form:focus {
-  background: #006371;
-  color: white;
+  background: #badde9;
+  color: #222;
   outline: 0;
 }
 .container-fluid.toppmeny .tabs .tab-links li form {

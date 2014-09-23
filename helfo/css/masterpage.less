@@ -99,12 +99,15 @@
 
     #logo {
         padding: 0;
-        display: inline;
+        background: url(../img/HELFO-logo.svg) no-repeat;
+        display: block;
+        height: 42px;
+        width: 155px;
 
-        img {
-            /* min-height: 44px; */
-            max-height: 42px;
-            max-width: 155px;
+        &:focus {
+            background: url(../img/HELFO-logo.svg) no-repeat !important;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
         }
     }
 
@@ -298,7 +301,7 @@
                             color: @colorDarkBlue;
 
                             &:focus {
-                                background: @colorMediumBlueHover;
+                                background: #badde9;
                                 color: white;
                             }
                         }
@@ -546,14 +549,14 @@
                         color: @colorDarkBlue;
 
                         &:focus {
-                            background: @colorMediumBlueHover;
-                            color: white;
+                            background: #badde9;
+                            color: #222;
                         }
                     }
 
                     &:focus {
-                        background: @colorMediumBlueHover;
-                        color: white;
+                        background: #badde9;
+                        color: #222;
                         outline: 0;
                     }
                 }

@@ -10,9 +10,6 @@
 .no-svg .container .youtube {
   background-image: url(../img/sosiale_ikon_youtube.png) !important;
 }
-.no-svg .container #logo {
-  background-image: url('../img/logo.png') !important;
-}
 .no-svg .container input[type="checkbox"] {
   float: left;
   width: auto;
@@ -190,5 +187,10 @@
   background: url(../img/ikoner/helfo_pil_hover.png) no-repeat;
   background-size: 85px 85px;
   background-position: center;
+}
+.no-svg #header #logo {
+  padding: 0;
+  background: url(../img/HELFO-logo.png) no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=nosvg.css.map */
