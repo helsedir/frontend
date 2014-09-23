@@ -97,11 +97,15 @@
         }
     }
 
-    #logo img {
-        display: block;
-        /* min-height: 44px; */
-        max-height: 42px;
-        max-width: 155px;
+    #logo {
+        padding: 0;
+        display: inline;
+
+        img {
+            /* min-height: 44px; */
+            max-height: 42px;
+            max-width: 155px;
+        }
     }
 
     .menubutton {
@@ -223,8 +227,8 @@
             padding: 10px 8px 8px 8px;
             text-transform: uppercase;
 
-            &:focus {
-                background: @colorDarkBlue;
+            a:focus {
+                background: @colorDarkBlue !important;
                 color: white !important;
                 outline: 0;
             }
@@ -263,8 +267,8 @@
 
         a {
             &:focus {
-                background: white;
-                color: @colorDarkBlue !important;
+                background: @colorDarkBlue !important;
+                color: white !important;
                 outline: 0;
             }
         }
@@ -294,7 +298,7 @@
                             color: @colorDarkBlue;
 
                             &:focus {
-                                background: @colorDarkBlueHover;
+                                background: @colorMediumBlueHover;
                                 color: white;
                             }
                         }
@@ -542,13 +546,13 @@
                         color: @colorDarkBlue;
 
                         &:focus {
-                            background: @colorDarkBlueHover;
+                            background: @colorMediumBlueHover;
                             color: white;
                         }
                     }
 
                     &:focus {
-                        background: @colorDarkBlueHover;
+                        background: @colorMediumBlueHover;
                         color: white;
                         outline: 0;
                     }

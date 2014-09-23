@@ -2421,14 +2421,14 @@ html {
         }
 
         &:focus, &:visited:focus {
-            h2, h4, p {
-                background: @colorDarkBlue;
-                color: white;
+            h2, h3, h4, h5, p {
+                background: @colorDarkBlue !important;
+                color: white !important;
                 outline: 0;
             }
 
-            background: @colorDarkBlue;
-            color: white;
+            background: @colorDarkBlue !important;
+            color: white !important;
             outline: 0;
         }
     }
@@ -2480,6 +2480,12 @@ html {
                 font-family: @roboto;
                 font-weight: 300;
                 color: #756d6a;
+            }
+
+            &:focus {
+                span {
+                    color: white;
+                }
             }
         }
     }

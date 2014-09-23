@@ -2417,18 +2417,22 @@ html {
 }
 .container a:focus,
 .container a:visited:focus {
-  background: #002c42;
-  color: white;
+  background: #002c42 !important;
+  color: white !important;
   outline: 0;
 }
 .container a:focus h2,
 .container a:visited:focus h2,
+.container a:focus h3,
+.container a:visited:focus h3,
 .container a:focus h4,
 .container a:visited:focus h4,
+.container a:focus h5,
+.container a:visited:focus h5,
 .container a:focus p,
 .container a:visited:focus p {
-  background: #002c42;
-  color: white;
+  background: #002c42 !important;
+  color: white !important;
   outline: 0;
 }
 .container .takst_table {
@@ -2475,6 +2479,10 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #756d6a;
+}
+.container .navigate_forward a:focus span,
+.container .navigate_back a:focus span {
+  color: white;
 }
 .container .navigate_forward {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;

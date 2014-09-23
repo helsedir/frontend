@@ -20,6 +20,7 @@ $(document).ready(function () {
                 $('#mobilesearch').removeClass('js-expanded');
                 $('#mainsearchcolumn').slideUp(500);
             };
+            $('#tab_header1').focus();
         }
         visible = !visible;
     });
