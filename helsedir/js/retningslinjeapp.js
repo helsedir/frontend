@@ -1,8 +1,13 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
-	'ngRoute', 'retningslinjeControllers', 'ngResource']);
+	'ngRoute', 'retningslinjeControllers', 'ngResource', 'ui.router']);
 
-retningslinjeApp.config(['$routeProvider', '$locationProvider', 
-	function($routeProvider,$locationProvider){
+retningslinjeApp.config(['$routeProvider', '$locationProvider', '$urlRouterProvider', '$stateProvider', 
+	function($routeProvider,$locationProvider, $urlRouterProvider, $stateProvider){
+		$stateProvider
+		   .state('sections', {
+		     url: "/state1",
+		     templateUrl: "partials/sections.html"
+		   });
 		$routeProvider.when('/', {
 			templateUrl: 'partials/guidelines_frontpage.html',
 			controller: 'guidelinesListCtrl'
