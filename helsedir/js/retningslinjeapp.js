@@ -4,15 +4,15 @@ var retningslinjeApp = angular.module('retningslinjeApp', [
 retningslinjeApp.config(['$routeProvider', '$locationProvider', 
 	function($routeProvider,$locationProvider){
 		$routeProvider.when('/', {
-			templateUrl: 'partials/retningslinje-list.html',
+			templateUrl: 'partials/guidelines_frontpage.html',
 			controller: 'retningslinjeListCtrl'
 		}).
 		when('/:guidelineId', {
-			templateUrl: 'partials/retningslinje-sections.html',
+			templateUrl: 'partials/guideline_frontpage.html',
 			controller: 'retningslinjeSectionCtrl'
 		}).
 		when('/:guidelineId/section/:sectionId', {
-			templateUrl: 'partials/retningslinje-recommendations.html',
+			templateUrl: 'partials/guideline_recommendations.html',
 			controller: 'retningslinjeRecommendationCtrl'
 		}).
 		otherwise({

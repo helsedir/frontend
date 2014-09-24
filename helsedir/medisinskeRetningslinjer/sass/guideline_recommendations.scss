@@ -1,0 +1,649 @@
+/*Styles for the recommendations within one guideline*/
+
+@mixin breakpoint($point) {
+    @if $point == desktop-lg-under {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $point == desktop {
+        @media (min-width: 993px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+
+  
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$fontCalibri: "Calibri";
+$fontCalibriBold: "Calibri-Bold";
+$fontSoho: "soho gothic pro medium";
+$fontSohoLight: "Soho Gothic W01 Light";
+$fontSohoRegular: "Soho Gothic W01 Regular";
+
+$colorDarkBlue: #004e66;
+$colorDarkBlueHover: #002e41;
+
+$colorPurple: rgba(119, 67, 141, 0.89);
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorLightGray: #e7e7e6;
+
+$colorgrading-strong: #77438d;
+$colorgrading-weak: #69b4b6;
+$colorgrading-none: #aeaba8;
+$colorgrading-blank: #ffffff;
+
+   /* aside{
+        @media screen (min-width: 1200px){
+        margin-top: 
+           .module_related{
+            margin-top:
+           }
+        }
+    }
+}*/
+
+@include breakpoint("mobile") {
+    .col-md-12.pageheader {
+        padding: 0;
+    }
+}
+
+
+#pageheader {
+    background: $colorWhite;
+    border-left: 19px solid $colorDarkBlue;
+    @include breakpoint("mobile") {
+        border: none;
+        margin: 0;
+    }
+
+    nav {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        @include breakpoint("mobile") {
+            margin: 0;
+            background: $colorDarkBlue;
+            li {
+                margin-left: 45px;
+                padding: 7px 0px;
+                display: none;
+                    &:last-child{
+                        display: block;
+                }
+                &:before {
+                    position: absolute;
+                    left: 20px;
+                    top: 5px;
+                    font-family: "FontAwesome";
+                    content: "\f104";
+                    font-size: 40px;
+                    vertical-align: middle;
+                    color: $colorWhite;
+                }
+            }
+            a {
+                color: $colorWhite;
+                font-size: 20px;
+            }
+        }
+    }
+    .headerGroup {
+        color: $colorWhite;
+        background: $colorPurple;
+        background-image: url("../img/Livslinje-enkel-lilla.svg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        overflow: hidden;
+        @include breakpoint("mobile") {
+            background: none;
+        }
+
+        h1 {
+            color: $colorWhite;
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-top: 0px;
+            padding-bottom: 45px;
+            display: block;
+            //position: relative;
+            @include breakpoint("mobile") {
+                padding-left: 15px;
+                padding-right: 15px;
+                color: #004e66;
+                font-size: 36px;
+            }
+        }
+        span {
+            font-family: $fontCalibri;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 22px;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 30px;
+            @include breakpoint("mobile") {
+                display: none;
+            }
+        }
+        .icon {
+            display: block;
+            font-family: $fontSoho;
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            cursor: pointer;
+            padding: 3px 16px;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-weight: bold;
+        }
+    }
+}
+
+.recommendation {
+    padding: 0;
+    background: $colorWhite;
+    margin-top: 25px;
+    &:first-child {
+        margin-top: 40px;
+    }
+    dl dt {
+        font-weight: bold;
+    }
+    @media (min-width: 768px) {
+        .dl-horizontal {
+            width: 100%;
+            overflow: auto;
+            dt {
+                float: left;
+                //width: 160px;
+                overflow: hidden;
+                clear: left;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            dd {
+                margin-left: 120px;
+                //float: left;
+           
+            }
+        }
+    }
+    @include breakpoint("mobile"){
+        &.open{
+            margin-bottom: 150px;
+        }
+    }
+    .header_wrapper {
+        header.gradingStrong {
+            border-left: 5px solid $colorgrading-strong;
+        }
+        header.gradingWeak {
+            border-left: 5px solid $colorgrading-weak;
+        }
+        header.gradingNone {
+            border-left: 5px solid #aeaba8;
+        }
+        header.gradingBlank {
+            border-left: 5px solid #fffff1;
+            /*Change to site background on mobile */
+            @include breakpoint("mobile") {
+                border-left: 5px solid #f5f5f5;
+            }
+        }
+        header {
+            h2 {
+                margin-top: 0;
+                margin-right: 30px;
+                display: block;
+                color: $colorDarkBlue;
+                position: relative;
+                padding-left: 45px;
+                padding-bottom: 45px;
+                padding-top: 30px;
+                &:before {
+                    position: absolute;
+                    left: 15px;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    cursor: pointer;
+                    
+                }
+                &.clicked{
+                    &:before{
+                        content:"\f106"
+                    }
+                }
+                @include breakpoint("mobile") {
+                    &.clicked {
+                        background: #f5f5f5;
+                    }
+                    padding-bottom: 15px;
+                    width: 100%;
+                    padding-right: 45px;
+                }
+            }
+        }
+    }
+    .text {
+
+        .recommendationexplanation {
+            /*Grading icon*/
+            margin-left: 50px;
+            padding-left: 20px;
+            @include breakpoint("mobile"){
+                margin-left: 0;
+                padding-left: 0;
+            }
+            &.gradingStrong {
+                border-left: 2px solid $colorgrading-strong;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingWeak {
+                border-left: 2px solid $colorgrading-weak;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingNone {
+                border-left: 2px solid $colorgrading-none;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingBlank {
+                border-left: 2px solid $colorgrading-blank;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            .clickable{
+                cursor: pointer;
+            }
+            .icon {
+                padding: 7px 15px;
+                width: 50px;
+                text-align: center;
+                display: inline-block;
+                &:before{
+                content: "\f129";
+                margin-bottom: 10px;
+                display: inline-block;
+                font-family: "FontAwesome";
+                font-size: 20px;
+                color: $colorWhite;
+                //width: 50px;
+                //padding: 14px 2px;
+                
+                //padding: 3px 13px;
+                //font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 0;
+
+                }
+                &.open{
+                    &:before{
+                    content: "\f00d"
+                }
+                }
+                &.gradingStrong {
+                    background-color: $colorgrading-strong;
+                }
+                &.gradingWeak {
+                    background-color: $colorgrading-weak;
+                }
+                &.gradingNone {
+                    background-color: $colorgrading-none;
+                }
+                @include breakpoint("mobile") {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 25px;
+                    padding: 10px 15px;
+                    width: 50px;
+                    text-align: center;
+                }
+            }
+            /*Grading header*/
+            .recommendationstrength {
+                cursor: pointer;
+                font-family: $fontCalibriBold;
+                text-transform: uppercase;
+                margin-left: 15px;
+                &.gradingStrong {
+                    color: $colorgrading-strong;
+                }
+                &.gradingWeak {
+                    color: $colorgrading-weak;
+                }
+                @include breakpoint("mobile") {
+                    display: block;
+                    padding-top: 15px;
+                    font-size: 24px;
+                    font-family: $fontCalibri;
+                    height: 51px;
+                }
+            }
+            /*Grading text*/
+            .explainingtext {
+                margin-top: 0;
+                margin-right: 20px;
+                padding: 10px;
+                &.gradingStrong {
+                    background-color: #ded2e4;
+                }
+                &.gradingWeak {
+                    background-color: #c1dfdd;
+                }
+                p {
+                    max-width: 650px;
+                }
+                @include breakpoint("mobile"){
+                    padding: 25px 15px;
+                    font-size: 24px;
+                    margin-right: 0;
+                }
+            }
+        }
+        /* Styling for EKG border  */
+        .textContainer {
+            margin-left: 50px;
+            margin-right: 30px;
+            padding-left: 20px;
+            padding-top: 0;
+            @include breakpoint("mobile") {
+                margin: 0;
+                padding: 15px;
+            }
+
+
+            &.gradingStrong {
+                border-left: 2px solid $colorgrading-strong;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingWeak {
+                border-left: 2px solid $colorgrading-weak;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            &.gradingNone {
+                border-left: 2px solid $colorgrading-none;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+                .recommendation-text{
+                    padding-top: 0;
+                }
+            }
+            &.gradingBlank {
+                border-left: 2px solid $colorgrading-blank;
+                @include breakpoint("mobile") {
+                    border-left: none;
+                }
+            }
+            .recommendation-text {
+                max-width: 650px;
+                padding-top: 15px;
+            }
+            img.pulse {
+                top: 40px;
+                position: absolute;
+                left: 43px;
+                height: 57px;
+                @include breakpoint("mobile") {
+                    display: none;
+                }
+            }
+
+        }
+        /* Navigational tabs within recommendation */
+        .tabs {
+            margin-top: 45px;
+            width: 100%;
+            ul {
+                margin-bottom: 20px;
+                margin-left: 50px;
+                margin-right: 30px;
+                text-align: justify;
+                .resp-tab-item {
+                    $margin: 7px;
+                    cursor: pointer;
+                    padding: 2px 15px;
+                    display: inline-block;
+                    background-color: $colorLightGray;
+                    margin-right: $margin;
+                    &:last {
+                        margin-right: 0px;
+                        margin-left: $margin;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $colorBlack;
+                    }
+                    &.resp-tab-active {
+                        background-color: #f6f6f6;
+                        height: 40px;
+                        font-weight: bold;
+                    }
+                }
+                &.open {
+                    margin-bottom: 0px;
+                }
+            }
+            .resp-tabs-container {
+                $border: 15px solid $colorWhite;
+                border-left: $border;
+                border-right: $border;
+                border-bottom: $border;
+                @include breakpoint("desktop") {
+                    background-color: #f5f5f5;
+                    font-size: 18px;
+                }
+
+                @include breakpoint("tablet") {
+                    margin-left: 35px;
+                    margin-right: 35px;
+                } 
+
+                @include breakpoint("mobile") {
+                    margin: 0;
+                    border: 0;
+                    background-color: #f6f6f6;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+
+                /* container divs for tab content */
+                > div {
+                    padding-top: 30px;
+                    margin-left: 60px;
+                    margin-right: 30px;
+                    padding-bottom: 30px;
+                    @include breakpoint("tablet") {
+                        background-color: #f6f6f6;
+                        margin: 0;
+                        padding-left: 20px;
+                        padding-right: 15px;
+                    }
+                    @include breakpoint("mobile"){
+                        background-color: #e0e0e0;
+                    }
+                }
+                h3 {
+                    padding: 7px 20px;
+                    background-color: #e7e7e6;
+                    //margin-top: 0;
+                    margin-top: 3px;
+                    @include breakpoint("mobile") {
+                        background-color: $colorWhite;
+                    }
+
+                    a {
+                        //font-size: 24px;
+                        color: $colorBlack;
+                            &:before {
+                                padding-right: 10px;
+                                font-size: 30px;
+                                content: "\f107";
+                                font-family: "FontAwesome";
+                                text-decoration: none;
+                                color: #838078;
+                            }
+                        
+                    }
+                    &.resp-tab-active {
+
+                        background-color: #f6f6f6;
+                        @include breakpoint("mobile"){
+                            background-color: #e0e0e0;
+                        }
+                        a{
+                            &:before{
+                                content: "\f106";
+                            }
+                        }
+                    }
+                }
+                ul.linklist{
+                    margin-left: 0;
+                    li{
+                        display: inline-block;
+                        margin-right: 20px;
+                        line-height: 40px;
+                        a{
+                            font-size: 18px;
+                            text-decoration: underline;
+                            color: $colorBlack;
+                            &:after{
+                                content: url("../img/modules/icons/ico-full-skjerm.svg");
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                margin-left: 15px;
+                            }
+                        }
+                        @include breakpoint("mobile"){
+                            display: block;
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+    .closepane {
+        width: 100%;
+        height: 30px;
+        display: block;
+        @include breakpoint("mobile"){
+            height: 44px;
+        }
+        i {
+            color: $colorWhite;
+            margin-left: 20px;
+            font-size: 28px;
+            @include breakpoint("mobile"){
+                font-size: 30px;
+                @include vertical-align();
+            }
+        }
+        &.gradingStrong {
+            background-color: $colorgrading-strong;
+        }
+        &.gradingWeak {
+            background-color: $colorgrading-weak;
+        }
+        &.gradingNone {
+            background-color: $colorgrading-none;
+        }
+    }
+    &:last-child{
+        margin-bottom: 100px;
+    }
+}
+
+
+
+.picoModal{
+    display: none;
+    font-size: 18px;
+    background: #ffffff;
+    @media (min-width: 1200px){
+        width: 1200px;
+    }
+
+    .header{
+        background: #d0d2d3;
+        font-weight: bold;
+        padding: 10px 30px;
+        a{
+            text-decoration: underline;
+            color: #828078;
+            position: absolute;
+            right: 10px;
+            font-weight: normal;
+            &:after{
+                font-family: "FontAwesome";
+                content: "\f00d"; 
+                text-decoration: none;
+                font-size: inherit;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    table{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        th{
+            font-weight: bold;
+            text-align: left;
+        }
+        td:first-child{
+            width: 300px;
+            padding-left: 30px;
+        }
+        th:first-child{
+            width: 300px;
+            padding-left: 30px;
+        }
+        td:last-child{
+            padding-right: 30px;
+        }
+        th:last-child{
+            padding-right: 30px;
+        }
+        tbody tr:nth-child(odd){
+            background: #f7f6f6;
+        }
+    }
+}

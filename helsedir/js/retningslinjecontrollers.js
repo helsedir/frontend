@@ -3,7 +3,7 @@ var retningslinjeControllers = angular.module('retningslinjeControllers', ['angu
 retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Retningslinje', 'angularLoad', 
     function($scope, Retningslinje, angularLoad) {
         $scope.retningslinjer = Retningslinje.query();
-        angularLoad.loadCSS("../css/retningslinjer_forside.css");
+        angularLoad.loadCSS("../css/guidelines_frontpage.css");
     }
 ]);
 
@@ -12,7 +12,7 @@ retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$rou
         $scope.retningslinje = Retningslinje.get({
             id: $routeParams.guidelineId
         });
-        angularLoad.loadCSS("../css/retningslinje_forside.css");
+        angularLoad.loadCSS("../css/guideline_frontpage.css");
 
     }
 ]);
@@ -24,7 +24,7 @@ retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope'
             },
             function(retningslinje) {
                 $scope.section = retningslinje.sections[$routeParams.sectionId - 1];
-                angularLoad.loadCSS("../css/retningslinje_anbefalinger.css");
+                angularLoad.loadCSS("../css/guideline_recommendations.css");
             }
         );
     }
