@@ -16,14 +16,6 @@ ul.retningslinjer li:first-child {
   margin-top: 10px;
 }
 
-form.retningslinjerSok label {
-  color: #004e66;
-  margin-bottom: 10px;
-}
-form.retningslinjerSok #searchinput {
-  margin-top: 0;
-}
-
 span.number {
   font-size: 18px;
   text-transform: uppercase;

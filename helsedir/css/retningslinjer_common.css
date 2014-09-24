@@ -1,7 +1,11 @@
+/*Common styles for all guidelines*/
 @media (max-width: 992px) {
   aside.retningslinjer {
     float: none;
   }
+}
+aside.retningslinjer .module.module_person {
+  margin-bottom: 50px;
 }
 aside.retningslinjer .module_related {
   width: 100%;
@@ -41,6 +45,14 @@ aside.retningslinjer .module_related.green {
 }
 aside.retningslinjer .module_related.blue {
   border-left: 2px solid #6bb3b4;
+}
+
+form.retningslinjerSok label {
+  color: #004e66;
+  margin-bottom: 10px;
+}
+form.retningslinjerSok #searchinput {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=retningslinjer_common.css.map */

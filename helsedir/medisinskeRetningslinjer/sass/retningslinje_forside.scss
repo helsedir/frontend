@@ -1,3 +1,5 @@
+/*Styles for one single guideline*/
+
 @mixin breakpoint($point) {
     @if $point == desktop-lg-under {
         @media (max-width: 1200px) {
@@ -34,7 +36,7 @@ $colorPurple: rgba(119, 67, 141, 0.89);
 $colorWhite: #ffffff;
 $colorBlack: #000000;
 $colorLightGray: #e7e7e6;
-
+$blueText: #004e66;
 $colorgrading-strong: #77438d;
 $colorgrading-weak: #69b4b6;
 $colorgrading-none: #aeaba8;
@@ -117,4 +119,80 @@ $colorgrading-blank: #ffffff;
             }
         }
     }
+}
+
+form.retningslinjerSok{
+    margin-top: 30px;
+}
+
+.innhold.subtitle{
+    color: $blueText;
+    text-transform: uppercase;
+    font-family: "Calibri";
+    font-size: 18px;
+}
+
+ul.guidelinelist{
+    li{
+        padding: 20px 30px;
+        position: relative;
+        margin-bottom: 20px;
+        &:nth-child(odd){
+            background-color: #eeeded;               
+        }
+        &:nth-child(even){
+            background-color: #ffffff;
+        }
+        .sectioninformation{
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 38%;
+            //font-family: "FontAwesome";
+            //font-size: 40px;
+            //height: 20px;
+            
+            div {color: #aeabb3; font-size: 18px;}
+            div > span{
+                font-family: $fontSohoLight;
+                color: #aeabb3;
+                display: block;
+                font-size: 30px;
+                text-align: center;
+            }
+            img{
+                width: 40px;
+            }
+            }
+    }
+    h3{
+        padding-right: 105px;
+        margin-top: 0;
+        color: #0093a7;
+        span{
+            display: block;
+            color: $blueText;
+            text-transform: uppercase;
+            font-family: "Calibri";
+            font-size: 18px;
+        }
+    }
+
+}
+
+/*hacking aside to fit with col-md-8 */
+aside.retningslinjer.col-8{
+    @media only screen and (min-width: 1200px){
+        margin-right: -50%;
+    }
+    @media only screen and (max-width: 1199px) and (min-width: 950px){
+        margin-right: -54%;
+    }
+    @media only screen and (max-width: 950px){
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        width: auto;
+    }
+
 }

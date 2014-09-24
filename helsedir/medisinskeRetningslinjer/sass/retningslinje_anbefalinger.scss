@@ -1,3 +1,5 @@
+/*Styles for the recommendations within one guideline*/
+
 @mixin breakpoint($point) {
     @if $point == desktop-lg-under {
         @media (max-width: 1200px) {
