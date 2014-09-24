@@ -1,5 +1,5 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
-	'ngRoute', 'retningslinjeControllers', 'retningslinjeServices']);
+	'ngRoute', 'retningslinjeControllers', 'ngResource']);
 
 retningslinjeApp.config(['$routeProvider', '$locationProvider', 
 	function($routeProvider,$locationProvider){

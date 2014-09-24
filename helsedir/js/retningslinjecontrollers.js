@@ -1,32 +1,29 @@
 var retningslinjeControllers = angular.module('retningslinjeControllers', ['angularLoad']);
 
-retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Retningslinje', 'angularLoad', 
-    function($scope, Retningslinje, angularLoad) {
-        $scope.retningslinjer = Retningslinje.query();
+retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Guideline', 'angularLoad', 
+    function($scope, Guideline, angularLoad) {
+        $scope.retningslinjer = Guideline.query();
         angularLoad.loadCSS("../css/guidelines_frontpage.css");
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$routeParams', 'Retningslinje', 'angularLoad',
-    function($scope, $routeParams, Retningslinje, angularLoad) {
-        $scope.retningslinje = Retningslinje.get({
+retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad', '$rootScope',
+    function($scope, $routeParams, Guideline, angularLoad, $rootScope) {
+        $scope.retningslinje = Guideline.get({
             id: $routeParams.guidelineId
         });
         angularLoad.loadCSS("../css/guideline_frontpage.css");
-
+        $rootScope.guideline = $scope.retningslinje;
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope', '$routeParams', 'Retningslinje', 'angularLoad',
-    function($scope, $routeParams, Retningslinje, angularLoad) {
-        $scope.retningslinje = Retningslinje.get({
+retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad', '$rootScope',
+    function($scope, $routeParams, Section, angularLoad, $rootScope) {
+        $scope.section = Section.get({
                 id: $routeParams.guidelineId
-            },
-            function(retningslinje) {
-                $scope.section = retningslinje.sections[$routeParams.sectionId - 1];
-                angularLoad.loadCSS("../css/guideline_recommendations.css");
-            }
-        );
+            });
+        $scope.guidelineTitle = $rootScope.guideline;
+        angularLoad.loadCSS("../css/guideline_recommendations.css");
     }
 ])
     .directive('grading', function() {
