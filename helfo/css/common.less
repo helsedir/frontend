@@ -398,7 +398,7 @@ body {
         display: inline-block;
 
         input {
-            width: 93%;
+            width: 612px;
             height: 40px;
             background: white;
             cursor: text;
@@ -1880,7 +1880,7 @@ body {
             margin-top: 30px;
 
             input {
-                width: 91%;
+                width: 442px;
             }
         }
     }
@@ -1938,6 +1938,10 @@ body {
                 border-top-left-radius: 3px;
                 border-bottom-left-radius: 3px;
             }
+        }
+
+        .searchform input {
+            width: 512px;
         }
     }
 }
@@ -2248,7 +2252,7 @@ html {
     font-size: 62.5%;
 }
 
-.container {
+.container, .container-fluid {
     h1 {
         font-size: 3.6rem;
         line-height: 4.8rem;
@@ -2516,6 +2520,12 @@ html {
                 color: #222;
                 font-size: 18px;
                 border-bottom: none;
+                padding: 10px 8px 8px 8px;
+
+                &:hover {
+                    background: #d9dadb;
+                    color: #002c42;
+                }
             }
         }
 
