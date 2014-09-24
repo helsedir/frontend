@@ -1,28 +1,26 @@
 var retningslinjeControllers = angular.module('retningslinjeControllers', ['angularLoad']);
 
-retningslinjeControllers.controller('retningslinjeListCtrl', ['$scope', 'Guideline', 'angularLoad', 
+retningslinjeControllers.controller('guidelinesListCtrl', ['$scope', 'Guideline', 'angularLoad', 
     function($scope, Guideline, angularLoad) {
-        $scope.retningslinjer = Guideline.query();
+        $scope.guidelines = Guideline.query();
         angularLoad.loadCSS("../css/guidelines_frontpage.css");
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeSectionCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad', '$rootScope',
+retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad',
     function($scope, $routeParams, Guideline, angularLoad, $rootScope) {
         $scope.retningslinje = Guideline.get({
             id: $routeParams.guidelineId
         });
         angularLoad.loadCSS("../css/guideline_frontpage.css");
-        $rootScope.guideline = $scope.retningslinje;
     }
 ]);
 
-retningslinjeControllers.controller('retningslinjeRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad', '$rootScope',
+retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad',
     function($scope, $routeParams, Section, angularLoad, $rootScope) {
         $scope.section = Section.get({
-                id: $routeParams.guidelineId
+                id: $routeParams.sectionId
             });
-        $scope.guidelineTitle = $rootScope.guideline;
         angularLoad.loadCSS("../css/guideline_recommendations.css");
     }
 ])

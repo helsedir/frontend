@@ -32,11 +32,13 @@
 							
 							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
-								<!--<div>
-									<span>5</span>
+								<!--Show number of recommendations if section has no childsections-->
+								<div ng-show="section.childSections.length == 0">
+									<span>{{section.recommendations.length}}</span>
 									Anbefalinger
-								</div>-->
-								<img src="../../img/modules/icons/ico-mer.svg" alt="" />
+								</div>
+								<!--Show image if we are redirecting to next transport page with childsections-->
+								<img ng-show="section.childSections.length > 0" src="../../img/modules/icons/ico-mer.svg" alt="" />
 							</a>
 						</li>
 						
