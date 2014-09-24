@@ -441,7 +441,7 @@ body {
 }
 .container .searchform input,
 .container-fluid .searchform input {
-  width: 94%;
+  width: 93%;
   height: 40px;
   background: white;
   cursor: text;
@@ -453,7 +453,7 @@ body {
 .container .searchform button,
 .container-fluid .searchform button {
   border: none;
-  width: 39px;
+  width: 40px;
   height: 40px;
   padding: 0;
   vertical-align: bottom;
@@ -462,8 +462,8 @@ body {
 }
 .container .searchform button img,
 .container-fluid .searchform button img {
-  width: 25px;
-  vertical-align: bottom;
+  width: 24px;
+  vertical-align: sub;
 }
 .container .numberofpublications,
 .container-fluid .numberofpublications {
@@ -1013,6 +1013,7 @@ body {
 }
 .container .module.module_subscribe,
 .container-fluid .module.module_subscribe {
+  padding-bottom: 15px;
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
 }
@@ -1035,9 +1036,9 @@ body {
   content: '';
   display: inline-block;
   width: 25px;
-  height: 25px;
+  height: 19px;
   background: url(../img/ikoner/ikon_rss.svg) no-repeat;
-  vertical-align: top;
+  vertical-align: initial;
   padding-right: 35px;
 }
 .container .module.module_subscribe .email,
@@ -1049,10 +1050,10 @@ body {
 .container-fluid .module.module_subscribe .email:before {
   content: '';
   display: inline-block;
-  width: 25px;
-  height: 35px;
+  width: 15px;
+  height: 25px;
   background: url(../img/ikoner/ikon_epost.svg) no-repeat;
-  vertical-align: bottom;
+  vertical-align: sub;
   padding-right: 45px;
 }
 .container .module.module_subscribe a,
@@ -1091,7 +1092,7 @@ body {
 }
 .container .module.module_contact,
 .container-fluid .module.module_contact {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
 }
@@ -2501,6 +2502,22 @@ html {
   background-position: 0 75%;
   background-size: 28px 28px;
   padding-left: 36px;
+}
+.container .filterlist li {
+  margin-right: 25px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.container .filterlist li a {
+  color: #222;
+  font-size: 18px;
+  border-bottom: none;
+}
+.container .filterlist .selectedfilter a,
+.container .filterlist .selectedfilter a:visited {
+  font-weight: bold;
+  border-bottom: 3px solid #eb6a0a;
+  padding-bottom: 6px;
 }
 @media only screen and (min-width: 900px) {
   .container .ingress {

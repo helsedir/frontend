@@ -1,8 +1,5 @@
 ﻿@roboto: 'Roboto';
 
-@colorDarkBlue: #002c42;
-@colorDarkBlueHover: #002e41;
-
 @colorMediumBlue: #0093a7;
 @colorMediumBlueHover: #006371;
 @colorLightBlue: #6cb4b5;
@@ -13,7 +10,6 @@
 @colorYellow: #f4d01e;
 @colorYellowHover: #c7ad1c;
 @colorDarkGray: #aeaba8;
-
 @colorLightGray2: #dbdcdd;
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
@@ -120,7 +116,7 @@
         button.js-expander {
             border: none;
             border-radius: 3px;
-            background-color: @colorDarkBlue;
+            background-color: #eb6a0a;
             vertical-align: middle;
             padding: 6px 8px 5px 8px;
             color: #ffffff;
@@ -131,7 +127,7 @@
             transition: all 0.5s;
 
             &:visited {
-                background-color: @colorDarkBlue;
+                background-color: #eb6a0a;
                 color: #ffffff;
             }
 
@@ -143,7 +139,7 @@
                     color: white;
                 }
 
-                border: solid 1px @colorDarkBlue;
+                border: solid 1px #eb6a0a;
             }
 
             &:hover {
@@ -223,7 +219,7 @@
         background: white;
 
         .links {
-            color: @colorDarkBlue;
+            color: #222;
             margin-right: 15px;
             vertical-align: sub;
             display: inline-block;
@@ -231,7 +227,7 @@
             text-transform: uppercase;
 
             a:focus {
-                background: @colorDarkBlue !important;
+                background: #222 !important;
                 color: white !important;
                 outline: 0;
             }
@@ -247,7 +243,8 @@
         }
 
         a, a:visited {
-            color: @colorDarkBlue;
+            font-size: 1.8rem;
+            color: #222;
             text-decoration: none;
         }
 
@@ -270,7 +267,7 @@
 
         a {
             &:focus {
-                background: @colorDarkBlue !important;
+                background: #002e41 !important;
                 color: white !important;
                 outline: 0;
             }
@@ -289,7 +286,7 @@
 
                 li {
                     span.tabs_header, span.tabs_footer, form {
-                        background: @colorDarkBlue;
+                        background: #eb6a0a;
                         color: white;
                         padding: 5px 30px 5px 20px;
                         border-radius: 0;
@@ -298,11 +295,13 @@
                         &[aria-selected='true'] {
                             border: none;
                             background: white;
-                            color: @colorDarkBlue;
+                            color: #222;
 
                             &:focus {
-                                background: #badde9;
-                                color: white;
+                                background: white;
+                                color: #222;
+                                outline: 5px auto -webkit-focus-ring-color;
+                                outline-offset: -2px;
                             }
                         }
                     }
@@ -311,7 +310,7 @@
                         width: 100%;
 
                         &:focus {
-                            background: @colorDarkBlueHover;
+                            background: #002e41;
                             color: white;
                             outline: 0;
                         }
@@ -328,7 +327,7 @@
                         /*max-width: 220px;*/
                         width: 86%;
                         border-radius: 3px;
-                        border: 1px solid @colorDarkBlue;
+                        border: 1px solid #eb6a0a;
                         vertical-align: middle;
                         background-image: url('../img/ikoner/ikon_forstorrelsesglass.png');
                         background-repeat: no-repeat;
@@ -383,7 +382,7 @@
 
         &.rammeverk {
             height: 100%;
-            background: @colorDarkBlue;
+            background: #eb6a0a;
             color: white;
 
             p {
@@ -452,7 +451,7 @@
 
                     &.facebook, &.twitter, &.linkedin, &.youtube {
                         &:hover, &:focus {
-                            background-color: @colorDarkBlue;
+                            background-color: #002e41;
                         }
                     }
 
@@ -537,7 +536,7 @@
 
             li {
                 span.tabs_header, span.tabs_footer, form {
-                    background: @colorDarkBlue;
+                    background: #eb6a0a;
                     color: white;
                     padding: 5px 30px 5px 20px;
                     border-radius: 0;
@@ -546,11 +545,13 @@
                     &[aria-selected='true'] {
                         border: none;
                         background: white;
-                        color: @colorDarkBlue;
+                        color: #222;
 
                         &:focus {
-                            background: #badde9;
+                            background: white;
                             color: #222;
+                            outline: 5px auto -webkit-focus-ring-color;
+                            outline-offset: -2px;
                         }
                     }
 
@@ -574,7 +575,7 @@
                 height: 40px;
                 /*max-width: 220px;*/
                 width: 212px;
-                border: 1px inset @colorDarkBlue;
+                border: 1px inset #222;
                 vertical-align: middle;
                 cursor: text;
                 display: inline-block;
@@ -665,38 +666,15 @@
                     padding-left: 0;
 
                     li span.tabs_header, li span.tabs_footer, form {
-                        width: 100px;
+                        width: 120px;
                         padding: 0 15px 0 10px;
+                        font-size: 1.8rem;
                     }
                 }
 
                 .tab-content {
                     padding-left: 0;
                 }
-            }
-        }
-
-        .container-fluid.toppmeny {
-            .tabs {
-                padding-left: 0;
-                margin-top: -30px;
-
-                .tab-links {
-                    padding-left: 0;
-
-                    li span.tabs_header, li span.tabs_footer, form {
-                        width: 100px;
-                        padding: 0 15px 0 10px;
-                    }
-                }
-
-                .tab-content {
-                    padding-left: 0;
-                }
-            }
-
-            .inner {
-                margin-top: 40px;
             }
         }
 
@@ -714,6 +692,32 @@
             input {
                 width: 82%;
             }
+        }
+    }
+
+    .container-fluid.toppmeny {
+        .tabs {
+            padding-left: 0;
+            margin-top: -30px;
+
+            .tab-links {
+                padding-left: 0;
+                margin-right: 0;
+
+                li span.tabs_header, li span.tabs_footer, form {
+                    width: 120px;
+                    padding: 0 15px 0 10px;
+                    font-size: 1.8rem;
+                }
+            }
+
+            .tab-content {
+                padding-left: 0;
+            }
+        }
+
+        .inner {
+            margin-top: 40px;
         }
     }
 }
@@ -759,7 +763,7 @@
                 padding: 7px 11px 8px 11px;
                 display: inline-block;
                 border-radius: 3px;
-                background: @colorDarkBlue url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
+                background: #eb6a0a url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
                 -webkit-background-size: 20px;
@@ -791,7 +795,7 @@
 
             &.mobile-search {
                 display: inline-block;
-                background: @colorDarkBlue url('../img/ikoner/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+                background: #eb6a0a url('../img/ikoner/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
                 -moz-background-size: 30px;
                 -o-background-size: 30px;
                 -webkit-background-size: 30px;
@@ -802,8 +806,8 @@
                 &:focus {
                     text-decoration: none;
                     background-color: #d9dadb;
-                    color: @colorDarkBlue;
-                    border: solid 1px @colorDarkBlue;
+                    color: #222;
+                    border: solid 1px #222;
                 }
 
                 &:hover {
