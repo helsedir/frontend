@@ -20,9 +20,24 @@ $(document).ready(function () {
                 $('#mobilesearch').removeClass('js-expanded');
                 $('#mainsearchcolumn').slideUp(500);
             };
-            $('#tab_header1').focus();
         }
         visible = !visible;
+    });
+
+    expander.keydown(function (ev) {
+        if (ev.which == 13) {
+            if (visible) {
+                expandedContent.slideUp(500);
+                expander.removeClass('js-expanded');
+                expander.blur();
+            } else {
+                expandedContent.slideDown(500);
+
+                expander.addClass('js-expanded');
+            }
+            visible = !visible;
+            $('#tab_header1').focus();
+        }
     });
 
     $('#mobilesearch').on('click', function () {

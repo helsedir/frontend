@@ -35,15 +35,15 @@
   color: #222;
 }
 .container .entrancebutton.menu button.js-expanded {
-  background: #badde9;
+  background: #d9dadb;
   border: none;
   outline: none;
 }
 .container .entrancebutton.menu button:hover {
-  background: #badde9;
+  background: #d9dadb;
 }
 .container .entrancebutton.menu button:focus {
-  background: #badde9;
+  background: #d9dadb;
   border: none;
   outline: none;
 }
