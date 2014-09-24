@@ -7,19 +7,19 @@ retningslinjeControllers.controller('guidelinesListCtrl', ['$scope', 'Guideline'
     }
 ]);
 
-retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad',
-    function($scope, $routeParams, Guideline, angularLoad, $rootScope) {
+retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad', '$stateParams',
+    function($scope, $routeParams, Guideline, angularLoad, $stateParams) {
         $scope.retningslinje = Guideline.get({
-            id: $routeParams.guidelineId
+            id: $stateParams.guidelineId
         });
         angularLoad.loadCSS("../css/guideline_frontpage.css");
     }
 ]);
 
-retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad',
-    function($scope, $routeParams, Section, angularLoad, $rootScope) {
+retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad', '$stateParams' ,
+    function($scope, $routeParams, Section, angularLoad, $stateParams) {
         $scope.section = Section.get({
-                id: $routeParams.sectionId
+                id: $stateParams.sectionId
             });
         angularLoad.loadCSS("../css/guideline_recommendations.css");
     }

@@ -55,7 +55,7 @@
             <ul class="retningslinjer">
                 <li ng-repeat="guideline in guidelines">
                     <div class="transportsideknapp">
-                        <a ui-sref="guideline.details({id: guideline.id})">
+                        <a ui-sref="guideline({guidelineId: guideline.guidelineId})">
                             <!-- guidelines.title -->
                             <h3>{{guideline.title}}</h3>
                             <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
