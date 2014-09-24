@@ -407,27 +407,47 @@
         background: #d9dadb;
         padding: 20px 0 50px 0;
 
-        h4, p, a, a:visited, a:hover {
-            color: #222;
-            border: none;
-        }
-
         h4 {
             margin-top: 20px;
-            margin-bottom: 10px;
             text-transform: none;
+            font-size: 2.3rem;
+            font-weight: 400;
+            display: inline-block;
+            padding-bottom: 3px;
+            margin-bottom: 27px;
+            color: #222;
         }
 
         p {
             margin: 0;
             font-size: 18px;
-            line-height: 1.5em;
+            line-height: 2.6rem;
+            padding-top: 0;
+            color: #222;
+
+            &.about {
+                margin-bottom: 16px;
+            }
         }
 
         a {
-            text-decoration: underline;
+            text-decoration: none;
             font-size: 18px;
-            line-height: 1.5em;
+            line-height: 2.6rem;
+            border-bottom: 1px solid #87888a;
+            color: #222;
+
+            h4 {
+                font-size: 2.3rem;
+                font-weight: 400;
+                border-bottom: 1px solid #222;
+                display: inline-block;
+                padding-bottom: 3px;
+            }
+
+            &:hover {
+                border-bottom: 1px solid #222;
+            }
         }
 
         .socialmedia {
@@ -852,9 +872,53 @@
     }
 }
 
-.contact {
-    p {
-        width: 35%;
-        float: left;
+#footer .footerlinkswrapper {
+    .contact {
+        div {
+            margin-bottom: 10px;
+        }
+
+        p {
+            width: 35%;
+            float: left;
+        }
+
+        p.info {
+            font-weight: 400;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 2.6rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #222;
+            margin: 0;
+            padding: 0 0 0.8rem 0;
+        }
+    }
+
+    .email {
+        margin-bottom: 5px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 21px;
+            background: url(../img/ikoner/ikon_epost.svg) no-repeat center;
+            vertical-align: bottom;
+            padding-right: 40px;
+        }
+    }
+
+    .rss:before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 19px;
+        background: url(../img/ikoner/ikon_rss.svg) no-repeat center;
+        vertical-align: text-top;
+        padding-right: 45px;
     }
 }

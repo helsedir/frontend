@@ -179,19 +179,18 @@ body {
                 font-size: 40px;
             }
         }
-        /* &.accordion {
-			h3 {
-				cursor: pointer;
 
-				&:before {
-					content: "\f107";
-					font-family: "FontAwesome";
-					font-size: 30px;
-					position: absolute;
-					left: 0;
-				}
-			}
-		} */
+        h3 {
+            cursor: pointer;
+
+            &:before {
+                float: left;
+                padding: 3px 20px 0 0;
+                content: "\f107";
+                font-family: "FontAwesome";
+                font-size: 40px;
+            }
+        }
     }
     /* .nested-accordion.has-hidden-content > .accordion:before {
 		float: left;
@@ -213,20 +212,18 @@ body {
                 font-size: 40px;
             }
         }
-        /*
-		&.accordion {
-			h3 {
-				cursor: pointer;
 
-				&:before {
-					content: "\f106";
-					font-family: "FontAwesome";
-					font-size: 30px;
-					position: absolute;
-					left: 0;
-				}
-			}
-		}*/
+        h3 {
+            cursor: pointer;
+
+            &:before {
+                float: left;
+                padding: 3px 20px 0 0;
+                content: "\f106";
+                font-family: "FontAwesome";
+                font-size: 40px;
+            }
+        }
     }
     /*    .nested-accordion.has-visible-content > .accordion:before {
 		float: left;
@@ -799,13 +796,8 @@ body {
         position: relative;
 
         p {
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-
             a {
                 border: none;
-                font-size: 1.8rem;
-                line-height: 2.6rem;
 
                 &:hover {
                     border-bottom: 1px solid #c2c3c4;
@@ -866,8 +858,9 @@ body {
         }
 
         &.module_related {
-            margin-top: 50px;
             padding-bottom: 10px;
+            margin: 20px 0;
+            width: 100%;
 
             .bulletlist {
                 margin-top: 10px;
@@ -1109,7 +1102,7 @@ body {
             padding: 0;
             background: none;
             padding-top: 13px;
-            margin: 67px 0 31px 0;
+            margin: 30px 0 0 0;
             width: 100%;
 
             a, a:visited {
@@ -2537,7 +2530,7 @@ html {
 @media only screen and (min-width: 900px) {
     .container {
         .ingress {
-            width: 57%;
+            width: 652px;
         }
     }
 }
