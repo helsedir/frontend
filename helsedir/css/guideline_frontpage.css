@@ -152,12 +152,20 @@ ul.guidelinelist li .sectioninformation img {
   margin-right: 30px;
 }
 ul.guidelinelist h3 {
-  padding-right: 105px;
+  /*Less padding on mobile */
+  padding-right: 10px;
   margin-top: 0;
   color: #0093a7;
-  word-break: break-all;
+  word-break: break-word;
+}
+@media only screen and (min-width: 600px) {
+  ul.guidelinelist h3 {
+    padding-right: 105px;
+  }
 }
 ul.guidelinelist h3 span {
+  line-height: 15px;
+  margin-bottom: 10px;
   display: block;
   color: #004e66;
   text-transform: uppercase;

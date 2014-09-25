@@ -193,11 +193,19 @@ ul.guidelinelist{
             }
     }
     h3{
-        padding-right: 105px;
+        /*Less padding on mobile */
+        padding-right: 10px;
+        @media only screen and (min-width: 600px){
+            padding-right: 105px;
+        }
+        
         margin-top: 0;
         color: #0093a7;
-        word-break: break-all;
+        word-break: break-word;
+
         span{
+            line-height: 15px;
+            margin-bottom: 10px;
             display: block;
             color: $blueText;
             text-transform: uppercase;
