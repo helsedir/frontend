@@ -1,4 +1,28 @@
-﻿.no-svg .container .facebook {
+﻿.no-svg .container {
+  /*
+        .e-mail {
+            background-image: url('../img/modules/icons/epost_regular.png');
+            background-repeat: no-repeat;
+            background-size: 20px 27px;
+            padding-left: 30px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .rss {
+            background-image: url('../img/modules/icons/rss_regular.png');
+            background-repeat: no-repeat;
+            background-size: 20px 27px;
+
+            img {
+                display: none;
+            }
+        }
+*/
+}
+.no-svg .container .facebook {
   background-image: url(../img/sosiale_ikon_facebook.png) !important;
 }
 .no-svg .container .twitter {
@@ -33,24 +57,6 @@
   vertical-align: auto;
   width: auto;
   height: auto;
-}
-.no-svg .container .e-mail {
-  background-image: url('../img/modules/icons/epost_regular.png');
-  background-repeat: no-repeat;
-  background-size: 20px 27px;
-  padding-left: 30px;
-}
-.no-svg .container .e-mail img {
-  display: none;
-}
-.no-svg .container .rss {
-  background-image: url('../img/modules/icons/rss_regular.png');
-  background-repeat: no-repeat;
-  background-size: 20px 27px;
-  padding-left: 30px;
-}
-.no-svg .container .rss img {
-  display: none;
 }
 .no-svg .container .module.module_socialandprint .ikon_facebook {
   background: url(../img/modules/icons/facebook_blaa.png) no-repeat;
@@ -126,6 +132,10 @@
 .no-svg .container .breadcrumbs li:after {
   background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
   background-size: 28px 28px;
+}
+.no-svg .container .entrancebutton a p {
+  font-size: 16px;
+  line-height: 20px;
 }
 .no-svg .container .entrancebutton:hover span.avtale,
 .no-svg .container .entrancebutton:hover span.helseaktor,
@@ -208,7 +218,15 @@
 }
 .no-svg #header #logo {
   padding: 0;
-  background: url(../img/HELFO-logo.png) no-repeat;
-  background-size: cover;
+  background-image: url(../img/HELFO-logo.png);
+  margin-top: -13px;
+  height: 56px;
+  width: 211px;
+}
+.no-svg #footer .footerlinkswrapper .rss:before {
+  content: none;
+}
+.no-svg #footer .footerlinkswrapper .email:before {
+  content: none;
 }
 /*# sourceMappingURL=nosvg.css.map */

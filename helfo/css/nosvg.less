@@ -43,7 +43,7 @@
             width: auto;
             height: auto;
         }
-
+        /*
         .e-mail {
             background-image: url('../img/modules/icons/epost_regular.png');
             background-repeat: no-repeat;
@@ -59,13 +59,12 @@
             background-image: url('../img/modules/icons/rss_regular.png');
             background-repeat: no-repeat;
             background-size: 20px 27px;
-            padding-left: 30px;
 
             img {
                 display: none;
             }
         }
-
+*/
         .module {
             &.module_socialandprint {
                 .ikon_facebook {
@@ -167,6 +166,11 @@
         }
 
         .entrancebutton {
+            a p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
             &:hover {
                 span {
                     &.avtale, &.helseaktor, &.oppgjor, &.takster, &.skjema {
@@ -273,7 +277,17 @@
 
     #header #logo {
         padding: 0;
-        background: url(../img/HELFO-logo.png) no-repeat;
-        background-size: cover;
+        background-image: url(../img/HELFO-logo.png);
+        margin-top: -13px;
+        height: 56px;
+        width: 211px;
+    }
+
+    #footer .footerlinkswrapper .rss:before {
+        content: none;
+    }
+
+    #footer .footerlinkswrapper .email:before {
+        content: none;
     }
 }

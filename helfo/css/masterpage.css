@@ -88,6 +88,7 @@
 #footer #logo {
   padding: 0;
   background: url(../img/HELFO-logo.svg) no-repeat;
+  background-size: 155px 42px;
   display: block;
   height: 42px;
   width: 155px;
