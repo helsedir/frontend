@@ -1,20 +1,25 @@
 var retningslinjeApp = angular.module('retningslinjeApp', [
-	'ngRoute', 'retningslinjeControllers', 'retningslinjeServices']);
+	'ngRoute', 'retningslinjeControllers', 'ngResource']);
 
 retningslinjeApp.config(['$routeProvider', 
 	function($routeProvider){
 		$routeProvider.when('/', {
-			templateUrl: 'partials/retningslinje-list.html',
-			controller: 'retningslinjeListCtrl'
+			templateUrl: 'partials/guidelines_frontpage.html',
+			controller: 'guidelinesListCtrl'
+		}).
+		when('/search', {
+			templateUrl: 'partials/guidelines_search.html',
+			controller: 'searchCtrl'
 		}).
 		when('/:guidelineId', {
-			templateUrl: 'partials/retningslinje-sections.html',
-			controller: 'retningslinjeSectionCtrl'
+			templateUrl: 'partials/guideline_frontpage.html',
+			controller: 'guidelineSectionCtrl'
 		}).
 		when('/:guidelineId/section/:sectionId', {
-			templateUrl: 'partials/retningslinje-recommendations.html',
-			controller: 'retningslinjeRecommendationCtrl'
+			templateUrl: 'partials/guideline_recommendations.html',
+			controller: 'guidelineRecommendationCtrl'
 		}).
+		
 		otherwise({
 			redirectTo: '/'
 		});
