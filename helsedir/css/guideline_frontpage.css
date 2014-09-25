@@ -9,7 +9,6 @@
   background-size: 200% 60%;
   background-position: bottom;
   overflow: hidden;
-  padding-bottom: 50px;
 }
 @media (max-width: 768px) {
   #pageheader {
@@ -18,7 +17,24 @@
   }
 }
 #pageheader .headerGroup {
+  /*To make icon move to bottom right*/
   margin-left: -13px;
+}
+@media (max-width: 992px) {
+  #pageheader .headerGroup {
+    position: relative;
+  }
+}
+#pageheader .headerGroup span.number {
+  font-family: "Soho Gothic W01 Light";
+}
+#pageheader .headerGroup > .container {
+  padding-bottom: 50px;
+}
+@media (min-width: 993px) {
+  #pageheader .headerGroup > .container {
+    position: relative;
+  }
 }
 @media (max-width: 768px) {
   #pageheader .headerGroup {
@@ -36,22 +52,14 @@
 }
 @media (max-width: 768px) {
   #pageheader .headerGroup h1 {
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #004e66;
     font-size: 36px;
   }
 }
-#pageheader .headerGroup span {
+#pageheader .headerGroup span.subtitle {
   font-family: "Soho Gothic W01 Light";
   line-height: 22px;
   display: inline-block;
   margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  #pageheader .headerGroup span {
-    display: none;
-  }
 }
 #pageheader .headerGroup li {
   margin-right: 30px;
@@ -65,22 +73,39 @@
 }
 #pageheader .headerGroup a.omRetningslinjen {
   position: absolute;
-  right: 5%;
-  top: 20%;
+  right: 0;
+  top: 40%;
   color: #ffffff;
-  font-size: 18px;
+}
+@media (max-width: 992px) {
+  #pageheader .headerGroup a.omRetningslinjen {
+    bottom: 0;
+    top: auto;
+  }
 }
 #pageheader .headerGroup a.omRetningslinjen:before {
   color: #ffffff;
   display: block;
   background-color: rgba(255, 255, 255, 0.2);
-  font-family: "FontAwesome";
-  content: "\f129";
+  content: url("../img/modules/icons/ico-i.svg");
   text-align: center;
   width: 80px;
-  padding: 25px 0;
+  padding: 15px 20px;
   margin-left: 20px;
-  font-size: 40px;
+}
+@media (max-width: 992px) {
+  #pageheader .headerGroup a.omRetningslinjen:before {
+    padding: 8px 10px;
+    width: 50px;
+  }
+}
+#pageheader .headerGroup a.omRetningslinjen span {
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  #pageheader .headerGroup a.omRetningslinjen span {
+    display: none;
+  }
 }
 
 form.retningslinjerSok {

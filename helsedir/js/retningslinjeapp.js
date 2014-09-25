@@ -7,6 +7,10 @@ retningslinjeApp.config(['$routeProvider', '$locationProvider',
 			templateUrl: 'partials/guidelines_frontpage.html',
 			controller: 'guidelinesListCtrl'
 		}).
+		when('/search', {
+			templateUrl: 'partials/guidelines_search.html',
+			controller: 'searchCtrl'
+		}).
 		when('/:guidelineId', {
 			templateUrl: 'partials/guideline_frontpage.html',
 			controller: 'guidelineSectionCtrl'
@@ -15,6 +19,7 @@ retningslinjeApp.config(['$routeProvider', '$locationProvider',
 			templateUrl: 'partials/guideline_recommendations.html',
 			controller: 'guidelineRecommendationCtrl'
 		}).
+		
 		otherwise({
 			redirectTo: '/'
 		});

@@ -55,8 +55,26 @@ $colorgrading-blank: #ffffff;
         border: none;
         margin: 0;
     }
-    padding-bottom: 50px;
+   
     .headerGroup {
+        /*To make icon move to bottom right*/
+        @include breakpoint("tablet"){
+            position: relative;
+        }
+         
+        span.number{
+            font-family: $fontSohoLight;
+        }
+        & > .container {
+            padding-bottom: 50px;
+            @include breakpoint("desktop"){
+                position: relative;
+            }
+            //@include breakpoint("tablet"){
+             //   position: static;
+           // }
+            
+        }
          margin-left: -13px;
         @include breakpoint("mobile") {
             background: none;
@@ -73,20 +91,18 @@ $colorgrading-blank: #ffffff;
             display: block;
             //position: relative;
             @include breakpoint("mobile") {
-                padding-left: 15px;
-                padding-right: 15px;
-                color: #004e66;
+                //padding-left: 15px;
+                //padding-right: 15px;
+                //color: #004e66;
                 font-size: 36px;
             }
         }
-        span {
+        span.subtitle {
             font-family: $fontSohoLight;
             //font-size: 18px;
             line-height: 22px;
             display: inline-block;
-            @include breakpoint("mobile") {
-                display: none;
-            }
+            
             margin-bottom: 30px;
         }
         li{
@@ -101,22 +117,32 @@ $colorgrading-blank: #ffffff;
         }
         a.omRetningslinjen{
             position: absolute;
-            right: 5%;
-            top: 20%;
+            right: 0;
+            top: 40%;
             color: #ffffff;
-            font-size: 18px;
+            @include breakpoint("tablet"){
+                bottom: 0;
+                top: auto;
+            }
+            
             &:before{
                 color: #ffffff;
                 display: block;
                 background-color: rgba(255, 255, 255, 0.2);
-                font-family: "FontAwesome";
-                content: "\f129";
+                content: url("../img/modules/icons/ico-i.svg");
                 text-align: center;
                 width: 80px;
-                padding: 25px 0;
+                padding: 15px 20px;
                 margin-left: 20px;
-                font-size: 40px;
+                @include breakpoint("tablet"){
+                    padding: 8px 10px;
+                    width: 50px;
+                }
             }
+            span{
+                font-size: 18px;
+            @include breakpoint("tablet"){display:none;}
+        }
         }
     }
 }

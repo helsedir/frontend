@@ -3,13 +3,13 @@
 		<div class="headerGroup">
 			<div class="container">
 				<h1>{{retningslinje.title}}</h1>
-				<span>Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
+				<span class="subtitle">Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
 				<ul class="hidden-xs">
-					<li><span>40</span>Anbefalinger</li>
-					<li><span>2014</span>Sist oppdatert</li>
-					<li><span>2214</span>IS-nummer</li>
+					<li><span class="number">40</span>Anbefalinger</li>
+					<li><span class="number">2014</span>Sist oppdatert</li>
+					<li><span class="number">2214</span>IS-nummer</li>
 				</ul>
-				<a href="#omRetningslinjen" title="" class="omRetningslinjen hidden-sm hidden-xs">Om retningslinjen</a>
+				<a href="#omRetningslinjen" title="" class="omRetningslinjen"><span>Om retningslinjen</span></a>
 			</div>
 		</div>
 		
@@ -39,6 +39,7 @@
 								</div>
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img ng-show="section.childSections.length > 0" src="../../img/modules/icons/ico-mer.svg" alt="" />
+							</div>
 							</a>
 						</li>
 						

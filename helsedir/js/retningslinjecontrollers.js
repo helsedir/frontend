@@ -16,6 +16,12 @@ retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routePa
     }
 ]);
 
+retningslinjeControllers.controller('searchCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad',
+    function($scope, $routeParams, Guideline, angularLoad, $rootScope) {
+        angularLoad.loadCSS("../css/guidelines_search.css");
+    }
+]);
+
 retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'angularLoad',
     function($scope, $routeParams, Section, angularLoad, $rootScope) {
         $scope.section = Section.get({
