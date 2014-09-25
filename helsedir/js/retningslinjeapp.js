@@ -11,16 +11,14 @@ retningslinjeApp.config(['$routeProvider', '$locationProvider', '$urlRouterProvi
 		     controller: 'guidelinesListCtrl'
 		   });
 		$stateProvider
-		   .state('guideline', {
-		     url: "/:guidelineId",
-		     templateUrl: "partials/guideline_frontpage.html",
-		     controller: 'guidelineSectionCtrl'
+		   .state('guidelines.detail', {
+		     url: "/",
+		     templateUrl: "partials/guideline_frontpage.html"
 		   });
 		$stateProvider
-		    .state('guideline.section', {
-		     url: "",
-		     templateUrl: "partials/guideline_sections.html",
-		     controller: 'guidelineRecommendationCtrl'
+		    .state('recommendation', {
+		     url: "/recommendations",
+		     templateUrl: "partials/guideline_recommendations.html"
 		   });
 		
 		 $locationProvider.html5Mode(true);

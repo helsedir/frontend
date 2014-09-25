@@ -23,7 +23,6 @@
 						<input id="searchinput" class="search typeahead" type="text" placeholder="Luftveier, Øye, Mage, Forgiftning.." />
 					</div>
 				</form>
-				
 				<div ui-view>
 					
 				</div>
@@ -32,7 +31,7 @@
 				<ul class="guidelinelist">
 					
 					<li ng-repeat="section in retningslinje.sections">
-						<a ui-sref="guideline.section({sectionId: section.sectionId})">
+						<a href="{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
 							
 							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
