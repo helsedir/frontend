@@ -23,22 +23,19 @@
 						<input id="searchinput" class="search typeahead" type="text" placeholder="Luftveier, Øye, Mage, Forgiftning.." />
 					</div>
 				</form>
-				<div ui-view>
-					
-				</div>
 				
 				<h2 class="innhold subtitle">Innhold i denne retningslinjen</h2>
 				<ul class="guidelinelist">
 					
-					<li ng-repeat="section in retningslinje.sections">
+					<li class="haschildren" ng-repeat="section in retningslinje.sections">
 						<a href="{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
 							
 							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div ng-show="section.childSections.length == 0">
-									<span class="number">{{section.recommendations.length}}</span>
-									Anbefaling<span ng-show="section.recommendations.length > 1 || section.recommendations.length == 0">er</span>
+									<span>{{section.recommendations.length}}</span>
+									Anbefalinger
 								</div>
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img ng-show="section.childSections.length > 0" src="../../img/modules/icons/ico-mer.svg" alt="" />

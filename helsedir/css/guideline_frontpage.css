@@ -115,7 +115,7 @@ ul.guidelinelist li .sectioninformation div {
   color: #aeabb3;
   font-size: 18px;
 }
-ul.guidelinelist li .sectioninformation div > span.number {
+ul.guidelinelist li .sectioninformation div > span {
   font-family: "Soho Gothic W01 Light";
   color: #aeabb3;
   display: block;
@@ -124,7 +124,7 @@ ul.guidelinelist li .sectioninformation div > span.number {
 }
 ul.guidelinelist li .sectioninformation img {
   width: 40px;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 ul.guidelinelist h3 {
   padding-right: 105px;
