@@ -53,12 +53,12 @@
            
             <span class="number">120 retningslinjer og veiledere</span>
             <ul class="retningslinjer">
-                <li ng-repeat="guideline in guidelines">
+                <li ng-repeat="retningslinje in retningslinjer">
                     <div class="transportsideknapp">
-                        <a ui-sref="guideline.details({id: guideline.id})">
+                        <a href="{{retningslinje.guidelineId}}">
                             <!-- guidelines.title -->
-                            <h3>{{guideline.title}}</h3>
-                            <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
+                            <h3>{{retningslinje.title}}</h3>
+                            <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{retningslinje.title}}</p>
                         </a>
                     </div>
                 </li>

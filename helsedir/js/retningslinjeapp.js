@@ -3,24 +3,26 @@ var retningslinjeApp = angular.module('retningslinjeApp', [
 
 retningslinjeApp.config(['$routeProvider', '$locationProvider', '$urlRouterProvider', '$stateProvider', 
 	function($routeProvider,$locationProvider, $urlRouterProvider, $stateProvider){
-		$urlRouterProvider.otherwise("/");
 		$stateProvider
-		   .state('guidelines', {
-		     url: "/",
-		     templateUrl: "partials/guidelines_frontpage.html",
-		     controller: 'guidelinesListCtrl'
+		   .state('sections', {
+		     url: "/state1",
+		     templateUrl: "partials/sections.html"
 		   });
-		$stateProvider
-		   .state('guidelines.detail', {
-		     url: "/",
-		     templateUrl: "partials/guideline_frontpage.html"
-		   });
-		$stateProvider
-		    .state('recommendation', {
-		     url: "/recommendations",
-		     templateUrl: "partials/guideline_recommendations.html"
-		   });
-		
+		$routeProvider.when('/', {
+			templateUrl: 'partials/guidelines_frontpage.html',
+			controller: 'guidelinesListCtrl'
+		}).
+		when('/:guidelineId', {
+			templateUrl: 'partials/guideline_frontpage.html',
+			controller: 'guidelineSectionCtrl'
+		}).
+		when('/:guidelineId/section/:sectionId', {
+			templateUrl: 'partials/guideline_recommendations.html',
+			controller: 'guidelineRecommendationCtrl'
+		}).
+		otherwise({
+			redirectTo: '/'
+		});
 		 $locationProvider.html5Mode(true);
 	}]);
 
