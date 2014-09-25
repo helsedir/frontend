@@ -112,6 +112,7 @@
         min-height: 40px;
         text-align: center;
         display: inline-block;
+        margin-top: 2px;
 
         button.js-expander {
             border: none;
@@ -183,6 +184,7 @@
         display: inline-block;
         padding-left: 5px;
         background: white;
+        margin-top: 2px;
 
         input {
             border: none;
@@ -440,13 +442,17 @@
             h4 {
                 font-size: 2.3rem;
                 font-weight: 400;
-                border-bottom: 1px solid #222;
                 display: inline-block;
                 padding-bottom: 3px;
+                border: none;
             }
 
             &:hover {
                 border-bottom: 1px solid #222;
+
+                h4 {
+                    border: none;
+                }
             }
         }
 
@@ -662,6 +668,57 @@
         }
     }
 }
+
+#footer .footerlinkswrapper {
+    .contact {
+        div {
+            margin-bottom: 10px;
+        }
+
+        p {
+            width: 35%;
+            float: left;
+        }
+
+        p.info {
+            font-weight: 400;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 2.6rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #222;
+            margin: 0;
+            padding: 0 0 0.8rem 0;
+        }
+    }
+
+    .email {
+        margin-bottom: 5px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 21px;
+            background: url(../img/ikoner/ikon_epost.svg) no-repeat center;
+            vertical-align: bottom;
+            padding-right: 40px;
+        }
+    }
+
+    .rss:before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 19px;
+        background: url(../img/ikoner/ikon_rss.svg) no-repeat center;
+        vertical-align: text-top;
+        padding-right: 45px;
+    }
+}
 /**********Media**********/
 
 @media only screen and (max-width: 1199px) {
@@ -740,6 +797,10 @@
             margin-top: 40px;
         }
     }
+
+    #footer .footerlinkswrapper .contact p {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
@@ -755,6 +816,10 @@
                 width: 125px;
             }
         }
+    }
+
+    #footer .footerlinkswrapper .contact p {
+        width: 100%;
     }
 }
 
@@ -869,56 +934,5 @@
                 width: 92%;
             }
         }
-    }
-}
-
-#footer .footerlinkswrapper {
-    .contact {
-        div {
-            margin-bottom: 10px;
-        }
-
-        p {
-            width: 35%;
-            float: left;
-        }
-
-        p.info {
-            font-weight: 400;
-        }
-
-        span {
-            font-size: 18px;
-            line-height: 2.6rem;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            color: #222;
-            margin: 0;
-            padding: 0 0 0.8rem 0;
-        }
-    }
-
-    .email {
-        margin-bottom: 5px;
-
-        &:before {
-            content: '';
-            display: inline-block;
-            width: 15px;
-            height: 21px;
-            background: url(../img/ikoner/ikon_epost.svg) no-repeat center;
-            vertical-align: bottom;
-            padding-right: 40px;
-        }
-    }
-
-    .rss:before {
-        content: '';
-        display: inline-block;
-        width: 25px;
-        height: 19px;
-        background: url(../img/ikoner/ikon_rss.svg) no-repeat center;
-        vertical-align: text-top;
-        padding-right: 45px;
     }
 }

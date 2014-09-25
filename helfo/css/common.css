@@ -179,50 +179,54 @@ body {
 .container .has-hidden-content h2,
 .container-fluid .has-hidden-content h2 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-hidden-content h2:before,
 .container-fluid .has-hidden-content h2:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
 }
 .container .has-hidden-content h3,
 .container-fluid .has-hidden-content h3 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-hidden-content h3:before,
 .container-fluid .has-hidden-content h3:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
 }
 .container .has-visible-content h2,
 .container-fluid .has-visible-content h2 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-visible-content h2:before,
 .container-fluid .has-visible-content h2:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
 }
 .container .has-visible-content h3,
 .container-fluid .has-visible-content h3 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-visible-content h3:before,
 .container-fluid .has-visible-content h3:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
 }
 .container .clearfix:before,
 .container-fluid .clearfix:before,
@@ -2551,7 +2555,7 @@ html {
 }
 .container .filterlist li,
 .container-fluid .filterlist li {
-  margin-right: 25px;
+  margin-right: 10px;
   margin-bottom: 15px;
   display: inline-block;
 }
