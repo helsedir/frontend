@@ -459,6 +459,9 @@ $colorgrading-blank: #ffffff;
                 }
             }
             .resp-tabs-container {
+                h2{
+                    padding-left: 0;
+                }
                 $border: 15px solid $colorWhite;
                 border-left: $border;
                 border-right: $border;

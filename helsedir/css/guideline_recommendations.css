@@ -427,6 +427,9 @@
   border-bottom: 15px solid #ffffff;
   /* container divs for tab content */
 }
+.recommendation .text .tabs .resp-tabs-container h2 {
+  padding-left: 0;
+}
 @media (min-width: 993px) {
   .recommendation .text .tabs .resp-tabs-container {
     background-color: #f5f5f5;

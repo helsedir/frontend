@@ -217,6 +217,16 @@ function runJqueryUIStuff(){
 	 $('.recommendation').find("h2").first().trigger("click");
 	 //$('.recommendation').find(".tabs").find("a").first().trigger("click");
 
+	 //i button functionality
+
+	 $('.omRetningslinjen').on("click", function(e){
+	 	e.preventDefault();
+	 	$(this).toggleClass("open");
+	 	$(".aboutexpand").slideToggle("fast");
+
+	 });
+
+
 	 $("#picoEvidensprofil").modal({
 	 	//escapeClose: false,
 	 	//clickClose: false,

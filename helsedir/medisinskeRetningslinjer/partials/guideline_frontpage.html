@@ -9,10 +9,21 @@
 					<li><span class="number">2014</span>Sist oppdatert</li>
 					<li><span class="number">2214</span>IS-nummer</li>
 				</ul>
-				<a href="#omRetningslinjen" title="" class="omRetningslinjen"><span>Om retningslinjen</span></a>
+				<a href="" title="" class="omRetningslinjen"><span>Om retningslinjen</span></a>
 			</div>
 		</div>
-		
+
+			<div class="aboutexpand container">
+				<div class="metadata">
+					<span>Opprettet {{retningslinje.createdDate | date:'dd.MM.yyyy'}}</span>
+					<span>Sist oppdatert {{retningslinje.updatedDate | date:'dd.MM.yyyy'}}</span>
+				</div>
+				<div class="text">
+					{{retningslinje.text}}
+				</div>
+			</div>
+
+
 	</header>
 	<div class="container">
 		<div class="row">
