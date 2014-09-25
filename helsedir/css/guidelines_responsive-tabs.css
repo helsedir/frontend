@@ -1,16 +1,7 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    background: #f5f5f5;
-}
+
 ul.resp-tabs-list, p {
     margin: 0px;
     padding: 0px;
-}
-
-.resp-tabs-list li {
-   
-
 }
 
 .resp-tabs-container {
@@ -30,15 +21,6 @@ h3.resp-accordion {
     display: block;
 }
 
-
-
-h3.resp-tab-active {
-  
-}
-
-h3.resp-tab-title:last-child {
-    
-}
 /*-----------Vertical tabs-----------*/
 .resp-vtabs ul.resp-tabs-list {
     float: left;

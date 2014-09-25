@@ -1,0 +1,120 @@
+@mixin breakpoint($point) {
+    @if $point == desktop-lg-under {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $point == desktop {
+        @media (min-width: 993px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+
+$blueText: #004e66;
+$fontSohoLight: "Soho Gothic W01 Light";
+.retningslinjerSok{
+	margin-top: 30px;
+}
+
+.numberofresults{
+	font-family: "Calibri";
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	display: block;
+	color: $blueText;
+}
+span.number {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 30px;
+    color: $blueText;
+}
+
+ul.searchResults{
+	li{
+		padding: 20px 30px;
+        position: relative;
+        margin-bottom: 20px;
+	}
+	.recommendation{
+		background-color: #ffffff;
+		border-left:  2px solid #69b4b6;
+		img.pulse {
+		    top: 0;
+		    position: absolute;
+		    left: -9px;
+		    height: 57px;
+		    @include breakpoint("mobile") {
+		        display: none;
+		    }
+		}
+		ol{
+			margin: 0;
+			li{
+				margin-bottom: 0;
+				padding-right: 15px;
+				padding:0;
+				color: $blueText;
+				text-transform: uppercase;
+				font-size: 18px;
+				&:after{
+					margin: 0 15px;
+					font-size: 20px;
+				}
+			}
+		}
+		.recommendationnumber{
+			color: #c53729;
+			font-size: 18px;
+		}
+	}
+	.section{
+		background-color: #eeeded; 
+		.sectioninformation{
+		    display: inline-block;
+		    position: absolute;
+		    right: 30px;
+		    top: 38%;
+		    //font-family: "FontAwesome";
+		    //font-size: 40px;
+		    //height: 20px;
+		    
+		    color: #aeabb3; font-size: 18px;
+		    span{
+		        font-family: $fontSohoLight;
+		        color: #aeabb3;
+		        display: block;
+		        font-size: 30px;
+		        text-align: center;
+		    }
+		}
+	}
+	h3{
+	    padding-right: 105px;
+	    margin-top: 0;
+	    color: #0093a7;
+	    span{
+	        display: block;
+	        color: $blueText;
+	        text-transform: uppercase;
+	        font-family: "Calibri";
+	        font-size: 18px;
+	    }
+	}
+}

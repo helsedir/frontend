@@ -1,0 +1,86 @@
+<article class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <header id="pageheader">
+                <nav>
+                    <ol class="breadcrumbs clearfix">
+                        <li><a href="../layouts/forside.html">Forside</a></li>
+                    </ol>
+                </nav>
+                <h1>Nasjonale faglige retningslinjer</h1>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <form class="retningslinjerSok">
+                <label for="searchinput">Søk etter anbefalinger i retningslinjer og veiledere</label>
+                <div id="search_input_retningslinjer">
+                    <input id="searchinput" class="search typeahead" type="text" placeholder="Amming, Sepsis, R10, Benzylpenicillin.." />
+                </div>
+            </form>
+            
+            <div class="content">
+                 <aside class="aside">
+            <div class="accordion_mobile refinesearch avgrens">
+                <h2>Avgrens visning</h2>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radiobutton" id="alle">
+                            <label for="alle"><span></span>Alle</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="barn">
+                            <label for="barn"><span></span>Barn og svangerskap</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="kreft">
+                            <label for="kreft"><span></span>Kreft</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="psykiske">
+                            <label for="psykiske"><span></span>Psykiske lidelser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="fysiske">
+                            <label for="fysiske"><span></span>Fysiske lidelser</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </aside>
+           
+            <span class="number">120 retningslinjer og veiledere</span>
+            <ul class="retningslinjer">
+                <li ng-repeat="guideline in guidelines">
+                    <div class="transportsideknapp">
+                        <a href="#/{{guideline.guidelineId}}">
+                            <!-- guidelines.title -->
+                            <h3>{{guideline.title}}</h3>
+                            <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- cols -->
+             
+        </div>
+    </div>
+        
+       
+        <!-- row -->
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="module module_social col-md-7">
+                <a href="#" class="ikon_metode"><span></span>metode</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- end container -->
+    <div class=" checkbox">
+        
+    </div>
+</article>
