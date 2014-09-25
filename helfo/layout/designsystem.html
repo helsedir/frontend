@@ -27,7 +27,7 @@
 <body>
     <article class="container" style="padding-bottom: 100px; padding-top: 50px;">
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Farger</h4>
                 <div class="wrapper">
                     <div class="farge" style="background-color: #002c42"></div>
@@ -59,6 +59,10 @@
                     <label>#eb6a0a</label>
                 </div>
                 <div class="wrapper">
+                    <div class="farge" style="background-color: #536f2b"></div>
+                    <label>#536f2b (hover)</label>
+                </div>
+                <div class="wrapper">
                     <div class="farge" style="background-color: #6e8c22"></div>
                     <label>#6e8c22</label>
                 </div>
@@ -77,7 +81,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Typografi</h4>
                 <p>Fontstørrelse 62.5% av 16px. 1rem = 10px. 1.5rem = 15px.</p>
                 <h1>h1 - Roboto Light (300) 36/48px - Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
@@ -93,7 +97,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Transportsideknapp</h4>
                 <a href="veiviser_autorisasjon_lege.html" class="transportsideknapp clearfix">
                     <h2>Lege</h2>
@@ -101,7 +105,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Transportsideknapp dokument</h4>
                 <a href="http://www.helfo.no/SiteCollectionDocuments/Skjema/Opplysningsskjema%20for%20privatpraktiserende%20tannleger%20og%20tannpleiere%20med%20direkte%20oppgj%C3%B8r-05-06.23-bokm%C3%A5l.pdf" class="transportsideknapp_dokument">
                     <h2>Opplysningsskjema for private tannleger/tannpleiere med direkte oppgjør (05-06.23)</h2>
@@ -109,20 +113,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
-                <h4>Modul relatert innhold regelverk</h4>
+            <div class="col-md-8 designcontainer">
+                <h4>Relatert innholdmodul - én lenke</h4>
+                <br />
+                <h5>I høyre kolonne</h5>
+                <p>Når det lenkes til en artikkel (Helsedirektoratet har ikke denne)</p>
                 <div style="width: 300px">
                     <a href="https://www.nav.no/rettskildene/forskrift/F19980618-590" class="module module_related regelverk clickable">
                         <p class="module_description">Regelverk</p>
-                        <h5 class="module_header">Forskrift om rett til trygderefusjon for leger, spesialister i klinisk psykologi og Fysioterapeuter</h5>
-                        <p class="source">På nav.no</p>
+                        <p class="module_header">Forskrift om rett til trygderefusjon for leger, spesialister i klinisk psykologi og Fysioterapeuter</p>
                     </a>
                 </div>
+                <br />
+                <h5>I innholdsfeltet</h5>
+                <a href="https://www.nav.no/rettskildene/forskrift/F19980618-590" class="module module_related regelverk clickable">
+                    <p class="module_description">Regelverk</p>
+                    <p class="module_header">Forskrift om rett til trygderefusjon for leger, spesialister i klinisk psykologi og Fysioterapeuter</p>
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
-                <h4>Modul relatert innhold</h4>
+            <div class="col-md-8 designcontainer">
+                <h4>Relatert innholdmodul - flere lenker</h4>
+                <p>Når det lenkes til flere artikler</p>
+
                 <div style="width: 300px">
                     <div class="module module_related relevant">
                         <h5 class="module_description">Du er kanskje også interessert i:</h5>
@@ -133,9 +147,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
-                <h4>Modul viktige meldinger med lenker</h4>
-                <div style="width: 300px">
+            <div class="col-md-8 designcontainer">
+                <h4>Viktige meldingermodul med én eller flere lenker</h4>
+                <br />
+                <h5>I høyre kolonne</h5>
+                <div style="width: 300px; float:left;">
                     <div class="module module_related viktigemeldinger">
                         <p class="module_description">Viktige meldinger</p>
                         <p>
@@ -149,44 +165,50 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 designcontainer">
-                <h4>Modul viktige meldinger</h4>
-                <div style="width: 300px">
-                    <a href="https://www.nav.no/rettskildene/forskrift/F19980618-590" class="module module_related viktigemeldinger clickable">
-                        <p class="module_description">Viktige meldinger</p>
-                        <h5 class="module_header">Forskrift om rett til trygderefusjon for leger, spesialister i klinisk psykologi og Fysioterapeuter</h5>
-                        <p class="source">På nav.no</p>
-                    </a>
+                <div style="width: 300px; float:left; margin-left:30px;">
+                    <div class="module module_related viktigemeldinger">
+                        <h5 class="module_description">Viktige meldinger</h5>
+                        <p>
+                            <a href="artikkel_takstendring_leger.html">Nye takster for leger fra 1.juli 2014</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <h5>I innholdsfeltet</h5>
+                <div class="module module_related viktigemeldinger">
+                    <h5 class="module_description">Viktige meldinger</h5>
+                    <p>
+                        <a href="artikkel_takstendring_leger.html">Nye takster for leger fra 1.juli 2014</a>
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Modul tilbakemelding</h4>
                 <div style="width: 300px">
                     <div class="module module_feedback">
                         <h5 class="module_description">Fant du det du lette etter?</h5>
-                        <input type="radio" id="r1" name="contact" value="ja" />
-                        <label for="r1"><span></span>Ja</label>
-                        <input type="radio" id="r2" name="contact" value="nei" />
-                        <label for="r2"><span></span>Nei</label>
-                        <div class="visuallyhidden hidden">
-                            <label for="t1" class="visuallyhidden">Fortell...</label>
-                            <textarea id="t1" placeholder="Fortell..."></textarea>
-                            <button class="calltoaction">Send</button>
-                        </div>
+                        <form>
+                            <input type="radio" id="r1" name="contact" value="ja" />
+                            <label for="r1"><span></span>Ja</label>
+                            <input type="radio" id="r2" name="contact" value="nei" />
+                            <label for="r2"><span></span>Nei</label>
+                            <div class="visuallyhidden hidden">
+                                <label for="t1" class="visuallyhidden">Fortell...</label>
+                                <textarea id="t1" placeholder="Fortell..."></textarea>
+                                <button class="calltoaction">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Modul kontakt oss</h4>
                 <div style="width: 300px">
                     <div class="module module_contact">
@@ -208,7 +230,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Modul abonnér</h4>
                 <div style="width: 300px">
                     <div class="module module_subscribe">
@@ -221,7 +243,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
                 <h4>Avgrens visning</h4>
                 <div style="width: 300px">
                     <div class="refinesearch accordion_mobile">
@@ -265,7 +287,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 designcontainer">
+            <div class="col-md-8 designcontainer">
+                <h4>Call to action-knapp</h4>
+                <div style="width: 300px">
+                    <button class="calltoaction">Call to action</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 designcontainer">
                 <h4>Skriv ut</h4>
                 <div style="width: 300px">
                     <div class=" module module_social">

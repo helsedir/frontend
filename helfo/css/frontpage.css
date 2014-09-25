@@ -35,15 +35,15 @@
   color: #222;
 }
 .container .entrancebutton.menu button.js-expanded {
-  background: #badde9;
+  background: #d9dadb;
   border: none;
   outline: none;
 }
 .container .entrancebutton.menu button:hover {
-  background: #badde9;
+  background: #d9dadb;
 }
 .container .entrancebutton.menu button:focus {
-  background: #badde9;
+  background: #d9dadb;
   border: none;
   outline: none;
 }
@@ -125,9 +125,6 @@
   margin: 30px auto 5px auto;
   height: 85px;
   width: 85px;
-  background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
-  background-size: 90px;
-  background-position: center;
 }
 .container .entrancebutton span.avtale {
   background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
@@ -381,6 +378,9 @@
   /* Internet Explorer 10+ */
   font-size: 16px;
 }
+#footer {
+  margin-top: 0;
+}
 @media only screen and (max-width: 599px) {
   .container .entrancebutton {
     width: 100%;
@@ -481,7 +481,7 @@
     margin: 40px 0 0 0;
   }
   .container .calltoaction {
-    margin-top: 0;
+    margin-top: 20px;
   }
   .container .border_grey {
     border-top: 1px solid #aeaba8;

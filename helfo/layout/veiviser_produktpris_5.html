@@ -34,7 +34,6 @@
             <header class="row masterheader">
                 <div class="col-xs-7 col-sm-8 col-md-4 col-lg-4  nopadding">
                     <a href="forside.html" id="logo" title="Gå til forsiden">
-                        <img src="../img/HELFO-logo.svg" alt="" />
                     </a>
                 </div>
 
@@ -61,7 +60,7 @@
                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk" />
                             <button type="submit">
-                                <img src="../img/ikoner/ikon_forstorrelsesglass.png" alt="Søkeknapp" />
+                                <img src="../img/ikoner/ikon_forstorrelsesglass_sort.png" alt="Søkeknapp" />
                             </button>
                         </span>
                     </form>
@@ -117,7 +116,7 @@
 
                                             <ul>
                                                 <li class="character">A</li>
-                                                <li><a href="#">Apotek og bandasjist</a></li>
+                                                <li><a href="#" id="content_alphabetical">Apotek og bandasjist</a></li>
                                             </ul>
 
                                             <ul>
@@ -268,23 +267,49 @@
         </div>
         <div class="row">
             <div class="col-md-7">
-                <h2>5. Veien videre </h2>
-                <h2>Saksbehandling</h2>
-                <p>Saksbehandlingstiden er gjennomsnittlig seks måneder. Søknadene behandles fortløpende, men saksbehandlingstiden avhenger av når søknaden er sendt inn i forhold til neste oppdatering av listene. Det er ikke mulig for HELFO å gjøre endringer i databasen den siste måneden før listene legges ut.</p>
-                <p>Vi bruker kortere tid på å behandle enkle søknader som fjerning eller enkle endringer på oppførte produkter.</p>
-                <p> Vi bruker lengre tid på komplekse søknader. Eksempler på slike søknader er:</p>
-                <ul class="bulletlist">
-                    <li>nye produkter som ikke er tilgjengelige i ordningen fra før eller har en annen pris</li>
-                    <li>endring av pris på allerede oppførte produkter</li>
-                    <li>dersom vi må be  mer dokumentasjon om brukergrupper, kostnader og lignende i vurderingen av søknadene.</li>
-                </ul>
+                <div class="relative-container">
+                    <h2>5. Veien videre </h2>
+                    <h2>Saksbehandling</h2>
+                    <p>Saksbehandlingstiden er gjennomsnittlig seks måneder. Søknadene behandles fortløpende, men saksbehandlingstiden avhenger av når søknaden er sendt inn i forhold til neste oppdatering av listene. Det er ikke mulig for HELFO å gjøre endringer i databasen den siste måneden før listene legges ut.</p>
+                    <p>Vi bruker kortere tid på å behandle enkle søknader som fjerning eller enkle endringer på oppførte produkter.</p>
+                    <p> Vi bruker lengre tid på komplekse søknader. Eksempler på slike søknader er:</p>
+                    <ul class="bulletlist">
+                        <li>nye produkter som ikke er tilgjengelige i ordningen fra før eller har en annen pris</li>
+                        <li>endring av pris på allerede oppførte produkter</li>
+                        <li>dersom vi må be  mer dokumentasjon om brukergrupper, kostnader og lignende i vurderingen av søknadene.</li>
+                    </ul>
 
-                <h2>Svar fra HELFO</h2>
-                <p>Du får vedtak om godkjenning av produktet eller avslag på søknad på e-post. Hvis HELFO godkjenner produktet, må du som er leverandør <a href="https://www.farmalogg.no">søke om varenummer hos Farmalogg</a>  som er apotekbransjens felles vareregister. </p>
-                <p>Husk å legge ved vedtaket fra HELFO i søknaden til Farmalogg. </p>
-                <p>Etter at du har fått varenummer, sender du kvittering fra Farmalogg til HELFO. Deretter legger vi produktet inn i produkt- og prislisten hos HELFO.</p>
-                <p>Vi oppdaterer Produkt- og prislistene fire ganger i året – 1. januar, 1. april, 1. juli og 1. oktober. </p>
+                    <h2>Svar fra HELFO</h2>
+                    <p>Du får vedtak om godkjenning av produktet eller avslag på søknad på e-post. Hvis HELFO godkjenner produktet, må du som er leverandør <a href="https://www.farmalogg.no">søke om varenummer hos Farmalogg</a>  som er apotekbransjens felles vareregister. </p>
+                    <p>Husk å legge ved vedtaket fra HELFO i søknaden til Farmalogg. </p>
+                    <p>Etter at du har fått varenummer, sender du kvittering fra Farmalogg til HELFO. Deretter legger vi produktet inn i produkt- og prislisten hos HELFO.</p>
+                    <p>Vi oppdaterer Produkt- og prislistene fire ganger i året – 1. januar, 1. april, 1. juli og 1. oktober. </p>
 
+                    <aside class="aside top">
+                        <div class="module module_contact">
+                            <h5 class="module_description">Kontakt oss</h5>
+                            <div class="description"><p>HELFO veiledning for helseaktører</p></div>
+                            <div class="phone"><p>+47 815 70 070</p></div>
+                            <div class="email"><a href="mailto:post@helfo.no">post@helfo.no</a></div>
+                        </div>
+                    </aside>
+                    <aside class="aside bottom">
+                        <div class="module module_feedback">
+                            <h5 class="module_description">Fant du det du lette etter?</h5>
+                            <form>
+                                <input type="radio" id="r1" name="contact" value="ja" />
+                                <label for="r1"><span></span>Ja</label>
+                                <input type="radio" id="r2" name="contact" value="nei" />
+                                <label for="r2"><span></span>Nei</label>
+                                <div class="visuallyhidden hidden">
+                                    <label for="t1" class="visuallyhidden">Fortell...</label>
+                                    <textarea id="t1" placeholder="Fortell..."></textarea>
+                                    <button class="calltoaction">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
                 <nav>
                     <div class="navigate_back pull-left">
                         <a href="veiviser_produktpris_4.html">
@@ -292,6 +317,11 @@
                         </a>
                     </div>
                 </nav>
+                <div class=" module module_social">
+                    <a href="veiviser_produktpris_print.html" class=" ikon_skrivut" rel="nofollow" target="_blank">
+                        <span></span>Skriv ut<p class="visuallyhidden">Åpnes i et nytt vindu</p>
+                    </a>
+                </div>
             </div>
         </div>
     </article>
@@ -414,37 +444,38 @@
                 <div class="container">
                     <div class="row">
                         <section class="col-sm-12 col-md-4 ">
-                            <a href="artikkel_kontaktoss.html">
-                                <h4>Kontakt oss</h4>
-                            </a>
-                            <p>HELFO veiledning for helseaktører</p>
-                            <div class="contact clearfix">
-                                <p>Telefon: </p>
-                                <p>+47 815 70 070</p>
-                                <p>E-post: </p>
-                                <p><a href="mailto:post@helfo.no">post@helfo.no</a></p>
-                                <p>Postadresse: </p>
-                                <p>HELFO<br /> Postboks 2415<br /> 3104 Tønsberg</p>
+                            <div class="contact">
+                                <a href="artikkel_kontaktoss.html">
+                                    <h4>Kontakt oss</h4>
+                                </a>
+                                <div class=" clearfix">
+                                    <p class="info">E-post </p>
+                                    <p><a href="mailto:post@helfo.no">post@helfo.no</a></p>
+                                    <p class="info">Postadresse </p>
+                                    <p>HELFO<br /> Postboks 2415<br /> 3104 Tønsberg</p>
+                                </div>
+                                <span class="info">HELFO veiledning for helseaktører</span>
+                                <div class="contact clearfix">
+                                    <p class="info">Telefon </p>
+                                    <p>+47 815 70 070</p>
+                                </div>
+
+                                <span><a href="artikkel_kontaktoss.html">Alle telefonnumre til HELFO</a></span>
                             </div>
-                            <p><a href="artikkel_kontaktoss.html">Finn telefonnummer når du ringer på vegne av pasient</a></p>
                         </section>
                         <section class="col-sm-12 col-md-4 ">
                             <a href="transportside_omoss.html">
                                 <h4>Om HELFO</h4>
                             </a>
-                            <p> Helseøkonomiforvaltningen (HELFO) er en ytre etat under Helsedirektoratet. Vi forvalter oppgjør til behandlere, leverandører og tjenesteytere, samt individuell refusjon av privatpersoners utgifter til blant annet legemidler, tannhelse og helsetjenester i utlandet.</p>
-                            <ul class="bulletlist">
-                                <li>HELFOs organisasjon</li>
-                                <li>Ledige stillinger</li>
-
-                                <li>Mediehenvendelser</li>
-                            </ul>
+                            <p class="about"> Helseøkonomiforvaltningen (HELFO) er en ytre etat under Helsedirektoratet. Vi forvalter oppgjør til behandlere, leverandører og tjenesteytere, samt individuell refusjon av privatpersoners utgifter til blant annet legemidler, tannhelse og helsetjenester i utlandet.</p>
+                            <p><a href="#">HELFOs organisasjon</a></p>
+                            <p><a href="#">Ledige stillinger</a></p>
+                            <p><a href="#">Mediehenvendelser</a></p>
                         </section>
                         <section class="col-sm-12 col-md-4 ">
                             <h4>Abonner</h4>
-                            <p> <a href="#">Nyheter på e-post</a></p>
-                            <p><a href="#">Nyheter på RSS</a></p>
-                            <h4>Følg oss på</h4>
+                            <p class="email"> <a href="#">Nyheter på e-post</a></p>
+                            <p class="rss"><a href="#">Nyheter på RSS</a></p>
                         </section>
                     </div>
                 </div>

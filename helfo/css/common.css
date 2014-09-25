@@ -176,62 +176,57 @@ body {
 			padding-left: 33px;
 		}*/
 }
-.container .has-hidden-content,
-.container-fluid .has-hidden-content {
-  /* &.accordion {
-			h3 {
-				cursor: pointer;
-
-				&:before {
-					content: "\f107";
-					font-family: "FontAwesome";
-					font-size: 30px;
-					position: absolute;
-					left: 0;
-				}
-			}
-		} */
-}
 .container .has-hidden-content h2,
 .container-fluid .has-hidden-content h2 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-hidden-content h2:before,
 .container-fluid .has-hidden-content h2:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
 }
-.container .has-visible-content,
-.container-fluid .has-visible-content {
-  /*
-		&.accordion {
-			h3 {
-				cursor: pointer;
-
-				&:before {
-					content: "\f106";
-					font-family: "FontAwesome";
-					font-size: 30px;
-					position: absolute;
-					left: 0;
-				}
-			}
-		}*/
+.container .has-hidden-content h3,
+.container-fluid .has-hidden-content h3 {
+  cursor: pointer;
+  margin-left: 35px;
+}
+.container .has-hidden-content h3:before,
+.container-fluid .has-hidden-content h3:before {
+  float: left;
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-size: 40px;
+  margin-left: -35px;
 }
 .container .has-visible-content h2,
 .container-fluid .has-visible-content h2 {
   cursor: pointer;
+  margin-left: 35px;
 }
 .container .has-visible-content h2:before,
 .container-fluid .has-visible-content h2:before {
   float: left;
-  padding: 3px 20px 0 0;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
+  margin-left: -35px;
+}
+.container .has-visible-content h3,
+.container-fluid .has-visible-content h3 {
+  cursor: pointer;
+  margin-left: 35px;
+}
+.container .has-visible-content h3:before,
+.container-fluid .has-visible-content h3:before {
+  float: left;
+  content: "\f106";
+  font-family: "FontAwesome";
+  font-size: 40px;
+  margin-left: -35px;
 }
 .container .clearfix:before,
 .container-fluid .clearfix:before,
@@ -441,7 +436,7 @@ body {
 }
 .container .searchform input,
 .container-fluid .searchform input {
-  width: 94%;
+  width: 612px;
   height: 40px;
   background: white;
   cursor: text;
@@ -453,7 +448,7 @@ body {
 .container .searchform button,
 .container-fluid .searchform button {
   border: none;
-  width: 39px;
+  width: 40px;
   height: 40px;
   padding: 0;
   vertical-align: bottom;
@@ -462,8 +457,8 @@ body {
 }
 .container .searchform button img,
 .container-fluid .searchform button img {
-  width: 25px;
-  vertical-align: bottom;
+  width: 24px;
+  vertical-align: sub;
 }
 .container .numberofpublications,
 .container-fluid .numberofpublications {
@@ -867,16 +862,9 @@ body {
   background: white;
   position: relative;
 }
-.container .module p,
-.container-fluid .module p {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-}
 .container .module p a,
 .container-fluid .module p a {
   border: none;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
 }
 .container .module p a:hover,
 .container-fluid .module p a:hover {
@@ -934,8 +922,9 @@ body {
 }
 .container .module.module_related,
 .container-fluid .module.module_related {
-  margin-top: 50px;
   padding-bottom: 10px;
+  margin: 20px 0;
+  width: 100%;
 }
 .container .module.module_related .bulletlist,
 .container-fluid .module.module_related .bulletlist {
@@ -1013,6 +1002,7 @@ body {
 }
 .container .module.module_subscribe,
 .container-fluid .module.module_subscribe {
+  padding-bottom: 15px;
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
 }
@@ -1035,9 +1025,9 @@ body {
   content: '';
   display: inline-block;
   width: 25px;
-  height: 25px;
+  height: 19px;
   background: url(../img/ikoner/ikon_rss.svg) no-repeat;
-  vertical-align: top;
+  vertical-align: initial;
   padding-right: 35px;
 }
 .container .module.module_subscribe .email,
@@ -1049,10 +1039,10 @@ body {
 .container-fluid .module.module_subscribe .email:before {
   content: '';
   display: inline-block;
-  width: 25px;
-  height: 35px;
+  width: 15px;
+  height: 25px;
   background: url(../img/ikoner/ikon_epost.svg) no-repeat;
-  vertical-align: bottom;
+  vertical-align: sub;
   padding-right: 45px;
 }
 .container .module.module_subscribe a,
@@ -1091,7 +1081,7 @@ body {
 }
 .container .module.module_contact,
 .container-fluid .module.module_contact {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-top: 45px solid #d9dadb;
   border-bottom: 10px solid #d9dadb;
 }
@@ -1163,7 +1153,7 @@ body {
   padding: 0;
   background: none;
   padding-top: 13px;
-  margin: 67px 0 31px 0;
+  margin: 30px 0 0 0;
   width: 100%;
 }
 .container .module.module_print a,
@@ -1975,7 +1965,7 @@ body {
     margin-top: 30px;
   }
   .container .searchform input {
-    width: 91%;
+    width: 442px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -2014,6 +2004,9 @@ body {
   .container .socialmedia a:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+  }
+  .container .searchform input {
+    width: 512px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -2263,7 +2256,8 @@ body {
 html {
   font-size: 62.5%;
 }
-.container h1 {
+.container h1,
+.container-fluid h1 {
   font-size: 3.6rem;
   line-height: 4.8rem;
   font-family: 'Roboto', sans-serif;
@@ -2274,7 +2268,8 @@ html {
   color: #222;
   display: inline-block;
 }
-.container h1.alternative {
+.container h1.alternative,
+.container-fluid h1.alternative {
   font-weight: 300;
   font-size: 3.0rem;
   line-height: 3.6rem;
@@ -2283,7 +2278,8 @@ html {
   color: #222;
   border: none;
 }
-.container h2 {
+.container h2,
+.container-fluid h2 {
   font-size: 3.0rem;
   line-height: 3.6rem;
   font-family: 'Roboto', sans-serif;
@@ -2292,7 +2288,8 @@ html {
   padding: 0;
   color: #222;
 }
-.container h3 {
+.container h3,
+.container-fluid h3 {
   font-size: 2.6rem;
   line-height: 3.2rem;
   font-family: 'Roboto', sans-serif;
@@ -2301,7 +2298,8 @@ html {
   padding: 0;
   color: #222;
 }
-.container h4 {
+.container h4,
+.container-fluid h4 {
   font-size: 2.3rem;
   line-height: 2.8rem;
   font-family: 'Roboto', sans-serif;
@@ -2310,14 +2308,16 @@ html {
   padding: 0;
   color: #222;
 }
-.container h5 {
+.container h5,
+.container-fluid h5 {
   font-size: 2.1rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #222;
 }
-.container .ingress {
+.container .ingress,
+.container-fluid .ingress {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2326,7 +2326,8 @@ html {
   padding: 0;
   color: #222;
 }
-.container p {
+.container p,
+.container-fluid p {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2335,7 +2336,8 @@ html {
   padding: 0.8rem 0;
   color: #222;
 }
-.container p a {
+.container p a,
+.container-fluid p a {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2345,10 +2347,12 @@ html {
   color: #eb6a0a;
   border-bottom: 1px solid #c2c3c4;
 }
-.container p a:hover {
+.container p a:hover,
+.container-fluid p a:hover {
   border-bottom: 1px solid #eb6a0a;
 }
-.container .bulletlist li {
+.container .bulletlist li,
+.container-fluid .bulletlist li {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2357,7 +2361,8 @@ html {
   padding: 0.8rem 0;
   color: #222;
 }
-.container .bulletlist li:before {
+.container .bulletlist li:before,
+.container-fluid .bulletlist li:before {
   content: "•";
   color: #54abca;
   margin: 1px 0 0 -25px;
@@ -2365,13 +2370,16 @@ html {
   position: absolute;
   font-size: 30px;
 }
-.container .bulletlist li a {
+.container .bulletlist li a,
+.container-fluid .bulletlist li a {
   border-bottom: 1px solid #c2c3c4;
 }
-.container .bulletlist li a:hover {
+.container .bulletlist li a:hover,
+.container-fluid .bulletlist li a:hover {
   border-bottom: 1px solid #eb6a0a;
 }
-.container .numberedlist li {
+.container .numberedlist li,
+.container-fluid .numberedlist li {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2380,13 +2388,16 @@ html {
   padding: 0.8rem 0;
   color: #222;
 }
-.container .numberedlist li a {
+.container .numberedlist li a,
+.container-fluid .numberedlist li a {
   border-bottom: 1px solid #c2c3c4;
 }
-.container .numberedlist li a:hover {
+.container .numberedlist li a:hover,
+.container-fluid .numberedlist li a:hover {
   border-bottom: 1px solid #eb6a0a;
 }
-.container a {
+.container a,
+.container-fluid a {
   font-size: 2.0rem;
   line-height: 3.0rem;
   font-family: 'Roboto', sans-serif;
@@ -2397,46 +2408,73 @@ html {
   border-bottom: 1px solid #c2c3c4;
   cursor: pointer;
 }
-.container a:hover {
+.container a:hover,
+.container-fluid a:hover {
   border-bottom: 1px solid #eb6a0a;
   color: #eb6a0a;
   text-decoration: none;
 }
 .container a h1,
+.container-fluid a h1,
 .container a h2,
+.container-fluid a h2,
 .container a h3,
-.container a h4 {
+.container-fluid a h3,
+.container a h4,
+.container-fluid a h4 {
   color: #398ca9;
   border-bottom: 1px solid transparent;
 }
 .container a h1:hover,
+.container-fluid a h1:hover,
 .container a h2:hover,
+.container-fluid a h2:hover,
 .container a h3:hover,
-.container a h4:hover {
+.container-fluid a h3:hover,
+.container a h4:hover,
+.container-fluid a h4:hover {
   border-bottom: 1px solid #398ca9;
 }
 .container a:focus,
-.container a:visited:focus {
-  background: #002c42;
-  color: white;
+.container-fluid a:focus,
+.container a:visited:focus,
+.container-fluid a:visited:focus {
+  background: #002c42 !important;
+  color: white !important;
   outline: 0;
 }
 .container a:focus h2,
+.container-fluid a:focus h2,
 .container a:visited:focus h2,
+.container-fluid a:visited:focus h2,
+.container a:focus h3,
+.container-fluid a:focus h3,
+.container a:visited:focus h3,
+.container-fluid a:visited:focus h3,
 .container a:focus h4,
+.container-fluid a:focus h4,
 .container a:visited:focus h4,
+.container-fluid a:visited:focus h4,
+.container a:focus h5,
+.container-fluid a:focus h5,
+.container a:visited:focus h5,
+.container-fluid a:visited:focus h5,
 .container a:focus p,
-.container a:visited:focus p {
-  background: #002c42;
-  color: white;
+.container-fluid a:focus p,
+.container a:visited:focus p,
+.container-fluid a:visited:focus p {
+  background: #002c42 !important;
+  color: white !important;
   outline: 0;
 }
-.container .takst_table {
+.container .takst_table,
+.container-fluid .takst_table {
   margin-top: 50px;
   display: inline-block;
   width: 100%;
 }
-.container .breadcrumbs a {
+.container .breadcrumbs a,
+.container-fluid .breadcrumbs a {
   font-size: 1.8rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
@@ -2445,58 +2483,128 @@ html {
   color: #756d6a;
   border: none;
 }
-.container .breadcrumbs a:hover {
+.container .breadcrumbs a:hover,
+.container-fluid .breadcrumbs a:hover {
   border-bottom: 1px solid #c2c3c4;
 }
-.container .breadcrumbs a:visited {
+.container .breadcrumbs a:visited,
+.container-fluid .breadcrumbs a:visited {
   color: #756d6a;
 }
 .container .navigate_forward,
-.container .navigate_back {
+.container-fluid .navigate_forward,
+.container .navigate_back,
+.container-fluid .navigate_back {
   margin-top: 30px;
 }
 .container .navigate_forward a,
-.container .navigate_back a {
+.container-fluid .navigate_forward a,
+.container .navigate_back a,
+.container-fluid .navigate_back a {
   margin: 0;
   border: none;
 }
 .container .navigate_forward a:hover,
-.container .navigate_back a:hover {
+.container-fluid .navigate_forward a:hover,
+.container .navigate_back a:hover,
+.container-fluid .navigate_back a:hover {
   border-bottom: 1px solid #c2c3c4;
 }
 .container .navigate_forward a:visited,
-.container .navigate_back a:visited {
+.container-fluid .navigate_forward a:visited,
+.container .navigate_back a:visited,
+.container-fluid .navigate_back a:visited {
   color: #756d6a;
 }
 .container .navigate_forward a span,
-.container .navigate_back a span {
+.container-fluid .navigate_forward a span,
+.container .navigate_back a span,
+.container-fluid .navigate_back a span {
   font-size: 1.8rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #756d6a;
 }
-.container .navigate_forward {
+.container .navigate_forward a:focus span,
+.container-fluid .navigate_forward a:focus span,
+.container .navigate_back a:focus span,
+.container-fluid .navigate_back a:focus span {
+  color: white;
+}
+.container .navigate_forward,
+.container-fluid .navigate_forward {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
   background-position: 28% 100%;
   background-size: 28px 28px;
   padding-right: 36px;
 }
-.container .navigate_forward.pull-right {
+.container .navigate_forward.pull-right,
+.container-fluid .navigate_forward.pull-right {
   background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
   background-position: 100% 75%;
   background-size: 28px 28px;
   padding-right: 36px;
 }
-.container .navigate_back.pull-left {
+.container .navigate_back.pull-left,
+.container-fluid .navigate_back.pull-left {
   background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
   background-position: 0 75%;
   background-size: 28px 28px;
   padding-left: 36px;
 }
+.container .filterlist li,
+.container-fluid .filterlist li {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.container .filterlist li a,
+.container-fluid .filterlist li a {
+  color: #222;
+  font-size: 18px;
+  border-bottom: none;
+  padding: 10px 8px 8px 8px;
+}
+.container .filterlist li a:hover,
+.container-fluid .filterlist li a:hover {
+  background: #d9dadb;
+  color: #002c42;
+}
+.container .filterlist .selectedfilter a,
+.container-fluid .filterlist .selectedfilter a,
+.container .filterlist .selectedfilter a:visited,
+.container-fluid .filterlist .selectedfilter a:visited {
+  font-weight: bold;
+  border-bottom: 3px solid #eb6a0a;
+  padding-bottom: 6px;
+}
 @media only screen and (min-width: 900px) {
   .container .ingress {
-    width: 57%;
+    width: 652px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .container .aside,
+  .container .aside.bottom {
+    width: auto;
+  }
+  .container h1 {
+    font-size: 3.0rem;
+    line-height: 3.6rem;
+    margin-top: 40px;
+  }
+  .container h2 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .container h3 {
+    font-size: 2.6rem;
+    line-height: 3.0rem;
+  }
+  .container h4 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
   }
 }
 /*# sourceMappingURL=common.css.map */

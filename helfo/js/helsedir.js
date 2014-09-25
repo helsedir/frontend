@@ -1,6 +1,6 @@
 ﻿$(function () {
     //creates collapsible headings. The tag wrapping this class will get an angle icon
-    $(".accordion h2").each(function () {
+    $(".accordion h2, .accordion h3").each(function () {
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
@@ -9,7 +9,7 @@
     });
 
     //handles click events on collapsible headings
-    $(".accordion h2").click(function () {
+    $(".accordion h2, .accordion h3").click(function () {
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();

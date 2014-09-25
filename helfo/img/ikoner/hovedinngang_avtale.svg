@@ -3,25 +3,23 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 102 102" enable-background="new 0 0 102 102" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1" y1="51" x2="101" y2="51" gradientTransform="matrix(1 0 0 -1 0 102)">
-	<stop  offset="0" style="stop-color:#E75336"/>
-	<stop  offset="1" style="stop-color:#E96C24"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1" y1="51" x2="101" y2="51">
+	<stop  offset="0" style="stop-color:#E85236"/>
+	<stop  offset="1" style="stop-color:#EB6A0A"/>
 </linearGradient>
 <circle fill="url(#SVGID_1_)" cx="51" cy="51" r="50"/>
 <g>
-	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		70.1,34.3 70.1,77 32,77 32,25 60.6,25 	"/>
-	
-		<polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		70.1,34.3 60.6,25 60.6,34.3 	"/>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="53" x2="63.5" y2="53"/>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="45.7" x2="63.5" y2="45.7"/>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="60.3" x2="63.5" y2="60.3"/>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="67.5" x2="63.5" y2="67.5"/>
+	<path fill="#FFFFFF" d="M73.3,32.1C73.3,32.1,73.3,32,73.3,32.1c-0.1-0.2-0.2-0.3-0.3-0.4c0,0,0,0,0,0L62.6,21.4h0l0,0c0,0,0,0,0,0
+		c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0C62,21.1,61.9,21,61.7,21c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0H30.2c-0.9,0-1.7,0.8-1.7,1.7
+		v56.7c0,0.9,0.8,1.7,1.7,1.7h41.6c0.9,0,1.7-0.8,1.7-1.7V32.8C73.5,32.6,73.4,32.3,73.3,32.1z M63.1,26.7l4.5,4.5h-4.5V26.7z
+		 M31.9,77.7V24.3h27.8v8.5c0,0.9,0.8,1.7,1.7,1.7h8.7v43.1H31.9z"/>
+	<path fill="#FFFFFF" d="M64.6,51.5H38.4c-0.9,0-1.7,0.8-1.7,1.7c0,0.9,0.8,1.7,1.7,1.7h26.2c0.9,0,1.7-0.8,1.7-1.7
+		C66.3,52.3,65.5,51.5,64.6,51.5z"/>
+	<path fill="#FFFFFF" d="M64.6,43.6H38.4c-0.9,0-1.7,0.8-1.7,1.7c0,0.9,0.8,1.7,1.7,1.7h26.2c0.9,0,1.7-0.8,1.7-1.7
+		C66.3,44.3,65.5,43.6,64.6,43.6z"/>
+	<path fill="#FFFFFF" d="M64.6,59.5H38.4c-0.9,0-1.7,0.8-1.7,1.7c0,0.9,0.8,1.7,1.7,1.7h26.2c0.9,0,1.7-0.8,1.7-1.7
+		C66.3,60.2,65.5,59.5,64.6,59.5z"/>
+	<path fill="#FFFFFF" d="M64.6,67.4H38.4c-0.9,0-1.7,0.8-1.7,1.7c0,0.9,0.8,1.7,1.7,1.7h26.2c0.9,0,1.7-0.8,1.7-1.7
+		C66.3,68.2,65.5,67.4,64.6,67.4z"/>
 </g>
 </svg>

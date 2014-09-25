@@ -241,7 +241,9 @@ a.method_entrance:focus {
     margin: 0;
   }
   a.method_entrance .heading_wrapper h3 {
-    display: none;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
   }
   .selected:hover .icon {
     background-size: 40px 40px;
@@ -252,7 +254,9 @@ a.method_entrance:focus {
     width: 40px;
   }
   .selected .icon .number {
-    display: none;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
   }
   .passive:hover .icon {
     background-size: 40px 40px;

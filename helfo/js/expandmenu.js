@@ -24,6 +24,22 @@ $(document).ready(function () {
         visible = !visible;
     });
 
+    expander.keydown(function (ev) {
+        if (ev.which == 13) {
+            if (visible) {
+                expandedContent.slideUp(500);
+                expander.removeClass('js-expanded');
+                expander.blur();
+            } else {
+                expandedContent.slideDown(500);
+
+                expander.addClass('js-expanded');
+            }
+            visible = !visible;
+            $('#tab_header1').focus();
+        }
+    });
+
     $('#mobilesearch').on('click', function () {
         if ($('#mainsearchcolumn').is(':visible')) {
             $(this).removeClass('js-expanded');
