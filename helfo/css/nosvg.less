@@ -252,25 +252,33 @@
     }
 
     .selected {
-        span {
+        .icon {
             background: url(../img/ikoner/helfo_pil_valgt.png) no-repeat;
-            background-size: 85px 85px;
-            background-position: center;
+            height: 90px;
+            width: 85px;
+
+            .number {
+                left: 38px;
+                font-size: 40px;
+            }
         }
     }
 
     .passive {
-        span {
+        .icon {
             background: url(../img/ikoner/helfo_pil_passiv.png) no-repeat;
-            background-size: 85px 85px;
-            background-position: center;
+            height: 90px;
+            width: 90px;
+
+            .number {
+                left: 38px;
+                font-size: 40px;
+            }
         }
 
         &:hover {
-            span {
+            .icon {
                 background: url(../img/ikoner/helfo_pil_hover.png) no-repeat;
-                background-size: 85px 85px;
-                background-position: center;
             }
         }
     }

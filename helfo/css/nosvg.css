@@ -201,20 +201,26 @@
   background-position-x: 97%;
   background-position-y: 50%;
 }
-.no-svg .selected span {
+.no-svg .selected .icon {
   background: url(../img/ikoner/helfo_pil_valgt.png) no-repeat;
-  background-size: 85px 85px;
-  background-position: center;
+  height: 90px;
+  width: 85px;
 }
-.no-svg .passive span {
+.no-svg .selected .icon .number {
+  left: 38px;
+  font-size: 40px;
+}
+.no-svg .passive .icon {
   background: url(../img/ikoner/helfo_pil_passiv.png) no-repeat;
-  background-size: 85px 85px;
-  background-position: center;
+  height: 90px;
+  width: 90px;
 }
-.no-svg .passive:hover span {
+.no-svg .passive .icon .number {
+  left: 38px;
+  font-size: 40px;
+}
+.no-svg .passive:hover .icon {
   background: url(../img/ikoner/helfo_pil_hover.png) no-repeat;
-  background-size: 85px 85px;
-  background-position: center;
 }
 .no-svg #header #logo {
   padding: 0;
