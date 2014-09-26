@@ -1,11 +1,11 @@
 /*Retningslinje forside. Liste over alle nasjonale faglige retningslinjer */
-$blueText: #004e66;
 
-#pageheader {
+
+.Guidelinesfrontpage .pageheader {
     margin-bottom: 30px;
 }
 
-ul.retningslinjer {
+.Guidelinesfrontpage .guidelineslist {
     li {
         background: #ffffff;
         padding: 30px;
@@ -17,12 +17,12 @@ ul.retningslinjer {
         &:first-child {
             margin-top: 10px;
         }
-    }
+    } 
 }
+ 
+ 
 
-
-
-span.number {
+.Guidelinesfrontpage .guidelinecount {
     font-size: 18px;
     text-transform: uppercase;
     display: block;
@@ -30,3 +30,7 @@ span.number {
     color: $blueText;
 }
 
+.Guidelinesfrontpage .guidelinesummary{
+    word-wrap: break-word;
+}
+ 

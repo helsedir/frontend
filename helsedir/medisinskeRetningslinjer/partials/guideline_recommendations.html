@@ -1,34 +1,34 @@
-<article class="container">
+<article class="container Recommendations" >
   
   <!--Header row-->
   <div class="row">
-    <div class="col-md-12 pageheader">
-      <header id="pageheader">
+    <div class="col-md-12">
+      <header id="pageheader" class="pageheader">
         <nav>
           <ol class="breadcrumbs clearfix">
             <li><a href="../../../layouts/forside.html">Forside</a></li>
-            <li><a href="../../" class="active">Nasjonale faglige retningslinjer</a></li>
-            <li><a href="../" class="active">Spedbarnsernæring</a></li>
+            <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
+            <li><a href="" class="active">Spedbarnsernæring</a></li>
           </ol>
         </nav>
         <div class="headerGroup">
-          <span>Spedbarnsernæring</span>
-          <h1>{{section.heading}}</h1>
-          <i class="icon">i</i>
+          <span class="guidelinetitle">Spedbarnsernæring</span>
+          <h1 class="sectiontitle">{{section.heading}}</h1>
         </div>
+
       </header>
     </div>
   </div>
   <!--Recommendations-->
-  <div class="row">
+  <div class="row" directiveExample>
     <div class="col-md-12 col-lg-8">
-      <section class="recommendation" ng-repeat="recommendation in section.recommendations">
-        <div class="header_wrapper">
-          <header grading="{{recommendation.strength}}">
-            <h2>{{recommendation.heading}}</h2>
+      <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
+
+          <header class="recommendationheader" grading="{{recommendation.strength}}">
+            <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
           </header>
-        </div>
-        <div class="text">
+
+        <div class="recommendationcontent">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
             <div class="clickable">
               <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}"></i>
@@ -56,9 +56,9 @@
             </div>
           </div>
           <div class="textContainer" data-grading="{{recommendation.strength}}">
-            <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.svg">
-            <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.svg">
-            <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.svg">
+            <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.png">
+            <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.png">
+            <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.png">
             <div class="recommendation-text">
               {{recommendation.text}}
             </div>
@@ -73,22 +73,24 @@
             </ul>
             <div class="resp-tabs-container">
               <div id="nokkelinfo">
-                <section>
-                  <h2>Fordeler og ulemper</h2>
-                  {{recommendation.keyInfo.benefits}}
+                <div ng-repeat="keyinfo in recommendation.keyInfo">
+                <section ng-show="keyInfo.benefits != null">
+                  <h2 >Fordeler og ulemper</h2>
+                  {{keyInfo.benefits}}
                 </section>
-                <section>
+                <section ng-show="keyInfo.evidence != null">
                   <h2>Kvalitet på dokumentasjonen</h2>
-                  {{recommendation.keyInfo.evidence}}
+                  {{keyInfo.evidence}}
                 </section>
-                <section>
+                <section ng-show="keyInfo.preference != null">
                   <h2>Verdier og preferanser</h2>
-                  {{recommendation.keyInfo.preference}}
+                  {{keyInfo.preference}}
                 </section>
-                <section>
+                <section ng-show="keyInfo.resources != null">
                   <h2>Ressurshensyn</h2>
-                  {{recommendation.keyInfo.resources}}
+                  {{keyInfo.resources}}
                 </section>
+                </div>
               </div>
               <div id="vitenskap">
                 <section class="pico" ng-repeat="pico in recommendation.picos">
@@ -228,10 +230,10 @@
             </div>
           </div>
         </div>
-        <a href="#" grading="{{recommendation.strength}}" class="closepane"><i class="fa fa-angle-up"></i></a>
+        <a href="#" grading="{{recommendation.strength}}" class="button-close"><i class="fa fa-angle-up"></i></a>
       </section>
     </div>
-    <aside class="col-md-12 col-lg-3 pull-right retningslinjer">
+    <aside class="col-md-12 col-lg-3 pull-right guidelines">
       <div class="module module_related green col-md-6">
         <h3>Relaterte anbefalinger</h3>
         <ul class="linklist">
@@ -255,3 +257,9 @@
   </div>
   <!-- end container -->
 </article>
+<script>
+//We need to wait until Angular is finished with the DOM
+    window.setTimeout(function(){
+        runJqueryUIRecommendationStuff();
+    }, 500);
+</script>

@@ -13,8 +13,9 @@ var retningslinjer = {
 };
 
 $(runJqueryUIStuff());
+$(runJqueryUIRecommendationStuff());
 
-function runJqueryUIStuff(){
+function runJqueryUIRecommendationStuff(){
 	$(function () {
 	    //creates collapsible headings. The tag wrapping this class will get an angle icon
 	    $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").each(function () {
@@ -127,29 +128,29 @@ function runJqueryUIStuff(){
 	    //    $('.shoppingcartbutton').toggle(800);
 	    //});
 	});
-		jQuery('.header_wrapper').siblings('.text').addClass('visuallyhidden');
+		jQuery('.recommendationheader').siblings('.recommendationcontent').addClass('visuallyhidden');
 		jQuery('.gradingInfo').addClass('visuallyhidden');
-		jQuery('.closepane').addClass('visuallyhidden');
+		jQuery('.button-close').addClass('visuallyhidden');
 		jQuery('.recommendationGrading').addClass('closed');
 
 	  jQuery(window).resize(function () {
-	      jQuery('.header_wrapper').addClass('accordion');
-	      jQuery('.accordion.open').siblings('.text').removeClass('visuallyhidden');
-	      jQuery('.accordion.closed').siblings('.text').addClass('visuallyhidden');
+	      jQuery('.recommendationheader').addClass('accordion');
+	      jQuery('.accordion.open').siblings('.recommendationcontent').removeClass('visuallyhidden');
+	      jQuery('.accordion.closed').siblings('.recommendationcontent').addClass('visuallyhidden');
 
 	  });
 
 	  jQuery(window).trigger('resize'); 
-	  jQuery('.header_wrapper').addClass('closed');
+	  jQuery('.recommendationheader').addClass('closed');
 	  
 	  
-	  jQuery('.recommendation').on('click', 'h2', function() {
+	  jQuery('.Recommendation').on('click', 'h2', function() {
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
 	  	$(this).closest("section").toggleClass("open");
 	  	$(this).toggleClass("clicked"); //make element same background as page
-	  	var wrapper = $(this).closest(".header_wrapper");
-	  	slider(wrapper, wrapper.siblings('.text, .background_information, .closepane'));
+	  	var wrapper = $(this).closest(".recommendationheader");
+	  	slider(wrapper, wrapper.siblings('.recommendationcontent, .background_information, .button-close'));
 
 	  });
 
@@ -185,19 +186,19 @@ function runJqueryUIStuff(){
 
 	 
 	 //Button to close dropdown
-	 $(".recommendation").find(".closepane").on("click", function(e){
+	 $(".Recommendation").find(".button-close").on("click", function(e){
 	 	e.preventDefault();
-	 	var wrapper = $(this).closest(".recommendation").find(".header_wrapper");
-	 	var areaToExpand = wrapper.siblings('.text, .background_information, .closepane');
+	 	var wrapper = $(this).closest(".Recommendation").find(".recommendationheader");
+	 	var areaToExpand = wrapper.siblings('.recommendationcontent, .button-close');
 	 	if(wrapper.hasClass('open')){
 	 		$(wrapper).find(".resp-tab-content-active").removeClass(".resp-tab-content-active");
 	 		$(wrapper).find(".resp-tab-active").removeClass(".resp-tab-active");
 	 		areaToExpand.slideUp('fast', function () {
 			areaToExpand.addClass('visuallyhidden').slideDown(0);
-			$(wrapper).find("header").removeClass("gradingBlank", 300);
-			$(wrapper).find("header").find("h2").removeClass("clicked");
+			$(wrapper).removeClass("gradingBlank", 300);
+			$(wrapper).find(".recommendationtitle").removeClass("clicked");
 			wrapper.removeClass('open');
-			wrapper.closest("section").removeClass("open");
+			wrapper.closest(".Recommendation").removeClass("open");
 			wrapper.addClass('closed');
 
 		});
@@ -213,9 +214,21 @@ function runJqueryUIStuff(){
 	      }
 	 });
 
-	 //for debugging
-	 $('.recommendation').find("h2").first().trigger("click");
-	 //$('.recommendation').find(".tabs").find("a").first().trigger("click");
+	
+
+}
+
+function runJqueryUIStuff(){
+	
+	 //i button functionality
+
+	 $('.aboutguidelineicon').on("click", function(e){
+	 	e.preventDefault();
+	 	$(this).toggleClass("open");
+	 	$(".aboutexpand").slideToggle("fast");
+
+	 });
+
 
 	 $("#picoEvidensprofil").modal({
 	 	//escapeClose: false,
