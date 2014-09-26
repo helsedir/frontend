@@ -1,0 +1,39 @@
+/* Override default */
+.refinesearch input[type="radio"]:focus + label {
+  background: none;
+  font-weight: bold;
+  color: #000000;
+}
+.refinesearch input[type="radio"]:active + label {
+  background: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+/*Retningslinje forside. Liste over alle nasjonale faglige retningslinjer */
+.Guidelinesfrontpage-pageheader {
+  margin-bottom: 30px;
+}
+
+.Guidelinesfrontpage-list li {
+  background: #ffffff;
+  padding: 30px;
+  margin: 30px 0;
+}
+.Guidelinesfrontpage-list li h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.Guidelinesfrontpage-list li:first-child {
+  margin-top: 10px;
+}
+
+span.number {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 30px;
+  color: #004e66;
+}
+
+/*# sourceMappingURL=guidelines_main.css.map */

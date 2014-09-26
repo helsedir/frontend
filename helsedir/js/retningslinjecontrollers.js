@@ -3,7 +3,7 @@ var retningslinjeControllers = angular.module('retningslinjeControllers', ['angu
 retningslinjeControllers.controller('guidelinesListCtrl', ['$scope', 'Guideline', 'angularLoad', 
     function($scope, Guideline, angularLoad) {
         $scope.guidelines = Guideline.query();
-        angularLoad.loadCSS("../css/guidelines_frontpage.css");
+        
     }
 ]);
 

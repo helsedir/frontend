@@ -106,15 +106,3 @@ form.retningslinjerSok {
     }
 }
 
-.avgrens {
-    input[type="radio"]:focus + label {
-        background: none;
-        font-weight: bold;
-        color: #000000;
-    }
-    input[type="radio"]:active + label {
-        background: none;
-        font-weight: bold;
-        color: #000000;
-    }
-}
