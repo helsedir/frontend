@@ -13,8 +13,9 @@ var retningslinjer = {
 };
 
 $(runJqueryUIStuff());
+$(runJqueryUIRecommendationStuff());
 
-function runJqueryUIStuff(){
+function runJqueryUIRecommendationStuff(){
 	$(function () {
 	    //creates collapsible headings. The tag wrapping this class will get an angle icon
 	    $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").each(function () {
@@ -213,10 +214,12 @@ function runJqueryUIStuff(){
 	      }
 	 });
 
-	 //for debugging
-	 $('.Recommendation').find("h2").first().trigger("click");
-	 //$('.recommendation').find(".tabs").find("a").first().trigger("click");
+	
 
+}
+
+function runJqueryUIStuff(){
+	
 	 //i button functionality
 
 	 $('.aboutguidelineicon').on("click", function(e){

@@ -36,7 +36,7 @@
 				<ul class="sectionlist">
 					
 					<li class="element" ng-repeat="section in retningslinje.sections">
-						<a href="{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
+						<a href="#/{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
 							
 							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
@@ -91,3 +91,9 @@
 			</div>
 
 			</article> <!-- end container -->
+			<script>
+			//We need to wait until Angular is finished with the DOM
+			    window.setTimeout(function(){
+			        runJqueryUIStuff();
+			    }, 500);
+			</script>

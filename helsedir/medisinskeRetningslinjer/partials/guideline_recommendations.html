@@ -1,4 +1,4 @@
-<article class="container Recommendations">
+<article class="container Recommendations" >
   
   <!--Header row-->
   <div class="row">
@@ -7,8 +7,8 @@
         <nav>
           <ol class="breadcrumbs clearfix">
             <li><a href="../../../layouts/forside.html">Forside</a></li>
-            <li><a href="../../" class="active">Nasjonale faglige retningslinjer</a></li>
-            <li><a href="../" class="active">Spedbarnsernæring</a></li>
+            <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
+            <li><a href="" class="active">Spedbarnsernæring</a></li>
           </ol>
         </nav>
         <div class="headerGroup">
@@ -20,7 +20,7 @@
     </div>
   </div>
   <!--Recommendations-->
-  <div class="row">
+  <div class="row" directiveExample>
     <div class="col-md-12 col-lg-8">
       <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
 
@@ -257,3 +257,9 @@
   </div>
   <!-- end container -->
 </article>
+<script>
+//We need to wait until Angular is finished with the DOM
+    window.setTimeout(function(){
+        runJqueryUIRecommendationStuff();
+    }, 500);
+</script>
