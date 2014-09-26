@@ -1,3 +1,71 @@
+/*Common styles for all guidelines*/
+
+.title, .subtitle, .sectiontitle{
+    word-wrap: break-word;
+}
+
+aside.guidelines {
+    @include breakpoint("tablet") {
+        float: none;
+    }
+    .module.module_person{
+        margin-bottom: 50px;
+    }
+
+    .module_related {
+ 
+        &.module{
+            margin-top: 25px; //override default
+            &:last-child{
+                margin-bottom: 25px;
+            }
+        }
+        width: 100%;
+        h3 {
+            font-family: $fontCalibri;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: $colorDarkBlue;
+            line-height: 20px;
+        }
+        ul.linklist {
+            li {
+                font-size: 20px;
+                font-family: $fontSohoRegular;
+            }
+            a {
+                color: $colorDarkBlue;
+                font-size: 20px;
+                font-family: $fontSohoRegular;
+                &:after {
+                    padding-left: 10px;
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    text-decoration: none;
+                    font-size: inherit;
+                }
+            }
+        }
+        &.green {
+            border-left: 2px solid #a1bf37;
+        }
+        &.blue {
+            border-left: 2px solid #6bb3b4;
+        }
+    }
+}
+
+form.retningslinjerSok {
+    label {
+        color: $blueText;
+        margin-bottom: 10px;
+    }
+    #searchinput {
+        margin-top: 0;
+    }
+}
+
 
 /* Override default */
 .refinesearch {

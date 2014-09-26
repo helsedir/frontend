@@ -1,7 +1,7 @@
 <article class="container Guidelinesfrontpage">
     <div class="row">
         <div class="col-md-7">
-            <header id="pageheader" class="Guidelinesfrontpage-pageheader">
+            <header id="pageheader" class="pageheader">
                 <nav>
                     <ol class="breadcrumbs clearfix">
                         <li><a href="../layouts/forside.html">Forside</a></li>
@@ -51,14 +51,14 @@
             </div>
         </aside>
            
-            <span class="number">120 retningslinjer og veiledere</span>
-            <ul class="Guidelinesfrontpage-list">
+            <span class="guidelinecount">120 retningslinjer og veiledere</span>
+            <ul class="guidelineslist">
                 <li ng-repeat="guideline in guidelines">
                     <div class="transportsideknapp">
-                        <a href="#/{{guideline.guidelineId}}">
+                        <a href="{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
                             <h3>{{guideline.title}}</h3>
-                            <p class="subtitle">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
+                            <p class="guidelinesummary">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
                         </a>
                     </div>
                 </li>
@@ -80,7 +80,4 @@
         
     </div>
     <!-- end container -->
-    <div class=" checkbox">
-        
-    </div>
 </article>

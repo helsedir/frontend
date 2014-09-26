@@ -1,0 +1,87 @@
+.Search .searchform {
+    margin-top: 30px;
+}
+
+.Search .numberofresults {
+    font-family: "Calibri";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: block;
+    color: $blueText;
+}
+
+.Searchresults .result {
+    padding: 20px 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Searchresults .section {
+    background-color: #eeeded;
+}
+
+.Searchresults .sectioninformation {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 38%;
+    color: #aeabb3;
+    font-size: 18px;
+    .numberofrecommendations {
+        font-family: $fontSohoLight;
+        color: #aeabb3;
+        display: block;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.Searchresults .sectiontitle {
+    padding-right: 105px;
+    margin-top: 0;
+    color: #0093a7;
+    .guidelinetitle {
+        display: block;
+        color: $blueText;
+        text-transform: uppercase;
+        font-family: "Calibri";
+        font-size: 18px;
+    }
+}
+
+.Searchresults .recommendation {
+    background-color: #ffffff;
+    border-left: 2px solid #69b4b6;
+    .recommendationnumber {
+        color: #c53729;
+        font-size: 18px;
+    }
+}
+
+.Searchresults .pulse {
+    top: 0;
+    position: absolute;
+    left: -9px;
+    height: 57px;
+    @include breakpoint("mobile") {
+        display: none;
+    }
+}
+
+.Searchresults .breadcrumbs {
+    margin: 0;
+    .crumb {
+        margin-bottom: 0;
+        padding-right: 15px;
+        padding: 0;
+        color: $blueText;
+        text-transform: uppercase;
+        font-size: 18px;
+        &:after {
+            margin: 0 15px;
+            font-size: 20px;
+        }
+    }
+}

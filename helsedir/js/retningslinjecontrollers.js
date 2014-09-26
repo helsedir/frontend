@@ -12,7 +12,7 @@ retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routePa
         $scope.retningslinje = Guideline.get({
             id: $routeParams.guidelineId
         });
-        angularLoad.loadCSS("../css/guideline_frontpage.css");
+       
     }
 ]);
 
@@ -27,7 +27,6 @@ retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$
         $scope.section = Section.get({
                 id: $routeParams.sectionId
             });
-        angularLoad.loadCSS("../css/guideline_recommendations.css");
     }
 ])
     .directive('grading', function() {
