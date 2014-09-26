@@ -211,8 +211,14 @@
     .numberofrecommendations {
         color: #aeabb3;
         font-size: 18px;
+        a{
+            color: #aeabb3;
+            &:visited{
+                color: #aeabb3;
+            }
+        }
     }
-    .numberofreccomendations > .number {
+    .numberofrecommendations > .number {
         font-family: $fontSohoLight;
         color: #aeabb3;
         display: block;

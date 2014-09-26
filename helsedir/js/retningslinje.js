@@ -219,7 +219,7 @@ function runJqueryUIStuff(){
 
 	 //i button functionality
 
-	 $('.aboutguideline').on("click", function(e){
+	 $('.aboutguidelineicon').on("click", function(e){
 	 	e.preventDefault();
 	 	$(this).toggleClass("open");
 	 	$(".aboutexpand").slideToggle("fast");

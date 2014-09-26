@@ -4,6 +4,10 @@
     word-wrap: break-word;
 }
 
+.container a:focus{
+    background: none;
+}
+
 aside.guidelines {
     @include breakpoint("tablet") {
         float: none;
