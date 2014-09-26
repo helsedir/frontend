@@ -16,6 +16,27 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Light"), local("Roboto-Light"), url(../fonts/roboto_light/Roboto-Light-webfont.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Regular"), local("Roboto-Regular"), url(../fonts/roboto_regular/Roboto-Regular-webfont.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(../fonts/roboto_medium/Roboto-Medium-webfont.woff) format("woff");
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -45,7 +66,6 @@ body {
 
 .container, .container-fluid {
     h1 {
-        font-weight: normal;
         font-size: 40px;
         font-family: @roboto;
         line-height: 48px;
@@ -86,7 +106,6 @@ body {
     }
 
     h4 {
-        font-weight: normal;
         font-size: 24px;
         line-height: 32px;
         margin-top: 55px;
@@ -94,7 +113,6 @@ body {
     }
 
     h5 {
-        font-weight: normal;
         font-size: 18px;
     }
 
@@ -836,7 +854,12 @@ body {
         .module_description {
             margin-top: -45px;
             margin-bottom: 15px;
-            padding: 1.2rem 0;
+            padding: 12px 0;
+            font-size: 21px;
+            line-height: 26px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #222;
         }
 
         a .module_header {
@@ -1902,7 +1925,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 899px) {
     .container {
         iframe {
             width: 100%;
@@ -1921,8 +1944,6 @@ body {
             width: auto;
 
             .module {
-                margin: 30px 0;
-
                 &.module_statistics_graph {
                     max-width: none;
                 }
@@ -1935,7 +1956,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
     .container {
         .socialmedia {
             a:first-of-type {
@@ -2187,6 +2208,7 @@ body {
 
         .module {
             width: 100%;
+            margin: 30px 0 0 0;
         }
 
         .module_message {
@@ -2232,6 +2254,32 @@ body {
 
         .searchform input {
             width: 85%;
+        }
+
+        .refinesearch.accordion_mobile {
+            margin-top: 10px;
+            max-width: none;
+
+            h2 {
+                margin-bottom: 0;
+
+                &:before {
+                    font-size: 33px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .numberofpublications {
+            padding-top: 0;
+            margin-bottom: 0;
+            font-size: 1.6rem;
+        }
+
+        .searchform {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -2558,7 +2606,8 @@ html {
         h1 {
             font-size: 3.0rem;
             line-height: 3.6rem;
-            margin-top: 40px;
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
         h2 {
@@ -2574,6 +2623,35 @@ html {
         h4 {
             font-size: 2.2rem;
             line-height: 2.8rem;
+        }
+
+        .ingress {
+            margin-top: 0;
+        }
+
+        .transportsideknapp {
+            padding-bottom: 5px;
+            margin-bottom: 0;
+            background-size: 38px 18px;
+
+            h2 {
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+            }
+
+            &:hover {
+                background-size: 38px 38px;
+            }
+        }
+
+        .breadcrumbs {
+            li:before {
+                background-size: 23px 28px;
+            }
+
+            a {
+                font-size: 1.6rem;
+            }
         }
     }
 }

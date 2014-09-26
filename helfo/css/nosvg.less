@@ -43,7 +43,7 @@
             width: auto;
             height: auto;
         }
-
+        /*
         .e-mail {
             background-image: url('../img/modules/icons/epost_regular.png');
             background-repeat: no-repeat;
@@ -59,13 +59,12 @@
             background-image: url('../img/modules/icons/rss_regular.png');
             background-repeat: no-repeat;
             background-size: 20px 27px;
-            padding-left: 30px;
 
             img {
                 display: none;
             }
         }
-
+*/
         .module {
             &.module_socialandprint {
                 .ikon_facebook {
@@ -157,16 +156,23 @@
         }
 
         .breadcrumbs li:last-child:before {
-            background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-            background-size: 28px 28px;
+            background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
         }
 
         .breadcrumbs li:after {
-            background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-            background-size: 28px 28px;
+            background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
+        }
+
+        .breadcrumbs li:last-child:after {
+            background: none;
         }
 
         .entrancebutton {
+            a p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
             &:hover {
                 span {
                     &.avtale, &.helseaktor, &.oppgjor, &.takster, &.skjema {
@@ -177,36 +183,36 @@
 
             span {
                 border-radius: 0;
-                height: 88px;
-                width: 88px;
+                height: 100px;
+                width: 100px;
 
                 &.avtale {
                     background: #ffffff url('../img/ikoner/hovedinngang_avtale.png') no-repeat;
-                    background-size: 90px;
+                    background-size: 90px 90px;
                     background-position: center;
                 }
 
                 &.helseaktor {
                     background: #ffffff url('../img/ikoner/hovedinngang_helseaktor.png') no-repeat;
-                    background-size: 90px;
+                    background-size: 90px 90px;
                     background-position: center;
                 }
 
                 &.oppgjor {
                     background: #ffffff url('../img/ikoner/hovedinngang_oppgjor.png') no-repeat;
-                    background-size: 90px;
+                    background-size: 90px 90px;
                     background-position: center;
                 }
 
                 &.takster {
                     background: #ffffff url('../img/ikoner/hovedinngang_takster.png') no-repeat;
-                    background-size: 90px;
+                    background-size: 90px 90px;
                     background-position: center;
                 }
 
                 &.skjema {
                     background: #ffffff url('../img/ikoner/hovedinngang_skjema.png') no-repeat;
-                    background-size: 90px;
+                    background-size: 90px 90px;
                     background-position: center;
                 }
             }
@@ -215,11 +221,11 @@
                 button {
                     span {
                         background: #ffffff url('../img/ikoner/hovedinngang_altinnhold.png') no-repeat;
-                        background-size: 90px;
+                        background-size: 90px 90px;
                         background-position: center;
                         border-radius: 0;
-                        height: 88px;
-                        width: 88px;
+                        height: 100px;
+                        width: 100px;
                     }
 
                     &:hover span {
@@ -227,6 +233,40 @@
                     }
                 }
             }
+        }
+
+        .navigate_forward.pull-right {
+            background: url(../img/ikoner/pil_fremover_brun.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-right: 36px;
+        }
+
+        .navigate_back.pull-left {
+            background: url(../img/ikoner/pil_tilbake_brun.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            padding-left: 36px;
+        }
+
+        .module.module_subscribe .email:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 25px;
+            background: url(../img/ikoner/ikon_epost.png) no-repeat;
+            vertical-align: sub;
+            padding-right: 45px;
+        }
+
+        .module.module_subscribe .rss:before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 19px;
+            background: url(../img/ikoner/ikon_rss_module.png) no-repeat;
+            vertical-align: initial;
+            padding-right: 35px;
         }
     }
 
@@ -248,32 +288,64 @@
     }
 
     .selected {
-        span {
+        .icon {
             background: url(../img/ikoner/helfo_pil_valgt.png) no-repeat;
-            background-size: 85px 85px;
-            background-position: center;
+            height: 90px;
+            width: 85px;
+
+            .number {
+                left: 33px;
+                font-size: 40px;
+            }
         }
     }
 
     .passive {
-        span {
+        .icon {
             background: url(../img/ikoner/helfo_pil_passiv.png) no-repeat;
-            background-size: 85px 85px;
-            background-position: center;
+            height: 90px;
+            width: 90px;
+
+            .number {
+                left: 33px;
+                font-size: 40px;
+            }
         }
 
         &:hover {
-            span {
+            .icon {
                 background: url(../img/ikoner/helfo_pil_hover.png) no-repeat;
-                background-size: 85px 85px;
-                background-position: center;
+                height: 90px;
+                width: 90px;
             }
         }
     }
 
     #header #logo {
         padding: 0;
-        background: url(../img/HELFO-logo.png) no-repeat;
-        background-size: cover;
+        background-image: url(../img/HELFO-logo.png);
+        margin-top: -5px;
+        height: 56px;
+        width: 211px;
+    }
+
+    #footer .footerlinkswrapper .rss:before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url(../img/ikoner/ikon_rss.png) no-repeat center;
+        vertical-align: text-top;
+        padding-right: 45px;
+    }
+
+    #footer .footerlinkswrapper .email:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 21px;
+        background: url(../img/ikoner/ikon_epost.png) no-repeat center;
+        vertical-align: bottom;
+        padding-right: 40px;
     }
 }
