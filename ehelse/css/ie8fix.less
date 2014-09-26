@@ -155,15 +155,103 @@ body {
     margin-left: 0;
 }
 
-.mainsearch, .search {
-    background-image: url('../img/ikon_forstorrelsesglass_IE8.png');
-    background-repeat: no-repeat;
-    -moz-background-size: auto 80%;
-    -o-background-size: auto 80%;
-    -webkit-background-size: auto 80%;
-    background-size: auto 80%;
-    background-color: #ffffff;
-    background-position: 97% 50%;
-    background-position-x: 97%;
-    background-position-y: 50%;
+.refinesearch {
+    .form-group {
+        overflow: hidden;
+
+        select {
+            width: 355px;
+            background: url('../img/ikoner/knapp_pil_nedover_ie8.png') no-repeat scroll center #FFF;
+            background-position: 83%;
+            -moz-background-size: 38px 38px;
+            -o-background-size: 38px 38px;
+            -webkit-background-size: 38px 38px;
+            background-size: 38px 38px;
+
+            &:focus, &:active {
+                background: url('../img/ikoner/knapp_pil_oppover_ie8.png') no-repeat;
+                background-position: 83%;
+                -moz-background-size: 39px 39px;
+                -o-background-size: 39px 39px;
+                -webkit-background-size: 39px 39px;
+                background-size: 39px 39px;
+            }
+        }
+    }
+}
+
+.module.module_subscribe .e-mail {
+    width: 28px;
+    height: 23px;
+    padding-left: 40px;
+    padding-bottom: 3px;
+    background: url(../img/modules/icons/epost_regular_ie8.png) no-repeat;
+    background-size: 28%;
+    background-position: left;
+
+    &:hover {
+        background: url(../img/modules/icons/epost_regular_ie8.png) no-repeat;
+        background-size: 28%;
+        background-position: left;
+    }
+}
+
+.module.module_subscribe .rss {
+    width: 28px;
+    height: 23px;
+    padding-left: 40px;
+    background: url(../img/modules/icons/rss_regular_ie8.png) no-repeat;
+    background-size: 20%;
+    background-position: left;
+
+    &:hover {
+        background: url(../img/modules/icons/rss_regular_ie8.png) no-repeat;
+        background-size: 20%;
+        background-position: left;
+    }
+}
+
+.external-link, a.external-link {
+    background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+    background-size: 7%;
+    background-position: left;
+
+    &.inline {
+        background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+        background-size: 7%;
+        background-position: left top;
+    }
+}
+
+.internal-link {
+    background: url(../img/ikoner/lenkepil_orange_ie8.png) no-repeat;
+    background-position: 0 3px;
+}
+
+.showmorenews {
+    background: #d1d0cf url(../img/spinner_ie8.png) no-repeat;
+
+    &:hover {
+        background: #d1d0cf url(../img/spinner_ie8.png) no-repeat;
+    }
+}
+
+.module.module_social .ikon_skrivut span {
+    background: url(../img/modules/icons/ikon_skriv_ut_ie8.png) no-repeat;
+}
+
+.module.module_social .ikon_facebook span {
+    background: url(../img/modules/icons/facebook_ie8.png) no-repeat;
+    -moz-background-size: 27px 20px;
+    -o-background-size: 27px 20px;
+    -webkit-background-size: 27px 20px;
+    background-size: 27px 20px;
+}
+
+.module.module_social .ikon_twitter span {
+    background: url(../img/modules/icons/twitter_hover_ie8.png) no-repeat;
+    -moz-background-size: 27px 20px;
+    -o-background-size: 27px 20px;
+    -webkit-background-size: 27px 20px;
+    background-size: 27px 20px;
 }

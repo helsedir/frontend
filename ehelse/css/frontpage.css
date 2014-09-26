@@ -222,13 +222,13 @@
   margin-top: 0;
   border-bottom: none;
 }
-.frontpage div.conferenceitem > div:nth-child(2n-1) {
+.frontpage div.conferenceitem > .conference_date {
   width: 45%;
   float: left;
   min-height: 75px;
   padding-top: 10px;
 }
-.frontpage div.conferenceitem > div:nth-child(2n) {
+.frontpage div.conferenceitem > .conference_info {
   width: 45%;
   float: left;
   min-height: 75px;
@@ -395,6 +395,9 @@
   }
   .frontpage .news p {
     line-height: 24px;
+  }
+  #footer {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {

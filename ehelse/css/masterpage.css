@@ -193,6 +193,11 @@
   width: 170px;
   vertical-align: sub;
 }
+@-moz-document url-prefix() {
+  #header .mainsearchform input {
+    vertical-align: bottom;
+  }
+}
 .masterheader {
   height: 40px;
   margin: 25px 0 35px 0;
@@ -538,7 +543,7 @@ footer.rammeverk a:visited {
     padding: 0;
   }
   #footer {
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
@@ -559,6 +564,10 @@ footer.rammeverk a:visited {
   }
 }
 @media only screen and (max-width: 899px) {
+  .footerlinkswrapper {
+    padding: 20px 0 30px 0;
+    background: #004E66;
+  }
   .menubutton {
     width: 40px;
     margin-right: 5px;
