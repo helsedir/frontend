@@ -303,44 +303,46 @@ a {
         }
 
         li {
-            margin: 0;
-            float: left;
-            list-style: none;
-            margin-right: 10px;
-            width: 170px;
-            text-align: center;
-            transition: all linear 0.15s;
-            padding-bottom: 6px;
+            span.tabs_header, span.tabs_footer, form {
+                margin: 0;
+                float: left;
+                list-style: none;
+                margin-right: 10px;
+                width: 170px;
+                text-align: center;
+                transition: all linear 0.15s;
+                padding-bottom: 6px;
 
-            &.active {
-                border: none;
+                &.active {
+                    border: none;
 
-                a {
-                    color: @colorDarkBlue;
-                    font-family: @fontCalibriBold;
-                    background: white;
-
-                    &:hover, &:focus {
-                        background: white;
+                    a {
                         color: @colorDarkBlue;
+                        font-family: @fontCalibriBold;
+                        background: white;
+
+                        &:hover, &:focus {
+                            background: white;
+                            color: @colorDarkBlue;
+                        }
                     }
                 }
-            }
 
-            a {
-                display: inline-block;
-                font-size: 16px;
-                transition: all linear 0.15s;
-                width: 100%;
-                border-radius: 0;
-                color: white;
-                text-decoration: none;
-                font-family: @fontCalibri;
-                background: #838078;
-
-                &:hover, &:focus {
+                a {
+                    display: inline-block;
+                    font-size: 16px;
+                    transition: all linear 0.15s;
+                    width: 100%;
+                    border-radius: 0;
                     color: white;
-                    background: #666460;
+                    text-decoration: none;
+                    font-family: @fontCalibri;
+                    background: #838078;
+
+                    &:hover, &:focus {
+                        color: white;
+                        background: #5e5d57;
+                    }
                 }
             }
         }
@@ -356,8 +358,10 @@ a {
             padding: 5px 0 5px 10px;
             border-bottom: solid 1px @colorMediumGray;
 
-            &:last-of-type {
-                border-bottom: 0;
+            @media only screen and (min-width:900px) {
+                &:last-of-type {
+                    border-bottom: 0;
+                }
             }
 
             &:before {
@@ -397,6 +401,14 @@ a {
                     background: white;
                 }
             }
+        }
+
+        .tabpanel_header[aria-hidden="true"] {
+            display: none;
+        }
+
+        .tabpanel_footer[aria-hidden="true"] {
+            display: none;
         }
     }
 }

@@ -9,18 +9,12 @@ $(document).ready(function () {
 
     expander.click(function () {
         if (visible) {
-            expandedContent.slideUp('fast', function () {
-                expandedContent.addClass('visuallyhidden')
-                    .slideDown(0);
-                expander.removeClass('js-expanded');
-            });
+            expandedContent.slideUp(500);
+            expander.removeClass('js-expanded');
             expander.blur();
         } else {
-            expandedContent.slideUp(0, function () {
-                expandedContent.removeClass('visuallyhidden')
-                    .slideDown(500);
-                expander.addClass('js-expanded');
-            });
+            expandedContent.slideDown(500);
+            expander.addClass('js-expanded');
 
             if ($('#mobilesearch').hasClass('js-expanded')) {
                 $('#mobilesearch').removeClass('js-expanded');

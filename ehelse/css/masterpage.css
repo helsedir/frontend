@@ -5,6 +5,9 @@
   padding-top: 60px;
   width: 100%;
 }
+.js-expand {
+  display: none;
+}
 .menuwrapper {
   background: white;
 }
@@ -261,22 +264,34 @@ footer .tabs .tab-links,
   padding-left: 20px;
   margin-right: 10px;
 }
-footer .tabs .tab-links li,
-.toppmeny .tabs .tab-links li {
+footer .tabs .tab-links li span.tabs_header,
+.toppmeny .tabs .tab-links li span.tabs_header,
+footer .tabs .tab-links li span.tabs_footer,
+.toppmeny .tabs .tab-links li span.tabs_footer,
+footer .tabs .tab-links li form,
+.toppmeny .tabs .tab-links li form {
   background: #004e66;
   color: white;
   padding: 5px 30px 8px 20px;
   border-radius: 0;
   cursor: pointer;
 }
-footer .tabs .tab-links li[aria-selected='true'],
-.toppmeny .tabs .tab-links li[aria-selected='true'] {
+footer .tabs .tab-links li span.tabs_header[aria-selected='true'],
+.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true'],
+footer .tabs .tab-links li span.tabs_footer[aria-selected='true'],
+.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true'],
+footer .tabs .tab-links li form[aria-selected='true'],
+.toppmeny .tabs .tab-links li form[aria-selected='true'] {
   border: none;
   background: white;
   color: #004e66;
 }
-footer .tabs .tab-links li[aria-selected='true']:focus,
-.toppmeny .tabs .tab-links li[aria-selected='true']:focus {
+footer .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+footer .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
+.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
+footer .tabs .tab-links li form[aria-selected='true']:focus,
+.toppmeny .tabs .tab-links li form[aria-selected='true']:focus {
   background: #002e41;
   color: white;
 }
@@ -299,7 +314,7 @@ footer .tabs .tab-links .menu_search form,
   vertical-align: middle;
   cursor: text;
   display: inline-block;
-  padding-left: 5px;
+  padding: 0 0 0 5px;
   background: white;
 }
 footer .tabs .tab-links .menu_search form input,
@@ -308,7 +323,7 @@ footer .tabs .tab-links .menu_search form input,
   padding: 0;
   width: 170px;
   height: 28px;
-  vertical-align: middle;
+  vertical-align: sub;
   color: black;
 }
 footer .tabs .tab-links .menu_search form button,

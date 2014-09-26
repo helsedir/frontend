@@ -251,7 +251,9 @@ a:hover {
   clear: both;
   content: '';
 }
-.tabs .tab-links li {
+.tabs .tab-links li span.tabs_header,
+.tabs .tab-links li span.tabs_footer,
+.tabs .tab-links li form {
   margin: 0;
   float: left;
   list-style: none;
@@ -261,20 +263,30 @@ a:hover {
   transition: all linear 0.15s;
   padding-bottom: 6px;
 }
-.tabs .tab-links li.active {
+.tabs .tab-links li span.tabs_header.active,
+.tabs .tab-links li span.tabs_footer.active,
+.tabs .tab-links li form.active {
   border: none;
 }
-.tabs .tab-links li.active a {
+.tabs .tab-links li span.tabs_header.active a,
+.tabs .tab-links li span.tabs_footer.active a,
+.tabs .tab-links li form.active a {
   color: #004e66;
   font-family: 'Calibri-Bold';
   background: white;
 }
-.tabs .tab-links li.active a:hover,
-.tabs .tab-links li.active a:focus {
+.tabs .tab-links li span.tabs_header.active a:hover,
+.tabs .tab-links li span.tabs_footer.active a:hover,
+.tabs .tab-links li form.active a:hover,
+.tabs .tab-links li span.tabs_header.active a:focus,
+.tabs .tab-links li span.tabs_footer.active a:focus,
+.tabs .tab-links li form.active a:focus {
   background: white;
   color: #004e66;
 }
-.tabs .tab-links li a {
+.tabs .tab-links li span.tabs_header a,
+.tabs .tab-links li span.tabs_footer a,
+.tabs .tab-links li form a {
   display: inline-block;
   font-size: 16px;
   transition: all linear 0.15s;
@@ -285,10 +297,14 @@ a:hover {
   font-family: 'Calibri';
   background: #838078;
 }
-.tabs .tab-links li a:hover,
-.tabs .tab-links li a:focus {
+.tabs .tab-links li span.tabs_header a:hover,
+.tabs .tab-links li span.tabs_footer a:hover,
+.tabs .tab-links li form a:hover,
+.tabs .tab-links li span.tabs_header a:focus,
+.tabs .tab-links li span.tabs_footer a:focus,
+.tabs .tab-links li form a:focus {
   color: white;
-  background: #666460;
+  background: #5e5d57;
 }
 .tabs .tab-content {
   padding: 15px;
@@ -300,8 +316,10 @@ a:hover {
   padding: 5px 0 5px 10px;
   border-bottom: solid 1px #bababa;
 }
-.tabs .tab-content li:last-of-type {
-  border-bottom: 0;
+@media only screen and (min-width: 900px) {
+  .tabs .tab-content li:last-of-type {
+    border-bottom: 0;
+  }
 }
 .tabs .tab-content li:before {
   content: "";
@@ -332,6 +350,12 @@ a:hover {
 }
 .tabs .tab-content .alphabetical .character:hover {
   background: white;
+}
+.tabs .tab-content .tabpanel_header[aria-hidden="true"] {
+  display: none;
+}
+.tabs .tab-content .tabpanel_footer[aria-hidden="true"] {
+  display: none;
 }
 .chart_div {
   height: 450px;

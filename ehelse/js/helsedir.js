@@ -91,10 +91,8 @@
 
     $('#menushortcut').on('click', function () {
         var expandedContent = $(".js-expand");
-        expandedContent.slideUp(0, function () {
-            expandedContent.removeClass('visuallyhidden')
-                .slideDown(500);
-        });
+        expandedContent.slideDown(500);
+
         $('#tab_header1').focus();
     });
 
