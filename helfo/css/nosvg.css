@@ -126,12 +126,13 @@
   background-position: 96% 50%;
 }
 .no-svg .container .breadcrumbs li:last-child:before {
-  background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-  background-size: 28px 28px;
+  background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
 }
 .no-svg .container .breadcrumbs li:after {
-  background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-  background-size: 28px 28px;
+  background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
+}
+.no-svg .container .breadcrumbs li:last-child:after {
+  background: none;
 }
 .no-svg .container .entrancebutton a p {
   font-size: 16px;
@@ -185,6 +186,36 @@
 .no-svg .container .entrancebutton.menu button:hover span {
   background-color: #badde9;
 }
+.no-svg .container .navigate_forward.pull-right {
+  background: url(../img/ikoner/pil_fremover_brun.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 36px;
+}
+.no-svg .container .navigate_back.pull-left {
+  background: url(../img/ikoner/pil_tilbake_brun.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 36px;
+}
+.no-svg .container .module.module_subscribe .email:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 25px;
+  background: url(../img/ikoner/ikon_epost.png) no-repeat;
+  vertical-align: sub;
+  padding-right: 45px;
+}
+.no-svg .container .module.module_subscribe .rss:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  background: url(../img/ikoner/ikon_rss_module.png) no-repeat;
+  vertical-align: initial;
+  padding-right: 35px;
+}
 .no-svg .menubutton a.js-expander i {
   margin-left: 0;
 }
@@ -207,7 +238,7 @@
   width: 85px;
 }
 .no-svg .selected .icon .number {
-  left: 38px;
+  left: 33px;
   font-size: 40px;
 }
 .no-svg .passive .icon {
@@ -216,7 +247,7 @@
   width: 90px;
 }
 .no-svg .passive .icon .number {
-  left: 38px;
+  left: 33px;
   font-size: 40px;
 }
 .no-svg .passive:hover .icon {
@@ -232,9 +263,21 @@
   width: 211px;
 }
 .no-svg #footer .footerlinkswrapper .rss:before {
-  content: none;
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/ikoner/ikon_rss.png) no-repeat center;
+  vertical-align: text-top;
+  padding-right: 45px;
 }
 .no-svg #footer .footerlinkswrapper .email:before {
-  content: none;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 21px;
+  background: url(../img/ikoner/ikon_epost.png) no-repeat center;
+  vertical-align: bottom;
+  padding-right: 40px;
 }
 /*# sourceMappingURL=nosvg.css.map */

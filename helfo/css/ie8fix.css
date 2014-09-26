@@ -1,4 +1,7 @@
 ﻿body {
   background-attachment: local;
 }
+.container .module .module_description {
+  font-weight: 500;
+}
 /*# sourceMappingURL=ie8fix.css.map */

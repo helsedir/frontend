@@ -156,13 +156,15 @@
         }
 
         .breadcrumbs li:last-child:before {
-            background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-            background-size: 28px 28px;
+            background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
         }
 
         .breadcrumbs li:after {
-            background: url('../img/ikoner/pil_tilbake_brun.png') no-repeat;
-            background-size: 28px 28px;
+            background: url('../img/ikoner/pil_tilbake_brun_breadcrumbs.png') no-repeat;
+        }
+
+        .breadcrumbs li:last-child:after {
+            background: none;
         }
 
         .entrancebutton {
@@ -232,6 +234,40 @@
                 }
             }
         }
+
+        .navigate_forward.pull-right {
+            background: url(../img/ikoner/pil_fremover_brun.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-right: 36px;
+        }
+
+        .navigate_back.pull-left {
+            background: url(../img/ikoner/pil_tilbake_brun.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            padding-left: 36px;
+        }
+
+        .module.module_subscribe .email:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 25px;
+            background: url(../img/ikoner/ikon_epost.png) no-repeat;
+            vertical-align: sub;
+            padding-right: 45px;
+        }
+
+        .module.module_subscribe .rss:before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 19px;
+            background: url(../img/ikoner/ikon_rss_module.png) no-repeat;
+            vertical-align: initial;
+            padding-right: 35px;
+        }
     }
 
     .menubutton a.js-expander i {
@@ -258,7 +294,7 @@
             width: 85px;
 
             .number {
-                left: 38px;
+                left: 33px;
                 font-size: 40px;
             }
         }
@@ -271,7 +307,7 @@
             width: 90px;
 
             .number {
-                left: 38px;
+                left: 33px;
                 font-size: 40px;
             }
         }
@@ -294,10 +330,22 @@
     }
 
     #footer .footerlinkswrapper .rss:before {
-        content: none;
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url(../img/ikoner/ikon_rss.png) no-repeat center;
+        vertical-align: text-top;
+        padding-right: 45px;
     }
 
     #footer .footerlinkswrapper .email:before {
-        content: none;
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 21px;
+        background: url(../img/ikoner/ikon_epost.png) no-repeat center;
+        vertical-align: bottom;
+        padding-right: 40px;
     }
 }
