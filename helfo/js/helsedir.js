@@ -46,7 +46,7 @@
                 }
             });
             //stretch search field in header to window width on mobile screens
-            $('#mainsearch').css('width', windowWidth);
+            $('#mainsearch, #mainsearchcolumn').css('width', windowWidth);
         } else {
             $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
@@ -120,5 +120,11 @@
 
     $('.form-control').change(function () {
         $(this).addClass('selected');
+    });
+
+    $('.jumplink').click(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 500);
     });
 });

@@ -75,7 +75,6 @@ body {
 }
 .container h1,
 .container-fluid h1 {
-  font-weight: normal;
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
   line-height: 48px;
@@ -116,7 +115,6 @@ body {
 }
 .container h4,
 .container-fluid h4 {
-  font-weight: normal;
   font-size: 24px;
   line-height: 32px;
   margin-top: 55px;
@@ -124,7 +122,6 @@ body {
 }
 .container h5,
 .container-fluid h5 {
-  font-weight: normal;
   font-size: 18px;
 }
 .container p,
@@ -914,7 +911,12 @@ body {
 .container-fluid .module .module_description {
   margin-top: -45px;
   margin-bottom: 15px;
-  padding: 1.2rem 0;
+  padding: 12px 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #222;
 }
 .container .module a .module_header,
 .container-fluid .module a .module_header {
@@ -1994,7 +1996,7 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 899px) {
   .container iframe {
     width: 100%;
   }
@@ -2008,9 +2010,6 @@ body {
     margin-top: 0;
     width: auto;
   }
-  .container .aside .module {
-    margin: 30px 0;
-  }
   .container .aside .module.module_statistics_graph {
     max-width: none;
   }
@@ -2018,7 +2017,7 @@ body {
     width: 100%;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .container .socialmedia a:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -2222,6 +2221,7 @@ body {
   }
   .container .module {
     width: 100%;
+    margin: 30px 0 0 0;
   }
   .container .module_message {
     padding: 15px 15px 25px 15px;
@@ -2257,6 +2257,27 @@ body {
   }
   .container .searchform input {
     width: 85%;
+  }
+  .container .refinesearch.accordion_mobile {
+    margin-top: 10px;
+    max-width: none;
+  }
+  .container .refinesearch.accordion_mobile h2 {
+    margin-bottom: 0;
+  }
+  .container .refinesearch.accordion_mobile h2:before {
+    font-size: 33px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .container .numberofpublications {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  .container .searchform {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 @media braille {
@@ -2610,7 +2631,8 @@ html {
   .container h1 {
     font-size: 3.0rem;
     line-height: 3.6rem;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
   .container h2 {
     font-size: 2.8rem;
@@ -2623,6 +2645,27 @@ html {
   .container h4 {
     font-size: 2.2rem;
     line-height: 2.8rem;
+  }
+  .container .ingress {
+    margin-top: 0;
+  }
+  .container .transportsideknapp {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    background-size: 38px 18px;
+  }
+  .container .transportsideknapp h2 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .container .transportsideknapp:hover {
+    background-size: 38px 38px;
+  }
+  .container .breadcrumbs li:before {
+    background-size: 23px 28px;
+  }
+  .container .breadcrumbs a {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=common.css.map */

@@ -64,10 +64,6 @@
 #footer .mobile-search {
   display: none;
 }
-#header .hidden-mobile,
-#footer .hidden-mobile {
-  display: block;
-}
 #header .about,
 #footer .about {
   list-style-type: none;
@@ -212,7 +208,7 @@
 #header .masterheader,
 #footer .masterheader {
   height: 41px;
-  margin: 25px 0 20px 0;
+  margin: 10px 0 15px 0;
   background: white;
 }
 #header .masterheader .links,
@@ -764,7 +760,12 @@
   }
   #header .mainsearch input,
   #footer .mainsearch input {
-    width: 82%;
+    width: 86%;
+  }
+  #header .hidden-mobile,
+  #footer .hidden-mobile {
+    display: block;
+    margin-left: -15px;
   }
   .container-fluid.toppmeny .tabs {
     padding-left: 0;
@@ -881,7 +882,7 @@
   }
   #header .menubutton.mobile-search:hover,
   #footer .menubutton.mobile-search:hover {
-    background: #d9dadb url('../img/ikoner/ikon_forstorrelsesglass.png') no-repeat;
+    background: #d9dadb url('../img/ikoner/ikon_forstorrelsesglass_hvitt.png') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;
@@ -901,7 +902,7 @@
     background-position: 50% 26%;
   }
   #footer {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
