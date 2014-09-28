@@ -1,29 +1,157 @@
-﻿.method_entrance .drop_wrapper {
-    display: inline-block;
-    width: 100%;
+﻿@colorMediumBlue: #0093a7;
 
-    .drop > i {
-        display: none !important;
+.no-svg {
+    .method_entrance {
+        width: 15%;
+
+        .drop_wrapper {
+            display: inline-block;
+            width: 100%;
+
+            .drop > i {
+                display: none !important;
+            }
+
+            .drop {
+                width: 200px;
+                height: 166px;
+
+                &.forslag {
+                    background: url(../img/ikoner/draape_forslag.png) no-repeat;
+                }
+
+                &.metodevurdering {
+                    background: url(../img/ikoner/draape_metodevurdering.png) no-repeat;
+                }
+
+                &.beslutning {
+                    background: url(../img/ikoner/draape_beslutning.png) no-repeat;
+                }
+
+                &.implementering {
+                    background: url(../img/ikoner/draape_implementering.png) no-repeat;
+                }
+            }
+        }
     }
 
-    .drop {
-        width: 200px;
-        height: 166px;
+    .entrancebutton a {
+        &:hover {
+            background: #002e41;
 
-        &.forslag {
-            background: url(../img/ikoner/draape_forslag.png) no-repeat;
+            span.sendforslag {
+                background: #002e41;
+            }
+
+            span.finnmetode {
+                background: #002e41;
+            }
         }
 
-        &.metodevurdering {
-            background: url(../img/ikoner/draape_metodevurdering.png) no-repeat;
+        span.sendforslag {
+            background: #004e66;
         }
 
-        &.beslutning {
-            background: url(../img/ikoner/draape_beslutning.png) no-repeat;
+        span.finnmetode {
+            background: #004e66;
+        }
+    }
+
+    .entrancebutton.aboutthesystem a {
+        &:hover {
+            background: #01737c;
+
+            span.omsystemet {
+                background: #01737c;
+            }
         }
 
-        &.implementering {
-            background: url(../img/ikoner/draape_implementering.png) no-repeat;
+        span.omsystemet {
+            background: #0093a7;
         }
+    }
+
+    .logo {
+        background: url(../img/logo.png);
+        background-repeat: no-repeat;
+    }
+
+    .internal-link:before {
+        content: "";
+        position: absolute;
+        left: 16px;
+        bottom: 0;
+        height: 22px;
+        width: 23px;
+        background: url(../img/ikoner/intern_lenke_mellomblaa.png) no-repeat;
+        /* background-position: 0 5px; */
+        background-size: 20px;
+    }
+
+    .news .internal-link:before {
+        content: "";
+        background: url(../img/ikoner/intern_lenke_mellomblaa_forside_ie8.png) no-repeat;
+    }
+
+    .footerlinkswrapper .linklist li a.internal-link:before {
+        content: "";
+        background: url(../img/ikoner/intern_lenke_roed_ie8.png) left no-repeat;
+    }
+
+    .refinesearch {
+        .form-group {
+            overflow: hidden;
+
+            select {
+                width: 355px;
+                background: url('../img/ikoner/knapp_dropdownmeny_ie8.png') no-repeat scroll center #FFF;
+                background-position: 83%;
+                -moz-background-size: 38px 38px;
+                -o-background-size: 38px 38px;
+                -webkit-background-size: 38px 38px;
+                background-size: 38px 38px;
+
+                &:focus, &:active {
+                    background: url('../img/ikoner/knapp_dropdownmeny_ie8.png') no-repeat;
+                    background-position: 83%;
+                    -moz-background-size: 39px 39px;
+                    -o-background-size: 39px 39px;
+                    -webkit-background-size: 39px 39px;
+                    background-size: 39px 39px;
+                }
+            }
+        }
+    }
+
+    .searchform button {
+        background: url(../img/ikoner/knapp_soekefelt_ie8.png) no-repeat;
+    }
+
+    .transportsideknapp {
+        background: #ffffff url(../img/pil_knapp_mellomblaa_ie8.png) no-repeat;
+        background-position: 96% 93%;
+    }
+
+    .showmorenews {
+        background: #dedddb url(../img/ikoner/spinner_ie8.png) no-repeat;
+    }
+
+    .module.module_print .ikon_skrivut span {
+        background: url(../img/ikoner/skriv_ut_regular_ie8.png) no-repeat;
+    }
+
+    .wrapper .method_status.has-hidden-content h2:before, .wrapper .method_status.has-hidden-content .accordion:before {
+        content: " ";
+        background: url(../img/ikoner/intern_lenke_mellomblaa_ie8_rotertned.png) no-repeat;
+    }
+
+    .wrapper .method_status.has-visible-content h2:before, .wrapper .method_status.has-visible-content .accordion:before {
+        content: " ";
+        background: url(../img/ikoner/intern_lenke_mellomblaa_ie8_rotertopp.png) no-repeat;
+    }
+
+    .wrapper .informationicon.selected {
+        background: url(../img/ikon_lukk_kryss_mellomblaa_ie8.png) no-repeat;
+        background-position: 2px 3px;
     }
 }
