@@ -607,15 +607,15 @@ footer, .toppmeny {
         height: 16px;
     }
 
-    footer, .toppmeny {
+    .toppmeny, footer {
         .tabs {
             padding-left: 0;
 
             .tab-links {
                 padding-left: 0;
 
-                li {
-                    width: 100px;
+                li span.tabs_header, li span.tabs_footer {
+                    width: 110px;
                     padding: 0 15px 0 10px;
                 }
             }
@@ -639,9 +639,7 @@ footer, .toppmeny {
     }
 
     .toppmeny .tabs .hide_menu {
-        margin-right: 0;
-        margin-top: 0;
-        padding: 0;
+        display: none;
     }
 
     #footer {

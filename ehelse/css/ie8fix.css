@@ -153,13 +153,13 @@
 }
 .external-link,
 a.external-link {
-  background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+  background: url(../img/ikoner/lenkepil_ekstern_orange_ie8.png) no-repeat;
   background-size: 7%;
   background-position: left;
 }
 .external-link.inline,
 a.external-link.inline {
-  background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+  background: url(../img/ikoner/lenkepil_ekstern_orange_ie8.png) no-repeat;
   background-size: 7%;
   background-position: left top;
 }

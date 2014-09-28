@@ -520,21 +520,23 @@ footer .tab-content li:hover,
   .footerlinkswrapper .socialmedia a img {
     height: 16px;
   }
-  footer .tabs,
-  .toppmeny .tabs {
+  .toppmeny .tabs,
+  footer .tabs {
     padding-left: 0;
   }
-  footer .tabs .tab-links,
-  .toppmeny .tabs .tab-links {
+  .toppmeny .tabs .tab-links,
+  footer .tabs .tab-links {
     padding-left: 0;
   }
-  footer .tabs .tab-links li,
-  .toppmeny .tabs .tab-links li {
-    width: 100px;
+  .toppmeny .tabs .tab-links li span.tabs_header,
+  footer .tabs .tab-links li span.tabs_header,
+  .toppmeny .tabs .tab-links li span.tabs_footer,
+  footer .tabs .tab-links li span.tabs_footer {
+    width: 110px;
     padding: 0 15px 0 10px;
   }
-  footer .tabs .tab-content,
-  .toppmeny .tabs .tab-content {
+  .toppmeny .tabs .tab-content,
+  footer .tabs .tab-content {
     padding-left: 0;
   }
   footer .tabs,
@@ -548,9 +550,7 @@ footer .tab-content li:hover,
     padding-top: 40px;
   }
   .toppmeny .tabs .hide_menu {
-    margin-right: 0;
-    margin-top: 0;
-    padding: 0;
+    display: none;
   }
   #footer {
     margin-top: 30px;
