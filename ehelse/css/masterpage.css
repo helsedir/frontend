@@ -59,8 +59,17 @@
   background: #004e66;
   border-bottom: 6px solid #0093a7;
 }
+#header a:focus,
+#header a:focus h4 {
+  background: white !important;
+  color: #004e66 !important;
+}
 #logo {
   color: white;
+}
+#logo:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 #logo img {
   display: block;
@@ -94,7 +103,7 @@
 }
 .menubutton button.js-expander:focus {
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #0093a7;
   border: solid 1px #004e66;
 }
 .menubutton button.js-expander:focus span,
@@ -213,11 +222,6 @@
   color: white;
   margin-right: 15px;
   vertical-align: sub;
-}
-.masterheader .links span a:focus {
-  background: #004e66;
-  color: white !important;
-  outline: 0;
 }
 .masterheader .links span a:last-of-type {
   margin-right: 0;
@@ -370,28 +374,14 @@ footer .tab-content li a,
 .toppmeny .tab-content li a {
   color: #004e66;
 }
+footer .tab-content li a:focus,
+.toppmeny .tab-content li a:focus {
+  background: #004e66 !important;
+  color: white !important;
+}
 footer .tab-content li:hover,
 .toppmeny .tab-content li:hover {
   background: #d1d0c4;
-}
-footer.rammeverk {
-  height: 100%;
-  background: #004e66;
-  color: white;
-}
-footer.rammeverk p {
-  margin: 0.5rem;
-  padding-left: 1.3rem;
-}
-footer.rammeverk img {
-  padding-right: 0.4rem;
-  padding-left: 1.8rem;
-  vertical-align: middle;
-}
-footer.rammeverk a,
-footer.rammeverk a:visited {
-  color: white !important;
-  text-decoration: none;
 }
 .footerlinkswrapper {
   background: #004e66 url('../img/footer.png') no-repeat;
@@ -502,6 +492,11 @@ footer.rammeverk a:visited {
 .footerlinkswrapper .socialmedia div a:first-of-type {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+.footerlinkswrapper a:focus,
+.footerlinkswrapper a:focus h4 {
+  background: white !important;
+  color: #004e66 !important;
 }
 .nopadding {
   padding: 0 !important;

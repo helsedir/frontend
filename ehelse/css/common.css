@@ -958,7 +958,7 @@ h4.keyfigures {
   padding-left: 40px;
   padding-bottom: 3px;
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
-  background-size: 27%;
+  background-size: 24px 26px;
   background-position: 5%;
 }
 .module.module_subscribe .e-mail:hover {
@@ -1548,10 +1548,10 @@ fieldset {
 .dropdown select:active {
   background: url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
   background-position: 100%;
-  -moz-background-size: 38px;
-  -o-background-size: 38px;
-  -webkit-background-size: 38px;
-  background-size: 38px;
+  -moz-background-size: 38px 38px;
+  -o-background-size: 38px 38px;
+  -webkit-background-size: 38px 38px;
+  background-size: 38px 38px;
   border: none;
 }
 .numberofpublications {
@@ -1592,19 +1592,19 @@ fieldset {
   .refinesearch .form-group select {
     width: 317px;
     background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #ffffff;
-    -moz-background-size: 38px;
-    -o-background-size: 38px;
-    -webkit-background-size: 38px;
-    background-size: 38px;
+    -moz-background-size: 38px 38px;
+    -o-background-size: 38px 38px;
+    -webkit-background-size: 38px 38px;
+    background-size: 38px 38px;
   }
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+    background: url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
     background-position: 95%;
-    -moz-background-size: 39px;
-    -o-background-size: 39px;
-    -webkit-background-size: 39px;
-    background-size: 39px;
+    -moz-background-size: 39px 39px;
+    -o-background-size: 39px 39px;
+    -webkit-background-size: 39px 39px;
+    background-size: 39px 39px;
   }
 }
 .table_general {

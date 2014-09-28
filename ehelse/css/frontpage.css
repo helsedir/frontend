@@ -61,6 +61,15 @@
   color: white;
   background: none;
 }
+.entrancebutton.menu:focus {
+  background: #0093a7 !important;
+  transition: none;
+}
+.entrancebutton.menu:focus h2 {
+  color: white !important;
+  background: #0093a7 !important;
+  transition: none;
+}
 .entrancebutton.menu:hover {
   background: #0093a7 !important;
 }
@@ -100,11 +109,13 @@
   margin-bottom: 15px;
 }
 .entrancebutton:focus {
-  background: #002e41;
+  background: #002e41 !important;
+  transition: none;
 }
 .entrancebutton:focus h2,
 .entrancebutton:focus p {
-  background: #002e41;
+  background: #002e41 !important;
+  transition: none;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {

@@ -99,10 +99,20 @@
 #header {
     background: @colorDarkBlue;
     border-bottom: 6px solid @colorMediumBlue;
+
+    a:focus, a:focus h4 {
+        background: white !important;
+        color: @colorDarkBlue !important;
+    }
 }
 
 #logo {
     color: white;
+
+    &:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
 
     img {
         display: block;
@@ -139,7 +149,7 @@
 
         &:focus {
             text-decoration: none;
-            background-color: #ffffff;
+            background-color: #0093a7;
 
             span, i {
                 color: white;
@@ -278,12 +288,6 @@
                 color: white;
                 margin-right: 15px;
                 vertical-align: sub;
-
-                &:focus {
-                    background: @colorDarkBlue;
-                    color: white !important;
-                    outline: 0;
-                }
 
                 &:last-of-type {
                     margin-right: 0;
@@ -436,34 +440,17 @@ footer, .toppmeny {
 
             a {
                 color: @colorDarkBlue;
+
+                &:focus {
+                    background: @colorDarkBlue !important;
+                    color: white !important;
+                }
             }
 
             &:hover {
                 background: #d1d0c4;
             }
         }
-    }
-}
-
-footer.rammeverk {
-    height: 100%;
-    background: @colorDarkBlue;
-    color: white;
-
-    p {
-        margin: 0.5rem;
-        padding-left: 1.3rem;
-    }
-
-    img {
-        padding-right: 0.4rem;
-        padding-left: 1.8rem;
-        vertical-align: middle;
-    }
-
-    a, a:visited {
-        color: white !important;
-        text-decoration: none;
     }
 }
 
@@ -582,6 +569,11 @@ footer.rammeverk {
                 border-bottom-left-radius: 3px;
             }
         }
+    }
+
+    a:focus, a:focus h4 {
+        background: white !important;
+        color: @colorDarkBlue !important;
     }
 }
 

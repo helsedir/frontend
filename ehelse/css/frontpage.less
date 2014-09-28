@@ -93,14 +93,19 @@
             }
         }
 
-        &:focus h2 {
+        &:focus {
+            background: @colorMediumBlue !important;
+            transition: none;
+
+            h2 {
+                color: white !important;
+                background: @colorMediumBlue !important;
+                transition: none;
+            }
         }
 
         &:hover {
             background: @colorMediumBlue !important;
-
-            h2 {
-            }
         }
     }
 
@@ -142,10 +147,12 @@
     }
 
     &:focus {
-        background: @colorDarkBlueHover;
+        background: @colorDarkBlueHover !important;
+        transition: none;
 
         h2, p {
-            background: @colorDarkBlueHover;
+            background: @colorDarkBlueHover !important;
+            transition: none;
         }
     }
 
