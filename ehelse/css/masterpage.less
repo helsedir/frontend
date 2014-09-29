@@ -31,6 +31,10 @@
     width: 100%;
 }
 
+.js-expand {
+    display: none;
+}
+
 .menuwrapper {
     background: white;
 }
@@ -95,10 +99,20 @@
 #header {
     background: @colorDarkBlue;
     border-bottom: 6px solid @colorMediumBlue;
+
+    a:focus, a:focus h4 {
+        background: white !important;
+        color: @colorDarkBlue !important;
+    }
 }
 
 #logo {
     color: white;
+
+    &:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
 
     img {
         display: block;
@@ -135,7 +149,7 @@
 
         &:focus {
             text-decoration: none;
-            background-color: #ffffff;
+            background-color: #0093a7;
 
             span, i {
                 color: white;
@@ -253,6 +267,14 @@
     }
 }
 
+@-moz-document url-prefix() {
+    #header .mainsearchform {
+        input {
+            vertical-align: bottom;
+        }
+    }
+}
+
 .masterheader {
     height: 40px;
     margin: 25px 0 35px 0;
@@ -266,12 +288,6 @@
                 color: white;
                 margin-right: 15px;
                 vertical-align: sub;
-
-                &:focus {
-                    background: @colorDarkBlue;
-                    color: white !important;
-                    outline: 0;
-                }
 
                 &:last-of-type {
                     margin-right: 0;
@@ -331,27 +347,28 @@ footer, .toppmeny {
             margin-right: 10px;
 
             li {
-                background: @colorDarkBlue;
+                span.tabs_header, span.tabs_footer, form {
+                    background: @colorDarkBlue;
+                    color: white;
+                    padding: 5px 30px 8px 20px;
+                    border-radius: 0;
+                    cursor: pointer;
 
-                &[aria-selected='true'] {
-                    border: none;
-                    background: white;
-                    color: @colorDarkBlue;
+                    &[aria-selected='true'] {
+                        border: none;
+                        background: white;
+                        color: @colorDarkBlue;
 
-                    &:focus {
-                        background: @colorDarkBlueHover;
-                        color: white;
+                        &:focus {
+                            background: @colorDarkBlueHover;
+                            color: white;
+                        }
                     }
                 }
 
                 input {
                     width: 100%;
                 }
-
-                color: white;
-                padding: 5px 30px 8px 20px;
-                border-radius: 0;
-                cursor: pointer;
 
                 &:focus {
                     background: @colorDarkBlueHover;
@@ -368,7 +385,7 @@ footer, .toppmeny {
                 vertical-align: middle;
                 cursor: text;
                 display: inline-block;
-                padding-left: 5px;
+                padding: 0 0 0 5px;
                 background: white;
 
                 input {
@@ -376,7 +393,7 @@ footer, .toppmeny {
                     padding: 0;
                     width: 170px;
                     height: 28px;
-                    vertical-align: middle;
+                    vertical-align: sub;
                     color: black;
                 }
 
@@ -423,34 +440,17 @@ footer, .toppmeny {
 
             a {
                 color: @colorDarkBlue;
+
+                &:focus {
+                    background: @colorDarkBlue !important;
+                    color: white !important;
+                }
             }
 
             &:hover {
                 background: #d1d0c4;
             }
         }
-    }
-}
-
-footer.rammeverk {
-    height: 100%;
-    background: @colorDarkBlue;
-    color: white;
-
-    p {
-        margin: 0.5rem;
-        padding-left: 1.3rem;
-    }
-
-    img {
-        padding-right: 0.4rem;
-        padding-left: 1.8rem;
-        vertical-align: middle;
-    }
-
-    a, a:visited {
-        color: white !important;
-        text-decoration: none;
     }
 }
 
@@ -570,6 +570,11 @@ footer.rammeverk {
             }
         }
     }
+
+    a:focus, a:focus h4 {
+        background: white !important;
+        color: @colorDarkBlue !important;
+    }
 }
 
 .nopadding {
@@ -602,15 +607,15 @@ footer.rammeverk {
         height: 16px;
     }
 
-    footer, .toppmeny {
+    .toppmeny, footer {
         .tabs {
             padding-left: 0;
 
             .tab-links {
                 padding-left: 0;
 
-                li {
-                    width: 100px;
+                li span.tabs_header, li span.tabs_footer {
+                    width: 110px;
                     padding: 0 15px 0 10px;
                 }
             }
@@ -634,13 +639,11 @@ footer.rammeverk {
     }
 
     .toppmeny .tabs .hide_menu {
-        margin-right: 0;
-        margin-top: 0;
-        padding: 0;
+        display: none;
     }
 
     #footer {
-        margin-top: 0;
+        margin-top: 30px;
     }
 }
 
@@ -667,6 +670,11 @@ footer.rammeverk {
 }
 
 @media only screen and (max-width: 899px) {
+    .footerlinkswrapper {
+        padding: 20px 0 30px 0;
+        background: #004E66;
+    }
+
     .menubutton {
         width: 40px;
         margin-right: 5px;

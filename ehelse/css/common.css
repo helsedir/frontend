@@ -251,7 +251,9 @@ a:hover {
   clear: both;
   content: '';
 }
-.tabs .tab-links li {
+.tabs .tab-links li span.tabs_header,
+.tabs .tab-links li span.tabs_footer,
+.tabs .tab-links li form {
   margin: 0;
   float: left;
   list-style: none;
@@ -261,20 +263,30 @@ a:hover {
   transition: all linear 0.15s;
   padding-bottom: 6px;
 }
-.tabs .tab-links li.active {
+.tabs .tab-links li span.tabs_header.active,
+.tabs .tab-links li span.tabs_footer.active,
+.tabs .tab-links li form.active {
   border: none;
 }
-.tabs .tab-links li.active a {
+.tabs .tab-links li span.tabs_header.active a,
+.tabs .tab-links li span.tabs_footer.active a,
+.tabs .tab-links li form.active a {
   color: #004e66;
   font-family: 'Calibri-Bold';
   background: white;
 }
-.tabs .tab-links li.active a:hover,
-.tabs .tab-links li.active a:focus {
+.tabs .tab-links li span.tabs_header.active a:hover,
+.tabs .tab-links li span.tabs_footer.active a:hover,
+.tabs .tab-links li form.active a:hover,
+.tabs .tab-links li span.tabs_header.active a:focus,
+.tabs .tab-links li span.tabs_footer.active a:focus,
+.tabs .tab-links li form.active a:focus {
   background: white;
   color: #004e66;
 }
-.tabs .tab-links li a {
+.tabs .tab-links li span.tabs_header a,
+.tabs .tab-links li span.tabs_footer a,
+.tabs .tab-links li form a {
   display: inline-block;
   font-size: 16px;
   transition: all linear 0.15s;
@@ -285,10 +297,14 @@ a:hover {
   font-family: 'Calibri';
   background: #838078;
 }
-.tabs .tab-links li a:hover,
-.tabs .tab-links li a:focus {
+.tabs .tab-links li span.tabs_header a:hover,
+.tabs .tab-links li span.tabs_footer a:hover,
+.tabs .tab-links li form a:hover,
+.tabs .tab-links li span.tabs_header a:focus,
+.tabs .tab-links li span.tabs_footer a:focus,
+.tabs .tab-links li form a:focus {
   color: white;
-  background: #666460;
+  background: #5e5d57;
 }
 .tabs .tab-content {
   padding: 15px;
@@ -300,8 +316,10 @@ a:hover {
   padding: 5px 0 5px 10px;
   border-bottom: solid 1px #bababa;
 }
-.tabs .tab-content li:last-of-type {
-  border-bottom: 0;
+@media only screen and (min-width: 900px) {
+  .tabs .tab-content li:last-of-type {
+    border-bottom: 0;
+  }
 }
 .tabs .tab-content li:before {
   content: "";
@@ -333,6 +351,12 @@ a:hover {
 .tabs .tab-content .alphabetical .character:hover {
   background: white;
 }
+.tabs .tab-content .tabpanel_header[aria-hidden="true"] {
+  display: none;
+}
+.tabs .tab-content .tabpanel_footer[aria-hidden="true"] {
+  display: none;
+}
 .chart_div {
   height: 450px;
   margin: 20px 57px;
@@ -352,10 +376,9 @@ a:hover {
   vertical-align: middle;
   cursor: text;
   display: inline-block;
-  padding-left: 5px;
 }
 .search {
-  width: 93%;
+  width: 608px;
   height: 40px;
   background: white;
   cursor: text;
@@ -597,7 +620,6 @@ figure .metatext {
 }
 .report a div.date {
   float: left;
-  width: auto;
   min-width: 260px;
   padding-right: 20px;
   font-weight: bold;
@@ -609,7 +631,7 @@ figure .metatext {
 }
 .report a div.information {
   float: left;
-  width: 60%;
+  width: 56%;
 }
 .report a div.information h3.internal-link.arrow_right {
   margin-right: 30px;
@@ -622,6 +644,7 @@ figure .metatext {
   display: inline-block;
   padding: 0 0 10px 0;
   color: #c63629;
+  float: left;
 }
 .report a span.date_monthyear {
   font-size: 20px;
@@ -630,6 +653,7 @@ figure .metatext {
   display: inline-block;
   color: #c63629;
   text-transform: uppercase;
+  float: left;
 }
 .report a h3 {
   margin: 0;
@@ -752,7 +776,7 @@ a.external-link.inline:before {
   padding-left: 35px;
   margin-top: 11px;
   display: block;
-  background-position: 0 7px;
+  background-position: 0 6px;
 }
 .internal-link:visited {
   color: #838078;
@@ -786,7 +810,7 @@ h4.keyfigures {
 }
 .module {
   display: inline-block;
-  margin: 0 0 60px 0;
+  margin: 0 0 30px 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -909,7 +933,7 @@ h4.keyfigures {
   text-align: left;
   color: #222;
   padding-bottom: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 .module.module_subscribe a {
@@ -935,7 +959,8 @@ h4.keyfigures {
   padding-left: 40px;
   padding-bottom: 3px;
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
-  background-size: 27px 23px;
+  background-size: 24px 26px;
+  background-position: 5%;
 }
 .module.module_subscribe .e-mail:hover {
   background: url(../img/modules/icons/epost_regular.svg) no-repeat;
@@ -1112,7 +1137,7 @@ h4.keyfigures {
 .module.module_social {
   padding: 0;
   background: none;
-  border-top: 2px solid #004e66;
+  border-top: 4px solid #DF9922;
   padding-top: 19px;
   margin: 60px 0 31px 0;
   width: 100%;
@@ -1122,8 +1147,7 @@ h4.keyfigures {
 .module.module_social a,
 .module.module_print a:visited,
 .module.module_social a:visited {
-  color: #004e66;
-  text-transform: uppercase;
+  color: #222;
   float: left;
   margin: 0 50px 0 0;
   font-size: 16px;
@@ -1150,7 +1174,7 @@ h4.keyfigures {
 }
 .module.module_print .ikon_facebook span,
 .module.module_social .ikon_facebook span {
-  background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1158,7 +1182,7 @@ h4.keyfigures {
 }
 .module.module_print .ikon_twitter span,
 .module.module_social .ikon_twitter span {
-  background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1170,7 +1194,7 @@ h4.keyfigures {
 }
 .module.module_print .ikon_skrivut span,
 .module.module_social .ikon_skrivut span {
-  background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1505,26 +1529,30 @@ fieldset {
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
-  -moz-background-size: 38px;
-  -o-background-size: 38px;
-  -webkit-background-size: 38px;
-  background-size: 38px;
+  -moz-background-size: 38px 38px;
+  -o-background-size: 38px 38px;
+  -webkit-background-size: 38px 38px;
+  background-size: 38px 38px;
   text-indent: 0.01px;
   text-overflow: '';
   color: #222;
+}
+.dropdown select.selected {
+  box-shadow: #F4D01E 0 0 0 2px;
+  font-weight: bold;
+  outline: none;
 }
 .dropdown select::-ms-expand {
   display: none;
 }
 .dropdown select:focus,
 .dropdown select:active {
-  background: #004e66 url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
+  background: url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
   background-position: 100%;
-  -moz-background-size: 38px;
-  -o-background-size: 38px;
-  -webkit-background-size: 38px;
-  background-size: 38px;
-  color: white;
+  -moz-background-size: 38px 38px;
+  -o-background-size: 38px 38px;
+  -webkit-background-size: 38px 38px;
+  background-size: 38px 38px;
   border: none;
 }
 .numberofpublications {
@@ -1538,7 +1566,6 @@ fieldset {
 }
 .refinesearch {
   width: 300px;
-  margin-bottom: 60px;
 }
 .refinesearch h2,
 .refinesearch h5 {
@@ -1566,20 +1593,19 @@ fieldset {
   .refinesearch .form-group select {
     width: 317px;
     background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #ffffff;
-    -moz-background-size: 39px;
-    -o-background-size: 39px;
-    -webkit-background-size: 39px;
-    background-size: 39px;
+    -moz-background-size: 38px 38px;
+    -o-background-size: 38px 38px;
+    -webkit-background-size: 38px 38px;
+    background-size: 38px 38px;
   }
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: #004e66 url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+    background: url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
     background-position: 95%;
-    color: white;
-    -moz-background-size: 39px;
-    -o-background-size: 39px;
-    -webkit-background-size: 39px;
-    background-size: 39px;
+    -moz-background-size: 39px 39px;
+    -o-background-size: 39px 39px;
+    -webkit-background-size: 39px 39px;
+    background-size: 39px 39px;
   }
 }
 .table_general {
@@ -1835,6 +1861,9 @@ fieldset {
   .aside.top {
     margin-right: -72%;
   }
+  .search {
+    width: 438px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .refinesearch {
@@ -1845,9 +1874,6 @@ fieldset {
   }
   .border {
     display: none;
-  }
-  .search {
-    width: 91%;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -1862,8 +1888,8 @@ fieldset {
   iframe {
     width: 100%;
   }
-  .module_subscribe {
-    margin: 0;
+  .module.module_subscribe {
+    margin: 30px 0 0 0;
     padding: 0;
   }
   .module_message {
@@ -1872,14 +1898,17 @@ fieldset {
   .aside {
     margin-top: 0;
   }
-  .search {
-    width: 84%;
+  .showmorenews {
+    margin: 25px 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .socialmedia a:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+  }
+  .search {
+    width: 508px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -1898,7 +1927,7 @@ fieldset {
   h1 {
     font-size: 30px;
     line-height: 36px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   h2 {
     font-size: 28px;
@@ -1952,7 +1981,7 @@ fieldset {
     border-bottom-left-radius: 3px;
   }
   .transportsideknapp {
-    margin: 10px 0 10px 0;
+    margin: 20px 0 0 0;
     padding: 5px 0 20px 15px;
     background: white;
   }
@@ -2008,9 +2037,9 @@ fieldset {
   .statistics_table table tbody th:first-child:before {
     content: '';
   }
-  .toppmeny .tab-links li,
-  .tabs .tab-links li,
-  .tabs-statistics .tabs .tab-links li {
+  .toppmeny .tab-links li span,
+  .tabs .tab-links li span,
+  .tabs-statistics .tabs .tab-links li span {
     width: 114px;
     font-size: 12px;
   }
@@ -2073,6 +2102,22 @@ fieldset {
   .chart_div {
     height: 300px;
     margin: 20px 0;
+  }
+  .search {
+    width: 85%;
+  }
+  .refinesearch {
+    margin-top: 10px;
+  }
+  .searchform {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .numberofpublications {
+    padding-top: 0;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 @media braille {

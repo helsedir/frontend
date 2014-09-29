@@ -93,14 +93,19 @@
             }
         }
 
-        &:focus h2 {
+        &:focus {
+            background: @colorMediumBlue !important;
+            transition: none;
+
+            h2 {
+                color: white !important;
+                background: @colorMediumBlue !important;
+                transition: none;
+            }
         }
 
         &:hover {
             background: @colorMediumBlue !important;
-
-            h2 {
-            }
         }
     }
 
@@ -142,10 +147,12 @@
     }
 
     &:focus {
-        background: @colorDarkBlueHover;
+        background: @colorDarkBlueHover !important;
+        transition: none;
 
         h2, p {
-            background: @colorDarkBlueHover;
+            background: @colorDarkBlueHover !important;
+            transition: none;
         }
     }
 
@@ -296,14 +303,14 @@
         }
     }
 
-    div.conferenceitem > div:nth-child(2n-1) {
+    div.conferenceitem > .conference_date {
         width: 45%;
         float: left;
         min-height: 75px;
         padding-top: 10px;
     }
 
-    div.conferenceitem > div:nth-child(2n) {
+    div.conferenceitem > .conference_info {
         width: 45%;
         float: left;
         min-height: 75px;
@@ -371,7 +378,6 @@
 
 .toppmeny .tabs .tab-links li.menu_search {
     background: none;
-    width: 170px;
     padding: 0;
 }
 
@@ -511,6 +517,10 @@
 
     .frontpage .news p {
         line-height: 24px;
+    }
+
+    #footer {
+        margin-top: 0;
     }
 }
 

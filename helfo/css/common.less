@@ -443,6 +443,10 @@ body {
                 width: 24px;
                 vertical-align: sub;
             }
+
+            &:hover {
+                box-shadow: #0093a7 0 0 0 4px;
+            }
         }
     }
 
@@ -573,7 +577,6 @@ body {
     .aside, .aside.bottom {
         margin-right: 0;
         position: relative;
-        width: 300px;
 
         h2 {
             margin: 0;
@@ -604,7 +607,7 @@ body {
 
     .bulletlist {
         list-style-position: outside;
-        margin-top: 10px;
+        margin-bottom: 15px;
 
         li {
             margin: 0 0 10px 25px;
@@ -816,6 +819,7 @@ body {
         padding: 0 25px 20px 15px;
         background: white;
         position: relative;
+        width: 100%;
 
         p {
             a {
@@ -1166,7 +1170,7 @@ body {
                 display: block;
 
                 span {
-                    background: url(../img/ikoner/skriv_ut_regular.svg) no-repeat;
+                    background: url(../img/ikoner/ikon_print.svg) no-repeat;
                     -moz-background-size: 27px 22px;
                     -o-background-size: 27px 22px;
                     -webkit-background-size: 27px 22px;
@@ -1520,8 +1524,9 @@ body {
             padding: 5px 38px 4px 10px;
             -webkit-appearance: none; /*Removes default chrome and safari style*/
             -moz-appearance: none; /* Removes Default Firefox style*/
-            background: white url('../img/ikoner/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
-            background-position: 100%; /*Position of the background-image*/
+            background: white url('../img/ikoner/pil_ekspanderbar.svg') no-repeat; /*Adds background-image*/
+            background-size: 25px 25px;
+            background-position: 97%;
             text-indent: 0.01px;
             text-overflow: '';
             color: #222;
@@ -1922,6 +1927,10 @@ body {
         .hidden_links {
             display: none;
         }
+
+        .aside {
+            max-width: 300px;
+        }
     }
 }
 
@@ -1979,10 +1988,6 @@ body {
             .fa-chevron-right {
                 display: none;
             }
-        }
-
-        .module {
-            min-width: 300px;
         }
     }
 }
@@ -2618,6 +2623,8 @@ html {
         h3 {
             font-size: 2.6rem;
             line-height: 3.0rem;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
 
         h4 {

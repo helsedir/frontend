@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 102 102" enable-background="new 0 0 102 102" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-79.9247" y1="53" x2="40.1414" y2="53" gradientTransform="matrix(1 0 0 -1 0 104)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-79.9247" y1="49" x2="40.1414" y2="49" gradientTransform="matrix(1 0 0 1 0 2)">
 	<stop  offset="0" style="stop-color:#002D42"/>
 	<stop  offset="0.1494" style="stop-color:#003953"/>
 	<stop  offset="0.4446" style="stop-color:#00587E"/>
@@ -12,9 +12,10 @@
 </linearGradient>
 <circle opacity="0.8" fill="url(#SVGID_1_)" enable-background="new    " cx="51" cy="51" r="50"/>
 <g>
-	<path fill="#FFFFFF" d="M67.7,38.1H34.3c-1.3,0-2.3-1-2.3-2.3s1-2.3,2.3-2.3h33.4c1.3,0,2.3,1,2.3,2.3S69,38.1,67.7,38.1z"/>
-	<path fill="#FFFFFF" d="M67.7,53.3H34.3c-1.3,0-2.3-1-2.3-2.3s1-2.3,2.3-2.3h33.4c1.3,0,2.3,1,2.3,2.3S69,53.3,67.7,53.3z"/>
-	<path fill="#FFFFFF" d="M67.7,68.5H34.3c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3h33.4c1.3,0,2.3,1,2.3,2.3
-		C70,67.5,69,68.5,67.7,68.5z"/>
+	<path fill="#FFFFFF" d="M66.8,38.8H35.2c-1.2,0-2.2-1-2.2-2.2c0-1.2,1-2.2,2.2-2.2h31.5c1.2,0,2.2,1,2.2,2.2
+		C68.9,37.9,68,38.8,66.8,38.8z"/>
+	<path fill="#FFFFFF" d="M66.8,53.2H35.2c-1.2,0-2.2-1-2.2-2.2c0-1.2,1-2.2,2.2-2.2h31.5c1.2,0,2.2,1,2.2,2.2
+		C68.9,52.2,68,53.2,66.8,53.2z"/>
+	<path fill="#FFFFFF" d="M66.8,67.5H35.2c-1.2,0-2.2-1-2.2-2.2s1-2.2,2.2-2.2h31.5c1.2,0,2.2,1,2.2,2.2S68,67.5,66.8,67.5z"/>
 </g>
 </svg>

@@ -29,6 +29,9 @@
 .transportsideknapp .status.cancelled {
   border-left: 50px solid #c63629;
 }
+.transportsideknapp a:focus .status {
+  color: #004e66 !important;
+}
 .borderbox {
   padding: 10px;
   border: 1px solid #222;

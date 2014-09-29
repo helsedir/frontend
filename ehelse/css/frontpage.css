@@ -61,6 +61,15 @@
   color: white;
   background: none;
 }
+.entrancebutton.menu:focus {
+  background: #0093a7 !important;
+  transition: none;
+}
+.entrancebutton.menu:focus h2 {
+  color: white !important;
+  background: #0093a7 !important;
+  transition: none;
+}
 .entrancebutton.menu:hover {
   background: #0093a7 !important;
 }
@@ -100,11 +109,13 @@
   margin-bottom: 15px;
 }
 .entrancebutton:focus {
-  background: #002e41;
+  background: #002e41 !important;
+  transition: none;
 }
 .entrancebutton:focus h2,
 .entrancebutton:focus p {
-  background: #002e41;
+  background: #002e41 !important;
+  transition: none;
 }
 .entrancebutton:visited,
 .entrancebutton:hover {
@@ -222,13 +233,13 @@
   margin-top: 0;
   border-bottom: none;
 }
-.frontpage div.conferenceitem > div:nth-child(2n-1) {
+.frontpage div.conferenceitem > .conference_date {
   width: 45%;
   float: left;
   min-height: 75px;
   padding-top: 10px;
 }
-.frontpage div.conferenceitem > div:nth-child(2n) {
+.frontpage div.conferenceitem > .conference_info {
   width: 45%;
   float: left;
   min-height: 75px;
@@ -280,7 +291,6 @@
 }
 .toppmeny .tabs .tab-links li.menu_search {
   background: none;
-  width: 170px;
   padding: 0;
 }
 #menu_search {
@@ -395,6 +405,9 @@
   }
   .frontpage .news p {
     line-height: 24px;
+  }
+  #footer {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {

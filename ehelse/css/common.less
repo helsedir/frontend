@@ -303,44 +303,46 @@ a {
         }
 
         li {
-            margin: 0;
-            float: left;
-            list-style: none;
-            margin-right: 10px;
-            width: 170px;
-            text-align: center;
-            transition: all linear 0.15s;
-            padding-bottom: 6px;
+            span.tabs_header, span.tabs_footer, form {
+                margin: 0;
+                float: left;
+                list-style: none;
+                margin-right: 10px;
+                width: 170px;
+                text-align: center;
+                transition: all linear 0.15s;
+                padding-bottom: 6px;
 
-            &.active {
-                border: none;
+                &.active {
+                    border: none;
 
-                a {
-                    color: @colorDarkBlue;
-                    font-family: @fontCalibriBold;
-                    background: white;
-
-                    &:hover, &:focus {
-                        background: white;
+                    a {
                         color: @colorDarkBlue;
+                        font-family: @fontCalibriBold;
+                        background: white;
+
+                        &:hover, &:focus {
+                            background: white;
+                            color: @colorDarkBlue;
+                        }
                     }
                 }
-            }
 
-            a {
-                display: inline-block;
-                font-size: 16px;
-                transition: all linear 0.15s;
-                width: 100%;
-                border-radius: 0;
-                color: white;
-                text-decoration: none;
-                font-family: @fontCalibri;
-                background: #838078;
-
-                &:hover, &:focus {
+                a {
+                    display: inline-block;
+                    font-size: 16px;
+                    transition: all linear 0.15s;
+                    width: 100%;
+                    border-radius: 0;
                     color: white;
-                    background: #666460;
+                    text-decoration: none;
+                    font-family: @fontCalibri;
+                    background: #838078;
+
+                    &:hover, &:focus {
+                        color: white;
+                        background: #5e5d57;
+                    }
                 }
             }
         }
@@ -356,8 +358,10 @@ a {
             padding: 5px 0 5px 10px;
             border-bottom: solid 1px @colorMediumGray;
 
-            &:last-of-type {
-                border-bottom: 0;
+            @media only screen and (min-width:900px) {
+                &:last-of-type {
+                    border-bottom: 0;
+                }
             }
 
             &:before {
@@ -398,6 +402,14 @@ a {
                 }
             }
         }
+
+        .tabpanel_header[aria-hidden="true"] {
+            display: none;
+        }
+
+        .tabpanel_footer[aria-hidden="true"] {
+            display: none;
+        }
     }
 }
 
@@ -422,11 +434,10 @@ a {
     vertical-align: middle;
     cursor: text;
     display: inline-block;
-    padding-left: 5px;
 }
 
 .search {
-    width: 93%;
+    width: 608px;
     height: 40px;
     background: white;
     cursor: text;
@@ -709,7 +720,6 @@ figure {
     a {
         div.date {
             float: left;
-            width: auto;
             min-width: 260px;
             padding-right: 20px;
             font-weight: bold;
@@ -724,7 +734,7 @@ figure {
 
         div.information {
             float: left;
-            width: 60%;
+            width: 56%;
 
             h3.internal-link.arrow_right {
                 margin-right: 30px;
@@ -739,6 +749,7 @@ figure {
             display: inline-block;
             padding: 0 0 10px 0;
             color: #c63629;
+            float: left;
         }
 
         span.date_monthyear {
@@ -748,6 +759,7 @@ figure {
             display: inline-block;
             color: #c63629;
             text-transform: uppercase;
+            float: left;
         }
 
         h3 {
@@ -883,7 +895,7 @@ iframe {
     padding-left: 35px;
     margin-top: 11px;
     display: block;
-    background-position: 0 7px;
+    background-position: 0 6px;
 
     &:visited {
         color: #838078;
@@ -922,7 +934,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
     padding: 30px 30px 30px 30px;
     background: white;
     position: relative;
@@ -1065,7 +1077,7 @@ p.keyfigures, h4.keyfigures {
             text-align: left;
             color: #222;
             padding-bottom: 3px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
 
@@ -1096,7 +1108,8 @@ p.keyfigures, h4.keyfigures {
             padding-left: 40px;
             padding-bottom: 3px;
             background: url(../img/modules/icons/epost_regular.svg) no-repeat;
-            background-size: 27px 23px;
+            background-size: 24px 26px;
+            background-position: 5%;
 
             &:hover {
                 background: url(../img/modules/icons/epost_regular.svg) no-repeat;
@@ -1305,15 +1318,14 @@ p.keyfigures, h4.keyfigures {
     &.module_print, &.module_social {
         padding: 0;
         background: none;
-        border-top: 2px solid #004e66;
+        border-top: 4px solid #DF9922;
         padding-top: 19px;
         margin: 60px 0 31px 0;
         width: 100%;
         margin-top: 50px;
 
         a, a:visited {
-            color: @colorDarkBlue;
-            text-transform: uppercase;
+            color: #222;
             float: left;
             margin: 0 50px 0 0;
             font-size: 16px;
@@ -1337,7 +1349,7 @@ p.keyfigures, h4.keyfigures {
 
         .ikon_facebook {
             span {
-                background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
+                background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
                 -moz-background-size: 27px 20px;
                 -o-background-size: 27px 20px;
                 -webkit-background-size: 27px 20px;
@@ -1347,7 +1359,7 @@ p.keyfigures, h4.keyfigures {
 
         .ikon_twitter {
             span {
-                background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
+                background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
                 -moz-background-size: 27px 20px;
                 -o-background-size: 27px 20px;
                 -webkit-background-size: 27px 20px;
@@ -1359,7 +1371,7 @@ p.keyfigures, h4.keyfigures {
             display: block;
 
             span {
-                background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
+                background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
                 -moz-background-size: 27px 20px;
                 -o-background-size: 27px 20px;
                 -webkit-background-size: 27px 20px;
@@ -1752,26 +1764,31 @@ fieldset {
         -moz-appearance: none; /* Removes Default Firefox style*/
         background: white url('../img/ikoner/knapp_pil_nedover.svg') no-repeat; /*Adds background-image*/
         background-position: 100%; /*Position of the background-image*/
-        -moz-background-size: 38px;
-        -o-background-size: 38px;
-        -webkit-background-size: 38px;
-        background-size: 38px;
+        -moz-background-size: 38px 38px;
+        -o-background-size: 38px 38px;
+        -webkit-background-size: 38px 38px;
+        background-size: 38px 38px;
         text-indent: 0.01px;
         text-overflow: '';
         color: #222;
+
+        &.selected {
+            box-shadow: #F4D01E 0 0 0 2px;
+            font-weight: bold;
+            outline: none;
+        }
 
         &::-ms-expand {
             display: none;
         }
 
         &:focus, &:active {
-            background: @colorDarkBlue url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
+            background: url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
             background-position: 100%;
-            -moz-background-size: 38px;
-            -o-background-size: 38px;
-            -webkit-background-size: 38px;
-            background-size: 38px;
-            color: white;
+            -moz-background-size: 38px 38px;
+            -o-background-size: 38px 38px;
+            -webkit-background-size: 38px 38px;
+            background-size: 38px 38px;
             border: none;
         }
     }
@@ -1789,7 +1806,6 @@ fieldset {
 
 .refinesearch {
     width: 300px;
-    margin-bottom: 60px;
 
     h2, h5 {
         margin-bottom: 10px;
@@ -1821,19 +1837,18 @@ fieldset {
             select {
                 width: 317px;
                 background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #FFF;
-                -moz-background-size: 39px;
-                -o-background-size: 39px;
-                -webkit-background-size: 39px;
-                background-size: 39px;
+                -moz-background-size: 38px 38px;
+                -o-background-size: 38px 38px;
+                -webkit-background-size: 38px 38px;
+                background-size: 38px 38px;
 
                 &:focus, &:active {
-                    background: @colorDarkBlue url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
+                    background: url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
                     background-position: 95%;
-                    color: white;
-                    -moz-background-size: 39px;
-                    -o-background-size: 39px;
-                    -webkit-background-size: 39px;
-                    background-size: 39px;
+                    -moz-background-size: 39px 39px;
+                    -o-background-size: 39px 39px;
+                    -webkit-background-size: 39px 39px;
+                    background-size: 39px 39px;
                 }
             }
         }
@@ -2147,6 +2162,10 @@ fieldset {
             margin-right: -72%;
         }
     }
+
+    .search {
+        width: 438px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2162,10 +2181,6 @@ fieldset {
     }
 
     .bubble {
-    }
-
-    .search {
-        width: 91%;
     }
 }
 
@@ -2184,9 +2199,11 @@ fieldset {
         width: 100%;
     }
 
-    .module_subscribe {
-        margin: 0;
-        padding: 0;
+    .module {
+        &.module_subscribe {
+            margin: 30px 0 0 0;
+            padding: 0;
+        }
     }
 
     .module_message {
@@ -2197,8 +2214,8 @@ fieldset {
         margin-top: 0;
     }
 
-    .search {
-        width: 84%;
+    .showmorenews {
+        margin: 25px 0;
     }
 }
 
@@ -2208,6 +2225,10 @@ fieldset {
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
         }
+    }
+
+    .search {
+        width: 508px;
     }
 }
 
@@ -2229,7 +2250,7 @@ fieldset {
     h1 {
         font-size: 30px;
         line-height: 36px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     h2 {
@@ -2304,7 +2325,7 @@ fieldset {
     }
 
     .transportsideknapp {
-        margin: 10px 0 10px 0;
+        margin: 20px 0 0 0;
         padding: 5px 0 20px 15px;
         background: white;
 
@@ -2375,7 +2396,7 @@ fieldset {
 
     .toppmeny, .tabs, .tabs-statistics .tabs {
         .tab-links {
-            li {
+            li span {
                 width: 114px;
                 font-size: 12px;
             }
@@ -2448,6 +2469,26 @@ fieldset {
     .chart_div {
         height: 300px;
         margin: 20px 0;
+    }
+
+    .search {
+        width: 85%;
+    }
+
+    .refinesearch {
+        margin-top: 10px;
+    }
+
+    .searchform {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .numberofpublications {
+        padding-top: 0;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }
 
