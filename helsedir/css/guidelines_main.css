@@ -85,9 +85,15 @@ form.retningslinjerSok #searchinput {
   padding: 30px;
   margin: 30px 0;
 }
+@media (max-width: 768px) {
+  .Guidelinesfrontpage .guidelineslist li {
+    padding: 10px;
+  }
+}
 .Guidelinesfrontpage .guidelineslist li h3 {
   margin-top: 0;
   margin-bottom: 15px;
+  color: #0093a7;
 }
 .Guidelinesfrontpage .guidelineslist li:first-child {
   margin-top: 10px;
@@ -103,6 +109,7 @@ form.retningslinjerSok #searchinput {
 
 .Guidelinesfrontpage .guidelinesummary {
   word-wrap: break-word;
+  color: #000;
 }
 
 /*Styles for one single guideline*/
@@ -240,7 +247,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Guidelinefrontpage .aboutexpand {
-    padding: 10px 0;
+    padding: 10px 15px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -384,7 +391,7 @@ form.retningslinjerSok #searchinput {
  ---------------------------------
 */
 @media (max-width: 768px) {
-  .Recommendations .col-md-12 {
+  .Recommendations .col-md-12.nopadding {
     padding: 0;
   }
 }
