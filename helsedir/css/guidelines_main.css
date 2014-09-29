@@ -85,9 +85,15 @@ form.retningslinjerSok #searchinput {
   padding: 30px;
   margin: 30px 0;
 }
+@media (max-width: 768px) {
+  .Guidelinesfrontpage .guidelineslist li {
+    padding: 10px;
+  }
+}
 .Guidelinesfrontpage .guidelineslist li h3 {
   margin-top: 0;
   margin-bottom: 15px;
+  color: #0093a7;
 }
 .Guidelinesfrontpage .guidelineslist li:first-child {
   margin-top: 10px;
@@ -103,6 +109,7 @@ form.retningslinjerSok #searchinput {
 
 .Guidelinesfrontpage .guidelinesummary {
   word-wrap: break-word;
+  color: #000;
 }
 
 /*Styles for one single guideline*/
@@ -240,7 +247,12 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Guidelinefrontpage .aboutexpand {
-    padding: 10px 0;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .Guidelinefrontpage .aboutexpand {
+    padding-left: 5px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -384,7 +396,7 @@ form.retningslinjerSok #searchinput {
  ---------------------------------
 */
 @media (max-width: 768px) {
-  .Recommendations .col-md-12 {
+  .Recommendations .col-md-12.nopadding {
     padding: 0;
   }
 }
@@ -523,7 +535,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation.open {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 }
 .Recommendation:last-child {
@@ -799,11 +811,11 @@ form.retningslinjerSok #searchinput {
   padding: 2px 15px;
   display: inline-block;
   background-color: #e7e7e6;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item:last {
   margin-right: 0px;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item a {
   font-size: 18px;
@@ -812,7 +824,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .tabs ul .resp-tab-item.resp-tab-active {
   background-color: #f6f6f6;
   height: 40px;
-  font-weight: bold;
+  font-family: "Calibri-Bold";
 }
 .Recommendation .tabs ul.open {
   margin-bottom: 0px;
@@ -843,7 +855,7 @@ form.retningslinjerSok #searchinput {
     margin: 0;
     border: 0;
     background-color: #f6f6f6;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-bottom: 3px;
   }
 }

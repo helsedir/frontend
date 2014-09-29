@@ -13,11 +13,15 @@ retningslinjeApp.config(['$routeProvider',
 		}).
 		when('/:guidelineId', {
 			templateUrl: 'partials/guideline_frontpage.html',
-			controller: 'guidelineSectionCtrl'
+			controller: 'guidelineSectionCtrl',
 		}).
 		when('/:guidelineId/section/:sectionId', {
 			templateUrl: 'partials/guideline_recommendations.html',
-			controller: 'guidelineRecommendationCtrl'
+			controller: 'guidelineRecommendationCtrl',
+		}).
+		when('/:guidelineId/childsectionIndex/:sectionId', {
+			templateUrl: 'partials/guideline_childsection.html',
+			controller: 'guidelineChildsectionCtrl',
 		}).
 		
 		otherwise({
@@ -25,3 +29,8 @@ retningslinjeApp.config(['$routeProvider',
 		});
 	}]);
 
+retningslinjeApp.filter('unsafe', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
+    };
+});

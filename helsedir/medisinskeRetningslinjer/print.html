@@ -106,6 +106,19 @@
 	<script type="text/javascript" src="../../js/jquery.tableofcontents.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var retningslinjer = {
+				getData: function(url){
+					var viewModel;
+					$.getJSON(url, function(data){
+						viewModel = ko.mapping.fromJS(data);
+						ko.mapping.fromJS(data, viewModel);
+						ko.applyBindings(viewModel, document.getElementById("htmlTop"));
+						
+						//$('#toc').html(createTOC());
+						//console.log(createTOC());
+					});
+				}
+			};
 			retningslinjer.getData("http://hdirapi.azurewebsites.net/api/v1/guidelines/1");
 
 			

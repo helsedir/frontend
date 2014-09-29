@@ -1,16 +1,4 @@
-var retningslinjer = {
-	getData: function(url){
-		var viewModel;
-		$.getJSON(url, function(data){
-			viewModel = ko.mapping.fromJS(data);
-			ko.mapping.fromJS(data, viewModel);
-			ko.applyBindings(viewModel, document.getElementById("htmlTop"));
-			
-			//$('#toc').html(createTOC());
-			//console.log(createTOC());
-		});
-	}
-};
+
 
 $(runJqueryUIStuff());
 $(runJqueryUIRecommendationStuff());
@@ -145,13 +133,17 @@ function runJqueryUIRecommendationStuff(){
 	  
 	  
 	  jQuery('.Recommendation').on('click', 'h2', function() {
+		$(document).find(".open").find(".recommendationtitle").not(this).trigger("click");
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
 	  	$(this).closest("section").toggleClass("open");
 	  	$(this).toggleClass("clicked"); //make element same background as page
 	  	var wrapper = $(this).closest(".recommendationheader");
 	  	slider(wrapper, wrapper.siblings('.recommendationcontent, .background_information, .button-close'));
-
+	  	if($(this).closest("section").not(".open"))
+	  		$(this).closest("section").ScrollTo({
+    			onlyIfOutside: true
+			});
 	  });
 
 	  //hide recommendation explanation text
@@ -169,7 +161,6 @@ function runJqueryUIRecommendationStuff(){
 	  		height = height.next();
 
 	  	height = height[0].scrollHeight;
-	  	console.log(height);
 	  	
 	  	//make ekg move on expand
 	  	var pulse = $(this).parent().find(".pulse");
@@ -200,7 +191,9 @@ function runJqueryUIRecommendationStuff(){
 			wrapper.removeClass('open');
 			wrapper.closest(".Recommendation").removeClass("open");
 			wrapper.addClass('closed');
-
+			wrapper.ScrollTo({
+    			onlyIfOutside: true
+			});
 		});
 	 }	});
 
@@ -230,11 +223,11 @@ function runJqueryUIStuff(){
 	 });
 
 
-	 $("#picoEvidensprofil").modal({
+	 //$("#picoEvidensprofil").modal({
 	 	//escapeClose: false,
 	 	//clickClose: false,
-	 	showClose: false
-	 });
+	 //	showClose: false
+	 //});
 		
 }
 

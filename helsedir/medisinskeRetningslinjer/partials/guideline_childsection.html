@@ -2,7 +2,7 @@
 	<header id="pageheader" class="pageheader">
 		<div class="headergroup">
 			<div class="container">
-				<h1 class="title">{{retningslinje.title}}</h1>
+				<h1 class="title">{{guideline.title}}</h1>
 				<span class="subtitle">Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
 				<ul class="hidden-xs metadata">
 					<li><span class="number">40</span>Anbefalinger</li>
@@ -14,11 +14,11 @@
 		</div>
 		<div class="aboutexpand container">
 			<div class="metadata">
-				<span class="text">Opprettet {{retningslinje.createdDate | date:'dd.MM.yyyy'}}</span>
-				<span class="text">Sist oppdatert {{retningslinje.updatedDate | date:'dd.MM.yyyy'}}</span>
+				<span class="text">Opprettet {{guideline.createdDate | date:'dd.MM.yyyy'}}</span>
+				<span class="text">Sist oppdatert {{guideline.updatedDate | date:'dd.MM.yyyy'}}</span>
 			</div>
 			<div class="text">
-				{{retningslinje.text}}
+				{{guideline.text}}
 			</div>
 		</div>
 	</header>
@@ -35,16 +35,16 @@
 				<h2 class="small">Innhold i denne retningslinjen</h2>
 				<ul class="sectionlist">
 					
-					<li class="element" ng-repeat="section in retningslinje.sections">
-						<a ng-if="section.childSections.length > 0" href="#/{{retningslinje.guidelineId}}/childsectionIndex/{{section.sectionId}}">
-							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+					<li class="element" ng-repeat="section in section.childSections">
+						<a ng-if="section.childSections.length > 0" href="#/{{guideline.guidelineId}}/childsectionIndex/{{section.sectionId}}">
+							<h3><span>{{guideline.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img class="haschildsections" src="../../img/modules/icons/ico-mer.png" alt="" />
 							</div>
 						</a>
-						<a ng-if="section.childSections.length == 0" href="#/{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
-							<h3><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+						<a ng-if="section.childSections.length == 0" href="#/{{guideline.guidelineId}}/section/{{section.sectionId}}">
+							<h3><span>{{guideline.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div class="numberofrecommendations">
@@ -93,11 +93,10 @@
 				</div> <!-- cols -->
 				</div><!-- row -->
 			</div>
-
 			</article> <!-- end container -->
 			<script>
 			//We need to wait until Angular is finished with the DOM
-			    window.setTimeout(function(){
-			        runJqueryUIStuff();
-			    }, 500);
+			window.setTimeout(function(){
+			runJqueryUIStuff();
+			}, 500);
 			</script>
