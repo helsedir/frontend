@@ -49,8 +49,8 @@ $(document).ready(function () {
             $('#mainsearchcolumn').slideDown(500);
             $('#mainsearchcolumn input').focus();
             if ($('#mobilemenu').hasClass('js-expanded')) {
-                $('.js-expand').addClass('visuallyhidden');
                 $('#mobilemenu').removeClass('js-expanded');
+                expandedContent.slideUp(500);
             };
         }
     });

@@ -186,7 +186,7 @@ body {
     }
 
     .has-hidden-content {
-        h2 {
+        h2.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -199,7 +199,7 @@ body {
             }
         }
 
-        h3 {
+        h3.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -221,7 +221,7 @@ body {
 		cursor: pointer;
 	}*/
     .has-visible-content {
-        h2 {
+        h2.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -234,7 +234,7 @@ body {
             }
         }
 
-        h3 {
+        h3.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -393,6 +393,12 @@ body {
 
             .tabpanel_footer[aria-hidden="true"] {
                 display: none;
+            }
+
+            .tabpanel_header {
+                li:last-of-type {
+                    border-bottom: none;
+                }
             }
         }
     }
@@ -1962,6 +1968,27 @@ body {
         h1 {
             width: 100%;
         }
+
+        .refinesearch.accordion_mobile {
+            margin-top: 10px;
+            max-width: none;
+
+            h2 {
+                margin-bottom: 0;
+
+                &:before {
+                    font-size: 33px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .accordion_mobile h2 {
+            padding-bottom: 10px;
+            -ms-word-break: break-word;
+            word-break: break-word;
+        }
     }
 }
 
@@ -2038,12 +2065,6 @@ body {
                     }
                 }
             }
-        }
-
-        .accordion_mobile h2 {
-            padding-bottom: 10px;
-            -ms-word-break: break-word;
-            word-break: break-word;
         }
 
         .xs-no-padding {
@@ -2259,21 +2280,6 @@ body {
 
         .searchform input {
             width: 85%;
-        }
-
-        .refinesearch.accordion_mobile {
-            margin-top: 10px;
-            max-width: none;
-
-            h2 {
-                margin-bottom: 0;
-
-                &:before {
-                    font-size: 33px;
-                    margin-left: 0;
-                    margin-right: 10px;
-                }
-            }
         }
 
         .numberofpublications {
@@ -2613,6 +2619,7 @@ html {
             line-height: 3.6rem;
             margin-top: 20px;
             margin-bottom: 15px;
+            padding-bottom: 3px;
         }
 
         h2 {

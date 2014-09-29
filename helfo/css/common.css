@@ -191,52 +191,52 @@ body {
 			padding-left: 33px;
 		}*/
 }
-.container .has-hidden-content h2,
-.container-fluid .has-hidden-content h2 {
+.container .has-hidden-content h2.collapse,
+.container-fluid .has-hidden-content h2.collapse {
   cursor: pointer;
   margin-left: 35px;
 }
-.container .has-hidden-content h2:before,
-.container-fluid .has-hidden-content h2:before {
+.container .has-hidden-content h2.collapse:before,
+.container-fluid .has-hidden-content h2.collapse:before {
   float: left;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
   margin-left: -35px;
 }
-.container .has-hidden-content h3,
-.container-fluid .has-hidden-content h3 {
+.container .has-hidden-content h3.collapse,
+.container-fluid .has-hidden-content h3.collapse {
   cursor: pointer;
   margin-left: 35px;
 }
-.container .has-hidden-content h3:before,
-.container-fluid .has-hidden-content h3:before {
+.container .has-hidden-content h3.collapse:before,
+.container-fluid .has-hidden-content h3.collapse:before {
   float: left;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
   margin-left: -35px;
 }
-.container .has-visible-content h2,
-.container-fluid .has-visible-content h2 {
+.container .has-visible-content h2.collapse,
+.container-fluid .has-visible-content h2.collapse {
   cursor: pointer;
   margin-left: 35px;
 }
-.container .has-visible-content h2:before,
-.container-fluid .has-visible-content h2:before {
+.container .has-visible-content h2.collapse:before,
+.container-fluid .has-visible-content h2.collapse:before {
   float: left;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
   margin-left: -35px;
 }
-.container .has-visible-content h3,
-.container-fluid .has-visible-content h3 {
+.container .has-visible-content h3.collapse,
+.container-fluid .has-visible-content h3.collapse {
   cursor: pointer;
   margin-left: 35px;
 }
-.container .has-visible-content h3:before,
-.container-fluid .has-visible-content h3:before {
+.container .has-visible-content h3.collapse:before,
+.container-fluid .has-visible-content h3.collapse:before {
   float: left;
   content: "\f106";
   font-family: "FontAwesome";
@@ -423,6 +423,10 @@ body {
 .container .tabs .tab-content .tabpanel_footer[aria-hidden="true"],
 .container-fluid .tabs .tab-content .tabpanel_footer[aria-hidden="true"] {
   display: none;
+}
+.container .tabs .tab-content .tabpanel_header li:last-of-type,
+.container-fluid .tabs .tab-content .tabpanel_header li:last-of-type {
+  border-bottom: none;
 }
 .container .chart_div,
 .container-fluid .chart_div {
@@ -2023,6 +2027,23 @@ body {
   .container h1 {
     width: 100%;
   }
+  .container .refinesearch.accordion_mobile {
+    margin-top: 10px;
+    max-width: none;
+  }
+  .container .refinesearch.accordion_mobile h2 {
+    margin-bottom: 0;
+  }
+  .container .refinesearch.accordion_mobile h2:before {
+    font-size: 33px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .container .accordion_mobile h2 {
+    padding-bottom: 10px;
+    -ms-word-break: break-word;
+    word-break: break-word;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .container .socialmedia a:first-of-type {
@@ -2075,11 +2096,6 @@ body {
   }
   .container .tabs .tab-content ul li {
     padding: 5px 0;
-  }
-  .container .accordion_mobile h2 {
-    padding-bottom: 10px;
-    -ms-word-break: break-word;
-    word-break: break-word;
   }
   .container .xs-no-padding {
     padding-left: 0 !important;
@@ -2261,18 +2277,6 @@ body {
   }
   .container .searchform input {
     width: 85%;
-  }
-  .container .refinesearch.accordion_mobile {
-    margin-top: 10px;
-    max-width: none;
-  }
-  .container .refinesearch.accordion_mobile h2 {
-    margin-bottom: 0;
-  }
-  .container .refinesearch.accordion_mobile h2:before {
-    font-size: 33px;
-    margin-left: 0;
-    margin-right: 10px;
   }
   .container .numberofpublications {
     padding-top: 0;
@@ -2637,6 +2641,7 @@ html {
     line-height: 3.6rem;
     margin-top: 20px;
     margin-bottom: 15px;
+    padding-bottom: 3px;
   }
   .container h2 {
     font-size: 2.8rem;
