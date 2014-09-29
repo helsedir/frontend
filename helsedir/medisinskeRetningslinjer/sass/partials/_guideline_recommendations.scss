@@ -6,7 +6,7 @@
  ---------------------------------
 */
 
-.Recommendations .col-md-12 {
+.Recommendations .col-md-12.nopadding {
     @include breakpoint("mobile") {
         padding: 0;
     }

@@ -16,7 +16,7 @@
             <form class="retningslinjerSok">
                 <label for="searchinput">Søk etter anbefalinger i retningslinjer og veiledere</label>
                 <div id="search_input_retningslinjer">
-                    <input id="searchinput" class="search typeahead" type="text" placeholder="Amming, Sepsis, R10, Benzylpenicillin.." />
+                    <input id="searchinput" class="search typeahead" type="text" placeholder="Amming, Sepsis.." />
                 </div>
             </form>
             
@@ -54,13 +54,13 @@
             <span class="guidelinecount">120 retningslinjer og veiledere</span>
             <ul class="guidelineslist">
                 <li ng-repeat="guideline in guidelines">
-                    <div class="transportsideknapp">
+
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
                             <h3>{{guideline.title}}</h3>
                             <p class="guidelinesummary">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
                         </a>
-                    </div>
+
                 </li>
             </ul>
             <!-- cols -->
@@ -81,3 +81,9 @@
     </div>
     <!-- end container -->
 </article>
+<script>
+//We need to wait until Angular is finished with the DOM
+    window.setTimeout(function(){
+        runJqueryUIRecommendationStuff();
+    }, 500);
+</script>
