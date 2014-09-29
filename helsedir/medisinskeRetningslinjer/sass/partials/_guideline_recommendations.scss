@@ -140,7 +140,7 @@
     }
     @include breakpoint("mobile") {
         &.open {
-            margin-bottom: 150px;
+            margin-bottom: 100px;
         }
     }
 
@@ -434,7 +434,7 @@
             margin: 0;
             border: 0;
             background-color: $colorBase-light;
-            padding-top: 3px;
+            padding-top: 1px;
             padding-bottom: 3px;
         }
 

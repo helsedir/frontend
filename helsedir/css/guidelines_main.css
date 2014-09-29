@@ -535,7 +535,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation.open {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 }
 .Recommendation:last-child {
@@ -855,7 +855,7 @@ form.retningslinjerSok #searchinput {
     margin: 0;
     border: 0;
     background-color: #f6f6f6;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-bottom: 3px;
   }
 }
