@@ -65,14 +65,14 @@
           </div>
           <div class="tabs">
             <ul class="resp-tabs-list">
-              <li ng-show="recommendation.keyinfo.length > 0"><a href="#nokkelinfo">Nøkkelinfo</a></li>
-              <li ng-show="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
-              <li ng-show="recommendation.rational != null"><a href="#rasjonale">Rasjonale</a></li>
-              <li ng-show="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
-              <li ng-show="recommendation.refs != null"><a href="#referanser">Referanser</a></li>
+              <li ng-if="recommendation.keyinfo.length > 0"><a href="#nokkelinfo">Nøkkelinfo</a></li>
+              <li ng-if="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
+              <li ng-if="recommendation.rational != null"><a href="#rasjonale">Rasjonale</a></li>
+              <li ng-if="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
+              <li ng-if="recommendation.refs != null"><a href="#referanser">Referanser</a></li>
             </ul>
             <div class="resp-tabs-container">
-              <div id="nokkelinfo">
+              <div id="nokkelinfo" ng-if="recommendation.keyinfo.length > 0">
                 <div ng-repeat="keyinfo in recommendation.keyInfo">
                 <section ng-show="keyInfo.benefits != null">
                   <h2 >Fordeler og ulemper</h2>
@@ -92,7 +92,7 @@
                 </section>
                 </div>
               </div>
-              <div id="vitenskap">
+              <div id="vitenskap" ng-if="recommendation.picos.length > 0">
                 <section class="pico" ng-repeat="pico in recommendation.picos">
                   <dl class="dl-horizontal">
                     <dt>Populasjon</dt>
@@ -224,9 +224,9 @@
 
                 </section>
               </div>
-              <div id="rasjonale" ng-bind-html="recommendation.rational | unsafe"></div>
-              <div id="praktisk" ng-bind-html="recommendation.practicalAdvice | unsafe"></div>
-              <div id="referanser" ng-bind-html="recommendation.refs | unsafe"></div>
+              <div id="rasjonale" ng-if="recommendation.rational != null" ng-bind-html="recommendation.rational | unsafe"></div>
+              <div id="praktisk" ng-if="recommendation.practicalAdvic != null" ng-bind-html="recommendation.practicalAdvice | unsafe"></div>
+              <div id="referanser" ng-if="recommendation.refs != null" ng-bind-html="recommendation.refs | unsafe"></div>
             </div>
           </div>
         </div>
