@@ -13,11 +13,11 @@ retningslinjeApp.config(['$routeProvider',
 		}).
 		when('/:guidelineId', {
 			templateUrl: 'partials/guideline_frontpage.html',
-			controller: 'guidelineSectionCtrl'
+			controller: 'guidelineSectionCtrl',
 		}).
 		when('/:guidelineId/section/:sectionId', {
 			templateUrl: 'partials/guideline_recommendations.html',
-			controller: 'guidelineRecommendationCtrl'
+			controller: 'guidelineRecommendationCtrl',
 		}).
 		
 		otherwise({
