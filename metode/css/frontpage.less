@@ -68,6 +68,14 @@ h2 {
             &:hover {
                 background: #01737c;
             }
+
+            &:focus {
+                background: #01737c;
+
+                h2, p {
+                    background: #01737c;
+                }
+            }
         }
     }
 
@@ -103,10 +111,10 @@ h2 {
         }
 
         &:focus {
-            background: @colorDarkBlue;
+            background: #002e41;
 
             h2, p {
-                background: @colorDarkBlue;
+                background: #002e41;
             }
         }
 
@@ -260,6 +268,14 @@ h2 {
             border-bottom: 2px dotted @colorMediumBlue;
             display: inline;
         }
+
+        &:focus {
+            h3 {
+                background: #004e66;
+                color: white !important;
+                outline: 0;
+            }
+        }
     }
 
     .news_item {
@@ -282,6 +298,10 @@ h2 {
             background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
             /* background-position: 0 5px; */
             background-size: 20px;
+        }
+
+        &:focus {
+            background: @colorDarkBlue;
         }
     }
 }
@@ -380,7 +400,7 @@ h2 {
         }
     }
 
-    .method_entrance {
+    a.method_entrance {
         float: none;
         vertical-align: initial;
         text-align: left;
