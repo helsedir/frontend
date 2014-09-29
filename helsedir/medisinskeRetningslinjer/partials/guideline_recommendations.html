@@ -59,8 +59,8 @@
             <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.png">
             <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.png">
             <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.png">
-            <div class="recommendation-text">
-              {{recommendation.text}}
+            <div class="recommendation-text" ng-bind-html="recommendation.text | unsafe" >
+              
             </div>
           </div>
           <div class="tabs">
@@ -76,19 +76,19 @@
                 <div ng-repeat="keyinfo in recommendation.keyInfo">
                 <section ng-show="keyInfo.benefits != null">
                   <h2 >Fordeler og ulemper</h2>
-                  {{keyInfo.benefits}}
+                  <div ng-bind-html="keyInfo.benefits | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.evidence != null">
                   <h2>Kvalitet på dokumentasjonen</h2>
-                  {{keyInfo.evidence}}
+                  <div ng-bind-html="keyInfo.evidence | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.preference != null">
                   <h2>Verdier og preferanser</h2>
-                  {{keyInfo.preference}}
+                  <div ng-bind-html="keyInfo.preference | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.resources != null">
                   <h2>Ressurshensyn</h2>
-                  {{keyInfo.resources}}
+                  <div ng-bind-html="keyInfo.resources | unsafe"></div>
                 </section>
                 </div>
               </div>
@@ -96,13 +96,13 @@
                 <section class="pico" ng-repeat="pico in recommendation.picos">
                   <dl class="dl-horizontal">
                     <dt>Populasjon</dt>
-                    <dd>{{pico.population}}</dd>
+                    <dd ng-bind-html="pico.population | unsafe"></dd>
                     <dt>Intervensjon</dt>
-                    <dd>{{pico.intervention}}</dd>
+                    <dd ng-bind-html="pico.intervention | unsafe"></dd>
                     <dt>Komparator</dt>
-                    <dd>{{pico.control}}</dd>
+                    <dd ng-bind-html="pico.control | unsafe"></dd>
                     <dt>Utfall</dt>
-                    <dd>{{pico.outcome}}</dd>
+                    <dd ng-bind-html="pico.outcome | unsafe"></dd>
                   </dl>
 
                   <ul class="linklist">
@@ -224,9 +224,9 @@
 
                 </section>
               </div>
-              <div id="rasjonale">{{recommendation.rational}}</div>
-              <div id="praktisk">{{recommendation.practicalAdvice}}</div>
-              <div id="referanser">{{recommendation.refs}}</div>
+              <div id="rasjonale" ng-bind-html="recommendation.rational | unsafe"></div>
+              <div id="praktisk" ng-bind-html="recommendation.practicalAdvice | unsafe"></div>
+              <div id="referanser" ng-bind-html="recommendation.refs | unsafe"></div>
             </div>
           </div>
         </div>

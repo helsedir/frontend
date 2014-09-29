@@ -388,7 +388,7 @@
         margin-right: 30px;
         text-align: justify;
         .resp-tab-item {
-            $margin: 6px;
+            $margin: 4px;
             cursor: pointer;
             padding: 2px 15px;
             display: inline-block;
@@ -405,7 +405,7 @@
             &.resp-tab-active {
                 background-color: $colorBase-light;
                 height: 40px;
-                font-weight: bold;
+                font-family: $fontCalibriBold;
             }
         }
         &.open {

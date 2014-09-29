@@ -250,6 +250,11 @@ form.retningslinjerSok #searchinput {
     padding: 10px 15px;
   }
 }
+@media (max-width: 992px) {
+  .Guidelinefrontpage .aboutexpand {
+    padding-left: 5px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .Guidelinefrontpage .aboutexpand {
     padding: 30px 0;
@@ -806,11 +811,11 @@ form.retningslinjerSok #searchinput {
   padding: 2px 15px;
   display: inline-block;
   background-color: #e7e7e6;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item:last {
   margin-right: 0px;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item a {
   font-size: 18px;
@@ -819,7 +824,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .tabs ul .resp-tab-item.resp-tab-active {
   background-color: #f6f6f6;
   height: 40px;
-  font-weight: bold;
+  font-family: "Calibri-Bold";
 }
 .Recommendation .tabs ul.open {
   margin-bottom: 0px;
