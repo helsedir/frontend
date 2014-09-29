@@ -21,6 +21,17 @@ retningslinjeControllers.controller('searchCtrl', ['$scope', '$routeParams', 'Gu
     }
 ]);
 
+retningslinjeControllers.controller('guidelineChildsectionCtrl', ['$scope', '$routeParams', 'Section', 'Guideline', 'angularLoad', 
+    function($scope, $routeParams, Section, Guideline, angularLoad) {
+        $scope.section = Section.get({
+                id: $routeParams.sectionId
+            });
+        $scope.guideline = Guideline.get({
+            id: $routeParams.guidelineId
+        });
+    }
+]);
+
 retningslinjeControllers.controller('guidelineRecommendationCtrl', ['$scope', '$routeParams', 'Section', 'Guideline', 'angularLoad', 
     function($scope, $routeParams, Section, Guideline, angularLoad) {
         $scope.section = Section.get({

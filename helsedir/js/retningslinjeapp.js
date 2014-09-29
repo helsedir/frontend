@@ -19,6 +19,10 @@ retningslinjeApp.config(['$routeProvider',
 			templateUrl: 'partials/guideline_recommendations.html',
 			controller: 'guidelineRecommendationCtrl',
 		}).
+		when('/:guidelineId/childsectionIndex/:sectionId', {
+			templateUrl: 'partials/guideline_childsection.html',
+			controller: 'guidelineChildsectionCtrl',
+		}).
 		
 		otherwise({
 			redirectTo: '/'
