@@ -32,7 +32,6 @@ $(document).ready(function () {
                 expander.blur();
             } else {
                 expandedContent.slideDown(500);
-
                 expander.addClass('js-expanded');
             }
             visible = !visible;
@@ -53,5 +52,12 @@ $(document).ready(function () {
                 expandedContent.slideUp(500);
             };
         }
+    });
+    $('#menushortcut').on('click', function () {
+        var expandedContent = $(".js-expand");
+        expandedContent.slideDown(500);
+        $('#tab_header1').focus();
+        $('.js-expander').addClass('js-expanded');
+        visible = !visible;
     });
 });

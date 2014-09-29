@@ -49,4 +49,18 @@
             $('#mainsearch input').focus();
         }
     });
+
+    $('.hide_menu').on('click', function () {
+        expandedContent.slideUp();
+        expander.removeClass('js-expanded');
+        expander.blur();
+    });
+
+    $('#menushortcut').on('click', function () {
+        var expandedContent = $(".js-expand");
+        expandedContent.slideDown(500);
+        $('#tab_header1').focus();
+        $('.js-expander').addClass('js-expanded');
+        visible = !visible;
+    });
 });

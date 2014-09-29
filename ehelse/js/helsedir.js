@@ -89,13 +89,6 @@
     //styles tables. workaround for IE8
     $('table.table_general tr:nth-child(2n+1)').addClass('odd');
 
-    $('#menushortcut').on('click', function () {
-        var expandedContent = $(".js-expand");
-        expandedContent.slideDown(500);
-
-        $('#tab_header1').focus();
-    });
-
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {
         $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);

@@ -54,6 +54,7 @@
         if (windowWidth <= 899) {
             $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
+                $collapseElement.addClass('collapse');
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
                 if (!$contentToHide.hasClass('visuallyhidden') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
@@ -61,10 +62,10 @@
                     $parentTag.addClass(' has-hidden-content');
                 }
             });
-            //stretch search field in header to window width on mobile screens
         } else {
             $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
+                $collapseElement.removeClass('collapse');
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
                 if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion') && !$parentTag.is('a')) {
@@ -105,15 +106,6 @@
     });
     //styles tables. workaround for IE8
     $('table.table_general tr:nth-child(2n+1)').addClass('odd');
-
-    $('#menushortcut').on('click', function () {
-        var expandedContent = $(".js-expand");
-        expandedContent.slideUp(0, function () {
-            expandedContent.removeClass('visuallyhidden')
-                .slideDown(500);
-        });
-        $('#tab_header1').focus();
-    });
 
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {

@@ -204,6 +204,10 @@ body {
   font-size: 40px;
   margin-left: -35px;
 }
+.container .has-hidden-content.refinesearch h2.collapse,
+.container-fluid .has-hidden-content.refinesearch h2.collapse {
+  margin-left: 0;
+}
 .container .has-hidden-content h3.collapse,
 .container-fluid .has-hidden-content h3.collapse {
   cursor: pointer;
@@ -229,6 +233,10 @@ body {
   font-family: "FontAwesome";
   font-size: 40px;
   margin-left: -35px;
+}
+.container .has-visible-content.refinesearch h2.collapse,
+.container-fluid .has-visible-content.refinesearch h2.collapse {
+  margin-left: 0;
 }
 .container .has-visible-content h3.collapse,
 .container-fluid .has-visible-content h3.collapse {
@@ -1245,6 +1253,7 @@ body {
 .container .module.module_social .ikon_skrivut,
 .container-fluid .module.module_social .ikon_skrivut {
   display: block;
+  font-weight: 300;
 }
 .container .module.module_print .ikon_skrivut span,
 .container-fluid .module.module_print .ikon_skrivut span,
@@ -2570,7 +2579,7 @@ html {
   font-size: 1.8rem;
   line-height: 2.6rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #756d6a;
 }
 .container .navigate_forward a:focus span,

@@ -99,7 +99,7 @@
 
         &:focus {
             background: url(../img/HELFO-logo.svg) no-repeat !important;
-            outline: 5px auto -webkit-focus-ring-color;
+            outline: 5px auto #002c42;
             outline-offset: -2px;
         }
     }
@@ -299,7 +299,7 @@
                             &:focus {
                                 background: white;
                                 color: #222;
-                                outline: 5px auto -webkit-focus-ring-color;
+                                outline: 5px auto #002c42;
                                 outline-offset: -2px;
                             }
                         }
@@ -538,7 +538,7 @@
     }
 }
 
-.container-fluid.toppmeny {
+.toppmeny {
     background: #d9dadb;
     padding: 0 0 50px 0 !important;
 
@@ -552,6 +552,14 @@
         margin-bottom: 50px;
         padding-left: 20px;
         margin-top: -40px;
+
+        .hide_menu {
+            background: none;
+            border: none;
+            float: right;
+            margin: 4px 174px 0 0;
+            color: #222;
+        }
 
         .tab-links {
             padding-left: 20px;
@@ -573,7 +581,7 @@
                         &:focus {
                             background: white;
                             color: #222;
-                            outline: 5px auto -webkit-focus-ring-color;
+                            outline: 5px auto #002c42;
                             outline-offset: -2px;
                         }
                     }
@@ -716,6 +724,29 @@
         padding-right: 45px;
     }
 }
+
+.krisestripe {
+    background: #f8b100;
+
+    h1 {
+        border: none;
+        min-width: 0;
+    }
+
+    p a {
+        color: #222;
+        border-bottom: 1px solid #222;
+
+        &:hover {
+            color: #222;
+            border-bottom: 1px solid #222;
+        }
+    }
+
+    img {
+        height: 78px;
+    }
+}
 /**********Media**********/
 
 @media only screen and (max-width: 1199px) {
@@ -803,6 +834,10 @@
     #footer .footerlinkswrapper .contact p {
         width: 100%;
     }
+
+    .toppmeny .tabs .hide_menu {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
@@ -822,6 +857,10 @@
 
     #footer .footerlinkswrapper .contact p {
         width: 100%;
+    }
+
+    .toppmeny .tabs .hide_menu {
+        margin-right: 31px;
     }
 }
 
@@ -924,6 +963,10 @@
 
     #footer {
         margin-top: 30px;
+    }
+
+    .toppmeny .tabs .hide_menu {
+        margin-right: 0;
     }
 }
 
