@@ -34,6 +34,7 @@
   .container h1,
   .container-fluid h1 {
     border-bottom: none;
+    margin-top: 0;
   }
   .container p a,
   .container-fluid p a,
@@ -54,6 +55,29 @@
   .container ul li a,
   .container-fluid ul li a {
     color: #222;
+  }
+  .container .has-hidden-content h2.collapse,
+  .container-fluid .has-hidden-content h2.collapse {
+    margin-left: 0;
+  }
+  .container .has-hidden-content h2.collapse:before,
+  .container-fluid .has-hidden-content h2.collapse:before {
+    content: '';
+    margin-left: 0;
+  }
+  .container p.visuallyhidden,
+  .container-fluid p.visuallyhidden {
+    position: initial !important;
+  }
+  .container .method_entrance .navigate_back,
+  .container-fluid .method_entrance .navigate_back,
+  .container .navigate_forward,
+  .container-fluid .navigate_forward,
+  .container .refinesearch,
+  .container-fluid .refinesearch,
+  .container .searchform,
+  .container-fluid .searchform {
+    display: none;
   }
 }
 /*# sourceMappingURL=print.css.map */
