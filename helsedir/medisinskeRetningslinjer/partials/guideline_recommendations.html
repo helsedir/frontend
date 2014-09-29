@@ -65,11 +65,11 @@
           </div>
           <div class="tabs">
             <ul class="resp-tabs-list">
-              <li><a href="#nokkelinfo">Nøkkelinfo</a></li>
-              <li><a href="#vitenskap">Vitenskapelige spm.</a></li>
-              <li><a href="#rasjonale">Rasjonale</a></li>
-              <li><a href="#praktisk">Praktisk info</a></li>
-              <li><a href="#referanser">Referanser</a></li>
+              <li ng-show="recommendation.keyinfo.length > 0"><a href="#nokkelinfo">Nøkkelinfo</a></li>
+              <li ng-show="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
+              <li ng-show="recommendation.rational != null"><a href="#rasjonale">Rasjonale</a></li>
+              <li ng-show="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
+              <li ng-show="recommendation.refs != null"><a href="#referanser">Referanser</a></li>
             </ul>
             <div class="resp-tabs-container">
               <div id="nokkelinfo">
