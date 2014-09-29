@@ -133,13 +133,17 @@ function runJqueryUIRecommendationStuff(){
 	  
 	  
 	  jQuery('.Recommendation').on('click', 'h2', function() {
+		$(document).find(".open").find(".recommendationtitle").not(this).trigger("click");
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
 	  	$(this).closest("section").toggleClass("open");
 	  	$(this).toggleClass("clicked"); //make element same background as page
 	  	var wrapper = $(this).closest(".recommendationheader");
 	  	slider(wrapper, wrapper.siblings('.recommendationcontent, .background_information, .button-close'));
-
+	  	if($(this).closest("section").not(".open"))
+	  		$(this).closest("section").ScrollTo({
+    			onlyIfOutside: true
+			});
 	  });
 
 	  //hide recommendation explanation text
@@ -187,7 +191,9 @@ function runJqueryUIRecommendationStuff(){
 			wrapper.removeClass('open');
 			wrapper.closest(".Recommendation").removeClass("open");
 			wrapper.addClass('closed');
-
+			wrapper.ScrollTo({
+    			onlyIfOutside: true
+			});
 		});
 	 }	});
 
