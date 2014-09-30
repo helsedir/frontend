@@ -1,5 +1,9 @@
 /*Common styles for all guidelines*/
 
+article{
+    min-height: 900px;
+}
+
 .title, .subtitle, .sectiontitle{
     word-wrap: break-word;
 }
@@ -83,4 +87,51 @@ form.retningslinjerSok {
         font-weight: bold;
         color: #000000;
     }
+}
+
+
+
+/* IKONER */
+.container .module.module_print .ikon_disclaimer span,
+.container-fluid .module.module_print .ikon_disclaimer span,
+.container .module.module_social .ikon_disclaimer span,
+.container-fluid .module.module_social .ikon_disclaimer span {
+  background: url(../img/modules/icons/ikon_disclaimer_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_disclaimer:hover span,
+.container-fluid .module.module_print .ikon_disclaimer:hover span,
+.container .module.module_social .ikon_disclaimer:hover span,
+.container-fluid .module.module_social .ikon_disclaimer:hover span {
+  background: url(../img/modules/icons/ikon_disclaimer_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+
+.container .module.module_print .ikon_metode span,
+.container-fluid .module.module_print .ikon_metode span,
+.container .module.module_social .ikon_metode span,
+.container-fluid .module.module_social .ikon_metode span {
+  background: url(../img/modules/icons/ikon_metodikk_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_metode:hover span,
+.container-fluid .module.module_print .ikon_metode:hover span,
+.container .module.module_social .ikon_metode:hover span,
+.container-fluid .module.module_social .ikon_metode:hover span {
+  background: url(../img/modules/icons/ikon_metodikk_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
 }

@@ -132,7 +132,7 @@ function runJqueryUIRecommendationStuff(){
 	  jQuery('.recommendationheader').addClass('closed');
 	  
 	  
-	  jQuery('.Recommendation').on('click', 'h2', function() {
+	  jQuery('.Recommendation').on('click', '.recommendationtitle', function() {
 		$(document).find(".open").find(".recommendationtitle").not(this).trigger("click");
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
