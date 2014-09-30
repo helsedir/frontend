@@ -262,8 +262,8 @@
                                         <option role="option">Lege</option>
                                         <option role="option">Tannlege/tannpleier</option>
                                         <option role="option">Fysioterapeut</option>
-                                        <option role="option">Apotek/bandasjist</option>
-                                        <option role="option">Jordmor/helsestasjon</option>
+                                        <option role="option">Apotek og bandasjist</option>
+                                        <option role="option">Jordmor og helsestasjon</option>
                                         <option role="option">Manuellterapeut</option>
                                         <option role="option">Kiropraktor</option>
                                         <option role="option">Ortoptist</option>
@@ -706,7 +706,7 @@
                 $('.category_leverandoer').slideUp();
                 $('.numberofpublications').text('5 treff');
             }
-            else if (yrke == "Apotek/bandasjist") {
+            else if (yrke == "Apotek og bandasjist") {
                 $('.content').css('min-height', '500px');
                 $('.category_tannlege').slideUp();
                 $('.category_lege').slideUp();
@@ -774,7 +774,7 @@
                 $('.numberofpublications').text('4 treff');
             }
             else if (getQueryVariable("yrke") == "apotek") {
-                $("#yrke").val("Apotek/bandasjist");
+                $("#yrke").val("Apotek og bandasjist");
                 $('.content').css('height', '500px');
                 $('.category_lege').hide();
                 $('.category_tannlege').hide();

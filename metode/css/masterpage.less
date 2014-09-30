@@ -470,7 +470,7 @@ a.logo {
     header {
         &.masterheader {
             .menubutton {
-                margin-top: 31px;
+                margin-top: 0;
             }
         }
     }
@@ -523,6 +523,20 @@ a.logo {
         }
     }
 
+    header {
+        &.masterheader {
+            margin: 0;
+
+            .menubutton, .about, .english {
+                margin-top: 2px;
+            }
+        }
+    }
+
+    a.logo {
+        margin: 2px 0;
+    }
+
     .hidden-mobile {
         display: none;
         padding: 10px;
@@ -548,5 +562,9 @@ a.logo {
 
     .footerlinkswrapper {
         background: white;
+
+        h4 {
+            margin-top: 30px;
+        }
     }
 }
