@@ -2022,7 +2022,7 @@ fieldset {
     }
 }
 
-.method_entrance {
+a.method_entrance {
     margin: 50px 40px 50px 40px;
     cursor: pointer;
     display: inline-block;
@@ -2032,6 +2032,8 @@ fieldset {
 
     &:focus {
         background: none;
+        outline: 5px auto @colorMediumBlue;
+        outline-offset: -2px;
     }
 
     &:first-of-type {

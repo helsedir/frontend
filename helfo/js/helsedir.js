@@ -1,7 +1,14 @@
 ﻿$(function () {
     //creates collapsible headings. The tag wrapping this class will get an angle icon
-    $(".accordion h2, .accordion h3").each(function () {
-        var collapseElement = $(this);
+    $(".accordion").each(function () {
+        var collapseElement = '';
+        if ($(this).children(":first").is('h2')) {
+            collapseElement = $(".accordion h2");
+        }
+        else if ($(this).children(":first").is('h3')) {
+            collapseElement = $(".accordion h3");
+        }
+        collapseElement.addClass('collapse');
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
         contentToHide.addClass(' visuallyhidden');
@@ -10,34 +17,44 @@
 
     //handles click events on collapsible headings
     $(".accordion h2, .accordion h3").click(function () {
-        var collapseElement = $(this);
-        var contentToHide = collapseElement.next();
-        var parentTag = collapseElement.parent();
+        if (($(this)).hasClass('collapse')) {
+            var collapseElement = $(this);
+            var contentToHide = collapseElement.next();
+            var parentTag = collapseElement.parent();
 
-        if (!contentToHide.hasClass("visuallyhidden")) {
-            contentToHide.slideUp('fast', function () {
-                contentToHide.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-            parentTag.removeClass("has-visible-content");
-            parentTag.addClass("has-hidden-content");
-        } else {
-            contentToHide.slideUp(0, function () {
-                contentToHide.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-            parentTag.addClass("has-visible-content");
-            parentTag.removeClass("has-hidden-content");
+            if (!contentToHide.hasClass("visuallyhidden")) {
+                contentToHide.slideUp('fast', function () {
+                    contentToHide.addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+                parentTag.removeClass("has-visible-content");
+                parentTag.addClass("has-hidden-content");
+            } else {
+                contentToHide.slideUp(0, function () {
+                    contentToHide.removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+                parentTag.addClass("has-visible-content");
+                parentTag.removeClass("has-hidden-content");
+            }
         }
     });
 
-    //creates collapsible headings based on screen size
     $(window).on('load resize', function () {
         var windowWidth = $(window).width();
 
         if (windowWidth <= 599) {
+            $('#mainsearch, #mainsearchcolumn').css('width', windowWidth);
+        };
+    });
+    //creates collapsible headings based on screen size
+    $(window).on('load resize', function () {
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 899) {
             $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
+                $collapseElement.addClass('collapse');
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
                 if (!$contentToHide.hasClass('visuallyhidden') && !$parentTag.hasClass('has-visible-content') && !$parentTag.is('a')) {
@@ -45,11 +62,10 @@
                     $parentTag.addClass(' has-hidden-content');
                 }
             });
-            //stretch search field in header to window width on mobile screens
-            $('#mainsearch, #mainsearchcolumn').css('width', windowWidth);
         } else {
             $(".accordion_mobile h2").each(function () {
                 var $collapseElement = $(this);
+                $collapseElement.removeClass('collapse');
                 var $contentToHide = $collapseElement.next();
                 var $parentTag = $collapseElement.parent();
                 if (($contentToHide.hasClass('visuallyhidden') || $parentTag.hasClass('has-hidden-content')) && !$collapseElement.hasClass('accordion') && !$parentTag.is('a')) {
@@ -65,7 +81,7 @@
     $(".accordion_mobile h2").click(function () {
         var windowWidth = $(window).width();
 
-        if (windowWidth <= 599) {
+        if (windowWidth <= 899) {
             var $header = $(this);
             var $content = $header.next();
             var $parent = $header.parent();
@@ -90,15 +106,6 @@
     });
     //styles tables. workaround for IE8
     $('table.table_general tr:nth-child(2n+1)').addClass('odd');
-
-    $('#menushortcut').on('click', function () {
-        var expandedContent = $(".js-expand");
-        expandedContent.slideUp(0, function () {
-            expandedContent.removeClass('visuallyhidden')
-                .slideDown(500);
-        });
-        $('#tab_header1').focus();
-    });
 
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {

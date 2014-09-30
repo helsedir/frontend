@@ -49,12 +49,18 @@
     }
 }
 
-.logo {
+a.logo {
     display: block;
     height: 76px;
     margin-top: 19px;
     max-width: 346px;
     background: url(../img/logo.svg) no-repeat;
+
+    &:focus {
+        background: url(../img/logo.svg) no-repeat;
+        outline: 5px auto @colorMediumBlue;
+        outline-offset: -2px;
+    }
 }
 
 #header {
@@ -141,6 +147,10 @@
 
                 &:hover {
                     color: #222;
+                }
+
+                &:focus {
+                    background: @colorDarkBlue;
                 }
             }
         }
@@ -311,6 +321,11 @@
         height: 25px;
         display: inline-block;
         margin: 90px 20px 45px 0;
+
+        &:focus {
+            outline: 5px auto @colorMediumBlue;
+            outline-offset: -2px;
+        }
     }
 
     .helsedirektoratet {

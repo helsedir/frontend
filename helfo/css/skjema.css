@@ -254,9 +254,11 @@ a.method_entrance:focus {
     width: 40px;
   }
   .selected .icon .number {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 2rem;
   }
   .passive:hover .icon {
     background-size: 40px 40px;
@@ -267,7 +269,11 @@ a.method_entrance:focus {
     width: 40px;
   }
   .passive .icon .number {
-    display: none;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {

@@ -19,12 +19,17 @@
 .shortcuts a:focus {
   top: 10px;
 }
-.logo {
+a.logo {
   display: block;
   height: 76px;
   margin-top: 19px;
   max-width: 346px;
   background: url(../img/logo.svg) no-repeat;
+}
+a.logo:focus {
+  background: url(../img/logo.svg) no-repeat;
+  outline: 5px auto #0093a7;
+  outline-offset: -2px;
 }
 #header {
   background: white;
@@ -100,6 +105,9 @@
 }
 .footerlinkswrapper .linklist li a.internal-link:hover {
   color: #222;
+}
+.footerlinkswrapper .linklist li a.internal-link:focus {
+  background: #004e66;
 }
 .footerlinkswrapper .linklist li a:hover {
   border-bottom: 1px solid #222;
@@ -245,6 +253,17 @@
   height: 25px;
   display: inline-block;
   margin: 90px 20px 45px 0;
+}
+.logoline .helsedirektoratet:focus,
+.logoline .kunnskapssenteret:focus,
+.logoline .legemiddelverk:focus,
+.logoline .helsemidt:focus,
+.logoline .helsenord:focus,
+.logoline .helsesoeroest:focus,
+.logoline .helsevest:focus,
+.logoline .straalevern:focus {
+  outline: 5px auto #0093a7;
+  outline-offset: -2px;
 }
 .logoline .helsedirektoratet {
   background: url(../img/logoer/logo_hdir.png) no-repeat;

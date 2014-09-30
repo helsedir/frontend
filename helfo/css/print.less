@@ -29,6 +29,7 @@
     .container, .container-fluid {
         h1 {
             border-bottom: none;
+            margin-top: 0;
         }
 
         p {
@@ -49,6 +50,23 @@
 
         ul li a {
             color: #222;
+        }
+
+        .has-hidden-content h2.collapse {
+            margin-left: 0;
+
+            &:before {
+                content: '';
+                margin-left: 0;
+            }
+        }
+
+        p.visuallyhidden {
+            position: initial !important;
+        }
+
+        .method_entrance .navigate_back, .navigate_forward, .refinesearch, .searchform {
+            display: none;
         }
     }
 }

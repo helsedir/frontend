@@ -18,23 +18,26 @@
 
 @font-face {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local("Roboto Light"), local("Roboto-Light"), url(../fonts/roboto_light/Roboto-Light-webfont.woff) format("woff");
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Roboto Regular"), local("Roboto-Regular"), url(../fonts/roboto_regular/Roboto-Regular-webfont.woff) format("woff");
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
+    src: url('../fonts/roboto_medium/Roboto-Medium-webfont.eot');
+    src: url('../fonts/roboto_medium/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_medium/Roboto-Medium-webfont.woff') format('woff'), url('../fonts/roboto_medium/Roboto-Medium-webfont.ttf') format('truetype'), url('../fonts/roboto_medium/Roboto-Medium-webfont.svg#RobotoMedium') format('svg');
     font-weight: 500;
-    src: local("Roboto Medium"), local("Roboto-Medium"), url(../fonts/roboto_medium/Roboto-Medium-webfont.woff) format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto_regular/Roboto-Regular-webfont.eot');
+    src: url('../fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'), url('../fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'), url('../fonts/roboto_regular/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto_light/Roboto-Light-webfont.eot');
+    src: url('../fonts/roboto_light/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_light/Roboto-Light-webfont.woff') format('woff'), url('../fonts/roboto_light/Roboto-Light-webfont.ttf') format('truetype'), url('../fonts/roboto_light/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -186,7 +189,7 @@ body {
     }
 
     .has-hidden-content {
-        h2 {
+        h2.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -199,7 +202,13 @@ body {
             }
         }
 
-        h3 {
+        &.refinesearch {
+            h2.collapse {
+                margin-left: 0;
+            }
+        }
+
+        h3.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -221,7 +230,7 @@ body {
 		cursor: pointer;
 	}*/
     .has-visible-content {
-        h2 {
+        h2.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -234,7 +243,13 @@ body {
             }
         }
 
-        h3 {
+        &.refinesearch {
+            h2.collapse {
+                margin-left: 0;
+            }
+        }
+
+        h3.collapse {
             cursor: pointer;
             margin-left: 35px;
 
@@ -393,6 +408,12 @@ body {
 
             .tabpanel_footer[aria-hidden="true"] {
                 display: none;
+            }
+
+            .tabpanel_header {
+                li:last-of-type {
+                    border-bottom: none;
+                }
             }
         }
     }
@@ -1168,6 +1189,7 @@ body {
 
             .ikon_skrivut {
                 display: block;
+                font-weight: 300;
 
                 span {
                     background: url(../img/ikoner/ikon_print.svg) no-repeat;
@@ -1962,6 +1984,27 @@ body {
         h1 {
             width: 100%;
         }
+
+        .refinesearch.accordion_mobile {
+            margin-top: 10px;
+            max-width: none;
+
+            h2 {
+                margin-bottom: 0;
+
+                &:before {
+                    font-size: 33px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .accordion_mobile h2 {
+            padding-bottom: 10px;
+            -ms-word-break: break-word;
+            word-break: break-word;
+        }
     }
 }
 
@@ -2038,12 +2081,6 @@ body {
                     }
                 }
             }
-        }
-
-        .accordion_mobile h2 {
-            padding-bottom: 10px;
-            -ms-word-break: break-word;
-            word-break: break-word;
         }
 
         .xs-no-padding {
@@ -2259,21 +2296,6 @@ body {
 
         .searchform input {
             width: 85%;
-        }
-
-        .refinesearch.accordion_mobile {
-            margin-top: 10px;
-            max-width: none;
-
-            h2 {
-                margin-bottom: 0;
-
-                &:before {
-                    font-size: 33px;
-                    margin-left: 0;
-                    margin-right: 10px;
-                }
-            }
         }
 
         .numberofpublications {
@@ -2534,7 +2556,7 @@ html {
                 font-size: 1.8rem;
                 line-height: 2.6rem;
                 font-family: @roboto;
-                font-weight: 300;
+                font-weight: 400;
                 color: #756d6a;
             }
 
@@ -2613,6 +2635,7 @@ html {
             line-height: 3.6rem;
             margin-top: 20px;
             margin-bottom: 15px;
+            padding-bottom: 3px;
         }
 
         h2 {

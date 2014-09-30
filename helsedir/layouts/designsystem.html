@@ -31,6 +31,9 @@
     <link href="../css/frontpage.css" rel="stylesheet" />
     <link href="../css/statistics.css" rel="stylesheet" />
     <link href="../css/transportside.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/expandmenu.js"></script>
 </head>
 <body class="hhs">
     <div class="headergronn">
@@ -323,7 +326,7 @@
 
                                 <div class="col-xs-12 col-md-2 col-lg-3  hidden-mobile" id="mainsearchcolumn">
                                     <form class="mainsearch">
-                                        
+
                                         <span role="search">
                                             <label for="mainsearchinput" class=" visuallyhidden">Søk</label>
                                             <input id="mainsearchinput" type="search" title="Skriv inn hva du vil søke på og trykk enter" placeholder="Søk i alt innhold" />
@@ -347,20 +350,23 @@
                     <p></p>
                     <div class="illustrasjon">
                         <div id="footer">
-                            <footer class=" footerwrapper" role="contentinfo">
+                            <footer class=" footerwrapper">
                                 <div class=" menuwrapper">
                                     <div class="container">
-                                        <div class="row  forside">
+                                        <div class="row ">
                                             <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h1 class=" visuallyhidden">Bunnmeny</h1>
                                                 <nav class=" tabs">
+
                                                     <ul class=" tab-links" role="tablist">
-                                                        <li class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</li>
-                                                        <li class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</li>
+                                                        <li role="presentation"><span class=" tabs_footer" id="tab_footer1" role="tab" aria-controls="panel_footer1" aria-selected="true" tabindex="0">Kategorier</span></li>
+                                                        <li role="presentation"><span class=" tabs_footer" id="tab_footer2" role="tab" aria-controls="panel_footer2" aria-selected="false" tabindex="0">Innhold A-Å</span></li>
                                                     </ul>
                                                     <div class=" tab-content">
                                                         <div id="panel_footer1" class=" tab tabpanel_footer" aria-labelledby="tab_footer1" aria-hidden="false" role="tabpanel">
                                                             <div class="row">
                                                                 <div class="col-sm-6 col-md-4">
+
                                                                     <ul>
                                                                         <li><a href="../medisinskeRetningslinjer/" id="footer_content_categories">Nasjonale faglige retningslinjer</a></li>
                                                                         <li><a href="#">Nasjonale strategier og planer</a></li>
@@ -379,8 +385,10 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class=" clearfix visible-xs visible-sm"></div>
+
                                                                 <div class=" col-sm-6 col-md-4">
                                                                     <ul>
+
                                                                         <li><a href="transportside_diagnoserogtilstander.html">Diagnoser og tilstander</a></li>
                                                                         <li><a href="#">Legemidler og medisinsk utstyr</a></li>
                                                                         <li><a href="#">Godkjenning og turnus</a></li>
@@ -392,9 +400,10 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="panel_footer2" class=" tab visuallyhidden tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
+                                                        <div id="panel_footer2" class="tab tabpanel_footer" aria-labelledby="tab_footer2" aria-hidden="true" role="tabpanel">
                                                             <div class="row alphabetical">
                                                                 <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                                     <ul>
                                                                         <li class="character">A</li>
                                                                         <li><a href="#" id="footer_content_alphabetical">AD/HD</a></li>
@@ -402,21 +411,25 @@
                                                                         <li><a href="#">Antibiotika</a></li>
                                                                         <li><a href="#">Astma og allergi</a></li>
                                                                     </ul>
+
                                                                     <ul>
                                                                         <li class="character">B</li>
                                                                         <li><a href="#">Beredskap og krisehåndtering</a></li>
                                                                     </ul>
+
                                                                     <ul>
                                                                         <li class="character">D</li>
                                                                         <li><a href="artikkel_utredning_av_demens.html">Demens</a></li>
                                                                         <li><a href="#">Diabetes</a></li>
                                                                     </ul>
+
                                                                     <ul>
                                                                         <li class="character">E</li>
                                                                         <li><a href="#">E-resept</a></li>
                                                                     </ul>
                                                                     <ul>
                                                                         <li class="character">F</li>
+
                                                                         <li><a href="transportside_folkehelse.html">Folkehelsearbeid</a></li>
                                                                         <li><a href="#">Forgiftning</a></li>
                                                                         <li><a href="#">Frisklivssentraler</a></li>
@@ -431,6 +444,7 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                                     <ul>
                                                                         <li class="character">H</li>
                                                                         <li><a href="#">Helsestasjon og skolehelsetjenesten    </a></li>
@@ -462,8 +476,10 @@
                                                                 </div>
                                                                 <div class=" clearfix hidden-md hidden-lg"></div>
                                                                 <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                                     <ul>
                                                                         <li class="character">M</li>
+
                                                                         <li><a href="#">ME-CFS                                 </a></li>
                                                                         <li><a href="#">Medisinsk bibliotek                    </a></li>
                                                                         <li><a href="#">Medisinsk utstyr                       </a></li>
@@ -490,6 +506,7 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="col-sm-6 col-md-3 col-lg-3">
+
                                                                     <ul>
                                                                         <li class="character">R</li>
                                                                         <li><a href="#">Refusjoner                          </a></li>
@@ -524,6 +541,7 @@
                                     </div>
                                 </div>
                                 <a id="bottom" tabindex="-1"></a>
+
                                 <div class=" footerlinkswrapper">
                                     <div class="container">
                                         <div class="row">
@@ -551,6 +569,7 @@
                                                 <h4>Abonner</h4>
                                                 <a href="#"><p class="abonner">Nyheter på e-post</p></a>
                                                 <a href="#"><p class="abonner">Nyheter på RSS</p></a>
+
                                                 <div class=" socialmedia clearfix">
                                                     <h4>Følg oss på</h4>
                                                     <div>
@@ -564,8 +583,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="map" class="map">
-                                </div>
+                                <!--            <div id="map" class="map">-->
+                                <!--            </div>-->
                             </footer>
                         </div>
                     </div>
@@ -1459,7 +1478,5 @@
             </div>
         </article>
     </div>
-    
-   
 </body>
 </html>

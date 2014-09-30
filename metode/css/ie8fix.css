@@ -119,4 +119,53 @@
   background: url(../img/ikon_lukk_kryss_mellomblaa_ie8.png) no-repeat;
   background-position: 2px 3px;
 }
+.no-svg .module.module_subscribe .e-mail {
+  background: url(../img/ikoner/epost_regular_ie8.png) no-repeat;
+  background-position: 10% 50%;
+}
+.no-svg .module.module_subscribe .rss {
+  background: url(../img/ikoner/rss_regular_ie8.png) no-repeat;
+  background-position: 10% 50%;
+}
+.no-svg .guide_drops .method_entrance {
+  width: 18%;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop > i {
+  display: none !important;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop {
+  width: 97px;
+  height: 76px;
+  background-position: 50% 0;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop.forslag {
+  background: url(../img/ikoner/draape_forslag_ie8.png) no-repeat;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop.metodevurdering {
+  background: url(../img/ikoner/draape_metodevurdering_ie8.png) no-repeat;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop.beslutning {
+  background: url(../img/ikoner/draape_beslutning_ie8.png) no-repeat;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop.implementering {
+  background: url(../img/ikoner/draape_implementering_ie8.png) no-repeat;
+}
+.no-svg .guide_drops .method_entrance .drop_wrapper .drop .drop_number {
+  top: 25px;
+  left: 25px;
+  font-size: 50px;
+}
+.no-svg .external-link:after,
+.no-svg a.external-link:after {
+  content: '';
+  background: url('../img/ekstern_lenke_mellomblaa_ie8.png') right no-repeat;
+}
+.no-svg .navigate_forward {
+  background: url(../img/pil_nestesteg_nesteside_mellomblaa_ie8.png) no-repeat;
+  background-position: 100% 60%;
+}
 /*# sourceMappingURL=ie8fix.css.map */
