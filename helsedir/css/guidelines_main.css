@@ -1,4 +1,8 @@
 /*Common styles for all guidelines*/
+article {
+  min-height: 900px;
+}
+
 .title, .subtitle, .sectiontitle {
   word-wrap: break-word;
 }
@@ -1117,6 +1121,7 @@ form.retningslinjerSok #searchinput {
   padding-top: 0px;
   padding-bottom: 45px;
   display: block;
+  font-size: 36px;
 }
 @media (max-width: 768px) {
   .Guidelinechildsection .sectiontitle {
@@ -1307,6 +1312,97 @@ form.retningslinjerSok #searchinput {
     position: relative;
     width: auto;
   }
+}
+
+.Search .searchform {
+  margin-top: 30px;
+}
+
+.Search .numberofresults {
+  font-family: "Calibri";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  display: block;
+  color: #004e66;
+}
+
+.Searchresults .result {
+  position: relative;
+  padding: 20px 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Searchresults .section {
+  background-color: #eeeded;
+}
+
+.Searchresults .sectioninformation {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 38%;
+  color: #aeabb3;
+  font-size: 18px;
+}
+.Searchresults .sectioninformation .numberofrecommendations {
+  font-family: "Soho Gothic W01 Light";
+  color: #aeabb3;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+}
+
+.Searchresults .sectiontitle {
+  padding-right: 105px;
+  margin-top: 0;
+  color: #0093a7;
+}
+.Searchresults .sectiontitle .guidelinetitle {
+  display: block;
+  color: #004e66;
+  text-transform: uppercase;
+  font-family: "Calibri";
+  font-size: 18px;
+}
+
+.Searchresults .recommendation {
+  background-color: #ffffff;
+  border-left: 2px solid #69b4b6;
+}
+.Searchresults .recommendation .recommendationnumber {
+  color: #c53729;
+  font-size: 18px;
+}
+
+.Searchresults .pulse {
+  top: 0;
+  position: absolute;
+  left: -9px;
+  height: 57px;
+}
+@media (max-width: 768px) {
+  .Searchresults .pulse {
+    display: none;
+  }
+}
+
+.Searchresults .breadcrumbs {
+  margin: 0;
+}
+.Searchresults .breadcrumbs .crumb {
+  margin-bottom: 0;
+  padding-right: 15px;
+  padding: 0;
+  color: #004e66;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.Searchresults .breadcrumbs .crumb:after {
+  margin: 0 15px;
+  font-size: 20px;
 }
 
 ul.resp-tabs-list, p {

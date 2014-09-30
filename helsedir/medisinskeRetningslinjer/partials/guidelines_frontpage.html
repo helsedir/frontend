@@ -52,14 +52,14 @@
             </div>
         </aside>
            
-            <span class="guidelinecount">120 retningslinjer og veiledere</span>
+            <span class="guidelinecount">{{guidelines.length}} retningslinjer og veiledere</span>
             <ul class="guidelineslist">
                 <li ng-repeat="guideline in guidelines">
 
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
                             <h3>{{guideline.title}}</h3>
-                            <p class="guidelinesummary">Nasjonal faglig retningslinje for bruk av TNF hemmere og andre biologiske betennesesdempende legemidler innen revmatologi, gastroentologi og dermatologi.{{guideline.title}}</p>
+                            <p class="guidelinesummary" ng-bind-html="guideline.text | unsafe"></p>
                         </a>
 
                 </li>
