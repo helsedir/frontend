@@ -129,23 +129,24 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 30px;
 }
 
-.Guidelinesfrontpage .guidelineslist li {
+.Guidelinesfrontpage .guideline {
   background: #ffffff;
   padding: 30px;
   margin: 30px 0;
 }
 @media (max-width: 768px) {
-  .Guidelinesfrontpage .guidelineslist li {
+  .Guidelinesfrontpage .guideline {
     padding: 10px;
   }
 }
-.Guidelinesfrontpage .guidelineslist li h3 {
+.Guidelinesfrontpage .guideline:first-child {
+  margin-top: 10px;
+}
+
+.Guidelinesfrontpage .guidelinetitle {
   margin-top: 0;
   margin-bottom: 15px;
   color: #0093a7;
-}
-.Guidelinesfrontpage .guidelineslist li:first-child {
-  margin-top: 10px;
 }
 
 .Guidelinesfrontpage .guidelinecount {
@@ -223,7 +224,7 @@ form.retningslinjerSok #searchinput {
   font-family: "Soho Gothic W01 Light";
   line-height: 48px;
   color: #ffffff;
-  padding-top: 0px;
+  padding-top: 0;
   display: block;
 }
 @media (max-width: 768px) {
@@ -262,6 +263,7 @@ form.retningslinjerSok #searchinput {
 .Guidelinefrontpage .aboutguidelineicon:before {
   color: #ffffff;
   display: block;
+  background-color: #fafafa;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
   text-align: center;
@@ -362,7 +364,8 @@ form.retningslinjerSok #searchinput {
 .Guidelinefrontpage .sectionlist .element:nth-child(even) {
   background-color: #ffffff;
 }
-.Guidelinefrontpage .sectionlist h3 {
+
+.Guidelinefrontpage .sectionheading {
   /*Less padding on mobile */
   padding-right: 10px;
   margin-top: 0;
@@ -370,11 +373,11 @@ form.retningslinjerSok #searchinput {
   word-break: break-word;
 }
 @media only screen and (min-width: 600px) {
-  .Guidelinefrontpage .sectionlist h3 {
+  .Guidelinefrontpage .sectionheading {
     padding-right: 105px;
   }
 }
-.Guidelinefrontpage .sectionlist h3 span {
+.Guidelinefrontpage .sectionheading span {
   line-height: 15px;
   margin-bottom: 10px;
   display: block;
@@ -438,7 +441,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 
-/*Styles for the recommendations within one guideline*/
+/*Styles for the recommendations within a guideline*/
 /*
  ---------------------------------
     Header
@@ -472,7 +475,7 @@ form.retningslinjerSok #searchinput {
   }
   .Recommendations .pageheader nav li {
     margin-left: 45px;
-    padding: 7px 0px;
+    padding: 7px 0;
     display: none;
   }
   .Recommendations .pageheader nav li:last-child {
@@ -536,7 +539,7 @@ form.retningslinjerSok #searchinput {
   color: #ffffff;
   margin-top: 20px;
   padding-left: 30px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 45px;
   display: block;
 }
@@ -865,7 +868,7 @@ form.retningslinjerSok #searchinput {
   margin-right: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item:last {
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item a {
@@ -878,7 +881,7 @@ form.retningslinjerSok #searchinput {
   font-family: "Calibri-Bold";
 }
 .Recommendation .tabs ul.open {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .Recommendation .tabs .resp-tabs-container {
   border-left: 15px solid #ffffff;
@@ -886,7 +889,7 @@ form.retningslinjerSok #searchinput {
   border-bottom: 15px solid #ffffff;
   /* container divs for tab content */
 }
-.Recommendation .tabs .resp-tabs-container h2 {
+.Recommendation .tabs .resp-tabs-container .keyinfoheading {
   padding-left: 0;
 }
 @media (min-width: 993px) {
@@ -929,20 +932,20 @@ form.retningslinjerSok #searchinput {
     background-color: #e0e0e0;
   }
 }
-.Recommendation .tabs .resp-tabs-container h3 {
+.Recommendation .tabs .resp-tabs-container .resp-accordion {
   padding: 7px 20px;
   background-color: #e7e7e6;
   margin-top: 3px;
 }
 @media (max-width: 768px) {
-  .Recommendation .tabs .resp-tabs-container h3 {
+  .Recommendation .tabs .resp-tabs-container .resp-accordion {
     background-color: #ffffff;
   }
 }
-.Recommendation .tabs .resp-tabs-container h3 a {
+.Recommendation .tabs .resp-tabs-container .resp-accordion a {
   color: #000000;
 }
-.Recommendation .tabs .resp-tabs-container h3 a:before {
+.Recommendation .tabs .resp-tabs-container .resp-accordion a:before {
   padding-right: 10px;
   font-size: 30px;
   content: "\f107";
@@ -950,15 +953,15 @@ form.retningslinjerSok #searchinput {
   text-decoration: none;
   color: #838078;
 }
-.Recommendation .tabs .resp-tabs-container h3.resp-tab-active {
+.Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
   background-color: #f6f6f6;
 }
 @media (max-width: 768px) {
-  .Recommendation .tabs .resp-tabs-container h3.resp-tab-active {
+  .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
     background-color: #e0e0e0;
   }
 }
-.Recommendation .tabs .resp-tabs-container h3.resp-tab-active a:before {
+.Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active a:before {
   content: "\f106";
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist {
@@ -1007,6 +1010,7 @@ form.retningslinjerSok #searchinput {
     font-size: 30px;
     position: relative;
     top: 50%;
+    -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1099,7 +1103,7 @@ form.retningslinjerSok #searchinput {
   }
   .Guidelinechildsection .pageheader nav li {
     margin-left: 45px;
-    padding: 7px 0px;
+    padding: 7px 0;
     display: none;
   }
   .Guidelinechildsection .pageheader nav li:last-child {
@@ -1163,7 +1167,7 @@ form.retningslinjerSok #searchinput {
   color: #ffffff;
   margin-top: 20px;
   padding-left: 30px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 45px;
   display: block;
   font-size: 36px;
@@ -1186,7 +1190,7 @@ form.retningslinjerSok #searchinput {
   .Guidelinechildsection .aboutguidelineicon {
     bottom: 0;
     top: auto;
-    right: 0px;
+    right: 0;
   }
 }
 .Guidelinechildsection .aboutguidelineicon:before {
@@ -1236,7 +1240,7 @@ form.retningslinjerSok #searchinput {
 }
 @media only screen and (min-width: 900px) {
   .Guidelinechildsection .aboutexpand {
-    padding: 30px 0px 30px 30px;
+    padding: 30px 0 30px 30px;
   }
 }
 .Guidelinechildsection .aboutexpand .metadata .text {
@@ -1283,7 +1287,8 @@ form.retningslinjerSok #searchinput {
 .Guidelinechildsection .sectionlist .element:nth-child(even) {
   background-color: #ffffff;
 }
-.Guidelinechildsection .sectionlist h3 {
+
+.Guidelinechildsection .sectionheading {
   /*Less padding on mobile */
   padding-right: 10px;
   margin-top: 0;
@@ -1291,11 +1296,11 @@ form.retningslinjerSok #searchinput {
   word-break: break-word;
 }
 @media only screen and (min-width: 600px) {
-  .Guidelinechildsection .sectionlist h3 {
+  .Guidelinechildsection .sectionheading {
     padding-right: 105px;
   }
 }
-.Guidelinechildsection .sectionlist h3 span {
+.Guidelinechildsection .sectionheading span {
   line-height: 15px;
   margin-bottom: 10px;
   display: block;
@@ -1376,7 +1381,6 @@ form.retningslinjerSok #searchinput {
 .Searchresults .result {
   position: relative;
   padding: 20px 30px;
-  position: relative;
   margin-bottom: 20px;
 }
 
@@ -1456,8 +1460,8 @@ form.retningslinjerSok #searchinput {
 }
 
 ul.resp-tabs-list, p {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .resp-tabs-container {
@@ -1492,7 +1496,7 @@ h3.resp-accordion {
 }
 
 .resp-vtabs .resp-tabs-container {
-  padding: 0px;
+  padding: 0;
   background-color: #fff;
   border: 1px solid #c1c1c1;
   float: left;
@@ -1556,7 +1560,7 @@ h3.resp-tab-active {
 
 .resp-jfit {
   width: 100%;
-  margin: 0px;
+  margin: 0;
 }
 
 .resp-tab-content-active {

@@ -54,11 +54,11 @@
            
             <span class="guidelinecount">{{guidelines.length}} retningslinjer og veiledere</span>
             <ul class="guidelineslist">
-                <li ng-repeat="guideline in guidelines">
+                <li ng-repeat="guideline in guidelines" class="guideline">
 
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
-                            <h3>{{guideline.title}}</h3>
+                            <h3 class="guidelinetitle">{{guideline.title}}</h3>
                             <p class="guidelinesummary" ng-bind-html="guideline.text | unsafe"></p>
                         </a>
 

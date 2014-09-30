@@ -1,4 +1,4 @@
-/*Styles for the recommendations within one guideline*/
+/*Styles for the recommendations within a guideline*/
 
 /*
  ---------------------------------
@@ -29,7 +29,7 @@
             background: $colorDarkBlue;
             li {
                 margin-left: 45px;
-                padding: 7px 0px;
+                padding: 7px 0;
                 display: none;
                 &:last-child {
                     display: block;
@@ -91,7 +91,7 @@
     color: $colorWhite;
     margin-top: 20px;
     padding-left: 30px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 45px;
     display: block;
     //position: relative;
@@ -397,7 +397,7 @@
             background-color: $colorLightGray;
             margin-right: $margin;
             &:last {
-                margin-right: 0px;
+                margin-right: 0;
                 margin-left: $margin;
             }
             a {
@@ -411,11 +411,11 @@
             }
         }
         &.open {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
     .resp-tabs-container {
-        h2 {
+        .keyinfoheading {
             padding-left: 0;
         }
         $border: 15px solid $colorWhite;
@@ -457,7 +457,8 @@
                 background-color: #e0e0e0;
             }
         }
-        h3 {
+        .resp-accordion {
+            
             padding: 7px 20px;
             background-color: #e7e7e6;
             //margin-top: 0;

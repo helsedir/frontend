@@ -59,7 +59,7 @@
     font-family: $fontSohoLight;
     line-height: 48px;
     color: $colorWhite;
-    padding-top: 0px;
+    padding-top: 0;
     display: block;
     //position: relative;
     @include breakpoint("mobile") {
@@ -95,6 +95,7 @@
     &:before {
         color: #ffffff;
         display: block;
+        background-color: #fafafa; //fallback
         background-color: rgba(255, 255, 255, 0.2);
         content: url("../img/modules/icons/ico-i.svg");
         text-align: center;
@@ -187,7 +188,10 @@
             background-color: #ffffff;
         }
     }
-    h3 {
+    
+}
+
+.Guidelinefrontpage .sectionheading {
         /*Less padding on mobile */
         padding-right: 10px;
         @media only screen and (min-width: 600px) {
@@ -206,7 +210,6 @@
             font-size: 18px;
         }
     }
-}
 
 .Guidelinefrontpage .sectioninformation {
     display: inline-block;
