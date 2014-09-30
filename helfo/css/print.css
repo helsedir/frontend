@@ -50,17 +50,35 @@
   .container p a:hover,
   .container-fluid p a:hover {
     color: #222;
+    font-size: 1.6rem;
   }
   .container .ingress,
   .container-fluid .ingress {
     margin: 0;
     padding: 0.8rem 0;
   }
+  .container a,
+  .container-fluid a {
+    font-size: 1.6rem;
+  }
+  .container .numberedlist li,
+  .container-fluid .numberedlist li {
+    font-size: 1.6rem;
+  }
+  .container .bulletlist li,
+  .container-fluid .bulletlist li {
+    font-size: 1.6rem;
+  }
   .container .bulletlist li a,
   .container-fluid .bulletlist li a,
   .container .bulletlist li a:hover,
   .container-fluid .bulletlist li a:hover {
     color: #222;
+    font-size: 1.6rem;
+  }
+  .container .bulletlist li p,
+  .container-fluid .bulletlist li p {
+    font-size: 1.6rem;
   }
   .container .bulletlist li:before,
   .container-fluid .bulletlist li:before {

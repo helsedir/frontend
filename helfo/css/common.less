@@ -45,7 +45,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-    font-size: 100%;
+    font-size: 62.5%;
     background: white;
 }
 
@@ -69,61 +69,286 @@ body {
 
 .container, .container-fluid {
     h1 {
-        font-size: 40px;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
         font-family: @roboto;
-        line-height: 48px;
-        margin: 50px 0 0 0;
-        color: @colorDarkBlue;
+        font-weight: 300;
+        margin: 6.3rem 0 2.4rem 0;
+        padding: 0 0 2px 0;
+        border-bottom: 2px solid #88b9cb;
+        color: #222;
+        display: inline-block;
     }
 
-    .ingress {
-        margin: 20px 0 20px 0;
-        font-size: 25px;
-        line-height: 30px;
-        font-family: @roboto;
-
-        a {
-            font-size: 25px;
-            line-height: 30px;
-            font-family: @roboto;
-        }
+    h1.alternative {
+        font-weight: 300;
+        font-size: 3.0rem;
+        line-height: 3.6rem;
+        margin: 50px 0 0 0;
+        padding: 0 0 4px 0;
+        color: #222;
+        border: none;
     }
 
     h2 {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 3.0rem;
+        line-height: 3.6rem;
         font-family: @roboto;
-        margin: 35px 0 10px 0;
-        color: @colorDarkBlue;
-
-        &.internal-link {
-            color: @colorMediumBlue;
-        }
+        font-weight: 300;
+        margin: 2.4rem 0 1.6rem 0;
+        padding: 0;
+        color: #222;
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
         font-family: @roboto;
-        margin: 35px 0 0 0;
-        line-height: 36px;
+        font-weight: 300;
+        margin: 3.2rem 0 1.2rem 0;
+        padding: 0;
+        color: #222;
     }
 
     h4 {
-        font-size: 24px;
-        line-height: 32px;
-        margin-top: 55px;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
         font-family: @roboto;
+        font-weight: 300;
+        margin: 3.2rem 0 0 0;
+        padding: 0;
+        color: #222;
     }
 
     h5 {
-        font-size: 18px;
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+        font-family: @roboto;
+        font-weight: 500;
+        color: #222;
+    }
+
+    .ingress {
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+        font-family: @roboto;
+        font-weight: 400;
+        margin: 1.6rem 0 1.6rem 0;
+        padding: 0;
+        color: #222;
     }
 
     p {
-        margin: 10px 0 0 0;
-        font-size: 20px;
-        font-family: 'Roboto';
-        line-height: 30px;
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+        font-family: @roboto;
+        font-weight: 300;
+        margin: 0;
+        padding: 0.8rem 0;
+        color: #222;
+
+        a {
+            font-size: 2.0rem;
+            line-height: 3.0rem;
+            font-family: @roboto;
+            font-weight: 300;
+            margin: 0;
+            padding: 0.2rem 0;
+            color: @colorOrange;
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
+    }
+
+    .bulletlist li {
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+        font-family: @roboto;
+        font-weight: 300;
+        margin: 0 0 0 2.5rem;
+        padding: 0.8rem 0;
+        color: #222;
+
+        &:before {
+            content: "•";
+            color: #54abca;
+            margin: 1px 0 0 -25px;
+            display: block;
+            position: absolute;
+            font-size: 30px;
+        }
+
+        a {
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
+    }
+
+    .numberedlist li {
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+        font-family: @roboto;
+        font-weight: 300;
+        margin: 0 0 0 0;
+        padding: 0.8rem 0;
+        color: #222;
+
+        a {
+            border-bottom: 1px solid #c2c3c4;
+
+            &:hover {
+                border-bottom: 1px solid @colorOrange;
+            }
+        }
+    }
+
+    a {
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+        font-family: @roboto;
+        font-weight: 300;
+        margin: 0;
+        padding: 0.2rem 0;
+        color: @colorOrange;
+        border-bottom: 1px solid #c2c3c4;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 1px solid @colorOrange;
+            color: @colorOrange;
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4 {
+            color: #398ca9;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid #398ca9;
+            }
+        }
+
+        &:focus, &:visited:focus {
+            h2, h3, h4, h5, p {
+                background: @colorDarkBlue !important;
+                color: white !important;
+                outline: 0;
+            }
+
+            background: @colorDarkBlue !important;
+            color: white !important;
+            outline: 0;
+        }
+    }
+
+    .takst_table {
+        margin-top: 50px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .breadcrumbs {
+        a {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            font-family: @roboto;
+            font-weight: 400;
+            margin: 0;
+            color: #756d6a;
+            border: none;
+
+            &:hover {
+                border-bottom: 1px solid #c2c3c4;
+            }
+
+            &:visited {
+                color: #756d6a;
+            }
+        }
+    }
+
+    .navigate_forward, .navigate_back {
+        margin-top: 30px;
+
+        a {
+            margin: 0;
+            border: none;
+
+            &:hover {
+                border-bottom: 1px solid #c2c3c4;
+            }
+
+            &:visited {
+                color: #756d6a;
+            }
+
+            span {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                font-family: @roboto;
+                font-weight: 400;
+                color: #756d6a;
+            }
+
+            &:focus {
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .navigate_forward {
+        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+        background-position: 28% 100%;
+        background-size: 28px 28px;
+        padding-right: 36px;
+    }
+
+    .navigate_forward.pull-right {
+        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
+        background-position: 100% 75%;
+        background-size: 28px 28px;
+        padding-right: 36px;
+    }
+
+    .navigate_back.pull-left {
+        background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
+        background-position: 0 75%;
+        background-size: 28px 28px;
+        padding-left: 36px;
+    }
+
+    .filterlist {
+        li {
+            margin-right: 10px;
+            margin-bottom: 15px;
+            display: inline-block;
+
+            a {
+                color: #222;
+                font-size: 18px;
+                border-bottom: none;
+                padding: 10px 8px 8px 8px;
+
+                &:hover {
+                    background: #d9dadb;
+                    color: #002c42;
+                }
+            }
+        }
+
+        .selectedfilter a, .selectedfilter a:visited {
+            font-weight: bold;
+            border-bottom: 3px solid @colorOrange;
+            padding-bottom: 6px;
+        }
     }
 
     ul {
@@ -1000,6 +1225,7 @@ body {
 
         &.module_subscribe {
             padding-bottom: 15px;
+            width: 300px;
 
             .module_description {
                 margin-top: -45px;
@@ -2041,31 +2267,6 @@ body {
             width: auto;
         }
 
-        h1 {
-            font-size: 30px;
-            line-height: 36px;
-            margin-top: 40px;
-        }
-
-        h2 {
-            font-size: 28px;
-            line-height: 32px;
-        }
-
-        h3 {
-            font-size: 26px;
-            line-height: 30px;
-        }
-
-        h4 {
-            font-size: 22px;
-            line-height: 28px;
-        }
-
-        .ingress {
-            font-size: 23px;
-        }
-
         .statistics_compare {
             background: #ddd;
             border-radius: 5px;
@@ -2109,17 +2310,16 @@ body {
             }
         }
 
-        .transportsideknapp {
-            margin: 10px 0 10px 0;
-            padding: 5px 58px 20px 15px;
-
-            h2, p {
-                margin: 0;
-            }
-        }
-
         .breadcrumbs {
             margin: 0;
+
+            li:before {
+                background-size: 23px 28px;
+            }
+
+            a {
+                font-size: 1.6rem;
+            }
 
             li {
                 display: none;
@@ -2308,327 +2508,6 @@ body {
             margin-top: 10px;
             margin-bottom: 10px;
         }
-    }
-}
-
-@media braille {
-    .container {
-        .has-hidden-content div {
-            display: block !important;
-        }
-
-        .hidden-mobile {
-            display: block !important;
-        }
-
-        #map {
-            display: none;
-        }
-    }
-}
-/************************HELSENORGE-FONTER*******************************************/
-html {
-    font-size: 62.5%;
-}
-
-.container, .container-fluid {
-    h1 {
-        font-size: 3.6rem;
-        line-height: 4.8rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 6.3rem 0 2.4rem 0;
-        padding: 0 0 2px 0;
-        border-bottom: 2px solid #88b9cb;
-        color: #222;
-        display: inline-block;
-    }
-
-    h1.alternative {
-        font-weight: 300;
-        font-size: 3.0rem;
-        line-height: 3.6rem;
-        margin: 50px 0 0 0;
-        padding: 0 0 4px 0;
-        color: #222;
-        border: none;
-    }
-
-    h2 {
-        font-size: 3.0rem;
-        line-height: 3.6rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 2.4rem 0 1.6rem 0;
-        padding: 0;
-        color: #222;
-    }
-
-    h3 {
-        font-size: 2.6rem;
-        line-height: 3.2rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 3.2rem 0 1.2rem 0;
-        padding: 0;
-        color: #222;
-    }
-
-    h4 {
-        font-size: 2.3rem;
-        line-height: 2.8rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 3.2rem 0 0 0;
-        padding: 0;
-        color: #222;
-    }
-
-    h5 {
-        font-size: 2.1rem;
-        line-height: 2.6rem;
-        font-family: @roboto;
-        font-weight: 500;
-        color: #222;
-    }
-
-    .ingress {
-        font-size: 2.0rem;
-        line-height: 3.0rem;
-        font-family: @roboto;
-        font-weight: 400;
-        margin: 1.6rem 0 1.6rem 0;
-        padding: 0;
-        color: #222;
-    }
-
-    p {
-        font-size: 2.0rem;
-        line-height: 3.0rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 0;
-        padding: 0.8rem 0;
-        color: #222;
-
-        a {
-            font-size: 2.0rem;
-            line-height: 3.0rem;
-            font-family: @roboto;
-            font-weight: 300;
-            margin: 0;
-            padding: 0.2rem 0;
-            color: @colorOrange;
-            border-bottom: 1px solid #c2c3c4;
-
-            &:hover {
-                border-bottom: 1px solid @colorOrange;
-            }
-        }
-    }
-
-    .bulletlist li {
-        font-size: 2.0rem;
-        line-height: 3.0rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 0 0 0 2.5rem;
-        padding: 0.8rem 0;
-        color: #222;
-
-        &:before {
-            content: "•";
-            color: #54abca;
-            margin: 1px 0 0 -25px;
-            display: block;
-            position: absolute;
-            font-size: 30px;
-        }
-
-        a {
-            border-bottom: 1px solid #c2c3c4;
-
-            &:hover {
-                border-bottom: 1px solid @colorOrange;
-            }
-        }
-    }
-
-    .numberedlist li {
-        font-size: 2.0rem;
-        line-height: 3.0rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 0 0 0 0;
-        padding: 0.8rem 0;
-        color: #222;
-
-        a {
-            border-bottom: 1px solid #c2c3c4;
-
-            &:hover {
-                border-bottom: 1px solid @colorOrange;
-            }
-        }
-    }
-
-    a {
-        font-size: 2.0rem;
-        line-height: 3.0rem;
-        font-family: @roboto;
-        font-weight: 300;
-        margin: 0;
-        padding: 0.2rem 0;
-        color: @colorOrange;
-        border-bottom: 1px solid #c2c3c4;
-        cursor: pointer;
-
-        &:hover {
-            border-bottom: 1px solid @colorOrange;
-            color: @colorOrange;
-            text-decoration: none;
-        }
-
-        h1, h2, h3, h4 {
-            color: #398ca9;
-            border-bottom: 1px solid transparent;
-
-            &:hover {
-                border-bottom: 1px solid #398ca9;
-            }
-        }
-
-        &:focus, &:visited:focus {
-            h2, h3, h4, h5, p {
-                background: @colorDarkBlue !important;
-                color: white !important;
-                outline: 0;
-            }
-
-            background: @colorDarkBlue !important;
-            color: white !important;
-            outline: 0;
-        }
-    }
-
-    .takst_table {
-        margin-top: 50px;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .breadcrumbs {
-        a {
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-            font-family: @roboto;
-            font-weight: 400;
-            margin: 0;
-            color: #756d6a;
-            border: none;
-
-            &:hover {
-                border-bottom: 1px solid #c2c3c4;
-            }
-
-            &:visited {
-                color: #756d6a;
-            }
-        }
-    }
-
-    .navigate_forward, .navigate_back {
-        margin-top: 30px;
-
-        a {
-            margin: 0;
-            border: none;
-
-            &:hover {
-                border-bottom: 1px solid #c2c3c4;
-            }
-
-            &:visited {
-                color: #756d6a;
-            }
-
-            span {
-                font-size: 1.8rem;
-                line-height: 2.6rem;
-                font-family: @roboto;
-                font-weight: 400;
-                color: #756d6a;
-            }
-
-            &:focus {
-                span {
-                    color: white;
-                }
-            }
-        }
-    }
-
-    .navigate_forward {
-        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
-        background-position: 28% 100%;
-        background-size: 28px 28px;
-        padding-right: 36px;
-    }
-
-    .navigate_forward.pull-right {
-        background: url(../img/ikoner/pil_fremover_brun.svg) no-repeat;
-        background-position: 100% 75%;
-        background-size: 28px 28px;
-        padding-right: 36px;
-    }
-
-    .navigate_back.pull-left {
-        background: url(../img/ikoner/pil_tilbake_brun.svg) no-repeat;
-        background-position: 0 75%;
-        background-size: 28px 28px;
-        padding-left: 36px;
-    }
-
-    .filterlist {
-        li {
-            margin-right: 10px;
-            margin-bottom: 15px;
-            display: inline-block;
-
-            a {
-                color: #222;
-                font-size: 18px;
-                border-bottom: none;
-                padding: 10px 8px 8px 8px;
-
-                &:hover {
-                    background: #d9dadb;
-                    color: #002c42;
-                }
-            }
-        }
-
-        .selectedfilter a, .selectedfilter a:visited {
-            font-weight: bold;
-            border-bottom: 3px solid @colorOrange;
-            padding-bottom: 6px;
-        }
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .container {
-        .ingress {
-            width: 652px;
-        }
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .container {
-        .aside, .aside.bottom {
-            width: auto;
-        }
 
         h1 {
             font-size: 3.0rem;
@@ -2660,8 +2539,8 @@ html {
         }
 
         .transportsideknapp {
-            padding-bottom: 5px;
-            margin-bottom: 0;
+            padding: 5px 58px 5px 15px;
+            margin: 10px 0 0 0;
             background-size: 38px 18px;
 
             h2 {
@@ -2669,19 +2548,37 @@ html {
                 line-height: 3.2rem;
             }
 
+            h2, p {
+                margin: 0;
+            }
+
             &:hover {
                 background-size: 38px 38px;
             }
         }
+    }
+}
 
-        .breadcrumbs {
-            li:before {
-                background-size: 23px 28px;
-            }
+@media braille {
+    .container {
+        .has-hidden-content div {
+            display: block !important;
+        }
 
-            a {
-                font-size: 1.6rem;
-            }
+        .hidden-mobile {
+            display: block !important;
+        }
+
+        #map {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        .ingress {
+            width: 652px;
         }
     }
 }

@@ -85,10 +85,10 @@ input[type=text]:focus,
 textarea:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-  box-shadow: 0 0 5px magenta;
+  box-shadow: 0 0 5px #EB6A0A;
   padding: 8px 10px;
   margin: 5px 1px 3px 0px;
-  border: 1px solid magenta;
+  border: 1px solid #EB6A0A;
 }
 input[type=text],
 textarea,
@@ -103,8 +103,8 @@ input[type=text]:focus,
 textarea:focus,
 input[type=radio]:focus,
 input[type=checkbox]:focus {
-  box-shadow: 0 0 5px magenta;
-  border: 1px solid magenta;
+  box-shadow: 0 0 5px #EB6A0A;
+  border: 1px solid #EB6A0A;
 }
 .formbuttons {
   margin-top: -10px;

@@ -31,7 +31,7 @@
   position: absolute;
   top: -2013px;
   display: block;
-  border-radius: 5px;
+  border-radius: 0;
 }
 .shortcuts a:focus,
 #header .shortcuts a:focus,
@@ -106,7 +106,7 @@
 #header .menubutton button.js-expander,
 #footer .menubutton button.js-expander {
   border: none;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #eb6a0a;
   vertical-align: middle;
   padding: 6px 8px 5px 8px;
@@ -138,7 +138,7 @@
 #footer .menubutton button.js-expander:hover {
   text-decoration: none;
   background-color: #d9dadb;
-  border-radius: 3px;
+  border-radius: 0;
 }
 #header .menubutton button.js-expander:hover span,
 #footer .menubutton button.js-expander:hover span,
@@ -149,7 +149,7 @@
 #header .menubutton button.js-expander.js-expanded,
 #footer .menubutton button.js-expander.js-expanded {
   padding-bottom: 50px;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0;
   background-color: #d9dadb;
   color: #002c42;
   outline: 0;
@@ -335,7 +335,7 @@
   height: 27px;
   /*max-width: 220px;*/
   width: 86%;
-  border-radius: 3px;
+  border-radius: 0;
   border: 1px solid #eb6a0a;
   vertical-align: middle;
   background-image: url('../img/ikoner/ikon_forstorrelsesglass.png');
@@ -463,7 +463,7 @@
 }
 #header .footerlinkswrapper .socialmedia,
 #footer .footerlinkswrapper .socialmedia {
-  border-radius: 3px;
+  border-radius: 0;
   margin: 20px 0 20px 0;
 }
 #header .footerlinkswrapper .socialmedia div,
@@ -863,7 +863,7 @@
   #footer .menubutton.mobile-menu {
     padding: 7px 11px 8px 11px;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 0;
     background: #eb6a0a url('../img/ikoner/ikon_meny_hvit.svg') no-repeat;
     -moz-background-size: 20px;
     -o-background-size: 20px;
@@ -880,7 +880,7 @@
     -webkit-background-size: 20px;
     background-size: 20px;
     background-position: center;
-    border-radius: 3px;
+    border-radius: 0;
   }
   #header .menubutton.mobile-menu.js-expanded,
   #footer .menubutton.mobile-menu.js-expanded {
@@ -891,7 +891,7 @@
     -webkit-background-size: 20px;
     background-size: 20px;
     background-position: 50% 35%;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0;
   }
   #header .menubutton.mobile-search,
   #footer .menubutton.mobile-search {
@@ -902,7 +902,7 @@
     -webkit-background-size: 30px;
     background-size: 30px;
     background-position: center;
-    border-radius: 3px;
+    border-radius: 0;
   }
   #header .menubutton.mobile-search:focus,
   #footer .menubutton.mobile-search:focus {
@@ -919,12 +919,12 @@
     -webkit-background-size: 30px;
     background-size: 30px;
     background-position: center;
-    border-radius: 3px;
+    border-radius: 0;
   }
   #header .menubutton.mobile-search.js-expanded,
   #footer .menubutton.mobile-search.js-expanded {
     padding: 5px 0 46px 0;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0;
     background: #d9dadb url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
     -moz-background-size: 22px;
     -o-background-size: 22px;
