@@ -79,6 +79,51 @@ form.retningslinjerSok #searchinput {
   color: #000000;
 }
 
+/* IKONER */
+.container .module.module_print .ikon_disclaimer span,
+.container-fluid .module.module_print .ikon_disclaimer span,
+.container .module.module_social .ikon_disclaimer span,
+.container-fluid .module.module_social .ikon_disclaimer span {
+  background: url(../img/modules/icons/ikon_disclaimer_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_disclaimer:hover span,
+.container-fluid .module.module_print .ikon_disclaimer:hover span,
+.container .module.module_social .ikon_disclaimer:hover span,
+.container-fluid .module.module_social .ikon_disclaimer:hover span {
+  background: url(../img/modules/icons/ikon_disclaimer_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+
+.container .module.module_print .ikon_metode span,
+.container-fluid .module.module_print .ikon_metode span,
+.container .module.module_social .ikon_metode span,
+.container-fluid .module.module_social .ikon_metode span {
+  background: url(../img/modules/icons/ikon_metodikk_regular.svg) no-repeat;
+  -moz-background-size: 27px 20px;
+  -o-background-size: 27px 20px;
+  -webkit-background-size: 27px 20px;
+  background-size: 27px 20px;
+}
+
+.container .module.module_print .ikon_metode:hover span,
+.container-fluid .module.module_print .ikon_metode:hover span,
+.container .module.module_social .ikon_metode:hover span,
+.container-fluid .module.module_social .ikon_metode:hover span {
+  background: url(../img/modules/icons/ikon_metodikk_hover.svg) no-repeat;
+  -moz-background-size: 28px 23px;
+  -o-background-size: 28px 23px;
+  -webkit-background-size: 28px 23px;
+  background-size: 28px 23px;
+}
+
 /*Retningslinje forside. Liste over alle nasjonale faglige retningslinjer */
 .Guidelinesfrontpage .pageheader {
   margin-bottom: 30px;
@@ -1547,6 +1592,39 @@ h3.resp-tab-active {
   .resp-vtabs .resp-tab-content:last-child {
     border-bottom: 1px solid #c1c1c1 !important;
   }
+}
+.modal {
+  display: none;
+  width: 400px;
+  background: #fff;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url(spinner.gif) #111 no-repeat center center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=guidelines_main.css.map */

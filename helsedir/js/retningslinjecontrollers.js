@@ -17,7 +17,6 @@ retningslinjeControllers.controller('guidelineSectionCtrl', ['$scope', '$routePa
 
 retningslinjeControllers.controller('searchCtrl', ['$scope', '$routeParams', 'Guideline', 'angularLoad', 
     function($scope, $routeParams, Guideline, angularLoad) {
-        angularLoad.loadCSS("../css/guidelines_search.css");
     }
 ]);
 
