@@ -1372,6 +1372,11 @@ form.retningslinjerSok #searchinput {
   background-color: #ffffff;
   border-left: 2px solid #69b4b6;
 }
+@media (max-width: 768px) {
+  .Searchresults .recommendation {
+    border: none;
+  }
+}
 .Searchresults .recommendation .recommendationnumber {
   color: #c53729;
   font-size: 18px;
