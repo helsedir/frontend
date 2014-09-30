@@ -8,7 +8,7 @@
  * # Guideline
  * Factory in the webUiApp.
  */
- var apiUrl = 'http://hdirapi.azurewebsites.net/api/v1/';
+ var apiUrl = 'http://digitalguidelines.azurewebsites.net/api/v1/';
 angular.module('retningslinjeApp')
   .factory('Guideline', ['$resource', function ($resource) {
     return $resource(apiUrl+'guidelines/:id',{},
