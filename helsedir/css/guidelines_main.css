@@ -271,7 +271,8 @@ form.retningslinjerSok #searchinput {
 @media only screen and (min-width: 900px) {
   .Guidelinefrontpage .aboutexpand .metadata {
     float: left;
-    margin-right: 30px;
+    padding-right: 30px;
+    border-right: 2px solid #004e66;
   }
 }
 .Guidelinefrontpage .aboutexpand > .text {
@@ -279,7 +280,6 @@ form.retningslinjerSok #searchinput {
 }
 @media only screen and (min-width: 900px) {
   .Guidelinefrontpage .aboutexpand > .text {
-    border-left: 2px solid #004e66;
     padding-left: 30px;
     width: 70%;
     float: left;
@@ -1200,7 +1200,8 @@ form.retningslinjerSok #searchinput {
 @media only screen and (min-width: 900px) {
   .Guidelinechildsection .aboutexpand .metadata {
     float: left;
-    margin-right: 30px;
+    padding-right: 30px;
+    border-right: 2px solid #004e66;
   }
 }
 .Guidelinechildsection .aboutexpand > .text {
@@ -1208,7 +1209,6 @@ form.retningslinjerSok #searchinput {
 }
 @media only screen and (min-width: 900px) {
   .Guidelinechildsection .aboutexpand > .text {
-    border-left: 2px solid #004e66;
     padding-left: 30px;
     width: 70%;
     float: left;

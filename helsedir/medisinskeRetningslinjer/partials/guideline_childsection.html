@@ -21,8 +21,7 @@
         		<span class="text">Opprettet {{guideline.createdDate | date:'dd.MM.yyyy'}}</span>
         		<span class="text">Sist oppdatert {{guideline.updatedDate | date:'dd.MM.yyyy'}}</span>
         	</div>
-        	<div class="text">
-        		{{guideline.text}}
+        	<div class="text" ng-bind-html="guideline.text | unsafe">
         	</div>
         </div>
       </header>
