@@ -34,13 +34,27 @@
   .container h1,
   .container-fluid h1 {
     border-bottom: none;
-    margin-top: 0;
+    margin: 0;
+    font-size: 3.2rem;
+  }
+  .container h2,
+  .container-fluid h2 {
+    font-size: 2.0rem;
+  }
+  .container p,
+  .container-fluid p {
+    font-size: 1.6rem;
   }
   .container p a,
   .container-fluid p a,
   .container p a:hover,
   .container-fluid p a:hover {
     color: #222;
+  }
+  .container .ingress,
+  .container-fluid .ingress {
+    margin: 0;
+    padding: 0.8rem 0;
   }
   .container .bulletlist li a,
   .container-fluid .bulletlist li a,

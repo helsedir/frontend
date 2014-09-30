@@ -394,7 +394,7 @@ a.logo:focus {
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   header.masterheader .menubutton {
-    margin-top: 31px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -439,6 +439,17 @@ a.logo:focus {
     background-position: center;
     border-radius: 3px;
   }
+  header.masterheader {
+    margin: 0;
+  }
+  header.masterheader .menubutton,
+  header.masterheader .about,
+  header.masterheader .english {
+    margin-top: 2px;
+  }
+  a.logo {
+    margin: 2px 0;
+  }
   .hidden-mobile {
     display: none;
     padding: 10px;
@@ -459,6 +470,9 @@ a.logo:focus {
   }
   .footerlinkswrapper {
     background: white;
+  }
+  .footerlinkswrapper h4 {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=masterpage.css.map */
