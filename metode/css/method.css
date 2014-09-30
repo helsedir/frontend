@@ -150,19 +150,17 @@
   line-height: 20px;
   /* padding: 5px 12px; */
   display: block;
-  height: 30px;
+  height: 40px;
   width: 20px;
   padding: 16px;
 }
 .wrapper .informationicon.selected {
   background: url(../img/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
   background-size: 16px;
-  background-position: 2px 3px;
+  background-position: 12px 3px;
   top: 31px;
   right: 44px;
-  padding: 0;
-  height: 21px;
-  padding: 10px;
+  padding: 16px;
 }
 .wrapper .method_evaluation {
   margin-top: 10px;
@@ -214,7 +212,6 @@
   }
   .wrapper .method_status {
     padding-left: 0;
-    padding-right: 15px;
     margin-top: 22px;
   }
   .wrapper .method_status .method_attribute_label {

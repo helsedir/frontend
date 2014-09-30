@@ -63,16 +63,6 @@ body {
 		font-size: 40px;
 		cursor: pointer;
 	}*/
-  /*    .nested-accordion.has-visible-content > .accordion:before {
-		float: left;
-		padding: 3px 20px 0 0;
-		content: "\f106";
-		font-family: "FontAwesome";
-		font-size: 40px;
-	}*/
-  /**********************************************************************
-	Moduler
-***********************************************************************/
   /**Kurs og konferanse*/
   /**Felles*/
 }
@@ -518,6 +508,31 @@ body {
   font-family: "FontAwesome";
   font-size: 40px;
   margin-left: -35px;
+}
+.container .accordion.nested-accordion.has-hidden-content > h3:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
+.container .accordion.nested-accordion.has-hidden-content > h4:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
+.container .accordion.nested-accordion.has-hidden-content > h5:before,
+.container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
+  content: "\f107";
+  font-family: "FontAwesome";
+  /*font-size: 40px;*/
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+.container .accordion.nested-accordion.has-visible-content > h3:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h3:before,
+.container .accordion.nested-accordion.has-visible-content > h4:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
+.container .accordion.nested-accordion.has-visible-content > h5:before,
+.container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
+  content: "\f106";
+  font-family: "FontAwesome";
+  /*font-size: 40px;*/
+  position: absolute;
+  left: 0;
 }
 .container .clearfix:before,
 .container-fluid .clearfix:before,
@@ -1988,75 +2003,6 @@ body {
 .container-fluid .table_general.alignleft td {
   text-align: left;
 }
-.container .iveCharts,
-.container-fluid .iveCharts {
-  margin: 0 auto 20px auto;
-  width: 100%;
-  height: 300px;
-}
-.container .iveCharts .columnOuter,
-.container-fluid .iveCharts .columnOuter {
-  height: 100%;
-  float: left;
-  top: 0;
-  text-align: center;
-  position: relative;
-  border-left: solid 1px #aaaaaa;
-}
-.container .iveCharts .columnOuter:first-of-type,
-.container-fluid .iveCharts .columnOuter:first-of-type {
-  border-left: none;
-}
-.container .iveCharts .columnOuter:after,
-.container-fluid .iveCharts .columnOuter:after {
-  clear: both;
-}
-.container .iveCharts .columnHolder,
-.container-fluid .iveCharts .columnHolder {
-  float: left;
-  width: 50%;
-  height: 90%;
-  top: 0;
-  position: relative;
-}
-.container .iveCharts .columnHolder:after,
-.container-fluid .iveCharts .columnHolder:after {
-  clear: both;
-}
-.container .iveCharts .number,
-.container-fluid .iveCharts .number {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-}
-.container .iveCharts .number.small,
-.container-fluid .iveCharts .number.small {
-  font-size: 16px;
-}
-.container .iveCharts .column,
-.container-fluid .iveCharts .column {
-  bottom: 10%;
-  position: absolute;
-}
-.container .iveCharts .column:hover,
-.container-fluid .iveCharts .column:hover {
-  border: solid 1px #333;
-  opacity: 0.7;
-  /*cursor: pointer;*/
-}
-.container .iveCharts .title,
-.container-fluid .iveCharts .title {
-  position: absolute;
-  top: 90%;
-  width: 100%;
-  text-align: center;
-}
-.container .iveCharts .title.small,
-.container-fluid .iveCharts .title.small {
-  font-size: 16px;
-}
 .container #graph-source,
 .container-fluid #graph-source {
   font-size: 18px;
@@ -2187,31 +2133,6 @@ body {
 .container-fluid .figure {
   margin: 40px 0 75px 0;
 }
-.container .accordion.nested-accordion.has-hidden-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
-.container .accordion.nested-accordion.has-hidden-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
-.container .accordion.nested-accordion.has-hidden-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
-  content: "\f107";
-  font-family: "FontAwesome";
-  /*font-size: 40px;*/
-  cursor: pointer;
-  position: absolute;
-  left: 0;
-}
-.container .accordion.nested-accordion.has-visible-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h3:before,
-.container .accordion.nested-accordion.has-visible-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
-.container .accordion.nested-accordion.has-visible-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
-  content: "\f106";
-  font-family: "FontAwesome";
-  /*font-size: 40px;*/
-  position: absolute;
-  left: 0;
-}
 @media only screen and (min-width: 1200px) {
   .container .aside {
     top: 0;
@@ -2283,6 +2204,9 @@ body {
   }
   .container .aside {
     max-width: 300px;
+  }
+  .container .ingress {
+    width: 482px;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -2593,11 +2517,6 @@ body {
   }
   .container #map {
     display: none;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .container .ingress {
-    width: 652px;
   }
 }
 /*# sourceMappingURL=common.css.map */
