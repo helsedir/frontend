@@ -277,6 +277,10 @@ body {
   color: white !important;
   outline: 0;
 }
+.container a.method_entrance,
+.container-fluid a.method_entrance {
+  border: none;
+}
 .container .takst_table,
 .container-fluid .takst_table {
   margin-top: 50px;

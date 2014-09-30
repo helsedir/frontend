@@ -184,7 +184,10 @@
   width: 100px;
 }
 .no-svg .container .entrancebutton.menu button:hover span {
-  background-color: #badde9;
+  background-color: #d9dadb;
+}
+.no-svg .container .entrancebutton.menu button.js-expanded span {
+  background-color: #d9dadb;
 }
 .no-svg .container .navigate_forward.pull-right {
   background: url(../img/ikoner/pil_fremover_brun.png);

@@ -183,6 +183,14 @@ a {
     &.underline {
         text-decoration: underline;
     }
+
+    &.method_entrance {
+        &:focus {
+            background: none;
+            outline: 5px auto @colorMediumBlue;
+            outline-offset: -2px;
+        }
+    }
 }
 
 .content {
@@ -1075,6 +1083,11 @@ p.keyfigures, h4.keyfigures {
 
             .drops {
                 margin-top: 15px;
+            }
+
+            &:focus {
+                outline: 5px auto @colorMediumBlue;
+                outline-offset: -2px;
             }
         }
     }
@@ -2029,12 +2042,6 @@ fieldset {
     vertical-align: middle;
     text-align: center;
     width: 18%;
-
-    &:focus {
-        background: none;
-        outline: 5px auto @colorMediumBlue;
-        outline-offset: -2px;
-    }
 
     &:first-of-type {
         margin-left: 0;

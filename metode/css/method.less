@@ -93,21 +93,23 @@
         &.has-hidden-content {
             cursor: pointer;
 
-            h2:before, .accordion:before {
-                content: " ";
-                position: absolute;
-                right: 40px;
-                bottom: 15px;
-                padding: 6px 9px;
-                height: 25px;
-                width: 25px;
-                background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                -o-transform: rotate(90deg);
-                transform: rotate(90deg);
-                transition: all 0.6s;
+            h2 {
+                &:before, &.accordion:before {
+                    content: " ";
+                    position: absolute;
+                    right: 40px;
+                    bottom: 15px;
+                    padding: 6px 9px;
+                    height: 25px;
+                    width: 25px;
+                    background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    transition: all 0.6s;
+                }
             }
 
             h3.accordion:before {
@@ -118,21 +120,28 @@
         &.has-visible-content {
             cursor: pointer;
 
-            h2:before, .accordion:before {
-                content: " ";
-                position: absolute;
-                right: 40px;
-                bottom: 15px;
-                padding: 6px 9px;
-                height: 25px;
-                width: 25px;
-                background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                -webkit-transform: rotate(-90deg);
-                -moz-transform: rotate(-90deg);
-                -ms-transform: rotate(-90deg);
-                -o-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-                transition: all 0.6s;
+            h2 {
+                &:before, &.accordion:before {
+                    content: " ";
+                    position: absolute;
+                    right: 40px;
+                    bottom: 15px;
+                    padding: 6px 9px;
+                    height: 25px;
+                    width: 25px;
+                    background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    transition: all 0.6s;
+                }
+
+                &:focus {
+                    outline: 5px auto @colorMediumBlue;
+                    outline-offset: -2px;
+                }
             }
 
             h3.accordion:before {

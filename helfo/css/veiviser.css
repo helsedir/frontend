@@ -109,7 +109,7 @@ input[type=checkbox]:focus {
 .formbuttons {
   margin-top: -10px;
 }
-a.method_entrance {
+.method_entrance {
   cursor: pointer;
   float: left;
   vertical-align: middle;
@@ -118,62 +118,28 @@ a.method_entrance {
   width: 16.5%;
   border: none;
 }
-a.method_entrance:first-of-type {
+.method_entrance:first-of-type {
   margin-left: 0;
 }
-a.method_entrance:last-of-type {
+.method_entrance:last-of-type {
   margin-right: 0;
 }
-a.method_entrance h3 {
+.method_entrance h3 {
   margin-top: 0;
   font-size: 18px;
   border: none;
 }
-a.method_entrance h3.selected {
+.method_entrance h3.selected {
   border-bottom: 4px solid #838078;
 }
-a.method_entrance h3:hover {
+.method_entrance h3:hover {
   border: none;
 }
-a.method_entrance:hover {
+.method_entrance:hover {
   border: none;
 }
-a.method_entrance:focus {
+.method_entrance:focus {
   background: none;
-}
-.selected {
-  /*
-    span {
-        width: 86px;
-        height: 60px;
-        background: @colorOrange;
-        position: relative;
-        display: block;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 43px solid transparent;
-            border-right: 43px solid transparent;
-            border-top: 20px solid white;
-        }
-
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: -25px;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 43px solid transparent;
-            border-right: 43px solid transparent;
-            border-top: 25px solid @colorOrange;
-        }
-    } */
 }
 .selected .icon {
   background: url(../img/ikoner/helfo_pil_valgt.svg) no-repeat;
@@ -230,17 +196,17 @@ a.method_entrance:focus {
   }
 }
 @media only screen and (max-width: 599px) {
-  a.method_entrance {
+  .method_entrance {
     margin-bottom: 0;
     float: left;
     width: 16.5%;
     margin-top: 0;
   }
-  a.method_entrance .heading_wrapper {
+  .method_entrance .heading_wrapper {
     width: auto;
     margin: 0;
   }
-  a.method_entrance .heading_wrapper h3 {
+  .method_entrance .heading_wrapper h3 {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
@@ -283,17 +249,17 @@ a.method_entrance:focus {
   h1 {
     font-size: 22px;
   }
-  a.method_entrance {
+  .method_entrance {
     margin-top: 0;
     margin-bottom: 0;
     float: left;
     width: 33%;
   }
-  a.method_entrance .heading_wrapper {
+  .method_entrance .heading_wrapper {
     width: auto;
     margin: 0;
   }
-  a.method_entrance .heading_wrapper h3 {
+  .method_entrance .heading_wrapper h3 {
     text-align: center;
     border: none;
     font-size: 16px;
@@ -301,4 +267,4 @@ a.method_entrance:focus {
     padding-bottom: 2px;
   }
 }
-/*# sourceMappingURL=skjema.css.map */
+/*# sourceMappingURL=veiviser.css.map */

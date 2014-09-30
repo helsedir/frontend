@@ -147,6 +147,11 @@ a:hover {
 a.underline {
   text-decoration: underline;
 }
+a.method_entrance:focus {
+  background: none;
+  outline: 5px auto #0093a7;
+  outline-offset: -2px;
+}
 .content {
   position: relative;
 }
@@ -911,6 +916,10 @@ h4.keyfigures {
 }
 .module.module_message.withdrops .drops {
   margin-top: 15px;
+}
+.module.module_message.withdrops:focus {
+  outline: 5px auto #0093a7;
+  outline-offset: -2px;
 }
 .module.module_person {
   padding: 0;
@@ -1709,11 +1718,6 @@ fieldset {
   vertical-align: middle;
   text-align: center;
   width: 18%;
-}
-.method_entrance:focus {
-  background: none;
-  outline: 5px auto #0093a7;
-  outline-offset: -2px;
 }
 .method_entrance:first-of-type {
   margin-left: 0;

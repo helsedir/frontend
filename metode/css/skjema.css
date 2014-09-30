@@ -92,6 +92,10 @@ input.radio {
   font-size: 18px;
   color: #0093a7;
 }
+.navigate_forward a:focus span,
+.navigate_back a:focus span {
+  color: white;
+}
 .navigate_forward {
   background: url(../img/pil_nestesteg_nesteside_mellomblaa.svg) no-repeat;
   background-position: 100% 60%;

@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 .wrapper .method_status.has-hidden-content h2:before,
-.wrapper .method_status.has-hidden-content .accordion:before {
+.wrapper .method_status.has-hidden-content h2.accordion:before {
   content: " ";
   position: absolute;
   right: 40px;
@@ -82,7 +82,7 @@
   cursor: pointer;
 }
 .wrapper .method_status.has-visible-content h2:before,
-.wrapper .method_status.has-visible-content .accordion:before {
+.wrapper .method_status.has-visible-content h2.accordion:before {
   content: " ";
   position: absolute;
   right: 40px;
@@ -97,6 +97,10 @@
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   transition: all 0.6s;
+}
+.wrapper .method_status.has-visible-content h2:focus {
+  outline: 5px auto #0093a7;
+  outline-offset: -2px;
 }
 .wrapper .method_status.has-visible-content h3.accordion:before {
   font-size: 30px;
