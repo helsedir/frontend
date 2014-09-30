@@ -45,6 +45,9 @@
 
         if (windowWidth <= 599) {
             $('#mainsearch, #mainsearchcolumn').css('width', windowWidth);
+        }
+        else {
+            $('#mainsearch, #mainsearchcolumn').css('width', "");
         };
     });
     //creates collapsible headings based on screen size
