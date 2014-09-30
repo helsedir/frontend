@@ -17,8 +17,7 @@
 				<span class="text">Opprettet {{retningslinje.createdDate | date:'dd.MM.yyyy'}}</span>
 				<span class="text">Sist oppdatert {{retningslinje.updatedDate | date:'dd.MM.yyyy'}}</span>
 			</div>
-			<div class="text">
-				{{retningslinje.text}}
+			<div class="text" ng-bind-html="retningslinje.text | unsafe">
 			</div>
 		</div>
 	</header>
