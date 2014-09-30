@@ -1,54 +1,53 @@
-<article class="Guidelinefrontpage">
-	<header id="pageheader" class="pageheader">
-		<div class="headergroup">
-			<div class="container">
-				<h1 class="title">{{guideline.title}}</h1>
-				<span class="subtitle">Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
-				<ul class="hidden-xs metadata">
-					<li><span class="number">40</span>Anbefalinger</li>
-					<li><span class="number">2014</span>Sist oppdatert</li>
-					<li><span class="number">2214</span>IS-nummer</li>
-				</ul>
-				<a href="" title="" class="aboutguidelineicon"><span class="text">Om retningslinjen</span></a>
-			</div>
-		</div>
-		<div class="aboutexpand container">
-			<div class="metadata">
-				<span class="text">Opprettet {{guideline.createdDate | date:'dd.MM.yyyy'}}</span>
-				<span class="text">Sist oppdatert {{guideline.updatedDate | date:'dd.MM.yyyy'}}</span>
-			</div>
-			<div class="text">
-				{{guideline.text}}
-			</div>
-		</div>
-	</header>
-	<div class="container">
+<article class="container Guidelinechildsection">
+	<!--Header row-->
+  <div class="row">
+    <div class="col-md-12 nopadding">
+      <header id="pageheader" class="pageheader">
+        <nav>
+          <ol class="breadcrumbs clearfix">
+            <li><a href="../../../layouts/forside.html">Forside</a></li>
+            <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
+            <li><a href="#/{{guideline.guidelineId}}/">{{guideline.title}}</a></li>
+            <li><a class="active">{{section.heading}}</a></li>
+          </ol>
+        </nav>
+        <div class="headerGroup">
+          <span class="guidelinetitle">{{guideline.title}}</span>
+          <h1 class="sectiontitle">{{section.heading}}</h1>
+          <a href="" title="" class="aboutguidelineicon"><span class="text">Om retningslinjen</span></a>
+        </div>
+        <div class="aboutexpand">
+        	<div class="metadata">
+        		<span class="text">Opprettet {{guideline.createdDate | date:'dd.MM.yyyy'}}</span>
+        		<span class="text">Sist oppdatert {{guideline.updatedDate | date:'dd.MM.yyyy'}}</span>
+        	</div>
+        	<div class="text">
+        		{{guideline.text}}
+        	</div>
+        </div>
+      </header>
+    </div>
+  </div>
 		<div class="row">
 			<div class="col-md-8">
-				<form class="retningslinjerSok">
-					<label for="searchinput">Søk etter anbefalinger i denne retningslinjen</label>
-					<div id="search_input_retningslinjer">
-						<input id="searchinput" class="search typeahead" type="text" placeholder="Luftveier, Øye, Mage.." />
-					</div>
-				</form>
 				
-				<h2 class="small">Innhold i denne retningslinjen</h2>
+				<h2 class="small">Innhold i dette kapittelet</h2>
 				<ul class="sectionlist">
 					
-					<li class="element" ng-repeat="section in section.childSections">
-						<a ng-if="section.childSections.length > 0" href="#/{{guideline.guidelineId}}/childsectionIndex/{{section.sectionId}}">
-							<h3><span>{{guideline.title}}</span>{{section.heading}}</h3>
+					<li class="element" ng-repeat="thisSection in section.childSections">
+						<a ng-if="thisSection.childSections.length > 0" href="#/{{guideline.guidelineId}}/childsectionIndex/{{thisSection.sectionId}}">
+							<h3><span>{{guideline.title}} > {{section.heading}}</span>{{thisSection.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img class="haschildsections" src="../../img/modules/icons/ico-mer.png" alt="" />
 							</div>
 						</a>
-						<a ng-if="section.childSections.length == 0" href="#/{{guideline.guidelineId}}/section/{{section.sectionId}}">
-							<h3><span>{{guideline.title}}</span>{{section.heading}}</h3>
+						<a ng-if="thisSection.childSections.length == 0" href="#/{{guideline.guidelineId}}/section/{{thisSection.sectionId}}">
+							<h3><span>{{guideline.title}}</span>{{thisSection.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div class="numberofrecommendations">
-									<span class="number">{{section.recommendations.length}}</span>
+									<span class="number">{{thisSection.recommendations.length}}</span>
 									Anbefalinger
 								</div>
 							</div>
