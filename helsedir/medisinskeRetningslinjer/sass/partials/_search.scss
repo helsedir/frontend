@@ -16,7 +16,7 @@
 }
 
 .Searchresults .section {
-    background-color: #eeeded;
+    background-color: $colorGallery;
 }
 
 .Searchresults .sectioninformation {
@@ -24,11 +24,11 @@
     position: absolute;
     right: 30px;
     top: 38%;
-    color: #aeabb3;
+    color: $colorCloudy;
     font-size: 18px;
     .numberofrecommendations {
         font-family: $fontSohoLight;
-        color: #aeabb3;
+        color: $colorCloudy;
         display: block;
         font-size: 30px;
         text-align: center;
@@ -38,7 +38,7 @@
 .Searchresults .sectiontitle {
     padding-right: 105px;
     margin-top: 0;
-    color: #0093a7;
+    color: $colorBondiBlue;
     .guidelinetitle {
         display: block;
         color: $colorRegalBlue;
@@ -47,12 +47,12 @@
 
 .Searchresults .recommendation {
     background-color: $colorWhite;
-    border-left: 2px solid #69b4b6;
+    border-left: 2px solid $colorSeaGreen;
     @include breakpoint("mobile"){
         border: none;
     }
     .recommendationnumber {
-        color: #c53729;
+        color: $colorPersianRed;
         font-size: 18px;
     }
 }

@@ -392,7 +392,7 @@
             cursor: pointer;
             padding: 2px 15px;
             display: inline-block;
-            background-color: $colorDesertStorm;
+            background-color: $colorGallery;
             margin-right: $margin;
             &:last {
                 margin-right: 0;
@@ -403,7 +403,7 @@
                 color: $colorBlack;
             }
             &.resp-tab-active {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 height: 40px;
                 font-family: $fontCalibriBold;
             }
@@ -434,7 +434,7 @@
         @include breakpoint("mobile") {
             margin: 0;
             border: 0;
-            background-color: $colorBase-light;
+            background-color: $colorBase;
             padding-top: 1px;
             padding-bottom: 3px;
         }
@@ -446,20 +446,20 @@
             margin-right: 30px;
             padding-bottom: 30px;
             @include breakpoint("tablet") {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 margin: 0;
                 padding-left: 20px;
                 padding-right: 15px;
             }
 
             @include breakpoint("mobile") {
-                background-color: $colorAlto;
+                background-color: $colorGallery;
             }
         }
         .resp-accordion {
             
             padding: 7px 20px;
-            background-color: $colorDesertStorm;
+            background-color: $colorGallery;
             //margin-top: 0;
             margin-top: 3px;
             @include breakpoint("mobile") {
@@ -479,9 +479,9 @@
                 }
             }
             &.resp-tab-active {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 @include breakpoint("mobile") {
-                    background-color: $colorAlto;
+                    background-color: $colorGallery;
                 }
 
                 a {
@@ -593,7 +593,7 @@
             padding-right: 30px;
         }
         tbody tr:nth-child(odd) {
-            background: $colorBase-light;
+            background: $colorBase;
         }
     }
 }

@@ -278,7 +278,7 @@ form.retningslinjerSok #searchinput {
 .Guidelinefrontpage .aboutguidelineicon:before {
   color: #fff;
   display: block;
-  background-color: #f7f6f6;
+  background-color: #f5f5f5;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
   text-align: center;
@@ -600,7 +600,7 @@ form.retningslinjerSok #searchinput {
   border-left: 5px solid #77438d;
 }
 .Recommendation .recommendationheader.gradingWeak {
-  border-left: 5px solid #69b4b6;
+  border-left: 5px solid #6cb4b5;
 }
 .Recommendation .recommendationheader.gradingNone {
   border-left: 5px solid #aeaba8;
@@ -676,7 +676,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .recommendationexplanation.gradingWeak {
-  border-left: 2px solid #69b4b6;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationexplanation.gradingWeak {
@@ -723,7 +723,7 @@ form.retningslinjerSok #searchinput {
   background-color: #77438d;
 }
 .Recommendation .recommendationexplanation .icon.gradingWeak {
-  background-color: #69b4b6;
+  background-color: #6cb4b5;
 }
 .Recommendation .recommendationexplanation .icon.gradingNone {
   background-color: #aeaba8;
@@ -751,7 +751,7 @@ form.retningslinjerSok #searchinput {
   color: #77438d;
 }
 .Recommendation .recommendationstrength.gradingWeak {
-  color: #69b4b6;
+  color: #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationstrength {
@@ -810,7 +810,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .textContainer.gradingWeak {
-  border-left: 2px solid #69b4b6;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .textContainer.gradingWeak {
@@ -867,7 +867,7 @@ form.retningslinjerSok #searchinput {
   cursor: pointer;
   padding: 2px 15px;
   display: inline-block;
-  background-color: #e7e7e6;
+  background-color: #eeeded;
   margin-right: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item:last {
@@ -879,7 +879,7 @@ form.retningslinjerSok #searchinput {
   color: #000;
 }
 .Recommendation .tabs ul .resp-tab-item.resp-tab-active {
-  background-color: #f6f6f6;
+  background-color: #f5f5f5;
   height: 40px;
   font-family: "Calibri-Bold";
 }
@@ -912,7 +912,7 @@ form.retningslinjerSok #searchinput {
   .Recommendation .tabs .resp-tabs-container {
     margin: 0;
     border: 0;
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
     padding-top: 1px;
     padding-bottom: 3px;
   }
@@ -925,7 +925,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 992px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
     margin: 0;
     padding-left: 20px;
     padding-right: 15px;
@@ -933,12 +933,12 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #e0e0e0;
+    background-color: #eeeded;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion {
   padding: 7px 20px;
-  background-color: #e7e7e6;
+  background-color: #eeeded;
   margin-top: 3px;
 }
 @media (max-width: 768px) {
@@ -958,11 +958,11 @@ form.retningslinjerSok #searchinput {
   color: #838078;
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
-  background-color: #f6f6f6;
+  background-color: #f5f5f5;
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
-    background-color: #e0e0e0;
+    background-color: #eeeded;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active a:before {
@@ -1024,7 +1024,7 @@ form.retningslinjerSok #searchinput {
   background-color: #77438d;
 }
 .Recommendation .button-close.gradingWeak {
-  background-color: #69b4b6;
+  background-color: #6cb4b5;
 }
 .Recommendation .button-close.gradingNone {
   background-color: #aeaba8;
@@ -1082,7 +1082,7 @@ form.retningslinjerSok #searchinput {
   padding-right: 30px;
 }
 .picoModal table tbody tr:nth-child(odd) {
-  background: #f6f6f6;
+  background: #f5f5f5;
 }
 
 .Guidelinechildsection .pageheader {
@@ -1381,12 +1381,12 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 30px;
   top: 38%;
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Searchresults .sectioninformation .numberofrecommendations {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -1404,7 +1404,7 @@ form.retningslinjerSok #searchinput {
 
 .Searchresults .recommendation {
   background-color: #fff;
-  border-left: 2px solid #69b4b6;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Searchresults .recommendation {
@@ -1412,7 +1412,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Searchresults .recommendation .recommendationnumber {
-  color: #c53729;
+  color: #c63629;
   font-size: 18px;
 }
 
@@ -1526,7 +1526,7 @@ h3 {
 }
 
 h3.resp-tab-active {
-  background: #f6f6f6;
+  background: #f5f5f5;
 }
 
 .resp-easy-accordion h3.resp-accordion {
@@ -1606,7 +1606,7 @@ h3.resp-tab-active {
   left: 50%;
   margin-right: -32px;
   margin-top: -32px;
-  background: url(spinner.gif) #111 no-repeat center center;
+  background: url(spinner.gif) #000 no-repeat center center;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -o-border-radius: 8px;

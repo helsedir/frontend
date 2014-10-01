@@ -94,7 +94,7 @@
     &:before {
         color: $colorWhite;
         display: block;
-        background-color: $colorWildSand; //fallback
+        background-color: $colorBase; //fallback
         background-color: rgba(255, 255, 255, 0.2);
         content: url("../img/modules/icons/ico-i.svg");
         text-align: center;
