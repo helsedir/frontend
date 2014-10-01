@@ -6,7 +6,7 @@
 }
 
 .Guidelinesfrontpage .guideline {
-        background: #ffffff;
+        background: $colorWhite;
         padding: 30px;
         margin: 30px 0;
         @include breakpoint("mobile"){
@@ -35,6 +35,6 @@
 
 .Guidelinesfrontpage .guidelinesummary{
     word-wrap: break-word;
-    color: #000;
+    color: $colorBlack;
 }
 

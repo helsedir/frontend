@@ -27,8 +27,8 @@
                     position: absolute;
                     left: 20px;
                     top: 5px;
-                    font-family: "FontAwesome";
-                    content: "\f104";
+                    font-family: $fontAwesome;
+                    content: $fontIconChevronLeft;
                     font-size: 40px;
                     vertical-align: middle;
                     color: $colorWhite;
@@ -67,9 +67,6 @@
 }
 
 .Guidelinechildsection .guidelinetitle {
-    font-family: $fontCalibri;
-    text-transform: uppercase;
-    font-size: 18px;
     line-height: 22px;
     display: inline-block;
     margin-left: 30px;
@@ -100,7 +97,7 @@
     position: absolute;
     right: 30px;
     top: 25%;
-    color: #ffffff;
+    color: $colorWhite;
     @include breakpoint("tablet") {
         bottom: 0;
         top: auto;
@@ -109,7 +106,7 @@
     }
 
     &:before {
-        color: #ffffff;
+        color: $colorWhite;
         display: block;
         background-color: rgba(255, 255, 255, 0.2);
         content: url("../img/modules/icons/ico-i.svg");
@@ -128,7 +125,7 @@
         content: url("../img/modules/icons/ico-x.svg");
     }
     .text {
-        color: #ffffff;
+        color: $colorWhite;
         font-size: 18px;
         @include breakpoint("tablet") {
             display: none;
@@ -175,13 +172,6 @@
     }
 }
 
-.Guidelinechildsection .small {
-    color: $blueText;
-    text-transform: uppercase;
-    font-family: "Calibri";
-    font-size: 18px;
-}
-
 .Guidelinechildsection .sectionlist {
     .element {
         padding: 20px 30px;
@@ -191,7 +181,7 @@
             background-color: #eeeded;
         }
         &:nth-child(even) {
-            background-color: #ffffff;
+            background-color: $colorWhite;
         }
     }
 }
@@ -210,9 +200,6 @@
             margin-bottom: 10px;
             display: block;
             color: $blueText;
-            text-transform: uppercase;
-            font-family: "Calibri";
-            font-size: 18px;
         }
     }
 

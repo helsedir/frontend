@@ -31,19 +31,19 @@
 					</div>
 				</form>
 				
-				<h2 class="small">Innhold i denne retningslinjen</h2>
+				<h2 class="smalltitle small">Innhold i denne retningslinjen</h2>
 				<ul class="sectionlist">
 					
 					<li class="element" ng-repeat="section in retningslinje.sections">
 						<a ng-if="section.childSections.length > 0" href="#/{{retningslinje.guidelineId}}/childsectionIndex/{{section.sectionId}}">
-							<h3 class="sectionheading"><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img class="haschildsections" src="../../img/modules/icons/ico-mer.png" alt="" />
 							</div>
 						</a>
 						<a ng-if="section.childSections.length == 0" href="#/{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
-							<h3 class="sectionheading"><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div class="numberofrecommendations">

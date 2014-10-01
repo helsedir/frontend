@@ -41,8 +41,8 @@
                     position: absolute;
                     left: 20px;
                     top: 5px;
-                    font-family: "FontAwesome";
-                    content: "\f104";
+                    font-family: $fontAwesome;
+                    content: $fontIconChevronLeft;
                     font-size: 40px;
                     vertical-align: middle;
                     color: $colorWhite;
@@ -75,9 +75,6 @@
 }
 
 .Recommendations .guidelinetitle {
-    font-family: $fontCalibri;
-    text-transform: uppercase;
-    font-size: 18px;
     line-height: 22px;
     display: inline-block;
     margin-left: 30px;
@@ -160,7 +157,7 @@
         border-left: 5px solid #aeaba8;
     }
     &.gradingBlank {
-        border-left: 5px solid #fffff1;
+        border-left: 5px solid $colorWhite;
         /*Change to site background on mobile */
         @include breakpoint("mobile") {
             border-left: 5px solid $colorBase;
@@ -185,13 +182,13 @@
         &:before {
             position: absolute;
             left: 15px;
-            content: "\f107";
-            font-family: "FontAwesome";
+            content: $fontIconChevronDown;
+            font-family: $fontAwesome;
             cursor: pointer;
         }
         &.clicked {
             &:before {
-                content: "\f106";
+                content: $fontIconChevronUp;
             }
         }
         @include breakpoint("mobile") {
@@ -298,7 +295,7 @@
     @include breakpoint("mobile") {
         display: block;
         padding-top: 15px;
-        font-size: 24px;
+        font-size: 26px;
         font-family: $fontCalibri;
         height: 51px;
     }
@@ -473,8 +470,8 @@
                 &:before {
                     padding-right: 10px;
                     font-size: 30px;
-                    content: "\f107";
-                    font-family: "FontAwesome";
+                    content: $fontIconChevronDown;
+                    font-family: $fontAwesome;
                     text-decoration: none;
                     color: #838078;
                 }
@@ -487,7 +484,7 @@
 
                 a {
                     &:before {
-                        content: "\f106";
+                        content: $fontIconChevronUp;
                     }
                 }
             }
@@ -549,7 +546,7 @@
 .picoModal {
     display: none;
     font-size: 18px;
-    background: #ffffff;
+    background: $colorWhite;
     @media (min-width: 1200px) {
         width: 1200px;
     }
@@ -564,8 +561,8 @@
             right: 10px;
             font-weight: normal;
             &:after {
-                font-family: "FontAwesome";
-                content: "\f00d";
+                font-family: $fontAwesome;
+                content: $fontIconClose;
                 text-decoration: none;
                 font-size: inherit;
                 padding-left: 10px;
@@ -594,7 +591,7 @@
             padding-right: 30px;
         }
         tbody tr:nth-child(odd) {
-            background: #f7f6f6;
+            background: $colorBase-light;
         }
     }
 }

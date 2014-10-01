@@ -1,6 +1,13 @@
+@charset "UTF-8";
 /*Common styles for all guidelines*/
 article {
   min-height: 900px;
+}
+
+.smalltitle, h2.smalltitle {
+  font-family: "Calibri";
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .title, .subtitle, .sectiontitle {
@@ -47,8 +54,8 @@ aside.guidelines .module_related ul.linklist a {
 }
 aside.guidelines .module_related ul.linklist a:after {
   padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   text-decoration: none;
   font-size: inherit;
 }
@@ -71,12 +78,12 @@ form.retningslinjerSok #searchinput {
 .refinesearch input[type="radio"]:focus + label {
   background: none;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
 .refinesearch input[type="radio"]:active + label {
   background: none;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
 
 /* IKONER */
@@ -130,7 +137,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinesfrontpage .guideline {
-  background: #ffffff;
+  background: #fff;
   padding: 30px;
   margin: 30px 0;
 }
@@ -169,7 +176,7 @@ form.retningslinjerSok #searchinput {
  ---------------------------------
 */
 .Guidelinefrontpage .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
   overflow: hidden;
 }
@@ -181,7 +188,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinefrontpage .headergroup {
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: no-repeat;
@@ -223,7 +230,7 @@ form.retningslinjerSok #searchinput {
   font-size: 40px;
   font-family: "Soho Gothic W01 Light";
   line-height: 48px;
-  color: #ffffff;
+  color: #fff;
   padding-top: 0;
   display: block;
 }
@@ -252,7 +259,7 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 0;
   top: 40%;
-  color: #ffffff;
+  color: #fff;
 }
 @media (max-width: 992px) {
   .Guidelinefrontpage .aboutguidelineicon {
@@ -261,7 +268,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinefrontpage .aboutguidelineicon:before {
-  color: #ffffff;
+  color: #fff;
   display: block;
   background-color: #fafafa;
   background-color: rgba(255, 255, 255, 0.2);
@@ -283,7 +290,7 @@ form.retningslinjerSok #searchinput {
   content: url("../img/modules/icons/ico-x.svg");
 }
 .Guidelinefrontpage .aboutguidelineicon .text {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
 }
 @media (max-width: 992px) {
@@ -346,13 +353,6 @@ form.retningslinjerSok #searchinput {
   margin-top: 30px;
 }
 
-.Guidelinefrontpage .small {
-  color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
-}
-
 .Guidelinefrontpage .sectionlist .element {
   padding: 20px 30px;
   position: relative;
@@ -362,7 +362,7 @@ form.retningslinjerSok #searchinput {
   background-color: #eeeded;
 }
 .Guidelinefrontpage .sectionlist .element:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .Guidelinefrontpage .sectionheading {
@@ -382,9 +382,6 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 10px;
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Guidelinefrontpage .sectioninformation {
@@ -454,7 +451,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
 }
 @media (max-width: 768px) {
@@ -482,32 +479,32 @@ form.retningslinjerSok #searchinput {
     display: block;
   }
   .Recommendations .pageheader nav li:last-child:before {
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav li:before {
     position: absolute;
     left: 20px;
     top: 5px;
-    font-family: "FontAwesome";
-    content: "\f104";
+    font-family: "fontAwesome";
+    content: "";
     font-size: 40px;
     vertical-align: middle;
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav a {
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
   }
   .Recommendations .pageheader nav a:visited {
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav a:before {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
 .Recommendations .headerGroup {
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
@@ -521,9 +518,6 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .guidelinetitle {
-  font-family: "Calibri";
-  text-transform: uppercase;
-  font-size: 18px;
   line-height: 22px;
   display: inline-block;
   margin-left: 30px;
@@ -536,7 +530,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .sectiontitle {
-  color: #ffffff;
+  color: #fff;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 0;
@@ -559,7 +553,7 @@ form.retningslinjerSok #searchinput {
 */
 .Recommendation {
   padding: 0;
-  background: #ffffff;
+  background: #fff;
   margin-top: 25px;
 }
 .Recommendation:first-child {
@@ -604,7 +598,7 @@ form.retningslinjerSok #searchinput {
   border-left: 5px solid #aeaba8;
 }
 .Recommendation .recommendationheader.gradingBlank {
-  border-left: 5px solid #fffff1;
+  border-left: 5px solid #fff;
   /*Change to site background on mobile */
 }
 @media (max-width: 768px) {
@@ -631,12 +625,12 @@ form.retningslinjerSok #searchinput {
 .Recommendation .recommendationtitle:before {
   position: absolute;
   left: 15px;
-  content: "\f107";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   cursor: pointer;
 }
 .Recommendation .recommendationtitle.clicked:before {
-  content: "\f106";
+  content: "";
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationtitle {
@@ -689,7 +683,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .recommendationexplanation.gradingBlank {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #fff;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationexplanation.gradingBlank {
@@ -708,7 +702,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .recommendationexplanation .icon:before {
   content: url("../img/modules/icons/ico-i.svg");
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   width: 20px;
   height: 30px;
   margin-bottom: 0;
@@ -754,7 +748,7 @@ form.retningslinjerSok #searchinput {
   .Recommendation .recommendationstrength {
     display: block;
     padding-top: 15px;
-    font-size: 24px;
+    font-size: 26px;
     font-family: "Calibri";
     height: 51px;
   }
@@ -826,7 +820,7 @@ form.retningslinjerSok #searchinput {
   padding-top: 0;
 }
 .Recommendation .textContainer.gradingBlank {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #fff;
 }
 @media (max-width: 768px) {
   .Recommendation .textContainer.gradingBlank {
@@ -873,7 +867,7 @@ form.retningslinjerSok #searchinput {
 }
 .Recommendation .tabs ul .resp-tab-item a {
   font-size: 18px;
-  color: #000000;
+  color: #000;
 }
 .Recommendation .tabs ul .resp-tab-item.resp-tab-active {
   background-color: #f6f6f6;
@@ -884,9 +878,9 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 0;
 }
 .Recommendation .tabs .resp-tabs-container {
-  border-left: 15px solid #ffffff;
-  border-right: 15px solid #ffffff;
-  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid #fff;
   /* container divs for tab content */
 }
 .Recommendation .tabs .resp-tabs-container .keyinfoheading {
@@ -939,17 +933,17 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container .resp-accordion {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion a {
-  color: #000000;
+  color: #000;
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion a:before {
   padding-right: 10px;
   font-size: 30px;
-  content: "\f107";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   text-decoration: none;
   color: #838078;
 }
@@ -962,7 +956,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active a:before {
-  content: "\f106";
+  content: "";
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist {
   margin-left: 0;
@@ -975,7 +969,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .tabs .resp-tabs-container ul.linklist li a {
   font-size: 18px;
   text-decoration: underline;
-  color: #000000;
+  color: #000;
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist li a:after {
   content: url("../img/modules/icons/ico-full-skjerm.svg");
@@ -1001,7 +995,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .button-close i {
-  color: #ffffff;
+  color: #fff;
   margin-left: 20px;
   font-size: 28px;
 }
@@ -1029,7 +1023,7 @@ form.retningslinjerSok #searchinput {
 .picoModal {
   display: none;
   font-size: 18px;
-  background: #ffffff;
+  background: #fff;
 }
 @media (min-width: 1200px) {
   .picoModal {
@@ -1049,8 +1043,8 @@ form.retningslinjerSok #searchinput {
   font-weight: normal;
 }
 .picoModal .header a:after {
-  font-family: "FontAwesome";
-  content: "\f00d";
+  font-family: "fontAwesome";
+  content: "";
   text-decoration: none;
   font-size: inherit;
   padding-left: 10px;
@@ -1078,11 +1072,11 @@ form.retningslinjerSok #searchinput {
   padding-right: 30px;
 }
 .picoModal table tbody tr:nth-child(odd) {
-  background: #f7f6f6;
+  background: #f6f6f6;
 }
 
 .Guidelinechildsection .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
 }
 @media (max-width: 768px) {
@@ -1110,27 +1104,27 @@ form.retningslinjerSok #searchinput {
     display: block;
   }
   .Guidelinechildsection .pageheader nav li:last-child:before {
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav li:before {
     position: absolute;
     left: 20px;
     top: 5px;
-    font-family: "FontAwesome";
-    content: "\f104";
+    font-family: "fontAwesome";
+    content: "";
     font-size: 40px;
     vertical-align: middle;
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav a {
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
   }
   .Guidelinechildsection .pageheader nav a:visited {
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav a:before {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
@@ -1140,7 +1134,7 @@ form.retningslinjerSok #searchinput {
 
 .Guidelinechildsection .headerGroup {
   position: relative;
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
@@ -1149,9 +1143,6 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinechildsection .guidelinetitle {
-  font-family: "Calibri";
-  text-transform: uppercase;
-  font-size: 18px;
   line-height: 22px;
   display: inline-block;
   margin-left: 30px;
@@ -1164,7 +1155,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinechildsection .sectiontitle {
-  color: #ffffff;
+  color: #fff;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 0;
@@ -1184,7 +1175,7 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 30px;
   top: 25%;
-  color: #ffffff;
+  color: #fff;
 }
 @media (max-width: 992px) {
   .Guidelinechildsection .aboutguidelineicon {
@@ -1194,7 +1185,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinechildsection .aboutguidelineicon:before {
-  color: #ffffff;
+  color: #fff;
   display: block;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
@@ -1215,7 +1206,7 @@ form.retningslinjerSok #searchinput {
   content: url("../img/modules/icons/ico-x.svg");
 }
 .Guidelinechildsection .aboutguidelineicon .text {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
 }
 @media (max-width: 992px) {
@@ -1269,13 +1260,6 @@ form.retningslinjerSok #searchinput {
   }
 }
 
-.Guidelinechildsection .small {
-  color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
-}
-
 .Guidelinechildsection .sectionlist .element {
   padding: 20px 30px;
   position: relative;
@@ -1285,7 +1269,7 @@ form.retningslinjerSok #searchinput {
   background-color: #eeeded;
 }
 .Guidelinechildsection .sectionlist .element:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .Guidelinechildsection .sectionheading {
@@ -1305,9 +1289,6 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 10px;
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Guidelinechildsection .sectioninformation {
@@ -1369,9 +1350,6 @@ form.retningslinjerSok #searchinput {
 }
 
 .Search .numberofresults {
-  font-family: "Calibri";
-  font-size: 18px;
-  text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 15px;
   display: block;
@@ -1418,7 +1396,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Searchresults .recommendation {
-  background-color: #ffffff;
+  background-color: #fff;
   border-left: 2px solid #69b4b6;
 }
 @media (max-width: 768px) {

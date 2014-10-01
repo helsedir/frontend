@@ -4,6 +4,18 @@ article{
     min-height: 900px;
 }
 
+.smalltitle{
+  font-family: $fontCalibri;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h2  {
+  &.smalltitle{
+    @extend .smalltitle;
+  }
+}
+
 .title, .subtitle, .sectiontitle{
     word-wrap: break-word;
 }
@@ -48,8 +60,8 @@ aside.guidelines {
                 font-family: $fontSohoRegular;
                 &:after {
                     padding-left: 10px;
-                    content: "\f105";
-                    font-family: "FontAwesome";
+                    content: $fontIconChevronRight;
+                    font-family: $fontAwesome;
                     text-decoration: none;
                     font-size: inherit;
                 }
@@ -80,12 +92,12 @@ form.retningslinjerSok {
     input[type="radio"]:focus + label {
         background: none;
         font-weight: bold;
-        color: #000000;
+        color: $colorBlack;
     }
     input[type="radio"]:active + label {
         background: none;
         font-weight: bold;
-        color: #000000;
+        color: $colorBlack;
     }
 }
 
