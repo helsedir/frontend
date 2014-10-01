@@ -245,6 +245,10 @@ body {
             color: white !important;
             outline: 0;
         }
+
+        &.method_entrance {
+            border: none;
+        }
     }
 
     .takst_table {
@@ -487,13 +491,24 @@ body {
             }
         }
     }
-    /*    .nested-accordion.has-visible-content > .accordion:before {
-		float: left;
-		padding: 3px 20px 0 0;
-		content: "\f106";
-		font-family: "FontAwesome";
-		font-size: 40px;
-	}*/
+
+    .accordion.nested-accordion.has-hidden-content > h3:before, .accordion.nested-accordion.has-hidden-content > h4:before, .accordion.nested-accordion.has-hidden-content > h5:before {
+        content: "\f107";
+        font-family: "FontAwesome";
+        /*font-size: 40px;*/
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+    }
+
+    .accordion.nested-accordion.has-visible-content > h3:before, .accordion.nested-accordion.has-visible-content > h4:before, .accordion.nested-accordion.has-visible-content > h5:before {
+        content: "\f106";
+        font-family: "FontAwesome";
+        /*font-size: 40px;*/
+        position: absolute;
+        left: 0;
+    }
+
     .clearfix:before,
     .clearfix:after {
         display: table;
@@ -755,9 +770,7 @@ body {
             }
         }
     }
-    /**********************************************************************
-	Moduler
-***********************************************************************/
+
     video {
         width: 100%;
         margin-top: 10px;
@@ -1878,75 +1891,6 @@ body {
         }
     }
 
-    .iveCharts {
-        margin: 0 auto 20px auto;
-        width: 100%;
-        height: 300px;
-
-        .columnOuter {
-            height: 100%;
-            float: left;
-            top: 0;
-            text-align: center;
-            position: relative;
-            border-left: solid 1px #aaaaaa;
-
-            &:first-of-type {
-                border-left: none;
-            }
-
-            &:after {
-                clear: both;
-            }
-        }
-
-        .columnHolder {
-            float: left;
-            width: 50%;
-            height: 90%;
-            top: 0;
-            position: relative;
-
-            &:after {
-                clear: both;
-            }
-        }
-
-        .number {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 24px;
-
-            &.small {
-                font-size: 16px;
-            }
-        }
-
-        .column {
-            bottom: 10%;
-            position: absolute;
-
-            &:hover {
-                border: solid 1px #333;
-                opacity: 0.7;
-                /*cursor: pointer;*/
-            }
-        }
-
-        .title {
-            position: absolute;
-            top: 90%;
-            width: 100%;
-            text-align: center;
-
-            &.small {
-                font-size: 16px;
-            }
-        }
-    }
-
     #graph-source {
         font-size: 18px;
         margin-right: 10px;
@@ -2058,33 +2002,6 @@ body {
     }
 }
 
-.container .accordion.nested-accordion.has-hidden-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
-.container .accordion.nested-accordion.has-hidden-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h4:before,
-.container .accordion.nested-accordion.has-hidden-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-hidden-content > h5:before {
-    content: "\f107";
-    font-family: "FontAwesome";
-    /*font-size: 40px;*/
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-}
-
-.container .accordion.nested-accordion.has-visible-content > h3:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h3:before,
-.container .accordion.nested-accordion.has-visible-content > h4:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h4:before,
-.container .accordion.nested-accordion.has-visible-content > h5:before,
-.container-fluid .accordion.nested-accordion.has-visible-content > h5:before {
-    content: "\f106";
-    font-family: "FontAwesome";
-    /*font-size: 40px;*/
-    position: absolute;
-    left: 0;
-}
-
 @media only screen and (min-width: 1200px) {
     .container {
         .aside {
@@ -2178,6 +2095,10 @@ body {
 
         .aside {
             max-width: 300px;
+        }
+
+        .ingress {
+            width: 482px;
         }
     }
 }
@@ -2571,14 +2492,6 @@ body {
 
         #map {
             display: none;
-        }
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .container {
-        .ingress {
-            width: 652px;
         }
     }
 }

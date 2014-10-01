@@ -93,21 +93,23 @@
         &.has-hidden-content {
             cursor: pointer;
 
-            h2:before, .accordion:before {
-                content: " ";
-                position: absolute;
-                right: 40px;
-                bottom: 15px;
-                padding: 6px 9px;
-                height: 25px;
-                width: 25px;
-                background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                -o-transform: rotate(90deg);
-                transform: rotate(90deg);
-                transition: all 0.6s;
+            h2 {
+                &:before, &.accordion:before {
+                    content: " ";
+                    position: absolute;
+                    right: 40px;
+                    bottom: 15px;
+                    padding: 6px 9px;
+                    height: 25px;
+                    width: 25px;
+                    background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    transition: all 0.6s;
+                }
             }
 
             h3.accordion:before {
@@ -118,21 +120,28 @@
         &.has-visible-content {
             cursor: pointer;
 
-            h2:before, .accordion:before {
-                content: " ";
-                position: absolute;
-                right: 40px;
-                bottom: 15px;
-                padding: 6px 9px;
-                height: 25px;
-                width: 25px;
-                background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                -webkit-transform: rotate(-90deg);
-                -moz-transform: rotate(-90deg);
-                -ms-transform: rotate(-90deg);
-                -o-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-                transition: all 0.6s;
+            h2 {
+                &:before, &.accordion:before {
+                    content: " ";
+                    position: absolute;
+                    right: 40px;
+                    bottom: 15px;
+                    padding: 6px 9px;
+                    height: 25px;
+                    width: 25px;
+                    background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    transition: all 0.6s;
+                }
+
+                &:focus {
+                    outline: 5px auto @colorMediumBlue;
+                    outline-offset: -2px;
+                }
             }
 
             h3.accordion:before {
@@ -197,19 +206,17 @@
         line-height: 20px;
         /* padding: 5px 12px; */
         display: block;
-        height: 30px;
+        height: 40px;
         width: 20px;
         padding: 16px;
 
         &.selected {
             background: url(../img/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
             background-size: 16px;
-            background-position: 2px 3px;
+            background-position: 12px 3px;
             top: 31px;
             right: 44px;
-            padding: 0;
-            height: 21px;
-            padding: 10px;
+            padding: 16px;
         }
     }
 
@@ -275,7 +282,6 @@
 
         .method_status {
             padding-left: 0;
-            padding-right: 15px;
             margin-top: 22px;
 
             .method_attribute_label {

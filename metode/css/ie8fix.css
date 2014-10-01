@@ -1,5 +1,5 @@
 ﻿.no-svg .method_entrance {
-  width: 15%;
+  width: 24%;
 }
 .no-svg .method_entrance .drop_wrapper {
   display: inline-block;
@@ -9,8 +9,8 @@
   display: none !important;
 }
 .no-svg .method_entrance .drop_wrapper .drop {
-  width: 200px;
-  height: 166px;
+  width: 150px;
+  height: 125px;
 }
 .no-svg .method_entrance .drop_wrapper .drop.forslag {
   background: url(../img/ikoner/draape_forslag.png) no-repeat;

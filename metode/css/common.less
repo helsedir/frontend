@@ -183,6 +183,14 @@ a {
     &.underline {
         text-decoration: underline;
     }
+
+    &.method_entrance {
+        &:focus {
+            background: none;
+            outline: 5px auto @colorMediumBlue;
+            outline-offset: -2px;
+        }
+    }
 }
 
 .content {
@@ -768,7 +776,7 @@ p.keyfigures, h4.keyfigures {
 
 .module {
     display: inline-block;
-    margin: 30px 0 50px 0;
+    margin: 20px 0 0 0;
     position: relative;
 
     &.maincolumn {
@@ -1069,8 +1077,17 @@ p.keyfigures, h4.keyfigures {
             background-position: 89% 87%;
             padding-bottom: 60px;
 
+            &:hover {
+                text-decoration: none;
+            }
+
             .drops {
                 margin-top: 15px;
+            }
+
+            &:focus {
+                outline: 5px auto @colorMediumBlue;
+                outline-offset: -2px;
             }
         }
     }
@@ -1723,7 +1740,6 @@ fieldset {
     }
 
     .module_subscribe {
-        margin: 0;
         padding: 0;
     }
 
@@ -1734,10 +1750,6 @@ fieldset {
 
     .refinesearch {
         width: 100%;
-    }
-
-    .module_person {
-        margin-top: 20px;
     }
 
     .searchform {
@@ -1773,7 +1785,7 @@ fieldset {
     h1 {
         font-size: 30px;
         line-height: 36px;
-        margin-top: 40px;
+        margin-top: 15px;
     }
 
     h2 {
@@ -1848,7 +1860,7 @@ fieldset {
     }
 
     .transportsideknapp {
-        margin: 10px 0 10px 0;
+        margin: 10px 0 0 0;
         padding: 5px 0 40px 15px;
         background: white;
 
@@ -1989,10 +2001,6 @@ fieldset {
         }
     }
 
-    .module.module_print {
-        margin: 40px 0 0 0;
-    }
-
     .module_statistics_graph {
         margin-top: 30px;
         margin-bottom: 0;
@@ -2027,19 +2035,13 @@ fieldset {
     }
 }
 
-a.method_entrance {
+.method_entrance {
     margin: 50px 40px 50px 40px;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     width: 18%;
-
-    &:focus {
-        background: none;
-        outline: 5px auto @colorMediumBlue;
-        outline-offset: -2px;
-    }
 
     &:first-of-type {
         margin-left: 0;
@@ -2227,8 +2229,6 @@ a.method_entrance {
         }
 
         &.module_person {
-            margin-top: 10px;
-            margin-bottom: 0;
             width: 100%;
         }
     }
@@ -2259,10 +2259,14 @@ a.method_entrance {
             }
         }
     }
+
+    .showmorenews {
+        margin-top: 25px;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-    a.method_entrance {
+    .method_entrance {
         /* margin: 50px 57px 50px 15px; */
         cursor: pointer;
         vertical-align: middle;
