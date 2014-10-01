@@ -95,7 +95,7 @@
     @include breakpoint("mobile") {
         padding-left: 15px;
         padding-right: 15px;
-        color: #004e66;
+        color: $colorRegalBlue;
         font-size: 36px;
     }
 }
@@ -154,7 +154,7 @@
         border-left: 5px solid $colorgrading-weak;
     }
     &.gradingNone {
-        border-left: 5px solid #aeaba8;
+        border-left: 5px solid $colorCloudy;
     }
     &.gradingBlank {
         border-left: 5px solid $colorWhite;
@@ -306,10 +306,10 @@
     margin-right: 20px;
     padding: 10px;
     &.gradingStrong {
-        background-color: #ded2e4;
+        background-color: $colorSnuff;
     }
     &.gradingWeak {
-        background-color: #c1dfdd;
+        background-color: $colorEdgewater;
     }
     p {
         max-width: 650px;
@@ -451,13 +451,13 @@
             }
 
             @include breakpoint("mobile") {
-                background-color: #e0e0e0;
+                background-color: $colorQuillGray;
             }
         }
         .resp-accordion {
             
             padding: 7px 20px;
-            background-color: #e7e7e6;
+            background-color: $colorDesertStorm;
             //margin-top: 0;
             margin-top: 3px;
             @include breakpoint("mobile") {
@@ -473,13 +473,13 @@
                     content: $fontIconChevronDown;
                     font-family: $fontAwesome;
                     text-decoration: none;
-                    color: #838078;
+                    color: $colorFriarGray;
                 }
             }
             &.resp-tab-active {
                 background-color: $colorBase-light;
                 @include breakpoint("mobile") {
-                    background-color: #e0e0e0;
+                    background-color: $colorAlto;
                 }
 
                 a {
@@ -551,12 +551,12 @@
         width: 1200px;
     }
     .header {
-        background: #d0d2d3;
+        background: $colorQuillGray;
         font-weight: bold;
         padding: 10px 30px;
         a {
             text-decoration: underline;
-            color: #828078;
+            color: $colorFriarGray;
             position: absolute;
             right: 10px;
             font-weight: normal;

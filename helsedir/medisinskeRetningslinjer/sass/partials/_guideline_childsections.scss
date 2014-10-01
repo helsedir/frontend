@@ -88,7 +88,6 @@
     @include breakpoint("mobile") {
         padding-left: 15px;
         padding-right: 15px;
-        //color: #004e66;
         font-size: 36px;
     }
 }
@@ -150,7 +149,7 @@
     }
     .metadata .text {
         display: block;
-        color: #838078;
+        color: $colorDarkestGray;
     }
     .metadata {
         padding: 0;
@@ -178,7 +177,7 @@
         position: relative;
         margin-bottom: 20px;
         &:nth-child(odd) {
-            background-color: #eeeded;
+            background-color: $colorGallery;
         }
         &:nth-child(even) {
             background-color: $colorWhite;
@@ -193,7 +192,7 @@
             padding-right: 105px;
         }
         margin-top: 0;
-        color: #0093a7;
+        color: $colorBondiBlue;
         word-break: break-word;
         span {
             line-height: 15px;
@@ -209,18 +208,18 @@
     right: 30px;
     top: 38%;
     .numberofrecommendations {
-        color: #aeabb3;
+        color: $colorCloudy;
         font-size: 18px;
         a{
-            color: #aeabb3;
+            color: $colorCloudy;
             &:visited{
-                color: #aeabb3;
+                color: $colorCloudy;
             }
         }
     }
     .numberofrecommendations > .number {
         font-family: $fontSohoLight;
-        color: #aeabb3;
+        color: $colorCloudy;
         display: block;
         font-size: 30px;
         text-align: center;

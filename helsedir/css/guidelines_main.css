@@ -4,6 +4,10 @@ article {
   min-height: 900px;
 }
 
+b {
+  font-weight: bold;
+}
+
 .smalltitle, h2.smalltitle {
   font-family: "Calibri";
   font-size: 18px;
@@ -63,7 +67,7 @@ aside.guidelines .module_related.green {
   border-left: 2px solid #a1bf37;
 }
 aside.guidelines .module_related.blue {
-  border-left: 2px solid #6bb3b4;
+  border-left: 2px solid #6cb4b5;
 }
 
 form.retningslinjerSok label {
@@ -270,7 +274,7 @@ form.retningslinjerSok #searchinput {
 .Guidelinefrontpage .aboutguidelineicon:before {
   color: #fff;
   display: block;
-  background-color: #fafafa;
+  background-color: #f7f6f6;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
   text-align: center;
@@ -391,18 +395,18 @@ form.retningslinjerSok #searchinput {
   top: 38%;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations {
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations a {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations a:visited {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations > .number {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -923,7 +927,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #e0e0e0;
+    background-color: #d1d0cf;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion {
@@ -1031,13 +1035,13 @@ form.retningslinjerSok #searchinput {
   }
 }
 .picoModal .header {
-  background: #d0d2d3;
+  background: #d1d0cf;
   font-weight: bold;
   padding: 10px 30px;
 }
 .picoModal .header a {
   text-decoration: underline;
-  color: #828078;
+  color: #838078;
   position: absolute;
   right: 10px;
   font-weight: normal;
@@ -1298,18 +1302,18 @@ form.retningslinjerSok #searchinput {
   top: 38%;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations {
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations a {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations a:visited {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations > .number {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -1390,9 +1394,6 @@ form.retningslinjerSok #searchinput {
 .Searchresults .sectiontitle .guidelinetitle {
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Searchresults .recommendation {
@@ -1429,8 +1430,6 @@ form.retningslinjerSok #searchinput {
   padding-right: 15px;
   padding: 0;
   color: #004e66;
-  text-transform: uppercase;
-  font-size: 18px;
 }
 .Searchresults .breadcrumbs .crumb:after {
   margin: 0 15px;
