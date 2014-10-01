@@ -75,19 +75,19 @@
               <div id="nokkelinfo" ng-if="recommendation.keyInfo.length > 0">
                 <div ng-repeat="keyInfo in recommendation.keyInfo">
                 <section ng-show="keyInfo.benefits != null">
-                  <h3 class="keyinfoheading nomargin-top">Fordeler og ulemper</h3>
+                  <h1 class="keyinfoheading nomargin-top">Fordeler og ulemper</h1>
                   <div ng-bind-html="keyInfo.benefits | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.evidence != null">
-                  <h3 class="keyinfoheading">Kvalitet på dokumentasjonen</h3>
+                  <h1 class="keyinfoheading">Kvalitet på dokumentasjonen</h1>
                   <div ng-bind-html="keyInfo.evidence | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.preference != null">
-                  <h3 class="keyinfoheading">Verdier og preferanser</h3>
+                  <h1 class="keyinfoheading">Verdier og preferanser</h1>
                   <div ng-bind-html="keyInfo.preference | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.resources != null">
-                  <h3 class="keyinfoheading">Ressurshensyn</h3>
+                  <h1 class="keyinfoheading">Ressurshensyn</h1>
                   <div ng-bind-html="keyInfo.resources | unsafe"></div>
                 </section>
                 </div>

@@ -14,7 +14,7 @@ b {
   text-transform: uppercase;
 }
 
-h3.nomargin-top {
+h1.nomargin-top {
   margin-top: 0;
 }
 
@@ -893,6 +893,8 @@ form.retningslinjerSok #searchinput {
   /* container divs for tab content */
 }
 .Recommendation .tabs .resp-tabs-container .keyinfoheading {
+  margin: 30px 0 0 0;
+  line-height: 36px;
   padding-left: 0;
   font-size: 28px;
 }
