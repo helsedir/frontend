@@ -14,6 +14,10 @@ b {
   text-transform: uppercase;
 }
 
+h2.nomargin-top {
+  margin-top: 0;
+}
+
 .title, .subtitle, .sectiontitle {
   word-wrap: break-word;
 }
@@ -612,6 +616,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendation .recommendationtitle {
+  min-height: 100px;
   margin-top: 0;
   margin-right: 30px;
   display: block;
@@ -889,6 +894,7 @@ form.retningslinjerSok #searchinput {
 }
 .Recommendation .tabs .resp-tabs-container .keyinfoheading {
   padding-left: 0;
+  font-size: 28px;
 }
 @media (min-width: 993px) {
   .Recommendation .tabs .resp-tabs-container {
@@ -927,7 +933,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #d1d0cf;
+    background-color: #e0e0e0;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion {

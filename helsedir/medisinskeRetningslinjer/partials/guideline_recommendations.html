@@ -75,7 +75,7 @@
               <div id="nokkelinfo" ng-if="recommendation.keyInfo.length > 0">
                 <div ng-repeat="keyInfo in recommendation.keyInfo">
                 <section ng-show="keyInfo.benefits != null">
-                  <h2 class="keyinfoheading">Fordeler og ulemper</h2>
+                  <h2 class="keyinfoheading nomargin-top">Fordeler og ulemper</h2>
                   <div ng-bind-html="keyInfo.benefits | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.evidence != null">

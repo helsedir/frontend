@@ -20,6 +20,10 @@ h2  {
   }
 }
 
+h2.nomargin-top{
+  margin-top: 0;
+}
+
 .title, .subtitle, .sectiontitle{
     word-wrap: break-word;
 }
@@ -50,7 +54,7 @@ aside.guidelines {
             font-size: 18px;
             text-transform: uppercase;
             margin-top: 0;
-            color: $colorDarkBlue;
+            color: $colorRegalBlue;
             line-height: 20px;
         }
         ul.linklist {
@@ -59,7 +63,7 @@ aside.guidelines {
                 font-family: $fontSohoRegular;
             }
             a {
-                color: $colorDarkBlue;
+                color: $colorRegalBlue;
                 font-size: 20px;
                 font-family: $fontSohoRegular;
                 &:after {
@@ -82,7 +86,7 @@ aside.guidelines {
 
 form.retningslinjerSok {
     label {
-        color: $blueText;
+        color: $colorRegalBlue;
         margin-bottom: 10px;
     }
     #searchinput {
