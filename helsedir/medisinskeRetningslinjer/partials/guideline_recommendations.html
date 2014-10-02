@@ -107,14 +107,14 @@
 
                   <ul class="linklist">
                     <li><a href="#picoEvidensprofil" class="open-popup-link" >Evidensprofil</a></li>
-                    <li><a>Sammendrag av studie</a></li>
-                    <li><a>Referanser</a></li>
+                    <li><a href="#picoSummary" class="open-popup-link" >Sammendrag av studie</a></li>
+                    <li><a href="#picoReferences" class="open-popup-link" >Referanser</a></li>
                   </ul>
-                  <div id="picoEvidensprofil" class="white-popup mfp-hide picomodal">
-                    <div class="header">
-                      Evidensprofil
+                  <section id="picoEvidensprofil" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Evidensprofil</h1>
                       <a href="" class="closemodalbutton">Lukk</a>
-                    </div>
+                    </header>
                     <table>
                       <thead>
                         <tr>
@@ -220,7 +220,25 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
+                  </section>
+                  <section id="picoSummary" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Sammendrag</h1>
+                      <a href="" class="closemodalbutton">Lukk</a>
+                    </header>
+                    <div class="picosummarycontent" ng-bind-html="pico.summary | unsafe">
+                      
+                    </div>
+                  </section>
+                  <section id="picoReferences" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Referanser</h1>
+                      <a href="" class="closemodalbutton">Lukk</a>
+                    </header>
+                    <div class="picoreferencescontent">
+                      Her kommer referanser
+                    </div>
+                  </section>
 
                 </section>
               </div>

@@ -1133,19 +1133,20 @@ form.retningslinjerSok #searchinput {
     content: "Oppf\f8lgingstid";
   }
 }
-.picomodal .header {
+.picomodal .picomodalheader {
   background: #d1d0cf;
   font-weight: bold;
   padding: 10px 30px;
 }
-.picomodal .header a {
+.picomodal .picomodalheader a {
   text-decoration: underline;
   color: #838078;
   position: absolute;
   right: 10px;
+  top: 10px;
   font-weight: normal;
 }
-.picomodal .header a:after {
+.picomodal .picomodalheader a:after {
   font-family: "fontAwesome";
   content: "";
   text-decoration: none;
@@ -1186,6 +1187,11 @@ form.retningslinjerSok #searchinput {
     margin-bottom: 70px;
   }
 }
+.picosummarycontent, .picoreferencescontent {
+  max-width: 600px;
+  padding: 30px 30px;
+}
+
 .Guidelinechildsection .pageheader {
   background: #fff;
   border-left: 19px solid #004e66;

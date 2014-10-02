@@ -621,7 +621,7 @@
                         td:nth-of-type(9):before {@extend %bold; content: "Oppf\f8lgingstid"; }
     }
 
-    .header {
+    .picomodalheader {
         background: $colorQuillGray;
         font-weight: bold;
         padding: 10px 30px;
@@ -630,6 +630,7 @@
             color: $colorFriarGray;
             position: absolute;
             right: 10px;
+            top: 10px;
             font-weight: normal;
             &:after {
                 font-family: $fontAwesome;
@@ -676,7 +677,9 @@
     margin-top: 70px;
     margin-bottom: 70px;
 }
-.mfp-wrap{
-    
 }
+
+.picosummarycontent, .picoreferencescontent{
+    max-width: 600px;
+    padding: 30px 30px;
 }
