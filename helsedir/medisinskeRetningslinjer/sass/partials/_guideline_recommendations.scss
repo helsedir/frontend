@@ -397,10 +397,13 @@
             &:last {
                 margin-right: 0;
                 margin-left: $margin;
-            }
+            } 
             a {
                 font-size: 18px;
                 color: $colorBlack;
+                &:focus, &:visited:focus{
+                    color: $colorBlack !important;
+                }
             }
             &.resp-tab-active {
                 background-color: $colorBase;
