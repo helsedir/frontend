@@ -1032,58 +1032,53 @@ form.retningslinjerSok #searchinput {
   background-color: #aeaba8;
 }
 
-.picoModal {
-  display: none;
+.picomodal {
+  overflow: hidden;
   font-size: 18px;
   background: #fff;
 }
-@media (min-width: 1200px) {
-  .picoModal {
-    width: 1200px;
-  }
-}
-.picoModal .header {
+.picomodal .header {
   background: #d1d0cf;
   font-weight: bold;
   padding: 10px 30px;
 }
-.picoModal .header a {
+.picomodal .header a {
   text-decoration: underline;
   color: #838078;
   position: absolute;
   right: 10px;
   font-weight: normal;
 }
-.picoModal .header a:after {
+.picomodal .header a:after {
   font-family: "fontAwesome";
   content: "";
   text-decoration: none;
   font-size: inherit;
   padding-left: 10px;
 }
-.picoModal table {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.picomodal table {
+  max-width: 1200px;
+  margin: 30px auto;
 }
-.picoModal table th {
+.picomodal table th {
   font-weight: bold;
   text-align: left;
 }
-.picoModal table td:first-child {
+.picomodal table td:first-child {
   width: 300px;
   padding-left: 30px;
 }
-.picoModal table th:first-child {
+.picomodal table th:first-child {
   width: 300px;
   padding-left: 30px;
 }
-.picoModal table td:last-child {
+.picomodal table td:last-child {
   padding-right: 30px;
 }
-.picoModal table th:last-child {
+.picomodal table th:last-child {
   padding-right: 30px;
 }
-.picoModal table tbody tr:nth-child(odd) {
+.picomodal table tbody tr:nth-child(odd) {
   background: #f5f5f5;
 }
 

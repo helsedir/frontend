@@ -547,13 +547,13 @@
     }
 }
 
-.picoModal {
-    display: none;
+.picomodal {
+    overflow: hidden;
     font-size: 18px;
     background: $colorWhite;
-    @media (min-width: 1200px) {
-        width: 1200px;
-    }
+    //@media (min-width: 1200px) {
+    //    width: 1200px;
+    //}
     .header {
         background: $colorQuillGray;
         font-weight: bold;
@@ -574,8 +574,8 @@
         }
     }
     table {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        max-width: 1200px;
+        margin: 30px auto;
         th {
             font-weight: bold;
             text-align: left;
