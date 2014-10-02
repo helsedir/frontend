@@ -548,12 +548,64 @@
 }
 
 .picomodal {
+    width: auto;
+    position: relative;
+    max-width: 1300px;
     overflow: hidden;
     font-size: 18px;
     background: $colorWhite;
     //@media (min-width: 1200px) {
     //    width: 1200px;
     //}
+
+    @media (max-width: 1150px){
+        /* Force table to not be like tables anymore */
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr { 
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+                tr { border-bottom: 15px solid #ccc; }
+                    
+                    td { 
+                        /* Behave  like a "row" */
+                        border: none;
+                        position: relative;
+                        padding-left: 250px; 
+                        &:last-child{
+                            margin-bottom: 5px;
+                        }
+                    }
+                    
+                    td:before { 
+                        /* Now like a table header */
+                        position: absolute;
+                        /* Top/left values mimic padding */
+                        top: 6px;
+                        left: 6px;
+                        width: 45%; 
+                        padding-right: 10px; 
+                        white-space: nowrap;
+                    }
+                    /*
+                        Label the data
+                        */
+                        %bold {font-weight: bold}
+                        td:nth-of-type(1):before {@extend %bold; content: "Utfall"; }
+                        td:nth-of-type(2):before {@extend %bold; content: "Tiltro til estimatene"; }
+                        td:nth-of-type(3):before {@extend %bold; content: "Relativ effekt"; }
+                        td:nth-of-type(4):before {@extend %bold; content: "Ingen behandling"; }
+                        td:nth-of-type(5):before {@extend %bold; content: "Parental antikoagulasjon"; }
+                        td:nth-of-type(6):before {@extend %bold; content: "Absolutt forskjell"; }
+                        td:nth-of-type(7):before {@extend %bold; content: "Antall inkluderte"; }
+                        td:nth-of-type(8):before {@extend %bold; content: "Antall studier"; }
+                        td:nth-of-type(9):before {@extend %bold; content: "Oppf\f8lgingstid"; }
+    }
+
     .header {
         background: $colorQuillGray;
         font-weight: bold;
@@ -574,12 +626,15 @@
         }
     }
     table {
-        max-width: 1200px;
-        margin: 30px auto;
+
+        
         th {
             font-weight: bold;
             text-align: left;
         }
+        @media (min-width: 1150px){
+            margin: 30px auto;
+
         td:first-child {
             width: 300px;
             padding-left: 30px;
@@ -594,8 +649,19 @@
         th:last-child {
             padding-right: 30px;
         }
+        
         tbody tr:nth-child(odd) {
             background: $colorBase;
         }
-    }
+    }}
+}
+ @media (max-width: 1150px){
+.mfp-content{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.mfp-wrap{
+    
+}
 }

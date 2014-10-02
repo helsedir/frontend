@@ -183,8 +183,13 @@ function runJqueryUIRecommendationStuff(){
 	$('.open-popup-link').magnificPopup({
 	  type:'inline',
 	  midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-	  closeBtnInside: false
+	  closeBtnInside: false,
+
 	});
+	$(document).on('click', '.closemodalbutton', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
 	$('.open-popup-link').trigger('click');
 
 }
