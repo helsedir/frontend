@@ -190,7 +190,7 @@ function runJqueryUIRecommendationStuff(){
 			e.preventDefault();
 			$.magnificPopup.close();
 		});
-	$('.open-popup-link').trigger('click');
+
 
 }
 
