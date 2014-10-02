@@ -569,13 +569,22 @@
                     top: -9999px;
                     left: -9999px;
                 }
-                tr { border-bottom: 15px solid #ccc; }
+                tr { border-bottom: 15px solid #ccc; 
+                    &:first-child{
+                        @media all and (max-width: 600px){
+                            margin-top: 15px;
+                        }
+                    }
+                }
                     
                     td { 
                         /* Behave  like a "row" */
                         border: none;
                         position: relative;
                         padding-left: 250px; 
+                        @media all and (max-width: 600px){
+                            padding-left: 15px;
+                        }
                         &:last-child{
                             margin-bottom: 5px;
                         }
@@ -590,6 +599,12 @@
                         width: 45%; 
                         padding-right: 10px; 
                         white-space: nowrap;
+                        @media all and (max-width: 600px){
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            display: block;
+                        }
                     }
                     /*
                         Label the data
