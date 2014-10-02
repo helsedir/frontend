@@ -95,20 +95,7 @@ function runJqueryUIRecommendationStuff(){
 	    });
 
 	});
-		jQuery('.recommendationheader').siblings('.recommendationcontent').addClass('visuallyhidden');
-		jQuery('.gradingInfo').addClass('visuallyhidden');
-		jQuery('.button-close').addClass('visuallyhidden');
-		jQuery('.recommendationGrading').addClass('closed');
-
-	  jQuery(window).resize(function () {
-	      jQuery('.recommendationheader').addClass('accordion');
-	      jQuery('.accordion.open').siblings('.recommendationcontent').removeClass('visuallyhidden');
-	      jQuery('.accordion.closed').siblings('.recommendationcontent').addClass('visuallyhidden');
-
-	  });
-
-	  jQuery(window).trigger('resize'); 
-	  jQuery('.recommendationheader').addClass('closed');
+		
 	  
 	  
 	  jQuery('.Recommendation').on('click', 'h2', function() {

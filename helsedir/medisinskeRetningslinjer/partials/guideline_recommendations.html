@@ -24,11 +24,11 @@
     <div class="col-md-12 col-lg-8">
       <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
 
-          <header class="recommendationheader" grading="{{recommendation.strength}}">
+          <header class="recommendationheader closed" grading="{{recommendation.strength}}">
             <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
           </header>
 
-        <div class="recommendationcontent">
+        <div class="recommendationcontent visuallyhidden">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
             <div class="clickable">
               <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}"></i>
@@ -248,7 +248,7 @@
             </div>
           </div>
         </div>
-        <a href="#" grading="{{recommendation.strength}}" class="button-close"><i class="fa fa-angle-up"></i></a>
+        <a href="#" grading="{{recommendation.strength}}" class="button-close visuallyhidden"><i class="fa fa-angle-up"></i></a>
       </section>
     </div>
     <aside class="col-md-12 col-lg-3 pull-right guidelines">
