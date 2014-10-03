@@ -1,7 +1,17 @@
 <article class="Guidelinefrontpage">
 	<header id="pageheader" class="pageheader">
+		<div class="container">
+			<nav>
+					          <ol class="container breadcrumbs clearfix">
+					            <li><a href="../../../layouts/forside.html">Forside</a></li>
+					            <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
+					          </ol>
+					        </nav>
+		</div>
+		
 		<div class="headergroup">
 			<div class="container">
+							
 				<h1 class="title">{{retningslinje.shortTitle}}</h1>
 				<span class="subtitle">{{retningslinje.title}}</span>
 				<ul class="hidden-xs metadata">
@@ -13,6 +23,7 @@
 			</div>
 		</div>
 		<div class="aboutexpand container">
+
 			<div class="metadata">
 				<span class="text">Opprettet {{retningslinje.createdDate | date:'dd.MM.yyyy'}}</span>
 				<span class="text">Sist oppdatert {{retningslinje.updatedDate | date:'dd.MM.yyyy'}}</span>
