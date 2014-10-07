@@ -559,6 +559,10 @@ form.retningslinjerSok #searchinput {
     Main
  ---------------------------------
 */
+.Recommendations {
+  margin-bottom: 100px;
+}
+
 .Recommendations .aboutsection {
   margin-top: 25px;
 }
@@ -602,7 +606,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .Recommendation .recommendationheader.gradingStrong {
