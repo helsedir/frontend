@@ -54,7 +54,7 @@
         <div class="recommendationcontent visuallyhidden">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
             <div class="clickable">
-              <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}"></i>
+              <i ng-hide="recommendation.strength == null || recommendation.strength == 'null'" class="icon" grading="{{recommendation.strength}}"></i>
               <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
               <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
             </div>
