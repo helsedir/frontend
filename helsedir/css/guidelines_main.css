@@ -559,6 +559,15 @@ form.retningslinjerSok #searchinput {
     Main
  ---------------------------------
 */
+.Recommendations .aboutsection {
+  margin-top: 25px;
+}
+
+.Recommendations .aboutsectioncontent {
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
 .Recommendation {
   padding: 0;
   background: #fff;

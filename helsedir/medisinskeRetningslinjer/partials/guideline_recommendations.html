@@ -20,13 +20,41 @@
     </div>
   </div>
   <!--Recommendations-->
-  <div class="row" directiveExample>
+  <div class="row">
+    <div ng-show="section.text" class="col-md-12 col-lg-8 aboutsection">
+      <div class="aboutsectioncontent">
+        <h2>Generelt</h2>
+        <p ng-bind-html="section.text | unsafe"></p>
+      </div>
+    </div>
+    <aside class="col-md-12 col-lg-3 pull-right guidelines">
+      <div class="module module_related green col-md-6">
+        <h3>Relaterte anbefalinger</h3>
+        <ul class="linklist">
+          <li><a href="#">Sepsis</a></li>
+          <li><a href="#">Antibiotika</a></li>
+          <li><a href="#">Sepsis</a></li>
+        </ul>
+        <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
+      </div>
+      <div class="module module_related blue col-md-6">
+        <h3>Relaterte retningslinjer</h3>
+        <ul class="linklist">
+          <li><a href="#">Antibiotika</a></li>
+          <li><a href="#">Sepsis</a></li>
+          <li><a href="#">Sepsis</a></li>
+        </ul>
+        <img class="pulse" src="../../../img/modules/EKG-lyseblaa.png" alt="">
+      </div>
+    </aside>
+
     <div class="col-md-12 col-lg-8">
       <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
 
           <header class="recommendationheader closed" grading="{{recommendation.strength}}">
             <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
           </header>
+
 
         <div class="recommendationcontent visuallyhidden">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
@@ -251,26 +279,7 @@
         <a href="#" grading="{{recommendation.strength}}" class="button-close visuallyhidden"><i class="fa fa-angle-up"></i></a>
       </section>
     </div>
-    <aside class="col-md-12 col-lg-3 pull-right guidelines">
-      <div class="module module_related green col-md-6">
-        <h3>Relaterte anbefalinger</h3>
-        <ul class="linklist">
-          <li><a href="#">Sepsis</a></li>
-          <li><a href="#">Antibiotika</a></li>
-          <li><a href="#">Sepsis</a></li>
-        </ul>
-        <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
-      </div>
-      <div class="module module_related blue col-md-6">
-        <h3>Relaterte retningslinjer</h3>
-        <ul class="linklist">
-          <li><a href="#">Antibiotika</a></li>
-          <li><a href="#">Sepsis</a></li>
-          <li><a href="#">Sepsis</a></li>
-        </ul>
-        <img class="pulse" src="../../../img/modules/EKG-lyseblaa.png" alt="">
-      </div>
-    </aside>
+
     <!-- row -->
   </div>
   <!-- end container -->
