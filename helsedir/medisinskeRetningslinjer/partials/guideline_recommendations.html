@@ -274,11 +274,13 @@
         <a href="#" grading="{{recommendation.strength}}" class="button-close visuallyhidden"><i class="fa fa-angle-up"></i></a>
       </section>
     </div>
-    <div ng-show="section.text" class="col-md-12 col-lg-8 aboutsection">
+    <!--About section-->
+    <section ng-show="section.text" class="col-md-12 col-lg-8 aboutsection">
       <div class="aboutsectioncontent">
+        <h1 class="aboutsectionheading">Om {{section.heading | lowercase}}</h1>
         <p ng-bind-html="section.text | unsafe"></p>
       </div>
-    </div>
+    </section>
 
     <!-- row -->
   </div>
