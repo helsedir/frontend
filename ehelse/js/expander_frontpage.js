@@ -47,13 +47,13 @@
     });
 
     $('#mobilesearch').on('click', function () {
-        if ($('#mainsearchcolumn').is(':visible')) {
+        if ($('#mainsearch').is(':visible')) {
             $(this).removeClass('js-expanded');
-            $('#mainsearchcolumn').slideUp(500);
+            $('#mainsearch').slideUp(500);
         } else {
             $(this).addClass('js-expanded');
-            $('#mainsearchcolumn').slideDown(500);
-            $('#mainsearchcolumn input').focus();
+            $('#mainsearch').slideDown(500);
+            $('#mainsearch input').focus();
             if ($('#mobilemenu').hasClass('js-expanded')) {
                 $('.js-expand').addClass('visuallyhidden');
                 $('#mobilemenu').removeClass('js-expanded');
