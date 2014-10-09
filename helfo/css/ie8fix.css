@@ -25,4 +25,7 @@ body {
 .container .entrancebutton {
   height: 210px;
 }
+.container .entrancebutton.menu button {
+  height: 210px;
+}
 /*# sourceMappingURL=ie8fix.css.map */
