@@ -849,7 +849,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .textContainer.gradingNone .recommendation-text dl dt {
   margin-top: 20px;
 }
-.Recommendation .textContainer.gradingNone .recommendation-text dl dl {
+.Recommendation .textContainer.gradingNone .recommendation-text dl dd {
   padding-left: 20px;
 }
 .Recommendation .textContainer.gradingBlank {
