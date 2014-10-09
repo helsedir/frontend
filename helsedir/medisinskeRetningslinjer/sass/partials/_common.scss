@@ -4,6 +4,26 @@ article{
     min-height: 900px;
 }
 
+b{
+  font-weight: bold;
+}
+
+.smalltitle{
+  font-family: $fontCalibri;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h2  {
+  &.smalltitle{
+    @extend .smalltitle;
+  }
+}
+
+h1.nomargin-top{
+  margin-top: 0;
+}
+
 .title, .subtitle, .sectiontitle{
     word-wrap: break-word;
 }
@@ -34,7 +54,7 @@ aside.guidelines {
             font-size: 18px;
             text-transform: uppercase;
             margin-top: 0;
-            color: $colorDarkBlue;
+            color: $colorRegalBlue;
             line-height: 20px;
         }
         ul.linklist {
@@ -43,30 +63,30 @@ aside.guidelines {
                 font-family: $fontSohoRegular;
             }
             a {
-                color: $colorDarkBlue;
+                color: $colorRegalBlue;
                 font-size: 20px;
                 font-family: $fontSohoRegular;
                 &:after {
                     padding-left: 10px;
-                    content: "\f105";
-                    font-family: "FontAwesome";
+                    content: $fontIconChevronRight;
+                    font-family: $fontAwesome;
                     text-decoration: none;
                     font-size: inherit;
                 }
             }
         }
         &.green {
-            border-left: 2px solid #a1bf37;
+            border-left: 2px solid $colorGreen;
         }
         &.blue {
-            border-left: 2px solid #6bb3b4;
+            border-left: 2px solid $colorSeaGreen;
         }
     }
 }
 
 form.retningslinjerSok {
     label {
-        color: $blueText;
+        color: $colorRegalBlue;
         margin-bottom: 10px;
     }
     #searchinput {
@@ -80,12 +100,12 @@ form.retningslinjerSok {
     input[type="radio"]:focus + label {
         background: none;
         font-weight: bold;
-        color: #000000;
+        color: $colorBlack;
     }
     input[type="radio"]:active + label {
         background: none;
         font-weight: bold;
-        color: #000000;
+        color: $colorBlack;
     }
 }
 

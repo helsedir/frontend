@@ -1,5 +1,3 @@
-
-
 $(runJqueryUIStuff());
 $(runJqueryUIRecommendationStuff());
 
@@ -95,55 +93,19 @@ function runJqueryUIRecommendationStuff(){
 	            }
 	        }
 	    });
-	    //styles tables. workaround for IE8
-	    $('table.table_general tr:nth-child(2n+1)').addClass('odd');
 
-	    $('#menushortcut').on('click', function () {
-	        var expandedContent = $(".js-expand");
-	        expandedContent.slideUp(0, function () {
-	            expandedContent.removeClass('visuallyhidden')
-	                .slideDown(500);
-	        });
-	        $('#tab_header1').focus();
-	    });
-
-	    //show/hide more news/conferences
-	    //$('.showmorenews').on('click', function () {
-	     //   $(this).toggleClass('visuallyhidden').siblings().removeClass('visuallyhidden').slideUp(0).slideDown(700);
-	    //});
-
-	   // $('.order').on('click', function () {
-	    //    $('.shoppingcartbutton').toggle(800);
-	    //});
 	});
-		jQuery('.recommendationheader').siblings('.recommendationcontent').addClass('visuallyhidden');
-		jQuery('.gradingInfo').addClass('visuallyhidden');
-		jQuery('.button-close').addClass('visuallyhidden');
-		jQuery('.recommendationGrading').addClass('closed');
-
-	  jQuery(window).resize(function () {
-	      jQuery('.recommendationheader').addClass('accordion');
-	      jQuery('.accordion.open').siblings('.recommendationcontent').removeClass('visuallyhidden');
-	      jQuery('.accordion.closed').siblings('.recommendationcontent').addClass('visuallyhidden');
-
-	  });
-
-	  jQuery(window).trigger('resize'); 
-	  jQuery('.recommendationheader').addClass('closed');
+		
 	  
 	  
-	  jQuery('.Recommendation').on('click', '.recommendationtitle', function() {
-		$(document).find(".open").find(".recommendationtitle").not(this).trigger("click");
+	  jQuery('.Recommendation').on('click', 'h2', function() {
 	  	//make left border dissappear
 	  	$(this).parent().toggleClass("gradingBlank", 300);
 	  	$(this).closest("section").toggleClass("open");
 	  	$(this).toggleClass("clicked"); //make element same background as page
 	  	var wrapper = $(this).closest(".recommendationheader");
 	  	slider(wrapper, wrapper.siblings('.recommendationcontent, .background_information, .button-close'));
-	  	if($(this).closest("section").not(".open"))
-	  		$(this).closest("section").ScrollTo({
-    			onlyIfOutside: true
-			});
+
 	  });
 
 	  //hide recommendation explanation text
@@ -191,9 +153,7 @@ function runJqueryUIRecommendationStuff(){
 			wrapper.removeClass('open');
 			wrapper.closest(".Recommendation").removeClass("open");
 			wrapper.addClass('closed');
-			wrapper.ScrollTo({
-    			onlyIfOutside: true
-			});
+
 		});
 	 }	});
 
@@ -207,7 +167,17 @@ function runJqueryUIRecommendationStuff(){
 	      }
 	 });
 
-	
+	$('.open-popup-link').magnificPopup({
+	  type:'inline',
+	  midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	  closeBtnInside: false,
+
+	});
+	$(document).on('click', '.closemodalbutton', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
+
 
 }
 
@@ -228,19 +198,9 @@ function runJqueryUIStuff(){
 	 	//clickClose: false,
 	 //	showClose: false
 	 //});
+
 		
 }
-
-
-/*function goFromSearchToRecommendation(destination, headline) {
-	window.location.href = destination;
-	
-	$(window).bind("load", function() {
-   alert("t");
-	});
-	
-	//$(".container").find(".recommendation h1").addClass('open');
-}*/
 
 function slider(accordion, areaToExpand) {
   if(accordion.hasClass('open')){
@@ -256,39 +216,5 @@ function slider(accordion, areaToExpand) {
 	  accordion.removeClass('closed');
 	  accordion.addClass('open');
   }
-}
-
-function typeahead(){
-	/** Twitter typeahead **/
-		var antibiotika = new Bloodhound({
-	  	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('keyword'),
-			queryTokenizer: Bloodhound.tokenizers.whitespace,
-			local: [{"keyword":"antibiotika"}, {"keyword":"amming"}, {"keyword":"sepsis"},{"keyword":"blodforgiftning"},{"keyword":"nervesystemet"},{"keyword":"abdomen"},{"keyword":"øvre luftveier"},{"keyword":"nedre luftveier"},{"keyword":"urinveier"},{"keyword":"hjertekirurgi"}]
-			//prefetch: '../data/antibiotika.json'
-		});
-	 
-		antibiotika.initialize();
-	 
-		$('#search_input_retningslinjer .typeahead').typeahead({
-			hint: false,
-	  	highlight: true
-		},
-		{
-	  name: 'antibiotika',
-	  displayKey: 'keyword',
-	  source: antibiotika.ttAdapter()
-		});
-		
-		
-		$('#search_input_retningslinjer').bind('typeahead:selected', function(obj, datum, name) {      
-	        window.location.href = 'soeketreff.html';
-		});
-		
-		$(document).on('typeahead:opened', function(event, datum) {
-	  	var width = $(event.target).width();
-			$('.tt-dropdown-menu').width(width);
-		});
-		
-		window.localStorage.clear();
 }
 

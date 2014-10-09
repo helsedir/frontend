@@ -1,18 +1,29 @@
 <article class="Guidelinefrontpage">
 	<header id="pageheader" class="pageheader">
+		<div class="container">
+			<nav>
+					          <ol class="container breadcrumbs clearfix">
+					            <li><a href="../../../layouts/forside.html">Forside</a></li>
+					            <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
+					          </ol>
+					        </nav>
+		</div>
+		
 		<div class="headergroup">
 			<div class="container">
-				<h1 class="title">{{retningslinje.title}}</h1>
-				<span class="subtitle">Nasjonale faglige retningslinjer for spedbarnsernæring i primærhelsetjenesten</span>
+							
+				<h1 class="title">{{retningslinje.shortTitle}}</h1>
+				<span class="subtitle">{{retningslinje.title}}</span>
 				<ul class="hidden-xs metadata">
 					<li><span class="number">40</span>Anbefalinger</li>
-					<li><span class="number">2014</span>Sist oppdatert</li>
+					<li><span class="number">{{retningslinje.updatedDate | date:'yyyy'}}</span>Sist oppdatert</li>
 					<li><span class="number">2214</span>IS-nummer</li>
 				</ul>
 				<a href="" title="" class="aboutguidelineicon"><span class="text">Om retningslinjen</span></a>
 			</div>
 		</div>
 		<div class="aboutexpand container">
+
 			<div class="metadata">
 				<span class="text">Opprettet {{retningslinje.createdDate | date:'dd.MM.yyyy'}}</span>
 				<span class="text">Sist oppdatert {{retningslinje.updatedDate | date:'dd.MM.yyyy'}}</span>
@@ -31,19 +42,19 @@
 					</div>
 				</form>
 				
-				<h2 class="small">Innhold i denne retningslinjen</h2>
+				<h2 class="smalltitle small">Innhold i denne retningslinjen</h2>
 				<ul class="sectionlist">
 					
 					<li class="element" ng-repeat="section in retningslinje.sections">
 						<a ng-if="section.childSections.length > 0" href="#/{{retningslinje.guidelineId}}/childsectionIndex/{{section.sectionId}}">
-							<h3 class="sectionheading"><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img class="haschildsections" src="../../img/modules/icons/ico-mer.png" alt="" />
 							</div>
 						</a>
 						<a ng-if="section.childSections.length == 0" href="#/{{retningslinje.guidelineId}}/section/{{section.sectionId}}">
-							<h3 class="sectionheading"><span>{{retningslinje.title}}</span>{{section.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div class="numberofrecommendations">

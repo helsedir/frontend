@@ -1,6 +1,21 @@
+@charset "UTF-8";
 /*Common styles for all guidelines*/
 article {
   min-height: 900px;
+}
+
+b {
+  font-weight: bold;
+}
+
+.smalltitle, h2.smalltitle {
+  font-family: "Calibri";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h1.nomargin-top {
+  margin-top: 0;
 }
 
 .title, .subtitle, .sectiontitle {
@@ -47,8 +62,8 @@ aside.guidelines .module_related ul.linklist a {
 }
 aside.guidelines .module_related ul.linklist a:after {
   padding-left: 10px;
-  content: "\f105";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   text-decoration: none;
   font-size: inherit;
 }
@@ -56,7 +71,7 @@ aside.guidelines .module_related.green {
   border-left: 2px solid #a1bf37;
 }
 aside.guidelines .module_related.blue {
-  border-left: 2px solid #6bb3b4;
+  border-left: 2px solid #6cb4b5;
 }
 
 form.retningslinjerSok label {
@@ -71,12 +86,12 @@ form.retningslinjerSok #searchinput {
 .refinesearch input[type="radio"]:focus + label {
   background: none;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
 .refinesearch input[type="radio"]:active + label {
   background: none;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
 
 /* IKONER */
@@ -130,7 +145,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinesfrontpage .guideline {
-  background: #ffffff;
+  background: #fff;
   padding: 30px;
   margin: 30px 0;
 }
@@ -169,7 +184,7 @@ form.retningslinjerSok #searchinput {
  ---------------------------------
 */
 .Guidelinefrontpage .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
   overflow: hidden;
 }
@@ -181,7 +196,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinefrontpage .headergroup {
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: no-repeat;
@@ -223,7 +238,7 @@ form.retningslinjerSok #searchinput {
   font-size: 40px;
   font-family: "Soho Gothic W01 Light";
   line-height: 48px;
-  color: #ffffff;
+  color: #fff;
   padding-top: 0;
   display: block;
 }
@@ -252,7 +267,7 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 0;
   top: 40%;
-  color: #ffffff;
+  color: #fff;
 }
 @media (max-width: 992px) {
   .Guidelinefrontpage .aboutguidelineicon {
@@ -261,9 +276,9 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinefrontpage .aboutguidelineicon:before {
-  color: #ffffff;
+  color: #fff;
   display: block;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
   text-align: center;
@@ -283,7 +298,7 @@ form.retningslinjerSok #searchinput {
   content: url("../img/modules/icons/ico-x.svg");
 }
 .Guidelinefrontpage .aboutguidelineicon .text {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
 }
 @media (max-width: 992px) {
@@ -346,13 +361,6 @@ form.retningslinjerSok #searchinput {
   margin-top: 30px;
 }
 
-.Guidelinefrontpage .small {
-  color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
-}
-
 .Guidelinefrontpage .sectionlist .element {
   padding: 20px 30px;
   position: relative;
@@ -362,7 +370,7 @@ form.retningslinjerSok #searchinput {
   background-color: #eeeded;
 }
 .Guidelinefrontpage .sectionlist .element:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .Guidelinefrontpage .sectionheading {
@@ -382,9 +390,6 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 10px;
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Guidelinefrontpage .sectioninformation {
@@ -394,18 +399,18 @@ form.retningslinjerSok #searchinput {
   top: 38%;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations {
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations a {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations a:visited {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinefrontpage .sectioninformation .numberofrecommendations > .number {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -454,7 +459,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
 }
 @media (max-width: 768px) {
@@ -482,32 +487,32 @@ form.retningslinjerSok #searchinput {
     display: block;
   }
   .Recommendations .pageheader nav li:last-child:before {
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav li:before {
     position: absolute;
     left: 20px;
     top: 5px;
-    font-family: "FontAwesome";
-    content: "\f104";
+    font-family: "fontAwesome";
+    content: "";
     font-size: 40px;
     vertical-align: middle;
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav a {
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
   }
   .Recommendations .pageheader nav a:visited {
-    color: #ffffff;
+    color: #fff;
   }
   .Recommendations .pageheader nav a:before {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
 .Recommendations .headerGroup {
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
@@ -521,11 +526,8 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .guidelinetitle {
-  font-family: "Calibri";
-  text-transform: uppercase;
-  font-size: 18px;
   line-height: 22px;
-  display: inline-block;
+  display: block;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -536,7 +538,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendations .sectiontitle {
-  color: #ffffff;
+  color: #fff;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 0;
@@ -557,9 +559,27 @@ form.retningslinjerSok #searchinput {
     Main
  ---------------------------------
 */
+.Recommendations {
+  margin-bottom: 100px;
+}
+
+.Recommendations .aboutsection {
+  margin-top: 25px;
+}
+
+.Recommendations .aboutsectioncontent {
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
+.Recommendations .aboutsectionheading {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
 .Recommendation {
   padding: 0;
-  background: #ffffff;
+  background: #fff;
   margin-top: 25px;
 }
 .Recommendation:first-child {
@@ -591,20 +611,20 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .Recommendation .recommendationheader.gradingStrong {
   border-left: 5px solid #77438d;
 }
 .Recommendation .recommendationheader.gradingWeak {
-  border-left: 5px solid #69b4b6;
+  border-left: 5px solid #6cb4b5;
 }
 .Recommendation .recommendationheader.gradingNone {
   border-left: 5px solid #aeaba8;
 }
 .Recommendation .recommendationheader.gradingBlank {
-  border-left: 5px solid #fffff1;
+  border-left: 5px solid #fff;
   /*Change to site background on mobile */
 }
 @media (max-width: 768px) {
@@ -614,6 +634,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Recommendation .recommendationtitle {
+  min-height: 100px;
   margin-top: 0;
   margin-right: 30px;
   display: block;
@@ -631,12 +652,12 @@ form.retningslinjerSok #searchinput {
 .Recommendation .recommendationtitle:before {
   position: absolute;
   left: 15px;
-  content: "\f107";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   cursor: pointer;
 }
 .Recommendation .recommendationtitle.clicked:before {
-  content: "\f106";
+  content: "";
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationtitle {
@@ -673,7 +694,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .recommendationexplanation.gradingWeak {
-  border-left: 2px solid #69b4b6;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationexplanation.gradingWeak {
@@ -689,7 +710,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .recommendationexplanation.gradingBlank {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #fff;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationexplanation.gradingBlank {
@@ -708,7 +729,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .recommendationexplanation .icon:before {
   content: url("../img/modules/icons/ico-i.svg");
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   width: 20px;
   height: 30px;
   margin-bottom: 0;
@@ -720,7 +741,7 @@ form.retningslinjerSok #searchinput {
   background-color: #77438d;
 }
 .Recommendation .recommendationexplanation .icon.gradingWeak {
-  background-color: #69b4b6;
+  background-color: #6cb4b5;
 }
 .Recommendation .recommendationexplanation .icon.gradingNone {
   background-color: #aeaba8;
@@ -748,13 +769,13 @@ form.retningslinjerSok #searchinput {
   color: #77438d;
 }
 .Recommendation .recommendationstrength.gradingWeak {
-  color: #69b4b6;
+  color: #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .recommendationstrength {
     display: block;
     padding-top: 15px;
-    font-size: 24px;
+    font-size: 26px;
     font-family: "Calibri";
     height: 51px;
   }
@@ -807,7 +828,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .textContainer.gradingWeak {
-  border-left: 2px solid #69b4b6;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Recommendation .textContainer.gradingWeak {
@@ -825,8 +846,18 @@ form.retningslinjerSok #searchinput {
 .Recommendation .textContainer.gradingNone .recommendation-text {
   padding-top: 0;
 }
+.Recommendation .textContainer.gradingNone .recommendation-text dl dt {
+  margin-top: 20px;
+}
+.Recommendation .textContainer.gradingNone .recommendation-text dl dd {
+  padding-left: 20px;
+}
+.Recommendation .textContainer.gradingNone .recommendation-text ul {
+  list-style-position: outside;
+  margin-top: 10px;
+}
 .Recommendation .textContainer.gradingBlank {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #fff;
 }
 @media (max-width: 768px) {
   .Recommendation .textContainer.gradingBlank {
@@ -864,7 +895,7 @@ form.retningslinjerSok #searchinput {
   cursor: pointer;
   padding: 2px 15px;
   display: inline-block;
-  background-color: #e7e7e6;
+  background-color: #eeeded;
   margin-right: 4px;
 }
 .Recommendation .tabs ul .resp-tab-item:last {
@@ -873,10 +904,13 @@ form.retningslinjerSok #searchinput {
 }
 .Recommendation .tabs ul .resp-tab-item a {
   font-size: 18px;
-  color: #000000;
+  color: #000;
+}
+.Recommendation .tabs ul .resp-tab-item a:focus, .Recommendation .tabs ul .resp-tab-item a:visited:focus {
+  color: #000 !important;
 }
 .Recommendation .tabs ul .resp-tab-item.resp-tab-active {
-  background-color: #f6f6f6;
+  background-color: #f5f5f5;
   height: 40px;
   font-family: "Calibri-Bold";
 }
@@ -884,13 +918,16 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 0;
 }
 .Recommendation .tabs .resp-tabs-container {
-  border-left: 15px solid #ffffff;
-  border-right: 15px solid #ffffff;
-  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid #fff;
   /* container divs for tab content */
 }
 .Recommendation .tabs .resp-tabs-container .keyinfoheading {
+  margin: 30px 0 0 0;
+  line-height: 36px;
   padding-left: 0;
+  font-size: 28px;
 }
 @media (min-width: 993px) {
   .Recommendation .tabs .resp-tabs-container {
@@ -908,7 +945,7 @@ form.retningslinjerSok #searchinput {
   .Recommendation .tabs .resp-tabs-container {
     margin: 0;
     border: 0;
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
     padding-top: 1px;
     padding-bottom: 3px;
   }
@@ -921,7 +958,7 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 992px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
     margin: 0;
     padding-left: 20px;
     padding-right: 15px;
@@ -929,40 +966,40 @@ form.retningslinjerSok #searchinput {
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container > div {
-    background-color: #e0e0e0;
+    background-color: #eeeded;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion {
   padding: 7px 20px;
-  background-color: #e7e7e6;
+  background-color: #eeeded;
   margin-top: 3px;
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container .resp-accordion {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion a {
-  color: #000000;
+  color: #000;
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion a:before {
   padding-right: 10px;
   font-size: 30px;
-  content: "\f107";
-  font-family: "FontAwesome";
+  content: "";
+  font-family: "fontAwesome";
   text-decoration: none;
   color: #838078;
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
-  background-color: #f6f6f6;
+  background-color: #f5f5f5;
 }
 @media (max-width: 768px) {
   .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active {
-    background-color: #e0e0e0;
+    background-color: #eeeded;
   }
 }
 .Recommendation .tabs .resp-tabs-container .resp-accordion.resp-tab-active a:before {
-  content: "\f106";
+  content: "";
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist {
   margin-left: 0;
@@ -975,7 +1012,7 @@ form.retningslinjerSok #searchinput {
 .Recommendation .tabs .resp-tabs-container ul.linklist li a {
   font-size: 18px;
   text-decoration: underline;
-  color: #000000;
+  color: #000;
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist li a:after {
   content: url("../img/modules/icons/ico-full-skjerm.svg");
@@ -1001,7 +1038,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Recommendation .button-close i {
-  color: #ffffff;
+  color: #fff;
   margin-left: 20px;
   font-size: 28px;
 }
@@ -1020,69 +1057,174 @@ form.retningslinjerSok #searchinput {
   background-color: #77438d;
 }
 .Recommendation .button-close.gradingWeak {
-  background-color: #69b4b6;
+  background-color: #6cb4b5;
 }
 .Recommendation .button-close.gradingNone {
   background-color: #aeaba8;
 }
 
-.picoModal {
-  display: none;
+.picomodal {
+  width: auto;
+  position: relative;
+  max-width: 1300px;
+  overflow: hidden;
   font-size: 18px;
-  background: #ffffff;
+  background: #fff;
 }
-@media (min-width: 1200px) {
-  .picoModal {
-    width: 1200px;
+@media (max-width: 1150px) {
+  .picomodal {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+        Label the data
+        */
+  }
+  .picomodal table, .picomodal thead, .picomodal tbody, .picomodal th, .picomodal td, .picomodal tr {
+    display: block;
+  }
+  .picomodal thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .picomodal tr {
+    border-bottom: 15px solid #ccc;
   }
 }
-.picoModal .header {
-  background: #d0d2d3;
+@media all and (max-width: 1150px) and (max-width: 600px) {
+  .picomodal tr:first-child {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1150px) {
+  .picomodal td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 250px;
+  }
+}
+@media all and (max-width: 1150px) and (max-width: 600px) {
+  .picomodal td {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1150px) {
+  .picomodal td:last-child {
+    margin-bottom: 5px;
+  }
+  .picomodal td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+@media all and (max-width: 1150px) and (max-width: 600px) {
+  .picomodal td:before {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+  }
+}
+@media (max-width: 1150px) {
+  .picomodal td:nth-of-type(1):before, .picomodal td:nth-of-type(2):before, .picomodal td:nth-of-type(3):before, .picomodal td:nth-of-type(4):before, .picomodal td:nth-of-type(5):before, .picomodal td:nth-of-type(6):before, .picomodal td:nth-of-type(7):before, .picomodal td:nth-of-type(8):before, .picomodal td:nth-of-type(9):before {
+    font-weight: bold;
+  }
+  .picomodal td:nth-of-type(1):before {
+    content: "Utfall";
+  }
+  .picomodal td:nth-of-type(2):before {
+    content: "Tiltro til estimatene";
+  }
+  .picomodal td:nth-of-type(3):before {
+    content: "Relativ effekt";
+  }
+  .picomodal td:nth-of-type(4):before {
+    content: "Ingen behandling";
+  }
+  .picomodal td:nth-of-type(5):before {
+    content: "Parental antikoagulasjon";
+  }
+  .picomodal td:nth-of-type(6):before {
+    content: "Absolutt forskjell";
+  }
+  .picomodal td:nth-of-type(7):before {
+    content: "Antall inkluderte";
+  }
+  .picomodal td:nth-of-type(8):before {
+    content: "Antall studier";
+  }
+  .picomodal td:nth-of-type(9):before {
+    content: "Oppf\f8lgingstid";
+  }
+}
+.picomodal .picomodalheader {
+  background: #d1d0cf;
   font-weight: bold;
   padding: 10px 30px;
 }
-.picoModal .header a {
+.picomodal .picomodalheader a {
   text-decoration: underline;
-  color: #828078;
+  color: #838078;
   position: absolute;
   right: 10px;
+  top: 10px;
   font-weight: normal;
 }
-.picoModal .header a:after {
-  font-family: "FontAwesome";
-  content: "\f00d";
+.picomodal .picomodalheader a:after {
+  font-family: "fontAwesome";
+  content: "";
   text-decoration: none;
   font-size: inherit;
   padding-left: 10px;
 }
-.picoModal table {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.picoModal table th {
+.picomodal table th {
   font-weight: bold;
   text-align: left;
 }
-.picoModal table td:first-child {
-  width: 300px;
-  padding-left: 30px;
+@media (min-width: 1150px) {
+  .picomodal table {
+    margin: 30px auto;
+  }
+  .picomodal table td:first-child {
+    width: 300px;
+    padding-left: 30px;
+  }
+  .picomodal table th:first-child {
+    width: 300px;
+    padding-left: 30px;
+  }
+  .picomodal table td:last-child {
+    padding-right: 30px;
+  }
+  .picomodal table th:last-child {
+    padding-right: 30px;
+  }
+  .picomodal table tbody tr:nth-child(odd) {
+    background: #f5f5f5;
+  }
 }
-.picoModal table th:first-child {
-  width: 300px;
-  padding-left: 30px;
+
+@media (max-width: 1150px) {
+  .mfp-content {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 }
-.picoModal table td:last-child {
-  padding-right: 30px;
-}
-.picoModal table th:last-child {
-  padding-right: 30px;
-}
-.picoModal table tbody tr:nth-child(odd) {
-  background: #f7f6f6;
+.picosummarycontent, .picoreferencescontent {
+  max-width: 600px;
+  padding: 30px 30px;
 }
 
 .Guidelinechildsection .pageheader {
-  background: #ffffff;
+  background: #fff;
   border-left: 19px solid #004e66;
 }
 @media (max-width: 768px) {
@@ -1110,27 +1252,27 @@ form.retningslinjerSok #searchinput {
     display: block;
   }
   .Guidelinechildsection .pageheader nav li:last-child:before {
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav li:before {
     position: absolute;
     left: 20px;
     top: 5px;
-    font-family: "FontAwesome";
-    content: "\f104";
+    font-family: "fontAwesome";
+    content: "";
     font-size: 40px;
     vertical-align: middle;
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav a {
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
   }
   .Guidelinechildsection .pageheader nav a:visited {
-    color: #ffffff;
+    color: #fff;
   }
   .Guidelinechildsection .pageheader nav a:before {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
@@ -1140,7 +1282,7 @@ form.retningslinjerSok #searchinput {
 
 .Guidelinechildsection .headerGroup {
   position: relative;
-  color: #ffffff;
+  color: #fff;
   background: rgba(119, 67, 141, 0.89);
   background-image: url("../img/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
@@ -1149,9 +1291,6 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinechildsection .guidelinetitle {
-  font-family: "Calibri";
-  text-transform: uppercase;
-  font-size: 18px;
   line-height: 22px;
   display: inline-block;
   margin-left: 30px;
@@ -1164,7 +1303,7 @@ form.retningslinjerSok #searchinput {
 }
 
 .Guidelinechildsection .sectiontitle {
-  color: #ffffff;
+  color: #fff;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 0;
@@ -1184,7 +1323,7 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 30px;
   top: 25%;
-  color: #ffffff;
+  color: #fff;
 }
 @media (max-width: 992px) {
   .Guidelinechildsection .aboutguidelineicon {
@@ -1194,7 +1333,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinechildsection .aboutguidelineicon:before {
-  color: #ffffff;
+  color: #fff;
   display: block;
   background-color: rgba(255, 255, 255, 0.2);
   content: url("../img/modules/icons/ico-i.svg");
@@ -1215,7 +1354,7 @@ form.retningslinjerSok #searchinput {
   content: url("../img/modules/icons/ico-x.svg");
 }
 .Guidelinechildsection .aboutguidelineicon .text {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
 }
 @media (max-width: 992px) {
@@ -1269,13 +1408,6 @@ form.retningslinjerSok #searchinput {
   }
 }
 
-.Guidelinechildsection .small {
-  color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
-}
-
 .Guidelinechildsection .sectionlist .element {
   padding: 20px 30px;
   position: relative;
@@ -1285,7 +1417,7 @@ form.retningslinjerSok #searchinput {
   background-color: #eeeded;
 }
 .Guidelinechildsection .sectionlist .element:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .Guidelinechildsection .sectionheading {
@@ -1305,9 +1437,6 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 10px;
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Guidelinechildsection .sectioninformation {
@@ -1317,18 +1446,18 @@ form.retningslinjerSok #searchinput {
   top: 38%;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations {
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations a {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations a:visited {
-  color: #aeabb3;
+  color: #aeaba8;
 }
 .Guidelinechildsection .sectioninformation .numberofrecommendations > .number {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -1369,9 +1498,6 @@ form.retningslinjerSok #searchinput {
 }
 
 .Search .numberofresults {
-  font-family: "Calibri";
-  font-size: 18px;
-  text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 15px;
   display: block;
@@ -1393,12 +1519,12 @@ form.retningslinjerSok #searchinput {
   position: absolute;
   right: 30px;
   top: 38%;
-  color: #aeabb3;
+  color: #aeaba8;
   font-size: 18px;
 }
 .Searchresults .sectioninformation .numberofrecommendations {
   font-family: "Soho Gothic W01 Light";
-  color: #aeabb3;
+  color: #aeaba8;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -1412,14 +1538,11 @@ form.retningslinjerSok #searchinput {
 .Searchresults .sectiontitle .guidelinetitle {
   display: block;
   color: #004e66;
-  text-transform: uppercase;
-  font-family: "Calibri";
-  font-size: 18px;
 }
 
 .Searchresults .recommendation {
-  background-color: #ffffff;
-  border-left: 2px solid #69b4b6;
+  background-color: #fff;
+  border-left: 2px solid #6cb4b5;
 }
 @media (max-width: 768px) {
   .Searchresults .recommendation {
@@ -1427,7 +1550,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Searchresults .recommendation .recommendationnumber {
-  color: #c53729;
+  color: #aeaba8;
   font-size: 18px;
 }
 
@@ -1451,8 +1574,6 @@ form.retningslinjerSok #searchinput {
   padding-right: 15px;
   padding: 0;
   color: #004e66;
-  text-transform: uppercase;
-  font-size: 18px;
 }
 .Searchresults .breadcrumbs .crumb:after {
   margin: 0 15px;
@@ -1543,7 +1664,7 @@ h3 {
 }
 
 h3.resp-tab-active {
-  background: #f6f6f6;
+  background: #f5f5f5;
 }
 
 .resp-easy-accordion h3.resp-accordion {
@@ -1623,7 +1744,7 @@ h3.resp-tab-active {
   left: 50%;
   margin-right: -32px;
   margin-top: -32px;
-  background: url(spinner.gif) #111 no-repeat center center;
+  background: url(spinner.gif) #000 no-repeat center center;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -o-border-radius: 8px;

@@ -12,7 +12,7 @@
           </ol>
         </nav>
         <div class="headerGroup">
-          <span class="guidelinetitle">{{guideline.title}}</span>
+          <span class="guidelinetitle smalltitle">{{guideline.title}}</span>
           <h1 class="sectiontitle">{{section.heading}}</h1>
         </div>
 
@@ -20,18 +20,41 @@
     </div>
   </div>
   <!--Recommendations-->
-  <div class="row" directiveExample>
+  <div class="row">
+    
+    <aside class="col-md-12 col-lg-3 pull-right guidelines">
+      <div class="module module_related green col-md-6">
+        <h3>Relaterte anbefalinger</h3>
+        <ul class="linklist">
+          <li><a href="#">Sepsis</a></li>
+          <li><a href="#">Antibiotika</a></li>
+          <li><a href="#">Sepsis</a></li>
+        </ul>
+        <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
+      </div>
+      <div class="module module_related blue col-md-6">
+        <h3>Relaterte retningslinjer</h3>
+        <ul class="linklist">
+          <li><a href="#">Antibiotika</a></li>
+          <li><a href="#">Sepsis</a></li>
+          <li><a href="#">Sepsis</a></li>
+        </ul>
+        <img class="pulse" src="../../../img/modules/EKG-lyseblaa.png" alt="">
+      </div>
+    </aside>
+
     <div class="col-md-12 col-lg-8">
       <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
 
-          <header class="recommendationheader" grading="{{recommendation.strength}}">
+          <header class="recommendationheader closed" grading="{{recommendation.strength}}">
             <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
           </header>
 
-        <div class="recommendationcontent">
+
+        <div class="recommendationcontent visuallyhidden">
           <div class="recommendationexplanation" grading="{{recommendation.strength}}">
             <div class="clickable">
-              <i ng-hide="recommendation.strength == null" class="icon" grading="{{recommendation.strength}}"></i>
+              <i ng-hide="recommendation.strength == null || recommendation.strength == 'null'" class="icon" grading="{{recommendation.strength}}"></i>
               <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
               <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
             </div>
@@ -67,7 +90,7 @@
             <ul class="resp-tabs-list">
               <li ng-if="recommendation.keyInfo.length > 0"><a href="#nokkelinfo">Nøkkelinfo</a></li>
               <li ng-if="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
-              <li ng-if="recommendation.rational != null"><a href="#rasjonale">Rasjonale</a></li>
+              <li ng-if="recommendation.rational != null"><a href="#rasjonale">Begrunnelse</a></li>
               <li ng-if="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
               <li ng-if="recommendation.refs != null"><a href="#referanser">Referanser</a></li>
             </ul>
@@ -75,19 +98,19 @@
               <div id="nokkelinfo" ng-if="recommendation.keyInfo.length > 0">
                 <div ng-repeat="keyInfo in recommendation.keyInfo">
                 <section ng-show="keyInfo.benefits != null">
-                  <h2 class="keyinfoheading">Fordeler og ulemper</h2>
+                  <h1 class="keyinfoheading nomargin-top">Fordeler og ulemper</h1>
                   <div ng-bind-html="keyInfo.benefits | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.evidence != null">
-                  <h2 class="keyinfoheading">Kvalitet på dokumentasjonen</h2>
+                  <h1 class="keyinfoheading">Kvalitet på dokumentasjonen</h1>
                   <div ng-bind-html="keyInfo.evidence | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.preference != null">
-                  <h2 class="keyinfoheading">Verdier og preferanser</h2>
+                  <h1 class="keyinfoheading">Verdier og preferanser</h1>
                   <div ng-bind-html="keyInfo.preference | unsafe"></div>
                 </section>
                 <section ng-show="keyInfo.resources != null">
-                  <h2 class="keyinfoheading">Ressurshensyn</h2>
+                  <h1 class="keyinfoheading">Ressurshensyn</h1>
                   <div ng-bind-html="keyInfo.resources | unsafe"></div>
                 </section>
                 </div>
@@ -106,15 +129,15 @@
                   </dl>
 
                   <ul class="linklist">
-                    <li><a>Evidensprofil</a></li>
-                    <li><a>Sammendrag av studie</a></li>
-                    <li><a>Referanser</a></li>
+                    <li><a href="#picoEvidensprofil" class="open-popup-link" >Evidensprofil</a></li>
+                    <li><a href="#picoSummary" class="open-popup-link" >Sammendrag av studie</a></li>
+                    <li><a href="#picoReferences" class="open-popup-link" >Referanser</a></li>
                   </ul>
-                  <div id="picoEvidensprofil" class="picoModal">
-                    <div class="header">
-                      Evidensprofil
-                      <a href="#" rel="modal:close" class="closebutton">Lukk</a>
-                    </div>
+                  <section id="picoEvidensprofil" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Evidensprofil</h1>
+                      <a href="" class="closemodalbutton">Lukk</a>
+                    </header>
                     <table>
                       <thead>
                         <tr>
@@ -125,7 +148,7 @@
                           <th>Parental antikoagulasjon</th>
                           <th>Absolutt forskjell</th>
                           <th>Antall inkluderte</th>
-                          <th>Antall strudier</th>
+                          <th>Antall studier</th>
                           <th>Oppfølgingstid</th>
                         </tr>
                       </thead>
@@ -220,7 +243,25 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
+                  </section>
+                  <section id="picoSummary" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Sammendrag</h1>
+                      <a href="" class="closemodalbutton">Lukk</a>
+                    </header>
+                    <div class="picosummarycontent" ng-bind-html="pico.summary | unsafe">
+                      
+                    </div>
+                  </section>
+                  <section id="picoReferences" class="white-popup mfp-hide picomodal">
+                    <header class="picomodalheader">
+                      <h1>Referanser</h1>
+                      <a href="" class="closemodalbutton">Lukk</a>
+                    </header>
+                    <div class="picoreferencescontent">
+                      Her kommer referanser
+                    </div>
+                  </section>
 
                 </section>
               </div>
@@ -230,29 +271,17 @@
             </div>
           </div>
         </div>
-        <a href="#" grading="{{recommendation.strength}}" class="button-close"><i class="fa fa-angle-up"></i></a>
+        <a href="#" grading="{{recommendation.strength}}" class="button-close visuallyhidden"><i class="fa fa-angle-up"></i></a>
       </section>
     </div>
-    <aside class="col-md-12 col-lg-3 pull-right guidelines">
-      <div class="module module_related green col-md-6">
-        <h3>Relaterte anbefalinger</h3>
-        <ul class="linklist">
-          <li><a href="#">Sepsis</a></li>
-          <li><a href="#">Antibiotika</a></li>
-          <li><a href="#">Sepsis</a></li>
-        </ul>
-        <img class="pulse" src="../../../img/modules/EKG-groenn.png" alt="">
+    <!--About section-->
+    <section ng-show="section.text" class="col-md-12 col-lg-8 aboutsection">
+      <div class="aboutsectioncontent">
+        <h1 class="aboutsectionheading">Om {{section.heading | lowercase}}</h1>
+        <p ng-bind-html="section.text | unsafe"></p>
       </div>
-      <div class="module module_related blue col-md-6">
-        <h3>Relaterte retningslinjer</h3>
-        <ul class="linklist">
-          <li><a href="#">Antibiotika</a></li>
-          <li><a href="#">Sepsis</a></li>
-          <li><a href="#">Sepsis</a></li>
-        </ul>
-        <img class="pulse" src="../../../img/modules/EKG-lyseblaa.png" alt="">
-      </div>
-    </aside>
+    </section>
+
     <!-- row -->
   </div>
   <!-- end container -->

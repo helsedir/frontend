@@ -12,7 +12,7 @@
           </ol>
         </nav>
         <div class="headerGroup">
-          <span class="guidelinetitle">{{guideline.title}}</span>
+          <span class="guidelinetitle smalltitle">{{guideline.title}}</span>
           <h1 class="sectiontitle">{{section.heading}}</h1>
           <a href="" title="" class="aboutguidelineicon"><span class="text">Om retningslinjen</span></a>
         </div>
@@ -30,19 +30,19 @@
 		<div class="row">
 			<div class="col-md-8">
 				
-				<h2 class="small">Innhold i dette kapittelet</h2>
+				<h2 class="smalltitle">Innhold i dette kapittelet</h2>
 				<ul class="sectionlist">
 					
 					<li class="element" ng-repeat="thisSection in section.childSections">
 						<a ng-if="thisSection.childSections.length > 0" href="#/{{guideline.guidelineId}}/childsectionIndex/{{thisSection.sectionId}}">
-							<h3 class="sectionheading"><span>{{guideline.title}} > {{section.heading}}</span>{{thisSection.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{guideline.title}} > {{section.heading}}</span>{{thisSection.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show image if we are redirecting to next transport page with childsections-->
 								<img class="haschildsections" src="../../img/modules/icons/ico-mer.png" alt="" />
 							</div>
 						</a>
 						<a ng-if="thisSection.childSections.length == 0" href="#/{{guideline.guidelineId}}/section/{{thisSection.sectionId}}">
-							<h3 class="sectionheading"><span>{{guideline.title}}</span>{{thisSection.heading}}</h3>
+							<h3 class="sectionheading"><span class="smalltitle">{{guideline.title}}</span>{{thisSection.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
 								<!--Show number of recommendations if section has no childsections-->
 								<div class="numberofrecommendations">

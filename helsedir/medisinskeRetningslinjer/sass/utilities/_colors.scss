@@ -1,21 +1,29 @@
 
-$fontCalibri: "Calibri";
-$fontCalibriBold: "Calibri-Bold";
-$fontSoho: "soho gothic pro medium";
-$fontSohoLight: "Soho Gothic W01 Light";
-$fontSohoRegular: "Soho Gothic W01 Regular";
+$colorWhite: #fff;
+$colorBlack: #000;
 
-$colorDarkBlue: #004e66;
-$colorDarkBlueHover: #002e41;
+//greens
+$colorGreen: #a1bf37;
+$colorSeaGreen: #6cb4b5;
+$colorEdgewater: #c1dfdd;
 
-$colorPurple: rgba(119, 67, 141, 0.89);
-$colorWhite: #ffffff;
-$colorBlack: #000000;
-$colorLightGray: #e7e7e6;
+//blues
+$colorBondiBlue: #0093a7;
+$colorRegalBlue: #004e66;
+
+//reds
+$colorSnuff: #ded2e4;
+$colorPersianRed: #c63629;
+
+//gray tones
 $colorBase: #f5f5f5;
-$colorBase-light: #f6f6f6;
+$colorFriarGray: #838078;
+$colorGallery: #eeeded;
+$colorCloudy: #aeaba8;
+$colorQuillGray: #d1d0cf;
+
 $colorgrading-strong: #77438d;
-$colorgrading-weak: #69b4b6;
+$colorgrading-weak: $colorSeaGreen;
 $colorgrading-none: #aeaba8;
-$colorgrading-blank: #ffffff;
-$blueText: #004e66;
+$colorgrading-blank: #fff;
+$colorPurple: rgba($colorgrading-strong, 0.89);

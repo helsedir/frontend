@@ -3,13 +3,10 @@
 }
 
 .Search .numberofresults {
-    font-family: "Calibri";
-    font-size: 18px;
-    text-transform: uppercase;
     margin-top: 50px;
     margin-bottom: 15px;
     display: block;
-    color: $blueText;
+    color: $colorRegalBlue;
 }
 
 .Searchresults .result {
@@ -19,7 +16,7 @@
 }
 
 .Searchresults .section {
-    background-color: #eeeded;
+    background-color: $colorGallery;
 }
 
 .Searchresults .sectioninformation {
@@ -27,11 +24,11 @@
     position: absolute;
     right: 30px;
     top: 38%;
-    color: #aeabb3;
+    color: $colorCloudy;
     font-size: 18px;
     .numberofrecommendations {
         font-family: $fontSohoLight;
-        color: #aeabb3;
+        color: $colorCloudy;
         display: block;
         font-size: 30px;
         text-align: center;
@@ -41,24 +38,21 @@
 .Searchresults .sectiontitle {
     padding-right: 105px;
     margin-top: 0;
-    color: #0093a7;
+    color: $colorBondiBlue;
     .guidelinetitle {
         display: block;
-        color: $blueText;
-        text-transform: uppercase;
-        font-family: "Calibri";
-        font-size: 18px;
+        color: $colorRegalBlue;
     }
 }
 
 .Searchresults .recommendation {
-    background-color: #ffffff;
-    border-left: 2px solid #69b4b6;
+    background-color: $colorWhite;
+    border-left: 2px solid $colorSeaGreen;
     @include breakpoint("mobile"){
         border: none;
     }
     .recommendationnumber {
-        color: #c53729;
+        color: $colorCloudy;
         font-size: 18px;
     }
 }
@@ -79,9 +73,7 @@
         margin-bottom: 0;
         padding-right: 15px;
         padding: 0;
-        color: $blueText;
-        text-transform: uppercase;
-        font-size: 18px;
+        color: $colorRegalBlue;
         &:after {
             margin: 0 15px;
             font-size: 20px;

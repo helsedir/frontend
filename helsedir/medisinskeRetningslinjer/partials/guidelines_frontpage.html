@@ -28,38 +28,42 @@
                 <form>
                     <ul>
                         <li>
-                            <input type="radio" name="radiobutton" id="alle">
+                            <input type="radio" name="radiobutton" id="alle" checked>
                             <label for="alle"><span></span>Alle</label>
                         </li>
                         <li>
-                            <input type="radio" name="radiobutton" id="barn">
-                            <label for="barn"><span></span>Barn og svangerskap</label>
+                            <input type="radio" name="radiobutton" id="nasjonalefagligeretn">
+                            <label for="nasjonalefagligeretn"><span></span>Nasjonale faglige retningslinjer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="prio">
+                            <label for="prio"><span></span>Prioriteringsveiledere</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radiobutton" id="andre">
+                            <label for="andre"><span></span>Andre veiledere</label>
                         </li>
                         <li>
                             <input type="radio" name="radiobutton" id="kreft">
-                            <label for="kreft"><span></span>Kreft</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radiobutton" id="psykiske">
-                            <label for="psykiske"><span></span>Psykiske lidelser</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radiobutton" id="fysiske">
-                            <label for="fysiske"><span></span>Fysiske lidelser</label>
+                            <label for="kreft"><span></span>Pakkeforløp for kreft</label>
                         </li>
                     </ul>
+                </form>
+                <form class="searchform">
+                    <label for="searchinput"></label>
+                    <input id="searchinput" ng-model="searchText" class="search" type="text" placeholder="Avgrens visning" />
                 </form>
             </div>
         </aside>
            
             <span class="guidelinecount">{{guidelines.length}} retningslinjer og veiledere</span>
             <ul class="guidelineslist">
-                <li ng-repeat="guideline in guidelines" class="guideline">
+                <li ng-repeat="guideline in guidelines | filter: searchText" class="guideline">
 
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
-                            <h3 class="guidelinetitle">{{guideline.title}}</h3>
-                            <p class="guidelinesummary" ng-bind-html="guideline.text | unsafe"></p>
+                            <h3 class="guidelinetitle">{{guideline.shortTitle}}</h3>
+                            <p class="guidelinesummary">{{guideline.title}}</p>
                         </a>
 
                 </li>

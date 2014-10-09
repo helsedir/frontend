@@ -14,7 +14,7 @@
 
 .Recommendations .pageheader {
     background: $colorWhite;
-    border-left: 19px solid $colorDarkBlue;
+    border-left: 19px solid $colorRegalBlue;
     @include breakpoint("mobile") {
         border: none;
         margin: 0;
@@ -26,7 +26,7 @@
         margin-left: 30px;
         @include breakpoint("mobile") {
             margin: 0;
-            background: $colorDarkBlue;
+            background: $colorRegalBlue;
             li {
                 margin-left: 45px;
                 padding: 7px 0;
@@ -41,8 +41,8 @@
                     position: absolute;
                     left: 20px;
                     top: 5px;
-                    font-family: "FontAwesome";
-                    content: "\f104";
+                    font-family: $fontAwesome;
+                    content: $fontIconChevronLeft;
                     font-size: 40px;
                     vertical-align: middle;
                     color: $colorWhite;
@@ -75,11 +75,8 @@
 }
 
 .Recommendations .guidelinetitle {
-    font-family: $fontCalibri;
-    text-transform: uppercase;
-    font-size: 18px;
     line-height: 22px;
-    display: inline-block;
+    display: block;
     margin-left: 30px;
     margin-top: 30px;
     @include breakpoint("mobile") {
@@ -98,7 +95,7 @@
     @include breakpoint("mobile") {
         padding-left: 15px;
         padding-right: 15px;
-        color: #004e66;
+        color: $colorRegalBlue;
         font-size: 36px;
     }
 }
@@ -108,6 +105,26 @@
     Main
  ---------------------------------
 */
+.Recommendations{
+    margin-bottom: 100px;
+}
+
+
+
+.Recommendations .aboutsection{
+    margin-top: 25px;
+}
+
+.Recommendations .aboutsectioncontent{
+    background-color: $colorWhite;
+    padding: 15px 30px;
+}
+
+.Recommendations .aboutsectionheading{
+    font-size: 28px;
+    margin-top: 20px;
+}
+
 .Recommendation {
     padding: 0;
     background: $colorWhite;
@@ -145,7 +162,7 @@
     }
 
     &:last-child {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
@@ -157,10 +174,10 @@
         border-left: 5px solid $colorgrading-weak;
     }
     &.gradingNone {
-        border-left: 5px solid #aeaba8;
+        border-left: 5px solid $colorCloudy;
     }
     &.gradingBlank {
-        border-left: 5px solid #fffff1;
+        border-left: 5px solid $colorWhite;
         /*Change to site background on mobile */
         @include breakpoint("mobile") {
             border-left: 5px solid $colorBase;
@@ -169,10 +186,11 @@
 }
 
 .Recommendation .recommendationtitle{
+        min-height: 100px;
         margin-top: 0;
         margin-right: 30px;
         display: block;
-        color: $colorDarkBlue;
+        color: $colorRegalBlue;
         position: relative;
         padding-left: 45px;
         padding-bottom: 45px;
@@ -185,13 +203,13 @@
         &:before {
             position: absolute;
             left: 15px;
-            content: "\f107";
-            font-family: "FontAwesome";
+            content: $fontIconChevronDown;
+            font-family: $fontAwesome;
             cursor: pointer;
         }
         &.clicked {
             &:before {
-                content: "\f106";
+                content: $fontIconChevronUp;
             }
         }
         @include breakpoint("mobile") {
@@ -298,7 +316,7 @@
     @include breakpoint("mobile") {
         display: block;
         padding-top: 15px;
-        font-size: 24px;
+        font-size: 26px;
         font-family: $fontCalibri;
         height: 51px;
     }
@@ -309,10 +327,10 @@
     margin-right: 20px;
     padding: 10px;
     &.gradingStrong {
-        background-color: #ded2e4;
+        background-color: $colorSnuff;
     }
     &.gradingWeak {
-        background-color: #c1dfdd;
+        background-color: $colorEdgewater;
     }
     p {
         max-width: 650px;
@@ -357,6 +375,18 @@
 
         .recommendation-text {
             padding-top: 0;
+            dl{
+                dt{
+                    margin-top: 20px;
+                }
+                dd{
+                    padding-left: 20px;
+                }
+            }
+            ul{
+                list-style-position: outside;
+                margin-top: 10px;
+            }
         }
     }
     &.gradingBlank {
@@ -394,18 +424,21 @@
             cursor: pointer;
             padding: 2px 15px;
             display: inline-block;
-            background-color: $colorLightGray;
+            background-color: $colorGallery;
             margin-right: $margin;
             &:last {
                 margin-right: 0;
                 margin-left: $margin;
-            }
+            } 
             a {
                 font-size: 18px;
                 color: $colorBlack;
+                &:focus, &:visited:focus{
+                    color: $colorBlack !important;
+                }
             }
             &.resp-tab-active {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 height: 40px;
                 font-family: $fontCalibriBold;
             }
@@ -416,7 +449,10 @@
     }
     .resp-tabs-container {
         .keyinfoheading {
+            margin: 30px 0 0 0;
+            line-height: 36px;
             padding-left: 0;
+            font-size: 28px;
         }
         $border: 15px solid $colorWhite;
         border-left: $border;
@@ -435,7 +471,7 @@
         @include breakpoint("mobile") {
             margin: 0;
             border: 0;
-            background-color: $colorBase-light;
+            background-color: $colorBase;
             padding-top: 1px;
             padding-bottom: 3px;
         }
@@ -447,20 +483,20 @@
             margin-right: 30px;
             padding-bottom: 30px;
             @include breakpoint("tablet") {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 margin: 0;
                 padding-left: 20px;
                 padding-right: 15px;
             }
 
             @include breakpoint("mobile") {
-                background-color: #e0e0e0;
+                background-color: $colorGallery;
             }
         }
         .resp-accordion {
             
             padding: 7px 20px;
-            background-color: #e7e7e6;
+            background-color: $colorGallery;
             //margin-top: 0;
             margin-top: 3px;
             @include breakpoint("mobile") {
@@ -473,21 +509,21 @@
                 &:before {
                     padding-right: 10px;
                     font-size: 30px;
-                    content: "\f107";
-                    font-family: "FontAwesome";
+                    content: $fontIconChevronDown;
+                    font-family: $fontAwesome;
                     text-decoration: none;
-                    color: #838078;
+                    color: $colorFriarGray;
                 }
             }
             &.resp-tab-active {
-                background-color: $colorBase-light;
+                background-color: $colorBase;
                 @include breakpoint("mobile") {
-                    background-color: #e0e0e0;
+                    background-color: $colorGallery;
                 }
 
                 a {
                     &:before {
-                        content: "\f106";
+                        content: $fontIconChevronUp;
                     }
                 }
             }
@@ -546,26 +582,94 @@
     }
 }
 
-.picoModal {
-    display: none;
+.picomodal {
+    width: auto;
+    position: relative;
+    max-width: 1300px;
+    overflow: hidden;
     font-size: 18px;
-    background: #ffffff;
-    @media (min-width: 1200px) {
-        width: 1200px;
+    background: $colorWhite;
+    //@media (min-width: 1200px) {
+    //    width: 1200px;
+    //}
+
+    @media (max-width: 1150px){
+        /* Force table to not be like tables anymore */
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr { 
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+                tr { border-bottom: 15px solid #ccc; 
+                    &:first-child{
+                        @media all and (max-width: 600px){
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                    
+                    td { 
+                        /* Behave  like a "row" */
+                        border: none;
+                        position: relative;
+                        padding-left: 250px; 
+                        @media all and (max-width: 600px){
+                            padding-left: 15px;
+                        }
+                        &:last-child{
+                            margin-bottom: 5px;
+                        }
+                    }
+                    
+                    td:before { 
+                        /* Now like a table header */
+                        position: absolute;
+                        /* Top/left values mimic padding */
+                        top: 6px;
+                        left: 6px;
+                        width: 45%; 
+                        padding-right: 10px; 
+                        white-space: nowrap;
+                        @media all and (max-width: 600px){
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            display: block;
+                        }
+                    }
+                    /*
+                        Label the data
+                        */
+                        %bold {font-weight: bold}
+                        td:nth-of-type(1):before {@extend %bold; content: "Utfall"; }
+                        td:nth-of-type(2):before {@extend %bold; content: "Tiltro til estimatene"; }
+                        td:nth-of-type(3):before {@extend %bold; content: "Relativ effekt"; }
+                        td:nth-of-type(4):before {@extend %bold; content: "Ingen behandling"; }
+                        td:nth-of-type(5):before {@extend %bold; content: "Parental antikoagulasjon"; }
+                        td:nth-of-type(6):before {@extend %bold; content: "Absolutt forskjell"; }
+                        td:nth-of-type(7):before {@extend %bold; content: "Antall inkluderte"; }
+                        td:nth-of-type(8):before {@extend %bold; content: "Antall studier"; }
+                        td:nth-of-type(9):before {@extend %bold; content: "Oppf\f8lgingstid"; }
     }
-    .header {
-        background: #d0d2d3;
+
+    .picomodalheader {
+        background: $colorQuillGray;
         font-weight: bold;
         padding: 10px 30px;
         a {
             text-decoration: underline;
-            color: #828078;
+            color: $colorFriarGray;
             position: absolute;
             right: 10px;
+            top: 10px;
             font-weight: normal;
             &:after {
-                font-family: "FontAwesome";
-                content: "\f00d";
+                font-family: $fontAwesome;
+                content: $fontIconClose;
                 text-decoration: none;
                 font-size: inherit;
                 padding-left: 10px;
@@ -573,12 +677,15 @@
         }
     }
     table {
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+        
         th {
             font-weight: bold;
             text-align: left;
         }
+        @media (min-width: 1150px){
+            margin: 30px auto;
+
         td:first-child {
             width: 300px;
             padding-left: 30px;
@@ -593,8 +700,21 @@
         th:last-child {
             padding-right: 30px;
         }
+        
         tbody tr:nth-child(odd) {
-            background: #f7f6f6;
+            background: $colorBase;
         }
-    }
+    }}
+}
+ @media (max-width: 1150px){
+.mfp-content{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+}
+
+.picosummarycontent, .picoreferencescontent{
+    max-width: 600px;
+    padding: 30px 30px;
 }
