@@ -1,89 +1,112 @@
-﻿.publication_sortcontrols {
+﻿.container .publication_sortcontrols,
+.container-fluid .publication_sortcontrols {
   width: 81%;
 }
-.publication_sortcontrols p {
+.container .publication_sortcontrols p,
+.container-fluid .publication_sortcontrols p {
   display: inline;
 }
-.publication_sortcontrols a {
+.container .publication_sortcontrols a,
+.container-fluid .publication_sortcontrols a {
   float: right;
   margin-left: 15px;
   color: #222;
 }
-.publication {
+.container .publication,
+.container-fluid .publication {
   margin-top: 30px;
 }
-.publication a {
+.container .publication a,
+.container-fluid .publication a {
   display: block;
   text-decoration: underline;
 }
-.publication p {
+.container .publication p,
+.container-fluid .publication p {
   display: inline-block;
   margin-right: 25px;
 }
-.publication button {
+.container .publication button,
+.container-fluid .publication button {
   display: block;
   margin-right: 25px;
 }
-.publication_information {
+.container .publication_information,
+.container-fluid .publication_information {
   margin: 50px 10px 0 0;
 }
-.publication_information dt {
+.container .publication_information dt,
+.container-fluid .publication_information dt {
   width: auto;
   min-width: 250px;
   padding-right: 10px;
   float: left;
   font-weight: bold;
 }
-.publication_information dd {
+.container .publication_information dd,
+.container-fluid .publication_information dd {
   width: 65%;
   float: left;
 }
-.sitedescription {
+.container .sitedescription,
+.container-fluid .sitedescription {
   margin-top: 40px;
   text-transform: uppercase;
   font-size: 18px;
   color: #004e66;
 }
-.search {
+.container .search,
+.container-fluid .search {
   width: 100%;
 }
-.report table {
+.container .report table,
+.container-fluid .report table {
   width: 100%;
   margin-bottom: 20px;
 }
-.report table td {
+.container .report table td,
+.container-fluid .report table td {
   padding: 0 10px;
 }
-.report table td:first-child {
+.container .report table td:first-child,
+.container-fluid .report table td:first-child {
   width: 25%;
 }
-.numberofpublications {
+.container .numberofpublications,
+.container-fluid .numberofpublications {
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
   font-size: 18px;
   color: #004e66;
 }
-.transportsideknapp .publication_year,
-.transportsideknapp .publication_type,
-.transportsideknapp .publication_tema {
+.container .transportsideknapp .publication_year,
+.container-fluid .transportsideknapp .publication_year,
+.container .transportsideknapp .publication_type,
+.container-fluid .transportsideknapp .publication_type,
+.container .transportsideknapp .publication_tema,
+.container-fluid .transportsideknapp .publication_tema {
   float: left;
   margin-right: 20px;
 }
-.transportsideknapp .publication_download {
+.container .transportsideknapp .publication_download,
+.container-fluid .transportsideknapp .publication_download {
   display: inline-block;
   text-decoration: underline;
 }
-.transportsideknapp .publication_download:hover {
+.container .transportsideknapp .publication_download:hover,
+.container-fluid .transportsideknapp .publication_download:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 900px) {
-  .report table {
+  .container .report table,
+  .container-fluid .report table {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .refinesearch {
+  .container .refinesearch,
+  .container-fluid .refinesearch {
     margin-top: 20px;
   }
 }

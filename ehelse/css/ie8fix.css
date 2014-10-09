@@ -1,112 +1,134 @@
 ﻿body {
   background-attachment: local;
 }
-.no-svg .facebook {
+.no-svg .container .facebook,
+.no-svg .container-fluid .facebook {
   background-image: url(../img/sosiale_ikon_facebook.png) !important;
 }
-.no-svg .twitter {
+.no-svg .container .twitter,
+.no-svg .container-fluid .twitter {
   background-image: url(../img/sosiale_ikon_twitter.png) !important;
 }
-.no-svg .linkedin {
+.no-svg .container .linkedin,
+.no-svg .container-fluid .linkedin {
   background-image: url(../img/sosiale_ikon_linkedin.png) !important;
 }
-.no-svg .youtube {
+.no-svg .container .youtube,
+.no-svg .container-fluid .youtube {
   background-image: url(../img/sosiale_ikon_youtube.png) !important;
 }
-.no-svg #logo {
+.no-svg .container #logo,
+.no-svg .container-fluid #logo {
   background-image: url('../img/logo.png') !important;
 }
-.no-svg input[type="checkbox"] {
+.no-svg .container input[type="checkbox"],
+.no-svg .container-fluid input[type="checkbox"] {
   float: left;
   width: auto;
   opacity: 1;
   height: autp;
 }
-.no-svg input[type="radio"] {
+.no-svg .container input[type="radio"],
+.no-svg .container-fluid input[type="radio"] {
   float: left;
   width: auto;
   opacity: 1;
   height: auto;
 }
-.no-svg input[type="radio"] + label span {
+.no-svg .container input[type="radio"] + label span,
+.no-svg .container-fluid input[type="radio"] + label span {
   margin: 0;
   vertical-align: auto;
   width: auto;
   height: auto;
 }
-.no-svg input[type="checkbox"] + label span {
+.no-svg .container input[type="checkbox"] + label span,
+.no-svg .container-fluid input[type="checkbox"] + label span {
   margin: 0;
   vertical-align: auto;
   width: auto;
   height: auto;
 }
-.no-svg .e-mail {
+.no-svg .container .e-mail,
+.no-svg .container-fluid .e-mail {
   background-image: url('../img/modules/icons/epost_regular.png');
   background-repeat: no-repeat;
   background-size: 20px 27px;
   padding-left: 30px;
 }
-.no-svg .e-mail img {
+.no-svg .container .e-mail img,
+.no-svg .container-fluid .e-mail img {
   display: none;
 }
-.no-svg .rss {
+.no-svg .container .rss,
+.no-svg .container-fluid .rss {
   background-image: url('../img/modules/icons/rss_regular.png');
   background-repeat: no-repeat;
   background-size: 20px 27px;
   padding-left: 30px;
 }
-.no-svg .rss img {
+.no-svg .container .rss img,
+.no-svg .container-fluid .rss img {
   display: none;
 }
-.no-svg .module.module_socialandprint .ikon_facebook {
+.no-svg .container .module.module_socialandprint .ikon_facebook,
+.no-svg .container-fluid .module.module_socialandprint .ikon_facebook {
   background: url(../img/modules/icons/facebook_blaa.png) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.no-svg .module.module_socialandprint .ikon_twitter {
+.no-svg .container .module.module_socialandprint .ikon_twitter,
+.no-svg .container-fluid .module.module_socialandprint .ikon_twitter {
   background: url(../img/modules/icons/twitter_blaa.png) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.no-svg .module.module_socialandprint .ikon_skrivut {
+.no-svg .container .module.module_socialandprint .ikon_skrivut,
+.no-svg .container-fluid .module.module_socialandprint .ikon_skrivut {
   background: url(../img/modules/icons/ikon_skriv_ut.png) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.no-svg .module.module_socialandprint .ikon_skrivut:hover {
+.no-svg .container .module.module_socialandprint .ikon_skrivut:hover,
+.no-svg .container-fluid .module.module_socialandprint .ikon_skrivut:hover {
   background: url(../img/modules/icons/skriv_ut_hover.png) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
-.no-svg .module.module_socialandprint .ikon_facebook:hover {
+.no-svg .container .module.module_socialandprint .ikon_facebook:hover,
+.no-svg .container-fluid .module.module_socialandprint .ikon_facebook:hover {
   background: url(../img/modules/icons/sosiale_ikon_facebook_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
-.no-svg .module.module_socialandprint .ikon_twitter:hover {
+.no-svg .container .module.module_socialandprint .ikon_twitter:hover,
+.no-svg .container-fluid .module.module_socialandprint .ikon_twitter:hover {
   background: url(../img/modules/icons/twitter_hover.png) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
 }
-.menubutton a.js-expander i {
+.container .menubutton a.js-expander i,
+.container-fluid .menubutton a.js-expander i {
   margin-left: 0;
 }
-.refinesearch .form-group {
+.container .refinesearch .form-group,
+.container-fluid .refinesearch .form-group {
   overflow: hidden;
 }
-.refinesearch .form-group select {
+.container .refinesearch .form-group select,
+.container-fluid .refinesearch .form-group select {
   width: 355px;
   background: url('../img/ikoner/knapp_pil_nedover_ie8.png') no-repeat scroll center #ffffff;
   background-position: 83%;
@@ -115,8 +137,10 @@
   -webkit-background-size: 38px 38px;
   background-size: 38px 38px;
 }
-.refinesearch .form-group select:focus,
-.refinesearch .form-group select:active {
+.container .refinesearch .form-group select:focus,
+.container-fluid .refinesearch .form-group select:focus,
+.container .refinesearch .form-group select:active,
+.container-fluid .refinesearch .form-group select:active {
   background: url('../img/ikoner/knapp_pil_oppover_ie8.png') no-repeat;
   background-position: 83%;
   -moz-background-size: 39px 39px;
@@ -124,7 +148,8 @@
   -webkit-background-size: 39px 39px;
   background-size: 39px 39px;
 }
-.module.module_subscribe .e-mail {
+.container .module.module_subscribe .e-mail,
+.container-fluid .module.module_subscribe .e-mail {
   width: 28px;
   height: 23px;
   padding-left: 40px;
@@ -133,12 +158,14 @@
   background-size: 28%;
   background-position: left;
 }
-.module.module_subscribe .e-mail:hover {
+.container .module.module_subscribe .e-mail:hover,
+.container-fluid .module.module_subscribe .e-mail:hover {
   background: url(../img/modules/icons/epost_regular_ie8.png) no-repeat;
   background-size: 28%;
   background-position: left;
 }
-.module.module_subscribe .rss {
+.container .module.module_subscribe .rss,
+.container-fluid .module.module_subscribe .rss {
   width: 28px;
   height: 23px;
   padding-left: 40px;
@@ -146,44 +173,55 @@
   background-size: 20%;
   background-position: left;
 }
-.module.module_subscribe .rss:hover {
+.container .module.module_subscribe .rss:hover,
+.container-fluid .module.module_subscribe .rss:hover {
   background: url(../img/modules/icons/rss_regular_ie8.png) no-repeat;
   background-size: 20%;
   background-position: left;
 }
-.external-link,
-a.external-link {
+.container .external-link,
+.container-fluid .external-link,
+.container a.external-link,
+.container-fluid a.external-link {
   background: url(../img/ikoner/lenkepil_ekstern_orange_ie8.png) no-repeat;
   background-size: 7%;
   background-position: left;
 }
-.external-link.inline,
-a.external-link.inline {
+.container .external-link.inline,
+.container-fluid .external-link.inline,
+.container a.external-link.inline,
+.container-fluid a.external-link.inline {
   background: url(../img/ikoner/lenkepil_ekstern_orange_ie8.png) no-repeat;
   background-size: 7%;
   background-position: left top;
 }
-.internal-link {
+.container .internal-link,
+.container-fluid .internal-link {
   background: url(../img/ikoner/lenkepil_orange_ie8.png) no-repeat;
   background-position: 0 3px;
 }
-.showmorenews {
+.container .showmorenews,
+.container-fluid .showmorenews {
   background: #d1d0cf url(../img/spinner_ie8.png) no-repeat;
 }
-.showmorenews:hover {
+.container .showmorenews:hover,
+.container-fluid .showmorenews:hover {
   background: #d1d0cf url(../img/spinner_ie8.png) no-repeat;
 }
-.module.module_social .ikon_skrivut span {
+.container .module.module_social .ikon_skrivut span,
+.container-fluid .module.module_social .ikon_skrivut span {
   background: url(../img/modules/icons/ikon_skriv_ut_ie8.png) no-repeat;
 }
-.module.module_social .ikon_facebook span {
+.container .module.module_social .ikon_facebook span,
+.container-fluid .module.module_social .ikon_facebook span {
   background: url(../img/modules/icons/facebook_ie8.png) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
-.module.module_social .ikon_twitter span {
+.container .module.module_social .ikon_twitter span,
+.container-fluid .module.module_social .ikon_twitter span {
   background: url(../img/modules/icons/twitter_hover_ie8.png) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;

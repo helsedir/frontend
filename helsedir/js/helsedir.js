@@ -8,6 +8,13 @@
         parentTag.addClass(' has-hidden-content');
     });
 
+    $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").each(function () {
+        var collapseElement = $(this);
+        var contentToHide = collapseElement.next('p');
+        contentToHide.addClass(' visuallyhidden');
+        collapseElement.addClass(' has-hidden-content');
+    });
+
     //handles click events on collapsible headings
     $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").click(function () {
         var collapseElement = $(this);
@@ -28,6 +35,27 @@
             });
             parentTag.addClass("has-visible-content");
             parentTag.removeClass("has-hidden-content");
+        }
+    });
+
+    $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").click(function () {
+        var collapseElement = $(this);
+        var contentToHide = collapseElement.next('p');
+
+        if (!contentToHide.hasClass("visuallyhidden")) {
+            contentToHide.slideUp('fast', function () {
+                contentToHide.addClass('visuallyhidden')
+                    .slideDown(0);
+            });
+            collapseElement.removeClass("has-visible-content");
+            collapseElement.addClass("has-hidden-content");
+        } else {
+            contentToHide.slideUp(0, function () {
+                contentToHide.removeClass('visuallyhidden')
+                    .slideDown(500);
+            });
+            collapseElement.addClass("has-visible-content");
+            collapseElement.removeClass("has-hidden-content");
         }
     });
 

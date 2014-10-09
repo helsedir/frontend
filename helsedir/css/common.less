@@ -165,8 +165,16 @@ body {
             display: block;
             float: left;
             padding-right: 0.3rem;
+
+            &.active {
+                float: none;
+            }
         }
 
+        ul {
+            display: inline-block;
+        }
+        /*
         li:after {
             font-family: "FontAwesome";
             content: '\f104';
@@ -179,17 +187,30 @@ body {
         li:last-child:after {
             content: '';
         }
-
+            */
         a {
             text-decoration: underline;
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
             border-bottom: none;
+
+            &:after {
+                font-family: "FontAwesome";
+                content: '\f104';
+                color: @colorDarkBlue;
+                font-size: 25px;
+                margin: 0 10px 0 10px;
+                vertical-align: text-bottom;
+            }
         }
 
         a:visited {
             color: @colorDarkBlue;
+        }
+
+        .s4-breadcrumb-arrowcont {
+            display: none;
         }
     }
 
@@ -204,7 +225,7 @@ body {
     .has-hidden-content {
         cursor: pointer;
 
-        h2:before {
+        &:before {
             float: left;
             padding: 3px 20px 0 0;
             content: "\f107";
@@ -237,7 +258,7 @@ body {
     .has-visible-content {
         cursor: pointer;
 
-        h2:before {
+        &:before {
             float: left;
             padding: 3px 20px 0 0;
             content: "\f106";
@@ -2391,7 +2412,7 @@ body {
 
 @media braille {
     .container {
-        .has-hidden-content div {
+        .has-hidden-content {
             display: block !important;
         }
 

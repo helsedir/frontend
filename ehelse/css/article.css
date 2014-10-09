@@ -1,82 +1,82 @@
-﻿.organisasjonskart.has-visible-content,
-.divisjon.has-visible-content {
+﻿.container .organisasjonskart.has-visible-content,
+.container .divisjon.has-visible-content {
   margin-bottom: 25px;
   padding: 0;
 }
-.organisasjonskart.has-visible-content > div,
-.divisjon.has-visible-content > div,
-.organisasjonskart.has-visible-content > h3,
-.divisjon.has-visible-content > h3 {
+.container .organisasjonskart.has-visible-content > div,
+.container .divisjon.has-visible-content > div,
+.container .organisasjonskart.has-visible-content > h3,
+.container .divisjon.has-visible-content > h3 {
   padding: 0 10px 5px 10px;
 }
-.organisasjonskart.has-visible-content > ul,
-.divisjon.has-visible-content > ul {
+.container .organisasjonskart.has-visible-content > ul,
+.container .divisjon.has-visible-content > ul {
   padding-left: 30px;
 }
-.organisasjonskart.has-visible-content h2,
-.divisjon.has-visible-content h2 {
+.container .organisasjonskart.has-visible-content h2,
+.container .divisjon.has-visible-content h2 {
   margin: 0;
   padding: 10px;
   border: 1px solid #222;
   background: #bababa;
   cursor: pointer;
 }
-.organisasjonskart.has-visible-content h2:before,
-.divisjon.has-visible-content h2:before {
+.container .organisasjonskart.has-visible-content h2:before,
+.container .divisjon.has-visible-content h2:before {
   float: left;
   padding-right: 10px;
   content: "\f077";
   font-family: "FontAwesome";
 }
-.organisasjonskart.has-hidden-content,
-.divisjon.has-hidden-content {
+.container .organisasjonskart.has-hidden-content,
+.container .divisjon.has-hidden-content {
   margin-bottom: 25px;
   padding: 0;
   border: none;
 }
-.organisasjonskart.has-hidden-content h2,
-.divisjon.has-hidden-content h2,
-.organisasjonskart.has-hidden-content h3,
-.divisjon.has-hidden-content h3 {
+.container .organisasjonskart.has-hidden-content h2,
+.container .divisjon.has-hidden-content h2,
+.container .organisasjonskart.has-hidden-content h3,
+.container .divisjon.has-hidden-content h3 {
   margin: 0;
   padding: 10px;
   background: white;
   cursor: pointer;
 }
-.organisasjonskart.has-hidden-content h2:before,
-.divisjon.has-hidden-content h2:before,
-.organisasjonskart.has-hidden-content h3:before,
-.divisjon.has-hidden-content h3:before {
+.container .organisasjonskart.has-hidden-content h2:before,
+.container .divisjon.has-hidden-content h2:before,
+.container .organisasjonskart.has-hidden-content h3:before,
+.container .divisjon.has-hidden-content h3:before {
   float: left;
   padding-right: 10px;
   content: "\f078";
   font-family: "FontAwesome";
 }
-.table_course {
+.container .table_course {
   display: inline-block;
   width: 100%;
   margin-top: 40px;
 }
-.table_course .table_general {
+.container .table_course .table_general {
   width: 100%;
 }
-.table_course .table_general th,
-.table_course .table_general td {
+.container .table_course .table_general th,
+.container .table_course .table_general td {
   text-align: left;
   padding-left: 10px;
 }
-.table_course .table_general tr td:first-child,
-.table_course .table_general tr th:first-child {
+.container .table_course .table_general tr td:first-child,
+.container .table_course .table_general tr th:first-child {
   padding-left: 20px;
 }
-.table_course .table_general td a {
+.container .table_course .table_general td a {
   font-size: 18px;
 }
-.table_course .table_general td.inputfield {
+.container .table_course .table_general td.inputfield {
   padding-bottom: 0;
   width: 11%;
 }
-.table_course .table_general td.inputfield input {
+.container .table_course .table_general td.inputfield input {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -84,21 +84,21 @@
   border: 1px solid #004e66;
   outline: none;
 }
-.table_course .table_general td.inputfield input:focus {
+.container .table_course .table_general td.inputfield input:focus {
   box-shadow: 0 0 5px #0093a7;
   border: 1px solid #0093a7;
 }
-.table_course .table_general button {
+.container .table_course .table_general button {
   border: none;
   border-bottom: 1px solid #838078;
   background: none;
   height: 29px;
 }
 @media only screen and (min-width: 900px) {
-  .aside {
+  .container .aside {
     margin-top: 58px;
   }
-  .aside.top {
+  .container .aside.top {
     margin-top: 0;
   }
 }

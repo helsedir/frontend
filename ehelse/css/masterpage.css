@@ -238,14 +238,6 @@
   margin-top: 0;
   line-height: 22px;
 }
-footer {
-  background: white;
-}
-footer a:focus {
-  background: white;
-  color: #004e66 !important;
-  outline: 0;
-}
 /**********Header**********/
 .toppmeny {
   background: #0093a7;
@@ -258,22 +250,22 @@ footer a:focus {
 }
 /**********Footer**********/
 footer .tabs,
-.toppmeny .tabs {
+.container-fluid.toppmeny .tabs {
   margin-bottom: 50px;
   padding-left: 20px;
   margin-top: -40px;
 }
 footer .tabs .tab-links,
-.toppmeny .tabs .tab-links {
+.container-fluid.toppmeny .tabs .tab-links {
   padding-left: 20px;
   margin-right: 10px;
 }
 footer .tabs .tab-links li span.tabs_header,
-.toppmeny .tabs .tab-links li span.tabs_header,
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header,
 footer .tabs .tab-links li span.tabs_footer,
-.toppmeny .tabs .tab-links li span.tabs_footer,
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_footer,
 footer .tabs .tab-links li form,
-.toppmeny .tabs .tab-links li form {
+.container-fluid.toppmeny .tabs .tab-links li form {
   background: #004e66;
   color: white;
   padding: 5px 30px 8px 20px;
@@ -281,36 +273,36 @@ footer .tabs .tab-links li form,
   cursor: pointer;
 }
 footer .tabs .tab-links li span.tabs_header[aria-selected='true'],
-.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true'],
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true'],
 footer .tabs .tab-links li span.tabs_footer[aria-selected='true'],
-.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true'],
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true'],
 footer .tabs .tab-links li form[aria-selected='true'],
-.toppmeny .tabs .tab-links li form[aria-selected='true'] {
+.container-fluid.toppmeny .tabs .tab-links li form[aria-selected='true'] {
   border: none;
   background: white;
   color: #004e66;
 }
 footer .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
-.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_header[aria-selected='true']:focus,
 footer .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
-.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
+.container-fluid.toppmeny .tabs .tab-links li span.tabs_footer[aria-selected='true']:focus,
 footer .tabs .tab-links li form[aria-selected='true']:focus,
-.toppmeny .tabs .tab-links li form[aria-selected='true']:focus {
+.container-fluid.toppmeny .tabs .tab-links li form[aria-selected='true']:focus {
   background: #002e41;
   color: white;
 }
 footer .tabs .tab-links li input,
-.toppmeny .tabs .tab-links li input {
+.container-fluid.toppmeny .tabs .tab-links li input {
   width: 100%;
 }
 footer .tabs .tab-links li:focus,
-.toppmeny .tabs .tab-links li:focus {
+.container-fluid.toppmeny .tabs .tab-links li:focus {
   background: #002e41;
   color: white;
   outline: 0;
 }
 footer .tabs .tab-links .menu_search form,
-.toppmeny .tabs .tab-links .menu_search form {
+.container-fluid.toppmeny .tabs .tab-links .menu_search form {
   height: 40px;
   /*max-width: 220px;*/
   width: 212px;
@@ -322,7 +314,7 @@ footer .tabs .tab-links .menu_search form,
   background: white;
 }
 footer .tabs .tab-links .menu_search form input,
-.toppmeny .tabs .tab-links .menu_search form input {
+.container-fluid.toppmeny .tabs .tab-links .menu_search form input {
   border: none;
   padding: 0;
   width: 170px;
@@ -331,7 +323,7 @@ footer .tabs .tab-links .menu_search form input,
   color: black;
 }
 footer .tabs .tab-links .menu_search form button,
-.toppmeny .tabs .tab-links .menu_search form button {
+.container-fluid.toppmeny .tabs .tab-links .menu_search form button {
   border: none;
   background: none;
   width: 29px;
@@ -339,12 +331,12 @@ footer .tabs .tab-links .menu_search form button,
   vertical-align: middle;
 }
 footer .tabs .tab-links .menu_search form button img,
-.toppmeny .tabs .tab-links .menu_search form button img {
+.container-fluid.toppmeny .tabs .tab-links .menu_search form button img {
   width: 23px;
   vertical-align: sub;
 }
 footer .tabs .hide_menu,
-.toppmeny .tabs .hide_menu {
+.container-fluid.toppmeny .tabs .hide_menu {
   background: none;
   border: none;
   float: right;
@@ -352,18 +344,18 @@ footer .tabs .hide_menu,
   color: white;
 }
 footer .map,
-.toppmeny .map {
+.container-fluid.toppmeny .map {
   height: 500px;
 }
 footer .tab-content,
-.toppmeny .tab-content {
+.container-fluid.toppmeny .tab-content {
   background: white;
   border: none;
   border-radius: 0;
   margin: 10px 0;
 }
 footer .tab-content li,
-.toppmeny .tab-content li {
+.container-fluid.toppmeny .tab-content li {
   background: white;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -371,17 +363,28 @@ footer .tab-content li,
   transition: all 0.3s;
 }
 footer .tab-content li a,
-.toppmeny .tab-content li a {
+.container-fluid.toppmeny .tab-content li a {
   color: #004e66;
 }
 footer .tab-content li a:focus,
-.toppmeny .tab-content li a:focus {
+.container-fluid.toppmeny .tab-content li a:focus {
   background: #004e66 !important;
   color: white !important;
 }
 footer .tab-content li:hover,
-.toppmeny .tab-content li:hover {
+.container-fluid.toppmeny .tab-content li:hover {
   background: #d1d0c4;
+}
+footer {
+  background: white;
+}
+footer .tabs {
+  margin-top: -38px;
+}
+footer a:focus {
+  background: white;
+  color: #004e66 !important;
+  outline: 0;
 }
 .footerlinkswrapper {
   background: #004e66 url('../img/footer.png') no-repeat;
@@ -520,22 +523,22 @@ footer .tab-content li:hover,
   .footerlinkswrapper .socialmedia a img {
     height: 16px;
   }
-  .toppmeny .tabs,
+  .container-fluid.toppmeny .tabs,
   footer .tabs {
     padding-left: 0;
   }
-  .toppmeny .tabs .tab-links,
+  .container-fluid.toppmeny .tabs .tab-links,
   footer .tabs .tab-links {
     padding-left: 0;
   }
-  .toppmeny .tabs .tab-links li span.tabs_header,
+  .container-fluid.toppmeny .tabs .tab-links li span.tabs_header,
   footer .tabs .tab-links li span.tabs_header,
-  .toppmeny .tabs .tab-links li span.tabs_footer,
+  .container-fluid.toppmeny .tabs .tab-links li span.tabs_footer,
   footer .tabs .tab-links li span.tabs_footer {
     width: 110px;
     padding: 0 15px 0 10px;
   }
-  .toppmeny .tabs .tab-content,
+  .container-fluid.toppmeny .tabs .tab-content,
   footer .tabs .tab-content {
     padding-left: 0;
   }
@@ -543,13 +546,13 @@ footer .tab-content li:hover,
   .toppmeny .tabs {
     margin-top: -27px;
   }
-  .toppmeny .inner {
+  .container-fluid.toppmeny .inner {
     margin-top: 40px;
   }
   .footerwrapper {
     padding-top: 40px;
   }
-  .toppmeny .tabs .hide_menu {
+  .container-fluid.toppmeny .tabs .hide_menu {
     display: none;
   }
   #footer {
@@ -569,7 +572,7 @@ footer .tab-content li:hover,
   .masterheader .links {
     margin-right: 0;
   }
-  .toppmeny .tabs .hide_menu {
+  .container-fluid.toppmeny .tabs .hide_menu {
     margin-right: 31px;
   }
 }
@@ -667,7 +670,7 @@ footer .tab-content li:hover,
   .mainsearchform input {
     width: 82%;
   }
-  .toppmeny .tabs .hide_menu {
+  .container-fluid.toppmeny .tabs .hide_menu {
     margin-right: 0;
   }
 }

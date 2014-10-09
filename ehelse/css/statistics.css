@@ -1,93 +1,121 @@
-﻿.dropdown-statistikk select {
+﻿.container .dropdown-statistikk select,
+.container-fluid .dropdown-statistikk select {
   width: 40%;
 }
-.dropdown-statistikk button {
+.container .dropdown-statistikk button,
+.container-fluid .dropdown-statistikk button {
   background: #df9922;
   border: 0;
 }
-.radiobuttons label {
+.container .radiobuttons label,
+.container-fluid .radiobuttons label {
   display: block;
 }
-.statistics_compare {
+.container .statistics_compare,
+.container-fluid .statistics_compare {
   padding: 5px 0 10px 10px;
 }
-.statistics_compare p {
+.container .statistics_compare p,
+.container-fluid .statistics_compare p {
   margin: 0;
 }
-.statistics_compare select {
+.container .statistics_compare select,
+.container-fluid .statistics_compare select {
   display: block;
   margin-bottom: 20px;
   width: 100%;
 }
-.statistics_compare label {
+.container .statistics_compare label,
+.container-fluid .statistics_compare label {
   display: inline-block;
 }
-.statistics_compare label input {
+.container .statistics_compare label input,
+.container-fluid .statistics_compare label input {
   margin-right: 5px;
 }
-.statistics_compare button {
+.container .statistics_compare button,
+.container-fluid .statistics_compare button {
   background: white;
   border: 1px solid #bababa;
 }
-.statistics_compare a {
+.container .statistics_compare a,
+.container-fluid .statistics_compare a {
   display: block;
 }
-.statistics_compare label,
-.statistics_compare a {
+.container .statistics_compare label,
+.container-fluid .statistics_compare label,
+.container .statistics_compare a,
+.container-fluid .statistics_compare a {
   padding-left: 15px;
 }
-#compare_hiddenfields {
+.container #compare_hiddenfields,
+.container-fluid #compare_hiddenfields {
   display: none;
 }
-.statistics h2 {
+.container .statistics h2,
+.container-fluid .statistics h2 {
   text-align: center;
 }
-.statistics .fa-chevron-down {
+.container .statistics .fa-chevron-down,
+.container-fluid .statistics .fa-chevron-down {
   float: none;
   padding: 0;
 }
-.statistics_about h4 {
+.container .statistics_about h4,
+.container-fluid .statistics_about h4 {
   margin: 50px 0 10px 0;
 }
-.statistics_about p {
+.container .statistics_about p,
+.container-fluid .statistics_about p {
   margin: 0;
 }
-#statistikktab1,
-#statistikktab2,
-#statistikktab3 {
+.container #statistikktab1,
+.container-fluid #statistikktab1,
+.container #statistikktab2,
+.container-fluid #statistikktab2,
+.container #statistikktab3,
+.container-fluid #statistikktab3 {
   margin-top: 20px;
 }
-.statistics_chart {
+.container .statistics_chart,
+.container-fluid .statistics_chart {
   margin: 40px 0 0 0;
   background: white;
   overflow: auto;
 }
-.statistics_chart #chart_div {
+.container .statistics_chart #chart_div,
+.container-fluid .statistics_chart #chart_div {
   height: 400px;
   width: 100%;
   display: inline-block;
 }
-.statistics_table {
+.container .statistics_table,
+.container-fluid .statistics_table {
   margin-top: 50px;
   display: inline-block;
   width: 100%;
 }
-.table_general {
+.container .table_general,
+.container-fluid .table_general {
   width: 100%;
   margin-bottom: 0;
 }
-.statistics_description {
+.container .statistics_description,
+.container-fluid .statistics_description {
   margin: 40px 0;
 }
-.statistics_reports h2 {
+.container .statistics_reports h2,
+.container-fluid .statistics_reports h2 {
   margin-bottom: 10px;
 }
-#chart_div_legend {
+.container #chart_div_legend,
+.container-fluid #chart_div_legend {
   margin-left: 37px;
   list-style: none;
   font-size: 16px;
 }
-div.legendMarker {
+.container div.legendMarker,
+.container-fluid div.legendMarker {
   height: 1em;
   width: 1em;
   display: inline-block;

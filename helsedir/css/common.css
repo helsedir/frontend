@@ -178,6 +178,20 @@ body {
   padding: 0;
   list-style-type: none;
   margin: 10px 0 0 0;
+  /*
+        li:after {
+            font-family: "FontAwesome";
+            content: '\f104';
+            color: @colorDarkBlue;
+            font-size: 25px;
+            margin: 0 5px 0 5px;
+            vertical-align: middle;
+        }
+
+        li:last-child:after {
+            content: '';
+        }
+            */
 }
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
@@ -185,18 +199,13 @@ body {
   float: left;
   padding-right: 0.3rem;
 }
-.container .breadcrumbs li:after,
-.container-fluid .breadcrumbs li:after {
-  font-family: "FontAwesome";
-  content: '\f104';
-  color: #004e66;
-  font-size: 25px;
-  margin: 0 5px 0 5px;
-  vertical-align: middle;
+.container .breadcrumbs li.active,
+.container-fluid .breadcrumbs li.active {
+  float: none;
 }
-.container .breadcrumbs li:last-child:after,
-.container-fluid .breadcrumbs li:last-child:after {
-  content: '';
+.container .breadcrumbs ul,
+.container-fluid .breadcrumbs ul {
+  display: inline-block;
 }
 .container .breadcrumbs a,
 .container-fluid .breadcrumbs a {
@@ -206,9 +215,22 @@ body {
   line-height: 22px;
   border-bottom: none;
 }
+.container .breadcrumbs a:after,
+.container-fluid .breadcrumbs a:after {
+  font-family: "FontAwesome";
+  content: '\f104';
+  color: #004e66;
+  font-size: 25px;
+  margin: 0 10px 0 10px;
+  vertical-align: text-bottom;
+}
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
   color: #004e66;
+}
+.container .breadcrumbs .s4-breadcrumb-arrowcont,
+.container-fluid .breadcrumbs .s4-breadcrumb-arrowcont {
+  display: none;
 }
 .container .accordion h3,
 .container-fluid .accordion h3 {
@@ -220,8 +242,8 @@ body {
 .container-fluid .has-hidden-content {
   cursor: pointer;
 }
-.container .has-hidden-content h2:before,
-.container-fluid .has-hidden-content h2:before {
+.container .has-hidden-content:before,
+.container-fluid .has-hidden-content:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f107";
@@ -242,8 +264,8 @@ body {
 .container-fluid .has-visible-content {
   cursor: pointer;
 }
-.container .has-visible-content h2:before,
-.container-fluid .has-visible-content h2:before {
+.container .has-visible-content:before,
+.container-fluid .has-visible-content:before {
   float: left;
   padding: 3px 20px 0 0;
   content: "\f106";
@@ -2423,7 +2445,7 @@ body {
   }
 }
 @media braille {
-  .container .has-hidden-content div {
+  .container .has-hidden-content {
     display: block !important;
   }
   .container .hidden-mobile {

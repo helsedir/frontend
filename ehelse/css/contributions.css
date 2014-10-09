@@ -1,47 +1,58 @@
-﻿.tilskudd_sortcontrols {
+﻿.container .tilskudd_sortcontrols,
+.container-fluid .tilskudd_sortcontrols {
   margin-top: 35px;
   height: 25px;
 }
-.tilskudd_sortcontrols .checkbox {
+.container .tilskudd_sortcontrols .checkbox,
+.container-fluid .tilskudd_sortcontrols .checkbox {
   display: inline-block;
 }
-#tilskuddsaar {
+.container #tilskuddsaar,
+.container-fluid #tilskuddsaar {
   display: none;
 }
-.tilskudd_information {
+.container .tilskudd_information,
+.container-fluid .tilskudd_information {
   margin: 50px 0 0 0;
 }
-.tilskudd_information dt {
+.container .tilskudd_information dt,
+.container-fluid .tilskudd_information dt {
   width: auto;
   min-width: 250px;
   padding-right: 10px;
   float: left;
   font-weight: bold;
 }
-.tilskudd_information dd {
+.container .tilskudd_information dd,
+.container-fluid .tilskudd_information dd {
   width: 65%;
   float: left;
 }
-.numberofcontributions {
+.container .numberofcontributions,
+.container-fluid .numberofcontributions {
   color: #004e66;
   font-size: 18px;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 599px) {
-  .refinesearch {
+  .container .refinesearch,
+  .container-fluid .refinesearch {
     margin-top: 45px;
   }
 }
 @media only screen and (max-width: 599px) {
-  .aside {
+  .container .aside,
+  .container-fluid .aside {
     margin-top: 70px;
   }
-  .tilskudd_information dd {
+  .container .tilskudd_information dd,
+  .container-fluid .tilskudd_information dd {
     width: 60%;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .tilskudd_information dd {
+  .container .tilskudd_information dd,
+  .container-fluid .tilskudd_information dd {
     width: 45%;
   }
 }

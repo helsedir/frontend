@@ -23,102 +23,106 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.transportsideknapp {
-    .status_infomration {
-        float: left;
-        width: 500px;
-        margin: 24px 0 0 30px;
+.container, .container-fluid {
+    .transportsideknapp {
+        .status_infomration {
+            float: left;
+            width: 500px;
+            margin: 24px 0 0 30px;
 
-        .status_received {
-            margin-right: 30px;
-        }
-    }
-
-    .status {
-        background: #f7f6f6;
-        float: left;
-        padding: 10px 20px;
-        width: 200px;
-
-        &.rute {
-            border-left: 50px solid @colorLightBlue;
+            .status_received {
+                margin-right: 30px;
+            }
         }
 
-        &.drift {
-            border-left: 50px solid @colorGreen;
-        }
-
-        &.pilot {
-            border-left: 50px solid @colorOrange;
-        }
-
-        &.cancelled {
-            border-left: 50px solid @colorRed;
-        }
-    }
-
-    background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
-    background-size: 45px;
-    background-position: 96% 93%;
-
-    a:focus {
         .status {
-            color: @colorDarkBlue !important;
+            background: #f7f6f6;
+            float: left;
+            padding: 10px 20px;
+            width: 200px;
+
+            &.rute {
+                border-left: 50px solid @colorLightBlue;
+            }
+
+            &.drift {
+                border-left: 50px solid @colorGreen;
+            }
+
+            &.pilot {
+                border-left: 50px solid @colorOrange;
+            }
+
+            &.cancelled {
+                border-left: 50px solid @colorRed;
+            }
+        }
+
+        background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 93%;
+
+        a:focus {
+            .status {
+                color: @colorDarkBlue !important;
+            }
         }
     }
-}
 
-.borderbox {
-    padding: 10px;
-    border: 1px solid #222;
-}
+    .borderbox {
+        padding: 10px;
+        border: 1px solid #222;
+    }
 
-.transportsideknapp_dokument {
-    background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
-    background-size: 45px;
-    background-position: 96% 50%;
-    margin-top: 10px;
-    max-width: 685px;
-    width: 100%;
-    display: inline-block;
-    padding: 0 75px 10px 30px;
+    .transportsideknapp_dokument {
+        background: white url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 50%;
+        margin-top: 10px;
+        max-width: 685px;
+        width: 100%;
+        display: inline-block;
+        padding: 0 75px 10px 30px;
 
-    .status_infomration {
-        float: left;
-        width: 395px;
-        margin: 24px 0 0 30px;
+        .status_infomration {
+            float: left;
+            width: 395px;
+            margin: 24px 0 0 30px;
 
-        .status_received {
-            margin-right: 30px;
+            .status_received {
+                margin-right: 30px;
+            }
         }
-    }
-
-    h2 {
-        padding: 10px 30px 0 0;
-        margin: 0;
-        color: @colorMediumBlue;
-    }
-
-    p {
-        color: #838078;
-    }
-
-    &:hover {
-        text-decoration: none;
-        box-shadow: @colorMediumBlue 0 0 0 2px;
 
         h2 {
+            padding: 10px 30px 0 0;
+            margin: 0;
+            color: @colorMediumBlue;
+        }
+
+        p {
+            color: #838078;
+        }
+
+        &:hover {
             text-decoration: none;
+            box-shadow: @colorMediumBlue 0 0 0 2px;
+
+            h2 {
+                text-decoration: none;
+            }
         }
     }
-}
 
-.external-link {
-    display: inline;
+    .external-link {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    .aside_search {
-        top: 24px;
+    .container, .container-fluid {
+        .aside_search {
+            top: 24px;
+        }
     }
 }

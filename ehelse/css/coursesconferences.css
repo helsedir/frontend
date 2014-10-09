@@ -1,7 +1,9 @@
-﻿.conference {
+﻿.container .conference,
+.container-fluid .conference {
   margin: 50px 0 0 0;
 }
-.conference a div.date {
+.container .conference a div.date,
+.container-fluid .conference a div.date {
   float: left;
   width: auto;
   min-width: 160px;
@@ -9,11 +11,13 @@
   font-weight: bold;
   display: block;
 }
-.conference a div.information {
+.container .conference a div.information,
+.container-fluid .conference a div.information {
   float: left;
   width: 78%;
 }
-.conference a span.date_number {
+.container .conference a span.date_number,
+.container-fluid .conference a span.date_number {
   font-size: 36px;
   display: block;
   padding: 10px 0;
@@ -21,14 +25,16 @@
   font-family: "Soho Gothic W01 Light";
   text-align: center;
 }
-.conference a span.date_monthyear {
+.container .conference a span.date_monthyear,
+.container-fluid .conference a span.date_monthyear {
   display: block;
   color: #c63629;
   font-family: "Soho Gothic W01 Light";
   text-transform: uppercase;
   text-align: center;
 }
-.conference a h2 {
+.container .conference a h2,
+.container-fluid .conference a h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: "Soho Gothic W01 Light";
@@ -36,56 +42,70 @@
   color: #004e66;
   color: #0093a7;
 }
-.conference a h2.internal-link.arrow_right {
+.container .conference a h2.internal-link.arrow_right,
+.container-fluid .conference a h2.internal-link.arrow_right {
   margin: 0;
 }
-.conference a p {
+.container .conference a p,
+.container-fluid .conference a p {
   margin: 0;
   color: #222;
 }
-.conference a:hover h2 {
+.container .conference a:hover h2,
+.container-fluid .conference a:hover h2 {
   text-decoration: underline;
 }
-.refinesearch {
+.container .refinesearch,
+.container-fluid .refinesearch {
   margin-top: 20px;
 }
-.month {
+.container .month,
+.container-fluid .month {
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
   font-size: 18px;
   color: #004e66;
 }
+.container .marginheaderwithoutingress,
+.container-fluid .marginheaderwithoutingress {
+  margin-top: 113px;
+}
 @media only screen and (min-width: 599px) {
-  .aside {
+  .container .aside,
+  .container-fluid .aside {
     margin-top: 0;
   }
 }
-.marginheaderwithoutingress {
-  margin-top: 113px;
-}
 @media only screen and (max-width: 600px) {
-  .conference {
+  .container .conference,
+  .container-fluid .conference {
     margin: 10px 0 10px 0;
     padding: 5px 0 20px 15px;
     background: white;
   }
-  .conference a span.date_number,
-  .conference a span.date_monthyear {
+  .container .conference a span.date_number,
+  .container-fluid .conference a span.date_number,
+  .container .conference a span.date_monthyear,
+  .container-fluid .conference a span.date_monthyear {
     text-align: left;
     display: inline-block;
     font-size: 24px;
     line-height: 27px;
   }
-  .conference a span.date_monthyear {
+  .container .conference a span.date_monthyear,
+  .container-fluid .conference a span.date_monthyear {
     margin-bottom: 20px;
   }
-  .conference a div.date,
-  .conference a div.information {
+  .container .conference a div.date,
+  .container-fluid .conference a div.date,
+  .container .conference a div.information,
+  .container-fluid .conference a div.information {
     float: none;
     width: auto;
   }
-  .conference a h2 {
+  .container .conference a h2,
+  .container-fluid .conference a h2 {
     font-size: 24px;
     line-height: 27px;
   }
