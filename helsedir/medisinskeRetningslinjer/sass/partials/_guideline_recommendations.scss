@@ -383,6 +383,10 @@
                     padding-left: 20px;
                 }
             }
+            ul{
+                list-style-position: outside;
+                margin-top: 10px;
+            }
         }
     }
     &.gradingBlank {

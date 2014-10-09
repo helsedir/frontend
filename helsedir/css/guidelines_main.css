@@ -852,6 +852,10 @@ form.retningslinjerSok #searchinput {
 .Recommendation .textContainer.gradingNone .recommendation-text dl dd {
   padding-left: 20px;
 }
+.Recommendation .textContainer.gradingNone .recommendation-text ul {
+  list-style-position: outside;
+  margin-top: 10px;
+}
 .Recommendation .textContainer.gradingBlank {
   border-left: 2px solid #fff;
 }
