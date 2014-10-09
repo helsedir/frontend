@@ -375,6 +375,14 @@
 
         .recommendation-text {
             padding-top: 0;
+            dl{
+                dt{
+                    margin-top: 20px;
+                }
+                dl{
+                    padding-left: 20px;
+                }
+            }
         }
     }
     &.gradingBlank {
