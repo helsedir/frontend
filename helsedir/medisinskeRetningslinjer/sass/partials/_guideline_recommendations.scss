@@ -375,19 +375,6 @@
 
         .recommendation-text {
             padding-top: 0;
-            dl{
-                dt{
-                    margin-top: 20px;
-                }
-                dd{
-                    padding-left: 20px;
-                }
-            }
-            ul{
-                list-style-position: outside;
-                margin-top: 10px;
-            }
-        }
     }
     &.gradingBlank {
         border-left: 2px solid $colorgrading-blank;
@@ -398,6 +385,15 @@
     .recommendation-text {
         max-width: 650px;
         padding-top: 15px;
+            dl{
+                dt{
+                    margin-top: 20px;
+                }
+                dd{
+                    padding-left: 20px;
+                }
+            }
+        }
     }
     img.pulse {
         top: 40px;
