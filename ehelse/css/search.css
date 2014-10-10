@@ -1,42 +1,53 @@
-﻿.transportsideknapp {
+﻿.container .transportsideknapp,
+.container-fluid .transportsideknapp {
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 96% 93%;
 }
-.transportsideknapp .status_infomration {
+.container .transportsideknapp .status_infomration,
+.container-fluid .transportsideknapp .status_infomration {
   float: left;
   width: 500px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp .status_infomration .status_received {
+.container .transportsideknapp .status_infomration .status_received,
+.container-fluid .transportsideknapp .status_infomration .status_received {
   margin-right: 30px;
 }
-.transportsideknapp .status {
+.container .transportsideknapp .status,
+.container-fluid .transportsideknapp .status {
   background: #f7f6f6;
   float: left;
   padding: 10px 20px;
   width: 200px;
 }
-.transportsideknapp .status.rute {
+.container .transportsideknapp .status.rute,
+.container-fluid .transportsideknapp .status.rute {
   border-left: 50px solid #6cb4b5;
 }
-.transportsideknapp .status.drift {
+.container .transportsideknapp .status.drift,
+.container-fluid .transportsideknapp .status.drift {
   border-left: 50px solid #a1bf37;
 }
-.transportsideknapp .status.pilot {
+.container .transportsideknapp .status.pilot,
+.container-fluid .transportsideknapp .status.pilot {
   border-left: 50px solid #df9922;
 }
-.transportsideknapp .status.cancelled {
+.container .transportsideknapp .status.cancelled,
+.container-fluid .transportsideknapp .status.cancelled {
   border-left: 50px solid #c63629;
 }
-.transportsideknapp a:focus .status {
+.container .transportsideknapp a:focus .status,
+.container-fluid .transportsideknapp a:focus .status {
   color: #004e66 !important;
 }
-.borderbox {
+.container .borderbox,
+.container-fluid .borderbox {
   padding: 10px;
   border: 1px solid #222;
 }
-.transportsideknapp_dokument {
+.container .transportsideknapp_dokument,
+.container-fluid .transportsideknapp_dokument {
   background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 96% 50%;
@@ -46,34 +57,42 @@
   display: inline-block;
   padding: 0 75px 10px 30px;
 }
-.transportsideknapp_dokument .status_infomration {
+.container .transportsideknapp_dokument .status_infomration,
+.container-fluid .transportsideknapp_dokument .status_infomration {
   float: left;
   width: 395px;
   margin: 24px 0 0 30px;
 }
-.transportsideknapp_dokument .status_infomration .status_received {
+.container .transportsideknapp_dokument .status_infomration .status_received,
+.container-fluid .transportsideknapp_dokument .status_infomration .status_received {
   margin-right: 30px;
 }
-.transportsideknapp_dokument h2 {
+.container .transportsideknapp_dokument h2,
+.container-fluid .transportsideknapp_dokument h2 {
   padding: 10px 30px 0 0;
   margin: 0;
   color: #0093a7;
 }
-.transportsideknapp_dokument p {
+.container .transportsideknapp_dokument p,
+.container-fluid .transportsideknapp_dokument p {
   color: #838078;
 }
-.transportsideknapp_dokument:hover {
+.container .transportsideknapp_dokument:hover,
+.container-fluid .transportsideknapp_dokument:hover {
   text-decoration: none;
   box-shadow: #0093a7 0 0 0 2px;
 }
-.transportsideknapp_dokument:hover h2 {
+.container .transportsideknapp_dokument:hover h2,
+.container-fluid .transportsideknapp_dokument:hover h2 {
   text-decoration: none;
 }
-.external-link {
+.container .external-link,
+.container-fluid .external-link {
   display: inline;
 }
 @media only screen and (min-width: 900px) {
-  .aside_search {
+  .container .aside_search,
+  .container-fluid .aside_search {
     top: 24px;
   }
 }

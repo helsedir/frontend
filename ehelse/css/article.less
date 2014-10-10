@@ -23,113 +23,117 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.organisasjonskart, .divisjon {
-    &.has-visible-content {
-        margin-bottom: 25px;
-        padding: 0;
+.container {
+    .organisasjonskart, .divisjon {
+        &.has-visible-content {
+            margin-bottom: 25px;
+            padding: 0;
 
-        > div, > h3 {
-            padding: 0 10px 5px 10px;
-        }
-
-        > ul {
-            padding-left: 30px;
-        }
-
-        h2 {
-            margin: 0;
-            padding: 10px;
-            border: 1px solid #222;
-            background: @colorMediumGray;
-            cursor: pointer;
-        }
-
-        h2:before {
-            float: left;
-            padding-right: 10px;
-            content: "\f077";
-            font-family: "FontAwesome";
-        }
-    }
-
-    &.has-hidden-content {
-        margin-bottom: 25px;
-        padding: 0;
-        border: none;
-
-        h2, h3 {
-            margin: 0;
-            padding: 10px;
-            background: white;
-            cursor: pointer;
-        }
-
-        h2:before, h3:before {
-            float: left;
-            padding-right: 10px;
-            content: "\f078";
-            font-family: "FontAwesome";
-        }
-    }
-}
-
-.table_course {
-    display: inline-block;
-    width: 100%;
-    margin-top: 40px;
-
-    .table_general {
-        width: 100%;
-
-        th, td {
-            text-align: left;
-            padding-left: 10px;
-        }
-
-        tr td:first-child, tr th:first-child {
-            padding-left: 20px;
-        }
-
-        td {
-            a {
-                font-size: 18px;
+            > div, > h3 {
+                padding: 0 10px 5px 10px;
             }
 
-            &.inputfield {
-                padding-bottom: 0;
-                width: 11%;
+            > ul {
+                padding-left: 30px;
+            }
 
-                input {
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    text-align: center;
-                    border: 1px solid @colorDarkBlue;
-                    outline: none;
+            h2 {
+                margin: 0;
+                padding: 10px;
+                border: 1px solid #222;
+                background: @colorMediumGray;
+                cursor: pointer;
+            }
 
-                    &:focus {
-                        box-shadow: 0 0 5px #0093a7;
-                        border: 1px solid #0093a7;
+            h2:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f077";
+                font-family: "FontAwesome";
+            }
+        }
+
+        &.has-hidden-content {
+            margin-bottom: 25px;
+            padding: 0;
+            border: none;
+
+            h2, h3 {
+                margin: 0;
+                padding: 10px;
+                background: white;
+                cursor: pointer;
+            }
+
+            h2:before, h3:before {
+                float: left;
+                padding-right: 10px;
+                content: "\f078";
+                font-family: "FontAwesome";
+            }
+        }
+    }
+
+    .table_course {
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+
+        .table_general {
+            width: 100%;
+
+            th, td {
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            tr td:first-child, tr th:first-child {
+                padding-left: 20px;
+            }
+
+            td {
+                a {
+                    font-size: 18px;
+                }
+
+                &.inputfield {
+                    padding-bottom: 0;
+                    width: 11%;
+
+                    input {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        border: 1px solid @colorDarkBlue;
+                        outline: none;
+
+                        &:focus {
+                            box-shadow: 0 0 5px #0093a7;
+                            border: 1px solid #0093a7;
+                        }
                     }
                 }
             }
-        }
 
-        button {
-            border: none;
-            border-bottom: 1px solid #838078;
-            background: none;
-            height: 29px;
+            button {
+                border: none;
+                border-bottom: 1px solid #838078;
+                background: none;
+                height: 29px;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 900px) {
-    .aside {
-        margin-top: 58px;
+    .container {
+        .aside {
+            margin-top: 58px;
 
-        &.top {
-            margin-top: 0;
+            &.top {
+                margin-top: 0;
+            }
         }
     }
 }

@@ -23,65 +23,67 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.newsitem {
-    .newitem_date {
-        font-size: 16px;
+.container, .container-fluid {
+    .newsitem {
+        .newitem_date {
+            font-size: 16px;
+        }
+
+        .internal-link.arrow_right, p {
+            margin: 0;
+        }
+
+        margin: 50px 0 70px 0;
     }
 
-    .internal-link.arrow_right, p {
-        margin: 0;
+    .border {
+        margin-bottom: 25px;
     }
 
-    margin: 50px 0 70px 0;
-}
+    .newsarchive {
+        margin-top: 50px;
 
-.border {
-    margin-bottom: 25px;
-}
-
-.newsarchive {
-    margin-top: 50px;
-
-    h2, h5 {
-        border-bottom: 2px solid @colorDarkBlue;
-        margin-bottom: 17px;
-        padding-bottom: 15px;
-        font-family: @fontSohoRegular;
-        font-size: 28px;
-        line-height: 42px;
-        ;
-    }
-}
-
-.filterlist {
-    li {
-        margin-bottom: 20px;
-
-        a {
-            color: @colorDarkBlue;
-            font-size: 20px;
+        h2, h5 {
+            border-bottom: 2px solid @colorDarkBlue;
+            margin-bottom: 17px;
+            padding-bottom: 15px;
+            font-family: @fontSohoRegular;
+            font-size: 28px;
+            line-height: 42px;
+            ;
         }
     }
 
-    .selectedfilter a, .selectedfilter a:visited {
-        font-weight: bold;
-        border-left: 3px solid @colorDarkBlue;
-        padding-left: 10px;
+    .filterlist {
+        li {
+            margin-bottom: 20px;
+
+            a {
+                color: @colorDarkBlue;
+                font-size: 20px;
+            }
+        }
+
+        .selectedfilter a, .selectedfilter a:visited {
+            font-weight: bold;
+            border-left: 3px solid @colorDarkBlue;
+            padding-left: 10px;
+        }
     }
-}
 
-.newsdate {
-    font-size: 18px;
-}
-
-.transportsideknapp.newsitem {
-    margin: 35px 0;
-
-    h2 {
-        margin: 5px 0;
+    .newsdate {
+        font-size: 18px;
     }
-}
 
-.refinesearch {
-    margin-top: 20px;
+    .transportsideknapp.newsitem {
+        margin: 35px 0;
+
+        h2 {
+            margin: 5px 0;
+        }
+    }
+
+    .refinesearch {
+        margin-top: 20px;
+    }
 }

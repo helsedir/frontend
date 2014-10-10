@@ -15,12 +15,61 @@
   background-size: cover;
   padding: 30px 0 20px 0;
 }
-.entrancebutton {
+.container .entrancebutton {
   width: 250px;
   height: 150px;
   margin: 0 30px 30px 0;
   float: left;
   position: relative;
+}
+.container .entrancebutton.menu button {
+  width: 250px;
+  height: 150px;
+  border: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px;
+  background: white;
+}
+.container .entrancebutton.menu button h2 {
+  margin: auto;
+  font-size: 22px;
+  line-height: 26px;
+  color: #004e66;
+  transition: all 0.5s;
+}
+.container .entrancebutton.menu button h2 .fa-bars {
+  padding-left: 10px;
+}
+.container .entrancebutton.menu button.js-expanded {
+  background-color: #0093a7;
+  color: white;
+  outline: 0;
+}
+.container .entrancebutton.menu button.js-expanded h2 {
+  color: white;
+  background: none;
+}
+.container .entrancebutton.menu button:focus {
+  background: #0093a7 !important;
+  transition: none;
+}
+.container .entrancebutton.menu button:focus h2 {
+  color: white !important;
+  background: #0093a7 !important;
+  transition: none;
+}
+.container .entrancebutton.menu button:hover {
+  background: #0093a7 !important;
+}
+.container .entrancebutton.menu button:hover h2 {
+  color: white;
+}
+.container .entrancebutton a {
+  height: 100%;
+  width: 100%;
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -31,70 +80,28 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.entrancebutton.menu {
-  border: none;
-  height: 150px;
-  width: 250px;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 4px;
-  background: white;
-}
-.entrancebutton.menu h2 {
-  margin: auto;
-  font-size: 22px;
-  line-height: 26px;
-  color: #004e66;
-  transition: all 0.5s;
-}
-.entrancebutton.menu h2 .fa-bars {
-  padding-left: 10px;
-}
-.entrancebutton.menu.js-expanded {
-  background-color: #0093a7;
-  color: white;
-  outline: 0;
-}
-.entrancebutton.menu.js-expanded h2 {
-  color: white;
-  background: none;
-}
-.entrancebutton.menu:focus {
-  background: #0093a7 !important;
-  transition: none;
-}
-.entrancebutton.menu:focus h2 {
-  color: white !important;
-  background: #0093a7 !important;
-  transition: none;
-}
-.entrancebutton.menu:hover {
-  background: #0093a7 !important;
-}
-.entrancebutton:hover {
+.container .entrancebutton a:hover {
   background: #002e41;
   text-decoration: none;
 }
-.entrancebutton:hover h2,
-.entrancebutton:hover p,
-.entrancebutton:hover:focus,
-.entrancebutton:hover h2:focus,
-.entrancebutton:hover p:focus {
+.container .entrancebutton a:hover h2,
+.container .entrancebutton a:hover p,
+.container .entrancebutton a:hover:focus,
+.container .entrancebutton a:hover h2:focus,
+.container .entrancebutton a:hover p:focus {
   text-decoration: none;
   color: white;
 }
-.entrancebutton h3 {
+.container .entrancebutton a h3 {
   margin: 80px 0 0 0;
   padding: 0;
   font-size: 28px;
   font-family: "Soho Gothic W01 Light";
 }
-.entrancebutton h3 .fa-bars {
+.container .entrancebutton a h3 .fa-bars {
   margin-top: 20px;
 }
-.entrancebutton h2 {
+.container .entrancebutton a h2 {
   font-size: 22px;
   line-height: 26px;
   margin: 60px 12px 15px 20px;
@@ -102,48 +109,48 @@
   color: white;
   position: relative;
 }
-.entrancebutton p {
+.container .entrancebutton a p {
   line-height: 23px;
   position: relative;
   margin-left: 12px;
   margin-bottom: 15px;
 }
-.entrancebutton:focus {
+.container .entrancebutton a:focus {
   background: #002e41 !important;
   transition: none;
 }
-.entrancebutton:focus h2,
-.entrancebutton:focus p {
+.container .entrancebutton a:focus h2,
+.container .entrancebutton a:focus p {
   background: #002e41 !important;
   transition: none;
 }
-.entrancebutton:visited,
-.entrancebutton:hover {
+.container .entrancebutton a:visited,
+.container .entrancebutton a:hover {
   color: white;
 }
-.entrancebutton:visited:hover,
-.entrancebutton:hover:hover {
+.container .entrancebutton a:visited:hover,
+.container .entrancebutton a:hover:hover {
   background: #002e41;
 }
-.entrancebutton.alternative {
+.container .entrancebutton.alternative {
   height: 160px;
 }
-.entrancebutton.alternative h2 {
+.container .entrancebutton.alternative h2 {
   margin: 25px 12px 15px 12px;
   font-size: 22px;
   line-height: 29px;
 }
-.entrancebutton.alternative.menu {
+.container .entrancebutton.alternative.menu {
   height: 160px;
 }
-.entrancebutton.alternative.menu h2 {
+.container .entrancebutton.alternative.menu h2 {
   font-size: 22px;
   line-height: 29px;
 }
-.entrancebutton.alternative.menu:focus h2 {
+.container .entrancebutton.alternative.menu:focus h2 {
   background: #666460;
 }
-.search_button {
+.container .search_button {
   float: none;
 }
 .frontpagewrapper.grey {
@@ -284,126 +291,126 @@
 .frontpage .showmorenews {
   margin-top: 30px;
 }
-.internal-link {
+.frontpage .internal-link {
   background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
   background-size: 20px;
   background-position: 0 7px;
 }
-.toppmeny .tabs .tab-links li.menu_search {
-  background: none;
-  padding: 0;
-}
-#menu_search {
+.frontpage #menu_search {
   border-radius: 0;
 }
-#menu_search::-webkit-input-placeholder {
+.frontpage #menu_search::-webkit-input-placeholder {
   /* WebKit browsers */
   font-size: 16px;
 }
-#menu_search:-moz-placeholder {
+.frontpage #menu_search:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   font-size: 16px;
   opacity: 1;
 }
-#menu_search::-moz-placeholder {
+.frontpage #menu_search::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   font-size: 16px;
   opacity: 1;
 }
-#menu_search:-ms-input-placeholder {
+.frontpage #menu_search:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   font-size: 16px;
 }
-.video-container {
+.frontpage .video-container {
   padding-bottom: 40%;
   margin: 40px 0 20px 0;
 }
-.search_button img {
-  width: 20px;
-  vertical-align: initial;
-}
-.menu_search input {
+.frontpage .menu_search input {
   height: 27px;
   width: 77%;
   cursor: pointer;
   border: none;
   color: #004e66;
 }
-.searchform {
+.frontpage .searchform {
   border: 1px solid #004e66;
   margin: 0;
   height: 31px;
   background: white;
   padding-left: 0;
 }
+.frontpage .search_button img {
+  width: 20px;
+  vertical-align: initial;
+}
+.toppmeny .tabs .tab-links li.menu_search {
+  background: none;
+  padding: 0;
+}
 @media only screen and (max-width: 599px) {
-  .entrancebutton {
+  .container .entrancebutton {
     width: 100%;
     height: 100%;
     margin: 7.5px 0 7.5px 0;
   }
-  .entrancebutton a h2 {
+  .container .entrancebutton a h2 {
     margin: 15px 0 0 12px;
     color: white;
   }
-  .entrancebutton a p {
+  .container .entrancebutton a p {
     margin: 0 0 15px 12px;
     color: white;
   }
-  .entrancebutton h2 {
+  .container .entrancebutton h2 {
     margin-top: 20px;
   }
-  .entrancebutton.menu {
+  .container .entrancebutton.menu {
     width: 100%;
     height: 106px;
     border-radius: 4px;
   }
-  .entrancebutton.menu h2 {
+  .container .entrancebutton.menu h2 {
     margin: 15px 0 15px 12px;
     text-align: center;
   }
-  .entrancebutton.menu h2 .fa-bars {
+  .container .entrancebutton.menu h2 .fa-bars {
     padding-left: 10px;
   }
-  .frontpage .chart_wrapper {
+  .container .frontpage .chart_wrapper {
     margin: 40px 0 0 0;
   }
-  .frontpage .conferenceitem .conference_date {
+  .container .frontpage .conferenceitem .conference_date {
     font-size: 28px;
     margin-right: 20px;
   }
-  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
     width: 100%;
     height: 36px;
     min-height: 0;
   }
-  .frontpage div.conferenceitem > div:nth-child(2n) {
+  .container .frontpage div.conferenceitem > div:nth-child(2n) {
     width: 100%;
     padding-top: 0;
     min-height: 0;
   }
-  .frontpage .conferenceitem .conference_info a {
+  .container .frontpage .conferenceitem .conference_info a {
     line-height: 42px;
     margin-top: 5px;
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .internal-link {
+  .container .internal-link {
     background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
     background-position: 0 8px;
   }
-  .frontpage h2 {
+  .container .frontpage h2 {
     margin-top: 30px;
   }
-  .frontpage .news:first-of-type,
-  .frontpage .news {
+  .container .frontpage .news:first-of-type,
+  .container .frontpage .news {
     margin: 15px 0;
   }
-  .frontpage .showmorenews {
+  .container .frontpage .showmorenews {
     margin-top: 15px;
   }
-  .frontpage .news p {
+  .container .frontpage .news p {
     line-height: 24px;
   }
   #footer {
@@ -411,61 +418,61 @@
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
-  .entrancebutton {
+  .container .entrancebutton {
     margin: 30px 25px 0 0;
   }
-  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
     width: 35%;
   }
-  .frontpage div.conferenceitem > div:nth-child(2n) {
+  .container .frontpage div.conferenceitem > div:nth-child(2n) {
     width: 55%;
     padding-top: 0;
   }
-  .frontpage .conferenceitem .conference_info a {
+  .container .frontpage .conferenceitem .conference_info a {
     line-height: 42px;
     margin-top: 2px;
   }
-  .internal-link {
+  .container .internal-link {
     background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
     background-size: 20px;
     background-position: 0 50%;
   }
-  .mainentrance {
+  .container .mainentrance {
     padding-top: 0;
     padding-bottom: 30px;
   }
 }
 @media only screen and (max-width: 899px) {
-  .border_grey {
+  .container .border_grey {
     padding-bottom: 30px;
     border-bottom: 1px solid #bababa;
   }
-  .frontpage .importantnews .text_and_image {
+  .container .frontpage .importantnews .text_and_image {
     width: 100%;
     float: none;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-  .frontpage .importantnews .text_and_image {
+  .container .frontpage .importantnews .text_and_image {
     width: 48%;
     float: left;
   }
-  .frontpage .importantnews .importantphoto {
+  .container .frontpage .importantnews .importantphoto {
     margin: 28px 0 0 22px;
     width: 48%;
     float: left;
   }
-  .frontpage div.conferenceitem > div:nth-child(2n-1) {
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
     width: 43%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .center {
+  .container .center {
     padding: 0 165px;
   }
 }
 @media only screen and (min-width: 900px) {
-  .frontpage .conferenceitem {
+  .container .frontpage .conferenceitem {
     margin-top: 24px;
   }
 }

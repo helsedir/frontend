@@ -1,17 +1,25 @@
-﻿.consultation_details {
+﻿.container .consultation_details,
+.container-fluid .consultation_details {
   margin-top: 20px;
 }
-.consultation_details p,
-.consultation_details span {
+.container .consultation_details p,
+.container-fluid .consultation_details p,
+.container .consultation_details span,
+.container-fluid .consultation_details span {
   display: table-cell;
 }
-.consultation_details .consultation_processing_deadline span,
-.consultation_details .consultation_deadline span,
-.consultation_details .consultation_status span,
-.consultation_details .conference_theme span {
+.container .consultation_details .consultation_processing_deadline span,
+.container-fluid .consultation_details .consultation_processing_deadline span,
+.container .consultation_details .consultation_deadline span,
+.container-fluid .consultation_details .consultation_deadline span,
+.container .consultation_details .consultation_status span,
+.container-fluid .consultation_details .consultation_status span,
+.container .consultation_details .conference_theme span,
+.container-fluid .consultation_details .conference_theme span {
   width: 100px;
 }
-.ingress {
+.container .ingress,
+.container-fluid .ingress {
   border: none;
 }
 /*# sourceMappingURL=consultation.css.map */

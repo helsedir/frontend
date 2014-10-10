@@ -310,18 +310,6 @@
     }
 }
 
-footer {
-    background: white;
-
-    a {
-        &:focus {
-            background: white;
-            color: @colorDarkBlue !important;
-            outline: 0;
-        }
-    }
-}
-
 /**********Header**********/
 .toppmeny {
     background: #0093a7;
@@ -336,7 +324,7 @@ footer {
 
 /**********Footer**********/
 
-footer, .toppmeny {
+footer, .container-fluid.toppmeny {
     .tabs {
         margin-bottom: 50px;
         padding-left: 20px;
@@ -450,6 +438,22 @@ footer, .toppmeny {
             &:hover {
                 background: #d1d0c4;
             }
+        }
+    }
+}
+
+footer {
+    .tabs {
+        margin-top: -38px;
+    }
+
+    background: white;
+
+    a {
+        &:focus {
+            background: white;
+            color: @colorDarkBlue !important;
+            outline: 0;
         }
     }
 }
@@ -607,7 +611,7 @@ footer, .toppmeny {
         height: 16px;
     }
 
-    .toppmeny, footer {
+    .container-fluid.toppmeny, footer {
         .tabs {
             padding-left: 0;
 
@@ -630,7 +634,7 @@ footer, .toppmeny {
         margin-top: -27px;
     }
 
-    .toppmeny .inner {
+    .container-fluid.toppmeny .inner {
         margin-top: 40px;
     }
 
@@ -638,7 +642,7 @@ footer, .toppmeny {
         padding-top: 40px;
     }
 
-    .toppmeny .tabs .hide_menu {
+    .container-fluid.toppmeny .tabs .hide_menu {
         display: none;
     }
 
@@ -664,7 +668,7 @@ footer, .toppmeny {
         margin-right: 0;
     }
 
-    .toppmeny .tabs .hide_menu {
+    .container-fluid.toppmeny .tabs .hide_menu {
         margin-right: 31px;
     }
 }
@@ -778,7 +782,7 @@ footer, .toppmeny {
         }
     }
 
-    .toppmeny .tabs .hide_menu {
+    .container-fluid.toppmeny .tabs .hide_menu {
         margin-right: 0;
     }
 }

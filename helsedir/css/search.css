@@ -45,4 +45,7 @@
 .container .highlight {
   font-weight: bold;
 }
+.container .internal-link.arrow_right:after {
+  position: static;
+}
 /*# sourceMappingURL=search.css.map */

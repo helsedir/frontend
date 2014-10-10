@@ -1,28 +1,36 @@
-﻿.meeting {
+﻿.container .meeting,
+.container-fluid .meeting {
   padding-bottom: 15px;
   margin-top: 30px;
   border-bottom: 1px solid gray;
 }
-.meeting p {
+.container .meeting p,
+.container-fluid .meeting p {
   display: inline;
   margin-right: 30px;
 }
-.meeting a {
+.container .meeting a,
+.container-fluid .meeting a {
   display: block;
 }
-.aside.alignwithheader {
+.container .aside.alignwithheader,
+.container-fluid .aside.alignwithheader {
   margin-top: 113px;
 }
-.refinesearch {
+.container .refinesearch,
+.container-fluid .refinesearch {
   margin-top: 20px;
 }
-.timeandplace {
+.container .timeandplace,
+.container-fluid .timeandplace {
   float: none;
 }
-.conference_transport {
+.container .conference_transport,
+.container-fluid .conference_transport {
   margin: 30px 0 0 0;
 }
-.conference_transport a div.date {
+.container .conference_transport a div.date,
+.container-fluid .conference_transport a div.date {
   float: left;
   width: auto;
   min-width: 160px;
@@ -30,17 +38,21 @@
   font-weight: bold;
   display: block;
 }
-.conference_transport a div.information {
+.container .conference_transport a div.information,
+.container-fluid .conference_transport a div.information {
   float: left;
   width: 75%;
 }
-.conference_transport a div.information p {
+.container .conference_transport a div.information p,
+.container-fluid .conference_transport a div.information p {
   margin-left: 35px;
 }
-.conference_transport a div.information .internal-link {
+.container .conference_transport a div.information .internal-link,
+.container-fluid .conference_transport a div.information .internal-link {
   background-position: 0 15px;
 }
-.conference_transport a span.date_number {
+.container .conference_transport a span.date_number,
+.container-fluid .conference_transport a span.date_number {
   display: block;
   padding: 7px 0 10px 0;
   color: #c63629;
@@ -49,7 +61,8 @@
   font-family: "Soho Gothic W01 Light";
   text-transform: uppercase;
 }
-.conference_transport a span.date_monthyear {
+.container .conference_transport a span.date_monthyear,
+.container-fluid .conference_transport a span.date_monthyear {
   display: block;
   text-transform: uppercase;
   text-align: right;
@@ -58,29 +71,35 @@
   color: #c63629;
   margin-top: 2px;
 }
-.conference_transport a h2 {
+.container .conference_transport a h2,
+.container-fluid .conference_transport a h2 {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-family: "Soho Gothic W01 Light";
   color: #222;
 }
-.conference_transport a h2.internal-link.arrow_right {
+.container .conference_transport a h2.internal-link.arrow_right,
+.container-fluid .conference_transport a h2.internal-link.arrow_right {
   margin: 0;
 }
-.conference_transport a p {
+.container .conference_transport a p,
+.container-fluid .conference_transport a p {
   margin: 3px 0 0 0;
   color: #222;
 }
-.conference_transport a:hover h2 {
+.container .conference_transport a:hover h2,
+.container-fluid .conference_transport a:hover h2 {
   text-decoration: underline;
 }
-.conference {
+.container .conference,
+.container-fluid .conference {
   background: white;
   padding: 25px 12px 10px 12px;
   margin-top: 0;
 }
-.conference .details {
+.container .conference .details,
+.container-fluid .conference .details {
   float: left;
   width: auto;
   min-width: 160px;
@@ -89,8 +108,10 @@
   font-weight: bold;
   display: block;
 }
-.conference .details .date,
-.conference .details .year {
+.container .conference .details .date,
+.container-fluid .conference .details .date,
+.container .conference .details .year,
+.container-fluid .conference .details .year {
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 27px;
@@ -98,33 +119,39 @@
   color: #c63629;
   text-align: right;
 }
-.conference .details .date {
+.container .conference .details .date,
+.container-fluid .conference .details .date {
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.conference .information {
+.container .conference .information,
+.container-fluid .conference .information {
   float: left;
   width: 72%;
 }
-.conference .information .information_header {
+.container .conference .information .information_header,
+.container-fluid .conference .information .information_header {
   color: #0093a7;
   font-size: 36px;
   line-height: 40px;
   font-family: "Soho Gothic W01 Light";
   margin: 0 0 17px 0;
 }
-.conference button {
+.container .conference button,
+.container-fluid .conference button {
   margin-left: 15px;
 }
-.conference img {
+.container .conference img,
+.container-fluid .conference img {
   width: 210px;
   float: right;
   margin-top: 29px;
   margin-right: 17px;
 }
-.month {
+.container .month,
+.container-fluid .month {
   font-family: 'Calibri';
   line-height: 20px;
   text-transform: uppercase;
@@ -133,76 +160,99 @@
   margin-bottom: 0;
 }
 @media only screen and (min-width: 599px) {
-  .container .aside {
+  .container .aside,
+  .container-fluid .aside {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  .conference .information {
+  .container .conference .information,
+  .container-fluid .conference .information {
     float: none;
   }
-  .conference .information .information_header {
+  .container .conference .information .information_header,
+  .container-fluid .conference .information .information_header {
     margin-top: 10px;
   }
-  .conference .details {
+  .container .conference .details,
+  .container-fluid .conference .details {
     float: none;
     width: 100%;
   }
-  .conference .details .date,
-  .conference .details .year,
-  .conference .details .time {
+  .container .conference .details .date,
+  .container-fluid .conference .details .date,
+  .container .conference .details .year,
+  .container-fluid .conference .details .year,
+  .container .conference .details .time,
+  .container-fluid .conference .details .time {
     text-align: left;
     display: inline-block;
   }
-  .conference_transport {
+  .container .conference_transport,
+  .container-fluid .conference_transport {
     margin: 10px 0 10px 0;
     padding: 5px 0 20px 15px;
     background: white;
   }
-  .conference_transport a span.date_number,
-  .conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container-fluid .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear,
+  .container-fluid .conference_transport a span.date_monthyear {
     text-align: left;
     display: inline-block;
     font-size: 24px;
     line-height: 27px;
   }
-  .conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_monthyear,
+  .container-fluid .conference_transport a span.date_monthyear {
     margin-bottom: 20px;
   }
-  .conference_transport a div.date,
-  .conference_transport a div.information {
+  .container .conference_transport a div.date,
+  .container-fluid .conference_transport a div.date,
+  .container .conference_transport a div.information,
+  .container-fluid .conference_transport a div.information {
     float: none;
     width: auto;
   }
-  .conference_transport a h2 {
+  .container .conference_transport a h2,
+  .container-fluid .conference_transport a h2 {
     font-size: 24px;
     line-height: 27px;
   }
-  .conference_transport a span.date_number,
-  .conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container-fluid .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear,
+  .container-fluid .conference_transport a span.date_monthyear {
     font-size: 18px;
     margin-bottom: 0;
   }
-  .conference_transport a div.information {
+  .container .conference_transport a div.information,
+  .container-fluid .conference_transport a div.information {
     width: 100%;
   }
-  .conference_transport a h2.internal-link.arrow_right {
+  .container .conference_transport a h2.internal-link.arrow_right,
+  .container-fluid .conference_transport a h2.internal-link.arrow_right {
     margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-  .conference_transport a div.information {
+  .container .conference_transport a div.information,
+  .container-fluid .conference_transport a div.information {
     width: 65%;
   }
-  .conference img {
+  .container .conference img,
+  .container-fluid .conference img {
     margin: 0 auto;
     display: block;
   }
-  .conference_transport a span.date_number,
-  .conference_transport a span.date_monthyear {
+  .container .conference_transport a span.date_number,
+  .container-fluid .conference_transport a span.date_number,
+  .container .conference_transport a span.date_monthyear,
+  .container-fluid .conference_transport a span.date_monthyear {
     text-align: left;
   }
-  .conference_transport a div.date {
+  .container .conference_transport a div.date,
+  .container-fluid .conference_transport a div.date {
     min-width: 150px;
   }
 }

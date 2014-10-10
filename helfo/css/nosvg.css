@@ -117,12 +117,12 @@
 }
 .no-svg .container .transportsideknapp {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
-  background-size: 45px;
+  background-size: 45px 45px;
   background-position: 96% 90%;
 }
 .no-svg .container .transportsideknapp_dokument {
   background: #ffffff url(../img/ikoner/ikon_pil_knapp_mellomblaa.png) no-repeat;
-  background-size: 45px;
+  background-size: 45px 45px;
   background-position: 96% 50%;
 }
 .no-svg .container .breadcrumbs li:last-child:before {

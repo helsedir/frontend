@@ -1,21 +1,29 @@
-﻿.newsitem {
+﻿.container .newsitem,
+.container-fluid .newsitem {
   margin: 50px 0 70px 0;
 }
-.newsitem .newitem_date {
+.container .newsitem .newitem_date,
+.container-fluid .newsitem .newitem_date {
   font-size: 16px;
 }
-.newsitem .internal-link.arrow_right,
-.newsitem p {
+.container .newsitem .internal-link.arrow_right,
+.container-fluid .newsitem .internal-link.arrow_right,
+.container .newsitem p,
+.container-fluid .newsitem p {
   margin: 0;
 }
-.border {
+.container .border,
+.container-fluid .border {
   margin-bottom: 25px;
 }
-.newsarchive {
+.container .newsarchive,
+.container-fluid .newsarchive {
   margin-top: 50px;
 }
-.newsarchive h2,
-.newsarchive h5 {
+.container .newsarchive h2,
+.container-fluid .newsarchive h2,
+.container .newsarchive h5,
+.container-fluid .newsarchive h5 {
   border-bottom: 2px solid #004e66;
   margin-bottom: 17px;
   padding-bottom: 15px;
@@ -23,29 +31,37 @@
   font-size: 28px;
   line-height: 42px;
 }
-.filterlist li {
+.container .filterlist li,
+.container-fluid .filterlist li {
   margin-bottom: 20px;
 }
-.filterlist li a {
+.container .filterlist li a,
+.container-fluid .filterlist li a {
   color: #004e66;
   font-size: 20px;
 }
-.filterlist .selectedfilter a,
-.filterlist .selectedfilter a:visited {
+.container .filterlist .selectedfilter a,
+.container-fluid .filterlist .selectedfilter a,
+.container .filterlist .selectedfilter a:visited,
+.container-fluid .filterlist .selectedfilter a:visited {
   font-weight: bold;
   border-left: 3px solid #004e66;
   padding-left: 10px;
 }
-.newsdate {
+.container .newsdate,
+.container-fluid .newsdate {
   font-size: 18px;
 }
-.transportsideknapp.newsitem {
+.container .transportsideknapp.newsitem,
+.container-fluid .transportsideknapp.newsitem {
   margin: 35px 0;
 }
-.transportsideknapp.newsitem h2 {
+.container .transportsideknapp.newsitem h2,
+.container-fluid .transportsideknapp.newsitem h2 {
   margin: 5px 0;
 }
-.refinesearch {
+.container .refinesearch,
+.container-fluid .refinesearch {
   margin-top: 20px;
 }
 /*# sourceMappingURL=news.css.map */
