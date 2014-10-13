@@ -5,10 +5,12 @@
                 <nav>
                     <ol class="breadcrumbs clearfix">
                         <li><a href="../layouts/forside.html">Forside</a></li>
+
                     </ol>
                     
                 </nav>
-                <h1>Nasjonale faglige retningslinjer</h1>
+                <h1>Retningslinjer og veiledere</h1>
+                <small>Retningslinjer, veiledere, pakkeforløp</small>
             </header>
         </div>
     </div>
@@ -58,7 +60,7 @@
            
             <span class="guidelinecount">{{guidelines.length}} retningslinjer og veiledere</span>
             <ul class="guidelineslist">
-                <li ng-repeat="guideline in guidelines | filter: searchText" class="guideline">
+                <li ng-repeat="guideline in guidelines | filter: searchText" class="guideline" ng-hide="guideline.isDeleted">
 
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->

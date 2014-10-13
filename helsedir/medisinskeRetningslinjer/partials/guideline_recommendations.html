@@ -9,6 +9,7 @@
             <li><a href="../../../layouts/forside.html">Forside</a></li>
             <li><a href="../../../medisinskeretningslinjer" class="active">Nasjonale faglige retningslinjer</a></li>
             <li><a href="#/{{guideline.guidelineId}}/" class="active">{{guideline.title}}</a></li>
+            <li><a href="#/{{guideline.guidelineId}}/" class="active">{{recommendation.heading}}</a></li>
           </ol>
         </nav>
         <div class="headerGroup">
@@ -25,7 +26,7 @@
     
     <div class="col-md-12 col-lg-8">
     <div class="">
-      <section class="Recommendation" ng-repeat="recommendation in section.recommendations">
+      <section class="Recommendation" ng-repeat="recommendation in section.recommendations" ng-hide="recommendation.isDeleted">
 
           <header class="recommendationheader closed" grading="{{recommendation.strength}}">
             <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
@@ -69,7 +70,7 @@
           </div>
           <div class="tabs">
             <ul class="resp-tabs-list">
-              <li ng-if="recommendation.keyInfo.length > 0"><a href="#nokkelinfo">Nøkkelinfo</a></li>
+              <li ng-if="recommendation.keyInfo.length > 0"><a href="#nokkelinfo">Vurdering</a></li>
               <li ng-if="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
               <li ng-if="recommendation.rational != null"><a href="#rasjonale">Begrunnelse</a></li>
               <li ng-if="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
@@ -77,7 +78,7 @@
             </ul>
             <div class="resp-tabs-container">
               <div id="nokkelinfo" ng-if="recommendation.keyInfo.length > 0">
-                <div ng-repeat="keyInfo in recommendation.keyInfo">
+                <div ng-repeat="keyInfo in recommendation.keyInfo" ng-hide="keyInfo.isDeleted">
                 <section ng-show="keyInfo.benefits != null">
                   <h1 class="keyinfoheading nomargin-top">Fordeler og ulemper</h1>
                   <div ng-bind-html="keyInfo.benefits | unsafe"></div>
@@ -97,7 +98,7 @@
                 </div>
               </div>
               <div id="vitenskap" ng-if="recommendation.picos.length > 0">
-                <section class="pico" ng-repeat="pico in recommendation.picos">
+                <section class="pico" ng-repeat="pico in recommendation.picos" ng-hide="pico.isDeleted">
                   <dl class="dl-horizontal">
                     <dt>Populasjon</dt>
                     <dd ng-bind-html="pico.population | unsafe"></dd>

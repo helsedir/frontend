@@ -45,7 +45,7 @@
 				<h2 class="smalltitle small">Innhold i denne retningslinjen</h2>
 				<ul class="sectionlist">
 					
-					<li class="element" ng-repeat="section in retningslinje.sections">
+					<li class="element" ng-repeat="section in retningslinje.sections" ng-hide="section.isDeleted">
 						<a ng-if="section.childSections.length > 0" href="#/{{retningslinje.guidelineId}}/childsectionIndex/{{section.sectionId}}">
 							<h3 class="sectionheading"><span class="smalltitle">{{retningslinje.title}}</span>{{section.heading}}</h3>
 							<div class="sectioninformation hidden-xs">
