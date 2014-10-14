@@ -1,0 +1,237 @@
+<div>
+  
+
+
+    <header class="recommendationheader closed" grading="{{recommendation.strength}}">
+      <h2 class="recommendationtitle">{{recommendation.heading}}</h2>
+    </header>
+
+
+  <div class="recommendationcontent visuallyhidden">
+    <div class="recommendationexplanation" grading="{{recommendation.strength}}">
+      <div class="clickable">
+        <i ng-hide="recommendation.strength == null || recommendation.strength == 'null'" class="icon" grading="{{recommendation.strength}}"></i>
+        <span ng-show="recommendation.strength == 'strong'" class="recommendationstrength gradingStrong">Sterk anbefaling</span>
+        <span ng-show="recommendation.strength == 'weak'" class="recommendationstrength gradingWeak">Svak anbefaling</span>
+      </div>
+      <div class="explainingtext" grading="{{recommendation.strength}}">
+        <p ng-show="recommendation.strength == 'strong'" >
+        Denne anbefalingen er sterk Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        </p>
+        <p ng-show="recommendation.strength == 'weak'">
+        Denne anbefalingen er svak Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodolorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        consequat.
+        </p>
+      </div>
+    </div>
+    <div class="textContainer" data-grading="{{recommendation.strength}}">
+      <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.png">
+      <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.png">
+      <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.png">
+      <div class="recommendation-text" ng-bind-html="recommendation.text | unsafe" >
+        
+      </div>
+    </div>
+    <div class="tabs">
+      <ul class="resp-tabs-list">
+        <li ng-if="recommendation.keyInfo.length > 0"><a href="#nokkelinfo">Vurdering</a></li>
+        <li ng-if="recommendation.picos.length > 0"><a href="#vitenskap">Vitenskapelige spm.</a></li>
+        <li ng-if="recommendation.rational != null"><a href="#rasjonale">Begrunnelse</a></li>
+        <li ng-if="recommendation.practicalAdvice != null"><a href="#praktisk">Praktisk info</a></li>
+        <li ng-if="recommendation.references > 0"><a href="#referanser">Referanser</a></li>
+      </ul>
+      <div class="resp-tabs-container">
+        <div id="nokkelinfo" ng-if="recommendation.keyInfo.length > 0">
+          <div ng-repeat="keyInfo in recommendation.keyInfo" ng-hide="keyInfo.isDeleted">
+          <section ng-show="keyInfo.benefits != null">
+            <h1 class="keyinfoheading nomargin-top">Fordeler og ulemper</h1>
+            <div ng-bind-html="keyInfo.benefits | unsafe"></div>
+          </section>
+          <section ng-show="keyInfo.evidence != null">
+            <h1 class="keyinfoheading">Kvalitet på dokumentasjonen</h1>
+            <div ng-bind-html="keyInfo.evidence | unsafe"></div>
+          </section>
+          <section ng-show="keyInfo.preference != null">
+            <h1 class="keyinfoheading">Verdier og preferanser</h1>
+            <div ng-bind-html="keyInfo.preference | unsafe"></div>
+          </section>
+          <section ng-show="keyInfo.resources != null">
+            <h1 class="keyinfoheading">Ressurshensyn</h1>
+            <div ng-bind-html="keyInfo.resources | unsafe"></div>
+          </section>
+          </div>
+        </div>
+        <div id="vitenskap" ng-if="recommendation.picos.length > 0">
+          <section class="pico" ng-repeat="pico in recommendation.picos" ng-hide="pico.isDeleted">
+            <dl class="dl-horizontal">
+              <dt>Populasjon</dt>
+              <dd ng-bind-html="pico.population | unsafe"></dd>
+              <dt>Intervensjon</dt>
+              <dd ng-bind-html="pico.intervention | unsafe"></dd>
+              <dt>Komparator</dt>
+              <dd ng-bind-html="pico.control | unsafe"></dd>
+              <dt>Utfall</dt>
+              <dd ng-bind-html="pico.outcome | unsafe"></dd>
+            </dl>
+
+            <ul class="linklist">
+              <li><a href="#picoEvidensprofil" class="open-popup-link" >Evidensprofil</a></li>
+              <li><a href="#picoSummary" class="open-popup-link" >Sammendrag av studie</a></li>
+              <li><a href="#picoReferences" class="open-popup-link" >Referanser</a></li>
+            </ul>
+            <section id="picoEvidensprofil" class="white-popup mfp-hide picomodal">
+              <header class="picomodalheader">
+                <h1>Evidensprofil</h1>
+                <a href="" class="closemodalbutton">Lukk</a>
+              </header>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Utfall</th>
+                    <th>Tiltro til estimatene</th>
+                    <th>Relativ effekt</th>
+                    <th>Ingen behandling</th>
+                    <th>Parental antikoagulasjon</th>
+                    <th>Absolutt forskjell</th>
+                    <th>Antall inkluderte</th>
+                    <th>Antall studier</th>
+                    <th>Oppfølgingstid</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Død</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Kognitiv funksjon</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Infeksjoner</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Vekst</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Overvekt</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Atypisk sykdom / allergi</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Cøliaki</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                  <tr>
+                    <td>Spiseutvikling og smaksaksept</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="picoSummary" class="white-popup mfp-hide picomodal">
+              <header class="picomodalheader">
+                <h1>Sammendrag</h1>
+                <a href="" class="closemodalbutton">Lukk</a>
+              </header>
+              <div class="picosummarycontent" ng-bind-html="pico.summary | unsafe">
+                
+              </div>
+            </section>
+            <section id="picoReferences" class="white-popup mfp-hide picomodal">
+              <header class="picomodalheader">
+                <h1>Referanser</h1>
+                <a href="" class="closemodalbutton">Lukk</a>
+              </header>
+              <div class="picoreferencescontent">
+                Her kommer referanser
+              </div>
+            </section>
+
+          </section>
+        </div>
+        <div id="rasjonale" ng-if="recommendation.rational != null" ng-bind-html="recommendation.rational | unsafe"></div>
+        <div id="praktisk" ng-if="recommendation.practicalAdvice != null" ng-bind-html="recommendation.practicalAdvice | unsafe"></div>
+        <div id="referanser" ng-if="recommendation.references > 0" ng-bind-html="recommendation.refs | unsafe">
+          <section ng-repeat="reference in recommendation.references">
+          <h1>{{reference.title}}</h1>
+          
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" grading="{{recommendation.strength}}" class="button-close visuallyhidden"><i class="fa fa-angle-up"></i></a>
+
+</div>

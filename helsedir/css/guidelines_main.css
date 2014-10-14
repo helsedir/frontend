@@ -1404,10 +1404,14 @@ form.retningslinjerSok #searchinput {
   }
 }
 
+.Guidelinechildsection .sectionlist {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 .Guidelinechildsection .sectionlist .element {
   padding: 20px 30px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .Guidelinechildsection .sectionlist .element:nth-child(odd) {
   background-color: #eeeded;
