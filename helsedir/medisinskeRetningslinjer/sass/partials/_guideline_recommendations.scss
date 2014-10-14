@@ -111,24 +111,10 @@
 
 
 
-.Recommendations .aboutsection{
-    margin-top: 25px;
-}
-
-.Recommendations .aboutsectioncontent{
-    background-color: $colorWhite;
-    padding: 15px 30px;
-}
-
-.Recommendations .aboutsectionheading{
-    font-size: 28px;
-    margin-top: 20px;
-}
-
 .Recommendation {
     padding: 0;
     background: $colorWhite;
-    margin-top: 25px;
+    margin-bottom: 25px;
     &:first-child {
         margin-top: 40px;
     }

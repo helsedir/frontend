@@ -139,6 +139,20 @@ form.retningslinjerSok #searchinput {
   background-size: 28px 23px;
 }
 
+.container .aboutsection {
+  margin-top: 25px;
+}
+
+.container .aboutsectioncontent {
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
+.container .aboutsectionheading {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
 /*Retningslinje forside. Liste over alle nasjonale faglige retningslinjer */
 .Guidelinesfrontpage .pageheader {
   margin-bottom: 30px;
@@ -563,24 +577,10 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 100px;
 }
 
-.Recommendations .aboutsection {
-  margin-top: 25px;
-}
-
-.Recommendations .aboutsectioncontent {
-  background-color: #fff;
-  padding: 15px 30px;
-}
-
-.Recommendations .aboutsectionheading {
-  font-size: 28px;
-  margin-top: 20px;
-}
-
 .Recommendation {
   padding: 0;
   background: #fff;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .Recommendation:first-child {
   margin-top: 40px;
