@@ -162,6 +162,7 @@ form.retningslinjerSok #searchinput {
   background: #fff;
   padding: 30px;
   margin: 30px 0;
+  position: relative;
 }
 @media (max-width: 768px) {
   .Guidelinesfrontpage .guideline {
@@ -170,6 +171,12 @@ form.retningslinjerSok #searchinput {
 }
 .Guidelinesfrontpage .guideline:first-child {
   margin-top: 10px;
+}
+.Guidelinesfrontpage .guideline.pdf {
+  background: #eeeded;
+}
+.Guidelinesfrontpage .guideline.pdf .guidelinetitle {
+  color: #838078;
 }
 
 .Guidelinesfrontpage .guidelinetitle {
@@ -189,6 +196,27 @@ form.retningslinjerSok #searchinput {
 .Guidelinesfrontpage .guidelinesummary {
   word-wrap: break-word;
   color: #000;
+  padding-right: 70px;
+}
+
+.Guidelinesfrontpage .download {
+  color: #c63629;
+  display: block;
+  font-family: "Soho Gothic W01 Regular";
+  line-height: 32px;
+}
+.Guidelinesfrontpage .download:after {
+  padding-left: 15px;
+  font-size: 24px;
+  font-family: "fontAwesome";
+  content: "";
+}
+
+.Guidelinesfrontpage .pdficon {
+  position: absolute;
+  top: 58px;
+  height: 50px;
+  right: 40px;
 }
 
 /*Styles for one single guideline*/
