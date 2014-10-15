@@ -366,6 +366,13 @@ form.retningslinjerSok #searchinput {
   }
 }
 
+.Guidelinefrontpage .container .breadcrumbs li a {
+  color: #fff;
+}
+.Guidelinefrontpage .container .breadcrumbs li a:after {
+  color: #fff;
+}
+
 /*
  ---------------------------------
  Main
