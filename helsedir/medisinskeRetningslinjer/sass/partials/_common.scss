@@ -8,6 +8,21 @@ b{
   font-weight: bold;
 }
 
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-style: italic;
+}
+
+.orderedlist{
+  list-style-position: inside;
+  margin-top: 10px;
+  list-style-type: decimal;
+
+}
+
 .smalltitle{
   font-family: $fontCalibri;
   font-size: 18px;
