@@ -1,0 +1,112 @@
+﻿.statistics h3 {
+  margin: 50px 0 0 0;
+}
+.statistics h3 img {
+  margin-right: 10px;
+}
+.statistics table {
+  margin: 0 auto;
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.statistics table caption {
+  display: none;
+}
+.statistics table span {
+  font-family: 'FontAwesome';
+  float: left;
+}
+.statistics table th,
+.statistics table td {
+  border: none;
+  text-align: left;
+  word-break: keep-all;
+  padding: 5px 10px;
+}
+.statistics table thead th {
+  border-bottom: solid 1px #666666;
+}
+.statistics table thead th:first-child {
+  border-right: solid 1px #666666;
+}
+.statistics table tbody td {
+  width: 33%;
+  word-break: normal;
+}
+.statistics table tbody td:first-of-type {
+  border-right: solid 1px #666666;
+}
+.iveCharts {
+  margin: 0 auto 20px auto;
+  width: 100%;
+  height: 300px;
+}
+.iveCharts .columnOuter {
+  height: 100%;
+  float: left;
+  top: 0;
+  text-align: center;
+  position: relative;
+  border-left: solid 1px #aaaaaa;
+}
+.iveCharts .columnOuter:first-of-type {
+  border-left: none;
+}
+.iveCharts .columnOuter:after {
+  clear: both;
+}
+.iveCharts .columnHolder {
+  float: left;
+  width: 50%;
+  height: 90%;
+  top: 0;
+  position: relative;
+}
+.iveCharts .columnHolder:after {
+  clear: both;
+}
+.iveCharts .number {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+.iveCharts .number.small {
+  font-size: 16px;
+}
+.iveCharts .column {
+  bottom: 10%;
+  position: absolute;
+}
+.iveCharts .column:hover {
+  border: solid 1px #333;
+  opacity: 0.7;
+  /*cursor: pointer;*/
+}
+.iveCharts .title {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+}
+.iveCharts .title.small {
+  font-size: 16px;
+}
+.search input {
+  background: url('/img/ikon_søk.png') no-repeat center right;
+  border: solid 1px #df9922;
+  width: 1px;
+  height: 30px;
+  float: right;
+  margin: 10px 0;
+  padding: 0 29px 0 0;
+}
+.search input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #df9922;
+  border-color: #df9922;
+}
+/*# sourceMappingURL=htmlelements.css.map */

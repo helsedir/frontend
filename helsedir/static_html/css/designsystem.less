@@ -1,0 +1,223 @@
+﻿@fontCalibri: 'Calibri';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@colorMorkBlaa: #004e66;
+@colorOrange: #df9922;
+@colorMediumBlaa: #0093a7;
+@colorLysBlaa: #6cb4b5;
+@colorGraa: #aeaba8;
+@colorLysGraa: #B2BABC;
+@colorRoed: #c63629;
+@colorGul: #f4d01e;
+
+.hhs {
+    @fontLight: "Soho Gothic W01 Light";
+
+    .topplinje {
+        color: white;
+        background: @colorMorkBlaa;
+    }
+
+    .headerblaa {
+        position: absolute;
+        width: 100%;
+        height: 44px;
+        background: @colorMorkBlaa;
+    }
+
+    .toppmeny {
+        background: @colorMorkBlaa;
+        color: white;
+
+        a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            float: left;
+            margin: 1rem 2rem 1rem 0;
+            padding: 0 2rem 1rem 0;
+
+            h2 {
+                margin-bottom: 0.7rem;
+                margin-top: 0;
+            }
+        }
+    }
+
+    #hovedtittel {
+        font-size: 3em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        font-weight: normal;
+        height: auto;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    .illustrasjonOverskrift {
+        font-family: @fontLight;
+        color: #94928F;
+        text-transform: uppercase;
+        border-top: 1px solid #ddd;
+        margin-top: 2rem;
+        margin-bottom: 1em;
+    }
+
+    .sirkel {
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .illustrasjonsWrapper {
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 20px;
+        width: 73px;
+    }
+
+    .boks {
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin-bottom: 5em;
+    }
+
+    .ikoner img {
+        width: 1.875rem;
+        vertical-align: bottom;
+        margin-right: 0.2em;
+    }
+
+    .c2aknapp {
+        width: 14.375rem;
+        height: 2.3rem;
+    }
+
+    #toppmenyknapp {
+        vertical-align: text-top;
+    }
+
+    .faktaboks {
+        width: 20rem;
+
+        ul {
+            float: none;
+        }
+    }
+
+    #tabs {
+        width: 35%;
+    }
+
+    .informasjonsboks {
+        width: 30rem;
+    }
+
+    .transportsideknapp {
+        width: 600px;
+    }
+
+    .skygge {
+        position: relative;
+    }
+
+    iframe, video {
+        width: 560px;
+        height: 315px;
+    }
+
+    .farger {
+        text-align: center;
+        text-align: -webkit-center;
+        background: white;
+        padding: 10px;
+    }
+
+    .textexamples {
+        margin-top: 20px;
+        display: table;
+
+        p, span, a {
+            display: table-cell;
+        }
+
+        span {
+            width: 250px;
+        }
+    }
+
+    .arkfaner {
+        background: #f2f2f2;
+    }
+
+    .headerlink {
+        text-decoration: none;
+
+        h2:after {
+            padding-left: 10px;
+            content: "\f105";
+            font-family: "FontAwesome";
+            font-size: inherit;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:visited {
+            text-decoration: none;
+        }
+    }
+}
+
+.illustrasjon {
+    table {
+        tr:nth-child(odd) td, tr:nth-child(odd) th {
+            background-color: #ebeaea;
+        }
+
+        tr:nth-child(even) td, tr:nth-child(even) th {
+            background-color: white;
+        }
+
+        margin-bottom: 1em;
+
+        th, td {
+            width: 20em;
+            padding: 0.5em;
+        }
+
+        .tableHeader {
+            font-family: "soho gothic pro medium";
+            color: #555;
+            text-transform: uppercase;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        tr {
+            text-align: center;
+        }
+    }
+
+    &.liten {
+        width: 25%;
+    }
+}
+
+#module_chart_column2_legend, #module_chart_donut_legend {
+    margin: 30px 0 0 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+div.legendMarker {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
