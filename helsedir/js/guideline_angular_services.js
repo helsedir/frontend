@@ -10,6 +10,7 @@
  */
  var apiUrl = 'http://digitalguidelines.azurewebsites.net/api/v1/';
  //apiUrl = 'http://localhost:50500/api/v1/';
+ //apiUrl = 'http://localhost:50500/api/v1/';
 angular.module('retningslinjeApp')
   .factory('Guideline', ['$resource', function ($resource) {
     return $resource(apiUrl+'guidelines/:id',{},
