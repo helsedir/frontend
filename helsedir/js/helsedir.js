@@ -2,7 +2,7 @@
     //creates collapsible headings. The tag wrapping this class will get an angle icon
     $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").each(function () {
         var collapseElement = $(this);
-        var contentToHide = collapseElement.next();
+        var contentToHide = collapseElement.nextUntil(':not(p)');
         var parentTag = collapseElement.parent();
         contentToHide.addClass(' visuallyhidden');
         parentTag.addClass(' has-hidden-content');
@@ -10,9 +10,8 @@
 
     $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").each(function () {
         var collapseElement = $(this);
-        var contentToHide = collapseElement.next('p');
-        contentToHide.addClass(' visuallyhidden');
-        collapseElement.addClass(' has-hidden-content');
+        collapseElement.nextUntil(':not(p)').addClass('visuallyhidden');
+        collapseElement.addClass('has-hidden-content');
     });
 
     //handles click events on collapsible headings
@@ -40,23 +39,25 @@
 
     $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").click(function () {
         var collapseElement = $(this);
-        var contentToHide = collapseElement.next('p');
-
-        if (!contentToHide.hasClass("visuallyhidden")) {
-            contentToHide.slideUp('fast', function () {
-                contentToHide.addClass('visuallyhidden')
-                    .slideDown(0);
-            });
-            collapseElement.removeClass("has-visible-content");
-            collapseElement.addClass("has-hidden-content");
-        } else {
-            contentToHide.slideUp(0, function () {
-                contentToHide.removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
-            collapseElement.addClass("has-visible-content");
-            collapseElement.removeClass("has-hidden-content");
-        }
+        collapseElement.nextUntil(':not(p)').each(function () {
+            var contentToHide = $(this);
+            console.log(contentToHide);
+            if (!contentToHide.hasClass("visuallyhidden")) {
+                contentToHide.slideUp('fast', function () {
+                    contentToHide.addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+                collapseElement.removeClass("has-visible-content");
+                collapseElement.addClass("has-hidden-content");
+            } else {
+                contentToHide.slideUp(0, function () {
+                    contentToHide.removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+                collapseElement.addClass("has-visible-content");
+                collapseElement.removeClass("has-hidden-content");
+            }
+        });
     });
 
     //creates collapsible headings based on screen size
