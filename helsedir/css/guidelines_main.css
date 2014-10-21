@@ -8,6 +8,20 @@ b {
   font-weight: bold;
 }
 
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.orderedlist {
+  list-style-position: inside;
+  margin-top: 10px;
+  list-style-type: decimal;
+}
+
 .smalltitle, h2.smalltitle {
   font-family: "Calibri";
   font-size: 18px;
@@ -139,6 +153,20 @@ form.retningslinjerSok #searchinput {
   background-size: 28px 23px;
 }
 
+.container .aboutsection {
+  margin-top: 25px;
+}
+
+.container .aboutsectioncontent {
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
+.container .aboutsectionheading {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
 /*Retningslinje forside. Liste over alle nasjonale faglige retningslinjer */
 .Guidelinesfrontpage .pageheader {
   margin-bottom: 30px;
@@ -148,6 +176,7 @@ form.retningslinjerSok #searchinput {
   background: #fff;
   padding: 30px;
   margin: 30px 0;
+  position: relative;
 }
 @media (max-width: 768px) {
   .Guidelinesfrontpage .guideline {
@@ -156,6 +185,12 @@ form.retningslinjerSok #searchinput {
 }
 .Guidelinesfrontpage .guideline:first-child {
   margin-top: 10px;
+}
+.Guidelinesfrontpage .guideline.pdf {
+  background: #eeeded;
+}
+.Guidelinesfrontpage .guideline.pdf .guidelinetitle {
+  color: #838078;
 }
 
 .Guidelinesfrontpage .guidelinetitle {
@@ -175,6 +210,27 @@ form.retningslinjerSok #searchinput {
 .Guidelinesfrontpage .guidelinesummary {
   word-wrap: break-word;
   color: #000;
+  padding-right: 70px;
+}
+
+.Guidelinesfrontpage .download {
+  color: #c63629;
+  display: block;
+  font-family: "Soho Gothic W01 Regular";
+  line-height: 32px;
+}
+.Guidelinesfrontpage .download:after {
+  padding-left: 15px;
+  font-size: 24px;
+  font-family: "fontAwesome";
+  content: "";
+}
+
+.Guidelinesfrontpage .pdficon {
+  position: absolute;
+  top: 58px;
+  height: 50px;
+  right: 40px;
 }
 
 /*Styles for one single guideline*/
@@ -350,6 +406,13 @@ form.retningslinjerSok #searchinput {
     width: 70%;
     float: left;
   }
+}
+
+.Guidelinefrontpage .container .breadcrumbs li a {
+  color: #fff;
+}
+.Guidelinefrontpage .container .breadcrumbs li a:after {
+  color: #fff;
 }
 
 /*
@@ -563,24 +626,10 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 100px;
 }
 
-.Recommendations .aboutsection {
-  margin-top: 25px;
-}
-
-.Recommendations .aboutsectioncontent {
-  background-color: #fff;
-  padding: 15px 30px;
-}
-
-.Recommendations .aboutsectionheading {
-  font-size: 28px;
-  margin-top: 20px;
-}
-
 .Recommendation {
   padding: 0;
   background: #fff;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .Recommendation:first-child {
   margin-top: 40px;
@@ -846,27 +895,23 @@ form.retningslinjerSok #searchinput {
 .Recommendation .textContainer.gradingNone .recommendation-text {
   padding-top: 0;
 }
+.Recommendation .textContainer.gradingNone.gradingBlank {
+  border-left: 2px solid #fff;
+}
+@media (max-width: 768px) {
+  .Recommendation .textContainer.gradingNone.gradingBlank {
+    border-left: none;
+  }
+}
+.Recommendation .textContainer.gradingNone .recommendation-text {
+  max-width: 650px;
+  padding-top: 15px;
+}
 .Recommendation .textContainer.gradingNone .recommendation-text dl dt {
   margin-top: 20px;
 }
 .Recommendation .textContainer.gradingNone .recommendation-text dl dd {
   padding-left: 20px;
-}
-.Recommendation .textContainer.gradingNone .recommendation-text ul {
-  list-style-position: outside;
-  margin-top: 10px;
-}
-.Recommendation .textContainer.gradingBlank {
-  border-left: 2px solid #fff;
-}
-@media (max-width: 768px) {
-  .Recommendation .textContainer.gradingBlank {
-    border-left: none;
-  }
-}
-.Recommendation .textContainer .recommendation-text {
-  max-width: 650px;
-  padding-top: 15px;
 }
 .Recommendation .textContainer img.pulse {
   top: 40px;
@@ -1408,10 +1453,14 @@ form.retningslinjerSok #searchinput {
   }
 }
 
+.Guidelinechildsection .sectionlist {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 .Guidelinechildsection .sectionlist .element {
   padding: 20px 30px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .Guidelinechildsection .sectionlist .element:nth-child(odd) {
   background-color: #eeeded;

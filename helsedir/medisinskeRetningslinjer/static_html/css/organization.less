@@ -1,0 +1,966 @@
+﻿@fontCalibri: 'Calibri';
+@fontCalibriBold: 'Calibri-Bold';
+@fontSoho: "soho gothic pro medium";
+@fontSohoLight: "Soho Gothic W01 Light";
+@fontSohoRegular: "Soho Gothic W01 Regular";
+
+@colorDarkBlue: #004e66;
+@colorDarkBlueHover: #002e41;
+
+@colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
+@colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
+@colorOrange: #df9922;
+@colorOrangeHover: #b8811d;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
+@colorDarkGray: #aeaba8;
+
+
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
+@colorPurple: #76428d;
+
+.container {
+    .division {
+        float: left;
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .division_header {
+            color: @colorDarkBlue;
+            padding: 6px;
+            margin: 20px 22px 10px 0;
+            line-height: 24px;
+            width: 170px;
+            height: 130px;
+            background: white;
+            display: table;
+            position: relative;
+            cursor: pointer;
+
+            p {
+                text-align: center;
+                font-family: @fontSohoRegular;
+                font-size: 18px;
+                line-height: 20px;
+
+                &.division_name {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-family: @fontCalibri;
+                }
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+
+            &.last {
+                margin: 20px 0 10px 0;
+            }
+
+            &#folkehelse, &#helseoekonomiogfinansiering, &#spesialisthelsetjenesten, &#ehelseogit, &#primaerhelsetjenesten, &#administrasjon {
+                &.selected {
+                    &:before {
+                        position: absolute;
+                        content: "\f106";
+                        font-family: "FontAwesome";
+                        color: white;
+                        left: 0;
+                        top: 95px;
+                        font-size: 30px;
+                        left: 46%;
+                    }
+                }
+            }
+
+            &#folkehelse {
+                border: 4px solid @colorLightBlue;
+
+                &.selected {
+                    border-bottom: 31px solid #6cb4b5;
+
+                    &:before {
+                        background: @colorLightBlue;
+                    }
+                }
+            }
+
+            &#helseoekonomiogfinansiering {
+                border: 4px solid @colorGreen;
+
+                &.selected {
+                    border-bottom: 31px solid @colorGreen;
+
+                    &:before {
+                        background: @colorGreen;
+                    }
+                }
+            }
+
+            &#spesialisthelsetjenesten {
+                border: 4px solid @colorDarkGray;
+
+                &.selected {
+                    border-bottom: 31px solid @colorDarkGray;
+
+                    &:before {
+                        background: @colorDarkGray;
+                    }
+                }
+            }
+
+            &#ehelseogit {
+                border: 4px solid @colorRed;
+
+                &.selected {
+                    border-bottom: 31px solid @colorRed;
+
+                    &:before {
+                        background: @colorRed;
+                    }
+                }
+            }
+
+            &#primaerhelsetjenesten {
+                border: 4px solid @colorOrange;
+
+                &.selected {
+                    border-bottom: 31px solid @colorOrange;
+
+                    &:before {
+                        background: @colorOrange;
+                    }
+                }
+            }
+
+            &#administrasjon {
+                border: 4px solid @colorPurple;
+
+                &.selected {
+                    border-bottom: 31px solid @colorPurple;
+
+                    &:before {
+                        background: @colorPurple;
+                    }
+                }
+            }
+
+            &:before {
+                position: absolute;
+                content: "\f107";
+                font-family: "FontAwesome";
+                color: @colorDarkBlue;
+                top: 95px;
+                left: 46%;
+                font-size: 30px;
+            }
+        }
+
+        .department {
+            float: left;
+
+            .person, .person_sub, .person_subsub {
+                color: @colorDarkBlue;
+                padding: 20px 10px 10px 10px;
+                font-family: @fontSohoRegular;
+                font-size: 18px;
+                line-height: 24px;
+                width: 170px;
+
+                p {
+                    margin: 0;
+
+                    &.e-mail {
+                        word-break: break-all;
+                        text-decoration: underline;
+                    }
+                }
+
+                .title {
+                    font-family: @fontCalibri;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: @colorDarkBlue;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &.folkehelse {
+                .sub-division .box {
+                    border-left: 4px solid @colorLightBlue;
+
+                    &.selected {
+                        border: 4px solid @colorLightBlue;
+
+                        &:before {
+                            background: @colorLightBlue;
+                        }
+                    }
+
+                    & ~ .person_sub {
+                        border-left: 3px dotted @colorLightBlue;
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorLightBlue;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorLightBlue;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorLightBlue;
+                    border-bottom: 3px dotted @colorLightBlue;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorLightBlue;
+                }
+            }
+
+            &.helseoekonomiogfinansiering {
+                .sub-division .box {
+                    border-left: 4px solid @colorGreen;
+
+                    &.helfo {
+                        background: @colorLightGray2;
+                        margin-top: 0;
+                    }
+
+                    &.selected {
+                        border: 4px solid @colorGreen;
+
+                        &:before {
+                            background: @colorGreen;
+                        }
+                    }
+
+                    & ~ .person_sub {
+                        border-left: 3px dotted @colorGreen;
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorGreen;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorGreen;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorGreen;
+                    border-bottom: 3px dotted @colorGreen;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorGreen;
+                }
+            }
+
+            &.spesialisthelsetjenesten {
+                .sub-division .box {
+                    border-left: 4px solid @colorDarkGray;
+
+                    &.selected {
+                        border: 4px solid @colorDarkGray;
+
+                        &:before {
+                            background: @colorDarkGray;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorDarkGray;
+                        }
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorDarkGray;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorDarkGray;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorDarkGray;
+                    border-bottom: 3px dotted @colorDarkGray;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorDarkGray;
+                }
+            }
+
+            &.ehelseogit {
+                .sub-division .box {
+                    border-left: 4px solid @colorRed;
+
+                    &.selected {
+                        border: 4px solid @colorRed;
+
+                        &:before {
+                            background: @colorRed;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorRed;
+                        }
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorRed;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorRed;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorRed;
+                    border-bottom: 3px dotted @colorRed;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorRed;
+                }
+            }
+
+            &.primaerhelsetjenesten {
+                .sub-division .box {
+                    border-left: 4px solid @colorOrange;
+
+                    &.selected {
+                        border: 4px solid @colorOrange;
+
+                        &:before {
+                            background: @colorOrange;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorOrange;
+                        }
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorOrange;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorOrange;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorOrange;
+                    border-bottom: 3px dotted @colorOrange;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorOrange;
+                }
+            }
+
+            &.administrasjon {
+                .sub-division .box {
+                    border-left: 4px solid @colorPurple;
+                    margin-right: 0;
+
+                    &.selected {
+                        border: 4px solid @colorPurple;
+
+                        &:before {
+                            background: @colorPurple;
+                        }
+
+                        & ~ .person_sub {
+                            border-left: 3px dotted @colorPurple;
+                        }
+                    }
+                }
+
+                .person_sub, .person_subsub {
+                    border-bottom: 4px solid @colorPurple;
+                }
+
+                .sub-division .subsub-divisions .subsub-division .circle {
+                    background: @colorPurple;
+                }
+
+                .sub-division .decorativeborder {
+                    border-right: 3px dotted @colorPurple;
+                    border-bottom: 3px dotted @colorPurple;
+                }
+
+                .sub-division .subsub-divisions {
+                    border-left: 3px dotted @colorPurple;
+                }
+            }
+
+            .sub-division {
+                .box {
+                    color: #004e66;
+                    padding: 10px 6px 30px 2px;
+                    margin: 20px 22px 10px 0;
+                    width: 170px;
+                    height: 90px;
+                    background: white;
+                    display: table;
+                    position: relative;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin-top: 5px;
+
+                    &:before {
+                        position: absolute;
+                        content: "\f107";
+                        font-family: "FontAwesome";
+                        color: #004e66;
+                        bottom: 0;
+                        left: 0;
+                        font-size: 30px;
+                        right: 0;
+                    }
+
+                    &.selected {
+                        padding: 6px 6px 30px 6px;
+                        margin-bottom: 0;
+
+                        &:before {
+                            content: "\f106";
+                            font-family: "FontAwesome";
+                            color: #004e66;
+                        }
+                    }
+                }
+
+                &#utviklingsdirektoer .box {
+                    background: @colorPurple;
+                    color: white;
+                    height: 45px;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+
+                    &:before {
+                        content: '';
+                    }
+
+                    &:after {
+                        color: white;
+                        top: 13px;
+                    }
+                }
+
+                .subsub-divisions {
+                    padding-top: 10px;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: -3px;
+                        height: 45px;
+                        width: 3px;
+                        border-left: 3px solid #f7f6f6;
+                        bottom: 0;
+                    }
+
+                    .subsub-division {
+                        position: relative;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+
+                        .circle {
+                            border-radius: 50%;
+                            width: 36px;
+                            height: 36px;
+                            position: absolute;
+                            left: -10%;
+                            top: 30px;
+                            z-index: 1;
+                            color: white;
+                            text-align: center;
+                            line-height: 33px;
+                            font-size: 28px;
+                        }
+
+                        .box {
+                            margin-top: 0;
+                            width: 163px;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .subsub-division:last-child {
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .decorativeborder {
+                    width: 85px;
+                    height: 20px;
+                }
+            }
+
+            &.administrasjon .sub-division {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+
+    .etater {
+        margin-top: 33px;
+        font-size: 18px;
+    }
+
+    .border {
+        padding: 0;
+    }
+
+    .underliggende_etat {
+        color: @colorDarkBlue;
+        padding: 6px 24px 6px 16px;
+        margin: 20px 30px 0 0;
+        line-height: 24px;
+        width: 190px;
+        height: 72px;
+        background: white;
+        display: table;
+        position: relative;
+        border-left: 4px solid @colorDarkBlue;
+        float: left;
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        &:after {
+            position: absolute;
+            content: "\f105";
+            font-family: "FontAwesome";
+            font-size: 25px;
+            color: @colorDarkBlue;
+            left: 103px;
+            top: 27px;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+    }
+
+    .director {
+        width: 33.3333333333%;
+        height: 100px;
+        display: table;
+        margin: 0 auto;
+        background: @colorDarkBlue url(../img/menneske_i_footer.svg) no-repeat right top;
+
+        p {
+            text-align: center;
+            font-family: @fontSohoRegular;
+            font-size: 18px;
+            line-height: 20px;
+            color: white;
+
+            &:first-of-type {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        #kunnskapssenteret {
+            margin-left: 192px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        .division {
+            float: none;
+
+            .division_header {
+                margin: 10px 15px 10px 0;
+                padding: 5px 0 5px 10px;
+                width: 100%;
+                height: 50px;
+
+                a {
+                    display: block;
+                }
+
+                p {
+                    text-align: left;
+                    margin: 0;
+
+                    &:last-of-type {
+                        display: block;
+                        font-size: 18px;
+                        font-family: @fontCalibri;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    color: #004e66;
+                    top: 15px;
+                    left: 96%;
+                    font-size: 30px;
+                }
+
+                &.last {
+                    margin: 10px 15px 10px 0;
+                }
+
+                &#folkehelse, &#helseoekonomiogfinansiering, &#spesialisthelsetjenesten, &#ehelseogit, &#primaerhelsetjenesten, &#administrasjon {
+                    &.selected {
+                        &:before {
+                            position: absolute;
+                            content: "\f106";
+                            font-family: "FontAwesome";
+                            color: #004e66;
+                            top: 15px;
+                            left: 96%;
+                            font-size: 30px;
+                            background: none;
+                        }
+                    }
+                }
+
+                &#folkehelse {
+                    &.selected {
+                        border-bottom: 4px solid #6cb4b5;
+
+                        & ~ .department {
+                            border-left: 3px dotted #6cb4b5;
+                            border-bottom: 4px solid #6cb4b5;
+                        }
+                    }
+                }
+
+                &#helseoekonomiogfinansiering {
+                    &.selected {
+                        border-bottom: 4px solid #a1bf37;
+
+                        & ~ .department {
+                            border-left: 3px dotted #a1bf37;
+                            border-bottom: 4px solid #a1bf37;
+                        }
+                    }
+                }
+
+                &#spesialisthelsetjenesten {
+                    &.selected {
+                        border-bottom: 4px solid #aeaba8;
+
+                        & ~ .department {
+                            border-left: 3px dotted #aeaba8;
+                            border-bottom: 4px solid #aeaba8;
+                        }
+                    }
+                }
+
+                &#ehelseogit {
+                    &.selected {
+                        border-bottom: 4px solid #c63629;
+
+                        & ~ .department {
+                            border-left: 3px dotted #c63629;
+                            border-bottom: 4px solid #c63629;
+                        }
+                    }
+                }
+
+                &#primaerhelsetjenesten {
+                    &.selected {
+                        border-bottom: 4px solid #df9922;
+
+                        & ~ .department {
+                            border-left: 3px dotted #df9922;
+                            border-bottom: 4px solid #df9922;
+                        }
+                    }
+                }
+
+                &#administrasjon {
+                    &.selected {
+                        border-bottom: 4px solid #76428d;
+
+                        & ~ .department {
+                            border-left: 3px dotted #76428d;
+                            border-bottom: 4px solid #76428d;
+                        }
+                    }
+                }
+            }
+
+            .department {
+                width: 100%;
+
+                .person, .person_sub {
+                    padding: 10px 10px 0 10px;
+                    width: 90%;
+                    float: right;
+                }
+
+                .sub-division {
+                    margin: 10px 0 0 0;
+                    padding: 5px 0 5px 10px;
+                    width: 90%;
+                    float: right;
+
+                    p {
+                        text-align: left;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    &:after {
+                        content: '';
+                    }
+
+                    &#utviklingsdirektoer {
+                        margin: 10px 0;
+
+                        p:before {
+                            color: white;
+                        }
+                    }
+
+                    .box {
+                        width: 100%;
+                        float: right;
+                        height: 70px;
+                        text-align: left;
+                        padding: 24px 6px 6px 10px;
+                        margin-right: 0;
+                        margin-bottom: 0;
+
+                        &:before {
+                            top: 28px;
+                            left: 94%;
+                            padding: 0;
+                        }
+
+                        &.selected {
+                            padding-top: 20px;
+                            padding-left: 10px;
+                            padding-bottom: 20px;
+
+                            &:before {
+                                background: none !important;
+                                top: 22px;
+                                left: 95%;
+                                padding: 0;
+                                content: "\f106";
+                            }
+                        }
+                    }
+
+                    .person_sub {
+                        float: right;
+                        width: 100%;
+                        padding-bottom: 10px;
+                    }
+
+                    .decorativeborder {
+                        width: 40%;
+                        margin-left: 75px;
+                    }
+
+                    .subsub-divisions {
+                        display: inline-block !important;
+                        width: 90%;
+                        float: right;
+
+                        .subsub-division {
+                            margin: 10px 0 0 0;
+                            padding: 5px 0 5px 7px;
+                            width: 100%;
+                            float: right;
+
+                            p {
+                                text-align: left;
+                                margin: 0;
+                                width: 100%;
+                            }
+
+                            &:after {
+                                content: '';
+                            }
+
+                            .box {
+                                width: 100%;
+                                float: right;
+                                height: 70px;
+                                text-align: left;
+                                padding: 24px 6px 6px 10px;
+                                margin-right: 0;
+                                margin-bottom: 0;
+
+                                &:before {
+                                    top: 28px;
+                                    left: 94%;
+                                    padding: 0;
+                                }
+
+                                &.selected {
+                                    padding-top: 20px;
+                                    padding-left: 10px;
+                                    padding-bottom: 20px;
+
+                                    &:before {
+                                        background: none !important;
+                                        left: 95%;
+                                        top: 60px;
+                                        content: "\f106";
+                                    }
+                                }
+                            }
+
+                            .person_subsub {
+                                float: right;
+                                width: 100%;
+                                padding-bottom: 10px;
+                            }
+
+                            .circle {
+                                left: -3%;
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+
+                &.administrasjon .sub-division {
+                    margin: 10px 0 10px 0;
+                }
+            }
+        }
+
+        .etater {
+            width: 59%;
+            float: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .container .division .department .sub-division .box:before {
+        left: 92%;
+    }
+
+    .container .division .department .sub-division .box.selected:before {
+        left: 92%;
+    }
+
+    .container .division .division_header:before {
+        left: 95%;
+    }
+
+    .container .division .division_header#folkehelse.selected:before, .container .division .division_header#helseoekonomiogfinansiering.selected:before, .container .division .division_header#spesialisthelsetjenesten.selected:before, .container .division .division_header#ehelseogit.selected:before, .container .division .division_header#primaerhelsetjenesten.selected:before, .container .division .division_header#administrasjon.selected:before {
+        left: 95%;
+    }
+
+    .container {
+        .division {
+            .department {
+                .sub-division {
+                    .subsub-divisions {
+                        .subsub-division {
+                            .box {
+                                &:before {
+                                    left: 90%;
+                                }
+
+                                &.selected {
+                                    &:before {
+                                        left: 91%;
+                                    }
+                                }
+                            }
+
+                            .circle {
+                                left: -4%;
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .container .division .division_header#folkehelse.selected:before, .container .division .division_header#helseoekonomiogfinansiering.selected:before, .container .division .division_header#spesialisthelsetjenesten.selected:before, .container .division .division_header#ehelseogit.selected:before, .container .division .division_header#primaerhelsetjenesten.selected:before, .container .division .division_header#administrasjon.selected:before {
+        left: 91%;
+    }
+
+    .container .division .department .sub-division .box:before {
+        left: 90%;
+    }
+
+    .container .division .department .sub-division .box.selected:before {
+        left: 90%;
+    }
+
+    .container {
+        .division {
+            .department {
+                .sub-division {
+                    width: 95%;
+
+                    .box {
+                        float: none;
+                        padding-right: 27px;
+                    }
+
+                    .subsub-divisions {
+                        float: right;
+
+                        .subsub-division {
+                            .circle {
+                                left: -4%;
+                            }
+                        }
+                    }
+                }
+
+                .person, .person_sub {
+                    width: 100%;
+                    float: none;
+                }
+            }
+
+            .division_header {
+                padding: 5px 25px 5px 10px;
+
+                &:before {
+                    left: 91%;
+                }
+            }
+        }
+    }
+}

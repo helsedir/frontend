@@ -5,10 +5,12 @@
                 <nav>
                     <ol class="breadcrumbs clearfix">
                         <li><a href="../layouts/forside.html">Forside</a></li>
+
                     </ol>
                     
                 </nav>
-                <h1>Nasjonale faglige retningslinjer</h1>
+                <h1>Retningslinjer og veiledere</h1>
+                <small>Retningslinjer, veiledere, pakkeforløp</small>
             </header>
         </div>
     </div>
@@ -58,12 +60,23 @@
            
             <span class="guidelinecount">{{guidelines.length}} retningslinjer og veiledere</span>
             <ul class="guidelineslist">
-                <li ng-repeat="guideline in guidelines | filter: searchText" class="guideline">
+                <li ng-repeat="guideline in guidelines | filter: searchText" class="guideline" ng-hide="guideline.isDeleted">
 
                         <a href="#/{{guideline.guidelineId}}">
                             <!-- guidelines.title -->
                             <h3 class="guidelinetitle">{{guideline.shortTitle}}</h3>
                             <p class="guidelinesummary">{{guideline.title}}</p>
+                        </a>
+
+                </li>
+                <li class="guideline pdf">
+
+                        <a href="#">
+                            <!-- guidelines.title -->
+                            <h3 class="guidelinetitle">Spedbarnsernæring</h3>
+                            <p class="guidelinesummary">Nasjonal faglig retningslinje for spedbarnsernæring (kortversjon)</p>
+                            <span class="download">Last ned pdf 2,4MB</span>
+                            <img class="pdficon" src="../../img/modules/icons/ico-pdf.png" alt="" />
                         </a>
 
                 </li>
