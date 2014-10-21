@@ -93,7 +93,7 @@
   color: #0093a7;
 }
 .container .navigate_back {
-  background: url(../images/pil_forrigeside_morkeblaa.svg) no-repeat;
+  background: url(../img/pil_forrigeside_morkeblaa.svg) no-repeat;
   background-position: 0% 90%;
   background-size: 24px;
   padding-left: 33px;
@@ -285,27 +285,27 @@
   display: inline-block;
   width: 100%;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default {
+.container .shoppingcart .shoppingcart_table .table_general {
   width: 100%;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default th,
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default td {
+.container .shoppingcart .shoppingcart_table .table_general th,
+.container .shoppingcart .shoppingcart_table .table_general td {
   text-align: left;
   padding-left: 10px;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default tr td:first-child,
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default tr th:first-child {
+.container .shoppingcart .shoppingcart_table .table_general tr td:first-child,
+.container .shoppingcart .shoppingcart_table .table_general tr th:first-child {
   padding-left: 20px;
   width: 300px;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default td a {
+.container .shoppingcart .shoppingcart_table .table_general td a {
   font-size: 18px;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default td.inputfield {
+.container .shoppingcart .shoppingcart_table .table_general td.inputfield {
   padding-bottom: 0;
   width: 11%;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default td.inputfield input {
+.container .shoppingcart .shoppingcart_table .table_general td.inputfield input {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -313,11 +313,11 @@
   border: 1px solid #004e66;
   outline: none;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default td.inputfield input:focus {
+.container .shoppingcart .shoppingcart_table .table_general td.inputfield input:focus {
   box-shadow: 0 0 5px #0093a7;
   border: 1px solid #0093a7;
 }
-.container .shoppingcart .shoppingcart_table .ms-rteTable-default button {
+.container .shoppingcart .shoppingcart_table .table_general button {
   border: none;
   border-bottom: 1px solid #838078;
   background: none;
@@ -348,18 +348,18 @@
   .container .shoppingcart form {
     margin-bottom: 50px;
   }
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default th,
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default td {
+  .container .shoppingcart .shoppingcart_table .table_general th,
+  .container .shoppingcart .shoppingcart_table .table_general td {
     padding-left: 130px;
   }
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default td.inputfield {
+  .container .shoppingcart .shoppingcart_table .table_general td.inputfield {
     width: 100%;
   }
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default td.inputfield input {
+  .container .shoppingcart .shoppingcart_table .table_general td.inputfield input {
     width: 10%;
   }
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default tr td:first-child,
-  .container .shoppingcart .shoppingcart_table .ms-rteTable-default tr th:first-child {
+  .container .shoppingcart .shoppingcart_table .table_general tr td:first-child,
+  .container .shoppingcart .shoppingcart_table .table_general tr th:first-child {
     padding-left: 130px;
   }
   .container .navigate_back {

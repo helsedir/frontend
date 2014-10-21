@@ -87,7 +87,7 @@
         }
     });
     //styles tables. workaround for IE8
-    $('table.ms-rteTable-default tr:nth-child(2n+1)').addClass('odd');
+    $('table.table_general tr:nth-child(2n+1)').addClass('odd');
 
     //show/hide more news/conferences
     $('.showmorenews').on('click', function () {

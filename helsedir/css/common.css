@@ -21,10 +21,8 @@ body {
   font-family: 'Calibri';
   line-height: 30px;
   color: #222;
-}
-body.ms-backgroundimage {
   background-color: #f7f6f6;
-  background-image: url('../images/bakgrunn_menneske.svg');
+  background-image: url('../img/bakgrunn_menneske.svg');
   background-position: 100% 20%;
   background-position-x: 100%;
   background-position-y: 20%;
@@ -198,6 +196,7 @@ body.ms-backgroundimage {
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
   display: block;
+  float: left;
   padding-right: 0.3rem;
 }
 .container .breadcrumbs li.active,
@@ -483,7 +482,7 @@ body.ms-backgroundimage {
   width: 100%;
   height: 40px;
   padding: 5px 10px;
-  background: #ffffff url('../images/ikon_forstorrelsesglass.png') center no-repeat;
+  background: #ffffff url('../img/ikon_forstorrelsesglass.png') center no-repeat;
   border: 1px solid #004e66;
   -moz-background-size: auto 80%;
   -o-background-size: auto 80%;
@@ -657,32 +656,22 @@ body.ms-backgroundimage {
   margin: 5px 0;
 }
 .container .bulletlist,
-.container-fluid .bulletlist,
-.container .ms-rtestate-field ul,
-.container-fluid .ms-rtestate-field ul {
+.container-fluid .bulletlist {
   list-style-position: outside;
   margin-top: 10px;
 }
 .container .bulletlist li,
-.container-fluid .bulletlist li,
-.container .ms-rtestate-field ul li,
-.container-fluid .ms-rtestate-field ul li {
+.container-fluid .bulletlist li {
   margin: 0 0 10px 25px;
   display: block;
 }
 .container .bulletlist li:before,
-.container-fluid .bulletlist li:before,
-.container .ms-rtestate-field ul li:before,
-.container-fluid .ms-rtestate-field ul li:before {
+.container-fluid .bulletlist li:before {
   content: "•";
   color: #004e66;
   margin: -1px 0 0 -25px;
   display: block;
   position: absolute;
-}
-.container .ms-rtestate-field ol,
-.container-fluid .ms-rtestate-field ol {
-  list-style-type: decimal;
 }
 .container .borderbox,
 .container-fluid .borderbox {
@@ -733,32 +722,26 @@ body.ms-backgroundimage {
   line-height: 24px;
   display: inline-block;
   min-width: 240px;
-  background: #004e66 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #004e66 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   cursor: pointer;
   text-align: left;
   transition: all 0.5s;
 }
-.container .calltoaction a,
-.container-fluid .calltoaction a {
-  color: white;
-  font-family: 'Calibri';
-  font-size: 20px;
-}
 .container .calltoaction:hover,
 .container-fluid .calltoaction:hover,
 .container .calltoaction:focus,
 .container-fluid .calltoaction:focus {
   color: white;
-  background: #002e41 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #002e41 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
 }
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #0093a7 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: white;
@@ -767,7 +750,7 @@ body.ms-backgroundimage {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #01737c url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
   border: 2px solid #01737c;
   background-position: 20px 50%;
   background-size: 10px;
@@ -775,7 +758,7 @@ body.ms-backgroundimage {
 }
 .container .calltoaction:disabled,
 .container-fluid .calltoaction:disabled {
-  background: #f7f6f6 url('../images/ikon_pilmothoyre_graa.png') no-repeat;
+  background: #f7f6f6 url('../img/ikon_pilmothoyre_graa.png') no-repeat;
   color: #838078;
   background-position: 20px 50%;
   background-size: 10px;
@@ -797,14 +780,14 @@ body.ms-backgroundimage {
         }
 
         &:visited {
-            background: url('../images/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
             background-size: 16px 16px;
         }*/
 }
 .container .external-link:after,
 .container-fluid .external-link:after {
   content: '';
-  background: url('../images/ekstern_lenke_mellomblaa.svg') right no-repeat;
+  background: url('../img/ekstern_lenke_mellomblaa.svg') right no-repeat;
   background-size: 15px 15px;
   display: inline;
   padding-left: 25px;
@@ -905,7 +888,6 @@ body.ms-backgroundimage {
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
-  width: 100%;
 }
 .container .module.maincolumn,
 .container-fluid .module.maincolumn {
@@ -1042,11 +1024,7 @@ body.ms-backgroundimage {
 .container .module.module_statistics_text .keyfigures,
 .container-fluid .module.module_statistics_text .keyfigures,
 .container .module.module_statistics_graph .keyfigures,
-.container-fluid .module.module_statistics_graph .keyfigures,
-.container .module.module_statistics_text em,
-.container-fluid .module.module_statistics_text em,
-.container .module.module_statistics_graph em,
-.container-fluid .module.module_statistics_graph em {
+.container-fluid .module.module_statistics_graph .keyfigures {
   font-size: 36px;
   color: #c63629;
   margin: 30px 0 5px 0;
@@ -1121,12 +1099,12 @@ body.ms-backgroundimage {
   width: 28px;
   height: 23px;
   padding-left: 33px;
-  background: url(../images/modules/icons/epost_regular.svg) no-repeat;
+  background: url(../img/modules/icons/epost_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
 .container .module.module_subscribe .e-mail:hover,
 .container-fluid .module.module_subscribe .e-mail:hover {
-  background: url(../images/modules/icons/epost_hover.svg) no-repeat;
+  background: url(../img/modules/icons/epost_hover.svg) no-repeat;
   background-size: 28px 23px;
 }
 .container .module.module_subscribe .e-mail p,
@@ -1139,12 +1117,12 @@ body.ms-backgroundimage {
   width: 28px;
   height: 23px;
   padding-left: 30px;
-  background: url(../images/modules/icons/rss_regular.svg) no-repeat;
+  background: url(../img/modules/icons/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
 .container .module.module_subscribe .rss:hover,
 .container-fluid .module.module_subscribe .rss:hover {
-  background: url(../images/modules/icons/rss_hover.svg) no-repeat;
+  background: url(../img/modules/icons/rss_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1434,7 +1412,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_facebook span,
 .container .module.module_social .ikon_facebook span,
 .container-fluid .module.module_social .ikon_facebook span {
-  background: url(../images/modules/icons/facebook_reg.svg) no-repeat;
+  background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1444,7 +1422,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_twitter span,
 .container .module.module_social .ikon_twitter span,
 .container-fluid .module.module_social .ikon_twitter span {
-  background: url(../images/modules/icons/twitter_blaa.svg) no-repeat;
+  background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1460,7 +1438,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_skrivut span,
 .container .module.module_social .ikon_skrivut span,
 .container-fluid .module.module_social .ikon_skrivut span {
-  background: url(../images/modules/icons/skriv_ut_regular.svg) no-repeat;
+  background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1481,7 +1459,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_skrivut:hover span,
 .container .module.module_social .ikon_skrivut:hover span,
 .container-fluid .module.module_social .ikon_skrivut:hover span {
-  background: url(../images/modules/icons/skriv_ut_hover.svg) no-repeat;
+  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1491,7 +1469,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_facebook:hover span,
 .container .module.module_social .ikon_facebook:hover span,
 .container-fluid .module.module_social .ikon_facebook:hover span {
-  background: url(../images/modules/icons/facebook_hover.svg) no-repeat;
+  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1501,7 +1479,7 @@ body.ms-backgroundimage {
 .container-fluid .module.module_print .ikon_twitter:hover span,
 .container .module.module_social .ikon_twitter:hover span,
 .container-fluid .module.module_social .ikon_twitter:hover span {
-  background: url(../images/modules/icons/twitter_hover.svg) no-repeat;
+  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1534,7 +1512,7 @@ body.ms-backgroundimage {
   text-align: center;
   margin: 50px 0;
   color: #004e66;
-  background: #d1d0cf url(../images/spinner.png) no-repeat;
+  background: #d1d0cf url(../img/spinner.png) no-repeat;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
@@ -1571,7 +1549,7 @@ body.ms-backgroundimage {
 }
 .container .showmorenews:hover,
 .container-fluid .showmorenews:hover {
-  background: #aeaba8 url(../images/spinner.png) no-repeat;
+  background: #aeaba8 url(../img/spinner.png) no-repeat;
   -moz-background-size: 12%;
   -o-background-size: 12%;
   -webkit-background-size: 12%;
@@ -1587,7 +1565,7 @@ body.ms-backgroundimage {
 .container.crisis h1,
 .container-fluid.crisis h1 {
   background-color: #f4d01e;
-  background-image: url(../images/kriseikon_trekant.svg);
+  background-image: url(../img/kriseikon_trekant.svg);
   background-size: 49px;
   background-position: left;
   background-repeat: no-repeat;
@@ -1604,7 +1582,7 @@ body.ms-backgroundimage {
 .container-fluid.crisis .button {
   border-color: #222;
   color: #222;
-  background: #ffffff url(../images/ikon_pilmothoyre.png) no-repeat;
+  background: #ffffff url(../img/ikon_pilmothoyre.png) no-repeat;
   text-decoration: none;
   padding: 10px 20px 10px 15px;
   background-position: 95% 50%;
@@ -1612,7 +1590,7 @@ body.ms-backgroundimage {
 }
 .container.crisis .button:hover,
 .container-fluid.crisis .button:hover {
-  background: #5e5d57 url(../images/ikon_pilmothoyre_hvit.png);
+  background: #5e5d57 url(../img/ikon_pilmothoyre_hvit.png);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -1697,7 +1675,7 @@ body.ms-backgroundimage {
 .container.crisis_banner .container,
 .container-fluid.crisis_banner .container {
   background-color: #f4d01e;
-  background-image: url(../images/kriseikon_trekant.svg);
+  background-image: url(../img/kriseikon_trekant.svg);
   background-size: 49px;
   background-position: left;
   background-repeat: no-repeat;
@@ -1762,7 +1740,7 @@ body.ms-backgroundimage {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../images/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1771,7 +1749,7 @@ body.ms-backgroundimage {
 }
 .container input[type="radio"] + label span:hover,
 .container-fluid input[type="radio"] + label span:hover {
-  background: url('../images/navigasjon/radioknapp_hover.svg') top left no-repeat;
+  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1779,7 +1757,7 @@ body.ms-backgroundimage {
 }
 .container input[type="radio"]:checked + label span,
 .container-fluid input[type="radio"]:checked + label span {
-  background: url(../images/navigasjon/radioknapp_valgt.svg) top no-repeat;
+  background: url(../img/navigasjon/radioknapp_valgt.svg) top no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1799,7 +1777,7 @@ body.ms-backgroundimage {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../images/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
+  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   -moz-background-size: 19px;
   -o-background-size: 19px;
@@ -1808,7 +1786,7 @@ body.ms-backgroundimage {
 }
 .container input[type="checkbox"] + label span:hover,
 .container-fluid input[type="checkbox"] + label span:hover {
-  background: url('../images/navigasjon/checkbox_hover.svg') top left no-repeat;
+  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1816,7 +1794,7 @@ body.ms-backgroundimage {
 }
 .container input[type="checkbox"]:checked + label span,
 .container-fluid input[type="checkbox"]:checked + label span {
-  background: url(../images/navigasjon/checkbox_valgt.svg) top no-repeat;
+  background: url(../img/navigasjon/checkbox_valgt.svg) top no-repeat;
   -moz-background-size: 19px;
   -o-background-size: 19px;
   -webkit-background-size: 19px;
@@ -1876,7 +1854,7 @@ body.ms-backgroundimage {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../images/knapp_nedtrekksmeny.png') no-repeat;
+  background: #ffffff url('../img/knapp_nedtrekksmeny.png') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
@@ -1894,7 +1872,7 @@ body.ms-backgroundimage {
 .container-fluid .dropdown select:focus,
 .container .dropdown select:active,
 .container-fluid .dropdown select:active {
-  background: #004e66 url('../images/knapp_nedtrekksmeny_hvit.png') no-repeat;
+  background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
   background-position: 96%;
   -moz-background-size: 20px;
   -o-background-size: 20px;
@@ -1929,12 +1907,12 @@ body.ms-backgroundimage {
   }
   .refinesearch .form-group select {
     width: 317px;
-    background: url('../images/knapp_nedtrekksmeny.png') no-repeat scroll 95% center #ffffff;
+    background: url('../img/knapp_nedtrekksmeny.png') no-repeat scroll 95% center #ffffff;
   }
   .refinesearch .form-group select:hover,
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: #004e66 url('../images/knapp_nedtrekksmeny_hvit.png') no-repeat;
+    background: #004e66 url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
     background-position: 92%;
     -moz-background-size: 20px;
     -o-background-size: 20px;
@@ -1943,45 +1921,45 @@ body.ms-backgroundimage {
     color: white;
   }
 }
-.container .ms-rteTable-default,
-.container-fluid .ms-rteTable-default {
+.container .table_general,
+.container-fluid .table_general {
   border: 1px solid #91c6c2;
   margin: 20px auto;
 }
-.container .ms-rteTable-default thead th,
-.container-fluid .ms-rteTable-default thead th {
+.container .table_general thead th,
+.container-fluid .table_general thead th {
   background: #91c6c2;
   text-align: center;
   font-size: 16px;
   padding: 5px;
   line-height: 20px;
 }
-.container .ms-rteTable-default tr,
-.container-fluid .ms-rteTable-default tr {
+.container .table_general tr,
+.container-fluid .table_general tr {
   background: #daecec;
 }
-.container .ms-rteTable-default tr.odd,
-.container-fluid .ms-rteTable-default tr.odd {
+.container .table_general tr.odd,
+.container-fluid .table_general tr.odd {
   background: white;
 }
-.container .ms-rteTable-default tbody th,
-.container-fluid .ms-rteTable-default tbody th,
-.container .ms-rteTable-default td,
-.container-fluid .ms-rteTable-default td {
+.container .table_general tbody th,
+.container-fluid .table_general tbody th,
+.container .table_general td,
+.container-fluid .table_general td {
   padding: 10px;
   text-align: center;
   font-size: 18px;
 }
-.container .ms-rteTable-default tbody th a,
-.container-fluid .ms-rteTable-default tbody th a,
-.container .ms-rteTable-default td a,
-.container-fluid .ms-rteTable-default td a {
+.container .table_general tbody th a,
+.container-fluid .table_general tbody th a,
+.container .table_general td a,
+.container-fluid .table_general td a {
   line-height: 24px;
 }
-.container .ms-rteTable-default.alignleft th,
-.container-fluid .ms-rteTable-default.alignleft th,
-.container .ms-rteTable-default.alignleft td,
-.container-fluid .ms-rteTable-default.alignleft td {
+.container .table_general.alignleft th,
+.container-fluid .table_general.alignleft th,
+.container .table_general.alignleft td,
+.container-fluid .table_general.alignleft td {
   text-align: left;
 }
 .container .iveCharts,
@@ -2109,16 +2087,6 @@ body.ms-backgroundimage {
 .container-fluid .transportsideknapp a:hover h2 {
   text-decoration: none;
   color: #0093a7;
-}
-.container .transportsideknapp a.calltoaction,
-.container-fluid .transportsideknapp a.calltoaction {
-  max-width: 250px;
-}
-.container .transportsideknapp a.calltoaction:hover,
-.container-fluid .transportsideknapp a.calltoaction:hover,
-.container .transportsideknapp a.calltoaction:visited:hover,
-.container-fluid .transportsideknapp a.calltoaction:visited:hover {
-  color: white;
 }
 .container .transportsideknapp p,
 .container-fluid .transportsideknapp p {
@@ -2393,52 +2361,52 @@ body.ms-backgroundimage {
     width: 114px;
     font-size: 12px;
   }
-  .container .ms-rteTable-default {
+  .container .table_general {
     display: block;
     width: 100%;
   }
-  .container .ms-rteTable-default tbody {
+  .container .table_general tbody {
     display: block;
     width: 100%;
   }
-  .container .ms-rteTable-default thead tr {
+  .container .table_general thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .container .ms-rteTable-default tr,
-  .container .ms-rteTable-default th,
-  .container .ms-rteTable-default td {
+  .container .table_general tr,
+  .container .table_general th,
+  .container .table_general td {
     display: block;
   }
-  .container .ms-rteTable-default tr {
+  .container .table_general tr {
     padding-bottom: 11px;
   }
-  .container .ms-rteTable-default tbody th,
-  .container .ms-rteTable-default td {
+  .container .table_general tbody th,
+  .container .table_general td {
     border: none;
     position: relative;
     padding: 0;
     padding-left: 50%;
   }
-  .container .ms-rteTable-default tbody th:before,
-  .container .ms-rteTable-default td:before {
+  .container .table_general tbody th:before,
+  .container .table_general td:before {
     position: absolute;
     left: 15px;
     padding-right: 10px;
     white-space: nowrap;
   }
-  .container .ms-rteTable-default th[data-title]:before,
-  .container .ms-rteTable-default td[data-title]:before {
+  .container .table_general th[data-title]:before,
+  .container .table_general td[data-title]:before {
     content: attr(data-title);
   }
-  .container .ms-rteTable-default tbody th:first-child {
+  .container .table_general tbody th:first-child {
     background: #d1d0cf;
     font-weight: bold;
     padding: 5px 0 5px 15px;
     text-align: left;
   }
-  .container .ms-rteTable-default caption {
+  .container .table_general caption {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;

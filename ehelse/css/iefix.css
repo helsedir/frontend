@@ -5,7 +5,7 @@
 .container .refinesearch .form-group select,
 .container-fluid .refinesearch .form-group select {
   width: 355px;
-  background: url('../images/ikoner/knapp_pil_nedover.png') no-repeat scroll center #ffffff;
+  background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll center #ffffff;
   background-position: 83%;
   -moz-background-size: 38px;
   -o-background-size: 38px;
@@ -16,7 +16,7 @@
 .container-fluid .refinesearch .form-group select:focus,
 .container .refinesearch .form-group select:active,
 .container-fluid .refinesearch .form-group select:active {
-  background: url('../images/ikoner/knapp_pil_oppover.png') no-repeat;
+  background: url('../img/ikoner/knapp_pil_oppover.png') no-repeat;
   background-position: 83%;
   -moz-background-size: 39px 39px;
   -o-background-size: 39px 39px;
@@ -29,13 +29,13 @@
   height: 23px;
   padding-left: 40px;
   padding-bottom: 3px;
-  background: url(../images/modules/icons/epost_regular.png) no-repeat;
+  background: url(../img/modules/icons/epost_regular.png) no-repeat;
   background-size: 28%;
   background-position: left;
 }
 .container .module.module_subscribe .e-mail:hover,
 .container-fluid .module.module_subscribe .e-mail:hover {
-  background: url(../images/modules/icons/epost_regular.png) no-repeat;
+  background: url(../img/modules/icons/epost_regular.png) no-repeat;
   background-size: 28%;
   background-position: left;
 }
@@ -44,13 +44,13 @@
   width: 28px;
   height: 23px;
   padding-left: 40px;
-  background: url(../images/modules/icons/rss_regular.png) no-repeat;
+  background: url(../img/modules/icons/rss_regular.png) no-repeat;
   background-size: 20%;
   background-position: left;
 }
 .container .module.module_subscribe .rss:hover,
 .container-fluid .module.module_subscribe .rss:hover {
-  background: url(../images/modules/icons/rss_regular.png) no-repeat;
+  background: url(../img/modules/icons/rss_regular.png) no-repeat;
   background-size: 20%;
   background-position: left;
 }
@@ -58,7 +58,7 @@
 .container-fluid .external-link,
 .container a.external-link,
 .container-fluid a.external-link {
-  background: url(../images/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+  background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
   background-size: 7%;
   background-position: left;
 }
@@ -66,7 +66,7 @@
 .container-fluid .external-link.inline,
 .container a.external-link.inline,
 .container-fluid a.external-link.inline {
-  background: url(../images/ikoner/lenkepil_ekstern_orange.png) no-repeat;
+  background: url(../img/ikoner/lenkepil_ekstern_orange.png) no-repeat;
   background-size: 7%;
   background-position: left top;
 }

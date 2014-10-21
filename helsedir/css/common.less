@@ -35,20 +35,17 @@ body {
     font-family: 'Calibri';
     line-height: 30px;
     color: #222;
-
-    &.ms-backgroundimage {
-        background-color: #f7f6f6;
-        background-image: url('../images/bakgrunn_menneske.svg');
-        background-position: 100% 20%;
-        background-position-x: 100%;
-        background-position-y: 20%;
-        -webkit-background-size: 40% auto;
-        -moz-background-size: 40% auto;
-        -o-background-size: 40% auto;
-        background-size: 40% auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    background-color: #f7f6f6;
+    background-image: url('../img/bakgrunn_menneske.svg');
+    background-position: 100% 20%;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    -webkit-background-size: 40% auto;
+    -moz-background-size: 40% auto;
+    -o-background-size: 40% auto;
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container, .container-fluid {
@@ -166,6 +163,7 @@ body {
 
         li {
             display: block;
+            float: left;
             padding-right: 0.3rem;
 
             &.active {
@@ -448,7 +446,7 @@ body {
         width: 100%;
         height: 40px;
         padding: 5px 10px;
-        background: white url('../images/ikon_forstorrelsesglass.png') center no-repeat;
+        background: white url('../img/ikon_forstorrelsesglass.png') center no-repeat;
         border: 1px solid @colorDarkBlue;
         -moz-background-size: auto 80%;
         -o-background-size: auto 80%;
@@ -612,7 +610,7 @@ body {
         }
     }
 
-    .bulletlist, .ms-rtestate-field ul {
+    .bulletlist {
         list-style-position: outside;
         margin-top: 10px;
 
@@ -628,10 +626,6 @@ body {
                 position: absolute;
             }
         }
-    }
-
-    .ms-rtestate-field ol {
-        list-style-type: decimal;
     }
 
     .borderbox {
@@ -676,35 +670,29 @@ body {
         line-height: 24px;
         display: inline-block;
         min-width: 240px;
-        background: @colorDarkBlue url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+        background: @colorDarkBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
         background-position: 20px 50%;
         background-size: 10px;
         cursor: pointer;
         text-align: left;
         transition: all 0.5s;
 
-        a {
-            color: white;
-            font-family: @fontCalibri;
-            font-size: 20px;
-        }
-
         &:hover, &:focus {
             color: white;
-            background: @colorDarkBlueHover url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+            background: @colorDarkBlueHover url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
         }
 
         &.secondary {
             border: 2px solid @colorMediumBlue;
-            background: @colorMediumBlue url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+            background: @colorMediumBlue url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
             color: white;
 
             &:hover, &:focus {
-                background: #01737c url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
+                background: #01737c url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
                 border: 2px solid #01737c;
                 background-position: 20px 50%;
                 background-size: 10px;
@@ -713,7 +701,7 @@ body {
         }
 
         &:disabled {
-            background: #f7f6f6 url('../images/ikon_pilmothoyre_graa.png') no-repeat;
+            background: #f7f6f6 url('../img/ikon_pilmothoyre_graa.png') no-repeat;
             color: #838078;
             background-position: 20px 50%;
             background-size: 10px;
@@ -732,7 +720,7 @@ body {
 
         &:after {
             content: '';
-            background: url('../images/ekstern_lenke_mellomblaa.svg') right no-repeat;
+            background: url('../img/ekstern_lenke_mellomblaa.svg') right no-repeat;
             background-size: 15px 15px;
             display: inline;
             padding-left: 25px;
@@ -744,7 +732,7 @@ body {
         }
 
         &:visited {
-            background: url('../images/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
+            background: url('../img/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
             background-size: 16px 16px;
         }*/
         h1, h2, h3, h4, h5 {
@@ -826,7 +814,6 @@ body {
         padding: 30px 30px 30px 30px;
         background: white;
         position: relative;
-        width: 100%;
 
         &.maincolumn {
             margin-top: 30px;
@@ -955,7 +942,7 @@ body {
                 color: @colorDarkBlue;
             }
 
-            .keyfigures, em {
+            .keyfigures {
                 font-size: 36px;
                 color: @colorRed;
                 margin: 30px 0 5px 0;
@@ -1026,11 +1013,11 @@ body {
                 width: 28px;
                 height: 23px;
                 padding-left: 33px;
-                background: url(../images/modules/icons/epost_regular.svg) no-repeat;
+                background: url(../img/modules/icons/epost_regular.svg) no-repeat;
                 background-size: 27px 20px;
 
                 &:hover {
-                    background: url(../images/modules/icons/epost_hover.svg) no-repeat;
+                    background: url(../img/modules/icons/epost_hover.svg) no-repeat;
                     background-size: 28px 23px;
                 }
 
@@ -1044,11 +1031,11 @@ body {
                 width: 28px;
                 height: 23px;
                 padding-left: 30px;
-                background: url(../images/modules/icons/rss_regular.svg) no-repeat;
+                background: url(../img/modules/icons/rss_regular.svg) no-repeat;
                 background-size: 27px 20px;
 
                 &:hover {
-                    background: url(../images/modules/icons/rss_hover.svg) no-repeat;
+                    background: url(../img/modules/icons/rss_hover.svg) no-repeat;
                     -moz-background-size: 28px 23px;
                     -o-background-size: 28px 23px;
                     -webkit-background-size: 28px 23px;
@@ -1312,7 +1299,7 @@ body {
 
             .ikon_facebook {
                 span {
-                    background: url(../images/modules/icons/facebook_reg.svg) no-repeat;
+                    background: url(../img/modules/icons/facebook_reg.svg) no-repeat;
                     -moz-background-size: 27px 20px;
                     -o-background-size: 27px 20px;
                     -webkit-background-size: 27px 20px;
@@ -1322,7 +1309,7 @@ body {
 
             .ikon_twitter {
                 span {
-                    background: url(../images/modules/icons/twitter_blaa.svg) no-repeat;
+                    background: url(../img/modules/icons/twitter_blaa.svg) no-repeat;
                     -moz-background-size: 27px 20px;
                     -o-background-size: 27px 20px;
                     -webkit-background-size: 27px 20px;
@@ -1334,7 +1321,7 @@ body {
                 display: block;
 
                 span {
-                    background: url(../images/modules/icons/skriv_ut_regular.svg) no-repeat;
+                    background: url(../img/modules/icons/skriv_ut_regular.svg) no-repeat;
                     -moz-background-size: 27px 20px;
                     -o-background-size: 27px 20px;
                     -webkit-background-size: 27px 20px;
@@ -1353,7 +1340,7 @@ body {
 
             .ikon_skrivut:hover {
                 span {
-                    background: url(../images/modules/icons/skriv_ut_hover.svg) no-repeat;
+                    background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
                     -moz-background-size: 28px 23px;
                     -o-background-size: 28px 23px;
                     -webkit-background-size: 28px 23px;
@@ -1363,7 +1350,7 @@ body {
 
             .ikon_facebook:hover {
                 span {
-                    background: url(../images/modules/icons/facebook_hover.svg) no-repeat;
+                    background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
                     -moz-background-size: 28px 23px;
                     -o-background-size: 28px 23px;
                     -webkit-background-size: 28px 23px;
@@ -1373,7 +1360,7 @@ body {
 
             .ikon_twitter:hover {
                 span {
-                    background: url(../images/modules/icons/twitter_hover.svg) no-repeat;
+                    background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
                     -moz-background-size: 28px 23px;
                     -o-background-size: 28px 23px;
                     -webkit-background-size: 28px 23px;
@@ -1409,7 +1396,7 @@ body {
         text-align: center;
         margin: 50px 0;
         color: @colorDarkBlue;
-        background: #d1d0cf url(../images/spinner.png) no-repeat;
+        background: #d1d0cf url(../img/spinner.png) no-repeat;
         font-family: @fontCalibri;
         font-size: 20px;
         line-height: 24px;
@@ -1443,7 +1430,7 @@ body {
         }
 
         &:hover {
-            background: @colorDarkGray url(../images/spinner.png) no-repeat;
+            background: @colorDarkGray url(../img/spinner.png) no-repeat;
             -moz-background-size: 12%;
             -o-background-size: 12%;
             -webkit-background-size: 12%;
@@ -1459,7 +1446,7 @@ body {
 
         h1 {
             background-color: @colorYellow;
-            background-image: url(../images/kriseikon_trekant.svg);
+            background-image: url(../img/kriseikon_trekant.svg);
             background-size: 49px;
             background-position: left;
             background-repeat: no-repeat;
@@ -1476,14 +1463,14 @@ body {
         .button {
             border-color: #222;
             color: #222;
-            background: white url(../images/ikon_pilmothoyre.png) no-repeat;
+            background: white url(../img/ikon_pilmothoyre.png) no-repeat;
             text-decoration: none;
             padding: 10px 20px 10px 15px;
             background-position: 95% 50%;
             background-size: 10px;
 
             &:hover {
-                background: #5e5d57 url(../images/ikon_pilmothoyre_hvit.png);
+                background: #5e5d57 url(../img/ikon_pilmothoyre_hvit.png);
                 background-size: 10px;
                 background-repeat: no-repeat;
                 background-position: 95% 50%;
@@ -1565,7 +1552,7 @@ body {
 
         .container {
             background-color: @colorYellow;
-            background-image: url(../images/kriseikon_trekant.svg);
+            background-image: url(../img/kriseikon_trekant.svg);
             background-size: 49px;
             background-position: left;
             background-repeat: no-repeat;
@@ -1633,7 +1620,7 @@ body {
         height: 19px;
         margin: -5px 10px 0 0;
         vertical-align: middle;
-        background: url('../images/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+        background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
         cursor: pointer;
         -moz-background-size: 19px;
         -o-background-size: 19px;
@@ -1641,7 +1628,7 @@ body {
         background-size: 19px;
 
         &:hover {
-            background: url('../images/navigasjon/radioknapp_hover.svg') top left no-repeat;
+            background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
             -moz-background-size: 19px;
             -o-background-size: 19px;
             -webkit-background-size: 19px;
@@ -1650,7 +1637,7 @@ body {
     }
 
     input[type="radio"]:checked + label span {
-        background: url(../images/navigasjon/radioknapp_valgt.svg)top no-repeat;
+        background: url(../img/navigasjon/radioknapp_valgt.svg)top no-repeat;
         -moz-background-size: 19px;
         -o-background-size: 19px;
         -webkit-background-size: 19px;
@@ -1670,7 +1657,7 @@ body {
         height: 19px;
         margin: -5px 10px 0 0;
         vertical-align: middle;
-        background: url('../images/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
+        background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
         cursor: pointer;
         -moz-background-size: 19px;
         -o-background-size: 19px;
@@ -1678,7 +1665,7 @@ body {
         background-size: 19px;
 
         &:hover {
-            background: url('../images/navigasjon/checkbox_hover.svg') top left no-repeat;
+            background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
             -moz-background-size: 19px;
             -o-background-size: 19px;
             -webkit-background-size: 19px;
@@ -1687,7 +1674,7 @@ body {
     }
 
     input[type="checkbox"]:checked + label span {
-        background: url(../images/navigasjon/checkbox_valgt.svg)top no-repeat;
+        background: url(../img/navigasjon/checkbox_valgt.svg)top no-repeat;
         -moz-background-size: 19px;
         -o-background-size: 19px;
         -webkit-background-size: 19px;
@@ -1748,7 +1735,7 @@ body {
             padding: 5px 38px 4px 10px;
             -webkit-appearance: none; /*Removes default chrome and safari style*/
             -moz-appearance: none; /* Removes Default Firefox style*/
-            background: white url('../images/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
+            background: white url('../img/knapp_nedtrekksmeny.png') no-repeat; /*Adds background-image*/
             background-position: 100%; /*Position of the background-image*/
             text-indent: 0.01px;
             text-overflow: '';
@@ -1759,7 +1746,7 @@ body {
             }
 
             &:hover, &:focus, &:active {
-                background: @colorDarkBlue url('../images/knapp_nedtrekksmeny_hvit.png') no-repeat;
+                background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
                 background-position: 96%;
                 -moz-background-size: 20px;
                 -o-background-size: 20px;
@@ -1796,10 +1783,10 @@ body {
 
                 select {
                     width: 317px;
-                    background: url('../images/knapp_nedtrekksmeny.png') no-repeat scroll 95% center #FFF;
+                    background: url('../img/knapp_nedtrekksmeny.png') no-repeat scroll 95% center #FFF;
 
                     &:hover, &:focus, &:active {
-                        background: @colorDarkBlue url('../images/knapp_nedtrekksmeny_hvit.png') no-repeat;
+                        background: @colorDarkBlue url('../img/knapp_nedtrekksmeny_hvit.png') no-repeat;
                         background-position: 92%;
                         -moz-background-size: 20px;
                         -o-background-size: 20px;
@@ -1812,7 +1799,7 @@ body {
         }
     }
 
-    .ms-rteTable-default {
+    .table_general {
         border: 1px solid #91c6c2;
         margin: 20px auto;
 
@@ -1974,14 +1961,6 @@ body {
 
                 text-decoration: none;
                 color: #222;
-            }
-
-            &.calltoaction {
-                max-width: 250px;
-
-                &:hover, &:visited:hover {
-                    color: white;
-                }
             }
         }
 
@@ -2333,7 +2312,7 @@ body {
             }
         }
 
-        .ms-rteTable-default {
+        .table_general {
             display: block;
             width: 100%;
 

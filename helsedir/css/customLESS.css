@@ -1213,7 +1213,7 @@ header .links {
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
-  background: url('../images/search_icon.png') right center no-repeat;
+  background: url('../img/search_icon.png') right center no-repeat;
   background-size: auto 100%;
   background-color: #ffffff;
 }
@@ -1321,7 +1321,7 @@ header .links {
   }
 }
 .mainentrance {
-  background: #95bbbc url('../images/forside_bakgrunn2.svg') no-repeat center;
+  background: #95bbbc url('../img/forside_bakgrunn2.svg') no-repeat center;
   -webkit-background-size: auto,cover;
   -moz-background-size: auto,cover;
   -o-background-size: auto,cover;
@@ -1391,7 +1391,7 @@ header .links {
   border-radius: 3px;
   border: 1px solid #004e66;
   vertical-align: middle;
-  background: url('../images/search_icon.png') right center no-repeat;
+  background: url('../img/search_icon.png') right center no-repeat;
   background-size: auto 100%;
   background-color: #ffffff;
 }
@@ -1688,7 +1688,7 @@ iframe {
   margin-bottom: 10px;
 }
 .statistics_module {
-  background: url(../images/pulse2.svg) no-repeat left;
+  background: url(../img/pulse2.svg) no-repeat left;
   padding-left: 54px;
   max-width: 390px;
   background-size: contain;

@@ -57,7 +57,7 @@
     position: relative;
     color: $colorWhite;
     background: $colorPurple;
-    background-image: url("../images/Livslinje-enkel-lilla.svg");
+    background-image: url("../img/Livslinje-enkel-lilla.svg");
     background-repeat: repeat-x;
     background-size: cover;
     overflow: hidden;
@@ -108,7 +108,7 @@
         color: $colorWhite;
         display: block;
         background-color: rgba(255, 255, 255, 0.2);
-        content: url("../images/modules/icons/ico-i.svg");
+        content: url("../img/modules/icons/ico-i.svg");
         text-align: center;
         width: 80px;
         height: 80px;
@@ -121,7 +121,7 @@
         }
     }
     &.open:before {
-        content: url("../images/modules/icons/ico-x.svg");
+        content: url("../img/modules/icons/ico-x.svg");
     }
     .text {
         color: $colorWhite;

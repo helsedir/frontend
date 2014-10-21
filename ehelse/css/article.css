@@ -57,26 +57,26 @@
   width: 100%;
   margin-top: 40px;
 }
-.container .table_course .ms-rteTable-default {
+.container .table_course .table_general {
   width: 100%;
 }
-.container .table_course .ms-rteTable-default th,
-.container .table_course .ms-rteTable-default td {
+.container .table_course .table_general th,
+.container .table_course .table_general td {
   text-align: left;
   padding-left: 10px;
 }
-.container .table_course .ms-rteTable-default tr td:first-child,
-.container .table_course .ms-rteTable-default tr th:first-child {
+.container .table_course .table_general tr td:first-child,
+.container .table_course .table_general tr th:first-child {
   padding-left: 20px;
 }
-.container .table_course .ms-rteTable-default td a {
+.container .table_course .table_general td a {
   font-size: 18px;
 }
-.container .table_course .ms-rteTable-default td.inputfield {
+.container .table_course .table_general td.inputfield {
   padding-bottom: 0;
   width: 11%;
 }
-.container .table_course .ms-rteTable-default td.inputfield input {
+.container .table_course .table_general td.inputfield input {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -84,11 +84,11 @@
   border: 1px solid #004e66;
   outline: none;
 }
-.container .table_course .ms-rteTable-default td.inputfield input:focus {
+.container .table_course .table_general td.inputfield input:focus {
   box-shadow: 0 0 5px #0093a7;
   border: 1px solid #0093a7;
 }
-.container .table_course .ms-rteTable-default button {
+.container .table_course .table_general button {
   border: none;
   border-bottom: 1px solid #838078;
   background: none;

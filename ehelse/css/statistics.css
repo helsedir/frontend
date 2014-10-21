@@ -95,8 +95,8 @@
   display: inline-block;
   width: 100%;
 }
-.container .ms-rteTable-default,
-.container-fluid .ms-rteTable-default {
+.container .table_general,
+.container-fluid .table_general {
   width: 100%;
   margin-bottom: 0;
 }

@@ -13,16 +13,16 @@
   height: 125px;
 }
 .no-svg .method_entrance .drop_wrapper .drop.forslag {
-  background: url(../images/ikoner/draape_forslag.png) no-repeat;
+  background: url(../img/ikoner/draape_forslag.png) no-repeat;
 }
 .no-svg .method_entrance .drop_wrapper .drop.metodevurdering {
-  background: url(../images/ikoner/draape_metodevurdering.png) no-repeat;
+  background: url(../img/ikoner/draape_metodevurdering.png) no-repeat;
 }
 .no-svg .method_entrance .drop_wrapper .drop.beslutning {
-  background: url(../images/ikoner/draape_beslutning.png) no-repeat;
+  background: url(../img/ikoner/draape_beslutning.png) no-repeat;
 }
 .no-svg .method_entrance .drop_wrapper .drop.implementering {
-  background: url(../images/ikoner/draape_implementering.png) no-repeat;
+  background: url(../img/ikoner/draape_implementering.png) no-repeat;
 }
 .no-svg .entrancebutton a:hover {
   background: #002e41;
@@ -39,17 +39,17 @@
 .no-svg .entrancebutton a span.finnmetode {
   background: #004e66;
 }
-.no-svg .entrancebutton.menu a:hover {
+.no-svg .entrancebutton.aboutthesystem a:hover {
   background: #01737c;
 }
-.no-svg .entrancebutton.menu a:hover span.omsystemet {
+.no-svg .entrancebutton.aboutthesystem a:hover span.omsystemet {
   background: #01737c;
 }
-.no-svg .entrancebutton.menu a span.omsystemet {
+.no-svg .entrancebutton.aboutthesystem a span.omsystemet {
   background: #0093a7;
 }
 .no-svg .logo {
-  background: url(../images/logo.png);
+  background: url(../img/logo.png);
   background-repeat: no-repeat;
 }
 .no-svg .internal-link:before {
@@ -59,24 +59,24 @@
   bottom: 0;
   height: 22px;
   width: 23px;
-  background: url(../images/ikoner/intern_lenke_mellomblaa.png) no-repeat;
+  background: url(../img/ikoner/intern_lenke_mellomblaa.png) no-repeat;
   /* background-position: 0 5px; */
   background-size: 20px;
 }
 .no-svg .news .internal-link:before {
   content: "";
-  background: url(../images/ikoner/intern_lenke_mellomblaa_forside_ie8.png) no-repeat;
+  background: url(../img/ikoner/intern_lenke_mellomblaa_forside_ie8.png) no-repeat;
 }
 .no-svg .footerlinkswrapper .linklist li a.internal-link:before {
   content: "";
-  background: url(../images/ikoner/intern_lenke_roed_ie8.png) left no-repeat;
+  background: url(../img/ikoner/intern_lenke_roed_ie8.png) left no-repeat;
 }
 .no-svg .refinesearch .form-group {
   overflow: hidden;
 }
 .no-svg .refinesearch .form-group select {
   width: 355px;
-  background: url('../images/ikoner/knapp_dropdownmeny_ie8.png') no-repeat scroll center #ffffff;
+  background: url('../img/ikoner/knapp_dropdownmeny_ie8.png') no-repeat scroll center #ffffff;
   background-position: 83%;
   -moz-background-size: 38px 38px;
   -o-background-size: 38px 38px;
@@ -85,7 +85,7 @@
 }
 .no-svg .refinesearch .form-group select:focus,
 .no-svg .refinesearch .form-group select:active {
-  background: url('../images/ikoner/knapp_dropdownmeny_ie8.png') no-repeat;
+  background: url('../img/ikoner/knapp_dropdownmeny_ie8.png') no-repeat;
   background-position: 83%;
   -moz-background-size: 39px 39px;
   -o-background-size: 39px 39px;
@@ -93,38 +93,38 @@
   background-size: 39px 39px;
 }
 .no-svg .searchform button {
-  background: url(../images/ikoner/knapp_soekefelt_ie8.png) no-repeat;
+  background: url(../img/ikoner/knapp_soekefelt_ie8.png) no-repeat;
 }
 .no-svg .transportsideknapp {
-  background: #ffffff url(../images/pil_knapp_mellomblaa_ie8.png) no-repeat;
+  background: #ffffff url(../img/pil_knapp_mellomblaa_ie8.png) no-repeat;
   background-position: 96% 93%;
 }
 .no-svg .showmorenews {
-  background: #dedddb url(../images/ikoner/spinner_ie8.png) no-repeat;
+  background: #dedddb url(../img/ikoner/spinner_ie8.png) no-repeat;
 }
 .no-svg .module.module_print .ikon_skrivut span {
-  background: url(../images/ikoner/skriv_ut_regular_ie8.png) no-repeat;
+  background: url(../img/ikoner/skriv_ut_regular_ie8.png) no-repeat;
 }
 .no-svg .wrapper .method_status.has-hidden-content h2:before,
 .no-svg .wrapper .method_status.has-hidden-content .accordion:before {
   content: " ";
-  background: url(../images/ikoner/intern_lenke_mellomblaa_ie8_rotertned.png) no-repeat;
+  background: url(../img/ikoner/intern_lenke_mellomblaa_ie8_rotertned.png) no-repeat;
 }
 .no-svg .wrapper .method_status.has-visible-content h2:before,
 .no-svg .wrapper .method_status.has-visible-content .accordion:before {
   content: " ";
-  background: url(../images/ikoner/intern_lenke_mellomblaa_ie8_rotertopp.png) no-repeat;
+  background: url(../img/ikoner/intern_lenke_mellomblaa_ie8_rotertopp.png) no-repeat;
 }
 .no-svg .wrapper .informationicon.selected {
-  background: url(../images/ikon_lukk_kryss_mellomblaa_ie8.png) no-repeat;
+  background: url(../img/ikon_lukk_kryss_mellomblaa_ie8.png) no-repeat;
   background-position: 2px 3px;
 }
 .no-svg .module.module_subscribe .e-mail {
-  background: url(../images/ikoner/epost_regular_ie8.png) no-repeat;
+  background: url(../img/ikoner/epost_regular_ie8.png) no-repeat;
   background-position: 10% 50%;
 }
 .no-svg .module.module_subscribe .rss {
-  background: url(../images/ikoner/rss_regular_ie8.png) no-repeat;
+  background: url(../img/ikoner/rss_regular_ie8.png) no-repeat;
   background-position: 10% 50%;
 }
 .no-svg .guide_drops .method_entrance {
@@ -143,16 +143,16 @@
   background-position: 50% 0;
 }
 .no-svg .guide_drops .method_entrance .drop_wrapper .drop.forslag {
-  background: url(../images/ikoner/draape_forslag_ie8.png) no-repeat;
+  background: url(../img/ikoner/draape_forslag_ie8.png) no-repeat;
 }
 .no-svg .guide_drops .method_entrance .drop_wrapper .drop.metodevurdering {
-  background: url(../images/ikoner/draape_metodevurdering_ie8.png) no-repeat;
+  background: url(../img/ikoner/draape_metodevurdering_ie8.png) no-repeat;
 }
 .no-svg .guide_drops .method_entrance .drop_wrapper .drop.beslutning {
-  background: url(../images/ikoner/draape_beslutning_ie8.png) no-repeat;
+  background: url(../img/ikoner/draape_beslutning_ie8.png) no-repeat;
 }
 .no-svg .guide_drops .method_entrance .drop_wrapper .drop.implementering {
-  background: url(../images/ikoner/draape_implementering_ie8.png) no-repeat;
+  background: url(../img/ikoner/draape_implementering_ie8.png) no-repeat;
 }
 .no-svg .guide_drops .method_entrance .drop_wrapper .drop .drop_number {
   top: 25px;
@@ -162,10 +162,10 @@
 .no-svg .external-link:after,
 .no-svg a.external-link:after {
   content: '';
-  background: url('../images/ekstern_lenke_mellomblaa_ie8.png') right no-repeat;
+  background: url('../img/ekstern_lenke_mellomblaa_ie8.png') right no-repeat;
 }
 .no-svg .navigate_forward {
-  background: url(../images/pil_nestesteg_nesteside_mellomblaa_ie8.png) no-repeat;
+  background: url(../img/pil_nestesteg_nesteside_mellomblaa_ie8.png) no-repeat;
   background-position: 100% 60%;
 }
 /*# sourceMappingURL=ie8fix.css.map */
