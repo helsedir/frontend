@@ -22,7 +22,7 @@ body {
   line-height: 27px;
   color: #222;
 }
-body.ms-backgroundImage {
+body.ms-backgroundimage {
   background: url('../images/bakgrunnsbilde.png');
   background-color: #f7f6f6;
   background-position: bottom 882px right 264px;
