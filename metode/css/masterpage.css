@@ -24,10 +24,10 @@ a.logo {
   height: 76px;
   margin-top: 19px;
   max-width: 346px;
-  background: url(../img/logo.svg) no-repeat;
+  background: url(../images/logo.svg) no-repeat;
 }
 a.logo:focus {
-  background: url(../img/logo.svg) no-repeat;
+  background: url(../images/logo.svg) no-repeat;
   outline: 5px auto #0093a7;
   outline-offset: -2px;
 }
@@ -42,7 +42,7 @@ a.logo:focus {
   background: none;
 }
 .footerlinkswrapper {
-  background: #ffffff url(../img/footer_illustrasjon.png) no-repeat;
+  background: #ffffff url(../images/footer_illustrasjon.png) no-repeat;
   background-position: 80%;
   color: #222;
   background-size: contain;
@@ -53,7 +53,7 @@ a.logo:focus {
 }
 .footerlinkswrapper a.internal-link,
 .footerlinkswrapper h4.internal-link {
-  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+  background: url(../images/ikoner/intern_lenke_roed.svg) left no-repeat;
   background-size: 20px;
   font-size: 24px;
   font-family: "Soho Gothic W01 Regular";
@@ -98,7 +98,7 @@ a.logo:focus {
   bottom: inherit;
   height: 30px;
   width: 23px;
-  background: url(../img/ikoner/intern_lenke_roed.svg) left no-repeat;
+  background: url(../images/ikoner/intern_lenke_roed.svg) left no-repeat;
   /* background-position: 0 5px; */
   background-size: 20px;
   margin: -1px 0 0 0;
@@ -212,7 +212,7 @@ a.logo:focus {
 }
 .masterheader .about {
   display: inline-block;
-  background: url('../img/knapp_Omoss_mellomblaa.svg') no-repeat;
+  background: url('../images/knapp_Omoss_mellomblaa.svg') no-repeat;
   -moz-background-size: 40px;
   -o-background-size: 40px;
   -webkit-background-size: 40px;
@@ -228,7 +228,7 @@ a.logo:focus {
 }
 .masterheader .english {
   display: inline-block;
-  background: url('../img/knapp_English_mellomblaa.svg') no-repeat;
+  background: url('../images/knapp_English_mellomblaa.svg') no-repeat;
   -moz-background-size: 40px;
   -o-background-size: 40px;
   -webkit-background-size: 40px;
@@ -266,42 +266,42 @@ a.logo:focus {
   outline-offset: -2px;
 }
 .logoline .helsedirektoratet {
-  background: url(../img/logoer/logo_hdir.png) no-repeat;
+  background: url(../images/logoer/logo_hdir.png) no-repeat;
   background-size: 100%;
   width: 170px;
 }
 .logoline .kunnskapssenteret {
-  background: url(../img/logoer/logo_KS.png) no-repeat;
+  background: url(../images/logoer/logo_KS.png) no-repeat;
   background-size: 100%;
   width: 158px;
 }
 .logoline .legemiddelverk {
-  background: url(../img/logoer/logo_SLV.png) no-repeat;
+  background: url(../images/logoer/logo_SLV.png) no-repeat;
   background-size: 100%;
   width: 134px;
 }
 .logoline .helsemidt {
-  background: url(../img/logoer/logo_RHF_midt.png) no-repeat;
+  background: url(../images/logoer/logo_RHF_midt.png) no-repeat;
   background-size: 100%;
   width: 139px;
 }
 .logoline .helsenord {
-  background: url(../img/logoer/logo_RHF_nord.png) no-repeat;
+  background: url(../images/logoer/logo_RHF_nord.png) no-repeat;
   background-size: 100%;
   width: 101px;
 }
 .logoline .helsesoeroest {
-  background: url(../img/logoer/logo_RHF_sorost.png) no-repeat;
+  background: url(../images/logoer/logo_RHF_sorost.png) no-repeat;
   background-size: 100%;
   width: 115px;
 }
 .logoline .helsevest {
-  background: url(../img/logoer/logo_RHF_vest.png) no-repeat;
+  background: url(../images/logoer/logo_RHF_vest.png) no-repeat;
   background-size: 100%;
   width: 94px;
 }
 .logoline .straalevern {
-  background: url(../img/logoer/Straalevernet.png) no-repeat;
+  background: url(../images/logoer/Straalevernet.png) no-repeat;
   background-size: 100%;
   width: 84px;
   margin-right: 0;
@@ -386,7 +386,7 @@ a.logo:focus {
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .footerlinkswrapper {
-    background: #ffffff url(../img/footer_illustrasjon.png) no-repeat;
+    background: #ffffff url(../images/footer_illustrasjon.png) no-repeat;
     background-position: 80%;
     color: #222;
     background-size: cover;
@@ -407,7 +407,7 @@ a.logo:focus {
   }
   .menubutton.mobile-search {
     display: inline-block;
-    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background: #004e66 url('../images/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;
@@ -422,7 +422,7 @@ a.logo:focus {
     border: solid 1px #004e66;
   }
   .menubutton.mobile-search:hover {
-    background: #004e66 url('../img/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
+    background: #004e66 url('../images/ikon_forstorrelsesglass_hvitt.svg') no-repeat;
     -moz-background-size: 30px;
     -o-background-size: 30px;
     -webkit-background-size: 30px;
@@ -431,7 +431,7 @@ a.logo:focus {
     border-radius: 3px;
   }
   .menubutton.mobile-search.js-expanded {
-    background: #004e66 url('../img/ikoner/ikon_lukk_kryss.svg') no-repeat;
+    background: #004e66 url('../images/ikoner/ikon_lukk_kryss.svg') no-repeat;
     -moz-background-size: 24px;
     -o-background-size: 24px;
     -webkit-background-size: 24px;

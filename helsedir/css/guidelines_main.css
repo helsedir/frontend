@@ -99,7 +99,7 @@ form.retningslinjerSok #searchinput {
 .container-fluid .module.module_print .ikon_disclaimer span,
 .container .module.module_social .ikon_disclaimer span,
 .container-fluid .module.module_social .ikon_disclaimer span {
-  background: url(../img/modules/icons/ikon_disclaimer_regular.svg) no-repeat;
+  background: url(../images/modules/icons/ikon_disclaimer_regular.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -110,7 +110,7 @@ form.retningslinjerSok #searchinput {
 .container-fluid .module.module_print .ikon_disclaimer:hover span,
 .container .module.module_social .ikon_disclaimer:hover span,
 .container-fluid .module.module_social .ikon_disclaimer:hover span {
-  background: url(../img/modules/icons/ikon_disclaimer_hover.svg) no-repeat;
+  background: url(../images/modules/icons/ikon_disclaimer_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -121,7 +121,7 @@ form.retningslinjerSok #searchinput {
 .container-fluid .module.module_print .ikon_metode span,
 .container .module.module_social .ikon_metode span,
 .container-fluid .module.module_social .ikon_metode span {
-  background: url(../img/modules/icons/ikon_metodikk_regular.svg) no-repeat;
+  background: url(../images/modules/icons/ikon_metodikk_regular.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -132,7 +132,7 @@ form.retningslinjerSok #searchinput {
 .container-fluid .module.module_print .ikon_metode:hover span,
 .container .module.module_social .ikon_metode:hover span,
 .container-fluid .module.module_social .ikon_metode:hover span {
-  background: url(../img/modules/icons/ikon_metodikk_hover.svg) no-repeat;
+  background: url(../images/modules/icons/ikon_metodikk_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -198,7 +198,7 @@ form.retningslinjerSok #searchinput {
 .Guidelinefrontpage .headergroup {
   color: #fff;
   background: rgba(119, 67, 141, 0.89);
-  background-image: url("../img/Livslinje-enkel-lilla.svg");
+  background-image: url("../images/Livslinje-enkel-lilla.svg");
   background-repeat: no-repeat;
   background-size: 200% 60%;
   background-position: bottom;
@@ -280,7 +280,7 @@ form.retningslinjerSok #searchinput {
   display: block;
   background-color: #f5f5f5;
   background-color: rgba(255, 255, 255, 0.2);
-  content: url("../img/modules/icons/ico-i.svg");
+  content: url("../images/modules/icons/ico-i.svg");
   text-align: center;
   width: 80px;
   height: 80px;
@@ -295,7 +295,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinefrontpage .aboutguidelineicon.open:before {
-  content: url("../img/modules/icons/ico-x.svg");
+  content: url("../images/modules/icons/ico-x.svg");
 }
 .Guidelinefrontpage .aboutguidelineicon .text {
   color: #fff;
@@ -514,7 +514,7 @@ form.retningslinjerSok #searchinput {
 .Recommendations .headerGroup {
   color: #fff;
   background: rgba(119, 67, 141, 0.89);
-  background-image: url("../img/Livslinje-enkel-lilla.svg");
+  background-image: url("../images/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
   background-size: cover;
   overflow: hidden;
@@ -727,7 +727,7 @@ form.retningslinjerSok #searchinput {
   display: inline-block;
 }
 .Recommendation .recommendationexplanation .icon:before {
-  content: url("../img/modules/icons/ico-i.svg");
+  content: url("../images/modules/icons/ico-i.svg");
   display: inline-block;
   color: #fff;
   width: 20px;
@@ -735,7 +735,7 @@ form.retningslinjerSok #searchinput {
   margin-bottom: 0;
 }
 .Recommendation .recommendationexplanation .icon.open:before {
-  content: url("../img/modules/icons/ico-x.svg");
+  content: url("../images/modules/icons/ico-x.svg");
 }
 .Recommendation .recommendationexplanation .icon.gradingStrong {
   background-color: #77438d;
@@ -1015,7 +1015,7 @@ form.retningslinjerSok #searchinput {
   color: #000;
 }
 .Recommendation .tabs .resp-tabs-container ul.linklist li a:after {
-  content: url("../img/modules/icons/ico-full-skjerm.svg");
+  content: url("../images/modules/icons/ico-full-skjerm.svg");
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -1284,7 +1284,7 @@ form.retningslinjerSok #searchinput {
   position: relative;
   color: #fff;
   background: rgba(119, 67, 141, 0.89);
-  background-image: url("../img/Livslinje-enkel-lilla.svg");
+  background-image: url("../images/Livslinje-enkel-lilla.svg");
   background-repeat: repeat-x;
   background-size: cover;
   overflow: hidden;
@@ -1336,7 +1336,7 @@ form.retningslinjerSok #searchinput {
   color: #fff;
   display: block;
   background-color: rgba(255, 255, 255, 0.2);
-  content: url("../img/modules/icons/ico-i.svg");
+  content: url("../images/modules/icons/ico-i.svg");
   text-align: center;
   width: 80px;
   height: 80px;
@@ -1351,7 +1351,7 @@ form.retningslinjerSok #searchinput {
   }
 }
 .Guidelinechildsection .aboutguidelineicon.open:before {
-  content: url("../img/modules/icons/ico-x.svg");
+  content: url("../images/modules/icons/ico-x.svg");
 }
 .Guidelinechildsection .aboutguidelineicon .text {
   color: #fff;

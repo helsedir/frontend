@@ -470,7 +470,7 @@ figure .metatext {
   bottom: inherit;
   height: 30px;
   width: 23px;
-  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
+  background: url(../images/ikoner/intern_lenke_mellomblaa.svg) left no-repeat;
   /* background-position: 0 5px; */
   background-size: 20px;
   margin: -1px 0 0 0;
@@ -567,7 +567,7 @@ a.external-link {
 .external-link:after,
 a.external-link:after {
   content: '';
-  background: url('../img/ekstern_lenke_mellomblaa.svg') right 67% no-repeat;
+  background: url('../images/ekstern_lenke_mellomblaa.svg') right 67% no-repeat;
   background-size: 11px;
   display: inline;
   padding-left: 17px;
@@ -592,7 +592,7 @@ a.external-link.inline {
 .external-link.inline:after,
 a.external-link.inline:after {
   content: '';
-  background: url('../img/navigasjon/ekstern_lenke_sort.svg') right 67% no-repeat;
+  background: url('../images/navigasjon/ekstern_lenke_sort.svg') right 67% no-repeat;
   background-size: 11px;
   display: inline;
   padding-left: 17px;
@@ -618,7 +618,7 @@ a.external-link.inline:hover {
   bottom: 0;
   height: 22px;
   width: 23px;
-  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+  background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
   /* background-position: 0 5px; */
   background-size: 20px;
 }
@@ -803,7 +803,7 @@ h4.keyfigures {
 }
 .module.module_subscribe .e-mail {
   padding-left: 40px;
-  background: url(../img/ikoner/epost_regular.svg) no-repeat;
+  background: url(../images/ikoner/epost_regular.svg) no-repeat;
   background-size: 27px 20px;
   background-position: 10% 50%;
   display: inline-block;
@@ -817,7 +817,7 @@ h4.keyfigures {
 }
 .module.module_subscribe .rss {
   padding-left: 40px;
-  background: url(../img/ikoner/rss_regular.svg) no-repeat;
+  background: url(../images/ikoner/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
   background-position: 10% 50%;
   display: inline-block;
@@ -906,7 +906,7 @@ h4.keyfigures {
   margin-top: 0;
 }
 .module.module_message.withdrops {
-  background: #ffffff url(../img/pil_knapp_mellomblaa.svg) no-repeat;
+  background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 89% 87%;
   padding-bottom: 60px;
@@ -1042,14 +1042,14 @@ h4.keyfigures {
   width: 26px;
 }
 .module.module_print .ikon_facebook span {
-  background: url(../img/ikoner/facebook_reg.svg) no-repeat;
+  background: url(../images/ikoner/facebook_reg.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
 }
 .module.module_print .ikon_twitter span {
-  background: url(../img/ikoner/twitter_blaa.svg) no-repeat;
+  background: url(../images/ikoner/twitter_blaa.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1063,7 +1063,7 @@ h4.keyfigures {
   background: #d1d0cf;
 }
 .module.module_print .ikon_skrivut span {
-  background: url(../img/ikoner/skriv_ut_regular.svg) no-repeat;
+  background: url(../images/ikoner/skriv_ut_regular.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1082,7 +1082,7 @@ h4.keyfigures {
   text-align: center;
   margin: 40px 0 50px 0;
   color: #004e66;
-  background: #dedddb url(../img/spinner.png) no-repeat;
+  background: #dedddb url(../images/spinner.png) no-repeat;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
@@ -1104,7 +1104,7 @@ h4.keyfigures {
 }
 .showmorenews a:hover {
   text-decoration: none;
-  background: #aeaba8 url(../img/spinner.png) no-repeat;
+  background: #aeaba8 url(../images/spinner.png) no-repeat;
   -moz-background-size: 12%;
   -o-background-size: 12%;
   -webkit-background-size: 12%;
@@ -1172,7 +1172,7 @@ fieldset {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/ikoner/knapp_dropdownmeny.png') no-repeat;
+  background: #ffffff url('../images/ikoner/knapp_dropdownmeny.png') no-repeat;
   /*Adds background-image*/
   background-position: 100% 0;
   /*Position of the background-image*/
@@ -1183,7 +1183,7 @@ fieldset {
   /*Removes default arrow from firefox*/
   color: #222;
   /* &:focus, &:active {
-            background: #838078 url('../img/pil_nedover_hvit.png') no-repeat;
+            background: #838078 url('../images/pil_nedover_hvit.png') no-repeat;
             background-position: 97%;
             -moz-background-size: 20px;
             -o-background-size: 20px;
@@ -1225,12 +1225,12 @@ fieldset {
   }
   .refinesearch .form-group select {
     width: 317px;
-    background: #ffffff url('../img/ikoner/knapp_dropdownmeny.png') no-repeat scroll 94% center;
+    background: #ffffff url('../images/ikoner/knapp_dropdownmeny.png') no-repeat scroll 94% center;
     background-size: 36px;
   }
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: #838078 url('../img/ikoner/knapp_dropdownmeny.png') no-repeat;
+    background: #838078 url('../images/ikoner/knapp_dropdownmeny.png') no-repeat;
     background-position: 94%;
     -moz-background-size: 36px;
     -o-background-size: 36px;
@@ -1254,35 +1254,35 @@ fieldset {
 .refinesearch select {
   margin-bottom: 20px;
 }
-.table_general {
+.ms-rteTable-default {
   border: 1px solid #91c6c2;
   margin: 20px auto;
 }
-.table_general thead th {
+.ms-rteTable-default thead th {
   background: #91c6c2;
   text-align: center;
   font-size: 16px;
   padding: 5px;
   line-height: 20px;
 }
-.table_general tr {
+.ms-rteTable-default tr {
   background: #dfe8e7;
 }
-.table_general tr.odd {
+.ms-rteTable-default tr.odd {
   background: white;
 }
-.table_general tbody th,
-.table_general td {
+.ms-rteTable-default tbody th,
+.ms-rteTable-default td {
   padding: 10px;
   text-align: center;
   font-size: 18px;
 }
-.table_general tbody th a,
-.table_general td a {
+.ms-rteTable-default tbody th a,
+.ms-rteTable-default td a {
   line-height: 24px;
 }
-.table_general.alignleft th,
-.table_general.alignleft td {
+.ms-rteTable-default.alignleft th,
+.ms-rteTable-default.alignleft td {
   text-align: left;
 }
 .iveCharts {
@@ -1385,7 +1385,7 @@ fieldset {
   padding: 5px 0 4px 0;
   margin-left: -2px;
   vertical-align: middle;
-  background: url(../img/ikoner/knapp_soekefelt.svg) no-repeat;
+  background: url(../images/ikoner/knapp_soekefelt.svg) no-repeat;
 }
 .searchform button img {
   width: 18px;
@@ -1627,52 +1627,52 @@ fieldset {
     width: 114px;
     font-size: 12px;
   }
-  .table_general {
+  .ms-rteTable-default {
     display: block;
     width: 100%;
   }
-  .table_general tbody {
+  .ms-rteTable-default tbody {
     display: block;
     width: 100%;
   }
-  .table_general thead tr {
+  .ms-rteTable-default thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .table_general tr,
-  .table_general th,
-  .table_general td {
+  .ms-rteTable-default tr,
+  .ms-rteTable-default th,
+  .ms-rteTable-default td {
     display: block;
   }
-  .table_general tr {
+  .ms-rteTable-default tr {
     padding-bottom: 11px;
   }
-  .table_general tbody th,
-  .table_general td {
+  .ms-rteTable-default tbody th,
+  .ms-rteTable-default td {
     border: none;
     position: relative;
     padding: 0;
     padding-left: 50%;
   }
-  .table_general tbody th:before,
-  .table_general td:before {
+  .ms-rteTable-default tbody th:before,
+  .ms-rteTable-default td:before {
     position: absolute;
     left: 15px;
     padding-right: 10px;
     white-space: nowrap;
   }
-  .table_general th[data-title]:before,
-  .table_general td[data-title]:before {
+  .ms-rteTable-default th[data-title]:before,
+  .ms-rteTable-default td[data-title]:before {
     content: attr(data-title);
   }
-  .table_general tbody th:first-child {
+  .ms-rteTable-default tbody th:first-child {
     background: #d1d0cf;
     font-weight: bold;
     padding: 5px 0 5px 15px;
     text-align: left;
   }
-  .table_general caption {
+  .ms-rteTable-default caption {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;

@@ -141,7 +141,7 @@
         }
     });
     //styles tables. workaround for IE8
-    $('table.table_general tr:nth-child(2n+1)').addClass('odd');
+    $('table.ms-rteTable-default tr:nth-child(2n+1)').addClass('odd');
 
     $('#menushortcut').on('click', function () {
         var expandedContent = $(".js-expand");

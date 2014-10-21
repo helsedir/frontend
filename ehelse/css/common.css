@@ -21,7 +21,9 @@ body {
   font-family: 'Calibri';
   line-height: 27px;
   color: #222;
-  background: url('../img/bakgrunnsbilde.png');
+}
+body.ms-backgroundimage {
+  background: url('../images/bakgrunnsbilde.png');
   background-color: #f7f6f6;
   background-position: bottom 882px right 264px;
   background-repeat: no-repeat;
@@ -184,7 +186,6 @@ body {
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
   display: block;
-  float: left;
   padding-right: 0.3rem;
 }
 .container .breadcrumbs li:after,
@@ -859,6 +860,14 @@ body {
   text-align: left;
   transition: all 0.5s;
 }
+.container .calltoaction a,
+.container-fluid .calltoaction a {
+  color: #222;
+  font-family: 'Calibri';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
 .container .calltoaction:hover,
 .container-fluid .calltoaction:hover,
 .container .calltoaction:focus,
@@ -871,7 +880,7 @@ body {
 .container .calltoaction.secondary,
 .container-fluid .calltoaction.secondary {
   border: 2px solid #0093a7;
-  background: #ffffff url('../img/ikon_pilmothoyre.png') no-repeat;
+  background: #ffffff url('../images/ikon_pilmothoyre.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: #004e66;
@@ -880,7 +889,7 @@ body {
 .container-fluid .calltoaction.secondary:hover,
 .container .calltoaction.secondary:focus,
 .container-fluid .calltoaction.secondary:focus {
-  background: #0093a7 url('../img/ikon_pilmothoyre_hvit.png') no-repeat;
+  background: #0093a7 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
   color: #222;
@@ -900,7 +909,7 @@ body {
   color: #222;
   font-family: 'Calibri';
   font-size: 20px;
-  background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+  background: url(../images/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
   background-size: 14px;
   background-position: 0px 7px;
   padding-left: 26px;
@@ -933,7 +942,7 @@ body {
 .container a.external-link.inline,
 .container-fluid a.external-link.inline {
   padding-left: 17px;
-  background: url(../img/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
+  background: url(../images/ikoner/lenkepil_ekstern_orange.svg) no-repeat;
   background-size: 10px;
   background-position: 0px 10px;
   color: #222;
@@ -963,7 +972,7 @@ body {
   color: #838078;
   font-family: 'Calibri';
   font-size: 20px;
-  background: url(../img/ikoner/lenkepil_orange.png) no-repeat;
+  background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
   background-size: 20px;
   padding-left: 35px;
   margin-top: 11px;
@@ -1015,6 +1024,7 @@ body {
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
+  width: 100%;
 }
 .container .module.maincolumn,
 .container-fluid .module.maincolumn {
@@ -1196,13 +1206,13 @@ body {
   height: 23px;
   padding-left: 40px;
   padding-bottom: 3px;
-  background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+  background: url(../images/modules/icons/epost_regular.svg) no-repeat;
   background-size: 24px 26px;
   background-position: 5%;
 }
 .container .module.module_subscribe .e-mail:hover,
 .container-fluid .module.module_subscribe .e-mail:hover {
-  background: url(../img/modules/icons/epost_regular.svg) no-repeat;
+  background: url(../images/modules/icons/epost_regular.svg) no-repeat;
   background-size: 28px 26px;
 }
 .container .module.module_subscribe .e-mail p,
@@ -1217,12 +1227,12 @@ body {
   width: 28px;
   height: 23px;
   padding-left: 40px;
-  background: url(../img/modules/icons/rss_regular.svg) no-repeat;
+  background: url(../images/modules/icons/rss_regular.svg) no-repeat;
   background-size: 27px 20px;
 }
 .container .module.module_subscribe .rss:hover,
 .container-fluid .module.module_subscribe .rss:hover {
-  background: url(../img/modules/icons/rss_regular.svg) no-repeat;
+  background: url(../images/modules/icons/rss_regular.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1465,7 +1475,7 @@ body {
 .container-fluid .module.module_print .ikon_facebook span,
 .container .module.module_social .ikon_facebook span,
 .container-fluid .module.module_social .ikon_facebook span {
-  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+  background: url(../images/modules/icons/facebook_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1475,7 +1485,7 @@ body {
 .container-fluid .module.module_print .ikon_twitter span,
 .container .module.module_social .ikon_twitter span,
 .container-fluid .module.module_social .ikon_twitter span {
-  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+  background: url(../images/modules/icons/twitter_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1491,7 +1501,7 @@ body {
 .container-fluid .module.module_print .ikon_skrivut span,
 .container .module.module_social .ikon_skrivut span,
 .container-fluid .module.module_social .ikon_skrivut span {
-  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+  background: url(../images/modules/icons/skriv_ut_hover.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
@@ -1512,7 +1522,7 @@ body {
 .container-fluid .module.module_print .ikon_skrivut:hover span,
 .container .module.module_social .ikon_skrivut:hover span,
 .container-fluid .module.module_social .ikon_skrivut:hover span {
-  background: url(../img/modules/icons/skriv_ut_hover.svg) no-repeat;
+  background: url(../images/modules/icons/skriv_ut_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1522,7 +1532,7 @@ body {
 .container-fluid .module.module_print .ikon_facebook:hover span,
 .container .module.module_social .ikon_facebook:hover span,
 .container-fluid .module.module_social .ikon_facebook:hover span {
-  background: url(../img/modules/icons/facebook_hover.svg) no-repeat;
+  background: url(../images/modules/icons/facebook_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1532,7 +1542,7 @@ body {
 .container-fluid .module.module_print .ikon_twitter:hover span,
 .container .module.module_social .ikon_twitter:hover span,
 .container-fluid .module.module_social .ikon_twitter:hover span {
-  background: url(../img/modules/icons/twitter_hover.svg) no-repeat;
+  background: url(../images/modules/icons/twitter_hover.svg) no-repeat;
   -moz-background-size: 28px 23px;
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
@@ -1593,7 +1603,7 @@ body {
   text-align: center;
   margin: 50px 0;
   color: #004e66;
-  background: #d1d0cf url(../img/spinner.png) no-repeat;
+  background: #d1d0cf url(../images/spinner.png) no-repeat;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
@@ -1606,7 +1616,7 @@ body {
 }
 .container .showmorenews:hover,
 .container-fluid .showmorenews:hover {
-  background: #aeaba8 url(../img/spinner.png) no-repeat;
+  background: #aeaba8 url(../images/spinner.png) no-repeat;
   -moz-background-size: 12%;
   -o-background-size: 12%;
   -webkit-background-size: 12%;
@@ -1633,7 +1643,7 @@ body {
 .container .crisis h1,
 .container-fluid .crisis h1 {
   background-color: #f4d01e;
-  background-image: url(../img/kriseikon_trekant.svg);
+  background-image: url(../images/kriseikon_trekant.svg);
   background-size: 49px;
   background-position: left;
   background-repeat: no-repeat;
@@ -1652,7 +1662,7 @@ body {
 }
 .container .crisis .calltoaction:hover,
 .container-fluid .crisis .calltoaction:hover {
-  background: #666460 url(../img/ikon_pilmothoyre_hvit.png);
+  background: #666460 url(../images/ikon_pilmothoyre_hvit.png);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 5% 50%;
@@ -1703,7 +1713,7 @@ body {
 .container .crisis_banner .container,
 .container-fluid .crisis_banner .container {
   background-color: #f4d01e;
-  background-image: url(../img/kriseikon_trekant.svg);
+  background-image: url(../images/kriseikon_trekant.svg);
   background-size: 49px;
   background-position: left;
   background-repeat: no-repeat;
@@ -1790,18 +1800,18 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+  background: url('../images/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   background-size: 19px;
 }
 .container input[type="radio"] + label span:hover,
 .container-fluid input[type="radio"] + label span:hover {
-  background: url('../img/navigasjon/radioknapp_hover.svg') top left no-repeat;
+  background: url('../images/navigasjon/radioknapp_hover.svg') top left no-repeat;
   background-size: 19px;
 }
 .container input[type="radio"]:checked + label span,
 .container-fluid input[type="radio"]:checked + label span {
-  background: url(../img/navigasjon/radioknapp_valgt.svg) top no-repeat;
+  background: url(../images/navigasjon/radioknapp_valgt.svg) top no-repeat;
   background-size: 19px;
 }
 .container input[type="checkbox"],
@@ -1818,18 +1828,18 @@ body {
   height: 19px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: url('../img/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
+  background: url('../images/navigasjon/checkbox_inaktiv.svg') top left no-repeat;
   cursor: pointer;
   background-size: 19px;
 }
 .container input[type="checkbox"] + label span:hover,
 .container-fluid input[type="checkbox"] + label span:hover {
-  background: url('../img/navigasjon/checkbox_hover.svg') top left no-repeat;
+  background: url('../images/navigasjon/checkbox_hover.svg') top left no-repeat;
   background-size: 19px;
 }
 .container input[type="checkbox"]:checked + label span,
 .container-fluid input[type="checkbox"]:checked + label span {
-  background: url(../img/navigasjon/checkbox_valgt.svg) top no-repeat;
+  background: url(../images/navigasjon/checkbox_valgt.svg) top no-repeat;
   background-size: 19px;
 }
 .container fieldset,
@@ -1886,7 +1896,7 @@ body {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/knapp_pil_nedover.svg') no-repeat;
   /*Adds background-image*/
   background-position: 100%;
   /*Position of the background-image*/
@@ -1912,7 +1922,7 @@ body {
 .container-fluid .dropdown select:focus,
 .container .dropdown select:active,
 .container-fluid .dropdown select:active {
-  background: url('../img/ikoner/knapp_pil_nedover.svg') no-repeat;
+  background: url('../images/ikoner/knapp_pil_nedover.svg') no-repeat;
   background-position: 100%;
   -moz-background-size: 38px 38px;
   -o-background-size: 38px 38px;
@@ -1963,7 +1973,7 @@ body {
   }
   .refinesearch .form-group select {
     width: 317px;
-    background: url('../img/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #ffffff;
+    background: url('../images/ikoner/knapp_pil_nedover.png') no-repeat scroll 95% center #ffffff;
     -moz-background-size: 38px 38px;
     -o-background-size: 38px 38px;
     -webkit-background-size: 38px 38px;
@@ -1971,7 +1981,7 @@ body {
   }
   .refinesearch .form-group select:focus,
   .refinesearch .form-group select:active {
-    background: url('../img/ikoner/knapp_pil_oppover.svg') no-repeat;
+    background: url('../images/ikoner/knapp_pil_oppover.svg') no-repeat;
     background-position: 95%;
     -moz-background-size: 39px 39px;
     -o-background-size: 39px 39px;
@@ -1979,45 +1989,45 @@ body {
     background-size: 39px 39px;
   }
 }
-.container .table_general,
-.container-fluid .table_general {
+.container .ms-rteTable-default,
+.container-fluid .ms-rteTable-default {
   border: 1px solid #91c6c2;
   margin: 20px auto;
 }
-.container .table_general thead th,
-.container-fluid .table_general thead th {
+.container .ms-rteTable-default thead th,
+.container-fluid .ms-rteTable-default thead th {
   background: #91c6c2;
   text-align: center;
   font-size: 16px;
   padding: 5px;
   line-height: 20px;
 }
-.container .table_general tr,
-.container-fluid .table_general tr {
+.container .ms-rteTable-default tr,
+.container-fluid .ms-rteTable-default tr {
   background: #dfe8e7;
 }
-.container .table_general tr.odd,
-.container-fluid .table_general tr.odd {
+.container .ms-rteTable-default tr.odd,
+.container-fluid .ms-rteTable-default tr.odd {
   background: white;
 }
-.container .table_general tbody th,
-.container-fluid .table_general tbody th,
-.container .table_general td,
-.container-fluid .table_general td {
+.container .ms-rteTable-default tbody th,
+.container-fluid .ms-rteTable-default tbody th,
+.container .ms-rteTable-default td,
+.container-fluid .ms-rteTable-default td {
   padding: 10px;
   text-align: center;
   font-size: 18px;
 }
-.container .table_general tbody th a,
-.container-fluid .table_general tbody th a,
-.container .table_general td a,
-.container-fluid .table_general td a {
+.container .ms-rteTable-default tbody th a,
+.container-fluid .ms-rteTable-default tbody th a,
+.container .ms-rteTable-default td a,
+.container-fluid .ms-rteTable-default td a {
   line-height: 24px;
 }
-.container .table_general.alignleft th,
-.container-fluid .table_general.alignleft th,
-.container .table_general.alignleft td,
-.container-fluid .table_general.alignleft td {
+.container .ms-rteTable-default.alignleft th,
+.container-fluid .ms-rteTable-default.alignleft th,
+.container .ms-rteTable-default.alignleft td,
+.container-fluid .ms-rteTable-default.alignleft td {
   text-align: left;
 }
 .container .iveCharts,
@@ -2145,6 +2155,16 @@ body {
 .container .transportsideknapp a:hover h2,
 .container-fluid .transportsideknapp a:hover h2 {
   color: #0093a7;
+}
+.container .transportsideknapp a.calltoaction,
+.container-fluid .transportsideknapp a.calltoaction {
+  max-width: 250px;
+}
+.container .transportsideknapp a.calltoaction:hover,
+.container-fluid .transportsideknapp a.calltoaction:hover,
+.container .transportsideknapp a.calltoaction:visited:hover,
+.container-fluid .transportsideknapp a.calltoaction:visited:hover {
+  color: #222;
 }
 .container .transportsideknapp p,
 .container-fluid .transportsideknapp p {
@@ -2523,67 +2543,67 @@ body {
     width: 114px;
     font-size: 12px;
   }
-  .container .table_general,
-  .container-fluid .table_general {
+  .container .ms-rteTable-default,
+  .container-fluid .ms-rteTable-default {
     display: block;
     width: 100%;
   }
-  .container .table_general tbody,
-  .container-fluid .table_general tbody {
+  .container .ms-rteTable-default tbody,
+  .container-fluid .ms-rteTable-default tbody {
     display: block;
     width: 100%;
   }
-  .container .table_general thead tr,
-  .container-fluid .table_general thead tr {
+  .container .ms-rteTable-default thead tr,
+  .container-fluid .ms-rteTable-default thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .container .table_general tr,
-  .container-fluid .table_general tr,
-  .container .table_general th,
-  .container-fluid .table_general th,
-  .container .table_general td,
-  .container-fluid .table_general td {
+  .container .ms-rteTable-default tr,
+  .container-fluid .ms-rteTable-default tr,
+  .container .ms-rteTable-default th,
+  .container-fluid .ms-rteTable-default th,
+  .container .ms-rteTable-default td,
+  .container-fluid .ms-rteTable-default td {
     display: block;
   }
-  .container .table_general tr,
-  .container-fluid .table_general tr {
+  .container .ms-rteTable-default tr,
+  .container-fluid .ms-rteTable-default tr {
     padding-bottom: 11px;
   }
-  .container .table_general tbody th,
-  .container-fluid .table_general tbody th,
-  .container .table_general td,
-  .container-fluid .table_general td {
+  .container .ms-rteTable-default tbody th,
+  .container-fluid .ms-rteTable-default tbody th,
+  .container .ms-rteTable-default td,
+  .container-fluid .ms-rteTable-default td {
     border: none;
     position: relative;
     padding: 0;
     padding-left: 50%;
   }
-  .container .table_general tbody th:before,
-  .container-fluid .table_general tbody th:before,
-  .container .table_general td:before,
-  .container-fluid .table_general td:before {
+  .container .ms-rteTable-default tbody th:before,
+  .container-fluid .ms-rteTable-default tbody th:before,
+  .container .ms-rteTable-default td:before,
+  .container-fluid .ms-rteTable-default td:before {
     position: absolute;
     left: 15px;
     padding-right: 10px;
     white-space: nowrap;
   }
-  .container .table_general th[data-title]:before,
-  .container-fluid .table_general th[data-title]:before,
-  .container .table_general td[data-title]:before,
-  .container-fluid .table_general td[data-title]:before {
+  .container .ms-rteTable-default th[data-title]:before,
+  .container-fluid .ms-rteTable-default th[data-title]:before,
+  .container .ms-rteTable-default td[data-title]:before,
+  .container-fluid .ms-rteTable-default td[data-title]:before {
     content: attr(data-title);
   }
-  .container .table_general tbody th:first-child,
-  .container-fluid .table_general tbody th:first-child {
+  .container .ms-rteTable-default tbody th:first-child,
+  .container-fluid .ms-rteTable-default tbody th:first-child {
     background: #d1d0cf;
     font-weight: bold;
     padding: 5px 0 5px 15px;
     text-align: left;
   }
-  .container .table_general caption,
-  .container-fluid .table_general caption {
+  .container .ms-rteTable-default caption,
+  .container-fluid .ms-rteTable-default caption {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;

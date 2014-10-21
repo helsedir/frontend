@@ -28,17 +28,17 @@
   float: left;
   position: relative;
 }
-.entrancebutton.aboutthesystem a {
+.entrancebutton.menu a {
   background: #0093a7;
 }
-.entrancebutton.aboutthesystem a:hover {
+.entrancebutton.menu a:hover {
   background: #01737c;
 }
-.entrancebutton.aboutthesystem a:focus {
+.entrancebutton.menu a:focus {
   background: #01737c;
 }
-.entrancebutton.aboutthesystem a:focus h2,
-.entrancebutton.aboutthesystem a:focus p {
+.entrancebutton.menu a:focus h2,
+.entrancebutton.menu a:focus p {
   background: #01737c;
 }
 .entrancebutton a {
@@ -97,17 +97,17 @@
   width: 70px;
 }
 .entrancebutton span.finnmetode {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
 .entrancebutton span.sendforslag {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
 .entrancebutton span.omsystemet {
-  /* background: @colorDarkBlue url(../img/eirik.gif) no-repeat;
+  /* background: @colorDarkBlue url(../images/eirik.gif) no-repeat;
            background: @colorDarkBlue no-repeat;
             background-size: 80px;
             background-position: 0 100px;
@@ -117,26 +117,26 @@
             -o-transform: rotate(-82deg);
             -webkit-transform: rotate(-82deg);
             transform: rotate(-82deg);*/
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
   background-size: 41px;
   background-position: center;
 }
 .entrancebutton:hover span.finnmetode {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
 .entrancebutton:hover span.sendforslag {
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
 .entrancebutton:hover span.omsystemet {
-  /*  background: white url(../img/eirik.gif) no-repeat;
+  /*  background: white url(../images/eirik.gif) no-repeat;
              background: white no-repeat;
             background-size: 80px;
             background-position: 0 3px;*/
-  background: #ffffff url('../img/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
+  background: #ffffff url('../images/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
   background-size: 41px;
   background-position: center;
 }
@@ -225,7 +225,7 @@
   bottom: 0;
   height: 22px;
   width: 23px;
-  background: url(../img/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+  background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
   /* background-position: 0 5px; */
   background-size: 20px;
 }

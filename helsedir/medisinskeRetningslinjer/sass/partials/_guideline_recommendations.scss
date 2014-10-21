@@ -65,7 +65,7 @@
 .Recommendations .headerGroup {
     color: $colorWhite;
     background: $colorPurple;
-    background-image: url("../img/Livslinje-enkel-lilla.svg");
+    background-image: url("../images/Livslinje-enkel-lilla.svg");
     background-repeat: repeat-x;
     background-size: cover;
     overflow: hidden;
@@ -268,7 +268,7 @@
         text-align: center;
         display: inline-block;
         &:before {
-            content: url("../img/modules/icons/ico-i.svg");
+            content: url("../images/modules/icons/ico-i.svg");
             display: inline-block;
             color: $colorWhite;
             width: 20px;
@@ -277,7 +277,7 @@
         }
         &.open {
             &:before {
-                content: url("../img/modules/icons/ico-x.svg");
+                content: url("../images/modules/icons/ico-x.svg");
             }
         }
         &.gradingStrong {
@@ -539,7 +539,7 @@
                     text-decoration: underline;
                     color: $colorBlack;
                     &:after {
-                        content: url("../img/modules/icons/ico-full-skjerm.svg");
+                        content: url("../images/modules/icons/ico-full-skjerm.svg");
                         display: inline-block;
                         width: 15px;
                         height: 15px;
