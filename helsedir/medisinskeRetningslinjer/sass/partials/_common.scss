@@ -8,21 +8,6 @@ b{
   font-weight: bold;
 }
 
-strong{
-  font-weight: bold;
-}
-
-em{
-  font-style: italic;
-}
-
-.orderedlist{
-  list-style-position: inside;
-  margin-top: 10px;
-  list-style-type: decimal;
-
-}
-
 .smalltitle{
   font-family: $fontCalibri;
   font-size: 18px;
@@ -169,18 +154,4 @@ form.retningslinjerSok {
   -o-background-size: 28px 23px;
   -webkit-background-size: 28px 23px;
   background-size: 28px 23px;
-}
-
-.container .aboutsection{
-    margin-top: 25px;
-}
-
-.container .aboutsectioncontent{
-    background-color: $colorWhite;
-    padding: 15px 30px;
-}
-
-.container .aboutsectionheading{
-    font-size: 28px;
-    margin-top: 20px;
 }

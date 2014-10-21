@@ -172,12 +172,10 @@
 }
 
 .Guidelinechildsection .sectionlist {
-    margin-top: 25px;
-    margin-bottom: 25px;
     .element {
         padding: 20px 30px;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         &:nth-child(odd) {
             background-color: $colorGallery;
         }
