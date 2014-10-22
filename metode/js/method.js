@@ -8,12 +8,13 @@
 
     $(".informationicon").click(function (e) {
         var informationicon = $(this);
-        var evaluation = $(this).siblings('.method_status').children('.method_evaluation:first');
+        var evaluation = $(this).siblings('.method_status, .method_description').children('.method_evaluation:first');
         if (evaluation.hasClass("visuallyhidden")) {
             evaluation.slideUp(0, function () {
                 evaluation.removeClass('visuallyhidden').slideDown(500);
             });
             informationicon.addClass('selected');
+
             informationicon.text('');
         } else {
             evaluation.slideUp('slow', function () {
@@ -21,7 +22,12 @@
             });
 
             informationicon.removeClass('selected');
-            informationicon.text('i');
+            if ($(this).siblings('.method_description')) {
+                informationicon.text('Vis forklaring');
+            }
+            else {
+                informationicon.text('i');
+            }
         }
     });
 
