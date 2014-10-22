@@ -134,7 +134,7 @@
         $('.shoppingcartbutton').toggle(800);
     });
 
-    $('a').filter(function () {
+    $('a:not(:empty)').filter(function () {
         return this.hostname && this.hostname !== location.hostname;
     }).addClass("external-link");
 });
