@@ -35,6 +35,11 @@
   color: #838078;
   text-transform: uppercase;
 }
+.resultnumber .numberofresults,
+.resultnumber .resultfilter,
+.resultnumber .sortedby {
+  font-weight: bold;
+}
 .transportsideknapp {
   background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;

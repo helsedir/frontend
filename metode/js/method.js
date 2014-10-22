@@ -21,7 +21,7 @@
             });
 
             informationicon.removeClass('selected');
-            informationicon.text('?');
+            informationicon.text('i');
         }
     });
 
@@ -39,7 +39,7 @@
                 });
 
                 informationicon.removeClass('selected');
-                informationicon.text('?');
+                informationicon.text('i');
             }
 
             if ($(this).hasClass("has-visible-content")) {

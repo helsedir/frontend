@@ -42,10 +42,8 @@ a.logo:focus {
   background: none;
 }
 .footerlinkswrapper {
-  background: #ffffff url(../images/footer_illustrasjon.png) no-repeat;
-  background-position: 80%;
+  background: white;
   color: #222;
-  background-size: contain;
 }
 .footerlinkswrapper a,
 .footerlinkswrapper h4 {
