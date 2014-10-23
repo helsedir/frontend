@@ -47,36 +47,65 @@
   margin-top: 46px;
   max-width: 685px;
   display: inline-block;
-  padding: 20px 30px 50px 30px;
+  padding: 20px 30px 20px 30px;
 }
 .transportsideknapp .status_information {
   float: left;
   width: 362px;
-  margin: 24px 0 0 30px;
+  margin: 13px 0 0 30px;
 }
 .transportsideknapp .status_information .status_received {
   margin-right: 30px;
 }
 .transportsideknapp .status {
   float: left;
-  padding: 20px;
+  padding: 4px 15px 0 0;
   width: 200px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: "Soho Gothic W01 Light";
   font-size: 20px;
   color: #222;
+  vertical-align: top;
 }
-.transportsideknapp .status.preparation {
-  border-right: 4px solid #a1bf37;
+.transportsideknapp .status.forslag {
+  border-right: 5px solid #a1bf37;
 }
-.transportsideknapp .status.evaluation {
-  border-right: 4px solid #004e66;
+.transportsideknapp .status.forslag:before {
+  content: '';
+  width: 40px;
+  height: 24px;
+  background: url(../images/ikoner/draape_forslag_tall.png) no-repeat;
+  display: inline-block;
 }
-.transportsideknapp .status.decided {
-  border-right: 4px solid #6cb4b5;
+.transportsideknapp .status.metodevurdering {
+  border-right: 5px solid #004e66;
 }
-.transportsideknapp .status.cancelled {
-  border-right: 4px solid #c63629;
+.transportsideknapp .status.metodevurdering:before {
+  content: '';
+  width: 40px;
+  height: 24px;
+  background: url(../images/ikoner/draape_metodevurdering_tall.png) no-repeat;
+  display: inline-block;
+}
+.transportsideknapp .status.beslutning {
+  border-right: 5px solid #6cb4b5;
+}
+.transportsideknapp .status.beslutning:before {
+  content: '';
+  width: 40px;
+  height: 24px;
+  background: url(../images/ikoner/draape_beslutning_tall.png) no-repeat;
+  display: inline-block;
+}
+.transportsideknapp .status.implementering {
+  border-right: 5px solid #df9922;
+}
+.transportsideknapp .status.implementering:before {
+  content: '';
+  width: 40px;
+  height: 24px;
+  background: url(../images/ikoner/draape_implementering_tall.png) no-repeat;
+  display: inline-block;
 }
 .transportsideknapp h2 {
   margin: 0;

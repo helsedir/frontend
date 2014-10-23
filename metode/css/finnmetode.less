@@ -77,12 +77,12 @@
     margin-top: 46px;
     max-width: 685px;
     display: inline-block;
-    padding: 20px 30px 50px 30px;
+    padding: 20px 30px 20px 30px;
 
     .status_information {
         float: left;
         width: 362px;
-        margin: 24px 0 0 30px;
+        margin: 13px 0 0 30px;
 
         .status_received {
             margin-right: 30px;
@@ -91,27 +91,60 @@
 
     .status {
         float: left;
-        padding: 20px;
+        padding: 4px 15px 0 0;
         width: 200px;
-        margin-top: 30px;
+        margin-top: 20px;
         font-family: @fontSohoLight;
         font-size: 20px;
         color: #222;
+        vertical-align: top;
 
-        &.preparation {
-            border-right: 4px solid @colorGreen;
+        &.forslag {
+            border-right: 5px solid @colorGreen;
+
+            &:before {
+                content: '';
+                width: 40px;
+                height: 24px;
+                background: url(../images/ikoner/draape_forslag_tall.png) no-repeat;
+                display: inline-block;
+            }
         }
 
-        &.evaluation {
-            border-right: 4px solid @colorDarkBlue;
+        &.metodevurdering {
+            border-right: 5px solid @colorDarkBlue;
+
+            &:before {
+                content: '';
+                width: 40px;
+                height: 24px;
+                background: url(../images/ikoner/draape_metodevurdering_tall.png) no-repeat;
+                display: inline-block;
+            }
         }
 
-        &.decided {
-            border-right: 4px solid @colorLightBlue;
+        &.beslutning {
+            border-right: 5px solid @colorLightBlue;
+
+            &:before {
+                content: '';
+                width: 40px;
+                height: 24px;
+                background: url(../images/ikoner/draape_beslutning_tall.png) no-repeat;
+                display: inline-block;
+            }
         }
 
-        &.cancelled {
-            border-right: 4px solid #c63629;
+        &.implementering {
+            border-right: 5px solid #df9922;
+
+            &:before {
+                content: '';
+                width: 40px;
+                height: 24px;
+                background: url(../images/ikoner/draape_implementering_tall.png) no-repeat;
+                display: inline-block;
+            }
         }
     }
 
