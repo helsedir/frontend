@@ -341,8 +341,8 @@ body.ms-backgroundImage {
 .container-fluid .tabs .tab-links li span.tabs_header,
 .container .tabs .tab-links li span.tabs_footer,
 .container-fluid .tabs .tab-links li span.tabs_footer,
-.container .tabs .tab-links li form,
-.container-fluid .tabs .tab-links li form {
+.container .tabs .tab-links li .form,
+.container-fluid .tabs .tab-links li .form {
   margin: 0;
   float: left;
   list-style: none;
@@ -356,16 +356,16 @@ body.ms-backgroundImage {
 .container-fluid .tabs .tab-links li span.tabs_header.active,
 .container .tabs .tab-links li span.tabs_footer.active,
 .container-fluid .tabs .tab-links li span.tabs_footer.active,
-.container .tabs .tab-links li form.active,
-.container-fluid .tabs .tab-links li form.active {
+.container .tabs .tab-links li .form.active,
+.container-fluid .tabs .tab-links li .form.active {
   border: none;
 }
 .container .tabs .tab-links li span.tabs_header.active a,
 .container-fluid .tabs .tab-links li span.tabs_header.active a,
 .container .tabs .tab-links li span.tabs_footer.active a,
 .container-fluid .tabs .tab-links li span.tabs_footer.active a,
-.container .tabs .tab-links li form.active a,
-.container-fluid .tabs .tab-links li form.active a {
+.container .tabs .tab-links li .form.active a,
+.container-fluid .tabs .tab-links li .form.active a {
   color: #004e66;
   font-family: 'Calibri-Bold';
   background: white;
@@ -374,14 +374,14 @@ body.ms-backgroundImage {
 .container-fluid .tabs .tab-links li span.tabs_header.active a:hover,
 .container .tabs .tab-links li span.tabs_footer.active a:hover,
 .container-fluid .tabs .tab-links li span.tabs_footer.active a:hover,
-.container .tabs .tab-links li form.active a:hover,
-.container-fluid .tabs .tab-links li form.active a:hover,
+.container .tabs .tab-links li .form.active a:hover,
+.container-fluid .tabs .tab-links li .form.active a:hover,
 .container .tabs .tab-links li span.tabs_header.active a:focus,
 .container-fluid .tabs .tab-links li span.tabs_header.active a:focus,
 .container .tabs .tab-links li span.tabs_footer.active a:focus,
 .container-fluid .tabs .tab-links li span.tabs_footer.active a:focus,
-.container .tabs .tab-links li form.active a:focus,
-.container-fluid .tabs .tab-links li form.active a:focus {
+.container .tabs .tab-links li .form.active a:focus,
+.container-fluid .tabs .tab-links li .form.active a:focus {
   background: white;
   color: #004e66;
 }
@@ -389,8 +389,8 @@ body.ms-backgroundImage {
 .container-fluid .tabs .tab-links li span.tabs_header a,
 .container .tabs .tab-links li span.tabs_footer a,
 .container-fluid .tabs .tab-links li span.tabs_footer a,
-.container .tabs .tab-links li form a,
-.container-fluid .tabs .tab-links li form a {
+.container .tabs .tab-links li .form a,
+.container-fluid .tabs .tab-links li .form a {
   display: inline-block;
   font-size: 16px;
   transition: all linear 0.15s;
@@ -405,14 +405,14 @@ body.ms-backgroundImage {
 .container-fluid .tabs .tab-links li span.tabs_header a:hover,
 .container .tabs .tab-links li span.tabs_footer a:hover,
 .container-fluid .tabs .tab-links li span.tabs_footer a:hover,
-.container .tabs .tab-links li form a:hover,
-.container-fluid .tabs .tab-links li form a:hover,
+.container .tabs .tab-links li .form a:hover,
+.container-fluid .tabs .tab-links li .form a:hover,
 .container .tabs .tab-links li span.tabs_header a:focus,
 .container-fluid .tabs .tab-links li span.tabs_header a:focus,
 .container .tabs .tab-links li span.tabs_footer a:focus,
 .container-fluid .tabs .tab-links li span.tabs_footer a:focus,
-.container .tabs .tab-links li form a:focus,
-.container-fluid .tabs .tab-links li form a:focus {
+.container .tabs .tab-links li .form a:focus,
+.container-fluid .tabs .tab-links li .form a:focus {
   color: white;
   background: #5e5d57;
 }
@@ -2410,9 +2410,9 @@ body.ms-backgroundImage {
   .container .toppmeny .tab-links li span.tabs_footer,
   .container .tabs .tab-links li span.tabs_footer,
   .container .tabs-statistics .tabs .tab-links li span.tabs_footer,
-  .container .toppmeny .tab-links li form,
-  .container .tabs .tab-links li form,
-  .container .tabs-statistics .tabs .tab-links li form {
+  .container .toppmeny .tab-links li .form,
+  .container .tabs .tab-links li .form,
+  .container .tabs-statistics .tabs .tab-links li .form {
     width: 114px;
     font-size: 12px;
   }

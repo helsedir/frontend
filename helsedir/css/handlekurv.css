@@ -345,7 +345,7 @@
   display: block;
 }
 @media only screen and (max-width: 599px) {
-  .container .shoppingcart form {
+  .container .shoppingcart .form {
     margin-bottom: 50px;
   }
   .container .shoppingcart .shoppingcart_table .ms-rteTable-default th,

@@ -42,7 +42,7 @@
 }
 .transportsideknapp {
   background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
-  background-size: 45px;
+  background-size: 45px 45px;
   background-position: 96% 93%;
   margin-top: 46px;
   max-width: 685px;
@@ -52,20 +52,20 @@
 .transportsideknapp .status_information {
   float: left;
   width: 362px;
-  margin: 13px 0 0 30px;
+  margin: 11px 0 0 30px;
 }
 .transportsideknapp .status_information .status_received {
   margin-right: 30px;
 }
 .transportsideknapp .status {
   float: left;
-  padding: 4px 15px 0 0;
+  padding: 0 15px 0 0;
   width: 200px;
   margin-top: 20px;
   font-family: "Soho Gothic W01 Light";
   font-size: 20px;
   color: #222;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 .transportsideknapp .status.forslag {
   border-right: 5px solid #a1bf37;
@@ -76,6 +76,7 @@
   height: 24px;
   background: url(../images/ikoner/draape_forslag_tall.png) no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 .transportsideknapp .status.metodevurdering {
   border-right: 5px solid #004e66;
@@ -86,6 +87,7 @@
   height: 24px;
   background: url(../images/ikoner/draape_metodevurdering_tall.png) no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 .transportsideknapp .status.beslutning {
   border-right: 5px solid #6cb4b5;
@@ -96,6 +98,7 @@
   height: 24px;
   background: url(../images/ikoner/draape_beslutning_tall.png) no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 .transportsideknapp .status.implementering {
   border-right: 5px solid #df9922;
@@ -106,6 +109,7 @@
   height: 24px;
   background: url(../images/ikoner/draape_implementering_tall.png) no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 .transportsideknapp h2 {
   margin: 0;

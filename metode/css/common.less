@@ -1674,6 +1674,50 @@ fieldset {
     }
 }
 
+input[type="radio"] {
+    float: left;
+    width: 0;
+    opacity: 0;
+    height: 0;
+
+    &:focus, &:active {
+        & + label {
+            background: @colorDarkBlue;
+            color: white;
+        }
+    }
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -5px 10px 0 0;
+    vertical-align: middle;
+    background: url('../images/navigasjon/radioknapp_inaktiv.svg') top left no-repeat;
+    cursor: pointer;
+    -moz-background-size: 19px;
+    -o-background-size: 19px;
+    -webkit-background-size: 19px;
+    background-size: 19px;
+
+    &:hover {
+        background: url('../images/navigasjon/radioknapp_hover.svg') top left no-repeat;
+        -moz-background-size: 19px;
+        -o-background-size: 19px;
+        -webkit-background-size: 19px;
+        background-size: 19px;
+    }
+}
+
+input[type="radio"]:checked + label span {
+    background: url(../images/navigasjon/radioknapp_valgt.svg)top no-repeat;
+    -moz-background-size: 19px;
+    -o-background-size: 19px;
+    -webkit-background-size: 19px;
+    background-size: 19px;
+}
+
 @media only screen and (min-width: 1200px) {
     .aside {
         top: 0;
@@ -2238,7 +2282,6 @@ fieldset {
 
             &:hover {
                 color: #01737c;
-                border-bottom: 2px dotted #01737c;
             }
         }
     }
