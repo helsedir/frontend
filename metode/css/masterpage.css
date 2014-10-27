@@ -128,35 +128,42 @@ a.logo:focus {
 .internal-link.arrow_right.loginlink:visited {
   color: white;
 }
-.mainsearch {
+.container .mainsearch,
+.container-fluid .mainsearch {
   border: none;
   cursor: pointer;
   color: #004e66;
   padding-right: 27px;
   width: 170px;
 }
-.mainsearch::-webkit-input-placeholder {
+.container .mainsearch::-webkit-input-placeholder,
+.container-fluid .mainsearch::-webkit-input-placeholder {
   color: #838078;
   text-align: left;
 }
-.mainsearch:-moz-placeholder {
+.container .mainsearch:-moz-placeholder,
+.container-fluid .mainsearch:-moz-placeholder {
   /* Firefox 18- */
   color: #838078;
   text-align: left;
 }
-.mainsearch::-moz-placeholder {
+.container .mainsearch::-moz-placeholder,
+.container-fluid .mainsearch::-moz-placeholder {
   /* Firefox 19+ */
   color: #838078;
   text-align: left;
 }
-.mainsearch:-ms-input-placeholder {
+.container .mainsearch:-ms-input-placeholder,
+.container-fluid .mainsearch:-ms-input-placeholder {
   color: #838078;
   text-align: left;
 }
-.mainsearchcolumn {
+.container .mainsearchcolumn,
+.container-fluid .mainsearchcolumn {
   margin-top: 28px;
 }
-.mainsearchform {
+.container .mainsearchform,
+.container-fluid .mainsearchform {
   float: left;
   margin-top: 2px;
   height: 41px;
@@ -169,21 +176,25 @@ a.logo:focus {
   padding-left: 5px;
   background: white;
 }
-.mainsearchform span {
+.container .mainsearchform span,
+.container-fluid .mainsearchform span {
   vertical-align: sub;
 }
-.mainsearchform button {
+.container .mainsearchform button,
+.container-fluid .mainsearchform button {
   border: none;
   background: none;
   width: 29px;
   padding: 5px 0 4px 0;
   vertical-align: middle;
 }
-.mainsearchform button img {
+.container .mainsearchform button img,
+.container-fluid .mainsearchform button img {
   width: 18px;
   vertical-align: middle;
 }
-.mainsearchform input {
+.container .mainsearchform input,
+.container-fluid .mainsearchform input {
   border: none;
   padding: 0;
   width: 170px;
@@ -378,7 +389,8 @@ a.logo:focus {
     display: inline-block;
     margin: 20px 20px 20px 0;
   }
-  .mainsearchform input {
+  .container .mainsearchform input,
+  .container-fluid .mainsearchform input {
     width: 150px;
   }
 }
@@ -459,11 +471,13 @@ a.logo:focus {
     float: none;
     margin-top: 0;
   }
-  .mainsearchform {
+  .container .mainsearchform,
+  .container-fluid .mainsearchform {
     width: 100%;
     margin-bottom: 10px;
   }
-  .mainsearchform input {
+  .container .mainsearchform input,
+  .container-fluid .mainsearchform input {
     width: 82%;
   }
   .footerlinkswrapper {

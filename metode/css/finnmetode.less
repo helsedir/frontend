@@ -23,274 +23,286 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.search {
-    border: none;
-    cursor: pointer;
-    color: #222;
-    padding-right: 27px;
-    padding-left: 0;
-    width: 50%;
-    background: #f2f2f2;
-
-    &::-webkit-input-placeholder {
-        color: #838078;
-        text-align: left;
-    }
-
-    &:-moz-placeholder { /* Firefox 18- */
-        color: #838078;
-        text-align: left;
-    }
-
-    &::-moz-placeholder { /* Firefox 19+ */
-        color: #222838078;
-        text-align: left;
-    }
-
-    &:-ms-input-placeholder {
-        color: #838078;
-        text-align: left;
-    }
-}
-
-.searchform {
-    width: 100%;
-
-    input {
-        width: 612px;
-    }
-}
-
-.resultnumber {
-    color: #838078;
-    text-transform: uppercase;
-
-    .numberofresults, .resultfilter, .sortedby {
-        font-weight: bold;
-    }
-}
-
-.transportsideknapp {
-    background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
-    background-size: 45px 45px;
-    background-position: 96% 93%;
-    margin-top: 46px;
-    max-width: 685px;
-    display: inline-block;
-    padding: 20px 30px 20px 30px;
-
-    .status_information {
-        float: left;
-        width: 362px;
-        margin: 11px 0 0 30px;
-
-        .status_received {
-            margin-right: 30px;
-        }
-    }
-
-    .status {
-        float: left;
-        padding: 0 15px 0 0;
-        width: 200px;
-        margin-top: 20px;
-        font-family: @fontSohoLight;
-        font-size: 20px;
+.container, .container-fluid {
+    .search {
+        border: none;
+        cursor: pointer;
         color: #222;
-        vertical-align: bottom;
+        padding-right: 27px;
+        padding-left: 0;
+        width: 50%;
+        background: #f2f2f2;
 
-        &.forslag {
-            border-right: 5px solid @colorGreen;
-
-            &:before {
-                content: '';
-                width: 40px;
-                height: 24px;
-                background: url(../images/ikoner/draape_forslag_tall.png) no-repeat;
-                display: inline-block;
-                vertical-align: middle;
-            }
+        &::-webkit-input-placeholder {
+            color: #838078;
+            text-align: left;
         }
 
-        &.metodevurdering {
-            border-right: 5px solid @colorDarkBlue;
-
-            &:before {
-                content: '';
-                width: 40px;
-                height: 24px;
-                background: url(../images/ikoner/draape_metodevurdering_tall.png) no-repeat;
-                display: inline-block;
-                vertical-align: middle;
-            }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: #838078;
+            text-align: left;
         }
 
-        &.beslutning {
-            border-right: 5px solid @colorLightBlue;
-
-            &:before {
-                content: '';
-                width: 40px;
-                height: 24px;
-                background: url(../images/ikoner/draape_beslutning_tall.png) no-repeat;
-                display: inline-block;
-                vertical-align: middle;
-            }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: #222838078;
+            text-align: left;
         }
 
-        &.implementering {
-            border-right: 5px solid #df9922;
-
-            &:before {
-                content: '';
-                width: 40px;
-                height: 24px;
-                background: url(../images/ikoner/draape_implementering_tall.png) no-repeat;
-                display: inline-block;
-                vertical-align: middle;
-            }
+        &:-ms-input-placeholder {
+            color: #838078;
+            text-align: left;
         }
     }
 
-    h2 {
-        margin: 0;
-        color: #c63629;
-        border-bottom: 3px dotted #c63629;
-        padding-bottom: 5px;
-        display: inline-block;
-        width: 90%;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    p {
-        color: #838078;
-    }
-
-    &:hover {
-        text-decoration: none;
-        box-shadow: @colorMediumBlue 0 0 0 2px;
-
-        h2 {
-            text-decoration: none;
-        }
-    }
-}
-
-.drops {
-    float: right;
-    padding: 5px;
-}
-
-.borderbox {
-    padding: 10px;
-    border: 1px solid #222;
-}
-
-@media only screen and (max-width: 599px) {
     .searchform {
-        input {
-            width: 84%;
-        }
-    }
-
-    .resultnumber {
-        margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width: 899px) {
-    .drops {
-        margin-top: 45px;
-        float: none;
-    }
-
-    .refinesearch {
-        margin-bottom: 0;
-    }
-
-    .resultnumber {
-        margin-bottom: 20px;
-        margin-top: 0;
-        padding-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    .transportsideknapp {
-        background-position: 96% 95%;
-        padding: 20px 30px 50px 30px;
-        margin-top: 20px;
         width: 100%;
 
+        input {
+            width: 612px;
+        }
+    }
+
+    .resultnumber {
+        color: #838078;
+        text-transform: uppercase;
+
+        .numberofresults, .resultfilter, .sortedby {
+            font-weight: bold;
+        }
+    }
+
+    .transportsideknapp {
+        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px 45px;
+        background-position: 96% 93%;
+        margin-top: 46px;
+        max-width: 685px;
+        display: inline-block;
+        padding: 20px 30px 20px 30px;
+
         .status_information {
-            margin-left: 0;
-            width: 100%;
-            margin-top: 5px;
+            float: left;
+            width: 362px;
+            margin: 11px 0 0 30px;
 
-            p {
-                margin-top: 0;
-
-                &.status_received {
-                    margin-right: 0;
-                }
+            .status_received {
+                margin-right: 30px;
             }
         }
 
         .status {
+            float: left;
+            padding: 0 15px 0 0;
+            width: 200px;
+            margin-top: 20px;
+            font-family: @fontSohoLight;
+            font-size: 20px;
+            color: #222;
+            vertical-align: bottom;
+
+            &.forslag {
+                border-right: 5px solid @colorGreen;
+
+                &:before {
+                    content: '';
+                    width: 40px;
+                    height: 24px;
+                    background: url(../images/ikoner/draape_forslag_tall.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            &.metodevurdering {
+                border-right: 5px solid @colorDarkBlue;
+
+                &:before {
+                    content: '';
+                    width: 40px;
+                    height: 24px;
+                    background: url(../images/ikoner/draape_metodevurdering_tall.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            &.beslutning {
+                border-right: 5px solid @colorLightBlue;
+
+                &:before {
+                    content: '';
+                    width: 40px;
+                    height: 24px;
+                    background: url(../images/ikoner/draape_beslutning_tall.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            &.implementering {
+                border-right: 5px solid #df9922;
+
+                &:before {
+                    content: '';
+                    width: 40px;
+                    height: 24px;
+                    background: url(../images/ikoner/draape_implementering_tall.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        h2 {
+            margin: 0;
+            color: #c63629;
+            border-bottom: 3px dotted #c63629;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 90%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        p {
+            color: #838078;
+        }
+
+        &:hover {
+            text-decoration: none;
+            box-shadow: @colorMediumBlue 0 0 0 2px;
+
+            h2 {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .drops {
+        float: right;
+        padding: 5px;
+    }
+
+    .borderbox {
+        padding: 10px;
+        border: 1px solid #222;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .container, .container-fluid {
+        .searchform {
+            input {
+                width: 84%;
+            }
+        }
+
+        .resultnumber {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .container, .container-fluid {
+        .drops {
+            margin-top: 45px;
+            float: none;
+        }
+
+        .refinesearch {
+            margin-bottom: 0;
+        }
+
+        .resultnumber {
+            margin-bottom: 20px;
+            margin-top: 0;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container, .container-fluid {
+        .transportsideknapp {
+            background-position: 96% 95%;
+            padding: 20px 30px 50px 30px;
+            margin-top: 20px;
             width: 100%;
-            padding: 10px 0 7px 0;
-            margin-top: 5px;
 
-            &.preparation {
-                border-right: none;
-                border-bottom: 4px solid @colorGreen;
+            .status_information {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 5px;
+
+                p {
+                    margin-top: 0;
+
+                    &.status_received {
+                        margin-right: 0;
+                    }
+                }
             }
 
-            &.evaluation {
-                border-right: none;
-                border-bottom: 4px solid @colorDarkBlue;
-            }
+            .status {
+                width: 100%;
+                padding: 10px 0 7px 0;
+                margin-top: 5px;
 
-            &.decided {
-                border-right: none;
-                border-bottom: 4px solid @colorLightBlue;
-            }
+                &.preparation {
+                    border-right: none;
+                    border-bottom: 4px solid @colorGreen;
+                }
 
-            &.cancelled {
-                border-right: none;
-                border-bottom: 4px solid #c63629;
+                &.evaluation {
+                    border-right: none;
+                    border-bottom: 4px solid @colorDarkBlue;
+                }
+
+                &.decided {
+                    border-right: none;
+                    border-bottom: 4px solid @colorLightBlue;
+                }
+
+                &.cancelled {
+                    border-right: none;
+                    border-bottom: 4px solid #c63629;
+                }
             }
         }
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-    .searchform {
-        width: 100%;
+    .container, .container-fluid {
+        .searchform {
+            width: 100%;
 
-        input {
-            width: 91%;
+            input {
+                width: 91%;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 900px) {
-    .aside {
-        top: 470px;
-    }
+    .container, .container-fluid {
+        .aside {
+            top: 470px;
+        }
 
-    .aside.top {
-        top: 0;
-    }
+        .aside.top {
+            top: 0;
+        }
 
-    input {
-        width: 93%;
-    }
+        input {
+            width: 93%;
+        }
 
-    .refinesearch {
-        margin-top: 45px;
+        .refinesearch {
+            margin-top: 45px;
+        }
     }
 }

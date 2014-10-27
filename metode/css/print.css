@@ -2,13 +2,18 @@
   body {
     background: none;
   }
-  .mainsearchform,
-  .calltoaction,
-  .module_print,
-  #footer {
+  .container .mainsearchform,
+  .container-fluid .mainsearchform,
+  .container .calltoaction,
+  .container-fluid .calltoaction,
+  .container .module_print,
+  .container-fluid .module_print,
+  .container #footer,
+  .container-fluid #footer {
     display: none;
   }
-  .aside {
+  .container .aside,
+  .container-fluid .aside {
     margin-top: 50px;
   }
 }

@@ -23,27 +23,31 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.transportsideknapp {
-    background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
-    background-size: 45px;
-    background-position: 96% 93%;
-    margin-top: 15px;
-    max-width: 685px;
-    width: 100%;
-    padding: 20px 30px 30px 30px;
+.container, .container-fluid {
+    .transportsideknapp {
+        background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 93%;
+        margin-top: 15px;
+        max-width: 685px;
+        width: 100%;
+        padding: 20px 30px 30px 30px;
 
-    a {
-        padding-bottom: 0;
-    }
+        a {
+            padding-bottom: 0;
+        }
 
-    p {
-        padding: 0 30px 10px 0;
+        p {
+            padding: 0 30px 10px 0;
+        }
     }
 }
 
 @media only screen and (max-width: 599px) {
-    .transportsideknapp p {
-        padding-left: 0;
-        margin: 10px 0 0 0;
+    .container, .container-fluid {
+        .transportsideknapp p {
+            padding-left: 0;
+            margin: 10px 0 0 0;
+        }
     }
 }

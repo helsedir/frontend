@@ -1,4 +1,5 @@
-﻿.search {
+﻿.container .search,
+.container-fluid .search {
   border: none;
   cursor: pointer;
   color: #222;
@@ -7,40 +8,51 @@
   width: 50%;
   background: #f2f2f2;
 }
-.search::-webkit-input-placeholder {
+.container .search::-webkit-input-placeholder,
+.container-fluid .search::-webkit-input-placeholder {
   color: #838078;
   text-align: left;
 }
-.search:-moz-placeholder {
+.container .search:-moz-placeholder,
+.container-fluid .search:-moz-placeholder {
   /* Firefox 18- */
   color: #838078;
   text-align: left;
 }
-.search::-moz-placeholder {
+.container .search::-moz-placeholder,
+.container-fluid .search::-moz-placeholder {
   /* Firefox 19+ */
   color: #222838078;
   text-align: left;
 }
-.search:-ms-input-placeholder {
+.container .search:-ms-input-placeholder,
+.container-fluid .search:-ms-input-placeholder {
   color: #838078;
   text-align: left;
 }
-.searchform {
+.container .searchform,
+.container-fluid .searchform {
   width: 100%;
 }
-.searchform input {
+.container .searchform input,
+.container-fluid .searchform input {
   width: 612px;
 }
-.resultnumber {
+.container .resultnumber,
+.container-fluid .resultnumber {
   color: #838078;
   text-transform: uppercase;
 }
-.resultnumber .numberofresults,
-.resultnumber .resultfilter,
-.resultnumber .sortedby {
+.container .resultnumber .numberofresults,
+.container-fluid .resultnumber .numberofresults,
+.container .resultnumber .resultfilter,
+.container-fluid .resultnumber .resultfilter,
+.container .resultnumber .sortedby,
+.container-fluid .resultnumber .sortedby {
   font-weight: bold;
 }
-.transportsideknapp {
+.container .transportsideknapp,
+.container-fluid .transportsideknapp {
   background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px 45px;
   background-position: 96% 93%;
@@ -49,15 +61,18 @@
   display: inline-block;
   padding: 20px 30px 20px 30px;
 }
-.transportsideknapp .status_information {
+.container .transportsideknapp .status_information,
+.container-fluid .transportsideknapp .status_information {
   float: left;
   width: 362px;
   margin: 11px 0 0 30px;
 }
-.transportsideknapp .status_information .status_received {
+.container .transportsideknapp .status_information .status_received,
+.container-fluid .transportsideknapp .status_information .status_received {
   margin-right: 30px;
 }
-.transportsideknapp .status {
+.container .transportsideknapp .status,
+.container-fluid .transportsideknapp .status {
   float: left;
   padding: 0 15px 0 0;
   width: 200px;
@@ -67,10 +82,12 @@
   color: #222;
   vertical-align: bottom;
 }
-.transportsideknapp .status.forslag {
+.container .transportsideknapp .status.forslag,
+.container-fluid .transportsideknapp .status.forslag {
   border-right: 5px solid #a1bf37;
 }
-.transportsideknapp .status.forslag:before {
+.container .transportsideknapp .status.forslag:before,
+.container-fluid .transportsideknapp .status.forslag:before {
   content: '';
   width: 40px;
   height: 24px;
@@ -78,10 +95,12 @@
   display: inline-block;
   vertical-align: middle;
 }
-.transportsideknapp .status.metodevurdering {
+.container .transportsideknapp .status.metodevurdering,
+.container-fluid .transportsideknapp .status.metodevurdering {
   border-right: 5px solid #004e66;
 }
-.transportsideknapp .status.metodevurdering:before {
+.container .transportsideknapp .status.metodevurdering:before,
+.container-fluid .transportsideknapp .status.metodevurdering:before {
   content: '';
   width: 40px;
   height: 24px;
@@ -89,10 +108,12 @@
   display: inline-block;
   vertical-align: middle;
 }
-.transportsideknapp .status.beslutning {
+.container .transportsideknapp .status.beslutning,
+.container-fluid .transportsideknapp .status.beslutning {
   border-right: 5px solid #6cb4b5;
 }
-.transportsideknapp .status.beslutning:before {
+.container .transportsideknapp .status.beslutning:before,
+.container-fluid .transportsideknapp .status.beslutning:before {
   content: '';
   width: 40px;
   height: 24px;
@@ -100,10 +121,12 @@
   display: inline-block;
   vertical-align: middle;
 }
-.transportsideknapp .status.implementering {
+.container .transportsideknapp .status.implementering,
+.container-fluid .transportsideknapp .status.implementering {
   border-right: 5px solid #df9922;
 }
-.transportsideknapp .status.implementering:before {
+.container .transportsideknapp .status.implementering:before,
+.container-fluid .transportsideknapp .status.implementering:before {
   content: '';
   width: 40px;
   height: 24px;
@@ -111,7 +134,8 @@
   display: inline-block;
   vertical-align: middle;
 }
-.transportsideknapp h2 {
+.container .transportsideknapp h2,
+.container-fluid .transportsideknapp h2 {
   margin: 0;
   color: #c63629;
   border-bottom: 3px dotted #c63629;
@@ -119,108 +143,134 @@
   display: inline-block;
   width: 90%;
 }
-.transportsideknapp h2:hover {
+.container .transportsideknapp h2:hover,
+.container-fluid .transportsideknapp h2:hover {
   text-decoration: none;
 }
-.transportsideknapp p {
+.container .transportsideknapp p,
+.container-fluid .transportsideknapp p {
   color: #838078;
 }
-.transportsideknapp:hover {
+.container .transportsideknapp:hover,
+.container-fluid .transportsideknapp:hover {
   text-decoration: none;
   box-shadow: #0093a7 0 0 0 2px;
 }
-.transportsideknapp:hover h2 {
+.container .transportsideknapp:hover h2,
+.container-fluid .transportsideknapp:hover h2 {
   text-decoration: none;
 }
-.drops {
+.container .drops,
+.container-fluid .drops {
   float: right;
   padding: 5px;
 }
-.borderbox {
+.container .borderbox,
+.container-fluid .borderbox {
   padding: 10px;
   border: 1px solid #222;
 }
 @media only screen and (max-width: 599px) {
-  .searchform input {
+  .container .searchform input,
+  .container-fluid .searchform input {
     width: 84%;
   }
-  .resultnumber {
+  .container .resultnumber,
+  .container-fluid .resultnumber {
     margin-top: 25px;
   }
 }
 @media only screen and (max-width: 899px) {
-  .drops {
+  .container .drops,
+  .container-fluid .drops {
     margin-top: 45px;
     float: none;
   }
-  .refinesearch {
+  .container .refinesearch,
+  .container-fluid .refinesearch {
     margin-bottom: 0;
   }
-  .resultnumber {
+  .container .resultnumber,
+  .container-fluid .resultnumber {
     margin-bottom: 20px;
     margin-top: 0;
     padding-top: 10px;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .transportsideknapp {
+  .container .transportsideknapp,
+  .container-fluid .transportsideknapp {
     background-position: 96% 95%;
     padding: 20px 30px 50px 30px;
     margin-top: 20px;
     width: 100%;
   }
-  .transportsideknapp .status_information {
+  .container .transportsideknapp .status_information,
+  .container-fluid .transportsideknapp .status_information {
     margin-left: 0;
     width: 100%;
     margin-top: 5px;
   }
-  .transportsideknapp .status_information p {
+  .container .transportsideknapp .status_information p,
+  .container-fluid .transportsideknapp .status_information p {
     margin-top: 0;
   }
-  .transportsideknapp .status_information p.status_received {
+  .container .transportsideknapp .status_information p.status_received,
+  .container-fluid .transportsideknapp .status_information p.status_received {
     margin-right: 0;
   }
-  .transportsideknapp .status {
+  .container .transportsideknapp .status,
+  .container-fluid .transportsideknapp .status {
     width: 100%;
     padding: 10px 0 7px 0;
     margin-top: 5px;
   }
-  .transportsideknapp .status.preparation {
+  .container .transportsideknapp .status.preparation,
+  .container-fluid .transportsideknapp .status.preparation {
     border-right: none;
     border-bottom: 4px solid #a1bf37;
   }
-  .transportsideknapp .status.evaluation {
+  .container .transportsideknapp .status.evaluation,
+  .container-fluid .transportsideknapp .status.evaluation {
     border-right: none;
     border-bottom: 4px solid #004e66;
   }
-  .transportsideknapp .status.decided {
+  .container .transportsideknapp .status.decided,
+  .container-fluid .transportsideknapp .status.decided {
     border-right: none;
     border-bottom: 4px solid #6cb4b5;
   }
-  .transportsideknapp .status.cancelled {
+  .container .transportsideknapp .status.cancelled,
+  .container-fluid .transportsideknapp .status.cancelled {
     border-right: none;
     border-bottom: 4px solid #c63629;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-  .searchform {
+  .container .searchform,
+  .container-fluid .searchform {
     width: 100%;
   }
-  .searchform input {
+  .container .searchform input,
+  .container-fluid .searchform input {
     width: 91%;
   }
 }
 @media only screen and (min-width: 900px) {
-  .aside {
+  .container .aside,
+  .container-fluid .aside {
     top: 470px;
   }
-  .aside.top {
+  .container .aside.top,
+  .container-fluid .aside.top {
     top: 0;
   }
-  input {
+  .container input,
+  .container-fluid input {
     width: 93%;
   }
-  .refinesearch {
+  .container .refinesearch,
+  .container-fluid .refinesearch {
     margin-top: 45px;
   }
 }

@@ -1023,7 +1023,7 @@ body.ms-backgroundImage {
 }
 .container .module.module_related .illustration,
 .container-fluid .module.module_related .illustration {
-  display: blockmo;
+  display: block;
 }
 .container .module.module_related .internal-link.arrow_right,
 .container-fluid .module.module_related .internal-link.arrow_right {

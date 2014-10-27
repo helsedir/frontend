@@ -1,4 +1,5 @@
-﻿.transportsideknapp {
+﻿.container .transportsideknapp,
+.container-fluid .transportsideknapp {
   background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
   background-size: 45px;
   background-position: 96% 93%;
@@ -7,14 +8,17 @@
   width: 100%;
   padding: 20px 30px 30px 30px;
 }
-.transportsideknapp a {
+.container .transportsideknapp a,
+.container-fluid .transportsideknapp a {
   padding-bottom: 0;
 }
-.transportsideknapp p {
+.container .transportsideknapp p,
+.container-fluid .transportsideknapp p {
   padding: 0 30px 10px 0;
 }
 @media only screen and (max-width: 599px) {
-  .transportsideknapp p {
+  .container .transportsideknapp p,
+  .container-fluid .transportsideknapp p {
     padding-left: 0;
     margin: 10px 0 0 0;
   }

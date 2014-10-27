@@ -22,12 +22,7 @@
             });
 
             informationicon.removeClass('selected');
-            if ($(this).siblings('.method_description')) {
-                informationicon.text('Vis forklaring');
-            }
-            else {
-                informationicon.text('i');
-            }
+            informationicon.text('i');
         }
     });
 

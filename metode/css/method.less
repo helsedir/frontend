@@ -23,385 +23,393 @@
 @colorGreen: #a1bf37;
 @colorGreenHover: #748f29;
 
-.wrapper {
-    position: relative;
-
-    .method_status, .method_description {
-        background: white url(../images/placeholder.png);
-        background-position: 10px 14px;
-        background-repeat: no-repeat;
-        border-left: 6px solid @colorGreen;
-        margin-top: 30px;
-        padding: 20px 0 60px 0;
+.container, .container-fluid {
+    .wrapper {
         position: relative;
 
-        h2 {
-            margin: 0 0 20px 30px;
-        }
+        .method_status, .method_description {
+            background: white url(../images/placeholder.png);
+            background-position: 10px 14px;
+            background-repeat: no-repeat;
+            border-left: 6px solid @colorGreen;
+            margin-top: 30px;
+            padding: 20px 0 60px 0;
+            position: relative;
 
-        &.blur {
-            background: @colorLightGray2;
-        }
+            h2 {
+                margin: 0 0 20px 30px;
+            }
 
-        p {
-            margin-left: 30px;
+            &.blur {
+                background: @colorLightGray2;
+            }
 
-            &.text {
-                margin-top: 20px;
+            p {
+                margin-left: 30px;
+
+                &.text {
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            h3 {
+                margin: 40px 0 10px 30px;
+            }
+
+            &.beslutning {
+                border-left: 6px solid @colorLightBlue;
+            }
+
+            &.metodevurdering {
+                border-left: 6px solid @colorDarkBlue;
+            }
+
+            &.implementering {
+                border-left: 6px solid @colorOrange;
+            }
+
+            .method_attribute_label {
+                width: 30%;
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-top: 3px;
                 font-weight: bold;
+                font-size: 18px;
+                font-family: @fontCalibri;
+                line-height: 22px;
+            }
+
+            .method_attribute {
+                margin-top: 0;
+                margin-bottom: 0;
+                display: inline-block;
+                width: 58%;
+                font-size: 18px;
+                font-family: @fontCalibri;
+                line-height: 22px;
+            }
+
+            &.has-hidden-content {
+                cursor: pointer;
+
+                h2 {
+                    &:before, &.accordion:before {
+                        content: " ";
+                        position: absolute;
+                        right: 40px;
+                        bottom: 15px;
+                        padding: 6px 9px;
+                        height: 25px;
+                        width: 25px;
+                        background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                        -webkit-transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                        transition: all 0.6s;
+                    }
+                }
+
+                h3.accordion:before {
+                    font-size: 30px;
+                }
+            }
+
+            &.has-visible-content {
+                cursor: pointer;
+
+                h2 {
+                    &:before, &.accordion:before {
+                        content: " ";
+                        position: absolute;
+                        right: 40px;
+                        bottom: 15px;
+                        padding: 6px 9px;
+                        height: 25px;
+                        width: 25px;
+                        background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+                        -webkit-transform: rotate(-90deg);
+                        -moz-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                        transition: all 0.6s;
+                    }
+
+                    &:focus {
+                        outline: 5px auto @colorMediumBlue;
+                        outline-offset: -2px;
+                    }
+                }
+
+                h3.accordion:before {
+                    font-size: 30px;
+                }
+            }
+
+            .method_warning {
+                color: white;
+                margin-left: 30px;
+
+                .exclamation {
+                    font-family: 'Calibri';
+                    font-size: 30px;
+                    float: left;
+                    background: #c63629;
+                    padding: 5px 15px;
+                    margin: 7px 67px 37px 51px;
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                p {
+                    color: #222;
+                    width: 556px;
+                }
+            }
+
+            .more_information {
+                width: 93%;
+            }
+
+            &.passive {
+                border-left: 6px solid #838078;
+                background: #dedddb;
+                color: #222;
+                padding: 13px 0;
+
+                h2, p {
+                    color: #222;
+                }
+
+                h2:before {
+                    display: none;
+                }
+            }
+
+            .method_metadata {
+                padding-right: 30px;
             }
         }
 
-        h3 {
-            margin: 40px 0 10px 30px;
+        .method_description {
+            padding-bottom: 20px;
+            border-left: 6px solid #004e66;
+
+            button {
+                margin: 20px 30px 0 30px;
+                float: left;
+            }
+
+            .module_message.date_small {
+                float: left;
+                max-width: none;
+                width: auto;
+                border: none;
+            }
+
+            .method_metadata {
+                p, .text {
+                    padding-right: 35px;
+                }
+            }
         }
 
-        &.beslutning {
-            border-left: 6px solid @colorLightBlue;
-        }
-
-        &.metodevurdering {
-            border-left: 6px solid @colorDarkBlue;
-        }
-
-        &.implementering {
-            border-left: 6px solid @colorOrange;
-        }
-
-        .method_attribute_label {
-            width: 30%;
-            float: left;
-            margin-right: 10px;
-            margin-left: 30px;
-            margin-top: 3px;
-            font-weight: bold;
-            font-size: 18px;
-            font-family: @fontCalibri;
-            line-height: 22px;
-        }
-
-        .method_attribute {
-            margin-top: 0;
-            margin-bottom: 0;
-            display: inline-block;
-            width: 58%;
-            font-size: 18px;
-            font-family: @fontCalibri;
-            line-height: 22px;
-        }
-
-        &.has-hidden-content {
+        .informationicon {
+            position: absolute;
+            right: 45px;
+            top: 13px;
+            font-size: 31px;
+            /* text-decoration: underline; */
             cursor: pointer;
+            color: #0093a7;
+            line-height: 20px;
+            /* padding: 5px 12px; */
+            display: block;
+            height: 40px;
+            width: 20px;
+            padding: 16px;
 
-            h2 {
-                &:before, &.accordion:before {
-                    content: " ";
-                    position: absolute;
-                    right: 40px;
-                    bottom: 15px;
-                    padding: 6px 9px;
-                    height: 25px;
-                    width: 25px;
-                    background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                    -webkit-transform: rotate(90deg);
-                    -moz-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    -o-transform: rotate(90deg);
-                    transform: rotate(90deg);
-                    transition: all 0.6s;
-                }
+            &.selected {
+                background: url(../images/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
+                background-size: 16px;
+                background-position: 12px 3px;
+                top: 31px;
+                right: 44px;
+                padding: 16px;
             }
 
-            h3.accordion:before {
-                font-size: 30px;
+            &.explanation {
+                font-size: 18px;
+                width: 100px;
+                text-decoration: underline;
+                padding: 0;
+                top: 30px;
+
+                &.selected {
+                    padding: 0;
+                    right: -30px;
+                }
             }
         }
 
-        &.has-visible-content {
-            cursor: pointer;
+        .method_evaluation {
+            margin-top: 10px;
+            padding: 30px 10px 20px 30px;
+            background: #f2f2f2;
 
-            h2 {
-                &:before, &.accordion:before {
-                    content: " ";
-                    position: absolute;
-                    right: 40px;
-                    bottom: 15px;
-                    padding: 6px 9px;
-                    height: 25px;
-                    width: 25px;
-                    background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-                    -webkit-transform: rotate(-90deg);
-                    -moz-transform: rotate(-90deg);
-                    -ms-transform: rotate(-90deg);
-                    -o-transform: rotate(-90deg);
-                    transform: rotate(-90deg);
-                    transition: all 0.6s;
-                }
-
-                &:focus {
-                    outline: 5px auto @colorMediumBlue;
-                    outline-offset: -2px;
-                }
+            a {
+                color: #222;
             }
 
-            h3.accordion:before {
-                font-size: 30px;
-            }
-        }
-
-        .method_warning {
-            color: white;
-            margin-left: 30px;
-
-            .exclamation {
+            .icon {
                 font-family: 'Calibri';
                 font-size: 30px;
                 float: left;
-                background: #c63629;
+                color: white;
+                background: #838078;
                 padding: 5px 15px;
-                margin: 7px 67px 37px 51px;
+                margin: 7px 67px 37px 31px;
                 display: block;
                 height: 40px;
                 width: 40px;
             }
 
-            p {
-                color: #222;
-                width: 556px;
-            }
-        }
+            .information {
+                float: left;
+                width: 68%;
+                margin-bottom: 15px;
 
-        .more_information {
-            width: 93%;
-        }
-
-        &.passive {
-            border-left: 6px solid #838078;
-            background: #dedddb;
-            color: #222;
-            padding: 13px 0;
-
-            h2, p {
-                color: #222;
-            }
-
-            h2:before {
-                display: none;
-            }
-        }
-
-        .method_metadata {
-            padding-right: 30px;
-        }
-    }
-
-    .method_description {
-        padding-bottom: 20px;
-        border-left: 6px solid #004e66;
-
-        button {
-            margin: 20px 30px 0 30px;
-            float: left;
-        }
-
-        .module_message.date_small {
-            float: left;
-            max-width: none;
-            width: auto;
-            border: none;
-        }
-
-        .method_metadata {
-            p, .text {
-                padding-right: 35px;
-            }
-        }
-    }
-
-    .informationicon {
-        position: absolute;
-        right: 45px;
-        top: 13px;
-        font-size: 31px;
-        /* text-decoration: underline; */
-        cursor: pointer;
-        color: #0093a7;
-        line-height: 20px;
-        /* padding: 5px 12px; */
-        display: block;
-        height: 40px;
-        width: 20px;
-        padding: 16px;
-
-        &.selected {
-            background: url(../images/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
-            background-size: 16px;
-            background-position: 12px 3px;
-            top: 31px;
-            right: 44px;
-            padding: 16px;
-        }
-
-        &.explanation {
-            font-size: 18px;
-            width: 100px;
-            text-decoration: underline;
-            padding: 0;
-            top: 30px;
-
-            &.selected {
-                padding: 0;
-                right: -30px;
-            }
-        }
-    }
-
-    .method_evaluation {
-        margin-top: 10px;
-        padding: 30px 10px 20px 30px;
-        background: #f2f2f2;
-
-        a {
-            color: #222;
-        }
-
-        .icon {
-            font-family: 'Calibri';
-            font-size: 30px;
-            float: left;
-            color: white;
-            background: #838078;
-            padding: 5px 15px;
-            margin: 7px 67px 37px 31px;
-            display: block;
-            height: 40px;
-            width: 40px;
-        }
-
-        .information {
-            float: left;
-            width: 68%;
-            margin-bottom: 15px;
-
-            p:first-of-type {
-                margin-top: 0;
+                p:first-of-type {
+                    margin-top: 0;
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width: 1199px) {
-    .wrapper .method_status .method_attribute_label, .wrapper .method_description .method_attribute_label {
-        width: 38%;
-    }
+    .container, .container-fluid {
+        .wrapper .method_status .method_attribute_label, .wrapper .method_description .method_attribute_label {
+            width: 38%;
+        }
 
-    .wrapper .method_status .method_attribute, .wrapper .method_description .method_attribute {
-        width: 46%;
+        .wrapper .method_status .method_attribute, .wrapper .method_description .method_attribute {
+            width: 46%;
+        }
     }
 }
 
 @media only screen and (max-width: 599px) {
-    h1 {
-        font-size: 27px;
-        line-height: 33px;
-    }
-
-    .wrapper {
-        .informationicon {
-            right: 15px;
-
-            &.selected {
-                right: 15px;
-                top: 25px;
-            }
+    .container, .container-fluid {
+        h1 {
+            font-size: 27px;
+            line-height: 33px;
         }
 
-        .method_status, .method_description {
-            padding-left: 0;
-            margin-top: 22px;
+        .wrapper {
+            .informationicon {
+                right: 15px;
 
-            .method_attribute_label {
-                width: 100%;
-                margin-left: 15px;
+                &.selected {
+                    right: 15px;
+                    top: 25px;
+                }
             }
 
-            .method_attribute {
-                margin-left: 15px;
-                width: 100%;
-            }
+            .method_status, .method_description {
+                padding-left: 0;
+                margin-top: 22px;
 
-            h2 {
-                margin-left: 15px;
-                font-size: 24px;
-                line-height: 30px;
-            }
+                .method_attribute_label {
+                    width: 100%;
+                    margin-left: 15px;
+                }
 
-            .method_warning {
-                margin-left: 15px;
+                .method_attribute {
+                    margin-left: 15px;
+                    width: 100%;
+                }
 
-                .exclamation {
-                    margin-left: 75px;
-                    margin-right: 20px;
+                h2 {
+                    margin-left: 15px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                .method_warning {
+                    margin-left: 15px;
+
+                    .exclamation {
+                        margin-left: 75px;
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        width: 93%;
+                    }
                 }
 
                 p {
-                    width: 93%;
+                    margin-top: 30px;
+                    margin-left: 15px;
                 }
             }
-
-            p {
-                margin-top: 30px;
-                margin-left: 15px;
-            }
         }
-    }
 
-    .wrapper .method_status.has-hidden-content h2:before, .wrapper .method_status.has-hidden-content .accordion:before {
-        right: 15px;
-    }
+        .wrapper .method_status.has-hidden-content h2:before, .wrapper .method_status.has-hidden-content .accordion:before {
+            right: 15px;
+        }
 
-    .wrapper .method_description.has-hidden-content h2:before, .wrapper .method_description.has-hidden-content .accordion:before {
-        right: 15px;
-    }
+        .wrapper .method_description.has-hidden-content h2:before, .wrapper .method_description.has-hidden-content .accordion:before {
+            right: 15px;
+        }
 
-    .wrapper .method_status.has-visible-content h2:before, .wrapper .method_status.has-visible-content .accordion:before {
-        right: 15px;
-    }
+        .wrapper .method_status.has-visible-content h2:before, .wrapper .method_status.has-visible-content .accordion:before {
+            right: 15px;
+        }
 
-    .wrapper .method_description.has-visible-content h2:before, .wrapper .method_description.has-visible-content .accordion:before {
-        right: 15px;
-    }
+        .wrapper .method_description.has-visible-content h2:before, .wrapper .method_description.has-visible-content .accordion:before {
+            right: 15px;
+        }
 
-    .wrapper .method_evaluation .icon {
-        display: none;
-    }
+        .wrapper .method_evaluation .icon {
+            display: none;
+        }
 
-    .wrapper .method_evaluation .information {
-        float: left;
-        width: 100%;
-    }
+        .wrapper .method_evaluation .information {
+            float: left;
+            width: 100%;
+        }
 
-    .wrapper .method_evaluation {
-        padding: 0 0 10px 10px;
-        margin-bottom: 10px;
+        .wrapper .method_evaluation {
+            padding: 0 0 10px 10px;
+            margin-bottom: 10px;
+        }
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width:899px) {
-    .wrapper {
-        .method_status, .method_description {
-            p {
-                margin-top: 30px;
+    .container, .container-fluid {
+        .wrapper {
+            .method_status, .method_description {
+                p {
+                    margin-top: 30px;
+                }
             }
-        }
 
-        .informationicon {
-            right: 47px;
-            top: 4px;
+            .informationicon {
+                right: 47px;
+                top: 4px;
 
-            &.selected {
-                right: 45px;
-                top: 20px;
+                &.selected {
+                    right: 45px;
+                    top: 20px;
+                }
             }
         }
     }

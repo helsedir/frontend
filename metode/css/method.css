@@ -1,8 +1,11 @@
-﻿.wrapper {
+﻿.container .wrapper,
+.container-fluid .wrapper {
   position: relative;
 }
-.wrapper .method_status,
-.wrapper .method_description {
+.container .wrapper .method_status,
+.container-fluid .wrapper .method_status,
+.container .wrapper .method_description,
+.container-fluid .wrapper .method_description {
   background: #ffffff url(../images/placeholder.png);
   background-position: 10px 14px;
   background-repeat: no-repeat;
@@ -11,41 +14,59 @@
   padding: 20px 0 60px 0;
   position: relative;
 }
-.wrapper .method_status h2,
-.wrapper .method_description h2 {
+.container .wrapper .method_status h2,
+.container-fluid .wrapper .method_status h2,
+.container .wrapper .method_description h2,
+.container-fluid .wrapper .method_description h2 {
   margin: 0 0 20px 30px;
 }
-.wrapper .method_status.blur,
-.wrapper .method_description.blur {
+.container .wrapper .method_status.blur,
+.container-fluid .wrapper .method_status.blur,
+.container .wrapper .method_description.blur,
+.container-fluid .wrapper .method_description.blur {
   background: #dbdcdd;
 }
-.wrapper .method_status p,
-.wrapper .method_description p {
+.container .wrapper .method_status p,
+.container-fluid .wrapper .method_status p,
+.container .wrapper .method_description p,
+.container-fluid .wrapper .method_description p {
   margin-left: 30px;
 }
-.wrapper .method_status p.text,
-.wrapper .method_description p.text {
+.container .wrapper .method_status p.text,
+.container-fluid .wrapper .method_status p.text,
+.container .wrapper .method_description p.text,
+.container-fluid .wrapper .method_description p.text {
   margin-top: 20px;
   font-weight: bold;
 }
-.wrapper .method_status h3,
-.wrapper .method_description h3 {
+.container .wrapper .method_status h3,
+.container-fluid .wrapper .method_status h3,
+.container .wrapper .method_description h3,
+.container-fluid .wrapper .method_description h3 {
   margin: 40px 0 10px 30px;
 }
-.wrapper .method_status.beslutning,
-.wrapper .method_description.beslutning {
+.container .wrapper .method_status.beslutning,
+.container-fluid .wrapper .method_status.beslutning,
+.container .wrapper .method_description.beslutning,
+.container-fluid .wrapper .method_description.beslutning {
   border-left: 6px solid #6cb4b5;
 }
-.wrapper .method_status.metodevurdering,
-.wrapper .method_description.metodevurdering {
+.container .wrapper .method_status.metodevurdering,
+.container-fluid .wrapper .method_status.metodevurdering,
+.container .wrapper .method_description.metodevurdering,
+.container-fluid .wrapper .method_description.metodevurdering {
   border-left: 6px solid #004e66;
 }
-.wrapper .method_status.implementering,
-.wrapper .method_description.implementering {
+.container .wrapper .method_status.implementering,
+.container-fluid .wrapper .method_status.implementering,
+.container .wrapper .method_description.implementering,
+.container-fluid .wrapper .method_description.implementering {
   border-left: 6px solid #df9922;
 }
-.wrapper .method_status .method_attribute_label,
-.wrapper .method_description .method_attribute_label {
+.container .wrapper .method_status .method_attribute_label,
+.container-fluid .wrapper .method_status .method_attribute_label,
+.container .wrapper .method_description .method_attribute_label,
+.container-fluid .wrapper .method_description .method_attribute_label {
   width: 30%;
   float: left;
   margin-right: 10px;
@@ -56,8 +77,10 @@
   font-family: 'Calibri';
   line-height: 22px;
 }
-.wrapper .method_status .method_attribute,
-.wrapper .method_description .method_attribute {
+.container .wrapper .method_status .method_attribute,
+.container-fluid .wrapper .method_status .method_attribute,
+.container .wrapper .method_description .method_attribute,
+.container-fluid .wrapper .method_description .method_attribute {
   margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
@@ -66,14 +89,20 @@
   font-family: 'Calibri';
   line-height: 22px;
 }
-.wrapper .method_status.has-hidden-content,
-.wrapper .method_description.has-hidden-content {
+.container .wrapper .method_status.has-hidden-content,
+.container-fluid .wrapper .method_status.has-hidden-content,
+.container .wrapper .method_description.has-hidden-content,
+.container-fluid .wrapper .method_description.has-hidden-content {
   cursor: pointer;
 }
-.wrapper .method_status.has-hidden-content h2:before,
-.wrapper .method_description.has-hidden-content h2:before,
-.wrapper .method_status.has-hidden-content h2.accordion:before,
-.wrapper .method_description.has-hidden-content h2.accordion:before {
+.container .wrapper .method_status.has-hidden-content h2:before,
+.container-fluid .wrapper .method_status.has-hidden-content h2:before,
+.container .wrapper .method_description.has-hidden-content h2:before,
+.container-fluid .wrapper .method_description.has-hidden-content h2:before,
+.container .wrapper .method_status.has-hidden-content h2.accordion:before,
+.container-fluid .wrapper .method_status.has-hidden-content h2.accordion:before,
+.container .wrapper .method_description.has-hidden-content h2.accordion:before,
+.container-fluid .wrapper .method_description.has-hidden-content h2.accordion:before {
   content: " ";
   position: absolute;
   right: 40px;
@@ -89,18 +118,26 @@
   transform: rotate(90deg);
   transition: all 0.6s;
 }
-.wrapper .method_status.has-hidden-content h3.accordion:before,
-.wrapper .method_description.has-hidden-content h3.accordion:before {
+.container .wrapper .method_status.has-hidden-content h3.accordion:before,
+.container-fluid .wrapper .method_status.has-hidden-content h3.accordion:before,
+.container .wrapper .method_description.has-hidden-content h3.accordion:before,
+.container-fluid .wrapper .method_description.has-hidden-content h3.accordion:before {
   font-size: 30px;
 }
-.wrapper .method_status.has-visible-content,
-.wrapper .method_description.has-visible-content {
+.container .wrapper .method_status.has-visible-content,
+.container-fluid .wrapper .method_status.has-visible-content,
+.container .wrapper .method_description.has-visible-content,
+.container-fluid .wrapper .method_description.has-visible-content {
   cursor: pointer;
 }
-.wrapper .method_status.has-visible-content h2:before,
-.wrapper .method_description.has-visible-content h2:before,
-.wrapper .method_status.has-visible-content h2.accordion:before,
-.wrapper .method_description.has-visible-content h2.accordion:before {
+.container .wrapper .method_status.has-visible-content h2:before,
+.container-fluid .wrapper .method_status.has-visible-content h2:before,
+.container .wrapper .method_description.has-visible-content h2:before,
+.container-fluid .wrapper .method_description.has-visible-content h2:before,
+.container .wrapper .method_status.has-visible-content h2.accordion:before,
+.container-fluid .wrapper .method_status.has-visible-content h2.accordion:before,
+.container .wrapper .method_description.has-visible-content h2.accordion:before,
+.container-fluid .wrapper .method_description.has-visible-content h2.accordion:before {
   content: " ";
   position: absolute;
   right: 40px;
@@ -116,22 +153,30 @@
   transform: rotate(-90deg);
   transition: all 0.6s;
 }
-.wrapper .method_status.has-visible-content h2:focus,
-.wrapper .method_description.has-visible-content h2:focus {
+.container .wrapper .method_status.has-visible-content h2:focus,
+.container-fluid .wrapper .method_status.has-visible-content h2:focus,
+.container .wrapper .method_description.has-visible-content h2:focus,
+.container-fluid .wrapper .method_description.has-visible-content h2:focus {
   outline: 5px auto #0093a7;
   outline-offset: -2px;
 }
-.wrapper .method_status.has-visible-content h3.accordion:before,
-.wrapper .method_description.has-visible-content h3.accordion:before {
+.container .wrapper .method_status.has-visible-content h3.accordion:before,
+.container-fluid .wrapper .method_status.has-visible-content h3.accordion:before,
+.container .wrapper .method_description.has-visible-content h3.accordion:before,
+.container-fluid .wrapper .method_description.has-visible-content h3.accordion:before {
   font-size: 30px;
 }
-.wrapper .method_status .method_warning,
-.wrapper .method_description .method_warning {
+.container .wrapper .method_status .method_warning,
+.container-fluid .wrapper .method_status .method_warning,
+.container .wrapper .method_description .method_warning,
+.container-fluid .wrapper .method_description .method_warning {
   color: white;
   margin-left: 30px;
 }
-.wrapper .method_status .method_warning .exclamation,
-.wrapper .method_description .method_warning .exclamation {
+.container .wrapper .method_status .method_warning .exclamation,
+.container-fluid .wrapper .method_status .method_warning .exclamation,
+.container .wrapper .method_description .method_warning .exclamation,
+.container-fluid .wrapper .method_description .method_warning .exclamation {
   font-family: 'Calibri';
   font-size: 30px;
   float: left;
@@ -142,55 +187,75 @@
   height: 40px;
   width: 40px;
 }
-.wrapper .method_status .method_warning p,
-.wrapper .method_description .method_warning p {
+.container .wrapper .method_status .method_warning p,
+.container-fluid .wrapper .method_status .method_warning p,
+.container .wrapper .method_description .method_warning p,
+.container-fluid .wrapper .method_description .method_warning p {
   color: #222;
   width: 556px;
 }
-.wrapper .method_status .more_information,
-.wrapper .method_description .more_information {
+.container .wrapper .method_status .more_information,
+.container-fluid .wrapper .method_status .more_information,
+.container .wrapper .method_description .more_information,
+.container-fluid .wrapper .method_description .more_information {
   width: 93%;
 }
-.wrapper .method_status.passive,
-.wrapper .method_description.passive {
+.container .wrapper .method_status.passive,
+.container-fluid .wrapper .method_status.passive,
+.container .wrapper .method_description.passive,
+.container-fluid .wrapper .method_description.passive {
   border-left: 6px solid #838078;
   background: #dedddb;
   color: #222;
   padding: 13px 0;
 }
-.wrapper .method_status.passive h2,
-.wrapper .method_description.passive h2,
-.wrapper .method_status.passive p,
-.wrapper .method_description.passive p {
+.container .wrapper .method_status.passive h2,
+.container-fluid .wrapper .method_status.passive h2,
+.container .wrapper .method_description.passive h2,
+.container-fluid .wrapper .method_description.passive h2,
+.container .wrapper .method_status.passive p,
+.container-fluid .wrapper .method_status.passive p,
+.container .wrapper .method_description.passive p,
+.container-fluid .wrapper .method_description.passive p {
   color: #222;
 }
-.wrapper .method_status.passive h2:before,
-.wrapper .method_description.passive h2:before {
+.container .wrapper .method_status.passive h2:before,
+.container-fluid .wrapper .method_status.passive h2:before,
+.container .wrapper .method_description.passive h2:before,
+.container-fluid .wrapper .method_description.passive h2:before {
   display: none;
 }
-.wrapper .method_status .method_metadata,
-.wrapper .method_description .method_metadata {
+.container .wrapper .method_status .method_metadata,
+.container-fluid .wrapper .method_status .method_metadata,
+.container .wrapper .method_description .method_metadata,
+.container-fluid .wrapper .method_description .method_metadata {
   padding-right: 30px;
 }
-.wrapper .method_description {
+.container .wrapper .method_description,
+.container-fluid .wrapper .method_description {
   padding-bottom: 20px;
   border-left: 6px solid #004e66;
 }
-.wrapper .method_description button {
+.container .wrapper .method_description button,
+.container-fluid .wrapper .method_description button {
   margin: 20px 30px 0 30px;
   float: left;
 }
-.wrapper .method_description .module_message.date_small {
+.container .wrapper .method_description .module_message.date_small,
+.container-fluid .wrapper .method_description .module_message.date_small {
   float: left;
   max-width: none;
   width: auto;
   border: none;
 }
-.wrapper .method_description .method_metadata p,
-.wrapper .method_description .method_metadata .text {
+.container .wrapper .method_description .method_metadata p,
+.container-fluid .wrapper .method_description .method_metadata p,
+.container .wrapper .method_description .method_metadata .text,
+.container-fluid .wrapper .method_description .method_metadata .text {
   padding-right: 35px;
 }
-.wrapper .informationicon {
+.container .wrapper .informationicon,
+.container-fluid .wrapper .informationicon {
   position: absolute;
   right: 45px;
   top: 13px;
@@ -205,7 +270,8 @@
   width: 20px;
   padding: 16px;
 }
-.wrapper .informationicon.selected {
+.container .wrapper .informationicon.selected,
+.container-fluid .wrapper .informationicon.selected {
   background: url(../images/ikon_lukk_kryss_mellomblaa.svg) no-repeat;
   background-size: 16px;
   background-position: 12px 3px;
@@ -213,26 +279,31 @@
   right: 44px;
   padding: 16px;
 }
-.wrapper .informationicon.explanation {
+.container .wrapper .informationicon.explanation,
+.container-fluid .wrapper .informationicon.explanation {
   font-size: 18px;
   width: 100px;
   text-decoration: underline;
   padding: 0;
   top: 30px;
 }
-.wrapper .informationicon.explanation.selected {
+.container .wrapper .informationicon.explanation.selected,
+.container-fluid .wrapper .informationicon.explanation.selected {
   padding: 0;
   right: -30px;
 }
-.wrapper .method_evaluation {
+.container .wrapper .method_evaluation,
+.container-fluid .wrapper .method_evaluation {
   margin-top: 10px;
   padding: 30px 10px 20px 30px;
   background: #f2f2f2;
 }
-.wrapper .method_evaluation a {
+.container .wrapper .method_evaluation a,
+.container-fluid .wrapper .method_evaluation a {
   color: #222;
 }
-.wrapper .method_evaluation .icon {
+.container .wrapper .method_evaluation .icon,
+.container-fluid .wrapper .method_evaluation .icon {
   font-family: 'Calibri';
   font-size: 30px;
   float: left;
@@ -244,113 +315,153 @@
   height: 40px;
   width: 40px;
 }
-.wrapper .method_evaluation .information {
+.container .wrapper .method_evaluation .information,
+.container-fluid .wrapper .method_evaluation .information {
   float: left;
   width: 68%;
   margin-bottom: 15px;
 }
-.wrapper .method_evaluation .information p:first-of-type {
+.container .wrapper .method_evaluation .information p:first-of-type,
+.container-fluid .wrapper .method_evaluation .information p:first-of-type {
   margin-top: 0;
 }
 @media only screen and (max-width: 1199px) {
-  .wrapper .method_status .method_attribute_label,
-  .wrapper .method_description .method_attribute_label {
+  .container .wrapper .method_status .method_attribute_label,
+  .container-fluid .wrapper .method_status .method_attribute_label,
+  .container .wrapper .method_description .method_attribute_label,
+  .container-fluid .wrapper .method_description .method_attribute_label {
     width: 38%;
   }
-  .wrapper .method_status .method_attribute,
-  .wrapper .method_description .method_attribute {
+  .container .wrapper .method_status .method_attribute,
+  .container-fluid .wrapper .method_status .method_attribute,
+  .container .wrapper .method_description .method_attribute,
+  .container-fluid .wrapper .method_description .method_attribute {
     width: 46%;
   }
 }
 @media only screen and (max-width: 599px) {
-  h1 {
+  .container h1,
+  .container-fluid h1 {
     font-size: 27px;
     line-height: 33px;
   }
-  .wrapper .informationicon {
+  .container .wrapper .informationicon,
+  .container-fluid .wrapper .informationicon {
     right: 15px;
   }
-  .wrapper .informationicon.selected {
+  .container .wrapper .informationicon.selected,
+  .container-fluid .wrapper .informationicon.selected {
     right: 15px;
     top: 25px;
   }
-  .wrapper .method_status,
-  .wrapper .method_description {
+  .container .wrapper .method_status,
+  .container-fluid .wrapper .method_status,
+  .container .wrapper .method_description,
+  .container-fluid .wrapper .method_description {
     padding-left: 0;
     margin-top: 22px;
   }
-  .wrapper .method_status .method_attribute_label,
-  .wrapper .method_description .method_attribute_label {
+  .container .wrapper .method_status .method_attribute_label,
+  .container-fluid .wrapper .method_status .method_attribute_label,
+  .container .wrapper .method_description .method_attribute_label,
+  .container-fluid .wrapper .method_description .method_attribute_label {
     width: 100%;
     margin-left: 15px;
   }
-  .wrapper .method_status .method_attribute,
-  .wrapper .method_description .method_attribute {
+  .container .wrapper .method_status .method_attribute,
+  .container-fluid .wrapper .method_status .method_attribute,
+  .container .wrapper .method_description .method_attribute,
+  .container-fluid .wrapper .method_description .method_attribute {
     margin-left: 15px;
     width: 100%;
   }
-  .wrapper .method_status h2,
-  .wrapper .method_description h2 {
+  .container .wrapper .method_status h2,
+  .container-fluid .wrapper .method_status h2,
+  .container .wrapper .method_description h2,
+  .container-fluid .wrapper .method_description h2 {
     margin-left: 15px;
     font-size: 24px;
     line-height: 30px;
   }
-  .wrapper .method_status .method_warning,
-  .wrapper .method_description .method_warning {
+  .container .wrapper .method_status .method_warning,
+  .container-fluid .wrapper .method_status .method_warning,
+  .container .wrapper .method_description .method_warning,
+  .container-fluid .wrapper .method_description .method_warning {
     margin-left: 15px;
   }
-  .wrapper .method_status .method_warning .exclamation,
-  .wrapper .method_description .method_warning .exclamation {
+  .container .wrapper .method_status .method_warning .exclamation,
+  .container-fluid .wrapper .method_status .method_warning .exclamation,
+  .container .wrapper .method_description .method_warning .exclamation,
+  .container-fluid .wrapper .method_description .method_warning .exclamation {
     margin-left: 75px;
     margin-right: 20px;
   }
-  .wrapper .method_status .method_warning p,
-  .wrapper .method_description .method_warning p {
+  .container .wrapper .method_status .method_warning p,
+  .container-fluid .wrapper .method_status .method_warning p,
+  .container .wrapper .method_description .method_warning p,
+  .container-fluid .wrapper .method_description .method_warning p {
     width: 93%;
   }
-  .wrapper .method_status p,
-  .wrapper .method_description p {
+  .container .wrapper .method_status p,
+  .container-fluid .wrapper .method_status p,
+  .container .wrapper .method_description p,
+  .container-fluid .wrapper .method_description p {
     margin-top: 30px;
     margin-left: 15px;
   }
-  .wrapper .method_status.has-hidden-content h2:before,
-  .wrapper .method_status.has-hidden-content .accordion:before {
+  .container .wrapper .method_status.has-hidden-content h2:before,
+  .container-fluid .wrapper .method_status.has-hidden-content h2:before,
+  .container .wrapper .method_status.has-hidden-content .accordion:before,
+  .container-fluid .wrapper .method_status.has-hidden-content .accordion:before {
     right: 15px;
   }
-  .wrapper .method_description.has-hidden-content h2:before,
-  .wrapper .method_description.has-hidden-content .accordion:before {
+  .container .wrapper .method_description.has-hidden-content h2:before,
+  .container-fluid .wrapper .method_description.has-hidden-content h2:before,
+  .container .wrapper .method_description.has-hidden-content .accordion:before,
+  .container-fluid .wrapper .method_description.has-hidden-content .accordion:before {
     right: 15px;
   }
-  .wrapper .method_status.has-visible-content h2:before,
-  .wrapper .method_status.has-visible-content .accordion:before {
+  .container .wrapper .method_status.has-visible-content h2:before,
+  .container-fluid .wrapper .method_status.has-visible-content h2:before,
+  .container .wrapper .method_status.has-visible-content .accordion:before,
+  .container-fluid .wrapper .method_status.has-visible-content .accordion:before {
     right: 15px;
   }
-  .wrapper .method_description.has-visible-content h2:before,
-  .wrapper .method_description.has-visible-content .accordion:before {
+  .container .wrapper .method_description.has-visible-content h2:before,
+  .container-fluid .wrapper .method_description.has-visible-content h2:before,
+  .container .wrapper .method_description.has-visible-content .accordion:before,
+  .container-fluid .wrapper .method_description.has-visible-content .accordion:before {
     right: 15px;
   }
-  .wrapper .method_evaluation .icon {
+  .container .wrapper .method_evaluation .icon,
+  .container-fluid .wrapper .method_evaluation .icon {
     display: none;
   }
-  .wrapper .method_evaluation .information {
+  .container .wrapper .method_evaluation .information,
+  .container-fluid .wrapper .method_evaluation .information {
     float: left;
     width: 100%;
   }
-  .wrapper .method_evaluation {
+  .container .wrapper .method_evaluation,
+  .container-fluid .wrapper .method_evaluation {
     padding: 0 0 10px 10px;
     margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
-  .wrapper .method_status p,
-  .wrapper .method_description p {
+  .container .wrapper .method_status p,
+  .container-fluid .wrapper .method_status p,
+  .container .wrapper .method_description p,
+  .container-fluid .wrapper .method_description p {
     margin-top: 30px;
   }
-  .wrapper .informationicon {
+  .container .wrapper .informationicon,
+  .container-fluid .wrapper .informationicon {
     right: 47px;
     top: 4px;
   }
-  .wrapper .informationicon.selected {
+  .container .wrapper .informationicon.selected,
+  .container-fluid .wrapper .informationicon.selected {
     right: 45px;
     top: 20px;
   }

@@ -1,4 +1,5 @@
-﻿h2 {
+﻿.container h2,
+.container-fluid h2 {
   font-weight: normal;
   font-size: 36px;
   font-family: "Soho Gothic W01 Light";
@@ -8,40 +9,39 @@
   padding: 0 0 5px 0;
   border-bottom: 1px solid #aeaba8;
 }
-.container {
-  background: #f2f2f2;
-}
-.frontpagewrapper.white {
-  background: white;
-}
-.frontpagewrapper.white .container {
-  background: white;
-}
-.entrancebuttons {
+.container .entrancebuttons,
+.container-fluid .entrancebuttons {
   margin: 0 auto;
   display: table;
 }
-.entrancebutton {
+.container .entrancebutton,
+.container-fluid .entrancebutton {
   width: 250px;
   height: 230px;
   margin: 30px 60px 0 0;
   float: left;
   position: relative;
 }
-.entrancebutton.menu a {
+.container .entrancebutton.menu a,
+.container-fluid .entrancebutton.menu a {
   background: #0093a7;
 }
-.entrancebutton.menu a:hover {
+.container .entrancebutton.menu a:hover,
+.container-fluid .entrancebutton.menu a:hover {
   background: #01737c;
 }
-.entrancebutton.menu a:focus {
+.container .entrancebutton.menu a:focus,
+.container-fluid .entrancebutton.menu a:focus {
   background: #01737c;
 }
-.entrancebutton.menu a:focus h2,
-.entrancebutton.menu a:focus p {
+.container .entrancebutton.menu a:focus h2,
+.container-fluid .entrancebutton.menu a:focus h2,
+.container .entrancebutton.menu a:focus p,
+.container-fluid .entrancebutton.menu a:focus p {
   background: #01737c;
 }
-.entrancebutton a {
+.container .entrancebutton a,
+.container-fluid .entrancebutton a {
   height: 100%;
   width: 100%;
   display: inline-block;
@@ -51,18 +51,25 @@
   border-radius: 3px;
   transition: all 0.5s;
 }
-.entrancebutton a:hover {
+.container .entrancebutton a:hover,
+.container-fluid .entrancebutton a:hover {
   background: #002e41;
 }
-.entrancebutton a:hover h2,
-.entrancebutton a:hover p,
-.entrancebutton a:hover:focus,
-.entrancebutton a:hover h2:focus,
-.entrancebutton a:hover p:focus {
+.container .entrancebutton a:hover h2,
+.container-fluid .entrancebutton a:hover h2,
+.container .entrancebutton a:hover p,
+.container-fluid .entrancebutton a:hover p,
+.container .entrancebutton a:hover:focus,
+.container-fluid .entrancebutton a:hover:focus,
+.container .entrancebutton a:hover h2:focus,
+.container-fluid .entrancebutton a:hover h2:focus,
+.container .entrancebutton a:hover p:focus,
+.container-fluid .entrancebutton a:hover p:focus {
   text-decoration: none;
   color: white;
 }
-.entrancebutton a h2 {
+.container .entrancebutton a h2,
+.container-fluid .entrancebutton a h2 {
   font-size: 28px;
   line-height: 35px;
   padding-bottom: 5px;
@@ -73,40 +80,50 @@
   margin-bottom: 0;
   border: none;
 }
-.entrancebutton a:focus {
+.container .entrancebutton a:focus,
+.container-fluid .entrancebutton a:focus {
   background: #002e41;
 }
-.entrancebutton a:focus h2,
-.entrancebutton a:focus p {
+.container .entrancebutton a:focus h2,
+.container-fluid .entrancebutton a:focus h2,
+.container .entrancebutton a:focus p,
+.container-fluid .entrancebutton a:focus p {
   background: #002e41;
 }
-.entrancebutton a p {
+.container .entrancebutton a p,
+.container-fluid .entrancebutton a p {
   text-align: center;
   color: white;
   margin-top: 0;
 }
-.entrancebutton:visited,
-.entrancebutton:hover {
+.container .entrancebutton:visited,
+.container-fluid .entrancebutton:visited,
+.container .entrancebutton:hover,
+.container-fluid .entrancebutton:hover {
   color: #838078;
 }
-.entrancebutton span {
+.container .entrancebutton span,
+.container-fluid .entrancebutton span {
   border-radius: 50%;
   display: block;
   margin: 47px auto 30px auto;
   height: 70px;
   width: 70px;
 }
-.entrancebutton span.finnmetode {
+.container .entrancebutton span.finnmetode,
+.container-fluid .entrancebutton span.finnmetode {
   background: #ffffff url('../images/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
-.entrancebutton span.sendforslag {
+.container .entrancebutton span.sendforslag,
+.container-fluid .entrancebutton span.sendforslag {
   background: #ffffff url('../images/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
-.entrancebutton span.omsystemet {
+.container .entrancebutton span.omsystemet,
+.container-fluid .entrancebutton span.omsystemet {
   /* background: @colorDarkBlue url(../images/eirik.gif) no-repeat;
            background: @colorDarkBlue no-repeat;
             background-size: 80px;
@@ -121,17 +138,20 @@
   background-size: 41px;
   background-position: center;
 }
-.entrancebutton:hover span.finnmetode {
+.container .entrancebutton:hover span.finnmetode,
+.container-fluid .entrancebutton:hover span.finnmetode {
   background: #ffffff url('../images/ikoner/hovedinngang_ikon_soek_blaa.svg') no-repeat;
   background-size: 30px;
   background-position: center;
 }
-.entrancebutton:hover span.sendforslag {
+.container .entrancebutton:hover span.sendforslag,
+.container-fluid .entrancebutton:hover span.sendforslag {
   background: #ffffff url('../images/ikoner/hovedinngang_ikon_send_blaa.svg') no-repeat;
   background-size: 32px;
   background-position: center;
 }
-.entrancebutton:hover span.omsystemet {
+.container .entrancebutton:hover span.omsystemet,
+.container-fluid .entrancebutton:hover span.omsystemet {
   /*  background: white url(../images/eirik.gif) no-repeat;
              background: white no-repeat;
             background-size: 80px;
@@ -139,6 +159,141 @@
   background: #ffffff url('../images/ikoner/hovedinngang_ikon_systemet_blaa.svg') no-repeat;
   background-size: 41px;
   background-position: center;
+}
+.container .internal-link,
+.container-fluid .internal-link {
+  margin-bottom: 20px;
+}
+.container .news .date,
+.container-fluid .news .date,
+.container .news .date_status,
+.container-fluid .news .date_status {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.container .news .date_status,
+.container-fluid .news .date_status {
+  line-height: 20px;
+}
+.container .news .ingress,
+.container-fluid .news .ingress {
+  margin: 10px 0;
+  color: #838078;
+  font-size: 24px;
+  font-family: 'Calibri';
+}
+.container .news h4,
+.container-fluid .news h4 {
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Soho Gothic W01 Light";
+  color: #0093a7;
+  border-bottom: 2px dotted #0093a7;
+  display: inline;
+}
+.container .news h4:hover,
+.container-fluid .news h4:hover {
+  color: #01737c;
+  border-bottom: 2px dotted #01737c;
+}
+.container .news h3,
+.container-fluid .news h3 {
+  margin-top: 24px;
+}
+.container .news p,
+.container-fluid .news p {
+  margin-top: 0;
+}
+.container .news .see-all,
+.container-fluid .news .see-all {
+  margin-top: 20px;
+  display: block;
+}
+.container .news a:hover,
+.container-fluid .news a:hover {
+  text-decoration: none;
+}
+.container .news a:hover h3,
+.container-fluid .news a:hover h3 {
+  color: #01737c;
+  border-bottom: 2px dotted #01737c;
+}
+.container .news a h3,
+.container-fluid .news a h3 {
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #0093a7;
+  border-bottom: 2px dotted #0093a7;
+  display: inline;
+}
+.container .news a:focus h3,
+.container-fluid .news a:focus h3 {
+  background: #004e66;
+  color: white !important;
+  outline: 0;
+}
+.container .news .news_item,
+.container-fluid .news .news_item {
+  margin-bottom: 23px;
+}
+.container .news .internal-link,
+.container-fluid .news .internal-link {
+  margin-bottom: 20px;
+  background: none;
+  padding-left: 0;
+  margin-left: 30px;
+}
+.container .news .internal-link:before,
+.container-fluid .news .internal-link:before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  height: 22px;
+  width: 23px;
+  background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
+  /* background-position: 0 5px; */
+  background-size: 20px;
+}
+.container .news .internal-link:focus,
+.container-fluid .news .internal-link:focus {
+  background: #004e66;
+}
+.container .newsillustration,
+.container-fluid .newsillustration {
+  margin-top: 25px;
+  width: 75%;
+}
+.container .module.module_message,
+.container-fluid .module.module_message {
+  margin-top: 20px;
+}
+.container .wrapper_leverandorer,
+.container-fluid .wrapper_leverandorer,
+.container .wrapper_pasienter,
+.container-fluid .wrapper_pasienter {
+  background: white;
+}
+.container .wrapper_leverandorer .container,
+.container-fluid .wrapper_leverandorer .container,
+.container .wrapper_pasienter .container,
+.container-fluid .wrapper_pasienter .container {
+  background: white;
+}
+.container .drops,
+.container-fluid .drops {
+  width: 100%;
+  text-align: center;
+}
+.container {
+  background: #f2f2f2;
+}
+.frontpagewrapper.white {
+  background: white;
+}
+.frontpagewrapper.white .container {
+  background: white;
 }
 .mainentrance {
   margin: 50px 0;
@@ -150,156 +305,69 @@
   color: #838078;
   padding: 0 164px 0 105px;
 }
-.internal-link {
-  margin-bottom: 20px;
-}
-.news .date,
-.news .date_status {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.news .date_status {
-  line-height: 20px;
-}
-.news .ingress {
-  margin: 10px 0;
-  color: #838078;
-  font-size: 24px;
-  font-family: 'Calibri';
-}
-.news h4 {
-  margin-top: 25px;
-  font-size: 24px;
-  line-height: 29px;
-  font-family: "Soho Gothic W01 Light";
-  color: #0093a7;
-  border-bottom: 2px dotted #0093a7;
-  display: inline;
-}
-.news h4:hover {
-  color: #01737c;
-  border-bottom: 2px dotted #01737c;
-}
-.news h3 {
-  margin-top: 24px;
-}
-.news p {
-  margin-top: 0;
-}
-.news .see-all {
-  margin-top: 20px;
-  display: block;
-}
-.news a:hover {
-  text-decoration: none;
-}
-.news a:hover h3 {
-  color: #01737c;
-  border-bottom: 2px dotted #01737c;
-}
-.news a h3 {
-  font-size: 24px;
-  font-family: "Soho Gothic W01 Light";
-  color: #0093a7;
-  border-bottom: 2px dotted #0093a7;
-  display: inline;
-}
-.news a:focus h3 {
-  background: #004e66;
-  color: white !important;
-  outline: 0;
-}
-.news .news_item {
-  margin-bottom: 23px;
-}
-.news .internal-link {
-  margin-bottom: 20px;
-  background: none;
-  padding-left: 0;
-  margin-left: 30px;
-}
-.news .internal-link:before {
-  content: "";
-  position: absolute;
-  left: 16px;
-  bottom: 0;
-  height: 22px;
-  width: 23px;
-  background: url(../images/ikoner/intern_lenke_mellomblaa.svg) no-repeat;
-  /* background-position: 0 5px; */
-  background-size: 20px;
-}
-.news .internal-link:focus {
-  background: #004e66;
-}
-.newsillustration {
-  margin-top: 25px;
-  width: 75%;
-}
-.module.module_message {
-  margin-top: 20px;
-}
-.wrapper_leverandorer,
-.wrapper_pasienter {
-  background: white;
-}
-.wrapper_leverandorer .container,
-.wrapper_pasienter .container {
-  background: white;
-}
-.drops {
-  width: 100%;
-  text-align: center;
-}
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-  .entrancebutton {
+  .container .entrancebutton,
+  .container-fluid .entrancebutton {
     margin: 30px 30px 0 0;
   }
-  .mainentrance {
+  .container .mainentrance,
+  .container-fluid .mainentrance {
     margin: 0 0 50px 0;
   }
 }
 @media only screen and (max-width: 899px) {
-  .frontpagewrapper.white.entrance {
+  .container .frontpagewrapper.white.entrance,
+  .container-fluid .frontpagewrapper.white.entrance {
     background: #f2f2f2;
   }
-  .frontpagewrapper.white.entrance .container {
+  .container .frontpagewrapper.white.entrance .container,
+  .container-fluid .frontpagewrapper.white.entrance .container {
     background: #f2f2f2;
   }
-  .news {
+  .container .news,
+  .container-fluid .news {
     margin-bottom: 25px;
   }
-  .news .news_item .date {
+  .container .news .news_item .date,
+  .container-fluid .news .news_item .date {
     margin-bottom: 0;
   }
-  .news .news_item .ingress {
+  .container .news .news_item .ingress,
+  .container-fluid .news .news_item .ingress {
     margin-top: 0;
   }
-  .mainentrance {
+  .container .mainentrance,
+  .container-fluid .mainentrance {
     margin: 40px 0;
   }
-  .entrancebuttons {
+  .container .entrancebuttons,
+  .container-fluid .entrancebuttons {
     margin: 0;
     width: 100%;
   }
-  .entrancebuttons .entrancebutton {
+  .container .entrancebuttons .entrancebutton,
+  .container-fluid .entrancebuttons .entrancebutton {
     width: 100%;
     height: auto;
     margin-right: 0;
     margin-top: 10px;
   }
-  .entrancebuttons .entrancebutton a h2 {
+  .container .entrancebuttons .entrancebutton a h2,
+  .container-fluid .entrancebuttons .entrancebutton a h2 {
     text-align: left;
     margin-bottom: 0;
   }
-  .entrancebuttons .entrancebutton a p {
+  .container .entrancebuttons .entrancebutton a p,
+  .container-fluid .entrancebuttons .entrancebutton a p {
     text-align: left;
   }
-  .entrancebuttons .entrancebutton span {
+  .container .entrancebuttons .entrancebutton span,
+  .container-fluid .entrancebuttons .entrancebutton span {
     margin: 10px 20px;
     float: left;
   }
-  .method_entrance {
+  .container .method_entrance,
+  .container-fluid .method_entrance {
     float: none;
     vertical-align: initial;
     text-align: left;
@@ -309,205 +377,263 @@
     background: white;
     border-radius: 3px;
   }
-  .method_entrance .heading_wrapper {
+  .container .method_entrance .heading_wrapper,
+  .container-fluid .method_entrance .heading_wrapper {
     float: left;
     width: auto;
     margin: 10px 0 10px 5%;
   }
-  .method_entrance .heading_wrapper h3 {
+  .container .method_entrance .heading_wrapper h3,
+  .container-fluid .method_entrance .heading_wrapper h3 {
     text-align: left;
     border: none;
     font-size: 20px;
     line-height: 24px;
   }
-  .method_entrance .drop_wrapper {
+  .container .method_entrance .drop_wrapper,
+  .container-fluid .method_entrance .drop_wrapper {
     width: 63px;
     float: left;
     margin: 10px 0 5px 4%;
   }
-  .method_entrance .drop_wrapper .drop {
+  .container .method_entrance .drop_wrapper .drop,
+  .container-fluid .method_entrance .drop_wrapper .drop {
     position: relative;
     display: inline-block;
     width: 63px;
     height: 55px;
     margin: 0;
   }
-  .method_entrance .drop_wrapper .drop.oppstart .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop.oppstart .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop.oppstart .drop_triangle {
     border-left: 1.4em solid #0093a7;
   }
-  .method_entrance .drop_wrapper .drop.oppstart .drop_circle {
+  .container .method_entrance .drop_wrapper .drop.oppstart .drop_circle,
+  .container-fluid .method_entrance .drop_wrapper .drop.oppstart .drop_circle {
     border: 1.3em solid #0093a7;
   }
-  .method_entrance .drop_wrapper .drop.forslag .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop.forslag .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop.forslag .drop_triangle {
     border-left: 1.4em solid #a1bf17;
   }
-  .method_entrance .drop_wrapper .drop.forslag .drop_circle {
+  .container .method_entrance .drop_wrapper .drop.forslag .drop_circle,
+  .container-fluid .method_entrance .drop_wrapper .drop.forslag .drop_circle {
     border: 1.3em solid #a1bf17;
   }
-  .method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop.metodevurdering .drop_triangle {
     border-left: 1.4em solid #004e66;
   }
-  .method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
+  .container .method_entrance .drop_wrapper .drop.metodevurdering .drop_circle,
+  .container-fluid .method_entrance .drop_wrapper .drop.metodevurdering .drop_circle {
     border: 1.3em solid #004e66;
   }
-  .method_entrance .drop_wrapper .drop.beslutning .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop.beslutning .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop.beslutning .drop_triangle {
     border-left: 1.4em solid #6cb4b5;
   }
-  .method_entrance .drop_wrapper .drop.beslutning .drop_circle {
+  .container .method_entrance .drop_wrapper .drop.beslutning .drop_circle,
+  .container-fluid .method_entrance .drop_wrapper .drop.beslutning .drop_circle {
     border: 1.3em solid #6cb4b5;
   }
-  .method_entrance .drop_wrapper .drop.implementering .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop.implementering .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop.implementering .drop_triangle {
     border-left: 1.4em solid #df9922;
   }
-  .method_entrance .drop_wrapper .drop.implementering .drop_circle {
+  .container .method_entrance .drop_wrapper .drop.implementering .drop_circle,
+  .container-fluid .method_entrance .drop_wrapper .drop.implementering .drop_circle {
     border: 1.3em solid #df9922;
   }
-  .method_entrance .drop_wrapper .drop .drop_triangle {
+  .container .method_entrance .drop_wrapper .drop .drop_triangle,
+  .container-fluid .method_entrance .drop_wrapper .drop .drop_triangle {
     border: 1.4em solid transparent;
     left: 1.7em;
   }
-  .method_entrance .drop_wrapper .drop .drop_number {
+  .container .method_entrance .drop_wrapper .drop .drop_number,
+  .container-fluid .method_entrance .drop_wrapper .drop .drop_number {
     top: 15px;
     left: 17px;
     font-size: 32px;
   }
-  .method_entrance:hover {
+  .container .method_entrance:hover,
+  .container-fluid .method_entrance:hover {
     background: #aeaba8;
   }
-  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
+  .container .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.oppstart .drop_triangle {
     border-left: 1.4em solid #01737c;
   }
-  .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
+  .container .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.oppstart .drop_circle {
     border: 1.3em solid #01737c;
   }
-  .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
+  .container .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.forslag .drop_triangle {
     border-left: 1.4em solid #8ca037;
   }
-  .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
+  .container .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.forslag .drop_circle {
     border: 1.3em solid #8ca037;
   }
-  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
+  .container .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_triangle {
     border-left: 1.4em solid #002e41;
   }
-  .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
+  .container .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.metodevurdering .drop_circle {
     border: 1.3em solid #002e41;
   }
-  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
+  .container .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.beslutning .drop_triangle {
     border-left: 1.4em solid #448c8a;
   }
-  .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
+  .container .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.beslutning .drop_circle {
     border: 1.3em solid #448c8a;
   }
-  .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
+  .container .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.implementering .drop_triangle {
     border-left: 1.4em solid #c98523;
   }
-  .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
+  .container .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle,
+  .container-fluid .method_entrance:hover .drop_wrapper .drop.implementering .drop_circle {
     border: 1.3em solid #c98523;
   }
 }
 @media only screen and (max-width: 599px) {
-  .wrapper_statusoppdateringer {
+  .container .wrapper_statusoppdateringer,
+  .container-fluid .wrapper_statusoppdateringer {
     background: #f2f2f2;
     padding-bottom: 10px;
     padding-top: 5px;
   }
-  .wrapper_aktuelt {
+  .container .wrapper_aktuelt,
+  .container-fluid .wrapper_aktuelt {
     background: white;
     padding: 5px 0;
     margin-top: 10px;
   }
-  .no-padding {
+  .container .no-padding,
+  .container-fluid .no-padding {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .mainentrance {
+  .container .mainentrance,
+  .container-fluid .mainentrance {
     margin: 10px 0;
   }
-  h2 {
+  .container h2,
+  .container-fluid h2 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 28px;
     line-height: 32px;
   }
-  .drops {
+  .container .drops,
+  .container-fluid .drops {
     margin-bottom: 10px;
   }
-  .news .ingress {
+  .container .news .ingress,
+  .container-fluid .news .ingress {
     font-size: 20px;
     line-height: 24px;
   }
-  .wrapper_statusoppdateringer {
+  .container .wrapper_statusoppdateringer,
+  .container-fluid .wrapper_statusoppdateringer {
     background: #f2f2f2;
     padding-bottom: 10px;
     padding-top: 5px;
   }
-  .wrapper_aktuelt {
+  .container .wrapper_aktuelt,
+  .container-fluid .wrapper_aktuelt {
     background: white;
     padding: 5px 0;
     margin-top: 10px;
   }
-  .wrapper_spesialisthelsetjenesten {
+  .container .wrapper_spesialisthelsetjenesten,
+  .container-fluid .wrapper_spesialisthelsetjenesten {
     background: white;
   }
-  .wrapper_spesialisthelsetjenesten .container {
+  .container .wrapper_spesialisthelsetjenesten .container,
+  .container-fluid .wrapper_spesialisthelsetjenesten .container {
     background: white;
   }
-  .wrapper_leverandorer {
+  .container .wrapper_leverandorer,
+  .container-fluid .wrapper_leverandorer {
     background: #f2f2f2;
     padding-bottom: 20px;
   }
-  .wrapper_leverandorer .container {
+  .container .wrapper_leverandorer .container,
+  .container-fluid .wrapper_leverandorer .container {
     background: #f2f2f2;
   }
-  .wrapper_pasienter {
+  .container .wrapper_pasienter,
+  .container-fluid .wrapper_pasienter {
     background: #f2f2f2;
   }
-  .wrapper_pasienter .container {
+  .container .wrapper_pasienter .container,
+  .container-fluid .wrapper_pasienter .container {
     background: #f2f2f2;
   }
-  .news h2 {
+  .container .news h2,
+  .container-fluid .news h2 {
     margin-bottom: 15px;
   }
-  .news h3 {
+  .container .news h3,
+  .container-fluid .news h3 {
     margin-top: 15px;
   }
-  .news .news_item {
+  .container .news .news_item,
+  .container-fluid .news .news_item {
     margin-bottom: 15px;
   }
-  .news .internal-link {
+  .container .news .internal-link,
+  .container-fluid .news .internal-link {
     margin-top: 15px;
   }
-  .entrancebutton span {
+  .container .entrancebutton span,
+  .container-fluid .entrancebutton span {
     width: 60px;
     height: 60px;
   }
-  .entrancebutton span.sendforslag,
-  .entrancebutton span.finnmetode {
+  .container .entrancebutton span.sendforslag,
+  .container-fluid .entrancebutton span.sendforslag,
+  .container .entrancebutton span.finnmetode,
+  .container-fluid .entrancebutton span.finnmetode {
     background-size: 28px;
   }
-  .entrancebutton span.omsystemet {
+  .container .entrancebutton span.omsystemet,
+  .container-fluid .entrancebutton span.omsystemet {
     background-size: 32px;
   }
-  .entrancebutton:hover span.sendforslag,
-  .entrancebutton:hover span.finnmetode {
+  .container .entrancebutton:hover span.sendforslag,
+  .container-fluid .entrancebutton:hover span.sendforslag,
+  .container .entrancebutton:hover span.finnmetode,
+  .container-fluid .entrancebutton:hover span.finnmetode {
     background-size: 28px;
   }
-  .entrancebutton:hover span.omsystemet {
+  .container .entrancebutton:hover span.omsystemet,
+  .container-fluid .entrancebutton:hover span.omsystemet {
     background-size: 32px;
   }
-  .entrancebutton a h2 {
+  .container .entrancebutton a h2,
+  .container-fluid .entrancebutton a h2 {
     margin-top: 23px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
-  h2 {
+  .container h2,
+  .container-fluid h2 {
     margin-top: 0;
   }
-  .drops,
-  .news {
+  .container .drops,
+  .container-fluid .drops,
+  .container .news,
+  .container-fluid .news {
     margin-bottom: 50px;
   }
-  #footer {
+  .container #footer,
+  .container-fluid #footer {
     padding-top: 10px;
   }
 }
