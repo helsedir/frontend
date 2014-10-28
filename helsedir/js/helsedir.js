@@ -10,7 +10,7 @@
 
     $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").each(function () {
         var collapseElement = $(this);
-        collapseElement.nextUntil(':not(p)').addClass('visuallyhidden');
+        collapseElement.nextUntil(':not(p)').addClass('visuallyhidden').css("padding-left", "42px");
         collapseElement.addClass('has-hidden-content');
     });
 

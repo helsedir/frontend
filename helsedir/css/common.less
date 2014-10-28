@@ -29,7 +29,7 @@ html {
     background: white;
 }
 
-body {
+body, body.ms-backgroundImage {
     padding: 0;
     font-size: 20px;
     font-family: 'Calibri';
@@ -46,20 +46,6 @@ body {
     background-size: 40% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-    &.ms-backgroundImage {
-        background-color: #f7f6f6;
-        background-image: url('../images/bakgrunn_menneske.svg');
-        background-position: 100% 20%;
-        background-position-x: 100%;
-        background-position-y: 20%;
-        -webkit-background-size: 40% auto;
-        -moz-background-size: 40% auto;
-        -o-background-size: 40% auto;
-        background-size: 40% auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
 }
 
 .container, .container-fluid {
@@ -176,31 +162,22 @@ body {
         margin: 10px 0 0 0;
 
         li {
-            display: block;
+            display: inline-block;
             padding-right: 0.3rem;
 
             &.active {
                 float: none;
+            }
+
+            &:last-child:after {
+                content: '';
             }
         }
 
         ul {
             display: inline-block;
         }
-        /*
-        li:after {
-            font-family: "FontAwesome";
-            content: '\f104';
-            color: @colorDarkBlue;
-            font-size: 25px;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
-        }
 
-        li:last-child:after {
-            content: '';
-        }
-            */
         a {
             text-decoration: underline;
             font-family: @fontCalibri;
@@ -245,14 +222,17 @@ body {
 
     .has-hidden-content {
         cursor: pointer;
+        padding-left: 40px;
+        position: relative;
 
         &:before {
-            float: left;
-            padding: 3px 20px 0 0;
+            padding: 0;
             content: "\f107";
             font-family: "FontAwesome";
             font-size: 40px;
             cursor: pointer;
+            position: absolute;
+            left: 0;
         }
 
         &.accordion {
@@ -278,13 +258,16 @@ body {
     }*/
     .has-visible-content {
         cursor: pointer;
+        padding-left: 40px;
+        position: relative;
 
         &:before {
-            float: left;
-            padding: 3px 20px 0 0;
+            padding: 0;
             content: "\f106";
             font-family: "FontAwesome";
             font-size: 40px;
+            position: absolute;
+            left: 0;
         }
 
         &.accordion {
@@ -326,7 +309,6 @@ body {
         position: inherit;
         height: 100%;
         width: 100%;
-        display: inline-block;
 
         .tab-links {
             margin: 0;
@@ -631,7 +613,7 @@ body {
         }
     }
 
-    .bulletlist, .ms-rtestate-field ul {
+    .bulletlist, .ms-rtestate-field ul, .aside ul {
         list-style-position: outside;
         margin-top: 10px;
 
@@ -689,11 +671,11 @@ body {
         text-align: left;
     }
 
-    .calltoaction {
+    .calltoaction, .calltoaction.external-link {
         border: 2px solid @colorDarkBlue;
         color: white;
         padding: 10px 20px 10px 45px;
-        margin: 20px 30px 30px 0;
+        margin: 20px 25px 30px 0;
         font-family: @fontCalibri;
         font-size: 20px;
         line-height: 24px;
@@ -717,6 +699,8 @@ body {
             background: @colorDarkBlueHover url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
             background-position: 20px 50%;
             background-size: 10px;
+            padding: 10px 20px 10px 45px;
+            border: 2px solid #004e66;
         }
 
         &.secondary {
@@ -741,6 +725,15 @@ body {
             background-position: 20px 50%;
             background-size: 10px;
         }
+
+        &:after {
+            content: '';
+            display: none;
+        }
+
+        &:visited {
+            color: white;
+        }
     }
 
     iframe {
@@ -760,22 +753,14 @@ body {
             display: inline;
             padding-left: 25px;
         }
-        /*
-        &.inline, .inline:visited {
-            text-decoration: none;
-            margin: 0;
-        }
 
-        &:visited {
-            background: url('../images/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-            background-size: 16px 16px;
-        }*/
         h1, h2, h3, h4, h5 {
             display: inline;
         }
 
         &:hover {
             border-bottom: 1px solid #0093a7;
+            padding-bottom: 0;
         }
     }
 
@@ -808,7 +793,7 @@ body {
             font-family: "FontAwesome";
             font-size: inherit;
             text-decoration: none;
-            position: absolute;
+            position: static;
             padding-top: 2px;
         }
 
@@ -845,7 +830,7 @@ body {
 
     .module {
         display: inline-block;
-        margin: 20px 0 0 0;
+        margin: 20px 0 20px 0;
         padding: 30px 30px 30px 30px;
         background: white;
         position: relative;
@@ -2016,6 +2001,16 @@ body {
     .figure {
         margin: 40px 0 75px 0;
     }
+
+    #Result .internal-link.arrow_right:after {
+        position: static;
+    }
+
+    .ms-rtestate-field ul, .ms-rtestate-field ol {
+        line-height: normal;
+        margin: 20px 0 20px 0;
+        padding-left: 0;
+    }
 }
 
 .container .accordion.nested-accordion.has-hidden-content > h3:before,
@@ -2043,6 +2038,10 @@ body {
     /*font-size: 40px;*/
     position: absolute;
     left: 0;
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0;
 }
 
 @media only screen and (min-width: 1200px) {

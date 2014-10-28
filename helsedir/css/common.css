@@ -15,25 +15,13 @@ html {
   font-size: 100%;
   background: white;
 }
-body {
+body,
+body.ms-backgroundImage {
   padding: 0;
   font-size: 20px;
   font-family: 'Calibri';
   line-height: 30px;
   color: #222;
-  background-color: #f7f6f6;
-  background-image: url('../images/bakgrunn_menneske.svg');
-  background-position: 100% 20%;
-  background-position-x: 100%;
-  background-position-y: 20%;
-  -webkit-background-size: 40% auto;
-  -moz-background-size: 40% auto;
-  -o-background-size: 40% auto;
-  background-size: 40% auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-body.ms-backgroundImage {
   background-color: #f7f6f6;
   background-image: url('../images/bakgrunn_menneske.svg');
   background-position: 100% 20%;
@@ -191,29 +179,19 @@ body.ms-backgroundImage {
   padding: 0;
   list-style-type: none;
   margin: 10px 0 0 0;
-  /*
-        li:after {
-            font-family: "FontAwesome";
-            content: '\f104';
-            color: @colorDarkBlue;
-            font-size: 25px;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
-        }
-
-        li:last-child:after {
-            content: '';
-        }
-            */
 }
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
-  display: block;
+  display: inline-block;
   padding-right: 0.3rem;
 }
 .container .breadcrumbs li.active,
 .container-fluid .breadcrumbs li.active {
   float: none;
+}
+.container .breadcrumbs li:last-child:after,
+.container-fluid .breadcrumbs li:last-child:after {
+  content: '';
 }
 .container .breadcrumbs ul,
 .container-fluid .breadcrumbs ul {
@@ -261,15 +239,18 @@ body.ms-backgroundImage {
 .container .has-hidden-content,
 .container-fluid .has-hidden-content {
   cursor: pointer;
+  padding-left: 40px;
+  position: relative;
 }
 .container .has-hidden-content:before,
 .container-fluid .has-hidden-content:before {
-  float: left;
-  padding: 3px 20px 0 0;
+  padding: 0;
   content: "\f107";
   font-family: "FontAwesome";
   font-size: 40px;
   cursor: pointer;
+  position: absolute;
+  left: 0;
 }
 .container .has-hidden-content.accordion h3:before,
 .container-fluid .has-hidden-content.accordion h3:before {
@@ -283,14 +264,17 @@ body.ms-backgroundImage {
 .container .has-visible-content,
 .container-fluid .has-visible-content {
   cursor: pointer;
+  padding-left: 40px;
+  position: relative;
 }
 .container .has-visible-content:before,
 .container-fluid .has-visible-content:before {
-  float: left;
-  padding: 3px 20px 0 0;
+  padding: 0;
   content: "\f106";
   font-family: "FontAwesome";
   font-size: 40px;
+  position: absolute;
+  left: 0;
 }
 .container .has-visible-content.accordion h3:before,
 .container-fluid .has-visible-content.accordion h3:before {
@@ -322,7 +306,6 @@ body.ms-backgroundImage {
   position: inherit;
   height: 100%;
   width: 100%;
-  display: inline-block;
   /*----- Content of Tabs -----*/
 }
 .container .tabs .tab-links,
@@ -678,21 +661,27 @@ body.ms-backgroundImage {
 .container .bulletlist,
 .container-fluid .bulletlist,
 .container .ms-rtestate-field ul,
-.container-fluid .ms-rtestate-field ul {
+.container-fluid .ms-rtestate-field ul,
+.container .aside ul,
+.container-fluid .aside ul {
   list-style-position: outside;
   margin-top: 10px;
 }
 .container .bulletlist li,
 .container-fluid .bulletlist li,
 .container .ms-rtestate-field ul li,
-.container-fluid .ms-rtestate-field ul li {
+.container-fluid .ms-rtestate-field ul li,
+.container .aside ul li,
+.container-fluid .aside ul li {
   margin: 0 0 10px 25px;
   display: block;
 }
 .container .bulletlist li:before,
 .container-fluid .bulletlist li:before,
 .container .ms-rtestate-field ul li:before,
-.container-fluid .ms-rtestate-field ul li:before {
+.container-fluid .ms-rtestate-field ul li:before,
+.container .aside ul li:before,
+.container-fluid .aside ul li:before {
   content: "•";
   color: #004e66;
   margin: -1px 0 0 -25px;
@@ -746,11 +735,13 @@ body.ms-backgroundImage {
   text-align: left;
 }
 .container .calltoaction,
-.container-fluid .calltoaction {
+.container-fluid .calltoaction,
+.container .calltoaction.external-link,
+.container-fluid .calltoaction.external-link {
   border: 2px solid #004e66;
   color: white;
   padding: 10px 20px 10px 45px;
-  margin: 20px 30px 30px 0;
+  margin: 20px 25px 30px 0;
   font-family: 'Calibri';
   font-size: 20px;
   line-height: 24px;
@@ -764,22 +755,32 @@ body.ms-backgroundImage {
   transition: all 0.5s;
 }
 .container .calltoaction a,
-.container-fluid .calltoaction a {
+.container-fluid .calltoaction a,
+.container .calltoaction.external-link a,
+.container-fluid .calltoaction.external-link a {
   color: white;
   font-family: 'Calibri';
   font-size: 20px;
 }
 .container .calltoaction:hover,
 .container-fluid .calltoaction:hover,
+.container .calltoaction.external-link:hover,
+.container-fluid .calltoaction.external-link:hover,
 .container .calltoaction:focus,
-.container-fluid .calltoaction:focus {
+.container-fluid .calltoaction:focus,
+.container .calltoaction.external-link:focus,
+.container-fluid .calltoaction.external-link:focus {
   color: white;
   background: #002e41 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
   background-size: 10px;
+  padding: 10px 20px 10px 45px;
+  border: 2px solid #004e66;
 }
 .container .calltoaction.secondary,
-.container-fluid .calltoaction.secondary {
+.container-fluid .calltoaction.secondary,
+.container .calltoaction.external-link.secondary,
+.container-fluid .calltoaction.external-link.secondary {
   border: 2px solid #0093a7;
   background: #0093a7 url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
   background-position: 20px 50%;
@@ -788,8 +789,12 @@ body.ms-backgroundImage {
 }
 .container .calltoaction.secondary:hover,
 .container-fluid .calltoaction.secondary:hover,
+.container .calltoaction.external-link.secondary:hover,
+.container-fluid .calltoaction.external-link.secondary:hover,
 .container .calltoaction.secondary:focus,
-.container-fluid .calltoaction.secondary:focus {
+.container-fluid .calltoaction.secondary:focus,
+.container .calltoaction.external-link.secondary:focus,
+.container-fluid .calltoaction.external-link.secondary:focus {
   background: #01737c url('../images/ikon_pilmothoyre_hvit.png') no-repeat;
   border: 2px solid #01737c;
   background-position: 20px 50%;
@@ -797,11 +802,26 @@ body.ms-backgroundImage {
   color: white;
 }
 .container .calltoaction:disabled,
-.container-fluid .calltoaction:disabled {
+.container-fluid .calltoaction:disabled,
+.container .calltoaction.external-link:disabled,
+.container-fluid .calltoaction.external-link:disabled {
   background: #f7f6f6 url('../images/ikon_pilmothoyre_graa.png') no-repeat;
   color: #838078;
   background-position: 20px 50%;
   background-size: 10px;
+}
+.container .calltoaction:after,
+.container-fluid .calltoaction:after,
+.container .calltoaction.external-link:after,
+.container-fluid .calltoaction.external-link:after {
+  content: '';
+  display: none;
+}
+.container .calltoaction:visited,
+.container-fluid .calltoaction:visited,
+.container .calltoaction.external-link:visited,
+.container-fluid .calltoaction.external-link:visited {
+  color: white;
 }
 .container iframe,
 .container-fluid iframe {
@@ -813,16 +833,6 @@ body.ms-backgroundImage {
   margin: 15px 0;
   display: inline-block;
   border-bottom: none;
-  /*
-        &.inline, .inline:visited {
-            text-decoration: none;
-            margin: 0;
-        }
-
-        &:visited {
-            background: url('../images/navigasjon/ikon_eksternlenkebesoekt.svg') right no-repeat;
-            background-size: 16px 16px;
-        }*/
 }
 .container .external-link:after,
 .container-fluid .external-link:after {
@@ -847,6 +857,7 @@ body.ms-backgroundImage {
 .container .external-link:hover,
 .container-fluid .external-link:hover {
   border-bottom: 1px solid #0093a7;
+  padding-bottom: 0;
 }
 .container .internal-link,
 .container-fluid .internal-link {
@@ -882,7 +893,7 @@ body.ms-backgroundImage {
   font-family: "FontAwesome";
   font-size: inherit;
   text-decoration: none;
-  position: absolute;
+  position: static;
   padding-top: 2px;
 }
 .container .internal-link.inline,
@@ -924,7 +935,7 @@ body.ms-backgroundImage {
 .container .module,
 .container-fluid .module {
   display: inline-block;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   padding: 30px 30px 30px 30px;
   background: white;
   position: relative;
@@ -2151,6 +2162,18 @@ body.ms-backgroundImage {
 .container-fluid .figure {
   margin: 40px 0 75px 0;
 }
+.container #Result .internal-link.arrow_right:after,
+.container-fluid #Result .internal-link.arrow_right:after {
+  position: static;
+}
+.container .ms-rtestate-field ul,
+.container-fluid .ms-rtestate-field ul,
+.container .ms-rtestate-field ol,
+.container-fluid .ms-rtestate-field ol {
+  line-height: normal;
+  margin: 20px 0 20px 0;
+  padding-left: 0;
+}
 .container .accordion.nested-accordion.has-hidden-content > h3:before,
 .container-fluid .accordion.nested-accordion.has-hidden-content > h3:before,
 .container .accordion.nested-accordion.has-hidden-content > h4:before,
@@ -2175,6 +2198,9 @@ body.ms-backgroundImage {
   /*font-size: 40px;*/
   position: absolute;
   left: 0;
+}
+#s4-bodyContainer {
+  padding-bottom: 0;
 }
 @media only screen and (min-width: 1200px) {
   .container .aside {
