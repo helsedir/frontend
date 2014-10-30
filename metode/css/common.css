@@ -1471,6 +1471,10 @@ body.ms-backgroundImage {
 .container-fluid fieldset {
   border: none !important;
 }
+.container .cbs-list,
+.container-fluid .cbs-list {
+  width: 100%;
+}
 .container .cancelbutton,
 .container-fluid .cancelbutton {
   background: #004e66;

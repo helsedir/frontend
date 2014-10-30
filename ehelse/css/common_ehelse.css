@@ -668,6 +668,10 @@ body.ms-backgroundImage {
   list-style-type: none;
   margin-left: 0;
 }
+.container .cbs-list,
+.container-fluid .cbs-list {
+  width: 100%;
+}
 .container .linklist,
 .container-fluid .linklist {
   list-style-type: none;

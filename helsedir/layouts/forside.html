@@ -662,8 +662,12 @@
                         </section>
                         <section class="col-sm-12 col-md-4 ">
                             <h4>Abonner</h4>
-                            <a href="#"><p class="abonner">Nyheter på e-post</p></a>
-                            <a href="#"><p class="abonner">Nyheter på RSS</p></a>
+                            <button class="abonner" data-toggle="modal" data-target="#myModal">
+                                Nyheter på e-post
+                            </button>
+                            <button class="abonner">
+                                Nyheter på RSS
+                            </button>
 
                             <div class=" socialmedia clearfix">
                                 <h4>Følg oss på</h4>
@@ -672,6 +676,25 @@
                                     <a class=" facebook" href="#"></a>
                                     <a class=" youtube" href="#"></a>
                                     <a class=" linkedin" href="#"></a>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Meld deg på Helsedirektoratets nyhetsbrev.</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="emailinput">E-postadresse: </label><input id="emailinput" type="text">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                                            <button type="button" class="btn btn-primary">Send inn</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -691,5 +714,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!--    <script src="../js/google.maps.js"></script>-->
     <script src="../js/chart_column.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

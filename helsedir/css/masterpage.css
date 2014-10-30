@@ -511,6 +511,20 @@
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+#header .footerlinkswrapper .abonner,
+#footer .footerlinkswrapper .abonner {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  text-decoration: underline;
+  padding-left: 0;
+}
+#header .footerlinkswrapper .modal-title,
+#footer .footerlinkswrapper .modal-title {
+  color: black;
+}
 #header .nopadding,
 #footer .nopadding {
   padding: 0 !important;

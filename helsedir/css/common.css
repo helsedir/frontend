@@ -301,6 +301,10 @@ body.ms-backgroundImage {
   padding-top: 0.3rem;
   font-size: 1.5em;
 }
+.container .cbs-list,
+.container-fluid .cbs-list {
+  width: 100%;
+}
 .container .tabs,
 .container-fluid .tabs {
   position: inherit;

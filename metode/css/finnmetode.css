@@ -51,10 +51,6 @@
 .container-fluid .resultnumber .sortedby {
   font-weight: bold;
 }
-.container .cbs-list,
-.container-fluid .cbs-list {
-  width: 100%;
-}
 .container .transportsideknapp,
 .container-fluid .transportsideknapp {
   background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
