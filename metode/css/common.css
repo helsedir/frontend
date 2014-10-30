@@ -204,22 +204,20 @@ body.ms-backgroundImage {
 }
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
-  display: block;
-  float: left;
+  display: inline-block;
   padding-right: 0.3rem;
 }
-.container .breadcrumbs li:after,
-.container-fluid .breadcrumbs li:after {
-  font-family: "FontAwesome";
-  content: '\f104';
-  color: #0093a7;
-  font-size: 25px;
-  margin: 0 5px 0 5px;
-  vertical-align: middle;
+.container .breadcrumbs li.active,
+.container-fluid .breadcrumbs li.active {
+  float: none;
 }
 .container .breadcrumbs li:last-child:after,
 .container-fluid .breadcrumbs li:last-child:after {
   content: '';
+}
+.container .breadcrumbs ul,
+.container-fluid .breadcrumbs ul {
+  display: inline-block;
 }
 .container .breadcrumbs a,
 .container-fluid .breadcrumbs a {
@@ -227,11 +225,32 @@ body.ms-backgroundImage {
   font-family: 'Calibri';
   font-size: 18px;
   line-height: 22px;
+  border-bottom: none;
+}
+.container .breadcrumbs a:after,
+.container-fluid .breadcrumbs a:after {
+  font-family: "FontAwesome";
+  content: '\f104';
   color: #0093a7;
+  font-size: 25px;
+  margin: 0 10px 0 10px;
+  vertical-align: text-bottom;
+}
+.container .breadcrumbs .active,
+.container-fluid .breadcrumbs .active {
+  text-decoration: underline;
+  font-family: 'Calibri';
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: none;
 }
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
   color: #0093a7;
+}
+.container .breadcrumbs .s4-breadcrumb-arrowcont,
+.container-fluid .breadcrumbs .s4-breadcrumb-arrowcont {
+  display: none;
 }
 .container .has-hidden-content,
 .container-fluid .has-hidden-content {

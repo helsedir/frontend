@@ -35,52 +35,6 @@ body.ms-backgroundImage {
 ***********************************************************************/
   /**Kurs og konferanse*/
   /**Felles*/
-  /*
-    .transportsideknapp {
-        .status_infomration {
-            float: left;
-            width: 500px;
-            margin: 24px 0 0 30px;
-
-            .status_received {
-                margin-right: 30px;
-            }
-        }
-
-        .status {
-            background: #f7f6f6;
-            float: left;
-            padding: 10px 20px;
-            width: 200px;
-
-            &.rute {
-                border-left: 50px solid @colorLightBlue;
-            }
-
-            &.drift {
-                border-left: 50px solid @colorGreen;
-            }
-
-            &.pilot {
-                border-left: 50px solid @colorOrange;
-            }
-
-            &.cancelled {
-                border-left: 50px solid @colorRed;
-            }
-        }
-
-        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
-        background-size: 45px;
-        background-position: 96% 93%;
-
-        a:focus {
-            .status {
-                color: @colorDarkBlue !important;
-            }
-        }
-    }
-*/
 }
 .container h1,
 .container-fluid h1 {
@@ -230,17 +184,12 @@ body.ms-backgroundImage {
 }
 .container .breadcrumbs li,
 .container-fluid .breadcrumbs li {
-  display: block;
+  display: inline-block;
   padding-right: 0.3rem;
 }
-.container .breadcrumbs li:after,
-.container-fluid .breadcrumbs li:after {
-  font-family: "FontAwesome";
-  content: '\f104';
-  color: #004e66;
-  font-size: 25px;
-  margin: 0 5px 0 5px;
-  vertical-align: middle;
+.container .breadcrumbs li.active,
+.container-fluid .breadcrumbs li.active {
+  float: none;
 }
 .container .breadcrumbs li:last-child:after,
 .container-fluid .breadcrumbs li:last-child:after {
@@ -253,9 +202,30 @@ body.ms-backgroundImage {
   font-size: 18px;
   line-height: 22px;
 }
+.container .breadcrumbs a:after,
+.container-fluid .breadcrumbs a:after {
+  font-family: "FontAwesome";
+  content: '\f104';
+  color: #004e66;
+  font-size: 25px;
+  margin: 0 10px 0 10px;
+  vertical-align: text-bottom;
+}
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
   color: #004e66;
+}
+.container .breadcrumbs .active,
+.container-fluid .breadcrumbs .active {
+  text-decoration: underline;
+  font-family: 'Calibri';
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: none;
+}
+.container .breadcrumbs .s4-breadcrumb-arrowcont,
+.container-fluid .breadcrumbs .s4-breadcrumb-arrowcont {
+  display: none;
 }
 .container .has-hidden-content,
 .container-fluid .has-hidden-content {
@@ -2199,6 +2169,9 @@ body.ms-backgroundImage {
 .container-fluid .transportsideknapp {
   background: white;
   margin-top: 20px;
+  background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 93%;
 }
 .container .transportsideknapp a,
 .container-fluid .transportsideknapp a {
@@ -2254,6 +2227,43 @@ body.ms-backgroundImage {
 .container-fluid .transportsideknapp .ingress {
   margin: 20px 0;
   font-size: 20px;
+}
+.container .transportsideknapp .status_infomration,
+.container-fluid .transportsideknapp .status_infomration {
+  float: left;
+  width: 500px;
+  margin: 24px 0 0 30px;
+}
+.container .transportsideknapp .status_infomration .status_received,
+.container-fluid .transportsideknapp .status_infomration .status_received {
+  margin-right: 30px;
+}
+.container .transportsideknapp .status,
+.container-fluid .transportsideknapp .status {
+  background: #f7f6f6;
+  float: left;
+  padding: 10px 20px;
+  width: 200px;
+}
+.container .transportsideknapp .status.rute,
+.container-fluid .transportsideknapp .status.rute {
+  border-left: 50px solid #6cb4b5;
+}
+.container .transportsideknapp .status.drift,
+.container-fluid .transportsideknapp .status.drift {
+  border-left: 50px solid #a1bf37;
+}
+.container .transportsideknapp .status.pilot,
+.container-fluid .transportsideknapp .status.pilot {
+  border-left: 50px solid #df9922;
+}
+.container .transportsideknapp .status.cancelled,
+.container-fluid .transportsideknapp .status.cancelled {
+  border-left: 50px solid #c63629;
+}
+.container .transportsideknapp a:focus .status,
+.container-fluid .transportsideknapp a:focus .status {
+  color: #004e66 !important;
 }
 .container .no-padding,
 .container-fluid .no-padding {

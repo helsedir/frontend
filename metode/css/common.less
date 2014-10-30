@@ -204,22 +204,20 @@ body, body.ms-backgroundImage {
         margin: 10px 0 0 0;
 
         li {
-            display: block;
-            float: left;
+            display: inline-block;
             padding-right: 0.3rem;
+
+            &.active {
+                float: none;
+            }
+
+            &:last-child:after {
+                content: '';
+            }
         }
 
-        li:after {
-            font-family: "FontAwesome";
-            content: '\f104';
-            color: @colorMediumBlue;
-            font-size: 25px;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
-        }
-
-        li:last-child:after {
-            content: '';
+        ul {
+            display: inline-block;
         }
 
         a {
@@ -227,11 +225,32 @@ body, body.ms-backgroundImage {
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
-            color: @colorMediumBlue;
+            border-bottom: none;
+
+            &:after {
+                font-family: "FontAwesome";
+                content: '\f104';
+                color: @colorMediumBlue;
+                font-size: 25px;
+                margin: 0 10px 0 10px;
+                vertical-align: text-bottom;
+            }
+        }
+
+        .active {
+            text-decoration: underline;
+            font-family: @fontCalibri;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: none;
         }
 
         a:visited {
             color: @colorMediumBlue;
+        }
+
+        .s4-breadcrumb-arrowcont {
+            display: none;
         }
     }
 

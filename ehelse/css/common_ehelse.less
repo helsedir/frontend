@@ -182,17 +182,12 @@ body, body.ms-backgroundImage {
         margin: 10px 0 0 0;
 
         li {
-            display: block;
+            display: inline-block;
             padding-right: 0.3rem;
-        }
 
-        li:after {
-            font-family: "FontAwesome";
-            content: '\f104';
-            color: @colorDarkBlue;
-            font-size: 25px;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
+            &.active {
+                float: none;
+            }
         }
 
         li:last-child:after {
@@ -204,10 +199,31 @@ body, body.ms-backgroundImage {
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
+
+            &:after {
+                font-family: "FontAwesome";
+                content: '\f104';
+                color: @colorDarkBlue;
+                font-size: 25px;
+                margin: 0 10px 0 10px;
+                vertical-align: text-bottom;
+            }
         }
 
         a:visited {
             color: @colorDarkBlue;
+        }
+
+        .active {
+            text-decoration: underline;
+            font-family: @fontCalibri;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: none;
+        }
+
+        .s4-breadcrumb-arrowcont {
+            display: none;
         }
     }
 
@@ -2076,6 +2092,49 @@ body, body.ms-backgroundImage {
             margin: 20px 0;
             font-size: 20px;
         }
+
+        .status_infomration {
+            float: left;
+            width: 500px;
+            margin: 24px 0 0 30px;
+
+            .status_received {
+                margin-right: 30px;
+            }
+        }
+
+        .status {
+            background: #f7f6f6;
+            float: left;
+            padding: 10px 20px;
+            width: 200px;
+
+            &.rute {
+                border-left: 50px solid @colorLightBlue;
+            }
+
+            &.drift {
+                border-left: 50px solid @colorGreen;
+            }
+
+            &.pilot {
+                border-left: 50px solid @colorOrange;
+            }
+
+            &.cancelled {
+                border-left: 50px solid @colorRed;
+            }
+        }
+
+        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 93%;
+
+        a:focus {
+            .status {
+                color: @colorDarkBlue !important;
+            }
+        }
     }
 
     .no-padding {
@@ -2159,52 +2218,7 @@ body, body.ms-backgroundImage {
             border-left: 50px solid @colorRed;
         }
     }
-    /*
-    .transportsideknapp {
-        .status_infomration {
-            float: left;
-            width: 500px;
-            margin: 24px 0 0 30px;
 
-            .status_received {
-                margin-right: 30px;
-            }
-        }
-
-        .status {
-            background: #f7f6f6;
-            float: left;
-            padding: 10px 20px;
-            width: 200px;
-
-            &.rute {
-                border-left: 50px solid @colorLightBlue;
-            }
-
-            &.drift {
-                border-left: 50px solid @colorGreen;
-            }
-
-            &.pilot {
-                border-left: 50px solid @colorOrange;
-            }
-
-            &.cancelled {
-                border-left: 50px solid @colorRed;
-            }
-        }
-
-        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
-        background-size: 45px;
-        background-position: 96% 93%;
-
-        a:focus {
-            .status {
-                color: @colorDarkBlue !important;
-            }
-        }
-    }
-*/
     .borderbox {
         padding: 10px;
         border: 1px solid #222;
