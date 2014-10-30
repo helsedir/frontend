@@ -1465,6 +1465,7 @@ body.ms-backgroundImage {
   border-bottom: 2px solid #004e66;
   padding-bottom: 20px;
   width: 100%;
+  display: none;
 }
 .container fieldset,
 .container-fluid fieldset {
