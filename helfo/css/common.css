@@ -1967,44 +1967,45 @@ body {
     color: white;
   }
 }
-.container .table_general,
-.container-fluid .table_general {
+.container .ms-rteTable-default,
+.container-fluid .ms-rteTable-default {
   border: 1px solid #91c6c2;
   margin: 20px auto;
 }
-.container .table_general thead th,
-.container-fluid .table_general thead th {
+.container .ms-rteTable-default thead th,
+.container-fluid .ms-rteTable-default thead th {
   background: #91c6c2;
   text-align: center;
   font-size: 16px;
   padding: 5px;
   line-height: 20px;
 }
-.container .table_general tr,
-.container-fluid .table_general tr {
+.container .ms-rteTable-default tr,
+.container-fluid .ms-rteTable-default tr {
   background: #daecec;
 }
-.container .table_general tr.odd,
-.container-fluid .table_general tr.odd {
+.container .ms-rteTable-default tr.odd,
+.container-fluid .ms-rteTable-default tr.odd {
   background: white;
 }
-.container .table_general tbody th,
-.container-fluid .table_general tbody th,
-.container .table_general td,
-.container-fluid .table_general td {
+.container .ms-rteTable-default tbody th,
+.container-fluid .ms-rteTable-default tbody th,
+.container .ms-rteTable-default td,
+.container-fluid .ms-rteTable-default td {
   padding: 10px;
+  text-align: center;
   font-size: 18px;
 }
-.container .table_general tbody th a,
-.container-fluid .table_general tbody th a,
-.container .table_general td a,
-.container-fluid .table_general td a {
+.container .ms-rteTable-default tbody th a,
+.container-fluid .ms-rteTable-default tbody th a,
+.container .ms-rteTable-default td a,
+.container-fluid .ms-rteTable-default td a {
   line-height: 24px;
 }
-.container .table_general.alignleft th,
-.container-fluid .table_general.alignleft th,
-.container .table_general.alignleft td,
-.container-fluid .table_general.alignleft td {
+.container .ms-rteTable-default.alignleft th,
+.container-fluid .ms-rteTable-default.alignleft th,
+.container .ms-rteTable-default.alignleft td,
+.container-fluid .ms-rteTable-default.alignleft td {
   text-align: left;
 }
 .container #graph-source,
@@ -2376,52 +2377,52 @@ body {
     width: 114px;
     font-size: 12px;
   }
-  .container .table_general {
+  .container .ms-rteTable-default {
     display: block;
     width: 100%;
   }
-  .container .table_general tbody {
+  .container .ms-rteTable-default tbody {
     display: block;
     width: 100%;
   }
-  .container .table_general thead tr {
+  .container .ms-rteTable-default thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .container .table_general tr,
-  .container .table_general th,
-  .container .table_general td {
+  .container .ms-rteTable-default tr,
+  .container .ms-rteTable-default th,
+  .container .ms-rteTable-default td {
     display: block;
   }
-  .container .table_general tr {
+  .container .ms-rteTable-default tr {
     padding-bottom: 11px;
   }
-  .container .table_general tbody th,
-  .container .table_general td {
+  .container .ms-rteTable-default tbody th,
+  .container .ms-rteTable-default td {
     border: none;
     position: relative;
     padding: 0;
     padding-left: 50%;
   }
-  .container .table_general tbody th:before,
-  .container .table_general td:before {
+  .container .ms-rteTable-default tbody th:before,
+  .container .ms-rteTable-default td:before {
     position: absolute;
     left: 15px;
     padding-right: 10px;
     white-space: nowrap;
   }
-  .container .table_general th[data-title]:before,
-  .container .table_general td[data-title]:before {
+  .container .ms-rteTable-default th[data-title]:before,
+  .container .ms-rteTable-default td[data-title]:before {
     content: attr(data-title);
   }
-  .container .table_general tbody th:first-child {
+  .container .ms-rteTable-default tbody th:first-child {
     background: #d1d0cf;
     font-weight: bold;
     padding: 5px 0 5px 15px;
     text-align: left;
   }
-  .container .table_general caption {
+  .container .ms-rteTable-default caption {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
