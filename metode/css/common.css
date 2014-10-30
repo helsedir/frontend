@@ -15,7 +15,8 @@ html {
   font-size: 100%;
   background: white;
 }
-body {
+body,
+body.ms-backgroundImage {
   padding: 0;
   font-size: 20px;
   font-family: 'Calibri';
@@ -1264,7 +1265,9 @@ body {
   width: 25px;
 }
 .container .module.module_print,
-.container-fluid .module.module_print {
+.container-fluid .module.module_print,
+.container .module.module_social,
+.container-fluid .module.module_social {
   padding: 0;
   background: none;
   border-top: 4px solid #0093a7;
@@ -1273,8 +1276,12 @@ body {
 }
 .container .module.module_print a,
 .container-fluid .module.module_print a,
+.container .module.module_social a,
+.container-fluid .module.module_social a,
 .container .module.module_print a:visited,
-.container-fluid .module.module_print a:visited {
+.container-fluid .module.module_print a:visited,
+.container .module.module_social a:visited,
+.container-fluid .module.module_social a:visited {
   color: #0093a7;
   text-transform: uppercase;
   float: left;
@@ -1285,24 +1292,36 @@ body {
 }
 .container .module.module_print a:last-of-type,
 .container-fluid .module.module_print a:last-of-type,
+.container .module.module_social a:last-of-type,
+.container-fluid .module.module_social a:last-of-type,
 .container .module.module_print a:visited:last-of-type,
-.container-fluid .module.module_print a:visited:last-of-type {
+.container-fluid .module.module_print a:visited:last-of-type,
+.container .module.module_social a:visited:last-of-type,
+.container-fluid .module.module_social a:visited:last-of-type {
   margin-right: 0;
 }
 .container .module.module_print p,
 .container-fluid .module.module_print p,
+.container .module.module_social p,
+.container-fluid .module.module_social p,
 .container .module.module_print span,
-.container-fluid .module.module_print span {
+.container-fluid .module.module_print span,
+.container .module.module_social span,
+.container-fluid .module.module_social span {
   float: left;
 }
 .container .module.module_print span,
-.container-fluid .module.module_print span {
+.container-fluid .module.module_print span,
+.container .module.module_social span,
+.container-fluid .module.module_social span {
   margin: 0 10px 0 0;
   height: 24px;
   width: 26px;
 }
 .container .module.module_print .ikon_facebook span,
-.container-fluid .module.module_print .ikon_facebook span {
+.container-fluid .module.module_print .ikon_facebook span,
+.container .module.module_social .ikon_facebook span,
+.container-fluid .module.module_social .ikon_facebook span {
   background: url(../images/ikoner/facebook_reg.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
@@ -1310,7 +1329,9 @@ body {
   background-size: 27px 20px;
 }
 .container .module.module_print .ikon_twitter span,
-.container-fluid .module.module_print .ikon_twitter span {
+.container-fluid .module.module_print .ikon_twitter span,
+.container .module.module_social .ikon_twitter span,
+.container-fluid .module.module_social .ikon_twitter span {
   background: url(../images/ikoner/twitter_blaa.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
@@ -1318,16 +1339,22 @@ body {
   background-size: 27px 20px;
 }
 .container .module.module_print .ikon_skrivut,
-.container-fluid .module.module_print .ikon_skrivut {
+.container-fluid .module.module_print .ikon_skrivut,
+.container .module.module_social .ikon_skrivut,
+.container-fluid .module.module_social .ikon_skrivut {
   display: block;
   padding: 10px 20px 10px 13px;
 }
 .container .module.module_print .ikon_skrivut:hover,
-.container-fluid .module.module_print .ikon_skrivut:hover {
+.container-fluid .module.module_print .ikon_skrivut:hover,
+.container .module.module_social .ikon_skrivut:hover,
+.container-fluid .module.module_social .ikon_skrivut:hover {
   background: #d1d0cf;
 }
 .container .module.module_print .ikon_skrivut span,
-.container-fluid .module.module_print .ikon_skrivut span {
+.container-fluid .module.module_print .ikon_skrivut span,
+.container .module.module_social .ikon_skrivut span,
+.container-fluid .module.module_social .ikon_skrivut span {
   background: url(../images/ikoner/skriv_ut_regular.svg) no-repeat;
   -moz-background-size: 27px 20px;
   -o-background-size: 27px 20px;
@@ -1335,7 +1362,9 @@ body {
   background-size: 27px 20px;
 }
 .container .module.module_print p,
-.container-fluid .module.module_print p {
+.container-fluid .module.module_print p,
+.container .module.module_social p,
+.container-fluid .module.module_social p {
   margin: 0 20px 0 0;
   color: #004e66;
   text-transform: uppercase;

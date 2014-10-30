@@ -2154,6 +2154,9 @@ body {
   .container h1 {
     min-width: 651px;
   }
+  .container .ingress {
+    width: 650px;
+  }
 }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .container .aside {
@@ -2174,6 +2177,9 @@ body {
   }
   .container h1 {
     min-width: 477px;
+  }
+  .container .ingress {
+    width: 482px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -2208,9 +2214,6 @@ body {
   }
   .container .aside {
     max-width: 300px;
-  }
-  .container .ingress {
-    width: 482px;
   }
 }
 @media only screen and (max-width: 899px) {

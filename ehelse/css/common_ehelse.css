@@ -35,6 +35,52 @@ body.ms-backgroundImage {
 ***********************************************************************/
   /**Kurs og konferanse*/
   /**Felles*/
+  /*
+    .transportsideknapp {
+        .status_infomration {
+            float: left;
+            width: 500px;
+            margin: 24px 0 0 30px;
+
+            .status_received {
+                margin-right: 30px;
+            }
+        }
+
+        .status {
+            background: #f7f6f6;
+            float: left;
+            padding: 10px 20px;
+            width: 200px;
+
+            &.rute {
+                border-left: 50px solid @colorLightBlue;
+            }
+
+            &.drift {
+                border-left: 50px solid @colorGreen;
+            }
+
+            &.pilot {
+                border-left: 50px solid @colorOrange;
+            }
+
+            &.cancelled {
+                border-left: 50px solid @colorRed;
+            }
+        }
+
+        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 93%;
+
+        a:focus {
+            .status {
+                color: @colorDarkBlue !important;
+            }
+        }
+    }
+*/
 }
 .container h1,
 .container-fluid h1 {
@@ -620,6 +666,7 @@ body.ms-backgroundImage {
 .container .content,
 .container-fluid .content {
   position: relative;
+  min-height: 500px;
 }
 .container .aside,
 .container-fluid .aside,
@@ -1025,19 +1072,26 @@ body.ms-backgroundImage {
   position: relative;
   width: 100%;
 }
+.container .module .pulse,
+.container-fluid .module .pulse {
+  display: none;
+}
 .container .module.maincolumn,
 .container-fluid .module.maincolumn {
   margin-top: 30px;
 }
 .container .module .module_description,
 .container-fluid .module .module_description {
-  font-family: 'Calibri';
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #004e66;
-  text-decoration: none;
+  font-family: "Soho Gothic W01 Regular";
+  font-size: 24px;
+  line-height: 30px;
+  color: #222;
+}
+.container .module .module_description .internal-link.arrow_right,
+.container-fluid .module .module_description .internal-link.arrow_right {
   margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 30px;
 }
 .container .module a .module_header,
 .container-fluid .module a .module_header {
@@ -1093,6 +1147,33 @@ body.ms-backgroundImage {
 .container-fluid .module.module_related img.normen {
   border: 1px solid black;
   width: 248px;
+}
+.container .module.module_related a,
+.container-fluid .module.module_related a {
+  color: #838078;
+  font-family: 'Calibri';
+  font-size: 20px;
+  background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
+  background-size: 20px;
+  padding-left: 35px;
+  margin-top: 11px;
+  display: block;
+  background-position: 0 6px;
+}
+.container .module.module_related a:visited,
+.container-fluid .module.module_related a:visited {
+  color: #838078;
+}
+.container .module.module_related a.document,
+.container-fluid .module.module_related a.document {
+  margin: 0;
+  color: #838078;
+}
+.container .module.module_related a.inline,
+.container-fluid .module.module_related a.inline,
+.container .module.module_related a .inline:visited,
+.container-fluid .module.module_related a .inline:visited {
+  text-decoration: underline;
 }
 .container .module.module_publication,
 .container-fluid .module.module_publication {
@@ -2256,6 +2337,55 @@ body.ms-backgroundImage {
 .container-fluid .status_prosjekt.cancelled {
   border-left: 50px solid #c63629;
 }
+.container .borderbox,
+.container-fluid .borderbox {
+  padding: 10px;
+  border: 1px solid #222;
+}
+.container .transportsideknapp_dokument,
+.container-fluid .transportsideknapp_dokument {
+  background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 50%;
+  margin-top: 10px;
+  max-width: 685px;
+  width: 100%;
+  display: inline-block;
+  padding: 0 75px 10px 30px;
+}
+.container .transportsideknapp_dokument .status_infomration,
+.container-fluid .transportsideknapp_dokument .status_infomration {
+  float: left;
+  width: 395px;
+  margin: 24px 0 0 30px;
+}
+.container .transportsideknapp_dokument .status_infomration .status_received,
+.container-fluid .transportsideknapp_dokument .status_infomration .status_received {
+  margin-right: 30px;
+}
+.container .transportsideknapp_dokument h2,
+.container-fluid .transportsideknapp_dokument h2 {
+  padding: 10px 30px 0 0;
+  margin: 0;
+  color: #0093a7;
+}
+.container .transportsideknapp_dokument p,
+.container-fluid .transportsideknapp_dokument p {
+  color: #838078;
+}
+.container .transportsideknapp_dokument:hover,
+.container-fluid .transportsideknapp_dokument:hover {
+  text-decoration: none;
+  box-shadow: #0093a7 0 0 0 2px;
+}
+.container .transportsideknapp_dokument:hover h2,
+.container-fluid .transportsideknapp_dokument:hover h2 {
+  text-decoration: none;
+}
+.container .external-link,
+.container-fluid .external-link {
+  display: inline;
+}
 @media only screen and (min-width: 1200px) {
   .container .aside,
   .container-fluid .aside {
@@ -2335,6 +2465,10 @@ body.ms-backgroundImage {
   .container .hidden_links,
   .container-fluid .hidden_links {
     display: none;
+  }
+  .container .aside_search,
+  .container-fluid .aside_search {
+    top: 24px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -2655,4 +2789,4 @@ body.ms-backgroundImage {
     display: none;
   }
 }
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=common_ehelse.css.map */

@@ -1,0 +1,478 @@
+﻿.no-background {
+  background: #f7f6f6;
+}
+.fa-calendar-o {
+  float: left;
+  padding-right: 25px;
+  font-size: 300%;
+}
+.mainentrance {
+  background: url(../images/forside_bakgrunnsbilde.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 30px 0 20px 0;
+}
+.container .entrancebutton {
+  width: 250px;
+  height: 150px;
+  margin: 0 30px 30px 0;
+  float: left;
+  position: relative;
+}
+.container .entrancebutton.menu button {
+  width: 250px;
+  height: 150px;
+  border: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px;
+  background: white;
+}
+.container .entrancebutton.menu button h2 {
+  margin: auto;
+  font-size: 22px;
+  line-height: 26px;
+  color: #004e66;
+  transition: all 0.5s;
+}
+.container .entrancebutton.menu button h2 .fa-bars {
+  padding-left: 10px;
+}
+.container .entrancebutton.menu button.js-expanded {
+  background-color: #0093a7;
+  color: white;
+  outline: 0;
+}
+.container .entrancebutton.menu button.js-expanded h2 {
+  color: white;
+  background: none;
+}
+.container .entrancebutton.menu button:focus {
+  background: #0093a7 !important;
+  transition: none;
+}
+.container .entrancebutton.menu button:focus h2 {
+  color: white !important;
+  background: #0093a7 !important;
+  transition: none;
+}
+.container .entrancebutton.menu button:hover {
+  background: #0093a7 !important;
+}
+.container .entrancebutton.menu button:hover h2 {
+  color: white;
+}
+.container .entrancebutton a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #004e66;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.container .entrancebutton a:hover {
+  background: #002e41;
+  text-decoration: none;
+}
+.container .entrancebutton a:hover h2,
+.container .entrancebutton a:hover p,
+.container .entrancebutton a:hover:focus,
+.container .entrancebutton a:hover h2:focus,
+.container .entrancebutton a:hover p:focus {
+  text-decoration: none;
+  color: white;
+}
+.container .entrancebutton a h3 {
+  margin: 80px 0 0 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: "Soho Gothic W01 Light";
+}
+.container .entrancebutton a h3 .fa-bars {
+  margin-top: 20px;
+}
+.container .entrancebutton a h2 {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 60px 12px 15px 20px;
+  padding-bottom: 5px;
+  color: white;
+  position: relative;
+}
+.container .entrancebutton a p {
+  line-height: 23px;
+  position: relative;
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.container .entrancebutton a:focus {
+  background: #002e41 !important;
+  transition: none;
+}
+.container .entrancebutton a:focus h2,
+.container .entrancebutton a:focus p {
+  background: #002e41 !important;
+  transition: none;
+}
+.container .entrancebutton a:visited,
+.container .entrancebutton a:hover {
+  color: white;
+}
+.container .entrancebutton a:visited:hover,
+.container .entrancebutton a:hover:hover {
+  background: #002e41;
+}
+.container .entrancebutton.alternative {
+  height: 160px;
+}
+.container .entrancebutton.alternative h2 {
+  margin: 25px 12px 15px 12px;
+  font-size: 22px;
+  line-height: 29px;
+}
+.container .entrancebutton.alternative.menu {
+  height: 160px;
+}
+.container .entrancebutton.alternative.menu h2 {
+  font-size: 22px;
+  line-height: 29px;
+}
+.container .entrancebutton.alternative.menu:focus h2 {
+  background: #666460;
+}
+.container .search_button {
+  float: none;
+}
+.frontpagewrapper.grey {
+  background: #DEDDDB;
+}
+.frontpagewrapper.white {
+  background: white;
+}
+.frontpagewrapper_crisis {
+  background: #f4d01e;
+  padding: 1px 0;
+}
+.frontpage {
+  padding-bottom: 50px;
+}
+.frontpage h2 {
+  margin: 50px 0 20px 0;
+  width: 100%;
+  border-bottom: 3px solid #222;
+  padding-bottom: 15px;
+}
+.frontpage h2.noborder {
+  border: none;
+}
+.frontpage a {
+  color: #004e66;
+}
+.frontpage .news {
+  margin: 20px 0 20px 0;
+}
+.frontpage .news p {
+  color: #838078;
+  font-size: 18px;
+  padding-left: 35px;
+}
+.frontpage .news a {
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #004e66;
+  margin-bottom: 0;
+}
+.frontpage .news .internal-link.arrow_right {
+  margin-top: 0;
+}
+.frontpage .news:first-of-type {
+  margin-top: 35px;
+}
+.frontpage p {
+  margin: 0;
+}
+.frontpage .conferenceitem {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.frontpage .conferenceitem p {
+  padding: 0;
+  line-height: 1em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+.frontpage .conferenceitem a {
+  font-size: 24px;
+}
+.frontpage .conferenceitem .conference_date {
+  color: #c63629;
+  display: block;
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  margin-right: 28px;
+  line-height: 27px;
+  text-align: left;
+}
+.frontpage .conferenceitem .month {
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  text-transform: uppercase;
+  color: #c63629;
+  text-align: left;
+  margin-top: 2px;
+}
+.frontpage .conferenceitem .conference_info a {
+  font-size: 24px;
+  font-family: "Soho Gothic W01 Light";
+  color: #222;
+  margin-top: 0;
+  border-bottom: none;
+}
+.frontpage div.conferenceitem > .conference_date {
+  width: 45%;
+  float: left;
+  min-height: 75px;
+  padding-top: 10px;
+}
+.frontpage div.conferenceitem > .conference_info {
+  width: 45%;
+  float: left;
+  min-height: 75px;
+  padding-top: 11px;
+}
+.frontpage .statistics_image {
+  margin-bottom: 20px;
+}
+.frontpage .ingress {
+  border: none;
+  margin-top: 23px;
+}
+.frontpage .ingress.nomargin {
+  margin: 0;
+}
+.frontpage .importantnews .ingress {
+  margin-bottom: 20px;
+}
+.frontpage .importantnews .bulletlist {
+  margin-bottom: 35px;
+}
+.frontpage .importantnews .text_and_image {
+  width: 49%;
+  float: left;
+}
+.frontpage .importantnews .importantphoto {
+  margin: 28px 0 0 22px;
+  width: 49%;
+  float: left;
+}
+.frontpage.newsandconference {
+  background: white;
+}
+.frontpage .chart_wrapper {
+  margin: 40px 57px 0 57px;
+  background: white;
+  overflow: auto;
+}
+.frontpage #chart_div {
+  margin-bottom: 0;
+}
+.frontpage .showmorenews {
+  margin-top: 30px;
+}
+.frontpage .internal-link {
+  background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
+  background-size: 20px;
+  background-position: 0 7px;
+}
+.frontpage #menu_search {
+  border-radius: 0;
+}
+.frontpage #menu_search::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 16px;
+}
+.frontpage #menu_search:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 16px;
+  opacity: 1;
+}
+.frontpage #menu_search::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 16px;
+  opacity: 1;
+}
+.frontpage #menu_search:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 16px;
+}
+.frontpage .video-container {
+  padding-bottom: 40%;
+  margin: 40px 0 20px 0;
+}
+.frontpage .menu_search input {
+  height: 27px;
+  width: 77%;
+  cursor: pointer;
+  border: none;
+  color: #004e66;
+}
+.frontpage .searchform {
+  border: 1px solid #004e66;
+  margin: 0;
+  height: 31px;
+  background: white;
+  padding-left: 0;
+}
+.frontpage .search_button img {
+  width: 20px;
+  vertical-align: initial;
+}
+.toppmeny .tabs .tab-links li.menu_search {
+  background: none;
+  padding: 0;
+}
+@media only screen and (max-width: 599px) {
+  .container .entrancebutton {
+    width: 100%;
+    height: 100%;
+    margin: 7.5px 0 7.5px 0;
+  }
+  .container .entrancebutton a h2 {
+    margin: 15px 0 0 12px;
+    color: white;
+  }
+  .container .entrancebutton a p {
+    margin: 0 0 15px 12px;
+    color: white;
+  }
+  .container .entrancebutton h2 {
+    margin-top: 20px;
+  }
+  .container .entrancebutton.menu {
+    width: 100%;
+    height: 106px;
+    border-radius: 4px;
+  }
+  .container .entrancebutton.menu h2 {
+    margin: 15px 0 15px 12px;
+    text-align: center;
+  }
+  .container .entrancebutton.menu h2 .fa-bars {
+    padding-left: 10px;
+  }
+  .container .frontpage .chart_wrapper {
+    margin: 40px 0 0 0;
+  }
+  .container .frontpage .conferenceitem .conference_date {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 100%;
+    height: 36px;
+    min-height: 0;
+  }
+  .container .frontpage div.conferenceitem > div:nth-child(2n) {
+    width: 100%;
+    padding-top: 0;
+    min-height: 0;
+  }
+  .container .frontpage .conferenceitem .conference_info a {
+    line-height: 42px;
+    margin-top: 5px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .container .internal-link {
+    background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
+    background-size: 20px;
+    background-position: 0 8px;
+  }
+  .container .frontpage h2 {
+    margin-top: 30px;
+  }
+  .container .frontpage .news:first-of-type,
+  .container .frontpage .news {
+    margin: 15px 0;
+  }
+  .container .frontpage .showmorenews {
+    margin-top: 15px;
+  }
+  .container .frontpage .news p {
+    line-height: 24px;
+  }
+  #footer {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .container .entrancebutton {
+    margin: 30px 25px 0 0;
+  }
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 35%;
+  }
+  .container .frontpage div.conferenceitem > div:nth-child(2n) {
+    width: 55%;
+    padding-top: 0;
+  }
+  .container .frontpage .conferenceitem .conference_info a {
+    line-height: 42px;
+    margin-top: 2px;
+  }
+  .container .internal-link {
+    background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
+    background-size: 20px;
+    background-position: 0 50%;
+  }
+  .container .mainentrance {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .container .border_grey {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bababa;
+  }
+  .container .frontpage .importantnews .text_and_image {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .container .frontpage .importantnews .text_and_image {
+    width: 48%;
+    float: left;
+  }
+  .container .frontpage .importantnews .importantphoto {
+    margin: 28px 0 0 22px;
+    width: 48%;
+    float: left;
+  }
+  .container .frontpage div.conferenceitem > div:nth-child(2n-1) {
+    width: 43%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container .center {
+    padding: 0 165px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container .frontpage .conferenceitem {
+    margin-top: 24px;
+  }
+}
+/*# sourceMappingURL=frontpage_ehelse.css.map */

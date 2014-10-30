@@ -251,6 +251,9 @@ a.logo:focus {
   min-height: 40px;
   text-align: center;
 }
+.logoline img {
+  width: 120px;
+}
 .logoline .helsedirektoratet,
 .logoline .kunnskapssenteret,
 .logoline .legemiddelverk,
@@ -277,42 +280,42 @@ a.logo:focus {
 .logoline .helsedirektoratet {
   background: url(../images/logoer/logo_hdir.png) no-repeat;
   background-size: 100%;
-  width: 170px;
+  width: 120px;
 }
 .logoline .kunnskapssenteret {
   background: url(../images/logoer/logo_KS.png) no-repeat;
   background-size: 100%;
-  width: 158px;
+  width: 120px;
 }
 .logoline .legemiddelverk {
   background: url(../images/logoer/logo_SLV.png) no-repeat;
   background-size: 100%;
-  width: 134px;
+  width: 120px;
 }
 .logoline .helsemidt {
   background: url(../images/logoer/logo_RHF_midt.png) no-repeat;
   background-size: 100%;
-  width: 139px;
+  width: 120px;
 }
 .logoline .helsenord {
   background: url(../images/logoer/logo_RHF_nord.png) no-repeat;
   background-size: 100%;
-  width: 101px;
+  width: 120px;
 }
 .logoline .helsesoeroest {
   background: url(../images/logoer/logo_RHF_sorost.png) no-repeat;
   background-size: 100%;
-  width: 115px;
+  width: 120px;
 }
 .logoline .helsevest {
   background: url(../images/logoer/logo_RHF_vest.png) no-repeat;
   background-size: 100%;
-  width: 94px;
+  width: 120px;
 }
 .logoline .straalevern {
   background: url(../images/logoer/Straalevernet.png) no-repeat;
   background-size: 100%;
-  width: 84px;
+  width: 120px;
   margin-right: 0;
 }
 .hidden-mobile {

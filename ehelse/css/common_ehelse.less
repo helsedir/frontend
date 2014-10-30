@@ -32,20 +32,17 @@ html {
     background: white;
 }
 
-body {
+body, body.ms-backgroundImage {
     padding: 0;
     font-size: 20px;
     font-family: @fontCalibri;
     line-height: 27px;
     color: #222;
-
-    &.ms-backgroundImage {
-        background: url('../images/bakgrunnsbilde.png');
-        background-color: #f7f6f6;
-        background-position: bottom 882px right 264px;
-        background-repeat: no-repeat;
-        background-size: 35%;
-    }
+    background: url('../images/bakgrunnsbilde.png');
+    background-color: #f7f6f6;
+    background-position: bottom 882px right 264px;
+    background-repeat: no-repeat;
+    background-size: 35%;
 }
 
 .container, .container-fluid {
@@ -584,6 +581,7 @@ body {
 
     .content {
         position: relative;
+        min-height: 500px;
     }
 
     .aside, .aside.bottom {
@@ -951,18 +949,25 @@ body {
         position: relative;
         width: 100%;
 
+        .pulse {
+            display: none;
+        }
+
         &.maincolumn {
             margin-top: 30px;
         }
 
         .module_description {
-            font-family: @fontCalibri;
-            font-size: 18px;
-            line-height: 22px;
-            text-transform: uppercase;
-            color: @colorDarkBlue;
-            text-decoration: none;
-            margin-bottom: 5px;
+            font-family: @fontSohoRegular;
+            font-size: 24px;
+            line-height: 30px;
+            color: #222;
+
+            .internal-link.arrow_right {
+                margin-bottom: 5px;
+                font-size: 24px;
+                line-height: 30px;
+            }
         }
 
         a .module_header {
@@ -1017,6 +1022,31 @@ body {
             img.normen {
                 border: 1px solid black;
                 width: 248px;
+            }
+
+            a {
+                color: #838078;
+                font-family: @fontCalibri;
+                font-size: 20px;
+                background: url(../images/ikoner/lenkepil_orange.png) no-repeat;
+                background-size: 20px;
+                padding-left: 35px;
+                margin-top: 11px;
+                display: block;
+                background-position: 0 6px;
+
+                &:visited {
+                    color: #838078;
+                }
+
+                &.document {
+                    margin: 0;
+                    color: #838078;
+                }
+
+                &.inline, .inline:visited {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -2129,6 +2159,100 @@ body {
             border-left: 50px solid @colorRed;
         }
     }
+    /*
+    .transportsideknapp {
+        .status_infomration {
+            float: left;
+            width: 500px;
+            margin: 24px 0 0 30px;
+
+            .status_received {
+                margin-right: 30px;
+            }
+        }
+
+        .status {
+            background: #f7f6f6;
+            float: left;
+            padding: 10px 20px;
+            width: 200px;
+
+            &.rute {
+                border-left: 50px solid @colorLightBlue;
+            }
+
+            &.drift {
+                border-left: 50px solid @colorGreen;
+            }
+
+            &.pilot {
+                border-left: 50px solid @colorOrange;
+            }
+
+            &.cancelled {
+                border-left: 50px solid @colorRed;
+            }
+        }
+
+        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 93%;
+
+        a:focus {
+            .status {
+                color: @colorDarkBlue !important;
+            }
+        }
+    }
+*/
+    .borderbox {
+        padding: 10px;
+        border: 1px solid #222;
+    }
+
+    .transportsideknapp_dokument {
+        background: white url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+        background-size: 45px;
+        background-position: 96% 50%;
+        margin-top: 10px;
+        max-width: 685px;
+        width: 100%;
+        display: inline-block;
+        padding: 0 75px 10px 30px;
+
+        .status_infomration {
+            float: left;
+            width: 395px;
+            margin: 24px 0 0 30px;
+
+            .status_received {
+                margin-right: 30px;
+            }
+        }
+
+        h2 {
+            padding: 10px 30px 0 0;
+            margin: 0;
+            color: @colorMediumBlue;
+        }
+
+        p {
+            color: #838078;
+        }
+
+        &:hover {
+            text-decoration: none;
+            box-shadow: @colorMediumBlue 0 0 0 2px;
+
+            h2 {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .external-link {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2219,6 +2343,10 @@ body {
 
         .hidden_links {
             display: none;
+        }
+
+        .aside_search {
+            top: 24px;
         }
     }
 }

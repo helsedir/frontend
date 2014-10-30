@@ -1,0 +1,65 @@
+﻿.container #search_statistics,
+.container-fluid #search_statistics {
+  width: 100%;
+}
+.container .transportsideknapp,
+.container-fluid .transportsideknapp {
+  background: #ffffff url(../images/pil_knapp_mellomblaa.svg) no-repeat;
+  background-size: 45px;
+  background-position: 96% 90%;
+  margin-top: 50px;
+  max-width: 685px;
+  width: 100%;
+  display: inline-block;
+  padding: 20px 30px 50px 30px;
+}
+.container .transportsideknapp .status_infomration,
+.container-fluid .transportsideknapp .status_infomration {
+  float: left;
+  width: 395px;
+  margin: 24px 0 0 30px;
+}
+.container .transportsideknapp .status_infomration .status_received,
+.container-fluid .transportsideknapp .status_infomration .status_received {
+  margin-right: 30px;
+}
+.container .transportsideknapp h2,
+.container-fluid .transportsideknapp h2 {
+  margin: 0;
+  border-bottom: 2px dotted #004e66;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  color: #0093a7;
+}
+.container .transportsideknapp p,
+.container-fluid .transportsideknapp p {
+  color: #838078;
+}
+.container .transportsideknapp:hover,
+.container-fluid .transportsideknapp:hover {
+  text-decoration: none;
+  box-shadow: #0093a7 0 0 0 2px;
+}
+.container .transportsideknapp:hover h2,
+.container-fluid .transportsideknapp:hover h2 {
+  text-decoration: none;
+}
+@media only screen and (max-width: 599px) {
+  .container .transportside .border,
+  .container-fluid .transportside .border {
+    margin-bottom: 15px;
+  }
+  .container .transportsideknapp,
+  .container-fluid .transportsideknapp {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-top: 10px;
+  }
+  .container .transportsideknapp h2,
+  .container-fluid .transportsideknapp h2 {
+    line-height: 35px;
+    margin: 0 0 10px 0;
+  }
+}
+/*# sourceMappingURL=transportside_ehelse.css.map */

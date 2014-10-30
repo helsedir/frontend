@@ -97,4 +97,8 @@
     $('.form-control').change(function () {
         $(this).addClass('selected');
     });
+
+    $('a:not(:empty)').filter(function () {
+        return this.hostname && this.hostname !== location.hostname;
+    }).addClass("external-link");
 });
