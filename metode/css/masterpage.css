@@ -470,7 +470,6 @@ a.logo:focus {
   }
   .hidden-mobile {
     display: none;
-    padding: 10px;
   }
   .masterheader {
     margin: 10px 0 10px 0;
@@ -487,6 +486,10 @@ a.logo:focus {
   .container .mainsearchform input,
   .container-fluid .mainsearchform input {
     width: 82%;
+  }
+  .container .mainsearchcolumn,
+  .container-fluid .mainsearchcolumn {
+    margin-top: 0;
   }
   .footerlinkswrapper {
     background: white;
