@@ -913,14 +913,14 @@ form.retningslinjerSok #searchinput {
 .Recommendation .textContainer.gradingNone .recommendation-text dl dd {
   padding-left: 20px;
 }
-.Recommendation .textContainer img.module_border {
+.Recommendation .textContainer img.pulse {
   top: 40px;
   position: absolute;
   left: 43px;
   height: 57px;
 }
 @media (max-width: 768px) {
-  .Recommendation .textContainer img.module_border {
+  .Recommendation .textContainer img.pulse {
     display: none;
   }
 }
@@ -1603,14 +1603,14 @@ form.retningslinjerSok #searchinput {
   font-size: 18px;
 }
 
-.Searchresults .module_border {
+.Searchresults .pulse {
   top: 0;
   position: absolute;
   left: -9px;
   height: 57px;
 }
 @media (max-width: 768px) {
-  .Searchresults .module_border {
+  .Searchresults .pulse {
     display: none;
   }
 }

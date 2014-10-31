@@ -39,7 +39,7 @@
                     <li><a href="#">Antibiotika</a></li>
                     <li><a href="#">Sepsis</a></li>
                 </ul>
-                <img class="module_border" src="../../../images/modules/EKG-groenn.png" alt="">
+                <img class="pulse" src="../../../images/modules/EKG-groenn.png" alt="">
             </div>
             <div class="module module_related blue col-md-6">
                 <h3>Relaterte retningslinjer</h3>
@@ -48,7 +48,7 @@
                     <li><a href="#">Sepsis</a></li>
                     <li><a href="#">Sepsis</a></li>
                 </ul>
-                <img class="module_border" src="../../../images/modules/EKG-lyseblaa.png" alt="">
+                <img class="pulse" src="../../../images/modules/EKG-lyseblaa.png" alt="">
             </div>
         </aside>
 
@@ -87,9 +87,9 @@
                         </div>
                     </div>
                     <div class="textContainer" data-grading="{{recommendation.strength}}">
-                        <img ng-show="recommendation.strength == 'strong'" class="module_border closed" src="../../../images/modules/line-ekg-purple.png">
-                        <img ng-show="recommendation.strength == 'weak'" class="module_border closed" src="../../../images/modules/line-ekg-seagreen.png">
-                        <img ng-show="recommendation.strength == null" class="module_border closed" src="../../../images/modules/line-ekg-gray.png">
+                        <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../images/modules/line-ekg-purple.png">
+                        <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../images/modules/line-ekg-seagreen.png">
+                        <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../images/modules/line-ekg-gray.png">
                         <div class="recommendation-text" ng-bind-html="recommendation.text | unsafe">
                         </div>
                     </div>
