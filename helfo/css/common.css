@@ -2001,6 +2001,13 @@ body {
 .container .ms-rteTable-default td a,
 .container-fluid .ms-rteTable-default td a {
   line-height: 24px;
+  color: #222;
+}
+.container .ms-rteTable-default tbody th a:hover,
+.container-fluid .ms-rteTable-default tbody th a:hover,
+.container .ms-rteTable-default td a:hover,
+.container-fluid .ms-rteTable-default td a:hover {
+  border-bottom: 1px solid #222;
 }
 .container .ms-rteTable-default.alignleft th,
 .container-fluid .ms-rteTable-default.alignleft th,
