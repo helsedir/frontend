@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 102 102" enable-background="new 0 0 102 102" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1" y1="51" x2="101" y2="51" gradientTransform="matrix(1 0 0 -1 0 102)">
+	<stop  offset="0" style="stop-color:#222222"/>
+	<stop  offset="0.1854" style="stop-color:#582F27"/>
+	<stop  offset="0.3852" style="stop-color:#8B3B2D"/>
+	<stop  offset="0.5734" style="stop-color:#B34531"/>
+	<stop  offset="0.7443" style="stop-color:#D04C34"/>
+	<stop  offset="0.8921" style="stop-color:#E25035"/>
+	<stop  offset="1" style="stop-color:#E85236"/>
+</linearGradient>
+<circle fill="url(#SVGID_1_)" cx="51" cy="51" r="50"/>
+<g>
+	
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		70.1,34.3 70.1,77 32,77 32,25 60.6,25 	"/>
+	
+		<polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		70.1,34.3 60.6,25 60.6,34.3 	"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="53" x2="63.5" y2="53"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="45.7" x2="63.5" y2="45.7"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="60.3" x2="63.5" y2="60.3"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.5" y1="67.5" x2="63.5" y2="67.5"/>
+</g>
+</svg>

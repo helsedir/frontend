@@ -959,8 +959,8 @@ body {
 .container-fluid .module .module_ingress {
   display: inline;
 }
-.container .module img.pulse,
-.container-fluid .module img.pulse {
+.container .module img.module_border,
+.container-fluid .module img.module_border {
   position: absolute;
   left: 0;
   top: 0;
@@ -1493,8 +1493,8 @@ body {
   padding-top: 0;
   margin-top: 0;
 }
-.container .module.urgentinformation_module .pulse,
-.container-fluid .module.urgentinformation_module .pulse {
+.container .module.urgentinformation_module .module_border,
+.container-fluid .module.urgentinformation_module .module_border {
   position: absolute;
   left: 0;
   top: 0;
