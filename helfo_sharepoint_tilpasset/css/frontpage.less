@@ -1,0 +1,729 @@
+﻿@roboto: 'Roboto', sans-serif;
+
+@colorDarkBlue: #004e66;
+@colorDarkBlueHover: #002e41;
+
+@colorMediumBlue: #0093a7;
+@colorMediumBlueHover: #006371;
+@colorLightBlue: #6cb4b5;
+@colorLightBlueHover: #4f8889;
+@colorOrange: #eb6a0a;
+@colorOrangeHover: #b8811d;
+@colorRed: #c63629;
+@colorYellow: #f4d01e;
+@colorYellowHover: #c7ad1c;
+@colorDarkGray: #aeaba8;
+@colorLightGray2: #dbdcdd;
+@colorGreen: #a1bf37;
+@colorGreenHover: #748f29;
+
+.no-background {
+    background: #f7f6f6;
+}
+
+.mainentrance {
+    background: url('../img/bakgrunn_forside.png');
+    background-color: #f7f6f6;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 0 25px 0;
+}
+
+.container {
+    .entrancebutton {
+        width: 240px;
+        height: 200px;
+        margin: 10px 0 15px 30px;
+        float: left;
+        position: relative;
+
+        &.menu {
+            margin-right: 0;
+
+            button {
+                background: white;
+                height: 200px;
+                width: 100%;
+                -moz-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                border-radius: 0;
+                border: none;
+
+                h2 {
+                    margin: auto;
+                    font-size: 3.0rem;
+                    line-height: 3.5rem;
+                    color: #222;
+                }
+
+                &.js-expanded {
+                    background: #d9dadb;
+                    border: none;
+                    outline: none;
+                }
+
+                &:hover {
+                    background: #d9dadb;
+                }
+
+                &:focus {
+                    background: #d9dadb;
+                    border: none;
+                    outline: none;
+                }
+
+                span {
+                    border-radius: 50%;
+                    display: block;
+                    margin: -43px auto 5px auto;
+                    height: 85px;
+                    width: 85px;
+                    background: #ffffff url('../img/ikoner/hovedinngang_altinnhold.svg') no-repeat;
+                    background-size: 90px 90px;
+                    background-position: center;
+                }
+            }
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            color: #58585a;
+            text-decoration: none;
+            border-bottom: 0;
+            border-radius: 0;
+            background: white;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+
+            h3 {
+                margin: 80px 0 0 0;
+                padding: 0;
+                font-size: 28px;
+                font-family: @roboto;
+
+                .fa-bars {
+                    margin-top: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 3.0rem;
+                line-height: 3.5rem;
+                padding-bottom: 5px;
+                color: #58585a;
+                position: relative;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+                border: none;
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 2.0rem;
+                position: relative;
+                margin-left: 0;
+                margin-bottom: 15px;
+                color: #58585a;
+                padding-top: 0;
+                text-align: center;
+            }
+
+            &:focus {
+                background: #badde9;
+
+                h2, p {
+                    background: #badde9;
+                    color: #222;
+                }
+            }
+
+            &:hover {
+                background: #badde9;
+
+                h2 {
+                    border: none;
+                }
+            }
+        }
+
+        &:visited, &:hover {
+            color: white;
+        }
+
+        span {
+            border-radius: 50%;
+            display: block;
+            margin: 15px auto 5px auto;
+            height: 85px;
+            width: 85px;
+
+            &.avtale {
+                background: #ffffff url('../img/ikoner/hovedinngang_avtale.svg') no-repeat;
+                background-size: 90px 90px;
+                background-position: center;
+            }
+
+            &.helseaktor {
+                background: #ffffff url('../img/ikoner/hovedinngang_helseaktor.svg') no-repeat;
+                background-size: 90px 90px;
+                background-position: center;
+            }
+
+            &.oppgjor {
+                background: #ffffff url('../img/ikoner/hovedinngang_oppgjor.svg') no-repeat;
+                background-size: 90px 90px;
+                background-position: center;
+            }
+
+            &.takster {
+                background: #ffffff url('../img/ikoner/hovedinngang_takster.svg') no-repeat;
+                background-size: 90px 90px;
+                background-position: center;
+            }
+
+            &.skjema {
+                background: #ffffff url('../img/ikoner/hovedinngang_skjema.svg') no-repeat;
+                background-size: 90px 90px;
+                background-position: center;
+            }
+        }
+    }
+
+    &.frontpage {
+        padding-bottom: 50px;
+
+        h2 {
+            margin: 30px 0 0 0;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #88b9cb;
+
+            &.noborder {
+                border: none;
+            }
+        }
+
+        a {
+            color: @colorDarkBlue;
+            text-decoration: none;
+
+            &:hover h2 {
+                text-decoration: underline;
+            }
+
+            &:hover h2.internal-link {
+                text-decoration: underline;
+                border-bottom: 3px solid #004e66;
+                padding-bottom: 0;
+            }
+        }
+
+        .internal-link {
+            text-decoration: none;
+            color: @colorDarkBlue;
+            display: inline-block;
+
+            &:visited {
+                color: @colorMediumBlue;
+            }
+
+            h2, h3, h4, p {
+                display: inline;
+            }
+
+            &.arrow_right {
+                padding: 0;
+
+                &:hover {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.arrow_right:after {
+                padding-top: 3px;
+            }
+
+            &.inline, &.inline:visited {
+                border-bottom: 1px solid @colorDarkGray;
+
+                &:hover {
+                    border-bottom: 1px solid @colorDarkGray;
+                }
+            }
+
+            &:hover {
+                border-bottom: 1px solid @colorMediumBlue;
+                text-decoration: none;
+                padding-bottom: 3px;
+
+                &.arrow_right:after {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        a h2.internal-link.arrow_right {
+            padding-bottom: 15px;
+            margin-bottom: 19px;
+
+            &:hover {
+                margin-bottom: 19px;
+                text-decoration: none;
+            }
+        }
+
+        .news {
+            margin-top: 20px;
+
+            p {
+                color: #222;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            a {
+                font-size: 26px;
+                border: none;
+
+                h3 {
+                    font-size: 26px;
+                    margin: 0;
+                    line-height: 28px;
+                    font-family: @roboto;
+                    display: inline;
+                }
+
+                &:hover {
+                    border: none;
+                }
+            }
+
+            .internal-link.arrow_right {
+                margin: 0;
+            }
+
+            .bulletlist {
+                margin-top: 0;
+
+                li {
+                    padding: 0 0 1.6rem 0;
+
+                    &:before {
+                        font-size: 40px;
+                        color: #398ca9;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .conferenceitem {
+            width: 100%;
+            margin-bottom: 20px;
+
+            p {
+                padding: 0;
+                line-height: 22px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #222;
+            }
+
+            a {
+                font-size: 26px;
+            }
+
+            .conference_date {
+                font-size: 26px;
+                color: @colorRed;
+                display: block;
+                font-family: @roboto;
+                margin-right: 28px;
+                line-height: 27px;
+                text-align: right;
+            }
+
+            .month {
+                font-size: 18px;
+                text-transform: uppercase;
+                font-family: @roboto;
+                color: @colorRed;
+                display: block;
+                text-align: right;
+                margin-top: 2px;
+            }
+
+            .external-link {
+                margin-bottom: 0;
+            }
+        }
+
+        .conferenceitem > div:nth-child(2n-1) {
+            width: 25%;
+            float: left;
+            min-height: 85px;
+            padding-top: 15px;
+        }
+
+        .conferenceitem > div:nth-child(2n) {
+            width: 68%;
+            float: left;
+            min-height: 100px;
+        }
+
+        .statistics_image {
+            margin-bottom: 20px;
+        }
+
+        .ingress {
+            border: none;
+            margin-top: 23px;
+            width: 100%;
+
+            &.nomargin {
+                margin: 0;
+            }
+        }
+
+        .importantnews {
+            .bulletlist {
+                margin-bottom: 35px;
+            }
+
+            .text_and_image {
+                width: 49%;
+                float: left;
+            }
+
+            .importantphoto {
+                margin: 28px 0 0 22px;
+                width: 49%;
+                float: left;
+            }
+
+            a {
+                border-bottom: none;
+
+                h2 {
+                    color: #222;
+                    text-decoration: none;
+
+                    &:hover {
+                        border-bottom: 2px solid #88b9cb;
+                    }
+                }
+            }
+        }
+
+        &.newsandconference {
+            background: white;
+        }
+
+        .chart_wrapper {
+            margin: 40px 57px 0 57px;
+            background: white;
+            overflow: auto;
+        }
+
+        #chart_div {
+            margin-bottom: 0;
+        }
+    }
+
+    .video-container {
+        padding-bottom: 40%;
+        margin: 40px 0 20px 0;
+    }
+}
+
+.frontpagewrapper {
+    position: relative;
+
+    &.grey {
+        background: #d9dadb;
+    }
+
+    &.white {
+        background: white;
+    }
+}
+
+.frontpagewrapper_crisis {
+    background: @colorYellow;
+}
+
+.container-fluid.toppmeny .tabs .tab-links li.menu_search {
+    background: none;
+    padding-top: 0;
+}
+
+#menu_search {
+    border-radius: 0;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        font-size: 16px;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        font-size: 16px;
+    }
+}
+
+#footer {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 599px) {
+    .container {
+        .entrancebutton {
+            width: 100%;
+            height: 100%;
+            margin: 7.5px 0 7.5px 0;
+
+            span {
+                margin: 10px 20px;
+                float: left;
+            }
+
+            a {
+                h2 {
+                    text-align: left;
+                    margin: 22px 0 0 12px;
+                }
+
+                p {
+                    text-align: left;
+                    margin: 0 0 15px 12px;
+                }
+            }
+
+            &.menu {
+                button {
+                    height: 109px;
+                    width: 100%;
+                    border-radius: 0;
+
+                    span {
+                        margin: 10px 17px;
+                    }
+
+                    h2 {
+                        text-align: left;
+                        margin: 22px 0 0 12px;
+                    }
+                }
+            }
+        }
+
+        &.frontpage .chart_wrapper {
+            margin: 40px 0 0 0;
+        }
+
+        &.frontpage .conferenceitem .conference_date {
+            font-size: 28px;
+            margin-right: 20px;
+        }
+
+        &.frontpage .conferenceitem > div:nth-child(2n-1) {
+            width: 100%;
+            float: none;
+            text-align: left;
+            padding-top: 0;
+            min-height: 0;
+
+            .month {
+                text-align: left;
+                display: inline;
+            }
+        }
+
+        &.frontpage .conferenceitem > div:nth-child(2n) {
+            width: 100%;
+            float: none;
+            text-align: left;
+            min-height: 0;
+            margin-bottom: 30px;
+
+            .internal-link.arrow_right {
+                margin-top: 0;
+            }
+        }
+    }
+
+    #header {
+        .mainsearch {
+            width: 100%;
+
+            input {
+                width: 85%;
+            }
+        }
+    }
+
+    .mainentrance {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .container {
+        .entrancebutton {
+            margin: 30px 25px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .container {
+        &.frontpage .importantnews {
+            .text_and_image {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        &.frontpage {
+            padding-bottom: 20px;
+
+            h2 {
+                margin-top: 40px;
+            }
+
+            .conferenceitem {
+                margin-bottom: 0;
+
+                & > div:nth-child(2n) {
+                    margin-bottom: 20px;
+                }
+
+                .conference_date {
+                    line-height: 34px;
+                }
+            }
+
+            .ingress {
+                margin-top: 0;
+            }
+        }
+
+        .video-container {
+            margin: 40px 0 0 0;
+        }
+
+        .calltoaction {
+            margin-top: 20px;
+        }
+
+        .border_grey {
+            border-top: 1px solid #aeaba8;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width: 1199px) {
+    &.frontpage .importantnews {
+        .text_and_image {
+            width: 48%;
+            float: left;
+        }
+
+        .importantphoto {
+            margin: 28px 0 0 22px;
+            width: 48%;
+            float: left;
+        }
+    }
+
+    #header {
+        .mainsearch {
+            width: 100%;
+
+            input {
+                width: 82%;
+            }
+        }
+    }
+
+    .container {
+        &.frontpage .conferenceitem > div:nth-child(2n-1) {
+            width: 34%;
+        }
+
+        &.frontpage .conferenceitem > div:nth-child(2n) {
+            width: 58%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        .center {
+            padding: 0 165px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .jumplink {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .jumplink {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .jumplink {
+        background: url(../img/ikoner/forside_jumplink.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 32px;
+        left: 50%;
+        line-height: 26px;
+        margin-left: -15px;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        top: -15px;
+        width: 30px;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    #header {
+        .mainsearch {
+            width: 100%;
+
+            input {
+                width: 92%;
+            }
+        }
+    }
+}

@@ -125,14 +125,14 @@ function runJqueryUIRecommendationStuff(){
 	  	height = height[0].scrollHeight;
 	  	
 	  	//make ekg move on expand
-	  	var pulse = $(this).parent().find(".pulse");
-	  	if(pulse.hasClass("closed")){
-	  		pulse.animate({"top" : height+50+"px"}, animationSpeed);
-	  		pulse.removeClass("closed");
+	  	var module_border = $(this).parent().find(".module_border");
+	  	if(module_border.hasClass("closed")){
+	  		module_border.animate({"top" : height+50+"px"}, animationSpeed);
+	  		module_border.removeClass("closed");
 	  	}
 	  	else{
-	  		pulse.animate({"top" : "40px"}, animationSpeed);
-	  		pulse.addClass("closed");
+	  		module_border.animate({"top" : "40px"}, animationSpeed);
+	  		module_border.addClass("closed");
 	  	}
 	  });
 

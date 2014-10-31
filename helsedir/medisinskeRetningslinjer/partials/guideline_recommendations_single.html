@@ -35,9 +35,9 @@
       </div>
     </div>
     <div class="textContainer" data-grading="{{recommendation.strength}}">
-      <img ng-show="recommendation.strength == 'strong'" class="pulse closed" src="../../../img/modules/line-ekg-purple.png">
-      <img ng-show="recommendation.strength == 'weak'" class="pulse closed" src="../../../img/modules/line-ekg-seagreen.png">
-      <img ng-show="recommendation.strength == null" class="pulse closed" src="../../../img/modules/line-ekg-gray.png">
+      <img ng-show="recommendation.strength == 'strong'" class="module_border closed" src="../../../img/modules/line-ekg-purple.png">
+      <img ng-show="recommendation.strength == 'weak'" class="module_border closed" src="../../../img/modules/line-ekg-seagreen.png">
+      <img ng-show="recommendation.strength == null" class="module_border closed" src="../../../img/modules/line-ekg-gray.png">
       <div class="recommendation-text" ng-bind-html="recommendation.text | unsafe" >
         
       </div>

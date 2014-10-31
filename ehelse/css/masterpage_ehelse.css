@@ -389,8 +389,8 @@ footer a:focus {
 .footerlinkswrapper {
   background: #004e66 url('../images/footer.png') no-repeat;
   background-size: contain;
-  padding: 20px 0 250px 0;
-  background-position: 100% 110%;
+  padding: 20px 0 115px 0;
+  background-position: 100% 105%;
   border-top: 6px solid #0093a7;
 }
 .footerlinkswrapper h4,
@@ -500,6 +500,17 @@ footer a:focus {
 .footerlinkswrapper a:focus h4 {
   background: white !important;
   color: #004e66 !important;
+}
+.logoline {
+  background: white;
+}
+.logoline a img {
+  width: 141px;
+  vertical-align: middle;
+  margin: 20px 20px 20px 0;
+}
+.logoline a:last-of-type img {
+  margin-right: 0;
 }
 .nopadding {
   padding: 0 !important;
