@@ -20,6 +20,10 @@ $(document).ready(function () {
                 expandedContent.removeClass('visuallyhidden')
                     .slideDown(500);
                 expander.addClass('js-expanded');
+
+                if ($('.menubutton:hidden')) {
+                    $('.menubutton').children('.js-expanded').css('padding-bottom', '0');
+                }
             });
 
             if ($('#mobilesearch').hasClass('js-expanded')) {

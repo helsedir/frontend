@@ -16,6 +16,10 @@ $(document).ready(function () {
             expandedContent.slideDown(500);
             expander.addClass('js-expanded');
 
+            if ($('.menubutton:hidden')) {
+                $('.menubutton').children('.js-expanded').css('padding-bottom', '0');
+            }
+
             if ($('#mobilesearch').hasClass('js-expanded')) {
                 $('#mobilesearch').removeClass('js-expanded');
                 $('#mainsearchcolumn').slideUp(500);

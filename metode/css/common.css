@@ -899,6 +899,10 @@ body.ms-backgroundImage {
 .container-fluid .module .module_ingress {
   display: inline;
 }
+.container .module .pulse,
+.container-fluid .module .pulse {
+  display: none;
+}
 .container .module img.pulse,
 .container-fluid .module img.pulse {
   position: absolute;
@@ -1349,6 +1353,12 @@ body.ms-backgroundImage {
   height: 24px;
   width: 26px;
 }
+.container .module.module_print .ikon_facebook,
+.container-fluid .module.module_print .ikon_facebook,
+.container .module.module_social .ikon_facebook,
+.container-fluid .module.module_social .ikon_facebook {
+  display: none;
+}
 .container .module.module_print .ikon_facebook span,
 .container-fluid .module.module_print .ikon_facebook span,
 .container .module.module_social .ikon_facebook span,
@@ -1358,6 +1368,12 @@ body.ms-backgroundImage {
   -o-background-size: 27px 20px;
   -webkit-background-size: 27px 20px;
   background-size: 27px 20px;
+}
+.container .module.module_print .ikon_twitter,
+.container-fluid .module.module_print .ikon_twitter,
+.container .module.module_social .ikon_twitter,
+.container-fluid .module.module_social .ikon_twitter {
+  display: none;
 }
 .container .module.module_print .ikon_twitter span,
 .container-fluid .module.module_print .ikon_twitter span,
