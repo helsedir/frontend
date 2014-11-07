@@ -238,11 +238,12 @@ body.ms-backgroundImage {
 }
 .container .breadcrumbs .active,
 .container-fluid .breadcrumbs .active {
-  text-decoration: underline;
-  font-family: 'Calibri';
-  font-size: 18px;
-  line-height: 22px;
-  border-bottom: none;
+  /*text-decoration: underline;
+            font-family: @fontCalibri;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: none;*/
+  display: none;
 }
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
@@ -459,6 +460,12 @@ body.ms-backgroundImage {
   height: 40px;
   padding: 5px 10px;
   cursor: pointer;
+}
+.container .search::-ms-clear,
+.container-fluid .search::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .container .search_withbutton .search,
 .container-fluid .search_withbutton .search {
@@ -842,6 +849,11 @@ body.ms-backgroundImage {
   display: inline-block;
   margin: 20px 0 0 0;
   position: relative;
+  width: 100%;
+}
+.container .module.aside,
+.container-fluid .module.aside {
+  width: 300px;
 }
 .container .module.maincolumn,
 .container-fluid .module.maincolumn {

@@ -215,11 +215,12 @@ body, body.ms-backgroundImage {
         }
 
         .active {
-            text-decoration: underline;
+            /*text-decoration: underline;
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
-            border-bottom: none;
+            border-bottom: none;*/
+            display: none;
         }
 
         .s4-breadcrumb-arrowcont {
@@ -480,6 +481,12 @@ body, body.ms-backgroundImage {
         &:-ms-input-placeholder {
             color: #838078;
             text-align: left;
+        }
+
+        &::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
         }
     }
 
@@ -968,6 +975,10 @@ body, body.ms-backgroundImage {
         background: white;
         position: relative;
         width: 100%;
+
+        &.aside {
+            width: 300px;
+        }
 
         .pulse {
             display: none;
@@ -2076,7 +2087,6 @@ body, body.ms-backgroundImage {
 
                 text-decoration: none;
                 color: #222;
-                box-shadow: @colorMediumBlue 0 0 0 2px;
             }
 
             &.calltoaction {

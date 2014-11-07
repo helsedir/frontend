@@ -217,11 +217,12 @@ body.ms-backgroundImage {
 }
 .container .breadcrumbs .active,
 .container-fluid .breadcrumbs .active {
-  text-decoration: underline;
-  font-family: 'Calibri';
-  font-size: 18px;
-  line-height: 22px;
-  border-bottom: none;
+  /*text-decoration: underline;
+            font-family: @fontCalibri;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: none;*/
+  display: none;
 }
 .container .breadcrumbs .s4-breadcrumb-arrowcont,
 .container-fluid .breadcrumbs .s4-breadcrumb-arrowcont {
@@ -524,6 +525,12 @@ body.ms-backgroundImage {
 .container-fluid .search:-ms-input-placeholder {
   color: #838078;
   text-align: left;
+}
+.container .search::-ms-clear,
+.container-fluid .search::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .container .search_button,
 .container-fluid .search_button {
@@ -1045,6 +1052,10 @@ body.ms-backgroundImage {
   background: white;
   position: relative;
   width: 100%;
+}
+.container .module.aside,
+.container-fluid .module.aside {
+  width: 300px;
 }
 .container .module .pulse,
 .container-fluid .module .pulse {
@@ -2207,7 +2218,6 @@ body.ms-backgroundImage {
 .container-fluid .transportsideknapp a:hover {
   text-decoration: none;
   color: #222;
-  box-shadow: #0093a7 0 0 0 2px;
 }
 .container .transportsideknapp a:hover h2,
 .container-fluid .transportsideknapp a:hover h2 {

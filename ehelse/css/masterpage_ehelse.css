@@ -301,8 +301,8 @@ footer .tabs .tab-links li:focus,
   color: white;
   outline: 0;
 }
-footer .tabs .tab-links .menu_search form,
-.container-fluid.toppmeny .tabs .tab-links .menu_search form {
+footer .tabs .tab-links .menu_search .form,
+.container-fluid.toppmeny .tabs .tab-links .menu_search .form {
   height: 40px;
   /*max-width: 220px;*/
   width: 212px;
@@ -313,8 +313,8 @@ footer .tabs .tab-links .menu_search form,
   padding: 0 0 0 5px;
   background: white;
 }
-footer .tabs .tab-links .menu_search form input,
-.container-fluid.toppmeny .tabs .tab-links .menu_search form input {
+footer .tabs .tab-links .menu_search .form input,
+.container-fluid.toppmeny .tabs .tab-links .menu_search .form input {
   border: none;
   padding: 0;
   width: 170px;
@@ -322,16 +322,16 @@ footer .tabs .tab-links .menu_search form input,
   vertical-align: sub;
   color: black;
 }
-footer .tabs .tab-links .menu_search form button,
-.container-fluid.toppmeny .tabs .tab-links .menu_search form button {
+footer .tabs .tab-links .menu_search .form button,
+.container-fluid.toppmeny .tabs .tab-links .menu_search .form button {
   border: none;
   background: none;
   width: 29px;
   padding: 0;
   vertical-align: middle;
 }
-footer .tabs .tab-links .menu_search form button img,
-.container-fluid.toppmeny .tabs .tab-links .menu_search form button img {
+footer .tabs .tab-links .menu_search .form button img,
+.container-fluid.toppmeny .tabs .tab-links .menu_search .form button img {
   width: 23px;
   vertical-align: sub;
 }

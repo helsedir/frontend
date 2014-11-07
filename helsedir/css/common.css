@@ -216,11 +216,12 @@ body.ms-backgroundImage {
 }
 .container .breadcrumbs .active,
 .container-fluid .breadcrumbs .active {
-  text-decoration: underline;
-  font-family: 'Calibri';
-  font-size: 18px;
-  line-height: 22px;
-  border-bottom: none;
+  /*text-decoration: underline;
+            font-family: @fontCalibri;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: none;*/
+  display: none;
 }
 .container .breadcrumbs a:visited,
 .container-fluid .breadcrumbs a:visited {
@@ -499,6 +500,12 @@ body.ms-backgroundImage {
   background-position-x: 99%;
   background-position-y: 50%;
   cursor: text;
+}
+.container .search::-ms-clear,
+.container-fluid .search::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .container .searchfield,
 .container-fluid .searchfield {
@@ -834,17 +841,12 @@ body.ms-backgroundImage {
 .container .external-link,
 .container-fluid .external-link {
   text-decoration: none;
-  margin: 15px 0;
+  margin: 15px 5px 15px 0;
   display: inline-block;
   border-bottom: none;
-}
-.container .external-link:after,
-.container-fluid .external-link:after {
-  content: '';
-  background: url('../images/ekstern_lenke_mellomblaa.svg') right no-repeat;
+  background: url('../images/ekstern_lenke_mellomblaa.svg') center right no-repeat;
   background-size: 15px 15px;
-  display: inline;
-  padding-left: 25px;
+  padding-right: 23px;
 }
 .container .external-link h1,
 .container-fluid .external-link h1,
@@ -862,6 +864,10 @@ body.ms-backgroundImage {
 .container-fluid .external-link:hover {
   border-bottom: 1px solid #0093a7;
   padding-bottom: 0;
+}
+.container .external-link.inline,
+.container-fluid .external-link.inline {
+  display: inline;
 }
 .container .internal-link,
 .container-fluid .internal-link {
@@ -944,6 +950,10 @@ body.ms-backgroundImage {
   background: white;
   position: relative;
   width: 100%;
+}
+.container .module.aside,
+.container-fluid .module.aside {
+  width: 300px;
 }
 .container .module.maincolumn,
 .container-fluid .module.maincolumn {
@@ -2155,7 +2165,9 @@ body.ms-backgroundImage {
 .container .transportsideknapp a.calltoaction:hover,
 .container-fluid .transportsideknapp a.calltoaction:hover,
 .container .transportsideknapp a.calltoaction:visited:hover,
-.container-fluid .transportsideknapp a.calltoaction:visited:hover {
+.container-fluid .transportsideknapp a.calltoaction:visited:hover,
+.container .transportsideknapp a.calltoaction:visited,
+.container-fluid .transportsideknapp a.calltoaction:visited {
   color: white;
 }
 .container .transportsideknapp p,

@@ -1,21 +1,26 @@
 ﻿$(function () {
     //creates collapsible headings. The tag wrapping this class will get an angle icon
-    $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").each(function () {
-        var collapseElement = $(this);
-        var contentToHide = collapseElement.nextUntil(':not(p)');
-        var parentTag = collapseElement.parent();
-        contentToHide.addClass(' visuallyhidden');
-        parentTag.addClass(' has-hidden-content');
-    });
-
+    /*  $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").each(function () {
+          var collapseElement = $(this);
+          var contentToHide = collapseElement.nextUntil(':not(p)');
+          var parentTag = collapseElement.parent();
+          contentToHide.addClass(' visuallyhidden');
+          parentTag.addClass(' has-hidden-content');
+      });
+      */
     $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").each(function () {
         var collapseElement = $(this);
-        collapseElement.nextUntil(':not(p)').addClass('visuallyhidden').css("padding-left", "42px");
         collapseElement.addClass('has-hidden-content');
+
+        if (collapseElement.hasClass("ms-rteElement-H2B")) {
+            collapseElement.nextUntil('h2').addClass('visuallyhidden').css("padding-left", "42px");
+        } else {
+            collapseElement.nextUntil(':not(p)').addClass('visuallyhidden').css("padding-left", "42px");
+        }
     });
 
     //handles click events on collapsible headings
-    $(".accordion h2, .accordion h3, .accordion h4, .accordion h5").click(function () {
+    /*$(".accordion h2, .accordion h3, .accordion h4, .accordion h5").click(function () {
         var collapseElement = $(this);
         var contentToHide = collapseElement.next();
         var parentTag = collapseElement.parent();
@@ -36,21 +41,41 @@
             parentTag.removeClass("has-hidden-content");
         }
     });
-
+    */
     $(".ms-rteElement-H1B, .ms-rteElement-H2B, .ms-rteElement-H3B, .ms-rteElement-H4B").click(function () {
         var collapseElement = $(this);
+        console.log(collapseElement);
         if (collapseElement.hasClass('has-visible-content')) {
-            collapseElement.nextUntil(':not(p)').slideUp('fast', function () {
-                $(this).addClass('visuallyhidden')
-                    .slideDown(0);
-            });
+            if (collapseElement.hasClass("ms-rteElement-H2B")) {
+                collapseElement.nextUntil('h2').slideUp('fast', function () {
+                    $(this).addClass('visuallyhidden')
+                        .slideDown(0);
+                });
+            }
+            else {
+                collapseElement.nextUntil(':not(p)').slideUp('fast', function () {
+                    $(this).slideUp('fast', function () {
+                        $(this).addClass('visuallyhidden')
+                            .slideDown(0);
+                    });
+                });
+            }
             collapseElement.removeClass("has-visible-content");
             collapseElement.addClass("has-hidden-content");
-        } else {
-            collapseElement.nextUntil(':not(p)').slideUp(0, function () {
-                $(this).removeClass('visuallyhidden')
-                    .slideDown(500);
-            });
+        }
+        else {
+            if (collapseElement.hasClass("ms-rteElement-H2B")) {
+                collapseElement.nextUntil('h2').slideUp(0, function () {
+                    $(this).removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            }
+            else {
+                collapseElement.nextUntil(':not(p)').slideUp(0, function () {
+                    $(this).removeClass('visuallyhidden')
+                        .slideDown(500);
+                });
+            }
             collapseElement.addClass("has-visible-content");
             collapseElement.removeClass("has-hidden-content");
         }
@@ -137,4 +162,17 @@
     $('a:not(:empty)').filter(function () {
         return this.hostname && this.hostname !== location.hostname;
     }).addClass("external-link");
+
+    $('.external-link').each(function () {
+        if ($(this).parent('p').length > 0) {
+            var tekst = $(this).parent().clone() //clone the element
+                .children() //select all the children
+                .remove() //remove all the children
+                .end() //again go back to selected element
+                .text(); //get the text of element
+            if ($.trim(tekst) != '') {
+                $(this).addClass('inline');
+            }
+        }
+    });
 });

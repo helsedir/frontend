@@ -196,11 +196,12 @@ body, body.ms-backgroundImage {
         }
 
         .active {
-            text-decoration: underline;
+            /*text-decoration: underline;
             font-family: @fontCalibri;
             font-size: 18px;
             line-height: 22px;
-            border-bottom: none;
+            border-bottom: none;*/
+            display: none;
         }
 
         a:visited {
@@ -463,6 +464,12 @@ body, body.ms-backgroundImage {
         background-position-x: 99%;
         background-position-y: 50%;
         cursor: text;
+
+        &::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
     }
 
     .searchfield {
@@ -746,17 +753,12 @@ body, body.ms-backgroundImage {
 
     .external-link {
         text-decoration: none;
-        margin: 15px 0;
+        margin: 15px 5px 15px 0;
         display: inline-block;
         border-bottom: none;
-
-        &:after {
-            content: '';
-            background: url('../images/ekstern_lenke_mellomblaa.svg') right no-repeat;
-            background-size: 15px 15px;
-            display: inline;
-            padding-left: 25px;
-        }
+        background: url('../images/ekstern_lenke_mellomblaa.svg') center right no-repeat;
+        background-size: 15px 15px;
+        padding-right: 23px;
 
         h1, h2, h3, h4, h5 {
             display: inline;
@@ -765,6 +767,10 @@ body, body.ms-backgroundImage {
         &:hover {
             border-bottom: 1px solid #0093a7;
             padding-bottom: 0;
+        }
+
+        &.inline {
+            display: inline;
         }
     }
 
@@ -839,6 +845,10 @@ body, body.ms-backgroundImage {
         background: white;
         position: relative;
         width: 100%;
+
+        &.aside {
+            width: 300px;
+        }
 
         &.maincolumn {
             margin-top: 30px;
@@ -1991,7 +2001,7 @@ body, body.ms-backgroundImage {
             &.calltoaction {
                 max-width: 250px;
 
-                &:hover, &:visited:hover {
+                &:hover, &:visited:hover, &:visited {
                     color: white;
                 }
             }
